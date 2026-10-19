@@ -13,7 +13,116 @@
   "publication": {
     "repository": "https://github.com/terrizoaguimor/aureform-ui",
     "demo": "https://terrizoaguimor.github.io/aureform-ui/",
-    "status": "awaiting-remote-deployment-verification"
+    "status": "published-and-verified",
+    "checkedAt": "2026-10-19T19:52:54.960349+00:00",
+    "sourceCommit": "f7dc9e8a32a3ad41159b627349354644e1858856",
+    "githubActions": {
+      "url": "https://github.com/terrizoaguimor/aureform-ui/actions/runs/39311783651",
+      "conclusion": "success",
+      "nodeVersion": 22,
+      "checks": [
+        "frozen dependency installation",
+        "publication privacy audit",
+        "TypeScript",
+        "ESLint",
+        "189 unit tests",
+        "strict component examples",
+        "static build",
+        "Pages asset/link validation",
+        "production deployment"
+      ]
+    },
+    "production": {
+      "finishedAt": "2026-10-19T19:38:41.468Z",
+      "status": "passed",
+      "scope": "All 69 views in EN/ES desktop dark; six ES mobile light views; four main-region Axe scans; three real browser behaviors",
+      "records": 146,
+      "desktopLocalizedViews": 138,
+      "mobileLightViews": 6,
+      "additionalBehaviorViews": 2,
+      "pageErrors": [],
+      "failedResources": [],
+      "horizontalOverflows": 0,
+      "accessibility": [
+        {
+          "locale": "en",
+          "route": "dashboard",
+          "violations": [],
+          "incomplete": [
+            "color-contrast"
+          ]
+        },
+        {
+          "locale": "en",
+          "route": "customers",
+          "violations": [],
+          "incomplete": [
+            "color-contrast"
+          ]
+        },
+        {
+          "locale": "en",
+          "route": "media",
+          "violations": [],
+          "incomplete": [
+            "color-contrast"
+          ]
+        },
+        {
+          "locale": "en",
+          "route": "docs/license",
+          "violations": [],
+          "incomplete": [
+            "color-contrast"
+          ]
+        }
+      ],
+      "interactions": [
+        "Language switch retains the mounted route",
+        "Light theme persists after reload",
+        "Real browser image download preserves the exact WebP bytes"
+      ],
+      "entry": {
+        "version": "1.3.0",
+        "status": "passed",
+        "httpStatus": 200,
+        "url": "https://terrizoaguimor.github.io/aureform-ui/",
+        "language": "es",
+        "title": "Aureform UI — Refined interfaces for ambitious products",
+        "headings": [
+          "Construyesin límites."
+        ],
+        "pageErrors": []
+      },
+      "exactByteArchiveDownloads": 7,
+      "hostedRegistryStatus": 200
+    },
+    "release": {
+      "url": "https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.3.0",
+      "tag": "v1.3.0",
+      "publishedAt": "2026-10-19T19:41:34Z",
+      "archiveAndDesignAssets": 9
+    },
+    "devto": {
+      "url": "https://dev.to/terrizoaguimor/aureform-ui-an-open-source-nextjs-kit-with-an-appearance-studio-3ld",
+      "title": "Aureform UI: an open-source Next.js kit with an appearance studio",
+      "publishedAt": "2026-10-19T19:47:32Z",
+      "anonymousReadbackStatus": 200,
+      "tags": [
+        "nextjs",
+        "react",
+        "opensource",
+        "webdev"
+      ],
+      "coverImage": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto/https%3A%2F%2Fraw.githubusercontent.com%2Fterrizoaguimor%2Faureform-ui%2Fmain%2Fdocs%2Fimages%2Faureform-overview-dark.webp",
+      "bodySha256": "5884b56684d0f9bfa51495885f5de4f15d33f7766bf059d87d0d0c509f3d3b07"
+    },
+    "figma": {
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N",
+      "publicViewAndCopyExport": "confirmed by owner on 2026-10-19",
+      "nativeFigIncluded": false,
+      "anonymousBrowserCheck": "environment request blocked by CloudFront; sharing configuration remains owner-confirmed"
+    }
   },
   "nativeFigIncluded": false,
   "archives": [
