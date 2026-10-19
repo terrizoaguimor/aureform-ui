@@ -16,12 +16,14 @@ UI components take explicit props. Templates own demo state and compose blocks. 
 | `streamDemoReply`        | Async iterable text, AbortSignal, recoverable simulated failure | Server streaming endpoint with cancellation                 |
 | `prepareDemoVisuals`     | Original prepared SVG/WebM previews, AbortSignal and retry      | Image/video provider through your own server                |
 | `localFileAdapter`       | IndexedDB blobs, downloads, removal                             | Authorized object storage and upload validation             |
-| Authentication templates | RHF/Zod validation and inert verification flow                  | Session provider with server-side authorization             |
-| Billing/settings         | Local plan, team, key and integration preferences               | Billing provider, roles, invitations and audit logs         |
+| Authentication templates | RHF/Zod, mock email/OTP and Google/GitHub/Microsoft callbacks     | OAuth and server sessions supplied by the consumer          |
+| `CommerceProvider`        | Workspace-scoped products, orders, invoices and billing; mock checkout | `CommerceAdapter` connected to an authorized backend   |
+| `createStripeCommerceAdapter` | Validated same-origin JSON transport and hosted redirects   | Server-side Stripe Products/Prices, Checkout, Invoicing, portal and webhooks |
+| Billing/settings         | Shared commerce billing plus local team/key preferences        | Billing provider, roles, invitations and audit logs         |
 | Mail/chat/support        | Local messages and ticket records                               | Authenticated messaging and delivery services               |
-| `RouteMap`               | Original schematic GeoJSON, MapLibre, SVG fallback              | Appropriate geospatial data and licensed map source         |
+| `MapsWorkspace` / `RouteMap` | Local schematic GeoJSON, MapLibre and SVG fallback; optional Google SDK | Restricted Google browser key and your own licensed route data |
 
-Keep provider credentials on the server. Replace the adapter rather than changing loading, error, empty, retry or cancellation behavior in the UI. The demo authorization boundary is intentionally absent: it must never be treated as a security boundary.
+Keep private provider credentials on the server. The optional Google Maps browser key is public by design and must be restricted. Replace the adapter rather than changing loading, error, empty, retry or cancellation behavior in the UI. The demo authorization boundary is intentionally absent: it must never be treated as a security boundary. See [application contracts and examples](application-integrations.md).
 
 ## Rendering and persistence
 

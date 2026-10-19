@@ -30,6 +30,8 @@ import { cn } from "@/lib/utils";
 
 type DocumentationText = (en: string, es: string) => string;
 
+const releaseDownloadUrl = `${githubUrl}/releases/download/v${kitVersion}`;
+
 const appearanceExample = (l: DocumentationText) => `"use client";
 
 import { useState } from "react";
@@ -167,7 +169,7 @@ export function DocsTemplate({ section = "start" }: { section?: string }) {
         )}
         actions={
           <a
-            href={publicPath("/downloads/aureform-ui-source.zip")}
+            href={`${releaseDownloadUrl}/aureform-ui-source.zip`}
             download
             className={buttonVariants({ variant: "outline", size: "sm" })}
           >
@@ -251,7 +253,7 @@ export function DocsTemplate({ section = "start" }: { section?: string }) {
                 )}
                 <div className="my-5 flex flex-wrap gap-3">
                   <a
-                    href={publicPath("/downloads/aureform-ui-images.zip")}
+                    href={`${releaseDownloadUrl}/aureform-ui-images.zip`}
                     download
                     className={buttonVariants({
                       variant: "outline",
@@ -272,7 +274,7 @@ export function DocsTemplate({ section = "start" }: { section?: string }) {
                     {l("Image manifest", "Manifiesto de imágenes")}
                   </a>
                   <a
-                    href={publicPath("/downloads/verification-1.2.1.json")}
+                    href={`${githubUrl}/blob/v1.3.0/public/downloads/verification-1.2.1.json`}
                     className={buttonVariants({
                       variant: "outline",
                       size: "sm",
@@ -629,6 +631,49 @@ export function DocsTemplate({ section = "start" }: { section?: string }) {
             {section === "adapters" && (
               <>
                 {heading(
+                  "Commerce, maps and social access",
+                  "Comercio, mapas y acceso social",
+                )}
+                {paragraph(
+                  "The commerce provider shares products, orders, invoices and subscription state within each workspace. Its default Checkout and customer portal are local mocks. Connect the supplied Stripe HTTP adapter to your own authenticated backend; secret keys, payment status and OAuth sessions belong to that backend. Google Maps is an optional, explicit connection with a restricted browser key.",
+                  "El provider de comercio comparte productos, pedidos, facturas y suscripción por workspace. Checkout y portal funcionan como mocks locales. Conecta el adaptador HTTP de Stripe a tu backend autenticado; las claves secretas, los pagos y las sesiones OAuth corresponden a ese backend. Google Maps permite una conexión opcional con una clave de navegador restringida.",
+                )}
+                <div className="my-5 flex flex-wrap gap-2">
+                  {[
+                    ["products", l("Product editor", "Editor de productos")],
+                    ["orders", l("Orders & Checkout", "Pedidos y Checkout")],
+                    ["invoices", l("Invoices", "Facturas")],
+                    [
+                      "settings/billing",
+                      l("Billing & portal", "Facturación y portal"),
+                    ],
+                    ["maps", l("Maps", "Mapas")],
+                    ["auth/sign-in", l("Social login", "Login social")],
+                  ].map(([path, label]) => (
+                    <a
+                      key={path}
+                      href={publicPath(`/${locale}/${path}/`)}
+                      className={buttonVariants({
+                        variant: "outline",
+                        size: "sm",
+                      })}
+                    >
+                      {label}
+                    </a>
+                  ))}
+                </div>
+                <a
+                  href={`https://github.com/terrizoaguimor/aureform-ui/blob/main/docs/application-integrations${locale === "es" ? ".es" : ""}.md`}
+                  className="text-sm font-semibold text-primary underline underline-offset-4"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {l(
+                    "Read the integration contracts and examples",
+                    "Leer los contratos y ejemplos de integración",
+                  )}
+                </a>
+                {heading(
                   "A complete SaaS operation",
                   "Una operación SaaS completa",
                 )}
@@ -681,6 +726,27 @@ export function DocsTemplate({ section = "start" }: { section?: string }) {
                   </TableHeader>
                   <TableBody>
                     {[
+                      [
+                        "commerce-provider.tsx",
+                        l(
+                          "Workspace-scoped catalog, orders, invoices and subscription; idempotent mock payments.",
+                          "Catálogo, pedidos, facturas y suscripción por workspace; pagos mock idempotentes.",
+                        ),
+                      ],
+                      [
+                        "lib/stripe-commerce-adapter.ts",
+                        l(
+                          "Typed same-origin backend transport for catalog sync, Checkout, invoices and customer portal.",
+                          "Transporte tipado al backend del mismo origen para catálogo, Checkout, facturas y portal.",
+                        ),
+                      ],
+                      [
+                        "lib/demo-auth.ts",
+                        l(
+                          "Google, GitHub and Microsoft mock profiles with replaceable client callbacks.",
+                          "Perfiles mock de Google, GitHub y Microsoft con callbacks sustituibles.",
+                        ),
+                      ],
                       [
                         "workspace-provider.tsx",
                         l(
@@ -738,10 +804,10 @@ export function DocsTemplate({ section = "start" }: { section?: string }) {
                         ),
                       ],
                       [
-                        "map-data.ts",
+                        "lib/google-maps.ts",
                         l(
-                          "Original schematic GeoJSON, no external map tiles",
-                          "GeoJSON esquemático original, sin mapas externos",
+                          "Local GeoJSON by default; opt-in Google Maps SDK with an in-memory browser key.",
+                          "GeoJSON local por defecto; SDK de Google Maps opcional con clave de navegador en memoria.",
                         ),
                       ],
                     ].map(([file, description]) => (
@@ -824,7 +890,7 @@ export function DocsTemplate({ section = "start" }: { section?: string }) {
                     <ArrowUpRight />
                   </a>
                   <a
-                    href={publicPath("/downloads/aureform-ui-source.zip")}
+                    href={`${releaseDownloadUrl}/aureform-ui-source.zip`}
                     download
                     className={buttonVariants({
                       variant: "outline",
@@ -909,6 +975,13 @@ export function DocsTemplate({ section = "start" }: { section?: string }) {
                         l(
                           "Finance, stocks, studios, six shells, charts and media",
                           "Finanzas, acciones, estudios, seis estructuras, gráficos y medios",
+                        ),
+                      ],
+                      [
+                        "1.4",
+                        l(
+                          "Product and image editors, connected commerce, maps and social-auth mocks",
+                          "Editores de productos e imágenes, comercio conectado, mapas y acceso social mock",
                         ),
                       ],
                     ].map(([version, description]) => (

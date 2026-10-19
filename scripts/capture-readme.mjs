@@ -60,6 +60,43 @@ const captures = [
     theme: "dark",
     palette: "aurora",
   },
+  {
+    file: "aureform-products.webp",
+    route: "products",
+    theme: "dark",
+    palette: "aurora",
+  },
+  {
+    file: "aureform-product-editor.webp",
+    route: "products",
+    theme: "dark",
+    palette: "aurora",
+    openProduct: "Forma desk lamp",
+  },
+  {
+    file: "aureform-orders.webp",
+    route: "orders",
+    theme: "light",
+    palette: "ocean",
+  },
+  {
+    file: "aureform-billing.webp",
+    route: "settings/billing",
+    theme: "dark",
+    palette: "violet",
+  },
+  {
+    file: "aureform-maps.webp",
+    route: "maps",
+    theme: "light",
+    palette: "mint",
+  },
+  {
+    file: "aureform-auth.webp",
+    route: "auth/sign-in",
+    theme: "dark",
+    palette: "aurora",
+  },
 ];
 const browser = await chromium.launch({
   executablePath:
@@ -111,6 +148,22 @@ try {
       }),
     );
     await page.mouse.move(0, 0);
+    if (capture.openProduct) {
+      await page
+        .getByRole("button", {
+          name: `Open ${capture.openProduct}`,
+          exact: true,
+        })
+        .click();
+      await page
+        .getByRole("dialog")
+        .getByRole("tab", { name: "Media", exact: true })
+        .click();
+      await page
+        .getByRole("dialog")
+        .getByRole("heading", { name: "Edit product", exact: true })
+        .waitFor();
+    }
     const png = await page.screenshot({ animations: "disabled" });
     const webp = await sharp(png).webp({ quality: 90 }).toBuffer();
     await writeFile(resolve(directory, capture.file), webp);

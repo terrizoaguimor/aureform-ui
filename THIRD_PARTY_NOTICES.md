@@ -4,30 +4,30 @@ The original Aureform work is licensed under [Apache 2.0](LICENSE). Each upstrea
 
 This table is generated from the installed runtime dependency manifests, rather than the package manifest's requested ranges. The 21 bundled upstream license texts are copied byte for byte from those installed distributions. GSAP's distribution declares its official license URL instead of bundling a standalone license text. Transitive dependencies and development tools retain the notices in their package distributions.
 
-| Package                  | Verified version | Declared license                                     | Included text                                                     |
-| ------------------------ | ---------------- | ---------------------------------------------------- | ----------------------------------------------------------------- |
-| @base-ui/react           | 1.9.0            | MIT                                                  | [License text](licenses/third-party/base-ui__react.txt)           |
-| @hookform/resolvers      | 5.9.2            | MIT                                                  | [License text](licenses/third-party/hookform__resolvers.txt)      |
-| @tanstack/react-table    | 8.21.3           | MIT                                                  | [License text](licenses/third-party/tanstack__react-table.txt)    |
-| class-variance-authority | 0.7.1            | Apache-2.0                                           | [License text](licenses/third-party/class-variance-authority.txt) |
-| clsx                     | 2.1.1            | MIT                                                  | [License text](licenses/third-party/clsx.txt)                     |
-| cmdk                     | 1.1.1            | MIT                                                  | [License text](licenses/third-party/cmdk.txt)                     |
-| date-fns                 | 4.4.0            | MIT                                                  | [License text](licenses/third-party/date-fns.txt)                 |
-| gsap                     | 3.15.0           | Standard No Charge license; separate from Apache 2.0 | [License reference](licenses/third-party/gsap-reference.txt)      |
-| input-otp                | 1.5.0            | MIT                                                  | [License text](licenses/third-party/input-otp.txt)                |
-| lenis                    | 1.3.27           | MIT                                                  | [License text](licenses/third-party/lenis.txt)                    |
-| lucide-react             | 0.562.0          | ISC                                                  | [License text](licenses/third-party/lucide-react.txt)             |
-| maplibre-gl              | 5.24.0           | BSD-3-Clause                                         | [License text](licenses/third-party/maplibre-gl.txt)              |
-| next                     | 16.4.2           | MIT                                                  | [License text](licenses/third-party/next.txt)                     |
-| next-intl                | 4.14.9           | MIT                                                  | [License text](licenses/third-party/next-intl.txt)                |
-| react                    | 19.3.1           | MIT                                                  | [License text](licenses/third-party/react.txt)                    |
-| react-day-picker         | 9.14.0           | MIT                                                  | [License text](licenses/third-party/react-day-picker.txt)         |
-| react-dom                | 19.3.1           | MIT                                                  | [License text](licenses/third-party/react-dom.txt)                |
-| react-hook-form          | 7.90.0           | MIT                                                  | [License text](licenses/third-party/react-hook-form.txt)          |
-| recharts                 | 3.10.1           | MIT                                                  | [License text](licenses/third-party/recharts.txt)                 |
-| sonner                   | 2.0.8            | MIT                                                  | [License text](licenses/third-party/sonner.txt)                   |
-| tailwind-merge           | 3.7.0            | MIT                                                  | [License text](licenses/third-party/tailwind-merge.txt)           |
-| zod                      | 4.6.7            | MIT                                                  | [License text](licenses/third-party/zod.txt)                      |
+| Package | Verified version | Declared license | Included text |
+| --- | --- | --- | --- |
+| @base-ui/react | 1.9.0 | MIT | [License text](licenses/third-party/base-ui__react.txt) |
+| @hookform/resolvers | 5.9.2 | MIT | [License text](licenses/third-party/hookform__resolvers.txt) |
+| @tanstack/react-table | 8.21.3 | MIT | [License text](licenses/third-party/tanstack__react-table.txt) |
+| class-variance-authority | 0.7.1 | Apache-2.0 | [License text](licenses/third-party/class-variance-authority.txt) |
+| clsx | 2.1.1 | MIT | [License text](licenses/third-party/clsx.txt) |
+| cmdk | 1.1.1 | MIT | [License text](licenses/third-party/cmdk.txt) |
+| date-fns | 4.4.0 | MIT | [License text](licenses/third-party/date-fns.txt) |
+| gsap | 3.15.0 | Standard No Charge license; separate from Apache 2.0 | [License reference](licenses/third-party/gsap-reference.txt) |
+| input-otp | 1.5.0 | MIT | [License text](licenses/third-party/input-otp.txt) |
+| lenis | 1.3.27 | MIT | [License text](licenses/third-party/lenis.txt) |
+| lucide-react | 0.562.0 | ISC | [License text](licenses/third-party/lucide-react.txt) |
+| maplibre-gl | 5.24.0 | BSD-3-Clause | [License text](licenses/third-party/maplibre-gl.txt) |
+| next | 16.4.2 | MIT | [License text](licenses/third-party/next.txt) |
+| next-intl | 4.14.9 | MIT | [License text](licenses/third-party/next-intl.txt) |
+| react | 19.3.1 | MIT | [License text](licenses/third-party/react.txt) |
+| react-day-picker | 9.14.0 | MIT | [License text](licenses/third-party/react-day-picker.txt) |
+| react-dom | 19.3.1 | MIT | [License text](licenses/third-party/react-dom.txt) |
+| react-hook-form | 7.90.0 | MIT | [License text](licenses/third-party/react-hook-form.txt) |
+| recharts | 3.10.1 | MIT | [License text](licenses/third-party/recharts.txt) |
+| sonner | 2.0.8 | MIT | [License text](licenses/third-party/sonner.txt) |
+| tailwind-merge | 3.7.0 | MIT | [License text](licenses/third-party/tailwind-merge.txt) |
+| zod | 4.6.7 | MIT | [License text](licenses/third-party/zod.txt) |
 
 ## Fonts
 
@@ -46,6 +46,8 @@ Generated-image prompts and their recorded model snapshot are in [the image cata
 Other runtime license identifiers are verified against the installed manifests and license texts listed above; their upstream source repositories are recorded in those packages. The primary upstream notices also confirm [Lenis MIT](https://github.com/darkroomengineering/lenis/blob/main/LICENSE), [MapLibre BSD-3-Clause and inherited notices](https://github.com/maplibre/maplibre-gl-js/blob/main/LICENSE.txt), [class-variance-authority 0.7.1 Apache 2.0](https://github.com/joe-bell/cva/blob/v0.7.1/LICENSE) and [Next.js MIT](https://github.com/vercel/next.js/blob/canary/license.md). The bundled texts describe the installed versions; a newer upstream branch does not change those included notices.
 
 ## Reference material
+
+Google, GitHub, Microsoft and Stripe names and marks belong to their respective owners. The inline provider marks identify mock sign-in choices; Apache 2.0 does not grant trademark rights or imply endorsement. Google Maps is loaded only after an explicit connection and remains subject to Google's service terms.
 
 The proprietary TailAdmin Pro reference was read to understand feature categories. No proprietary TailAdmin source, image, font, template or license is included in this distribution.
 

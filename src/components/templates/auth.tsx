@@ -1,6 +1,5 @@
 "use client";
-import { publicPath } from "@/lib/public-path";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
@@ -18,6 +17,7 @@ import {
   Layers,
 } from "lucide-react";
 import { Brand, AureformMark } from "@/components/brand";
+import { SocialAuth } from "@/components/blocks/social-auth";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { InputOTP } from "@/components/ui/input-otp";
@@ -28,9 +28,39 @@ import { useLanguage } from "@/hooks/use-language";
 import { useAppearance } from "@/components/appearance-provider";
 import { GlowBorder, ShaderBackground } from "@/components/effects";
 import { revenueData } from "@/demo/dashboard-data";
+import {
+  createDemoAuthAdapter,
+  createDemoAuthSession,
+  DemoAuthError,
+  persistDemoAuthSession,
+  waitForDemoAuth,
+  type AuthAdapter,
+  type ProviderSignInHandler,
+} from "@/lib/demo-auth";
 import { toast } from "sonner";
-type AuthMode = "sign-in" | "sign-up" | "reset-password" | "verify";
-export function AuthTemplate({ mode }: { mode: AuthMode }) {
+export type AuthMode = "sign-in" | "sign-up" | "reset-password" | "verify";
+
+export interface AuthTemplateProps {
+  mode: AuthMode;
+  /** Optional client-side integration. All built-in routes use the mock adapter. */
+  authAdapter?: AuthAdapter;
+  /**
+   * Overrides authAdapter for social access only. Inject from a Client Component;
+   * the consumer owns OAuth, server sessions and redirects. Email/OTP remain demo.
+   */
+  onProviderSignIn?: ProviderSignInHandler;
+}
+
+export function AuthTemplate(props: AuthTemplateProps) {
+  // Next Link can retain this component between auth routes; reset each screen.
+  return <AuthScreen key={props.mode} {...props} />;
+}
+
+function AuthScreen({
+  mode,
+  authAdapter,
+  onProviderSignIn,
+}: AuthTemplateProps) {
   const { locale, l, currency } = useLanguage(),
     router = useRouter();
   const { appearance } = useAppearance();
@@ -49,16 +79,109 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
   const [visible, setVisible] = useState(false),
     [busy, setBusy] = useState(false),
     [complete, setComplete] = useState(false),
+    [providerComplete, setProviderComplete] = useState(false),
+    [requestError, setRequestError] = useState(""),
     [otp, setOtp] = useState(""),
     [otpError, setOtpError] = useState(""),
     [consent, setConsent] = useState(false),
     [consentError, setConsentError] = useState("");
+  const requestPending = useRef(false);
+  const mounted = useRef(true);
+  const emailRequest = useRef<AbortController | null>(null);
+  const consentControl = useRef<HTMLButtonElement | null>(null);
+  const defaultAuthAdapter = useMemo(() => createDemoAuthAdapter(), []);
+  const signInWithProvider: ProviderSignInHandler =
+    onProviderSignIn ??
+    ((request) =>
+      (authAdapter ?? defaultAuthAdapter).signInWithProvider(request));
+
+  useEffect(() => {
+    mounted.current = true;
+    return () => {
+      mounted.current = false;
+      emailRequest.current?.abort();
+    };
+  }, []);
+
+  function requireConsent() {
+    if (mode !== "sign-up" || consent) return true;
+    setConsentError(
+      l(
+        "Accept the demo terms to continue.",
+        "Acepta los términos de demostración para continuar.",
+      ),
+    );
+    consentControl.current?.focus();
+    return false;
+  }
+
+  const handleProviderSignIn: ProviderSignInHandler = async (request) => {
+    if (requestPending.current) throw new DemoAuthError("busy");
+    requestPending.current = true;
+    setBusy(true);
+    setRequestError("");
+    try {
+      return await signInWithProvider(request);
+    } finally {
+      requestPending.current = false;
+      if (mounted.current) setBusy(false);
+    }
+  };
+
+  function continueEmailDemo(
+    provider: "email" | "otp",
+    identity?: {
+      email: string;
+      name?: string;
+    },
+  ) {
+    const persistence = persistDemoAuthSession(
+      createDemoAuthSession(provider, identity),
+    );
+    form.resetField("password");
+    toast.success(
+      l("Demo sign-in complete", "Sesión de demostración iniciada"),
+      {
+        description:
+          persistence === "memory"
+            ? l(
+                "Browser storage is unavailable. This demo profile will not persist.",
+                "El almacenamiento no está disponible. El perfil de demostración no se guardará.",
+              )
+            : undefined,
+      },
+    );
+    router.push(
+      `/${locale}/${mode === "sign-up" ? "onboarding" : "dashboard"}/`,
+    );
+  }
+
+  function showRequestError() {
+    setRequestError(
+      l(
+        "The demo could not finish. Please try again.",
+        "La demostración no se pudo completar. Inténtalo de nuevo.",
+      ),
+    );
+  }
+
   const schema = z.object({
     name:
       mode === "sign-up"
-        ? z.string().trim().min(2, l("Enter your name.", "Escribe tu nombre."))
+        ? z
+            .string()
+            .trim()
+            .min(2, l("Enter your name.", "Escribe tu nombre."))
+            .max(
+              160,
+              l("Use at most 160 characters.", "Usa máximo 160 caracteres."),
+            )
         : z.string().optional(),
-    email: z.email(l("Enter a valid email.", "Escribe un correo válido.")),
+    email: z
+      .string()
+      .trim()
+      .max(254, l("Use at most 254 characters.", "Usa máximo 254 caracteres."))
+      .pipe(z.email(l("Enter a valid email.", "Escribe un correo válido."))),
     password:
       mode === "sign-in" || mode === "sign-up"
         ? z
@@ -73,38 +196,65 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
     resolver: zodResolver(schema),
     defaultValues: { name: "", email: "", password: "" },
   });
-  const submit = form.handleSubmit(async (values) => {
-    if (mode === "sign-up" && !consent) {
-      setConsentError(
-        l(
-          "Accept the demo terms to continue.",
-          "Acepta los términos de demostración para continuar.",
-        ),
+  async function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (requestPending.current) return;
+    await form.handleSubmit(async (values) => {
+      if (requestPending.current || !requireConsent()) return;
+      requestPending.current = true;
+      const controller = new AbortController();
+      emailRequest.current = controller;
+      setBusy(true);
+      setRequestError("");
+      let completed = false;
+      try {
+        await waitForDemoAuth(350, controller.signal);
+        if (mode === "reset-password") {
+          setComplete(true);
+        } else {
+          continueEmailDemo("email", {
+            email: values.email,
+            name: values.name,
+          });
+        }
+        completed = true;
+      } catch {
+        if (!controller.signal.aborted && mounted.current) showRequestError();
+      } finally {
+        requestPending.current = completed;
+        if (emailRequest.current === controller) emailRequest.current = null;
+        if (mounted.current) setBusy(false);
+      }
+    })(event);
+  }
+
+  async function verifyOtp(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (requestPending.current) return;
+    if (otp !== "123456") {
+      setOtpError(
+        l("Use the demo code 123456.", "Usa el código de ejemplo 123456."),
       );
       return;
     }
+    requestPending.current = true;
+    const controller = new AbortController();
+    emailRequest.current = controller;
     setBusy(true);
-    await new Promise((r) => setTimeout(r, 350));
-    setBusy(false);
-    if (mode === "reset-password") {
-      setComplete(true);
-      return;
+    setRequestError("");
+    let completed = false;
+    try {
+      await waitForDemoAuth(250, controller.signal);
+      continueEmailDemo("otp");
+      completed = true;
+    } catch {
+      if (!controller.signal.aborted && mounted.current) showRequestError();
+    } finally {
+      requestPending.current = completed;
+      if (emailRequest.current === controller) emailRequest.current = null;
+      if (mounted.current) setBusy(false);
     }
-    localStorage.setItem(
-      "aureform:demo-session",
-      JSON.stringify({
-        email: values.email,
-        name: values.name || "Alex Morgan",
-        demo: true,
-      }),
-    );
-    toast.success(
-      l("Demo sign-in complete", "Sesión de demostración iniciada"),
-    );
-    router.push(
-      `/${locale}/${mode === "sign-up" ? "onboarding" : "dashboard"}/`,
-    );
-  });
+  }
   const titles: Record<AuthMode, [string, string]> = {
     "sign-in": ["Welcome to what’s next.", "Bienvenido a lo que sigue."],
     "sign-up": ["Build your next chapter.", "Crea tu próximo capítulo."],
@@ -113,7 +263,7 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
   };
   return (
     <div className="grid min-h-dvh bg-background text-foreground lg:grid-cols-[minmax(0,.94fr)_minmax(0,1.06fr)]">
-      <div className="relative flex min-w-0 flex-col bg-surface px-5 py-7 sm:px-10 xl:px-14">
+      <main className="relative flex min-w-0 flex-col bg-surface px-5 py-7 sm:px-10 xl:px-14">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Link href={`/${locale}/`} aria-label="Aureform UI">
             <Brand />
@@ -132,7 +282,7 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
             className="mb-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
           >
             <ArrowLeft className="size-3.5" />
-            {l("Back to Aureform", "Volver a Aureform")}
+            {l("Back to demo", "Volver a la demo")}
           </Link>
           <span className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-accent px-3 py-1.5 text-xs font-semibold text-accent-foreground">
             <Sparkles className="size-3.5" />
@@ -171,6 +321,93 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
                       "Escribe tu correo para probar la recuperación de contraseña.",
                     )}
           </p>
+          {(mode === "sign-in" || mode === "sign-up") && (
+            <>
+              {mode === "sign-up" && !providerComplete && (
+                <div className="mt-6 rounded-xl border border-border bg-background/50 p-3.5">
+                  <label className="flex items-start gap-2.5 text-[13px] leading-relaxed text-muted-foreground">
+                    <Checkbox
+                      ref={consentControl}
+                      className="mt-0.5"
+                      checked={consent}
+                      disabled={busy}
+                      onCheckedChange={(value) => {
+                        setConsent(value);
+                        setConsentError("");
+                      }}
+                      aria-invalid={!!consentError}
+                      aria-describedby={
+                        consentError ? "auth-consent-error" : undefined
+                      }
+                      aria-label={l(
+                        "Accept demo terms",
+                        "Aceptar términos de demostración",
+                      )}
+                    />
+                    <span>
+                      {l(
+                        "I understand this is a frontend demo.",
+                        "Entiendo que esta es una demostración de interfaz.",
+                      )}
+                    </span>
+                  </label>
+                  {consentError && (
+                    <p
+                      id="auth-consent-error"
+                      role="alert"
+                      className="mt-2 text-xs text-destructive-foreground"
+                    >
+                      {consentError}
+                    </p>
+                  )}
+                </div>
+              )}
+              <SocialAuth
+                intent={mode}
+                consent={consent}
+                disabled={busy}
+                demo={!authAdapter && !onProviderSignIn}
+                onProviderSignIn={handleProviderSignIn}
+                onConsentRequired={() => void requireConsent()}
+                onComplete={() => {
+                  requestPending.current = true;
+                  form.resetField("password");
+                  setProviderComplete(true);
+                }}
+                onContinue={() =>
+                  router.push(
+                    `/${locale}/${mode === "sign-up" ? "onboarding" : "dashboard"}/`,
+                  )
+                }
+                continueLabel={
+                  mode === "sign-up"
+                    ? l(
+                        "Continue to onboarding",
+                        "Continuar a la configuración",
+                      )
+                    : l("Continue to workspace", "Continuar al espacio")
+                }
+              />
+              {!providerComplete && (
+                <div className="mt-6 flex items-center gap-3">
+                  <span className="h-px flex-1 bg-border" aria-hidden="true" />
+                  <span className="text-xs text-muted-foreground">
+                    {l("or continue with email", "o continuar con correo")}
+                  </span>
+                  <span className="h-px flex-1 bg-border" aria-hidden="true" />
+                </div>
+              )}
+            </>
+          )}
+          {requestError && (
+            <Alert
+              className="mt-5"
+              variant="destructive"
+              title={l("Could not continue", "No se pudo continuar")}
+            >
+              {requestError}
+            </Alert>
+          )}
           {complete ? (
             <div className="mt-7">
               <Alert
@@ -181,38 +418,25 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
                 )}
               >
                 {l(
-                  "This demo records the request locally. No email was sent.",
-                  "La demo registra la solicitud localmente. No se envió ningún correo.",
+                  "The recovery preview is complete. No email was sent.",
+                  "La vista previa de recuperación está completa. No se envió ningún correo.",
                 )}
               </Alert>
-              <a
-                href={publicPath(`/${locale}/auth/sign-in/`)}
+              <Link
+                href={`/${locale}/auth/sign-in/`}
                 className={
                   buttonVariants({ variant: "outline", size: "default" }) +
                   " mt-6 w-full"
                 }
               >
                 {l("Back to sign in", "Volver al inicio de sesión")}
-              </a>
+              </Link>
             </div>
-          ) : mode === "verify" ? (
+          ) : providerComplete ? null : mode === "verify" ? (
             <form
               className="mt-8 grid gap-5"
-              onSubmit={async (e) => {
-                e.preventDefault();
-                if (otp !== "123456") {
-                  setOtpError(
-                    l(
-                      "Use the demo code 123456.",
-                      "Usa el código de ejemplo 123456.",
-                    ),
-                  );
-                  return;
-                }
-                setBusy(true);
-                await new Promise((r) => setTimeout(r, 250));
-                router.push(`/${locale}/dashboard/`);
-              }}
+              aria-busy={busy}
+              onSubmit={verifyOtp}
             >
               <InputOTP
                 value={otp}
@@ -222,6 +446,7 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
                 }}
                 label={l("Verification code", "Código de verificación")}
                 invalid={!!otpError}
+                disabled={busy}
               />
               {otpError && (
                 <p role="alert" className="text-xs text-destructive-foreground">
@@ -235,6 +460,7 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
                 type="button"
                 variant="ghost"
                 size="sm"
+                disabled={busy}
                 onClick={() =>
                   toast(
                     l(
@@ -248,7 +474,11 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
               </Button>
             </form>
           ) : (
-            <form onSubmit={submit} className="mt-8 grid gap-5">
+            <form
+              onSubmit={submit}
+              aria-busy={busy}
+              className="mt-6 grid gap-5"
+            >
               {mode === "sign-up" && (
                 <Field
                   label={l("Full name", "Nombre completo")}
@@ -258,6 +488,7 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
                     {...form.register("name")}
                     autoComplete="name"
                     placeholder="Alex Morgan"
+                    disabled={busy}
                   />
                 </Field>
               )}
@@ -270,6 +501,7 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
                   type="email"
                   autoComplete="email"
                   placeholder="you@company.com"
+                  disabled={busy}
                 />
               </Field>
               {(mode === "sign-in" || mode === "sign-up") && (
@@ -294,6 +526,7 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
                       }
                       placeholder="••••••••"
                       className="pr-10"
+                      disabled={busy}
                     />
                     <button
                       type="button"
@@ -303,6 +536,7 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
                           : l("Show password", "Mostrar contraseña")
                       }
                       onClick={() => setVisible(!visible)}
+                      disabled={busy}
                       className="absolute top-3 right-3 text-muted-foreground"
                     >
                       {visible ? (
@@ -314,45 +548,13 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
                   </div>
                 </Field>
               )}
-              {mode === "sign-up" && (
-                <div>
-                  <label className="flex items-start gap-2.5 text-[13px] leading-relaxed text-muted-foreground">
-                    <Checkbox
-                      className="mt-0.5"
-                      checked={consent}
-                      onCheckedChange={(v) => {
-                        setConsent(v);
-                        setConsentError("");
-                      }}
-                      aria-label={l(
-                        "Accept demo terms",
-                        "Aceptar términos de demostración",
-                      )}
-                    />
-                    <span>
-                      {l(
-                        "I understand this is a frontend demo.",
-                        "Entiendo que esta es una demostración de interfaz.",
-                      )}
-                    </span>
-                  </label>
-                  {consentError && (
-                    <p
-                      role="alert"
-                      className="mt-2 text-xs text-destructive-foreground"
-                    >
-                      {consentError}
-                    </p>
-                  )}
-                </div>
-              )}
               {mode === "sign-in" && (
-                <a
-                  href={publicPath(`/${locale}/auth/reset-password/`)}
+                <Link
+                  href={`/${locale}/auth/reset-password/`}
                   className="justify-self-end text-sm text-primary underline underline-offset-4"
                 >
                   {l("Forgot password?", "¿Olvidaste tu contraseña?")}
-                </a>
+                </Link>
               )}
               <Button
                 type="submit"
@@ -372,27 +574,59 @@ export function AuthTemplate({ mode }: { mode: AuthMode }) {
               {mode === "sign-in"
                 ? l("New around here? ", "¿Eres nuevo aquí? ")
                 : l("Already have an account? ", "¿Ya tienes una cuenta? ")}
-              <a
+              <Link
                 className="font-semibold text-primary underline underline-offset-4"
-                href={publicPath(
-                  `/${locale}/auth/${mode === "sign-in" ? "sign-up" : "sign-in"}/`,
-                )}
+                href={`/${locale}/auth/${mode === "sign-in" ? "sign-up" : "sign-in"}/`}
               >
                 {mode === "sign-in"
                   ? l("Create an account", "Crear una cuenta")
                   : l("Sign in", "Iniciar sesión")}
-              </a>
+              </Link>
             </p>
           )}
           <p className="mt-8 rounded-xl border border-border bg-background/60 p-3 text-xs leading-6 text-muted-foreground">
             {l(
-              "Frontend demo · No real account or password is stored. Your email is only used as local demo state.",
-              "Demo de interfaz · No se crea una cuenta real ni se guarda la contraseña. El correo solo se usa como estado local.",
+              "Frontend demo · Email, OTP and the built-in social buttons use local preview data. No password or token is stored; no provider account is connected.",
+              "Demo de interfaz · El correo, OTP y los botones sociales incluidos usan datos locales de ejemplo. No se guarda ninguna contraseña ni token; no se conecta una cuenta del proveedor.",
             )}
           </p>
+          <nav
+            aria-label={l(
+              "Authentication screens",
+              "Pantallas de autenticación",
+            )}
+            className="mt-5 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs"
+          >
+            {(
+              [
+                ["sign-in", "Sign in", "Iniciar sesión"],
+                ["sign-up", "Sign up", "Crear cuenta"],
+                ["reset-password", "Recovery", "Recuperar acceso"],
+                ["verify", "Verify code", "Verificar código"],
+              ] as const
+            ).map(([path, en, es]) => (
+              <Link
+                key={path}
+                href={`/${locale}/auth/${path}/`}
+                aria-current={path === mode ? "page" : undefined}
+                className="rounded px-1 py-1 text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline focus-visible:outline-2 focus-visible:outline-ring aria-[current=page]:text-primary"
+              >
+                {l(en, es)}
+              </Link>
+            ))}
+          </nav>
+          <Link
+            href={`/${locale}/dashboard/`}
+            className={
+              buttonVariants({ variant: "ghost", size: "sm" }) + " mt-4 w-full"
+            }
+          >
+            <ArrowLeft className="size-3.5" aria-hidden="true" />
+            {l("Explore the demo workspace", "Explorar el espacio de demo")}
+          </Link>
         </div>
         <p className="text-xs text-muted-foreground">© 2026 Aureform UI</p>
-      </div>
+      </main>
       <aside className="relative isolate hidden min-w-0 overflow-hidden border-l border-border bg-background p-9 lg:flex lg:flex-col lg:justify-between lg:gap-10 xl:p-14">
         <div
           aria-hidden="true"

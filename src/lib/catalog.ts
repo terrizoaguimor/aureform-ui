@@ -12,7 +12,7 @@ export type KitRoute = {
   en: string;
   es: string;
   group: ModuleKind;
-  delivery: "1.0" | "1.1" | "1.2" | "1.3";
+  delivery: "1.0" | "1.1" | "1.2" | "1.3" | "1.4";
 };
 export const routes: KitRoute[] = [
   {
@@ -146,28 +146,28 @@ export const routes: KitRoute[] = [
     en: "Products",
     es: "Productos",
     group: "data",
-    delivery: "1.1",
+    delivery: "1.4",
   },
   {
     path: "orders",
     en: "Orders",
     es: "Pedidos",
     group: "data",
-    delivery: "1.1",
+    delivery: "1.4",
   },
   {
     path: "invoices",
     en: "Invoices",
     es: "Facturas",
     group: "data",
-    delivery: "1.1",
+    delivery: "1.4",
   },
   {
     path: "invoice",
     en: "Invoice detail",
     es: "Detalle de factura",
     group: "application",
-    delivery: "1.1",
+    delivery: "1.4",
   },
   {
     path: "transactions",
@@ -244,7 +244,7 @@ export const routes: KitRoute[] = [
     en: "Maps",
     es: "Mapas",
     group: "application",
-    delivery: "1.2",
+    delivery: "1.4",
   },
   {
     path: "logistics",
@@ -293,7 +293,7 @@ export const routes: KitRoute[] = [
     en: "Billing",
     es: "Facturación",
     group: "settings",
-    delivery: "1.0",
+    delivery: "1.4",
   },
   {
     path: "settings/api-keys",
@@ -349,7 +349,7 @@ export const routes: KitRoute[] = [
     en: "Blocks",
     es: "Bloques",
     group: "catalog",
-    delivery: "1.0",
+    delivery: "1.4",
   },
   {
     path: "templates",
@@ -433,28 +433,28 @@ export const routes: KitRoute[] = [
     en: "Sign in",
     es: "Iniciar sesión",
     group: "auth",
-    delivery: "1.0",
+    delivery: "1.4",
   },
   {
     path: "auth/sign-up",
     en: "Create account",
     es: "Crear cuenta",
     group: "auth",
-    delivery: "1.0",
+    delivery: "1.4",
   },
   {
     path: "auth/reset-password",
     en: "Reset password",
     es: "Restablecer contraseña",
     group: "auth",
-    delivery: "1.0",
+    delivery: "1.4",
   },
   {
     path: "auth/verify",
     en: "Verify code",
     es: "Verificar código",
     group: "auth",
-    delivery: "1.0",
+    delivery: "1.4",
   },
   {
     path: "status/not-found",
@@ -498,7 +498,7 @@ export const dashboardPaths = routes.filter(
 export const figmaUrl = "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N";
 export const githubUrl = "https://github.com/terrizoaguimor/aureform-ui";
 export const demoUrl = "https://terrizoaguimor.github.io/aureform-ui";
-export const kitVersion = "1.3.0";
+export const kitVersion = "1.4.0";
 export const componentFamilies = [
   "Button",
   "ButtonGroup",

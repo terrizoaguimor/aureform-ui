@@ -8,13 +8,19 @@ import {
 } from "@/components/blocks/dashboard-shell";
 import { LandingTemplate } from "@/components/templates/landing";
 import { AppearanceStudio } from "@/components/templates/appearance-studio";
-import { ThemesTemplate, EffectsTemplate } from "@/components/templates/appearance-gallery";
+import {
+  ThemesTemplate,
+  EffectsTemplate,
+} from "@/components/templates/appearance-gallery";
 import { DashboardTemplate } from "@/components/templates/dashboard";
 import { DataManager } from "@/components/templates/data-manager";
 import { AIWorkspace } from "@/components/templates/ai-workspace";
 import { SettingsTemplate } from "@/components/templates/settings";
 import { AuthTemplate } from "@/components/templates/auth";
-import { OnboardingOperationsTemplate, CustomerRecordOperationsTemplate } from "@/components/templates/saas-operations";
+import {
+  OnboardingOperationsTemplate,
+  CustomerRecordOperationsTemplate,
+} from "@/components/templates/saas-operations";
 import { CustomerImportTemplate } from "@/components/templates/customer-import";
 import { WorkBoard } from "@/components/templates/work-board";
 import { CalendarTemplate } from "@/components/templates/calendar";
@@ -49,7 +55,22 @@ import {
   StatusTemplate,
 } from "@/components/templates/auxiliary";
 import type { Locale } from "@/i18n/messages";
-export function AppPage({ locale, path }: { locale: Locale; path: string }) {
+import type { CommerceAdapter } from "@/lib/commerce";
+import type { AuthAdapter, ProviderSignInHandler } from "@/lib/demo-auth";
+export type AppPageProps = {
+  locale: Locale;
+  path: string;
+  commerceAdapter?: CommerceAdapter;
+  authAdapter?: AuthAdapter;
+  onProviderSignIn?: ProviderSignInHandler;
+};
+export function AppPage({
+  locale,
+  path,
+  commerceAdapter,
+  authAdapter,
+  onProviderSignIn,
+}: AppPageProps) {
   const [layout, setLayout] = useState<ShellLayout>("sidebar");
   let content: React.ReactNode = null,
     standalone = false;
@@ -59,6 +80,8 @@ export function AppPage({ locale, path }: { locale: Locale; path: string }) {
   } else if (path.startsWith("auth/")) {
     content = (
       <AuthTemplate
+        authAdapter={authAdapter}
+        onProviderSignIn={onProviderSignIn}
         mode={
           path.split("/")[1] as
             "sign-in" | "sign-up" | "reset-password" | "verify"
@@ -95,7 +118,8 @@ export function AppPage({ locale, path }: { locale: Locale; path: string }) {
       />
     );
   else if (path === "onboarding") content = <OnboardingOperationsTemplate />;
-  else if (path === "customers/detail") content = <CustomerRecordOperationsTemplate />;
+  else if (path === "customers/detail")
+    content = <CustomerRecordOperationsTemplate />;
   else if (path === "imports") content = <CustomerImportTemplate />;
   else if (path.startsWith("settings/"))
     content = <SettingsTemplate section={path.split("/")[1] as "profile"} />;
@@ -134,7 +158,7 @@ export function AppPage({ locale, path }: { locale: Locale; path: string }) {
     standalone = true;
   }
   return (
-    <Providers locale={locale}>
+    <Providers locale={locale} commerceAdapter={commerceAdapter}>
       <MotionSystem key={`${locale}:${path}`} smoothScroll={!path}>
         {standalone ? (
           content

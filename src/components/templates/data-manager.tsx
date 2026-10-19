@@ -34,6 +34,8 @@ import { csv, downloadText } from "@/lib/utils";
 import { RowActions, DeleteDialog } from "@/components/blocks/record-actions";
 import { CustomerOperationsTemplate } from "@/components/templates/customer-operations";
 import { getProductAsset } from "@/demo/product-assets";
+import { ProductsManager } from "@/components/blocks/product-manager";
+import { CommerceWorkspace } from "@/components/blocks/commerce-workspace";
 export { DeleteDialog } from "@/components/blocks/record-actions";
 export function useTableLabels(): Partial<DataTableLabels> {
   const { l, common: t } = useLanguage();
@@ -79,11 +81,11 @@ function ProductThumbnail({ id }: { id: string }) {
   );
 }
 export function DataManager({ kind }: { kind: EntityKind }) {
-  return kind === "customers" ? (
-    <CustomerOperationsTemplate />
-  ) : (
-    <EntityManager kind={kind} />
-  );
+  if (kind === "customers") return <CustomerOperationsTemplate />;
+  if (kind === "products") return <ProductsManager />;
+  if (kind === "orders" || kind === "invoices")
+    return <CommerceWorkspace mode={kind} />;
+  return <EntityManager kind={kind} />;
 }
 function EntityManager({ kind }: { kind: Exclude<EntityKind, "customers"> }) {
   const { l, common: t, currency, date, locale } = useLanguage(),

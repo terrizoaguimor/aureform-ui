@@ -1,0 +1,985 @@
+{
+  "schemaVersion": 1,
+  "version": "1.4.0",
+  "recordedAt": "2026-10-19T23:41:23.039875+00:00",
+  "status": "passed-local-application-validation",
+  "scope": "Application source, local commerce/auth mocks, root-hosted suite flows and final subdirectory-hosted static export. Real service accounts and native Figma expansion are outside this run.",
+  "commands": {
+    "unit": {
+      "command": "pnpm test",
+      "startedAt": "2026-10-19T22:59:05.955687+00:00",
+      "durationSeconds": 2.356,
+      "status": "passed",
+      "exitCode": 0
+    },
+    "typecheck": {
+      "command": "pnpm typecheck",
+      "startedAt": "2026-10-19T23:14:45.115Z",
+      "durationSeconds": 1.847,
+      "status": "passed",
+      "exitCode": 0
+    },
+    "lint": {
+      "command": "pnpm lint",
+      "startedAt": "2026-10-19T23:14:45.117Z",
+      "durationSeconds": 9.888,
+      "status": "passed",
+      "exitCode": 0
+    }
+  },
+  "unit": {
+    "tests": 244,
+    "passed": 244,
+    "failed": 0,
+    "skipped": 0
+  },
+  "endToEndRoot": {
+    "command": "AUREFORM_BASE_URL=http://127.0.0.1:3014 pnpm test:e2e",
+    "status": "passed",
+    "stats": {
+      "startTime": "2026-10-19T23:00:23.010Z",
+      "duration": 158402.011,
+      "expected": 92,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "finalDelta": "After this full run, product photo/status markup and synced-button labels were adjusted for Axe. The final product flows and added catalog Axe assertions passed in the mounted application run below; unchanged legacy flows were not rerun. Documentation ZIP links were subsequently changed to canonical GitHub release assets; the final static export and independent archive consumer check cover those links."
+  },
+  "endToEndApplicationsMounted": {
+    "command": "AUREFORM_BASE_URL=http://127.0.0.1:3015/aureform-ui pnpm exec playwright test --project=applications-chromium",
+    "status": "passed",
+    "stats": {
+      "startTime": "2026-10-19T23:10:37.983Z",
+      "duration": 25354.291,
+      "expected": 18,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "basePath": "/aureform-ui",
+    "scope": "Six provider/locale sign-ins, sign-up consent, auth discovery, product price/inventory/images/crop/persistence, empty-image catalog and synced labels with Axe, role previews, workspace isolation, payment failure/retry/inventory/invoice, safe HTML export, plan/portal mock, Maps export and opted-in SDK failure, Spanish mobile reflow and dialog/catalog Axe."
+  },
+  "subdirectoryDemo": {
+    "status": "passed",
+    "finishedAt": "2026-10-19T23:11:47.809Z",
+    "scope": "All 69 views in EN/ES desktop dark; thirteen ES mobile light views; ten main-region Axe scans; three real browser behaviors",
+    "accessibility": [
+      {
+        "locale": "en",
+        "route": "dashboard",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "customers",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "products",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "invoices",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "orders",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "maps",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "settings/billing",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "media",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "docs/license",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "auth/sign-in",
+        "violations": [],
+        "incomplete": ["color-contrast"]
+      }
+    ],
+    "interactions": [
+      "Language switch retains the mounted route",
+      "Light theme persists after reload",
+      "Real browser image download preserves the exact WebP bytes"
+    ],
+    "pageErrors": [],
+    "failedResources": [],
+    "records": 153,
+    "desktopLocalizedViews": 138,
+    "mobileLightViews": 13,
+    "additionalBehaviorViews": 2,
+    "horizontalOverflows": 0
+  },
+  "staticExport": {
+    "status": "passed",
+    "basePath": "/aureform-ui",
+    "htmlPages": 142,
+    "localizedViews": 138,
+    "uniqueLocalDestinations": 232,
+    "failures": []
+  },
+  "examples": {
+    "status": "passed-pure-strict-typecheck",
+    "startedAt": "2026-10-19T22:46:12.548Z",
+    "completedAt": "2026-10-19T22:46:20.485Z",
+    "targetVersion": "1.4.0",
+    "sourceRoot": "/tmp/aureform-ui-1.4",
+    "dependencyTypes": "/tmp/aureform-ui-1.4/node_modules",
+    "families": 44,
+    "canonicalExampleFiles": 44,
+    "copiedSourcePayloads": 44,
+    "configuredSpecimenPayloads": 616,
+    "completeStudioPayloads": 28,
+    "byteIdenticalRecordEntries": 44,
+    "pureStaticTypedRecord": true,
+    "profiles": [
+      {
+        "id": "aurora-light",
+        "config": {
+          "version": 1,
+          "theme": "light",
+          "palette": "aurora",
+          "colors": {
+            "primary": "#8B5CF6",
+            "secondary": "#22D3EE",
+            "tertiary": "#34D399"
+          },
+          "material": "flat",
+          "radius": 0,
+          "density": "comfortable",
+          "typography": "editorial",
+          "motion": "off",
+          "hover": "none",
+          "shadow": 0,
+          "border": 0,
+          "gradient": {
+            "kind": "linear",
+            "angle": 0,
+            "intensity": 0,
+            "stops": [
+              {
+                "color": "#8B5CF6",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "none",
+            "speed": 0,
+            "scale": 0.25,
+            "intensity": 0,
+            "paused": true
+          }
+        }
+      },
+      {
+        "id": "aurora-dark",
+        "config": {
+          "version": 1,
+          "theme": "dark",
+          "palette": "aurora",
+          "colors": {
+            "primary": "#8B5CF6",
+            "secondary": "#22D3EE",
+            "tertiary": "#34D399"
+          },
+          "material": "elevated",
+          "radius": 7,
+          "density": "compact",
+          "typography": "modern",
+          "motion": "gentle",
+          "hover": "lift",
+          "shadow": 0.27,
+          "border": 0.55,
+          "gradient": {
+            "kind": "radial",
+            "angle": 125,
+            "intensity": 0.34,
+            "stops": [
+              {
+                "color": "#8B5CF6",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE",
+                "position": 0.5
+              },
+              {
+                "color": "#34D399",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "aurora",
+            "speed": 0.17,
+            "scale": 1,
+            "intensity": 0.41,
+            "paused": false
+          }
+        }
+      },
+      {
+        "id": "violet-light",
+        "config": {
+          "version": 1,
+          "theme": "light",
+          "palette": "violet",
+          "colors": {
+            "primary": "#8B5CF6",
+            "secondary": "#E879F9",
+            "tertiary": "#6366F1"
+          },
+          "material": "glass",
+          "radius": 16,
+          "density": "comfortable",
+          "typography": "modern",
+          "motion": "expressive",
+          "hover": "glow",
+          "shadow": 0.65,
+          "border": 0.83,
+          "gradient": {
+            "kind": "mesh",
+            "angle": 231,
+            "intensity": 0.65,
+            "stops": [
+              {
+                "color": "#8B5CF6",
+                "position": 0
+              },
+              {
+                "color": "#E879F9",
+                "position": 0.3333333333333333
+              },
+              {
+                "color": "#6366F1",
+                "position": 0.6666666666666666
+              },
+              {
+                "color": "#8B5CF6",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "waves",
+            "speed": 0.2,
+            "scale": 2.75,
+            "intensity": 0.55,
+            "paused": false
+          }
+        }
+      },
+      {
+        "id": "violet-dark",
+        "config": {
+          "version": 1,
+          "theme": "dark",
+          "palette": "violet",
+          "colors": {
+            "primary": "#8B5CF6",
+            "secondary": "#E879F9",
+            "tertiary": "#6366F1"
+          },
+          "material": "gradient",
+          "radius": 24,
+          "density": "compact",
+          "typography": "editorial",
+          "motion": "off",
+          "hover": "spotlight",
+          "shadow": 1,
+          "border": 1,
+          "gradient": {
+            "kind": "linear",
+            "angle": 360,
+            "intensity": 1,
+            "stops": [
+              {
+                "color": "#8B5CF6",
+                "position": 0
+              },
+              {
+                "color": "#E879F9",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "iridescent",
+            "speed": 1,
+            "scale": 4,
+            "intensity": 1,
+            "paused": true
+          }
+        }
+      },
+      {
+        "id": "ocean-light",
+        "config": {
+          "version": 1,
+          "theme": "light",
+          "palette": "ocean",
+          "colors": {
+            "primary": "#3B82F6",
+            "secondary": "#06B6D4",
+            "tertiary": "#38BDF8"
+          },
+          "material": "flat",
+          "radius": 0,
+          "density": "comfortable",
+          "typography": "modern",
+          "motion": "gentle",
+          "hover": "tilt",
+          "shadow": 0,
+          "border": 0,
+          "gradient": {
+            "kind": "radial",
+            "angle": 0,
+            "intensity": 0,
+            "stops": [
+              {
+                "color": "#3B82F6",
+                "position": 0
+              },
+              {
+                "color": "#06B6D4",
+                "position": 0.5
+              },
+              {
+                "color": "#38BDF8",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "none",
+            "speed": 0,
+            "scale": 0.25,
+            "intensity": 0,
+            "paused": false
+          }
+        }
+      },
+      {
+        "id": "ocean-dark",
+        "config": {
+          "version": 1,
+          "theme": "dark",
+          "palette": "ocean",
+          "colors": {
+            "primary": "#3B82F6",
+            "secondary": "#06B6D4",
+            "tertiary": "#38BDF8"
+          },
+          "material": "elevated",
+          "radius": 7,
+          "density": "compact",
+          "typography": "modern",
+          "motion": "expressive",
+          "hover": "magnetic",
+          "shadow": 0.27,
+          "border": 0.55,
+          "gradient": {
+            "kind": "mesh",
+            "angle": 125,
+            "intensity": 0.34,
+            "stops": [
+              {
+                "color": "#3B82F6",
+                "position": 0
+              },
+              {
+                "color": "#06B6D4",
+                "position": 0.3333333333333333
+              },
+              {
+                "color": "#38BDF8",
+                "position": 0.6666666666666666
+              },
+              {
+                "color": "#3B82F6",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "aurora",
+            "speed": 0.17,
+            "scale": 1,
+            "intensity": 0.41,
+            "paused": false
+          }
+        }
+      },
+      {
+        "id": "mint-light",
+        "config": {
+          "version": 1,
+          "theme": "light",
+          "palette": "mint",
+          "colors": {
+            "primary": "#10B981",
+            "secondary": "#A3E635",
+            "tertiary": "#2DD4BF"
+          },
+          "material": "glass",
+          "radius": 16,
+          "density": "comfortable",
+          "typography": "editorial",
+          "motion": "off",
+          "hover": "none",
+          "shadow": 0.65,
+          "border": 0.83,
+          "gradient": {
+            "kind": "linear",
+            "angle": 231,
+            "intensity": 0.65,
+            "stops": [
+              {
+                "color": "#10B981",
+                "position": 0
+              },
+              {
+                "color": "#A3E635",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "waves",
+            "speed": 0.2,
+            "scale": 2.75,
+            "intensity": 0.55,
+            "paused": true
+          }
+        }
+      },
+      {
+        "id": "mint-dark",
+        "config": {
+          "version": 1,
+          "theme": "dark",
+          "palette": "mint",
+          "colors": {
+            "primary": "#10B981",
+            "secondary": "#A3E635",
+            "tertiary": "#2DD4BF"
+          },
+          "material": "gradient",
+          "radius": 24,
+          "density": "compact",
+          "typography": "modern",
+          "motion": "gentle",
+          "hover": "lift",
+          "shadow": 1,
+          "border": 1,
+          "gradient": {
+            "kind": "radial",
+            "angle": 360,
+            "intensity": 1,
+            "stops": [
+              {
+                "color": "#10B981",
+                "position": 0
+              },
+              {
+                "color": "#A3E635",
+                "position": 0.5
+              },
+              {
+                "color": "#2DD4BF",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "iridescent",
+            "speed": 1,
+            "scale": 4,
+            "intensity": 1,
+            "paused": false
+          }
+        }
+      },
+      {
+        "id": "ember-light",
+        "config": {
+          "version": 1,
+          "theme": "light",
+          "palette": "ember",
+          "colors": {
+            "primary": "#F97316",
+            "secondary": "#F43F5E",
+            "tertiary": "#FBBF24"
+          },
+          "material": "flat",
+          "radius": 0,
+          "density": "comfortable",
+          "typography": "modern",
+          "motion": "expressive",
+          "hover": "glow",
+          "shadow": 0,
+          "border": 0,
+          "gradient": {
+            "kind": "mesh",
+            "angle": 0,
+            "intensity": 0,
+            "stops": [
+              {
+                "color": "#F97316",
+                "position": 0
+              },
+              {
+                "color": "#F43F5E",
+                "position": 0.3333333333333333
+              },
+              {
+                "color": "#FBBF24",
+                "position": 0.6666666666666666
+              },
+              {
+                "color": "#F97316",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "none",
+            "speed": 0,
+            "scale": 0.25,
+            "intensity": 0,
+            "paused": false
+          }
+        }
+      },
+      {
+        "id": "ember-dark",
+        "config": {
+          "version": 1,
+          "theme": "dark",
+          "palette": "ember",
+          "colors": {
+            "primary": "#F97316",
+            "secondary": "#F43F5E",
+            "tertiary": "#FBBF24"
+          },
+          "material": "elevated",
+          "radius": 7,
+          "density": "compact",
+          "typography": "editorial",
+          "motion": "off",
+          "hover": "spotlight",
+          "shadow": 0.27,
+          "border": 0.55,
+          "gradient": {
+            "kind": "linear",
+            "angle": 125,
+            "intensity": 0.34,
+            "stops": [
+              {
+                "color": "#F97316",
+                "position": 0
+              },
+              {
+                "color": "#F43F5E",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "aurora",
+            "speed": 0.17,
+            "scale": 1,
+            "intensity": 0.41,
+            "paused": true
+          }
+        }
+      },
+      {
+        "id": "rose-light",
+        "config": {
+          "version": 1,
+          "theme": "light",
+          "palette": "rose",
+          "colors": {
+            "primary": "#EC4899",
+            "secondary": "#A78BFA",
+            "tertiary": "#FB7185"
+          },
+          "material": "glass",
+          "radius": 16,
+          "density": "comfortable",
+          "typography": "modern",
+          "motion": "gentle",
+          "hover": "tilt",
+          "shadow": 0.65,
+          "border": 0.83,
+          "gradient": {
+            "kind": "radial",
+            "angle": 231,
+            "intensity": 0.65,
+            "stops": [
+              {
+                "color": "#EC4899",
+                "position": 0
+              },
+              {
+                "color": "#A78BFA",
+                "position": 0.5
+              },
+              {
+                "color": "#FB7185",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "waves",
+            "speed": 0.2,
+            "scale": 2.75,
+            "intensity": 0.55,
+            "paused": false
+          }
+        }
+      },
+      {
+        "id": "rose-dark",
+        "config": {
+          "version": 1,
+          "theme": "dark",
+          "palette": "rose",
+          "colors": {
+            "primary": "#EC4899",
+            "secondary": "#A78BFA",
+            "tertiary": "#FB7185"
+          },
+          "material": "gradient",
+          "radius": 24,
+          "density": "compact",
+          "typography": "modern",
+          "motion": "expressive",
+          "hover": "magnetic",
+          "shadow": 1,
+          "border": 1,
+          "gradient": {
+            "kind": "mesh",
+            "angle": 360,
+            "intensity": 1,
+            "stops": [
+              {
+                "color": "#EC4899",
+                "position": 0
+              },
+              {
+                "color": "#A78BFA",
+                "position": 0.3333333333333333
+              },
+              {
+                "color": "#FB7185",
+                "position": 0.6666666666666666
+              },
+              {
+                "color": "#EC4899",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "iridescent",
+            "speed": 1,
+            "scale": 4,
+            "intensity": 1,
+            "paused": false
+          }
+        }
+      },
+      {
+        "id": "custom-light",
+        "config": {
+          "version": 1,
+          "theme": "light",
+          "palette": "rose",
+          "colors": {
+            "primary": "#D946EF",
+            "secondary": "#06B6D4",
+            "tertiary": "#F59E0B"
+          },
+          "material": "glass",
+          "radius": 9,
+          "density": "compact",
+          "typography": "editorial",
+          "motion": "expressive",
+          "hover": "tilt",
+          "shadow": 0.27,
+          "border": 0.83,
+          "gradient": {
+            "kind": "linear",
+            "angle": 271,
+            "intensity": 0.34,
+            "stops": [
+              {
+                "color": "#123456",
+                "position": 0
+              },
+              {
+                "color": "#56789A",
+                "position": 0.4
+              },
+              {
+                "color": "#ABCDEF",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "iridescent",
+            "speed": 0.17,
+            "scale": 2.75,
+            "intensity": 0.41,
+            "paused": true
+          }
+        }
+      },
+      {
+        "id": "custom-dark",
+        "config": {
+          "version": 1,
+          "theme": "dark",
+          "palette": "rose",
+          "colors": {
+            "primary": "#D946EF",
+            "secondary": "#06B6D4",
+            "tertiary": "#F59E0B"
+          },
+          "material": "gradient",
+          "radius": 9,
+          "density": "comfortable",
+          "typography": "editorial",
+          "motion": "expressive",
+          "hover": "magnetic",
+          "shadow": 0.27,
+          "border": 0.83,
+          "gradient": {
+            "kind": "linear",
+            "angle": 271,
+            "intensity": 0.34,
+            "stops": [
+              {
+                "color": "#123456",
+                "position": 0
+              },
+              {
+                "color": "#56789A",
+                "position": 0.4
+              },
+              {
+                "color": "#ABCDEF",
+                "position": 1
+              }
+            ]
+          },
+          "shader": {
+            "kind": "iridescent",
+            "speed": 0.17,
+            "scale": 2.75,
+            "intensity": 0.41,
+            "paused": true
+          }
+        }
+      }
+    ],
+    "compilation": {
+      "typescript": "5.9.3",
+      "strict": true,
+      "noEmit": true,
+      "payloads": 688,
+      "rootFiles": 733,
+      "diagnostics": 0,
+      "diagnosticCodes": [],
+      "canonicalSourceFiles": 65
+    },
+    "negativeControl": {
+      "missingModule": true,
+      "missingExport": true,
+      "invalidTypes": true,
+      "typescript": "5.9.3",
+      "strict": true,
+      "noEmit": true,
+      "payloads": 1,
+      "rootFiles": 1,
+      "diagnostics": 4,
+      "diagnosticCodes": [2305, 2307, 2322, 2322],
+      "canonicalSourceFiles": 3
+    },
+    "mediaAssetsVerified": [
+      "/assets/art/arc.svg",
+      "/assets/art/morrow.svg",
+      "/assets/art/studio.svg",
+      "/assets/aureform-motion.vtt",
+      "/assets/aureform-motion.webm",
+      "/assets/avatars/alex-morgan.svg"
+    ],
+    "browserRuntimeTested": false,
+    "releaseVerified": false,
+    "sourceSha256": {
+      "src/lib/appearance.ts": "467c38aac52085ec0b054b03be64f935c73e73990d17b0038241a02879a8ae53",
+      "src/components/templates/appearance-studio.tsx": "094266afb1f514701e2ac0167d9a3ba5f4bde79c163b7376e9e922cff07e4ce6",
+      "src/lib/component-example-sources.ts": "3332f68ec37697c39d1a71e85596470e1d8a98edb318575709ae342009a20d92"
+    },
+    "exampleSha256": {
+      "Button": "3eb6a070d87e681d00e6791b5d97c9bb1f7c679552150010b88df6d23be27e9c",
+      "ButtonGroup": "abd044c6e2717e4f6fbc1bc35adec8cb1872ca8c10a88ec5b6fec4264e64ffb5",
+      "TextLink": "7d732abaa850a419a222f313bfd9cd477864d8179b3f8b4f17716c63df51e3c7",
+      "Breadcrumb": "0e51f35b969cc95fd93d6c5ea42a4da1e17cf202c91b09f34478293476a95a50",
+      "Pagination": "f5caad0cf7d097301cb43cbb7542142353d58033d163b3caf67b4712fb12fc90",
+      "Tabs": "09dabd4e111acee92bea3aaa13a32996df2605a92d3ed7a6661ce6064a2943bc",
+      "Sidebar": "73856fbea51cfd94304ba7d69c269e04bf97e5dab258bd98526688592d30e941",
+      "Command": "f1d1dd5d808388ec1a0bf689ab8a92c9a3c5fba2d6753988fd56e3fd32a25829",
+      "Input": "5363ae227ae7517b0161e503ad55e1939d8f65b1ae8e37a0ceecdf52b77dbb83",
+      "Field": "fe6fea585e8a3c96b42ed6d3d4d2b42dea1f63b4b61353f11803f4a1cb16cfbe",
+      "Textarea": "0293a8a8f39f820462dabd3b4bc80b69984d352d5d47b58d34def481e4fd7840",
+      "Select": "d6278db010d7b229fc54c89cd2317e4a5a9ca4563b6ca47c3cdeb124762e1b19",
+      "Combobox": "33544083603491822c97b5497dfbbdc60ee0e2354d29dc2071bada1eae75a816",
+      "MultiSelect": "ecb0e1b0de4653ad7b6381e5805e42839b92ea634c8fe75ddb52c1110b07433c",
+      "Checkbox": "c7903be131449ef2ec6ab0b0d6c2d83c5b46f9cb2b5c038d8c37c39e9e2627ac",
+      "RadioGroup": "8e70f8df4ca195243e16b6d6dce95eec21c34e2c14533cd1c815f67be34fd179",
+      "Switch": "bbf7d6d6159abe0395d19fa22bd13db3ebc09389aafd99611c31897497396f84",
+      "Slider": "0622a8490c19c3fb3c3f8b46b088b7df9e18dda08a38611ff33a43a39896ade6",
+      "DatePicker": "dae0e949f802e5541d501f35aea0c08aca074dd832ec78e5ee9f410c04b070c1",
+      "DateRangePicker": "8005c7e97d058e1e47d8e626c430a1c41228ca186fdf227e50cfdbd9f249885d",
+      "InputOTP": "651b23a62164c39b5ccbf92873dd9c94474380e9a68dfbb45a37216d6f66a857",
+      "FileUpload": "56e36e4abe1064d4d965aa249036c0726a9c3ca81fb8d0b08de205c8d86f1335",
+      "Card": "4737d1a7b4b9a6e9d79af65053f1315e4141fa4515b93dbe2a60059fe56f682d",
+      "Avatar": "d9b3b3eee327f2b055f77806f4cb10069e98bdb7d756309c04a336be8c15e59d",
+      "Badge": "483d47bf97e1e2ba97e75a30f34234df5e77ee380d1fcf05d1158b0830e3aab0",
+      "Table": "90a3c5c7fc10591f6c4ab24869a3fe0c6ad1c4a6c9c944050517049976be1446",
+      "DataTable": "8f77a616f4034aebc86d2254c5c1ac6b8af437deae8d752e3fe885be7ac770cf",
+      "Chart": "4bf966e96031dfa8848c3a0d05089a1b85a480cbf59361b94ad86c2ed4964d18",
+      "Alert": "34781b2f5636df52550c3948a414d6bf8f465a57a17bfc1c4bc8e3d342417fff",
+      "Toast": "fe96215dc8e493dd31ebc47fc6e6c6c59a6584d75ea784ec75101528e689d24c",
+      "Tooltip": "7a6c79c4bd1fd5015e75ad08ed1d0dfcfbb255a7f5098b9e3edfe9250bc94674",
+      "Popover": "8a0cd3cee6de8e26ac97870e299a31d8b07e8c4ded16e208294601a4af82c3d2",
+      "Dialog": "79b971829af6a1bc4ab6d1700f8da2978e44f02e35c9816f0f0a6c728993cdc7",
+      "Drawer": "e0e505c1f01badf03823c89d66c9931310e95b6768a11c6f4913fbada534ea5f",
+      "DropdownMenu": "2e02864ceb8df46dfaa7517c266a96f925f8568d0e599f1d910977c3d976d987",
+      "Progress": "5dce4361f9df57311dc659864352adc1d5c7955d71fa4838e5186c3159818db0",
+      "Spinner": "35b386f39f1a5414ad4cec14d9816941ff249394106cf83678db94a4159bf028",
+      "Skeleton": "de3061a200f427d0fd8aa4f65c7de8127524b0ad7e9edea5c45267df79f34c7d",
+      "Empty": "b137528beccf3cd6a5afa76315b154830cdc510ba764000a5d735c001d86c4ec",
+      "Accordion": "039b6c97dd6c03dc24415f280e4a1fbf8f79a61d623c359fe53d429689ef201d",
+      "Carousel": "3bfa0dfe9f8d4bb5e7ecfbce61001046c3ff805cc640c6f70efa4eadfb1a557a",
+      "Gallery": "26d8ac8edf1562e01d6d519cf187c182af778d7a47011b43fe57696a48d18fac",
+      "VideoPlayer": "e82109536bf60be680e0ec89fe790d62f31ada6a52ec07ef7dfeddb5721a15e4",
+      "Ribbon": "898b627ab84108d5aefb72acdbb14365622e29e78c3ead222355023e1865effc"
+    }
+  },
+  "codeConnect": {
+    "status": "passed-local-smoke",
+    "checkedAt": "2026-10-19T23:37:48.590Z",
+    "sourceValidationVersion": "1.4.0",
+    "templateFiles": 92,
+    "totalTemplateEvaluations": 1646,
+    "uniqueTypedExamples": 556,
+    "diagnostics": 0,
+    "sourceSnapshotChecks": 103,
+    "templateSnapshotChecks": 92,
+    "runtime": "synthetic-figma-stub",
+    "liveFigmaRuntimeTested": false,
+    "cloudRegistered": false
+  },
+  "readmeScreenshots": {
+    "count": 13,
+    "manifest": "docs/images/screenshots.json",
+    "basePath": "/aureform-ui",
+    "method": "Playwright screenshots of the actual built application, encoded as WebP",
+    "sha256": "4c62b4009b51a230977c6e7afbd9e09674f8f05541fc5b92089cc331ede5fff0"
+  },
+  "sourceFingerprint": {
+    "method": "SHA-256 of sorted relative path, NUL, file SHA-256, LF for every file under src/tests/examples/tokens/bin and the listed package/lock/config inputs",
+    "files": 256,
+    "sha256": "7178d6f5cea5ec55502af68041a2dac2856f19033395793207192cc881dea01e",
+    "configInputs": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "next.config.ts",
+      "tsconfig.json",
+      "next-env.d.ts",
+      "postcss.config.mjs",
+      "eslint.config.mjs",
+      "playwright.config.ts",
+      ".env.example"
+    ]
+  },
+  "inputs": {
+    "package.json": "6dd7f335bc36bf640824fc0f76d54185a9a765c3b55581c087861ff3996b3218",
+    "pnpm-lock.yaml": "3c033ecde24cdc02a5bae638a5434a849604dddad33553bd237ccd0d6922347b",
+    "next.config.ts": "a0d872fe96a72467039be58e1e1a8b728d74b21abc174553782daeef6e0182ea",
+    "tsconfig.json": "999ce8c7e26146255636c062e9a776581625a2b7f5a02a2f9da432873ec36ab2",
+    "next-env.d.ts": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b",
+    "postcss.config.mjs": "b783348d5618047d0f37e12acd15c5a2c5f02809d8711e0764c9cea52750346c",
+    "eslint.config.mjs": "90dd7d8b5c8ed968561e220e45f750f7408f52c806fd7a81492c27e8ec05c363",
+    "playwright.config.ts": "7839aa77757ec190a22fc0e70192fe9421a9fab3077108c6b9308d1d6360e8c2",
+    ".env.example": "5ec994f66321fb024231140b066052ba3e6b9c7e7e838e2eed2baebf35b7edb8",
+    ".figma/code-connect-manifest.json": "9cb3b7185bd50b03d7579d658e8cb26efe6b5f7a34f0c716cae2e5d861484b4b",
+    "docs/images/screenshots.json": "4c62b4009b51a230977c6e7afbd9e09674f8f05541fc5b92089cc331ede5fff0"
+  },
+  "historicalNativeState": {
+    "file": ".figma/state.json",
+    "sha256": "917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03",
+    "sameAsFrozenImageCheckpoint": true,
+    "newNativeMasterClaimed": false
+  },
+  "evidenceDigests": {
+    "artifacts/release-1.4.0/e2e-root.json": "123ccf77eec7313d7a67d1906437bdbf454a5d61c0d97ae5d18015c7a60bc782",
+    "artifacts/release-1.4.0/e2e-applications-mounted.json": "9d9e3e24839d390b5ffa7152f7fc978862539daa4fe0a7aaf7090ae19ab2caee",
+    "artifacts/release-1.4.0/mounted-demo/report.json": "370a53e7aa3642f162c31ab3cfd999743637abe35acec2683384de461fa0d1d2",
+    "artifacts/examples-validation/validation-summary.json": "5a998a8757c3234758bd9665d993aacab357d7e55d96c475985a378a6fbf47fa",
+    ".figma/code-connect/validation/validation-summary.json": "6d723706cd089810e1d2553af21725228e41b7a095e0cb58344ae4a878133db4"
+  },
+  "limits": [
+    "Stripe transport uses simulated HTTP contracts; a consuming application supplies authenticated endpoints, restricted server keys, webhook verification, inventory reservation and idempotent fulfillment. No live charge, refund or account write was performed.",
+    "Google SDK loading was tested with inert doubles and an intercepted network failure. Real browser-key restrictions, billing and tile delivery were not tested against a Google project.",
+    "Google, GitHub and Microsoft auth defaults are local mocks. Consumer callbacks are not evidence of a verified identity or server session.",
+    "Axe retains incomplete color-contrast results for themed/gradient surfaces. Scoped automated scans and selected screenshots are not accessibility certification.",
+    "Native Figma reviews, original image provenance and historical evidence ZIPs retain their immutable 1.1/1.2/1.2.1 scopes; no new native master or all-route native review is claimed.",
+    "ESLint passed with the existing unused afRebuild warning in the local Figma rebuild plugin."
+  ],
+  "archiveExportFix": {
+    "sourceZipExcludesNestedDownloads": true,
+    "documentationDownloads": "Canonical versioned GitHub release assets from documentation, landing and pricing screens; historical image receipt is pinned to the public v1.3.0 source tag.",
+    "finalPagesDestinations": 232
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "aureform-ui",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "items": [
     {
       "name": "accordion",
@@ -267,6 +267,36 @@
       "url": "/r/ai-composer.json"
     },
     {
+      "name": "commerce-billing",
+      "type": "registry:block",
+      "title": "Commerce Billing",
+      "url": "/r/commerce-billing.json"
+    },
+    {
+      "name": "commerce-checkout",
+      "type": "registry:block",
+      "title": "Commerce Checkout",
+      "url": "/r/commerce-checkout.json"
+    },
+    {
+      "name": "commerce-invoice-view",
+      "type": "registry:block",
+      "title": "Commerce Invoice View",
+      "url": "/r/commerce-invoice-view.json"
+    },
+    {
+      "name": "commerce-order-editor",
+      "type": "registry:block",
+      "title": "Commerce Order Editor",
+      "url": "/r/commerce-order-editor.json"
+    },
+    {
+      "name": "commerce-workspace",
+      "type": "registry:block",
+      "title": "Commerce Workspace",
+      "url": "/r/commerce-workspace.json"
+    },
+    {
       "name": "customer-table",
       "type": "registry:block",
       "title": "Customer Table",
@@ -285,10 +315,22 @@
       "url": "/r/data-workbench.json"
     },
     {
+      "name": "google-map",
+      "type": "registry:block",
+      "title": "Google Map",
+      "url": "/r/google-map.json"
+    },
+    {
       "name": "import-wizard",
       "type": "registry:block",
       "title": "Import Wizard",
       "url": "/r/import-wizard.json"
+    },
+    {
+      "name": "maps-workspace",
+      "type": "registry:block",
+      "title": "Maps Workspace",
+      "url": "/r/maps-workspace.json"
     },
     {
       "name": "member-management",
@@ -321,6 +363,18 @@
       "url": "/r/plan-breakdown.json"
     },
     {
+      "name": "product-image-editor",
+      "type": "registry:block",
+      "title": "Product Image Editor",
+      "url": "/r/product-image-editor.json"
+    },
+    {
+      "name": "product-manager",
+      "type": "registry:block",
+      "title": "Product Manager",
+      "url": "/r/product-manager.json"
+    },
+    {
       "name": "record-actions",
       "type": "registry:block",
       "title": "Record Actions",
@@ -343,6 +397,12 @@
       "type": "registry:block",
       "title": "Route Map",
       "url": "/r/route-map.json"
+    },
+    {
+      "name": "social-auth",
+      "type": "registry:block",
+      "title": "Social Auth",
+      "url": "/r/social-auth.json"
     },
     {
       "name": "table-toolbar",
@@ -577,6 +637,12 @@
       "type": "registry:block",
       "title": "Workspace Provider",
       "url": "/r/workspace-provider.json"
+    },
+    {
+      "name": "commerce-provider",
+      "type": "registry:block",
+      "title": "Commerce Provider",
+      "url": "/r/commerce-provider.json"
     }
   ]
 }

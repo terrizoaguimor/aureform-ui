@@ -1,6 +1,6 @@
 {
   "name": "aureform-ui",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
   "type": "module",
   "description": "An open source Next.js UI kit with SaaS workflows, six palettes, an appearance studio and an editable Figma design system.",

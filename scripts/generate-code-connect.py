@@ -2,6 +2,7 @@ from pathlib import Path
 import hashlib
 import json
 import re
+from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGMA = ROOT / ".figma"
@@ -1092,7 +1093,7 @@ assert len({x["node"] for x in entries}) == len(entries)
 manifest = {
     "schemaVersion": 1,
     "version": VERSION,
-    "preparedOn": "2026-10-18",
+    "preparedOn": datetime.now(timezone.utc).date().isoformat(),
     "status": "local-unpublished",
     "format": "parserless-figma-ts",
     "fileKey": KEY,
@@ -1120,6 +1121,7 @@ manifest = {
     },
     "validation": {"status": "pending-local-smoke", "liveFigmaRuntimeTested": False, "cloudRegistered": False},
     "limitations": [
+        "The 1.4 application expansion is source-only. New commerce, maps and social-auth blocks have no claimed native Figma master, and retained native reviews are not recertified.",
         "Native presentation axes without matching source props are retained and explained in intentionalVisualOnly.",
         "Explicit local fixtures satisfy required source props when no native property key is recorded; fixtures are not extracted production data.",
         "DashboardShell does not forward the raw Content slot because that slot includes source-owned header chrome.",
@@ -1156,6 +1158,10 @@ snapshot_files = {
     "src/styles/effects.css", "scripts/lib/source-graph.mjs",
     "scripts/generate-tokens.mjs", "scripts/lib/appearance-tokens.mjs",
     "tokens/aureform.tokens.json", "bin/aureform.mjs",
+    "src/components/commerce-provider.tsx", "src/demo/commerce-data.ts",
+    "src/lib/commerce.ts", "src/lib/commerce-state.ts",
+    "src/lib/stripe-commerce-adapter.ts", "src/lib/demo-auth.ts",
+    "src/lib/google-maps.ts", "src/lib/product-images.ts",
     *[str(file.relative_to(ROOT)) for file in (ROOT / "src/components/effects").iterdir() if file.suffix in [".ts", ".tsx", ".css"]],
 }
 manifest["sourceSnapshots"] = [

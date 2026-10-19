@@ -4,6 +4,8 @@
 
 La publicación bajo Apache 2.0 es **Aureform UI 1.3.0**. El kit completo está disponible como código editable: componentes, bloques, plantillas, configuración de apariencia, tokens, ejemplos, documentación y activos originales.
 
+**1.4.0** amplía Mapas, el editor de productos e imágenes, pedidos, facturas, facturación y autenticación social mock. Consulta la [guía de aplicaciones](application-integrations.es.md); los nuevos bloques se entregan en código y los checkpoints nativos de Figma mantienen su alcance histórico.
+
 ## Licencia y atribución
 
 Los archivos originales de Aureform usan [Apache License 2.0](../LICENSE). Conserva los archivos de licencia y atribución que correspondan al redistribuir el proyecto. [NOTICE](../NOTICE) y [THIRD_PARTY_NOTICES](../THIRD_PARTY_NOTICES.md) identifican atribuciones e información de licencias de terceros.
@@ -19,7 +21,7 @@ Las dependencias y fuentes incluidas mantienen sus propias licencias. La apertur
 | Añadir código con la CLI local               | Necesitas componentes o flujos concretos y sus dependencias transitivas.                                 |
 | Instalar una entrada del registry con shadcn | Ya tienes un proyecto Next.js / Tailwind 4 configurado y quieres copiar código mediante una URL pública. |
 
-El kit tiene **69 vistas: 68 rutas de la suite y una landing**, **44 familias de componentes** y **96 entradas de registry**. Puedes usar un componente sin adoptar todas las pantallas.
+El kit tiene **69 vistas: 68 rutas de la suite y una landing**, **44 familias de componentes** y **107 entradas de registry**. Puedes usar un componente sin adoptar todas las pantallas.
 
 ### Ejecutar la suite
 
@@ -115,4 +117,4 @@ La colección contiene 16 retratos ficticios, dos avatares de organizaciones, oc
 
 [CONTRIBUTING](../CONTRIBUTING.md) explica las verificaciones de tipos, lint, tests, ejemplos, build y navegador. `pnpm verify:public` verifica el código distribuible; `pnpm verify:pages` verifica la exportación de Pages con la configuración indicada en la guía de despliegue.
 
-Los registros de diseño y QA conservan su versión y alcance originales. En particular, el checkpoint **1.2.1** de las imágenes permanece como procedencia histórica dentro de la publicación abierta **1.3.0**. Esos registros no certifican una aplicación consumidora, una contribución nueva ni una exportación nativa.
+Las verificaciones actuales están en el [registro de runtime 1.4](qa-runtime-1.4.0.json) y el [alcance de la versión](release-checklist-1.4.0.md). Los registros de diseño y QA conservan su versión y alcance originales. En particular, el checkpoint **1.2.1** de las imágenes permanece como procedencia histórica dentro de la publicación abierta **1.3.0**. Esos registros no certifican una aplicación consumidora, una contribución nueva ni una exportación nativa.

@@ -26,6 +26,8 @@ A native `.fig` download is **not included**. The available connector does not e
 
 The Code Connect files are **local and unpublished**. Their source is in [`.figma/code-connect`](../.figma/code-connect); publishing this repository does not register them in Figma or create a live Dev Mode connection. Imported or rebuilt components receive new IDs and need their own mappings.
 
+The [1.4 application expansion](../docs/application-integrations.md) adds source blocks and actual browser screenshots. It retains these native Figma checkpoints; the new commerce, product editor, maps and social-auth blocks have no new native master or native review claimed.
+
 Refresh the derived indexes and the download from a complete checkout:
 
 ```bash

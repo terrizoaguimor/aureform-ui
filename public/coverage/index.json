@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "1.3.0",
+  "version": "1.4.0",
   "status": "source-handoff-retained-baseline-and-current-image-review",
   "sourceOfTruth": [
     "src/lib/catalog.ts",
@@ -26,11 +26,11 @@
     "views": 69,
     "componentFamilies": 44,
     "completeExamples": 44,
-    "blockFiles": 16,
-    "blockExports": 18,
+    "blockFiles": 26,
+    "blockExports": 36,
     "shellLayouts": 6,
     "chartFamilies": 13,
-    "registryItems": 96,
+    "registryItems": 107,
     "codeConnectTemplates": 92,
     "mappedNativeViews": 69,
     "pendingNativeViews": 0,
@@ -752,9 +752,9 @@
     }
   },
   "delivery": {
-    "version": "1.3.0",
-    "receipt": "public/downloads/verification-1.3.0.json",
-    "status": "passed-local-release-validation",
+    "version": "1.4.0",
+    "receipt": "public/downloads/verification-1.4.0.json",
+    "status": "passed-local-application-validation",
     "checksums": "public/downloads/checksums.json",
     "checksumsMatchVersion": true,
     "historical": [
@@ -964,12 +964,30 @@
     "pendingRoutes": [],
     "pendingBlocks": [],
     "sourceOnlyBlocks": [
+      "CommerceBilling",
+      "CommerceCheckout",
+      "CommerceStatusBadge",
+      "CommerceTotals",
+      "CommerceProductThumbnail",
+      "CommerceInvoiceView",
+      "CommerceInvoiceTable",
+      "CommerceInvoiceEditor",
+      "CommerceOrderEditor",
+      "CommerceOrderDetail",
+      "CommerceWorkspace",
+      "GoogleMap",
+      "MapsWorkspace",
+      "ProductImageEditor",
+      "ProductImageThumbnail",
+      "ProductsManager",
+      "SocialAuth",
+      "SocialProviderLogo",
       "TableToolbar"
     ],
     "pendingReusableMappings": [],
     "codeConnectValidation": "passed-local-smoke",
-    "codeConnectCheckpointVersion": "1.1.0",
-    "codeConnectSourceValidationVersion": "1.3.0",
+    "codeConnectCheckpointVersion": "1.4.0",
+    "codeConnectSourceValidationVersion": "1.4.0",
     "codeConnectSourceValidationCurrent": true,
     "codeConnectCloudRequired": false,
     "newCodeConnectTemplatesRequired": false,
@@ -1732,7 +1750,7 @@
       "en": "Products",
       "es": "Productos",
       "group": "data",
-      "delivery": "1.1",
+      "delivery": "1.4",
       "source": {
         "component": "DataManager",
         "file": "src/components/templates/data-manager.tsx"
@@ -1753,7 +1771,7 @@
       "en": "Orders",
       "es": "Pedidos",
       "group": "data",
-      "delivery": "1.1",
+      "delivery": "1.4",
       "source": {
         "component": "DataManager",
         "file": "src/components/templates/data-manager.tsx"
@@ -1774,7 +1792,7 @@
       "en": "Invoices",
       "es": "Facturas",
       "group": "data",
-      "delivery": "1.1",
+      "delivery": "1.4",
       "source": {
         "component": "DataManager",
         "file": "src/components/templates/data-manager.tsx"
@@ -1795,7 +1813,7 @@
       "en": "Invoice detail",
       "es": "Detalle de factura",
       "group": "application",
-      "delivery": "1.1",
+      "delivery": "1.4",
       "source": {
         "component": "InvoiceTemplate",
         "file": "src/components/templates/map-invoice.tsx"
@@ -2026,7 +2044,7 @@
       "en": "Maps",
       "es": "Mapas",
       "group": "application",
-      "delivery": "1.2",
+      "delivery": "1.4",
       "source": {
         "component": "MapsTemplate",
         "file": "src/components/templates/map-invoice.tsx"
@@ -2182,7 +2200,7 @@
       "en": "Billing",
       "es": "Facturación",
       "group": "settings",
-      "delivery": "1.0",
+      "delivery": "1.4",
       "source": {
         "component": "SettingsTemplate",
         "file": "src/components/templates/settings.tsx"
@@ -2350,7 +2368,7 @@
       "en": "Blocks",
       "es": "Bloques",
       "group": "catalog",
-      "delivery": "1.0",
+      "delivery": "1.4",
       "source": {
         "component": "BlocksTemplate",
         "file": "src/components/templates/catalogs.tsx"
@@ -2602,7 +2620,7 @@
       "en": "Sign in",
       "es": "Iniciar sesión",
       "group": "auth",
-      "delivery": "1.0",
+      "delivery": "1.4",
       "source": {
         "component": "AuthTemplate",
         "file": "src/components/templates/auth.tsx"
@@ -2623,7 +2641,7 @@
       "en": "Create account",
       "es": "Crear cuenta",
       "group": "auth",
-      "delivery": "1.0",
+      "delivery": "1.4",
       "source": {
         "component": "AuthTemplate",
         "file": "src/components/templates/auth.tsx"
@@ -2644,7 +2662,7 @@
       "en": "Reset password",
       "es": "Restablecer contraseña",
       "group": "auth",
-      "delivery": "1.0",
+      "delivery": "1.4",
       "source": {
         "component": "AuthTemplate",
         "file": "src/components/templates/auth.tsx"
@@ -2665,7 +2683,7 @@
       "en": "Verify code",
       "es": "Verificar código",
       "group": "auth",
-      "delivery": "1.0",
+      "delivery": "1.4",
       "source": {
         "component": "AuthTemplate",
         "file": "src/components/templates/auth.tsx"
@@ -3760,6 +3778,127 @@
       "codeConnect": ".figma/code-connect/AIComposer.figma.ts"
     },
     {
+      "export": "CommerceBilling",
+      "source": "src/components/blocks/commerce-billing.tsx",
+      "registry": "commerce-billing",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceCheckout",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "registry": "commerce-checkout",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceStatusBadge",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "registry": "commerce-checkout",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceTotals",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "registry": "commerce-checkout",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceProductThumbnail",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "registry": "commerce-checkout",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceInvoiceView",
+      "source": "src/components/blocks/commerce-invoice-view.tsx",
+      "registry": "commerce-invoice-view",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceInvoiceTable",
+      "source": "src/components/blocks/commerce-invoice-view.tsx",
+      "registry": "commerce-invoice-view",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceInvoiceEditor",
+      "source": "src/components/blocks/commerce-invoice-view.tsx",
+      "registry": "commerce-invoice-view",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceOrderEditor",
+      "source": "src/components/blocks/commerce-order-editor.tsx",
+      "registry": "commerce-order-editor",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceOrderDetail",
+      "source": "src/components/blocks/commerce-order-editor.tsx",
+      "registry": "commerce-order-editor",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CommerceWorkspace",
+      "source": "src/components/blocks/commerce-workspace.tsx",
+      "registry": "commerce-workspace",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
       "export": "CustomerTable",
       "source": "src/components/blocks/customer-table.tsx",
       "registry": "customer-table",
@@ -3844,6 +3983,17 @@
       "codeConnect": null
     },
     {
+      "export": "GoogleMap",
+      "source": "src/components/blocks/google-map.tsx",
+      "registry": "google-map",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
       "export": "ImportWizard",
       "source": "src/components/blocks/import-wizard.tsx",
       "registry": "import-wizard",
@@ -3893,6 +4043,17 @@
             "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-3645"
           }
         ]
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "MapsWorkspace",
+      "source": "src/components/blocks/maps-workspace.tsx",
+      "registry": "maps-workspace",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
       },
       "codeConnect": null
     },
@@ -4041,6 +4202,39 @@
         "status": "mapped-native-id"
       },
       "codeConnect": ".figma/code-connect/PlanBreakdown.figma.ts"
+    },
+    {
+      "export": "ProductImageEditor",
+      "source": "src/components/blocks/product-image-editor.tsx",
+      "registry": "product-image-editor",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "ProductImageThumbnail",
+      "source": "src/components/blocks/product-image-editor.tsx",
+      "registry": "product-image-editor",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "ProductsManager",
+      "source": "src/components/blocks/product-manager.tsx",
+      "registry": "product-manager",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
     },
     {
       "export": "RowActions",
@@ -4208,6 +4402,28 @@
         "status": "mapped-native-id"
       },
       "codeConnect": ".figma/code-connect/RouteMap.figma.ts"
+    },
+    {
+      "export": "SocialAuth",
+      "source": "src/components/blocks/social-auth.tsx",
+      "registry": "social-auth",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "SocialProviderLogo",
+      "source": "src/components/blocks/social-auth.tsx",
+      "registry": "social-auth",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
     },
     {
       "export": "TableToolbar",
@@ -4715,6 +4931,41 @@
       "assets": 0
     },
     {
+      "name": "commerce-billing",
+      "type": "registry:block",
+      "file": "src/components/blocks/commerce-billing.tsx",
+      "sourceFiles": 23,
+      "assets": 0
+    },
+    {
+      "name": "commerce-checkout",
+      "type": "registry:block",
+      "file": "src/components/blocks/commerce-checkout.tsx",
+      "sourceFiles": 12,
+      "assets": 0
+    },
+    {
+      "name": "commerce-invoice-view",
+      "type": "registry:block",
+      "file": "src/components/blocks/commerce-invoice-view.tsx",
+      "sourceFiles": 22,
+      "assets": 0
+    },
+    {
+      "name": "commerce-order-editor",
+      "type": "registry:block",
+      "file": "src/components/blocks/commerce-order-editor.tsx",
+      "sourceFiles": 20,
+      "assets": 0
+    },
+    {
+      "name": "commerce-workspace",
+      "type": "registry:block",
+      "file": "src/components/blocks/commerce-workspace.tsx",
+      "sourceFiles": 41,
+      "assets": 8
+    },
+    {
       "name": "customer-table",
       "type": "registry:block",
       "file": "src/components/blocks/customer-table.tsx",
@@ -4725,8 +4976,8 @@
       "name": "dashboard-shell",
       "type": "registry:block",
       "file": "src/components/blocks/dashboard-shell.tsx",
-      "sourceFiles": 34,
-      "assets": 30
+      "sourceFiles": 42,
+      "assets": 38
     },
     {
       "name": "data-workbench",
@@ -4736,11 +4987,25 @@
       "assets": 0
     },
     {
+      "name": "google-map",
+      "type": "registry:block",
+      "file": "src/components/blocks/google-map.tsx",
+      "sourceFiles": 5,
+      "assets": 0
+    },
+    {
       "name": "import-wizard",
       "type": "registry:block",
       "file": "src/components/blocks/import-wizard.tsx",
       "sourceFiles": 12,
       "assets": 0
+    },
+    {
+      "name": "maps-workspace",
+      "type": "registry:block",
+      "file": "src/components/blocks/maps-workspace.tsx",
+      "sourceFiles": 41,
+      "assets": 26
     },
     {
       "name": "member-management",
@@ -4778,6 +5043,20 @@
       "assets": 0
     },
     {
+      "name": "product-image-editor",
+      "type": "registry:block",
+      "file": "src/components/blocks/product-image-editor.tsx",
+      "sourceFiles": 14,
+      "assets": 0
+    },
+    {
+      "name": "product-manager",
+      "type": "registry:block",
+      "file": "src/components/blocks/product-manager.tsx",
+      "sourceFiles": 33,
+      "assets": 8
+    },
+    {
       "name": "record-actions",
       "type": "registry:block",
       "file": "src/components/blocks/record-actions.tsx",
@@ -4802,7 +5081,14 @@
       "name": "route-map",
       "type": "registry:block",
       "file": "src/components/blocks/route-map.tsx",
-      "sourceFiles": 14,
+      "sourceFiles": 23,
+      "assets": 8
+    },
+    {
+      "name": "social-auth",
+      "type": "registry:block",
+      "file": "src/components/blocks/social-auth.tsx",
+      "sourceFiles": 8,
       "assets": 0
     },
     {
@@ -4844,42 +5130,42 @@
       "name": "auth",
       "type": "registry:block",
       "file": "src/components/templates/auth.tsx",
-      "sourceFiles": 30,
+      "sourceFiles": 31,
       "assets": 0
     },
     {
       "name": "auxiliary",
       "type": "registry:block",
       "file": "src/components/templates/auxiliary.tsx",
-      "sourceFiles": 24,
-      "assets": 0
+      "sourceFiles": 32,
+      "assets": 8
     },
     {
       "name": "calendar",
       "type": "registry:block",
       "file": "src/components/templates/calendar.tsx",
-      "sourceFiles": 56,
+      "sourceFiles": 71,
       "assets": 26
     },
     {
       "name": "catalogs",
       "type": "registry:block",
       "file": "src/components/templates/catalogs.tsx",
-      "sourceFiles": 52,
-      "assets": 30
+      "sourceFiles": 60,
+      "assets": 38
     },
     {
       "name": "communication",
       "type": "registry:block",
       "file": "src/components/templates/communication.tsx",
-      "sourceFiles": 56,
+      "sourceFiles": 71,
       "assets": 26
     },
     {
       "name": "components",
       "type": "registry:block",
       "file": "src/components/templates/components.tsx",
-      "sourceFiles": 88,
+      "sourceFiles": 102,
       "assets": 41
     },
     {
@@ -4914,7 +5200,7 @@
       "name": "data-manager",
       "type": "registry:block",
       "file": "src/components/templates/data-manager.tsx",
-      "sourceFiles": 54,
+      "sourceFiles": 69,
       "assets": 26
     },
     {
@@ -4928,14 +5214,14 @@
       "name": "files-support",
       "type": "registry:block",
       "file": "src/components/templates/files-support.tsx",
-      "sourceFiles": 60,
+      "sourceFiles": 75,
       "assets": 33
     },
     {
       "name": "forms",
       "type": "registry:block",
       "file": "src/components/templates/forms.tsx",
-      "sourceFiles": 64,
+      "sourceFiles": 79,
       "assets": 33
     },
     {
@@ -4949,8 +5235,8 @@
       "name": "map-invoice",
       "type": "registry:block",
       "file": "src/components/templates/map-invoice.tsx",
-      "sourceFiles": 30,
-      "assets": 18
+      "sourceFiles": 55,
+      "assets": 26
     },
     {
       "name": "media-studio",
@@ -4977,14 +5263,14 @@
       "name": "settings",
       "type": "registry:block",
       "file": "src/components/templates/settings.tsx",
-      "sourceFiles": 60,
+      "sourceFiles": 74,
       "assets": 26
     },
     {
       "name": "work-board",
       "type": "registry:block",
       "file": "src/components/templates/work-board.tsx",
-      "sourceFiles": 56,
+      "sourceFiles": 71,
       "assets": 26
     },
     {
@@ -5077,6 +5363,13 @@
       "file": "src/components/workspace-provider.tsx",
       "sourceFiles": 6,
       "assets": 0
+    },
+    {
+      "name": "commerce-provider",
+      "type": "registry:block",
+      "file": "src/components/commerce-provider.tsx",
+      "sourceFiles": 15,
+      "assets": 8
     }
   ],
   "reference": {

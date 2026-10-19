@@ -8,7 +8,7 @@ Un UI kit de Next.js para dashboards, espacios SaaS y herramientas internas, con
 
 ![Resumen SaaS de Aureform en modo oscuro, con navegación, métricas y gráficos](docs/images/aureform-overview-dark.webp)
 
-**69 vistas · 44 familias de componentes · 96 entradas de registry · 6 paletas · 13 tipos de gráficos · English / Español · Claro / Oscuro**
+**69 vistas · 44 familias de componentes · 107 entradas de registry · 6 paletas · 13 tipos de gráficos · English / Español · Claro / Oscuro**
 
 Construido con **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP y Lenis**. El código original de Aureform está disponible bajo [Apache 2.0](LICENSE).
 
@@ -27,6 +27,28 @@ Construido con **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP
 | ![Resumen de Aureform en modo claro](docs/images/aureform-overview-light.webp) | ![Estudio de apariencia con controles de paleta y materiales](docs/images/aureform-studio.webp)  |
 | **Gráficos**                                                                   | **Biblioteca de componentes**                                                                    |
 | ![Galería de gráficos de Aureform](docs/images/aureform-charts.webp)           | ![Galería de componentes con botones, campos y materiales](docs/images/aureform-components.webp) |
+
+## Aplicaciones ampliadas en 1.4
+
+Explora [Productos](https://terrizoaguimor.github.io/aureform-ui/es/products/), [Pedidos](https://terrizoaguimor.github.io/aureform-ui/es/orders/), [Facturas](https://terrizoaguimor.github.io/aureform-ui/es/invoices/), [Facturación](https://terrizoaguimor.github.io/aureform-ui/es/settings/billing/) y [Mapas](https://terrizoaguimor.github.io/aureform-ui/es/maps/).
+
+El editor de productos incluye vista previa y galería con carga, recorte, rotación, texto alternativo, imagen principal y orden. Los precios del catálogo alimentan los pedidos; un pago mock exitoso actualiza existencias y genera una factura. Facturación ofrece planes, historial y vista previa del portal. El adaptador tipado de Stripe conecta estas pantallas con **tu backend autenticado**.
+
+Mapas funciona con geometría local y admite Google Maps mediante una clave de navegador restringida. [Login](https://terrizoaguimor.github.io/aureform-ui/es/auth/sign-in/) y [registro](https://terrizoaguimor.github.io/aureform-ui/es/auth/sign-up/) muestran **botones mock de Google, GitHub y Microsoft**, con callbacks para tu proveedor. También están disponibles recuperación y verificación. La demo pública no realiza OAuth ni cobros reales.
+
+| Catálogo de productos                                                                                    | Acceso social                                                                               |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| ![Catálogo con imágenes, inventario y sincronización mock de Stripe](docs/images/aureform-products.webp) | ![Login con botones mock de Google, GitHub y Microsoft](docs/images/aureform-auth.webp)     |
+| **Facturación y planes**                                                                                 | **Workspace de mapas**                                                                      |
+| ![Suscripción, planes y vista previa del portal del cliente](docs/images/aureform-billing.webp)          | ![Rutas locales, filtros y conexión opcional a Google Maps](docs/images/aureform-maps.webp) |
+
+| Editor de imágenes de productos                                                                               | Pedidos y checkout                                                                                  |
+| ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![Editor de imágenes con recorte, texto alternativo y vista previa](docs/images/aureform-product-editor.webp) | ![Pedidos, estados de pago y artículos con sus precios de compra](docs/images/aureform-orders.webp) |
+
+[Contratos y ejemplos de integración →](docs/application-integrations.es.md)
+
+[Validación y alcance de la versión 1.4 →](docs/release-checklist-1.4.0.md)
 
 ## Empezar
 
@@ -87,7 +109,7 @@ pnpm dlx shadcn@4.22.0 add \
   https://terrizoaguimor.github.io/aureform-ui/r/button.json
 ```
 
-Explora el [registry de 96 entradas](https://terrizoaguimor.github.io/aureform-ui/r/registry.json). Algunos componentes y bloques requieren los estilos incluidos y los providers de idioma o apariencia; consulta sus ejemplos antes de integrarlos. [Guía del registry →](docs/registry-compatibility.md)
+Explora el [registry de 107 entradas](https://terrizoaguimor.github.io/aureform-ui/r/registry.json). Algunos componentes y bloques requieren los estilos incluidos y los providers de idioma o apariencia; consulta sus ejemplos antes de integrarlos. [Guía del registry →](docs/registry-compatibility.md)
 
 ## Un frontend que puedes conectar
 

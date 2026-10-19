@@ -4,6 +4,8 @@
 
 The Apache 2.0 launch is **Aureform UI 1.3.0**. It makes the complete kit available as editable source: components, blocks, templates, shared appearance configuration, tokens, examples, documentation and original assets.
 
+**1.4.0** expands Maps, product/image editing, orders, invoices, billing and social-auth mock templates. See the [application integration guide](application-integrations.md); new application blocks are source additions, with the native Figma checkpoints retained.
+
 ## License and attribution
 
 Aureform-authored files use [Apache License 2.0](../LICENSE). Retain the applicable license and attribution files when redistributing the project. [NOTICE](../NOTICE) and [THIRD_PARTY_NOTICES](../THIRD_PARTY_NOTICES.md) identify attribution and upstream license information.
@@ -19,7 +21,7 @@ Dependencies and bundled fonts retain their own licenses. Opening Aureform does 
 | Add selected source with the local CLI | You want particular components or workflows and their transitive dependencies.                                 |
 | Install a registry item with shadcn    | You already have a configured Next.js / Tailwind 4 host and want to copy selected source through a public URL. |
 
-The kit has **69 views: 68 suite routes and one landing**, **44 core component families** and **96 registry entries**. You do not need to adopt every screen to use a component.
+The kit has **69 views: 68 suite routes and one landing**, **44 core component families** and **107 registry entries**. You do not need to adopt every screen to use a component.
 
 ### Run the full suite
 
@@ -115,4 +117,4 @@ The collection contains 16 fictional portraits, two organization avatars, eight 
 
 Follow [CONTRIBUTING](../CONTRIBUTING.md) for type, lint, unit, example, build and browser checks. `pnpm verify:public` checks the distributable source; `pnpm verify:pages` checks the Pages export with the configuration described in the hosting guide.
 
-Versioned design and QA receipts retain their original scopes. In particular, the image collection's **1.2.1** checkpoint remains historical provenance within the **1.3.0** open-source release. Those records do not claim that a downstream application, new contribution or native export has been independently certified.
+Current application checks are in the [1.4 runtime record](qa-runtime-1.4.0.json) and [release scope](release-checklist-1.4.0.md). Versioned design and QA receipts retain their original scopes. In particular, the image collection's **1.2.1** checkpoint remains historical provenance within the **1.3.0** open-source release. Those records do not claim that a downstream application, new contribution or native export has been independently certified.

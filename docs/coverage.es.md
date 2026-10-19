@@ -1,8 +1,8 @@
-# Aureform UI 1.3.0 — cobertura de entrega
+# Aureform UI 1.4.0 — cobertura de entrega
 
 Generado desde catálogo y dispatcher reales, state actual, baseline nativo 1.2 conservado y ledger independiente de imágenes 1.2.1. [Datos completos](coverage.json).
 
-69 vistas (68 rutas de suite + landing) · 44 familias y ejemplos completos · 16 archivos / 18 exports de bloques · 6 layouts · 13 gráficos · 6 paletas · 6 efectos reutilizables · 96 elementos de registry · 92 templates locales de Code Connect.
+69 vistas (68 rutas de suite + landing) · 44 familias y ejemplos completos · 26 archivos / 36 exports de bloques · 6 layouts · 13 gráficos · 6 paletas · 6 efectos reutilizables · 107 elementos de registry · 92 templates locales de Code Connect.
 
 Source verificado por el catálogo, dispatcher y grafo de imports. 69 raíces con ID nativo; 0 rutas pendientes del owner. Estos conteos describen source e IDs. El [recibo runtime 1.2](qa-runtime-1.2.json) y sus [checks al freeze](release-checklist-1.2.md#recorded-verification-at-source-freeze) son baselines históricos: los resultados 184/74 y sus demás scopes no se reetiquetan como pruebas de 1.2.1. La [verificación 1.1](verification.es.md) mantiene su alcance histórico.
 
@@ -14,7 +14,7 @@ Prueba nativa SaaS 1.2 retenida: PASS, seis vistas / 12 raíces Light–Dark y 6
 
 Imágenes generadas 1.2.1: 32 recursos (18 avatares, 8 productos y 6 editoriales), con WebP optimizados y SVG que incorporan esos mismos bytes. [Manifest](../public/assets/generated-images.json) y [prompts completos](generated-images/catalog.json). Son imágenes de contenido; no son capturas de interfaz ni gráficos vectoriales editables. No requieren clave API para su uso.
 
-Checkpoint nativo de imágenes 1.2.1 conservado: PASS acotado al scope `32 native image asset components, explicitly matched existing photo/product/media slots, seven owner-reviewed scoped exports; inherited1.2 evidence remains immutable.`, ligado al state `917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03` y al manifest exacto. 7 PNG con bytes verificados; 32 recursos subidos/componentes, cero rasterizaciones de interfaz. [Ledger](../.figma/native-generated-images-1.2.1.json). Es evidencia histórica de la misma colección, no una revisión visual nueva de 1.3.0 ni de las 69 rutas.
+Checkpoint nativo de imágenes 1.2.1 conservado: PASS acotado al scope `32 native image asset components, explicitly matched existing photo/product/media slots, seven owner-reviewed scoped exports; inherited1.2 evidence remains immutable.`, ligado al state `917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03` y al manifest exacto. 7 PNG con bytes verificados; 32 recursos subidos/componentes, cero rasterizaciones de interfaz. [Ledger](../.figma/native-generated-images-1.2.1.json). Es evidencia histórica de la misma colección, no una revisión visual nueva de 1.4.0 ni de las 69 rutas.
 
 | Prueba nueva de imágenes | SHA256 |
 | --- | --- |
@@ -26,13 +26,13 @@ Checkpoint nativo de imágenes 1.2.1 conservado: PASS acotado al scope `32 nativ
 | `.figma/proofs/images-1.2.1/products-native.png` | `f842ab589d12dfdd0c3ef30f25c50e0b1766d3808d9d73baecd0fc82bedae784` |
 | `.figma/proofs/images-1.2.1/media-native-revised.png` | `494499d9a83762a38ae66bb20827451986e2f980cffdd2448183ea2667e58ec1` |
 
-Code Connect local: los 92 templates del checkpoint 1.1.0 se conservaron sin modificar y se comprobaron contra el source actual 1.3.0: 1646 evaluaciones, 556 ejemplos tipados y 0 diagnósticos. [Resumen de validación](../.figma/code-connect/validation/validation-summary.json). La prueba utiliza un runtime sintético local; no acredita ejecución en Figma ni publicación cloud.
+Code Connect local: los 92 templates del checkpoint 1.4.0 se conservaron sin modificar y se comprobaron contra el source actual 1.4.0: 1646 evaluaciones, 556 ejemplos tipados y 0 diagnósticos. [Resumen de validación](../.figma/code-connect/validation/validation-summary.json). La prueba utiliza un runtime sintético local; no acredita ejecución en Figma ni publicación cloud.
 
 Los nuevos bloques SaaS se asocian directamente por source/export e IDs del sidecar, aunque `codeConnect` sea null. No se exige cloud ni se generan templates nuevos: biblioteca sin publicar / alcance Professional. El checkpoint original de mappings 1.1 permanece archivado.
 
 La referencia TailAdmin se utiliza para inventariar categorías funcionales. Código, layouts, marca y recursos son originales. Las integraciones de backend se sustituyen mediante los adaptadores documentados.
 
-Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listadas se incluyen en la versión 1.3.0.
+Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listadas se incluyen en la versión 1.4.0.
 
 | Vista | Categoría original | Implementación | Figma editable |
 | --- | --- | --- | --- |
@@ -55,10 +55,10 @@ Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listada
 | crm | 1.1 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-24) |
 | pipeline | 1.1 | [WorkBoard](../src/components/templates/work-board.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-4387) |
 | ecommerce | 1.1 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-730) |
-| products | 1.1 | [DataManager](../src/components/templates/data-manager.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-2363) |
-| orders | 1.1 | [DataManager](../src/components/templates/data-manager.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-2816) |
-| invoices | 1.1 | [DataManager](../src/components/templates/data-manager.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-3207) |
-| invoice | 1.1 | [InvoiceTemplate](../src/components/templates/map-invoice.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6451) |
+| products | 1.4 | [DataManager](../src/components/templates/data-manager.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-2363) |
+| orders | 1.4 | [DataManager](../src/components/templates/data-manager.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-2816) |
+| invoices | 1.4 | [DataManager](../src/components/templates/data-manager.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-3207) |
+| invoice | 1.4 | [InvoiceTemplate](../src/components/templates/map-invoice.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6451) |
 | transactions | 1.1 | [DataManager](../src/components/templates/data-manager.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-3597) |
 | sales | 1.1 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1132) |
 | marketing | 1.1 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1521) |
@@ -69,14 +69,14 @@ Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listada
 | chat | 1.2 | [ChatTemplate](../src/components/templates/communication.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5003) |
 | files | 1.2 | [FilesTemplate](../src/components/templates/files-support.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5363) |
 | support | 1.2 | [SupportTemplate](../src/components/templates/files-support.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5707) |
-| maps | 1.2 | [MapsTemplate](../src/components/templates/map-invoice.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6076) |
+| maps | 1.4 | [MapsTemplate](../src/components/templates/map-invoice.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6076) |
 | logistics | 1.2 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1923) |
 | finance | 1.3 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-2310) |
 | stocks | 1.3 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-2702) |
 | settings/profile | 1.0 | [SettingsTemplate](../src/components/templates/settings.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-6454) |
 | settings/team | 1.0 | [SettingsTemplate](../src/components/templates/settings.tsx) | [Light](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-19625) / [Dark](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-19873) |
 | settings/preferences | 1.0 | [SettingsTemplate](../src/components/templates/settings.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7128) |
-| settings/billing | 1.0 | [SettingsTemplate](../src/components/templates/settings.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7437) |
+| settings/billing | 1.4 | [SettingsTemplate](../src/components/templates/settings.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7437) |
 | settings/api-keys | 1.0 | [SettingsTemplate](../src/components/templates/settings.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7753) |
 | settings/integrations | 1.0 | [SettingsTemplate](../src/components/templates/settings.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-8021) |
 | components | 1.0 | [ComponentsTemplate](../src/components/templates/components.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-2549) |
@@ -84,7 +84,7 @@ Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listada
 | charts | 1.3 | [ChartsTemplate](../src/components/templates/catalogs.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-2901) |
 | media | 1.3 | [MediaTemplate](../src/components/templates/media-studio.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3077) |
 | layouts | 1.3 | [LayoutsTemplate](../src/components/templates/catalogs.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3253) |
-| blocks | 1.0 | [BlocksTemplate](../src/components/templates/catalogs.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3429) |
+| blocks | 1.4 | [BlocksTemplate](../src/components/templates/catalogs.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3429) |
 | templates | 1.0 | [TemplatesTemplate](../src/components/templates/catalogs.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3605) |
 | docs | 1.0 | [DocsTemplate](../src/components/templates/docs.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-1108) |
 | docs/tokens | 1.0 | [DocsTemplate](../src/components/templates/docs.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-1451) |
@@ -96,10 +96,10 @@ Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listada
 | docs/roadmap | 1.0 | [DocsTemplate](../src/components/templates/docs.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-3151) |
 | pricing | 1.0 | [PricingTemplate](../src/components/templates/auxiliary.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=55-7541) |
 | faq | 1.0 | [FAQTemplate](../src/components/templates/auxiliary.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=55-7856) |
-| auth/sign-in | 1.0 | [AuthTemplate](../src/components/templates/auth.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7472) |
-| auth/sign-up | 1.0 | [AuthTemplate](../src/components/templates/auth.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7509) |
-| auth/reset-password | 1.0 | [AuthTemplate](../src/components/templates/auth.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7551) |
-| auth/verify | 1.0 | [AuthTemplate](../src/components/templates/auth.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7581) |
+| auth/sign-in | 1.4 | [AuthTemplate](../src/components/templates/auth.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7472) |
+| auth/sign-up | 1.4 | [AuthTemplate](../src/components/templates/auth.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7509) |
+| auth/reset-password | 1.4 | [AuthTemplate](../src/components/templates/auth.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7551) |
+| auth/verify | 1.4 | [AuthTemplate](../src/components/templates/auth.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7581) |
 | status/not-found | 1.3 | [StatusTemplate](../src/components/templates/auxiliary.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7622) |
 | status/error | 1.3 | [StatusTemplate](../src/components/templates/auxiliary.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7650) |
 | status/maintenance | 1.3 | [StatusTemplate](../src/components/templates/auxiliary.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7684) |
@@ -109,20 +109,38 @@ Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listada
 | Bloque de source | Archivo | Registry | Figma | Code Connect local |
 | --- | --- | --- | --- | --- |
 | AIComposer | [Fuente](../src/components/blocks/ai-composer.tsx) | `ai-composer` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-118) | [Template](../.figma/code-connect/AIComposer.figma.ts) |
+| CommerceBilling | [Fuente](../src/components/blocks/commerce-billing.tsx) | `commerce-billing` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceCheckout | [Fuente](../src/components/blocks/commerce-checkout.tsx) | `commerce-checkout` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceStatusBadge | [Fuente](../src/components/blocks/commerce-checkout.tsx) | `commerce-checkout` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceTotals | [Fuente](../src/components/blocks/commerce-checkout.tsx) | `commerce-checkout` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceProductThumbnail | [Fuente](../src/components/blocks/commerce-checkout.tsx) | `commerce-checkout` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceInvoiceView | [Fuente](../src/components/blocks/commerce-invoice-view.tsx) | `commerce-invoice-view` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceInvoiceTable | [Fuente](../src/components/blocks/commerce-invoice-view.tsx) | `commerce-invoice-view` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceInvoiceEditor | [Fuente](../src/components/blocks/commerce-invoice-view.tsx) | `commerce-invoice-view` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceOrderEditor | [Fuente](../src/components/blocks/commerce-order-editor.tsx) | `commerce-order-editor` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceOrderDetail | [Fuente](../src/components/blocks/commerce-order-editor.tsx) | `commerce-order-editor` | Helper de source | Sin template local; asociación directa si consta ID |
+| CommerceWorkspace | [Fuente](../src/components/blocks/commerce-workspace.tsx) | `commerce-workspace` | Helper de source | Sin template local; asociación directa si consta ID |
 | CustomerTable | [Fuente](../src/components/blocks/customer-table.tsx) | `customer-table` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-51) | [Template](../.figma/code-connect/CustomerTable.figma.ts) |
 | DashboardShell | [Fuente](../src/components/blocks/dashboard-shell.tsx) | `dashboard-shell` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=30-969) | [Template](../.figma/code-connect/DashboardShell.figma.ts) |
 | DataWorkbench | [Fuente](../src/components/blocks/data-workbench.tsx) | `data-workbench` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-1851) | Sin template local; asociación directa si consta ID |
+| GoogleMap | [Fuente](../src/components/blocks/google-map.tsx) | `google-map` | Helper de source | Sin template local; asociación directa si consta ID |
 | ImportWizard | [Fuente](../src/components/blocks/import-wizard.tsx) | `import-wizard` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-3645) | Sin template local; asociación directa si consta ID |
+| MapsWorkspace | [Fuente](../src/components/blocks/maps-workspace.tsx) | `maps-workspace` | Helper de source | Sin template local; asociación directa si consta ID |
 | MemberManagement | [Fuente](../src/components/blocks/member-management.tsx) | `member-management` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-2069) | Sin template local; asociación directa si consta ID |
 | MetricCard | [Fuente](../src/components/blocks/metric-card.tsx) | `metric-card` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-160) | [Template](../.figma/code-connect/MetricCard.figma.ts) |
 | OnboardingFlow | [Fuente](../src/components/blocks/onboarding-flow.tsx) | `onboarding-flow` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-1709) | Sin template local; asociación directa si consta ID |
 | PageHeading | [Fuente](../src/components/blocks/page-heading.tsx) | `page-heading` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=29-142) | [Template](../.figma/code-connect/PageHeading.figma.ts) |
 | PlanBreakdown | [Fuente](../src/components/blocks/plan-breakdown.tsx) | `plan-breakdown` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-33) | [Template](../.figma/code-connect/PlanBreakdown.figma.ts) |
+| ProductImageEditor | [Fuente](../src/components/blocks/product-image-editor.tsx) | `product-image-editor` | Helper de source | Sin template local; asociación directa si consta ID |
+| ProductImageThumbnail | [Fuente](../src/components/blocks/product-image-editor.tsx) | `product-image-editor` | Helper de source | Sin template local; asociación directa si consta ID |
+| ProductsManager | [Fuente](../src/components/blocks/product-manager.tsx) | `product-manager` | Helper de source | Sin template local; asociación directa si consta ID |
 | RowActions | [Fuente](../src/components/blocks/record-actions.tsx) | `record-actions` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=232-3940) | Sin template local; asociación directa si consta ID |
 | DeleteDialog | [Fuente](../src/components/blocks/record-actions.tsx) | `record-actions` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=232-3990) | Sin template local; asociación directa si consta ID |
 | GenericRecordDetail | [Fuente](../src/components/blocks/record-detail.tsx) | `record-detail` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-4135) | Sin template local; asociación directa si consta ID |
 | RevenuePanel | [Fuente](../src/components/blocks/revenue-panel.tsx) | `revenue-panel` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-2) | [Template](../.figma/code-connect/RevenuePanel.figma.ts) |
 | RouteMap | [Fuente](../src/components/blocks/route-map.tsx) | `route-map` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=31-1609) | [Template](../.figma/code-connect/RouteMap.figma.ts) |
+| SocialAuth | [Fuente](../src/components/blocks/social-auth.tsx) | `social-auth` | Helper de source | Sin template local; asociación directa si consta ID |
+| SocialProviderLogo | [Fuente](../src/components/blocks/social-auth.tsx) | `social-auth` | Helper de source | Sin template local; asociación directa si consta ID |
 | TableToolbar | [Fuente](../src/components/blocks/table-toolbar.tsx) | `table-toolbar` | Helper de source | Sin template local; asociación directa si consta ID |
 | WorkspaceStatus | [Fuente](../src/components/blocks/workspace-status.tsx) | `workspace-status` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-1615) | Sin template local; asociación directa si consta ID |
 | CustomerDataTable | [Fuente](../src/components/blocks/customer-table.tsx) | `customer-data-table` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=17-18) | [Template](../.figma/code-connect/CustomerDataTable.figma.ts) |
@@ -150,7 +168,7 @@ Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listada
 
 El registry se calcula desde el grafo de source e incluye `appearance-provider`, `appearance-controls`, `motion-system` y los seis efectos. Los presets y las exportaciones JSON/CSS/React están implementados en source; ver [uso de apariencia](appearance.md).
 
-Helpers de source sin master nativo independiente: TableToolbar. Se conserva cada export del registry y no se inventa un ID de Figma.
+Helpers de source sin master nativo independiente: CommerceBilling, CommerceCheckout, CommerceStatusBadge, CommerceTotals, CommerceProductThumbnail, CommerceInvoiceView, CommerceInvoiceTable, CommerceInvoiceEditor, CommerceOrderEditor, CommerceOrderDetail, CommerceWorkspace, GoogleMap, MapsWorkspace, ProductImageEditor, ProductImageThumbnail, ProductsManager, SocialAuth, SocialProviderLogo, TableToolbar. Se conserva cada export del registry y no se inventa un ID de Figma.
 
 | Familia | Código | Ejemplo completo | Figma |
 | --- | --- | --- | --- |
@@ -201,6 +219,6 @@ Helpers de source sin master nativo independiente: TableToolbar. Se conserva cad
 
 Code Connect permanece local y sin publicar. El audit compuesto y la prueba SaaS 1.2 se conservan como baseline; el ledger de imágenes 1.2.1 registra exclusivamente su scope nuevo. Las composiciones no implican equivalencia pixel-perfect ni comportamiento de navegador en Figma. Ver [recibo runtime histórico 1.2](qa-runtime-1.2.json), [validación histórica 1.1](verification.es.md), [handoff](figma-handoff.es.md) y [gates de entrega 1.2.1](release-checklist-1.2.1.md).
 
-Este inventario no certifica ZIP ni publicación. La entrega actual es 1.3.0; el owner registra la nueva QA y las identidades finales en `public/downloads/verification-1.3.0.json` después de ejecutar los checks acordados. Los archivos originales de 1.2, su checksum manifest y su recibo se conservan en `artifacts/release-1.2-original/`; el checkpoint público `public/downloads/verification-1.2.json` mantiene su pin histórico y no se compara con checksums nuevos. Los documentos incluidos se congelan antes de empaquetar.
+Este inventario no certifica ZIP ni publicación. La entrega actual es 1.4.0; el owner registra la nueva QA y las identidades finales en `public/downloads/verification-1.4.0.json` después de ejecutar los checks acordados. Los archivos originales de 1.2, su checksum manifest y su recibo se conservan en `artifacts/release-1.2-original/`; el checkpoint público `public/downloads/verification-1.2.json` mantiene su pin histórico y no se compara con checksums nuevos. Los documentos incluidos se congelan antes de empaquetar.
 
-La distribución 1.3.0 usa Apache 2.0 para el trabajo original: Source, Starter, muestra de componentes e imágenes. Source incluye los 32 originales en `design/images/masters/`, los recursos optimizados, las pruebas PNG, los tokens y los diseños disponibles. Se excluyen credenciales, configuración privada, dependencias instaladas y output/tmp locales. El límite de Source es 90 MiB y el de los otros ZIP es 25 MiB. Los tres ZIP de evidencia conservan sus bytes y scopes históricos: 23 PNG de 1.1, 22 de 1.2 y siete de 1.2.1. Ningún ZIP ni publicación queda certificado solo por generar este inventario. Ver [guía open source](open-source.es.md) y [checklist actual](release-checklist-1.3.0.md).
+La distribución 1.4.0 usa Apache 2.0 para el trabajo original: Source, Starter, muestra de componentes e imágenes. Source incluye los 32 originales en `design/images/masters/`, los recursos optimizados, las pruebas PNG, los tokens y los diseños disponibles. Se excluyen credenciales, configuración privada, dependencias instaladas y output/tmp locales. El límite de Source es 90 MiB y el de los otros ZIP es 25 MiB. Los tres ZIP de evidencia conservan sus bytes y scopes históricos: 23 PNG de 1.1, 22 de 1.2 y siete de 1.2.1. Ningún ZIP ni publicación queda certificado solo por generar este inventario. Ver [guía open source](open-source.es.md) y [checklist actual](release-checklist-1.3.0.md).

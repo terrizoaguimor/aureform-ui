@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "1.1.0",
-  "preparedOn": "2026-10-18",
+  "version": "1.4.0",
+  "preparedOn": "2026-10-19",
   "status": "local-unpublished",
   "format": "parserless-figma-ts",
   "fileKey": "lHp5p10yGb7lqXJDnAox0N",
@@ -30,22 +30,14 @@
     {
       "file": ".figma/code-connect/Chart.native-definitions-1.1.json",
       "sha256": "a761b0fd1c8772ee7a709b4ed91ddd71a8066dda63fdb5d1267f073603d24e67"
-    },
-    {
-      "file": ".figma/native-saas-library-1.2.json",
-      "sha256": "9cd3f2be340f4497f9cf4766bd31e72da83064b32e9bfffe1d2d70b400321202"
-    },
-    {
-      "file": ".figma/native-saas-source-associations-1.2.json",
-      "sha256": "f5fdfa858d463a280241a5eb40047e65f3b36c5f7ebb7e823766d2c9eece4ab5"
     }
   ],
   "coverage": {
     "coreFamilies": 44,
     "buttonExtensions": 2,
     "shapeExtensions": 1,
-    "sourceBlockExports": 20,
-    "sourceBlockFiles": 16,
+    "sourceBlockExports": 44,
+    "sourceBlockFiles": 26,
     "mappedBlockExports": 9,
     "nativeIcons": 22,
     "navigationFragments": 1,
@@ -57,9 +49,9 @@
   },
   "validation": {
     "status": "passed-local-smoke",
-    "checkedAt": "2026-10-19T19:06:40.445Z",
-    "templateCheckpointVersion": "1.1.0",
-    "sourceValidationVersion": "1.3.0",
+    "checkedAt": "2026-10-19T23:37:48.590Z",
+    "templateCheckpointVersion": "1.4.0",
+    "sourceValidationVersion": "1.4.0",
     "scope": "Existing local templates checked against the recorded current source snapshot",
     "runtime": "synthetic-figma-stub",
     "typescript": "5.9.3",
@@ -96,7 +88,7 @@
     "nativeChartBooleanDefinitions": 12,
     "nativeChartBooleanCases": 338,
     "starterSourceTypecheck": "passed-against-canonical-source",
-    "sourceSnapshotChecks": 100,
+    "sourceSnapshotChecks": 103,
     "templateSnapshotChecks": 92,
     "pendingNativeMappings": 0,
     "rawShellHeaderNotForwarded": true,
@@ -105,6 +97,7 @@
     "testScript": "scripts/verify-code-connect.cjs"
   },
   "limitations": [
+    "The 1.4 application expansion is source-only. New commerce, maps and social-auth blocks have no claimed native Figma master, and retained native reviews are not recertified.",
     "Native presentation axes without matching source props are retained and explained in intentionalVisualOnly.",
     "Explicit local fixtures satisfy required source props when no native property key is recorded; fixtures are not extracted production data.",
     "DashboardShell does not forward the raw Content slot because that slot includes source-owned header chrome.",
@@ -333,6 +326,86 @@
       "mapped": true
     },
     {
+      "export": "CommerceBilling",
+      "source": "src/components/blocks/commerce-billing.tsx",
+      "mapped": false
+    },
+    {
+      "export": "commerceErrorMessage",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "mapped": false
+    },
+    {
+      "export": "useCommerceTask",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "mapped": false
+    },
+    {
+      "export": "useCommerceFormatting",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceStatusBadge",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceTotals",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceProductThumbnail",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceCheckout",
+      "source": "src/components/blocks/commerce-checkout.tsx",
+      "mapped": false
+    },
+    {
+      "export": "parseCommerceAmount",
+      "source": "src/components/blocks/commerce-invoice-view.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceInvoiceEditor",
+      "source": "src/components/blocks/commerce-invoice-view.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceInvoiceTable",
+      "source": "src/components/blocks/commerce-invoice-view.tsx",
+      "mapped": false
+    },
+    {
+      "export": "commerceInvoiceDocument",
+      "source": "src/components/blocks/commerce-invoice-view.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceInvoiceView",
+      "source": "src/components/blocks/commerce-invoice-view.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceOrderEditor",
+      "source": "src/components/blocks/commerce-order-editor.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceOrderDetail",
+      "source": "src/components/blocks/commerce-order-editor.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommerceWorkspace",
+      "source": "src/components/blocks/commerce-workspace.tsx",
+      "mapped": false
+    },
+    {
       "export": "CustomerTable",
       "source": "src/components/blocks/customer-table.tsx",
       "mapped": true
@@ -350,20 +423,27 @@
     {
       "export": "DataWorkbench",
       "source": "src/components/blocks/data-workbench.tsx",
-      "mapped": false,
-      "nativeAssociation": "direct-native-source-map"
+      "mapped": false
+    },
+    {
+      "export": "GoogleMap",
+      "source": "src/components/blocks/google-map.tsx",
+      "mapped": false
     },
     {
       "export": "ImportWizard",
       "source": "src/components/blocks/import-wizard.tsx",
-      "mapped": false,
-      "nativeAssociation": "direct-native-source-map"
+      "mapped": false
+    },
+    {
+      "export": "MapsWorkspace",
+      "source": "src/components/blocks/maps-workspace.tsx",
+      "mapped": false
     },
     {
       "export": "MemberManagement",
       "source": "src/components/blocks/member-management.tsx",
-      "mapped": false,
-      "nativeAssociation": "direct-native-source-map"
+      "mapped": false
     },
     {
       "export": "MetricCard",
@@ -373,8 +453,7 @@
     {
       "export": "OnboardingFlow",
       "source": "src/components/blocks/onboarding-flow.tsx",
-      "mapped": false,
-      "nativeAssociation": "direct-native-source-map"
+      "mapped": false
     },
     {
       "export": "PageHeading",
@@ -387,22 +466,34 @@
       "mapped": true
     },
     {
+      "export": "ProductImageThumbnail",
+      "source": "src/components/blocks/product-image-editor.tsx",
+      "mapped": false
+    },
+    {
+      "export": "ProductImageEditor",
+      "source": "src/components/blocks/product-image-editor.tsx",
+      "mapped": false
+    },
+    {
+      "export": "ProductsManager",
+      "source": "src/components/blocks/product-manager.tsx",
+      "mapped": false
+    },
+    {
       "export": "RowActions",
       "source": "src/components/blocks/record-actions.tsx",
-      "mapped": false,
-      "nativeAssociation": "direct-native-source-map"
+      "mapped": false
     },
     {
       "export": "DeleteDialog",
       "source": "src/components/blocks/record-actions.tsx",
-      "mapped": false,
-      "nativeAssociation": "direct-native-source-map"
+      "mapped": false
     },
     {
       "export": "GenericRecordDetail",
       "source": "src/components/blocks/record-detail.tsx",
-      "mapped": false,
-      "nativeAssociation": "direct-native-source-map"
+      "mapped": false
     },
     {
       "export": "RevenuePanel",
@@ -415,6 +506,21 @@
       "mapped": true
     },
     {
+      "export": "socialProviderNames",
+      "source": "src/components/blocks/social-auth.tsx",
+      "mapped": false
+    },
+    {
+      "export": "SocialProviderLogo",
+      "source": "src/components/blocks/social-auth.tsx",
+      "mapped": false
+    },
+    {
+      "export": "SocialAuth",
+      "source": "src/components/blocks/social-auth.tsx",
+      "mapped": false
+    },
+    {
       "export": "TableToolbar",
       "source": "src/components/blocks/table-toolbar.tsx",
       "mapped": false
@@ -422,8 +528,7 @@
     {
       "export": "WorkspaceStatus",
       "source": "src/components/blocks/workspace-status.tsx",
-      "mapped": false,
-      "nativeAssociation": "direct-native-source-map"
+      "mapped": false
     },
     {
       "export": "WorkspaceLoading",
@@ -5251,7 +5356,7 @@
     },
     {
       "file": "scripts/lib/source-graph.mjs",
-      "sha256": "625fe26b2fcddcb971b26d6bc8e790dcb853649740ac93d22bec88dfec0a198c"
+      "sha256": "2bd3099581c22bac110a480b9a23c5dad990de4e1653a6c465d1b5f0274c24b6"
     },
     {
       "file": "src/components/appearance-controls.tsx",
@@ -5266,20 +5371,48 @@
       "sha256": "4222a990d3522d1d552dcff55148ffbe52b0389143825ebc6765724851fa98f1"
     },
     {
+      "file": "src/components/blocks/commerce-billing.tsx",
+      "sha256": "13fce3ef413df2d4e6d38f04af1fd7a38e76331a430d13125f174a493e3d7e38"
+    },
+    {
+      "file": "src/components/blocks/commerce-checkout.tsx",
+      "sha256": "cb5e52a4673fdf8021705af9cc1aa4f1f04a16dbb8d687112a2782b50b860f35"
+    },
+    {
+      "file": "src/components/blocks/commerce-invoice-view.tsx",
+      "sha256": "1f9e291b5b8ed06175151ea7c0c0d7cd0086383131e2ba1f2bbd5dca8294f395"
+    },
+    {
+      "file": "src/components/blocks/commerce-order-editor.tsx",
+      "sha256": "2b93c19995c75aadc9b44217cf762a5ef21e41601f5f4ef4f0d90abafe1604b9"
+    },
+    {
+      "file": "src/components/blocks/commerce-workspace.tsx",
+      "sha256": "84ccfc5356a575ae0f6b0fb2dbd469c72d8b0cf71e59a9127a34be2b008441a4"
+    },
+    {
       "file": "src/components/blocks/customer-table.tsx",
       "sha256": "5e3ea31165cce536e9349b723e19795fcd8e805f113869908b8b019a0a787b33"
     },
     {
       "file": "src/components/blocks/dashboard-shell.tsx",
-      "sha256": "d446cd9b3e70499c3305a52bef45b4ffbef28aa6181a46bc2cbc005136f7ec03"
+      "sha256": "0fe79820dcefaf682e12092d09ecd9339ef422ca533c49e7fa12f5073b67eebc"
     },
     {
       "file": "src/components/blocks/data-workbench.tsx",
       "sha256": "948820722af0312404966244a9276089b775675261ef89da1d3fda451ae6bceb"
     },
     {
+      "file": "src/components/blocks/google-map.tsx",
+      "sha256": "5c69d2802cd5c5bb532316d2924719c3231dfc63e7a07eac4ab09db009b466c3"
+    },
+    {
       "file": "src/components/blocks/import-wizard.tsx",
       "sha256": "f105b2875ba20c9fe97919625279f1b71bdc09b83fdddc6477dff27222a1fd84"
+    },
+    {
+      "file": "src/components/blocks/maps-workspace.tsx",
+      "sha256": "f5fa6e3f105e7f234d255f90cdfc39d79a336233c78d2c83178eda16e630c03e"
     },
     {
       "file": "src/components/blocks/member-management.tsx",
@@ -5302,6 +5435,14 @@
       "sha256": "d46500ff708b7cd275a636331a63133e71537960e0f646cebbffa91fd3a32ed7"
     },
     {
+      "file": "src/components/blocks/product-image-editor.tsx",
+      "sha256": "c52351631ba44c39848d1285e942dd0b7c76fec47cca84cb64fbcbbcda2d42ef"
+    },
+    {
+      "file": "src/components/blocks/product-manager.tsx",
+      "sha256": "f54e192b19822d82ed905bf028fef3d8cb3a44fdfddc2a76a9e3f7438ea9d922"
+    },
+    {
       "file": "src/components/blocks/record-actions.tsx",
       "sha256": "347932aa045043a0a06bbb91d88d4f202c35cca5df6de072389714a76829b3a9"
     },
@@ -5318,6 +5459,10 @@
       "sha256": "0ab623875695d3b382764cc6607fabf93f904fea5b20a259c0cd1127c2fb6368"
     },
     {
+      "file": "src/components/blocks/social-auth.tsx",
+      "sha256": "6b00e5f87f54f8ce7fdb87a70338f519b739abc10563d2f9a683653d02d7f99b"
+    },
+    {
       "file": "src/components/blocks/table-toolbar.tsx",
       "sha256": "cfcf33679b7f474bff09e87d976963bc68444d6177add833782c767274226cf3"
     },
@@ -5328,6 +5473,10 @@
     {
       "file": "src/components/brand.tsx",
       "sha256": "48680de3ed1ee8a5ad469ea11c88f01e7029a3afb2d3e525476b9f3459b3fa74"
+    },
+    {
+      "file": "src/components/commerce-provider.tsx",
+      "sha256": "198d89e7d8ecda90d3fe14433798e64359f5d17d1767b2d3df4cca6778515a92"
     },
     {
       "file": "src/components/design-icon.tsx",
@@ -5384,14 +5533,6 @@
     {
       "file": "src/components/effects/tilt-card.tsx",
       "sha256": "1fdaf947d3a4b527729aa71307fbe5b2e50f8e9a409ddf4ebbe2a8e19406461f"
-    },
-    {
-      "file": "src/components/providers.tsx",
-      "sha256": "79defd9d8318f03c743a245fd71a0ceaa35dc8befe9b9799d541c7bf9c94beeb"
-    },
-    {
-      "file": "src/components/templates/saas-setup.tsx",
-      "sha256": "d7d8a1b6493d0e53ec85d46df0c6cff7a6c2e77fa1b7116e9d547e0122cac665"
     },
     {
       "file": "src/components/ui/accordion.tsx",
@@ -5566,36 +5707,8 @@
       "sha256": "788e9c38df9005cbd9a5ae7c882b88012a9ca0a39f6ab6ed5416cdbafd6d8302"
     },
     {
-      "file": "src/components/workspace-provider.tsx",
-      "sha256": "4e688e7d31b5b37fcd7f6852e5d7c7b7be34fb8c3453b944cfd5b8ea9008e39f"
-    },
-    {
-      "file": "src/demo/avatar-assets.ts",
-      "sha256": "03c2b01071fbfe7314c79c202d80747fd77e006c8e934266163ff945669c37de"
-    },
-    {
-      "file": "src/demo/dashboard-data.ts",
-      "sha256": "b59b8d38586c10324ba9ee300a4dbcbd20761c1af806cd01f03f51c9eb3be5f0"
-    },
-    {
-      "file": "src/demo/map-data.ts",
-      "sha256": "ca69729e83fa71563acc0dc31f48019c4348a328d0e58a9248cc11a6be05ceff"
-    },
-    {
-      "file": "src/demo/saas-data.ts",
-      "sha256": "185efa6596a0e6101ebd69fad60a2007869963786f33d198cf6de623100bd134"
-    },
-    {
-      "file": "src/hooks/use-demo-store.ts",
-      "sha256": "94a63c4f02123cad43a3f1c8a4b240cab25ec0843dd755a1cdad7aa119c086f3"
-    },
-    {
-      "file": "src/hooks/use-language.ts",
-      "sha256": "d28044071689786e41142fa124fab6dd00ead6b44ef80f7dc72197c405a8ca6a"
-    },
-    {
-      "file": "src/i18n/messages.ts",
-      "sha256": "eb32f7d563b48595919fee85bc6d4d5344392408a1a969d06108c4cca11d6a03"
+      "file": "src/demo/commerce-data.ts",
+      "sha256": "a26d280eaea363773214e5729e734910babce9121420f5ea89c3aa1761b22925"
     },
     {
       "file": "src/lib/appearance-bootstrap.ts",
@@ -5607,27 +5720,31 @@
     },
     {
       "file": "src/lib/catalog.ts",
-      "sha256": "e32b9cbdf80b4253a5b65951e773c5963ac4e0b24b600a7b69f42d615baa9e04"
+      "sha256": "2b61faad2185861d21084d5ebd33c0a30f27373707a8249223bb6f2e69e2c4a6"
     },
     {
-      "file": "src/lib/csv-import.ts",
-      "sha256": "459b24c40f0a17140a54ef3ff18258972596a24985944649f8426c4bb96b30b7"
+      "file": "src/lib/commerce-state.ts",
+      "sha256": "1e90f61c75348952f86380bd9331c5092d45239c6929bb690bf3784569512df9"
     },
     {
-      "file": "src/lib/data-query.ts",
-      "sha256": "846c38004b74702fa52ff6be807f708ca00b3a456d6eacd2e99705ebd33cfacd"
+      "file": "src/lib/commerce.ts",
+      "sha256": "e13a6c43c10a530d40aae9417b12719134fc3d668a3027b0f49311fc8c7e7de0"
     },
     {
-      "file": "src/lib/public-path.ts",
-      "sha256": "5b81a51e40d104bfefdcca96869e33432669d40514658a3e94a9b461372e3f26"
+      "file": "src/lib/demo-auth.ts",
+      "sha256": "2bd6a87a5f50ea2f842f17ab6c28de27a64df41ce3779ef9bc27ecf3449ec8a4"
     },
     {
-      "file": "src/lib/saas.ts",
-      "sha256": "971ebbf8d89ac11161fd6da7084ea24874ba54c8b722f95e7ac1b6ce97990823"
+      "file": "src/lib/google-maps.ts",
+      "sha256": "d77672aa0cfe41c33e8fb54737d5d5fd5b612e6dd78b8183d3737b605a9dcf7e"
     },
     {
-      "file": "src/lib/utils.ts",
-      "sha256": "f0cc529b0869734a239de0c8de8415824d0578f58e7cac92a94812d49e92fea8"
+      "file": "src/lib/product-images.ts",
+      "sha256": "e56c5251d30b9ed56ba51985acbbbebe9e0c743ba51864d7438842faa4890896"
+    },
+    {
+      "file": "src/lib/stripe-commerce-adapter.ts",
+      "sha256": "96a786abafbfdc0c8c4a5d220603828fe146125dce4d1f9d0815b891d3c67dbd"
     },
     {
       "file": "src/styles/effects.css",
@@ -6007,18 +6124,5 @@
       "file": ".figma/code-connect/MagneticButton.figma.ts",
       "sha256": "91a003f02e1b83f0e9934e5e18f3e79253bc819d5b5be3e2a7730c5a605865b3"
     }
-  ],
-  "templateCheckpointVersion": "1.1.0",
-  "sourceValidationVersion": "1.3.0",
-  "sourceSnapshotRefreshedAt": "2026-10-19T19:05:16.933Z",
-  "historicalCheckpoint": {
-    "manifest": {
-      "file": ".figma/history/code-connect-manifest-1.1-final.json",
-      "sha256": "618a0e2d6f871793ddcb3d5d717e7c398fe2fbd352b4b5737a7e8a8b1337815c"
-    },
-    "validation": {
-      "file": ".figma/history/code-connect-validation-1.1-final.json",
-      "sha256": "635f0f197129bbe20fe2219e2789c6b370a52c6168b1c3f0e635eb375c4f6329"
-    }
-  }
+  ]
 }

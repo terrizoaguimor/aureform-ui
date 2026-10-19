@@ -77,3 +77,5 @@ AUREFORM_BASE_URL=http://127.0.0.1:3010 pnpm verify:copy
 The recorded results include 44 matching copied files and 12 passing code-dialog combinations. See [the verification record](../docs/verification.md).
 
 [MotionSystem.tsx](MotionSystem.tsx) is an additional complete example for GSAP entrances, optional Lenis scrolling and theme-aware effects. It supplements the 44 UI families.
+
+[ApplicationAdapters.tsx](ApplicationAdapters.tsx) shows a Client wrapper for the application kit's Stripe backend adapter and social-auth callback. Supply your own authenticated server endpoints and OAuth implementation; the public demo uses the included mocks. See the [integration contract](../docs/application-integrations.md) and [Google Maps configuration](../docs/google-maps.md).

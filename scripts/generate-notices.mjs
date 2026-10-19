@@ -96,6 +96,8 @@ Other runtime license identifiers are verified against the installed manifests a
 
 ## Reference material
 
+Google, GitHub, Microsoft and Stripe names and marks belong to their respective owners. The inline provider marks identify mock sign-in choices; Apache 2.0 does not grant trademark rights or imply endorsement. Google Maps is loaded only after an explicit connection and remains subject to Google's service terms.
+
 The proprietary TailAdmin Pro reference was read to understand feature categories. No proprietary TailAdmin source, image, font, template or license is included in this distribution.
 
 Community files linked in [design research](docs/community-design-references.md) are references, not bundled asset grants. Their publishers' licenses remain independent. The Apache 2.0 grant covers Aureform's original work and does not grant rights to external linked Figma Community files.

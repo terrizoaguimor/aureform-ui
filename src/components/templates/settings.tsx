@@ -40,7 +40,6 @@ import { Switch } from "@/components/ui/switch";
 import { Avatar } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Alert } from "@/components/ui/alert";
-import { Progress } from "@/components/ui/progress";
 import {
   Dialog,
   DialogContent,
@@ -55,6 +54,7 @@ import {
 } from "@/components/templates/saas-operations";
 import { demoAvatarSources } from "@/demo/avatar-assets";
 import { cn } from "@/lib/utils";
+import { CommerceWorkspace } from "@/components/blocks/commerce-workspace";
 const profileSeed = {
   name: "Alex Morgan",
   email: "alex@studio.demo",
@@ -114,7 +114,7 @@ export function SettingsTemplate({ section }: { section: string }) {
         ) : section === "preferences" ? (
           <Preferences />
         ) : section === "billing" ? (
-          <BillingSettings />
+          <CommerceWorkspace mode="billing" />
         ) : section === "api-keys" ? (
           <ApiKeys />
         ) : (
@@ -413,178 +413,6 @@ function Preferences() {
           {t("save")}
         </Button>
       </div>
-    </div>
-  );
-}
-function BillingSettings() {
-  const { l, common: t, currency, locale } = useLanguage(),
-    [plan, setPlan] = useDemoStore("billing-plan", "Pro"),
-    [selected, setSelected] = useState<string | null>(null);
-  return (
-    <div className="grid gap-5">
-      <Card>
-        <CardHeader className="flex-row justify-between">
-          <div>
-            <CardTitle>{l("Your current plan", "Tu plan actual")}</CardTitle>
-            <CardDescription>
-              {l(
-                "Designed to grow with what you’re building.",
-                "Diseñado para crecer con lo que estás creando.",
-              )}
-            </CardDescription>
-          </div>
-          <Badge>{plan}</Badge>
-        </CardHeader>
-        <CardContent>
-          <div className="mb-6 flex items-end justify-between gap-4">
-            <p>
-              <span className="text-3xl font-semibold tracking-tight">
-                {currency(
-                  plan === "Enterprise" ? 699 : plan === "Pro" ? 249 : 99,
-                )}
-              </span>
-              <span className="ml-2 text-xs text-muted-foreground">
-                {l("/ month · demo", "/ mes · demostración")}
-              </span>
-            </p>
-            <span className="text-[11px] text-muted-foreground">
-              {l("Renews November 18", "Se renueva el 18 de noviembre")}
-            </span>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2">
-            <div>
-              <div className="mb-2 flex justify-between text-xs">
-                <span>{l("Team seats", "Puestos de equipo")}</span>
-                <span>4 / 10</span>
-              </div>
-              <Progress
-                value={40}
-                label={l("Team seats", "Puestos de equipo")}
-              />
-            </div>
-            <div>
-              <div className="mb-2 flex justify-between text-xs">
-                <span>{l("API requests", "Solicitudes API")}</span>
-                <span>24,800 / 100,000</span>
-              </div>
-              <Progress
-                value={24.8}
-                label={l("API requests", "Solicitudes API")}
-              />
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-      <div className="grid gap-4 md:grid-cols-3">
-        {[
-          ["Starter", 99],
-          ["Pro", 249],
-          ["Enterprise", 699],
-        ].map(([name, price]) => (
-          <Card
-            key={name}
-            className={cn(
-              "p-5",
-              plan === name && "border-primary/50 bg-accent/15",
-            )}
-          >
-            <p className="text-sm font-semibold">{name}</p>
-            <p className="mt-3 text-2xl font-semibold">
-              {currency(Number(price))}
-              <span className="ml-1 text-xs font-normal text-muted-foreground">
-                {l("/mo", "/mes")}
-              </span>
-            </p>
-            <p className="mt-3 text-xs text-muted-foreground">
-              {name === "Starter"
-                ? l("A considered start.", "Un comienzo cuidado.")
-                : name === "Pro"
-                  ? l(
-                      "More room for possibility.",
-                      "Más espacio para posibilidades.",
-                    )
-                  : l(
-                      "Built for a shared ambition.",
-                      "Para una ambición compartida.",
-                    )}
-            </p>
-            <Button
-              className="mt-5 w-full"
-              variant={plan === name ? "secondary" : "outline"}
-              size="sm"
-              disabled={plan === name}
-              onClick={() => setSelected(String(name))}
-            >
-              {plan === name
-                ? l("Current plan", "Plan actual")
-                : l("Choose plan", "Elegir plan")}
-            </Button>
-          </Card>
-        ))}
-      </div>
-      <Card>
-        <CardHeader>
-          <CardTitle>{l("Payment method", "Método de pago")}</CardTitle>
-        </CardHeader>
-        <CardContent className="flex items-center gap-4">
-          <span className="flex h-8 w-12 items-center justify-center rounded border border-border text-[10px] font-bold">
-            VISA
-          </span>
-          <div className="flex-1">
-            <p className="text-xs font-medium">
-              {l(
-                "Demo card ending in 4242",
-                "Tarjeta de ejemplo terminada en 4242",
-              )}
-            </p>
-            <p className="mt-1 text-[10px] text-muted-foreground">12/2028</p>
-          </div>
-          <a
-            href={publicPath(`/${locale}/invoices/`)}
-            className="text-xs text-primary"
-          >
-            {l("View invoices", "Ver facturas")} →
-          </a>
-        </CardContent>
-      </Card>
-      <Alert title={l("Billing preview", "Vista previa de facturación")}>
-        {l(
-          "Plan changes update demo state. This screen does not charge cards or create subscriptions.",
-          "Los cambios de plan actualizan la demo. Esta pantalla no cobra tarjetas ni crea suscripciones.",
-        )}
-      </Alert>
-      <Dialog
-        open={!!selected}
-        onOpenChange={(v) => {
-          if (!v) setSelected(null);
-        }}
-      >
-        <DialogContent closeLabel={t("close")}>
-          <DialogTitle>
-            {l(`Switch to ${selected}?`, `¿Cambiar a ${selected}?`)}
-          </DialogTitle>
-          <DialogDescription>
-            {l(
-              "The selected plan changes only in this browser demo.",
-              "El plan seleccionado solo cambia en esta demo del navegador.",
-            )}
-          </DialogDescription>
-          <DialogFooter>
-            <Button variant="outline" onClick={() => setSelected(null)}>
-              {t("cancel")}
-            </Button>
-            <Button
-              onClick={() => {
-                if (selected) setPlan(selected);
-                setSelected(null);
-                toast.success(t("saved"));
-              }}
-            >
-              {l("Update demo plan", "Actualizar plan de ejemplo")}
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 }

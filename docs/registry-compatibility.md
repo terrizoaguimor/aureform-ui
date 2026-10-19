@@ -2,7 +2,7 @@
 
 ## Open-source delivery
 
-The original Aureform source, starter, sample and image collection use [Apache 2.0](../LICENSE), including all 32 image masters. Registry and archive versions follow `package.json`; the 1.2.1 image manifest and native review remain immutable image checkpoints. The catalog has 96 registry entries, 69 views and 44 core families. Regenerate registry metadata for a new source release and validate the delivered payloads; the historical checks below do not certify a new installation.
+The original Aureform source, starter, sample and image collection use [Apache 2.0](../LICENSE), including all 32 image masters. Registry and archive versions follow `package.json`; the 1.2.1 image manifest and native review remain immutable image checkpoints. The catalog has 107 registry entries, 69 views and 44 core families. Regenerate registry metadata for a new source release and validate the delivered payloads; the historical checks below do not certify a new installation.
 
 ## Image delivery introduced in 1.2.1
 

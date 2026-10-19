@@ -430,7 +430,38 @@ const normalizedName = (name) => name.toLowerCase().replace(/[^a-z0-9]/g, "");
 const blockExportOverrides = {
   "record-detail": ["GenericRecordDetail"],
   "record-actions": ["RowActions", "DeleteDialog"],
+  "product-manager": ["ProductsManager"],
+  "product-image-editor": ["ProductImageEditor", "ProductImageThumbnail"],
+  "social-auth": ["SocialAuth", "SocialProviderLogo"],
+  "commerce-checkout": [
+    "CommerceCheckout",
+    "CommerceStatusBadge",
+    "CommerceTotals",
+    "CommerceProductThumbnail",
+  ],
+  "commerce-order-editor": ["CommerceOrderEditor", "CommerceOrderDetail"],
+  "commerce-invoice-view": [
+    "CommerceInvoiceView",
+    "CommerceInvoiceTable",
+    "CommerceInvoiceEditor",
+  ],
 };
+// 1.4 is a frontend expansion. These modules have no claimed native master;
+// keep the owner's historical Figma IDs/reviews instead of inventing bindings.
+const sourceOnlyApplicationFiles = new Set(
+  [
+    "commerce-workspace",
+    "commerce-billing",
+    "commerce-checkout",
+    "commerce-order-editor",
+    "commerce-invoice-view",
+    "product-manager",
+    "product-image-editor",
+    "maps-workspace",
+    "google-map",
+    "social-auth",
+  ].map((name) => `src/components/blocks/${name}.tsx`),
+);
 const blocks = (
   await Promise.all(
     sourceBlockEntries.map(async (entry) => {
@@ -463,8 +494,9 @@ const blocks = (
         const sourceOnly =
           !connection &&
           !direct &&
-          entry.file === "src/components/blocks/table-toolbar.tsx" &&
-          name === "TableToolbar";
+          ((entry.file === "src/components/blocks/table-toolbar.tsx" &&
+            name === "TableToolbar") ||
+            sourceOnlyApplicationFiles.has(entry.file));
         return {
           export: name,
           source: entry.file,

@@ -29,6 +29,8 @@ Los SVG contienen geometría vectorial editable y fotografías incrustadas. Sus 
 
 Los archivos de Code Connect son **locales y no están publicados**. El código está en [`.figma/code-connect`](../.figma/code-connect); publicar este repositorio no los registra en Figma ni crea una conexión activa de Dev Mode. Los componentes importados o reconstruidos reciben IDs nuevos y necesitan sus propias asociaciones.
 
+La [ampliación de aplicaciones 1.4](../docs/application-integrations.es.md) añade bloques de código y capturas reales del navegador. Mantiene estos checkpoints nativos de Figma; los bloques nuevos de comercio, edición de productos, mapas y acceso social no se presentan como masters nativos ni como una nueva revisión nativa.
+
 Actualiza los índices derivados y el paquete descargable desde un checkout completo:
 
 ```bash

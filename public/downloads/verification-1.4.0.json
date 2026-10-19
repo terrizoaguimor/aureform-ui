@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "version": "1.4.0",
+  "status": "passed-local-application-and-delivery-validation",
+  "license": "Apache-2.0",
+  "runtimeReceipt": "docs/qa-runtime-1.4.0.json",
+  "runtimeReceiptSha256": "481e9d41606211c9de293d621c85206f7137fb3c9fc10f9698cc07e496478bde",
+  "checksums": "public/downloads/checksums.json",
+  "sourceFingerprint": {
+    "method": "SHA-256 of sorted relative path, NUL, file SHA-256, LF for every file under src/tests/examples/tokens/bin and the listed package/lock/config inputs",
+    "files": 256,
+    "sha256": "7178d6f5cea5ec55502af68041a2dac2856f19033395793207192cc881dea01e",
+    "configInputs": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "next.config.ts",
+      "tsconfig.json",
+      "next-env.d.ts",
+      "postcss.config.mjs",
+      "eslint.config.mjs",
+      "playwright.config.ts",
+      ".env.example"
+    ]
+  },
+  "publication": {
+    "repository": "https://github.com/terrizoaguimor/aureform-ui",
+    "demo": "https://terrizoaguimor.github.io/aureform-ui/",
+    "status": "pending"
+  },
+  "archives": [
+    {
+      "name": "aureform-ui-native-evidence-1.1.zip",
+      "files": 23,
+      "bytes": 15997293,
+      "sha256": "a4f80d58b951b7f3ee49ba5fe1a3e9cbca13eb3d88e2e5f2e5ced570eb492465",
+      "crc": "passed",
+      "safePaths": "passed",
+      "canonicalCodeAndRegistryFilesConserved": 0
+    },
+    {
+      "name": "aureform-ui-native-evidence-1.2.zip",
+      "files": 22,
+      "bytes": 9050463,
+      "sha256": "6ea74097ac854e0271b86f0d12c326f30ed37141d6add6db00723d90bb36324b",
+      "crc": "passed",
+      "safePaths": "passed",
+      "canonicalCodeAndRegistryFilesConserved": 0
+    },
+    {
+      "name": "aureform-ui-native-evidence-1.2.1.zip",
+      "files": 7,
+      "bytes": 3771196,
+      "sha256": "4f3253e59c05002e9adb99bd4c80ee1445cd8e9dae767520d2177b7677e78d8d",
+      "crc": "passed",
+      "safePaths": "passed",
+      "canonicalCodeAndRegistryFilesConserved": 0
+    },
+    {
+      "name": "aureform-ui-images.zip",
+      "files": 127,
+      "bytes": 5853683,
+      "sha256": "434f9cd248a9077e6562b8f893db2006c7b7aabde7139f5221c8053d0debaac8",
+      "crc": "passed",
+      "safePaths": "passed",
+      "canonicalCodeAndRegistryFilesConserved": 2
+    },
+    {
+      "name": "aureform-ui-starter.zip",
+      "files": 105,
+      "bytes": 465168,
+      "sha256": "637f534a1786006b18ff0fb7af3e31715dd0dbd44f326f0e5a425c6b99cb0a4f",
+      "crc": "passed",
+      "safePaths": "passed",
+      "canonicalCodeAndRegistryFilesConserved": 55
+    },
+    {
+      "name": "aureform-ui-free.zip",
+      "files": 59,
+      "bytes": 237979,
+      "sha256": "0afc5269bdb0fc66b66fde200f44702721cc663a8b073321bb27bf19c267ebd6",
+      "crc": "passed",
+      "safePaths": "passed",
+      "canonicalCodeAndRegistryFilesConserved": 27
+    },
+    {
+      "name": "aureform-ui-source.zip",
+      "files": 1373,
+      "bytes": 85944206,
+      "sha256": "97ae1bbbb03dcfa16de94f0922ebb533fd48bf2f8ccf0bd360f8350f0dd58075",
+      "crc": "passed",
+      "safePaths": "passed",
+      "canonicalCodeAndRegistryFilesConserved": 274
+    }
+  ],
+  "applicationConsumers": {
+    "status": "passed",
+    "scope": "Independent consumption of seven new application blocks in two fresh Next.js hosts. Summary of existing evidence only; no additional verification executed to produce this summary.",
+    "dependencyAudit": {
+      "items": 7,
+      "registryInventory": 107,
+      "individualLocalImportsResolved": 324,
+      "individualPackageImportsReviewed": 187,
+      "missingDependencyCount": 0,
+      "findings": [],
+      "evidence": "dependency-assets.json"
+    },
+    "assetIntegrity": {
+      "stage": "Executed on installed consumers before the final accessibility-only product-manager refresh. No new asset check was run after that refresh.",
+      "totalAssetFilesPerHost": 26,
+      "productSvgFilesPerHost": 8,
+      "allProductSvgEmbeddedWebpsValid": true,
+      "bothHostsMatchedCanonicalAssetBytes": true,
+      "builtInImageEditorAssets": [
+        {
+          "assetPath": "/assets/products/arc-lounge-chair.svg",
+          "installedRelativePath": "public/assets/products/arc-lounge-chair.svg",
+          "svgSha256": "5d4305feab0a7f7453e94d73183b52f7bb2f2dc3d8c0437a4877207d13297d93",
+          "embeddedWebpSha256": "406481b41fe4b20aa6d96b674626059a36ad48fd356347e66cdf3868423a721d",
+          "embeddedWebpBytes": 33000,
+          "matchesCanonicalWebp": true
+        },
+        {
+          "assetPath": "/assets/products/essential-wall-print.svg",
+          "installedRelativePath": "public/assets/products/essential-wall-print.svg",
+          "svgSha256": "dec59dfb643a8b02ec95f542e73ea399c65d5d20961a9f306b5a9313919ab38e",
+          "embeddedWebpSha256": "2659fd014a91bd5e4b89d8805b136027644c51f1780bc7528f4df90d03304eb0",
+          "embeddedWebpBytes": 14740,
+          "matchesCanonicalWebp": true
+        },
+        {
+          "assetPath": "/assets/products/fold-side-table.svg",
+          "installedRelativePath": "public/assets/products/fold-side-table.svg",
+          "svgSha256": "832bdeaa731622d6bedfe6a5d9c149dce966efeb22541e2850c964fa76d1b82a",
+          "embeddedWebpSha256": "cd4853bac37959463a244c50982f301786180e7d5f0634d859fb702c6ecdd5e0",
+          "embeddedWebpBytes": 7288,
+          "matchesCanonicalWebp": true
+        },
+        {
+          "assetPath": "/assets/products/forma-desk-lamp.svg",
+          "installedRelativePath": "public/assets/products/forma-desk-lamp.svg",
+          "svgSha256": "b9a11b90e23b52fda083f5d1c81dba16ed6b4e6c05fdb55992b72d3cd036b50f",
+          "embeddedWebpSha256": "0373b76b4db7c0064e454084c1c6ba9ffd2a8e8ee5ccd8eff2818b3cd3f90767",
+          "embeddedWebpBytes": 8938,
+          "matchesCanonicalWebp": true
+        },
+        {
+          "assetPath": "/assets/products/linea-notebook.svg",
+          "installedRelativePath": "public/assets/products/linea-notebook.svg",
+          "svgSha256": "d455122a2e8578fa61809bc09b3ce802652072c09be37cd7b22acec23af21ea3",
+          "embeddedWebpSha256": "5280ca05f8f971c1ac0cfbe5a4b6ee3e0a1077dc869ea17c478667fc5b546d68",
+          "embeddedWebpBytes": 29418,
+          "matchesCanonicalWebp": true
+        },
+        {
+          "assetPath": "/assets/products/morrow-ceramic-cup.svg",
+          "installedRelativePath": "public/assets/products/morrow-ceramic-cup.svg",
+          "svgSha256": "170819b605d9495ede903b60c0b5154ad754653e23271ad2492f2304d42e6d6a",
+          "embeddedWebpSha256": "e5ca365c7601b96b6ab94735a0c004ca139219476439cb17ac4fb787045bea42",
+          "embeddedWebpBytes": 25374,
+          "matchesCanonicalWebp": true
+        },
+        {
+          "assetPath": "/assets/products/silhouette-vase.svg",
+          "installedRelativePath": "public/assets/products/silhouette-vase.svg",
+          "svgSha256": "4a3289c2185b19ef8a255b9258662d04b9f8e38df6dd529f41ad2eb65a22c51a",
+          "embeddedWebpSha256": "35ff3aca4a21e8c5003d96330b290b84d64666bbbd043b4992ef453e4a14bb3b",
+          "embeddedWebpBytes": 31190,
+          "matchesCanonicalWebp": true
+        },
+        {
+          "assetPath": "/assets/products/studio-tote.svg",
+          "installedRelativePath": "public/assets/products/studio-tote.svg",
+          "svgSha256": "71692a4587fcd636f4a0cc33913543a2c8d103fd5f752e0fb090e0d87b02d05b",
+          "embeddedWebpSha256": "1192da28f1c7d54edc7115e8077d6652584a3e0faaabaebecd51d3e8ebb544a3",
+          "embeddedWebpBytes": 25488,
+          "matchesCanonicalWebp": true
+        }
+      ],
+      "format": "Self-contained SVG containers with the exact optimized WebP raster embedded; no binary companion is required for the SVG decoder path.",
+      "evidence": "dependency-assets.json"
+    },
+    "contracts": [
+      "src/lib/commerce.ts",
+      "src/lib/commerce-state.ts",
+      "src/lib/stripe-commerce-adapter.ts",
+      "src/lib/product-images.ts",
+      "src/lib/google-maps.ts",
+      "src/lib/demo-auth.ts"
+    ],
+    "finalSourceIdentity": {
+      "path": "src/components/blocks/product-manager.tsx",
+      "sha256": "f54e192b19822d82ed905bf028fef3d8cb3a44fdfddc2a76a9e3f7438ea9d922",
+      "registryPayloadSha256": "5975f8ebd8ce26a4034b99580043819fda57b2e06b67015f871b8a9786663764",
+      "payloadMatchedPublicRegistryBytes": true,
+      "evidence": "product-manager-final-refresh.json"
+    },
+    "hosts": {
+      "cli": {
+        "method": "Aureform CLI dependency closure",
+        "requestedItemsInstalled": [
+          "product-manager",
+          "product-image-editor",
+          "commerce-workspace",
+          "maps-workspace",
+          "google-map",
+          "social-auth",
+          "commerce-provider"
+        ],
+        "installExitCode": 0,
+        "checks": {
+          "typecheck": {
+            "exitCode": 0,
+            "command": ["pnpm", "typecheck"],
+            "seconds": 2.42,
+            "evidence": "cli-final-typecheck.json",
+            "stage": "final-product-manager-and-consumer-routing"
+          },
+          "lint": {
+            "exitCode": 0,
+            "command": ["pnpm", "lint"],
+            "seconds": 3.42,
+            "evidence": "cli-final-lint.json",
+            "stage": "final-product-manager-and-consumer-routing"
+          },
+          "build": {
+            "exitCode": 0,
+            "command": ["pnpm", "build"],
+            "seconds": 4.83,
+            "evidence": "cli-final-build.json",
+            "stage": "final-product-manager-and-consumer-routing"
+          }
+        },
+        "basePath": "/aureform-ui",
+        "installedClosureFilesAudited": 86,
+        "contractsPresent": true,
+        "finalProductManagerRefresh": {
+          "exitCode": 0,
+          "installedSha256": "f54e192b19822d82ed905bf028fef3d8cb3a44fdfddc2a76a9e3f7438ea9d922",
+          "otherSixEntrySourcesUnchanged": true,
+          "evidence": "cli-product-manager-final-refresh.json"
+        }
+      },
+      "registry": {
+        "method": "Official shadcn 4.22.0 from local HTTP registry",
+        "requestedItemsInstalled": [
+          "product-manager",
+          "product-image-editor",
+          "commerce-workspace",
+          "maps-workspace",
+          "google-map",
+          "social-auth",
+          "commerce-provider"
+        ],
+        "installExitCode": 0,
+        "checks": {
+          "typecheck": {
+            "exitCode": 0,
+            "command": ["pnpm", "typecheck"],
+            "seconds": 2.47,
+            "evidence": "registry-final-typecheck.json",
+            "stage": "final-product-manager-and-consumer-routing"
+          },
+          "lint": {
+            "exitCode": 0,
+            "command": ["pnpm", "lint"],
+            "seconds": 3.42,
+            "evidence": "registry-final-lint.json",
+            "stage": "final-product-manager-and-consumer-routing"
+          },
+          "build": {
+            "exitCode": 0,
+            "command": ["pnpm", "build"],
+            "seconds": 5.38,
+            "evidence": "registry-final-build.json",
+            "stage": "final-product-manager-and-consumer-routing"
+          }
+        },
+        "basePath": "/aureform-ui",
+        "installedClosureFilesAudited": 86,
+        "contractsPresent": true,
+        "finalProductManagerRefresh": {
+          "exitCode": 0,
+          "installedSha256": "612516ab43b6c739ca54abfcffde43f41b59f8c3dadc899b75f52bd3d60d332d",
+          "otherSixEntrySourcesUnchanged": true,
+          "evidence": "registry-product-manager-final-refresh.json"
+        }
+      }
+    }
+  },
+  "archiveConsumer": {
+    "status": "passed",
+    "sourceArchive": {
+      "sha256": "97ae1bbbb03dcfa16de94f0922ebb533fd48bf2f8ccf0bd360f8350f0dd58075",
+      "bytes": 85944206,
+      "files": 1373,
+      "crc": "passed"
+    },
+    "basePath": "/aureform-ui",
+    "conservation": {
+      "status": "passed",
+      "filesCompared": 1373,
+      "missing": [],
+      "extra": [],
+      "consumerExtraFiles": [],
+      "mismatches": [],
+      "evidence": "zip-97ae1bbbb03d-conservation.json",
+      "frozenSourceUnchanged": true,
+      "sourceChanges": [],
+      "consumerMatchesArchiveAfterBuild": true,
+      "consumerAfterBuildChanges": [],
+      "zipUnchanged": true,
+      "evidenceSha256": "768efe2a1f2dda877a66d6b5b355bc20d7479e8170cac9061442526e361b0216"
+    },
+    "install": {
+      "status": "passed",
+      "command": ["pnpm", "install", "--frozen-lockfile", "--prefer-offline"],
+      "exitCode": 0,
+      "durationSeconds": 0.69,
+      "startedAt": "2026-10-19T23:42:33.564621+00:00",
+      "finishedAt": "2026-10-19T23:42:34.253859+00:00",
+      "log": "zip-97ae1bbbb03d-install.log",
+      "packagesResolved": 695,
+      "cacheReused": 695,
+      "downloaded": 0,
+      "packagesAdded": 695,
+      "logSha256": "0c140dfecdaea425ee5e6e80197e215e8b858664d111cc510140cb89cfd0d50d"
+    },
+    "checks": {
+      "typecheck": {
+        "status": "inherited-pass",
+        "command": ["pnpm", "typecheck"],
+        "exitCode": 0,
+        "durationSeconds": 7.02,
+        "startedAt": "2026-10-19T23:33:09.911813+00:00",
+        "finishedAt": "2026-10-19T23:33:16.931924+00:00",
+        "log": "final-typecheck.log",
+        "executedForCurrentZip": false,
+        "inheritedFrom": "second-failure.json",
+        "inheritedZipSha256": "31fba194f7ca3c8e32382bb6472744f692ed84f55af563d07ffa5bf8259a6eda",
+        "reason": "Only href changes; no separate rerun requested. Next build performs TypeScript validation.",
+        "logSha256": "bfb66aed8b76efd80732daefbb04f34b9674a3798a5034fdbef1dee5ee36ef13"
+      },
+      "lint": {
+        "status": "inherited-pass",
+        "command": ["pnpm", "lint"],
+        "exitCode": 0,
+        "durationSeconds": 10.83,
+        "startedAt": "2026-10-19T23:33:09.912171+00:00",
+        "finishedAt": "2026-10-19T23:33:20.745537+00:00",
+        "log": "final-lint.log",
+        "warnings": 1,
+        "executedForCurrentZip": false,
+        "inheritedFrom": "second-failure.json",
+        "inheritedZipSha256": "31fba194f7ca3c8e32382bb6472744f692ed84f55af563d07ffa5bf8259a6eda",
+        "reason": "Only href changes; no separate rerun requested. Next build performs TypeScript validation.",
+        "logSha256": "e7db152254f5ee4ce4916f3b829c58ef404f8a20b641900f275d67351684f248"
+      },
+      "build": {
+        "status": "passed",
+        "command": ["pnpm", "build"],
+        "exitCode": 0,
+        "durationSeconds": 8.19,
+        "startedAt": "2026-10-19T23:42:34.254405+00:00",
+        "finishedAt": "2026-10-19T23:42:42.441001+00:00",
+        "log": "zip-97ae1bbbb03d-build.log",
+        "environment": {
+          "NEXT_PUBLIC_BASE_PATH": "/aureform-ui"
+        },
+        "typeValidationIncluded": true,
+        "logSha256": "18b09e051370019745c44db2aa8883ed140f18915a4c64d3afd9e418188e3bd0"
+      },
+      "verifyPages": {
+        "status": "passed",
+        "command": ["pnpm", "verify:pages"],
+        "exitCode": 0,
+        "durationSeconds": 0.27,
+        "startedAt": "2026-10-19T23:42:42.441320+00:00",
+        "finishedAt": "2026-10-19T23:42:42.708728+00:00",
+        "log": "zip-97ae1bbbb03d-verifyPages.log",
+        "environment": {
+          "NEXT_PUBLIC_BASE_PATH": "/aureform-ui"
+        },
+        "report": "zip-97ae1bbbb03d-pages.json",
+        "htmlPages": 142,
+        "uniqueLocalDestinations": 232,
+        "failures": 0,
+        "logSha256": "cb85d711559b3c477a2b97ec9f721666f8c62c4a015f7966eb8bc8d64e2fbeb7",
+        "reportSha256": "b3b2a707e2a7d4eabcb7a3fad3777eed12d5bd64600fa6578bb38acee7392e10"
+      }
+    },
+    "previousFailuresPreserved": true,
+    "sourceRepairs": false,
+    "finishedAt": "2026-10-19T23:43:29.934079+00:00"
+  },
+  "sourceAndDesignScope": {
+    "views": 69,
+    "registryEntries": 107,
+    "readmeScreenshots": 13,
+    "nativeStateSha256": "917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03",
+    "historicalNativeCheckpointsUnchanged": true,
+    "newNativeMasterClaimed": false,
+    "nativeFigIncluded": false
+  },
+  "limits": [
+    "Stripe transport uses simulated HTTP contracts; a consuming application supplies authenticated endpoints, restricted server keys, webhook verification, inventory reservation and idempotent fulfillment. No live charge, refund or account write was performed.",
+    "Google SDK loading was tested with inert doubles and an intercepted network failure. Real browser-key restrictions, billing and tile delivery were not tested against a Google project.",
+    "Google, GitHub and Microsoft auth defaults are local mocks. Consumer callbacks are not evidence of a verified identity or server session.",
+    "Axe retains incomplete color-contrast results for themed/gradient surfaces. Scoped automated scans and selected screenshots are not accessibility certification.",
+    "Native Figma reviews, original image provenance and historical evidence ZIPs retain their immutable 1.1/1.2/1.2.1 scopes; no new native master or all-route native review is claimed.",
+    "ESLint passed with the existing unused afRebuild warning in the local Figma rebuild plugin."
+  ],
+  "recordedAt": "2026-10-19T23:44:55.315492+00:00",
+  "archiveExportFix": {
+    "sourceZipExcludesNestedDownloads": true,
+    "documentationDownloads": "Canonical versioned GitHub release assets from documentation, landing and pricing screens; historical image receipt is pinned to the public v1.3.0 source tag.",
+    "finalPagesDestinations": 232
+  },
+  "publicAudit": {
+    "status": "passed",
+    "gitFiles": 1388,
+    "scannedFilesAndArchiveEntries": 3246,
+    "archiveEntries": 1858,
+    "findings": []
+  }
+}

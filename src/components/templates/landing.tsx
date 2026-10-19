@@ -86,6 +86,7 @@ export function LandingTemplate() {
     { label: l("Effects", "Efectos"), href: href("effects") },
     { label: l("Themes", "Temas"), href: href("themes") },
     { label: l("Documentation", "Documentación"), href: href("docs") },
+    { label: l("Authentication", "Autenticación"), href: href("auth/sign-in") },
   ];
   const choosePalette = (palette: PaletteId) => {
     setAppearance((current) => {
@@ -161,6 +162,24 @@ export function LandingTemplate() {
               {appearance.theme === "light" ? <Moon /> : <Sun />}
             </Button>
             <Link
+              href={href("auth/sign-in")}
+              className={cn(
+                buttonVariants({ variant: "ghost", size: "sm" }),
+                "hidden sm:inline-flex",
+              )}
+            >
+              {l("Log in", "Entrar")}
+            </Link>
+            <Link
+              href={href("auth/sign-up")}
+              className={cn(
+                buttonVariants({ size: "sm" }),
+                "hidden md:inline-flex",
+              )}
+            >
+              {l("Sign up", "Crear cuenta")}
+            </Link>
+            <Link
               href={href("studio")}
               className={cn(
                 buttonVariants({ variant: "outline", size: "sm" }),
@@ -199,6 +218,13 @@ export function LandingTemplate() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href={href("auth/sign-up")}
+              className={cn(buttonVariants({ size: "sm" }), "mt-2")}
+              onClick={() => setMenu(false)}
+            >
+              {l("Create a demo account", "Crear una cuenta demo")}
+            </Link>
             <Link
               href={href("dashboard")}
               className="rounded-lg px-3 py-3 text-sm font-semibold text-primary"
@@ -301,7 +327,7 @@ export function LandingTemplate() {
                   <ArrowUpRight />
                 </Link>
                 <a
-                  href={publicPath("/downloads/aureform-ui-source.zip")}
+                  href={`${githubUrl}/releases/download/v${kitVersion}/aureform-ui-source.zip`}
                   download
                   className={cn(
                     buttonVariants({ variant: "outline", size: "lg" }),
@@ -1042,7 +1068,7 @@ export function LandingTemplate() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a
-                href={publicPath("/downloads/aureform-ui-source.zip")}
+                href={`${githubUrl}/releases/download/v${kitVersion}/aureform-ui-source.zip`}
                 download
                 className={buttonVariants({ size: "lg" })}
               >

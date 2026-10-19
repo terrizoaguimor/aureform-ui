@@ -29,6 +29,9 @@ import {
   Upload,
   ListChecks,
   Plus,
+  LogIn,
+  UserPlus,
+  KeyRound,
 } from "lucide-react";
 import { Brand } from "@/components/brand";
 import { AppearanceControls } from "@/components/appearance-controls";
@@ -73,7 +76,7 @@ import { useTheme } from "@/components/providers";
 import { useLanguage } from "@/hooks/use-language";
 import { useDemoStore } from "@/hooks/use-demo-store";
 import { useWorkspace } from "@/components/workspace-provider";
-import { routes } from "@/lib/catalog";
+import { kitVersion, routes } from "@/lib/catalog";
 import { demoAvatarSources } from "@/demo/avatar-assets";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
@@ -222,8 +225,30 @@ export function DashboardShell({
         link("products", l("Products", "Productos"), <Package />),
         link("orders", l("Orders", "Pedidos"), <ShoppingBag />),
         link("invoices", l("Invoices", "Facturas"), <CreditCard />),
+        link(
+          "settings/billing",
+          l("Billing & plans", "Facturación y planes"),
+          <CreditCard />,
+        ),
         link("maps", l("Maps", "Mapas"), <MapPin />),
         link("support", l("Support", "Soporte"), <CircleHelp />),
+      ],
+    },
+    {
+      label: l("Authentication", "Autenticación"),
+      items: [
+        link("auth/sign-in", l("Sign in", "Iniciar sesión"), <LogIn />),
+        link("auth/sign-up", l("Create account", "Crear cuenta"), <UserPlus />),
+        link(
+          "auth/reset-password",
+          l("Reset password", "Restablecer contraseña"),
+          <KeyRound />,
+        ),
+        link(
+          "auth/verify",
+          l("Verify code", "Verificar código"),
+          <ShieldCheck />,
+        ),
       ],
     },
     {
@@ -246,8 +271,10 @@ export function DashboardShell({
         : current.group === "application"
           ? 2
           : current.group === "settings"
-            ? 3
-            : 0;
+            ? 4
+            : current.group === "auth"
+              ? 3
+              : 0;
     groups[groupIndex].items.push(
       link(
         path,
@@ -361,6 +388,15 @@ export function DashboardShell({
         >
           {di("settings")}
           {t("preferences")}
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem onClick={() => router.push(href("auth/sign-in"))}>
+          <LogIn />
+          {l("Sign in", "Iniciar sesión")}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => router.push(href("auth/sign-up"))}>
+          <UserPlus />
+          {l("Create account", "Crear cuenta")}
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem onClick={() => setResetOpen(true)}>
@@ -716,7 +752,7 @@ export function DashboardShell({
           >
             Aureform UI{" "}
             <span className="rounded-md border border-border bg-surface/65 px-1.5 py-0.5 text-[11px]">
-              1.2
+              {kitVersion}
             </span>
           </a>
         </footer>

@@ -959,6 +959,105 @@ export function BlocksTemplate() {
           "Composiciones reutilizables hechas con los componentes del kit. Copia un bloque y sus dependencias con el CLI.",
         )}
       />
+      <section aria-label={l("Application blocks", "Bloques de aplicaciones")}>
+        <div className="mb-5 flex flex-wrap items-center gap-3">
+          <h2 className="text-[15px] font-semibold">
+            {l(
+              "Applications that work together",
+              "Aplicaciones que trabajan juntas",
+            )}
+          </h2>
+          <Badge appearance="gradient">1.4</Badge>
+        </div>
+        <p className="mb-5 max-w-3xl text-[13px] leading-6 text-muted-foreground">
+          {l(
+            "Explore the mock workflows, copy their source and connect your own services through the documented adapters.",
+            "Explora los flujos mock, copia su código y conecta tus servicios mediante los adaptadores documentados.",
+          )}
+        </p>
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {[
+            {
+              name: "ProductsManager",
+              install: "product-manager",
+              path: "products",
+              description: l(
+                "A catalog with product details, pricing, inventory and a live editor preview.",
+                "Un catálogo con detalles, precios, inventario y vista previa del editor.",
+              ),
+            },
+            {
+              name: "ProductImageEditor",
+              install: "product-image-editor",
+              path: "products",
+              description: l(
+                "Upload, crop, rotate and organize images with accessible alternatives.",
+                "Carga, recorta, rota y organiza imágenes con texto alternativo.",
+              ),
+            },
+            {
+              name: "CommerceWorkspace",
+              install: "commerce-workspace",
+              path: "orders",
+              description: l(
+                "Shared orders and invoices with line items, checkout previews and stock updates.",
+                "Pedidos y facturas conectados con artículos, pagos de ejemplo y existencias.",
+              ),
+            },
+            {
+              name: "CommerceBilling",
+              install: "commerce-billing",
+              path: "settings/billing",
+              description: l(
+                "Subscriptions, plan changes, invoice history and a customer portal preview.",
+                "Suscripciones, cambios de plan, historial y vista previa del portal del cliente.",
+              ),
+            },
+            {
+              name: "MapsWorkspace",
+              install: "maps-workspace",
+              path: "maps",
+              description: l(
+                "Local routes, search, layers and optional Google Maps configuration.",
+                "Rutas locales, búsqueda, capas y configuración opcional de Google Maps.",
+              ),
+            },
+            {
+              name: "SocialAuth",
+              install: "social-auth",
+              path: "auth/sign-in",
+              description: l(
+                "Google, GitHub and Microsoft mock access with replaceable callbacks.",
+                "Acceso mock con Google, GitHub y Microsoft y callbacks sustituibles.",
+              ),
+            },
+          ].map((block) => (
+            <Card
+              key={block.install}
+              appearance="glass"
+              className="af-hover-card min-w-0"
+            >
+              <CardHeader>
+                <CardTitle className="text-sm">{block.name}</CardTitle>
+                <CardDescription>{block.description}</CardDescription>
+              </CardHeader>
+              <CardContent className="grid gap-4">
+                <CopyCommand command={source(block.install)} />
+                <a
+                  href={publicPath(`/${locale}/${block.path}/`)}
+                  className="inline-flex items-center gap-2 text-xs font-semibold text-primary underline-offset-4 hover:underline focus-visible:rounded focus-visible:outline-2 focus-visible:outline-ring"
+                >
+                  {l(
+                    "Explore the working example",
+                    "Explorar el ejemplo funcional",
+                  )}
+                  <ArrowUpRight aria-hidden className="size-3.5" />
+                </a>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
       <section
         aria-label={l("SaaS operations blocks", "Bloques de operaciones SaaS")}
       >

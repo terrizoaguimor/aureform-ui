@@ -30,7 +30,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import { figmaUrl, githubUrl } from "@/lib/catalog";
+import { figmaUrl, githubUrl, kitVersion } from "@/lib/catalog";
 import { cn } from "@/lib/utils";
 export function PricingTemplate() {
   const { l } = useLanguage();
@@ -190,7 +190,7 @@ export function PricingTemplate() {
             Figma <ArrowUpRight />
           </a>
           <a
-            href={publicPath("/downloads/aureform-ui-source.zip")}
+            href={`${githubUrl}/releases/download/v${kitVersion}/aureform-ui-source.zip`}
             download
             className={buttonVariants({ size: "sm" })}
           >

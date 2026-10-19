@@ -126,6 +126,11 @@ export async function entries(root = kitRoot) {
     type: "registry:block",
     file: "src/components/workspace-provider.tsx",
   };
+  result["commerce-provider"] = {
+    name: "commerce-provider",
+    type: "registry:block",
+    file: "src/components/commerce-provider.tsx",
+  };
   return result;
 }
 export async function dependencyClosure(entryFiles, root = kitRoot) {
@@ -222,11 +227,19 @@ export async function theme(root = kitRoot) {
       ],
       ...Object.entries(tokens.radius)
         .filter(([key]) => key !== "full")
-        .map(([key, value]) => [`radius-${key}`, `var(--af-radius-${key}, ${value}px)`]),
+        .map(([key, value]) => [
+          `radius-${key}`,
+          `var(--af-radius-${key}, ${value}px)`,
+        ]),
     ]),
     light: {
       ...mode("light"),
-      ...Object.fromEntries(Object.entries(tokens.defaults?.light ?? {}).map(([key, value]) => [key.slice(2), value])),
+      ...Object.fromEntries(
+        Object.entries(tokens.defaults?.light ?? {}).map(([key, value]) => [
+          key.slice(2),
+          value,
+        ]),
+      ),
       ...Object.fromEntries(
         Object.entries(tokens.effects ?? {}).flatMap(([group, values]) =>
           Object.entries(values).map(([name, value]) => [
@@ -238,7 +251,12 @@ export async function theme(root = kitRoot) {
     },
     dark: {
       ...mode("dark"),
-      ...Object.fromEntries(Object.entries(tokens.defaults?.dark ?? {}).map(([key, value]) => [key.slice(2), value])),
+      ...Object.fromEntries(
+        Object.entries(tokens.defaults?.dark ?? {}).map(([key, value]) => [
+          key.slice(2),
+          value,
+        ]),
+      ),
       ...Object.fromEntries(
         Object.entries(tokens.effects ?? {}).flatMap(([group, values]) =>
           Object.entries(values).map(([name, value]) => [
@@ -252,7 +270,8 @@ export async function theme(root = kitRoot) {
 }
 export const registryCss = {
   ".editorial": {
-    "font-family": 'var(--font-display, var(--font-manrope, "Manrope", system-ui, sans-serif))',
+    "font-family":
+      'var(--font-display, var(--font-manrope, "Manrope", system-ui, sans-serif))',
     "font-weight": "var(--af-display-weight, 650)",
     "letter-spacing": "-.035em",
   },

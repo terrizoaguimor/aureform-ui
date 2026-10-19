@@ -8,7 +8,7 @@ A Next.js UI kit for dashboards, SaaS workspaces and internal tools, with a visu
 
 ![Aureform SaaS overview in dark mode, with navigation, metrics and charts](docs/images/aureform-overview-dark.webp)
 
-**69 views · 44 core component families · 96 registry entries · 6 palettes · 13 chart types · English / Español · Light / Dark**
+**69 views · 44 core component families · 107 registry entries · 6 palettes · 13 chart types · English / Español · Light / Dark**
 
 Built with **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP and Lenis**. Aureform-authored source is available under [Apache 2.0](LICENSE).
 
@@ -27,6 +27,28 @@ Built with **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP and
 | ![Aureform overview in light mode](docs/images/aureform-overview-light.webp) | ![Aureform appearance studio with palette and material controls](docs/images/aureform-studio.webp)              |
 | **Charts**                                                                   | **Component library**                                                                                           |
 | ![Aureform chart gallery](docs/images/aureform-charts.webp)                  | ![Aureform component gallery with buttons, inputs and surface treatments](docs/images/aureform-components.webp) |
+
+## Application workflows in 1.4
+
+Explore [Products](https://terrizoaguimor.github.io/aureform-ui/en/products/), [Orders](https://terrizoaguimor.github.io/aureform-ui/en/orders/), [Invoices](https://terrizoaguimor.github.io/aureform-ui/en/invoices/), [Billing](https://terrizoaguimor.github.io/aureform-ui/en/settings/billing/) and [Maps](https://terrizoaguimor.github.io/aureform-ui/en/maps/).
+
+The product editor includes a live preview and an image gallery with upload, crop, rotation, alt text, primary image and reordering. Catalog prices feed new orders; a successful mock payment updates inventory and creates an invoice. Billing has plan changes, history and a customer portal preview. The included typed Stripe adapter connects those screens to **your authenticated backend**.
+
+Maps starts locally and can connect to Google Maps with a restricted browser key. [Sign in](https://terrizoaguimor.github.io/aureform-ui/en/auth/sign-in/) and [sign up](https://terrizoaguimor.github.io/aureform-ui/en/auth/sign-up/) expose **Google, GitHub and Microsoft mock buttons**, with callbacks for your own auth provider. Recovery and verification are available too. No real OAuth or payment is performed by the public demo.
+
+| Product catalog                                                                                    | Social access                                                                                         |
+| -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| ![Product catalog with images, inventory and Stripe mock sync](docs/images/aureform-products.webp) | ![Sign-in template with Google, GitHub and Microsoft mock buttons](docs/images/aureform-auth.webp)    |
+| **Billing and plans**                                                                              | **Maps workspace**                                                                                    |
+| ![Billing plans, subscription and customer portal preview](docs/images/aureform-billing.webp)      | ![Local routes, shipment filters and optional Google Maps connection](docs/images/aureform-maps.webp) |
+
+| Product image editor                                                                                   | Orders and checkout                                                                      |
+| ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| ![Product image editor with crop, alt text and live preview](docs/images/aureform-product-editor.webp) | ![Orders, payment status and purchase-time line items](docs/images/aureform-orders.webp) |
+
+[Application contracts and integration examples →](docs/application-integrations.md) · [Español →](docs/application-integrations.es.md)
+
+[1.4 validation and release scope →](docs/release-checklist-1.4.0.md)
 
 ## Get started
 
@@ -87,13 +109,13 @@ pnpm dlx shadcn@4.22.0 add \
   https://terrizoaguimor.github.io/aureform-ui/r/button.json
 ```
 
-Browse the [96-entry registry](https://terrizoaguimor.github.io/aureform-ui/r/registry.json). Components and blocks may require the supplied styles and locale or appearance providers; check their examples before integrating. [Registry guide →](docs/registry-compatibility.md)
+Browse the [107-entry registry](https://terrizoaguimor.github.io/aureform-ui/r/registry.json). Components and blocks may require the supplied styles and locale or appearance providers; check their examples before integrating. [Registry guide →](docs/registry-compatibility.md)
 
 ## A frontend you can connect
 
 The demo has interactive flows for filtering, saved views, CSV imports, onboarding, members and customer detail. Its records and preferences persist **in your browser**.
 
-Production authentication, server authorization, shared databases, email delivery, billing and AI model calls are integrations you provide. Role previews simulate permissions; they do not secure a backend. Customer-detail attachments store metadata, while the separate file-manager demo uses local browser storage.
+Production OAuth, server authorization, shared databases, email delivery, Stripe endpoints/webhooks and AI model calls are integrations you provide. The application kit supplies the frontend workflows, typed contracts and mock adapters. Role previews simulate permissions; they do not secure a backend. Customer-detail attachments store metadata, while the separate file-manager demo uses local browser storage.
 
 Reusable operation blocks accept data and callbacks so you can connect your own services. Start with the [SaaS contracts](docs/saas-operations.md), [architecture](docs/architecture.md) and [component examples](examples/README.md).
 

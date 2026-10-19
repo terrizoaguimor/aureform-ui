@@ -1,6 +1,6 @@
 {
-  "version": "1.3.0",
-  "capturedAt": "2026-10-19T19:11:52.267Z",
+  "version": "1.4.0",
+  "capturedAt": "2026-10-19T23:11:00.473Z",
   "method": "Playwright screenshots of the actual built application, encoded as WebP",
   "basePath": "/aureform-ui",
   "captures": [
@@ -56,8 +56,8 @@
       "locale": "en",
       "width": 1440,
       "height": 1000,
-      "bytes": 74922,
-      "sha256": "13fcc81a1c57467581a1358df722bc808a2963a4b559aa609dda534f77764fd8"
+      "bytes": 74916,
+      "sha256": "8fa6ea9272fb265d827790962eb5c0a631069dc1a06f04bf64322392ba1e3a67"
     },
     {
       "file": "aureform-effects.webp",
@@ -80,6 +80,73 @@
       "height": 1000,
       "bytes": 76748,
       "sha256": "888378f47eedc28a8e314e31f8cee913303ef7a75d782bcfd038832af0186301"
+    },
+    {
+      "file": "aureform-products.webp",
+      "route": "products",
+      "theme": "dark",
+      "palette": "aurora",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 78416,
+      "sha256": "0c4f0b0f77740c2809f99ad7403e1aac757a21d7f2c21a33048b32bf1f58e626"
+    },
+    {
+      "file": "aureform-product-editor.webp",
+      "route": "products",
+      "theme": "dark",
+      "palette": "aurora",
+      "openProduct": "Forma desk lamp",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 57036,
+      "sha256": "99dabd3310d016967390baf3492db369e25539a47bfab4049014dd84a51d2c89"
+    },
+    {
+      "file": "aureform-orders.webp",
+      "route": "orders",
+      "theme": "light",
+      "palette": "ocean",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 74338,
+      "sha256": "bdade039583ee837903d6b7d6eed5214d17963994d43e01849d2953302a33f44"
+    },
+    {
+      "file": "aureform-billing.webp",
+      "route": "settings/billing",
+      "theme": "dark",
+      "palette": "violet",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 64674,
+      "sha256": "47df8ecf6fb75d54a4a5c3c2371c21e7ad3c55af7024483f7202d89c4010bb2d"
+    },
+    {
+      "file": "aureform-maps.webp",
+      "route": "maps",
+      "theme": "light",
+      "palette": "mint",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 70934,
+      "sha256": "160916674d3cb2462beee7e1b406e6d58862d953ddb1f9cdd56bfaf44bb9bfc1"
+    },
+    {
+      "file": "aureform-auth.webp",
+      "route": "auth/sign-in",
+      "theme": "dark",
+      "palette": "aurora",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 57128,
+      "sha256": "0c6f8ab164d919abaf9bf2fe64443a13badfc416758581f837a7da8c25fa59ba"
     }
   ],
   "pageErrors": []
