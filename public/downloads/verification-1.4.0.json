@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "version": "1.4.0",
-  "status": "passed-local-application-and-delivery-validation",
+  "status": "passed-source-and-published-demo-validation",
   "license": "Apache-2.0",
   "runtimeReceipt": "docs/qa-runtime-1.4.0.json",
   "runtimeReceiptSha256": "481e9d41606211c9de293d621c85206f7137fb3c9fc10f9698cc07e496478bde",
@@ -25,7 +25,18 @@
   "publication": {
     "repository": "https://github.com/terrizoaguimor/aureform-ui",
     "demo": "https://terrizoaguimor.github.io/aureform-ui/",
-    "status": "pending"
+    "status": "published-and-verified",
+    "sourceCommit": "50c917933d7a4868ade143afc6e6069738b5923d",
+    "release": "https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.4.0",
+    "tag": "v1.4.0",
+    "pagesWorkflow": {
+      "url": "https://github.com/terrizoaguimor/aureform-ui/actions/runs/39343655564",
+      "status": "completed",
+      "conclusion": "success",
+      "headSha": "50c917933d7a4868ade143afc6e6069738b5923d"
+    },
+    "verifiedAt": "2026-10-19T23:52:18.795Z",
+    "receiptScope": "The application source and all archives were verified from this source commit. This delivery-only receipt is updated after publication; it is excluded from the self-contained source ZIP."
   },
   "archives": [
     {
@@ -409,7 +420,7 @@
     "Native Figma reviews, original image provenance and historical evidence ZIPs retain their immutable 1.1/1.2/1.2.1 scopes; no new native master or all-route native review is claimed.",
     "ESLint passed with the existing unused afRebuild warning in the local Figma rebuild plugin."
   ],
-  "recordedAt": "2026-10-19T23:44:55.315492+00:00",
+  "recordedAt": "2026-10-19T23:53:54.145339+00:00",
   "archiveExportFix": {
     "sourceZipExcludesNestedDownloads": true,
     "documentationDownloads": "Canonical versioned GitHub release assets from documentation, landing and pricing screens; historical image receipt is pinned to the public v1.3.0 source tag.",
@@ -421,5 +432,222 @@
     "scannedFilesAndArchiveEntries": 3246,
     "archiveEntries": 1858,
     "findings": []
+  },
+  "publishedDemo": {
+    "status": "passed",
+    "baseURL": "https://terrizoaguimor.github.io/aureform-ui",
+    "scope": "All 69 views in EN/ES desktop dark; thirteen ES mobile light views; ten main-region Axe scans; three real browser behaviors",
+    "routeAndViewportVisits": 153,
+    "mainRegionAxeScans": 10,
+    "axeViolations": 0,
+    "axeIncomplete": [
+      {
+        "locale": "en",
+        "route": "dashboard",
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "customers",
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "products",
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "invoices",
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "orders",
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "maps",
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "settings/billing",
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "media",
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "docs/license",
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "locale": "en",
+        "route": "auth/sign-in",
+        "incomplete": ["color-contrast"]
+      }
+    ],
+    "pageErrors": [],
+    "failedResources": [],
+    "interactions": [
+      "Language switch retains the mounted route",
+      "Light theme persists after reload",
+      "Real browser image download preserves the exact WebP bytes"
+    ],
+    "finishedAt": "2026-10-19T23:52:18.795Z"
+  },
+  "publishedApplicationTests": {
+    "status": "passed",
+    "baseURL": "https://terrizoaguimor.github.io/aureform-ui",
+    "stats": {
+      "startTime": "2026-10-19T23:50:55.422Z",
+      "duration": 29475.097999999998,
+      "expected": 18,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "scope": "The same 18 final application tests executed against GitHub Pages. Commerce/OAuth remain mock; the Maps SDK network failure is intercepted. No live service transaction was performed."
+  },
+  "publishedDistribution": {
+    "status": "passed",
+    "checkedAt": "2026-10-19T23:51:00.914412+00:00",
+    "scope": "Streamed archive and registry bytes. The delivery receipt is subsequently updated with publication results; no archive bytes change.",
+    "pagesArchives": [
+      {
+        "name": "aureform-ui-free.zip",
+        "status": "passed",
+        "bytes": 237979,
+        "sha256": "0afc5269bdb0fc66b66fde200f44702721cc663a8b073321bb27bf19c267ebd6",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-images.zip",
+        "status": "passed",
+        "bytes": 5853683,
+        "sha256": "434f9cd248a9077e6562b8f893db2006c7b7aabde7139f5221c8053d0debaac8",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-native-evidence-1.1.zip",
+        "status": "passed",
+        "bytes": 15997293,
+        "sha256": "a4f80d58b951b7f3ee49ba5fe1a3e9cbca13eb3d88e2e5f2e5ced570eb492465",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-native-evidence-1.2.1.zip",
+        "status": "passed",
+        "bytes": 3771196,
+        "sha256": "4f3253e59c05002e9adb99bd4c80ee1445cd8e9dae767520d2177b7677e78d8d",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-native-evidence-1.2.zip",
+        "status": "passed",
+        "bytes": 9050463,
+        "sha256": "6ea74097ac854e0271b86f0d12c326f30ed37141d6add6db00723d90bb36324b",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-source.zip",
+        "status": "passed",
+        "bytes": 85944206,
+        "sha256": "97ae1bbbb03dcfa16de94f0922ebb533fd48bf2f8ccf0bd360f8350f0dd58075",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-starter.zip",
+        "status": "passed",
+        "bytes": 465168,
+        "sha256": "637f534a1786006b18ff0fb7af3e31715dd0dbd44f326f0e5a425c6b99cb0a4f",
+        "httpStatus": 200
+      }
+    ],
+    "releaseArchives": [
+      {
+        "name": "aureform-design-snapshots.zip",
+        "status": "passed",
+        "bytes": 7761424,
+        "sha256": "9dc1bdeb146300308f1fde62009e55e4b1e0c23c25be156717575e74bcaa24f0",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-free.zip",
+        "status": "passed",
+        "bytes": 237979,
+        "sha256": "0afc5269bdb0fc66b66fde200f44702721cc663a8b073321bb27bf19c267ebd6",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-images.zip",
+        "status": "passed",
+        "bytes": 5853683,
+        "sha256": "434f9cd248a9077e6562b8f893db2006c7b7aabde7139f5221c8053d0debaac8",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-native-evidence-1.1.zip",
+        "status": "passed",
+        "bytes": 15997293,
+        "sha256": "a4f80d58b951b7f3ee49ba5fe1a3e9cbca13eb3d88e2e5f2e5ced570eb492465",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-native-evidence-1.2.1.zip",
+        "status": "passed",
+        "bytes": 3771196,
+        "sha256": "4f3253e59c05002e9adb99bd4c80ee1445cd8e9dae767520d2177b7677e78d8d",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-native-evidence-1.2.zip",
+        "status": "passed",
+        "bytes": 9050463,
+        "sha256": "6ea74097ac854e0271b86f0d12c326f30ed37141d6add6db00723d90bb36324b",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-source.zip",
+        "status": "passed",
+        "bytes": 85944206,
+        "sha256": "97ae1bbbb03dcfa16de94f0922ebb533fd48bf2f8ccf0bd360f8350f0dd58075",
+        "httpStatus": 200
+      },
+      {
+        "name": "aureform-ui-starter.zip",
+        "status": "passed",
+        "bytes": 465168,
+        "sha256": "637f534a1786006b18ff0fb7af3e31715dd0dbd44f326f0e5a425c6b99cb0a4f",
+        "httpStatus": 200
+      }
+    ],
+    "registryEntries": 107,
+    "newRegistryEntries": [
+      "commerce-billing",
+      "commerce-checkout",
+      "commerce-invoice-view",
+      "commerce-order-editor",
+      "commerce-provider",
+      "commerce-workspace",
+      "google-map",
+      "maps-workspace",
+      "product-image-editor",
+      "product-manager",
+      "social-auth"
+    ],
+    "updatedTemplatesVerified": ["auth", "map-invoice"],
+    "documentationDownloadLinks": "Canonical source/images release assets verified in EN/ES; historical receipt returned HTTP 200.",
+    "limitations": []
+  },
+  "publishedEvidenceDigests": {
+    "production-browser-report": "0b45f9233eee6352eced41ee4c5462477f6e11368b7653147544f1655a35bc96",
+    "production-application-tests": "7a6a8ca16656e225869c93593f56fa5ae935dd4610e48229843d174edf99b7b3",
+    "public-distribution-report": "8b5d466b3bd03094bf33b3b89e5544648ac48fcd5454830a3ff56bdcff74f08d"
   }
 }
