@@ -1,0 +1,27 @@
+import { readFile, writeFile } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+import { createHash } from "node:crypto";
+const run=promisify(execFile);
+const config=JSON.parse(await readFile("/tmp/aureform-native-image-uploads-1.2.1.jobs.json","utf8"));
+const ledgerFile=config.root+"/.figma/native-generated-images-1.2.1.json";
+const ledger=JSON.parse(await readFile(ledgerFile,"utf8"));
+const outcomes=await Promise.allSettled(config.jobs.map(async job=>{
+ const asset=ledger.assets.find(a=>a.id===job.assetId);
+ if(!asset||asset.renderStatus!=="pending-upload")throw Error("Unexpected render status");
+ const sourceFile="/tmp/aureform-native-image-render-1.2.1/"+asset.id+".png";
+ const bytes=await readFile(sourceFile);
+ if(createHash("sha256").update(bytes).digest("hex")!==asset.renderEncoding.sha256)throw Error("PNG byte mismatch");
+ const {stdout}=await run("curl",["-fsS","--max-time","55","-X","POST","-F","file=@"+sourceFile+";type=image/png",job.url],{maxBuffer:1024*1024});
+ const reply=JSON.parse(stdout);
+ if(reply.success!==true||reply.placedOnNodeId!==asset.imageNodeId||reply.sizeBytes!==bytes.length||! /^[a-f0-9]+$/.test(reply.imageHash))throw Error("Unexpected upload receipt");
+ return {assetId:asset.id,success:true,imageHash:reply.imageHash,sizeBytes:reply.sizeBytes,contentType:reply.contentType,placedOnNodeId:reply.placedOnNodeId};
+}));
+const receipts=outcomes.map((o,i)=>o.status==="fulfilled"?o.value:{assetId:config.jobs[i].assetId,success:false,errorCode:o.reason.code??"UPLOAD_FAILED"});
+for(const receipt of receipts.filter(r=>r.success))Object.assign(ledger.assets.find(a=>a.id===receipt.assetId),{renderStatus:"uploaded-awaiting-native-review",imageHash:receipt.imageHash,renderUploadReceipt:receipt});
+const result={status:receipts.every(r=>r.success)?"render-png-uploads-completed":"render-upload-errors",receipts,createdNodeIds:[],mutatedNodeIds:receipts.filter(r=>r.success).map(r=>r.placedOnNodeId)};
+const journalFile=".figma/journals/image-assets-1.2.1/"+config.journal+".result.json";
+await writeFile(config.root+"/"+journalFile,JSON.stringify(result,null,2)+"\n");
+ledger.journals.push({step:config.journal,code:".figma/journals/image-assets-1.2.1/08-upload-render-pngs.mjs",result:journalFile,mutatedNodes:result.mutatedNodeIds.length,createdNodes:0});
+await writeFile(ledgerFile,JSON.stringify(ledger,null,2)+"\n");
+console.log(JSON.stringify({successCount:receipts.filter(r=>r.success).length,errors:receipts.filter(r=>!r.success),renderUploaded:ledger.assets.filter(a=>a.renderUploadReceipt).length}));

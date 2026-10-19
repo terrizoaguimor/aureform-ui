@@ -1,0 +1,262 @@
+{
+  "pageId": "2:4",
+  "records": [
+    {
+      "name": "WorkspaceStatus",
+      "setId": "225:1708",
+      "defaultId": "225:1615",
+      "variants": [
+        {
+          "id": "225:1615",
+          "name": "State=Owner, Theme=Light",
+          "w": 1080,
+          "h": 100
+        },
+        {
+          "id": "225:1629",
+          "name": "State=Owner, Theme=Dark",
+          "w": 1080,
+          "h": 100
+        },
+        {
+          "id": "225:1642",
+          "name": "State=Viewer, Theme=Light",
+          "w": 1080,
+          "h": 100
+        },
+        {
+          "id": "225:1655",
+          "name": "State=Viewer, Theme=Dark",
+          "w": 1080,
+          "h": 100
+        },
+        {
+          "id": "225:1668",
+          "name": "State=Storage-error, Theme=Light",
+          "w": 1080,
+          "h": 292
+        },
+        {
+          "id": "225:1688",
+          "name": "State=Storage-error, Theme=Dark",
+          "w": 1080,
+          "h": 292
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Owner",
+          "variantOptions": [
+            "Owner",
+            "Viewer",
+            "Storage-error"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "texts": 30,
+      "instances": 20
+    },
+    {
+      "name": "OnboardingFlow",
+      "setId": "225:2068",
+      "defaultId": "225:1709",
+      "variants": [
+        {
+          "id": "225:1709",
+          "name": "State=Organization, Theme=Light",
+          "w": 1080,
+          "h": 340
+        },
+        {
+          "id": "225:1743",
+          "name": "State=Organization, Theme=Dark",
+          "w": 1080,
+          "h": 340
+        },
+        {
+          "id": "225:1776",
+          "name": "State=Workspace, Theme=Light",
+          "w": 1080,
+          "h": 432
+        },
+        {
+          "id": "225:1812",
+          "name": "State=Workspace, Theme=Dark",
+          "w": 1080,
+          "h": 432
+        },
+        {
+          "id": "225:1848",
+          "name": "State=Invitations, Theme=Light",
+          "w": 1080,
+          "h": 470
+        },
+        {
+          "id": "225:1892",
+          "name": "State=Invitations, Theme=Dark",
+          "w": 1080,
+          "h": 470
+        },
+        {
+          "id": "225:1936",
+          "name": "State=Ready, Theme=Light",
+          "w": 1080,
+          "h": 373
+        },
+        {
+          "id": "225:1969",
+          "name": "State=Ready, Theme=Dark",
+          "w": 1080,
+          "h": 373
+        },
+        {
+          "id": "225:2002",
+          "name": "State=Complete, Theme=Light",
+          "w": 1080,
+          "h": 340
+        },
+        {
+          "id": "225:2035",
+          "name": "State=Complete, Theme=Dark",
+          "w": 1080,
+          "h": 340
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Organization",
+          "variantOptions": [
+            "Organization",
+            "Workspace",
+            "Invitations",
+            "Ready",
+            "Complete"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "texts": 154,
+      "instances": 74
+    },
+    {
+      "name": "MemberManagement",
+      "setId": "225:2482",
+      "defaultId": "225:2069",
+      "variants": [
+        {
+          "id": "225:2069",
+          "name": "State=Default, Theme=Light",
+          "w": 1080,
+          "h": 789
+        },
+        {
+          "id": "225:2135",
+          "name": "State=Default, Theme=Dark",
+          "w": 1080,
+          "h": 789
+        },
+        {
+          "id": "225:2200",
+          "name": "State=Empty, Theme=Light",
+          "w": 1080,
+          "h": 506
+        },
+        {
+          "id": "225:2222",
+          "name": "State=Empty, Theme=Dark",
+          "w": 1080,
+          "h": 506
+        },
+        {
+          "id": "225:2244",
+          "name": "State=Read-only, Theme=Light",
+          "w": 1080,
+          "h": 677
+        },
+        {
+          "id": "225:2286",
+          "name": "State=Read-only, Theme=Dark",
+          "w": 1080,
+          "h": 677
+        },
+        {
+          "id": "225:2328",
+          "name": "State=Confirm, Theme=Light",
+          "w": 1080,
+          "h": 981
+        },
+        {
+          "id": "225:2405",
+          "name": "State=Confirm, Theme=Dark",
+          "w": 1080,
+          "h": 981
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Empty",
+            "Read-only",
+            "Confirm"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "texts": 192,
+      "instances": 82
+    }
+  ],
+  "createdIds": [
+    "225:1615",
+    "225:1629",
+    "225:1642",
+    "225:1655",
+    "225:1668",
+    "225:1688",
+    "225:1709",
+    "225:1743",
+    "225:1776",
+    "225:1812",
+    "225:1848",
+    "225:1892",
+    "225:1936",
+    "225:1969",
+    "225:2002",
+    "225:2035",
+    "225:2069",
+    "225:2135",
+    "225:2200",
+    "225:2222",
+    "225:2244",
+    "225:2286",
+    "225:2328",
+    "225:2405"
+  ]
+}

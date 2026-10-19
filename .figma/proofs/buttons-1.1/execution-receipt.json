@@ -1,0 +1,120 @@
+{
+  "status": "prepared-needs-owner-visual-validation",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "2:3",
+  "createdStyleIds": [],
+  "mutatedStyleIds": [],
+  "components": {
+    "Button / Shapes": {
+      "setId": "176:4598",
+      "defaultId": "176:4562",
+      "label": "Label#176:0",
+      "showIcon": "Show icon#176:10",
+      "icon": "Icon#176:20",
+      "axes": {"Shape": ["Rounded", "Pill", "Square"], "Size": ["Small", "Medium", "Large"]},
+      "sourceMappings": {
+        "shape": {"Rounded": "rounded", "Pill": "pill", "Square": "square"},
+        "size": {"Small": "sm", "Medium": "default", "Large": "lg"}
+      },
+      "variants": [
+        {"id": "176:4562", "name": "Shape=Rounded, Size=Medium", "axes": {"Shape": "Rounded", "Size": "Medium"}},
+        {"id": "176:4566", "name": "Shape=Rounded, Size=Small", "axes": {"Shape": "Rounded", "Size": "Small"}},
+        {"id": "176:4570", "name": "Shape=Rounded, Size=Large", "axes": {"Shape": "Rounded", "Size": "Large"}},
+        {"id": "176:4574", "name": "Shape=Pill, Size=Medium", "axes": {"Shape": "Pill", "Size": "Medium"}},
+        {"id": "176:4578", "name": "Shape=Pill, Size=Small", "axes": {"Shape": "Pill", "Size": "Small"}},
+        {"id": "176:4582", "name": "Shape=Pill, Size=Large", "axes": {"Shape": "Pill", "Size": "Large"}},
+        {"id": "176:4586", "name": "Shape=Square, Size=Medium", "axes": {"Shape": "Square", "Size": "Medium"}},
+        {"id": "176:4590", "name": "Shape=Square, Size=Small", "axes": {"Shape": "Square", "Size": "Small"}},
+        {"id": "176:4594", "name": "Shape=Square, Size=Large", "axes": {"Shape": "Square", "Size": "Large"}}
+      ],
+      "propertyDefinitions": {
+        "Label#176:0": {"type": "TEXT", "defaultValue": "Continue"},
+        "Show icon#176:10": {"type": "BOOLEAN", "defaultValue": false},
+        "Icon#176:20": {"type": "INSTANCE_SWAP", "defaultValue": "3:2"},
+        "Shape": {"type": "VARIANT", "defaultValue": "Rounded", "variantOptions": ["Rounded", "Pill", "Square"]},
+        "Size": {"type": "VARIANT", "defaultValue": "Medium", "variantOptions": ["Medium", "Small", "Large"]}
+      }
+    }
+  },
+  "existingAppearance": {"setId": "97:655", "defaultId": "97:625", "label": "Label#97:0", "variants": 15, "gradientStatesRefreshed": 3},
+  "reusedMasters": [
+    {"name": "Button", "setId": "3:113", "defaultId": "3:17"},
+    {"name": "Button / Additional styles", "setId": "25:700", "defaultId": "25:646"},
+    {"name": "Button / Loading & icons", "setId": "25:773", "defaultId": "25:701"},
+    {"name": "Button / Appearance", "setId": "97:655", "defaultId": "97:625"}
+  ],
+  "iconMasterId": "3:2",
+  "sourceContract": {
+    "shapes": {"Rounded": "rounded", "Pill": "pill", "Square": "square"},
+    "sizes": {
+      "Small": {"source": "sm", "height": 32, "padding": 12, "fontSize": 13},
+      "Medium": {"source": "default", "height": 42, "padding": 16, "fontSize": 13},
+      "Large": {"source": "lg", "height": 48, "padding": 24, "fontSize": 14}
+    },
+    "defaults": {
+      "radius": {"md": 10.4, "full": 999},
+      "gap": 8,
+      "lineHeight": 20,
+      "letterSpacingPercent": -1,
+      "gradientHoverGlow": {"color": "#8B5CF6", "radius": 31, "Light": 0.16, "Dark": 0.26},
+      "controlColors": {"Light": ["#8558EC", "#158191", "#218560", "#218560"], "Dark": ["#8B5CF6", "#22D3EE", "#34D399", "#34D399"]}
+    }
+  },
+  "modeAwareControlStyles": {"Light": "S:f94b92637c8981e80ad9cb928d38a6e14c05b74e,", "Dark": "S:4e792a1e5af7cc9f071c45e15dad490e18e5adff,"},
+  "dependencies": {
+    "colorCollectionId": "VariableCollectionId:2:36",
+    "dimensionCollectionId": "VariableCollectionId:2:58",
+    "modeIds": {"Light": "2:1", "Dark": "2:2"},
+    "variableIds": {
+      "background": "VariableID:2:37",
+      "foreground": "VariableID:2:41",
+      "muted-foreground": "VariableID:2:42",
+      "primary": "VariableID:2:43",
+      "primary-foreground": "VariableID:2:45",
+      "spacing/2": "VariableID:2:61",
+      "spacing/3": "VariableID:2:62",
+      "spacing/4": "VariableID:2:63",
+      "spacing/6": "VariableID:2:65",
+      "spacing/8": "VariableID:2:66",
+      "spacing/12": "VariableID:2:68",
+      "radius/md": "VariableID:2:71",
+      "radius/full": "VariableID:2:74",
+      "control/color-1": "VariableID:108:68",
+      "control/color-2": "VariableID:108:69",
+      "control/color-3": "VariableID:108:70",
+      "control/color-4": "VariableID:108:71"
+    },
+    "styleIds": {
+      "Light": {"control": "S:f94b92637c8981e80ad9cb928d38a6e14c05b74e,", "soft": "S:c910c6bbb0ca23901963053979c2490f0ce268c6,"},
+      "Dark": {"control": "S:4e792a1e5af7cc9f071c45e15dad490e18e5adff,", "soft": "S:8f8bc239d6a0114d60d657275d4b60636e581880,"}
+    },
+    "textStyleId": "S:d45f895a9c506b67dcd6818a673cf86afcaab62d,",
+    "addonVariantIds": {"Loading": "25:701", "Icon": "25:707", "Small icon": "25:710"}
+  },
+  "loadedFonts": [
+    {"family": "Manrope", "style": "Regular"},
+    {"family": "Manrope", "style": "SemiBold"},
+    {"family": "Manrope", "style": "Bold"},
+    {"family": "Manrope", "style": "SemiBold", "variationSettings": {"wght": 600}}
+  ],
+  "reviewFrames": [
+    {"id": "176:4599", "mode": "Dark", "width": 1360, "height": 636, "buttonExamples": 27},
+    {"id": "176:4696", "mode": "Light", "width": 1360, "height": 636, "buttonExamples": 27}
+  ],
+  "limits": [
+    "Owner execution and screenshots are still required; preparation is not a native visual audit.",
+    "The existing non-gradient appearance and loading/icon masters retain their owner-authored structure.",
+    "Native loading/hover specimens are static; browser accessibility, focus and interaction require source QA.",
+    "Refresh the embedded source defaults if the owner's pure configuration changes."
+  ],
+  "affectedNodeIds": {
+    "encoding": "observed-prefix-ranges-v1",
+    "categoryBits": {"created": 1, "mutated": 2, "removed": 4},
+    "counts": {"created": 177, "mutated": 7, "removed": 0, "unique": 184},
+    "prefixesFrontCodedCSV": "0,176:\n0,2:\n0,97:\n0,I176:4563;3:\n8,7;3:\n7,71;3:\n8,5;3:\n8,9;3:\n7,83;3:\n8,7;3:\n7,91;3:\n8,5;3:\n6,603;176:\n8,8;176:\n7,13;176:\n8,9;176:\n7,24;176:\n8,9;176:\n7,35;176:\n7,40;176:\n8,5;176:\n7,51;97:\n8,3;97:\n8,5;97:\n8,7;97:\n8,9;97:\n7,62;97:\n8,4;97:\n8,6;97:\n8,8;97:\n7,70;97:\n8,3;97:\n8,5;97:\n8,7;97:\n8,9;97:\n7,81;97:\n8,4;25:\n13,702;24:\n7,90;25:\n13,708;9:\n8,3;25:\n13,711;9:\n6,700;176:\n8,4;176:\n8,8;176:\n7,13;176:\n8,7;176:\n7,21;176:\n8,6;176:\n7,30;176:\n8,4;176:\n8,9;97:\n7,41;97:\n8,3;97:\n8,5;97:\n8,7;97:\n7,50;97:\n8,2;97:\n8,4;97:\n8,6;97:\n8,8;97:\n7,61;97:\n8,3;97:\n8,5;97:\n8,7;97:\n8,9;97:\n7,72;25:\n13,702;24:\n8,8;25:\n13,708;9:\n7,81;25:\n13,711;9:",
+    "rangesCSV": "1,0,4562-4563;4565-4567;4569-4571;4573-4575;4577-4579;4581-4583;4585-4587;4589-4591;4593-4595;4597-4603;4608;4613;4618-4619;4624;4629;4634-4635;4640;4645;4650-4651;4653;4655;4657;4659;4661-4662;4664;4666;4668;4670;4672-4673;4675;4677;4679;4681;4683-4684;4690;4693;4696-4700;4704;4708;4712-4713;4717;4721;4725-4726;4730;4734;4738-4739;4741;4743;4745;4747;4749-4750;4752;4754;4756;4758;4760-4761;4763;4765;4767;4769;4771-4772;4778;4781\n1,3,4\n1,4,4\n1,5,4\n1,6,4\n1,7,4\n1,8,4\n1,9,4\n1,10,4\n1,11,4\n1,12,4569\n1,13,4565\n1,14,4573\n1,15,4581\n1,16,4577\n1,17,4585\n1,18,4593\n1,19,4589\n1,20,4597\n1,21,626\n1,22,632\n1,23,638\n1,24,644\n1,25,650\n1,26,628\n1,27,634\n1,28,640\n1,29,646\n1,30,652\n1,31,630\n1,32,636\n1,33,642\n1,34,648\n1,35,654\n1,36,702;706\n1,37,494-496\n1,38,708\n1,39,45\n1,40,711\n1,41,45\n1,42,4569\n1,43,4565\n1,44,4573\n1,45,4581\n1,46,4577\n1,47,4585\n1,48,4593\n1,49,4589\n1,50,4597\n1,51,626\n1,52,632\n1,53,638\n1,54,644\n1,55,650\n1,56,628\n1,57,634\n1,58,640\n1,59,646\n1,60,652\n1,61,630\n1,62,636\n1,63,642\n1,64,648\n1,65,654\n1,66,702;706\n1,67,494-496\n1,68,708\n1,69,45\n1,70,711\n1,71,45\n2,1,3\n2,2,649-654",
+    "literalsJSON": "[]"
+  },
+  "createdComponentPropertyKeys": ["Label#176:0", "Show icon#176:10", "Icon#176:20"],
+  "returnBudget": {"maximumBytes": 20000, "encoding": "minified-json-string", "nodeIdDecoder": "decodeAffectedIds"}
+}

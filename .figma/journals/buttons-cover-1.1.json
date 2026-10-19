@@ -1,0 +1,52 @@
+{
+  "recordedAt": "2026-10-19T05:28:43.906454+00:00",
+  "agent": "Zeno",
+  "lease": "NoLease",
+  "callsInFlight": 0,
+  "phase": "approved-payloads-complete-lease-ceded",
+  "steps": [
+    {
+      "step": "Button9",
+      "status": "native-created",
+      "setId": "176:4598",
+      "reviewIds": [
+        "176:4599",
+        "176:4696"
+      ],
+      "receiptPath": ".figma/proofs/buttons-1.1/execution-receipt.json",
+      "createdIds": 177,
+      "mutatedIds": 7,
+      "removedIds": 0
+    },
+    {
+      "step": "CoverCounts",
+      "status": "numeric-text-updated",
+      "receiptPath": ".figma/proofs/buttons-1.1/cover-execution-receipt.json",
+      "mutatedNodeIds": [
+        "27:15",
+        "27:43"
+      ],
+      "loadedFontCount": 2
+    },
+    {
+      "step": "Captures",
+      "status": "four-actual-exports-owner-download-pending",
+      "nodeIds": [
+        "176:4599",
+        "176:4696",
+        "27:2",
+        "27:46"
+      ],
+      "canvasMutated": false
+    }
+  ],
+  "pendingOverallCodeConnect": true,
+  "pendingOverallNativeAudit": true,
+  "insight": "I learned that Figma stores radius/md as a float32 value; an exact equality check rejected the unchanged 10.4 source token before any nodes were created.",
+  "stateSpecificStepsRecorded": true,
+  "ownerPngDownload": "pending",
+  "ownerVisualReview": "pending",
+  "captureManifestPath": ".figma/proofs/buttons-1.1/capture-manifest.json",
+  "privateStagingPath": "/tmp/aureform-buttons-cover-owner-proof-1.1",
+  "ownerDownloadCommand": "bash /tmp/aureform-buttons-cover-download-1.1.sh"
+}

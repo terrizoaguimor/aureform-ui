@@ -1,0 +1,287 @@
+{
+  "status": "render-png-uploads-completed",
+  "receipts": [
+    {
+      "assetId": "isabel-torres",
+      "success": true,
+      "imageHash": "45fb9581094e472606f99d228cb58e3fedbe7af3",
+      "sizeBytes": 93997,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:73"
+    },
+    {
+      "assetId": "leo-martin",
+      "success": true,
+      "imageHash": "174d8bfdf656f63f602245a870123d238f7ce989",
+      "sizeBytes": 104290,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:78"
+    },
+    {
+      "assetId": "noor-ahmed",
+      "success": true,
+      "imageHash": "5aace8ef6333f4a1ae5db1dba9c6ada223fe42d8",
+      "sizeBytes": 81020,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:83"
+    },
+    {
+      "assetId": "daniel-kim",
+      "success": true,
+      "imageHash": "25233cbb7ab661591a6840443bd16ba111b0ffa9",
+      "sizeBytes": 83986,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:89"
+    },
+    {
+      "assetId": "olivia-rhye",
+      "success": true,
+      "imageHash": "c5faeec021dfec54586b10899acc431635494292",
+      "sizeBytes": 86182,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:94"
+    },
+    {
+      "assetId": "phoenix-baker",
+      "success": true,
+      "imageHash": "60ce9e21b0584ce12bbd9cae7fee747df86251ec",
+      "sizeBytes": 77186,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:100"
+    },
+    {
+      "assetId": "lana-steiner",
+      "success": true,
+      "imageHash": "6abdc84878a8c40cc0bc072758a150581ecbd9c4",
+      "sizeBytes": 86346,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:105"
+    },
+    {
+      "assetId": "demi-wilkinson",
+      "success": true,
+      "imageHash": "d4c04714c48b476e0642134402be819832280a9c",
+      "sizeBytes": 95031,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:111"
+    },
+    {
+      "assetId": "drew-cano",
+      "success": true,
+      "imageHash": "1f71cf403b1a0eaf3ae98cea7fca0555e1289714",
+      "sizeBytes": 87244,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:116"
+    },
+    {
+      "assetId": "amelia-wilson",
+      "success": true,
+      "imageHash": "10dab9d6f291b793a0f42c0e2069fa0d45e044ae",
+      "sizeBytes": 112332,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:121"
+    },
+    {
+      "assetId": "matias-vega",
+      "success": true,
+      "imageHash": "5956bade8bc1f49ef47525a7cc55d5d9227ddc71",
+      "sizeBytes": 95185,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:126"
+    },
+    {
+      "assetId": "sofia-chen",
+      "success": true,
+      "imageHash": "a2ab9cc4612de52985fb0cd3412cf53ec85ecf66",
+      "sizeBytes": 90349,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:133"
+    },
+    {
+      "assetId": "lucas-moreau",
+      "success": true,
+      "imageHash": "de8e400422fa4b6097b027a55cd0ccdcaf2181e6",
+      "sizeBytes": 93992,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:138"
+    },
+    {
+      "assetId": "alex-rivera",
+      "success": true,
+      "imageHash": "ed38046a60bb6125127c97c07bd1eeeda7d81a22",
+      "sizeBytes": 86886,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:143"
+    },
+    {
+      "assetId": "isabel-moreno",
+      "success": true,
+      "imageHash": "974f354f9ae362058ef800f455cd6371b327efca",
+      "sizeBytes": 89366,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:148"
+    },
+    {
+      "assetId": "studio-updates",
+      "success": true,
+      "imageHash": "68d72d808ef45a6a0980eea19128c67b603eaecc",
+      "sizeBytes": 38891,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:154"
+    },
+    {
+      "assetId": "forma-collective",
+      "success": true,
+      "imageHash": "9f670e7ab6d2e17c2bcfb8ea76c55f70d3641730",
+      "sizeBytes": 30448,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:159"
+    },
+    {
+      "assetId": "forma-desk-lamp",
+      "success": true,
+      "imageHash": "676dbff0fed4232342e05ed8a23438dbdf1561b1",
+      "sizeBytes": 72938,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:168"
+    },
+    {
+      "assetId": "arc-lounge-chair",
+      "success": true,
+      "imageHash": "f050409dc9cc27f0f65cc1b1ff1fd1ded13f8564",
+      "sizeBytes": 225376,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:173"
+    },
+    {
+      "assetId": "linea-notebook",
+      "success": true,
+      "imageHash": "3a4bedc2ac6f06c0c2dec70bb885924cd81090de",
+      "sizeBytes": 218290,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:178"
+    },
+    {
+      "assetId": "studio-tote",
+      "success": true,
+      "imageHash": "af5079d02c13ad360bbfa3e52685ba63095ced22",
+      "sizeBytes": 205039,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:183"
+    },
+    {
+      "assetId": "morrow-ceramic-cup",
+      "success": true,
+      "imageHash": "03321a539bf0ab268bb1a2aa950f42bcb1550533",
+      "sizeBytes": 208754,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:190"
+    },
+    {
+      "assetId": "silhouette-vase",
+      "success": true,
+      "imageHash": "a352b2e419d1e62cdc550a2a398a9ab936c6db45",
+      "sizeBytes": 245994,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:195"
+    },
+    {
+      "assetId": "fold-side-table",
+      "success": true,
+      "imageHash": "8eb286941ca3e5d86b05d0dbf9ebccd3b4f0a5e1",
+      "sizeBytes": 60453,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:200"
+    },
+    {
+      "assetId": "essential-wall-print",
+      "success": true,
+      "imageHash": "aef72d90ed4500d8c32f6713c1ea176a6e7ced17",
+      "sizeBytes": 124832,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:205"
+    },
+    {
+      "assetId": "quiet-forms",
+      "success": true,
+      "imageHash": "d3ee962499d363e9c65b9535e1d2ae1a4c1615da",
+      "sizeBytes": 420389,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:214"
+    },
+    {
+      "assetId": "studio",
+      "success": true,
+      "imageHash": "0b2c8366dd48d588342f7a28864dffb5bb8f3170",
+      "sizeBytes": 667820,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:219"
+    },
+    {
+      "assetId": "arc",
+      "success": true,
+      "imageHash": "504133e4d0fc0cd1edbb0270720c3edbf143459e",
+      "sizeBytes": 760882,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:224"
+    },
+    {
+      "assetId": "morrow",
+      "success": true,
+      "imageHash": "870cab8b1cd152cadcd34ed22ba97b99ad7f99ae",
+      "sizeBytes": 432902,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:230"
+    },
+    {
+      "assetId": "silhouette",
+      "success": true,
+      "imageHash": "1c52aa468aabfe6f3a2edac713a136b616fb1450",
+      "sizeBytes": 533287,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:236"
+    },
+    {
+      "assetId": "goodform",
+      "success": true,
+      "imageHash": "b9d975eb69764139d1b96f344f5039f39fcc2710",
+      "sizeBytes": 415499,
+      "contentType": "image/png",
+      "placedOnNodeId": "263:241"
+    }
+  ],
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "263:73",
+    "263:78",
+    "263:83",
+    "263:89",
+    "263:94",
+    "263:100",
+    "263:105",
+    "263:111",
+    "263:116",
+    "263:121",
+    "263:126",
+    "263:133",
+    "263:138",
+    "263:143",
+    "263:148",
+    "263:154",
+    "263:159",
+    "263:168",
+    "263:173",
+    "263:178",
+    "263:183",
+    "263:190",
+    "263:195",
+    "263:200",
+    "263:205",
+    "263:214",
+    "263:219",
+    "263:224",
+    "263:230",
+    "263:236",
+    "263:241"
+  ]
+}

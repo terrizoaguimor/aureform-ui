@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-10-19",
+  "scope": "Repository inventory of recorded native IDs and actual exported resources; not a fresh inspection of every Figma node",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "nativeFileAccess": {
+    "authenticatedConnector": "verified by actual design exports",
+    "anonymousView": "public link enabled; confirmed by owner on 2026-10-19",
+    "copyExportPermissions": "copy and export enabled; confirmed by owner on 2026-10-19",
+    "repositoryBundleRequiresFigmaAccess": false,
+    "independentAnonymousBrowserCheck": false
+  },
+  "recordedRouteIndex": {
+    "count": 69,
+    "map": "design/maps/routes.json",
+    "stateSha256": "917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03"
+  },
+  "componentIndex": {
+    "count": 92,
+    "map": "design/maps/components.json",
+    "cloudRegistered": false
+  },
+  "exports": [
+    {
+      "file": "design/exports/svg/palettes-dark.svg",
+      "nodeId": "101:25",
+      "name": "Six palettes / Dark",
+      "kind": "foundations",
+      "format": "svg",
+      "bytes": 988935,
+      "sha256": "4f07701310f2b8e13afb1a8f34fe6a6ba5591eb8cee0843d5ce09a8475adcb84",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=101-25",
+      "vectorPaths": 236,
+      "textElements": 0,
+      "imageElements": 0,
+      "selfContained": true,
+      "exportedAt": "2026-10-19T18:53:43.828589+00:00"
+    },
+    {
+      "file": "design/exports/svg/palettes-light.svg",
+      "nodeId": "101:726",
+      "name": "Six palettes / Light",
+      "kind": "foundations",
+      "format": "svg",
+      "bytes": 988818,
+      "sha256": "63e7cced8381972a7ca0cc876baec0beb745cd557c216ce4548ff7776040c635",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=101-726",
+      "vectorPaths": 236,
+      "textElements": 0,
+      "imageElements": 0,
+      "selfContained": true,
+      "exportedAt": "2026-10-19T18:53:43.828589+00:00"
+    },
+    {
+      "file": "design/exports/svg/dashboard.svg",
+      "nodeId": "5:2",
+      "name": "SaaS overview",
+      "kind": "template",
+      "format": "svg",
+      "bytes": 1684309,
+      "sha256": "cf9da99448ade61766d6a57eaa6a97bd1d4d94b7d2013237fc98988f64c5282f",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=5-2",
+      "vectorPaths": 288,
+      "textElements": 0,
+      "imageElements": 5,
+      "selfContained": true,
+      "exportedAt": "2026-10-19T18:53:43.828589+00:00"
+    },
+    {
+      "file": "design/exports/svg/customers.svg",
+      "nodeId": "237:18891",
+      "name": "Customers / Dark",
+      "kind": "template",
+      "format": "svg",
+      "bytes": 1631052,
+      "sha256": "45a31ce800190a4139bd2269bbe6bd266aa964156cbec87a01d051ddc2162e50",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-18891",
+      "vectorPaths": 258,
+      "textElements": 0,
+      "imageElements": 6,
+      "selfContained": true,
+      "exportedAt": "2026-10-19T18:53:43.828589+00:00"
+    },
+    {
+      "file": "design/exports/svg/onboarding.svg",
+      "nodeId": "237:16692",
+      "name": "Onboarding / Dark",
+      "kind": "template",
+      "format": "svg",
+      "bytes": 695277,
+      "sha256": "bc23587a8cd544f543a24e72ddae23d80d0f4736113536cecac6ea0bc4f47695",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-16692",
+      "vectorPaths": 126,
+      "textElements": 0,
+      "imageElements": 1,
+      "selfContained": true,
+      "exportedAt": "2026-10-19T18:53:43.828589+00:00"
+    },
+    {
+      "file": "design/exports/svg/chart-library.svg",
+      "nodeId": "23:501",
+      "name": "Chart / 13 kinds",
+      "kind": "component-set",
+      "format": "svg",
+      "bytes": 344319,
+      "sha256": "4aa7dfaacb2665e7cdeb672619f472174ac4c8df4cb15889af3564a01e5991df",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=23-501",
+      "vectorPaths": 289,
+      "textElements": 0,
+      "imageElements": 0,
+      "selfContained": true,
+      "exportedAt": "2026-10-19T18:53:43.828589+00:00"
+    },
+    {
+      "file": "design/exports/svg/button-shapes.svg",
+      "nodeId": "176:4598",
+      "name": "Button / Shapes",
+      "kind": "component-set",
+      "format": "svg",
+      "bytes": 65704,
+      "sha256": "fa096865e97118839719ccf11e061af5a225452a49ab7cd7af3981df2792b25f",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=176-4598",
+      "vectorPaths": 15,
+      "textElements": 0,
+      "imageElements": 0,
+      "selfContained": true,
+      "exportedAt": "2026-10-19T18:53:43.828589+00:00"
+    },
+    {
+      "file": "design/exports/svg/table-library.svg",
+      "nodeId": "23:355",
+      "name": "Table / 16 variants",
+      "kind": "component-set",
+      "format": "svg",
+      "bytes": 2399928,
+      "sha256": "3c21b1731b76ff8db7e70ba592c38815f068019556ac26e0ef69627397db47ca",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=23-355",
+      "vectorPaths": 516,
+      "textElements": 0,
+      "imageElements": 0,
+      "selfContained": true,
+      "exportedAt": "2026-10-19T18:54:27.120339+00:00"
+    }
+  ],
+  "newWordingProofs": [
+    {
+      "file": "design/releases/1.3.0/cover.png",
+      "nodeId": "27:2",
+      "bytes": 98469,
+      "sha256": "2d44dd9d2e09b6f1f6969d2dd53b555d7abbbe425ecc209aadd7d48e4e087aa7",
+      "width": 1440,
+      "height": 960,
+      "exportedOn": "2026-10-19"
+    },
+    {
+      "file": "design/releases/1.3.0/license.png",
+      "nodeId": "54:2873",
+      "bytes": 145033,
+      "sha256": "5407cebedd73c3853852cd783eef574550079276187a9f10e5e8bbbc70a3f3f2",
+      "width": 1440,
+      "height": 1720,
+      "exportedOn": "2026-10-19"
+    },
+    {
+      "file": "design/releases/1.3.0/community.png",
+      "nodeId": "55:7541",
+      "bytes": 131323,
+      "sha256": "dd8249212df8df058875bb1355c9ce708d398c0dea93d1da0b9ded4e8f866e65",
+      "width": 1440,
+      "height": 1380,
+      "exportedOn": "2026-10-19"
+    }
+  ],
+  "releaseRecord": "design/release-1.3.0.json",
+  "nativeFigIncluded": false,
+  "freshFullRouteVisualReview": false
+}

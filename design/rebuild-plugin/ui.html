@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 22px; font: 12px/1.6 Inter, system-ui, sans-serif; color: var(--figma-color-text, #202334); background: var(--figma-color-bg, #fff); }
+    h1 { font-size: 22px; line-height: 1.25; margin: 8px 0 10px; letter-spacing: -.6px; }
+    h2 { font-size: 13px; margin: 23px 0 8px; }
+    p { margin: 0 0 16px; color: var(--figma-color-text-secondary, #627088); }
+    .tag { color: var(--figma-color-text-brand, #764ed1); font-size: 10px; font-weight: 650; letter-spacing: 1.2px; }
+    label { display: block; font-weight: 550; margin: 12px 0 4px; }
+    input, select, button { width: 100%; border: 1px solid var(--figma-color-border, #dce1ec); border-radius: 8px; background: var(--figma-color-bg, #fff); color: inherit; font: inherit; padding: 9px 10px; }
+    input[type=file] { font-size: 11px; padding: 8px; }
+    button { cursor: pointer; font-weight: 600; margin-top: 15px; padding: 11px; }
+    button.primary { background: var(--figma-color-bg-brand, #764ed1); color: var(--figma-color-text-onbrand, #fff); border-color: transparent; }
+    button:disabled { cursor: wait; opacity: .55; }
+    :focus-visible { outline: 2px solid var(--figma-color-border-brand, #8b5cf6); outline-offset: 2px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .divider { border-top: 1px solid var(--figma-color-border, #e2e5ea); margin-top: 22px; }
+    #status { border-radius: 8px; padding: 10px; margin-top: 18px; background: var(--figma-color-bg-secondary, #f3f5fb); color: var(--figma-color-text-secondary, #586780); min-height: 38px; }
+    #status[data-type=error] { color: var(--figma-color-text-danger, #a42e4f); }
+    small { display: block; margin-top: 6px; color: var(--figma-color-text-secondary, #627088); }
+  </style>
+</head>
+<body>
+  <div class="tag">AUREFORM · APACHE 2.0</div>
+  <h1>A good place to begin.</h1>
+  <p>Rebuild local foundations and editable Button, Badge and Card starter variants.</p>
+  <label for="prefix">Library name</label>
+  <input id="prefix" value="Aureform community" maxlength="40">
+  <div class="grid">
+    <div>
+      <label for="palette">Palette</label>
+      <select id="palette">
+        <option value="aurora">Aurora</option><option value="violet">Violet</option>
+        <option value="ocean">Ocean</option><option value="mint">Mint</option>
+        <option value="ember">Ember</option><option value="rose">Rose</option>
+      </select>
+    </div>
+    <div>
+      <label for="mode">Appearance</label>
+      <select id="mode"><option value="light">Light</option><option value="dark">Dark</option></select>
+    </div>
+  </div>
+  <label for="tokens">Your Aureform tokens <small>Optional. The supplied tokens are already included.</small></label>
+  <input id="tokens" type="file" accept=".json,application/json">
+  <button id="rebuild" class="primary">Rebuild foundations</button>
+  <small>Manrope is required. New boards sit beside your existing work. This is a starter rebuild, not a complete .fig backup.</small>
+  <div class="divider"></div>
+  <h2>Import actual Figma SVG snapshots</h2>
+  <input id="svg" type="file" accept=".svg,image/svg+xml" multiple aria-label="Choose Aureform SVG snapshots">
+  <button id="import">Import selected snapshots</button>
+  <small>Vector shapes stay editable. Text is outlined; component bindings and auto-layout are not restored.</small>
+  <div id="status" role="status" aria-live="polite">Ready. No account connection or image generation is needed.</div>
+  <script>
+    const el = id => document.getElementById(id);
+    let busy = false;
+    const status = (text, type = "progress") => { el("status").textContent = text; el("status").dataset.type = type; };
+    const setBusy = value => { busy = value; el("rebuild").disabled = value; el("import").disabled = value; };
+    const post = message => parent.postMessage({ pluginMessage: message }, "*");
+    el("rebuild").addEventListener("click", async () => {
+      if (busy) return;
+      setBusy(true);
+      try {
+        const file = el("tokens").files[0];
+        if (file && file.size > 512 * 1024) throw new Error("Choose a token JSON smaller than 512 KB.");
+        const tokens = file ? JSON.parse(await file.text()) : null;
+        const prefix = el("prefix").value.trim();
+        if (!prefix) throw new Error("Choose a library name.");
+        status("Preparing your foundations");
+        post({ type: "rebuild", prefix, palette: el("palette").value, mode: el("mode").value, tokens });
+      } catch (error) { status(error.message, "error"); setBusy(false); }
+    });
+    el("import").addEventListener("click", async () => {
+      if (busy) return;
+      setBusy(true);
+      try {
+        const files = Array.from(el("svg").files);
+        if (!files.length || files.length > 8) throw new Error("Choose one to eight supplied SVG snapshots.");
+        if (files.some(file => file.size > 4 * 1024 * 1024)) throw new Error("Each SVG must be smaller than 4 MB.");
+        const payload = await Promise.all(files.map(async file => ({ name: file.name, content: await file.text() })));
+        for (const file of payload) {
+          const doc = new DOMParser().parseFromString(file.content, "image/svg+xml");
+          if (doc.querySelector("parsererror") || doc.documentElement.localName !== "svg") throw new Error("One file is not a valid SVG.");
+        }
+        status("Importing self-contained vector snapshots");
+        post({ type: "import-svg", files: payload });
+      } catch (error) { status(error.message, "error"); setBusy(false); }
+    });
+    window.addEventListener("message", event => {
+      const message = event.data.pluginMessage;
+      if (!message || !["progress", "success", "error"].includes(message.type)) return;
+      status(message.text, message.type);
+      if (message.type !== "progress") setBusy(false);
+    });
+  </script>
+</body>
+</html>

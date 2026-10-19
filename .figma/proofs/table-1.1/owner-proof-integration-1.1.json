@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "scope": "Table-only owner proof integration",
+  "recordedAt": "2026-10-19T05:12:59.128494+00:00",
+  "ownerVisualReview": {
+    "path": ".figma/proofs/table-1.1/owner-visual-review.json",
+    "sha256": "9eec4656873b83a7ece29ac347c52e2fd46fba09c69c27f2eedf6d580849a0ca",
+    "reviewer": "owner",
+    "checkedAt": "2026-10-19T05:11:28.452906+00:00",
+    "status": "PASS",
+    "image": {
+      "path": ".figma/proofs/table-1.1/owner-final.png",
+      "width": 2492,
+      "height": 5655,
+      "bytes": 2406312,
+      "sha256": "3bdcd7a48f3065767122d80ba1308071ba033a6792443990b289f8ec878b0f14"
+    },
+    "loadingDetail": {
+      "path": ".figma/proofs/table-1.1/owner-loading-detail.png",
+      "width": 2492,
+      "height": 590,
+      "bytes": 61705,
+      "sha256": "96488eff44c7800bae5ae54794228c0e5f2eed6bc1272a22d38377eb93f1fdf7"
+    },
+    "visualCoverage": {
+      "themes": [
+        "Light",
+        "Dark"
+      ],
+      "representativeCases": 10,
+      "representativeInstances": 20,
+      "states": [
+        "Default",
+        "Selected",
+        "Empty",
+        "Loading",
+        "Error"
+      ],
+      "materials": [
+        "Elevated",
+        "Glass",
+        "Gradient",
+        "Flat"
+      ],
+      "densities": [
+        "Comfortable",
+        "Compact"
+      ]
+    },
+    "structuralCoverage": {
+      "DataTableVariants": 28,
+      "TableVariants": 16
+    }
+  },
+  "currentNativeVariants": 44,
+  "visualRepresentativeInstances": 20,
+  "preservedRouteScreens": 65,
+  "resolvedPendingValidation": "Table 1.1 postfix Light/Dark OWNER visual review",
+  "preservedPendingValidations": [
+    "v1.1/screens",
+    "v1.1/visual-review",
+    "v1.1/code-connect"
+  ],
+  "completedStepsAdded": [
+    "v1.1/table-44/structural",
+    "v1.1/table-44/visual"
+  ],
+  "outputArtifacts": [
+    {
+      "path": ".figma/proofs/table-1.1/native-table-1.1-report.json",
+      "sha256": "133a4510b2b097553ae0262808898c7b2cced426cea049878f333ff78641c2a4"
+    },
+    {
+      "path": ".figma/proofs/table-1.1/screenshot-postfix-metadata.json",
+      "sha256": "fadf6e9c6401647d3b06e2516f23edd55aa7619ebad7dcc28347e633848d8e73"
+    },
+    {
+      "path": ".figma/state.json",
+      "sha256": "bfbb7fb760ea8fe2e9da6019f58ae8fa4034fb9076a8bbfdc85ec95d8fb529b8"
+    }
+  ],
+  "applicationSourceEdited": false,
+  "runtimeOrConsumerTestsChanged": false,
+  "noMCPCallsMade": true,
+  "noMCPCallsInFlight": true,
+  "leaseReturnedTo": "OWNER"
+}

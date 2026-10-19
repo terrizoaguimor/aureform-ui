@@ -1,0 +1,49 @@
+{
+  "status": "applied",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "I59:2550;29:224;62:3472;58:1563",
+    "I59:2550;29:224;62:3501;58:1563"
+  ],
+  "loadedFonts": [
+    {
+      "family": "Manrope",
+      "style": "SemiBold",
+      "variationSettings": {
+        "wght": 600
+      }
+    },
+    {
+      "family": "Manrope",
+      "style": "Regular",
+      "variationSettings": {
+        "wght": 400
+      }
+    },
+    {
+      "family": "Manrope",
+      "style": "Medium",
+      "variationSettings": {
+        "wght": 500
+      }
+    }
+  ],
+  "slots": [
+    {
+      "id": "I59:2550;29:224;62:3472;58:1563",
+      "parentName": "ComponentSpecimen / Table",
+      "width": 517,
+      "height": 209,
+      "clipsContent": true
+    },
+    {
+      "id": "I59:2550;29:224;62:3501;58:1563",
+      "parentName": "ComponentSpecimen / DataTable",
+      "width": 517,
+      "height": 283,
+      "clipsContent": true
+    }
+  ],
+  "sourceApplicationChanged": false,
+  "componentIdsAndPropertyDefinitionsChanged": false
+}

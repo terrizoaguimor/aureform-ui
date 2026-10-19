@@ -1,0 +1,86 @@
+{
+  "version": "1.3.0",
+  "capturedAt": "2026-10-19T19:11:52.267Z",
+  "method": "Playwright screenshots of the actual built application, encoded as WebP",
+  "basePath": "/aureform-ui",
+  "captures": [
+    {
+      "file": "aureform-overview-dark.webp",
+      "route": "dashboard",
+      "theme": "dark",
+      "palette": "aurora",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 79954,
+      "sha256": "8da30fbdf82b79c32e1081da67dcd89f296c16f901bc7a2ce7ed61f9aadc8108"
+    },
+    {
+      "file": "aureform-overview-light.webp",
+      "route": "dashboard",
+      "theme": "light",
+      "palette": "ocean",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 86464,
+      "sha256": "c5870029c5e66b5ca3ac536a916960af34e667f41d2a9126e4289f67376830dc"
+    },
+    {
+      "file": "aureform-studio.webp",
+      "route": "studio",
+      "theme": "dark",
+      "palette": "aurora",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 77596,
+      "sha256": "9cb917201528e47367b60f031d7053e6dbb10d1ec7b12945e84e6d2b90d5daab"
+    },
+    {
+      "file": "aureform-charts.webp",
+      "route": "charts",
+      "theme": "dark",
+      "palette": "violet",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 85610,
+      "sha256": "a0af8546dc45a6be6fcc3afd11548b34c1192f724e58e803967619beb98c7cc4"
+    },
+    {
+      "file": "aureform-components.webp",
+      "route": "components",
+      "theme": "light",
+      "palette": "mint",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 74922,
+      "sha256": "13fcc81a1c57467581a1358df722bc808a2963a4b559aa609dda534f77764fd8"
+    },
+    {
+      "file": "aureform-effects.webp",
+      "route": "effects",
+      "theme": "dark",
+      "palette": "violet",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 75454,
+      "sha256": "5a56c88c3c8780f104109a2c7050d6aa7f1672fc79acb08325db40199246176a"
+    },
+    {
+      "file": "aureform-media.webp",
+      "route": "media",
+      "theme": "dark",
+      "palette": "aurora",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 76748,
+      "sha256": "888378f47eedc28a8e314e31f8cee913303ef7a75d782bcfd038832af0186301"
+    }
+  ],
+  "pageErrors": []
+}

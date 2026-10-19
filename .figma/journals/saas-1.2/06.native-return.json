@@ -1,0 +1,301 @@
+{
+  "pageId": "2:4",
+  "records": [
+    {
+      "name": "DataWorkbench",
+      "setId": "228:3644",
+      "defaultId": "228:1851",
+      "variants": [
+        {
+          "id": "228:1851",
+          "name": "State=Default, Theme=Light",
+          "w": 1080,
+          "h": 685
+        },
+        {
+          "id": "228:2184",
+          "name": "State=Default, Theme=Dark",
+          "w": 1080,
+          "h": 685
+        },
+        {
+          "id": "228:2475",
+          "name": "State=Filtered, Theme=Light",
+          "w": 1080,
+          "h": 783
+        },
+        {
+          "id": "228:2776",
+          "name": "State=Filtered, Theme=Dark",
+          "w": 1080,
+          "h": 783
+        },
+        {
+          "id": "228:3077",
+          "name": "State=Loading, Theme=Light",
+          "w": 1080,
+          "h": 625
+        },
+        {
+          "id": "228:3208",
+          "name": "State=Loading, Theme=Dark",
+          "w": 1080,
+          "h": 625
+        },
+        {
+          "id": "228:3309",
+          "name": "State=Error, Theme=Light",
+          "w": 1080,
+          "h": 182
+        },
+        {
+          "id": "228:3348",
+          "name": "State=Error, Theme=Dark",
+          "w": 1080,
+          "h": 182
+        },
+        {
+          "id": "228:3383",
+          "name": "State=Empty, Theme=Light",
+          "w": 1080,
+          "h": 569
+        },
+        {
+          "id": "228:3519",
+          "name": "State=Empty, Theme=Dark",
+          "w": 1080,
+          "h": 569
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Filtered",
+            "Loading",
+            "Error",
+            "Empty"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "texts": 392,
+      "instances": 246
+    },
+    {
+      "name": "ImportWizard",
+      "setId": "228:4134",
+      "defaultId": "228:3645",
+      "variants": [
+        {
+          "id": "228:3645",
+          "name": "State=File, Theme=Light",
+          "w": 1080,
+          "h": 438
+        },
+        {
+          "id": "228:3669",
+          "name": "State=File, Theme=Dark",
+          "w": 1080,
+          "h": 438
+        },
+        {
+          "id": "228:3693",
+          "name": "State=Mapping, Theme=Light",
+          "w": 1080,
+          "h": 669
+        },
+        {
+          "id": "228:3759",
+          "name": "State=Mapping, Theme=Dark",
+          "w": 1080,
+          "h": 669
+        },
+        {
+          "id": "228:3824",
+          "name": "State=Preview, Theme=Light",
+          "w": 1080,
+          "h": 468
+        },
+        {
+          "id": "228:3868",
+          "name": "State=Preview, Theme=Dark",
+          "w": 1080,
+          "h": 468
+        },
+        {
+          "id": "228:3912",
+          "name": "State=Review, Theme=Light",
+          "w": 1080,
+          "h": 421
+        },
+        {
+          "id": "228:3941",
+          "name": "State=Review, Theme=Dark",
+          "w": 1080,
+          "h": 421
+        },
+        {
+          "id": "228:3970",
+          "name": "State=Complete, Theme=Light",
+          "w": 1080,
+          "h": 362
+        },
+        {
+          "id": "228:3998",
+          "name": "State=Complete, Theme=Dark",
+          "w": 1080,
+          "h": 362
+        },
+        {
+          "id": "228:4026",
+          "name": "State=Invalid, Theme=Light",
+          "w": 1080,
+          "h": 620
+        },
+        {
+          "id": "228:4080",
+          "name": "State=Invalid, Theme=Dark",
+          "w": 1080,
+          "h": 620
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "File",
+          "variantOptions": [
+            "File",
+            "Mapping",
+            "Preview",
+            "Review",
+            "Complete",
+            "Invalid"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "texts": 220,
+      "instances": 54
+    },
+    {
+      "name": "RecordDetail",
+      "setId": "228:4817",
+      "defaultId": "228:4135",
+      "variants": [
+        {
+          "id": "228:4135",
+          "name": "State=Summary, Theme=Light",
+          "w": 1080,
+          "h": 678
+        },
+        {
+          "id": "228:4221",
+          "name": "State=Summary, Theme=Dark",
+          "w": 1080,
+          "h": 678
+        },
+        {
+          "id": "228:4307",
+          "name": "State=Activity, Theme=Light",
+          "w": 1080,
+          "h": 564
+        },
+        {
+          "id": "228:4365",
+          "name": "State=Activity, Theme=Dark",
+          "w": 1080,
+          "h": 564
+        },
+        {
+          "id": "228:4423",
+          "name": "State=Notes, Theme=Light",
+          "w": 1080,
+          "h": 709
+        },
+        {
+          "id": "228:4488",
+          "name": "State=Notes, Theme=Dark",
+          "w": 1080,
+          "h": 709
+        },
+        {
+          "id": "228:4553",
+          "name": "State=Files, Theme=Light",
+          "w": 1080,
+          "h": 675
+        },
+        {
+          "id": "228:4617",
+          "name": "State=Files, Theme=Dark",
+          "w": 1080,
+          "h": 675
+        },
+        {
+          "id": "228:4681",
+          "name": "State=Related, Theme=Light",
+          "w": 1080,
+          "h": 490
+        },
+        {
+          "id": "228:4737",
+          "name": "State=Related, Theme=Dark",
+          "w": 1080,
+          "h": 490
+        },
+        {
+          "id": "228:4793",
+          "name": "State=Not-found, Theme=Light",
+          "w": 1080,
+          "h": 232
+        },
+        {
+          "id": "228:4805",
+          "name": "State=Not-found, Theme=Dark",
+          "w": 1080,
+          "h": 232
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Summary",
+          "variantOptions": [
+            "Summary",
+            "Activity",
+            "Notes",
+            "Files",
+            "Related",
+            "Not-found"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "texts": 290,
+      "instances": 102
+    }
+  ]
+}

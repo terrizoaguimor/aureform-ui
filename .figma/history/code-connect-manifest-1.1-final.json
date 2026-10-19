@@ -1,0 +1,5853 @@
+{
+  "schemaVersion": 1,
+  "version": "1.1.0",
+  "preparedOn": "2026-10-18",
+  "status": "local-unpublished",
+  "format": "parserless-figma-ts",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "cloudPublication": {
+    "performed": false,
+    "accountPlan": "Professional",
+    "nativeLibraryPublished": false
+  },
+  "authoritativeInputs": [
+    {
+      "file": ".figma/component-properties.json",
+      "sha256": "d05bdb0d1f01cc3584155bb0bad05ada9fd4ad870657b59f5cf0da0a7beb78a8"
+    },
+    {
+      "file": ".figma/state.json",
+      "sha256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52"
+    },
+    {
+      "file": ".figma/code-connect/native-additions.json",
+      "sha256": "96deb1ad937fac33973872c44850e069603979403cb0d98511e2e7cb29208c36"
+    },
+    {
+      "file": ".figma/native-effects-library-1.1.json",
+      "sha256": "6e8e7d2c872e15abb6d745b02eb1798160cad51751ebc21a17d762805537a8b6"
+    },
+    {
+      "file": ".figma/code-connect/Chart.native-definitions-1.1.json",
+      "sha256": "a761b0fd1c8772ee7a709b4ed91ddd71a8066dda63fdb5d1267f073603d24e67"
+    }
+  ],
+  "coverage": {
+    "coreFamilies": 44,
+    "buttonExtensions": 2,
+    "shapeExtensions": 1,
+    "sourceBlockExports": 10,
+    "sourceBlockFiles": 9,
+    "mappedBlockExports": 9,
+    "nativeIcons": 22,
+    "navigationFragments": 1,
+    "chromeCompositions": 3,
+    "appearanceExtensions": 3,
+    "effectTemplates": 6,
+    "pendingNativeMappings": 0,
+    "totalTemplates": 92
+  },
+  "validation": {
+    "status": "passed-local-smoke",
+    "runtime": "synthetic-figma-stub",
+    "typescript": "5.9.3",
+    "templateFiles": 92,
+    "firstListedVariantCases": 92,
+    "recordedNativeMatrixCases": {
+      "Table": 16,
+      "DataTable": 28,
+      "Chart": 13,
+      "Button / Shapes": 9
+    },
+    "exhaustiveVariantCombinations": 338,
+    "topLevelCases": 1312,
+    "nestedTemplateExecutions": 334,
+    "totalTemplateEvaluations": 1646,
+    "uniqueTypedExamples": 556,
+    "templateTypecheck": "passed-against-local-api-declaration-stub",
+    "emittedExampleTypecheck": "passed-against-canonical-source-and-installed-dependency-types",
+    "canonicalSources": "src",
+    "dependencyTypes": "owner-mirror",
+    "diagnostics": 0,
+    "quoteNewlineUnicodeCases": 92,
+    "nativeIconSwapCases": 44,
+    "unexposedIconChildCases": 44,
+    "missingOrErrorSwapCases": 6,
+    "shellPageContentCases": 18,
+    "sourceAppearanceCases": 14,
+    "sourceEffectContracts": 6,
+    "sourceChartKindCases": 13,
+    "sourceButtonShapeSizeCases": 9,
+    "sourceTableMaterialDensityCases": 16,
+    "sourceDataTableStateCases": 5,
+    "nativeChartVariantCombinations": 13,
+    "nativeChartBooleanDefinitions": 12,
+    "nativeChartBooleanCases": 338,
+    "starterSourceTypecheck": "passed-against-canonical-source",
+    "sourceSnapshotChecks": 78,
+    "templateSnapshotChecks": 92,
+    "pendingNativeMappings": 0,
+    "rawShellHeaderNotForwarded": true,
+    "liveFigmaRuntimeTested": false,
+    "cloudRegistered": false,
+    "testScript": "scripts/verify-code-connect.cjs"
+  },
+  "limitations": [
+    "Native presentation axes without matching source props are retained and explained in intentionalVisualOnly.",
+    "Explicit local fixtures satisfy required source props when no native property key is recorded; fixtures are not extracted production data.",
+    "DashboardShell does not forward the raw Content slot because that slot includes source-owned header chrome.",
+    "Nested lookup and structured-section rendering are prepared locally; their native Figma runtime behavior has not been verified.",
+    "Source appearance options are additive to variant/tone/size. Only reported native Appearance axes are read; pending owner IDs are never invented."
+  ],
+  "sourceContracts": {
+    "appearance": [
+      {
+        "source": "src/components/ui/button.tsx",
+        "export": "Button",
+        "property": "appearance",
+        "type": "ButtonAppearance",
+        "options": [
+          "solid",
+          "soft",
+          "outline",
+          "glass",
+          "gradient"
+        ]
+      },
+      {
+        "source": "src/components/ui/badge.tsx",
+        "export": "Badge",
+        "property": "appearance",
+        "type": "BadgeAppearance",
+        "options": [
+          "solid",
+          "soft",
+          "outline",
+          "glass",
+          "gradient"
+        ]
+      },
+      {
+        "source": "src/components/ui/card.tsx",
+        "export": "Card",
+        "property": "appearance",
+        "type": "CardAppearance",
+        "options": [
+          "flat",
+          "elevated",
+          "glass",
+          "gradient"
+        ]
+      }
+    ],
+    "effects": [
+      {
+        "source": "src/components/effects/gradient-background.tsx",
+        "export": "GradientBackground",
+        "type": "GradientBackgroundProps"
+      },
+      {
+        "source": "src/components/effects/shader-background.tsx",
+        "export": "ShaderBackground",
+        "type": "ShaderBackgroundProps"
+      },
+      {
+        "source": "src/components/effects/spotlight-card.tsx",
+        "export": "SpotlightCard",
+        "type": "SpotlightCardProps"
+      },
+      {
+        "source": "src/components/effects/glow-border.tsx",
+        "export": "GlowBorder",
+        "type": "GlowBorderProps"
+      },
+      {
+        "source": "src/components/effects/tilt-card.tsx",
+        "export": "TiltCard",
+        "type": "TiltCardProps"
+      },
+      {
+        "source": "src/components/effects/magnetic-button.tsx",
+        "export": "MagneticButton",
+        "type": "MagneticButtonProps"
+      }
+    ],
+    "charts": [
+      {
+        "source": "src/components/ui/chart.tsx",
+        "export": "Chart",
+        "property": "kind",
+        "type": "ChartKind",
+        "options": [
+          "area",
+          "line",
+          "bar",
+          "pie",
+          "radar",
+          "radial",
+          "horizontal-bar",
+          "stacked-bar",
+          "stacked-area",
+          "diverging-bar",
+          "gauge",
+          "rings",
+          "heatmap"
+        ],
+        "dataType": "ChartDatum",
+        "supportsTertiary": true,
+        "booleanMappings": [
+          {
+            "property": "legend",
+            "type": "boolean",
+            "nativeFields": [
+              "legend"
+            ]
+          },
+          {
+            "property": "appearance",
+            "type": "ChartAppearance",
+            "nativeFields": [
+              "glow"
+            ],
+            "options": [
+              "flat",
+              "gradient",
+              "glow"
+            ],
+            "trueValue": "glow",
+            "falseValue": "flat"
+          },
+          {
+            "property": "visibleSeries",
+            "type": "ChartSeries[]",
+            "nativeFields": [
+              "series1",
+              "series2",
+              "series3"
+            ],
+            "itemType": "ChartSeries",
+            "options": [
+              "value",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        ]
+      }
+    ],
+    "shapes": [
+      {
+        "source": "src/components/ui/button.tsx",
+        "export": "Button",
+        "property": "shape",
+        "type": "ButtonShape",
+        "options": [
+          "rounded",
+          "pill",
+          "square"
+        ],
+        "sizeMapping": {
+          "Small": "sm",
+          "Medium": "default",
+          "Large": "lg"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "source": "src/components/ui/table.tsx",
+        "export": "Table",
+        "propsType": "TableProps",
+        "properties": [
+          {
+            "source": "src/components/ui/table.tsx",
+            "export": "Table",
+            "property": "appearance",
+            "type": "TableAppearance",
+            "options": [
+              "flat",
+              "elevated",
+              "glass",
+              "gradient"
+            ]
+          },
+          {
+            "source": "src/components/ui/table.tsx",
+            "export": "Table",
+            "property": "density",
+            "type": "TableDensity",
+            "options": [
+              "comfortable",
+              "compact"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "src/components/ui/data-table.tsx",
+        "export": "DataTable",
+        "propsType": "DataTableProps",
+        "properties": [
+          {
+            "source": "src/components/ui/table.tsx",
+            "export": "DataTable",
+            "property": "appearance",
+            "type": "TableAppearance",
+            "options": [
+              "flat",
+              "elevated",
+              "glass",
+              "gradient"
+            ]
+          },
+          {
+            "source": "src/components/ui/table.tsx",
+            "export": "DataTable",
+            "property": "density",
+            "type": "TableDensity",
+            "options": [
+              "comfortable",
+              "compact"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sourceBlocks": [
+    {
+      "export": "AIComposer",
+      "source": "src/components/blocks/ai-composer.tsx",
+      "mapped": true
+    },
+    {
+      "export": "CustomerTable",
+      "source": "src/components/blocks/customer-table.tsx",
+      "mapped": true
+    },
+    {
+      "export": "CustomerDataTable",
+      "source": "src/components/blocks/customer-table.tsx",
+      "mapped": true
+    },
+    {
+      "export": "DashboardShell",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "mapped": true
+    },
+    {
+      "export": "MetricCard",
+      "source": "src/components/blocks/metric-card.tsx",
+      "mapped": true
+    },
+    {
+      "export": "PageHeading",
+      "source": "src/components/blocks/page-heading.tsx",
+      "mapped": true
+    },
+    {
+      "export": "PlanBreakdown",
+      "source": "src/components/blocks/plan-breakdown.tsx",
+      "mapped": true
+    },
+    {
+      "export": "RevenuePanel",
+      "source": "src/components/blocks/revenue-panel.tsx",
+      "mapped": true
+    },
+    {
+      "export": "RouteMap",
+      "source": "src/components/blocks/route-map.tsx",
+      "mapped": true
+    },
+    {
+      "export": "TableToolbar",
+      "source": "src/components/blocks/table-toolbar.tsx",
+      "mapped": false
+    }
+  ],
+  "pendingNativeMappings": [],
+  "configuration": ".figma/code-connect/figma.config.json",
+  "templates": [
+    {
+      "file": ".figma/code-connect/Button.figma.ts",
+      "node": "3:113",
+      "defaultNode": "3:17",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-113",
+      "source": "src/components/ui/button.tsx",
+      "export": "Button",
+      "nativeName": "Button",
+      "kind": "core",
+      "id": "aureform-button",
+      "axes": {
+        "Style": [
+          "Primary",
+          "Outline",
+          "Ghost"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Style",
+          "type": "VARIANT",
+          "codeTarget": "variant",
+          "options": {
+            "Primary": "default",
+            "Outline": "outline",
+            "Ghost": "ghost"
+          }
+        },
+        {
+          "property": "Size",
+          "type": "VARIANT",
+          "codeTarget": "size",
+          "options": {
+            "Small": "sm",
+            "Medium": "default",
+            "Large": "lg"
+          }
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "disabled (Disabled); CSS pointer hover (Hover)",
+          "options": {
+            "Default": "Default",
+            "Hover": "Hover",
+            "Disabled": "Disabled"
+          }
+        },
+        {
+          "property": "Label#3:0",
+          "type": "TEXT",
+          "codeTarget": "children"
+        },
+        {
+          "property": "Show icon#3:28",
+          "type": "BOOLEAN",
+          "codeTarget": "conditional children"
+        },
+        {
+          "property": "Icon#3:56",
+          "type": "INSTANCE_SWAP",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/button.tsx",
+          "export": "Button",
+          "property": "appearance",
+          "type": "ButtonAppearance",
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": null,
+          "status": "unreported-on-this-native-node"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Hover"
+          ],
+          "reason": "Hover is pointer/CSS presentation, not a force-hover source prop."
+        }
+      ],
+      "notes": [
+        "The source supports appearance: ButtonAppearance. No Appearance axis is recorded for this native node, so no native property or appearance value is invented."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/ButtonAdditionalStyles.figma.ts",
+      "node": "25:700",
+      "defaultNode": "25:646",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-700",
+      "source": "src/components/ui/button.tsx",
+      "export": "Button",
+      "nativeName": "Button / Additional styles",
+      "kind": "button-extension",
+      "id": "aureform-button-additional-styles",
+      "axes": {
+        "Style": [
+          "Secondary",
+          "Destructive",
+          "Link"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Style",
+          "type": "VARIANT",
+          "codeTarget": "variant",
+          "options": {
+            "Secondary": "secondary",
+            "Destructive": "destructive",
+            "Link": "link"
+          }
+        },
+        {
+          "property": "Size",
+          "type": "VARIANT",
+          "codeTarget": "size",
+          "options": {
+            "Small": "sm",
+            "Medium": "default",
+            "Large": "lg"
+          }
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "disabled (Disabled); CSS pointer hover (Hover)",
+          "options": {
+            "Default": "Default",
+            "Hover": "Hover",
+            "Disabled": "Disabled"
+          }
+        },
+        {
+          "property": "Label#25:8",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/button.tsx",
+          "export": "Button",
+          "property": "appearance",
+          "type": "ButtonAppearance",
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": null,
+          "status": "unreported-on-this-native-node"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Hover"
+          ],
+          "reason": "Hover is pointer/CSS presentation, not a force-hover source prop."
+        }
+      ],
+      "notes": [
+        "The source supports appearance: ButtonAppearance. No Appearance axis is recorded for this native node, so no native property or appearance value is invented."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/ButtonLoadingIcons.figma.ts",
+      "node": "25:773",
+      "defaultNode": "25:701",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-773",
+      "source": "src/components/ui/button.tsx",
+      "export": "Button",
+      "nativeName": "Button / Loading & icons",
+      "kind": "button-extension",
+      "id": "aureform-button-loading-icons",
+      "axes": {
+        "Style": [
+          "Primary",
+          "Outline",
+          "Secondary",
+          "Ghost",
+          "Destructive",
+          "Link"
+        ],
+        "Kind": [
+          "Loading",
+          "Icon",
+          "Small icon"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Style",
+          "type": "VARIANT",
+          "codeTarget": "variant",
+          "options": {
+            "Primary": "default",
+            "Outline": "outline",
+            "Ghost": "ghost",
+            "Secondary": "secondary",
+            "Destructive": "destructive",
+            "Link": "link"
+          }
+        },
+        {
+          "property": "Kind",
+          "type": "VARIANT",
+          "codeTarget": "size; loading",
+          "options": {
+            "Loading": "default",
+            "Icon": "icon",
+            "Small icon": "icon-sm"
+          }
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/button.tsx",
+          "export": "Button",
+          "property": "appearance",
+          "type": "ButtonAppearance",
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": null,
+          "status": "unreported-on-this-native-node"
+        }
+      ],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Button renders its own loading spinner. Icon content is resolved dynamically and remains children; no icon prop is emitted. The accessible name is a local fixture.",
+        "The source supports appearance: ButtonAppearance. No Appearance axis is recorded for this native node, so no native property or appearance value is invented."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Badge.figma.ts",
+      "node": "3:124",
+      "defaultNode": "3:114",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-124",
+      "source": "src/components/ui/badge.tsx",
+      "export": "Badge",
+      "nativeName": "Badge",
+      "kind": "core",
+      "id": "aureform-badge",
+      "axes": {
+        "Tone": [
+          "Success",
+          "Neutral",
+          "Warning",
+          "Destructive",
+          "Outline"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Tone",
+          "type": "VARIANT",
+          "codeTarget": "variant",
+          "options": {
+            "Success": "default",
+            "Neutral": "neutral",
+            "Warning": "warning",
+            "Destructive": "destructive",
+            "Outline": "outline"
+          }
+        },
+        {
+          "property": "Label#3:84",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/badge.tsx",
+          "export": "Badge",
+          "property": "appearance",
+          "type": "BadgeAppearance",
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": null,
+          "status": "unreported-on-this-native-node"
+        }
+      ],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "The source supports appearance: BadgeAppearance. No Appearance axis is recorded for this native node, so no native property or appearance value is invented."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Input.figma.ts",
+      "node": "3:133",
+      "defaultNode": "3:125",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-133",
+      "source": "src/components/ui/input.tsx",
+      "export": "Input",
+      "nativeName": "Input",
+      "kind": "core",
+      "id": "aureform-input",
+      "axes": {
+        "State": [
+          "Empty",
+          "Focus",
+          "Error",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Value#3:90",
+          "type": "TEXT",
+          "codeTarget": "placeholder"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "disabled; aria-invalid",
+          "options": {
+            "Empty": "Empty",
+            "Focus": "Focus",
+            "Error": "Error",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Focus"
+          ],
+          "reason": "Focus is interactive CSS presentation, not an input prop."
+        }
+      ],
+      "notes": [
+        "Native Value is currently the empty input's placeholder. It is never emitted as value or defaultValue."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Textarea.figma.ts",
+      "node": "15:67",
+      "defaultNode": "15:54",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-67",
+      "source": "src/components/ui/textarea.tsx",
+      "export": "Textarea",
+      "nativeName": "Textarea",
+      "kind": "core",
+      "id": "aureform-textarea",
+      "axes": {
+        "State": [
+          "Default",
+          "Focus",
+          "Error",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#15:3",
+          "type": "TEXT",
+          "codeTarget": "placeholder"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "disabled; aria-invalid",
+          "options": {
+            "Default": "Default",
+            "Focus": "Focus",
+            "Error": "Error",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Focus"
+          ],
+          "reason": "Focus is interactive CSS presentation."
+        }
+      ],
+      "notes": [
+        "The native text is mapped as visual placeholder text. The accessible name is an independent local fixture."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Checkbox.figma.ts",
+      "node": "15:14",
+      "defaultNode": "15:6",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-14",
+      "source": "src/components/ui/checkbox.tsx",
+      "export": "Checkbox",
+      "nativeName": "Checkbox",
+      "kind": "core",
+      "id": "aureform-checkbox",
+      "axes": {
+        "State": [
+          "Unchecked",
+          "Checked",
+          "Mixed",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "defaultChecked; indeterminate; disabled",
+          "options": {
+            "Unchecked": "Unchecked",
+            "Checked": "Checked",
+            "Mixed": "Mixed",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Switch.figma.ts",
+      "node": "15:21",
+      "defaultNode": "15:15",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-21",
+      "source": "src/components/ui/switch.tsx",
+      "export": "Switch",
+      "nativeName": "Switch",
+      "kind": "core",
+      "id": "aureform-switch",
+      "axes": {
+        "State": [
+          "Off",
+          "On",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "defaultChecked; disabled",
+          "options": {
+            "Off": "Off",
+            "On": "On",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/RadioGroup.figma.ts",
+      "node": "15:44",
+      "defaultNode": "15:22",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-44",
+      "source": "src/components/ui/radio-group.tsx",
+      "export": "RadioGroup",
+      "nativeName": "RadioGroup",
+      "kind": "core",
+      "id": "aureform-radio-group",
+      "axes": {
+        "State": [
+          "Default",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#15:0",
+          "type": "TEXT",
+          "codeTarget": "RadioGroupItem visible children"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "disabled",
+          "options": {
+            "Default": "Default",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Plan IDs and the second option are explicit source fixtures, not native properties."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Slider.figma.ts",
+      "node": "15:53",
+      "defaultNode": "15:45",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-53",
+      "source": "src/components/ui/slider.tsx",
+      "export": "Slider",
+      "nativeName": "Slider",
+      "kind": "core",
+      "id": "aureform-slider",
+      "axes": {
+        "State": [
+          "Default",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "disabled",
+          "options": {
+            "Default": "Default",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Field.figma.ts",
+      "node": "15:78",
+      "defaultNode": "15:68",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-78",
+      "source": "src/components/ui/field.tsx",
+      "export": "Field",
+      "nativeName": "Field",
+      "kind": "core",
+      "id": "aureform-field",
+      "axes": {
+        "State": [
+          "Default",
+          "Error"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#15:8",
+          "type": "TEXT",
+          "codeTarget": "label"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "error",
+          "options": {
+            "Default": "Default",
+            "Error": "Error"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "If no connected input is available, a labelled source Input is an explicit local fixture. Field assigns its accessible relationships."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Select.figma.ts",
+      "node": "15:98",
+      "defaultNode": "15:79",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-98",
+      "source": "src/components/ui/select.tsx",
+      "export": "Select",
+      "nativeName": "Select",
+      "kind": "core",
+      "id": "aureform-select",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#15:11",
+          "type": "TEXT",
+          "codeTarget": "options[0].label"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "disabled",
+          "options": {
+            "Closed": "Closed",
+            "Open": "Open",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Open"
+          ],
+          "reason": "The wrapper does not expose open/defaultOpen."
+        }
+      ],
+      "notes": [
+        "Native display text becomes a labelled fixture option, never an inferred domain value or accessible name."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Combobox.figma.ts",
+      "node": "15:124",
+      "defaultNode": "15:99",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-124",
+      "source": "src/components/ui/combobox.tsx",
+      "export": "Combobox",
+      "nativeName": "Combobox",
+      "kind": "core",
+      "id": "aureform-combobox",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open",
+          "Empty",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#15:15",
+          "type": "TEXT",
+          "codeTarget": "options[0].label; placeholder"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "options/value fixture (Empty); disabled",
+          "options": {
+            "Closed": "Closed",
+            "Open": "Open",
+            "Empty": "Empty",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Open"
+          ],
+          "reason": "Open is internal popup state with no public control prop."
+        }
+      ],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/MultiSelect.figma.ts",
+      "node": "15:150",
+      "defaultNode": "15:125",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-150",
+      "source": "src/components/ui/multi-select.tsx",
+      "export": "MultiSelect",
+      "nativeName": "MultiSelect",
+      "kind": "core",
+      "id": "aureform-multi-select",
+      "axes": {
+        "State": [
+          "Empty",
+          "Selected",
+          "Open",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#15:20",
+          "type": "TEXT",
+          "codeTarget": "options[0].label; placeholder"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "value fixture for Empty/Selected/Open",
+          "options": {
+            "Empty": "Empty",
+            "Selected": "Selected",
+            "Open": "Open",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Open",
+            "Disabled"
+          ],
+          "reason": "The source has no disabled prop and no public open prop."
+        }
+      ],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/DatePicker.figma.ts",
+      "node": "15:242",
+      "defaultNode": "15:151",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-242",
+      "source": "src/components/ui/date-picker.tsx",
+      "export": "DatePicker",
+      "nativeName": "DatePicker",
+      "kind": "core",
+      "id": "aureform-date-picker",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open"
+        ]
+      },
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "Label#15:25",
+          "reason": "Native Label is formatted display-date text. It is not an accessible label and is not parsed as a Date or DateRange."
+        },
+        {
+          "property": "State",
+          "values": [
+            "Closed",
+            "Open"
+          ],
+          "reason": "Popup open state is internal; the source wrapper exposes no open/defaultOpen prop."
+        }
+      ],
+      "notes": [
+        "The date is a declared local fixture independent of the native display string; replace it with product state."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/DateRangePicker.figma.ts",
+      "node": "15:334",
+      "defaultNode": "15:243",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-334",
+      "source": "src/components/ui/date-picker.tsx",
+      "export": "DateRangePicker",
+      "nativeName": "DateRangePicker",
+      "kind": "core",
+      "id": "aureform-date-range-picker",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open"
+        ]
+      },
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "Label#15:28",
+          "reason": "Native Label is formatted display-date text. It is not an accessible label and is not parsed as a Date or DateRange."
+        },
+        {
+          "property": "State",
+          "values": [
+            "Closed",
+            "Open"
+          ],
+          "reason": "Popup open state is internal; the source wrapper exposes no open/defaultOpen prop."
+        }
+      ],
+      "notes": [
+        "The date is a declared local fixture independent of the native display string; replace it with product state."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/InputOTP.figma.ts",
+      "node": "15:387",
+      "defaultNode": "15:335",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-387",
+      "source": "src/components/ui/input-otp.tsx",
+      "export": "InputOTP",
+      "nativeName": "InputOTP",
+      "kind": "core",
+      "id": "aureform-input-otp",
+      "axes": {
+        "State": [
+          "Empty",
+          "Filled",
+          "Error",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "declared value fixture; invalid; disabled",
+          "options": {
+            "Empty": "Empty",
+            "Filled": "Filled",
+            "Error": "Error",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "Label#15:31",
+          "reason": "Native Label controls the first visual digit only. It must not become the accessible label or a six-digit source value."
+        }
+      ],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/FileUpload.figma.ts",
+      "node": "15:412",
+      "defaultNode": "15:388",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-412",
+      "source": "src/components/ui/file-upload.tsx",
+      "export": "FileUpload",
+      "nativeName": "FileUpload",
+      "kind": "core",
+      "id": "aureform-file-upload",
+      "axes": {
+        "State": [
+          "Empty",
+          "Uploaded",
+          "Error",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#15:36",
+          "type": "TEXT",
+          "codeTarget": "labels.title"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "files fixture for Uploaded; disabled",
+          "options": {
+            "Empty": "Empty",
+            "Uploaded": "Uploaded",
+            "Error": "Error",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Error"
+          ],
+          "reason": "Validation errors are internal and appear after actual file validation; no error prop exists."
+        }
+      ],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/ButtonGroup.figma.ts",
+      "node": "23:97",
+      "defaultNode": "23:56",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-97",
+      "source": "src/components/ui/button-group.tsx",
+      "export": "ButtonGroup",
+      "nativeName": "ButtonGroup",
+      "kind": "core",
+      "id": "aureform-button-group",
+      "axes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Default",
+            "Selected",
+            "Disabled"
+          ],
+          "reason": "Selected/Disabled belong to child buttons; ButtonGroup is a div and has no selected or disabled prop. Child templates preserve their own states."
+        }
+      ],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/TextLink.figma.ts",
+      "node": "23:110",
+      "defaultNode": "23:98",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-110",
+      "source": "src/components/ui/link.tsx",
+      "export": "TextLink",
+      "nativeName": "TextLink",
+      "kind": "core",
+      "id": "aureform-text-link",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#23:0",
+          "type": "TEXT",
+          "codeTarget": "children"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "href omission; aria-disabled; tabIndex for Disabled",
+          "options": {
+            "Default": "Default",
+            "Hover": "Hover",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Hover"
+          ],
+          "reason": "Hover is pointer/CSS presentation."
+        }
+      ],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Breadcrumb.figma.ts",
+      "node": "23:119",
+      "defaultNode": "23:111",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-119",
+      "source": "src/components/ui/breadcrumb.tsx",
+      "export": "Breadcrumb",
+      "nativeName": "Breadcrumb",
+      "kind": "core",
+      "id": "aureform-breadcrumb",
+      "axes": {
+        "State": [
+          "Default",
+          "Long labels"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "items fixture for Default/Long labels",
+          "options": {
+            "Default": "Default",
+            "Long labels": "Long labels"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Pagination.figma.ts",
+      "node": "23:183",
+      "defaultNode": "23:120",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-183",
+      "source": "src/components/ui/pagination.tsx",
+      "export": "Pagination",
+      "nativeName": "Pagination",
+      "kind": "core",
+      "id": "aureform-pagination",
+      "axes": {
+        "State": [
+          "First",
+          "Middle",
+          "Last"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "initial page fixture",
+          "options": {
+            "First": 1,
+            "Middle": 4,
+            "Last": 8
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Tabs.figma.ts",
+      "node": "23:217",
+      "defaultNode": "23:184",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-217",
+      "source": "src/components/ui/tabs.tsx",
+      "export": "Tabs",
+      "nativeName": "Tabs",
+      "kind": "core",
+      "id": "aureform-tabs",
+      "axes": {
+        "State": [
+          "Overview",
+          "Details",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#23:4",
+          "type": "TEXT",
+          "codeTarget": "TabsContent paragraph children"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "defaultValue; TabsTrigger.disabled",
+          "options": {
+            "Overview": "Overview",
+            "Details": "Details",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Native Label is CONTENT paragraph text, not a tab name. Overview/Details trigger names are explicit source fixtures."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/SidebarItem.figma.ts",
+      "node": "3:142",
+      "defaultNode": "3:134",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-142",
+      "source": "src/components/ui/sidebar.tsx",
+      "export": "Sidebar",
+      "nativeName": "SidebarItem",
+      "kind": "navigation-fragment",
+      "id": "aureform-sidebar-item",
+      "axes": {
+        "State": [
+          "Default",
+          "Active"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#3:95",
+          "type": "TEXT",
+          "codeTarget": "SidebarLink.label"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "SidebarLink.active",
+          "options": {
+            "Default": false,
+            "Active": true
+          }
+        },
+        {
+          "property": "Icon#3:98",
+          "type": "INSTANCE_SWAP",
+          "codeTarget": "icon"
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "SidebarItem is not an exported source component. This template emits typed SidebarLink data for the exported Sidebar. Application grouping and hrefs are declared fixtures corresponding to source shell routes, derived from executed icon metadata; they are not native href properties."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Sidebar.figma.ts",
+      "node": "23:282",
+      "defaultNode": "23:218",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-282",
+      "source": "src/components/ui/sidebar.tsx",
+      "export": "Sidebar",
+      "nativeName": "Sidebar",
+      "kind": "core",
+      "id": "aureform-sidebar",
+      "axes": {
+        "State": [
+          "Expanded",
+          "Compact"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "compact",
+          "options": {
+            "Expanded": false,
+            "Compact": true
+          }
+        },
+        {
+          "property": "Label#23:8",
+          "type": "TEXT",
+          "codeTarget": "workspace visible text"
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "The native visible Label becomes workspace text. It is not assumed to be the navigation's accessible name.",
+        "Navigation items come from dynamically executed SidebarItem metadata. No guessed icon or child component fallback is inserted; absent local connections yield an empty group."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Command.figma.ts",
+      "node": "23:320",
+      "defaultNode": "23:283",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-320",
+      "source": "src/components/ui/command.tsx",
+      "export": "Command",
+      "nativeName": "Command",
+      "kind": "core",
+      "id": "aureform-command",
+      "axes": {
+        "State": [
+          "Results",
+          "Empty"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "items fixture for Results/Empty",
+          "options": {
+            "Results": "Results",
+            "Empty": "Empty"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Card.figma.ts",
+      "node": "23:335",
+      "defaultNode": "23:321",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-335",
+      "source": "src/components/ui/card.tsx",
+      "export": "Card",
+      "nativeName": "Card",
+      "kind": "core",
+      "id": "aureform-card",
+      "axes": {
+        "State": [
+          "Default",
+          "With actions"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#23:11",
+          "type": "TEXT",
+          "codeTarget": "CardTitle children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/card.tsx",
+          "export": "Card",
+          "property": "appearance",
+          "type": "CardAppearance",
+          "options": [
+            "flat",
+            "elevated",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": null,
+          "status": "unreported-on-this-native-node"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Default",
+            "With actions"
+          ],
+          "reason": "With actions controls composition, not a Card state prop. Source children are dynamically resolved."
+        }
+      ],
+      "notes": [
+        "The source supports appearance: CardAppearance. No Appearance axis is recorded for this native node, so no native property or appearance value is invented."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Avatar.figma.ts",
+      "node": "3:149",
+      "defaultNode": "3:145",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-149",
+      "source": "src/components/ui/avatar.tsx",
+      "export": "Avatar",
+      "nativeName": "Avatar",
+      "kind": "core",
+      "id": "aureform-avatar",
+      "axes": {
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Initials#3:101",
+          "type": "TEXT",
+          "codeTarget": "name fixture derived to preserve up to two initials"
+        },
+        {
+          "property": "Size",
+          "type": "VARIANT",
+          "codeTarget": "size",
+          "options": {
+            "Small": "sm",
+            "Medium": "md",
+            "Large": "lg"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Avatar has no initials prop; its name generates at most two initials. The letter-spaced synthetic name is only a preview fixture, not a person's accessible identity."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Table.figma.ts",
+      "node": "23:355",
+      "defaultNode": "23:336",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-355",
+      "source": "src/components/ui/table.tsx",
+      "export": "Table",
+      "nativeName": "Table",
+      "kind": "core",
+      "id": "aureform-table",
+      "axes": {
+        "State": [
+          "Default",
+          "Empty"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "TableBody children fixture for Default/Empty",
+          "options": {
+            "Default": "Default",
+            "Empty": "Empty"
+          }
+        },
+        {
+          "property": "Appearance",
+          "type": "VARIANT",
+          "codeTarget": "appearance",
+          "options": {
+            "Elevated": "elevated",
+            "Glass": "glass",
+            "Gradient": "gradient",
+            "Flat": "flat"
+          }
+        },
+        {
+          "property": "Density",
+          "type": "VARIANT",
+          "codeTarget": "density",
+          "options": {
+            "Comfortable": "comfortable",
+            "Compact": "compact"
+          }
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/table.tsx",
+          "export": "Table",
+          "property": "appearance",
+          "type": "TableAppearance",
+          "options": [
+            "flat",
+            "elevated",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": "Appearance",
+          "status": "mapped-native-axis"
+        },
+        {
+          "source": "src/components/ui/table.tsx",
+          "export": "Table",
+          "property": "density",
+          "type": "TableDensity",
+          "options": [
+            "comfortable",
+            "compact"
+          ],
+          "nativeProperty": "Density",
+          "status": "mapped-native-axis"
+        }
+      ],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      },
+      "nativeVariants": [
+        {
+          "id": "23:336",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 346
+        },
+        {
+          "id": "23:353",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 304
+        },
+        {
+          "id": "165:1988",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Elevated",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 290
+        },
+        {
+          "id": "165:2080",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Elevated",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 296
+        },
+        {
+          "id": "165:2099",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 346
+        },
+        {
+          "id": "165:2191",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 304
+        },
+        {
+          "id": "165:2210",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Glass",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 290
+        },
+        {
+          "id": "165:2302",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Glass",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 296
+        },
+        {
+          "id": "165:2321",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 346
+        },
+        {
+          "id": "165:2413",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 304
+        },
+        {
+          "id": "165:2432",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Gradient",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 290
+        },
+        {
+          "id": "165:2524",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Gradient",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 296
+        },
+        {
+          "id": "165:2543",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 346
+        },
+        {
+          "id": "165:2635",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 304
+        },
+        {
+          "id": "165:2654",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Flat",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 290
+        },
+        {
+          "id": "165:2746",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Flat",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 296
+        }
+      ],
+      "defaultAxes": {
+        "State": "Default",
+        "Appearance": "Elevated",
+        "Density": "Comfortable"
+      }
+    },
+    {
+      "file": ".figma/code-connect/DataTable.figma.ts",
+      "node": "23:443",
+      "defaultNode": "23:356",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-443",
+      "source": "src/components/ui/data-table.tsx",
+      "export": "DataTable",
+      "nativeName": "DataTable",
+      "kind": "core",
+      "id": "aureform-data-table",
+      "axes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Empty",
+          "Loading",
+          "Error"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "data fixture for Empty; loading/error/onRetry for Loading/Error",
+          "options": {
+            "Default": "Default",
+            "Selected": "Selected",
+            "Empty": "Empty",
+            "Loading": "Loading",
+            "Error": "Error"
+          }
+        },
+        {
+          "property": "Appearance",
+          "type": "VARIANT",
+          "codeTarget": "appearance",
+          "options": {
+            "Elevated": "elevated",
+            "Glass": "glass",
+            "Gradient": "gradient",
+            "Flat": "flat"
+          }
+        },
+        {
+          "property": "Density",
+          "type": "VARIANT",
+          "codeTarget": "density",
+          "options": {
+            "Comfortable": "comfortable",
+            "Compact": "compact"
+          }
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/table.tsx",
+          "export": "DataTable",
+          "property": "appearance",
+          "type": "TableAppearance",
+          "options": [
+            "flat",
+            "elevated",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": "Appearance",
+          "status": "mapped-native-axis"
+        },
+        {
+          "source": "src/components/ui/table.tsx",
+          "export": "DataTable",
+          "property": "density",
+          "type": "TableDensity",
+          "options": [
+            "comfortable",
+            "compact"
+          ],
+          "nativeProperty": "Density",
+          "status": "mapped-native-axis"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Selected"
+          ],
+          "reason": "Selection is internal source state. No initial selected-row prop exists; selectable enables real user interaction."
+        }
+      ],
+      "notes": [
+        "Rows and error text are explicit local fixtures. The retry callback records the local interaction; replace it with the application's data adapter."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      },
+      "nativeVariants": [
+        {
+          "id": "23:356",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 621
+        },
+        {
+          "id": "23:390",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 691
+        },
+        {
+          "id": "23:424",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 505
+        },
+        {
+          "id": "164:1465",
+          "axes": {
+            "State": "Loading",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 561
+        },
+        {
+          "id": "164:1550",
+          "axes": {
+            "State": "Error",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 118
+        },
+        {
+          "id": "164:1564",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Elevated",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 553
+        },
+        {
+          "id": "164:1844",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Elevated",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 623
+        },
+        {
+          "id": "164:2163",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 621
+        },
+        {
+          "id": "164:2443",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 691
+        },
+        {
+          "id": "164:2762",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 505
+        },
+        {
+          "id": "164:2869",
+          "axes": {
+            "State": "Loading",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 561
+        },
+        {
+          "id": "164:2954",
+          "axes": {
+            "State": "Error",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 118
+        },
+        {
+          "id": "164:2968",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Glass",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 553
+        },
+        {
+          "id": "164:3248",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Glass",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 623
+        },
+        {
+          "id": "164:3567",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 621
+        },
+        {
+          "id": "164:3847",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 691
+        },
+        {
+          "id": "164:4166",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 505
+        },
+        {
+          "id": "164:4273",
+          "axes": {
+            "State": "Loading",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 561
+        },
+        {
+          "id": "164:4358",
+          "axes": {
+            "State": "Error",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 118
+        },
+        {
+          "id": "164:4372",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Gradient",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 553
+        },
+        {
+          "id": "164:4652",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Gradient",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 623
+        },
+        {
+          "id": "164:4971",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 621
+        },
+        {
+          "id": "164:5251",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 691
+        },
+        {
+          "id": "164:5570",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 505
+        },
+        {
+          "id": "164:5677",
+          "axes": {
+            "State": "Loading",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 561
+        },
+        {
+          "id": "164:5762",
+          "axes": {
+            "State": "Error",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 118
+        },
+        {
+          "id": "164:5776",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Flat",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 553
+        },
+        {
+          "id": "164:6056",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Flat",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 623
+        }
+      ],
+      "defaultAxes": {
+        "State": "Default",
+        "Appearance": "Elevated",
+        "Density": "Comfortable"
+      }
+    },
+    {
+      "file": ".figma/code-connect/Chart.figma.ts",
+      "node": "23:501",
+      "defaultNode": "23:444",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-501",
+      "source": "src/components/ui/chart.tsx",
+      "export": "Chart",
+      "nativeName": "Chart",
+      "kind": "core",
+      "id": "aureform-chart",
+      "axes": {
+        "Kind": [
+          "Area",
+          "Line",
+          "Bar",
+          "Donut",
+          "Radar",
+          "Radial",
+          "HorizontalBar",
+          "StackedBar",
+          "StackedArea",
+          "DivergingBar",
+          "Gauge",
+          "Rings",
+          "Heatmap"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#23:14",
+          "type": "TEXT",
+          "codeTarget": "label"
+        },
+        {
+          "property": "Show legend#189:0",
+          "type": "BOOLEAN",
+          "codeTarget": "legend"
+        },
+        {
+          "property": "Glow#189:14",
+          "type": "BOOLEAN",
+          "codeTarget": "appearance"
+        },
+        {
+          "property": "Series 1#189:21",
+          "type": "BOOLEAN",
+          "codeTarget": "visibleSeries"
+        },
+        {
+          "property": "Series 2#189:28",
+          "type": "BOOLEAN",
+          "codeTarget": "visibleSeries"
+        },
+        {
+          "property": "Series 3#189:35",
+          "type": "BOOLEAN",
+          "codeTarget": "visibleSeries"
+        },
+        {
+          "property": "Kind",
+          "type": "VARIANT",
+          "codeTarget": "kind",
+          "options": {
+            "Area": "area",
+            "Line": "line",
+            "Bar": "bar",
+            "Donut": "pie",
+            "Radar": "radar",
+            "Radial": "radial",
+            "HorizontalBar": "horizontal-bar",
+            "StackedBar": "stacked-bar",
+            "StackedArea": "stacked-area",
+            "DivergingBar": "diverging-bar",
+            "Gauge": "gauge",
+            "Rings": "rings",
+            "Heatmap": "heatmap"
+          }
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/chart.tsx",
+          "export": "Chart",
+          "property": "legend",
+          "type": "boolean",
+          "nativeFields": [
+            "legend"
+          ],
+          "nativeProperties": [
+            "Show legend#189:0"
+          ],
+          "status": "mapped-native-properties"
+        },
+        {
+          "source": "src/components/ui/chart.tsx",
+          "export": "Chart",
+          "property": "appearance",
+          "type": "ChartAppearance",
+          "nativeFields": [
+            "glow"
+          ],
+          "options": [
+            "flat",
+            "gradient",
+            "glow"
+          ],
+          "trueValue": "glow",
+          "falseValue": "flat",
+          "nativeProperties": [
+            "Glow#189:14"
+          ],
+          "status": "mapped-native-properties"
+        },
+        {
+          "source": "src/components/ui/chart.tsx",
+          "export": "Chart",
+          "property": "visibleSeries",
+          "type": "ChartSeries[]",
+          "nativeFields": [
+            "series1",
+            "series2",
+            "series3"
+          ],
+          "itemType": "ChartSeries",
+          "options": [
+            "value",
+            "secondary",
+            "tertiary"
+          ],
+          "nativeProperties": [
+            "Series 1#189:21",
+            "Series 2#189:28",
+            "Series 3#189:35"
+          ],
+          "status": "mapped-native-properties"
+        },
+        {
+          "source": "src/components/ui/chart.tsx",
+          "export": "Chart",
+          "property": "kind",
+          "type": "ChartKind",
+          "options": [
+            "area",
+            "line",
+            "bar",
+            "pie",
+            "radar",
+            "radial",
+            "horizontal-bar",
+            "stacked-bar",
+            "stacked-area",
+            "diverging-bar",
+            "gauge",
+            "rings",
+            "heatmap"
+          ],
+          "dataType": "ChartDatum",
+          "supportsTertiary": true,
+          "booleanMappings": [
+            {
+              "property": "legend",
+              "type": "boolean",
+              "nativeFields": [
+                "legend"
+              ]
+            },
+            {
+              "property": "appearance",
+              "type": "ChartAppearance",
+              "nativeFields": [
+                "glow"
+              ],
+              "options": [
+                "flat",
+                "gradient",
+                "glow"
+              ],
+              "trueValue": "glow",
+              "falseValue": "flat"
+            },
+            {
+              "property": "visibleSeries",
+              "type": "ChartSeries[]",
+              "nativeFields": [
+                "series1",
+                "series2",
+                "series3"
+              ],
+              "itemType": "ChartSeries",
+              "options": [
+                "value",
+                "secondary",
+                "tertiary"
+              ]
+            }
+          ],
+          "nativeProperty": "Kind",
+          "status": "mapped-native-axis",
+          "unmappedSourceOptions": []
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "Show data#189:7",
+          "type": "BOOLEAN",
+          "reason": "Native presentation toggle retained in metadata. Chart has no public show-data or initial category-visibility prop; its accessible data table and category legend behavior remain source-owned."
+        },
+        {
+          "property": "Category 1#189:42",
+          "type": "BOOLEAN",
+          "reason": "Native presentation toggle retained in metadata. Chart has no public show-data or initial category-visibility prop; its accessible data table and category legend behavior remain source-owned."
+        },
+        {
+          "property": "Category 2#189:49",
+          "type": "BOOLEAN",
+          "reason": "Native presentation toggle retained in metadata. Chart has no public show-data or initial category-visibility prop; its accessible data table and category legend behavior remain source-owned."
+        },
+        {
+          "property": "Category 3#189:56",
+          "type": "BOOLEAN",
+          "reason": "Native presentation toggle retained in metadata. Chart has no public show-data or initial category-visibility prop; its accessible data table and category legend behavior remain source-owned."
+        },
+        {
+          "property": "Category 4#189:63",
+          "type": "BOOLEAN",
+          "reason": "Native presentation toggle retained in metadata. Chart has no public show-data or initial category-visibility prop; its accessible data table and category legend behavior remain source-owned."
+        },
+        {
+          "property": "Category 5#189:70",
+          "type": "BOOLEAN",
+          "reason": "Native presentation toggle retained in metadata. Chart has no public show-data or initial category-visibility prop; its accessible data table and category legend behavior remain source-owned."
+        },
+        {
+          "property": "Category 6#189:77",
+          "type": "BOOLEAN",
+          "reason": "Native presentation toggle retained in metadata. Chart has no public show-data or initial category-visibility prop; its accessible data table and category legend behavior remain source-owned."
+        }
+      ],
+      "notes": [
+        "Chart data is an explicit fixture, not reconstructed from plotted pixels. Native Donut maps to the source pie kind.",
+        "Show legend maps to legend; Glow maps to appearance glow/flat; Series 1–3 map to visibleSeries. Show data and Category 1–6 are visual-only, with no invented public props or data filtering."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      },
+      "nativeVariants": [
+        {
+          "id": "23:444",
+          "name": "Kind=Area",
+          "axes": {
+            "Kind": "Area"
+          }
+        },
+        {
+          "id": "23:454",
+          "name": "Kind=Line",
+          "axes": {
+            "Kind": "Line"
+          }
+        },
+        {
+          "id": "23:463",
+          "name": "Kind=Bar",
+          "axes": {
+            "Kind": "Bar"
+          }
+        },
+        {
+          "id": "23:476",
+          "name": "Kind=Donut",
+          "axes": {
+            "Kind": "Donut"
+          }
+        },
+        {
+          "id": "23:485",
+          "name": "Kind=Radar",
+          "axes": {
+            "Kind": "Radar"
+          }
+        },
+        {
+          "id": "23:493",
+          "name": "Kind=Radial",
+          "axes": {
+            "Kind": "Radial"
+          }
+        },
+        {
+          "id": "189:5385",
+          "name": "Kind=HorizontalBar",
+          "axes": {
+            "Kind": "HorizontalBar"
+          }
+        },
+        {
+          "id": "189:5599",
+          "name": "Kind=StackedBar",
+          "axes": {
+            "Kind": "StackedBar"
+          }
+        },
+        {
+          "id": "189:5813",
+          "name": "Kind=StackedArea",
+          "axes": {
+            "Kind": "StackedArea"
+          }
+        },
+        {
+          "id": "189:5931",
+          "name": "Kind=DivergingBar",
+          "axes": {
+            "Kind": "DivergingBar"
+          }
+        },
+        {
+          "id": "189:6148",
+          "name": "Kind=Gauge",
+          "axes": {
+            "Kind": "Gauge"
+          }
+        },
+        {
+          "id": "189:6201",
+          "name": "Kind=Rings",
+          "axes": {
+            "Kind": "Rings"
+          }
+        },
+        {
+          "id": "189:6271",
+          "name": "Kind=Heatmap",
+          "axes": {
+            "Kind": "Heatmap"
+          }
+        }
+      ],
+      "defaultAxes": {
+        "Kind": "Area"
+      }
+    },
+    {
+      "file": ".figma/code-connect/Alert.figma.ts",
+      "node": "24:363",
+      "defaultNode": "24:351",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-363",
+      "source": "src/components/ui/alert.tsx",
+      "export": "Alert",
+      "nativeName": "Alert",
+      "kind": "core",
+      "id": "aureform-alert",
+      "axes": {
+        "State": [
+          "Info",
+          "Success",
+          "Warning",
+          "Destructive"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#24:0",
+          "type": "TEXT",
+          "codeTarget": "title"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "variant",
+          "options": {
+            "Info": "info",
+            "Success": "success",
+            "Warning": "warning",
+            "Destructive": "destructive"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Toast.figma.ts",
+      "node": "24:373",
+      "defaultNode": "24:364",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-373",
+      "source": "src/components/ui/toast.tsx",
+      "export": "toast",
+      "nativeName": "Toast",
+      "kind": "core",
+      "id": "aureform-toast",
+      "axes": {
+        "State": [
+          "Success",
+          "Error",
+          "Loading"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#24:5",
+          "type": "TEXT",
+          "codeTarget": "toast method message"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "toast.success/error/loading",
+          "options": {
+            "Success": "success",
+            "Error": "error",
+            "Loading": "loading"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Toast is a function export, not a Toast React component. This standalone fixture mounts Toaster; omit that mount in an app already providing it."
+      ],
+      "nestable": false,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": false
+      }
+    },
+    {
+      "file": ".figma/code-connect/Tooltip.figma.ts",
+      "node": "24:387",
+      "defaultNode": "24:374",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-387",
+      "source": "src/components/ui/tooltip.tsx",
+      "export": "Tooltip",
+      "nativeName": "Tooltip",
+      "kind": "core",
+      "id": "aureform-tooltip",
+      "axes": {
+        "State": [
+          "Open",
+          "Closed"
+        ]
+      },
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Open",
+            "Closed"
+          ],
+          "reason": "Tooltip exposes content/children only. Open/Closed require pointer or keyboard interaction."
+        }
+      ],
+      "notes": [
+        "Missing local trigger connections use a native HTML button fixture, never a guessed Figma child. TooltipProvider is included for a standalone snippet."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Popover.figma.ts",
+      "node": "24:403",
+      "defaultNode": "24:388",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-403",
+      "source": "src/components/ui/popover.tsx",
+      "export": "Popover",
+      "nativeName": "Popover",
+      "kind": "core",
+      "id": "aureform-popover",
+      "axes": {
+        "State": [
+          "Open",
+          "Closed"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#24:9",
+          "type": "TEXT",
+          "codeTarget": "PopoverTitle children"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "defaultOpen",
+          "options": {
+            "Open": true,
+            "Closed": false
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Dialog.figma.ts",
+      "node": "24:437",
+      "defaultNode": "24:404",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-437",
+      "source": "src/components/ui/dialog.tsx",
+      "export": "Dialog",
+      "nativeName": "Dialog",
+      "kind": "core",
+      "id": "aureform-dialog",
+      "axes": {
+        "State": [
+          "Open",
+          "Destructive",
+          "Closed"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#24:12",
+          "type": "TEXT",
+          "codeTarget": "DialogTitle children"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "defaultOpen",
+          "options": {
+            "Open": true,
+            "Destructive": true,
+            "Closed": false
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Destructive"
+          ],
+          "reason": "Destructive is a visual/action treatment; Dialog has no destructive variant prop."
+        }
+      ],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Drawer.figma.ts",
+      "node": "24:457",
+      "defaultNode": "24:438",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-457",
+      "source": "src/components/ui/drawer.tsx",
+      "export": "Drawer",
+      "nativeName": "Drawer",
+      "kind": "core",
+      "id": "aureform-drawer",
+      "axes": {
+        "State": [
+          "Open",
+          "Closed"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#24:16",
+          "type": "TEXT",
+          "codeTarget": "DrawerTitle children"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "defaultOpen",
+          "options": {
+            "Open": true,
+            "Closed": false
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/DropdownMenu.figma.ts",
+      "node": "24:480",
+      "defaultNode": "24:458",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-480",
+      "source": "src/components/ui/dropdown-menu.tsx",
+      "export": "DropdownMenu",
+      "nativeName": "DropdownMenu",
+      "kind": "core",
+      "id": "aureform-dropdown-menu",
+      "axes": {
+        "State": [
+          "Open",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "defaultOpen; DropdownMenuTrigger.disabled",
+          "options": {
+            "Open": "Open",
+            "Disabled": "Disabled"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Progress.figma.ts",
+      "node": "24:492",
+      "defaultNode": "24:481",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-492",
+      "source": "src/components/ui/progress.tsx",
+      "export": "Progress",
+      "nativeName": "Progress",
+      "kind": "core",
+      "id": "aureform-progress",
+      "axes": {
+        "State": [
+          "64",
+          "0",
+          "100"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "value",
+          "options": {
+            "0": 0,
+            "64": 64,
+            "100": 100
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Spinner.figma.ts",
+      "node": "24:501",
+      "defaultNode": "24:493",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-501",
+      "source": "src/components/ui/spinner.tsx",
+      "export": "Spinner",
+      "nativeName": "Spinner",
+      "kind": "core",
+      "id": "aureform-spinner",
+      "axes": {
+        "State": [
+          "Small",
+          "Medium"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "className text size",
+          "options": {
+            "Small": "text-xs",
+            "Medium": "text-sm"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Spinner has no size prop; its source fixes the SVG size. This mapping affects text size only."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Skeleton.figma.ts",
+      "node": "24:512",
+      "defaultNode": "24:502",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-512",
+      "source": "src/components/ui/skeleton.tsx",
+      "export": "Skeleton",
+      "nativeName": "Skeleton",
+      "kind": "core",
+      "id": "aureform-skeleton",
+      "axes": {
+        "State": [
+          "Text",
+          "Card"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "className",
+          "options": {
+            "Text": "h-5 w-40",
+            "Card": "h-36 w-full"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Empty.figma.ts",
+      "node": "24:531",
+      "defaultNode": "24:513",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-531",
+      "source": "src/components/ui/empty.tsx",
+      "export": "Empty",
+      "nativeName": "Empty",
+      "kind": "core",
+      "id": "aureform-empty",
+      "axes": {
+        "State": [
+          "Initial",
+          "Search"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#24:19",
+          "type": "TEXT",
+          "codeTarget": "title"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "description fixture",
+          "options": {
+            "Initial": "Initial",
+            "Search": "Search"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Accordion.figma.ts",
+      "node": "24:537",
+      "defaultNode": "24:532",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-537",
+      "source": "src/components/ui/accordion.tsx",
+      "export": "Accordion",
+      "nativeName": "Accordion",
+      "kind": "core",
+      "id": "aureform-accordion",
+      "axes": {
+        "State": [
+          "Expanded",
+          "Collapsed"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#24:22",
+          "type": "TEXT",
+          "codeTarget": "AccordionTrigger children"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "defaultValue fixture",
+          "options": {
+            "Expanded": true,
+            "Collapsed": false
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Carousel.figma.ts",
+      "node": "25:511",
+      "defaultNode": "25:450",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-511",
+      "source": "src/components/ui/carousel.tsx",
+      "export": "Carousel",
+      "nativeName": "Carousel",
+      "kind": "core",
+      "id": "aureform-carousel",
+      "axes": {
+        "State": [
+          "First",
+          "Middle",
+          "Last"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#25:0",
+          "type": "TEXT",
+          "codeTarget": "items[0] visible title children"
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "First",
+            "Middle",
+            "Last"
+          ],
+          "reason": "Carousel initializes internal index at zero and has no selected-index prop."
+        }
+      ],
+      "notes": [
+        "Native Label is the visual CarouselTitle, not the accessibility label. Accessible carousel name and slide content are separate source fixtures."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Gallery.figma.ts",
+      "node": "25:585",
+      "defaultNode": "25:512",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-585",
+      "source": "src/components/ui/gallery.tsx",
+      "export": "Gallery",
+      "nativeName": "Gallery",
+      "kind": "core",
+      "id": "aureform-gallery",
+      "axes": {
+        "State": [
+          "Grid",
+          "Lightbox"
+        ]
+      },
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Grid",
+            "Lightbox"
+          ],
+          "reason": "Lightbox selection is internal and has no public initial-selection prop."
+        }
+      ],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/VideoPlayer.figma.ts",
+      "node": "25:638",
+      "defaultNode": "25:586",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-638",
+      "source": "src/components/ui/video-player.tsx",
+      "export": "VideoPlayer",
+      "nativeName": "VideoPlayer",
+      "kind": "core",
+      "id": "aureform-video-player",
+      "axes": {
+        "State": [
+          "Paused",
+          "Playing",
+          "Unavailable"
+        ]
+      },
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Paused",
+            "Playing",
+            "Unavailable"
+          ],
+          "reason": "Playback and failure are internal browser-media state; no playing/unavailable prop exists."
+        }
+      ],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/Ribbon.figma.ts",
+      "node": "25:645",
+      "defaultNode": "25:639",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-645",
+      "source": "src/components/ui/ribbon.tsx",
+      "export": "Ribbon",
+      "nativeName": "Ribbon",
+      "kind": "core",
+      "id": "aureform-ribbon",
+      "axes": {
+        "State": [
+          "Primary",
+          "Subtle",
+          "Warning"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#25:4",
+          "type": "TEXT",
+          "codeTarget": "children"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "variant",
+          "options": {
+            "Primary": "primary",
+            "Subtle": "subtle",
+            "Warning": "warning"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/MetricCard.figma.ts",
+      "node": "3:160",
+      "defaultNode": "3:150",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-160",
+      "source": "src/components/blocks/metric-card.tsx",
+      "export": "MetricCard",
+      "nativeName": "MetricCard",
+      "kind": "block",
+      "id": "aureform-metric-card",
+      "axes": {
+        "Trend": [
+          "Positive",
+          "Negative"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#3:105",
+          "type": "TEXT",
+          "codeTarget": "label"
+        },
+        {
+          "property": "Value#3:108",
+          "type": "TEXT",
+          "codeTarget": "value"
+        },
+        {
+          "property": "Trend",
+          "type": "VARIANT",
+          "codeTarget": "trend",
+          "options": {
+            "Positive": "up",
+            "Negative": "down"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Mapped to the native Core node; change/note/series are labelled local fixtures. No duplicate block node is invented."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/PageHeading.figma.ts",
+      "node": "29:142",
+      "defaultNode": "29:134",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=29-142",
+      "source": "src/components/blocks/page-heading.tsx",
+      "export": "PageHeading",
+      "nativeName": "PageHeading",
+      "kind": "block",
+      "id": "aureform-page-heading",
+      "axes": {
+        "State": [
+          "Standard",
+          "Editorial"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Eyebrow#29:1",
+          "type": "TEXT",
+          "codeTarget": "eyebrow"
+        },
+        {
+          "property": "Title#29:4",
+          "type": "TEXT",
+          "codeTarget": "title"
+        },
+        {
+          "property": "Description#29:7",
+          "type": "TEXT",
+          "codeTarget": "description"
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "editorial",
+          "options": {
+            "Standard": false,
+            "Editorial": true
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/DashboardShell.figma.ts",
+      "node": "30:969",
+      "defaultNode": "29:143",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=30-969",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "export": "DashboardShell",
+      "nativeName": "DashboardShell",
+      "kind": "block",
+      "id": "aureform-dashboard-shell",
+      "axes": {
+        "Layout": [
+          "Sidebar",
+          "Compact",
+          "Topbar",
+          "Split",
+          "Centered",
+          "Floating"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Layout",
+          "type": "VARIANT",
+          "codeTarget": "layout",
+          "options": {
+            "Sidebar": "sidebar",
+            "Compact": "compact",
+            "Topbar": "topbar",
+            "Split": "split",
+            "Centered": "centered",
+            "Floating": "floating"
+          }
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "Content#30:0",
+          "reason": "Content includes source-owned header plus Page content. It is intentionally not forwarded verbatim: DashboardShell already renders header."
+        }
+      ],
+      "notes": [
+        "Only a real INSTANCE named Page content can be executed safely through this local lookup. A frame is not coerced into an instance.",
+        "If Page content is not a connected instance, emit an explicit local page-body fixture. Never insert the raw Content slot, DashboardHeader or source chrome into children.",
+        "path=dashboard is a declared source fixture. The actual app requires its existing language/theme/demo providers."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/RevenuePanel.figma.ts",
+      "node": "6:2",
+      "defaultNode": "6:2",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-2",
+      "source": "src/components/blocks/revenue-panel.tsx",
+      "export": "RevenuePanel",
+      "nativeName": "RevenuePanel",
+      "kind": "block",
+      "id": "aureform-revenue-panel",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "The ledger exposes a native node but no component-property keys or axes for this block. Required source props are explicit local fixtures, never invented Figma properties."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/PlanBreakdown.figma.ts",
+      "node": "6:33",
+      "defaultNode": "6:33",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-33",
+      "source": "src/components/blocks/plan-breakdown.tsx",
+      "export": "PlanBreakdown",
+      "nativeName": "PlanBreakdown",
+      "kind": "block",
+      "id": "aureform-plan-breakdown",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "The ledger exposes a native node but no component-property keys or axes for this block. Required source props are explicit local fixtures, never invented Figma properties."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/CustomerTable.figma.ts",
+      "node": "6:51",
+      "defaultNode": "6:51",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-51",
+      "source": "src/components/blocks/customer-table.tsx",
+      "export": "CustomerTable",
+      "nativeName": "CustomerTable",
+      "kind": "block",
+      "id": "aureform-customer-table",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "The ledger exposes a native node but no component-property keys or axes for this block. Required source props are explicit local fixtures, never invented Figma properties."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/CustomerDataTable.figma.ts",
+      "node": "17:18",
+      "defaultNode": "17:18",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=17-18",
+      "source": "src/components/blocks/customer-table.tsx",
+      "export": "CustomerDataTable",
+      "nativeName": "CustomerDataTable",
+      "kind": "block",
+      "id": "aureform-customer-data-table",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "The ledger exposes a native node but no component-property keys or axes for this block. Required source props are explicit local fixtures, never invented Figma properties."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/AIComposer.figma.ts",
+      "node": "6:118",
+      "defaultNode": "6:118",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-118",
+      "source": "src/components/blocks/ai-composer.tsx",
+      "export": "AIComposer",
+      "nativeName": "AIComposer",
+      "kind": "block",
+      "id": "aureform-ai-composer",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "The ledger exposes a native node but no component-property keys or axes for this block. Required source props are explicit local fixtures, never invented Figma properties."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/RevenuePanelBar.figma.ts",
+      "node": "38:1736",
+      "defaultNode": "38:1736",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1736",
+      "source": "src/components/blocks/revenue-panel.tsx",
+      "export": "RevenuePanel",
+      "nativeName": "RevenuePanel / Bar",
+      "kind": "block-variant",
+      "id": "aureform-revenue-panel-bar",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "This native Bar master has no reported component-property keys or axes. Without connected Chart metadata the example uses kind=\"bar\"; a connected Chart supplies its actual kind, label and data. Required source props are explicit local fixtures, never invented Figma properties."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/RouteMap.figma.ts",
+      "node": "31:1609",
+      "defaultNode": "31:1565",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=31-1609",
+      "source": "src/components/blocks/route-map.tsx",
+      "export": "RouteMap",
+      "nativeName": "RouteMap",
+      "kind": "block",
+      "id": "aureform-route-map",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [
+        {
+          "property": "Caption#31:50",
+          "reason": "Native Caption is a visual footer, not the source label (accessible map name). Source footer is internal and cannot be controlled with a caption prop."
+        }
+      ],
+      "notes": [
+        "The ledger reports no exhaustive variant axes for this application block; selected=all is an explicit local source fixture, not a guessed native variant."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconLayoutDashboard.figma.ts",
+      "node": "9:6",
+      "defaultNode": "9:6",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-6",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "LayoutDashboard",
+      "kind": "icon",
+      "id": "aureform-icon-layout-dashboard",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconChartNoAxesCombined.figma.ts",
+      "node": "9:12",
+      "defaultNode": "9:12",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-12",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "ChartNoAxesCombined",
+      "kind": "icon",
+      "id": "aureform-icon-chart-no-axes-combined",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconSparkles.figma.ts",
+      "node": "9:15",
+      "defaultNode": "9:15",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-15",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "Sparkles",
+      "kind": "icon",
+      "id": "aureform-icon-sparkles",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconUsers.figma.ts",
+      "node": "9:18",
+      "defaultNode": "9:18",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-18",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "Users",
+      "kind": "icon",
+      "id": "aureform-icon-users",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconLayers.figma.ts",
+      "node": "9:23",
+      "defaultNode": "9:23",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-23",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "Layers",
+      "kind": "icon",
+      "id": "aureform-icon-layers",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconBookOpen.figma.ts",
+      "node": "9:26",
+      "defaultNode": "9:26",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-26",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "BookOpen",
+      "kind": "icon",
+      "id": "aureform-icon-book-open",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconSettings.figma.ts",
+      "node": "9:29",
+      "defaultNode": "9:29",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-29",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "Settings",
+      "kind": "icon",
+      "id": "aureform-icon-settings",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconSearch.figma.ts",
+      "node": "9:33",
+      "defaultNode": "9:33",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-33",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "Search",
+      "kind": "icon",
+      "id": "aureform-icon-search",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconBell.figma.ts",
+      "node": "9:37",
+      "defaultNode": "9:37",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-37",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "Bell",
+      "kind": "icon",
+      "id": "aureform-icon-bell",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconMoon.figma.ts",
+      "node": "9:40",
+      "defaultNode": "9:40",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-40",
+      "source": "src/components/design-icon.tsx",
+      "export": "DesignIcon",
+      "nativeName": "Moon",
+      "kind": "icon",
+      "id": "aureform-icon-moon",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconPlus.figma.ts",
+      "node": "9:43",
+      "defaultNode": "9:43",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-43",
+      "source": "lucide-react",
+      "export": "Plus",
+      "nativeName": "Plus",
+      "kind": "icon",
+      "id": "aureform-icon-plus",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconKanbanSquare.figma.ts",
+      "node": "38:1540",
+      "defaultNode": "38:1540",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1540",
+      "source": "lucide-react",
+      "export": "KanbanSquare",
+      "nativeName": "kanban-square",
+      "kind": "icon",
+      "id": "aureform-icon-kanban-square",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconCalendarDays.figma.ts",
+      "node": "38:1546",
+      "defaultNode": "38:1546",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1546",
+      "source": "lucide-react",
+      "export": "CalendarDays",
+      "nativeName": "calendar-days",
+      "kind": "icon",
+      "id": "aureform-icon-calendar-days",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconMail.figma.ts",
+      "node": "38:1558",
+      "defaultNode": "38:1558",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1558",
+      "source": "lucide-react",
+      "export": "Mail",
+      "nativeName": "mail",
+      "kind": "icon",
+      "id": "aureform-icon-mail",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconFolderOpen.figma.ts",
+      "node": "38:1562",
+      "defaultNode": "38:1562",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1562",
+      "source": "lucide-react",
+      "export": "FolderOpen",
+      "nativeName": "folder-open",
+      "kind": "icon",
+      "id": "aureform-icon-folder-open",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconPackage.figma.ts",
+      "node": "38:1565",
+      "defaultNode": "38:1565",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1565",
+      "source": "lucide-react",
+      "export": "Package",
+      "nativeName": "package",
+      "kind": "icon",
+      "id": "aureform-icon-package",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconShoppingBag.figma.ts",
+      "node": "38:1571",
+      "defaultNode": "38:1571",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1571",
+      "source": "lucide-react",
+      "export": "ShoppingBag",
+      "nativeName": "shopping-bag",
+      "kind": "icon",
+      "id": "aureform-icon-shopping-bag",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconCreditCard.figma.ts",
+      "node": "38:1576",
+      "defaultNode": "38:1576",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1576",
+      "source": "lucide-react",
+      "export": "CreditCard",
+      "nativeName": "credit-card",
+      "kind": "icon",
+      "id": "aureform-icon-credit-card",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconMapPin.figma.ts",
+      "node": "38:1580",
+      "defaultNode": "38:1580",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1580",
+      "source": "lucide-react",
+      "export": "MapPin",
+      "nativeName": "map-pin",
+      "kind": "icon",
+      "id": "aureform-icon-map-pin",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconCircleHelp.figma.ts",
+      "node": "38:1584",
+      "defaultNode": "38:1584",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1584",
+      "source": "lucide-react",
+      "export": "CircleHelp",
+      "nativeName": "circle-help",
+      "kind": "icon",
+      "id": "aureform-icon-circle-help",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconArrowUpRight.figma.ts",
+      "node": "3:2",
+      "defaultNode": "3:2",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-2",
+      "source": "lucide-react",
+      "export": "ArrowUpRight",
+      "nativeName": "ArrowUpRight",
+      "kind": "icon",
+      "id": "aureform-icon-arrow-up-right",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Source is the installed lucide-react package export, rather than a fictitious local icon module."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/IconAureformMark.figma.ts",
+      "node": "9:46",
+      "defaultNode": "9:46",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-46",
+      "source": "src/components/brand.tsx",
+      "export": "AureformMark",
+      "nativeName": "AureformMark",
+      "kind": "icon",
+      "id": "aureform-icon-aureform-mark",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/DashboardSidebar.figma.ts",
+      "node": "29:70",
+      "defaultNode": "29:70",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=29-70",
+      "source": "src/components/ui/sidebar.tsx",
+      "export": "Sidebar",
+      "nativeName": "DashboardSidebar",
+      "kind": "chrome",
+      "id": "aureform-dashboard-sidebar",
+      "axes": {},
+      "mappedProperties": [
+        {
+          "property": "Applications open#38:0",
+          "type": "BOOLEAN",
+          "codeTarget": "SidebarGroup.open"
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Navigation items come from dynamically executed SidebarItem metadata. No guessed icon or child component fallback is inserted; absent local connections yield an empty group."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/DashboardHeader.figma.ts",
+      "node": "29:128",
+      "defaultNode": "29:128",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=29-128",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "export": "DashboardShell",
+      "nativeName": "DashboardHeader",
+      "kind": "chrome",
+      "id": "aureform-dashboard-header",
+      "axes": {},
+      "mappedProperties": [
+        {
+          "property": "Page title#29:0",
+          "type": "TEXT",
+          "codeTarget": "Breadcrumb.items[1].label"
+        }
+      ],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "DashboardHeader is a local composition template name, not an exported React component. The actual header is internal to DashboardShell. Never render this composition again inside DashboardShell children."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/DashboardBrandHeader.figma.ts",
+      "node": "34:1492",
+      "defaultNode": "34:1492",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=34-1492",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "export": "DashboardShell",
+      "nativeName": "DashboardBrandHeader",
+      "kind": "chrome",
+      "id": "aureform-dashboard-brand-header",
+      "axes": {},
+      "mappedProperties": [],
+      "sourceProperties": [],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Standalone source-header composition for brand-based topbar/centered layouts, not an exported DashboardBrandHeader React component. Mark and configurable controls are dynamic children. Never insert this header again into DashboardShell children."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/ButtonShapes.figma.ts",
+      "node": "176:4598",
+      "defaultNode": "176:4562",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=176-4598",
+      "source": "src/components/ui/button.tsx",
+      "export": "Button",
+      "nativeName": "Button / Shapes",
+      "kind": "shape-extension",
+      "id": "aureform-button-shapes",
+      "axes": {
+        "Shape": [
+          "Rounded",
+          "Pill",
+          "Square"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Label#176:0",
+          "type": "TEXT",
+          "codeTarget": "children"
+        },
+        {
+          "property": "Shape",
+          "type": "VARIANT",
+          "codeTarget": "shape",
+          "options": {
+            "Rounded": "rounded",
+            "Pill": "pill",
+            "Square": "square"
+          }
+        },
+        {
+          "property": "Size",
+          "type": "VARIANT",
+          "codeTarget": "size",
+          "options": {
+            "Small": "sm",
+            "Medium": "default",
+            "Large": "lg"
+          }
+        },
+        {
+          "property": "Show icon#176:10",
+          "type": "BOOLEAN",
+          "codeTarget": "conditional children"
+        },
+        {
+          "property": "Icon#176:20",
+          "type": "INSTANCE_SWAP",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/button.tsx",
+          "export": "Button",
+          "property": "shape",
+          "type": "ButtonShape",
+          "options": [
+            "rounded",
+            "pill",
+            "square"
+          ],
+          "sizeMapping": {
+            "Small": "sm",
+            "Medium": "default",
+            "Large": "lg"
+          },
+          "nativeProperty": "Shape",
+          "status": "mapped-native-axis"
+        },
+        {
+          "source": "src/components/ui/button.tsx",
+          "export": "Button",
+          "property": "appearance",
+          "type": "ButtonAppearance",
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": null,
+          "status": "unreported-on-this-native-node"
+        }
+      ],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "The source supports appearance: ButtonAppearance. No Appearance axis is recorded for this native node, so no native property or appearance value is invented.",
+        "Shapes is additive to the existing core, appearance and loading/icon sets. This native set has no Appearance or State axis."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      },
+      "nativeVariants": [
+        {
+          "id": "176:4562",
+          "name": "Shape=Rounded, Size=Medium",
+          "axes": {
+            "Shape": "Rounded",
+            "Size": "Medium"
+          }
+        },
+        {
+          "id": "176:4566",
+          "name": "Shape=Rounded, Size=Small",
+          "axes": {
+            "Shape": "Rounded",
+            "Size": "Small"
+          }
+        },
+        {
+          "id": "176:4570",
+          "name": "Shape=Rounded, Size=Large",
+          "axes": {
+            "Shape": "Rounded",
+            "Size": "Large"
+          }
+        },
+        {
+          "id": "176:4574",
+          "name": "Shape=Pill, Size=Medium",
+          "axes": {
+            "Shape": "Pill",
+            "Size": "Medium"
+          }
+        },
+        {
+          "id": "176:4578",
+          "name": "Shape=Pill, Size=Small",
+          "axes": {
+            "Shape": "Pill",
+            "Size": "Small"
+          }
+        },
+        {
+          "id": "176:4582",
+          "name": "Shape=Pill, Size=Large",
+          "axes": {
+            "Shape": "Pill",
+            "Size": "Large"
+          }
+        },
+        {
+          "id": "176:4586",
+          "name": "Shape=Square, Size=Medium",
+          "axes": {
+            "Shape": "Square",
+            "Size": "Medium"
+          }
+        },
+        {
+          "id": "176:4590",
+          "name": "Shape=Square, Size=Small",
+          "axes": {
+            "Shape": "Square",
+            "Size": "Small"
+          }
+        },
+        {
+          "id": "176:4594",
+          "name": "Shape=Square, Size=Large",
+          "axes": {
+            "Shape": "Square",
+            "Size": "Large"
+          }
+        }
+      ],
+      "defaultAxes": {
+        "Shape": "Rounded",
+        "Size": "Medium"
+      }
+    },
+    {
+      "file": ".figma/code-connect/ButtonAppearance.figma.ts",
+      "node": "97:655",
+      "defaultNode": "97:625",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=97-655",
+      "source": "src/components/ui/button.tsx",
+      "export": "Button",
+      "nativeName": "Button / Appearance",
+      "kind": "appearance-extension",
+      "id": "aureform-button-appearance",
+      "axes": {
+        "Appearance": [
+          "Solid",
+          "Soft",
+          "Outline",
+          "Glass",
+          "Gradient"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Appearance",
+          "type": "VARIANT",
+          "codeTarget": "appearance",
+          "options": {
+            "Solid": "solid",
+            "Soft": "soft",
+            "Outline": "outline",
+            "Glass": "glass",
+            "Gradient": "gradient"
+          }
+        },
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "disabled (Disabled); interactive CSS presentation otherwise",
+          "options": {
+            "Default": "Default",
+            "Hover": "Hover",
+            "Disabled": "Disabled"
+          }
+        },
+        {
+          "property": "Label#97:0",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/button.tsx",
+          "export": "Button",
+          "property": "appearance",
+          "type": "ButtonAppearance",
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": "Appearance",
+          "status": "mapped-native-axis"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Hover"
+          ],
+          "reason": "Hover is pointer/CSS presentation, not a force-hover source prop."
+        }
+      ],
+      "notes": [
+        "Children and source defaults absent from the native ledger are explicit local fixtures, not inferred production content."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/BadgeAppearance.figma.ts",
+      "node": "97:666",
+      "defaultNode": "97:656",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=97-666",
+      "source": "src/components/ui/badge.tsx",
+      "export": "Badge",
+      "nativeName": "Badge / Appearance",
+      "kind": "appearance-extension",
+      "id": "aureform-badge-appearance",
+      "axes": {
+        "Appearance": [
+          "Solid",
+          "Soft",
+          "Outline",
+          "Glass",
+          "Gradient"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Appearance",
+          "type": "VARIANT",
+          "codeTarget": "appearance",
+          "options": {
+            "Solid": "solid",
+            "Soft": "soft",
+            "Outline": "outline",
+            "Glass": "glass",
+            "Gradient": "gradient"
+          }
+        },
+        {
+          "property": "Label#97:16",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/badge.tsx",
+          "export": "Badge",
+          "property": "appearance",
+          "type": "BadgeAppearance",
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": "Appearance",
+          "status": "mapped-native-axis"
+        }
+      ],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Children and source defaults absent from the native ledger are explicit local fixtures, not inferred production content."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/CardMaterial.figma.ts",
+      "node": "97:715",
+      "defaultNode": "97:679",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=97-715",
+      "source": "src/components/ui/card.tsx",
+      "export": "Card",
+      "nativeName": "Card / Material",
+      "kind": "appearance-extension",
+      "id": "aureform-card-material",
+      "axes": {
+        "Appearance": [
+          "Flat",
+          "Elevated",
+          "Glass",
+          "Gradient"
+        ],
+        "State": [
+          "Default",
+          "Hover"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Appearance",
+          "type": "VARIANT",
+          "codeTarget": "appearance",
+          "options": {
+            "Flat": "flat",
+            "Elevated": "elevated",
+            "Glass": "glass",
+            "Gradient": "gradient"
+          }
+        },
+        {
+          "property": "Title#97:22",
+          "type": "TEXT",
+          "codeTarget": "CardTitle children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/ui/card.tsx",
+          "export": "Card",
+          "property": "appearance",
+          "type": "CardAppearance",
+          "options": [
+            "flat",
+            "elevated",
+            "glass",
+            "gradient"
+          ],
+          "nativeProperty": "Appearance",
+          "status": "mapped-native-axis"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Default",
+            "Hover"
+          ],
+          "reason": "Card has no forced hover/state prop. Material is mapped through appearance; hover remains interactive CSS presentation."
+        }
+      ],
+      "notes": [
+        "Children and source defaults absent from the native ledger are explicit local fixtures, not inferred production content."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/GradientBackground.figma.ts",
+      "node": "104:734",
+      "defaultNode": "104:716",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-734",
+      "source": "src/components/effects/gradient-background.tsx",
+      "export": "GradientBackground",
+      "nativeName": "GradientBackground",
+      "kind": "effect",
+      "id": "aureform-gradient-background",
+      "axes": {
+        "Kind": [
+          "Linear",
+          "Radial",
+          "Mesh"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Kind",
+          "type": "VARIANT",
+          "codeTarget": "kind",
+          "options": {
+            "Linear": "linear",
+            "Radial": "radial",
+            "Mesh": "mesh"
+          }
+        },
+        {
+          "property": "Title#104:21",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/effects/gradient-background.tsx",
+          "export": "GradientBackground",
+          "type": "GradientBackgroundProps"
+        }
+      ],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Children and source defaults absent from the native ledger are explicit local fixtures, not inferred production content.",
+        "The native Title text is emitted as an explicit children fixture, not a title/label source prop.",
+        "Decorative browser movement and WebGL output are not asserted by a native design mapping."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/ShaderBackground.figma.ts",
+      "node": "104:766",
+      "defaultNode": "104:735",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-766",
+      "source": "src/components/effects/shader-background.tsx",
+      "export": "ShaderBackground",
+      "nativeName": "ShaderBackground",
+      "kind": "effect",
+      "id": "aureform-shader-background",
+      "axes": {
+        "Kind": [
+          "Aurora",
+          "Waves",
+          "Iridescent",
+          "None"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Kind",
+          "type": "VARIANT",
+          "codeTarget": "kind",
+          "options": {
+            "Aurora": "aurora",
+            "Waves": "waves",
+            "Iridescent": "iridescent",
+            "None": "none"
+          }
+        },
+        {
+          "property": "Title#104:25",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/effects/shader-background.tsx",
+          "export": "ShaderBackground",
+          "type": "ShaderBackgroundProps"
+        }
+      ],
+      "intentionalVisualOnly": [],
+      "notes": [
+        "Children and source defaults absent from the native ledger are explicit local fixtures, not inferred production content.",
+        "The native Title text is emitted as an explicit children fixture, not a title/label source prop.",
+        "Decorative browser movement and WebGL output are not asserted by a native design mapping."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/SpotlightCard.figma.ts",
+      "node": "104:777",
+      "defaultNode": "104:767",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-777",
+      "source": "src/components/effects/spotlight-card.tsx",
+      "export": "SpotlightCard",
+      "nativeName": "SpotlightCard",
+      "kind": "effect",
+      "id": "aureform-spotlight-card",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Title#104:30",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/effects/spotlight-card.tsx",
+          "export": "SpotlightCard",
+          "type": "SpotlightCardProps"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Default",
+            "Hover"
+          ],
+          "reason": "Default/Hover are native pointer/CSS specimens; this source export has no forced-hover or state prop."
+        }
+      ],
+      "notes": [
+        "Children and source defaults absent from the native ledger are explicit local fixtures, not inferred production content.",
+        "The native Title text is emitted as an explicit children fixture, not a title/label source prop.",
+        "Decorative browser movement and WebGL output are not asserted by a native design mapping."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/GlowBorder.figma.ts",
+      "node": "104:786",
+      "defaultNode": "104:778",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-786",
+      "source": "src/components/effects/glow-border.tsx",
+      "export": "GlowBorder",
+      "nativeName": "GlowBorder",
+      "kind": "effect",
+      "id": "aureform-glow-border",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Title#104:33",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/effects/glow-border.tsx",
+          "export": "GlowBorder",
+          "type": "GlowBorderProps"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Default",
+            "Hover"
+          ],
+          "reason": "Default/Hover are native pointer/CSS specimens; this source export has no forced-hover or state prop."
+        }
+      ],
+      "notes": [
+        "Children and source defaults absent from the native ledger are explicit local fixtures, not inferred production content.",
+        "The native Title text is emitted as an explicit children fixture, not a title/label source prop.",
+        "Decorative browser movement and WebGL output are not asserted by a native design mapping."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/TiltCard.figma.ts",
+      "node": "104:797",
+      "defaultNode": "104:787",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-797",
+      "source": "src/components/effects/tilt-card.tsx",
+      "export": "TiltCard",
+      "nativeName": "TiltCard",
+      "kind": "effect",
+      "id": "aureform-tilt-card",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "Title#104:36",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/effects/tilt-card.tsx",
+          "export": "TiltCard",
+          "type": "TiltCardProps"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Default",
+            "Hover"
+          ],
+          "reason": "Default/Hover are native pointer/CSS specimens; this source export has no forced-hover or state prop."
+        }
+      ],
+      "notes": [
+        "Children and source defaults absent from the native ledger are explicit local fixtures, not inferred production content.",
+        "The native Title text is emitted as an explicit children fixture, not a title/label source prop.",
+        "Decorative browser movement and WebGL output are not asserted by a native design mapping."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    },
+    {
+      "file": ".figma/code-connect/MagneticButton.figma.ts",
+      "node": "104:804",
+      "defaultNode": "104:798",
+      "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-804",
+      "source": "src/components/effects/magnetic-button.tsx",
+      "export": "MagneticButton",
+      "nativeName": "MagneticButton",
+      "kind": "effect",
+      "id": "aureform-magnetic-button",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "mappedProperties": [
+        {
+          "property": "State",
+          "type": "VARIANT",
+          "codeTarget": "disabled (Disabled)",
+          "options": {
+            "Default": "Default",
+            "Hover": "Hover",
+            "Disabled": "Disabled"
+          }
+        },
+        {
+          "property": "Label#104:39",
+          "type": "TEXT",
+          "codeTarget": "children"
+        }
+      ],
+      "sourceProperties": [
+        {
+          "source": "src/components/effects/magnetic-button.tsx",
+          "export": "MagneticButton",
+          "type": "MagneticButtonProps"
+        }
+      ],
+      "intentionalVisualOnly": [
+        {
+          "property": "State",
+          "values": [
+            "Hover"
+          ],
+          "reason": "Hover/focus are pointer and keyboard presentation, not forced source states."
+        }
+      ],
+      "notes": [
+        "Children and source defaults absent from the native ledger are explicit local fixtures, not inferred production content.",
+        "Decorative browser movement and WebGL output are not asserted by a native design mapping."
+      ],
+      "nestable": true,
+      "status": "local-unpublished",
+      "templateDataForFutureRegistration": {
+        "isParserless": true,
+        "nestable": true
+      }
+    }
+  ],
+  "sourceSnapshots": [
+    {
+      "file": "bin/aureform.mjs",
+      "sha256": "3a40291c3095cce35515848436f138d72d43825a3038a013f25861996651b331"
+    },
+    {
+      "file": "scripts/generate-tokens.mjs",
+      "sha256": "1e1f8959e5a3fd453d1a773048bc48ff0fdeab57f34ecf0d57c7dacae6da493e"
+    },
+    {
+      "file": "scripts/lib/appearance-tokens.mjs",
+      "sha256": "488eec88e9905870fb228c8900fb17e76ae9c88769e9f7cf5cc7028c7aac1777"
+    },
+    {
+      "file": "scripts/lib/source-graph.mjs",
+      "sha256": "b5048ead943e7d67a6282add2d2f3ef232fa14aa5f546c9f652dc00aa80c5e60"
+    },
+    {
+      "file": "src/components/appearance-controls.tsx",
+      "sha256": "fdb1c97ff22e549a5149d67634deb290187cc2f2d94284c7324b90e6cf6c031a"
+    },
+    {
+      "file": "src/components/appearance-provider.tsx",
+      "sha256": "d4c5cf01f252483f2edb2fee28f5f56a0b5a5b844b39bf323abe4dad4a06a7d5"
+    },
+    {
+      "file": "src/components/blocks/ai-composer.tsx",
+      "sha256": "4222a990d3522d1d552dcff55148ffbe52b0389143825ebc6765724851fa98f1"
+    },
+    {
+      "file": "src/components/blocks/customer-table.tsx",
+      "sha256": "268a97b24affeb0f8d039db1287cc2ed41bbeddd0a6b353bbbe78b5793202ed6"
+    },
+    {
+      "file": "src/components/blocks/dashboard-shell.tsx",
+      "sha256": "64fcd94523a1c1a8d3fc3b676892ac49da600a346b5f19636ecf67e82a7eeaaf"
+    },
+    {
+      "file": "src/components/blocks/metric-card.tsx",
+      "sha256": "44e1d63de86e5fa1cde4ae2dd685762053a5a5688f6f8ff3facdc3da3475296c"
+    },
+    {
+      "file": "src/components/blocks/page-heading.tsx",
+      "sha256": "2f30261856e06f23b176d372e81dd22cfe9287db59d795b0017462fdf42575e8"
+    },
+    {
+      "file": "src/components/blocks/plan-breakdown.tsx",
+      "sha256": "d46500ff708b7cd275a636331a63133e71537960e0f646cebbffa91fd3a32ed7"
+    },
+    {
+      "file": "src/components/blocks/revenue-panel.tsx",
+      "sha256": "5ead520b1df6a6a450edd419afc54d2098a925b4a093033b9e6332417cee6004"
+    },
+    {
+      "file": "src/components/blocks/route-map.tsx",
+      "sha256": "0ab623875695d3b382764cc6607fabf93f904fea5b20a259c0cd1127c2fb6368"
+    },
+    {
+      "file": "src/components/blocks/table-toolbar.tsx",
+      "sha256": "cfcf33679b7f474bff09e87d976963bc68444d6177add833782c767274226cf3"
+    },
+    {
+      "file": "src/components/brand.tsx",
+      "sha256": "48680de3ed1ee8a5ad469ea11c88f01e7029a3afb2d3e525476b9f3459b3fa74"
+    },
+    {
+      "file": "src/components/design-icon.tsx",
+      "sha256": "a1a966b7f5eaae373bd8821e341fbd26dc1c6c31d7228c22c740ca019ab77973"
+    },
+    {
+      "file": "src/components/effects/effect-motion.ts",
+      "sha256": "ce7a96a2df9394ca0d16f2e8e933da99e2d897cf8c80ef8c7c6d5fffc91183cb"
+    },
+    {
+      "file": "src/components/effects/effect-surface.tsx",
+      "sha256": "6a002cf69a99197e540e73716431119984e236be29674cd9b2fe05e29c0534e0"
+    },
+    {
+      "file": "src/components/effects/effect-utils.ts",
+      "sha256": "84df396a46123389ea217efc52daeeb5f37c936e8fd4f759c022b6acb3614751"
+    },
+    {
+      "file": "src/components/effects/effects.css",
+      "sha256": "b568d5b2dd5ac97866e4b86a93078f4dc1809d9590c4484f9f08cd4ce3633c87"
+    },
+    {
+      "file": "src/components/effects/glow-border.tsx",
+      "sha256": "1aa8ed4ad9a2b892e142cc1af9a3593e3ad9993fbec7ec8b219b95378fa33afd"
+    },
+    {
+      "file": "src/components/effects/gradient-background.tsx",
+      "sha256": "3939376ac92e979b1b0dc3e40398dea71c66a108507d6f6a95af9fe08586b9fb"
+    },
+    {
+      "file": "src/components/effects/index.ts",
+      "sha256": "a0ed28cd81988adc31be1636d31c5ce198185ced7b9c49a463625f5e96127338"
+    },
+    {
+      "file": "src/components/effects/magnetic-button.tsx",
+      "sha256": "b2b7002e61052628695886fe210bd93af01db257fe7f67f19f37d83f1834c438"
+    },
+    {
+      "file": "src/components/effects/shader-background.tsx",
+      "sha256": "3da032a107e9f81ada1a738e8e63856199b0c43c467107a82c0fcd8d04d2b17c"
+    },
+    {
+      "file": "src/components/effects/shader-runtime.ts",
+      "sha256": "ad3532ba87693285091303c134e276e786131448205da5a80f980e8c55513ad3"
+    },
+    {
+      "file": "src/components/effects/shaders.ts",
+      "sha256": "e1981cb3f31147a8903c1ff45be1add64f9b7846a6c260b0609e915e6691c093"
+    },
+    {
+      "file": "src/components/effects/spotlight-card.tsx",
+      "sha256": "463806c290d17bdc1af6d06bb329f9d9249226091be27bbe95538346c3327679"
+    },
+    {
+      "file": "src/components/effects/tilt-card.tsx",
+      "sha256": "1fdaf947d3a4b527729aa71307fbe5b2e50f8e9a409ddf4ebbe2a8e19406461f"
+    },
+    {
+      "file": "src/components/ui/accordion.tsx",
+      "sha256": "167cf62da486aad4597780917543d28a88f2158245bdde3c5a9c48a1ea61605f"
+    },
+    {
+      "file": "src/components/ui/alert.tsx",
+      "sha256": "17db9f5ee5d5c027c0ff0661afe132a4467c749e97edff048497b1d085ec0491"
+    },
+    {
+      "file": "src/components/ui/avatar.tsx",
+      "sha256": "d68322869ab524db9d64153b0b97aa241035d01de18f492d46f295a2e7cc6c73"
+    },
+    {
+      "file": "src/components/ui/badge.tsx",
+      "sha256": "1b75103b2193a6007c03a951b65f53afaab3d4a60e2ba7be7e14109241a3c509"
+    },
+    {
+      "file": "src/components/ui/breadcrumb.tsx",
+      "sha256": "63dfa48dfd827b4c74b8953c12379375734dff7917721f39d39fde083ba6aba9"
+    },
+    {
+      "file": "src/components/ui/button-group.tsx",
+      "sha256": "386b471932d502faa7ca46f51da81e83200b0e91e78f5f3ee5de41e00bead478"
+    },
+    {
+      "file": "src/components/ui/button.tsx",
+      "sha256": "7a4ba03ec89978c4f15545255256876c682ba49bf6bad80d6728fe632ccf563e"
+    },
+    {
+      "file": "src/components/ui/card.tsx",
+      "sha256": "5735ec1257a9bd6687014f0579a401b80305f042a0bd80d5e8076fb4057d2f16"
+    },
+    {
+      "file": "src/components/ui/carousel.tsx",
+      "sha256": "c315a17dcf1609da1210b9691e7b916709d1f9871ccf627c9872125b3102358b"
+    },
+    {
+      "file": "src/components/ui/chart.tsx",
+      "sha256": "ef967ab0f2839221105eef95a0e5b9ab6c9b440707198554933c29014c168f5b"
+    },
+    {
+      "file": "src/components/ui/checkbox.tsx",
+      "sha256": "bd3a6731214f0d7c5d760177293dbcef205c07b7423a3ea6634384e586beb73c"
+    },
+    {
+      "file": "src/components/ui/combobox.tsx",
+      "sha256": "6a2dd1891dec14781fd2d9f14f65ddc00ec48232826b0724b13d8e324b5c3f36"
+    },
+    {
+      "file": "src/components/ui/command.tsx",
+      "sha256": "60252d2a1c41159743fa8b2224ee11a64f15bd57d542517a20d0b15b446c7db7"
+    },
+    {
+      "file": "src/components/ui/data-table.tsx",
+      "sha256": "81e073007cc6a20767adc4c3777b552eeb94df205916b338dc36eb8bd6101e84"
+    },
+    {
+      "file": "src/components/ui/date-picker.tsx",
+      "sha256": "3a886206ae052cfb4b9e3eee6b07ec6dbb26614e88f6b373ca2ca9b03ed504f2"
+    },
+    {
+      "file": "src/components/ui/dialog.tsx",
+      "sha256": "3e6aee4a82ec79782f923257b90136ace310300b80f3891bdf14905766d16acb"
+    },
+    {
+      "file": "src/components/ui/drawer.tsx",
+      "sha256": "10e5ae9f79058a2b2d308fcfb1f495b87941e7785baf9411c4bc693e7ad8699e"
+    },
+    {
+      "file": "src/components/ui/dropdown-menu.tsx",
+      "sha256": "f86dea84c8062e13c12f02fabdf6b5ef7354447d78d2436b1d31bd75878e7a2e"
+    },
+    {
+      "file": "src/components/ui/empty.tsx",
+      "sha256": "e2ada13eeaba19c138d6ceb094c47938fd24dbcac1b501d3af1e0fd49a5de415"
+    },
+    {
+      "file": "src/components/ui/field.tsx",
+      "sha256": "87d53f7f8e0eadebc51c468ba165e188a35918578918517d77c131dfa456c8ec"
+    },
+    {
+      "file": "src/components/ui/file-upload.tsx",
+      "sha256": "981e53825ff864cb1caca733ec85a09403d2c727dd764dec4e49958f7bfd0c62"
+    },
+    {
+      "file": "src/components/ui/gallery.tsx",
+      "sha256": "3a8c97d8a83166c5dad9ffe0cc89f5cbb9a5bfabb81eb414dbb00049edb1ba33"
+    },
+    {
+      "file": "src/components/ui/input-otp.tsx",
+      "sha256": "f977712f21f226edf8b88b34ccdba8dc2d4e8daf0ad5b6982afafa54eb5ed8cb"
+    },
+    {
+      "file": "src/components/ui/input.tsx",
+      "sha256": "e298407c39e3a2b219d9ab26a78e00c0462ebf7398a3661df4d96cec2e1d12b0"
+    },
+    {
+      "file": "src/components/ui/link.tsx",
+      "sha256": "c9097291f68c2a142f0a2865b54ad1e1dae90518a5098f90733020278ee3d482"
+    },
+    {
+      "file": "src/components/ui/multi-select.tsx",
+      "sha256": "8a6274c22fd0ecf7131745126793628f4e686fff2bdfc9ce329b0c85bcb95a0f"
+    },
+    {
+      "file": "src/components/ui/pagination.tsx",
+      "sha256": "c15403d8fa4913bd5efebe762d3524bdb5ed188b1a7abde1a5731d81435ba1ef"
+    },
+    {
+      "file": "src/components/ui/popover.tsx",
+      "sha256": "f4ddfd3587c3104bc06bcfad49923a2226d4d8274bb5af0fea5d3985e4ac7530"
+    },
+    {
+      "file": "src/components/ui/progress.tsx",
+      "sha256": "4fd9fd0a93df6dca63789af023e2a81ef6733b7b90d0e121dad221cb4b7f68dd"
+    },
+    {
+      "file": "src/components/ui/radio-group.tsx",
+      "sha256": "095426fc9696990d190a0952d090e1fd80e4dff259aea74623819c6d8fa57788"
+    },
+    {
+      "file": "src/components/ui/ribbon.tsx",
+      "sha256": "979b92d3c0a218d31ea144ec3d41783cc133b7ed9d5f5b931629d598450a5808"
+    },
+    {
+      "file": "src/components/ui/select.tsx",
+      "sha256": "649705bf0437e1476fa508192b593749c0edffa089327a9faaec43f533807759"
+    },
+    {
+      "file": "src/components/ui/sidebar.tsx",
+      "sha256": "d0f2ce515bfa19bb935d0fdb9d0ae57dcc7673884b5f926dfb3813dda51a79ec"
+    },
+    {
+      "file": "src/components/ui/skeleton.tsx",
+      "sha256": "42f9c1df486d04d1a029c54aa996a51516ea797f217402ab3f3df7fe5bd75880"
+    },
+    {
+      "file": "src/components/ui/slider.tsx",
+      "sha256": "8ec7d2db842da915b9cba12850a96ab3b739f1a8133d496f7672d5f999fd91b0"
+    },
+    {
+      "file": "src/components/ui/spinner.tsx",
+      "sha256": "0eef86a65d7a7efe2836b8c68832893f9c0d9d0004663299fe4eb919c35557c2"
+    },
+    {
+      "file": "src/components/ui/switch.tsx",
+      "sha256": "23bc77b18890b6371831cb2d8d1899470c406f755cba689f389aa7be8e62250d"
+    },
+    {
+      "file": "src/components/ui/table.tsx",
+      "sha256": "41dcdd1f646dde6a102aa1e6471e662994210fc104f3467fc426fadfe8d792fe"
+    },
+    {
+      "file": "src/components/ui/tabs.tsx",
+      "sha256": "c8812a8dff0df05e6964e5b26e48bea7d2893ec4c193c6dc004d37d166b04868"
+    },
+    {
+      "file": "src/components/ui/textarea.tsx",
+      "sha256": "892321898dd4e0cc9102d4446a50aa320c957644350fdc70fe383857602a47c2"
+    },
+    {
+      "file": "src/components/ui/toast.tsx",
+      "sha256": "6bb72e3b83a248b0cd7f258bc77ac1fb5a0cf4e1e10beabea19f204382c7af27"
+    },
+    {
+      "file": "src/components/ui/tooltip.tsx",
+      "sha256": "4287fc32574406f5c0a01163d137e302f176f471753a4d1c2f33b52ad172d435"
+    },
+    {
+      "file": "src/components/ui/video-player.tsx",
+      "sha256": "0e1df5f10c84dc7dc9a84565ecb04d56033269b1cc9dcb08937f36b71fa51dfc"
+    },
+    {
+      "file": "src/lib/appearance-bootstrap.ts",
+      "sha256": "a57b7356bb4478f007c60b66d214ca8708f99f9e6381ffc74e0fb077b8ae194b"
+    },
+    {
+      "file": "src/lib/appearance.ts",
+      "sha256": "467c38aac52085ec0b054b03be64f935c73e73990d17b0038241a02879a8ae53"
+    },
+    {
+      "file": "src/lib/catalog.ts",
+      "sha256": "e5c9c6c02db2b4f6c1273a6bd1ca123df6a19932b6790b7ecb848bfea0ecbe80"
+    },
+    {
+      "file": "src/styles/effects.css",
+      "sha256": "944f6d23be8d830a6e0473f754aa586bb80e11e2413a83bbcf87e982f44416ee"
+    },
+    {
+      "file": "tokens/aureform.tokens.json",
+      "sha256": "eb131d7f1e9f0457c5568ff557b453c4c9830773875dfe0c85efcc470760e978"
+    }
+  ],
+  "templateSnapshots": [
+    {
+      "file": ".figma/code-connect/Button.figma.ts",
+      "sha256": "df4ddce09e8e5e57c69defed511969ee9c73a5ac1f1d5f69b46f54e515cd6f0b"
+    },
+    {
+      "file": ".figma/code-connect/ButtonAdditionalStyles.figma.ts",
+      "sha256": "9623b8ddeebc209dce52965126a3ccc168cb0f83dabf9e725826cfe58b24c783"
+    },
+    {
+      "file": ".figma/code-connect/ButtonLoadingIcons.figma.ts",
+      "sha256": "6d4ff1f94c715c5ffdb23187bfce8aa52bb388d52805fce089f051b4a83dc4e5"
+    },
+    {
+      "file": ".figma/code-connect/Badge.figma.ts",
+      "sha256": "26f6669e87ce4bad8239fb70e2586947c9e83515cddea33ebbdcd551af0b66a4"
+    },
+    {
+      "file": ".figma/code-connect/Input.figma.ts",
+      "sha256": "977c01c6807eade7ab87b2d2c857a806b7ddfeaf1e1588622f06f3aeca26075b"
+    },
+    {
+      "file": ".figma/code-connect/Textarea.figma.ts",
+      "sha256": "3d527a5ddc1367d0d2630c930a365afc9d39cd342d9549599d749f7e6fe03c14"
+    },
+    {
+      "file": ".figma/code-connect/Checkbox.figma.ts",
+      "sha256": "56d10e98cd7d4ed087ca2d856cfa810682ff828cd665d3368b349a99e01312dc"
+    },
+    {
+      "file": ".figma/code-connect/Switch.figma.ts",
+      "sha256": "d45fb050728d94df56c63bad55193b068368d47fdf4d2e78d81bb688c0adbda0"
+    },
+    {
+      "file": ".figma/code-connect/RadioGroup.figma.ts",
+      "sha256": "45129b49145085b3850f062a28afed7c24d400b9abe8d79ef86192c7bd199854"
+    },
+    {
+      "file": ".figma/code-connect/Slider.figma.ts",
+      "sha256": "b0f34f75a177e4fedc94d20318b7037aacf908d28dab051b7622f0ca443c7afb"
+    },
+    {
+      "file": ".figma/code-connect/Field.figma.ts",
+      "sha256": "f36bdecec0278732ec6d3e8d8437748cbe5a572ee768969f17318bc9b30d8bf3"
+    },
+    {
+      "file": ".figma/code-connect/Select.figma.ts",
+      "sha256": "d343bbdab94212430d4a221c4fb9edc0f27710b374780b686c18229a2b5222ce"
+    },
+    {
+      "file": ".figma/code-connect/Combobox.figma.ts",
+      "sha256": "e5547a9774382fe2632e130d3051d7a61655be0efaa0b02c6d3220ba01bae8a7"
+    },
+    {
+      "file": ".figma/code-connect/MultiSelect.figma.ts",
+      "sha256": "bb991e34156cc4ce239df0f8e7c39f270b217a4a81848afac58b3e3acd0864ee"
+    },
+    {
+      "file": ".figma/code-connect/DatePicker.figma.ts",
+      "sha256": "30a70dc151ecb7774998fe89c2ae90af572408ead5ff7ca36e8f8d3dd3852607"
+    },
+    {
+      "file": ".figma/code-connect/DateRangePicker.figma.ts",
+      "sha256": "e72cd5a326937c4b7afbc4a38e8024ce5251557d58ed50e0578e056e5d212a08"
+    },
+    {
+      "file": ".figma/code-connect/InputOTP.figma.ts",
+      "sha256": "b483d556a513e1c5efb49b4d485dfc147007af3e8aaacf34df70d21e08141931"
+    },
+    {
+      "file": ".figma/code-connect/FileUpload.figma.ts",
+      "sha256": "edcc5926f5f2a80e5f8b39ffbf8ab1fdc71a38cb2e1bdbbf1674f8ddd01501d6"
+    },
+    {
+      "file": ".figma/code-connect/ButtonGroup.figma.ts",
+      "sha256": "578e26146375ed843f8c821f20e5ccebc97a2807ba74868df3932967b9e8cd75"
+    },
+    {
+      "file": ".figma/code-connect/TextLink.figma.ts",
+      "sha256": "2d8832dc84c9ba2f68ed3dea9ecc92771685cf46f9ad44116aa27f1b04bb2ef6"
+    },
+    {
+      "file": ".figma/code-connect/Breadcrumb.figma.ts",
+      "sha256": "fb2e9baf29d8b121fa31ae437c8d95f8f7cba99f502c3068d1b9d3a96d49053b"
+    },
+    {
+      "file": ".figma/code-connect/Pagination.figma.ts",
+      "sha256": "8f38926c3682f7aa05eba36c1529aff64d7ac083f2f2e42af0dc6e1461ee218d"
+    },
+    {
+      "file": ".figma/code-connect/Tabs.figma.ts",
+      "sha256": "6bf3e37c2911e2e41fbdd90e71ad296b69df3e54add3fccc1db1885a22e2d4ca"
+    },
+    {
+      "file": ".figma/code-connect/SidebarItem.figma.ts",
+      "sha256": "412e7aa570a234dac6345c91466ac055468d16999e21b4e3d95ef2f891750016"
+    },
+    {
+      "file": ".figma/code-connect/Sidebar.figma.ts",
+      "sha256": "f69844009575a14887b1acc23e9ad4d69e407edf5ee52a415c4ee2b9d037ea6e"
+    },
+    {
+      "file": ".figma/code-connect/Command.figma.ts",
+      "sha256": "f877c661329e1170e232458b23cf49453a0755882fca6fb487bc0f398d3af91f"
+    },
+    {
+      "file": ".figma/code-connect/Card.figma.ts",
+      "sha256": "0dfc712369e2297fc853bbacaa753e810aab28ba01d0afe88c131f78bbc33108"
+    },
+    {
+      "file": ".figma/code-connect/Avatar.figma.ts",
+      "sha256": "224a667f8035f901743c5b748c89c99f35f43b7d015741f60490495d540feac2"
+    },
+    {
+      "file": ".figma/code-connect/Table.figma.ts",
+      "sha256": "87a1b76a498388185f97e0ddc1b9f8cf27d84921dea0cdd81601a0c3906a8ab7"
+    },
+    {
+      "file": ".figma/code-connect/DataTable.figma.ts",
+      "sha256": "b35657bd80b52c26ee3ebca88cc00e7bd1a7c3da9cd56a8f5cfb04ff62cfe86b"
+    },
+    {
+      "file": ".figma/code-connect/Chart.figma.ts",
+      "sha256": "6a92b7a6a898b4d2dc1075aba65c9e63b0c1be9aac00eb3ceb284e822b46b2ff"
+    },
+    {
+      "file": ".figma/code-connect/Alert.figma.ts",
+      "sha256": "5ce8ce38e2c226bfbd4988889ad00ce98364d6f1d9d809fc24fdd9708eca4e44"
+    },
+    {
+      "file": ".figma/code-connect/Toast.figma.ts",
+      "sha256": "c645df5a00ca60334095023c65e36dabade00a7a2c46fac7d5d5e2104fab7c9d"
+    },
+    {
+      "file": ".figma/code-connect/Tooltip.figma.ts",
+      "sha256": "727e3b41dcee7fda13a3118a40c43d7bcb786100e561beef174092dc7a65e536"
+    },
+    {
+      "file": ".figma/code-connect/Popover.figma.ts",
+      "sha256": "5584c1524639f0b13dd14742e0e2f0dde3cf2246c050a414116bfc7e59bcb688"
+    },
+    {
+      "file": ".figma/code-connect/Dialog.figma.ts",
+      "sha256": "02215ae1ea57ddf9df96fa5e00ee0f834516eac313f6dc4b1f8f994ee70f2bf2"
+    },
+    {
+      "file": ".figma/code-connect/Drawer.figma.ts",
+      "sha256": "d626b2af58c22cf20ba49a62a3bc9be3dd0d42c62f6a62f448e34f03aa857910"
+    },
+    {
+      "file": ".figma/code-connect/DropdownMenu.figma.ts",
+      "sha256": "549350bd54d250b7f02bf2c858e35b416960cc0a01b5cdff500908ff17a32f42"
+    },
+    {
+      "file": ".figma/code-connect/Progress.figma.ts",
+      "sha256": "9c1503e285946caa49d55151f93cb2cbe8df53ecddad28b509e6362a9d0e11d3"
+    },
+    {
+      "file": ".figma/code-connect/Spinner.figma.ts",
+      "sha256": "f8a45722d426e878aaa4519391c1056a424e0e466759b8575257e9dfd4aad3e4"
+    },
+    {
+      "file": ".figma/code-connect/Skeleton.figma.ts",
+      "sha256": "af2aeac34655d2f59fdf997149063447fe8a8c5c9df6a454ebef54405de0d49c"
+    },
+    {
+      "file": ".figma/code-connect/Empty.figma.ts",
+      "sha256": "554673b7b4df8ee2c621c6224f4c97a94d129e8f7c88cbe7d90788a26d64f3d3"
+    },
+    {
+      "file": ".figma/code-connect/Accordion.figma.ts",
+      "sha256": "f0e7fd5885fa7b1751b9577c915de372ecd08a9393ab5ec775569abec9fe6b34"
+    },
+    {
+      "file": ".figma/code-connect/Carousel.figma.ts",
+      "sha256": "4bfb7cb2ffd297a79c5ce493a38c5689eb875c7f5c5c65d35ffe85b9dbc6d914"
+    },
+    {
+      "file": ".figma/code-connect/Gallery.figma.ts",
+      "sha256": "80b2e503063561ae666b124e46ed3d9c8713c5704dc2ffe5b71d893b93ad7ec0"
+    },
+    {
+      "file": ".figma/code-connect/VideoPlayer.figma.ts",
+      "sha256": "06c446060bee813f72fd1f7a557bf8ca44833c54a65ad3434f498feb6a78e1fd"
+    },
+    {
+      "file": ".figma/code-connect/Ribbon.figma.ts",
+      "sha256": "40d0aa2c40ae63d322c5b8b05bda1d3ea12221e36e198aee38c0522ee2aca6a4"
+    },
+    {
+      "file": ".figma/code-connect/MetricCard.figma.ts",
+      "sha256": "852658bb059e6848b83f1b4f13155c182633b741e58eac368cb219a0fc519b56"
+    },
+    {
+      "file": ".figma/code-connect/PageHeading.figma.ts",
+      "sha256": "5de0af1fc1f69b6d00571f3a60c98652cb6d72354c04d67add113ec2803f0a95"
+    },
+    {
+      "file": ".figma/code-connect/DashboardShell.figma.ts",
+      "sha256": "d991f6dee051780b42562a6af5beb51b59987c20b7930146b8d381d002fb93f5"
+    },
+    {
+      "file": ".figma/code-connect/RevenuePanel.figma.ts",
+      "sha256": "152f623bd2423deb4ea4c8e5d1f71bd8a55073ef0fd3a835f7c923c6a88a8900"
+    },
+    {
+      "file": ".figma/code-connect/PlanBreakdown.figma.ts",
+      "sha256": "93abda793c3e8152d2a716bce83d019fd4ce084f72228966bef7960a58bdef5e"
+    },
+    {
+      "file": ".figma/code-connect/CustomerTable.figma.ts",
+      "sha256": "b15fafb7c9d79fae604b2d45aaa90af4fae34d0cc09df9ae80fd708d60654115"
+    },
+    {
+      "file": ".figma/code-connect/CustomerDataTable.figma.ts",
+      "sha256": "dfb7092276275badc8c91576a836d0d8e8ee00c73d7a835a6d9974f8abcd1854"
+    },
+    {
+      "file": ".figma/code-connect/AIComposer.figma.ts",
+      "sha256": "2881d23f02b1bba73b695f6845b1eb6dedc3b982d049fa264935241cc59741aa"
+    },
+    {
+      "file": ".figma/code-connect/RevenuePanelBar.figma.ts",
+      "sha256": "adba7464469a06c1b09320df93bdf5dbdb7d0fabe0174de99d5129831641f0b1"
+    },
+    {
+      "file": ".figma/code-connect/RouteMap.figma.ts",
+      "sha256": "d9f1d2991bf3a11aecd794df0c9042698aab5df594049cbdda932d8d7fa08c89"
+    },
+    {
+      "file": ".figma/code-connect/IconLayoutDashboard.figma.ts",
+      "sha256": "2c57f6499d4c444c5172fb3eb2d02aa9a8c7e2108c7dee3139988e5efea3f7cf"
+    },
+    {
+      "file": ".figma/code-connect/IconChartNoAxesCombined.figma.ts",
+      "sha256": "7a3643633fdbd8df4b3df411c015293f011969f9650323fdf0d8c30c1fa746e1"
+    },
+    {
+      "file": ".figma/code-connect/IconSparkles.figma.ts",
+      "sha256": "547bf0a12987269e5abfd51c5c22c09006b470bb57434495086503d69fe2c108"
+    },
+    {
+      "file": ".figma/code-connect/IconUsers.figma.ts",
+      "sha256": "51b6e133de20ead21f1d169008ea6c4c24432fc3db0263279b1a4880f7f353cd"
+    },
+    {
+      "file": ".figma/code-connect/IconLayers.figma.ts",
+      "sha256": "6b9d073789e0d5cc206c23535ea24f8ee9b3041a4616c27598e2061ed1ced87f"
+    },
+    {
+      "file": ".figma/code-connect/IconBookOpen.figma.ts",
+      "sha256": "3c60b21118a2eb2946ac36e37686588e5bd4cfd928621c08034966c370c58afe"
+    },
+    {
+      "file": ".figma/code-connect/IconSettings.figma.ts",
+      "sha256": "45ac8d005446a08a665c909e3d9a3d7330dda9abd04f414532d5242a715da1aa"
+    },
+    {
+      "file": ".figma/code-connect/IconSearch.figma.ts",
+      "sha256": "5249260cf4cdcdb8b1359edf346df998965755f440ac0229ab48074518457f68"
+    },
+    {
+      "file": ".figma/code-connect/IconBell.figma.ts",
+      "sha256": "3a24807d6b53a53888ac6111174536d8a13408de887e8443d5b91c30957e3353"
+    },
+    {
+      "file": ".figma/code-connect/IconMoon.figma.ts",
+      "sha256": "b49047e354f0458e656bb95a8241f6ed465dc498491a56a270417f7c789e65b4"
+    },
+    {
+      "file": ".figma/code-connect/IconPlus.figma.ts",
+      "sha256": "9b6d8c33789306cfafcfca24a79a2b8fa7ae528db1d361fcc994d9247ee676d6"
+    },
+    {
+      "file": ".figma/code-connect/IconKanbanSquare.figma.ts",
+      "sha256": "35bd7b0d7a22e3db3971b25085c569b44f35a68ae7c1eca4e4ecf1ffc9e53d75"
+    },
+    {
+      "file": ".figma/code-connect/IconCalendarDays.figma.ts",
+      "sha256": "13314be4495bde009aa35fb4491bb4cf609104546fd4923195195a429f14d5b0"
+    },
+    {
+      "file": ".figma/code-connect/IconMail.figma.ts",
+      "sha256": "027d8b6b35d9549414394416375a9e936ea10b5dd8af3f1fd299c5b95ebfd563"
+    },
+    {
+      "file": ".figma/code-connect/IconFolderOpen.figma.ts",
+      "sha256": "1c0d6cd04bd510da3993de2fea617b4d9f787afab049ddaf82ab0ece2c6855e6"
+    },
+    {
+      "file": ".figma/code-connect/IconPackage.figma.ts",
+      "sha256": "40dbf10fbcce863ce0070583b1dd165d56ca65b8112edf0a3cf83ea1b5d6ee0d"
+    },
+    {
+      "file": ".figma/code-connect/IconShoppingBag.figma.ts",
+      "sha256": "c17221496c19a5143d3bdd7e51c6e041ba90a9f5ca7111ab42e12f08a3dc9df2"
+    },
+    {
+      "file": ".figma/code-connect/IconCreditCard.figma.ts",
+      "sha256": "8c31a95d748cf9a49a4434aef53762fcddd0729a6d1de35ce851e706e111532e"
+    },
+    {
+      "file": ".figma/code-connect/IconMapPin.figma.ts",
+      "sha256": "9c72921853e5510c8fa1a3a346232d8585bd3e051c1706726cea49e3b6494a6c"
+    },
+    {
+      "file": ".figma/code-connect/IconCircleHelp.figma.ts",
+      "sha256": "13d5815a9e6077ddc0bf644bf9a75cb397fc514dd70129c7ef370315f259ef6c"
+    },
+    {
+      "file": ".figma/code-connect/IconArrowUpRight.figma.ts",
+      "sha256": "febb042d219fcdd6a9d56c1b492c7e8a0bd5994f934205d189de1f8fa9a54b91"
+    },
+    {
+      "file": ".figma/code-connect/IconAureformMark.figma.ts",
+      "sha256": "f40fcbbda05fcd2f182facaa303c7cc6b2fa9f19242e2bda974e2d2db47152c0"
+    },
+    {
+      "file": ".figma/code-connect/DashboardSidebar.figma.ts",
+      "sha256": "4af673755b7163658786c09c27f93619f64ca33503668212dfa2b32a76e01b96"
+    },
+    {
+      "file": ".figma/code-connect/DashboardHeader.figma.ts",
+      "sha256": "271182aece1d5d2ea83ba17211ea00d7c5d4357e922a9d89caaf0e451739655b"
+    },
+    {
+      "file": ".figma/code-connect/DashboardBrandHeader.figma.ts",
+      "sha256": "5eac7fd79fe5bc9ce774fb1edf19aee900b2cb446a5b454f4a636a7b3e6bc5e4"
+    },
+    {
+      "file": ".figma/code-connect/ButtonShapes.figma.ts",
+      "sha256": "b47d9c082d7a42302104a810791b525fa906df464aa3cdf5d56c0ddc2290622a"
+    },
+    {
+      "file": ".figma/code-connect/ButtonAppearance.figma.ts",
+      "sha256": "531039bfdf967c3254c4bcda121113f6c8f622eec403c36f22483e8c8876263f"
+    },
+    {
+      "file": ".figma/code-connect/BadgeAppearance.figma.ts",
+      "sha256": "a5a81ed553d946a18ac3cc4fa3d151e4878980e7fd73375f890868cbb22b323d"
+    },
+    {
+      "file": ".figma/code-connect/CardMaterial.figma.ts",
+      "sha256": "205e6574859709fedd8161b84d8344150d43a543d15151eee2598950a828f59d"
+    },
+    {
+      "file": ".figma/code-connect/GradientBackground.figma.ts",
+      "sha256": "4f4d7fbc9554d72c159edf525ee6da2da2a7d9a8d3dfeb22c163f9f356a0897a"
+    },
+    {
+      "file": ".figma/code-connect/ShaderBackground.figma.ts",
+      "sha256": "9cc1925c788c16612aff103549e81ab87b2ff1646071157f006b548cc6ad5b6c"
+    },
+    {
+      "file": ".figma/code-connect/SpotlightCard.figma.ts",
+      "sha256": "cc4d4ea466b984e136909a870ef4095021ac9edb570be1f036b63081551ba526"
+    },
+    {
+      "file": ".figma/code-connect/GlowBorder.figma.ts",
+      "sha256": "1ad666568e94c14c1bf532e67e4464469b58dedf5c14bbd5fd7fbf4c3e3e388b"
+    },
+    {
+      "file": ".figma/code-connect/TiltCard.figma.ts",
+      "sha256": "80a4807583272f8f3ee9a0179937cf732d7aa05ec09885671a2e63b95f5230ab"
+    },
+    {
+      "file": ".figma/code-connect/MagneticButton.figma.ts",
+      "sha256": "91a003f02e1b83f0e9934e5e18f3e79253bc819d5b5be3e2a7730c5a605865b3"
+    }
+  ]
+}

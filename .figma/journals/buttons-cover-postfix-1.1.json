@@ -1,0 +1,159 @@
+{
+  "recordedAt": "2026-10-19T05:44:07.713722+00:00",
+  "agent": "Zeno",
+  "lease": "NoLease",
+  "callsInFlight": 0,
+  "scopePages": [
+    "2:3",
+    "2:2"
+  ],
+  "scopeRoots": [
+    "176:4598",
+    "176:4599",
+    "176:4696",
+    "27:46"
+  ],
+  "unchangedCoverRoot": "27:2",
+  "steps": [
+    {
+      "step": "Large glyph control foreground",
+      "status": "control-foreground-corrected-and-mode-verified",
+      "receiptPath": ".figma/proofs/buttons-1.1/postfix-core-execution-receipt.json",
+      "mutatedNodeIds": [
+        "I176:4571;3:4",
+        "I176:4583;3:4",
+        "I176:4595;3:4"
+      ],
+      "affectedNodeIds": [
+        "176:4599",
+        "176:4696",
+        "176:4570",
+        "176:4571",
+        "I176:4571;3:4",
+        "176:4582",
+        "176:4583",
+        "I176:4583;3:4",
+        "176:4594",
+        "176:4595",
+        "I176:4595;3:4",
+        "176:4613",
+        "I176:4613;176:4571",
+        "I176:4613;176:4571;3:4",
+        "176:4629",
+        "I176:4629;176:4583",
+        "I176:4629;176:4583;3:4",
+        "176:4645",
+        "I176:4645;176:4595",
+        "I176:4645;176:4595;3:4",
+        "176:4708",
+        "I176:4708;176:4571",
+        "I176:4708;176:4571;3:4",
+        "176:4721",
+        "I176:4721;176:4583",
+        "I176:4721;176:4583;3:4",
+        "176:4734",
+        "I176:4734;176:4595",
+        "I176:4734;176:4595;3:4",
+        "176:4598"
+      ],
+      "verifiedMasters": 3,
+      "verifiedBoardInstances": 6,
+      "boardExplicitOverridesNeeded": 0
+    },
+    {
+      "step": "Brand Guide three copy corrections",
+      "status": "brand-guide-copy-corrected-with-observed-light-colors",
+      "receiptPath": ".figma/proofs/buttons-1.1/postfix-guide-execution-receipt.json",
+      "mutatedNodeIds": [
+        "27:54",
+        "27:59",
+        "27:69"
+      ],
+      "affectedNodeIds": [
+        "27:54",
+        "27:50",
+        "27:59",
+        "27:55",
+        "27:69",
+        "27:46"
+      ],
+      "observedLightColors": {
+        "background": "#F6F8FC",
+        "foreground": "#172033",
+        "primary": "#764ED1"
+      },
+      "typographyPreserved": true,
+      "layoutPreserved": true,
+      "cover27_2Unchanged": true
+    },
+    {
+      "step": "Postfix captures",
+      "status": "three-actual-exports-owner-download-and-view-pending",
+      "nodeIds": [
+        "176:4599",
+        "176:4696",
+        "27:46"
+      ],
+      "canvasMutated": false
+    }
+  ],
+  "pendingOverallCodeConnect": true,
+  "pendingOverallNativeAudit": true,
+  "phase": "two-scoped-corrections-and-three-recaptures-complete-lease-ceded",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "I176:4571;3:4",
+    "I176:4583;3:4",
+    "I176:4595;3:4",
+    "27:54",
+    "27:59",
+    "27:69"
+  ],
+  "affectedNodeIds": [
+    "176:4599",
+    "176:4696",
+    "176:4570",
+    "176:4571",
+    "I176:4571;3:4",
+    "176:4582",
+    "176:4583",
+    "I176:4583;3:4",
+    "176:4594",
+    "176:4595",
+    "I176:4595;3:4",
+    "176:4613",
+    "I176:4613;176:4571",
+    "I176:4613;176:4571;3:4",
+    "176:4629",
+    "I176:4629;176:4583",
+    "I176:4629;176:4583;3:4",
+    "176:4645",
+    "I176:4645;176:4595",
+    "I176:4645;176:4595;3:4",
+    "176:4708",
+    "I176:4708;176:4571",
+    "I176:4708;176:4571;3:4",
+    "176:4721",
+    "I176:4721;176:4583",
+    "I176:4721;176:4583;3:4",
+    "176:4734",
+    "I176:4734;176:4595",
+    "I176:4734;176:4595;3:4",
+    "176:4598",
+    "27:54",
+    "27:50",
+    "27:59",
+    "27:55",
+    "27:69",
+    "27:46"
+  ],
+  "removedNodeIds": [],
+  "captureManifestPath": ".figma/proofs/buttons-1.1/postfix-capture-manifest.json",
+  "privateStagingPath": "/tmp/aureform-buttons-cover-postfix-owner-proof-1.1",
+  "ownerDownloadCommand": "bash /tmp/aureform-buttons-cover-postfix-download-1.1.sh",
+  "ownerPostfixVisualReview": "pending",
+  "sourceButtonSha256Preserved": "7a4ba03ec89978c4f15545255256876c682ba49bf6bad80d6728fe632ccf563e",
+  "frozenDocsSha256Preserved": "bb986e0720531bd2dae743f488319c5ac332b80b7d189ec565d5e7d6bd9d8554",
+  "coverUnchangedOwnerView": "pass",
+  "insight": "I now compare icon and Label bindings through the same semantic variable in each mode; a generic foreground alias can invert the intended icon contrast."
+}

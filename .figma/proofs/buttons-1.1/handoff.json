@@ -1,0 +1,48 @@
+{
+  "recordedAt": "2026-10-19T05:28:43.906454+00:00",
+  "lease": "NoLease",
+  "callsInFlight": 0,
+  "buttonSetId": "176:4598",
+  "buttonDefaultId": "176:4562",
+  "buttonPropertyKeys": {
+    "label": "Label#176:0",
+    "showIcon": "Show icon#176:10",
+    "icon": "Icon#176:20"
+  },
+  "reviews": [
+    {
+      "id": "176:4599",
+      "mode": "Dark",
+      "width": 1360,
+      "height": 636,
+      "buttonExamples": 27
+    },
+    {
+      "id": "176:4696",
+      "mode": "Light",
+      "width": 1360,
+      "height": 636,
+      "buttonExamples": 27
+    }
+  ],
+  "coverMutatedTextIds": [
+    "27:15",
+    "27:43"
+  ],
+  "records": [
+    ".figma/native-buttons-1.1.json",
+    ".figma/native-cover-counts-1.1.json",
+    ".figma/journals/buttons-cover-1.1.json"
+  ],
+  "proofDirectory": ".figma/proofs/buttons-1.1",
+  "privateOwnerDownloadCommand": "bash /tmp/aureform-buttons-cover-download-1.1.sh",
+  "stateSha256": "8392250b8f1423d59c9844b7afae356bfb933e7d8f0ac685e655307085696965",
+  "scriptsPreserved": {
+    "buttons-1.1.js": "18956057dcec948a6c45343d330b2e608ebddc7a00c82e4b9a76c297852bdfa6",
+    "cover-counts-1.1.js": "ec2f62799ec0ca8931fe432f9c0f3ac35fb59bf06e3bbd00c82a460f32ef9aaa"
+  },
+  "frozenDocsSha256": "bb986e0720531bd2dae743f488319c5ac332b80b7d189ec565d5e7d6bd9d8554",
+  "ownerDownloadAndView": "pending",
+  "pendingOverallCodeConnect": true,
+  "pendingOverallNativeAudit": true
+}

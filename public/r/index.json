@@ -1,0 +1,582 @@
+{
+  "name": "aureform-ui",
+  "version": "1.3.0",
+  "items": [
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "url": "/r/accordion.json"
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "url": "/r/alert.json"
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "url": "/r/avatar.json"
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "url": "/r/badge.json"
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "url": "/r/breadcrumb.json"
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "url": "/r/button-group.json"
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "url": "/r/button.json"
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "url": "/r/card.json"
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "url": "/r/carousel.json"
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "title": "Chart",
+      "url": "/r/chart.json"
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "url": "/r/checkbox.json"
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "url": "/r/combobox.json"
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "url": "/r/command.json"
+    },
+    {
+      "name": "data-table",
+      "type": "registry:ui",
+      "title": "Data Table",
+      "url": "/r/data-table.json"
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:ui",
+      "title": "Date Picker",
+      "url": "/r/date-picker.json"
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "url": "/r/dialog.json"
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "url": "/r/drawer.json"
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "url": "/r/dropdown-menu.json"
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "url": "/r/empty.json"
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "url": "/r/field.json"
+    },
+    {
+      "name": "file-upload",
+      "type": "registry:ui",
+      "title": "File Upload",
+      "url": "/r/file-upload.json"
+    },
+    {
+      "name": "gallery",
+      "type": "registry:ui",
+      "title": "Gallery",
+      "url": "/r/gallery.json"
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input Otp",
+      "url": "/r/input-otp.json"
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "url": "/r/input.json"
+    },
+    {
+      "name": "link",
+      "type": "registry:ui",
+      "title": "Link",
+      "url": "/r/link.json"
+    },
+    {
+      "name": "multi-select",
+      "type": "registry:ui",
+      "title": "Multi Select",
+      "url": "/r/multi-select.json"
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "url": "/r/pagination.json"
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "url": "/r/popover.json"
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "url": "/r/progress.json"
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "url": "/r/radio-group.json"
+    },
+    {
+      "name": "ribbon",
+      "type": "registry:ui",
+      "title": "Ribbon",
+      "url": "/r/ribbon.json"
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "url": "/r/select.json"
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "url": "/r/sidebar.json"
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "url": "/r/skeleton.json"
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "url": "/r/slider.json"
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "url": "/r/spinner.json"
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "url": "/r/switch.json"
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "url": "/r/table.json"
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "url": "/r/tabs.json"
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "url": "/r/textarea.json"
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "title": "Toast",
+      "url": "/r/toast.json"
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "url": "/r/tooltip.json"
+    },
+    {
+      "name": "video-player",
+      "type": "registry:ui",
+      "title": "Video Player",
+      "url": "/r/video-player.json"
+    },
+    {
+      "name": "ai-composer",
+      "type": "registry:block",
+      "title": "Ai Composer",
+      "url": "/r/ai-composer.json"
+    },
+    {
+      "name": "customer-table",
+      "type": "registry:block",
+      "title": "Customer Table",
+      "url": "/r/customer-table.json"
+    },
+    {
+      "name": "dashboard-shell",
+      "type": "registry:block",
+      "title": "Dashboard Shell",
+      "url": "/r/dashboard-shell.json"
+    },
+    {
+      "name": "data-workbench",
+      "type": "registry:block",
+      "title": "Data Workbench",
+      "url": "/r/data-workbench.json"
+    },
+    {
+      "name": "import-wizard",
+      "type": "registry:block",
+      "title": "Import Wizard",
+      "url": "/r/import-wizard.json"
+    },
+    {
+      "name": "member-management",
+      "type": "registry:block",
+      "title": "Member Management",
+      "url": "/r/member-management.json"
+    },
+    {
+      "name": "metric-card",
+      "type": "registry:block",
+      "title": "Metric Card",
+      "url": "/r/metric-card.json"
+    },
+    {
+      "name": "onboarding-flow",
+      "type": "registry:block",
+      "title": "Onboarding Flow",
+      "url": "/r/onboarding-flow.json"
+    },
+    {
+      "name": "page-heading",
+      "type": "registry:block",
+      "title": "Page Heading",
+      "url": "/r/page-heading.json"
+    },
+    {
+      "name": "plan-breakdown",
+      "type": "registry:block",
+      "title": "Plan Breakdown",
+      "url": "/r/plan-breakdown.json"
+    },
+    {
+      "name": "record-actions",
+      "type": "registry:block",
+      "title": "Record Actions",
+      "url": "/r/record-actions.json"
+    },
+    {
+      "name": "record-detail",
+      "type": "registry:block",
+      "title": "Record Detail",
+      "url": "/r/record-detail.json"
+    },
+    {
+      "name": "revenue-panel",
+      "type": "registry:block",
+      "title": "Revenue Panel",
+      "url": "/r/revenue-panel.json"
+    },
+    {
+      "name": "route-map",
+      "type": "registry:block",
+      "title": "Route Map",
+      "url": "/r/route-map.json"
+    },
+    {
+      "name": "table-toolbar",
+      "type": "registry:block",
+      "title": "Table Toolbar",
+      "url": "/r/table-toolbar.json"
+    },
+    {
+      "name": "workspace-status",
+      "type": "registry:block",
+      "title": "Workspace Status",
+      "url": "/r/workspace-status.json"
+    },
+    {
+      "name": "ai-workspace",
+      "type": "registry:block",
+      "title": "Ai Workspace",
+      "url": "/r/ai-workspace.json"
+    },
+    {
+      "name": "appearance-gallery",
+      "type": "registry:block",
+      "title": "Appearance Gallery",
+      "url": "/r/appearance-gallery.json"
+    },
+    {
+      "name": "appearance-studio",
+      "type": "registry:block",
+      "title": "Appearance Studio",
+      "url": "/r/appearance-studio.json"
+    },
+    {
+      "name": "auth",
+      "type": "registry:block",
+      "title": "Auth",
+      "url": "/r/auth.json"
+    },
+    {
+      "name": "auxiliary",
+      "type": "registry:block",
+      "title": "Auxiliary",
+      "url": "/r/auxiliary.json"
+    },
+    {
+      "name": "calendar",
+      "type": "registry:block",
+      "title": "Calendar",
+      "url": "/r/calendar.json"
+    },
+    {
+      "name": "catalogs",
+      "type": "registry:block",
+      "title": "Catalogs",
+      "url": "/r/catalogs.json"
+    },
+    {
+      "name": "communication",
+      "type": "registry:block",
+      "title": "Communication",
+      "url": "/r/communication.json"
+    },
+    {
+      "name": "components",
+      "type": "registry:block",
+      "title": "Components",
+      "url": "/r/components.json"
+    },
+    {
+      "name": "customer-detail",
+      "type": "registry:block",
+      "title": "Customer Detail",
+      "url": "/r/customer-detail.json"
+    },
+    {
+      "name": "customer-import",
+      "type": "registry:block",
+      "title": "Customer Import",
+      "url": "/r/customer-import.json"
+    },
+    {
+      "name": "customer-operations",
+      "type": "registry:block",
+      "title": "Customer Operations",
+      "url": "/r/customer-operations.json"
+    },
+    {
+      "name": "dashboard",
+      "type": "registry:block",
+      "title": "Dashboard",
+      "url": "/r/dashboard.json"
+    },
+    {
+      "name": "data-manager",
+      "type": "registry:block",
+      "title": "Data Manager",
+      "url": "/r/data-manager.json"
+    },
+    {
+      "name": "docs",
+      "type": "registry:block",
+      "title": "Docs",
+      "url": "/r/docs.json"
+    },
+    {
+      "name": "files-support",
+      "type": "registry:block",
+      "title": "Files Support",
+      "url": "/r/files-support.json"
+    },
+    {
+      "name": "forms",
+      "type": "registry:block",
+      "title": "Forms",
+      "url": "/r/forms.json"
+    },
+    {
+      "name": "landing",
+      "type": "registry:block",
+      "title": "Landing",
+      "url": "/r/landing.json"
+    },
+    {
+      "name": "map-invoice",
+      "type": "registry:block",
+      "title": "Map Invoice",
+      "url": "/r/map-invoice.json"
+    },
+    {
+      "name": "media-studio",
+      "type": "registry:block",
+      "title": "Media Studio",
+      "url": "/r/media-studio.json"
+    },
+    {
+      "name": "saas-operations",
+      "type": "registry:block",
+      "title": "Saas Operations",
+      "url": "/r/saas-operations.json"
+    },
+    {
+      "name": "saas-setup",
+      "type": "registry:block",
+      "title": "Saas Setup",
+      "url": "/r/saas-setup.json"
+    },
+    {
+      "name": "settings",
+      "type": "registry:block",
+      "title": "Settings",
+      "url": "/r/settings.json"
+    },
+    {
+      "name": "work-board",
+      "type": "registry:block",
+      "title": "Work Board",
+      "url": "/r/work-board.json"
+    },
+    {
+      "name": "effect-surface",
+      "type": "registry:block",
+      "title": "Effect Surface",
+      "url": "/r/effect-surface.json"
+    },
+    {
+      "name": "glow-border",
+      "type": "registry:block",
+      "title": "Glow Border",
+      "url": "/r/glow-border.json"
+    },
+    {
+      "name": "gradient-background",
+      "type": "registry:block",
+      "title": "Gradient Background",
+      "url": "/r/gradient-background.json"
+    },
+    {
+      "name": "magnetic-button",
+      "type": "registry:block",
+      "title": "Magnetic Button",
+      "url": "/r/magnetic-button.json"
+    },
+    {
+      "name": "shader-background",
+      "type": "registry:block",
+      "title": "Shader Background",
+      "url": "/r/shader-background.json"
+    },
+    {
+      "name": "spotlight-card",
+      "type": "registry:block",
+      "title": "Spotlight Card",
+      "url": "/r/spotlight-card.json"
+    },
+    {
+      "name": "tilt-card",
+      "type": "registry:block",
+      "title": "Tilt Card",
+      "url": "/r/tilt-card.json"
+    },
+    {
+      "name": "date-range-picker",
+      "type": "registry:ui",
+      "title": "Date Range Picker",
+      "url": "/r/date-range-picker.json"
+    },
+    {
+      "name": "customer-data-table",
+      "type": "registry:block",
+      "title": "Customer Data Table",
+      "url": "/r/customer-data-table.json"
+    },
+    {
+      "name": "motion-system",
+      "type": "registry:block",
+      "title": "Motion System",
+      "url": "/r/motion-system.json"
+    },
+    {
+      "name": "appearance-provider",
+      "type": "registry:block",
+      "title": "Appearance Provider",
+      "url": "/r/appearance-provider.json"
+    },
+    {
+      "name": "appearance-controls",
+      "type": "registry:block",
+      "title": "Appearance Controls",
+      "url": "/r/appearance-controls.json"
+    },
+    {
+      "name": "workspace-provider",
+      "type": "registry:block",
+      "title": "Workspace Provider",
+      "url": "/r/workspace-provider.json"
+    }
+  ]
+}

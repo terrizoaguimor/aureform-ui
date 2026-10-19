@@ -1,0 +1,49 @@
+{
+  "status": "passed-native-structure-and-visual-review",
+  "checkedAt": "2026-10-19T05:46:19.326592+00:00",
+  "reviewer": "owner",
+  "method": "Actual post-fix Figma PNGs downloaded with curl and viewed at original dimensions.",
+  "images": [
+    {
+      "nodeId": "176:4599",
+      "path": ".figma/proofs/buttons-1.1/owner-buttons-dark-final.png",
+      "width": 1360,
+      "height": 636,
+      "bytes": 154611,
+      "sha256": "9162781afd5e36a792fd698e18dc68db26f9b4c8171b50c7fd05f73c2285293d"
+    },
+    {
+      "nodeId": "176:4696",
+      "path": ".figma/proofs/buttons-1.1/owner-buttons-light-final.png",
+      "width": 1360,
+      "height": 636,
+      "bytes": 149559,
+      "sha256": "8229fbdcc4ffbefe99b45080b76b8b52e811d2c2c4b30e8f7bd6c118cddae0db"
+    },
+    {
+      "nodeId": "27:46",
+      "path": ".figma/proofs/buttons-1.1/owner-brand-guide-final.png",
+      "width": 1440,
+      "height": 932,
+      "bytes": 71601,
+      "sha256": "255398980a05249075c6543fcb4af4433dbd8c45606aefb85b5a13dee6fb4ee1"
+    }
+  ],
+  "coverage": {
+    "shapeSizeVariants": 9,
+    "appearanceCases": 15,
+    "loadingIconAddons": 3,
+    "themes": [
+      "Dark",
+      "Light"
+    ],
+    "reviewedInstances": 54
+  },
+  "correctionsVerified": [
+    "Large icons match label foreground in both themes.",
+    "Brand guide names and hex values match actual Aurora Light palette."
+  ],
+  "findings": [],
+  "sourceApplicationEdited": false,
+  "coverProof": ".figma/proofs/buttons-1.1/owner-cover-review.json"
+}

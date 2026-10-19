@@ -1,0 +1,1888 @@
+{
+  "kind": "aureform-route-default-audit-v1",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "2:5",
+  "sourceCheckpoint": {
+    "appearanceSha256": "467c38aac52085ec0b054b03be64f935c73e73990d17b0038241a02879a8ae53",
+    "stateSha256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52",
+    "theme": "dark",
+    "palette": "aurora",
+    "typography": "modern"
+  },
+  "routeUniverse": 65,
+  "checkedAt": "2026-10-19T08:20:56.047Z",
+  "expectedRootsOnPage": 21,
+  "ownerDefaultFixEvidence": {
+    "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-owner-default-fix-2-5-1.1.json",
+    "sha256": "a8cf78928302d99daed90a732c924ca15c8c6ff5b9761f6977be50069e644544",
+    "status": "applied",
+    "directMutationCount": 104,
+    "fonts": 86,
+    "modes": 18
+  },
+  "mutatedNodeIds": [],
+  "fontLoads": 0,
+  "expectedTotal": 65,
+  "coverageCompleteOnPage": true,
+  "recoveryFailures": [],
+  "prerequisites": [],
+  "rootCount": 21,
+  "rootColumns": [
+    "route",
+    "id",
+    "size",
+    "nodes",
+    "counts",
+    "families",
+    "preserved",
+    "mode",
+    "rootWhite",
+    "rootFillAlias",
+    "tokenDrift",
+    "pass",
+    "details"
+  ],
+  "countFields": [
+    "texts",
+    "font",
+    "mode",
+    "white",
+    "dimensions",
+    "uiRaster",
+    "review",
+    "image",
+    "missingFont",
+    "background"
+  ],
+  "preservedFields": [
+    "mono",
+    "editorial",
+    "light"
+  ],
+  "rootRows": [
+    [
+      "dashboard",
+      "5:2",
+      [
+        1440,
+        1787.300048828125
+      ],
+      739,
+      [
+        235,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 235
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1787.300048828125,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      }
+    ],
+    [
+      "customers",
+      "5:3",
+      [
+        1440,
+        1120
+      ],
+      399,
+      [
+        105,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 105
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "ai",
+      "5:4",
+      [
+        1440,
+        1219.5
+      ],
+      529,
+      [
+        148,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 148
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "analytics",
+      "53:494",
+      [
+        1440,
+        1380
+      ],
+      279,
+      [
+        90,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 90
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "ai/code",
+      "53:1044",
+      [
+        1440,
+        1380
+      ],
+      204,
+      [
+        54,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 54
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "ai/playground",
+      "53:1272",
+      [
+        1440,
+        1380
+      ],
+      222,
+      [
+        62,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 62
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "docs",
+      "54:1108",
+      [
+        1440,
+        1720
+      ],
+      230,
+      [
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 60
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "docs/tokens",
+      "54:1451",
+      [
+        1440,
+        2030
+      ],
+      273,
+      [
+        79,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 79
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "docs/cli",
+      "54:1764",
+      [
+        1440,
+        1720
+      ],
+      230,
+      [
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 60
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "docs/figma",
+      "54:2045",
+      [
+        1440,
+        1720
+      ],
+      230,
+      [
+        59,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 59
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "docs/adapters",
+      "54:2325",
+      [
+        1440,
+        1720
+      ],
+      227,
+      [
+        58,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 58
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "docs/accessibility",
+      "54:2600",
+      [
+        1440,
+        1720
+      ],
+      226,
+      [
+        58,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 58
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "docs/license",
+      "54:2873",
+      [
+        1440,
+        1720
+      ],
+      229,
+      [
+        59,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 59
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "docs/roadmap",
+      "54:3151",
+      [
+        1440,
+        1720
+      ],
+      235,
+      [
+        63,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 63
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "components",
+      "59:2549",
+      [
+        1440,
+        9785
+      ],
+      1300,
+      [
+        439,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 439
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "forms",
+      "59:2725",
+      [
+        1440,
+        1380
+      ],
+      248,
+      [
+        68,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 68
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "charts",
+      "59:2901",
+      [
+        1440,
+        3023.890625
+      ],
+      2472,
+      [
+        700,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 700
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "media",
+      "59:3077",
+      [
+        1440,
+        1648.77490234375
+      ],
+      278,
+      [
+        58,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 58
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "layouts",
+      "59:3253",
+      [
+        1440,
+        1380
+      ],
+      234,
+      [
+        51,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 51
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "blocks",
+      "59:3429",
+      [
+        1440,
+        2431
+      ],
+      372,
+      [
+        130,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 130
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "templates",
+      "59:3605",
+      [
+        1440,
+        5501
+      ],
+      10548,
+      [
+        3299,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 3299
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ]
+  ],
+  "recoveryEncoding": "Every recovered route/id pair is in rootRows; decode.mjs expands roots, counts and recoveryIds without omission.",
+  "default": {
+    "font": "Manrope",
+    "typography": "modern",
+    "theme": "Dark",
+    "palette": "Aurora"
+  },
+  "dimensionsPolicy": "Widths use the confirmed 1440px desktop source. Exact height is checked only when supplied as current source evidence; historical native heights are informational.",
+  "rasterPolicy": "Return every observed IMAGE ID and flag full UI raster candidates for owner review. Geometry alone does not establish image contents; this read changes nothing.",
+  "backgroundPolicy": "Observe root color, opacity and binding parity against current Aurora Dark tokens; no corrections are performed.",
+  "whiteLayoutPolicy": "Include native SLOT plus FRAME/RECTANGLE/COMPONENT/INSTANCE; visible opaque resolved white layout fills at width>=64 and height>=8. Preserve explicit Light contexts. TEXT/VECTOR/BOOLEAN_OPERATION/ELLIPSE/POLYGON/STAR/LINE paints remain excluded; lowering height does not widen the checked node types to artwork or text foreground.",
+  "manropeStyles": [
+    "Bold",
+    "ExtraBold",
+    "ExtraLight",
+    "Light",
+    "Medium",
+    "Regular",
+    "SemiBold"
+  ],
+  "fontTokens": [],
+  "issueIds": {
+    "encoding": "observed-prefix-ranges-v1",
+    "categoryBits": {
+      "font": 1,
+      "mode": 2,
+      "white": 4,
+      "dimensions": 8,
+      "uiRaster": 16,
+      "review": 32,
+      "image": 64,
+      "missingFont": 128,
+      "root": 256,
+      "mutated": 512,
+      "affected": 1024,
+      "background": 2048
+    },
+    "unique": 21,
+    "prefixesFrontCodedCSV": "0,53:\n1,4:\n1,9:\n1,:",
+    "rangesCSV": "256,3,2-4\n256,0,494;1044;1272\n256,1,1108;1451;1764;2045;2325;2600;2873;3151\n256,2,2549;2725;2901;3077;3253;3429;3605",
+    "literalsJSON": "[]"
+  },
+  "canvasMutations": 0,
+  "roots": [
+    {
+      "route": "dashboard",
+      "id": "5:2",
+      "size": [
+        1440,
+        1787.300048828125
+      ],
+      "nodes": 739,
+      "counts": {
+        "texts": 235,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 235
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1787.300048828125,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      },
+      "expected": [
+        1440,
+        null
+      ],
+      "baselineHeight": 1787.300048828125,
+      "sizing": [
+        "FIXED",
+        "FIXED"
+      ],
+      "rootPaints": [
+        {
+          "type": "SOLID",
+          "color": "#0B0F18",
+          "opacity": 1,
+          "alias": "VariableID:2:37"
+        }
+      ]
+    },
+    {
+      "route": "customers",
+      "id": "5:3",
+      "size": [
+        1440,
+        1120
+      ],
+      "nodes": 399,
+      "counts": {
+        "texts": 105,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 105
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "ai",
+      "id": "5:4",
+      "size": [
+        1440,
+        1219.5
+      ],
+      "nodes": 529,
+      "counts": {
+        "texts": 148,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 148
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "analytics",
+      "id": "53:494",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 279,
+      "counts": {
+        "texts": 90,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 90
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "ai/code",
+      "id": "53:1044",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 204,
+      "counts": {
+        "texts": 54,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 54
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "ai/playground",
+      "id": "53:1272",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 222,
+      "counts": {
+        "texts": 62,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 62
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "docs",
+      "id": "54:1108",
+      "size": [
+        1440,
+        1720
+      ],
+      "nodes": 230,
+      "counts": {
+        "texts": 60,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 60
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "docs/tokens",
+      "id": "54:1451",
+      "size": [
+        1440,
+        2030
+      ],
+      "nodes": 273,
+      "counts": {
+        "texts": 79,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 79
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "docs/cli",
+      "id": "54:1764",
+      "size": [
+        1440,
+        1720
+      ],
+      "nodes": 230,
+      "counts": {
+        "texts": 60,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 60
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "docs/figma",
+      "id": "54:2045",
+      "size": [
+        1440,
+        1720
+      ],
+      "nodes": 230,
+      "counts": {
+        "texts": 59,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 59
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "docs/adapters",
+      "id": "54:2325",
+      "size": [
+        1440,
+        1720
+      ],
+      "nodes": 227,
+      "counts": {
+        "texts": 58,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 58
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "docs/accessibility",
+      "id": "54:2600",
+      "size": [
+        1440,
+        1720
+      ],
+      "nodes": 226,
+      "counts": {
+        "texts": 58,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 58
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "docs/license",
+      "id": "54:2873",
+      "size": [
+        1440,
+        1720
+      ],
+      "nodes": 229,
+      "counts": {
+        "texts": 59,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 59
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "docs/roadmap",
+      "id": "54:3151",
+      "size": [
+        1440,
+        1720
+      ],
+      "nodes": 235,
+      "counts": {
+        "texts": 63,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 63
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "components",
+      "id": "59:2549",
+      "size": [
+        1440,
+        9785
+      ],
+      "nodes": 1300,
+      "counts": {
+        "texts": 439,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 439
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "forms",
+      "id": "59:2725",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 248,
+      "counts": {
+        "texts": 68,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 68
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "charts",
+      "id": "59:2901",
+      "size": [
+        1440,
+        3023.890625
+      ],
+      "nodes": 2472,
+      "counts": {
+        "texts": 700,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 700
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "media",
+      "id": "59:3077",
+      "size": [
+        1440,
+        1648.77490234375
+      ],
+      "nodes": 278,
+      "counts": {
+        "texts": 58,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 58
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "layouts",
+      "id": "59:3253",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 234,
+      "counts": {
+        "texts": 51,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 51
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "blocks",
+      "id": "59:3429",
+      "size": [
+        1440,
+        2431
+      ],
+      "nodes": 372,
+      "counts": {
+        "texts": 130,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 130
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "templates",
+      "id": "59:3605",
+      "size": [
+        1440,
+        5501
+      ],
+      "nodes": 10548,
+      "counts": {
+        "texts": 3299,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 3299
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    }
+  ],
+  "recoveryIds": [
+    {
+      "route": "dashboard",
+      "id": "5:2",
+      "pageId": "2:5"
+    },
+    {
+      "route": "customers",
+      "id": "5:3",
+      "pageId": "2:5"
+    },
+    {
+      "route": "ai",
+      "id": "5:4",
+      "pageId": "2:5"
+    },
+    {
+      "route": "analytics",
+      "id": "53:494",
+      "pageId": "2:5"
+    },
+    {
+      "route": "ai/code",
+      "id": "53:1044",
+      "pageId": "2:5"
+    },
+    {
+      "route": "ai/playground",
+      "id": "53:1272",
+      "pageId": "2:5"
+    },
+    {
+      "route": "docs",
+      "id": "54:1108",
+      "pageId": "2:5"
+    },
+    {
+      "route": "docs/tokens",
+      "id": "54:1451",
+      "pageId": "2:5"
+    },
+    {
+      "route": "docs/cli",
+      "id": "54:1764",
+      "pageId": "2:5"
+    },
+    {
+      "route": "docs/figma",
+      "id": "54:2045",
+      "pageId": "2:5"
+    },
+    {
+      "route": "docs/adapters",
+      "id": "54:2325",
+      "pageId": "2:5"
+    },
+    {
+      "route": "docs/accessibility",
+      "id": "54:2600",
+      "pageId": "2:5"
+    },
+    {
+      "route": "docs/license",
+      "id": "54:2873",
+      "pageId": "2:5"
+    },
+    {
+      "route": "docs/roadmap",
+      "id": "54:3151",
+      "pageId": "2:5"
+    },
+    {
+      "route": "components",
+      "id": "59:2549",
+      "pageId": "2:5"
+    },
+    {
+      "route": "forms",
+      "id": "59:2725",
+      "pageId": "2:5"
+    },
+    {
+      "route": "charts",
+      "id": "59:2901",
+      "pageId": "2:5"
+    },
+    {
+      "route": "media",
+      "id": "59:3077",
+      "pageId": "2:5"
+    },
+    {
+      "route": "layouts",
+      "id": "59:3253",
+      "pageId": "2:5"
+    },
+    {
+      "route": "blocks",
+      "id": "59:3429",
+      "pageId": "2:5"
+    },
+    {
+      "route": "templates",
+      "id": "59:3605",
+      "pageId": "2:5"
+    }
+  ],
+  "decodedIssueMasks": {
+    "5:2": 256,
+    "5:3": 256,
+    "5:4": 256,
+    "53:494": 256,
+    "53:1044": 256,
+    "53:1272": 256,
+    "54:1108": 256,
+    "54:1451": 256,
+    "54:1764": 256,
+    "54:2045": 256,
+    "54:2325": 256,
+    "54:2600": 256,
+    "54:2873": 256,
+    "54:3151": 256,
+    "59:2549": 256,
+    "59:2725": 256,
+    "59:2901": 256,
+    "59:3077": 256,
+    "59:3253": 256,
+    "59:3429": 256,
+    "59:3605": 256
+  }
+}

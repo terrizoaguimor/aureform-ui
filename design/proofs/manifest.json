@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "scope": "Frozen, scoped 1.2.1 image evidence",
+  "freshFullRouteVisualMatrix": false,
+  "proofs": [
+    {
+      "file": ".figma/proofs/images-1.2.1/asset-board-avatars.png",
+      "bytes": 715692,
+      "sha256": "9792541b1cd8f9d5022ebadfabcb6a59c8723db4a3fcb3b91d60e8bc780cb3f9",
+      "nodeId": "263:64",
+      "scope": "Native editable asset board / avatars",
+      "review": "passed",
+      "checkpoint": "1.2.1"
+    },
+    {
+      "file": ".figma/proofs/images-1.2.1/asset-board-products.png",
+      "bytes": 542077,
+      "sha256": "bba66170f651d7beeaacc61ceb27b3ce5ec5161849f85e797df54cd626f9aa7e",
+      "nodeId": "263:164",
+      "scope": "Native editable asset board / products",
+      "review": "passed",
+      "checkpoint": "1.2.1"
+    },
+    {
+      "file": ".figma/proofs/images-1.2.1/asset-board-art.png",
+      "bytes": 840937,
+      "sha256": "89a5d2fe657f69190a1f9cf14da73c70792aca6c4a4773df18a3661cb3705ec1",
+      "nodeId": "263:210",
+      "scope": "Native editable asset board / art",
+      "review": "passed",
+      "checkpoint": "1.2.1"
+    },
+    {
+      "file": ".figma/proofs/images-1.2.1/team-dark-native.png",
+      "bytes": 363517,
+      "sha256": "ddff107d29bb865a91819b8455e49ffd68bec6f4e2e4d27c6ce91f511051b632",
+      "nodeId": "237:19873",
+      "scope": "Team Dark / known member photos",
+      "review": "passed",
+      "checkpoint": "1.2.1"
+    },
+    {
+      "file": ".figma/proofs/images-1.2.1/customers-light-native.png",
+      "bytes": 209821,
+      "sha256": "dd8b926df57446e05041ad9dff113331cabf468e860a785fa50bbf9cc7a46b12",
+      "nodeId": "237:18156",
+      "scope": "Customers Light / distinct known customer photos",
+      "review": "passed",
+      "checkpoint": "1.2.1"
+    },
+    {
+      "file": ".figma/proofs/images-1.2.1/products-native.png",
+      "bytes": 142794,
+      "sha256": "f842ab589d12dfdd0c3ef30f25c50e0b1766d3808d9d73baecd0fc82bedae784",
+      "nodeId": "41:2363",
+      "scope": "Products / five existing native row thumbnails",
+      "review": "passed",
+      "checkpoint": "1.2.1"
+    },
+    {
+      "file": ".figma/proofs/images-1.2.1/media-native-revised.png",
+      "bytes": 1002196,
+      "sha256": "494499d9a83762a38ae66bb20827451986e2f980cffdd2448183ea2667e58ec1",
+      "nodeId": "59:3077",
+      "scope": "Media / six editorial images, controlled carousel, paused poster, current source description",
+      "review": "passed",
+      "checkpoint": "1.2.1"
+    }
+  ]
+}

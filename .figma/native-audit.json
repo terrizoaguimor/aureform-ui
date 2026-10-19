@@ -1,0 +1,1818 @@
+{
+  "status": "passed-native-structure-and-visual-review",
+  "phase": "package",
+  "checkedAt": "2026-10-19T08:28:44.238985+00:00",
+  "stateSha256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "inspection": "Actual Figma Plugin API reads plus owner-approved native mutation/permutation visual evidence",
+  "summary": {
+    "routeRoots": 65,
+    "invalidScopes": 0,
+    "invalidWebSyntax": 0,
+    "variableCollections": 8,
+    "variables": 714,
+    "primitiveVariables": 332,
+    "invalidBindings": 0,
+    "imageFillNodes": 0,
+    "fullUiRasterCandidates": 0,
+    "observedRouteCounts": {
+      "texts": 10141,
+      "font": 0,
+      "mode": 0,
+      "white": 0,
+      "dimensions": 0,
+      "uiRaster": 0,
+      "review": 0,
+      "image": 0,
+      "missingFont": 0,
+      "background": 0
+    },
+    "ownerApprovedIntentionalExceptions": 0,
+    "textStyles": 14,
+    "paintStyles": 36,
+    "gradientPaintStyles": 36,
+    "effectStyles": 6
+  },
+  "routes": [
+    {
+      "route": "dashboard",
+      "nodeId": "5:2",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1787.300048828125,
+      "inspectedNodes": 739,
+      "texts": 235,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "customers",
+      "nodeId": "5:3",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1120,
+      "inspectedNodes": 399,
+      "texts": 105,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "ai",
+      "nodeId": "5:4",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1219.5,
+      "inspectedNodes": 529,
+      "texts": 148,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "analytics",
+      "nodeId": "53:494",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 279,
+      "texts": 90,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "ai/code",
+      "nodeId": "53:1044",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 204,
+      "texts": 54,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "ai/playground",
+      "nodeId": "53:1272",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 222,
+      "texts": 62,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "docs",
+      "nodeId": "54:1108",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 230,
+      "texts": 60,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "docs/tokens",
+      "nodeId": "54:1451",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 2030,
+      "inspectedNodes": 273,
+      "texts": 79,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "docs/cli",
+      "nodeId": "54:1764",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 230,
+      "texts": 60,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "docs/figma",
+      "nodeId": "54:2045",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 230,
+      "texts": 59,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "docs/adapters",
+      "nodeId": "54:2325",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 227,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "docs/accessibility",
+      "nodeId": "54:2600",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 226,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "docs/license",
+      "nodeId": "54:2873",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 229,
+      "texts": 59,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "docs/roadmap",
+      "nodeId": "54:3151",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 235,
+      "texts": 63,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "components",
+      "nodeId": "59:2549",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 9785,
+      "inspectedNodes": 1300,
+      "texts": 439,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "forms",
+      "nodeId": "59:2725",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 248,
+      "texts": 68,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "charts",
+      "nodeId": "59:2901",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 3023.890625,
+      "inspectedNodes": 2472,
+      "texts": 700,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "media",
+      "nodeId": "59:3077",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1648.77490234375,
+      "inspectedNodes": 278,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "layouts",
+      "nodeId": "59:3253",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 234,
+      "texts": 51,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "blocks",
+      "nodeId": "59:3429",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 2431,
+      "inspectedNodes": 372,
+      "texts": 130,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "templates",
+      "nodeId": "59:3605",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 5501,
+      "inspectedNodes": 10548,
+      "texts": 3299,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "crm",
+      "nodeId": "39:24",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 297,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "ecommerce",
+      "nodeId": "39:730",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 345,
+      "texts": 114,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "sales",
+      "nodeId": "39:1132",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 297,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "marketing",
+      "nodeId": "39:1521",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 353,
+      "texts": 114,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "logistics",
+      "nodeId": "39:1923",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 287,
+      "texts": 100,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "finance",
+      "nodeId": "39:2310",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 345,
+      "texts": 114,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "stocks",
+      "nodeId": "39:2702",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 100,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "products",
+      "nodeId": "41:2363",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "orders",
+      "nodeId": "41:2816",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "invoices",
+      "nodeId": "41:3207",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "transactions",
+      "nodeId": "41:3597",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "tasks",
+      "nodeId": "41:3982",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 288,
+      "texts": 94,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "pipeline",
+      "nodeId": "41:4387",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 295,
+      "texts": 98,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "task-list",
+      "nodeId": "41:4794",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 234,
+      "texts": 77,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "calendar",
+      "nodeId": "41:5151",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 384,
+      "texts": 142,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "mail",
+      "nodeId": "45:4589",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 231,
+      "texts": 67,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "chat",
+      "nodeId": "45:5003",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 247,
+      "texts": 74,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "files",
+      "nodeId": "45:5363",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 250,
+      "texts": 61,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "support",
+      "nodeId": "45:5707",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 263,
+      "texts": 92,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "maps",
+      "nodeId": "45:6076",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 250,
+      "texts": 66,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "invoice",
+      "nodeId": "45:6451",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 213,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "ai/images",
+      "nodeId": "45:6768",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 221,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "ai/video",
+      "nodeId": "45:7088",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 215,
+      "texts": 56,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "settings/profile",
+      "nodeId": "48:6454",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 242,
+      "texts": 66,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "settings/team",
+      "nodeId": "48:6816",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 254,
+      "texts": 68,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "settings/preferences",
+      "nodeId": "48:7128",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 251,
+      "texts": 64,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "settings/billing",
+      "nodeId": "48:7437",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 246,
+      "texts": 71,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "settings/api-keys",
+      "nodeId": "48:7753",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 223,
+      "texts": 57,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "settings/integrations",
+      "nodeId": "48:8021",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 258,
+      "texts": 72,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "auth/sign-in",
+      "nodeId": "52:7472",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 156,
+      "texts": 50,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "auth/sign-up",
+      "nodeId": "52:7509",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1003.9000244140625,
+      "inspectedNodes": 163,
+      "texts": 52,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "auth/reset-password",
+      "nodeId": "52:7551",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 145,
+      "texts": 46,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "auth/verify",
+      "nodeId": "52:7581",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 157,
+      "texts": 51,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "status/not-found",
+      "nodeId": "52:7622",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 25,
+      "texts": 8,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "status/error",
+      "nodeId": "52:7650",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 29,
+      "texts": 9,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "status/maintenance",
+      "nodeId": "52:7684",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 27,
+      "texts": 7,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "status/coming-soon",
+      "nodeId": "52:7713",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 36,
+      "texts": 11,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "status/success",
+      "nodeId": "52:7751",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 27,
+      "texts": 7,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "pricing",
+      "nodeId": "55:7541",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 221,
+      "texts": 70,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "faq",
+      "nodeId": "55:7856",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 194,
+      "texts": 50,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "",
+      "nodeId": "55:8072",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 4882.7998046875,
+      "inspectedNodes": 624,
+      "texts": 212,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "studio",
+      "nodeId": "134:8412",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 2429,
+      "inspectedNodes": 1258,
+      "texts": 309,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "themes",
+      "nodeId": "135:8894",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 3067,
+      "inspectedNodes": 2634,
+      "texts": 581,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    },
+    {
+      "route": "effects",
+      "nodeId": "136:9476",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 3298,
+      "inspectedNodes": 1259,
+      "texts": 266,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      }
+    }
+  ],
+  "proof": {
+    "nativeReads": [
+      {
+        "pageId": "2:5",
+        "completedAt": "2026-10-19T08:20:56.047Z",
+        "decoded": {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/native-audit-65/read-2-5.decoded.json",
+          "sha256": "cb0cb5f0bd57ab7e39f81ed52536c5bca53601e87e6e22e6a97a92cba70517a3"
+        },
+        "rawParts": [
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/native-audit-65/read-2-5.raw.json",
+            "sha256": "718f19021a35b224c6b119546f6719637a84cf07027b36645ce29128fca7abfc",
+            "bytes": 5865
+          }
+        ]
+      },
+      {
+        "pageId": "2:6",
+        "completedAt": "2026-10-19T08:25:52.056Z",
+        "decoded": {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/native-audit-65/read-2-6.decoded.json",
+          "sha256": "ecb476299d5778823dc4f2fcb90390261f0d3ed69455b498b63b138ace5ca0f3"
+        },
+        "rawParts": [
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/native-audit-65/read-2-6.raw.json",
+            "sha256": "867980d6d6e356f0699b9abfcb1c360b44985fa2959eb7bd26c6b78921e1d5d2",
+            "bytes": 24568
+          }
+        ]
+      },
+      {
+        "pageId": "global-variables",
+        "completedAt": "2026-10-19T07:25:59.742Z",
+        "decoded": {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-variable-audit-1.1.json",
+          "sha256": "7c4a490ec6d756e6dbc1d1a8b137f43f112af7d9e2d7e113466e65dd1e8532d6"
+        },
+        "rawParts": [
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-owner-global-variable-part0-1.1.json",
+            "sha256": "18cd2c905a82fb291f82d0da47846ea400fc727f2f6314ffa06ebacd1d66c6fa",
+            "bytes": 15934
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-owner-global-variable-part1-1.1.json",
+            "sha256": "25147d9079f37573f681fe9eb7fd7decb71c00f6171ae8b6f72818354e2f386e",
+            "bytes": 15934
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-owner-global-variable-part2-1.1.json",
+            "sha256": "41c72e46bf741ce135dc0aaa737959cd28cd6b72d648f27c7042556f1794c2de",
+            "bytes": 4802
+          }
+        ]
+      }
+    ],
+    "visualApproval": {
+      "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/native-audit-65/owner-visual-approval.json",
+      "sha256": "3d95723f7c9829230862d726420dd1d7c1397a08d30b4b09a00eb50d98c19eba",
+      "checkedAt": "2026-10-19T08:28:44.238985+00:00"
+    },
+    "reviewBatches": [
+      {
+        "label": "Native 1.1 library, flagship views and default-style resynchronization",
+        "result": "approved",
+        "checkedAt": "2026-10-19T08:28:44.238985+00:00",
+        "allReturnedMutationIdsReviewed": true,
+        "variantCoverage": [
+          "Nine Button shape/size variants and 54 Light/Dark examples",
+          "16 Table and 28 sparse DataTable variants with 20 Light/Dark visual representatives",
+          "Thirteen Chart kinds with twelve Boolean definitions",
+          "Six palettes and native token resynchronization",
+          "Six effects and three original native shaders",
+          "Three new appearance views",
+          "Seven flagship/authentication/landing views",
+          "65 default route roots with scoped typography, mode, SLOT surface and version-label corrections"
+        ],
+        "nativeNodeIds": [
+          "5:2",
+          "5:3",
+          "5:4",
+          "53:494",
+          "53:1044",
+          "53:1272",
+          "54:1108",
+          "54:1451",
+          "54:1764",
+          "54:2045",
+          "54:2325",
+          "54:2600",
+          "54:2873",
+          "54:3151",
+          "59:2549",
+          "59:2725",
+          "59:2901",
+          "59:3077",
+          "59:3253",
+          "59:3429",
+          "59:3605",
+          "39:24",
+          "39:730",
+          "39:1132",
+          "39:1521",
+          "39:1923",
+          "39:2310",
+          "39:2702",
+          "41:2363",
+          "41:2816",
+          "41:3207",
+          "41:3597",
+          "41:3982",
+          "41:4387",
+          "41:4794",
+          "41:5151",
+          "45:4589",
+          "45:5003",
+          "45:5363",
+          "45:5707",
+          "45:6076",
+          "45:6451",
+          "45:6768",
+          "45:7088",
+          "48:6454",
+          "48:6816",
+          "48:7128",
+          "48:7437",
+          "48:7753",
+          "48:8021",
+          "52:7472",
+          "52:7509",
+          "52:7551",
+          "52:7581",
+          "52:7622",
+          "52:7650",
+          "52:7684",
+          "52:7713",
+          "52:7751",
+          "55:7541",
+          "55:7856",
+          "55:8072",
+          "134:8412",
+          "135:8894",
+          "136:9476"
+        ],
+        "nativeReports": [
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/owner-visual-review.json",
+            "sha256": "94c7d1512a37e98e8702c26517e81d8f178a02ac7300f4f0338773c66455f2be",
+            "bytes": 3472
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-visual-review.json",
+            "sha256": "ee53dfff7be320911ea53cdf8f2a3135e908ff92a8e311b7ae808c4ead962330",
+            "bytes": 1499
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/table-1.1/owner-visual-review.json",
+            "sha256": "9eec4656873b83a7ece29ac347c52e2fd46fba09c69c27f2eedf6d580849a0ca",
+            "bytes": 1293
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/charts-1.1/owner-visual-review.json",
+            "sha256": "b461bb7a78986bb906b6831a58e448289dd5d6b7610733fdd1bd7fcd5f3197dc",
+            "bytes": 1368
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/owner-visual-review.json",
+            "sha256": "d13a7bf58327fd4148a704cd2801caeb640e780a0f27d22a9b8f856d84711f50",
+            "bytes": 3166
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-runtime-resync-1.1.json",
+            "sha256": "e0494cbe56409fecccec8e5836eedda8d90441996f2f6ff928afcb49c415b40d",
+            "bytes": 6723
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-effects-library-1.1.json",
+            "sha256": "6e8e7d2c872e15abb6d745b02eb1798160cad51751ebc21a17d762805537a8b6",
+            "bytes": 10143
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/owner-appearance-views-icons-1.1.normalized.json",
+            "sha256": "49d00f68ff4ed6143365dbe04232fb5882143d90c51cf35510b0a273fde125b7",
+            "bytes": 91570
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/owner-appearance-views-layout-1.1.normalized.json",
+            "sha256": "1ecb132ec19a8e8d79bdbd47b70c56b22ae54d775564516d382915277546fb66",
+            "bytes": 78252
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/owner-appearance-views-cleanup-1.1.normalized.json",
+            "sha256": "cf2c116ac314e2a12dfa193d8ec84f17600ed98b221f8a91fb04e0a4614e5176",
+            "bytes": 59802
+          }
+        ],
+        "visualProofs": [
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/customers-final.png",
+            "sha256": "027c3c1504c2251b997fb48320161141e776f0a47df275be7075c4d765414091",
+            "bytes": 187318
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/crm-final.png",
+            "sha256": "3aa1789a0ac91f5913226f83ae98961eb4df56ebe2989bc6e7927f35951fc1c4",
+            "bytes": 153713
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/buttons-final.png",
+            "sha256": "25f21bb5ccd6a59931318fb2af729cce4365f9a45503d05e2d72acc8a96eb91a",
+            "bytes": 228764
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/gallery-final.png",
+            "sha256": "a8d6fba293fe4cfc10badbcf9ac4641d875fe70af41578820dd4df2e7560e27f",
+            "bytes": 593860
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/table-preview-detail.png",
+            "sha256": "8c8ef670a34ce66f825e06d80ff45aa123b46cb62b9bb7a494aa1dd1f8cfdea2",
+            "bytes": 45842
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-buttons-dark-final.png",
+            "sha256": "9162781afd5e36a792fd698e18dc68db26f9b4c8171b50c7fd05f73c2285293d",
+            "bytes": 154611
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-buttons-light-final.png",
+            "sha256": "8229fbdcc4ffbefe99b45080b76b8b52e811d2c2c4b30e8f7bd6c118cddae0db",
+            "bytes": 149559
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-cover-final.png",
+            "sha256": "75259d1dd30ef21fc3150e2c2dbef72237af279abdc4c1b8320f1fd2ab20200a",
+            "bytes": 77123
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-brand-guide-final.png",
+            "sha256": "255398980a05249075c6543fcb4af4433dbd8c45606aefb85b5a13dee6fb4ee1",
+            "bytes": 71601
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/table-1.1/owner-final.png",
+            "sha256": "3bdcd7a48f3065767122d80ba1308071ba033a6792443990b289f8ec878b0f14",
+            "bytes": 2406312
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/table-1.1/owner-loading-detail.png",
+            "sha256": "96488eff44c7800bae5ae54794228c0e5f2eed6bc1272a22d38377eb93f1fdf7",
+            "bytes": 61705
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/charts-1.1/charts-library-final.png",
+            "sha256": "80a460237778d8f5f584dad55b75c9bcd05c79875de23794af09246018e05064",
+            "bytes": 192567
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/charts-1.1/charts-screen-final.png",
+            "sha256": "e43a9696a9bef6b42ac5e95be9a5caa22b43c2c9e5dedee29f7fe9bd8ed3b863",
+            "bytes": 1126466
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/saas-final.png",
+            "sha256": "1c6d8c086fb9157dc61b0845daee41426bc14fd501c510f0da7d357105db72c1",
+            "bytes": 804691
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/ai-final.png",
+            "sha256": "abfbd3b402c08201b9e22ef493a3b1156ea8d6fc8fcb2b8d5222e62730ac1d82",
+            "bytes": 979410
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/landing-final.png",
+            "sha256": "5f47bcce78fe2eba08b911e299abf2f3fb8b50a05b52590741e81bae1718bfac",
+            "bytes": 2651700
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/auth-sign-in-final.png",
+            "sha256": "a2106fdecee436c9263f6f4a3aec1f5c70c50ece8107663c073d3987888940e3",
+            "bytes": 709646
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/auth-sign-up-final.png",
+            "sha256": "e48df8a04c600616adb41d26d66fa8a4a06c4aa13a8d6fea3721eb068959123c",
+            "bytes": 716628
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/auth-reset-password-final.png",
+            "sha256": "bd22d85cffa0ae34537e6f31d1fff30d6d4c476665b0739b577a317622be2143",
+            "bytes": 698017
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/auth-verify-final.png",
+            "sha256": "a4b6b1a1b8e5de13ce9f1322097917b12cc28a9b1d7a609b2222d0a31991e7b7",
+            "bytes": 693350
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/studio-final.png",
+            "sha256": "74afff363c2c37d44e1fedac7459c548d8e51cc8cbd09a8a06759646438b2640",
+            "bytes": 1074696
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/themes-final.png",
+            "sha256": "b9510b31f477fad37d3141ce27745781af209539058094a098d3561d718af33d",
+            "bytes": 1244592
+          },
+          {
+            "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/effects-final.png",
+            "sha256": "fd31f47524b1ae4e43352b5c0cdc01e7161c97f673d142815d6df09344c2bc32",
+            "bytes": 1235239
+          }
+        ]
+      }
+    ],
+    "intentionalExceptions": [],
+    "codeConnect": {
+      "manifest": {
+        "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/code-connect-manifest.json",
+        "sha256": "618a0e2d6f871793ddcb3d5d717e7c398fe2fbd352b4b5737a7e8a8b1337815c"
+      },
+      "report": {
+        "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/code-connect/validation/validation-summary.json",
+        "sha256": "635f0f197129bbe20fe2219e2789c6b370a52c6168b1c3f0e635eb375c4f6329"
+      },
+      "finalStateSha256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52",
+      "status": "passed-local-smoke",
+      "runtime": "synthetic-figma-stub",
+      "liveFigmaRuntimeTested": false,
+      "cloudRegistered": false
+    },
+    "styleInventory": {
+      "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-owner-font-triage-2-6-1.1.json",
+      "sha256": "47b9c3bb0680f2c333036bd9f7fe5fd9dd8bf02751adc2cfbe2ef5fd6a1e34f1",
+      "observed": {
+        "text": 14,
+        "paint": 36,
+        "gradient": 36,
+        "effect": 6
+      }
+    }
+  },
+  "limits": [
+    "Owner agent visual inspection; not an automated pixel verdict.",
+    "Variable alias inventory checks target existence and matching types; it does not claim exhaustive node binding or alias cycle coverage.",
+    "Native current heights are inspected; historical heights are not treated as source requirements.",
+    "Code Connect validation/publication scope is recorded exactly from the current report."
+  ]
+}

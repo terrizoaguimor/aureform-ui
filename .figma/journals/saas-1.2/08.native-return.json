@@ -1,0 +1,81 @@
+{
+  "sidebar": {
+    "id": "231:3776",
+    "name": "DashboardSidebar / SaaS 1.2",
+    "w": 256,
+    "h": 1240,
+    "properties": {
+      "Applications open#38:0": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      }
+    },
+    "navLabels": [
+      "aureform",
+      "ui",
+      "ST",
+      "Aureform Studio",
+      "Pro plan",
+      "WORKSPACE",
+      "Get started",
+      "Overview",
+      "Analytics",
+      "AI workspace",
+      "Import data",
+      "Customers",
+      "DESIGN SYSTEM",
+      "Components",
+      "Blocks",
+      "Templates",
+      "Documentation",
+      "APPLICATIONS",
+      "MANAGE",
+      "Workspace",
+      "Settings",
+      "Team",
+      "MADE FOR WHAT’S NEXT",
+      "Less friction.\nMore possibility.",
+      "Alex Morgan",
+      "alex@aureform.demo"
+    ]
+  },
+  "statusMetrics": {
+    "root": {
+      "w": 1080,
+      "h": 100
+    },
+    "panel": {
+      "id": "225:1616",
+      "w": 464,
+      "h": 100,
+      "primary": "AUTO",
+      "counter": "FIXED",
+      "vertical": "FIXED",
+      "minHeight": null,
+      "padding": [
+        12,
+        12
+      ],
+      "children": [
+        {
+          "id": "225:1617",
+          "name": "Workspace identity",
+          "w": 254,
+          "h": 32,
+          "vertical": "FIXED",
+          "primary": "AUTO",
+          "counter": "FIXED"
+        },
+        {
+          "id": "225:1623",
+          "name": "Role preview",
+          "w": 160,
+          "h": 32,
+          "vertical": "FIXED",
+          "primary": "AUTO",
+          "counter": "FIXED"
+        }
+      ]
+    }
+  }
+}

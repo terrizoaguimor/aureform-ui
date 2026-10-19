@@ -1,0 +1,21 @@
+{
+  "status": "passed-native-structure-and-visual-review",
+  "checkedAt": "2026-10-19T05:38:51.587228+00:00",
+  "reviewer": "owner",
+  "method": "Actual downloaded Figma PNG viewed at original dimensions.",
+  "nodeId": "27:2",
+  "image": {
+    "path": ".figma/proofs/buttons-1.1/owner-cover-final.png",
+    "width": 1440,
+    "height": 960,
+    "bytes": 77123,
+    "sha256": "75259d1dd30ef21fc3150e2c2dbef72237af279abdc4c1b8320f1fd2ab20200a"
+  },
+  "reviewedText": {
+    "componentFamilies": 44,
+    "suiteRoutes": 64,
+    "version": "1.1"
+  },
+  "findings": [],
+  "sourceApplicationEdited": false
+}

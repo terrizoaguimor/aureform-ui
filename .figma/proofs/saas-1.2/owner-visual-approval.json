@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "status": "passed-owner-visual-review",
+  "recordedAt": "2026-10-19T14:48:35.314296+00:00",
+  "reviewedBy": "owner-agent",
+  "scope": {
+    "routes": 6,
+    "modeRoots": 12,
+    "componentSets": 9,
+    "linkedVariantInstances": 68,
+    "releaseCover": 1,
+    "acceptedExports": 22
+  },
+  "reviewMethod": "Full native Figma exports inspected by the owner agent. All state pairs were reviewed at readable scale; contact sheets and temporary crops supported inspection without replacing the full accepted exports.",
+  "checks": [
+    "Source-faithful editable native compositions",
+    "Light/Dark token and control foregrounds",
+    "Labels, cell contents and profile footer remain visible",
+    "Filtered row count and status colors",
+    "Import progress completed/current/future states",
+    "Readable delete-error alert and row actions",
+    "Release cover 1.2 and 68 suite routes"
+  ],
+  "proofs": [
+    {
+      "nodeId": "237:16428",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/onboarding-light.png",
+      "sha256": "369e6b7e9737d1441837543ce4b18b116ecc36024d55ab243d17e28cf22c3423",
+      "bytes": 203117,
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:16692",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/onboarding-dark.png",
+      "sha256": "1d0de87e646dd103be45f3429543e9d9ad247d7ba6078a38c2cde6d7822cf758",
+      "bytes": 234801,
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:16887",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/workspace-light.png",
+      "sha256": "e16dbc84060dde97e0e89103477cc79d501133d47fcba796e7a6c68e0a48448f",
+      "bytes": 175367,
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:17079",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/workspace-dark.png",
+      "sha256": "6145814c08972c350ccbeada3ee088e4d37c6f99b7d04e2650b134b45a384fb6",
+      "bytes": 200293,
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:17271",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/detail-light.png",
+      "sha256": "f2c677c32feb8de29d383364e2421730560a15f4f5610414207b3f8c8da0e4d2",
+      "bytes": 243533,
+      "dimensions": {
+        "width": 1440,
+        "height": 1293
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1293
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:17522",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/detail-dark.png",
+      "sha256": "40561dd5528d867ff2b703e1f75ca23c5d7a0379d916bb172e60e94c0eb03df4",
+      "bytes": 287600,
+      "dimensions": {
+        "width": 1440,
+        "height": 1293
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1293
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:17773",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/imports-light.png",
+      "sha256": "a721f8fc2e3b1ea5d2422de78283ea7630e59c3a062c37b819b902c4720d6430",
+      "bytes": 256382,
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:17965",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/imports-dark.png",
+      "sha256": "1a7c7e88a792de64c4807a4f60262d2ff299019607f955cf4f0ff8856c725ae5",
+      "bytes": 293833,
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:18156",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/customers-light.png",
+      "sha256": "585fe82490ba71f5972cb492c42cadcc0da2c0115fe0549c9c1c4395f09e2ee7",
+      "bytes": 192232,
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:18891",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/customers-dark.png",
+      "sha256": "cd024f95be45bda683337a6e8210530458c0832dadc8b0dc2c94ac713665e635",
+      "bytes": 224270,
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:19625",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/team-light.png",
+      "sha256": "0d022664c632199a86dcb96a2d84cfaacd56af51add094ed7b0843cde010fa61",
+      "bytes": 269424,
+      "dimensions": {
+        "width": 1440,
+        "height": 1362
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1362
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "237:19873",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/team-dark.png",
+      "sha256": "c4e22556d531465aa03c94078fe361d7aca6922db9aa7788be013420ec4c0afb",
+      "bytes": 316376,
+      "dimensions": {
+        "width": 1440,
+        "height": 1362
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1362
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "246:6620",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-workspace-status.png",
+      "sha256": "21794b66305a3b73060e4459a2c262228d213856a6e6340a0fab8675626675a1",
+      "bytes": 105849,
+      "dimensions": {
+        "width": 2256,
+        "height": 712
+      },
+      "nativeBounds": {
+        "width": 2256,
+        "height": 712
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "246:6722",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-onboarding-flow.png",
+      "sha256": "3345f62693693ae019365c445d09e7665c6fd7b498b57ea45fa4e2c2e8c83350",
+      "bytes": 1442532,
+      "dimensions": {
+        "width": 2256,
+        "height": 2455
+      },
+      "nativeBounds": {
+        "width": 2256,
+        "height": 2455
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "246:7084",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-member-management.png",
+      "sha256": "fd07e9030c8f40d708159f8ce95ba497d27c850349ce6a13196a0d1de75be306",
+      "bytes": 1315443,
+      "dimensions": {
+        "width": 2256,
+        "height": 3342
+      },
+      "nativeBounds": {
+        "width": 2256,
+        "height": 3342
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "246:7491",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-data-workbench.png",
+      "sha256": "644c1dc3d6133bfca88780735919d606fa6aee8c5d3b8558c753f27fde73fdf9",
+      "bytes": 530771,
+      "dimensions": {
+        "width": 2256,
+        "height": 3146
+      },
+      "nativeBounds": {
+        "width": 2256,
+        "height": 3146
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "246:9037",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-import-wizard.png",
+      "sha256": "abcb3b72e0d26ab68f7dd09717ff989219273cf5b73f4d9829ac3ad40b90ed1c",
+      "bytes": 1099824,
+      "dimensions": {
+        "width": 2196,
+        "height": 4096
+      },
+      "nativeBounds": {
+        "width": 2256,
+        "height": 4209
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "246:9552",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-record-detail.png",
+      "sha256": "eba0c66ccc8ace22ce4d9e7d871c8ede7ca562d75e129a2744be6286a86a07c6",
+      "bytes": 1516926,
+      "dimensions": {
+        "width": 2170,
+        "height": 4096
+      },
+      "nativeBounds": {
+        "width": 2256,
+        "height": 4260
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "246:10211",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-workspace-settings.png",
+      "sha256": "cbf2c73b6d861d9d01a015ad51bcafda3dbce869078b110aef402719f79a3f47",
+      "bytes": 211661,
+      "dimensions": {
+        "width": 2144,
+        "height": 876
+      },
+      "nativeBounds": {
+        "width": 2144,
+        "height": 876
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "246:10269",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-row-actions.png",
+      "sha256": "57ae8a87157c257d7ab2c8812b93cb200519e18544263d08d6e54692e0c1d237",
+      "bytes": 54973,
+      "dimensions": {
+        "width": 976,
+        "height": 715
+      },
+      "nativeBounds": {
+        "width": 976,
+        "height": 715
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "246:10322",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-delete-dialog.png",
+      "sha256": "a2e2549015be5389d4a2f65eb336c583ebc3c60083a8c5079e1c09229fbf706f",
+      "bytes": 63845,
+      "dimensions": {
+        "width": 976,
+        "height": 704
+      },
+      "nativeBounds": {
+        "width": 976,
+        "height": 704
+      },
+      "result": "approved"
+    },
+    {
+      "nodeId": "27:2",
+      "kind": "release-cover",
+      "path": ".figma/proofs/saas-1.2/cover-1.2.png",
+      "sha256": "b3a5292ee727e735b2f4b9b9e5de706b800068996c454a73281fbbeef9e4f74a",
+      "bytes": 95802,
+      "dimensions": {
+        "width": 1440,
+        "height": 960
+      },
+      "nativeBounds": {
+        "width": 1440,
+        "height": 960
+      },
+      "result": "approved"
+    }
+  ],
+  "limitations": [
+    "Native SaaS compositions use the base Violet palette in Light and Dark. Browser palette coverage is separate.",
+    "This is a fresh review of six SaaS routes and nine component sets. The other 63 route roots retain accepted 1.1 evidence.",
+    "Figma exported two tall review boards below their native dimensions; accepted exports preserve those actual dimensions and pixels.",
+    "No Code Connect cloud registration or library publication was performed."
+  ]
+}

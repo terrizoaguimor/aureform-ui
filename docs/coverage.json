@@ -1,0 +1,5252 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3.0",
+  "status": "source-handoff-retained-baseline-and-current-image-review",
+  "sourceOfTruth": [
+    "src/lib/catalog.ts",
+    "src/components/app-page.tsx",
+    ".figma/state.json",
+    ".figma/code-connect-manifest.json",
+    ".figma/native-audit.json",
+    ".figma/history/state-1.2-final.json",
+    "public/assets/generated-images.json",
+    ".figma/native-generated-images-1.2.1.json",
+    ".figma/native-audit-1.2.json",
+    ".figma/native-saas-library-1.2.json",
+    "scripts/lib/source-graph.mjs",
+    "src/lib/appearance.ts",
+    "src/components/effects/index.ts",
+    "src/components/ui/chart.tsx",
+    "tokens/aureform.tokens.json",
+    "scripts/lib/appearance-tokens.mjs"
+  ],
+  "summary": {
+    "suiteRoutes": 68,
+    "landingPages": 1,
+    "views": 69,
+    "componentFamilies": 44,
+    "completeExamples": 44,
+    "blockFiles": 16,
+    "blockExports": 18,
+    "shellLayouts": 6,
+    "chartFamilies": 13,
+    "registryItems": 96,
+    "codeConnectTemplates": 92,
+    "mappedNativeViews": 69,
+    "pendingNativeViews": 0,
+    "directNativeBlockExports": 8,
+    "saasNativeViews": 6,
+    "saasNativeModeRoots": 12,
+    "saasNativeVariants": 68,
+    "palettes": 6,
+    "reusableEffects": 6,
+    "nativeGalleryPreviews": 46,
+    "semanticColors": 21,
+    "primitiveColors": 270,
+    "effectTokens": 15
+  },
+  "motionRuntime": {
+    "source": "src/components/motion-system.tsx",
+    "registry": "public/r/motion-system.json",
+    "example": "examples/MotionSystem.tsx",
+    "engines": [
+      "GSAP",
+      "Lenis"
+    ],
+    "smoothScroll": "Landing only, fine pointer, no reduced-motion preference"
+  },
+  "locales": [
+    "en",
+    "es"
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "generatedImages": {
+    "version": "1.2.1",
+    "manifest": {
+      "file": "public/assets/generated-images.json",
+      "sha256": "f172bc614dd05450bc9e7872d8670c59c0b4d4c4e839176e233f68350f0c8a51"
+    },
+    "promptCatalog": "docs/generated-images/catalog.json",
+    "assets": [
+      {
+        "id": "alex-morgan",
+        "group": "avatars",
+        "src": "/assets/avatars/alex-morgan.svg",
+        "downloadSrc": "/assets/avatars/alex-morgan.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Alex Morgan demo profile",
+          "es": "Retrato generado para el perfil ficticio de Alex Morgan"
+        },
+        "webpBytes": 9276,
+        "webpSha256": "d00e73009c7efc6d22cb4c5c058b2f8b6b4f97e8a221163371112ce73a9e32fb",
+        "svgBytes": 12639,
+        "svgSha256": "cfa92016a499bf02894b863c2a451faaba779fd4662fdc2e876a511ae6ac8d6d"
+      },
+      {
+        "id": "isabel-torres",
+        "group": "avatars",
+        "src": "/assets/avatars/isabel-torres.svg",
+        "downloadSrc": "/assets/avatars/isabel-torres.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Isabel Torres demo profile",
+          "es": "Retrato generado para el perfil ficticio de Isabel Torres"
+        },
+        "webpBytes": 9674,
+        "webpSha256": "f8805db2acc8b0f1a0ff7c0ebfca06c5ecb66ec004e2d05a15ab5df6b7f9fcbe",
+        "svgBytes": 13173,
+        "svgSha256": "f890f2dac34c2bd31d1f61e80f746623ebc484d5f400b18ef6b49978a228eb22"
+      },
+      {
+        "id": "leo-martin",
+        "group": "avatars",
+        "src": "/assets/avatars/leo-martin.svg",
+        "downloadSrc": "/assets/avatars/leo-martin.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Leo Martin demo profile",
+          "es": "Retrato generado para el perfil ficticio de Leo Martin"
+        },
+        "webpBytes": 12976,
+        "webpSha256": "79c74d9e728c691dc7f3fa9c979be14fe307196a55103f5dd6241b6295e93ac0",
+        "svgBytes": 17574,
+        "svgSha256": "30974b939cd23227ec38579bdbb4f78dffe3d9711ad5a048f2a2d4b62f5eca53"
+      },
+      {
+        "id": "noor-ahmed",
+        "group": "avatars",
+        "src": "/assets/avatars/noor-ahmed.svg",
+        "downloadSrc": "/assets/avatars/noor-ahmed.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Noor Ahmed demo profile",
+          "es": "Retrato generado para el perfil ficticio de Noor Ahmed"
+        },
+        "webpBytes": 8964,
+        "webpSha256": "df70a5177309e415b963a146519bef857f7b7c8b2b83197934a6cec14ba6899e",
+        "svgBytes": 12222,
+        "svgSha256": "7c9e42151e5e9f7e8bbe2b6371ad0b28da2c0c39aeb6e7206f9515e4e26a88cb"
+      },
+      {
+        "id": "daniel-kim",
+        "group": "avatars",
+        "src": "/assets/avatars/daniel-kim.svg",
+        "downloadSrc": "/assets/avatars/daniel-kim.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Daniel Kim demo profile",
+          "es": "Retrato generado para el perfil ficticio de Daniel Kim"
+        },
+        "webpBytes": 9662,
+        "webpSha256": "91b41c8f22c4dc4a9f15236ce9e15617cb340e354e641d474cbab856afb846b4",
+        "svgBytes": 13154,
+        "svgSha256": "2a128ab1582fcf9a2ed8bffd6d1d6980a14a6c63e66b2a58ed51603d9ebdf02b"
+      },
+      {
+        "id": "olivia-rhye",
+        "group": "avatars",
+        "src": "/assets/avatars/olivia-rhye.svg",
+        "downloadSrc": "/assets/avatars/olivia-rhye.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Olivia Rhye demo profile",
+          "es": "Retrato generado para el perfil ficticio de Olivia Rhye"
+        },
+        "webpBytes": 9248,
+        "webpSha256": "f270d143ad6077b08dba1d5a833af291fa30018c65c0ddf20ddcb0a8982e194d",
+        "svgBytes": 12603,
+        "svgSha256": "a8d19ec07c93a791bb378c6e5c8fac91234819660fd36c6a6072dd46d6ab73d9"
+      },
+      {
+        "id": "phoenix-baker",
+        "group": "avatars",
+        "src": "/assets/avatars/phoenix-baker.svg",
+        "downloadSrc": "/assets/avatars/phoenix-baker.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Phoenix Baker demo profile",
+          "es": "Retrato generado para el perfil ficticio de Phoenix Baker"
+        },
+        "webpBytes": 8202,
+        "webpSha256": "47d33304c9c811a338a20f8ade7eb9a02b39a2193d42ace765a68c9bae729cf0",
+        "svgBytes": 11209,
+        "svgSha256": "88dc2ee8f4c02d3d17fc8c3506597fee19c51478975084ef6ba2a04f2204212c"
+      },
+      {
+        "id": "lana-steiner",
+        "group": "avatars",
+        "src": "/assets/avatars/lana-steiner.svg",
+        "downloadSrc": "/assets/avatars/lana-steiner.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Lana Steiner demo profile",
+          "es": "Retrato generado para el perfil ficticio de Lana Steiner"
+        },
+        "webpBytes": 8986,
+        "webpSha256": "92ca129c5a955106c7f4b3a22edea0e4df770947624b290358ce8d25f01145d0",
+        "svgBytes": 12256,
+        "svgSha256": "4e350c0d90f49bb01a9ee6147e66acac91ba88f9df0fa6b86086cec14477155c"
+      },
+      {
+        "id": "demi-wilkinson",
+        "group": "avatars",
+        "src": "/assets/avatars/demi-wilkinson.svg",
+        "downloadSrc": "/assets/avatars/demi-wilkinson.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Demi Wilkinson demo profile",
+          "es": "Retrato generado para el perfil ficticio de Demi Wilkinson"
+        },
+        "webpBytes": 11090,
+        "webpSha256": "55c3e54af00a95633085b89aaad4a3de8d184945ab0788ff30966654e6aadb26",
+        "svgBytes": 15062,
+        "svgSha256": "1d28a155d03f42211919f38e7199c99325b29f212381c79a9d1ec46b1d264fe0"
+      },
+      {
+        "id": "drew-cano",
+        "group": "avatars",
+        "src": "/assets/avatars/drew-cano.svg",
+        "downloadSrc": "/assets/avatars/drew-cano.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Drew Cano demo profile",
+          "es": "Retrato generado para el perfil ficticio de Drew Cano"
+        },
+        "webpBytes": 8916,
+        "webpSha256": "cd3dec104945efa2a6facc7c853d737fba26b21a3dc8955328ab8e85498c7d0b",
+        "svgBytes": 12157,
+        "svgSha256": "a6ab90bc44fa1e14a3b1aec575289753428fc7ba22f2d8a3803c7821dd52e026"
+      },
+      {
+        "id": "amelia-wilson",
+        "group": "avatars",
+        "src": "/assets/avatars/amelia-wilson.svg",
+        "downloadSrc": "/assets/avatars/amelia-wilson.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Amelia Wilson demo profile",
+          "es": "Retrato generado para el perfil ficticio de Amelia Wilson"
+        },
+        "webpBytes": 13242,
+        "webpSha256": "3f284a1c038b55ff2295484586dedea0e2ce6129c95c4194c490bf7657c2ea5c",
+        "svgBytes": 17929,
+        "svgSha256": "0cc34f4f174be0eb4c8fd9773290702656dca7b50099d917bc91e19b8273b76e"
+      },
+      {
+        "id": "matias-vega",
+        "group": "avatars",
+        "src": "/assets/avatars/matias-vega.svg",
+        "downloadSrc": "/assets/avatars/matias-vega.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Matías Vega demo profile",
+          "es": "Retrato generado para el perfil ficticio de Matías Vega"
+        },
+        "webpBytes": 10804,
+        "webpSha256": "0e3eed3a8e9b3521c51b71645e31404ddd501fe3baab5ae2ce03ab2051ee1a21",
+        "svgBytes": 14680,
+        "svgSha256": "ae816cc616e558a5b777d8a8890b443a0cf4d04651deacde926fa9bb11d62c9a"
+      },
+      {
+        "id": "sofia-chen",
+        "group": "avatars",
+        "src": "/assets/avatars/sofia-chen.svg",
+        "downloadSrc": "/assets/avatars/sofia-chen.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Sofia Chen demo profile",
+          "es": "Retrato generado para el perfil ficticio de Sofia Chen"
+        },
+        "webpBytes": 10338,
+        "webpSha256": "8193c0a06654758722fc6f51b545575274dabb3946c92f5e11701d1ae1869a48",
+        "svgBytes": 14054,
+        "svgSha256": "b880ee9fc48cb6b0be634bfc43dabe32a1390a3733fd11328ac4ce36d9294b2a"
+      },
+      {
+        "id": "lucas-moreau",
+        "group": "avatars",
+        "src": "/assets/avatars/lucas-moreau.svg",
+        "downloadSrc": "/assets/avatars/lucas-moreau.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Lucas Moreau demo profile",
+          "es": "Retrato generado para el perfil ficticio de Lucas Moreau"
+        },
+        "webpBytes": 10548,
+        "webpSha256": "a46a417b0541cb2c6da5e2c35b4c1fd80b22f3918e50d1e7539ff8bbd4abcd33",
+        "svgBytes": 14336,
+        "svgSha256": "b54b644afba2de32cff133fde2ecdaf4807c22bf555606ad9efd052c69512059"
+      },
+      {
+        "id": "alex-rivera",
+        "group": "avatars",
+        "src": "/assets/avatars/alex-rivera.svg",
+        "downloadSrc": "/assets/avatars/alex-rivera.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Alex Rivera demo profile",
+          "es": "Retrato generado para el perfil ficticio de Alex Rivera"
+        },
+        "webpBytes": 9992,
+        "webpSha256": "54755fce1a6cc57d8c3a9742ac2309519a51f3026d779ab5d943a86c228093be",
+        "svgBytes": 13595,
+        "svgSha256": "d7685ecd44e49bcd3a9b7e96165d540733b92eba23a401b0d540cb4facd5d926"
+      },
+      {
+        "id": "isabel-moreno",
+        "group": "avatars",
+        "src": "/assets/avatars/isabel-moreno.svg",
+        "downloadSrc": "/assets/avatars/isabel-moreno.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Generated portrait for the fictional Isabel Moreno demo profile",
+          "es": "Retrato generado para el perfil ficticio de Isabel Moreno"
+        },
+        "webpBytes": 9506,
+        "webpSha256": "dff95eef29bf9cc73a5a9dd100fd7e15fd29c24b83c1397ef61456dc57a9618d",
+        "svgBytes": 12949,
+        "svgSha256": "3c8ba7c09ee88063d12340727abf3875a4699d3d993a00aa607e236095e2595b"
+      },
+      {
+        "id": "studio-updates",
+        "group": "avatars",
+        "src": "/assets/avatars/studio-updates.svg",
+        "downloadSrc": "/assets/avatars/studio-updates.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "An amber sculptural loop on a warm plum background",
+          "es": "Un lazo escultórico ámbar sobre un fondo ciruela"
+        },
+        "webpBytes": 4804,
+        "webpSha256": "8bfefe1d808d239eefa3b08c108f96856929b17274cd2cf0448b587ce8fda255",
+        "svgBytes": 6668,
+        "svgSha256": "f07c0d14711fab836bd1cc0d5ac823c25c4aca90b09d64806b2b0da894986c18"
+      },
+      {
+        "id": "forma-collective",
+        "group": "avatars",
+        "src": "/assets/avatars/forma-collective.svg",
+        "downloadSrc": "/assets/avatars/forma-collective.webp",
+        "width": 320,
+        "height": 320,
+        "alt": {
+          "en": "Interlocking lavender and sage arcs on a forest-green background",
+          "es": "Arcos lavanda y salvia entrelazados sobre verde bosque"
+        },
+        "webpBytes": 3092,
+        "webpSha256": "8261a2a792832207c209abf8d3aecdbe5ab33b8295dbd305e564d8b8600063fb",
+        "svgBytes": 4398,
+        "svgSha256": "0e4eea018c46921e8899e4412be836f11e6dffd5b63d72af891a12e226b0667b"
+      },
+      {
+        "id": "forma-desk-lamp",
+        "group": "products",
+        "src": "/assets/products/forma-desk-lamp.svg",
+        "downloadSrc": "/assets/products/forma-desk-lamp.webp",
+        "width": 640,
+        "height": 640,
+        "alt": {
+          "en": "A forest-green desk lamp with a brass stem",
+          "es": "Una lámpara verde bosque con tallo de latón"
+        },
+        "webpBytes": 8938,
+        "webpSha256": "0373b76b4db7c0064e454084c1c6ba9ffd2a8e8ee5ccd8eff2818b3cd3f90767",
+        "svgBytes": 12172,
+        "svgSha256": "b9a11b90e23b52fda083f5d1c81dba16ed6b4e6c05fdb55992b72d3cd036b50f"
+      },
+      {
+        "id": "arc-lounge-chair",
+        "group": "products",
+        "src": "/assets/products/arc-lounge-chair.svg",
+        "downloadSrc": "/assets/products/arc-lounge-chair.webp",
+        "width": 640,
+        "height": 640,
+        "alt": {
+          "en": "An oak lounge chair with ivory upholstery",
+          "es": "Una silla de roble con tapizado marfil"
+        },
+        "webpBytes": 33000,
+        "webpSha256": "406481b41fe4b20aa6d96b674626059a36ad48fd356347e66cdf3868423a721d",
+        "svgBytes": 44251,
+        "svgSha256": "5d4305feab0a7f7453e94d73183b52f7bb2f2dc3d8c0437a4877207d13297d93"
+      },
+      {
+        "id": "linea-notebook",
+        "group": "products",
+        "src": "/assets/products/linea-notebook.svg",
+        "downloadSrc": "/assets/products/linea-notebook.webp",
+        "width": 640,
+        "height": 640,
+        "alt": {
+          "en": "A lilac linen notebook with a green bookmark",
+          "es": "Un cuaderno de lino lila con marcador verde"
+        },
+        "webpBytes": 29418,
+        "webpSha256": "5280ca05f8f971c1ac0cfbe5a4b6ee3e0a1077dc869ea17c478667fc5b546d68",
+        "svgBytes": 39478,
+        "svgSha256": "d455122a2e8578fa61809bc09b3ce802652072c09be37cd7b22acec23af21ea3"
+      },
+      {
+        "id": "studio-tote",
+        "group": "products",
+        "src": "/assets/products/studio-tote.svg",
+        "downloadSrc": "/assets/products/studio-tote.webp",
+        "width": 640,
+        "height": 640,
+        "alt": {
+          "en": "A natural canvas tote with a sage-green abstract mark",
+          "es": "Un bolso de lona natural con una forma abstracta verde salvia"
+        },
+        "webpBytes": 25488,
+        "webpSha256": "1192da28f1c7d54edc7115e8077d6652584a3e0faaabaebecd51d3e8ebb544a3",
+        "svgBytes": 34247,
+        "svgSha256": "71692a4587fcd636f4a0cc33913543a2c8d103fd5f752e0fb090e0d87b02d05b"
+      },
+      {
+        "id": "morrow-ceramic-cup",
+        "group": "products",
+        "src": "/assets/products/morrow-ceramic-cup.svg",
+        "downloadSrc": "/assets/products/morrow-ceramic-cup.webp",
+        "width": 640,
+        "height": 640,
+        "alt": {
+          "en": "A honey-amber ceramic cup and saucer",
+          "es": "Una taza cerámica ámbar con plato"
+        },
+        "webpBytes": 25374,
+        "webpSha256": "e5ca365c7601b96b6ab94735a0c004ca139219476439cb17ac4fb787045bea42",
+        "svgBytes": 34078,
+        "svgSha256": "170819b605d9495ede903b60c0b5154ad754653e23271ad2492f2304d42e6d6a"
+      },
+      {
+        "id": "silhouette-vase",
+        "group": "products",
+        "src": "/assets/products/silhouette-vase.svg",
+        "downloadSrc": "/assets/products/silhouette-vase.webp",
+        "width": 640,
+        "height": 640,
+        "alt": {
+          "en": "A sculptural terracotta ceramic vase",
+          "es": "Un jarrón escultórico de cerámica terracota"
+        },
+        "webpBytes": 31190,
+        "webpSha256": "35ff3aca4a21e8c5003d96330b290b84d64666bbbd043b4992ef453e4a14bb3b",
+        "svgBytes": 41834,
+        "svgSha256": "4a3289c2185b19ef8a255b9258662d04b9f8e38df6dd529f41ad2eb65a22c51a"
+      },
+      {
+        "id": "fold-side-table",
+        "group": "products",
+        "src": "/assets/products/fold-side-table.svg",
+        "downloadSrc": "/assets/products/fold-side-table.webp",
+        "width": 640,
+        "height": 640,
+        "alt": {
+          "en": "A folded slate-blue metal side table",
+          "es": "Una mesa auxiliar de metal plegado azul pizarra"
+        },
+        "webpBytes": 7288,
+        "webpSha256": "cd4853bac37959463a244c50982f301786180e7d5f0634d859fb702c6ecdd5e0",
+        "svgBytes": 9966,
+        "svgSha256": "832bdeaa731622d6bedfe6a5d9c149dce966efeb22541e2850c964fa76d1b82a"
+      },
+      {
+        "id": "essential-wall-print",
+        "group": "products",
+        "src": "/assets/products/essential-wall-print.svg",
+        "downloadSrc": "/assets/products/essential-wall-print.webp",
+        "width": 640,
+        "height": 640,
+        "alt": {
+          "en": "An oak-framed abstract print in green, amber and lilac",
+          "es": "Una lámina abstracta en verde, ámbar y lila con marco de roble"
+        },
+        "webpBytes": 14740,
+        "webpSha256": "2659fd014a91bd5e4b89d8805b136027644c51f1780bc7528f4df90d03304eb0",
+        "svgBytes": 19920,
+        "svgSha256": "dec59dfb643a8b02ec95f542e73ea399c65d5d20961a9f306b5a9313919ab38e"
+      },
+      {
+        "id": "quiet-forms",
+        "group": "art",
+        "src": "/assets/art/quiet-forms.svg",
+        "downloadSrc": "/assets/art/quiet-forms.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": {
+          "en": "An ivory sculptural arch and sage sphere in warm side light",
+          "es": "Un arco escultórico marfil y una esfera salvia con luz cálida lateral"
+        },
+        "webpBytes": 45000,
+        "webpSha256": "c8e9c43848cbd7207179172282ba452726353ac2b7e9e6810c62c523da3b2f19",
+        "svgBytes": 60272,
+        "svgSha256": "e9669adb12654cf1bc25289dde94f9793e7dbfe2119fdfcaf0a88fe000addb36"
+      },
+      {
+        "id": "studio",
+        "group": "art",
+        "src": "/assets/art/studio.svg",
+        "downloadSrc": "/assets/art/studio.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": {
+          "en": "A sunlit creative studio with an oak table and sage chair",
+          "es": "Un estudio creativo iluminado con mesa de roble y silla salvia"
+        },
+        "webpBytes": 67622,
+        "webpSha256": "b9c399c71367e97268385c73a7ed5befe2b63a0dd4d6fa387178b649cd99a854",
+        "svgBytes": 90434,
+        "svgSha256": "86c07e21cf355f0f0a440b6886d569fae3b2cdbd4989961f7d21c19f9954e710"
+      },
+      {
+        "id": "arc",
+        "group": "art",
+        "src": "/assets/art/arc.svg",
+        "downloadSrc": "/assets/art/arc.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": {
+          "en": "A terracotta arch and amber glass sphere with sweeping shadows",
+          "es": "Un arco terracota y una esfera de vidrio ámbar con sombras amplias"
+        },
+        "webpBytes": 91898,
+        "webpSha256": "ba6a60770173d18b3105a54d2a54eab41778f64f6606e3fe21f8c7f2c1fedeb9",
+        "svgBytes": 122807,
+        "svgSha256": "943f4db310f197e0eb9a11c1577acb4af93be0c8cc83d62965bf08ecfb2f6191"
+      },
+      {
+        "id": "morrow",
+        "group": "art",
+        "src": "/assets/art/morrow.svg",
+        "downloadSrc": "/assets/art/morrow.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": {
+          "en": "A folded sage satin ribbon on a misty green background",
+          "es": "Una cinta plegada de satén salvia sobre un fondo verde brumoso"
+        },
+        "webpBytes": 43334,
+        "webpSha256": "56c83ed48def07e3ea11b26b97ab7f5ad62a2e5885bebe8c4bc70bfa5c3235e3",
+        "svgBytes": 58047,
+        "svgSha256": "877b4f28d10b1d3248bb9e006ad90e27bb55921913e12b15e40fce2bf401e90c"
+      },
+      {
+        "id": "silhouette",
+        "group": "art",
+        "src": "/assets/art/silhouette.svg",
+        "downloadSrc": "/assets/art/silhouette.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": {
+          "en": "A cobalt vessel and orange stone form on a lilac stage",
+          "es": "Un recipiente cobalto y una forma naranja sobre una base lila"
+        },
+        "webpBytes": 70004,
+        "webpSha256": "934a4b6dcf25d33870fc3fe0464fca2a0a26811ccd3b1572f4593bd62443f031",
+        "svgBytes": 93607,
+        "svgSha256": "1ff673229c7636917dc8d8f07f40859bf1f8355608563b963aa53c743640b1aa"
+      },
+      {
+        "id": "goodform",
+        "group": "art",
+        "src": "/assets/art/goodform.svg",
+        "downloadSrc": "/assets/art/goodform.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": {
+          "en": "Lavender resin discs, an amber arc and a mint sphere",
+          "es": "Discos de resina lavanda, un arco ámbar y una esfera menta"
+        },
+        "webpBytes": 50008,
+        "webpSha256": "577749b5c5779b9702ec48b41212a8528c1d2dfbfdb3a613f6f25d8e932f1443",
+        "svgBytes": 66945,
+        "svgSha256": "3917ceec0a8c925c7751b500e83f27b81c9debcf7fdb563414587fec784773d6"
+      }
+    ],
+    "groups": {
+      "avatars": 18,
+      "products": 8,
+      "art": 6
+    },
+    "count": 32,
+    "bytes": {
+      "webp": 712622,
+      "svg": 958716
+    },
+    "delivery": {
+      "archive": "public/downloads/aureform-ui-images.zip",
+      "registry": "Text SVG wrappers embedding the exact optimized WebP bytes",
+      "nativeContentImageFillsAllowed": true,
+      "wholeUiRasterizationAllowed": false,
+      "mastersIncluded": true,
+      "mastersDirectory": "design/images/masters",
+      "runtimeApiKeyRequired": false
+    },
+    "nativeReview": {
+      "file": ".figma/native-generated-images-1.2.1.json",
+      "checkpointVersion": "1.2.1",
+      "historicalCheckpoint": true,
+      "status": "passed-scoped-native-image-integration-and-owner-review",
+      "current": true,
+      "scope": "32 native image asset components, explicitly matched existing photo/product/media slots, seven owner-reviewed scoped exports; inherited1.2 evidence remains immutable.",
+      "stateSha256": "917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03",
+      "matchesCurrentState": true,
+      "manifestMatches": true,
+      "assetsMatchManifest": true,
+      "proofBytesVerified": true,
+      "protectedBaselineMatches": true,
+      "canonicalRouteIdsPreserved": true,
+      "coverage": {
+        "assetComponents": 32,
+        "uploadedAssets": 32,
+        "updatedRoutes": [
+          "dashboard",
+          "customers",
+          "ai",
+          "crm",
+          "ecommerce",
+          "sales",
+          "marketing",
+          "logistics",
+          "finance",
+          "stocks",
+          "products",
+          "orders",
+          "invoices",
+          "transactions",
+          "tasks",
+          "pipeline",
+          "task-list",
+          "calendar",
+          "mail",
+          "chat",
+          "files",
+          "support",
+          "maps",
+          "invoice",
+          "ai/images",
+          "ai/video",
+          "settings/profile",
+          "settings/team",
+          "settings/preferences",
+          "settings/billing",
+          "settings/api-keys",
+          "settings/integrations",
+          "pricing",
+          "faq",
+          "",
+          "components",
+          "forms",
+          "charts",
+          "media",
+          "layouts",
+          "blocks",
+          "templates",
+          "studio",
+          "themes",
+          "effects",
+          "onboarding",
+          "settings/workspace",
+          "customers/detail",
+          "imports"
+        ],
+        "wholeUiRasterCount": 0,
+        "renderPngUploads": 32,
+        "nativeImageFillNodesOnBoard": 64,
+        "uploadedOperations": 64,
+        "diagnosticRepeatOperations": 1,
+        "successfulUploadPostRequests": 65,
+        "nativeUiPhotoSlotsApplied": 293,
+        "nativeUiInitialTextsHidden": 293,
+        "unassignedFallbackSlotsRetained": 107,
+        "updatedCanonicalRouteCount": 49,
+        "directUiPhotoRootCountIncludingSixLightPairs": 55,
+        "sharedProfileAvatarMasters": 2,
+        "additionalInheritedProfileInstancesConfirmed": 6,
+        "currentSuitePhotoSlotsConfirmed": 111,
+        "currentSuiteUnassignedFallbackSlotsConfirmed": 34,
+        "nativeMediaImageAreas": 11,
+        "hiddenLegacyVectorNodes": 79,
+        "visibleLegacyVectorOverlaysOnReplacedAreas": 0,
+        "nativeProductRowThumbnails": 5,
+        "optionalProductThumbnailVariantSlots": 2,
+        "visibleDescriptionCorrections": 1,
+        "componentDescriptionCorrections": 3,
+        "ownerReviewedProofs": 7,
+        "createdNodes": 191,
+        "directlyMutatedUniqueNodes": 739,
+        "newVariableCollections": 0,
+        "uploadedOperationsMeaning": "32 exact WebP content uploads plus32 lossless native PNG uploads; one diagnostic repeated-WebP POST is recorded separately."
+      },
+      "proofs": [
+        {
+          "path": ".figma/proofs/images-1.2.1/asset-board-avatars.png",
+          "sha256": "9792541b1cd8f9d5022ebadfabcb6a59c8723db4a3fcb3b91d60e8bc780cb3f9",
+          "nodeId": "263:64",
+          "scope": "Native editable asset board / avatars"
+        },
+        {
+          "path": ".figma/proofs/images-1.2.1/asset-board-products.png",
+          "sha256": "bba66170f651d7beeaacc61ceb27b3ce5ec5161849f85e797df54cd626f9aa7e",
+          "nodeId": "263:164",
+          "scope": "Native editable asset board / products"
+        },
+        {
+          "path": ".figma/proofs/images-1.2.1/asset-board-art.png",
+          "sha256": "89a5d2fe657f69190a1f9cf14da73c70792aca6c4a4773df18a3661cb3705ec1",
+          "nodeId": "263:210",
+          "scope": "Native editable asset board / art"
+        },
+        {
+          "path": ".figma/proofs/images-1.2.1/team-dark-native.png",
+          "sha256": "ddff107d29bb865a91819b8455e49ffd68bec6f4e2e4d27c6ce91f511051b632",
+          "nodeId": "237:19873",
+          "scope": "Team Dark / known member photos"
+        },
+        {
+          "path": ".figma/proofs/images-1.2.1/customers-light-native.png",
+          "sha256": "dd8b926df57446e05041ad9dff113331cabf468e860a785fa50bbf9cc7a46b12",
+          "nodeId": "237:18156",
+          "scope": "Customers Light / distinct known customer photos"
+        },
+        {
+          "path": ".figma/proofs/images-1.2.1/products-native.png",
+          "sha256": "f842ab589d12dfdd0c3ef30f25c50e0b1766d3808d9d73baecd0fc82bedae784",
+          "nodeId": "41:2363",
+          "scope": "Products / five existing native row thumbnails"
+        },
+        {
+          "path": ".figma/proofs/images-1.2.1/media-native-revised.png",
+          "sha256": "494499d9a83762a38ae66bb20827451986e2f980cffdd2448183ea2667e58ec1",
+          "nodeId": "59:3077",
+          "scope": "Media / six editorial images, controlled carousel, paused poster, current source description"
+        }
+      ],
+      "freshFullRouteVisualReview": false,
+      "retainedBaseline": {
+        "version": "1.2.0",
+        "audit": ".figma/native-audit-1.2.json",
+        "state": ".figma/history/state-1.2-final.json"
+      }
+    }
+  },
+  "delivery": {
+    "version": "1.3.0",
+    "receipt": "public/downloads/verification-1.3.0.json",
+    "status": "passed-local-release-validation",
+    "checksums": "public/downloads/checksums.json",
+    "checksumsMatchVersion": true,
+    "historical": [
+      {
+        "version": "1.2.0",
+        "archives": "artifacts/release-1.2-original",
+        "preservedChecksums": "artifacts/release-1.2-original/checksums.json",
+        "preservedReceipt": "artifacts/release-1.2-original/verification-1.2.json",
+        "checkpointReceipt": "public/downloads/verification-1.2.json",
+        "runtimeReceipt": "docs/qa-runtime-1.2.json",
+        "certifiesCurrentPatch": false
+      }
+    ]
+  },
+  "appearance": {
+    "source": "src/lib/appearance.ts",
+    "provider": "src/components/appearance-provider.tsx",
+    "controls": "src/components/appearance-controls.tsx",
+    "tokenHelper": "scripts/lib/appearance-tokens.mjs",
+    "studio": "/en/studio/",
+    "gallery": "/en/themes/",
+    "effectGallery": "/en/effects/",
+    "palettes": [
+      {
+        "id": "aurora",
+        "name": "Aurora",
+        "colors": [
+          "#8B5CF6",
+          "#22D3EE",
+          "#34D399"
+        ]
+      },
+      {
+        "id": "violet",
+        "name": "Violet",
+        "colors": [
+          "#8B5CF6",
+          "#E879F9",
+          "#6366F1"
+        ]
+      },
+      {
+        "id": "ocean",
+        "name": "Ocean",
+        "colors": [
+          "#3B82F6",
+          "#06B6D4",
+          "#38BDF8"
+        ]
+      },
+      {
+        "id": "mint",
+        "name": "Mint",
+        "colors": [
+          "#10B981",
+          "#A3E635",
+          "#2DD4BF"
+        ]
+      },
+      {
+        "id": "ember",
+        "name": "Ember",
+        "colors": [
+          "#F97316",
+          "#F43F5E",
+          "#FBBF24"
+        ]
+      },
+      {
+        "id": "rose",
+        "name": "Rose",
+        "colors": [
+          "#EC4899",
+          "#A78BFA",
+          "#FB7185"
+        ]
+      }
+    ],
+    "materials": [
+      "flat",
+      "elevated",
+      "glass",
+      "gradient"
+    ],
+    "motion": [
+      "off",
+      "gentle",
+      "expressive"
+    ],
+    "exports": [
+      "json",
+      "css",
+      "react"
+    ],
+    "persistence": "Browser localStorage; presets are not synchronized by a backend.",
+    "componentProperties": [
+      {
+        "source": "src/components/ui/button.tsx",
+        "export": "Button",
+        "property": "appearance",
+        "type": "ButtonAppearance",
+        "options": [
+          "solid",
+          "soft",
+          "outline",
+          "glass",
+          "gradient"
+        ]
+      },
+      {
+        "source": "src/components/ui/badge.tsx",
+        "export": "Badge",
+        "property": "appearance",
+        "type": "BadgeAppearance",
+        "options": [
+          "solid",
+          "soft",
+          "outline",
+          "glass",
+          "gradient"
+        ]
+      },
+      {
+        "source": "src/components/ui/card.tsx",
+        "export": "Card",
+        "property": "appearance",
+        "type": "CardAppearance",
+        "options": [
+          "flat",
+          "elevated",
+          "glass",
+          "gradient"
+        ]
+      }
+    ]
+  },
+  "effects": [
+    {
+      "export": "GradientBackground",
+      "source": "src/components/effects/gradient-background.tsx",
+      "registry": "gradient-background",
+      "figma": {
+        "node": "104:734",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-734",
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/GradientBackground.figma.ts"
+    },
+    {
+      "export": "ShaderBackground",
+      "source": "src/components/effects/shader-background.tsx",
+      "registry": "shader-background",
+      "figma": {
+        "node": "104:766",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-766",
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/ShaderBackground.figma.ts"
+    },
+    {
+      "export": "SpotlightCard",
+      "source": "src/components/effects/spotlight-card.tsx",
+      "registry": "spotlight-card",
+      "figma": {
+        "node": "104:777",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-777",
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/SpotlightCard.figma.ts"
+    },
+    {
+      "export": "GlowBorder",
+      "source": "src/components/effects/glow-border.tsx",
+      "registry": "glow-border",
+      "figma": {
+        "node": "104:786",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-786",
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/GlowBorder.figma.ts"
+    },
+    {
+      "export": "TiltCard",
+      "source": "src/components/effects/tilt-card.tsx",
+      "registry": "tilt-card",
+      "figma": {
+        "node": "104:797",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-797",
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/TiltCard.figma.ts"
+    },
+    {
+      "export": "MagneticButton",
+      "source": "src/components/effects/magnetic-button.tsx",
+      "registry": "magnetic-button",
+      "figma": {
+        "node": "104:804",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-804",
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/MagneticButton.figma.ts"
+    }
+  ],
+  "nativeHandoff": {
+    "status": "passed-retained-baseline-and-current-generated-image-review",
+    "pendingRoutes": [],
+    "pendingBlocks": [],
+    "sourceOnlyBlocks": [
+      "TableToolbar"
+    ],
+    "pendingReusableMappings": [],
+    "codeConnectValidation": "passed-local-smoke",
+    "codeConnectCheckpointVersion": "1.1.0",
+    "codeConnectSourceValidationVersion": "1.3.0",
+    "codeConnectSourceValidationCurrent": true,
+    "codeConnectCloudRequired": false,
+    "newCodeConnectTemplatesRequired": false,
+    "ownerQa": "passed-scoped-generated-image-review-with-retained-baseline",
+    "nativeAudit": {
+      "file": ".figma/native-audit-1.2.json",
+      "version": "1.2.0",
+      "current": false,
+      "retainedBaseline": true,
+      "status": "passed-native-structure-and-visual-review",
+      "routeRoots": 69,
+      "state": ".figma/history/state-1.2-final.json",
+      "matchesBaselineState": true,
+      "matchesCurrentState": false
+    },
+    "saasNativeProof": {
+      "file": ".figma/native-saas-library-1.2.json",
+      "current": false,
+      "retainedBaseline": true,
+      "version": "1.2.0",
+      "status": "passed-native-structure-and-visual-review",
+      "scopeMatches": true,
+      "requiredScope": {
+        "views": 6,
+        "modeRoots": 12,
+        "variants": 68
+      },
+      "recordedScope": {
+        "views": 6,
+        "modeRoots": 12,
+        "variants": 68
+      },
+      "visualPassed": true,
+      "requiresRetainedBaselineRouteAudit": true
+    },
+    "historicalNativeAudits": [
+      {
+        "version": "1.2.0",
+        "file": ".figma/native-audit-1.2.json",
+        "state": ".figma/history/state-1.2-final.json",
+        "stateSha256": "8be9d3c1c46565296bd90c43f086b3d7159889c48167ab48d1d5f88e415b1963",
+        "status": "passed-native-structure-and-visual-review",
+        "routeRoots": 69,
+        "matchesFrozenState": true,
+        "current": false
+      },
+      {
+        "version": "1.1",
+        "file": ".figma/native-audit.json",
+        "status": "passed-native-structure-and-visual-review",
+        "routeRoots": 65,
+        "current": false
+      }
+    ]
+  },
+  "nativeSaasLibrary": {
+    "file": ".figma/native-saas-library-1.2.json",
+    "proofVersion": "1.2.0",
+    "retainedBaseline": true,
+    "status": "passed-native-structure-and-visual-review",
+    "components": [
+      {
+        "nativeName": "WorkspaceStatus",
+        "setId": "225:1708",
+        "defaultId": "225:1615",
+        "variants": 6,
+        "source": "src/components/blocks/workspace-status.tsx",
+        "export": "WorkspaceStatus",
+        "axes": {
+          "State": [
+            "Owner",
+            "Viewer",
+            "Storage-error"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-1615",
+        "association": "direct-native-source-map",
+        "codeConnect": null
+      },
+      {
+        "nativeName": "OnboardingFlow",
+        "setId": "225:2068",
+        "defaultId": "225:1709",
+        "variants": 10,
+        "source": "src/components/blocks/onboarding-flow.tsx",
+        "export": "OnboardingFlow",
+        "axes": {
+          "State": [
+            "Organization",
+            "Workspace",
+            "Invitations",
+            "Ready",
+            "Complete"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-1709",
+        "association": "direct-native-source-map",
+        "codeConnect": null
+      },
+      {
+        "nativeName": "MemberManagement",
+        "setId": "225:2482",
+        "defaultId": "225:2069",
+        "variants": 8,
+        "source": "src/components/blocks/member-management.tsx",
+        "export": "MemberManagement",
+        "axes": {
+          "State": [
+            "Default",
+            "Empty",
+            "Read-only",
+            "Confirm"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-2069",
+        "association": "direct-native-source-map",
+        "codeConnect": null
+      },
+      {
+        "nativeName": "DataWorkbench",
+        "setId": "228:3644",
+        "defaultId": "228:1851",
+        "variants": 10,
+        "source": "src/components/blocks/data-workbench.tsx",
+        "export": "DataWorkbench",
+        "axes": {
+          "State": [
+            "Default",
+            "Filtered",
+            "Loading",
+            "Error",
+            "Empty"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-1851",
+        "association": "direct-native-source-map",
+        "codeConnect": null
+      },
+      {
+        "nativeName": "ImportWizard",
+        "setId": "228:4134",
+        "defaultId": "228:3645",
+        "variants": 12,
+        "source": "src/components/blocks/import-wizard.tsx",
+        "export": "ImportWizard",
+        "axes": {
+          "State": [
+            "File",
+            "Mapping",
+            "Preview",
+            "Review",
+            "Complete",
+            "Invalid"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-3645",
+        "association": "direct-native-source-map",
+        "codeConnect": null
+      },
+      {
+        "nativeName": "RecordDetail",
+        "setId": "228:4817",
+        "defaultId": "228:4135",
+        "variants": 12,
+        "source": "src/components/blocks/record-detail.tsx",
+        "export": "GenericRecordDetail",
+        "axes": {
+          "State": [
+            "Summary",
+            "Activity",
+            "Notes",
+            "Files",
+            "Related",
+            "Not-found"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-4135",
+        "association": "direct-native-source-map",
+        "codeConnect": null
+      },
+      {
+        "nativeName": "WorkspaceSettingsTemplate",
+        "setId": "232:3939",
+        "defaultId": "232:3883",
+        "variants": 2,
+        "source": "src/components/templates/saas-setup.tsx",
+        "export": "WorkspaceSettingsTemplate",
+        "axes": {
+          "State": [
+            "Default"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=232-3883",
+        "association": "direct-native-source-map",
+        "codeConnect": null
+      },
+      {
+        "nativeName": "RowActions",
+        "setId": "232:3989",
+        "defaultId": "232:3940",
+        "variants": 4,
+        "source": "src/components/blocks/record-actions.tsx",
+        "export": "RowActions",
+        "axes": {
+          "State": [
+            "Default",
+            "Read-only"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=232-3940",
+        "association": "direct-native-source-map",
+        "codeConnect": null
+      },
+      {
+        "nativeName": "DeleteDialog",
+        "setId": "232:4040",
+        "defaultId": "232:3990",
+        "variants": 4,
+        "source": "src/components/blocks/record-actions.tsx",
+        "export": "DeleteDialog",
+        "axes": {
+          "State": [
+            "Confirm",
+            "Error"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=232-3990",
+        "association": "direct-native-source-map",
+        "codeConnect": null
+      }
+    ],
+    "views": [
+      {
+        "path": "onboarding",
+        "nodes": {
+          "Light": "237:16428",
+          "Dark": "237:16692"
+        }
+      },
+      {
+        "path": "settings/workspace",
+        "nodes": {
+          "Light": "237:16887",
+          "Dark": "237:17079"
+        }
+      },
+      {
+        "path": "customers/detail",
+        "nodes": {
+          "Light": "237:17271",
+          "Dark": "237:17522"
+        }
+      },
+      {
+        "path": "imports",
+        "nodes": {
+          "Light": "237:17773",
+          "Dark": "237:17965"
+        }
+      },
+      {
+        "path": "customers",
+        "nodes": {
+          "Light": "237:18156",
+          "Dark": "237:18891"
+        }
+      },
+      {
+        "path": "settings/team",
+        "nodes": {
+          "Light": "237:19625",
+          "Dark": "237:19873"
+        }
+      }
+    ]
+  },
+  "views": [
+    {
+      "path": "",
+      "en": "Landing",
+      "es": "Presentación",
+      "group": "landing",
+      "delivery": "1.0",
+      "source": {
+        "component": "LandingTemplate",
+        "file": "src/components/templates/landing.tsx"
+      },
+      "urls": {
+        "en": "/en/",
+        "es": "/es/"
+      },
+      "figma": {
+        "node": "55:8072",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=55-8072",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "onboarding",
+      "en": "Get started",
+      "es": "Primeros pasos",
+      "group": "application",
+      "delivery": "1.2",
+      "source": {
+        "component": "OnboardingOperationsTemplate",
+        "file": "src/components/templates/saas-operations.tsx"
+      },
+      "urls": {
+        "en": "/en/onboarding/",
+        "es": "/es/onboarding/"
+      },
+      "figma": {
+        "node": "237:16692",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-16692",
+        "editable": true,
+        "status": "mapped-native-id",
+        "nodes": {
+          "Light": "237:16428",
+          "Dark": "237:16692"
+        },
+        "modeUrls": {
+          "Light": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-16428",
+          "Dark": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-16692"
+        },
+        "metadata": ".figma/native-saas-library-1.2.json"
+      }
+    },
+    {
+      "path": "settings/workspace",
+      "en": "Workspace settings",
+      "es": "Ajustes del workspace",
+      "group": "settings",
+      "delivery": "1.2",
+      "source": {
+        "component": "SettingsTemplate",
+        "file": "src/components/templates/settings.tsx"
+      },
+      "urls": {
+        "en": "/en/settings/workspace/",
+        "es": "/es/settings/workspace/"
+      },
+      "figma": {
+        "node": "237:17079",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17079",
+        "editable": true,
+        "status": "mapped-native-id",
+        "nodes": {
+          "Light": "237:16887",
+          "Dark": "237:17079"
+        },
+        "modeUrls": {
+          "Light": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-16887",
+          "Dark": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17079"
+        },
+        "metadata": ".figma/native-saas-library-1.2.json"
+      }
+    },
+    {
+      "path": "customers/detail",
+      "en": "Customer detail",
+      "es": "Detalle de cliente",
+      "group": "data",
+      "delivery": "1.2",
+      "source": {
+        "component": "CustomerRecordOperationsTemplate",
+        "file": "src/components/templates/saas-operations.tsx"
+      },
+      "urls": {
+        "en": "/en/customers/detail/",
+        "es": "/es/customers/detail/"
+      },
+      "figma": {
+        "node": "237:17522",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17522",
+        "editable": true,
+        "status": "mapped-native-id",
+        "nodes": {
+          "Light": "237:17271",
+          "Dark": "237:17522"
+        },
+        "modeUrls": {
+          "Light": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17271",
+          "Dark": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17522"
+        },
+        "metadata": ".figma/native-saas-library-1.2.json"
+      }
+    },
+    {
+      "path": "imports",
+      "en": "Import data",
+      "es": "Importar datos",
+      "group": "data",
+      "delivery": "1.2",
+      "source": {
+        "component": "CustomerImportTemplate",
+        "file": "src/components/templates/customer-import.tsx"
+      },
+      "urls": {
+        "en": "/en/imports/",
+        "es": "/es/imports/"
+      },
+      "figma": {
+        "node": "237:17965",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17965",
+        "editable": true,
+        "status": "mapped-native-id",
+        "nodes": {
+          "Light": "237:17773",
+          "Dark": "237:17965"
+        },
+        "modeUrls": {
+          "Light": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17773",
+          "Dark": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17965"
+        },
+        "metadata": ".figma/native-saas-library-1.2.json"
+      }
+    },
+    {
+      "path": "studio",
+      "en": "Appearance studio",
+      "es": "Estudio visual",
+      "group": "catalog",
+      "delivery": "1.3",
+      "source": {
+        "component": "AppearanceStudio",
+        "file": "src/components/templates/appearance-studio.tsx"
+      },
+      "urls": {
+        "en": "/en/studio/",
+        "es": "/es/studio/"
+      },
+      "figma": {
+        "node": "134:8412",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=134-8412",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "themes",
+      "en": "Palettes & materials",
+      "es": "Paletas y materiales",
+      "group": "catalog",
+      "delivery": "1.3",
+      "source": {
+        "component": "ThemesTemplate",
+        "file": "src/components/templates/appearance-gallery.tsx"
+      },
+      "urls": {
+        "en": "/en/themes/",
+        "es": "/es/themes/"
+      },
+      "figma": {
+        "node": "135:8894",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=135-8894",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "effects",
+      "en": "Effects & shaders",
+      "es": "Efectos y shaders",
+      "group": "catalog",
+      "delivery": "1.3",
+      "source": {
+        "component": "EffectsTemplate",
+        "file": "src/components/templates/appearance-gallery.tsx"
+      },
+      "urls": {
+        "en": "/en/effects/",
+        "es": "/es/effects/"
+      },
+      "figma": {
+        "node": "136:9476",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=136-9476",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "dashboard",
+      "en": "SaaS overview",
+      "es": "Resumen SaaS",
+      "group": "dashboard",
+      "delivery": "1.0",
+      "source": {
+        "component": "DashboardTemplate",
+        "file": "src/components/templates/dashboard.tsx"
+      },
+      "urls": {
+        "en": "/en/dashboard/",
+        "es": "/es/dashboard/"
+      },
+      "figma": {
+        "node": "5:2",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=5-2",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "analytics",
+      "en": "Analytics",
+      "es": "Analítica",
+      "group": "dashboard",
+      "delivery": "1.0",
+      "source": {
+        "component": "DashboardTemplate",
+        "file": "src/components/templates/dashboard.tsx"
+      },
+      "urls": {
+        "en": "/en/analytics/",
+        "es": "/es/analytics/"
+      },
+      "figma": {
+        "node": "53:494",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=53-494",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "ai",
+      "en": "AI workspace",
+      "es": "Espacio de IA",
+      "group": "ai",
+      "delivery": "1.0",
+      "source": {
+        "component": "AIWorkspace",
+        "file": "src/components/templates/ai-workspace.tsx"
+      },
+      "urls": {
+        "en": "/en/ai/",
+        "es": "/es/ai/"
+      },
+      "figma": {
+        "node": "5:4",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=5-4",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "ai/playground",
+      "en": "AI playground",
+      "es": "Laboratorio de IA",
+      "group": "ai",
+      "delivery": "1.0",
+      "source": {
+        "component": "AIWorkspace",
+        "file": "src/components/templates/ai-workspace.tsx"
+      },
+      "urls": {
+        "en": "/en/ai/playground/",
+        "es": "/es/ai/playground/"
+      },
+      "figma": {
+        "node": "53:1272",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=53-1272",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "ai/code",
+      "en": "Code assistant",
+      "es": "Asistente de código",
+      "group": "ai",
+      "delivery": "1.0",
+      "source": {
+        "component": "AIWorkspace",
+        "file": "src/components/templates/ai-workspace.tsx"
+      },
+      "urls": {
+        "en": "/en/ai/code/",
+        "es": "/es/ai/code/"
+      },
+      "figma": {
+        "node": "53:1044",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=53-1044",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "ai/images",
+      "en": "Image studio",
+      "es": "Estudio de imágenes",
+      "group": "ai",
+      "delivery": "1.3",
+      "source": {
+        "component": "StudioTemplate",
+        "file": "src/components/templates/media-studio.tsx"
+      },
+      "urls": {
+        "en": "/en/ai/images/",
+        "es": "/es/ai/images/"
+      },
+      "figma": {
+        "node": "45:6768",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6768",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "ai/video",
+      "en": "Video studio",
+      "es": "Estudio de video",
+      "group": "ai",
+      "delivery": "1.3",
+      "source": {
+        "component": "StudioTemplate",
+        "file": "src/components/templates/media-studio.tsx"
+      },
+      "urls": {
+        "en": "/en/ai/video/",
+        "es": "/es/ai/video/"
+      },
+      "figma": {
+        "node": "45:7088",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-7088",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "customers",
+      "en": "Customers",
+      "es": "Clientes",
+      "group": "data",
+      "delivery": "1.1",
+      "source": {
+        "component": "DataManager",
+        "file": "src/components/templates/data-manager.tsx"
+      },
+      "urls": {
+        "en": "/en/customers/",
+        "es": "/es/customers/"
+      },
+      "figma": {
+        "node": "237:18891",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-18891",
+        "editable": true,
+        "status": "mapped-native-id",
+        "nodes": {
+          "Light": "237:18156",
+          "Dark": "237:18891"
+        },
+        "modeUrls": {
+          "Light": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-18156",
+          "Dark": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-18891"
+        },
+        "metadata": ".figma/native-saas-library-1.2.json"
+      }
+    },
+    {
+      "path": "crm",
+      "en": "CRM overview",
+      "es": "Resumen CRM",
+      "group": "dashboard",
+      "delivery": "1.1",
+      "source": {
+        "component": "DashboardTemplate",
+        "file": "src/components/templates/dashboard.tsx"
+      },
+      "urls": {
+        "en": "/en/crm/",
+        "es": "/es/crm/"
+      },
+      "figma": {
+        "node": "39:24",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-24",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "pipeline",
+      "en": "Sales pipeline",
+      "es": "Embudo de ventas",
+      "group": "application",
+      "delivery": "1.1",
+      "source": {
+        "component": "WorkBoard",
+        "file": "src/components/templates/work-board.tsx"
+      },
+      "urls": {
+        "en": "/en/pipeline/",
+        "es": "/es/pipeline/"
+      },
+      "figma": {
+        "node": "41:4387",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-4387",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "ecommerce",
+      "en": "E-commerce",
+      "es": "Comercio electrónico",
+      "group": "dashboard",
+      "delivery": "1.1",
+      "source": {
+        "component": "DashboardTemplate",
+        "file": "src/components/templates/dashboard.tsx"
+      },
+      "urls": {
+        "en": "/en/ecommerce/",
+        "es": "/es/ecommerce/"
+      },
+      "figma": {
+        "node": "39:730",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-730",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "products",
+      "en": "Products",
+      "es": "Productos",
+      "group": "data",
+      "delivery": "1.1",
+      "source": {
+        "component": "DataManager",
+        "file": "src/components/templates/data-manager.tsx"
+      },
+      "urls": {
+        "en": "/en/products/",
+        "es": "/es/products/"
+      },
+      "figma": {
+        "node": "41:2363",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-2363",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "orders",
+      "en": "Orders",
+      "es": "Pedidos",
+      "group": "data",
+      "delivery": "1.1",
+      "source": {
+        "component": "DataManager",
+        "file": "src/components/templates/data-manager.tsx"
+      },
+      "urls": {
+        "en": "/en/orders/",
+        "es": "/es/orders/"
+      },
+      "figma": {
+        "node": "41:2816",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-2816",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "invoices",
+      "en": "Invoices",
+      "es": "Facturas",
+      "group": "data",
+      "delivery": "1.1",
+      "source": {
+        "component": "DataManager",
+        "file": "src/components/templates/data-manager.tsx"
+      },
+      "urls": {
+        "en": "/en/invoices/",
+        "es": "/es/invoices/"
+      },
+      "figma": {
+        "node": "41:3207",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-3207",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "invoice",
+      "en": "Invoice detail",
+      "es": "Detalle de factura",
+      "group": "application",
+      "delivery": "1.1",
+      "source": {
+        "component": "InvoiceTemplate",
+        "file": "src/components/templates/map-invoice.tsx"
+      },
+      "urls": {
+        "en": "/en/invoice/",
+        "es": "/es/invoice/"
+      },
+      "figma": {
+        "node": "45:6451",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6451",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "transactions",
+      "en": "Transactions",
+      "es": "Transacciones",
+      "group": "data",
+      "delivery": "1.1",
+      "source": {
+        "component": "DataManager",
+        "file": "src/components/templates/data-manager.tsx"
+      },
+      "urls": {
+        "en": "/en/transactions/",
+        "es": "/es/transactions/"
+      },
+      "figma": {
+        "node": "41:3597",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-3597",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "sales",
+      "en": "Sales",
+      "es": "Ventas",
+      "group": "dashboard",
+      "delivery": "1.1",
+      "source": {
+        "component": "DashboardTemplate",
+        "file": "src/components/templates/dashboard.tsx"
+      },
+      "urls": {
+        "en": "/en/sales/",
+        "es": "/es/sales/"
+      },
+      "figma": {
+        "node": "39:1132",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1132",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "marketing",
+      "en": "Marketing",
+      "es": "Marketing",
+      "group": "dashboard",
+      "delivery": "1.1",
+      "source": {
+        "component": "DashboardTemplate",
+        "file": "src/components/templates/dashboard.tsx"
+      },
+      "urls": {
+        "en": "/en/marketing/",
+        "es": "/es/marketing/"
+      },
+      "figma": {
+        "node": "39:1521",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1521",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "calendar",
+      "en": "Calendar",
+      "es": "Calendario",
+      "group": "application",
+      "delivery": "1.2",
+      "source": {
+        "component": "CalendarTemplate",
+        "file": "src/components/templates/calendar.tsx"
+      },
+      "urls": {
+        "en": "/en/calendar/",
+        "es": "/es/calendar/"
+      },
+      "figma": {
+        "node": "41:5151",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-5151",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "tasks",
+      "en": "Task board",
+      "es": "Tablero de tareas",
+      "group": "application",
+      "delivery": "1.2",
+      "source": {
+        "component": "WorkBoard",
+        "file": "src/components/templates/work-board.tsx"
+      },
+      "urls": {
+        "en": "/en/tasks/",
+        "es": "/es/tasks/"
+      },
+      "figma": {
+        "node": "41:3982",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-3982",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "task-list",
+      "en": "Task list",
+      "es": "Lista de tareas",
+      "group": "application",
+      "delivery": "1.2",
+      "source": {
+        "component": "WorkBoard",
+        "file": "src/components/templates/work-board.tsx"
+      },
+      "urls": {
+        "en": "/en/task-list/",
+        "es": "/es/task-list/"
+      },
+      "figma": {
+        "node": "41:4794",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-4794",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "mail",
+      "en": "Inbox",
+      "es": "Bandeja de entrada",
+      "group": "application",
+      "delivery": "1.2",
+      "source": {
+        "component": "MailTemplate",
+        "file": "src/components/templates/communication.tsx"
+      },
+      "urls": {
+        "en": "/en/mail/",
+        "es": "/es/mail/"
+      },
+      "figma": {
+        "node": "45:4589",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-4589",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "chat",
+      "en": "Team chat",
+      "es": "Chat del equipo",
+      "group": "application",
+      "delivery": "1.2",
+      "source": {
+        "component": "ChatTemplate",
+        "file": "src/components/templates/communication.tsx"
+      },
+      "urls": {
+        "en": "/en/chat/",
+        "es": "/es/chat/"
+      },
+      "figma": {
+        "node": "45:5003",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5003",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "files",
+      "en": "File manager",
+      "es": "Gestor de archivos",
+      "group": "application",
+      "delivery": "1.2",
+      "source": {
+        "component": "FilesTemplate",
+        "file": "src/components/templates/files-support.tsx"
+      },
+      "urls": {
+        "en": "/en/files/",
+        "es": "/es/files/"
+      },
+      "figma": {
+        "node": "45:5363",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5363",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "support",
+      "en": "Support tickets",
+      "es": "Solicitudes de soporte",
+      "group": "application",
+      "delivery": "1.2",
+      "source": {
+        "component": "SupportTemplate",
+        "file": "src/components/templates/files-support.tsx"
+      },
+      "urls": {
+        "en": "/en/support/",
+        "es": "/es/support/"
+      },
+      "figma": {
+        "node": "45:5707",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5707",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "maps",
+      "en": "Maps",
+      "es": "Mapas",
+      "group": "application",
+      "delivery": "1.2",
+      "source": {
+        "component": "MapsTemplate",
+        "file": "src/components/templates/map-invoice.tsx"
+      },
+      "urls": {
+        "en": "/en/maps/",
+        "es": "/es/maps/"
+      },
+      "figma": {
+        "node": "45:6076",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6076",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "logistics",
+      "en": "Logistics",
+      "es": "Logística",
+      "group": "dashboard",
+      "delivery": "1.2",
+      "source": {
+        "component": "DashboardTemplate",
+        "file": "src/components/templates/dashboard.tsx"
+      },
+      "urls": {
+        "en": "/en/logistics/",
+        "es": "/es/logistics/"
+      },
+      "figma": {
+        "node": "39:1923",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1923",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "finance",
+      "en": "Finance",
+      "es": "Finanzas",
+      "group": "dashboard",
+      "delivery": "1.3",
+      "source": {
+        "component": "DashboardTemplate",
+        "file": "src/components/templates/dashboard.tsx"
+      },
+      "urls": {
+        "en": "/en/finance/",
+        "es": "/es/finance/"
+      },
+      "figma": {
+        "node": "39:2310",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-2310",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "stocks",
+      "en": "Stocks",
+      "es": "Acciones",
+      "group": "dashboard",
+      "delivery": "1.3",
+      "source": {
+        "component": "DashboardTemplate",
+        "file": "src/components/templates/dashboard.tsx"
+      },
+      "urls": {
+        "en": "/en/stocks/",
+        "es": "/es/stocks/"
+      },
+      "figma": {
+        "node": "39:2702",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-2702",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "settings/profile",
+      "en": "Profile",
+      "es": "Perfil",
+      "group": "settings",
+      "delivery": "1.0",
+      "source": {
+        "component": "SettingsTemplate",
+        "file": "src/components/templates/settings.tsx"
+      },
+      "urls": {
+        "en": "/en/settings/profile/",
+        "es": "/es/settings/profile/"
+      },
+      "figma": {
+        "node": "48:6454",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-6454",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "settings/team",
+      "en": "Team",
+      "es": "Equipo",
+      "group": "settings",
+      "delivery": "1.0",
+      "source": {
+        "component": "SettingsTemplate",
+        "file": "src/components/templates/settings.tsx"
+      },
+      "urls": {
+        "en": "/en/settings/team/",
+        "es": "/es/settings/team/"
+      },
+      "figma": {
+        "node": "237:19873",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-19873",
+        "editable": true,
+        "status": "mapped-native-id",
+        "nodes": {
+          "Light": "237:19625",
+          "Dark": "237:19873"
+        },
+        "modeUrls": {
+          "Light": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-19625",
+          "Dark": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-19873"
+        },
+        "metadata": ".figma/native-saas-library-1.2.json"
+      }
+    },
+    {
+      "path": "settings/preferences",
+      "en": "Preferences",
+      "es": "Preferencias",
+      "group": "settings",
+      "delivery": "1.0",
+      "source": {
+        "component": "SettingsTemplate",
+        "file": "src/components/templates/settings.tsx"
+      },
+      "urls": {
+        "en": "/en/settings/preferences/",
+        "es": "/es/settings/preferences/"
+      },
+      "figma": {
+        "node": "48:7128",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7128",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "settings/billing",
+      "en": "Billing",
+      "es": "Facturación",
+      "group": "settings",
+      "delivery": "1.0",
+      "source": {
+        "component": "SettingsTemplate",
+        "file": "src/components/templates/settings.tsx"
+      },
+      "urls": {
+        "en": "/en/settings/billing/",
+        "es": "/es/settings/billing/"
+      },
+      "figma": {
+        "node": "48:7437",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7437",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "settings/api-keys",
+      "en": "API keys",
+      "es": "Claves API",
+      "group": "settings",
+      "delivery": "1.0",
+      "source": {
+        "component": "SettingsTemplate",
+        "file": "src/components/templates/settings.tsx"
+      },
+      "urls": {
+        "en": "/en/settings/api-keys/",
+        "es": "/es/settings/api-keys/"
+      },
+      "figma": {
+        "node": "48:7753",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7753",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "settings/integrations",
+      "en": "Integrations",
+      "es": "Integraciones",
+      "group": "settings",
+      "delivery": "1.0",
+      "source": {
+        "component": "SettingsTemplate",
+        "file": "src/components/templates/settings.tsx"
+      },
+      "urls": {
+        "en": "/en/settings/integrations/",
+        "es": "/es/settings/integrations/"
+      },
+      "figma": {
+        "node": "48:8021",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-8021",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "components",
+      "en": "Components",
+      "es": "Componentes",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "ComponentsTemplate",
+        "file": "src/components/templates/components.tsx"
+      },
+      "urls": {
+        "en": "/en/components/",
+        "es": "/es/components/"
+      },
+      "figma": {
+        "node": "59:2549",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-2549",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "forms",
+      "en": "Form patterns",
+      "es": "Patrones de formularios",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "FormsTemplate",
+        "file": "src/components/templates/forms.tsx"
+      },
+      "urls": {
+        "en": "/en/forms/",
+        "es": "/es/forms/"
+      },
+      "figma": {
+        "node": "59:2725",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-2725",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "charts",
+      "en": "Chart gallery",
+      "es": "Galería de gráficos",
+      "group": "catalog",
+      "delivery": "1.3",
+      "source": {
+        "component": "ChartsTemplate",
+        "file": "src/components/templates/catalogs.tsx"
+      },
+      "urls": {
+        "en": "/en/charts/",
+        "es": "/es/charts/"
+      },
+      "figma": {
+        "node": "59:2901",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-2901",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "media",
+      "en": "Media & carousels",
+      "es": "Medios y carruseles",
+      "group": "catalog",
+      "delivery": "1.3",
+      "source": {
+        "component": "MediaTemplate",
+        "file": "src/components/templates/media-studio.tsx"
+      },
+      "urls": {
+        "en": "/en/media/",
+        "es": "/es/media/"
+      },
+      "figma": {
+        "node": "59:3077",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3077",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "layouts",
+      "en": "Layout gallery",
+      "es": "Galería de layouts",
+      "group": "catalog",
+      "delivery": "1.3",
+      "source": {
+        "component": "LayoutsTemplate",
+        "file": "src/components/templates/catalogs.tsx"
+      },
+      "urls": {
+        "en": "/en/layouts/",
+        "es": "/es/layouts/"
+      },
+      "figma": {
+        "node": "59:3253",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3253",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "blocks",
+      "en": "Blocks",
+      "es": "Bloques",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "BlocksTemplate",
+        "file": "src/components/templates/catalogs.tsx"
+      },
+      "urls": {
+        "en": "/en/blocks/",
+        "es": "/es/blocks/"
+      },
+      "figma": {
+        "node": "59:3429",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3429",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "templates",
+      "en": "Templates",
+      "es": "Plantillas",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "TemplatesTemplate",
+        "file": "src/components/templates/catalogs.tsx"
+      },
+      "urls": {
+        "en": "/en/templates/",
+        "es": "/es/templates/"
+      },
+      "figma": {
+        "node": "59:3605",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3605",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "docs",
+      "en": "Getting started",
+      "es": "Primeros pasos",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "DocsTemplate",
+        "file": "src/components/templates/docs.tsx"
+      },
+      "urls": {
+        "en": "/en/docs/",
+        "es": "/es/docs/"
+      },
+      "figma": {
+        "node": "54:1108",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-1108",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "docs/tokens",
+      "en": "Design tokens",
+      "es": "Tokens de diseño",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "DocsTemplate",
+        "file": "src/components/templates/docs.tsx"
+      },
+      "urls": {
+        "en": "/en/docs/tokens/",
+        "es": "/es/docs/tokens/"
+      },
+      "figma": {
+        "node": "54:1451",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-1451",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "docs/cli",
+      "en": "CLI & registry",
+      "es": "CLI y registro",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "DocsTemplate",
+        "file": "src/components/templates/docs.tsx"
+      },
+      "urls": {
+        "en": "/en/docs/cli/",
+        "es": "/es/docs/cli/"
+      },
+      "figma": {
+        "node": "54:1764",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-1764",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "docs/figma",
+      "en": "Figma & Code Connect",
+      "es": "Figma y Code Connect",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "DocsTemplate",
+        "file": "src/components/templates/docs.tsx"
+      },
+      "urls": {
+        "en": "/en/docs/figma/",
+        "es": "/es/docs/figma/"
+      },
+      "figma": {
+        "node": "54:2045",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-2045",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "docs/adapters",
+      "en": "Demo adapters",
+      "es": "Adaptadores de demostración",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "DocsTemplate",
+        "file": "src/components/templates/docs.tsx"
+      },
+      "urls": {
+        "en": "/en/docs/adapters/",
+        "es": "/es/docs/adapters/"
+      },
+      "figma": {
+        "node": "54:2325",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-2325",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "docs/accessibility",
+      "en": "Accessibility",
+      "es": "Accesibilidad",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "DocsTemplate",
+        "file": "src/components/templates/docs.tsx"
+      },
+      "urls": {
+        "en": "/en/docs/accessibility/",
+        "es": "/es/docs/accessibility/"
+      },
+      "figma": {
+        "node": "54:2600",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-2600",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "docs/license",
+      "en": "Apache 2.0 license",
+      "es": "Licencia Apache 2.0",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "DocsTemplate",
+        "file": "src/components/templates/docs.tsx"
+      },
+      "urls": {
+        "en": "/en/docs/license/",
+        "es": "/es/docs/license/"
+      },
+      "figma": {
+        "node": "54:2873",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-2873",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "docs/roadmap",
+      "en": "Suite coverage",
+      "es": "Cobertura de la suite",
+      "group": "catalog",
+      "delivery": "1.0",
+      "source": {
+        "component": "DocsTemplate",
+        "file": "src/components/templates/docs.tsx"
+      },
+      "urls": {
+        "en": "/en/docs/roadmap/",
+        "es": "/es/docs/roadmap/"
+      },
+      "figma": {
+        "node": "54:3151",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-3151",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "pricing",
+      "en": "Pricing demo",
+      "es": "Demo de precios",
+      "group": "auxiliary",
+      "delivery": "1.0",
+      "source": {
+        "component": "PricingTemplate",
+        "file": "src/components/templates/auxiliary.tsx"
+      },
+      "urls": {
+        "en": "/en/pricing/",
+        "es": "/es/pricing/"
+      },
+      "figma": {
+        "node": "55:7541",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=55-7541",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "faq",
+      "en": "Frequently asked questions",
+      "es": "Preguntas frecuentes",
+      "group": "auxiliary",
+      "delivery": "1.0",
+      "source": {
+        "component": "FAQTemplate",
+        "file": "src/components/templates/auxiliary.tsx"
+      },
+      "urls": {
+        "en": "/en/faq/",
+        "es": "/es/faq/"
+      },
+      "figma": {
+        "node": "55:7856",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=55-7856",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "auth/sign-in",
+      "en": "Sign in",
+      "es": "Iniciar sesión",
+      "group": "auth",
+      "delivery": "1.0",
+      "source": {
+        "component": "AuthTemplate",
+        "file": "src/components/templates/auth.tsx"
+      },
+      "urls": {
+        "en": "/en/auth/sign-in/",
+        "es": "/es/auth/sign-in/"
+      },
+      "figma": {
+        "node": "52:7472",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7472",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "auth/sign-up",
+      "en": "Create account",
+      "es": "Crear cuenta",
+      "group": "auth",
+      "delivery": "1.0",
+      "source": {
+        "component": "AuthTemplate",
+        "file": "src/components/templates/auth.tsx"
+      },
+      "urls": {
+        "en": "/en/auth/sign-up/",
+        "es": "/es/auth/sign-up/"
+      },
+      "figma": {
+        "node": "52:7509",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7509",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "auth/reset-password",
+      "en": "Reset password",
+      "es": "Restablecer contraseña",
+      "group": "auth",
+      "delivery": "1.0",
+      "source": {
+        "component": "AuthTemplate",
+        "file": "src/components/templates/auth.tsx"
+      },
+      "urls": {
+        "en": "/en/auth/reset-password/",
+        "es": "/es/auth/reset-password/"
+      },
+      "figma": {
+        "node": "52:7551",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7551",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "auth/verify",
+      "en": "Verify code",
+      "es": "Verificar código",
+      "group": "auth",
+      "delivery": "1.0",
+      "source": {
+        "component": "AuthTemplate",
+        "file": "src/components/templates/auth.tsx"
+      },
+      "urls": {
+        "en": "/en/auth/verify/",
+        "es": "/es/auth/verify/"
+      },
+      "figma": {
+        "node": "52:7581",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7581",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "status/not-found",
+      "en": "Page not found",
+      "es": "Página no encontrada",
+      "group": "auxiliary",
+      "delivery": "1.3",
+      "source": {
+        "component": "StatusTemplate",
+        "file": "src/components/templates/auxiliary.tsx"
+      },
+      "urls": {
+        "en": "/en/status/not-found/",
+        "es": "/es/status/not-found/"
+      },
+      "figma": {
+        "node": "52:7622",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7622",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "status/error",
+      "en": "Something went wrong",
+      "es": "Algo salió mal",
+      "group": "auxiliary",
+      "delivery": "1.3",
+      "source": {
+        "component": "StatusTemplate",
+        "file": "src/components/templates/auxiliary.tsx"
+      },
+      "urls": {
+        "en": "/en/status/error/",
+        "es": "/es/status/error/"
+      },
+      "figma": {
+        "node": "52:7650",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7650",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "status/maintenance",
+      "en": "Under maintenance",
+      "es": "En mantenimiento",
+      "group": "auxiliary",
+      "delivery": "1.3",
+      "source": {
+        "component": "StatusTemplate",
+        "file": "src/components/templates/auxiliary.tsx"
+      },
+      "urls": {
+        "en": "/en/status/maintenance/",
+        "es": "/es/status/maintenance/"
+      },
+      "figma": {
+        "node": "52:7684",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7684",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "status/coming-soon",
+      "en": "Coming soon",
+      "es": "Próximamente",
+      "group": "auxiliary",
+      "delivery": "1.3",
+      "source": {
+        "component": "StatusTemplate",
+        "file": "src/components/templates/auxiliary.tsx"
+      },
+      "urls": {
+        "en": "/en/status/coming-soon/",
+        "es": "/es/status/coming-soon/"
+      },
+      "figma": {
+        "node": "52:7713",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7713",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    },
+    {
+      "path": "status/success",
+      "en": "All set",
+      "es": "Todo listo",
+      "group": "auxiliary",
+      "delivery": "1.3",
+      "source": {
+        "component": "StatusTemplate",
+        "file": "src/components/templates/auxiliary.tsx"
+      },
+      "urls": {
+        "en": "/en/status/success/",
+        "es": "/es/status/success/"
+      },
+      "figma": {
+        "node": "52:7751",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7751",
+        "editable": true,
+        "status": "mapped-native-id"
+      }
+    }
+  ],
+  "components": [
+    {
+      "family": "Button",
+      "source": "src/components/ui/button.tsx",
+      "example": "examples/components/Button.tsx",
+      "demo": "/en/components/#dialog-Button",
+      "figma": {
+        "node": "3:113",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-113",
+        "axes": {
+          "Style": [
+            "Primary",
+            "Outline",
+            "Ghost"
+          ],
+          "Size": [
+            "Small",
+            "Medium",
+            "Large"
+          ],
+          "State": [
+            "Default",
+            "Hover",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Button.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "ButtonGroup",
+      "source": "src/components/ui/button-group.tsx",
+      "example": "examples/components/ButtonGroup.tsx",
+      "demo": "/en/components/#dialog-ButtonGroup",
+      "figma": {
+        "node": "23:97",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-97",
+        "axes": {
+          "State": [
+            "Default",
+            "Selected",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/ButtonGroup.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "TextLink",
+      "source": "src/components/ui/link.tsx",
+      "example": "examples/components/TextLink.tsx",
+      "demo": "/en/components/#dialog-TextLink",
+      "figma": {
+        "node": "23:110",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-110",
+        "axes": {
+          "State": [
+            "Default",
+            "Hover",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/TextLink.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Breadcrumb",
+      "source": "src/components/ui/breadcrumb.tsx",
+      "example": "examples/components/Breadcrumb.tsx",
+      "demo": "/en/components/#dialog-Breadcrumb",
+      "figma": {
+        "node": "23:119",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-119",
+        "axes": {
+          "State": [
+            "Default",
+            "Long labels"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Breadcrumb.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Pagination",
+      "source": "src/components/ui/pagination.tsx",
+      "example": "examples/components/Pagination.tsx",
+      "demo": "/en/components/#dialog-Pagination",
+      "figma": {
+        "node": "23:183",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-183",
+        "axes": {
+          "State": [
+            "First",
+            "Middle",
+            "Last"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Pagination.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Tabs",
+      "source": "src/components/ui/tabs.tsx",
+      "example": "examples/components/Tabs.tsx",
+      "demo": "/en/components/#dialog-Tabs",
+      "figma": {
+        "node": "23:217",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-217",
+        "axes": {
+          "State": [
+            "Overview",
+            "Details",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Tabs.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Sidebar",
+      "source": "src/components/ui/sidebar.tsx",
+      "example": "examples/components/Sidebar.tsx",
+      "demo": "/en/components/#dialog-Sidebar",
+      "figma": {
+        "node": "23:282",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-282",
+        "axes": {
+          "State": [
+            "Expanded",
+            "Compact"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Sidebar.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Command",
+      "source": "src/components/ui/command.tsx",
+      "example": "examples/components/Command.tsx",
+      "demo": "/en/components/#dialog-Command",
+      "figma": {
+        "node": "23:320",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-320",
+        "axes": {
+          "State": [
+            "Results",
+            "Empty"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Command.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Input",
+      "source": "src/components/ui/input.tsx",
+      "example": "examples/components/Input.tsx",
+      "demo": "/en/components/#dialog-Input",
+      "figma": {
+        "node": "3:133",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-133",
+        "axes": {
+          "State": [
+            "Empty",
+            "Focus",
+            "Error",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Input.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Field",
+      "source": "src/components/ui/field.tsx",
+      "example": "examples/components/Field.tsx",
+      "demo": "/en/components/#dialog-Field",
+      "figma": {
+        "node": "15:78",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-78",
+        "axes": {
+          "State": [
+            "Default",
+            "Error"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Field.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Textarea",
+      "source": "src/components/ui/textarea.tsx",
+      "example": "examples/components/Textarea.tsx",
+      "demo": "/en/components/#dialog-Textarea",
+      "figma": {
+        "node": "15:67",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-67",
+        "axes": {
+          "State": [
+            "Default",
+            "Focus",
+            "Error",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Textarea.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Select",
+      "source": "src/components/ui/select.tsx",
+      "example": "examples/components/Select.tsx",
+      "demo": "/en/components/#dialog-Select",
+      "figma": {
+        "node": "15:98",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-98",
+        "axes": {
+          "State": [
+            "Closed",
+            "Open",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Select.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Combobox",
+      "source": "src/components/ui/combobox.tsx",
+      "example": "examples/components/Combobox.tsx",
+      "demo": "/en/components/#dialog-Combobox",
+      "figma": {
+        "node": "15:124",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-124",
+        "axes": {
+          "State": [
+            "Closed",
+            "Open",
+            "Empty",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Combobox.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "MultiSelect",
+      "source": "src/components/ui/multi-select.tsx",
+      "example": "examples/components/MultiSelect.tsx",
+      "demo": "/en/components/#dialog-MultiSelect",
+      "figma": {
+        "node": "15:150",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-150",
+        "axes": {
+          "State": [
+            "Empty",
+            "Selected",
+            "Open",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/MultiSelect.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Checkbox",
+      "source": "src/components/ui/checkbox.tsx",
+      "example": "examples/components/Checkbox.tsx",
+      "demo": "/en/components/#dialog-Checkbox",
+      "figma": {
+        "node": "15:14",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-14",
+        "axes": {
+          "State": [
+            "Unchecked",
+            "Checked",
+            "Mixed",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Checkbox.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "RadioGroup",
+      "source": "src/components/ui/radio-group.tsx",
+      "example": "examples/components/RadioGroup.tsx",
+      "demo": "/en/components/#dialog-RadioGroup",
+      "figma": {
+        "node": "15:44",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-44",
+        "axes": {
+          "State": [
+            "Default",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/RadioGroup.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Switch",
+      "source": "src/components/ui/switch.tsx",
+      "example": "examples/components/Switch.tsx",
+      "demo": "/en/components/#dialog-Switch",
+      "figma": {
+        "node": "15:21",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-21",
+        "axes": {
+          "State": [
+            "Off",
+            "On",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Switch.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Slider",
+      "source": "src/components/ui/slider.tsx",
+      "example": "examples/components/Slider.tsx",
+      "demo": "/en/components/#dialog-Slider",
+      "figma": {
+        "node": "15:53",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-53",
+        "axes": {
+          "State": [
+            "Default",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Slider.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "DatePicker",
+      "source": "src/components/ui/date-picker.tsx",
+      "example": "examples/components/DatePicker.tsx",
+      "demo": "/en/components/#dialog-DatePicker",
+      "figma": {
+        "node": "15:242",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-242",
+        "axes": {
+          "State": [
+            "Closed",
+            "Open"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/DatePicker.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "DateRangePicker",
+      "source": "src/components/ui/date-picker.tsx",
+      "example": "examples/components/DateRangePicker.tsx",
+      "demo": "/en/components/#dialog-DateRangePicker",
+      "figma": {
+        "node": "15:334",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-334",
+        "axes": {
+          "State": [
+            "Closed",
+            "Open"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/DateRangePicker.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "InputOTP",
+      "source": "src/components/ui/input-otp.tsx",
+      "example": "examples/components/InputOTP.tsx",
+      "demo": "/en/components/#dialog-InputOTP",
+      "figma": {
+        "node": "15:387",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-387",
+        "axes": {
+          "State": [
+            "Empty",
+            "Filled",
+            "Error",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/InputOTP.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "FileUpload",
+      "source": "src/components/ui/file-upload.tsx",
+      "example": "examples/components/FileUpload.tsx",
+      "demo": "/en/components/#dialog-FileUpload",
+      "figma": {
+        "node": "15:412",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-412",
+        "axes": {
+          "State": [
+            "Empty",
+            "Uploaded",
+            "Error",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/FileUpload.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Card",
+      "source": "src/components/ui/card.tsx",
+      "example": "examples/components/Card.tsx",
+      "demo": "/en/components/#dialog-Card",
+      "figma": {
+        "node": "23:335",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-335",
+        "axes": {
+          "State": [
+            "Default",
+            "With actions"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Card.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Avatar",
+      "source": "src/components/ui/avatar.tsx",
+      "example": "examples/components/Avatar.tsx",
+      "demo": "/en/components/#dialog-Avatar",
+      "figma": {
+        "node": "3:149",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-149",
+        "axes": {
+          "Size": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Avatar.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Badge",
+      "source": "src/components/ui/badge.tsx",
+      "example": "examples/components/Badge.tsx",
+      "demo": "/en/components/#dialog-Badge",
+      "figma": {
+        "node": "3:124",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-124",
+        "axes": {
+          "Tone": [
+            "Success",
+            "Neutral",
+            "Warning",
+            "Destructive",
+            "Outline"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Badge.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Table",
+      "source": "src/components/ui/table.tsx",
+      "example": "examples/components/Table.tsx",
+      "demo": "/en/components/#dialog-Table",
+      "figma": {
+        "node": "23:355",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-355",
+        "axes": {
+          "State": [
+            "Default",
+            "Empty"
+          ],
+          "Appearance": [
+            "Elevated",
+            "Glass",
+            "Gradient",
+            "Flat"
+          ],
+          "Density": [
+            "Comfortable",
+            "Compact"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Table.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "DataTable",
+      "source": "src/components/ui/data-table.tsx",
+      "example": "examples/components/DataTable.tsx",
+      "demo": "/en/components/#dialog-DataTable",
+      "figma": {
+        "node": "23:443",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-443",
+        "axes": {
+          "State": [
+            "Default",
+            "Selected",
+            "Empty",
+            "Loading",
+            "Error"
+          ],
+          "Appearance": [
+            "Elevated",
+            "Glass",
+            "Gradient",
+            "Flat"
+          ],
+          "Density": [
+            "Comfortable",
+            "Compact"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/DataTable.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Chart",
+      "source": "src/components/ui/chart.tsx",
+      "example": "examples/components/Chart.tsx",
+      "demo": "/en/components/#dialog-Chart",
+      "figma": {
+        "node": "23:501",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-501",
+        "axes": {
+          "Kind": [
+            "Area",
+            "Line",
+            "Bar",
+            "Donut",
+            "Radar",
+            "Radial",
+            "HorizontalBar",
+            "StackedBar",
+            "StackedArea",
+            "DivergingBar",
+            "Gauge",
+            "Rings",
+            "Heatmap"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Chart.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Alert",
+      "source": "src/components/ui/alert.tsx",
+      "example": "examples/components/Alert.tsx",
+      "demo": "/en/components/#dialog-Alert",
+      "figma": {
+        "node": "24:363",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-363",
+        "axes": {
+          "State": [
+            "Info",
+            "Success",
+            "Warning",
+            "Destructive"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Alert.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Toast",
+      "source": "src/components/ui/toast.tsx",
+      "example": "examples/components/Toast.tsx",
+      "demo": "/en/components/#dialog-Toast",
+      "figma": {
+        "node": "24:373",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-373",
+        "axes": {
+          "State": [
+            "Success",
+            "Error",
+            "Loading"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Toast.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Tooltip",
+      "source": "src/components/ui/tooltip.tsx",
+      "example": "examples/components/Tooltip.tsx",
+      "demo": "/en/components/#dialog-Tooltip",
+      "figma": {
+        "node": "24:387",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-387",
+        "axes": {
+          "State": [
+            "Open",
+            "Closed"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Tooltip.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Popover",
+      "source": "src/components/ui/popover.tsx",
+      "example": "examples/components/Popover.tsx",
+      "demo": "/en/components/#dialog-Popover",
+      "figma": {
+        "node": "24:403",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-403",
+        "axes": {
+          "State": [
+            "Open",
+            "Closed"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Popover.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Dialog",
+      "source": "src/components/ui/dialog.tsx",
+      "example": "examples/components/Dialog.tsx",
+      "demo": "/en/components/#dialog-Dialog",
+      "figma": {
+        "node": "24:437",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-437",
+        "axes": {
+          "State": [
+            "Open",
+            "Destructive",
+            "Closed"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Dialog.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Drawer",
+      "source": "src/components/ui/drawer.tsx",
+      "example": "examples/components/Drawer.tsx",
+      "demo": "/en/components/#dialog-Drawer",
+      "figma": {
+        "node": "24:457",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-457",
+        "axes": {
+          "State": [
+            "Open",
+            "Closed"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Drawer.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "DropdownMenu",
+      "source": "src/components/ui/dropdown-menu.tsx",
+      "example": "examples/components/DropdownMenu.tsx",
+      "demo": "/en/components/#dialog-DropdownMenu",
+      "figma": {
+        "node": "24:480",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-480",
+        "axes": {
+          "State": [
+            "Open",
+            "Disabled"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/DropdownMenu.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Progress",
+      "source": "src/components/ui/progress.tsx",
+      "example": "examples/components/Progress.tsx",
+      "demo": "/en/components/#dialog-Progress",
+      "figma": {
+        "node": "24:492",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-492",
+        "axes": {
+          "State": [
+            "64",
+            "0",
+            "100"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Progress.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Spinner",
+      "source": "src/components/ui/spinner.tsx",
+      "example": "examples/components/Spinner.tsx",
+      "demo": "/en/components/#dialog-Spinner",
+      "figma": {
+        "node": "24:501",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-501",
+        "axes": {
+          "State": [
+            "Small",
+            "Medium"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Spinner.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Skeleton",
+      "source": "src/components/ui/skeleton.tsx",
+      "example": "examples/components/Skeleton.tsx",
+      "demo": "/en/components/#dialog-Skeleton",
+      "figma": {
+        "node": "24:512",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-512",
+        "axes": {
+          "State": [
+            "Text",
+            "Card"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Skeleton.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Empty",
+      "source": "src/components/ui/empty.tsx",
+      "example": "examples/components/Empty.tsx",
+      "demo": "/en/components/#dialog-Empty",
+      "figma": {
+        "node": "24:531",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-531",
+        "axes": {
+          "State": [
+            "Initial",
+            "Search"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Empty.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Accordion",
+      "source": "src/components/ui/accordion.tsx",
+      "example": "examples/components/Accordion.tsx",
+      "demo": "/en/components/#dialog-Accordion",
+      "figma": {
+        "node": "24:537",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-537",
+        "axes": {
+          "State": [
+            "Expanded",
+            "Collapsed"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Accordion.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Carousel",
+      "source": "src/components/ui/carousel.tsx",
+      "example": "examples/components/Carousel.tsx",
+      "demo": "/en/components/#dialog-Carousel",
+      "figma": {
+        "node": "25:511",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-511",
+        "axes": {
+          "State": [
+            "First",
+            "Middle",
+            "Last"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Carousel.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Gallery",
+      "source": "src/components/ui/gallery.tsx",
+      "example": "examples/components/Gallery.tsx",
+      "demo": "/en/components/#dialog-Gallery",
+      "figma": {
+        "node": "25:585",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-585",
+        "axes": {
+          "State": [
+            "Grid",
+            "Lightbox"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Gallery.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "VideoPlayer",
+      "source": "src/components/ui/video-player.tsx",
+      "example": "examples/components/VideoPlayer.tsx",
+      "demo": "/en/components/#dialog-VideoPlayer",
+      "figma": {
+        "node": "25:638",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-638",
+        "axes": {
+          "State": [
+            "Paused",
+            "Playing",
+            "Unavailable"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/VideoPlayer.figma.ts",
+        "status": "local-unpublished"
+      }
+    },
+    {
+      "family": "Ribbon",
+      "source": "src/components/ui/ribbon.tsx",
+      "example": "examples/components/Ribbon.tsx",
+      "demo": "/en/components/#dialog-Ribbon",
+      "figma": {
+        "node": "25:645",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-645",
+        "axes": {
+          "State": [
+            "Primary",
+            "Subtle",
+            "Warning"
+          ]
+        }
+      },
+      "codeConnect": {
+        "file": ".figma/code-connect/Ribbon.figma.ts",
+        "status": "local-unpublished"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "export": "AIComposer",
+      "source": "src/components/blocks/ai-composer.tsx",
+      "registry": "ai-composer",
+      "figma": {
+        "node": "6:118",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-118",
+        "axes": {},
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/AIComposer.figma.ts"
+    },
+    {
+      "export": "CustomerTable",
+      "source": "src/components/blocks/customer-table.tsx",
+      "registry": "customer-table",
+      "figma": {
+        "node": "6:51",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-51",
+        "axes": {},
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/CustomerTable.figma.ts"
+    },
+    {
+      "export": "DashboardShell",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "registry": "dashboard-shell",
+      "figma": {
+        "node": "30:969",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=30-969",
+        "axes": {
+          "Layout": [
+            "Sidebar",
+            "Compact",
+            "Topbar",
+            "Split",
+            "Centered",
+            "Floating"
+          ]
+        },
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/DashboardShell.figma.ts"
+    },
+    {
+      "export": "DataWorkbench",
+      "source": "src/components/blocks/data-workbench.tsx",
+      "registry": "data-workbench",
+      "figma": {
+        "node": "228:1851",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-1851",
+        "setId": "228:3644",
+        "axes": {
+          "State": [
+            "Default",
+            "Filtered",
+            "Loading",
+            "Error",
+            "Empty"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "nativeName": "DataWorkbench",
+        "status": "mapped-direct-native-id",
+        "metadata": ".figma/native-saas-library-1.2.json",
+        "associations": [
+          {
+            "nativeName": "DataWorkbench",
+            "setId": "228:3644",
+            "defaultId": "228:1851",
+            "variants": 10,
+            "source": "src/components/blocks/data-workbench.tsx",
+            "export": "DataWorkbench",
+            "axes": {
+              "State": [
+                "Default",
+                "Filtered",
+                "Loading",
+                "Error",
+                "Empty"
+              ],
+              "Theme": [
+                "Light",
+                "Dark"
+              ]
+            },
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-1851"
+          }
+        ]
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "ImportWizard",
+      "source": "src/components/blocks/import-wizard.tsx",
+      "registry": "import-wizard",
+      "figma": {
+        "node": "228:3645",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-3645",
+        "setId": "228:4134",
+        "axes": {
+          "State": [
+            "File",
+            "Mapping",
+            "Preview",
+            "Review",
+            "Complete",
+            "Invalid"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "nativeName": "ImportWizard",
+        "status": "mapped-direct-native-id",
+        "metadata": ".figma/native-saas-library-1.2.json",
+        "associations": [
+          {
+            "nativeName": "ImportWizard",
+            "setId": "228:4134",
+            "defaultId": "228:3645",
+            "variants": 12,
+            "source": "src/components/blocks/import-wizard.tsx",
+            "export": "ImportWizard",
+            "axes": {
+              "State": [
+                "File",
+                "Mapping",
+                "Preview",
+                "Review",
+                "Complete",
+                "Invalid"
+              ],
+              "Theme": [
+                "Light",
+                "Dark"
+              ]
+            },
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-3645"
+          }
+        ]
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "MemberManagement",
+      "source": "src/components/blocks/member-management.tsx",
+      "registry": "member-management",
+      "figma": {
+        "node": "225:2069",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-2069",
+        "setId": "225:2482",
+        "axes": {
+          "State": [
+            "Default",
+            "Empty",
+            "Read-only",
+            "Confirm"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "nativeName": "MemberManagement",
+        "status": "mapped-direct-native-id",
+        "metadata": ".figma/native-saas-library-1.2.json",
+        "associations": [
+          {
+            "nativeName": "MemberManagement",
+            "setId": "225:2482",
+            "defaultId": "225:2069",
+            "variants": 8,
+            "source": "src/components/blocks/member-management.tsx",
+            "export": "MemberManagement",
+            "axes": {
+              "State": [
+                "Default",
+                "Empty",
+                "Read-only",
+                "Confirm"
+              ],
+              "Theme": [
+                "Light",
+                "Dark"
+              ]
+            },
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-2069"
+          }
+        ]
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "MetricCard",
+      "source": "src/components/blocks/metric-card.tsx",
+      "registry": "metric-card",
+      "figma": {
+        "node": "3:160",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-160",
+        "axes": {
+          "Trend": [
+            "Positive",
+            "Negative"
+          ]
+        },
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/MetricCard.figma.ts"
+    },
+    {
+      "export": "OnboardingFlow",
+      "source": "src/components/blocks/onboarding-flow.tsx",
+      "registry": "onboarding-flow",
+      "figma": {
+        "node": "225:1709",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-1709",
+        "setId": "225:2068",
+        "axes": {
+          "State": [
+            "Organization",
+            "Workspace",
+            "Invitations",
+            "Ready",
+            "Complete"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "nativeName": "OnboardingFlow",
+        "status": "mapped-direct-native-id",
+        "metadata": ".figma/native-saas-library-1.2.json",
+        "associations": [
+          {
+            "nativeName": "OnboardingFlow",
+            "setId": "225:2068",
+            "defaultId": "225:1709",
+            "variants": 10,
+            "source": "src/components/blocks/onboarding-flow.tsx",
+            "export": "OnboardingFlow",
+            "axes": {
+              "State": [
+                "Organization",
+                "Workspace",
+                "Invitations",
+                "Ready",
+                "Complete"
+              ],
+              "Theme": [
+                "Light",
+                "Dark"
+              ]
+            },
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-1709"
+          }
+        ]
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "PageHeading",
+      "source": "src/components/blocks/page-heading.tsx",
+      "registry": "page-heading",
+      "figma": {
+        "node": "29:142",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=29-142",
+        "axes": {
+          "State": [
+            "Standard",
+            "Editorial"
+          ]
+        },
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/PageHeading.figma.ts"
+    },
+    {
+      "export": "PlanBreakdown",
+      "source": "src/components/blocks/plan-breakdown.tsx",
+      "registry": "plan-breakdown",
+      "figma": {
+        "node": "6:33",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-33",
+        "axes": {},
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/PlanBreakdown.figma.ts"
+    },
+    {
+      "export": "RowActions",
+      "source": "src/components/blocks/record-actions.tsx",
+      "registry": "record-actions",
+      "figma": {
+        "node": "232:3940",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=232-3940",
+        "setId": "232:3989",
+        "axes": {
+          "State": [
+            "Default",
+            "Read-only"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "nativeName": "RowActions",
+        "status": "mapped-direct-native-id",
+        "metadata": ".figma/native-saas-library-1.2.json",
+        "associations": [
+          {
+            "nativeName": "RowActions",
+            "setId": "232:3989",
+            "defaultId": "232:3940",
+            "variants": 4,
+            "source": "src/components/blocks/record-actions.tsx",
+            "export": "RowActions",
+            "axes": {
+              "State": [
+                "Default",
+                "Read-only"
+              ],
+              "Theme": [
+                "Light",
+                "Dark"
+              ]
+            },
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=232-3940"
+          }
+        ]
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "DeleteDialog",
+      "source": "src/components/blocks/record-actions.tsx",
+      "registry": "record-actions",
+      "figma": {
+        "node": "232:3990",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=232-3990",
+        "setId": "232:4040",
+        "axes": {
+          "State": [
+            "Confirm",
+            "Error"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "nativeName": "DeleteDialog",
+        "status": "mapped-direct-native-id",
+        "metadata": ".figma/native-saas-library-1.2.json",
+        "associations": [
+          {
+            "nativeName": "DeleteDialog",
+            "setId": "232:4040",
+            "defaultId": "232:3990",
+            "variants": 4,
+            "source": "src/components/blocks/record-actions.tsx",
+            "export": "DeleteDialog",
+            "axes": {
+              "State": [
+                "Confirm",
+                "Error"
+              ],
+              "Theme": [
+                "Light",
+                "Dark"
+              ]
+            },
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=232-3990"
+          }
+        ]
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "GenericRecordDetail",
+      "source": "src/components/blocks/record-detail.tsx",
+      "registry": "record-detail",
+      "figma": {
+        "node": "228:4135",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-4135",
+        "setId": "228:4817",
+        "axes": {
+          "State": [
+            "Summary",
+            "Activity",
+            "Notes",
+            "Files",
+            "Related",
+            "Not-found"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "nativeName": "RecordDetail",
+        "status": "mapped-direct-native-id",
+        "metadata": ".figma/native-saas-library-1.2.json",
+        "associations": [
+          {
+            "nativeName": "RecordDetail",
+            "setId": "228:4817",
+            "defaultId": "228:4135",
+            "variants": 12,
+            "source": "src/components/blocks/record-detail.tsx",
+            "export": "GenericRecordDetail",
+            "axes": {
+              "State": [
+                "Summary",
+                "Activity",
+                "Notes",
+                "Files",
+                "Related",
+                "Not-found"
+              ],
+              "Theme": [
+                "Light",
+                "Dark"
+              ]
+            },
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=228-4135"
+          }
+        ]
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "RevenuePanel",
+      "source": "src/components/blocks/revenue-panel.tsx",
+      "registry": "revenue-panel",
+      "figma": {
+        "node": "6:2",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-2",
+        "axes": {},
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/RevenuePanel.figma.ts"
+    },
+    {
+      "export": "RouteMap",
+      "source": "src/components/blocks/route-map.tsx",
+      "registry": "route-map",
+      "figma": {
+        "node": "31:1609",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=31-1609",
+        "axes": {},
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/RouteMap.figma.ts"
+    },
+    {
+      "export": "TableToolbar",
+      "source": "src/components/blocks/table-toolbar.tsx",
+      "registry": "table-toolbar",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "WorkspaceStatus",
+      "source": "src/components/blocks/workspace-status.tsx",
+      "registry": "workspace-status",
+      "figma": {
+        "node": "225:1615",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-1615",
+        "setId": "225:1708",
+        "axes": {
+          "State": [
+            "Owner",
+            "Viewer",
+            "Storage-error"
+          ],
+          "Theme": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "nativeName": "WorkspaceStatus",
+        "status": "mapped-direct-native-id",
+        "metadata": ".figma/native-saas-library-1.2.json",
+        "associations": [
+          {
+            "nativeName": "WorkspaceStatus",
+            "setId": "225:1708",
+            "defaultId": "225:1615",
+            "variants": 6,
+            "source": "src/components/blocks/workspace-status.tsx",
+            "export": "WorkspaceStatus",
+            "axes": {
+              "State": [
+                "Owner",
+                "Viewer",
+                "Storage-error"
+              ],
+              "Theme": [
+                "Light",
+                "Dark"
+              ]
+            },
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-1615"
+          }
+        ]
+      },
+      "codeConnect": null
+    },
+    {
+      "export": "CustomerDataTable",
+      "source": "src/components/blocks/customer-table.tsx",
+      "registry": "customer-data-table",
+      "figma": {
+        "node": "17:18",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=17-18",
+        "axes": {},
+        "status": "mapped-native-id"
+      },
+      "codeConnect": ".figma/code-connect/CustomerDataTable.figma.ts"
+    }
+  ],
+  "layouts": [
+    {
+      "name": "sidebar",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "nativePreview": "63:1558"
+    },
+    {
+      "name": "compact",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "nativePreview": "63:1567"
+    },
+    {
+      "name": "topbar",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "nativePreview": "63:1576"
+    },
+    {
+      "name": "split",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "nativePreview": "63:1585"
+    },
+    {
+      "name": "centered",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "nativePreview": "63:1594"
+    },
+    {
+      "name": "floating",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "nativePreview": "63:1602"
+    }
+  ],
+  "charts": [
+    {
+      "name": "area",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "Area",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "line",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "Line",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "bar",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "Bar",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "pie",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "Donut",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "radar",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "Radar",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "radial",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "Radial",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "horizontal-bar",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "HorizontalBar",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "stacked-bar",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "StackedBar",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "stacked-area",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "StackedArea",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "diverging-bar",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "DivergingBar",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "gauge",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "Gauge",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "rings",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "Rings",
+      "nativeStatus": "recorded-native-kind"
+    },
+    {
+      "name": "heatmap",
+      "source": "src/components/ui/chart.tsx",
+      "demo": "/en/charts/",
+      "figmaName": "Heatmap",
+      "nativeStatus": "recorded-native-kind"
+    }
+  ],
+  "registry": [
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "file": "src/components/ui/accordion.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "file": "src/components/ui/alert.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "file": "src/components/ui/avatar.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "file": "src/components/ui/badge.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "file": "src/components/ui/breadcrumb.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "file": "src/components/ui/button-group.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "file": "src/components/ui/button.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "file": "src/components/ui/card.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "file": "src/components/ui/carousel.tsx",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "file": "src/components/ui/chart.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "file": "src/components/ui/checkbox.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "file": "src/components/ui/combobox.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "file": "src/components/ui/command.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "data-table",
+      "type": "registry:ui",
+      "file": "src/components/ui/data-table.tsx",
+      "sourceFiles": 13,
+      "assets": 0
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:ui",
+      "file": "src/components/ui/date-picker.tsx",
+      "sourceFiles": 5,
+      "assets": 0
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "file": "src/components/ui/dialog.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "file": "src/components/ui/drawer.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "file": "src/components/ui/dropdown-menu.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "file": "src/components/ui/empty.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "file": "src/components/ui/field.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "file-upload",
+      "type": "registry:ui",
+      "file": "src/components/ui/file-upload.tsx",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "gallery",
+      "type": "registry:ui",
+      "file": "src/components/ui/gallery.tsx",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "file": "src/components/ui/input-otp.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "file": "src/components/ui/input.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "link",
+      "type": "registry:ui",
+      "file": "src/components/ui/link.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "multi-select",
+      "type": "registry:ui",
+      "file": "src/components/ui/multi-select.tsx",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "file": "src/components/ui/pagination.tsx",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "file": "src/components/ui/popover.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "file": "src/components/ui/progress.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "file": "src/components/ui/radio-group.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "ribbon",
+      "type": "registry:ui",
+      "file": "src/components/ui/ribbon.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "file": "src/components/ui/select.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "file": "src/components/ui/sidebar.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "file": "src/components/ui/skeleton.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "file": "src/components/ui/slider.tsx",
+      "sourceFiles": 1,
+      "assets": 0
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "file": "src/components/ui/spinner.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "file": "src/components/ui/switch.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "file": "src/components/ui/table.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "file": "src/components/ui/tabs.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "file": "src/components/ui/textarea.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "file": "src/components/ui/toast.tsx",
+      "sourceFiles": 1,
+      "assets": 0
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "file": "src/components/ui/tooltip.tsx",
+      "sourceFiles": 1,
+      "assets": 0
+    },
+    {
+      "name": "video-player",
+      "type": "registry:ui",
+      "file": "src/components/ui/video-player.tsx",
+      "sourceFiles": 5,
+      "assets": 0
+    },
+    {
+      "name": "ai-composer",
+      "type": "registry:block",
+      "file": "src/components/blocks/ai-composer.tsx",
+      "sourceFiles": 7,
+      "assets": 0
+    },
+    {
+      "name": "customer-table",
+      "type": "registry:block",
+      "file": "src/components/blocks/customer-table.tsx",
+      "sourceFiles": 18,
+      "assets": 0
+    },
+    {
+      "name": "dashboard-shell",
+      "type": "registry:block",
+      "file": "src/components/blocks/dashboard-shell.tsx",
+      "sourceFiles": 34,
+      "assets": 30
+    },
+    {
+      "name": "data-workbench",
+      "type": "registry:block",
+      "file": "src/components/blocks/data-workbench.tsx",
+      "sourceFiles": 18,
+      "assets": 0
+    },
+    {
+      "name": "import-wizard",
+      "type": "registry:block",
+      "file": "src/components/blocks/import-wizard.tsx",
+      "sourceFiles": 12,
+      "assets": 0
+    },
+    {
+      "name": "member-management",
+      "type": "registry:block",
+      "file": "src/components/blocks/member-management.tsx",
+      "sourceFiles": 14,
+      "assets": 0
+    },
+    {
+      "name": "metric-card",
+      "type": "registry:block",
+      "file": "src/components/blocks/metric-card.tsx",
+      "sourceFiles": 5,
+      "assets": 0
+    },
+    {
+      "name": "onboarding-flow",
+      "type": "registry:block",
+      "file": "src/components/blocks/onboarding-flow.tsx",
+      "sourceFiles": 10,
+      "assets": 0
+    },
+    {
+      "name": "page-heading",
+      "type": "registry:block",
+      "file": "src/components/blocks/page-heading.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "plan-breakdown",
+      "type": "registry:block",
+      "file": "src/components/blocks/plan-breakdown.tsx",
+      "sourceFiles": 5,
+      "assets": 0
+    },
+    {
+      "name": "record-actions",
+      "type": "registry:block",
+      "file": "src/components/blocks/record-actions.tsx",
+      "sourceFiles": 9,
+      "assets": 0
+    },
+    {
+      "name": "record-detail",
+      "type": "registry:block",
+      "file": "src/components/blocks/record-detail.tsx",
+      "sourceFiles": 10,
+      "assets": 0
+    },
+    {
+      "name": "revenue-panel",
+      "type": "registry:block",
+      "file": "src/components/blocks/revenue-panel.tsx",
+      "sourceFiles": 5,
+      "assets": 0
+    },
+    {
+      "name": "route-map",
+      "type": "registry:block",
+      "file": "src/components/blocks/route-map.tsx",
+      "sourceFiles": 14,
+      "assets": 0
+    },
+    {
+      "name": "table-toolbar",
+      "type": "registry:block",
+      "file": "src/components/blocks/table-toolbar.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "workspace-status",
+      "type": "registry:block",
+      "file": "src/components/blocks/workspace-status.tsx",
+      "sourceFiles": 16,
+      "assets": 0
+    },
+    {
+      "name": "ai-workspace",
+      "type": "registry:block",
+      "file": "src/components/templates/ai-workspace.tsx",
+      "sourceFiles": 41,
+      "assets": 18
+    },
+    {
+      "name": "appearance-gallery",
+      "type": "registry:block",
+      "file": "src/components/templates/appearance-gallery.tsx",
+      "sourceFiles": 31,
+      "assets": 0
+    },
+    {
+      "name": "appearance-studio",
+      "type": "registry:block",
+      "file": "src/components/templates/appearance-studio.tsx",
+      "sourceFiles": 35,
+      "assets": 0
+    },
+    {
+      "name": "auth",
+      "type": "registry:block",
+      "file": "src/components/templates/auth.tsx",
+      "sourceFiles": 30,
+      "assets": 0
+    },
+    {
+      "name": "auxiliary",
+      "type": "registry:block",
+      "file": "src/components/templates/auxiliary.tsx",
+      "sourceFiles": 24,
+      "assets": 0
+    },
+    {
+      "name": "calendar",
+      "type": "registry:block",
+      "file": "src/components/templates/calendar.tsx",
+      "sourceFiles": 56,
+      "assets": 26
+    },
+    {
+      "name": "catalogs",
+      "type": "registry:block",
+      "file": "src/components/templates/catalogs.tsx",
+      "sourceFiles": 52,
+      "assets": 30
+    },
+    {
+      "name": "communication",
+      "type": "registry:block",
+      "file": "src/components/templates/communication.tsx",
+      "sourceFiles": 56,
+      "assets": 26
+    },
+    {
+      "name": "components",
+      "type": "registry:block",
+      "file": "src/components/templates/components.tsx",
+      "sourceFiles": 88,
+      "assets": 41
+    },
+    {
+      "name": "customer-detail",
+      "type": "registry:block",
+      "file": "src/components/templates/customer-detail.tsx",
+      "sourceFiles": 24,
+      "assets": 0
+    },
+    {
+      "name": "customer-import",
+      "type": "registry:block",
+      "file": "src/components/templates/customer-import.tsx",
+      "sourceFiles": 39,
+      "assets": 18
+    },
+    {
+      "name": "customer-operations",
+      "type": "registry:block",
+      "file": "src/components/templates/customer-operations.tsx",
+      "sourceFiles": 49,
+      "assets": 18
+    },
+    {
+      "name": "dashboard",
+      "type": "registry:block",
+      "file": "src/components/templates/dashboard.tsx",
+      "sourceFiles": 53,
+      "assets": 26
+    },
+    {
+      "name": "data-manager",
+      "type": "registry:block",
+      "file": "src/components/templates/data-manager.tsx",
+      "sourceFiles": 54,
+      "assets": 26
+    },
+    {
+      "name": "docs",
+      "type": "registry:block",
+      "file": "src/components/templates/docs.tsx",
+      "sourceFiles": 14,
+      "assets": 1
+    },
+    {
+      "name": "files-support",
+      "type": "registry:block",
+      "file": "src/components/templates/files-support.tsx",
+      "sourceFiles": 60,
+      "assets": 33
+    },
+    {
+      "name": "forms",
+      "type": "registry:block",
+      "file": "src/components/templates/forms.tsx",
+      "sourceFiles": 64,
+      "assets": 33
+    },
+    {
+      "name": "landing",
+      "type": "registry:block",
+      "file": "src/components/templates/landing.tsx",
+      "sourceFiles": 46,
+      "assets": 18
+    },
+    {
+      "name": "map-invoice",
+      "type": "registry:block",
+      "file": "src/components/templates/map-invoice.tsx",
+      "sourceFiles": 30,
+      "assets": 18
+    },
+    {
+      "name": "media-studio",
+      "type": "registry:block",
+      "file": "src/components/templates/media-studio.tsx",
+      "sourceFiles": 27,
+      "assets": 15
+    },
+    {
+      "name": "saas-operations",
+      "type": "registry:block",
+      "file": "src/components/templates/saas-operations.tsx",
+      "sourceFiles": 35,
+      "assets": 18
+    },
+    {
+      "name": "saas-setup",
+      "type": "registry:block",
+      "file": "src/components/templates/saas-setup.tsx",
+      "sourceFiles": 13,
+      "assets": 0
+    },
+    {
+      "name": "settings",
+      "type": "registry:block",
+      "file": "src/components/templates/settings.tsx",
+      "sourceFiles": 60,
+      "assets": 26
+    },
+    {
+      "name": "work-board",
+      "type": "registry:block",
+      "file": "src/components/templates/work-board.tsx",
+      "sourceFiles": 56,
+      "assets": 26
+    },
+    {
+      "name": "effect-surface",
+      "type": "registry:block",
+      "file": "src/components/effects/effect-surface.tsx",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "glow-border",
+      "type": "registry:block",
+      "file": "src/components/effects/glow-border.tsx",
+      "sourceFiles": 6,
+      "assets": 0
+    },
+    {
+      "name": "gradient-background",
+      "type": "registry:block",
+      "file": "src/components/effects/gradient-background.tsx",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "magnetic-button",
+      "type": "registry:block",
+      "file": "src/components/effects/magnetic-button.tsx",
+      "sourceFiles": 6,
+      "assets": 0
+    },
+    {
+      "name": "shader-background",
+      "type": "registry:block",
+      "file": "src/components/effects/shader-background.tsx",
+      "sourceFiles": 7,
+      "assets": 0
+    },
+    {
+      "name": "spotlight-card",
+      "type": "registry:block",
+      "file": "src/components/effects/spotlight-card.tsx",
+      "sourceFiles": 6,
+      "assets": 0
+    },
+    {
+      "name": "tilt-card",
+      "type": "registry:block",
+      "file": "src/components/effects/tilt-card.tsx",
+      "sourceFiles": 6,
+      "assets": 0
+    },
+    {
+      "name": "date-range-picker",
+      "type": "registry:ui",
+      "file": "src/components/ui/date-picker.tsx",
+      "sourceFiles": 5,
+      "assets": 0
+    },
+    {
+      "name": "customer-data-table",
+      "type": "registry:block",
+      "file": "src/components/blocks/customer-table.tsx",
+      "sourceFiles": 18,
+      "assets": 0
+    },
+    {
+      "name": "motion-system",
+      "type": "registry:block",
+      "file": "src/components/motion-system.tsx",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "appearance-provider",
+      "type": "registry:block",
+      "file": "src/components/appearance-provider.tsx",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "appearance-controls",
+      "type": "registry:block",
+      "file": "src/components/appearance-controls.tsx",
+      "sourceFiles": 13,
+      "assets": 0
+    },
+    {
+      "name": "workspace-provider",
+      "type": "registry:block",
+      "file": "src/components/workspace-provider.tsx",
+      "sourceFiles": 6,
+      "assets": 0
+    }
+  ],
+  "reference": {
+    "purpose": "Category inventory only. Original source, layouts, mark and assets; no proprietary TailAdmin code or assets are copied or packaged.",
+    "categories": [
+      {
+        "reference": [
+          "saas",
+          "analytics",
+          "crm",
+          "ecommerce",
+          "sales",
+          "marketing",
+          "logistics",
+          "finance",
+          "stocks"
+        ],
+        "routes": [
+          "dashboard",
+          "analytics",
+          "crm",
+          "ecommerce",
+          "sales",
+          "marketing",
+          "logistics",
+          "finance",
+          "stocks"
+        ]
+      },
+      {
+        "reference": [
+          "tables",
+          "transactions",
+          "invoice"
+        ],
+        "routes": [
+          "customers",
+          "products",
+          "orders",
+          "invoices",
+          "transactions",
+          "invoice"
+        ]
+      },
+      {
+        "reference": [
+          "ai",
+          "ai-dashboard"
+        ],
+        "routes": [
+          "ai",
+          "ai/playground",
+          "ai/code",
+          "ai/images",
+          "ai/video"
+        ]
+      },
+      {
+        "reference": [
+          "task",
+          "calendar"
+        ],
+        "routes": [
+          "tasks",
+          "task-list",
+          "pipeline",
+          "calendar"
+        ]
+      },
+      {
+        "reference": [
+          "email",
+          "chats",
+          "file-manager",
+          "support",
+          "maps"
+        ],
+        "routes": [
+          "mail",
+          "chat",
+          "files",
+          "support",
+          "maps"
+        ]
+      },
+      {
+        "reference": [
+          "UserProfile",
+          "api-keys",
+          "ai-settings",
+          "integration"
+        ],
+        "routes": [
+          "settings/workspace",
+          "settings/profile",
+          "settings/team",
+          "settings/preferences",
+          "settings/billing",
+          "settings/api-keys",
+          "settings/integrations"
+        ]
+      },
+      {
+        "reference": [
+          "ui",
+          "UiExample",
+          "form",
+          "charts",
+          "example-layout",
+          "cards",
+          "links",
+          "list"
+        ],
+        "routes": [
+          "components",
+          "forms",
+          "charts",
+          "layouts",
+          "blocks",
+          "templates",
+          "media",
+          "studio",
+          "themes",
+          "effects"
+        ]
+      },
+      {
+        "reference": [
+          "workspace",
+          "onboarding",
+          "members",
+          "customer-detail",
+          "import"
+        ],
+        "routes": [
+          "onboarding",
+          "settings/workspace",
+          "customers/detail",
+          "imports",
+          "customers",
+          "settings/team"
+        ]
+      },
+      {
+        "reference": [
+          "auth",
+          "faqs",
+          "price-table",
+          "OtherPage"
+        ],
+        "routes": [
+          "pricing",
+          "faq",
+          "auth/sign-in",
+          "auth/sign-up",
+          "auth/reset-password",
+          "auth/verify",
+          "status/not-found",
+          "status/error",
+          "status/maintenance",
+          "status/coming-soon",
+          "status/success"
+        ]
+      }
+    ]
+  },
+  "limits": {
+    "backend": "Deterministic local demo adapters; real auth, billing, AI providers and email are separate integrations.",
+    "figma": "Editable native compositions, including consolidated generic tables; mapping does not claim pixel-perfect parity for every route or browser behavior in Figma.",
+    "codeConnect": "Established local parserless templates retain their own checkpoint validation. New SaaS components use direct native/source associations without requiring cloud registration or new Code Connect templates; library unpublished / Professional scope.",
+    "brand": "Working name and provisional prices/license; domain and trademark clearance are unverified."
+  }
+}

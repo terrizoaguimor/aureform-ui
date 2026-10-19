@@ -1,0 +1,914 @@
+{
+  "status": "post-refinement-structure",
+  "pageId": "2:6",
+  "views": [
+    {
+      "rootId": "134:8412",
+      "name": "Appearance Studio · 1.1 · Dark",
+      "rootBounds": {
+        "x": 7080,
+        "y": 80,
+        "width": 1440,
+        "height": 2341
+      },
+      "shellBounds": {
+        "x": 7080,
+        "y": 80,
+        "width": 1184,
+        "height": 2341
+      },
+      "slotBounds": {
+        "x": 7080,
+        "y": 80,
+        "width": 1184,
+        "height": 2341
+      },
+      "bodyBounds": {
+        "x": 7080,
+        "y": 153,
+        "width": 1184,
+        "height": 2356
+      },
+      "headerBounds": {
+        "x": 7080,
+        "y": 80,
+        "width": 1184,
+        "height": 73
+      },
+      "lastBodyChildren": [
+        {
+          "id": "I134:8413;29:224;134:8626",
+          "name": "Live appearance",
+          "bounds": {
+            "x": 7112,
+            "y": 315,
+            "width": 1120,
+            "height": 60
+          }
+        },
+        {
+          "id": "I134:8413;29:224;134:8639",
+          "name": "Editor and live workspace",
+          "bounds": {
+            "x": 7112,
+            "y": 399,
+            "width": 1120,
+            "height": 1990
+          }
+        },
+        {
+          "id": "I134:8413;29:224;147:10774",
+          "name": "Appearance 1.1 / Current page footer",
+          "bounds": {
+            "x": 7112,
+            "y": 2413,
+            "width": 1120,
+            "height": 64
+          }
+        }
+      ],
+      "nodeCount": 1055,
+      "imageFillCount": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "nav": [
+        {
+          "id": "147:10428",
+          "label": "Overview",
+          "state": "Default"
+        },
+        {
+          "id": "147:10432",
+          "label": "Analytics",
+          "state": "Default"
+        },
+        {
+          "id": "147:10436",
+          "label": "AI workspace",
+          "state": "Default"
+        },
+        {
+          "id": "147:10440",
+          "label": "Customers",
+          "state": "Default"
+        },
+        {
+          "id": "147:10444",
+          "label": "Components",
+          "state": "Default"
+        },
+        {
+          "id": "147:10448",
+          "label": "Blocks",
+          "state": "Default"
+        },
+        {
+          "id": "147:10452",
+          "label": "Templates",
+          "state": "Default"
+        },
+        {
+          "id": "147:10456",
+          "label": "Appearance Studio",
+          "state": "Active"
+        },
+        {
+          "id": "147:10460",
+          "label": "Effects",
+          "state": "Default"
+        },
+        {
+          "id": "147:10464",
+          "label": "Documentation",
+          "state": "Default"
+        },
+        {
+          "id": "147:10468",
+          "label": "Task board",
+          "state": "Default"
+        },
+        {
+          "id": "147:10472",
+          "label": "Calendar",
+          "state": "Default"
+        },
+        {
+          "id": "147:10476",
+          "label": "Inbox",
+          "state": "Default"
+        },
+        {
+          "id": "147:10480",
+          "label": "Files",
+          "state": "Default"
+        },
+        {
+          "id": "147:10484",
+          "label": "Products",
+          "state": "Default"
+        },
+        {
+          "id": "147:10488",
+          "label": "Orders",
+          "state": "Default"
+        },
+        {
+          "id": "147:10492",
+          "label": "Invoices",
+          "state": "Default"
+        },
+        {
+          "id": "147:10496",
+          "label": "Maps",
+          "state": "Default"
+        },
+        {
+          "id": "147:10500",
+          "label": "Support",
+          "state": "Default"
+        },
+        {
+          "id": "147:10504",
+          "label": "Settings",
+          "state": "Default"
+        },
+        {
+          "id": "147:10508",
+          "label": "Team",
+          "state": "Default"
+        }
+      ],
+      "charts": [
+        {
+          "id": "I134:8413;29:224;147:10632",
+          "width": 632,
+          "height": 170,
+          "graphicId": "I134:8413;29:224;147:10680",
+          "graphicBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 632,
+            "height": 170
+          },
+          "contained": true,
+          "visible": true
+        }
+      ],
+      "rangeHosts": [
+        {
+          "id": "I134:8413;29:224;147:10728",
+          "label": "Position",
+          "width": 276,
+          "visible": true,
+          "thumbX": 0,
+          "fillWidth": 0.009999999776482582
+        },
+        {
+          "id": "I134:8413;29:224;147:10736",
+          "label": "Position",
+          "width": 276,
+          "visible": true,
+          "thumbX": 130,
+          "fillWidth": 138
+        },
+        {
+          "id": "I134:8413;29:224;147:10744",
+          "label": "Position",
+          "width": 276,
+          "visible": true,
+          "thumbX": 260,
+          "fillWidth": 276
+        },
+        {
+          "id": "I134:8413;29:224;147:10752",
+          "label": "Gradient angle",
+          "width": 300,
+          "visible": true,
+          "thumbX": 98.61111450195312,
+          "fillWidth": 104.16666412353516
+        },
+        {
+          "id": "I134:8413;29:224;147:10760",
+          "label": "Gradient intensity",
+          "width": 300,
+          "visible": true,
+          "thumbX": 184.60000610351562,
+          "fillWidth": 195
+        }
+      ],
+      "shaderFillCount": 1
+    },
+    {
+      "rootId": "135:8894",
+      "name": "Palettes & Materials · 1.1 · Dark",
+      "rootBounds": {
+        "x": 8680,
+        "y": 80,
+        "width": 1440,
+        "height": 2979
+      },
+      "shellBounds": {
+        "x": 8680,
+        "y": 80,
+        "width": 1184,
+        "height": 2979
+      },
+      "slotBounds": {
+        "x": 8680,
+        "y": 80,
+        "width": 1184,
+        "height": 2979
+      },
+      "bodyBounds": {
+        "x": 8680,
+        "y": 80,
+        "width": 1184,
+        "height": 2994
+      },
+      "headerBounds": {
+        "x": 8936,
+        "y": 80,
+        "width": 1184,
+        "height": 73
+      },
+      "lastBodyChildren": [
+        {
+          "id": "I135:8895;29:224;135:9638",
+          "name": "Palette row 3",
+          "bounds": {
+            "x": 8712,
+            "y": 2072,
+            "width": 1120,
+            "height": 784
+          }
+        },
+        {
+          "id": "I135:8895;29:224;135:9884",
+          "name": "Refine your direction",
+          "bounds": {
+            "x": 8712,
+            "y": 2880,
+            "width": 1120,
+            "height": 74
+          }
+        },
+        {
+          "id": "I135:8895;29:224;148:11264",
+          "name": "Appearance 1.1 / Current page footer",
+          "bounds": {
+            "x": 8712,
+            "y": 2978,
+            "width": 1120,
+            "height": 64
+          }
+        }
+      ],
+      "nodeCount": 1381,
+      "imageFillCount": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "nav": [
+        {
+          "id": "148:10498",
+          "label": "Overview",
+          "state": "Default"
+        },
+        {
+          "id": "148:10502",
+          "label": "Analytics",
+          "state": "Default"
+        },
+        {
+          "id": "148:10506",
+          "label": "AI workspace",
+          "state": "Default"
+        },
+        {
+          "id": "148:10510",
+          "label": "Customers",
+          "state": "Default"
+        },
+        {
+          "id": "148:10514",
+          "label": "Components",
+          "state": "Default"
+        },
+        {
+          "id": "148:10518",
+          "label": "Blocks",
+          "state": "Default"
+        },
+        {
+          "id": "148:10522",
+          "label": "Templates",
+          "state": "Default"
+        },
+        {
+          "id": "148:10526",
+          "label": "Appearance Studio",
+          "state": "Default"
+        },
+        {
+          "id": "148:10530",
+          "label": "Effects",
+          "state": "Default"
+        },
+        {
+          "id": "148:10534",
+          "label": "Documentation",
+          "state": "Default"
+        },
+        {
+          "id": "148:10538",
+          "label": "Palettes & materials",
+          "state": "Active"
+        },
+        {
+          "id": "148:10542",
+          "label": "Task board",
+          "state": "Default"
+        },
+        {
+          "id": "148:10546",
+          "label": "Calendar",
+          "state": "Default"
+        },
+        {
+          "id": "148:10550",
+          "label": "Inbox",
+          "state": "Default"
+        },
+        {
+          "id": "148:10554",
+          "label": "Files",
+          "state": "Default"
+        },
+        {
+          "id": "148:10558",
+          "label": "Products",
+          "state": "Default"
+        },
+        {
+          "id": "148:10562",
+          "label": "Orders",
+          "state": "Default"
+        },
+        {
+          "id": "148:10566",
+          "label": "Invoices",
+          "state": "Default"
+        },
+        {
+          "id": "148:10570",
+          "label": "Maps",
+          "state": "Default"
+        },
+        {
+          "id": "148:10574",
+          "label": "Support",
+          "state": "Default"
+        },
+        {
+          "id": "148:10578",
+          "label": "Settings",
+          "state": "Default"
+        },
+        {
+          "id": "148:10582",
+          "label": "Team",
+          "state": "Default"
+        }
+      ],
+      "charts": [
+        {
+          "id": "I135:8895;29:224;148:10706",
+          "width": 494,
+          "height": 105,
+          "graphicId": "I135:8895;29:224;148:10752",
+          "graphicBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 494,
+            "height": 105
+          },
+          "contained": true,
+          "visible": true
+        },
+        {
+          "id": "I135:8895;29:224;148:10798",
+          "width": 494,
+          "height": 105,
+          "graphicId": "I135:8895;29:224;148:10844",
+          "graphicBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 494,
+            "height": 105
+          },
+          "contained": true,
+          "visible": true
+        },
+        {
+          "id": "I135:8895;29:224;148:10890",
+          "width": 494,
+          "height": 105,
+          "graphicId": "I135:8895;29:224;148:10936",
+          "graphicBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 494,
+            "height": 105
+          },
+          "contained": true,
+          "visible": true
+        },
+        {
+          "id": "I135:8895;29:224;148:10982",
+          "width": 494,
+          "height": 105,
+          "graphicId": "I135:8895;29:224;148:11028",
+          "graphicBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 494,
+            "height": 105
+          },
+          "contained": true,
+          "visible": true
+        },
+        {
+          "id": "I135:8895;29:224;148:11074",
+          "width": 494,
+          "height": 105,
+          "graphicId": "I135:8895;29:224;148:11120",
+          "graphicBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 494,
+            "height": 105
+          },
+          "contained": true,
+          "visible": true
+        },
+        {
+          "id": "I135:8895;29:224;148:11166",
+          "width": 494,
+          "height": 105,
+          "graphicId": "I135:8895;29:224;148:11212",
+          "graphicBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 494,
+            "height": 105
+          },
+          "contained": true,
+          "visible": true
+        }
+      ],
+      "rangeHosts": [],
+      "shaderFillCount": 0
+    },
+    {
+      "rootId": "136:9476",
+      "name": "Effects & Shaders · 1.1 · Dark",
+      "rootBounds": {
+        "x": 10280,
+        "y": 80,
+        "width": 1440,
+        "height": 3287
+      },
+      "shellBounds": {
+        "x": 10280,
+        "y": 80,
+        "width": 1184,
+        "height": 3287
+      },
+      "slotBounds": {
+        "x": 10280,
+        "y": 80,
+        "width": 1184,
+        "height": 3287
+      },
+      "bodyBounds": {
+        "x": 10280,
+        "y": 80,
+        "width": 1184,
+        "height": 3225
+      },
+      "headerBounds": {
+        "x": 10536,
+        "y": 80,
+        "width": 1184,
+        "height": 73
+      },
+      "lastBodyChildren": [
+        {
+          "id": "I136:9477;29:224;136:10304",
+          "name": "Effect recipe row 3",
+          "bounds": {
+            "x": 10312,
+            "y": 2301,
+            "width": 1120,
+            "height": 836
+          }
+        },
+        {
+          "id": "I136:9477;29:224;136:10518",
+          "name": "Pointer effects respond to a mouse or trackpad. ",
+          "bounds": {
+            "x": 10312,
+            "y": 3161,
+            "width": 1120,
+            "height": 24
+          }
+        },
+        {
+          "id": "I136:9477;29:224;151:11039",
+          "name": "Appearance 1.1 / Current page footer",
+          "bounds": {
+            "x": 10312,
+            "y": 3209,
+            "width": 1120,
+            "height": 64
+          }
+        }
+      ],
+      "nodeCount": 1154,
+      "imageFillCount": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "nav": [
+        {
+          "id": "151:10697",
+          "label": "Overview",
+          "state": "Default"
+        },
+        {
+          "id": "151:10701",
+          "label": "Analytics",
+          "state": "Default"
+        },
+        {
+          "id": "151:10705",
+          "label": "AI workspace",
+          "state": "Default"
+        },
+        {
+          "id": "151:10709",
+          "label": "Customers",
+          "state": "Default"
+        },
+        {
+          "id": "151:10713",
+          "label": "Components",
+          "state": "Default"
+        },
+        {
+          "id": "151:10717",
+          "label": "Blocks",
+          "state": "Default"
+        },
+        {
+          "id": "151:10721",
+          "label": "Templates",
+          "state": "Default"
+        },
+        {
+          "id": "151:10725",
+          "label": "Appearance Studio",
+          "state": "Default"
+        },
+        {
+          "id": "151:10729",
+          "label": "Effects",
+          "state": "Active"
+        },
+        {
+          "id": "151:10733",
+          "label": "Documentation",
+          "state": "Default"
+        },
+        {
+          "id": "151:10737",
+          "label": "Task board",
+          "state": "Default"
+        },
+        {
+          "id": "151:10741",
+          "label": "Calendar",
+          "state": "Default"
+        },
+        {
+          "id": "151:10745",
+          "label": "Inbox",
+          "state": "Default"
+        },
+        {
+          "id": "151:10749",
+          "label": "Files",
+          "state": "Default"
+        },
+        {
+          "id": "151:10753",
+          "label": "Products",
+          "state": "Default"
+        },
+        {
+          "id": "151:10757",
+          "label": "Orders",
+          "state": "Default"
+        },
+        {
+          "id": "151:10761",
+          "label": "Invoices",
+          "state": "Default"
+        },
+        {
+          "id": "151:10765",
+          "label": "Maps",
+          "state": "Default"
+        },
+        {
+          "id": "151:10769",
+          "label": "Support",
+          "state": "Default"
+        },
+        {
+          "id": "151:10773",
+          "label": "Settings",
+          "state": "Default"
+        },
+        {
+          "id": "151:10777",
+          "label": "Team",
+          "state": "Default"
+        }
+      ],
+      "charts": [],
+      "rangeHosts": [
+        {
+          "id": "I136:9477;29:224;151:10929",
+          "label": "Speed",
+          "width": 249,
+          "visible": true,
+          "thumbX": 46.599609375,
+          "fillWidth": 49.79999923706055
+        },
+        {
+          "id": "I136:9477;29:224;151:10937",
+          "label": "Scale",
+          "width": 249,
+          "visible": true,
+          "thumbX": 46.599609375,
+          "fillWidth": 49.79999923706055
+        },
+        {
+          "id": "I136:9477;29:224;151:10945",
+          "label": "Intensity",
+          "width": 510,
+          "visible": true,
+          "thumbX": 271.70001220703125,
+          "fillWidth": 280.5
+        },
+        {
+          "id": "I136:9477;29:224;151:10953",
+          "label": "Angle",
+          "width": 510,
+          "visible": true,
+          "thumbX": 171.52734375,
+          "fillWidth": 177.0833282470703
+        },
+        {
+          "id": "I136:9477;29:224;151:10961",
+          "label": "Intensity",
+          "width": 510,
+          "visible": true,
+          "thumbX": 271.70001220703125,
+          "fillWidth": 280.5
+        },
+        {
+          "id": "I136:9477;29:224;151:10969",
+          "label": "Light intensity",
+          "width": 510,
+          "visible": true,
+          "thumbX": 271.70001220703125,
+          "fillWidth": 280.5
+        },
+        {
+          "id": "I136:9477;29:224;151:10977",
+          "label": "Spotlight size",
+          "width": 510,
+          "visible": true,
+          "thumbX": 164.6669921875,
+          "fillWidth": 170
+        },
+        {
+          "id": "I136:9477;29:224;151:10985",
+          "label": "Edge width",
+          "width": 510,
+          "visible": true,
+          "thumbX": 49.400390625,
+          "fillWidth": 51
+        },
+        {
+          "id": "I136:9477;29:224;151:10993",
+          "label": "Orbit duration",
+          "width": 510,
+          "visible": true,
+          "thumbX": 70.57142639160156,
+          "fillWidth": 72.85713958740234
+        },
+        {
+          "id": "I136:9477;29:224;151:11001",
+          "label": "Tilt angle",
+          "width": 510,
+          "visible": true,
+          "thumbX": 247,
+          "fillWidth": 255
+        },
+        {
+          "id": "I136:9477;29:224;151:11009",
+          "label": "Perspective",
+          "width": 510,
+          "visible": true,
+          "thumbX": 154.375,
+          "fillWidth": 159.375
+        },
+        {
+          "id": "I136:9477;29:224;151:11017",
+          "label": "Pull strength",
+          "width": 510,
+          "visible": true,
+          "thumbX": 177.83999633789062,
+          "fillWidth": 183.60000610351562
+        },
+        {
+          "id": "I136:9477;29:224;151:11025",
+          "label": "Travel distance",
+          "width": 510,
+          "visible": true,
+          "thumbX": 205.8330078125,
+          "fillWidth": 212.5
+        }
+      ],
+      "shaderFillCount": 1
+    }
+  ],
+  "collections": [
+    {
+      "id": "VariableCollectionId:2:7",
+      "name": "Aureform · Primitives",
+      "variableCount": 332,
+      "modes": [
+        {
+          "id": "2:0",
+          "name": "Value"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:2:36",
+      "name": "Aureform · Color",
+      "variableCount": 61,
+      "modes": [
+        {
+          "id": "2:1",
+          "name": "Light"
+        },
+        {
+          "id": "2:2",
+          "name": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:2:58",
+      "name": "Aureform · Dimension",
+      "variableCount": 16,
+      "modes": [
+        {
+          "id": "2:3",
+          "name": "Value"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:317",
+      "name": "Aureform · Color · Violet",
+      "variableCount": 61,
+      "modes": [
+        {
+          "id": "95:0",
+          "name": "Light"
+        },
+        {
+          "id": "95:1",
+          "name": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:381",
+      "name": "Aureform · Color · Ocean",
+      "variableCount": 61,
+      "modes": [
+        {
+          "id": "95:2",
+          "name": "Light"
+        },
+        {
+          "id": "95:3",
+          "name": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:445",
+      "name": "Aureform · Color · Mint",
+      "variableCount": 61,
+      "modes": [
+        {
+          "id": "95:4",
+          "name": "Light"
+        },
+        {
+          "id": "95:5",
+          "name": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:509",
+      "name": "Aureform · Color · Ember",
+      "variableCount": 61,
+      "modes": [
+        {
+          "id": "95:6",
+          "name": "Light"
+        },
+        {
+          "id": "95:7",
+          "name": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:573",
+      "name": "Aureform · Color · Rose",
+      "variableCount": 61,
+      "modes": [
+        {
+          "id": "95:8",
+          "name": "Light"
+        },
+        {
+          "id": "95:9",
+          "name": "Dark"
+        }
+      ]
+    }
+  ]
+}

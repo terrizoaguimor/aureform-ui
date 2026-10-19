@@ -1,0 +1,150 @@
+import type { ChartDatum } from "@/components/ui/chart";
+export const revenueData: ChartDatum[] = [
+  { label: "May", value: 26800, secondary: 22200 },
+  { label: "Jun", value: 31200, secondary: 24500 },
+  { label: "Jul", value: 28500, secondary: 25100 },
+  { label: "Aug", value: 36700, secondary: 27100 },
+  { label: "Sep", value: 41300, secondary: 31200 },
+  { label: "Oct", value: 48295, secondary: 35800 },
+];
+export const channelData: ChartDatum[] = [
+  { label: "Mon", value: 2200, secondary: 1700 },
+  { label: "Tue", value: 3100, secondary: 2100 },
+  { label: "Wed", value: 2800, secondary: 2000 },
+  { label: "Thu", value: 4500, secondary: 3200 },
+  { label: "Fri", value: 3400, secondary: 2500 },
+  { label: "Sat", value: 1900, secondary: 1600 },
+  { label: "Sun", value: 2700, secondary: 1800 },
+];
+export const customersSeed = [
+  {
+    id: "cus-001",
+    name: "Olivia Rhye",
+    email: "olivia@layers.studio",
+    company: "Layers",
+    plan: "Pro",
+    status: "active",
+    amount: 249,
+    joined: "2026-10-14",
+  },
+  {
+    id: "cus-002",
+    name: "Phoenix Baker",
+    email: "phoenix@sisyphus.co",
+    company: "Sisyphus",
+    plan: "Enterprise",
+    status: "active",
+    amount: 699,
+    joined: "2026-10-13",
+  },
+  {
+    id: "cus-003",
+    name: "Lana Steiner",
+    email: "lana@catalog.design",
+    company: "Catalog",
+    plan: "Pro",
+    status: "trial",
+    amount: 249,
+    joined: "2026-10-12",
+  },
+  {
+    id: "cus-004",
+    name: "Demi Wilkinson",
+    email: "demi@circooles.co",
+    company: "Circooles",
+    plan: "Starter",
+    status: "active",
+    amount: 99,
+    joined: "2026-10-11",
+  },
+  {
+    id: "cus-005",
+    name: "Drew Cano",
+    email: "drew@hourglass.app",
+    company: "Hourglass",
+    plan: "Enterprise",
+    status: "paused",
+    amount: 699,
+    joined: "2026-10-10",
+  },
+  {
+    id: "cus-006",
+    name: "Isabel Torres",
+    email: "isabel@lumina.demo",
+    company: "Lumina",
+    plan: "Pro",
+    status: "active",
+    amount: 249,
+    joined: "2026-10-08",
+  },
+  {
+    id: "cus-007",
+    name: "Leo Martin",
+    email: "leo@kinfolk.demo",
+    company: "Kinfolk",
+    plan: "Starter",
+    status: "trial",
+    amount: 99,
+    joined: "2026-10-06",
+  },
+  {
+    id: "cus-008",
+    name: "Amelia Wilson",
+    email: "amelia@outline.demo",
+    company: "Outline",
+    plan: "Enterprise",
+    status: "active",
+    amount: 699,
+    joined: "2026-10-04",
+  },
+  {
+    id: "cus-009",
+    name: "Matías Vega",
+    email: "matias@norte.demo",
+    company: "Norte",
+    plan: "Pro",
+    status: "paused",
+    amount: 249,
+    joined: "2026-10-03",
+  },
+  {
+    id: "cus-010",
+    name: "Sofia Chen",
+    email: "sofia@form.demo",
+    company: "Form",
+    plan: "Pro",
+    status: "active",
+    amount: 249,
+    joined: "2026-09-30",
+  },
+  {
+    id: "cus-011",
+    name: "Lucas Moreau",
+    email: "lucas@atelier.demo",
+    company: "Atelier",
+    plan: "Starter",
+    status: "active",
+    amount: 99,
+    joined: "2026-09-28",
+  },
+  {
+    id: "cus-012",
+    name: "Noor Ahmed",
+    email: "noor@tangent.demo",
+    company: "Tangent",
+    plan: "Enterprise",
+    status: "trial",
+    amount: 699,
+    joined: "2026-09-24",
+  },
+] satisfies Customer[];
+export type Customer = {
+  id: string;
+  name: string;
+  email: string;
+  company: string;
+  plan: string;
+  status: string;
+  amount: number;
+  joined: string;
+};

@@ -1,0 +1,1199 @@
+{
+  "buttons": [
+    {
+      "id": "3:5",
+      "name": "Style=Primary, Size=Small, State=Default",
+      "axes": {
+        "Style": "Primary",
+        "Size": "Small",
+        "State": "Default"
+      }
+    },
+    {
+      "id": "3:9",
+      "name": "Style=Primary, Size=Small, State=Hover",
+      "axes": {
+        "Style": "Primary",
+        "Size": "Small",
+        "State": "Hover"
+      }
+    },
+    {
+      "id": "3:13",
+      "name": "Style=Primary, Size=Small, State=Disabled",
+      "axes": {
+        "Style": "Primary",
+        "Size": "Small",
+        "State": "Disabled"
+      }
+    },
+    {
+      "id": "3:17",
+      "name": "Style=Primary, Size=Medium, State=Default",
+      "axes": {
+        "Style": "Primary",
+        "Size": "Medium",
+        "State": "Default"
+      }
+    },
+    {
+      "id": "3:21",
+      "name": "Style=Primary, Size=Medium, State=Hover",
+      "axes": {
+        "Style": "Primary",
+        "Size": "Medium",
+        "State": "Hover"
+      }
+    },
+    {
+      "id": "3:25",
+      "name": "Style=Primary, Size=Medium, State=Disabled",
+      "axes": {
+        "Style": "Primary",
+        "Size": "Medium",
+        "State": "Disabled"
+      }
+    },
+    {
+      "id": "3:29",
+      "name": "Style=Primary, Size=Large, State=Default",
+      "axes": {
+        "Style": "Primary",
+        "Size": "Large",
+        "State": "Default"
+      }
+    },
+    {
+      "id": "3:33",
+      "name": "Style=Primary, Size=Large, State=Hover",
+      "axes": {
+        "Style": "Primary",
+        "Size": "Large",
+        "State": "Hover"
+      }
+    },
+    {
+      "id": "3:37",
+      "name": "Style=Primary, Size=Large, State=Disabled",
+      "axes": {
+        "Style": "Primary",
+        "Size": "Large",
+        "State": "Disabled"
+      }
+    },
+    {
+      "id": "3:41",
+      "name": "Style=Outline, Size=Small, State=Default",
+      "axes": {
+        "Style": "Outline",
+        "Size": "Small",
+        "State": "Default"
+      }
+    },
+    {
+      "id": "3:45",
+      "name": "Style=Outline, Size=Small, State=Hover",
+      "axes": {
+        "Style": "Outline",
+        "Size": "Small",
+        "State": "Hover"
+      }
+    },
+    {
+      "id": "3:49",
+      "name": "Style=Outline, Size=Small, State=Disabled",
+      "axes": {
+        "Style": "Outline",
+        "Size": "Small",
+        "State": "Disabled"
+      }
+    },
+    {
+      "id": "3:53",
+      "name": "Style=Outline, Size=Medium, State=Default",
+      "axes": {
+        "Style": "Outline",
+        "Size": "Medium",
+        "State": "Default"
+      }
+    },
+    {
+      "id": "3:57",
+      "name": "Style=Outline, Size=Medium, State=Hover",
+      "axes": {
+        "Style": "Outline",
+        "Size": "Medium",
+        "State": "Hover"
+      }
+    },
+    {
+      "id": "3:61",
+      "name": "Style=Outline, Size=Medium, State=Disabled",
+      "axes": {
+        "Style": "Outline",
+        "Size": "Medium",
+        "State": "Disabled"
+      }
+    },
+    {
+      "id": "3:65",
+      "name": "Style=Outline, Size=Large, State=Default",
+      "axes": {
+        "Style": "Outline",
+        "Size": "Large",
+        "State": "Default"
+      }
+    },
+    {
+      "id": "3:69",
+      "name": "Style=Outline, Size=Large, State=Hover",
+      "axes": {
+        "Style": "Outline",
+        "Size": "Large",
+        "State": "Hover"
+      }
+    },
+    {
+      "id": "3:73",
+      "name": "Style=Outline, Size=Large, State=Disabled",
+      "axes": {
+        "Style": "Outline",
+        "Size": "Large",
+        "State": "Disabled"
+      }
+    },
+    {
+      "id": "3:77",
+      "name": "Style=Ghost, Size=Small, State=Default",
+      "axes": {
+        "Style": "Ghost",
+        "Size": "Small",
+        "State": "Default"
+      }
+    },
+    {
+      "id": "3:81",
+      "name": "Style=Ghost, Size=Small, State=Hover",
+      "axes": {
+        "Style": "Ghost",
+        "Size": "Small",
+        "State": "Hover"
+      }
+    },
+    {
+      "id": "3:85",
+      "name": "Style=Ghost, Size=Small, State=Disabled",
+      "axes": {
+        "Style": "Ghost",
+        "Size": "Small",
+        "State": "Disabled"
+      }
+    },
+    {
+      "id": "3:89",
+      "name": "Style=Ghost, Size=Medium, State=Default",
+      "axes": {
+        "Style": "Ghost",
+        "Size": "Medium",
+        "State": "Default"
+      }
+    },
+    {
+      "id": "3:93",
+      "name": "Style=Ghost, Size=Medium, State=Hover",
+      "axes": {
+        "Style": "Ghost",
+        "Size": "Medium",
+        "State": "Hover"
+      }
+    },
+    {
+      "id": "3:97",
+      "name": "Style=Ghost, Size=Medium, State=Disabled",
+      "axes": {
+        "Style": "Ghost",
+        "Size": "Medium",
+        "State": "Disabled"
+      }
+    },
+    {
+      "id": "3:101",
+      "name": "Style=Ghost, Size=Large, State=Default",
+      "axes": {
+        "Style": "Ghost",
+        "Size": "Large",
+        "State": "Default"
+      }
+    },
+    {
+      "id": "3:105",
+      "name": "Style=Ghost, Size=Large, State=Hover",
+      "axes": {
+        "Style": "Ghost",
+        "Size": "Large",
+        "State": "Hover"
+      }
+    },
+    {
+      "id": "3:109",
+      "name": "Style=Ghost, Size=Large, State=Disabled",
+      "axes": {
+        "Style": "Ghost",
+        "Size": "Large",
+        "State": "Disabled"
+      }
+    }
+  ],
+  "sets": [
+    {
+      "id": "232:3989",
+      "name": "RowActions",
+      "children": [
+        {
+          "id": "232:3940",
+          "type": "COMPONENT",
+          "name": "State=Default, Theme=Light",
+          "width": 440,
+          "height": 280,
+          "layoutMode": "VERTICAL",
+          "children": [
+            {
+              "id": "232:3941",
+              "type": "FRAME",
+              "name": "Actions for Olivia Rhye",
+              "width": 440,
+              "height": 280,
+              "layoutMode": "VERTICAL",
+              "children": [
+                {
+                  "id": "232:3942",
+                  "type": "TEXT",
+                  "name": "Actions for Olivia Rhye",
+                  "width": 390,
+                  "height": 26,
+                  "characters": "Actions for Olivia Rhye"
+                },
+                {
+                  "id": "232:3943",
+                  "type": "TEXT",
+                  "name": "Open the record or manage this relationship.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "Open the record or manage this relationship."
+                },
+                {
+                  "id": "232:3944",
+                  "type": "INSTANCE",
+                  "name": "ghost / View customer",
+                  "width": 180,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "View customer"
+                    },
+                    "Style": {
+                      "value": "Ghost",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                },
+                {
+                  "id": "232:3949",
+                  "type": "INSTANCE",
+                  "name": "ghost / Edit",
+                  "width": 180,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Edit"
+                    },
+                    "Style": {
+                      "value": "Ghost",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                },
+                {
+                  "id": "232:3953",
+                  "type": "INSTANCE",
+                  "name": "ghost / Delete",
+                  "width": 180,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Delete"
+                    },
+                    "Style": {
+                      "value": "Ghost",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "232:3957",
+          "type": "COMPONENT",
+          "name": "State=Default, Theme=Dark",
+          "width": 440,
+          "height": 280,
+          "layoutMode": "VERTICAL",
+          "children": [
+            {
+              "id": "232:3958",
+              "type": "FRAME",
+              "name": "Actions for Olivia Rhye",
+              "width": 440,
+              "height": 280,
+              "layoutMode": "VERTICAL",
+              "children": [
+                {
+                  "id": "232:3959",
+                  "type": "TEXT",
+                  "name": "Actions for Olivia Rhye",
+                  "width": 390,
+                  "height": 26,
+                  "characters": "Actions for Olivia Rhye"
+                },
+                {
+                  "id": "232:3960",
+                  "type": "TEXT",
+                  "name": "Open the record or manage this relationship.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "Open the record or manage this relationship."
+                },
+                {
+                  "id": "232:3961",
+                  "type": "INSTANCE",
+                  "name": "ghost / View customer",
+                  "width": 180,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "View customer"
+                    },
+                    "Style": {
+                      "value": "Ghost",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                },
+                {
+                  "id": "232:3965",
+                  "type": "INSTANCE",
+                  "name": "ghost / Edit",
+                  "width": 180,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Edit"
+                    },
+                    "Style": {
+                      "value": "Ghost",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                },
+                {
+                  "id": "232:3969",
+                  "type": "INSTANCE",
+                  "name": "ghost / Delete",
+                  "width": 180,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Delete"
+                    },
+                    "Style": {
+                      "value": "Ghost",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "232:3973",
+          "type": "COMPONENT",
+          "name": "State=Read-only, Theme=Light",
+          "width": 440,
+          "height": 168,
+          "layoutMode": "VERTICAL",
+          "children": [
+            {
+              "id": "232:3974",
+              "type": "FRAME",
+              "name": "Actions for Olivia Rhye",
+              "width": 440,
+              "height": 168,
+              "layoutMode": "VERTICAL",
+              "children": [
+                {
+                  "id": "232:3975",
+                  "type": "TEXT",
+                  "name": "Actions for Olivia Rhye",
+                  "width": 390,
+                  "height": 26,
+                  "characters": "Actions for Olivia Rhye"
+                },
+                {
+                  "id": "232:3976",
+                  "type": "TEXT",
+                  "name": "Open the record or manage this relationship.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "Open the record or manage this relationship."
+                },
+                {
+                  "id": "232:3977",
+                  "type": "INSTANCE",
+                  "name": "ghost / View customer",
+                  "width": 180,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "View customer"
+                    },
+                    "Style": {
+                      "value": "Ghost",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "232:3981",
+          "type": "COMPONENT",
+          "name": "State=Read-only, Theme=Dark",
+          "width": 440,
+          "height": 168,
+          "layoutMode": "VERTICAL",
+          "children": [
+            {
+              "id": "232:3982",
+              "type": "FRAME",
+              "name": "Actions for Olivia Rhye",
+              "width": 440,
+              "height": 168,
+              "layoutMode": "VERTICAL",
+              "children": [
+                {
+                  "id": "232:3983",
+                  "type": "TEXT",
+                  "name": "Actions for Olivia Rhye",
+                  "width": 390,
+                  "height": 26,
+                  "characters": "Actions for Olivia Rhye"
+                },
+                {
+                  "id": "232:3984",
+                  "type": "TEXT",
+                  "name": "Open the record or manage this relationship.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "Open the record or manage this relationship."
+                },
+                {
+                  "id": "232:3985",
+                  "type": "INSTANCE",
+                  "name": "ghost / View customer",
+                  "width": 180,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "View customer"
+                    },
+                    "Style": {
+                      "value": "Ghost",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "232:4040",
+      "name": "DeleteDialog",
+      "children": [
+        {
+          "id": "232:3990",
+          "type": "COMPONENT",
+          "name": "State=Confirm, Theme=Light",
+          "width": 440,
+          "height": 224,
+          "layoutMode": "VERTICAL",
+          "children": [
+            {
+              "id": "232:3991",
+              "type": "FRAME",
+              "name": "Remove 1 record?",
+              "width": 440,
+              "height": 224,
+              "layoutMode": "VERTICAL",
+              "children": [
+                {
+                  "id": "232:3992",
+                  "type": "TEXT",
+                  "name": "Remove 1 record?",
+                  "width": 390,
+                  "height": 26,
+                  "characters": "Remove 1 record?"
+                },
+                {
+                  "id": "232:3993",
+                  "type": "TEXT",
+                  "name": "This removes the selected record from the browser demo.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "This removes the selected record from the browser demo."
+                },
+                {
+                  "id": "232:3994",
+                  "type": "INSTANCE",
+                  "name": "outline / Cancel",
+                  "width": 160,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Cancel"
+                    },
+                    "Style": {
+                      "value": "Outline",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                },
+                {
+                  "id": "232:3998",
+                  "type": "INSTANCE",
+                  "name": "button / Delete",
+                  "width": 160,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Delete"
+                    },
+                    "Style": {
+                      "value": "Primary",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "232:4002",
+          "type": "COMPONENT",
+          "name": "State=Confirm, Theme=Dark",
+          "width": 440,
+          "height": 224,
+          "layoutMode": "VERTICAL",
+          "children": [
+            {
+              "id": "232:4003",
+              "type": "FRAME",
+              "name": "Remove 1 record?",
+              "width": 440,
+              "height": 224,
+              "layoutMode": "VERTICAL",
+              "children": [
+                {
+                  "id": "232:4004",
+                  "type": "TEXT",
+                  "name": "Remove 1 record?",
+                  "width": 390,
+                  "height": 26,
+                  "characters": "Remove 1 record?"
+                },
+                {
+                  "id": "232:4005",
+                  "type": "TEXT",
+                  "name": "This removes the selected record from the browser demo.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "This removes the selected record from the browser demo."
+                },
+                {
+                  "id": "232:4006",
+                  "type": "INSTANCE",
+                  "name": "outline / Cancel",
+                  "width": 160,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Cancel"
+                    },
+                    "Style": {
+                      "value": "Outline",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                },
+                {
+                  "id": "232:4010",
+                  "type": "INSTANCE",
+                  "name": "button / Delete",
+                  "width": 160,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Delete"
+                    },
+                    "Style": {
+                      "value": "Primary",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "232:4014",
+          "type": "COMPONENT",
+          "name": "State=Error, Theme=Light",
+          "width": 440,
+          "height": 260,
+          "layoutMode": "VERTICAL",
+          "children": [
+            {
+              "id": "232:4015",
+              "type": "FRAME",
+              "name": "Remove 1 record?",
+              "width": 440,
+              "height": 260,
+              "layoutMode": "VERTICAL",
+              "children": [
+                {
+                  "id": "232:4016",
+                  "type": "TEXT",
+                  "name": "Remove 1 record?",
+                  "width": 390,
+                  "height": 26,
+                  "characters": "Remove 1 record?"
+                },
+                {
+                  "id": "232:4017",
+                  "type": "TEXT",
+                  "name": "This removes the selected record from the browser demo.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "This removes the selected record from the browser demo."
+                },
+                {
+                  "id": "232:4018",
+                  "type": "TEXT",
+                  "name": "The records were not removed. Try again.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "The records were not removed. Try again."
+                },
+                {
+                  "id": "232:4019",
+                  "type": "INSTANCE",
+                  "name": "outline / Cancel",
+                  "width": 160,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Cancel"
+                    },
+                    "Style": {
+                      "value": "Outline",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                },
+                {
+                  "id": "232:4023",
+                  "type": "INSTANCE",
+                  "name": "button / Delete",
+                  "width": 160,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Delete"
+                    },
+                    "Style": {
+                      "value": "Primary",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "232:4027",
+          "type": "COMPONENT",
+          "name": "State=Error, Theme=Dark",
+          "width": 440,
+          "height": 260,
+          "layoutMode": "VERTICAL",
+          "children": [
+            {
+              "id": "232:4028",
+              "type": "FRAME",
+              "name": "Remove 1 record?",
+              "width": 440,
+              "height": 260,
+              "layoutMode": "VERTICAL",
+              "children": [
+                {
+                  "id": "232:4029",
+                  "type": "TEXT",
+                  "name": "Remove 1 record?",
+                  "width": 390,
+                  "height": 26,
+                  "characters": "Remove 1 record?"
+                },
+                {
+                  "id": "232:4030",
+                  "type": "TEXT",
+                  "name": "This removes the selected record from the browser demo.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "This removes the selected record from the browser demo."
+                },
+                {
+                  "id": "232:4031",
+                  "type": "TEXT",
+                  "name": "The records were not removed. Try again.",
+                  "width": 390,
+                  "height": 20,
+                  "characters": "The records were not removed. Try again."
+                },
+                {
+                  "id": "232:4032",
+                  "type": "INSTANCE",
+                  "name": "outline / Cancel",
+                  "width": 160,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Cancel"
+                    },
+                    "Style": {
+                      "value": "Outline",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                },
+                {
+                  "id": "232:4036",
+                  "type": "INSTANCE",
+                  "name": "button / Delete",
+                  "width": 160,
+                  "height": 40,
+                  "layoutMode": "HORIZONTAL",
+                  "properties": {
+                    "Icon#3:56": {
+                      "type": "INSTANCE_SWAP",
+                      "value": "3:2",
+                      "preferredValues": []
+                    },
+                    "Show icon#3:28": {
+                      "type": "BOOLEAN",
+                      "value": false
+                    },
+                    "Label#3:0": {
+                      "type": "TEXT",
+                      "value": "Delete"
+                    },
+                    "Style": {
+                      "value": "Primary",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "Size": {
+                      "value": "Medium",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    },
+                    "State": {
+                      "value": "Default",
+                      "type": "VARIANT",
+                      "boundVariables": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "coreMasters": [
+    {
+      "id": "2:2",
+      "name": "00 · Cover"
+    },
+    {
+      "id": "0:1",
+      "name": "01 · Foundations"
+    },
+    {
+      "id": "2:3",
+      "name": "02 · Core"
+    },
+    {
+      "id": "2:4",
+      "name": "03 · Blocks"
+    },
+    {
+      "id": "2:5",
+      "name": "04 · Templates 1.0"
+    },
+    {
+      "id": "2:6",
+      "name": "05 · Suite 1.1–1.3"
+    }
+  ]
+}

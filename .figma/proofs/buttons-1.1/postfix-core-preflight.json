@@ -1,0 +1,50 @@
+{
+  "status": "read-only-large-glyph-binding-preflight",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "setId": "176:4598",
+  "controlForegroundVariableId": "VariableID:2:45",
+  "previousGlyphVariableId": "VariableID:2:41",
+  "resolvedLabelForeground": {
+    "Dark": "#080D17",
+    "Light": "#FFFFFF"
+  },
+  "largeMasters": [
+    {
+      "id": "176:4570",
+      "labelId": "176:4573",
+      "iconId": "176:4571",
+      "glyphId": "I176:4571;3:4"
+    },
+    {
+      "id": "176:4582",
+      "labelId": "176:4585",
+      "iconId": "176:4583",
+      "glyphId": "I176:4583;3:4"
+    },
+    {
+      "id": "176:4594",
+      "labelId": "176:4597",
+      "iconId": "176:4595",
+      "glyphId": "I176:4595;3:4"
+    }
+  ],
+  "reviewLargeIds": {
+    "Dark": [
+      "176:4613",
+      "176:4629",
+      "176:4645"
+    ],
+    "Light": [
+      "176:4708",
+      "176:4721",
+      "176:4734"
+    ]
+  },
+  "sourceScript": {
+    "path": ".figma/scripts/buttons-foreground-postfix-1.1.js",
+    "sha256": "889ce610484cdf89c83cb3f022cf0ae9ebf352d7c2e6d6caea92bb33c7ca2407"
+  },
+  "sourceButtonSha256": "7a4ba03ec89978c4f15545255256876c682ba49bf6bad80d6728fe632ccf563e",
+  "frozenDocsSha256": "bb986e0720531bd2dae743f488319c5ac332b80b7d189ec565d5e7d6bd9d8554"
+}

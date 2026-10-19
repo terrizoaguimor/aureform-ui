@@ -1,0 +1,194 @@
+{
+  "changed": [
+    {
+      "id": "225:1708",
+      "name": "WorkspaceStatus"
+    },
+    {
+      "id": "225:2068",
+      "name": "OnboardingFlow"
+    },
+    {
+      "id": "228:4134",
+      "name": "ImportWizard"
+    },
+    {
+      "id": "231:3776",
+      "name": "DashboardSidebar / SaaS 1.2"
+    }
+  ],
+  "records": [
+    {
+      "name": "WorkspaceSettingsTemplate",
+      "setId": "232:3939",
+      "defaultId": "232:3883",
+      "variants": [
+        {
+          "id": "232:3883",
+          "name": "State=Default, Theme=Light",
+          "w": 1024,
+          "h": 670
+        },
+        {
+          "id": "232:3912",
+          "name": "State=Default, Theme=Dark",
+          "w": 1024,
+          "h": 670
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "name": "RowActions",
+      "setId": "232:3989",
+      "defaultId": "232:3940",
+      "variants": [
+        {
+          "id": "232:3940",
+          "name": "State=Default, Theme=Light",
+          "w": 440,
+          "h": 280
+        },
+        {
+          "id": "232:3957",
+          "name": "State=Default, Theme=Dark",
+          "w": 440,
+          "h": 280
+        },
+        {
+          "id": "232:3973",
+          "name": "State=Read-only, Theme=Light",
+          "w": 440,
+          "h": 168
+        },
+        {
+          "id": "232:3981",
+          "name": "State=Read-only, Theme=Dark",
+          "w": 440,
+          "h": 168
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Read-only"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DeleteDialog",
+      "setId": "232:4040",
+      "defaultId": "232:3990",
+      "variants": [
+        {
+          "id": "232:3990",
+          "name": "State=Confirm, Theme=Light",
+          "w": 440,
+          "h": 224
+        },
+        {
+          "id": "232:4002",
+          "name": "State=Confirm, Theme=Dark",
+          "w": 440,
+          "h": 224
+        },
+        {
+          "id": "232:4014",
+          "name": "State=Error, Theme=Light",
+          "w": 440,
+          "h": 260
+        },
+        {
+          "id": "232:4027",
+          "name": "State=Error, Theme=Dark",
+          "w": 440,
+          "h": 260
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Confirm",
+          "variantOptions": [
+            "Confirm",
+            "Error"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    }
+  ],
+  "statusBounds": [
+    {
+      "id": "225:1615",
+      "w": 1080,
+      "h": 64,
+      "childWidth": 1080
+    },
+    {
+      "id": "225:1629",
+      "w": 1080,
+      "h": 64,
+      "childWidth": 1080
+    },
+    {
+      "id": "225:1642",
+      "w": 1080,
+      "h": 64,
+      "childWidth": 1080
+    },
+    {
+      "id": "225:1655",
+      "w": 1080,
+      "h": 64,
+      "childWidth": 1080
+    },
+    {
+      "id": "225:1668",
+      "w": 1080,
+      "h": 256,
+      "childWidth": 1080
+    },
+    {
+      "id": "225:1688",
+      "w": 1080,
+      "h": 256,
+      "childWidth": 1080
+    }
+  ]
+}

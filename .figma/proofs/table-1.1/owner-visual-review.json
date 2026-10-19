@@ -1,0 +1,54 @@
+{
+  "status": "passed-native-structure-and-visual-review",
+  "checkedAt": "2026-10-19T05:11:28.452906+00:00",
+  "reviewer": "owner",
+  "method": "Actual downloaded Figma PNG viewed in full; loading detail additionally viewed after targeted correction.",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "nodeId": "169:2062",
+  "image": {
+    "path": ".figma/proofs/table-1.1/owner-final.png",
+    "width": 2492,
+    "height": 5655,
+    "bytes": 2406312,
+    "sha256": "3bdcd7a48f3065767122d80ba1308071ba033a6792443990b289f8ec878b0f14"
+  },
+  "visualCoverage": {
+    "themes": [
+      "Light",
+      "Dark"
+    ],
+    "representativeCases": 10,
+    "representativeInstances": 20,
+    "states": [
+      "Default",
+      "Selected",
+      "Empty",
+      "Loading",
+      "Error"
+    ],
+    "materials": [
+      "Elevated",
+      "Glass",
+      "Gradient",
+      "Flat"
+    ],
+    "densities": [
+      "Comfortable",
+      "Compact"
+    ]
+  },
+  "structuralCoverage": {
+    "DataTableVariants": 28,
+    "TableVariants": 16
+  },
+  "loadingCorrection": {
+    "variants": 4,
+    "linkedSkeletonHeight": 46,
+    "bodyHeight": 358,
+    "minimumFooterClearance": 24,
+    "masterUnchanged": true,
+    "proof": "loading-body-postfix.native-return.json"
+  },
+  "findings": [],
+  "sourceApplicationEdited": false
+}

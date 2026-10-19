@@ -1,0 +1,952 @@
+{
+  "status": "read-only",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "2:5",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "groups": [
+    {
+      "rootId": "59:2549",
+      "type": "FRAME",
+      "name": "Preview tabs",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:2550;29:224;62:2975;58:1561",
+          "parentId": "I59:2550;29:224;62:2975",
+          "parentName": "ComponentSpecimen / Button",
+          "width": 520,
+          "height": 16,
+          "explicitModes": {}
+        },
+        {
+          "id": "I59:2550;29:224;62:2990;58:1561",
+          "parentId": "I59:2550;29:224;62:2990",
+          "parentName": "ComponentSpecimen / ButtonGroup",
+          "width": 520,
+          "height": 16,
+          "explicitModes": {}
+        },
+        {
+          "id": "I59:2550;29:224;62:3025;58:1561",
+          "parentId": "I59:2550;29:224;62:3025",
+          "parentName": "ComponentSpecimen / TextLink",
+          "width": 520,
+          "height": 16,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:2550;29:224;62:2975;58:1561"
+        ],
+        [
+          21,
+          "90;58:1561"
+        ],
+        [
+          19,
+          "3025;58:1561"
+        ],
+        [
+          21,
+          "40;58:1561"
+        ],
+        [
+          21,
+          "56;58:1561"
+        ],
+        [
+          20,
+          "102;58:1561"
+        ],
+        [
+          21,
+          "31;58:1561"
+        ],
+        [
+          21,
+          "87;58:1561"
+        ],
+        [
+          20,
+          "206;58:1561"
+        ],
+        [
+          21,
+          "18;58:1561"
+        ],
+        [
+          21,
+          "35;58:1561"
+        ],
+        [
+          21,
+          "48;58:1561"
+        ],
+        [
+          21,
+          "65;58:1561"
+        ],
+        [
+          21,
+          "80;58:1561"
+        ],
+        [
+          21,
+          "97;58:1561"
+        ],
+        [
+          20,
+          "310;58:1561"
+        ],
+        [
+          21,
+          "33;58:1561"
+        ],
+        [
+          21,
+          "46;58:1561"
+        ],
+        [
+          21,
+          "62;58:1561"
+        ],
+        [
+          21,
+          "75;58:1561"
+        ],
+        [
+          21,
+          "90;58:1561"
+        ],
+        [
+          20,
+          "413;58:1561"
+        ],
+        [
+          21,
+          "31;58:1561"
+        ],
+        [
+          21,
+          "46;58:1561"
+        ],
+        [
+          21,
+          "60;58:1561"
+        ],
+        [
+          21,
+          "72;58:1561"
+        ],
+        [
+          20,
+          "501;58:1561"
+        ],
+        [
+          21,
+          "55;58:1561"
+        ],
+        [
+          21,
+          "77;58:1561"
+        ],
+        [
+          21,
+          "90;58:1561"
+        ],
+        [
+          20,
+          "609;58:1561"
+        ],
+        [
+          21,
+          "26;58:1561"
+        ],
+        [
+          21,
+          "45;58:1561"
+        ],
+        [
+          21,
+          "62;58:1561"
+        ],
+        [
+          21,
+          "81;58:1561"
+        ],
+        [
+          21,
+          "98;58:1561"
+        ],
+        [
+          20,
+          "714;58:1561"
+        ],
+        [
+          21,
+          "28;58:1561"
+        ],
+        [
+          21,
+          "44;58:1561"
+        ],
+        [
+          21,
+          "67;58:1561"
+        ],
+        [
+          21,
+          "82;58:1561"
+        ],
+        [
+          20,
+          "818;58:1561"
+        ],
+        [
+          21,
+          "95;58:1561"
+        ],
+        [
+          20,
+          "925;58:1561"
+        ]
+      ],
+      "count": 44
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template filters",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:4268",
+          "parentId": "I59:3606;29:224;59:3778",
+          "parentName": "Catalog content / templates",
+          "width": 1138,
+          "height": 40,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:4268"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template gallery",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:4281",
+          "parentId": "I59:3606;29:224;59:3778",
+          "parentName": "Catalog content / templates",
+          "width": 1138,
+          "height": 5196,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:4281"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 1",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:4283",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:4283"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Caption",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:4289;58:1567",
+          "parentId": "I59:3606;29:224;65:4289",
+          "parentName": "TemplatePreviewCard / dashboard",
+          "width": 364,
+          "height": 68,
+          "explicitModes": {}
+        },
+        {
+          "id": "I59:3606;29:224;65:4626;58:1567",
+          "parentId": "I59:3606;29:224;65:4626",
+          "parentName": "TemplatePreviewCard / analytics",
+          "width": 364,
+          "height": 68,
+          "explicitModes": {}
+        },
+        {
+          "id": "I59:3606;29:224;65:5175;58:1567",
+          "parentId": "I59:3606;29:224;65:5175",
+          "parentName": "TemplatePreviewCard / ai",
+          "width": 364,
+          "height": 68,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:10375;58:1567"
+        ],
+        [
+          21,
+          "831;58:1567"
+        ],
+        [
+          20,
+          "1351;58:1567"
+        ],
+        [
+          21,
+          "957;58:1567"
+        ],
+        [
+          20,
+          "2400;58:1567"
+        ],
+        [
+          21,
+          "739;58:1567"
+        ],
+        [
+          20,
+          "3063;58:1567"
+        ],
+        [
+          21,
+          "418;58:1567"
+        ],
+        [
+          19,
+          "4289;58:1567"
+        ],
+        [
+          20,
+          "626;58:1567"
+        ],
+        [
+          19,
+          "5175;58:1567"
+        ],
+        [
+          20,
+          "442;58:1567"
+        ],
+        [
+          20,
+          "749;58:1567"
+        ],
+        [
+          19,
+          "6021;58:1567"
+        ],
+        [
+          20,
+          "330;58:1567"
+        ],
+        [
+          20,
+          "625;58:1567"
+        ],
+        [
+          20,
+          "988;58:1567"
+        ],
+        [
+          19,
+          "7446;58:1567"
+        ],
+        [
+          20,
+          "893;58:1567"
+        ],
+        [
+          19,
+          "8392;58:1567"
+        ],
+        [
+          20,
+          "819;58:1567"
+        ],
+        [
+          19,
+          "9242;58:1567"
+        ],
+        [
+          20,
+          "664;58:1567"
+        ],
+        [
+          20,
+          "958;58:1567"
+        ],
+        [
+          17,
+          "6:10528;58:1567"
+        ],
+        [
+          21,
+          "924;58:1567"
+        ],
+        [
+          20,
+          "1291;58:1567"
+        ],
+        [
+          21,
+          "731;58:1567"
+        ],
+        [
+          20,
+          "2232;58:1567"
+        ],
+        [
+          21,
+          "654;58:1567"
+        ],
+        [
+          20,
+          "3001;58:1567"
+        ],
+        [
+          21,
+          "370;58:1567"
+        ],
+        [
+          21,
+          "733;58:1567"
+        ],
+        [
+          20,
+          "4086;58:1567"
+        ],
+        [
+          21,
+          "391;58:1567"
+        ],
+        [
+          21,
+          "763;58:1567"
+        ],
+        [
+          17,
+          "7:13034;58:1567"
+        ],
+        [
+          21,
+          "118;58:1567"
+        ],
+        [
+          22,
+          "79;58:1567"
+        ],
+        [
+          21,
+          "253;58:1567"
+        ],
+        [
+          21,
+          "550;58:1567"
+        ],
+        [
+          21,
+          "795;58:1567"
+        ],
+        [
+          21,
+          "847;58:1567"
+        ],
+        [
+          21,
+          "901;58:1567"
+        ],
+        [
+          22,
+          "54;58:1567"
+        ],
+        [
+          20,
+          "4023;58:1567"
+        ]
+      ],
+      "count": 46
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 2",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:5436",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:5436"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 3",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:6324",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:6324"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 4",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:7440",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:7440"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 5",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:8813",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:8813"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 6",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:9952",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:9952"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 7",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:11345",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:11345"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 8",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;65:12733",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;65:12733"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 9",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;66:10522",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;66:10522"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 10",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;66:11725",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;66:11725"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 11",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;66:12995",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;66:12995"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 12",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;66:14080",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;66:14080"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 13",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;67:13028",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;67:13028"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 14",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;67:13247",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;67:13247"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 15",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;67:13841",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;67:13841"
+        ]
+      ],
+      "count": 1
+    },
+    {
+      "rootId": "59:3605",
+      "type": "FRAME",
+      "name": "Template row 16",
+      "alias": null,
+      "variableName": null,
+      "rawColor": "#FFFFFF",
+      "resolvedColor": "#FFFFFF",
+      "examples": [
+        {
+          "id": "I59:3606;29:224;67:14017",
+          "parentId": "I59:3606;29:224;65:4281",
+          "parentName": "Template gallery",
+          "width": 1138,
+          "height": 306,
+          "explicitModes": {}
+        }
+      ],
+      "ids": [
+        [
+          0,
+          "I59:3606;29:224;67:14017"
+        ]
+      ],
+      "count": 1
+    }
+  ],
+  "idEncoding": "Each group ids are complete sorted IDs front-coded as [common-prefix-length-from-previous,suffix], previous starts empty.",
+  "footers": [
+    {
+      "id": "19:469",
+      "rootId": "5:3",
+      "text": "Aureform UI \u00b7 1.0",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      }
+    },
+    {
+      "id": "I59:3606;29:224;65:5175;58:1566;65:5418",
+      "rootId": "59:3605",
+      "text": "Aureform UI \u00b7 1.0",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      }
+    },
+    {
+      "id": "I59:3606;29:224;65:6625;58:1566;65:6970",
+      "rootId": "59:3605",
+      "text": "Aureform UI \u00b7 1.0",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      }
+    }
+  ]
+}

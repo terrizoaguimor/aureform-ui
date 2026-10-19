@@ -1,0 +1,2727 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:aureform:code-connect:native-records:1.1",
+  "title": "Aureform 1.1 observed native records for final Code Connect",
+  "description": "Preparation only. No new node/property IDs are supplied. Validate complete per-family receipts; then cross-check actual state, native property definitions, unique IDs and default membership before final generation.",
+  "type": "object",
+  "required": [
+    "fileKey",
+    "components"
+  ],
+  "properties": {
+    "fileKey": {
+      "const": "lHp5p10yGb7lqXJDnAox0N"
+    },
+    "version": {
+      "const": "1.1.0"
+    },
+    "recordedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "components": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "Button / Shapes": {
+          "$ref": "#/definitions/buttonShapes"
+        },
+        "Table": {
+          "$ref": "#/definitions/table"
+        },
+        "DataTable": {
+          "$ref": "#/definitions/dataTable"
+        },
+        "Chart": {
+          "$ref": "#/definitions/chart"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "propertyDefinition": {
+      "type": "object",
+      "required": [
+        "type",
+        "defaultValue"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "TEXT",
+            "BOOLEAN",
+            "INSTANCE_SWAP",
+            "VARIANT"
+          ]
+        },
+        "defaultValue": {
+          "type": [
+            "string",
+            "boolean"
+          ]
+        },
+        "variantOptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "BOOLEAN"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "defaultValue": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "TEXT",
+                  "INSTANCE_SWAP",
+                  "VARIANT"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "defaultValue": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "buttonShapes": {
+      "type": "object",
+      "description": "Button / Shapes: complete observed native record; schema validity alone does not prove IDs or visual QA.",
+      "required": [
+        "setId",
+        "defaultId",
+        "axes",
+        "variants",
+        "propertyDefinitions",
+        "label",
+        "showIcon",
+        "icon"
+      ],
+      "properties": {
+        "setId": {
+          "type": "string",
+          "pattern": "^\\d+:\\d+$"
+        },
+        "defaultId": {
+          "type": "string",
+          "pattern": "^\\d+:\\d+$"
+        },
+        "axes": {
+          "type": "object",
+          "required": [
+            "Shape",
+            "Size"
+          ],
+          "properties": {
+            "Shape": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Rounded",
+                  "Pill",
+                  "Square"
+                ]
+              },
+              "minItems": 3,
+              "maxItems": 3,
+              "uniqueItems": true
+            },
+            "Size": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Small",
+                  "Medium",
+                  "Large"
+                ]
+              },
+              "minItems": 3,
+              "maxItems": 3,
+              "uniqueItems": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "axes"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^\\d+:\\d+$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "axes": {
+                "type": "object",
+                "required": [
+                  "Shape",
+                  "Size"
+                ],
+                "properties": {
+                  "Shape": {
+                    "enum": [
+                      "Rounded",
+                      "Pill",
+                      "Square"
+                    ]
+                  },
+                  "Size": {
+                    "enum": [
+                      "Small",
+                      "Medium",
+                      "Large"
+                    ]
+                  }
+                },
+                "additionalProperties": false
+              },
+              "width": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "height": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "additionalProperties": false
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "Shape": "Rounded",
+                      "Size": "Small"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "Shape": "Rounded",
+                      "Size": "Medium"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "Shape": "Rounded",
+                      "Size": "Large"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "Shape": "Pill",
+                      "Size": "Small"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "Shape": "Pill",
+                      "Size": "Medium"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "Shape": "Pill",
+                      "Size": "Large"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "Shape": "Square",
+                      "Size": "Small"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "Shape": "Square",
+                      "Size": "Medium"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "Shape": "Square",
+                      "Size": "Large"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            }
+          ]
+        },
+        "propertyDefinitions": {
+          "type": "object",
+          "required": [
+            "Shape",
+            "Size"
+          ],
+          "properties": {
+            "Shape": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "VARIANT"
+                    },
+                    "variantOptions": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "Rounded",
+                          "Pill",
+                          "Square"
+                        ]
+                      },
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "variantOptions"
+                  ]
+                }
+              ]
+            },
+            "Size": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "VARIANT"
+                    },
+                    "variantOptions": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "Small",
+                          "Medium",
+                          "Large"
+                        ]
+                      },
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "variantOptions"
+                  ]
+                }
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "patternProperties": {
+            "^Label#\\d+:\\d+$": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "TEXT"
+                    }
+                  }
+                }
+              ]
+            },
+            "^Show icon#\\d+:\\d+$": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    }
+                  }
+                }
+              ]
+            },
+            "^Icon#\\d+:\\d+$": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "INSTANCE_SWAP"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "minProperties": 5,
+          "maxProperties": 5
+        },
+        "sourceMappings": {
+          "type": "object"
+        },
+        "label": {
+          "type": "string",
+          "pattern": "^Label#\\d+:\\d+$"
+        },
+        "showIcon": {
+          "type": "string",
+          "pattern": "^Show icon#\\d+:\\d+$"
+        },
+        "icon": {
+          "type": "string",
+          "pattern": "^Icon#\\d+:\\d+$"
+        }
+      },
+      "additionalProperties": false,
+      "x-source": "src/components/ui/button.tsx",
+      "x-source-mappings": {
+        "shape": {
+          "Rounded": "rounded",
+          "Pill": "pill",
+          "Square": "square"
+        },
+        "size": {
+          "Small": "sm",
+          "Medium": "default",
+          "Large": "lg"
+        }
+      },
+      "x-matrix-count": 9,
+      "x-default-axes": {
+        "Shape": "Rounded",
+        "Size": "Medium"
+      }
+    },
+    "table": {
+      "type": "object",
+      "description": "Table: complete observed native record; schema validity alone does not prove IDs or visual QA.",
+      "required": [
+        "setId",
+        "defaultId",
+        "axes",
+        "variants",
+        "propertyDefinitions"
+      ],
+      "properties": {
+        "setId": {
+          "const": "23:355"
+        },
+        "defaultId": {
+          "const": "23:336"
+        },
+        "axes": {
+          "type": "object",
+          "required": [
+            "State",
+            "Appearance",
+            "Density"
+          ],
+          "properties": {
+            "State": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Default",
+                  "Empty"
+                ]
+              },
+              "minItems": 2,
+              "maxItems": 2,
+              "uniqueItems": true
+            },
+            "Appearance": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Elevated",
+                  "Glass",
+                  "Gradient",
+                  "Flat"
+                ]
+              },
+              "minItems": 4,
+              "maxItems": 4,
+              "uniqueItems": true
+            },
+            "Density": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Comfortable",
+                  "Compact"
+                ]
+              },
+              "minItems": 2,
+              "maxItems": 2,
+              "uniqueItems": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 16,
+          "maxItems": 16,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "axes"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^\\d+:\\d+$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "axes": {
+                "type": "object",
+                "required": [
+                  "State",
+                  "Appearance",
+                  "Density"
+                ],
+                "properties": {
+                  "State": {
+                    "enum": [
+                      "Default",
+                      "Empty"
+                    ]
+                  },
+                  "Appearance": {
+                    "enum": [
+                      "Elevated",
+                      "Glass",
+                      "Gradient",
+                      "Flat"
+                    ]
+                  },
+                  "Density": {
+                    "enum": [
+                      "Comfortable",
+                      "Compact"
+                    ]
+                  }
+                },
+                "additionalProperties": false
+              },
+              "width": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "height": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "additionalProperties": false
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Elevated",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Elevated",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Glass",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Glass",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Gradient",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Gradient",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Flat",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Flat",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Elevated",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Elevated",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Glass",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Glass",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Gradient",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Gradient",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Flat",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Flat",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            }
+          ]
+        },
+        "propertyDefinitions": {
+          "type": "object",
+          "required": [
+            "State",
+            "Appearance",
+            "Density"
+          ],
+          "properties": {
+            "State": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "VARIANT"
+                    },
+                    "variantOptions": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "Default",
+                          "Empty"
+                        ]
+                      },
+                      "minItems": 2,
+                      "maxItems": 2,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "variantOptions"
+                  ]
+                }
+              ]
+            },
+            "Appearance": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "VARIANT"
+                    },
+                    "variantOptions": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "Elevated",
+                          "Glass",
+                          "Gradient",
+                          "Flat"
+                        ]
+                      },
+                      "minItems": 4,
+                      "maxItems": 4,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "variantOptions"
+                  ]
+                }
+              ]
+            },
+            "Density": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "VARIANT"
+                    },
+                    "variantOptions": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "Comfortable",
+                          "Compact"
+                        ]
+                      },
+                      "minItems": 2,
+                      "maxItems": 2,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "variantOptions"
+                  ]
+                }
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "sourceMappings": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "x-source": "src/components/ui/table.tsx",
+      "x-source-mappings": {
+        "appearance": {
+          "Elevated": "elevated",
+          "Glass": "glass",
+          "Gradient": "gradient",
+          "Flat": "flat"
+        },
+        "density": {
+          "Comfortable": "comfortable",
+          "Compact": "compact"
+        },
+        "State": {
+          "Default": "explicit rows fixture",
+          "Empty": "empty TableBody fixture"
+        }
+      },
+      "x-matrix-count": 16,
+      "x-default-axes": {
+        "State": "Default",
+        "Appearance": "Elevated",
+        "Density": "Comfortable"
+      }
+    },
+    "dataTable": {
+      "type": "object",
+      "description": "DataTable: complete observed native record; schema validity alone does not prove IDs or visual QA.",
+      "required": [
+        "setId",
+        "defaultId",
+        "axes",
+        "variants",
+        "propertyDefinitions"
+      ],
+      "properties": {
+        "setId": {
+          "const": "23:443"
+        },
+        "defaultId": {
+          "const": "23:356"
+        },
+        "axes": {
+          "type": "object",
+          "required": [
+            "State",
+            "Appearance",
+            "Density"
+          ],
+          "properties": {
+            "State": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Default",
+                  "Selected",
+                  "Empty",
+                  "Loading",
+                  "Error"
+                ]
+              },
+              "minItems": 5,
+              "maxItems": 5,
+              "uniqueItems": true
+            },
+            "Appearance": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Elevated",
+                  "Glass",
+                  "Gradient",
+                  "Flat"
+                ]
+              },
+              "minItems": 4,
+              "maxItems": 4,
+              "uniqueItems": true
+            },
+            "Density": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Comfortable",
+                  "Compact"
+                ]
+              },
+              "minItems": 2,
+              "maxItems": 2,
+              "uniqueItems": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 28,
+          "maxItems": 28,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "axes"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^\\d+:\\d+$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "axes": {
+                "type": "object",
+                "required": [
+                  "State",
+                  "Appearance",
+                  "Density"
+                ],
+                "properties": {
+                  "State": {
+                    "enum": [
+                      "Default",
+                      "Selected",
+                      "Empty",
+                      "Loading",
+                      "Error"
+                    ]
+                  },
+                  "Appearance": {
+                    "enum": [
+                      "Elevated",
+                      "Glass",
+                      "Gradient",
+                      "Flat"
+                    ]
+                  },
+                  "Density": {
+                    "enum": [
+                      "Comfortable",
+                      "Compact"
+                    ]
+                  }
+                },
+                "additionalProperties": false
+              },
+              "width": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "height": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "axes": {
+                      "properties": {
+                        "Density": {
+                          "const": "Compact"
+                        }
+                      }
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "axes": {
+                      "properties": {
+                        "State": {
+                          "enum": [
+                            "Default",
+                            "Selected"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Elevated",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Selected",
+                      "Appearance": "Elevated",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Elevated",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Loading",
+                      "Appearance": "Elevated",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Error",
+                      "Appearance": "Elevated",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Elevated",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Selected",
+                      "Appearance": "Elevated",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Glass",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Selected",
+                      "Appearance": "Glass",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Glass",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Loading",
+                      "Appearance": "Glass",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Error",
+                      "Appearance": "Glass",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Glass",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Selected",
+                      "Appearance": "Glass",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Gradient",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Selected",
+                      "Appearance": "Gradient",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Gradient",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Loading",
+                      "Appearance": "Gradient",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Error",
+                      "Appearance": "Gradient",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Gradient",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Selected",
+                      "Appearance": "Gradient",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Flat",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Selected",
+                      "Appearance": "Flat",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Empty",
+                      "Appearance": "Flat",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Loading",
+                      "Appearance": "Flat",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Error",
+                      "Appearance": "Flat",
+                      "Density": "Comfortable"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Default",
+                      "Appearance": "Flat",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "axes": {
+                    "const": {
+                      "State": "Selected",
+                      "Appearance": "Flat",
+                      "Density": "Compact"
+                    }
+                  }
+                },
+                "required": [
+                  "axes"
+                ]
+              }
+            }
+          ]
+        },
+        "propertyDefinitions": {
+          "type": "object",
+          "required": [
+            "State",
+            "Appearance",
+            "Density"
+          ],
+          "properties": {
+            "State": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "VARIANT"
+                    },
+                    "variantOptions": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "Default",
+                          "Selected",
+                          "Empty",
+                          "Loading",
+                          "Error"
+                        ]
+                      },
+                      "minItems": 5,
+                      "maxItems": 5,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "variantOptions"
+                  ]
+                }
+              ]
+            },
+            "Appearance": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "VARIANT"
+                    },
+                    "variantOptions": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "Elevated",
+                          "Glass",
+                          "Gradient",
+                          "Flat"
+                        ]
+                      },
+                      "minItems": 4,
+                      "maxItems": 4,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "variantOptions"
+                  ]
+                }
+              ]
+            },
+            "Density": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "VARIANT"
+                    },
+                    "variantOptions": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "Comfortable",
+                          "Compact"
+                        ]
+                      },
+                      "minItems": 2,
+                      "maxItems": 2,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "variantOptions"
+                  ]
+                }
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "sourceMappings": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "x-source": "src/components/ui/data-table.tsx",
+      "x-source-mappings": {
+        "appearance": {
+          "Elevated": "elevated",
+          "Glass": "glass",
+          "Gradient": "gradient",
+          "Flat": "flat"
+        },
+        "density": {
+          "Comfortable": "comfortable",
+          "Compact": "compact"
+        },
+        "State": {
+          "Default": "explicit rows fixture",
+          "Selected": "selectable; selection remains user interaction",
+          "Empty": "data=[]",
+          "Loading": "loading=true",
+          "Error": "error text with onRetry callback"
+        }
+      },
+      "x-matrix-count": 28,
+      "x-default-axes": {
+        "State": "Default",
+        "Appearance": "Elevated",
+        "Density": "Comfortable"
+      }
+    },
+    "chart": {
+      "type": "object",
+      "description": "Chart: complete observed native record; schema validity alone does not prove IDs or visual QA.",
+      "required": [
+        "setId",
+        "defaultId",
+        "axes",
+        "variants",
+        "propertyDefinitions",
+        "label",
+        "legend",
+        "dataVisibility",
+        "glow",
+        "series1",
+        "series2",
+        "series3",
+        "category1",
+        "category2",
+        "category3",
+        "category4",
+        "category5",
+        "category6"
+      ],
+      "properties": {
+        "setId": {
+          "const": "23:501"
+        },
+        "defaultId": {
+          "const": "23:444"
+        },
+        "axes": {
+          "type": "object",
+          "required": [
+            "Kind"
+          ],
+          "properties": {
+            "Kind": {
+              "type": "array",
+              "minItems": 13,
+              "maxItems": 13,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "Area",
+                  "Line",
+                  "Bar",
+                  "Donut",
+                  "Radar",
+                  "Radial",
+                  "HorizontalBar",
+                  "StackedBar",
+                  "StackedArea",
+                  "DivergingBar",
+                  "Gauge",
+                  "Rings",
+                  "Heatmap"
+                ]
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "enum": [
+                      "Area"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "Line"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "Bar"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "Donut"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "Radar"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "Radial"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "HorizontalBar"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "StackedBar"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "StackedArea"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "DivergingBar"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "Gauge"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "Rings"
+                    ]
+                  }
+                },
+                {
+                  "contains": {
+                    "enum": [
+                      "Heatmap"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 13,
+          "maxItems": 13,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "axes"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^\\d+:\\d+$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "axes": {
+                "type": "object",
+                "required": [
+                  "Kind"
+                ],
+                "properties": {
+                  "Kind": {
+                    "enum": [
+                      "Area",
+                      "Line",
+                      "Bar",
+                      "Donut",
+                      "Radar",
+                      "Radial",
+                      "HorizontalBar",
+                      "StackedBar",
+                      "StackedArea",
+                      "DivergingBar",
+                      "Gauge",
+                      "Rings",
+                      "Heatmap"
+                    ]
+                  }
+                },
+                "additionalProperties": false
+              },
+              "width": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "height": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "additionalProperties": false
+          },
+          "allOf": [
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "Area"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "Line"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "Bar"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "Donut"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "Radar"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "Radial"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "HorizontalBar"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "StackedBar"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "StackedArea"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "DivergingBar"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "Gauge"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "Rings"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "required": [
+                  "axes"
+                ],
+                "properties": {
+                  "axes": {
+                    "required": [
+                      "Kind"
+                    ],
+                    "properties": {
+                      "Kind": {
+                        "enum": [
+                          "Heatmap"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "propertyDefinitions": {
+          "type": "object",
+          "required": [
+            "Label#23:14",
+            "Show legend#189:0",
+            "Show data#189:7",
+            "Glow#189:14",
+            "Series 1#189:21",
+            "Series 2#189:28",
+            "Series 3#189:35",
+            "Category 1#189:42",
+            "Category 2#189:49",
+            "Category 3#189:56",
+            "Category 4#189:63",
+            "Category 5#189:70",
+            "Category 6#189:77",
+            "Kind"
+          ],
+          "properties": {
+            "Kind": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "VARIANT"
+                    },
+                    "variantOptions": {
+                      "type": "array",
+                      "minItems": 13,
+                      "maxItems": 13,
+                      "uniqueItems": true,
+                      "items": {
+                        "enum": [
+                          "Area",
+                          "Line",
+                          "Bar",
+                          "Donut",
+                          "Radar",
+                          "Radial",
+                          "HorizontalBar",
+                          "StackedBar",
+                          "StackedArea",
+                          "DivergingBar",
+                          "Gauge",
+                          "Rings",
+                          "Heatmap"
+                        ]
+                      },
+                      "allOf": [
+                        {
+                          "contains": {
+                            "enum": [
+                              "Area"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "Line"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "Bar"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "Donut"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "Radar"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "Radial"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "HorizontalBar"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "StackedBar"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "StackedArea"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "DivergingBar"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "Gauge"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "Rings"
+                            ]
+                          }
+                        },
+                        {
+                          "contains": {
+                            "enum": [
+                              "Heatmap"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "variantOptions"
+                  ]
+                }
+              ]
+            },
+            "Label#23:14": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "TEXT"
+                    }
+                  }
+                }
+              ]
+            },
+            "Show legend#189:0": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": false
+                    }
+                  }
+                }
+              ]
+            },
+            "Show data#189:7": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": false
+                    }
+                  }
+                }
+              ]
+            },
+            "Glow#189:14": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": false
+                    }
+                  }
+                }
+              ]
+            },
+            "Series 1#189:21": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            },
+            "Series 2#189:28": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            },
+            "Series 3#189:35": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            },
+            "Category 1#189:42": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            },
+            "Category 2#189:49": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            },
+            "Category 3#189:56": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            },
+            "Category 4#189:63": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            },
+            "Category 5#189:70": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            },
+            "Category 6#189:77": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/propertyDefinition"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "BOOLEAN"
+                    },
+                    "defaultValue": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "sourceMappings": {
+          "type": "object"
+        },
+        "label": {
+          "const": "Label#23:14"
+        },
+        "legend": {
+          "const": "Show legend#189:0"
+        },
+        "dataVisibility": {
+          "const": "Show data#189:7"
+        },
+        "glow": {
+          "const": "Glow#189:14"
+        },
+        "series1": {
+          "const": "Series 1#189:21"
+        },
+        "series2": {
+          "const": "Series 2#189:28"
+        },
+        "series3": {
+          "const": "Series 3#189:35"
+        },
+        "category1": {
+          "const": "Category 1#189:42"
+        },
+        "category2": {
+          "const": "Category 2#189:49"
+        },
+        "category3": {
+          "const": "Category 3#189:56"
+        },
+        "category4": {
+          "const": "Category 4#189:63"
+        },
+        "category5": {
+          "const": "Category 5#189:70"
+        },
+        "category6": {
+          "const": "Category 6#189:77"
+        }
+      },
+      "additionalProperties": false,
+      "x-source": "src/components/ui/chart.tsx",
+      "x-source-mappings": {
+        "kind": {
+          "Area": "area",
+          "Line": "line",
+          "Bar": "bar",
+          "Donut": "pie",
+          "Radar": "radar",
+          "Radial": "radial",
+          "HorizontalBar": "horizontal-bar",
+          "StackedBar": "stacked-bar",
+          "StackedArea": "stacked-area",
+          "DivergingBar": "diverging-bar",
+          "Gauge": "gauge",
+          "Rings": "rings",
+          "Heatmap": "heatmap"
+        }
+      },
+      "x-matrix-count": 13,
+      "x-native-kind-spelling": "All 13 Kind values are actual readbacks from Chart.native-definitions-1.1.json; preserve their spelling and exact property suffixes.",
+      "x-default-axes": {
+        "Kind": "Area"
+      }
+    }
+  },
+  "x-evidence": [
+    "src/components/ui/button.tsx",
+    "src/components/ui/table.tsx",
+    "src/components/ui/data-table.tsx",
+    "src/components/ui/chart.tsx",
+    ".figma/scripts/buttons-1.1.js",
+    ".figma/scripts/table-1.1.js",
+    ".figma/component-properties.json",
+    ".figma/state.json"
+  ],
+  "x-cross-record-checks": [
+    "Every set/default/variant ID and suffixed property key must come from the owner receipt; syntax is not native evidence.",
+    "Variant IDs are unique, defaultId belongs to variants, and variant name/axes match the actual native definitions.",
+    "Axes, propertyDefinitions variantOptions and observed variant axes have identical sets of values.",
+    "Each suffixed label/showIcon/icon key resolves to the matching exact native property definition and type.",
+    "Table, DataTable and Chart retain their recorded set/default IDs; Button Shapes is additive.",
+    "Do not promote preparation schemas to authoritative ledgers, update generated snapshots or publish Code Connect."
+  ]
+}

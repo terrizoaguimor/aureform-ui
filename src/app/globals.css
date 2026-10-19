@@ -1,0 +1,190 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/effects.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-subtle: var(--surface-subtle);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --font-sans: var(--font-manrope);
+  --font-editorial: var(--font-instrument);
+  --radius-sm: var(--af-radius-sm, 6px);
+  --radius-md: var(--af-radius-md, 8px);
+  --radius-lg: var(--af-radius-lg, 12px);
+  --radius-xl: var(--af-radius-xl, 16px);
+}
+@layer base {
+  * {
+    border-color: var(--border);
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+  html {
+    scroll-behavior: smooth;
+    background: var(--background);
+  }
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-manrope), sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--accent);
+    color: var(--foreground);
+  }
+  summary {
+    cursor: pointer;
+  }
+}
+.editorial {
+  font-family: var(--font-display, var(--font-manrope)), sans-serif;
+  font-weight: var(--af-display-weight, 650);
+  letter-spacing: -0.035em;
+}
+.page-enter {
+  animation: page-enter 220ms ease-out both;
+}
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.dot-grid {
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+.chart-shell .recharts-cartesian-axis-tick text {
+  fill: var(--muted-foreground);
+  font-size: 11px;
+}
+.chart-shell .recharts-cartesian-grid line {
+  stroke: var(--border);
+  stroke-dasharray: 3 4;
+}
+.chart-shell .recharts-tooltip-wrapper {
+  outline: none;
+}
+.chart-shell:focus {
+  outline: none;
+}
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.prose-doc p {
+  color: var(--muted-foreground);
+  line-height: 1.85;
+  margin: 12px 0;
+}
+.prose-doc h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+.prose-doc code {
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  background: var(--surface-subtle);
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+.prose-doc pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  line-height: 1.8;
+  background: var(--surface-subtle);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.prose-doc pre code {
+  padding: 0;
+  background: none;
+}
+.rdp-root {
+  --rdp-accent-color: var(--primary);
+  --rdp-accent-background-color: var(--accent);
+  --rdp-day-height: 36px;
+  --rdp-day-width: 36px;
+  --rdp-nav-height: 36px;
+  font-size: 13px;
+}
+.maplibregl-map {
+  font-family: var(--font-manrope), sans-serif;
+}
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+  }
+}
+@media print {
+  aside,
+  header,
+  [data-no-print] {
+    display: none !important;
+  }
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+}

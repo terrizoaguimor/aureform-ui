@@ -1,0 +1,44 @@
+{
+  "status": "optional-native-thumbnail-slots-ready",
+  "slots": [
+    {
+      "variantId": "31:1480",
+      "variantName": "State=Default",
+      "thumbnailId": "281:4730",
+      "propertyKey": "Show thumbnail#281:0",
+      "visibleByDefault": false
+    },
+    {
+      "variantId": "31:1491",
+      "variantName": "State=Selected",
+      "thumbnailId": "281:4732",
+      "propertyKey": "Show thumbnail#281:0",
+      "visibleByDefault": false
+    }
+  ],
+  "sourceAssociation": {
+    "file": "src/components/templates/data-manager.tsx",
+    "role": "ProductThumbnail internal helper; 36px image chosen by immutable prd seed ID.",
+    "export": "DataManagerTemplate",
+    "newSourceExports": []
+  },
+  "oldPropertyKeysPreserved": true,
+  "createdNodeIds": [
+    "281:4729",
+    "281:4730",
+    "281:4731",
+    "281:4732"
+  ],
+  "mutatedNodeIds": [
+    "31:1504",
+    "31:1483",
+    "31:1484",
+    "31:1482",
+    "31:1480",
+    "31:1496",
+    "31:1497",
+    "31:1495",
+    "31:1491"
+  ],
+  "removedNodeIds": []
+}

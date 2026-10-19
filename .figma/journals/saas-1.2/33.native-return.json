@@ -1,0 +1,248 @@
+{
+  "status": "passed",
+  "scopedRoutes": 6,
+  "scopedViewRoots": 12,
+  "views": [
+    {
+      "path": "onboarding",
+      "theme": "Light",
+      "nodeId": "237:16428",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "nativeNodes": 177,
+      "texts": 57,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:1",
+      "activeNavigation": [
+        "Get started"
+      ],
+      "profileBottom": 1224
+    },
+    {
+      "path": "onboarding",
+      "theme": "Dark",
+      "nodeId": "237:16692",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "nativeNodes": 177,
+      "texts": 57,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:2",
+      "activeNavigation": [
+        "Get started"
+      ],
+      "profileBottom": 1224
+    },
+    {
+      "path": "settings/workspace",
+      "theme": "Light",
+      "nodeId": "237:16887",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "nativeNodes": 179,
+      "texts": 63,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:1",
+      "activeNavigation": [
+        "Workspace"
+      ],
+      "profileBottom": 1224
+    },
+    {
+      "path": "settings/workspace",
+      "theme": "Dark",
+      "nodeId": "237:17079",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "nativeNodes": 179,
+      "texts": 63,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:2",
+      "activeNavigation": [
+        "Workspace"
+      ],
+      "profileBottom": 1224
+    },
+    {
+      "path": "customers/detail",
+      "theme": "Light",
+      "nodeId": "237:17271",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1293,
+      "nativeNodes": 225,
+      "texts": 88,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:1",
+      "activeNavigation": [
+        "Customers"
+      ],
+      "profileBottom": 1277
+    },
+    {
+      "path": "customers/detail",
+      "theme": "Dark",
+      "nodeId": "237:17522",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1293,
+      "nativeNodes": 225,
+      "texts": 88,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:2",
+      "activeNavigation": [
+        "Customers"
+      ],
+      "profileBottom": 1277
+    },
+    {
+      "path": "imports",
+      "theme": "Light",
+      "nodeId": "237:17773",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "nativeNodes": 188,
+      "texts": 63,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:1",
+      "activeNavigation": [
+        "Import data"
+      ],
+      "profileBottom": 1224
+    },
+    {
+      "path": "imports",
+      "theme": "Dark",
+      "nodeId": "237:17965",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "nativeNodes": 188,
+      "texts": 63,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:2",
+      "activeNavigation": [
+        "Import data"
+      ],
+      "profileBottom": 1224
+    },
+    {
+      "path": "customers",
+      "theme": "Light",
+      "nodeId": "237:18156",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "nativeNodes": 433,
+      "texts": 121,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:1",
+      "activeNavigation": [
+        "Customers"
+      ],
+      "profileBottom": 1224
+    },
+    {
+      "path": "customers",
+      "theme": "Dark",
+      "nodeId": "237:18891",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "nativeNodes": 433,
+      "texts": 121,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:2",
+      "activeNavigation": [
+        "Customers"
+      ],
+      "profileBottom": 1224
+    },
+    {
+      "path": "settings/team",
+      "theme": "Light",
+      "nodeId": "237:19625",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1362,
+      "nativeNodes": 221,
+      "texts": 85,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:1",
+      "activeNavigation": [
+        "Team"
+      ],
+      "profileBottom": 1346
+    },
+    {
+      "path": "settings/team",
+      "theme": "Dark",
+      "nodeId": "237:19873",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1362,
+      "nativeNodes": 221,
+      "texts": 85,
+      "imageFills": 0,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "mode": "2:2",
+      "activeNavigation": [
+        "Team"
+      ],
+      "profileBottom": 1346
+    }
+  ],
+  "problems": []
+}

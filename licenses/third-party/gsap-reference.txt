@@ -1,0 +1,13 @@
+GSAP 3.15.0
+
+Declared license: Standard 'no charge' license: https://gsap.com/standard-license.
+Official terms: https://gsap.com/community/standard-license/
+
+The npm distribution supplies its license URL instead of a standalone LICENSE file. GSAP retains its own Standard No Charge license; it is not relicensed under Aureform's Apache-2.0 license. Source ZIPs contain Aureform's original GSAP integration code; consumers install GSAP as a dependency. A compiled demo may include GSAP in its JavaScript bundles under GSAP's own license.
+
+Official terms verified 19 October 2026:
+https://gsap.com/community/standard-license/
+Effective date: April 30, 2025.
+Last modified date: May 30, 2025.
+
+The official license permits use on websites and applications, including commercial projects at no charge, and separately restricts use in visual animation tools that compete with Webflow's animation-building capabilities. This reference summarizes the distinction only; the official license governs GSAP.

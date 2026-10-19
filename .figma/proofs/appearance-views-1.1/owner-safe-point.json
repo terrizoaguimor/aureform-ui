@@ -1,0 +1,237 @@
+{
+  "status": "lease-ceded-to-owner",
+  "mcpInflight": false,
+  "appSourceEdited": false,
+  "views": [
+    {
+      "view": "studio",
+      "rootId": "134:8412",
+      "captureRootId": "138:10024",
+      "status": "refined-native-write-confirmed",
+      "descendantCount": 1054,
+      "allAffectedIdCounts": {
+        "created": 488,
+        "mutated": 1123,
+        "removed": 2,
+        "unique": 1191
+      },
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "fullUIRasterCount": 0,
+      "codecRoundTripVerified": true,
+      "executedCodeSha256": "e23f0fd52fcf0d08d5967ed3350ac5a3d5684d271656baf76e07a29826e61df9",
+      "finalScreenshotStatus": "asset-generated-download-pending-owner",
+      "cleanupStatus": "capture-root-intact",
+      "statePatch": {
+        "entity": "routeScreens",
+        "route": "studio",
+        "rootId": "134:8412"
+      }
+    },
+    {
+      "view": "themes",
+      "rootId": "135:8894",
+      "captureRootId": "139:10024",
+      "status": "refined-native-write-confirmed",
+      "descendantCount": 1380,
+      "allAffectedIdCounts": {
+        "created": 706,
+        "mutated": 1459,
+        "removed": 2,
+        "unique": 1725
+      },
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "fullUIRasterCount": 0,
+      "codecRoundTripVerified": true,
+      "executedCodeSha256": "6efafb79e38e539ecab5a361eb6200518f93bb93f14ee710a231cf18c04e233c",
+      "finalScreenshotStatus": "asset-generated-download-pending-owner",
+      "cleanupStatus": "capture-root-intact",
+      "statePatch": {
+        "entity": "routeScreens",
+        "route": "themes",
+        "rootId": "135:8894"
+      }
+    },
+    {
+      "view": "effects",
+      "rootId": "136:9476",
+      "captureRootId": "140:10024",
+      "status": "refined-native-write-confirmed",
+      "descendantCount": 1153,
+      "allAffectedIdCounts": {
+        "created": 489,
+        "mutated": 1223,
+        "removed": 2,
+        "unique": 1291
+      },
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "fullUIRasterCount": 0,
+      "codecRoundTripVerified": true,
+      "executedCodeSha256": "6386a0f39e63403723f86ebb29f63fa6c5223cf0084b4020472ce1e99c1fe1f5",
+      "finalScreenshotStatus": "asset-generated-download-pending-owner",
+      "cleanupStatus": "capture-root-intact",
+      "statePatch": {
+        "entity": "routeScreens",
+        "route": "effects",
+        "rootId": "136:9476"
+      }
+    }
+  ],
+  "downloadCommand": "bash /tmp/aureform-native3-download-postrefine.sh",
+  "downloadFailure": "curl DNS: Could not resolve host: www.figma.com",
+  "cleanupAllowedAfterPassingVisualReview": [
+    "138:10024",
+    "139:10024",
+    "140:10024"
+  ],
+  "routeScreensCurrentCount": 62,
+  "stateWriteDelegatedToOwner": true,
+  "captureDerivedCollectionInspection": {
+    "status": "inspected",
+    "additionalCaptureCollections": 0,
+    "approvedCollectionIds": [
+      "VariableCollectionId:2:7",
+      "VariableCollectionId:2:36",
+      "VariableCollectionId:2:58",
+      "VariableCollectionId:95:317",
+      "VariableCollectionId:95:381",
+      "VariableCollectionId:95:445",
+      "VariableCollectionId:95:509",
+      "VariableCollectionId:95:573"
+    ],
+    "approvedCollections": [
+      {
+        "id": "VariableCollectionId:2:7",
+        "name": "Aureform · Primitives",
+        "variableCount": 332,
+        "modes": [
+          {
+            "id": "2:0",
+            "name": "Value"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:2:36",
+        "name": "Aureform · Color",
+        "variableCount": 61,
+        "modes": [
+          {
+            "id": "2:1",
+            "name": "Light"
+          },
+          {
+            "id": "2:2",
+            "name": "Dark"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:2:58",
+        "name": "Aureform · Dimension",
+        "variableCount": 16,
+        "modes": [
+          {
+            "id": "2:3",
+            "name": "Value"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:317",
+        "name": "Aureform · Color · Violet",
+        "variableCount": 61,
+        "modes": [
+          {
+            "id": "95:0",
+            "name": "Light"
+          },
+          {
+            "id": "95:1",
+            "name": "Dark"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:381",
+        "name": "Aureform · Color · Ocean",
+        "variableCount": 61,
+        "modes": [
+          {
+            "id": "95:2",
+            "name": "Light"
+          },
+          {
+            "id": "95:3",
+            "name": "Dark"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:445",
+        "name": "Aureform · Color · Mint",
+        "variableCount": 61,
+        "modes": [
+          {
+            "id": "95:4",
+            "name": "Light"
+          },
+          {
+            "id": "95:5",
+            "name": "Dark"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:509",
+        "name": "Aureform · Color · Ember",
+        "variableCount": 61,
+        "modes": [
+          {
+            "id": "95:6",
+            "name": "Light"
+          },
+          {
+            "id": "95:7",
+            "name": "Dark"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:573",
+        "name": "Aureform · Color · Rose",
+        "variableCount": 61,
+        "modes": [
+          {
+            "id": "95:8",
+            "name": "Light"
+          },
+          {
+            "id": "95:9",
+            "name": "Dark"
+          }
+        ]
+      }
+    ]
+  },
+  "geometryNeedsOwnerVisualCheck": [
+    {
+      "rootId": "134:8412",
+      "finding": "Read-only audit reports shell at root x=7080; sidebar and shell may share the same origin. Body/footer extend below root bottom (footer bottom2477 vs root bottom2421)."
+    },
+    {
+      "rootId": "135:8894",
+      "finding": "Shell/body at root x=8680; captured header at8936. Footer bottom3042 vs root bottom3059; body bottom3074 exceedsroot."
+    },
+    {
+      "rootId": "136:9476",
+      "finding": "Shell/body at root x=10280; captured header at10536. Check sidebar/content alignment in PNG."
+    }
+  ],
+  "structureAuditSaved": true
+}

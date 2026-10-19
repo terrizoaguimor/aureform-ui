@@ -1,0 +1,526 @@
+{
+  "id": "221:59",
+  "pageId": "2:2",
+  "name": "Get started · Aureform UI",
+  "w": 780,
+  "h": 975,
+  "children": [
+    {
+      "id": "221:60",
+      "name": "Body",
+      "type": "FRAME",
+      "x": 0,
+      "y": 0,
+      "w": 780,
+      "h": 976
+    },
+    {
+      "id": "221:245",
+      "name": "Link",
+      "type": "FRAME",
+      "x": 7.8515625,
+      "y": -72,
+      "w": 130,
+      "h": 37
+    }
+  ],
+  "texts": [
+    {
+      "id": "221:67",
+      "text": "Interactive demo · Changes stay in this browser.",
+      "x": 3232,
+      "y": 1016,
+      "w": 240,
+      "h": 17,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "221:70",
+      "text": "Aureform UI",
+      "x": 3858,
+      "y": 1016,
+      "w": 60,
+      "h": 17,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "221:72",
+      "text": "1.1",
+      "x": 3931,
+      "y": 1016,
+      "w": 10,
+      "h": 17,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "221:85",
+      "text": "Aureform Studio",
+      "x": 3275,
+      "y": 209.9453125,
+      "w": 95,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:88",
+      "text": "Owner",
+      "x": 3390,
+      "y": 209.9453125,
+      "w": 35,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "221:96",
+      "text": "Your role",
+      "x": 3800,
+      "y": 209.9453125,
+      "w": 48,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:106",
+      "text": "A good beginning",
+      "x": 3260,
+      "y": 266.3363037109375,
+      "w": 118,
+      "h": 20,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "221:109",
+      "text": "Build your shared workspace.",
+      "x": 3232,
+      "y": 298.3363037109375,
+      "w": 465,
+      "h": 42,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 36
+    },
+    {
+      "id": "221:112",
+      "text": "Bring your team together and choose a first action, at your own pace.",
+      "x": 3232,
+      "y": 352.3363037109375,
+      "w": 442,
+      "h": 28,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 14
+    },
+    {
+      "id": "221:120",
+      "text": "1",
+      "x": 3256,
+      "y": 423.3363037109375,
+      "w": 6,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:122",
+      "text": "Organization",
+      "x": 3285,
+      "y": 421.3363037109375,
+      "w": 71,
+      "h": 20,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:126",
+      "text": "2",
+      "x": 3619,
+      "y": 423.3363037109375,
+      "w": 8,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:128",
+      "text": "Workspace",
+      "x": 3649,
+      "y": 421.3363037109375,
+      "w": 62,
+      "h": 20,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:131",
+      "text": "3",
+      "x": 3255.5,
+      "y": 489.3363037109375,
+      "w": 7,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:133",
+      "text": "Invite your team",
+      "x": 3285,
+      "y": 487.3363037109375,
+      "w": 89,
+      "h": 20,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:136",
+      "text": "4",
+      "x": 3619,
+      "y": 489.3363037109375,
+      "w": 8,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:138",
+      "text": "Your first record",
+      "x": 3649,
+      "y": 487.3363037109375,
+      "w": 88,
+      "h": 20,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:150",
+      "text": "Step 1 / 4",
+      "x": 3863,
+      "y": 583.3363037109375,
+      "w": 49,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "221:152",
+      "text": "Give your organization a home.",
+      "x": 3257,
+      "y": 633.3363037109375,
+      "w": 333,
+      "h": 32,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 24
+    },
+    {
+      "id": "221:155",
+      "text": "Your progress belongs to this workspace. You can return to these details later.",
+      "x": 3257,
+      "y": 673.3363037109375,
+      "w": 462,
+      "h": 24,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "221:162",
+      "text": "Organization name",
+      "x": 3257,
+      "y": 746.3363037109375,
+      "w": 109,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:164",
+      "text": "e.g. Northstar Studio",
+      "x": 3272,
+      "y": 782.3363037109375,
+      "w": 636,
+      "h": 18,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "221:166",
+      "text": "The team or company this workspace belongs to.",
+      "x": 3257,
+      "y": 820.3363037109375,
+      "w": 269,
+      "h": 20,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:173",
+      "text": "Back",
+      "x": 3298,
+      "y": 895.8363037109375,
+      "w": 30,
+      "h": 20,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "221:177",
+      "text": "Continue",
+      "x": 3824,
+      "y": 895.8363037109375,
+      "w": 58,
+      "h": 20,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "221:194",
+      "text": "Workspace",
+      "x": 3268,
+      "y": 108,
+      "w": 62,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:200",
+      "text": "Get started",
+      "x": 3358,
+      "y": 108,
+      "w": 64,
+      "h": 16,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "221:215",
+      "text": "Appearance",
+      "x": 3686,
+      "y": 106,
+      "w": 74,
+      "h": 20,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "221:222",
+      "text": "EN",
+      "x": 3809,
+      "y": 107.5,
+      "w": 15,
+      "h": 17,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "221:241",
+      "text": "AM",
+      "x": 3931.5,
+      "y": 107.5,
+      "w": 17,
+      "h": 17,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "221:246",
+      "text": "Skip to content",
+      "x": 3223.8515625,
+      "y": 16,
+      "w": 98,
+      "h": 21,
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 14
+    }
+  ],
+  "imageFills": []
+}

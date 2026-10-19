@@ -1,0 +1,26 @@
+{
+  "pageId": "2:5",
+  "method": "Figma Plugin API",
+  "completedAt": "2026-10-19T08:20:56.047Z",
+  "recordedAt": "2026-10-19T08:21:46.679Z",
+  "wallTimeSeconds": 70.4415,
+  "sourceScript": "/tmp/aureform-native-default-audit-20261019/post-whites-finalread/read-2-5.js",
+  "sourceScriptSha256": "2c135798ab7bb90ad4ed81bbfd93269e44b5e390c58fb22dc6d333bf5f07386a",
+  "rawParts": [
+    {
+      "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/artifacts/owner-final-1.1/native-final-audit-65/read-2-5.raw.json",
+      "sha256": "718f19021a35b224c6b119546f6719637a84cf07027b36645ce29128fca7abfc"
+    }
+  ],
+  "decoded": {
+    "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/artifacts/owner-final-1.1/native-final-audit-65/read-2-5.decoded.json",
+    "sha256": "cb0cb5f0bd57ab7e39f81ed52536c5bca53601e87e6e22e6a97a92cba70517a3"
+  },
+  "completeParts": 1,
+  "decodedFingerprint": "e10efa45",
+  "routeRoots": 21,
+  "passingRoots": 21,
+  "observedIds": 21,
+  "problemIds": 0,
+  "canvasMutations": 0
+}

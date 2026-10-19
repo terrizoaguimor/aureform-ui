@@ -1,0 +1,389 @@
+{
+  "sets": [
+    {
+      "id": "24:480",
+      "name": "DropdownMenu",
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Open",
+          "variantOptions": [
+            "Open",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "24:458",
+          "name": "State=Open",
+          "axes": {
+            "State": "Open"
+          },
+          "tree": {
+            "id": "24:458",
+            "type": "COMPONENT",
+            "name": "State=Open",
+            "width": 240,
+            "height": 238,
+            "layoutMode": "VERTICAL",
+            "children": [
+              {
+                "id": "24:459",
+                "type": "FRAME",
+                "name": "Workspace actions",
+                "width": 208,
+                "height": 20,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:460",
+                    "type": "TEXT",
+                    "name": "Workspace actions",
+                    "width": 79,
+                    "height": 13,
+                    "characters": "Workspace actions"
+                  }
+                ]
+              },
+              {
+                "id": "24:461",
+                "type": "FRAME",
+                "name": "Edit record",
+                "width": 208,
+                "height": 34,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:462",
+                    "type": "TEXT",
+                    "name": "Edit record",
+                    "width": 61,
+                    "height": 17,
+                    "characters": "Edit record"
+                  }
+                ]
+              },
+              {
+                "id": "24:463",
+                "type": "FRAME",
+                "name": "Duplicate",
+                "width": 208,
+                "height": 34,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:464",
+                    "type": "TEXT",
+                    "name": "Duplicate",
+                    "width": 53,
+                    "height": 17,
+                    "characters": "Duplicate"
+                  }
+                ]
+              },
+              {
+                "id": "24:465",
+                "type": "FRAME",
+                "name": "Export selection",
+                "width": 208,
+                "height": 34,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:466",
+                    "type": "TEXT",
+                    "name": "Export selection",
+                    "width": 91,
+                    "height": 17,
+                    "characters": "Export selection"
+                  }
+                ]
+              },
+              {
+                "id": "24:467",
+                "type": "FRAME",
+                "name": "Remove record",
+                "width": 208,
+                "height": 34,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:468",
+                    "type": "TEXT",
+                    "name": "Remove record",
+                    "width": 83,
+                    "height": 17,
+                    "characters": "Remove record"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "24:469",
+          "name": "State=Disabled",
+          "axes": {
+            "State": "Disabled"
+          },
+          "tree": {
+            "id": "24:469",
+            "type": "COMPONENT",
+            "name": "State=Disabled",
+            "width": 240,
+            "height": 238,
+            "layoutMode": "VERTICAL",
+            "children": [
+              {
+                "id": "24:470",
+                "type": "FRAME",
+                "name": "Workspace actions",
+                "width": 208,
+                "height": 20,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:471",
+                    "type": "TEXT",
+                    "name": "Workspace actions",
+                    "width": 79,
+                    "height": 13,
+                    "characters": "Workspace actions"
+                  }
+                ]
+              },
+              {
+                "id": "24:472",
+                "type": "FRAME",
+                "name": "Edit record",
+                "width": 208,
+                "height": 34,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:473",
+                    "type": "TEXT",
+                    "name": "Edit record",
+                    "width": 61,
+                    "height": 17,
+                    "characters": "Edit record"
+                  }
+                ]
+              },
+              {
+                "id": "24:474",
+                "type": "FRAME",
+                "name": "Duplicate",
+                "width": 208,
+                "height": 34,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:475",
+                    "type": "TEXT",
+                    "name": "Duplicate",
+                    "width": 53,
+                    "height": 17,
+                    "characters": "Duplicate"
+                  }
+                ]
+              },
+              {
+                "id": "24:476",
+                "type": "FRAME",
+                "name": "Export selection",
+                "width": 208,
+                "height": 34,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:477",
+                    "type": "TEXT",
+                    "name": "Export selection",
+                    "width": 91,
+                    "height": 17,
+                    "characters": "Export selection"
+                  }
+                ]
+              },
+              {
+                "id": "24:478",
+                "type": "FRAME",
+                "name": "Remove record",
+                "width": 208,
+                "height": 34,
+                "layoutMode": "VERTICAL",
+                "children": [
+                  {
+                    "id": "24:479",
+                    "type": "TEXT",
+                    "name": "Remove record",
+                    "width": 83,
+                    "height": 17,
+                    "characters": "Remove record"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "24:363",
+      "name": "Alert",
+      "properties": {
+        "Label#24:0": {
+          "type": "TEXT",
+          "defaultValue": "A little clarity"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Info",
+          "variantOptions": [
+            "Info",
+            "Success",
+            "Warning",
+            "Destructive"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "24:351",
+          "name": "State=Info",
+          "axes": {
+            "State": "Info"
+          },
+          "tree": {
+            "id": "24:351",
+            "type": "COMPONENT",
+            "name": "State=Info",
+            "width": 380,
+            "height": 80,
+            "layoutMode": "VERTICAL",
+            "children": [
+              {
+                "id": "24:352",
+                "type": "TEXT",
+                "name": "A little clarity",
+                "width": 348,
+                "height": 18,
+                "characters": "A little clarity"
+              },
+              {
+                "id": "24:353",
+                "type": "TEXT",
+                "name": "A considered note before your next step.",
+                "width": 348,
+                "height": 18,
+                "characters": "A considered note before your next step."
+              }
+            ]
+          }
+        },
+        {
+          "id": "24:354",
+          "name": "State=Success",
+          "axes": {
+            "State": "Success"
+          },
+          "tree": {
+            "id": "24:354",
+            "type": "COMPONENT",
+            "name": "State=Success",
+            "width": 380,
+            "height": 80,
+            "layoutMode": "VERTICAL",
+            "children": [
+              {
+                "id": "24:355",
+                "type": "TEXT",
+                "name": "Changes saved",
+                "width": 348,
+                "height": 18,
+                "characters": "Changes saved"
+              },
+              {
+                "id": "24:356",
+                "type": "TEXT",
+                "name": "Your workspace is up to date.",
+                "width": 348,
+                "height": 18,
+                "characters": "Your workspace is up to date."
+              }
+            ]
+          }
+        },
+        {
+          "id": "24:357",
+          "name": "State=Warning",
+          "axes": {
+            "State": "Warning"
+          },
+          "tree": {
+            "id": "24:357",
+            "type": "COMPONENT",
+            "name": "State=Warning",
+            "width": 380,
+            "height": 80,
+            "layoutMode": "VERTICAL",
+            "children": [
+              {
+                "id": "24:358",
+                "type": "TEXT",
+                "name": "A moment of attention",
+                "width": 348,
+                "height": 18,
+                "characters": "A moment of attention"
+              },
+              {
+                "id": "24:359",
+                "type": "TEXT",
+                "name": "A considered note before your next step.",
+                "width": 348,
+                "height": 18,
+                "characters": "A considered note before your next step."
+              }
+            ]
+          }
+        },
+        {
+          "id": "24:360",
+          "name": "State=Destructive",
+          "axes": {
+            "State": "Destructive"
+          },
+          "tree": {
+            "id": "24:360",
+            "type": "COMPONENT",
+            "name": "State=Destructive",
+            "width": 380,
+            "height": 80,
+            "layoutMode": "VERTICAL",
+            "children": [
+              {
+                "id": "24:361",
+                "type": "TEXT",
+                "name": "Something went wrong",
+                "width": 348,
+                "height": 18,
+                "characters": "Something went wrong"
+              },
+              {
+                "id": "24:362",
+                "type": "TEXT",
+                "name": "We could not finish this step. Please try again.",
+                "width": 348,
+                "height": 18,
+                "characters": "We could not finish this step. Please try again."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "icons": []
+}

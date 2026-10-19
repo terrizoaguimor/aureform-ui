@@ -1,0 +1,227 @@
+{
+  "status": "chart-13-native-schema-passed",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "2:3",
+  "componentSetId": "23:501",
+  "defaultComponentId": "23:444",
+  "componentPropertyDefinitions": {
+    "Label#23:14": {
+      "type": "TEXT",
+      "defaultValue": "Revenue overview"
+    },
+    "Show legend#189:0": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Show data#189:7": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Glow#189:14": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Series 1#189:21": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Series 2#189:28": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Series 3#189:35": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 1#189:42": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 2#189:49": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 3#189:56": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 4#189:63": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 5#189:70": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 6#189:77": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Kind": {
+      "type": "VARIANT",
+      "defaultValue": "Area",
+      "variantOptions": [
+        "Area",
+        "Line",
+        "Bar",
+        "Donut",
+        "Radar",
+        "Radial",
+        "HorizontalBar",
+        "StackedBar",
+        "StackedArea",
+        "DivergingBar",
+        "Gauge",
+        "Rings",
+        "Heatmap"
+      ]
+    }
+  },
+  "kindOptions": [
+    "Area",
+    "Line",
+    "Bar",
+    "Donut",
+    "Radar",
+    "Radial",
+    "HorizontalBar",
+    "StackedBar",
+    "StackedArea",
+    "DivergingBar",
+    "Gauge",
+    "Rings",
+    "Heatmap"
+  ],
+  "kindComponents": [
+    {
+      "id": "23:444",
+      "name": "Kind=Area",
+      "kind": "Area"
+    },
+    {
+      "id": "23:454",
+      "name": "Kind=Line",
+      "kind": "Line"
+    },
+    {
+      "id": "23:463",
+      "name": "Kind=Bar",
+      "kind": "Bar"
+    },
+    {
+      "id": "23:476",
+      "name": "Kind=Donut",
+      "kind": "Donut"
+    },
+    {
+      "id": "23:485",
+      "name": "Kind=Radar",
+      "kind": "Radar"
+    },
+    {
+      "id": "23:493",
+      "name": "Kind=Radial",
+      "kind": "Radial"
+    },
+    {
+      "id": "189:5385",
+      "name": "Kind=HorizontalBar",
+      "kind": "HorizontalBar"
+    },
+    {
+      "id": "189:5599",
+      "name": "Kind=StackedBar",
+      "kind": "StackedBar"
+    },
+    {
+      "id": "189:5813",
+      "name": "Kind=StackedArea",
+      "kind": "StackedArea"
+    },
+    {
+      "id": "189:5931",
+      "name": "Kind=DivergingBar",
+      "kind": "DivergingBar"
+    },
+    {
+      "id": "189:6148",
+      "name": "Kind=Gauge",
+      "kind": "Gauge"
+    },
+    {
+      "id": "189:6201",
+      "name": "Kind=Rings",
+      "kind": "Rings"
+    },
+    {
+      "id": "189:6271",
+      "name": "Kind=Heatmap",
+      "kind": "Heatmap"
+    }
+  ],
+  "booleanPropertyCount": 12,
+  "booleanDefinitions": {
+    "Show legend#189:0": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Show data#189:7": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Glow#189:14": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Series 1#189:21": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Series 2#189:28": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Series 3#189:35": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 1#189:42": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 2#189:49": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 3#189:56": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 4#189:63": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 5#189:70": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Category 6#189:77": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    }
+  },
+  "bindingsAudit": {
+    "palettePaintBindings": 1184,
+    "transparentGradientStops": 0,
+    "transparentStopAliasFailures": 0,
+    "imagePaints": 0,
+    "vectorCount": 331,
+    "textCount": 455,
+    "fontFamilyCounts": {
+      "Manrope": 455
+    }
+  },
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "removedNodeIds": []
+}

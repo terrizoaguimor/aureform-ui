@@ -1,0 +1,112 @@
+{
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "237:16428",
+    "237:16692",
+    "237:16887",
+    "237:17079",
+    "237:17773",
+    "237:17965",
+    "237:18156",
+    "237:18891"
+  ],
+  "viewBounds": [
+    {
+      "id": "237:16428",
+      "name": "SaaS 1.2 / onboarding / Light",
+      "width": 1440,
+      "height": 1240,
+      "sidebarHeight": 1240,
+      "profileBottom": 1224
+    },
+    {
+      "id": "237:16692",
+      "name": "SaaS 1.2 / onboarding / Dark",
+      "width": 1440,
+      "height": 1240,
+      "sidebarHeight": 1240,
+      "profileBottom": 1224
+    },
+    {
+      "id": "237:16887",
+      "name": "SaaS 1.2 / settings/workspace / Light",
+      "width": 1440,
+      "height": 1240,
+      "sidebarHeight": 1240,
+      "profileBottom": 1224
+    },
+    {
+      "id": "237:17079",
+      "name": "SaaS 1.2 / settings/workspace / Dark",
+      "width": 1440,
+      "height": 1240,
+      "sidebarHeight": 1240,
+      "profileBottom": 1224
+    },
+    {
+      "id": "237:17271",
+      "name": "SaaS 1.2 / customers/detail / Light",
+      "width": 1440,
+      "height": 1293,
+      "sidebarHeight": 1293,
+      "profileBottom": 1277
+    },
+    {
+      "id": "237:17522",
+      "name": "SaaS 1.2 / customers/detail / Dark",
+      "width": 1440,
+      "height": 1293,
+      "sidebarHeight": 1293,
+      "profileBottom": 1277
+    },
+    {
+      "id": "237:17773",
+      "name": "SaaS 1.2 / imports / Light",
+      "width": 1440,
+      "height": 1240,
+      "sidebarHeight": 1240,
+      "profileBottom": 1224
+    },
+    {
+      "id": "237:17965",
+      "name": "SaaS 1.2 / imports / Dark",
+      "width": 1440,
+      "height": 1240,
+      "sidebarHeight": 1240,
+      "profileBottom": 1224
+    },
+    {
+      "id": "237:18156",
+      "name": "SaaS 1.2 / customers / Light",
+      "width": 1440,
+      "height": 1240,
+      "sidebarHeight": 1240,
+      "profileBottom": 1224
+    },
+    {
+      "id": "237:18891",
+      "name": "SaaS 1.2 / customers / Dark",
+      "width": 1440,
+      "height": 1240,
+      "sidebarHeight": 1240,
+      "profileBottom": 1224
+    },
+    {
+      "id": "237:19625",
+      "name": "SaaS 1.2 / settings/team / Light",
+      "width": 1440,
+      "height": 1362,
+      "sidebarHeight": 1362,
+      "profileBottom": 1346
+    },
+    {
+      "id": "237:19873",
+      "name": "SaaS 1.2 / settings/team / Dark",
+      "width": 1440,
+      "height": 1362,
+      "sidebarHeight": 1362,
+      "profileBottom": 1346
+    }
+  ],
+  "note": "Full native compositions show the whole SaaS navigation; smaller browser viewports retain their existing scrolling behavior."
+}

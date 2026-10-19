@@ -1,0 +1,110 @@
+# Aureform 1.1 owner handoff
+
+> **Historical checkpoint before the open-source release.** Results, pending work and references to private previews or archive licenses describe only the recorded version; they are not newly executed 1.3 checks. Distributed original Aureform work now uses [Apache 2.0](../LICENSE), including the sample, starter, design and original images. Earlier commercial proposals are not current terms; upstream notices still apply.
+
+Current build 17106 passed compilation/types with 133 pages and 83 registry entries. Final runtime evidence passes **780/780 EN/ES browser combinations**, 780 axe audits with zero serious/critical findings, **130 English gallery previews**, **44 appearance scenarios / 348 checks**, **14 motion scenarios / 74 checks** and **85 fresh official-consumer checks**. Final canonical local Code Connect passes against frozen state with **92 templates / 1,646 evaluations / 556 distinct typed examples**, zero diagnostics and zero pending mappings. The actual **65-root native structural audit** passes against the same state, with scoped owner PNG reviews accepted. Source/design documentation and docs-only coverage are ready for packaging. New ZIP consumers and private publication remain pending.
+
+The canonical source is version 1.1.0 with 64 suite routes plus the landing, 44 core component families, 13 chart kinds, six palettes and six reusable effects. The registry inventory and token counts are generated from source. Current production runtime, native structural audit and scoped visual QA are recorded; archive packaging and delivery verification remain owner closure.
+
+The owner-recorded native inventory has **65 roots, 714 variables (332 primitives), eight collections, 14 text styles, 36 paint styles and six effect styles**. The native primitive count is separate from deduplicated generated source colors. Actual route inspection and scoped PNG reviews are recorded independently of those inventory totals.
+
+## Owned distribution changes
+
+| Path                                                    | Result                                                                                                                                                                                                                                    |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bin/aureform.mjs`                                      | Starter has palette/provider/motion controls and all six effects. The source graph copies the token generator, `scripts/lib/appearance-tokens.mjs` and `src/lib/appearance.ts`; its token command uses Node type stripping.               |
+| `scripts/package-source.mjs`                            | Free sample follows the token generator’s source graph. Sample version and final checksum version come from `package.json`. The complete source tree includes the new files.                                                              |
+| `scripts/generate-code-connect.py`                      | Final generation preserves 44 core maps and maps actual Shapes9, Table16/DataTable28 and Chart13 records, real source props and source/template snapshots, bound to frozen state.                                                        |
+| `scripts/verify-code-connect.cjs`                       | Final local pass checks sparse matrices/defaults, 13 native/source Chart kinds and 338 Boolean scenarios, shape/size, table states, appearance/effect/starter contracts and actual dependency types.                                      |
+| `scripts/generate-coverage.mjs`                         | Checks 65 source views, 44 core families and every registry dependency graph; reports missing new native IDs honestly. `--docs-only` writes only the two coverage docs.                                                                   |
+| `scripts/generate-registry.mjs`                         | Uses the package version in the index and emits registry-safe custom effect slot composition while retaining the official shadcn transforms.                                                                                              |
+| `src/components/templates/docs.tsx`                     | Preserves the existing EN/ES chapters and demo adapters; documents 1.1 palettes/materials, generated tokens and Studio exports, with complete localized appearance and shader examples.                                                   |
+| `README.md`, `docs/appearance.md`, `docs/effects.es.md` | Explain palette selection, Studio, presets, JSON/CSS/React exports and the six effects.                                                                                                                                                   |
+| `docs/charts.md`                                        | Acknowledges the Full charts reference and describes all 13 source/native kinds, preserved APIs, explicit fixture data and mappings only to actual public source props.                                                                   |
+| `.figma/scripts/buttons-1.1.js`                         | Executed: actual nine Shapes masters and two 27-example Light/Dark boards. Exact IDs/definitions and lossless affected IDs retained; owner reviewed all 54 examples after the Large icon foreground correction.                             |
+| `.figma/scripts/cover-counts-1.1.js`                    | Executed and owner visually passed: Cover 1.1/64 suite routes/44 families and current Aurora Brand Guide copy; mixed styling, headings and frozen application preserved.                                                                   |
+
+No final package generation or installer execution is part of this handoff. The existing downloads are not a new 1.1 release.
+
+## Reproduce against the owner’s dependencies
+
+**Current status:** the application and registry are frozen on build 17106, with current browser, appearance, motion and official-consumer runs passing. All 65 native root IDs, Table44, Shapes9 and Chart13 are recorded. Buttons/Cover/Brand Guide, final Chart library/screen PNGs and the corrected defaults/gallery PNGs passed their scoped owner reviews. Final [canonical CC validation](../.figma/code-connect/validation/validation-summary.json) and the accepted [65-route native audit](../.figma/native-audit.json) are bound to frozen state SHA256 `7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52`, with no missing mappings. The 62-root audit remains historical.
+
+The following canonical commands already passed with all real native records and the final frozen state. They borrow installed types without modifying the owner's build mirror.
+
+```sh
+python3 scripts/generate-code-connect.py
+AUREFORM_DEPENDENCIES=/tmp/aureform-ui-build/node_modules \
+  node scripts/verify-code-connect.cjs
+```
+
+The owner recorded CC/native completion, cleared resolved pending validations and froze state. Final CC regeneration and verification completed before the read-only audit, allowing its optional gate to consume current CC evidence. The manifest SHA256 is `618a0e2d6f871793ddcb3d5d717e7c398fe2fbd352b4b5737a7e8a8b1337815c`; the flat summary SHA256 is `635f0f197129bbe20fe2219e2789c6b370a52c6168b1c3f0e635eb375c4f6329`. After acceptance of the actual 65-route audit against the same state, `AUREFORM_DEPENDENCIES=/tmp/aureform-ui-build/node_modules node scripts/generate-coverage.mjs --docs-only` refreshed the two coverage docs for this shipping-doc freeze. Another CC generation is required only if its authoritative inputs change; native audit, README and docs are excluded from those inputs. No state edits follow the frozen handoff. The [release checklist](release-checklist-1.1.md) records the completed dependency order and remaining delivery gates.
+
+On a normal extracted installation, omit `AUREFORM_DEPENDENCIES`. Validation summaries and templates are in `.figma/code-connect/`; the manifest is `.figma/code-connect-manifest.json`. Regenerate after source or native ledger changes. A hash mismatch fails validation rather than replacing the generation snapshot with a new “passed” hash.
+
+The [flat canonical validation summary](../.figma/code-connect/validation/validation-summary.json) records 92 templates, 338 recorded variant combinations, 1,312 top-level cases, 334 nested executions and 556 distinct typed examples, with zero diagnostics. It checks all 14 source appearance values, six effect contracts, 13 source/native Chart kinds, all 12 exact native Boolean definitions and the complete starter page. The scoped script lint passed; TypeScript follows the owner's pnpm dependency graph, including transitive package declarations. Regeneration resets validation until the new native/source snapshot passes. This is a synthetic local runtime and source typecheck, not a live Code Connect execution or cloud publication.
+
+The generator and verifier reflect the declared 13-value `ChartKind`, optional tertiary data, signed diverging fixtures and every actual native Kind while preserving the existing six APIs. Native Donut maps to source `pie`. Show legend maps to `legend`, Glow to `appearance` (`glow`/`flat`), and Series 1–3 to `visibleSeries`; Show data and Category 1–6 remain visual-only metadata because the source has no public configuration prop for those native toggles. Exact suffixes and defaults come from [the actual Chart definitions](../.figma/code-connect/Chart.native-definitions-1.1.json). The seven additions and source acknowledgment are in [charts.md](charts.md).
+
+The earlier [isolated preparation result](../.figma/code-connect/validation/preparation-summary-1.1.json) remains historical evidence for six scoped checks. Its temporary stage generated 92 templates and verified 331 combinations / 458 distinct typed examples with zero diagnostics, including actual Table16/DataTable28/Shapes9. At that stage, it checked 13 source Chart kinds with six native kinds while canonical generation remained held. Its coverage and all 122 application files matched freeze17106. The approved [Chart13 checkpoint](../.figma/code-connect/validation/chart13-checkpoint-1.1.json) preserves its earlier state SHA; the subsequent final flat summary and manifest certify local CC against the final frozen state. None of these local reports replaces accepted native audit or archive QA.
+
+The documentation template passed scoped lint and type checking, including both complete copyable examples in EN and ES. All 16 chapter/locale combinations rendered with UI stubs, checking locale links, copy labels and the preserved adapter descriptions. These are documentation checks, not production browser QA.
+
+The final docs-only coverage inventory records **65 source/native views, 44 core families, 83 registry graphs, ten block exports from nine files and 92 local CC templates**, with no missing route IDs or mappings. Source/native Chart each has **13 kinds**. The earlier inventory with 82 registry graphs, 62 native roots and three pending routes is historical checkpoint evidence. Token totals are read from generated tokens. This docs-only refresh does not execute an installer or final packaging and leaves public coverage/application files unchanged.
+
+The owner’s resolved appearance now includes `--af-control-color-1` through `--af-control-color-4`. The starter and free sample follow the token generator’s imports, so they include its helper and current pure configuration. Primitive totals can change as resolved colors are deduplicated; neither the packaging scripts nor documentation assert the earlier primitive count.
+
+The official-shadcn composition defect is resolved, and the owner's latest fresh run also verifies the current provider. The 83-entry registry supplied 12 installed items; frozen install, typecheck, lint and an eight-page production build passed. Fourteen freshly captured UI exports were copied byte for byte in Ocean Light and Ember Dark. All **85 checks passed: 71 production UI checks plus 14 provider prop/flag/layout-commit/ref/storage checks**, with no nested buttons or hydration errors. Exact cause, patch scope and current evidence are in [registry compatibility](registry-compatibility.md); the original [failure checkpoint](consumer-verification-1.1.md) remains intact.
+
+The owner reports all 71 named pure tests passing, including the meaningful 24 custom and 12 preset contrast cases. Primitive totals derive from the generated token output. Control gradients explicitly interpolate in sRGB; the pure primary contrast target is 4.55. These pure checks remain separate from the current production browser pass and accepted native structural audit. Button execution and its scoped native corrections completed without application changes; there is no active Zeno native lease.
+
+## Recorded native mappings and proof scope
+
+The three owner-recorded sets are additive mappings; all 44 core maps remain in place. Their full native keys and axes are in [native-additions.json](../.figma/code-connect/native-additions.json), checked against the owner’s node map.
+
+| Native set          | Set ID   | Default ID | Text key      | Source mapping                                                          |
+| ------------------- | -------- | ---------- | ------------- | ----------------------------------------------------------------------- |
+| Button / Appearance | `97:655` | `97:625`   | `Label#97:0`  | Five `appearance` values; State Disabled → `disabled`; label → children |
+| Badge / Appearance  | `97:666` | `97:656`   | `Label#97:16` | Five `appearance` values; label → children                              |
+| Card / Material     | `97:715` | `97:679`   | `Title#97:22` | Four `appearance` values; title → `CardTitle`                           |
+
+Hover is interactive CSS presentation. Card has no public State prop; the native Default/Hover axis is retained as visual-only metadata. These local maps do not establish live Figma execution or native visual QA.
+
+The owner records real route root IDs for `studio`, `themes` and `effects` in `.figma/state.json`, completing all 65 route identities. Final coverage must retain those IDs; the old three-pending-route inventory is historical.
+
+All six effect sets are recorded in the owner’s [native effect ledger](../.figma/native-effects-library-1.1.json). The generator derives axes from those recorded variant names and checks IDs/text keys against `state.json`; this ledger is included in generation-time hashes.
+
+| Effect             | Set ID    | Default ID | Native text key | Source mapping                                                   |
+| ------------------ | --------- | ---------- | --------------- | ---------------------------------------------------------------- |
+| GradientBackground | `104:734` | `104:716`  | `Title#104:21`  | Kind Linear/Radial/Mesh → `kind`; text → children                |
+| ShaderBackground   | `104:766` | `104:735`  | `Title#104:25`  | Kind Aurora/Waves/Iridescent/None → `kind`; text → children      |
+| SpotlightCard      | `104:777` | `104:767`  | `Title#104:30`  | Text → children; Default/Hover visual-only                       |
+| GlowBorder         | `104:786` | `104:778`  | `Title#104:33`  | Text → children; Default/Hover visual-only                       |
+| TiltCard           | `104:797` | `104:787`  | `Title#104:36`  | Text → children; Default/Hover visual-only                       |
+| MagneticButton     | `104:804` | `104:798`  | `Label#104:39`  | Inline text → children; Disabled → `disabled`; Hover visual-only |
+
+Native Title is arbitrary children content, not a new React title/label prop. Shader fill uniforms are separate from native component properties; their recorded numeric/color/paused IDs do not create `selectedInstance` property reads. Text/Boolean/swap/slot keys retain their full `#…` suffixes; variants retain their exact native spelling.
+
+Record additions in the owner’s property ledger or [`.figma/code-connect/native-additions.json`](../.figma/code-connect/native-additions.json). Its `components` object is keyed by the exact native names. Each supplied record uses a real `setId`, `defaultId` or `node`, its reported `axes` object, and any reported keys such as `label`, `slot`, `paused` or `disabled`. Missing records produce pending entries and no fabricated template URL.
+
+The 1.1 generated template configuration is `.figma/code-connect/figma.config.json`. The old root `figma.config.json` still selects the preserved legacy root templates; it was outside this edit scope. Current validation follows the new manifest’s paths.
+
+## Release evidence
+
+The historical 1.0 QA remains in `docs/verification-results.json` under `previousRelease`. Current runtime evidence is recorded separately; overall distribution remains pending. Local script/type validation is narrower than production browser or native review.
+
+The owner's final report `artifacts/browser/report.json` passes **780/780** combinations across all 65 views, both locales/themes and three widths, with zero page errors, overflow or serious/critical axe findings. Its canonical/mirror reports are identical, all **130 English previews** match byte for byte, and all **122 application files** match `/tmp/aureform-ui-build/artifacts/owner-final-1.1/application-freeze.json` for build 17106. Previews cover 65 routes × Light/Dark in English, captured at 1440×900 and resized to WebP at 960 px width. The source freeze includes the unchanged documentation template.
+
+Focused proofs retain their scope: the owner reports 12 fresh Chart/Button cases, three feature groups and 22 deep functional checks across EN/ES and 13 charts. Ten distinct table tests pass across baseline and label/material retests, with every included source checkpoint matching the freeze; their glass-contrast/static-fixture limits remain documented. Before the provider correction, the unit log recorded 79 passes. The completed copy report passes 176 dynamic clipboard payloads plus 12 responsive captures, all 188 strictly compiled with zero diagnostics.
+
+Both EN/ES controls cases and the corrected mobile E2E case pass on their recorded checkpoint, alongside the earlier nine desktop cases. The scoped provider correction uses a guarded initial-prop update during the provider's own render; public APIs, runtime colors and export generators remain unchanged. Current lint/build, appearance 44/348, motion 14/74 and the fresh official 85-check consumer pass on provider `d4c5cf…`. The current runs close the recorded runtime regression without claiming an isolated root cause from the separate stress diagnostic. Final native audit and archives remain separate gates. [Native records](code-connect-records-1.1.md) retain actual Shapes9, Table16, DataTable28 and Chart13 IDs/definitions.
+
+The owner's [native runtime resync](../.figma/native-runtime-resync-1.1.json) records six palettes, 120 mode values, 12 control gradients and 15 new primitive variables, with Light palette/appearance postshots viewed and passed. Studio/Themes/Effects have actual IDs and native/visual proof paths in `state.entities.appearanceScreens`. The [Table44 report](../.figma/proofs/table-1.1/native-table-1.1-report.json), [54-example Button review](../.figma/proofs/buttons-1.1/owner-visual-review.json), [Cover review](../.figma/proofs/buttons-1.1/owner-cover-review.json) and [final Chart review](../.figma/proofs/charts-1.1/owner-visual-review.json) pass. The Chart legend-wrap and October-axis corrections passed review of the final library/screen PNGs. These scoped results do not replace the final 65-view audit.
+
+The default corrections are recorded in [page 2:5's receipt](../.figma/native-owner-default-fix-2-5-1.1.json): 86 font assignments and 18 mode assignments; and [page 2:6's receipt](../.figma/native-owner-default-fix-2-6-1.1.json): 45 font assignments and 36 mode assignments. Both report zero errors and the same frozen state SHA. The [owner's scoped visual review](../.figma/proofs/defaults-1.1/owner-visual-review.json) passed with zero findings, covering those 185 assignments, 198 token and transparent surface corrections, four version-label fixes and two Table slot clips. No component IDs, properties, axes or application source changed. The final structural read covers Huygens' 21 roots at `2026-10-19T08:20:56.047Z` and the [owner's 44-root receipt](../.figma/native-owner-final-route-audit-2-6-1.1.json) at `2026-10-19T08:25:51.154Z`: all 65 pass, zero flags/missing fonts/UI image fills and zero canvas mutations, with SLOT/minHeight8 coverage.
+
+The owner updated `README.es.md` to 1.1 with current counts and runtime QA; it remained outside this agent's edits. Shipping wording retains separate archive gates, with no new ZIP pass claimed before its excluded delivery receipt.
+
+After native completion and final docs/previews, freeze every included canonical file before packaging. The independent archive runner pins that complete inventory at start/end. The owner runs final packaging and fresh archive consumer checks, then records actual results in `public/downloads/verification-1.1.json` and/or `artifacts/`, alongside `public/downloads/checksums.json`. Consult the delivery record for the matching release version and exact archive SHA256 to determine ZIP consumer and publication status. `scripts/package-source.mjs` excludes these receipt locations from the source ZIP.
+
+Included README/docs/Code Connect/`.figma` files must remain at the pre-package checkpoint after ZIP creation. A later included-doc change requires a controlled documentation-only repack, new archive hashes and independent CRC/code-hash conservation proof; a previous ZIP pass cannot certify it. The [release checklist](release-checklist-1.1.md) gives the remaining order; [verification](verification.md) records the current runtime evidence.

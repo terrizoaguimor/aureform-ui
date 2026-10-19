@@ -1,0 +1,1543 @@
+{
+  "pages": [
+    {
+      "id": "2:2",
+      "name": "00 · Cover"
+    },
+    {
+      "id": "0:1",
+      "name": "01 · Foundations"
+    },
+    {
+      "id": "2:3",
+      "name": "02 · Core"
+    },
+    {
+      "id": "2:4",
+      "name": "03 · Blocks"
+    },
+    {
+      "id": "2:5",
+      "name": "04 · Templates 1.0"
+    },
+    {
+      "id": "2:6",
+      "name": "05 · Suite 1.1–1.3"
+    }
+  ],
+  "components": [
+    {
+      "id": "3:113",
+      "name": "Button",
+      "type": "COMPONENT_SET",
+      "key": "0958c0bcc5ddbebdf439722dc5d93ba62536cefc",
+      "properties": {
+        "Label#3:0": {
+          "type": "TEXT",
+          "defaultValue": "Continue"
+        },
+        "Show icon#3:28": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Icon#3:56": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "3:2",
+          "preferredValues": []
+        },
+        "Style": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Outline",
+            "Ghost"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Small",
+          "variantOptions": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "3:5",
+          "name": "Style=Primary, Size=Small, State=Default"
+        },
+        {
+          "id": "3:9",
+          "name": "Style=Primary, Size=Small, State=Hover"
+        },
+        {
+          "id": "3:13",
+          "name": "Style=Primary, Size=Small, State=Disabled"
+        },
+        {
+          "id": "3:17",
+          "name": "Style=Primary, Size=Medium, State=Default"
+        },
+        {
+          "id": "3:21",
+          "name": "Style=Primary, Size=Medium, State=Hover"
+        },
+        {
+          "id": "3:25",
+          "name": "Style=Primary, Size=Medium, State=Disabled"
+        }
+      ]
+    },
+    {
+      "id": "3:133",
+      "name": "Input",
+      "type": "COMPONENT_SET",
+      "key": "6b4c039b5efe277d541b2eebf9885160e6a4dbd8",
+      "properties": {
+        "Value#3:90": {
+          "type": "TEXT",
+          "defaultValue": "you@company.com"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Empty",
+          "variantOptions": [
+            "Empty",
+            "Focus",
+            "Error",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "3:125",
+          "name": "State=Empty"
+        },
+        {
+          "id": "3:127",
+          "name": "State=Focus"
+        },
+        {
+          "id": "3:129",
+          "name": "State=Error"
+        },
+        {
+          "id": "3:131",
+          "name": "State=Disabled"
+        }
+      ]
+    },
+    {
+      "id": "3:124",
+      "name": "Badge",
+      "type": "COMPONENT_SET",
+      "key": "669bf7b9c11e7d8ef523ee12a350e82027570ab4",
+      "properties": {
+        "Label#3:84": {
+          "type": "TEXT",
+          "defaultValue": "Active"
+        },
+        "Tone": {
+          "type": "VARIANT",
+          "defaultValue": "Success",
+          "variantOptions": [
+            "Success",
+            "Neutral",
+            "Warning",
+            "Destructive",
+            "Outline"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "3:114",
+          "name": "Tone=Success"
+        },
+        {
+          "id": "3:116",
+          "name": "Tone=Neutral"
+        },
+        {
+          "id": "3:118",
+          "name": "Tone=Warning"
+        },
+        {
+          "id": "3:120",
+          "name": "Tone=Destructive"
+        },
+        {
+          "id": "3:122",
+          "name": "Tone=Outline"
+        }
+      ]
+    },
+    {
+      "id": "23:335",
+      "name": "Card",
+      "type": "COMPONENT_SET",
+      "key": "84e63d94215212c6bb5d2c5cfc2110e6a0c80c99",
+      "properties": {
+        "Label#23:11": {
+          "type": "TEXT",
+          "defaultValue": "A little clarity."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "With actions"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "23:321",
+          "name": "State=Default"
+        },
+        {
+          "id": "23:326",
+          "name": "State=With actions"
+        }
+      ]
+    },
+    {
+      "id": "23:443",
+      "name": "DataTable",
+      "type": "COMPONENT_SET",
+      "key": "2608670bf6d80d3adbfd575683832aefab33de5b",
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Selected",
+            "Empty",
+            "Loading",
+            "Error"
+          ]
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Elevated",
+          "variantOptions": [
+            "Elevated",
+            "Glass",
+            "Gradient",
+            "Flat"
+          ]
+        },
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "Comfortable",
+          "variantOptions": [
+            "Comfortable",
+            "Compact"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "23:356",
+          "name": "State=Default, Appearance=Elevated, Density=Comfortable"
+        },
+        {
+          "id": "23:390",
+          "name": "State=Selected, Appearance=Elevated, Density=Comfortable"
+        },
+        {
+          "id": "23:424",
+          "name": "State=Empty, Appearance=Elevated, Density=Comfortable"
+        },
+        {
+          "id": "164:1465",
+          "name": "State=Loading, Appearance=Elevated, Density=Comfortable"
+        },
+        {
+          "id": "164:1550",
+          "name": "State=Error, Appearance=Elevated, Density=Comfortable"
+        },
+        {
+          "id": "164:1564",
+          "name": "State=Default, Appearance=Elevated, Density=Compact"
+        }
+      ]
+    },
+    {
+      "id": "23:217",
+      "name": "Tabs",
+      "type": "COMPONENT_SET",
+      "key": "de64d6120f202610012f78a4ca03cab71a17137a",
+      "properties": {
+        "Label#23:4": {
+          "type": "TEXT",
+          "defaultValue": "A clear view of what comes next."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Overview",
+          "variantOptions": [
+            "Overview",
+            "Details",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "23:184",
+          "name": "State=Overview"
+        },
+        {
+          "id": "23:195",
+          "name": "State=Details"
+        },
+        {
+          "id": "23:206",
+          "name": "State=Disabled"
+        }
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "id": "VariableCollectionId:2:7",
+      "name": "Aureform · Primitives",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "2:0"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:2:36",
+      "name": "Aureform · Color",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "2:1"
+        },
+        {
+          "name": "Dark",
+          "modeId": "2:2"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:2:58",
+      "name": "Aureform · Dimension",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "2:3"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:317",
+      "name": "Aureform · Color · Violet",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:0"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:1"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:381",
+      "name": "Aureform · Color · Ocean",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:2"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:3"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:445",
+      "name": "Aureform · Color · Mint",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:4"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:5"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:509",
+      "name": "Aureform · Color · Ember",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:6"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:7"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:573",
+      "name": "Aureform · Color · Rose",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:8"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:9"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "id": "VariableID:2:37",
+      "name": "color/background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--background)"
+      }
+    },
+    {
+      "id": "VariableID:2:38",
+      "name": "color/surface",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--surface)"
+      }
+    },
+    {
+      "id": "VariableID:2:39",
+      "name": "color/surface-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--surface-subtle)"
+      }
+    },
+    {
+      "id": "VariableID:2:40",
+      "name": "color/border",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--border)"
+      }
+    },
+    {
+      "id": "VariableID:2:41",
+      "name": "color/foreground",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--foreground)"
+      }
+    },
+    {
+      "id": "VariableID:2:42",
+      "name": "color/muted-foreground",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--muted-foreground)"
+      }
+    },
+    {
+      "id": "VariableID:2:43",
+      "name": "color/primary",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--primary)"
+      }
+    },
+    {
+      "id": "VariableID:2:44",
+      "name": "color/primary-hover",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--primary-hover)"
+      }
+    },
+    {
+      "id": "VariableID:2:45",
+      "name": "color/primary-foreground",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--primary-foreground)"
+      }
+    },
+    {
+      "id": "VariableID:2:46",
+      "name": "color/accent",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--accent)"
+      }
+    },
+    {
+      "id": "VariableID:2:47",
+      "name": "color/accent-foreground",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--accent-foreground)"
+      }
+    },
+    {
+      "id": "VariableID:2:48",
+      "name": "color/warning",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--warning)"
+      }
+    },
+    {
+      "id": "VariableID:2:49",
+      "name": "color/warning-foreground",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--warning-foreground)"
+      }
+    },
+    {
+      "id": "VariableID:2:50",
+      "name": "color/destructive",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--destructive)"
+      }
+    },
+    {
+      "id": "VariableID:2:51",
+      "name": "color/destructive-foreground",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--destructive-foreground)"
+      }
+    },
+    {
+      "id": "VariableID:2:52",
+      "name": "color/ring",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--ring)"
+      }
+    },
+    {
+      "id": "VariableID:2:53",
+      "name": "color/chart-1",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--chart-1)"
+      }
+    },
+    {
+      "id": "VariableID:2:54",
+      "name": "color/chart-2",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--chart-2)"
+      }
+    },
+    {
+      "id": "VariableID:2:55",
+      "name": "color/chart-3",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--chart-3)"
+      }
+    },
+    {
+      "id": "VariableID:2:56",
+      "name": "color/chart-4",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--chart-4)"
+      }
+    },
+    {
+      "id": "VariableID:2:57",
+      "name": "color/chart-5",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--chart-5)"
+      }
+    },
+    {
+      "id": "VariableID:2:59",
+      "name": "spacing/0",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-0)"
+      }
+    },
+    {
+      "id": "VariableID:2:60",
+      "name": "spacing/1",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-1)"
+      }
+    },
+    {
+      "id": "VariableID:2:61",
+      "name": "spacing/2",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-2)"
+      }
+    },
+    {
+      "id": "VariableID:2:62",
+      "name": "spacing/3",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-3)"
+      }
+    },
+    {
+      "id": "VariableID:2:63",
+      "name": "spacing/4",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-4)"
+      }
+    },
+    {
+      "id": "VariableID:2:64",
+      "name": "spacing/5",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-5)"
+      }
+    },
+    {
+      "id": "VariableID:2:65",
+      "name": "spacing/6",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-6)"
+      }
+    },
+    {
+      "id": "VariableID:2:66",
+      "name": "spacing/8",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-8)"
+      }
+    },
+    {
+      "id": "VariableID:2:67",
+      "name": "spacing/10",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-10)"
+      }
+    },
+    {
+      "id": "VariableID:2:68",
+      "name": "spacing/12",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-12)"
+      }
+    },
+    {
+      "id": "VariableID:2:69",
+      "name": "spacing/16",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--space-16)"
+      }
+    },
+    {
+      "id": "VariableID:2:70",
+      "name": "radius/sm",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--radius-sm)"
+      }
+    },
+    {
+      "id": "VariableID:2:71",
+      "name": "radius/md",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--radius-md)"
+      }
+    },
+    {
+      "id": "VariableID:2:72",
+      "name": "radius/lg",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--radius-lg)"
+      }
+    },
+    {
+      "id": "VariableID:2:73",
+      "name": "radius/xl",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--radius-xl)"
+      }
+    },
+    {
+      "id": "VariableID:2:74",
+      "name": "radius/full",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--radius-full)"
+      }
+    },
+    {
+      "id": "VariableID:95:281",
+      "name": "shade/primary/50",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-50)"
+      }
+    },
+    {
+      "id": "VariableID:95:282",
+      "name": "shade/primary/100",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-100)"
+      }
+    },
+    {
+      "id": "VariableID:95:283",
+      "name": "shade/primary/200",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-200)"
+      }
+    },
+    {
+      "id": "VariableID:95:284",
+      "name": "shade/primary/300",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-300)"
+      }
+    },
+    {
+      "id": "VariableID:95:285",
+      "name": "shade/primary/400",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-400)"
+      }
+    },
+    {
+      "id": "VariableID:95:286",
+      "name": "shade/primary/500",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-500)"
+      }
+    },
+    {
+      "id": "VariableID:95:287",
+      "name": "shade/primary/600",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-600)"
+      }
+    },
+    {
+      "id": "VariableID:95:288",
+      "name": "shade/primary/700",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-700)"
+      }
+    },
+    {
+      "id": "VariableID:95:289",
+      "name": "shade/primary/800",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-800)"
+      }
+    },
+    {
+      "id": "VariableID:95:290",
+      "name": "shade/primary/900",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-900)"
+      }
+    },
+    {
+      "id": "VariableID:95:291",
+      "name": "shade/primary/950",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-primary-950)"
+      }
+    },
+    {
+      "id": "VariableID:95:292",
+      "name": "shade/secondary/50",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-50)"
+      }
+    },
+    {
+      "id": "VariableID:95:293",
+      "name": "shade/secondary/100",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-100)"
+      }
+    },
+    {
+      "id": "VariableID:95:294",
+      "name": "shade/secondary/200",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-200)"
+      }
+    },
+    {
+      "id": "VariableID:95:295",
+      "name": "shade/secondary/300",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-300)"
+      }
+    },
+    {
+      "id": "VariableID:95:296",
+      "name": "shade/secondary/400",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-400)"
+      }
+    },
+    {
+      "id": "VariableID:95:297",
+      "name": "shade/secondary/500",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-500)"
+      }
+    },
+    {
+      "id": "VariableID:95:298",
+      "name": "shade/secondary/600",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-600)"
+      }
+    },
+    {
+      "id": "VariableID:95:299",
+      "name": "shade/secondary/700",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-700)"
+      }
+    },
+    {
+      "id": "VariableID:95:300",
+      "name": "shade/secondary/800",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-800)"
+      }
+    },
+    {
+      "id": "VariableID:95:301",
+      "name": "shade/secondary/900",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-900)"
+      }
+    },
+    {
+      "id": "VariableID:95:302",
+      "name": "shade/secondary/950",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-secondary-950)"
+      }
+    },
+    {
+      "id": "VariableID:95:303",
+      "name": "shade/tertiary/50",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-50)"
+      }
+    },
+    {
+      "id": "VariableID:95:304",
+      "name": "shade/tertiary/100",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-100)"
+      }
+    },
+    {
+      "id": "VariableID:95:305",
+      "name": "shade/tertiary/200",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-200)"
+      }
+    },
+    {
+      "id": "VariableID:95:306",
+      "name": "shade/tertiary/300",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-300)"
+      }
+    },
+    {
+      "id": "VariableID:95:307",
+      "name": "shade/tertiary/400",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-400)"
+      }
+    },
+    {
+      "id": "VariableID:95:308",
+      "name": "shade/tertiary/500",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-500)"
+      }
+    },
+    {
+      "id": "VariableID:95:309",
+      "name": "shade/tertiary/600",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-600)"
+      }
+    },
+    {
+      "id": "VariableID:95:310",
+      "name": "shade/tertiary/700",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-700)"
+      }
+    },
+    {
+      "id": "VariableID:95:311",
+      "name": "shade/tertiary/800",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-800)"
+      }
+    },
+    {
+      "id": "VariableID:95:312",
+      "name": "shade/tertiary/900",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-900)"
+      }
+    },
+    {
+      "id": "VariableID:95:313",
+      "name": "shade/tertiary/950",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-tertiary-950)"
+      }
+    },
+    {
+      "id": "VariableID:95:314",
+      "name": "brand/primary",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-color-primary)"
+      }
+    },
+    {
+      "id": "VariableID:95:315",
+      "name": "brand/secondary",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-color-secondary)"
+      }
+    },
+    {
+      "id": "VariableID:95:316",
+      "name": "brand/tertiary",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-color-tertiary)"
+      }
+    },
+    {
+      "id": "VariableID:108:68",
+      "name": "control/color-1",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-control-color-1)"
+      }
+    },
+    {
+      "id": "VariableID:108:69",
+      "name": "control/color-2",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-control-color-2)"
+      }
+    },
+    {
+      "id": "VariableID:108:70",
+      "name": "control/color-3",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-control-color-3)"
+      }
+    },
+    {
+      "id": "VariableID:108:71",
+      "name": "control/color-4",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--af-control-color-4)"
+      }
+    }
+  ],
+  "textStyles": [
+    {
+      "id": "S:5faf04911817250a0f581d8bc0cf614413bd0c07,",
+      "name": "Aureform/Caption",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "S:c9331f77f34964fbf68953e792e55afebd44c2cc,",
+      "name": "Aureform/Body small",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "S:6fd77fbb36be3a4f7565350e600f35691f34a4e4,",
+      "name": "Aureform/Body",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 14
+    },
+    {
+      "id": "S:5edcfcc677c29f2698248accbde30e0839ca5535,",
+      "name": "Aureform/Body strong",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 14
+    },
+    {
+      "id": "S:c44d3974dcfbb8d8e98397aaeff09c2906dc7bce,",
+      "name": "Aureform/Subtitle",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 16
+    },
+    {
+      "id": "S:7779c38bd9d3462e0d7666ce289e1fd2a925c8c8,",
+      "name": "Aureform/Title",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 24
+    },
+    {
+      "id": "S:b2c459051960c8f946a6a315d2e9036c2f7526dd,",
+      "name": "Aureform/Display",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 36
+    },
+    {
+      "id": "S:16b586b0e44e522977001bb778cf85e5e3658f33,",
+      "name": "Aureform/Hero",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 80
+    },
+    {
+      "id": "S:204147353886bcd7b90ed12b86ed3e55b646af9f,",
+      "name": "Aureform/Editorial display",
+      "fontName": {
+        "family": "Instrument Serif",
+        "style": "Regular"
+      },
+      "fontSize": 36
+    },
+    {
+      "id": "S:0637cd94f295e4394e41a5d89d6a0790664235f3,",
+      "name": "Aureform/Editorial hero",
+      "fontName": {
+        "family": "Instrument Serif",
+        "style": "Regular"
+      },
+      "fontSize": 80
+    },
+    {
+      "id": "S:d45f895a9c506b67dcd6818a673cf86afcaab62d,",
+      "name": "Aureform/Control",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "S:2f1bd55235a75aaa6e4a6158bb084596a807617f,",
+      "name": "Aureform/Card title",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 18
+    },
+    {
+      "id": "S:5439cfd6af063a94fd64971a58b270778334c77d,",
+      "name": "Aureform/Label",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "S:9ae2ee283a9f179c5d3f97c0c195945d5735ad7a,",
+      "name": "Aureform/Display large",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 56
+    }
+  ],
+  "effects": [
+    {
+      "id": "S:c910c6bbb0ca23901963053979c2490f0ce268c6,",
+      "name": "Aureform/Shadow/Light/soft"
+    },
+    {
+      "id": "S:6c9aa64220ad80dcb9406c53c19bcfab70cb5a54,",
+      "name": "Aureform/Shadow/Light/elevated"
+    },
+    {
+      "id": "S:cd056bd94884a7f57fe9e10bde93f555e733a6d0,",
+      "name": "Aureform/Shadow/Light/floating"
+    },
+    {
+      "id": "S:8f8bc239d6a0114d60d657275d4b60636e581880,",
+      "name": "Aureform/Shadow/Dark/soft"
+    },
+    {
+      "id": "S:bb48b6721302fd65516d5325e9fe8c1a28295e1f,",
+      "name": "Aureform/Shadow/Dark/elevated"
+    },
+    {
+      "id": "S:36feb16e83da80484d84fd9a98cdf3f104a6acae,",
+      "name": "Aureform/Shadow/Dark/floating"
+    }
+  ],
+  "paints": [
+    {
+      "id": "S:1ddc80b10ce6bacdeced1fa60b061deaa49a7add,",
+      "name": "Aureform/Gradient/Light/surface"
+    },
+    {
+      "id": "S:262460b7ebfc9a2a8b58dcd699e53ee658f5de7c,",
+      "name": "Aureform/Gradient/Light/hero"
+    },
+    {
+      "id": "S:f94b92637c8981e80ad9cb928d38a6e14c05b74e,",
+      "name": "Aureform/Gradient/Light/control"
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Instrument Serif",
+      "style": "Italic"
+    },
+    {
+      "family": "Instrument Serif",
+      "style": "Regular"
+    },
+    {
+      "family": "Manrope",
+      "style": "Bold"
+    },
+    {
+      "family": "Manrope",
+      "style": "ExtraBold"
+    },
+    {
+      "family": "Manrope",
+      "style": "ExtraLight"
+    },
+    {
+      "family": "Manrope",
+      "style": "Light"
+    },
+    {
+      "family": "Manrope",
+      "style": "Medium"
+    },
+    {
+      "family": "Manrope",
+      "style": "Regular"
+    },
+    {
+      "family": "Manrope",
+      "style": "SemiBold"
+    }
+  ]
+}

@@ -1,0 +1,888 @@
+{
+  "status": "runtime-native-and-local-handoff-passed-awaiting-delivery",
+  "version": "1.1.0",
+  "releaseScope": {
+    "suiteRoutes": 64,
+    "landingPages": 1,
+    "uniqueViews": 65,
+    "coreFamilies": 44,
+    "palettes": 6,
+    "reusableEffects": 6,
+    "registryInventory": "docs/coverage.json",
+    "nativeIds": ".figma/state.json",
+    "chartKinds": 13,
+    "registryEntries": 83,
+    "registryInventoryCheckpoint": "artifacts/consumer-registry-provider-refresh-1.1-report.json"
+  },
+  "plannedBrowser": {
+    "uniqueViews": 65,
+    "locales": [
+      "en",
+      "es"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "widths": [
+      360,
+      768,
+      1440
+    ],
+    "combinations": 780,
+    "status": "passed-final-owner-report",
+    "appearanceScenarios": "Current full appearance 44/348 and motion 14/74 reports passed; additional scenarios retain their recorded scope.",
+    "initialCheckpoint": {
+      "status": "historical-superseded-by-current-final-pass",
+      "issues": [
+        "Light-theme contrast",
+        "Layout labels"
+      ],
+      "note": "Initial contrast/layout-label findings are preserved as historical checkpoint evidence. The current final 780-combination report passes; native closure remains separate."
+    }
+  },
+  "localHandoff": {
+    "status": "passed-final-native-and-local-code-connect",
+    "coverage": "docs/coverage.json",
+    "codeConnect": ".figma/code-connect-manifest.json",
+    "scope": "Current application, registry, 65-root native audit, scoped owner PNG reviews and final synthetic local Code Connect validation passed against frozen source/state. Final ZIP consumers and private publication are separate delivery gates.",
+    "holdReason": null,
+    "registryCompatibility": "docs/registry-compatibility.md",
+    "releaseChecklist": "docs/release-checklist-1.1.md",
+    "nativeRecordGuide": "docs/code-connect-records-1.1.md",
+    "previousCheckpoint": {
+      "status": "checkpoint-held-for-owner-native-completion",
+      "coverage": "docs/coverage.json",
+      "codeConnect": ".figma/code-connect-manifest.json",
+      "scope": "Earlier source-graph and synthetic Code Connect checkpoint; application/registry source is frozen and current browser/appearance/motion/official-consumer reports pass. Final native records, coverage and archives remain pending.",
+      "holdReason": "Final Code Connect generation awaits authoritative native variant/root records. Current runtime and official-consumer QA pass; native previews, final docs/coverage and archive verification remain separate closure.",
+      "registryCompatibility": "docs/registry-compatibility.md",
+      "releaseChecklist": "docs/release-checklist-1.1.md",
+      "nativeRecordGuide": "docs/code-connect-records-1.1.md"
+    }
+  },
+  "ownerPureContrastCheckpoint": {
+    "status": "passed-owner-reported",
+    "namedPureTests": 71,
+    "customConfigurations": 24,
+    "presetConfigurations": 12,
+    "primaryContrastTarget": 4.55,
+    "gradientInterpolation": "explicit-srgb",
+    "scope": "Pure configuration tests, including interior gradient contrast; this does not replace final production browser or native QA."
+  },
+  "pendingOwnerChecks": [
+    "Generate and pin the three new 1.1 ZIPs, then execute actual installation, typecheck, lint, build and production-browser verification in four fresh consumers.",
+    "Publish the same validated source to the existing private Site. Consult public/downloads/verification-1.1.json for the version-matched actual delivery receipt."
+  ],
+  "previousRelease": {
+    "status": "passed",
+    "recordedAt": "2026-10-18T22:05:31.870196+00:00",
+    "version": "1.0.0",
+    "sourceChecks": {
+      "typescript": "5.9.3",
+      "typecheck": "passed",
+      "lint": "passed-without-warnings",
+      "nodeTests": 10,
+      "staticBuildPages": 127,
+      "framework": "Next.js 16.4.2"
+    },
+    "browser": {
+      "checkedAt": "2026-10-18T21:55:01.590Z",
+      "checks": 744,
+      "uniqueViews": 62,
+      "locales": [
+        "en",
+        "es"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "widths": [
+        360,
+        768,
+        1440
+      ],
+      "http200": 744,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0,
+      "seriousOrCriticalAxeFindings": 0,
+      "previewCaptures": 62
+    },
+    "e2e": {
+      "startTime": "2026-10-18T21:55:01.610Z",
+      "duration": 17395.513,
+      "expected": 10,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "motion": {
+      "scenarios": 14,
+      "plannedScenarios": 14,
+      "passedScenarios": 14,
+      "failedScenarios": 0,
+      "checks": 74,
+      "passedChecks": 74,
+      "failedChecks": 0,
+      "errors": 0,
+      "completedAt": "2026-10-18T21:56:41.171Z"
+    },
+    "clipboard": {
+      "completeFiles": 44,
+      "codeDialogCombinations": 12
+    },
+    "examples": {
+      "families": 44,
+      "typedFilesAndPayloads": 88,
+      "diagnostics": 0
+    },
+    "codeConnect": {
+      "status": "passed-local-smoke",
+      "runtime": "synthetic-figma-stub",
+      "typescript": "5.9.3",
+      "templateFiles": 82,
+      "firstListedVariantCases": 82,
+      "exhaustiveVariantCombinations": 239,
+      "topLevelCases": 754,
+      "nestedTemplateExecutions": 324,
+      "totalTemplateEvaluations": 1078,
+      "uniqueTypedExamples": 367,
+      "templateTypecheck": "passed-against-local-api-declaration-stub",
+      "emittedExampleTypecheck": "passed-against-canonical-source-and-installed-dependency-types",
+      "canonicalSources": "src",
+      "dependencyTypes": "node_modules",
+      "diagnostics": 0,
+      "quoteNewlineUnicodeCases": 82,
+      "nativeIconSwapCases": 44,
+      "unexposedIconChildCases": 44,
+      "missingOrErrorSwapCases": 4,
+      "shellPageContentCases": 18,
+      "rawShellHeaderNotForwarded": true,
+      "liveFigmaRuntimeTested": false,
+      "cloudRegistered": false,
+      "testScript": "scripts/verify-code-connect.cjs"
+    },
+    "nativeFigma": {
+      "routeRoots": 62,
+      "imageFillNodes": 0,
+      "nativeComponentSpecimens": 44,
+      "nativeTemplatePreviews": 46,
+      "variables": 65,
+      "primitiveColors": 28,
+      "semanticColors": 21,
+      "dimensionVariables": 16,
+      "textStyles": 8,
+      "shadowStyles": 6,
+      "gradientStyles": 6,
+      "sourceEffectTokens": 15,
+      "invalidScopes": 0,
+      "invalidWebSyntax": 0
+    },
+    "consumers": [
+      {
+        "kind": "fresh-nextjs-consumer-starter-zip",
+        "status": "passed",
+        "createdAt": "2026-10-18T21:58:07Z",
+        "checks": 4,
+        "archiveSha256": "f213a719a769182c1e1bdaee3e350d99de27502a3c38b2ba672b7ebbb5216eac",
+        "browserRuntimeTested": false
+      },
+      {
+        "kind": "fresh-nextjs-consumer-local-cli",
+        "status": "passed",
+        "createdAt": "2026-10-18T21:54:04Z",
+        "checks": 6,
+        "installedItems": [
+          "motion-system",
+          "date-range-picker",
+          "ai-composer"
+        ],
+        "browserRuntimeTested": false
+      },
+      {
+        "kind": "fresh-nextjs-consumer-official-shadcn",
+        "status": "passed",
+        "createdAt": "2026-10-18T21:50:07Z",
+        "checks": 5,
+        "installedItems": [
+          "data-table",
+          "revenue-panel",
+          "motion-system"
+        ],
+        "browserRuntimeTested": false
+      }
+    ],
+    "limits": [
+      "Deterministic browser demo adapters; production authentication, AI, email and payments require server integrations.",
+      "Automated Chromium checks and manual native design reviews do not constitute an accessibility certification.",
+      "For two JavaScript-disabled SSR scenarios, navigation and visibility were tested on the original page; axe measured a script-free DOM copy after checking presentation equality.",
+      "Code Connect passed a local API stub and source typecheck; live template execution and cloud publication were not performed.",
+      "Native dense tables consolidate records; Figma represents editable designs, while the browser implements interactions and responsive behavior."
+    ]
+  },
+  "knownReleaseDefects": [
+    {
+      "component": "MagneticButton through official shadcn",
+      "symptom": "The base-nova asChild migration removed the custom EffectSurface composition prop, producing nested buttons and hydration error 418.",
+      "status": "resolved-by-fresh-official-consumer",
+      "sourceFix": "scripts/generate-registry.mjs",
+      "originalEvidence": "docs/consumer-verification-1.1.md",
+      "scopedEvidence": "docs/registry-compatibility.md",
+      "resolvedEvidence": "artifacts/consumer-registry-refresh-1.1-report.json",
+      "resolvedAt": "2026-10-19T02:38:14.032Z",
+      "latestVerificationEvidence": "artifacts/consumer-registry-provider-refresh-1.1-report.json"
+    },
+    {
+      "component": "Registry index version",
+      "symptom": "The served index declared 1.0.0 while the package was 1.1.0.",
+      "status": "resolved-by-current-registry-index",
+      "versionSource": "package.json",
+      "resolvedEvidence": "artifacts/consumer-registry-refresh-1.1-report.json",
+      "resolvedAt": "2026-10-19T02:38:14.032Z",
+      "latestVerificationEvidence": "artifacts/consumer-registry-provider-refresh-1.1-report.json"
+    },
+    {
+      "id": "es-shader-uniform-react-185",
+      "status": "resolved-current-full-appearance-and-motion",
+      "symptom": "Actual ES shader-uniform range/key update loop raises React 185",
+      "evidence": "Original owner targeted-appearance finding; current passing reports and the separate scoped diagnostic are attached below.",
+      "requiredFollowup": "Retain stress diagnosis scope; remaining overall release gates are tracked separately.",
+      "sourceFix": "src/components/appearance-provider.tsx",
+      "resolvedEvidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/appearance-full-final/appearance-report.json",
+      "currentConsumerEvidence": "artifacts/consumer-registry-provider-refresh-1.1-report.json",
+      "finalBrowserEvidence": "artifacts/browser/report.json",
+      "diagnosticEvidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/provider-prop-sync/report.json"
+    }
+  ],
+  "officialRegistryRefresh": {
+    "status": "passed",
+    "version": "1.1.0",
+    "startedAt": "2026-10-19T02:37:49.555Z",
+    "completedAt": "2026-10-19T02:38:14.032Z",
+    "evidence": "artifacts/consumer-registry-refresh-1.1-report.json",
+    "registryEntries": 83,
+    "installedItems": 12,
+    "frozenInstall": "passed",
+    "typecheck": "passed",
+    "lint": "passed",
+    "productionBuild": "passed",
+    "browserChecks": 71,
+    "passedBrowserChecks": 71,
+    "actualUIExports": 14,
+    "uiExportSourceTransforms": 0,
+    "uiExportBytesVerified": true,
+    "configurations": [
+      "ocean-light",
+      "ember-dark"
+    ],
+    "nestedButtons": 0,
+    "hydrationOrPageErrors": 0,
+    "compiledResourceFailures": 0,
+    "customAsChildSpreadPreserved": true,
+    "productSourceSubstitution": false,
+    "localPayloadRepairs": false,
+    "registryIndexAndSelectedPayloadsUnchanged": true,
+    "indexVersion": "1.1.0",
+    "finalArchives": "pending-owner-final-packs",
+    "scope": "Completed earlier HTTP-registry/actual-UI consumer checkpoint before the provider correction. It resolves the initial composition defect and is retained as historical evidence; the new officialRegistryProviderRefresh verifies current provider source."
+  },
+  "ownerFocusedUiCheckpoint": {
+    "status": "passed-owner-reported",
+    "scenarios": [
+      "Chart fresh/deep actual-browser checks",
+      "Button fresh/deep actual-browser checks"
+    ],
+    "builtApplicationFixes": [
+      "Reduced-motion transitions disabled",
+      "Components Flat option",
+      "Disabled Studio input opacity only",
+      "WebKit-first/standard-last effects preserve Chrome glass"
+    ],
+    "scope": "Scoped actual Chart/Button runtime passes. Current route matrix, final native audit and scoped visual reviews are complete in their separate reports; final archives and publication remain delivery gates.",
+    "freshMatrixCases": 12,
+    "featureGroups": 3,
+    "deepFunctionalChecks": 22,
+    "locales": [
+      "en",
+      "es"
+    ],
+    "chartKinds": 13
+  },
+  "ownerNativeCheckpoint": {
+    "status": "passed-native-structure-and-visual-review",
+    "evidence": ".figma/native-audit.json",
+    "reportSHA256": "90c2e146740297bcac89fec935356431786f0d06e184d28194b98209eb4eecc5",
+    "checkedAt": "2026-10-19T08:28:44.238985+00:00",
+    "stateSHA256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52",
+    "summary": {
+      "routeRoots": 65,
+      "invalidScopes": 0,
+      "invalidWebSyntax": 0,
+      "variableCollections": 8,
+      "variables": 714,
+      "primitiveVariables": 332,
+      "invalidBindings": 0,
+      "imageFillNodes": 0,
+      "fullUiRasterCandidates": 0,
+      "observedRouteCounts": {
+        "texts": 10141,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "ownerApprovedIntentionalExceptions": 0,
+      "textStyles": 14,
+      "paintStyles": 36,
+      "gradientPaintStyles": 36,
+      "effectStyles": 6
+    },
+    "defaultRootReads": 65,
+    "scopedVisualReview": ".figma/proofs/native-audit-65/owner-visual-approval.json",
+    "reviewer": "Codex owner agent",
+    "scope": "Actual complete 65-root structural inspection and scoped owner PNG review; this does not claim 65 new individual screenshots or user approval.",
+    "previousCheckpoint": {
+      "status": "pending-owner-targeted-fixes-and-new-root-ids",
+      "composedExistingRoots": 7,
+      "pendingNewRoutes": [
+        "studio",
+        "themes",
+        "effects"
+      ],
+      "tokenResync": "completed-owner-ledger-and-light-visual-review",
+      "buttonShapes": "script-prepared-owner-execution-and-actual-ids-pending"
+    }
+  },
+  "tableFunctionalCheckpoint": {
+    "status": "passed-consolidated-distinct-tests",
+    "generatedAt": "2026-10-19T02:46:10.136Z",
+    "evidence": "/tmp/aureform-table-audit-45mi6l56/runtime3010/merged-proofs.json",
+    "distinctTests": 10,
+    "passedTests": 10,
+    "remainingTests": 0,
+    "includedProductionRuns": 3,
+    "allIncludedSourceCheckpointsMatchFrozen": true,
+    "sourceReportHashesVerified": true,
+    "cases": [
+      {
+        "title": "customer creation, persistence, search, edit, export and confirmed deletion",
+        "latestStatus": "passed",
+        "latestRun": "baseline"
+      },
+      {
+        "title": "table sorting, pagination, filtering and row selection change actual results",
+        "latestStatus": "passed",
+        "latestRun": "baseline"
+      },
+      {
+        "title": "3010 table actual mobile search, page navigation, selection, columns and size",
+        "latestStatus": "passed",
+        "latestRun": "baseline"
+      },
+      {
+        "title": "3010 table customer sort, search, empty state, pagination and external-filter export",
+        "latestStatus": "passed",
+        "latestRun": "label correction"
+      },
+      {
+        "title": "3010 table cross-page selection, mixed state, filtered context, selected CSV and clear callback",
+        "latestStatus": "passed",
+        "latestRun": "baseline"
+      },
+      {
+        "title": "3010 table preserved invoices API with numeric sort, filters, search, selection and CSV",
+        "latestStatus": "passed",
+        "latestRun": "baseline"
+      },
+      {
+        "title": "3010 table preserved orders API with numeric sort, filters, search, selection and CSV",
+        "latestStatus": "passed",
+        "latestRun": "baseline"
+      },
+      {
+        "title": "3010 table actual configurable page size, persisted density, stripes and material options",
+        "latestStatus": "passed",
+        "latestRun": "material selector correction"
+      },
+      {
+        "title": "3010 table real column chooser, last-column protection, visible spans and keyboard focus",
+        "latestStatus": "passed",
+        "latestRun": "baseline"
+      },
+      {
+        "title": "3010 table desktop WCAG audit of actual customers, invoices, orders and configurable table",
+        "latestStatus": "passed",
+        "latestRun": "baseline"
+      }
+    ],
+    "scope": "Latest actual result for each distinct test, merged across recorded production runs. This is not a single full-suite execution of the latest build.",
+    "knownLimits": [
+      "The baseline table-scoped Axe audit detected zero violations; glass contrast in the configurable demo was incomplete, so a full contrast pass is not claimed.",
+      "Production consumers supply no ColumnDef.footer; totals are covered by a typed consuming example, not an executed production footer.",
+      "Loading/error/ref/onSelectionChange fixture coverage remains static; runtime coverage uses actual customer/invoice/order consumers and Chromium mobile emulation."
+    ]
+  },
+  "nativePaletteRuntimeCheckpoint": {
+    "status": "passed-owner-ledger-and-visual-review",
+    "evidence": ".figma/native-runtime-resync-1.1.json",
+    "stateRecord": "entities.appearanceRuntimeResync",
+    "palettes": 6,
+    "updatedModeValues": 120,
+    "modeValuesBasis": "Owner-reported six palettes × ten roles × two modes.",
+    "modeBoundControlStyles": 12,
+    "newPrimitiveVariables": 15,
+    "lightPostshots": 2,
+    "visualReview": "passed-owner-viewed",
+    "scope": "Completed bounded palette/control runtime resync and Light proofs; complete 65-root audit and scoped reviews are recorded in ownerNativeCheckpoint."
+  },
+  "pendingOwnerFixes": [],
+  "releaseVerified": false,
+  "ownerReleaseSourceCheckpoint": {
+    "status": "earlier-passed-source-checkpoint-before-provider-correction",
+    "unit": {
+      "status": "passed",
+      "evidence": "/tmp/aureform-ui-build/artifacts/release-1.1-final/unit.log",
+      "tests": 79,
+      "passed": 79,
+      "failed": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "lint": {
+      "status": "passed-owner-reported",
+      "warnings": 0,
+      "log": "/tmp/aureform-ui-build/artifacts/release-1.1-final/lint.log"
+    },
+    "build": {
+      "status": "passed-owner-reported",
+      "pages": 133,
+      "registryEntries": 83
+    },
+    "scope": "79-unit/lint/133-page build checkpoint before the provider lifecycle correction. Current provider build/types/lint, full browser/appearance/motion and official consumer passes are recorded separately; this does not relabel the earlier unit run."
+  },
+  "ownerActualCopyCheckpoint": {
+    "status": "passed-read-report",
+    "evidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/copy-final/copy-examples-report.json",
+    "startedAt": "2026-10-19T02:55:40.350Z",
+    "completedAt": "2026-10-19T02:57:48.087Z",
+    "families": 44,
+    "dynamicClipboardPayloads": 176,
+    "responsiveCaptures": 12,
+    "passedResponsiveCaptures": 12,
+    "actualPayloadsStrictChecked": 188,
+    "errors": 0,
+    "compilation": {
+      "typescript": "5.9.3",
+      "strict": true,
+      "noEmit": true,
+      "payloads": 188,
+      "rootFiles": 188,
+      "diagnostics": 0,
+      "diagnosticCodes": [],
+      "canonicalSourceFiles": 48
+    },
+    "sourceCheckpointsUnchangedDuringRun": true,
+    "browserRuntimeTested": true,
+    "accessibilityIncompleteFindings": 2,
+    "scope": "Completed actual clipboard/responsive payload audit before the latest provider correction. Accessibility incomplete findings remain in the original report. Its copy-scoped pass does not certify changed-provider runtime behavior or the overall 1.1 release."
+  },
+  "ownerAppearanceTargetedCheckpoint": {
+    "status": "historical-targeted-checkpoints-superseded-by-current-full-pass",
+    "plannedScenarios": 7,
+    "controlsUnderTriage": 0,
+    "openRuntimeFailure": null,
+    "passedScope": [
+      "import focus",
+      "EN shader",
+      "no-JS in EN",
+      "no-JS in ES",
+      "EN controls",
+      "ES controls"
+    ],
+    "scope": "Historical targeted passes retain their original scope. The completed current full 44-scenario/348-check appearance report supersedes the targeted checkpoint and closes the recorded runtime regression.",
+    "priorFourScenariosPassed": 4,
+    "controls": {
+      "status": "passed-owner-reported-recorded-checkpoint",
+      "locales": [
+        "en",
+        "es"
+      ],
+      "cases": 2
+    },
+    "initialRunPassedScenarios": 4,
+    "completedCheckpointPassedScenarios": 6,
+    "latestProviderFullRetakeStatus": "passed-full-44-scenarios-348-checks"
+  },
+  "ownerE2ECheckpoint": {
+    "status": "desktop-and-corrected-mobile-passed-recorded-checkpoints",
+    "desktopPassed": 9,
+    "mobile": {
+      "status": "passed-owner-reported-recorded-checkpoint",
+      "passed": 1,
+      "correction": "Test-only stale 1.0 headline expectation"
+    },
+    "scope": "Nine desktop cases and the corrected mobile case are completed checkpoint evidence; they do not certify the subsequent changed provider build."
+  },
+  "resolvedOwnerFixes": [
+    {
+      "change": "Copied-label aria text",
+      "status": "resolved-owner-build-and-copy-recheck",
+      "apiOrExportChange": false,
+      "resolvedEvidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/copy-final/copy-examples-report.json",
+      "resolvedAt": "2026-10-19T02:57:48.087Z"
+    },
+    {
+      "id": "appearance-controls-triage",
+      "status": "resolved-owner-reported-targeted-passes",
+      "cases": 2,
+      "scope": "Both recorded controls cases pass; the subsequent current full appearance report also passes 44/348.",
+      "locales": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "id": "es-shader-uniform-react-185",
+      "status": "resolved-current-full-appearance-and-motion",
+      "symptom": "Actual ES shader-uniform range/key update loop raises React 185",
+      "evidence": "Original owner targeted-appearance finding; current passing reports and the separate scoped diagnostic are attached below.",
+      "requiredFollowup": "No current runtime fix remains open. Retain diagnostic scope and final native/archive/publication closure.",
+      "sourceFix": "src/components/appearance-provider.tsx",
+      "resolvedEvidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/appearance-full-final/appearance-report.json",
+      "currentConsumerEvidence": "artifacts/consumer-registry-provider-refresh-1.1-report.json",
+      "finalBrowserEvidence": "artifacts/browser/report.json",
+      "diagnosticEvidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/provider-prop-sync/report.json"
+    }
+  ],
+  "ownerCopiedLabelFixCheckpoint": {
+    "status": "passed-owner-build-and-actual-copy-recheck",
+    "apiOrExportChange": false,
+    "evidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/copy-final/copy-examples-report.json"
+  },
+  "nativeRecordPreparation": {
+    "status": "completed-native-records-and-final-local-validation",
+    "schema": ".figma/code-connect/native-records-1.1.schema.json",
+    "guide": "docs/code-connect-records-1.1.md",
+    "expectedMatrices": {
+      "Button / Shapes": 9,
+      "Table": 16,
+      "DataTable": 28,
+      "Chart": 13
+    },
+    "newNativeIdsSupplied": true,
+    "nativeExecutionPerformed": true,
+    "finalGenerationPerformed": true,
+    "buttonResponseBudgetBytes": 20000,
+    "buttonIdEncoding": "observed-prefix-ranges-v1",
+    "buttonBuilderReadiness": "executed; real Shapes9 masters and 54 Light/Dark examples reviewed",
+    "evidence": ".figma/code-connect/validation/validation-summary.json",
+    "previousCheckpoint": {
+      "status": "prepared-not-native-evidence",
+      "schema": ".figma/code-connect/native-records-1.1.schema.json",
+      "guide": "docs/code-connect-records-1.1.md",
+      "expectedMatrices": {
+        "Button / Shapes": 9,
+        "Table": 16,
+        "DataTable": 28,
+        "Chart": 13
+      },
+      "newNativeIdsSupplied": false,
+      "nativeExecutionPerformed": false,
+      "finalGenerationPerformed": false,
+      "buttonResponseBudgetBytes": 20000,
+      "buttonIdEncoding": "observed-prefix-ranges-v1",
+      "buttonBuilderReadiness": "ready-as-prepared-source; execution and visual review await owner lease"
+    }
+  },
+  "ownerProviderLifecycleFixCheckpoint": {
+    "status": "current-build-browser-appearance-motion-and-official-consumer-passed",
+    "source": "src/components/appearance-provider.tsx",
+    "change": "Initial-prop state updates are guarded during the provider own render rather than a passive-effect configuration setState.",
+    "reason": "Intermittent actual React 185 update loop observed in ES shader-uniform interaction",
+    "lint": {
+      "status": "passed-owner-reported",
+      "warnings": 0
+    },
+    "build": {
+      "status": "passed-owner-reported",
+      "typecheck": "passed-owner-reported",
+      "pages": 133,
+      "registryEntries": 83
+    },
+    "unchangedScope": [
+      "public APIs",
+      "runtime colors",
+      "export generators"
+    ],
+    "pendingRetakes": {},
+    "sourceHashesFinalized": true,
+    "releaseVerified": false,
+    "scope": "Current complete runtime suites and fresh official consumer passed on frozen source. Native and local Code Connect closure also passed in their separate reports; final archives and publication remain delivery gates.",
+    "officialRegistryConsumer": "passed-current-source-85-checks",
+    "providerSourceSHA256": "d4c5cf01f252483f2edb2fee28f5f56a0b5a5b844b39bf323abe4dad4a06a7d5"
+  },
+  "ownerFullAppearanceCheckpoint": {
+    "status": "passed-read-report",
+    "completedAt": "2026-10-19T03:28:07.546Z",
+    "evidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/appearance-full-final/appearance-report.json",
+    "summary": {
+      "plannedScenarios": 44,
+      "scenarios": 44,
+      "passedScenarios": 44,
+      "failedScenarios": 0,
+      "checks": 348,
+      "passedChecks": 348,
+      "failedChecks": 0,
+      "errors": 0
+    },
+    "sourceCheckpointsUnchangedDuringRun": true,
+    "scope": "Completed current-source runtime suite. Current official consumer and route matrix pass in their separate reports; this suite does not certify native completion, final archives or deployment.",
+    "fullMatrixComplete": true,
+    "scopeReleaseVerified": true,
+    "overallReleaseVerified": false
+  },
+  "ownerMotionRerunCheckpoint": {
+    "status": "passed-read-report",
+    "completedAt": "2026-10-19T03:23:44.739Z",
+    "evidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/motion-rerun/motion-report.json",
+    "summary": {
+      "scenarios": 14,
+      "plannedScenarios": 14,
+      "passedScenarios": 14,
+      "failedScenarios": 0,
+      "checks": 74,
+      "passedChecks": 74,
+      "failedChecks": 0,
+      "errors": 0
+    },
+    "sourceCheckpointsUnchangedDuringRun": true,
+    "scope": "Completed current-source runtime suite. Current official consumer and route matrix pass in their separate reports; this suite does not certify native completion, final archives or deployment.",
+    "overallReleaseVerified": false
+  },
+  "coverCountPreparation": {
+    "status": "executed-and-owner-visually-reviewed",
+    "script": ".figma/scripts/cover-counts-1.1.js",
+    "defaultAction": "preflight",
+    "rootIds": [
+      "27:2",
+      "27:46"
+    ],
+    "newIdsInvented": false,
+    "ownerVisualReview": "passed",
+    "previousCheckpoint": {
+      "status": "prepared-local-checks-passed-native-unexecuted",
+      "script": ".figma/scripts/cover-counts-1.1.js",
+      "defaultAction": "preflight",
+      "rootIds": [
+        "27:2",
+        "27:46"
+      ],
+      "newIdsInvented": false,
+      "ownerVisualReview": "pending"
+    },
+    "evidence": ".figma/proofs/buttons-1.1/owner-cover-review.json"
+  },
+  "docsUiReadonlyCheckpoint": {
+    "file": "src/components/templates/docs.tsx",
+    "sha256": "bb986e0720531bd2dae743f488319c5ac332b80b7d189ec565d5e7d6bd9d8554",
+    "version": "1.1",
+    "suiteRoutes": "dynamic 64",
+    "viewsIncludingLanding": "dynamic 65",
+    "coreFamilies": "dynamic 44",
+    "appMutationPerformed": false,
+    "scope": "Current release text, six palettes/effects, 33 shades, radius aliases and Studio export guidance are present. Original 1.0–1.3 roadmap labels are explained as suite categories. No immediate stale release-count fix requires a UI change."
+  },
+  "ownerProviderStressDiagnostic": {
+    "status": "passed-diagnostic-only",
+    "evidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/provider-prop-sync/report.json",
+    "nativeArrowInputs": 1600,
+    "nativeHomeEndInputs": 16,
+    "before": {
+      "en": 9,
+      "es": 20
+    },
+    "after": {
+      "en": 0,
+      "es": 0
+    },
+    "diagnosticNotFullReleaseMatrix": true,
+    "isolatedRootCauseClaimed": false,
+    "errors": 0,
+    "errorsBasis": "owner-reported"
+  },
+  "runtimeVerified": true,
+  "officialRegistryProviderRefresh": {
+    "status": "passed-read-report",
+    "version": "1.1.0",
+    "startedAt": "2026-10-19T03:32:16.459Z",
+    "completedAt": "2026-10-19T03:32:56.756Z",
+    "evidence": "artifacts/consumer-registry-provider-refresh-1.1-report.json",
+    "reportSHA256": "4d0bfbdb63300d11f88f75b4cb1aab6aea673b39a35041895a5302165ddd4594",
+    "canonicalAndOwnerReportByteIdentical": true,
+    "registryEntries": 83,
+    "installedItems": 12,
+    "officialShadcnVersion": "4.22.0",
+    "liveRegistryInventorySHA256": "813050730ed001d57e6f44778cc7a28a7fc517cf4e40e571b449bc815f5dd381",
+    "indexSHA256": "25c664d589feade6ac1d2315c212466026a07b62d50daa4d37256a606fd5bbd6",
+    "providerSourceSHA256": "d4c5cf01f252483f2edb2fee28f5f56a0b5a5b844b39bf323abe4dad4a06a7d5",
+    "installedLiveAndCanonicalProviderHashesMatch": true,
+    "frozenInstall": "passed",
+    "typecheck": "passed",
+    "lint": "passed",
+    "productionBuild": "passed",
+    "productionBuildPages": 8,
+    "recordedCommands": 12,
+    "allCommandExitCodesZero": true,
+    "browserChecks": 85,
+    "passedBrowserChecks": 85,
+    "productionUiChecks": 71,
+    "providerSynchronizationChecks": 14,
+    "providerSynchronizationScope": [
+      "changed initialAppearance props",
+      "applyToDocument flag transitions",
+      "current props observed in child layout commits",
+      "functional-updater ref synchronization",
+      "native persisted-storage preservation"
+    ],
+    "actualUIExports": 14,
+    "uiExportSourceTransforms": 0,
+    "uiExportBytesVerified": true,
+    "freshExportsByteIdenticalToPrior": true,
+    "configurations": [
+      "ocean-light",
+      "ember-dark"
+    ],
+    "nestedButtons": 0,
+    "hydrationOrPageErrors": 0,
+    "compiledResourceFailures": 0,
+    "customAsChildSpreadPreserved": true,
+    "productSourceSubstitution": false,
+    "localPayloadRepairs": false,
+    "registryIndexAndSelectedPayloadsUnchanged": true,
+    "indexVersion": "1.1.0",
+    "finalArchives": "pending-owner-final-packs",
+    "overallReleaseVerified": false,
+    "integrationFinding": "Minimal hosts must supply or adapt the /en/studio/ navigation destination; that missing suite route is separate from compiled-resource and runtime checks.",
+    "scope": "Fresh actual official shadcn installation from current HTTP registry, unchanged actual UI exports and production browser/probe execution on provider d4c5cf. No substituted product source, local repairs, final ZIP consumption or publication."
+  },
+  "ownerFinalBrowserCheckpoint": {
+    "status": "passed-read-report",
+    "evidence": "artifacts/browser/report.json",
+    "reportSHA256": "96616954d126d8d94c8f9d7fac57d6876093834fb258142ba6c8415098c632e3",
+    "canonicalAndOwnerReportByteIdentical": true,
+    "startedAt": "2026-10-19T03:25:30.655Z",
+    "completedAt": "2026-10-19T03:34:22.638Z",
+    "scope": "all-routes-matrix",
+    "uniqueViews": 65,
+    "locales": [
+      "en",
+      "es"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "widths": [
+      360,
+      768,
+      1440
+    ],
+    "combinations": 780,
+    "passedCombinations": 780,
+    "failedCombinations": 0,
+    "accessibilityChecks": 780,
+    "seriousOrCriticalFindings": 0,
+    "pageErrors": 0,
+    "documentOverflowPixels": 0,
+    "fullMatrixComplete": true,
+    "overallReleaseVerified": false,
+    "previews": {
+      "status": "captured-and-source-files-verified",
+      "files": 130,
+      "uniqueRoutes": 65,
+      "locales": [
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "captureViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "format": "webp",
+      "outputWidth": 960,
+      "canonicalAndMirrorBytesMatch": true,
+      "use": "English gallery thumbnails",
+      "scope": "130 = 65 routes × two themes in English. The runtime matrix separately covers EN and ES; these previews do not constitute bilingual captures or native Figma previews."
+    },
+    "accessibilityScope": "Recorded Chromium axe audits with zero serious/critical findings. This is not an accessibility certification; incomplete results and separate fixture limits retain their original scope."
+  },
+  "ownerApplicationFreezeCheckpoint": {
+    "status": "matched-canonical-source-read-only",
+    "evidence": "/tmp/aureform-ui-build/artifacts/owner-final-1.1/application-freeze.json",
+    "reportSHA256": "90293f4426d627bf7d4dab61ddacf2c2dc322f39fb3db1a35043d06a542fae4e",
+    "latestBuildSession": "17106",
+    "version": "1.1.0",
+    "sourceInventorySHA256": "f4f57aa7bfbe446e9b78704fc311ab8b0f1266edbb640213e344b7f74cf1280a",
+    "sourceFiles": 122,
+    "matchedCanonicalSourceFiles": 122,
+    "providerSourceSHA256": "d4c5cf01f252483f2edb2fee28f5f56a0b5a5b844b39bf323abe4dad4a06a7d5",
+    "appWritesPerformed": false,
+    "scope": "Read-only comparison of all 122 canonical application files to the owner freeze. These fingerprints record application QA provenance and do not replace held Code Connect generation-time hashes."
+  },
+  "archiveVerificationProtocol": {
+    "status": "source-and-handoff-ready-for-final-archive-creation",
+    "documentCheckpoint": "before-final-archive-creation",
+    "deliveryRecord": "public/downloads/verification-1.1.json",
+    "alternativeDetailedEvidence": "artifacts/",
+    "deliveryRecordCreatedByThisAgent": false,
+    "excludedFromSourceArchive": true,
+    "exclusionVerifiedIn": "scripts/package-source.mjs",
+    "freezeScope": [
+      "all included canonical files",
+      "README/docs",
+      "Code Connect",
+      "included .figma records"
+    ],
+    "independentRunnerRequirement": "Pin complete included canonical inventory at start and end; preserve the source and archive fingerprints.",
+    "postArchiveIncludedChangesAllowed": false,
+    "actualArchiveStatus": "pending-owner-final-packs-and-actual-consumer-verification",
+    "proofWriteOrder": "Write actual ZIP results to excluded delivery evidence after the independent consumer checks; do not change included shipping docs to announce a later pass.",
+    "documentationRepackException": "Controlled documentation-only repack requires new archive hashes and independent CRC/code-file hash conservation proof; previous archive results do not certify the repack.",
+    "nativeAndLocalHandoffComplete": true,
+    "visualProofDistribution": {
+      "selection": ".figma/native-audit.json: proof.reviewBatches[].visualProofs",
+      "finalPNGs": 23,
+      "historicalIterationPNGsExcluded": 17,
+      "historicalOriginalsPreservedLocally": true,
+      "allFinalProofBytesPreserved": true,
+      "perFileHostingLimitBytes": 26214400,
+      "scope": "Only historical iteration PNGs under .figma/proofs are excluded. Native records, source, templates, final proof PNGs and 130 source previews remain included."
+    }
+  },
+  "ownerFinalLocalCodeConnectCheckpoint": {
+    "status": "passed-local-smoke",
+    "evidence": ".figma/code-connect/validation/validation-summary.json",
+    "reportSHA256": "635f0f197129bbe20fe2219e2789c6b370a52c6168b1c3f0e635eb375c4f6329",
+    "manifestSHA256": "618a0e2d6f871793ddcb3d5d717e7c398fe2fbd352b4b5737a7e8a8b1337815c",
+    "stateSHA256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52",
+    "runtime": "synthetic-figma-stub",
+    "templateFiles": 92,
+    "totalTemplateEvaluations": 1646,
+    "uniqueTypedExamples": 556,
+    "diagnostics": 0,
+    "pendingNativeMappings": 0,
+    "liveFigmaRuntimeTested": false,
+    "cloudRegistered": false,
+    "scope": "Final synthetic local template and emitted-example type validation. Live cloud Code Connect registration and native library publication are not performed."
+  }
+}

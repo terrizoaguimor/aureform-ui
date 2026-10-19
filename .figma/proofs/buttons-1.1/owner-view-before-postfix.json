@@ -1,0 +1,40 @@
+{
+  "recordedAt": "2026-10-19T05:35:03.055105+00:00",
+  "ownerReportedRealDownloadAndView": true,
+  "layoutShapesSizesNineAndFifteenAppearancesPlusThreeAddons": "pass",
+  "coverVersion11Suite64Core44": "pass",
+  "correctionsRemaining": [
+    "three Large glyph foreground bindings",
+    "Brand Guide obsolete Forest copy and colors"
+  ],
+  "shots": [
+    {
+      "name": "buttons-dark",
+      "pngPath": ".figma/proofs/buttons-1.1/buttons-dark-before-postfix.png",
+      "width": 1360,
+      "height": 636,
+      "sha256": "f217890c93f551ddb623f6c54594c77e97f99d7cb55c3c43eecec516e6fd799a"
+    },
+    {
+      "name": "buttons-light",
+      "pngPath": ".figma/proofs/buttons-1.1/buttons-light-before-postfix.png",
+      "width": 1360,
+      "height": 636,
+      "sha256": "20ce71c036124f0a16a0f864c04931f32d9fe9715282efb3a8c5a622fee3a05a"
+    },
+    {
+      "name": "cover",
+      "pngPath": ".figma/proofs/buttons-1.1/cover-owner-viewed.png",
+      "width": 1440,
+      "height": 960,
+      "sha256": "75259d1dd30ef21fc3150e2c2dbef72237af279abdc4c1b8320f1fd2ab20200a"
+    },
+    {
+      "name": "brand-guide",
+      "pngPath": ".figma/proofs/buttons-1.1/brand-guide-before-postfix.png",
+      "width": 1440,
+      "height": 932,
+      "sha256": "c8541fc89d125cf190958ff0329c49cc0d2eb79c3df0ded9df7a35f6f8078de2"
+    }
+  ]
+}

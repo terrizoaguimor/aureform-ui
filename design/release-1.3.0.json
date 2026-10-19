@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3.0",
+  "recordedOn": "2026-10-19",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N",
+  "license": "Apache-2.0",
+  "scope": "Open-source cover, kit-license and community-offering wording; actual SVG exports and local reconstruction resources",
+  "nativeChanges": {
+    "textsUpdated": 63,
+    "areas": [
+      "cover",
+      "kit license",
+      "community offering",
+      "thumbnail"
+    ],
+    "reportedBy": "Delegated Figma worker after MCP readback",
+    "freshVisualProofScope": "Fresh actual cover, kit-license and community-offering wording exports only",
+    "proofs": [
+      {
+        "file": "design/releases/1.3.0/cover.png",
+        "nodeId": "27:2",
+        "bytes": 98469,
+        "sha256": "2d44dd9d2e09b6f1f6969d2dd53b555d7abbbe425ecc209aadd7d48e4e087aa7",
+        "width": 1440,
+        "height": 960,
+        "exportedOn": "2026-10-19"
+      },
+      {
+        "file": "design/releases/1.3.0/license.png",
+        "nodeId": "54:2873",
+        "bytes": 145033,
+        "sha256": "5407cebedd73c3853852cd783eef574550079276187a9f10e5e8bbbc70a3f3f2",
+        "width": 1440,
+        "height": 1720,
+        "exportedOn": "2026-10-19"
+      },
+      {
+        "file": "design/releases/1.3.0/community.png",
+        "nodeId": "55:7541",
+        "bytes": 131323,
+        "sha256": "dd8249212df8df058875bb1355c9ce708d398c0dea93d1da0b9ded4e8f866e65",
+        "width": 1440,
+        "height": 1380,
+        "exportedOn": "2026-10-19"
+      }
+    ],
+    "allRouteVisualReview": false
+  },
+  "preservedHandoff": {
+    "canonicalRouteRoots": 69,
+    "idsChanged": 0,
+    "state": ".figma/history/state-1.2.1-final.json",
+    "sha256": "917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03",
+    "earlierAuditsModified": false
+  },
+  "formats": {
+    "nativeFigIncluded": false,
+    "nativeFigExportSupportedByConnector": false,
+    "jsonRestExportAttempt": "JSON_REST_V1 export format is not supported in this context.",
+    "actualSvgExports": 8,
+    "svgManifest": "design/exports/manifest.json",
+    "outlinedText": true,
+    "svgRestoresAutoLayoutOrVariants": false,
+    "rebuildPlugin": "design/rebuild-plugin/README.md",
+    "rebuildPluginExecutedInNativeEditor": false
+  },
+  "access": {
+    "authenticatedConnector": "verified by actual design exports",
+    "anonymousView": "public link enabled; confirmed by owner on 2026-10-19",
+    "copyExportPermissions": "copy and export enabled; confirmed by owner on 2026-10-19",
+    "repositoryBundleRequiresFigmaAccess": false,
+    "independentAnonymousBrowserCheck": false
+  },
+  "upstreamNotices": "THIRD_PARTY_NOTICES.md"
+}

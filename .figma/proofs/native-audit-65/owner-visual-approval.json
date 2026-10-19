@@ -1,0 +1,675 @@
+{
+  "kind": "aureform-owner-native-visual-review-v1",
+  "finalApproval": true,
+  "preparationOnly": false,
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "stateSha256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52",
+  "checkedAt": "2026-10-19T08:28:44.238985+00:00",
+  "reviewer": "Codex owner agent",
+  "mutationLedgerComplete": true,
+  "allMutationsAndDeclaredPermutationsReviewed": true,
+  "routeApprovals": [
+    {
+      "route": "dashboard",
+      "nodeId": "5:2",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "customers",
+      "nodeId": "5:3",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "ai",
+      "nodeId": "5:4",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "analytics",
+      "nodeId": "53:494",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "ai/code",
+      "nodeId": "53:1044",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "ai/playground",
+      "nodeId": "53:1272",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "docs",
+      "nodeId": "54:1108",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "docs/tokens",
+      "nodeId": "54:1451",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "docs/cli",
+      "nodeId": "54:1764",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "docs/figma",
+      "nodeId": "54:2045",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "docs/adapters",
+      "nodeId": "54:2325",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "docs/accessibility",
+      "nodeId": "54:2600",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "docs/license",
+      "nodeId": "54:2873",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "docs/roadmap",
+      "nodeId": "54:3151",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "components",
+      "nodeId": "59:2549",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "forms",
+      "nodeId": "59:2725",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "charts",
+      "nodeId": "59:2901",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "media",
+      "nodeId": "59:3077",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "layouts",
+      "nodeId": "59:3253",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "blocks",
+      "nodeId": "59:3429",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "templates",
+      "nodeId": "59:3605",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "crm",
+      "nodeId": "39:24",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "ecommerce",
+      "nodeId": "39:730",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "sales",
+      "nodeId": "39:1132",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "marketing",
+      "nodeId": "39:1521",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "logistics",
+      "nodeId": "39:1923",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "finance",
+      "nodeId": "39:2310",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "stocks",
+      "nodeId": "39:2702",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "products",
+      "nodeId": "41:2363",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "orders",
+      "nodeId": "41:2816",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "invoices",
+      "nodeId": "41:3207",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "transactions",
+      "nodeId": "41:3597",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "tasks",
+      "nodeId": "41:3982",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "pipeline",
+      "nodeId": "41:4387",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "task-list",
+      "nodeId": "41:4794",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "calendar",
+      "nodeId": "41:5151",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "mail",
+      "nodeId": "45:4589",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "chat",
+      "nodeId": "45:5003",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "files",
+      "nodeId": "45:5363",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "support",
+      "nodeId": "45:5707",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "maps",
+      "nodeId": "45:6076",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "invoice",
+      "nodeId": "45:6451",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "ai/images",
+      "nodeId": "45:6768",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "ai/video",
+      "nodeId": "45:7088",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "settings/profile",
+      "nodeId": "48:6454",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "settings/team",
+      "nodeId": "48:6816",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "settings/preferences",
+      "nodeId": "48:7128",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "settings/billing",
+      "nodeId": "48:7437",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "settings/api-keys",
+      "nodeId": "48:7753",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "settings/integrations",
+      "nodeId": "48:8021",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "auth/sign-in",
+      "nodeId": "52:7472",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "auth/sign-up",
+      "nodeId": "52:7509",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "auth/reset-password",
+      "nodeId": "52:7551",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "auth/verify",
+      "nodeId": "52:7581",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "status/not-found",
+      "nodeId": "52:7622",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "status/error",
+      "nodeId": "52:7650",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "status/maintenance",
+      "nodeId": "52:7684",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "status/coming-soon",
+      "nodeId": "52:7713",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "status/success",
+      "nodeId": "52:7751",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "pricing",
+      "nodeId": "55:7541",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "faq",
+      "nodeId": "55:7856",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "",
+      "nodeId": "55:8072",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "studio",
+      "nodeId": "134:8412",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "themes",
+      "nodeId": "135:8894",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    },
+    {
+      "route": "effects",
+      "nodeId": "136:9476",
+      "approved": true,
+      "basis": "Current complete native structure passed; native 1.1 component and view visual batches were inspected with scoped post-fix checks."
+    }
+  ],
+  "nativeReads": [
+    {
+      "pageId": "2:5",
+      "method": "Figma Plugin API",
+      "completedAt": "2026-10-19T08:20:56.047Z",
+      "decodedSha256": "cb0cb5f0bd57ab7e39f81ed52536c5bca53601e87e6e22e6a97a92cba70517a3",
+      "rawParts": [
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/native-audit-65/read-2-5.raw.json",
+          "sha256": "718f19021a35b224c6b119546f6719637a84cf07027b36645ce29128fca7abfc"
+        }
+      ]
+    },
+    {
+      "pageId": "2:6",
+      "method": "Figma Plugin API",
+      "completedAt": "2026-10-19T08:25:52.056Z",
+      "decodedSha256": "ecb476299d5778823dc4f2fcb90390261f0d3ed69455b498b63b138ace5ca0f3",
+      "rawParts": [
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/native-audit-65/read-2-6.raw.json",
+          "sha256": "867980d6d6e356f0699b9abfcb1c360b44985fa2959eb7bd26c6b78921e1d5d2"
+        }
+      ]
+    },
+    {
+      "pageId": "global-variables",
+      "method": "Figma Plugin API",
+      "completedAt": "2026-10-19T07:25:59.742Z",
+      "decodedSha256": "7c4a490ec6d756e6dbc1d1a8b137f43f112af7d9e2d7e113466e65dd1e8532d6",
+      "rawParts": [
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-owner-global-variable-part0-1.1.json",
+          "sha256": "18cd2c905a82fb291f82d0da47846ea400fc727f2f6314ffa06ebacd1d66c6fa"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-owner-global-variable-part1-1.1.json",
+          "sha256": "25147d9079f37573f681fe9eb7fd7decb71c00f6171ae8b6f72818354e2f386e"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-owner-global-variable-part2-1.1.json",
+          "sha256": "41c72e46bf741ce135dc0aaa737959cd28cd6b72d648f27c7042556f1794c2de"
+        }
+      ]
+    }
+  ],
+  "reviewBatches": [
+    {
+      "label": "Native 1.1 library, flagship views and default-style resynchronization",
+      "result": "approved",
+      "checkedAt": "2026-10-19T08:28:44.238985+00:00",
+      "allReturnedMutationIdsReviewed": true,
+      "variantCoverage": [
+        "Nine Button shape/size variants and 54 Light/Dark examples",
+        "16 Table and 28 sparse DataTable variants with 20 Light/Dark visual representatives",
+        "Thirteen Chart kinds with twelve Boolean definitions",
+        "Six palettes and native token resynchronization",
+        "Six effects and three original native shaders",
+        "Three new appearance views",
+        "Seven flagship/authentication/landing views",
+        "65 default route roots with scoped typography, mode, SLOT surface and version-label corrections"
+      ],
+      "nativeNodeIds": [
+        "5:2",
+        "5:3",
+        "5:4",
+        "53:494",
+        "53:1044",
+        "53:1272",
+        "54:1108",
+        "54:1451",
+        "54:1764",
+        "54:2045",
+        "54:2325",
+        "54:2600",
+        "54:2873",
+        "54:3151",
+        "59:2549",
+        "59:2725",
+        "59:2901",
+        "59:3077",
+        "59:3253",
+        "59:3429",
+        "59:3605",
+        "39:24",
+        "39:730",
+        "39:1132",
+        "39:1521",
+        "39:1923",
+        "39:2310",
+        "39:2702",
+        "41:2363",
+        "41:2816",
+        "41:3207",
+        "41:3597",
+        "41:3982",
+        "41:4387",
+        "41:4794",
+        "41:5151",
+        "45:4589",
+        "45:5003",
+        "45:5363",
+        "45:5707",
+        "45:6076",
+        "45:6451",
+        "45:6768",
+        "45:7088",
+        "48:6454",
+        "48:6816",
+        "48:7128",
+        "48:7437",
+        "48:7753",
+        "48:8021",
+        "52:7472",
+        "52:7509",
+        "52:7551",
+        "52:7581",
+        "52:7622",
+        "52:7650",
+        "52:7684",
+        "52:7713",
+        "52:7751",
+        "55:7541",
+        "55:7856",
+        "55:8072",
+        "134:8412",
+        "135:8894",
+        "136:9476"
+      ],
+      "nativeReports": [
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/owner-visual-review.json",
+          "sha256": "94c7d1512a37e98e8702c26517e81d8f178a02ac7300f4f0338773c66455f2be"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-visual-review.json",
+          "sha256": "ee53dfff7be320911ea53cdf8f2a3135e908ff92a8e311b7ae808c4ead962330"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/table-1.1/owner-visual-review.json",
+          "sha256": "9eec4656873b83a7ece29ac347c52e2fd46fba09c69c27f2eedf6d580849a0ca"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/charts-1.1/owner-visual-review.json",
+          "sha256": "b461bb7a78986bb906b6831a58e448289dd5d6b7610733fdd1bd7fcd5f3197dc"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/owner-visual-review.json",
+          "sha256": "d13a7bf58327fd4148a704cd2801caeb640e780a0f27d22a9b8f856d84711f50"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-runtime-resync-1.1.json",
+          "sha256": "e0494cbe56409fecccec8e5836eedda8d90441996f2f6ff928afcb49c415b40d"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-effects-library-1.1.json",
+          "sha256": "6e8e7d2c872e15abb6d745b02eb1798160cad51751ebc21a17d762805537a8b6"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/owner-appearance-views-icons-1.1.normalized.json",
+          "sha256": "49d00f68ff4ed6143365dbe04232fb5882143d90c51cf35510b0a273fde125b7"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/owner-appearance-views-layout-1.1.normalized.json",
+          "sha256": "1ecb132ec19a8e8d79bdbd47b70c56b22ae54d775564516d382915277546fb66"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/owner-appearance-views-cleanup-1.1.normalized.json",
+          "sha256": "cf2c116ac314e2a12dfa193d8ec84f17600ed98b221f8a91fb04e0a4614e5176"
+        }
+      ],
+      "visualProofs": [
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/customers-final.png",
+          "sha256": "027c3c1504c2251b997fb48320161141e776f0a47df275be7075c4d765414091"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/crm-final.png",
+          "sha256": "3aa1789a0ac91f5913226f83ae98961eb4df56ebe2989bc6e7927f35951fc1c4"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/buttons-final.png",
+          "sha256": "25f21bb5ccd6a59931318fb2af729cce4365f9a45503d05e2d72acc8a96eb91a"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/gallery-final.png",
+          "sha256": "a8d6fba293fe4cfc10badbcf9ac4641d875fe70af41578820dd4df2e7560e27f"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/defaults-1.1/table-preview-detail.png",
+          "sha256": "8c8ef670a34ce66f825e06d80ff45aa123b46cb62b9bb7a494aa1dd1f8cfdea2"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-buttons-dark-final.png",
+          "sha256": "9162781afd5e36a792fd698e18dc68db26f9b4c8171b50c7fd05f73c2285293d"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-buttons-light-final.png",
+          "sha256": "8229fbdcc4ffbefe99b45080b76b8b52e811d2c2c4b30e8f7bd6c118cddae0db"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-cover-final.png",
+          "sha256": "75259d1dd30ef21fc3150e2c2dbef72237af279abdc4c1b8320f1fd2ab20200a"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/buttons-1.1/owner-brand-guide-final.png",
+          "sha256": "255398980a05249075c6543fcb4af4433dbd8c45606aefb85b5a13dee6fb4ee1"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/table-1.1/owner-final.png",
+          "sha256": "3bdcd7a48f3065767122d80ba1308071ba033a6792443990b289f8ec878b0f14"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/table-1.1/owner-loading-detail.png",
+          "sha256": "96488eff44c7800bae5ae54794228c0e5f2eed6bc1272a22d38377eb93f1fdf7"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/charts-1.1/charts-library-final.png",
+          "sha256": "80a460237778d8f5f584dad55b75c9bcd05c79875de23794af09246018e05064"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/charts-1.1/charts-screen-final.png",
+          "sha256": "e43a9696a9bef6b42ac5e95be9a5caa22b43c2c9e5dedee29f7fe9bd8ed3b863"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/saas-final.png",
+          "sha256": "1c6d8c086fb9157dc61b0845daee41426bc14fd501c510f0da7d357105db72c1"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/ai-final.png",
+          "sha256": "abfbd3b402c08201b9e22ef493a3b1156ea8d6fc8fcb2b8d5222e62730ac1d82"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/landing-final.png",
+          "sha256": "5f47bcce78fe2eba08b911e299abf2f3fb8b50a05b52590741e81bae1718bfac"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/auth-sign-in-final.png",
+          "sha256": "a2106fdecee436c9263f6f4a3aec1f5c70c50ece8107663c073d3987888940e3"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/auth-sign-up-final.png",
+          "sha256": "e48df8a04c600616adb41d26d66fa8a4a06c4aa13a8d6fea3721eb068959123c"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/auth-reset-password-final.png",
+          "sha256": "bd22d85cffa0ae34537e6f31d1fff30d6d4c476665b0739b577a317622be2143"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/flagships-auth-landing-1.1/auth-verify-final.png",
+          "sha256": "a4b6b1a1b8e5de13ce9f1322097917b12cc28a9b1d7a609b2222d0a31991e7b7"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/studio-final.png",
+          "sha256": "74afff363c2c37d44e1fedac7459c548d8e51cc8cbd09a8a06759646438b2640"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/themes-final.png",
+          "sha256": "b9510b31f477fad37d3141ce27745781af209539058094a098d3561d718af33d"
+        },
+        {
+          "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/proofs/appearance-views-1.1/effects-final.png",
+          "sha256": "fd31f47524b1ae4e43352b5c0cdc01e7161c97f673d142815d6df09344c2bc32"
+        }
+      ]
+    }
+  ],
+  "intentionalExceptions": [],
+  "limits": [
+    "Actual full structure reads cover all 65 routes. Visual inspection uses the recorded library/view batches and scoped post-fix exports; it is not a claim that 65 fresh full-size individual screenshots were captured.",
+    "Native visual approval was performed by the owner agent, not requested from the user."
+  ]
+}

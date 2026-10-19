@@ -1,0 +1,15 @@
+{
+  "status": "upload-completed-same-image-hash",
+  "assetId": "alex-morgan",
+  "method": "multipart/form-data file",
+  "sourceSha256": "d00e73009c7efc6d22cb4c5c058b2f8b6b4f97e8a221163371112ce73a9e32fb",
+  "imageHash": "2c7528dec15140ffbebceeb2a78025b96428c271",
+  "contentType": "image/webp",
+  "sizeBytes": 9276,
+  "placedOnNodeId": "263:68",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "263:68"
+  ],
+  "note": "The multipart retry committed the same WebP hash. Testing a lossless decoded PNG render upload on this same master."
+}

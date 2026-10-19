@@ -1,0 +1,62 @@
+{
+  "status": "cover-counts-updated-awaiting-owner-visual-review",
+  "targets": [
+    {
+      "id": "27:15",
+      "name": "61 suite routes",
+      "before": "61 suite routes",
+      "after": "64 suite routes",
+      "previewTruncated": false,
+      "edits": [
+        {
+          "start": 0,
+          "end": 2,
+          "before": "61",
+          "after": "64",
+          "sourceCount": "suiteRoutes"
+        }
+      ]
+    },
+    {
+      "id": "27:43",
+      "name": "AUREFORM UI / 1.0",
+      "before": "AUREFORM UI / 1.0",
+      "after": "AUREFORM UI / 1.1",
+      "previewTruncated": false,
+      "edits": [
+        {
+          "start": 14,
+          "end": 17,
+          "before": "1.0",
+          "after": "1.1",
+          "sourceCount": "version"
+        }
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "2:2",
+  "rootIds": [
+    "27:2",
+    "27:46"
+  ],
+  "sourceCounts": {
+    "version": "1.1.0",
+    "suiteRoutes": 64,
+    "viewsIncludingLanding": 65,
+    "coreFamilies": 44,
+    "chartKinds": 13,
+    "palettes": 6,
+    "publicEffects": 6,
+    "registryEntries": 83
+  },
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "27:15",
+    "27:43"
+  ],
+  "nativeCompletionCertified": false,
+  "ownerVisualReview": "pending",
+  "loadedFontCount": 2
+}

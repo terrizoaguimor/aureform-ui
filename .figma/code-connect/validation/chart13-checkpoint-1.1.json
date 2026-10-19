@@ -1,0 +1,328 @@
+{
+  "purpose": "Filesystem-only Chart13 Code Connect checkpoint before final owner state/audit freeze",
+  "status": "passed-local-smoke",
+  "checkpointOnly": true,
+  "createdAtUTC": "2026-10-19T06:56:54.156495+00:00",
+  "canonicalRoot": "/home/terrizoaguimor/VultrDrive/intelligence-ui",
+  "staging": "/tmp/aureform-cc-checkpoint-1.1-9wnvt2yz",
+  "changes": [
+    ".figma/component-properties.json",
+    ".figma/code-connect/native-additions.json",
+    ".figma/code-connect/Chart.native-definitions-1.1.json",
+    ".figma/code-connect/native-records-1.1.schema.json",
+    "scripts/generate-code-connect.py",
+    "scripts/verify-code-connect.cjs",
+    ".figma/code-connect/Chart.figma.ts",
+    ".figma/code-connect-manifest.json"
+  ],
+  "changedFileHashes": {
+    ".figma/component-properties.json": "d05bdb0d1f01cc3584155bb0bad05ada9fd4ad870657b59f5cf0da0a7beb78a8",
+    ".figma/code-connect/native-additions.json": "96deb1ad937fac33973872c44850e069603979403cb0d98511e2e7cb29208c36",
+    ".figma/code-connect/Chart.native-definitions-1.1.json": "a761b0fd1c8772ee7a709b4ed91ddd71a8066dda63fdb5d1267f073603d24e67",
+    ".figma/code-connect/native-records-1.1.schema.json": "142adebbb51eacf37ed85fb3a03d4daa9b70874c13eae06fba1fd7021a7722dd",
+    "scripts/generate-code-connect.py": "123b7929ef8f89c2f96cc69c81beeac04d9c09492cd357932ac6775f18fcd4a3",
+    "scripts/verify-code-connect.cjs": "aed9fdf23f6e54fe9479a3a66d75e160bc17d1ec2d2b08efff47f6754c9e9132",
+    ".figma/code-connect/Chart.figma.ts": "6a92b7a6a898b4d2dc1075aba65c9e63b0c1be9aac00eb3ceb284e822b46b2ff",
+    ".figma/code-connect-manifest.json": "42cebf8cf8b14f52a0c86dae88b2a68e4582e69bd09e61d5367533ae4bda00fd"
+  },
+  "generatedTemplateFiles": 92,
+  "manifestCoverage": {
+    "coreFamilies": 44,
+    "buttonExtensions": 2,
+    "shapeExtensions": 1,
+    "sourceBlockExports": 10,
+    "sourceBlockFiles": 9,
+    "mappedBlockExports": 9,
+    "nativeIcons": 22,
+    "navigationFragments": 1,
+    "chromeCompositions": 3,
+    "appearanceExtensions": 3,
+    "effectTemplates": 6,
+    "pendingNativeMappings": 0,
+    "totalTemplates": 92
+  },
+  "validationSummary": ".figma/code-connect/validation/validation-summary.json",
+  "validationSummarySHA256": "635f0f197129bbe20fe2219e2789c6b370a52c6168b1c3f0e635eb375c4f6329",
+  "validation": {
+    "status": "passed-local-smoke",
+    "runtime": "synthetic-figma-stub",
+    "typescript": "5.9.3",
+    "templateFiles": 92,
+    "firstListedVariantCases": 92,
+    "recordedNativeMatrixCases": {
+      "Table": 16,
+      "DataTable": 28,
+      "Chart": 13,
+      "Button / Shapes": 9
+    },
+    "exhaustiveVariantCombinations": 338,
+    "topLevelCases": 1312,
+    "nestedTemplateExecutions": 334,
+    "totalTemplateEvaluations": 1646,
+    "uniqueTypedExamples": 556,
+    "templateTypecheck": "passed-against-local-api-declaration-stub",
+    "emittedExampleTypecheck": "passed-against-canonical-source-and-installed-dependency-types",
+    "canonicalSources": "src",
+    "dependencyTypes": "owner-mirror",
+    "diagnostics": 0,
+    "quoteNewlineUnicodeCases": 92,
+    "nativeIconSwapCases": 44,
+    "unexposedIconChildCases": 44,
+    "missingOrErrorSwapCases": 6,
+    "shellPageContentCases": 18,
+    "sourceAppearanceCases": 14,
+    "sourceEffectContracts": 6,
+    "sourceChartKindCases": 13,
+    "sourceButtonShapeSizeCases": 9,
+    "sourceTableMaterialDensityCases": 16,
+    "sourceDataTableStateCases": 5,
+    "nativeChartVariantCombinations": 13,
+    "nativeChartBooleanDefinitions": 12,
+    "nativeChartBooleanCases": 338,
+    "starterSourceTypecheck": "passed-against-canonical-source",
+    "sourceSnapshotChecks": 78,
+    "templateSnapshotChecks": 92,
+    "pendingNativeMappings": 0,
+    "rawShellHeaderNotForwarded": true,
+    "liveFigmaRuntimeTested": false,
+    "cloudRegistered": false,
+    "testScript": "scripts/verify-code-connect.cjs"
+  },
+  "sourceIntegrity": {
+    "status": "passed",
+    "applicationFrozenFiles": 122,
+    "applicationFilesMatchOwnerFreeze": true,
+    "applicationDifferences": [],
+    "ledgerOutsideChartPreserved": true,
+    "nativeChartKinds": 13,
+    "nativeChartVariants": 13,
+    "chartSourceProperties": [
+      "legend",
+      "appearance",
+      "visibleSeries",
+      "kind"
+    ],
+    "chartVisualOnlyBooleanProperties": [
+      "Show data#189:7",
+      "Category 1#189:42",
+      "Category 2#189:49",
+      "Category 3#189:56",
+      "Category 4#189:63",
+      "Category 5#189:70",
+      "Category 6#189:77"
+    ],
+    "manifestPendingNativeMappings": 0
+  },
+  "nativeSchemaValidation": {
+    "passed": true,
+    "records": [
+      "Table",
+      "DataTable",
+      "Button / Shapes",
+      "Chart"
+    ],
+    "errors": null
+  },
+  "scriptChecks": {
+    "passed": true,
+    "checks": [
+      {
+        "command": [
+          "node",
+          "--check",
+          "/home/terrizoaguimor/VultrDrive/intelligence-ui/scripts/verify-code-connect.cjs"
+        ],
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "node",
+          "/tmp/aureform-ui-build/node_modules/eslint/bin/eslint.js",
+          "scripts/verify-code-connect.cjs",
+          "--max-warnings",
+          "0"
+        ],
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ]
+  },
+  "chartSourceMappings": {
+    "kind": {
+      "Area": "area",
+      "Line": "line",
+      "Bar": "bar",
+      "Donut": "pie",
+      "Radar": "radar",
+      "Radial": "radial",
+      "HorizontalBar": "horizontal-bar",
+      "StackedBar": "stacked-bar",
+      "StackedArea": "stacked-area",
+      "DivergingBar": "diverging-bar",
+      "Gauge": "gauge",
+      "Rings": "rings",
+      "Heatmap": "heatmap"
+    },
+    "booleanSourceProperties": [
+      {
+        "source": "src/components/ui/chart.tsx",
+        "export": "Chart",
+        "property": "legend",
+        "type": "boolean",
+        "nativeFields": [
+          "legend"
+        ],
+        "nativeProperties": [
+          "Show legend#189:0"
+        ],
+        "status": "mapped-native-properties"
+      },
+      {
+        "source": "src/components/ui/chart.tsx",
+        "export": "Chart",
+        "property": "appearance",
+        "type": "ChartAppearance",
+        "nativeFields": [
+          "glow"
+        ],
+        "options": [
+          "flat",
+          "gradient",
+          "glow"
+        ],
+        "trueValue": "glow",
+        "falseValue": "flat",
+        "nativeProperties": [
+          "Glow#189:14"
+        ],
+        "status": "mapped-native-properties"
+      },
+      {
+        "source": "src/components/ui/chart.tsx",
+        "export": "Chart",
+        "property": "visibleSeries",
+        "type": "ChartSeries[]",
+        "nativeFields": [
+          "series1",
+          "series2",
+          "series3"
+        ],
+        "itemType": "ChartSeries",
+        "options": [
+          "value",
+          "secondary",
+          "tertiary"
+        ],
+        "nativeProperties": [
+          "Series 1#189:21",
+          "Series 2#189:28",
+          "Series 3#189:35"
+        ],
+        "status": "mapped-native-properties"
+      }
+    ],
+    "visualOnlyBooleanProperties": [
+      "Show data#189:7",
+      "Category 1#189:42",
+      "Category 2#189:49",
+      "Category 3#189:56",
+      "Category 4#189:63",
+      "Category 5#189:70",
+      "Category 6#189:77"
+    ]
+  },
+  "verifiedInputSnapshots": [
+    {
+      "file": ".figma/component-properties.json",
+      "sha256": "d05bdb0d1f01cc3584155bb0bad05ada9fd4ad870657b59f5cf0da0a7beb78a8"
+    },
+    {
+      "file": ".figma/state.json",
+      "sha256": "470e8d77d948b30eabba05895b19e830b9faad7cfcb1dc723e125f870c0ce0de"
+    },
+    {
+      "file": ".figma/code-connect/native-additions.json",
+      "sha256": "96deb1ad937fac33973872c44850e069603979403cb0d98511e2e7cb29208c36"
+    },
+    {
+      "file": ".figma/native-effects-library-1.1.json",
+      "sha256": "6e8e7d2c872e15abb6d745b02eb1798160cad51751ebc21a17d762805537a8b6"
+    },
+    {
+      "file": ".figma/code-connect/Chart.native-definitions-1.1.json",
+      "sha256": "a761b0fd1c8772ee7a709b4ed91ddd71a8066dda63fdb5d1267f073603d24e67"
+    }
+  ],
+  "inputSnapshotsObservedAtHandoff": [
+    {
+      "file": ".figma/component-properties.json",
+      "sha256": "d05bdb0d1f01cc3584155bb0bad05ada9fd4ad870657b59f5cf0da0a7beb78a8",
+      "sha256ObservedAtHandoff": "d05bdb0d1f01cc3584155bb0bad05ada9fd4ad870657b59f5cf0da0a7beb78a8",
+      "matchesObservedFile": true
+    },
+    {
+      "file": ".figma/state.json",
+      "sha256": "470e8d77d948b30eabba05895b19e830b9faad7cfcb1dc723e125f870c0ce0de",
+      "sha256ObservedAtHandoff": "99b017588cf63cd0e14d7712f846975d45a36c7200a5aab3b9bdd96a75e43c80",
+      "matchesObservedFile": false
+    },
+    {
+      "file": ".figma/code-connect/native-additions.json",
+      "sha256": "96deb1ad937fac33973872c44850e069603979403cb0d98511e2e7cb29208c36",
+      "sha256ObservedAtHandoff": "96deb1ad937fac33973872c44850e069603979403cb0d98511e2e7cb29208c36",
+      "matchesObservedFile": true
+    },
+    {
+      "file": ".figma/native-effects-library-1.1.json",
+      "sha256": "6e8e7d2c872e15abb6d745b02eb1798160cad51751ebc21a17d762805537a8b6",
+      "sha256ObservedAtHandoff": "6e8e7d2c872e15abb6d745b02eb1798160cad51751ebc21a17d762805537a8b6",
+      "matchesObservedFile": true
+    },
+    {
+      "file": ".figma/code-connect/Chart.native-definitions-1.1.json",
+      "sha256": "a761b0fd1c8772ee7a709b4ed91ddd71a8066dda63fdb5d1267f073603d24e67",
+      "sha256ObservedAtHandoff": "a761b0fd1c8772ee7a709b4ed91ddd71a8066dda63fdb5d1267f073603d24e67",
+      "matchesObservedFile": true
+    }
+  ],
+  "changedInputsSinceVerifiedCheckpoint": [
+    {
+      "file": ".figma/state.json",
+      "sha256": "470e8d77d948b30eabba05895b19e830b9faad7cfcb1dc723e125f870c0ce0de",
+      "sha256ObservedAtHandoff": "99b017588cf63cd0e14d7712f846975d45a36c7200a5aab3b9bdd96a75e43c80",
+      "matchesObservedFile": false
+    }
+  ],
+  "freshness": "owner-state-advanced-after-verified-checkpoint",
+  "chartDefinitionsAndKindIdsStillMatchObservedState": true,
+  "stateSHA256Verified": "470e8d77d948b30eabba05895b19e830b9faad7cfcb1dc723e125f870c0ce0de",
+  "stateSHA256ObservedAtHandoff": "99b017588cf63cd0e14d7712f846975d45a36c7200a5aab3b9bdd96a75e43c80",
+  "statePendingValidationsObservedAtHandoff": [
+    "v1.1/screens",
+    "v1.1/visual-review",
+    "v1.1/code-connect"
+  ],
+  "stateWrittenByThisTask": false,
+  "nativeAuditWrittenByThisTask": false,
+  "finalClosurePending": [
+    "Owner Chart13 layout postfix and actual visual PASS",
+    "Owner records checkpoint completion, pending[] and freezes state",
+    "Huygens produces actual native65 audit bound to the final state SHA256",
+    "Regenerate and verify final Code Connect after authoritative input changes",
+    "Coverage --docs-only and final Markdown before source packaging"
+  ],
+  "commands": [
+    "python3 scripts/generate-code-connect.py",
+    "AUREFORM_DEPENDENCIES=/tmp/aureform-ui-build/node_modules node scripts/verify-code-connect.cjs"
+  ],
+  "lease": {
+    "status": "NoLease",
+    "mcpCallsThisPhase": 0,
+    "callsInFlight": 0
+  },
+  "liveFigmaRuntimeTestedByThisPhase": false,
+  "cloudRegistered": false
+}

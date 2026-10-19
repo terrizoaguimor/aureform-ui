@@ -1,0 +1,8 @@
+{
+  "status": "rolled-back-before-commit",
+  "errorCode": "INVALID_ARGUMENT",
+  "safeToRetryWithoutCanvasRead": true,
+  "message": "componentPropertyReferences was assigned before the thumbnail became a component sublayer; the retry parents it first.",
+  "createdNodeIds": [],
+  "mutatedNodeIds": []
+}

@@ -1,0 +1,3987 @@
+{
+  "kind": "aureform-route-default-audit-v1",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "2:6",
+  "sourceCheckpoint": {
+    "appearanceSha256": "467c38aac52085ec0b054b03be64f935c73e73990d17b0038241a02879a8ae53",
+    "stateSha256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52",
+    "theme": "dark",
+    "palette": "aurora",
+    "typography": "modern"
+  },
+  "routeUniverse": 65,
+  "checkedAt": "2026-10-19T08:25:51.154Z",
+  "expectedRootsOnPage": 44,
+  "ownerDefaultFixEvidence": {
+    "path": "/home/terrizoaguimor/VultrDrive/intelligence-ui/.figma/native-owner-default-fix-2-6-1.1.json",
+    "sha256": "ad9bc582061abb3f2d68fc5d8904b14a55fe50d9ccf9727e43b8c3a7c5b8af56",
+    "status": "applied",
+    "directMutationCount": 81,
+    "fonts": 45,
+    "modes": 36
+  },
+  "mutatedNodeIds": [],
+  "fontLoads": 0,
+  "expectedTotal": 65,
+  "coverageCompleteOnPage": true,
+  "recoveryFailures": [],
+  "prerequisites": [],
+  "rootCount": 44,
+  "rootColumns": [
+    "route",
+    "id",
+    "size",
+    "nodes",
+    "counts",
+    "families",
+    "preserved",
+    "mode",
+    "rootWhite",
+    "rootFillAlias",
+    "tokenDrift",
+    "pass",
+    "details"
+  ],
+  "countFields": [
+    "texts",
+    "font",
+    "mode",
+    "white",
+    "dimensions",
+    "uiRaster",
+    "review",
+    "image",
+    "missingFont",
+    "background"
+  ],
+  "preservedFields": [
+    "mono",
+    "editorial",
+    "light"
+  ],
+  "rootRows": [
+    [
+      "crm",
+      "39:24",
+      [
+        1440,
+        1380
+      ],
+      297,
+      [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 99
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "ecommerce",
+      "39:730",
+      [
+        1440,
+        1380
+      ],
+      345,
+      [
+        114,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 114
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "sales",
+      "39:1132",
+      [
+        1440,
+        1380
+      ],
+      297,
+      [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 99
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "marketing",
+      "39:1521",
+      [
+        1440,
+        1380
+      ],
+      353,
+      [
+        114,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 114
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "logistics",
+      "39:1923",
+      [
+        1440,
+        1380
+      ],
+      287,
+      [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 100
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "finance",
+      "39:2310",
+      [
+        1440,
+        1380
+      ],
+      345,
+      [
+        114,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 114
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "stocks",
+      "39:2702",
+      [
+        1440,
+        1380
+      ],
+      280,
+      [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 100
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "products",
+      "41:2363",
+      [
+        1440,
+        1380
+      ],
+      280,
+      [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 99
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "orders",
+      "41:2816",
+      [
+        1440,
+        1380
+      ],
+      280,
+      [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 99
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "invoices",
+      "41:3207",
+      [
+        1440,
+        1380
+      ],
+      280,
+      [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 99
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "transactions",
+      "41:3597",
+      [
+        1440,
+        1380
+      ],
+      280,
+      [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 99
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "tasks",
+      "41:3982",
+      [
+        1440,
+        1380
+      ],
+      288,
+      [
+        94,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 94
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "pipeline",
+      "41:4387",
+      [
+        1440,
+        1380
+      ],
+      295,
+      [
+        98,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 98
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "task-list",
+      "41:4794",
+      [
+        1440,
+        1380
+      ],
+      234,
+      [
+        77,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 77
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "calendar",
+      "41:5151",
+      [
+        1440,
+        1380
+      ],
+      384,
+      [
+        142,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 142
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "mail",
+      "45:4589",
+      [
+        1440,
+        1380
+      ],
+      231,
+      [
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 67
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "chat",
+      "45:5003",
+      [
+        1440,
+        1380
+      ],
+      247,
+      [
+        74,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 74
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "files",
+      "45:5363",
+      [
+        1440,
+        1380
+      ],
+      250,
+      [
+        61,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 61
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "support",
+      "45:5707",
+      [
+        1440,
+        1380
+      ],
+      263,
+      [
+        92,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 92
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "maps",
+      "45:6076",
+      [
+        1440,
+        1380
+      ],
+      250,
+      [
+        66,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 66
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "invoice",
+      "45:6451",
+      [
+        1440,
+        1380
+      ],
+      213,
+      [
+        58,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 58
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "ai/images",
+      "45:6768",
+      [
+        1440,
+        1380
+      ],
+      221,
+      [
+        58,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 58
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "ai/video",
+      "45:7088",
+      [
+        1440,
+        1380
+      ],
+      215,
+      [
+        56,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 56
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "settings/profile",
+      "48:6454",
+      [
+        1440,
+        1380
+      ],
+      242,
+      [
+        66,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 66
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "settings/team",
+      "48:6816",
+      [
+        1440,
+        1380
+      ],
+      254,
+      [
+        68,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 68
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "settings/preferences",
+      "48:7128",
+      [
+        1440,
+        1380
+      ],
+      251,
+      [
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 64
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "settings/billing",
+      "48:7437",
+      [
+        1440,
+        1380
+      ],
+      246,
+      [
+        71,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 71
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "settings/api-keys",
+      "48:7753",
+      [
+        1440,
+        1380
+      ],
+      223,
+      [
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 57
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "settings/integrations",
+      "48:8021",
+      [
+        1440,
+        1380
+      ],
+      258,
+      [
+        72,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 72
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "auth/sign-in",
+      "52:7472",
+      [
+        1440,
+        1000
+      ],
+      156,
+      [
+        50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 51
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1000,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      }
+    ],
+    [
+      "auth/sign-up",
+      "52:7509",
+      [
+        1440,
+        1003.9000244140625
+      ],
+      163,
+      [
+        52,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 53
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1003.9000244140625,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      }
+    ],
+    [
+      "auth/reset-password",
+      "52:7551",
+      [
+        1440,
+        1000
+      ],
+      145,
+      [
+        46,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 46
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1000,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      }
+    ],
+    [
+      "auth/verify",
+      "52:7581",
+      [
+        1440,
+        1000
+      ],
+      157,
+      [
+        51,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 51
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1000,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      }
+    ],
+    [
+      "status/not-found",
+      "52:7622",
+      [
+        1440,
+        1000
+      ],
+      25,
+      [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 8
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "status/error",
+      "52:7650",
+      [
+        1440,
+        1000
+      ],
+      29,
+      [
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 9
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "status/maintenance",
+      "52:7684",
+      [
+        1440,
+        1000
+      ],
+      27,
+      [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 7
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "status/coming-soon",
+      "52:7713",
+      [
+        1440,
+        1000
+      ],
+      36,
+      [
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 11
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "status/success",
+      "52:7751",
+      [
+        1440,
+        1000
+      ],
+      27,
+      [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 7
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "pricing",
+      "55:7541",
+      [
+        1440,
+        1380
+      ],
+      221,
+      [
+        70,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 70
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "faq",
+      "55:7856",
+      [
+        1440,
+        1380
+      ],
+      194,
+      [
+        50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 50
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "",
+      "55:8072",
+      [
+        1440,
+        4882.7998046875
+      ],
+      624,
+      [
+        212,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 212
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 4882.7998046875,
+        "sizing": [
+          "FIXED",
+          "HUG"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      }
+    ],
+    [
+      "studio",
+      "134:8412",
+      [
+        1440,
+        2429
+      ],
+      1258,
+      [
+        309,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 309
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "themes",
+      "135:8894",
+      [
+        1440,
+        3067
+      ],
+      2634,
+      [
+        581,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 581
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ],
+    [
+      "effects",
+      "136:9476",
+      [
+        1440,
+        3298
+      ],
+      1259,
+      [
+        266,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      {
+        "Manrope": 266
+      },
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        "2:2",
+        "2:2"
+      ],
+      false,
+      "VariableID:2:37",
+      [],
+      true,
+      null
+    ]
+  ],
+  "recoveryEncoding": "Every recovered route/id pair is in rootRows; decode.mjs expands roots, counts and recoveryIds without omission.",
+  "default": {
+    "font": "Manrope",
+    "typography": "modern",
+    "theme": "Dark",
+    "palette": "Aurora"
+  },
+  "dimensionsPolicy": "Widths use the confirmed 1440px desktop source. Exact height is checked only when supplied as current source evidence; historical native heights are informational.",
+  "rasterPolicy": "Return every observed IMAGE ID and flag full UI raster candidates for owner review. Geometry alone does not establish image contents; this read changes nothing.",
+  "backgroundPolicy": "Observe root color, opacity and binding parity against current Aurora Dark tokens; no corrections are performed.",
+  "whiteLayoutPolicy": "Include native SLOT plus FRAME/RECTANGLE/COMPONENT/INSTANCE; visible opaque resolved white layout fills at width>=64 and height>=8. Preserve explicit Light contexts. TEXT/VECTOR/BOOLEAN_OPERATION/ELLIPSE/POLYGON/STAR/LINE paints remain excluded; lowering height does not widen the checked node types to artwork or text foreground.",
+  "manropeStyles": [
+    "Bold",
+    "ExtraBold",
+    "ExtraLight",
+    "Light",
+    "Medium",
+    "Regular",
+    "SemiBold"
+  ],
+  "fontTokens": [],
+  "footerMatches": [],
+  "issueIds": {
+    "encoding": "observed-prefix-ranges-v1",
+    "categoryBits": {
+      "font": 1,
+      "mode": 2,
+      "white": 4,
+      "dimensions": 8,
+      "uiRaster": 16,
+      "review": 32,
+      "image": 64,
+      "missingFont": 128,
+      "root": 256,
+      "mutated": 512,
+      "affected": 1024,
+      "background": 2048
+    },
+    "unique": 44,
+    "prefixesFrontCodedCSV": "0,134:\n2,5:\n2,6:\n0,39:\n0,41:\n1,5:\n1,8:\n0,52:\n1,5:",
+    "rangesCSV": "256,3,24;730;1132;1521;1923;2310;2702\n256,4,2363;2816;3207;3597;3982;4387;4794;5151\n256,5,4589;5003;5363;5707;6076;6451;6768;7088\n256,6,6454;6816;7128;7437;7753;8021\n256,7,7472;7509;7551;7581;7622;7650;7684;7713;7751\n256,8,7541;7856;8072\n256,0,8412\n256,1,8894\n256,2,9476",
+    "literalsJSON": "[]"
+  },
+  "canvasMutations": 0,
+  "roots": [
+    {
+      "route": "crm",
+      "id": "39:24",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 297,
+      "counts": {
+        "texts": 99,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 99
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "ecommerce",
+      "id": "39:730",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 345,
+      "counts": {
+        "texts": 114,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 114
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "sales",
+      "id": "39:1132",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 297,
+      "counts": {
+        "texts": 99,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 99
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "marketing",
+      "id": "39:1521",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 353,
+      "counts": {
+        "texts": 114,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 114
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "logistics",
+      "id": "39:1923",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 287,
+      "counts": {
+        "texts": 100,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 100
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "finance",
+      "id": "39:2310",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 345,
+      "counts": {
+        "texts": 114,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 114
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "stocks",
+      "id": "39:2702",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 280,
+      "counts": {
+        "texts": 100,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 100
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "products",
+      "id": "41:2363",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 280,
+      "counts": {
+        "texts": 99,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 99
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "orders",
+      "id": "41:2816",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 280,
+      "counts": {
+        "texts": 99,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 99
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "invoices",
+      "id": "41:3207",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 280,
+      "counts": {
+        "texts": 99,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 99
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "transactions",
+      "id": "41:3597",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 280,
+      "counts": {
+        "texts": 99,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 99
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "tasks",
+      "id": "41:3982",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 288,
+      "counts": {
+        "texts": 94,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 94
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "pipeline",
+      "id": "41:4387",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 295,
+      "counts": {
+        "texts": 98,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 98
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "task-list",
+      "id": "41:4794",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 234,
+      "counts": {
+        "texts": 77,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 77
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "calendar",
+      "id": "41:5151",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 384,
+      "counts": {
+        "texts": 142,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 142
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "mail",
+      "id": "45:4589",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 231,
+      "counts": {
+        "texts": 67,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 67
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "chat",
+      "id": "45:5003",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 247,
+      "counts": {
+        "texts": 74,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 74
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "files",
+      "id": "45:5363",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 250,
+      "counts": {
+        "texts": 61,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 61
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "support",
+      "id": "45:5707",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 263,
+      "counts": {
+        "texts": 92,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 92
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "maps",
+      "id": "45:6076",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 250,
+      "counts": {
+        "texts": 66,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 66
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "invoice",
+      "id": "45:6451",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 213,
+      "counts": {
+        "texts": 58,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 58
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "ai/images",
+      "id": "45:6768",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 221,
+      "counts": {
+        "texts": 58,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 58
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "ai/video",
+      "id": "45:7088",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 215,
+      "counts": {
+        "texts": 56,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 56
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "settings/profile",
+      "id": "48:6454",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 242,
+      "counts": {
+        "texts": 66,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 66
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "settings/team",
+      "id": "48:6816",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 254,
+      "counts": {
+        "texts": 68,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 68
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "settings/preferences",
+      "id": "48:7128",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 251,
+      "counts": {
+        "texts": 64,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 64
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "settings/billing",
+      "id": "48:7437",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 246,
+      "counts": {
+        "texts": 71,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 71
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "settings/api-keys",
+      "id": "48:7753",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 223,
+      "counts": {
+        "texts": 57,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 57
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "settings/integrations",
+      "id": "48:8021",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 258,
+      "counts": {
+        "texts": 72,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 72
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "auth/sign-in",
+      "id": "52:7472",
+      "size": [
+        1440,
+        1000
+      ],
+      "nodes": 156,
+      "counts": {
+        "texts": 50,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 51
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1000,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      },
+      "expected": [
+        1440,
+        null
+      ],
+      "baselineHeight": 1000,
+      "sizing": [
+        "FIXED",
+        "FIXED"
+      ],
+      "rootPaints": [
+        {
+          "type": "SOLID",
+          "color": "#0B0F18",
+          "opacity": 1,
+          "alias": "VariableID:2:37"
+        }
+      ]
+    },
+    {
+      "route": "auth/sign-up",
+      "id": "52:7509",
+      "size": [
+        1440,
+        1003.9000244140625
+      ],
+      "nodes": 163,
+      "counts": {
+        "texts": 52,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 53
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1003.9000244140625,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      },
+      "expected": [
+        1440,
+        null
+      ],
+      "baselineHeight": 1003.9000244140625,
+      "sizing": [
+        "FIXED",
+        "FIXED"
+      ],
+      "rootPaints": [
+        {
+          "type": "SOLID",
+          "color": "#0B0F18",
+          "opacity": 1,
+          "alias": "VariableID:2:37"
+        }
+      ]
+    },
+    {
+      "route": "auth/reset-password",
+      "id": "52:7551",
+      "size": [
+        1440,
+        1000
+      ],
+      "nodes": 145,
+      "counts": {
+        "texts": 46,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 46
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1000,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      },
+      "expected": [
+        1440,
+        null
+      ],
+      "baselineHeight": 1000,
+      "sizing": [
+        "FIXED",
+        "FIXED"
+      ],
+      "rootPaints": [
+        {
+          "type": "SOLID",
+          "color": "#0B0F18",
+          "opacity": 1,
+          "alias": "VariableID:2:37"
+        }
+      ]
+    },
+    {
+      "route": "auth/verify",
+      "id": "52:7581",
+      "size": [
+        1440,
+        1000
+      ],
+      "nodes": 157,
+      "counts": {
+        "texts": 51,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 51
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 1000,
+        "sizing": [
+          "FIXED",
+          "FIXED"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      },
+      "expected": [
+        1440,
+        null
+      ],
+      "baselineHeight": 1000,
+      "sizing": [
+        "FIXED",
+        "FIXED"
+      ],
+      "rootPaints": [
+        {
+          "type": "SOLID",
+          "color": "#0B0F18",
+          "opacity": 1,
+          "alias": "VariableID:2:37"
+        }
+      ]
+    },
+    {
+      "route": "status/not-found",
+      "id": "52:7622",
+      "size": [
+        1440,
+        1000
+      ],
+      "nodes": 25,
+      "counts": {
+        "texts": 8,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 8
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "status/error",
+      "id": "52:7650",
+      "size": [
+        1440,
+        1000
+      ],
+      "nodes": 29,
+      "counts": {
+        "texts": 9,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 9
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "status/maintenance",
+      "id": "52:7684",
+      "size": [
+        1440,
+        1000
+      ],
+      "nodes": 27,
+      "counts": {
+        "texts": 7,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 7
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "status/coming-soon",
+      "id": "52:7713",
+      "size": [
+        1440,
+        1000
+      ],
+      "nodes": 36,
+      "counts": {
+        "texts": 11,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 11
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "status/success",
+      "id": "52:7751",
+      "size": [
+        1440,
+        1000
+      ],
+      "nodes": 27,
+      "counts": {
+        "texts": 7,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 7
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "pricing",
+      "id": "55:7541",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 221,
+      "counts": {
+        "texts": 70,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 70
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "faq",
+      "id": "55:7856",
+      "size": [
+        1440,
+        1380
+      ],
+      "nodes": 194,
+      "counts": {
+        "texts": 50,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 50
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "",
+      "id": "55:8072",
+      "size": [
+        1440,
+        4882.7998046875
+      ],
+      "nodes": 624,
+      "counts": {
+        "texts": 212,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 212
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": {
+        "expected": [
+          1440,
+          null
+        ],
+        "baselineHeight": 4882.7998046875,
+        "sizing": [
+          "FIXED",
+          "HUG"
+        ],
+        "rootPaints": [
+          {
+            "type": "SOLID",
+            "color": "#0B0F18",
+            "opacity": 1,
+            "alias": "VariableID:2:37"
+          }
+        ]
+      },
+      "expected": [
+        1440,
+        null
+      ],
+      "baselineHeight": 4882.7998046875,
+      "sizing": [
+        "FIXED",
+        "HUG"
+      ],
+      "rootPaints": [
+        {
+          "type": "SOLID",
+          "color": "#0B0F18",
+          "opacity": 1,
+          "alias": "VariableID:2:37"
+        }
+      ]
+    },
+    {
+      "route": "studio",
+      "id": "134:8412",
+      "size": [
+        1440,
+        2429
+      ],
+      "nodes": 1258,
+      "counts": {
+        "texts": 309,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 309
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "themes",
+      "id": "135:8894",
+      "size": [
+        1440,
+        3067
+      ],
+      "nodes": 2634,
+      "counts": {
+        "texts": 581,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 581
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    },
+    {
+      "route": "effects",
+      "id": "136:9476",
+      "size": [
+        1440,
+        3298
+      ],
+      "nodes": 1259,
+      "counts": {
+        "texts": 266,
+        "font": 0,
+        "mode": 0,
+        "white": 0,
+        "dimensions": 0,
+        "uiRaster": 0,
+        "review": 0,
+        "image": 0,
+        "missingFont": 0,
+        "background": 0
+      },
+      "families": {
+        "Manrope": 266
+      },
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "mode": [
+        "2:2",
+        "2:2"
+      ],
+      "rootWhite": false,
+      "rootFillAlias": "VariableID:2:37",
+      "tokenDrift": [],
+      "pass": true,
+      "details": null
+    }
+  ],
+  "recoveryIds": [
+    {
+      "route": "crm",
+      "id": "39:24",
+      "pageId": "2:6"
+    },
+    {
+      "route": "ecommerce",
+      "id": "39:730",
+      "pageId": "2:6"
+    },
+    {
+      "route": "sales",
+      "id": "39:1132",
+      "pageId": "2:6"
+    },
+    {
+      "route": "marketing",
+      "id": "39:1521",
+      "pageId": "2:6"
+    },
+    {
+      "route": "logistics",
+      "id": "39:1923",
+      "pageId": "2:6"
+    },
+    {
+      "route": "finance",
+      "id": "39:2310",
+      "pageId": "2:6"
+    },
+    {
+      "route": "stocks",
+      "id": "39:2702",
+      "pageId": "2:6"
+    },
+    {
+      "route": "products",
+      "id": "41:2363",
+      "pageId": "2:6"
+    },
+    {
+      "route": "orders",
+      "id": "41:2816",
+      "pageId": "2:6"
+    },
+    {
+      "route": "invoices",
+      "id": "41:3207",
+      "pageId": "2:6"
+    },
+    {
+      "route": "transactions",
+      "id": "41:3597",
+      "pageId": "2:6"
+    },
+    {
+      "route": "tasks",
+      "id": "41:3982",
+      "pageId": "2:6"
+    },
+    {
+      "route": "pipeline",
+      "id": "41:4387",
+      "pageId": "2:6"
+    },
+    {
+      "route": "task-list",
+      "id": "41:4794",
+      "pageId": "2:6"
+    },
+    {
+      "route": "calendar",
+      "id": "41:5151",
+      "pageId": "2:6"
+    },
+    {
+      "route": "mail",
+      "id": "45:4589",
+      "pageId": "2:6"
+    },
+    {
+      "route": "chat",
+      "id": "45:5003",
+      "pageId": "2:6"
+    },
+    {
+      "route": "files",
+      "id": "45:5363",
+      "pageId": "2:6"
+    },
+    {
+      "route": "support",
+      "id": "45:5707",
+      "pageId": "2:6"
+    },
+    {
+      "route": "maps",
+      "id": "45:6076",
+      "pageId": "2:6"
+    },
+    {
+      "route": "invoice",
+      "id": "45:6451",
+      "pageId": "2:6"
+    },
+    {
+      "route": "ai/images",
+      "id": "45:6768",
+      "pageId": "2:6"
+    },
+    {
+      "route": "ai/video",
+      "id": "45:7088",
+      "pageId": "2:6"
+    },
+    {
+      "route": "settings/profile",
+      "id": "48:6454",
+      "pageId": "2:6"
+    },
+    {
+      "route": "settings/team",
+      "id": "48:6816",
+      "pageId": "2:6"
+    },
+    {
+      "route": "settings/preferences",
+      "id": "48:7128",
+      "pageId": "2:6"
+    },
+    {
+      "route": "settings/billing",
+      "id": "48:7437",
+      "pageId": "2:6"
+    },
+    {
+      "route": "settings/api-keys",
+      "id": "48:7753",
+      "pageId": "2:6"
+    },
+    {
+      "route": "settings/integrations",
+      "id": "48:8021",
+      "pageId": "2:6"
+    },
+    {
+      "route": "auth/sign-in",
+      "id": "52:7472",
+      "pageId": "2:6"
+    },
+    {
+      "route": "auth/sign-up",
+      "id": "52:7509",
+      "pageId": "2:6"
+    },
+    {
+      "route": "auth/reset-password",
+      "id": "52:7551",
+      "pageId": "2:6"
+    },
+    {
+      "route": "auth/verify",
+      "id": "52:7581",
+      "pageId": "2:6"
+    },
+    {
+      "route": "status/not-found",
+      "id": "52:7622",
+      "pageId": "2:6"
+    },
+    {
+      "route": "status/error",
+      "id": "52:7650",
+      "pageId": "2:6"
+    },
+    {
+      "route": "status/maintenance",
+      "id": "52:7684",
+      "pageId": "2:6"
+    },
+    {
+      "route": "status/coming-soon",
+      "id": "52:7713",
+      "pageId": "2:6"
+    },
+    {
+      "route": "status/success",
+      "id": "52:7751",
+      "pageId": "2:6"
+    },
+    {
+      "route": "pricing",
+      "id": "55:7541",
+      "pageId": "2:6"
+    },
+    {
+      "route": "faq",
+      "id": "55:7856",
+      "pageId": "2:6"
+    },
+    {
+      "route": "",
+      "id": "55:8072",
+      "pageId": "2:6"
+    },
+    {
+      "route": "studio",
+      "id": "134:8412",
+      "pageId": "2:6"
+    },
+    {
+      "route": "themes",
+      "id": "135:8894",
+      "pageId": "2:6"
+    },
+    {
+      "route": "effects",
+      "id": "136:9476",
+      "pageId": "2:6"
+    }
+  ],
+  "decodedIssueMasks": {
+    "39:24": 256,
+    "39:730": 256,
+    "39:1132": 256,
+    "39:1521": 256,
+    "39:1923": 256,
+    "39:2310": 256,
+    "39:2702": 256,
+    "41:2363": 256,
+    "41:2816": 256,
+    "41:3207": 256,
+    "41:3597": 256,
+    "41:3982": 256,
+    "41:4387": 256,
+    "41:4794": 256,
+    "41:5151": 256,
+    "45:4589": 256,
+    "45:5003": 256,
+    "45:5363": 256,
+    "45:5707": 256,
+    "45:6076": 256,
+    "45:6451": 256,
+    "45:6768": 256,
+    "45:7088": 256,
+    "48:6454": 256,
+    "48:6816": 256,
+    "48:7128": 256,
+    "48:7437": 256,
+    "48:7753": 256,
+    "48:8021": 256,
+    "52:7472": 256,
+    "52:7509": 256,
+    "52:7551": 256,
+    "52:7581": 256,
+    "52:7622": 256,
+    "52:7650": 256,
+    "52:7684": 256,
+    "52:7713": 256,
+    "52:7751": 256,
+    "55:7541": 256,
+    "55:7856": 256,
+    "55:8072": 256,
+    "134:8412": 256,
+    "135:8894": 256,
+    "136:9476": 256
+  }
+}

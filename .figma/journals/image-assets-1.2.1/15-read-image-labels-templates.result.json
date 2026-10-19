@@ -1,0 +1,25 @@
+{
+  "status": "read-only-image-label-inventory",
+  "pageId": "2:5",
+  "labels": [
+    {
+      "id": "I59:3078;29:224;59:3252;29:137",
+      "text": "Original vector compositions, a controlled carousel and an accessible video pattern.",
+      "rootId": "59:3077"
+    },
+    {
+      "id": "I59:3606;29:224;65:6021;58:1566;65:6271;29:224;65:6048",
+      "text": "Describe an idea. The local adapter will choose from original Aureform compositions.",
+      "rootId": "59:3605"
+    },
+    {
+      "id": "I59:3606;29:224;65:6330;58:1566;65:6572;29:224;65:6355",
+      "text": "Describe an idea. The local adapter will choose from original Aureform compositions.",
+      "rootId": "59:3605"
+    }
+  ],
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "removedNodeIds": [],
+  "receiptNormalization": "Observed tool return, ancestry omitted from this compact inventory; exact IDs and text retained."
+}

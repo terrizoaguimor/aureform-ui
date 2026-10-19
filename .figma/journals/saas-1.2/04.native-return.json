@@ -1,0 +1,902 @@
+{
+  "controls": [
+    {
+      "id": "3:113",
+      "name": "Button",
+      "properties": {
+        "Label#3:0": {
+          "type": "TEXT",
+          "defaultValue": "Continue"
+        },
+        "Show icon#3:28": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Icon#3:56": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "3:2",
+          "preferredValues": []
+        },
+        "Style": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Outline",
+            "Ghost"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Small",
+          "variantOptions": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "3:5",
+          "name": "Style=Primary, Size=Small, State=Default",
+          "w": 172,
+          "h": 32
+        },
+        {
+          "id": "3:9",
+          "name": "Style=Primary, Size=Small, State=Hover",
+          "w": 172,
+          "h": 32
+        },
+        {
+          "id": "3:13",
+          "name": "Style=Primary, Size=Small, State=Disabled",
+          "w": 172,
+          "h": 32
+        },
+        {
+          "id": "3:17",
+          "name": "Style=Primary, Size=Medium, State=Default",
+          "w": 172,
+          "h": 40
+        },
+        {
+          "id": "3:21",
+          "name": "Style=Primary, Size=Medium, State=Hover",
+          "w": 172,
+          "h": 40
+        },
+        {
+          "id": "3:25",
+          "name": "Style=Primary, Size=Medium, State=Disabled",
+          "w": 172,
+          "h": 40
+        },
+        {
+          "id": "3:29",
+          "name": "Style=Primary, Size=Large, State=Default",
+          "w": 172,
+          "h": 48
+        },
+        {
+          "id": "3:33",
+          "name": "Style=Primary, Size=Large, State=Hover",
+          "w": 172,
+          "h": 48
+        },
+        {
+          "id": "3:37",
+          "name": "Style=Primary, Size=Large, State=Disabled",
+          "w": 172,
+          "h": 48
+        },
+        {
+          "id": "3:41",
+          "name": "Style=Outline, Size=Small, State=Default",
+          "w": 172,
+          "h": 32
+        },
+        {
+          "id": "3:45",
+          "name": "Style=Outline, Size=Small, State=Hover",
+          "w": 172,
+          "h": 32
+        },
+        {
+          "id": "3:49",
+          "name": "Style=Outline, Size=Small, State=Disabled",
+          "w": 172,
+          "h": 32
+        },
+        {
+          "id": "3:53",
+          "name": "Style=Outline, Size=Medium, State=Default",
+          "w": 172,
+          "h": 40
+        },
+        {
+          "id": "3:57",
+          "name": "Style=Outline, Size=Medium, State=Hover",
+          "w": 172,
+          "h": 40
+        },
+        {
+          "id": "3:61",
+          "name": "Style=Outline, Size=Medium, State=Disabled",
+          "w": 172,
+          "h": 40
+        },
+        {
+          "id": "3:65",
+          "name": "Style=Outline, Size=Large, State=Default",
+          "w": 172,
+          "h": 48
+        },
+        {
+          "id": "3:69",
+          "name": "Style=Outline, Size=Large, State=Hover",
+          "w": 172,
+          "h": 48
+        },
+        {
+          "id": "3:73",
+          "name": "Style=Outline, Size=Large, State=Disabled",
+          "w": 172,
+          "h": 48
+        },
+        {
+          "id": "3:77",
+          "name": "Style=Ghost, Size=Small, State=Default",
+          "w": 172,
+          "h": 32
+        },
+        {
+          "id": "3:81",
+          "name": "Style=Ghost, Size=Small, State=Hover",
+          "w": 172,
+          "h": 32
+        },
+        {
+          "id": "3:85",
+          "name": "Style=Ghost, Size=Small, State=Disabled",
+          "w": 172,
+          "h": 32
+        },
+        {
+          "id": "3:89",
+          "name": "Style=Ghost, Size=Medium, State=Default",
+          "w": 172,
+          "h": 40
+        },
+        {
+          "id": "3:93",
+          "name": "Style=Ghost, Size=Medium, State=Hover",
+          "w": 172,
+          "h": 40
+        },
+        {
+          "id": "3:97",
+          "name": "Style=Ghost, Size=Medium, State=Disabled",
+          "w": 172,
+          "h": 40
+        },
+        {
+          "id": "3:101",
+          "name": "Style=Ghost, Size=Large, State=Default",
+          "w": 172,
+          "h": 48
+        },
+        {
+          "id": "3:105",
+          "name": "Style=Ghost, Size=Large, State=Hover",
+          "w": 172,
+          "h": 48
+        },
+        {
+          "id": "3:109",
+          "name": "Style=Ghost, Size=Large, State=Disabled",
+          "w": 172,
+          "h": 48
+        }
+      ],
+      "texts": [
+        {
+          "name": "label",
+          "text": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "3:133",
+      "name": "Input",
+      "properties": {
+        "Value#3:90": {
+          "type": "TEXT",
+          "defaultValue": "you@company.com"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Empty",
+          "variantOptions": [
+            "Empty",
+            "Focus",
+            "Error",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "3:125",
+          "name": "State=Empty",
+          "w": 280,
+          "h": 40
+        },
+        {
+          "id": "3:127",
+          "name": "State=Focus",
+          "w": 280,
+          "h": 40
+        },
+        {
+          "id": "3:129",
+          "name": "State=Error",
+          "w": 280,
+          "h": 40
+        },
+        {
+          "id": "3:131",
+          "name": "State=Disabled",
+          "w": 280,
+          "h": 40
+        }
+      ],
+      "texts": [
+        {
+          "name": "value",
+          "text": "you@company.com"
+        }
+      ]
+    },
+    {
+      "id": "3:124",
+      "name": "Badge",
+      "properties": {
+        "Label#3:84": {
+          "type": "TEXT",
+          "defaultValue": "Active"
+        },
+        "Tone": {
+          "type": "VARIANT",
+          "defaultValue": "Success",
+          "variantOptions": [
+            "Success",
+            "Neutral",
+            "Warning",
+            "Destructive",
+            "Outline"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "3:114",
+          "name": "Tone=Success",
+          "w": 114,
+          "h": 24
+        },
+        {
+          "id": "3:116",
+          "name": "Tone=Neutral",
+          "w": 114,
+          "h": 24
+        },
+        {
+          "id": "3:118",
+          "name": "Tone=Warning",
+          "w": 114,
+          "h": 24
+        },
+        {
+          "id": "3:120",
+          "name": "Tone=Destructive",
+          "w": 114,
+          "h": 24
+        },
+        {
+          "id": "3:122",
+          "name": "Tone=Outline",
+          "w": 114,
+          "h": 24
+        }
+      ],
+      "texts": [
+        {
+          "name": "label",
+          "text": "Active"
+        }
+      ]
+    },
+    {
+      "id": "3:149",
+      "name": "Avatar",
+      "properties": {
+        "Initials#3:101": {
+          "type": "TEXT",
+          "defaultValue": "AL"
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Small",
+          "variantOptions": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "3:143",
+          "name": "Size=Small",
+          "w": 28,
+          "h": 28
+        },
+        {
+          "id": "3:145",
+          "name": "Size=Medium",
+          "w": 36,
+          "h": 36
+        },
+        {
+          "id": "3:147",
+          "name": "Size=Large",
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "texts": [
+        {
+          "name": "initials",
+          "text": "AL"
+        }
+      ]
+    },
+    {
+      "id": "23:443",
+      "name": "DataTable",
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Selected",
+            "Empty",
+            "Loading",
+            "Error"
+          ]
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Elevated",
+          "variantOptions": [
+            "Elevated",
+            "Glass",
+            "Gradient",
+            "Flat"
+          ]
+        },
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "Comfortable",
+          "variantOptions": [
+            "Comfortable",
+            "Compact"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "23:356",
+          "name": "State=Default, Appearance=Elevated, Density=Comfortable",
+          "w": 1138,
+          "h": 621
+        },
+        {
+          "id": "23:390",
+          "name": "State=Selected, Appearance=Elevated, Density=Comfortable",
+          "w": 1138,
+          "h": 691
+        },
+        {
+          "id": "23:424",
+          "name": "State=Empty, Appearance=Elevated, Density=Comfortable",
+          "w": 1138,
+          "h": 505
+        },
+        {
+          "id": "164:1465",
+          "name": "State=Loading, Appearance=Elevated, Density=Comfortable",
+          "w": 1138,
+          "h": 561
+        },
+        {
+          "id": "164:1550",
+          "name": "State=Error, Appearance=Elevated, Density=Comfortable",
+          "w": 1138,
+          "h": 118
+        },
+        {
+          "id": "164:1564",
+          "name": "State=Default, Appearance=Elevated, Density=Compact",
+          "w": 1138,
+          "h": 553
+        },
+        {
+          "id": "164:1844",
+          "name": "State=Selected, Appearance=Elevated, Density=Compact",
+          "w": 1138,
+          "h": 623
+        },
+        {
+          "id": "164:2163",
+          "name": "State=Default, Appearance=Glass, Density=Comfortable",
+          "w": 1138,
+          "h": 621
+        },
+        {
+          "id": "164:2443",
+          "name": "State=Selected, Appearance=Glass, Density=Comfortable",
+          "w": 1138,
+          "h": 691
+        },
+        {
+          "id": "164:2762",
+          "name": "State=Empty, Appearance=Glass, Density=Comfortable",
+          "w": 1138,
+          "h": 505
+        },
+        {
+          "id": "164:2869",
+          "name": "State=Loading, Appearance=Glass, Density=Comfortable",
+          "w": 1138,
+          "h": 561
+        },
+        {
+          "id": "164:2954",
+          "name": "State=Error, Appearance=Glass, Density=Comfortable",
+          "w": 1138,
+          "h": 118
+        },
+        {
+          "id": "164:2968",
+          "name": "State=Default, Appearance=Glass, Density=Compact",
+          "w": 1138,
+          "h": 553
+        },
+        {
+          "id": "164:3248",
+          "name": "State=Selected, Appearance=Glass, Density=Compact",
+          "w": 1138,
+          "h": 623
+        },
+        {
+          "id": "164:3567",
+          "name": "State=Default, Appearance=Gradient, Density=Comfortable",
+          "w": 1138,
+          "h": 621
+        },
+        {
+          "id": "164:3847",
+          "name": "State=Selected, Appearance=Gradient, Density=Comfortable",
+          "w": 1138,
+          "h": 691
+        },
+        {
+          "id": "164:4166",
+          "name": "State=Empty, Appearance=Gradient, Density=Comfortable",
+          "w": 1138,
+          "h": 505
+        },
+        {
+          "id": "164:4273",
+          "name": "State=Loading, Appearance=Gradient, Density=Comfortable",
+          "w": 1138,
+          "h": 561
+        },
+        {
+          "id": "164:4358",
+          "name": "State=Error, Appearance=Gradient, Density=Comfortable",
+          "w": 1138,
+          "h": 118
+        },
+        {
+          "id": "164:4372",
+          "name": "State=Default, Appearance=Gradient, Density=Compact",
+          "w": 1138,
+          "h": 553
+        },
+        {
+          "id": "164:4652",
+          "name": "State=Selected, Appearance=Gradient, Density=Compact",
+          "w": 1138,
+          "h": 623
+        },
+        {
+          "id": "164:4971",
+          "name": "State=Default, Appearance=Flat, Density=Comfortable",
+          "w": 1138,
+          "h": 621
+        },
+        {
+          "id": "164:5251",
+          "name": "State=Selected, Appearance=Flat, Density=Comfortable",
+          "w": 1138,
+          "h": 691
+        },
+        {
+          "id": "164:5570",
+          "name": "State=Empty, Appearance=Flat, Density=Comfortable",
+          "w": 1138,
+          "h": 505
+        },
+        {
+          "id": "164:5677",
+          "name": "State=Loading, Appearance=Flat, Density=Comfortable",
+          "w": 1138,
+          "h": 561
+        },
+        {
+          "id": "164:5762",
+          "name": "State=Error, Appearance=Flat, Density=Comfortable",
+          "w": 1138,
+          "h": 118
+        },
+        {
+          "id": "164:5776",
+          "name": "State=Default, Appearance=Flat, Density=Compact",
+          "w": 1138,
+          "h": 553
+        },
+        {
+          "id": "164:6056",
+          "name": "State=Selected, Appearance=Flat, Density=Compact",
+          "w": 1138,
+          "h": 623
+        }
+      ],
+      "texts": [
+        {
+          "name": "Toolbar / title",
+          "text": "Customers"
+        },
+        {
+          "name": "Toolbar / count label",
+          "text": "12 rows"
+        },
+        {
+          "name": "Toolbar / description",
+          "text": "Manage the people and subscriptions in your workspace."
+        },
+        {
+          "name": "Header / label",
+          "text": "Customer"
+        },
+        {
+          "name": "Header / label",
+          "text": "Company"
+        },
+        {
+          "name": "Header / label",
+          "text": "Plan"
+        },
+        {
+          "name": "Header / label",
+          "text": "Status"
+        },
+        {
+          "name": "Header / label",
+          "text": "Monthly spend"
+        },
+        {
+          "name": "Header / label",
+          "text": "Joined"
+        },
+        {
+          "name": "Identity / name",
+          "text": "Olivia Rhye"
+        },
+        {
+          "name": "Identity / email",
+          "text": "olivia@layers.studio"
+        },
+        {
+          "name": "Cell / value",
+          "text": "Layers"
+        }
+      ]
+    },
+    {
+      "id": "23:217",
+      "name": "Tabs",
+      "properties": {
+        "Label#23:4": {
+          "type": "TEXT",
+          "defaultValue": "A clear view of what comes next."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Overview",
+          "variantOptions": [
+            "Overview",
+            "Details",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "23:184",
+          "name": "State=Overview",
+          "w": 380,
+          "h": 100
+        },
+        {
+          "id": "23:195",
+          "name": "State=Details",
+          "w": 380,
+          "h": 100
+        },
+        {
+          "id": "23:206",
+          "name": "State=Disabled",
+          "w": 380,
+          "h": 100
+        }
+      ],
+      "texts": [
+        {
+          "name": "A clear view of what comes next.",
+          "text": "A clear view of what comes next."
+        }
+      ]
+    }
+  ],
+  "textStyles": [
+    {
+      "id": "S:5faf04911817250a0f581d8bc0cf614413bd0c07,",
+      "name": "Aureform/Caption",
+      "font": {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      }
+    },
+    {
+      "id": "S:c9331f77f34964fbf68953e792e55afebd44c2cc,",
+      "name": "Aureform/Body small",
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      }
+    },
+    {
+      "id": "S:6fd77fbb36be3a4f7565350e600f35691f34a4e4,",
+      "name": "Aureform/Body",
+      "font": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      }
+    },
+    {
+      "id": "S:5edcfcc677c29f2698248accbde30e0839ca5535,",
+      "name": "Aureform/Body strong",
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      }
+    },
+    {
+      "id": "S:c44d3974dcfbb8d8e98397aaeff09c2906dc7bce,",
+      "name": "Aureform/Subtitle",
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      }
+    },
+    {
+      "id": "S:7779c38bd9d3462e0d7666ce289e1fd2a925c8c8,",
+      "name": "Aureform/Title",
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      }
+    },
+    {
+      "id": "S:b2c459051960c8f946a6a315d2e9036c2f7526dd,",
+      "name": "Aureform/Display",
+      "font": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      }
+    },
+    {
+      "id": "S:16b586b0e44e522977001bb778cf85e5e3658f33,",
+      "name": "Aureform/Hero",
+      "font": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      }
+    },
+    {
+      "id": "S:204147353886bcd7b90ed12b86ed3e55b646af9f,",
+      "name": "Aureform/Editorial display",
+      "font": {
+        "family": "Instrument Serif",
+        "style": "Regular"
+      }
+    },
+    {
+      "id": "S:0637cd94f295e4394e41a5d89d6a0790664235f3,",
+      "name": "Aureform/Editorial hero",
+      "font": {
+        "family": "Instrument Serif",
+        "style": "Regular"
+      }
+    },
+    {
+      "id": "S:d45f895a9c506b67dcd6818a673cf86afcaab62d,",
+      "name": "Aureform/Control",
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      }
+    },
+    {
+      "id": "S:2f1bd55235a75aaa6e4a6158bb084596a807617f,",
+      "name": "Aureform/Card title",
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      }
+    },
+    {
+      "id": "S:5439cfd6af063a94fd64971a58b270778334c77d,",
+      "name": "Aureform/Label",
+      "font": {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      }
+    },
+    {
+      "id": "S:9ae2ee283a9f179c5d3f97c0c195945d5735ad7a,",
+      "name": "Aureform/Display large",
+      "font": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      }
+    }
+  ],
+  "paintStyles": [
+    {
+      "id": "S:1ddc80b10ce6bacdeced1fa60b061deaa49a7add,",
+      "name": "Aureform/Gradient/Light/surface"
+    },
+    {
+      "id": "S:c776c8f943f650fd082e919a721604b74937c532,",
+      "name": "Aureform/Gradient/Dark/surface"
+    },
+    {
+      "id": "S:48d95e91c45ef12e7104b6b4faf5c94bce3acc81,",
+      "name": "Aureform/Gradient/Violet/Light/surface"
+    },
+    {
+      "id": "S:c3bc8aea604271810fd5f23c231c2152a4d3b550,",
+      "name": "Aureform/Gradient/Violet/Dark/surface"
+    },
+    {
+      "id": "S:407a9a573f4316541a55d3acb348fa418413e05f,",
+      "name": "Aureform/Gradient/Ocean/Light/surface"
+    },
+    {
+      "id": "S:e37f6bdf7bf99443c31e69b731979193af7f517b,",
+      "name": "Aureform/Gradient/Ocean/Dark/surface"
+    },
+    {
+      "id": "S:bc870a4691fff80c1ce9078635d4091b985af631,",
+      "name": "Aureform/Gradient/Mint/Light/surface"
+    },
+    {
+      "id": "S:f3f9856ed609766234cc4c27b5dfb2702d451965,",
+      "name": "Aureform/Gradient/Mint/Dark/surface"
+    },
+    {
+      "id": "S:2ed02cce479a802bc71a3a8fafe2ee3cb20f30a2,",
+      "name": "Aureform/Gradient/Ember/Light/surface"
+    },
+    {
+      "id": "S:e455639c53184e1f322c752b7ea79e129ece2ecd,",
+      "name": "Aureform/Gradient/Ember/Dark/surface"
+    },
+    {
+      "id": "S:fc229f93f7acc06dcfbe0b581f580998742ca4a1,",
+      "name": "Aureform/Gradient/Rose/Light/surface"
+    },
+    {
+      "id": "S:c74abf2f5ed1bfa348df92805abd4a4a14f486b1,",
+      "name": "Aureform/Gradient/Rose/Dark/surface"
+    }
+  ],
+  "effects": [
+    {
+      "id": "S:c910c6bbb0ca23901963053979c2490f0ce268c6,",
+      "name": "Aureform/Shadow/Light/soft"
+    },
+    {
+      "id": "S:6c9aa64220ad80dcb9406c53c19bcfab70cb5a54,",
+      "name": "Aureform/Shadow/Light/elevated"
+    },
+    {
+      "id": "S:cd056bd94884a7f57fe9e10bde93f555e733a6d0,",
+      "name": "Aureform/Shadow/Light/floating"
+    },
+    {
+      "id": "S:8f8bc239d6a0114d60d657275d4b60636e581880,",
+      "name": "Aureform/Shadow/Dark/soft"
+    },
+    {
+      "id": "S:bb48b6721302fd65516d5325e9fe8c1a28295e1f,",
+      "name": "Aureform/Shadow/Dark/elevated"
+    },
+    {
+      "id": "S:36feb16e83da80484d84fd9a98cdf3f104a6acae,",
+      "name": "Aureform/Shadow/Dark/floating"
+    }
+  ]
+}

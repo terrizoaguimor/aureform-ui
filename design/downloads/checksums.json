@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "scope": "Selected design snapshots, native starter plugin and local Code Connect templates",
+  "nativeFigIncluded": false,
+  "files": 142,
+  "bundle": {
+    "file": "design/downloads/aureform-design-snapshots.zip",
+    "bytes": 7761167,
+    "sha256": "679b6511a42849b92648370e8576513ac5809f43e25761192c59015138b70e53"
+  }
+}

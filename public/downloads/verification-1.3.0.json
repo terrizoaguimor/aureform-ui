@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3.0",
+  "status": "passed-local-release-validation",
+  "license": "Apache-2.0",
+  "runtimeReceipt": "docs/qa-runtime-1.3.0.json",
+  "checksums": "public/downloads/checksums.json",
+  "sourceFingerprint": {
+    "method": "SHA-256 of sorted relative path, NUL, file SHA-256, LF for src/tests/examples/tokens/bin and package/lock/config inputs",
+    "files": 227,
+    "sha256": "79e455d7e483b251b6120888a5c3c23ba9e7fda359d5495125b103ed31708b67"
+  },
+  "publication": {
+    "repository": "https://github.com/terrizoaguimor/aureform-ui",
+    "demo": "https://terrizoaguimor.github.io/aureform-ui/",
+    "status": "awaiting-remote-deployment-verification"
+  },
+  "nativeFigIncluded": false,
+  "archives": [
+    {
+      "name": "aureform-ui-native-evidence-1.1.zip",
+      "status": "passed-crc-paths-count-sha256",
+      "bytes": 15997293,
+      "files": 23,
+      "sha256": "a4f80d58b951b7f3ee49ba5fe1a3e9cbca13eb3d88e2e5f2e5ced570eb492465"
+    },
+    {
+      "name": "aureform-ui-native-evidence-1.2.zip",
+      "status": "passed-crc-paths-count-sha256",
+      "bytes": 9050463,
+      "files": 22,
+      "sha256": "6ea74097ac854e0271b86f0d12c326f30ed37141d6add6db00723d90bb36324b"
+    },
+    {
+      "name": "aureform-ui-native-evidence-1.2.1.zip",
+      "status": "passed-crc-paths-count-sha256",
+      "bytes": 3771196,
+      "files": 7,
+      "sha256": "4f3253e59c05002e9adb99bd4c80ee1445cd8e9dae767520d2177b7677e78d8d"
+    },
+    {
+      "name": "aureform-ui-images.zip",
+      "status": "passed-crc-paths-count-sha256",
+      "bytes": 5853654,
+      "files": 127,
+      "sha256": "e2c6924d6c8070cb52df4105ca15cbbf309f7b31d605b699d616447789f8ec64"
+    },
+    {
+      "name": "aureform-ui-starter.zip",
+      "status": "passed-crc-paths-count-sha256",
+      "bytes": 268130,
+      "files": 89,
+      "sha256": "2310995e2d34252686fa33f7e562ce18c90f39f81a950c411e7d0e9dd19466cd"
+    },
+    {
+      "name": "aureform-ui-free.zip",
+      "status": "passed-crc-paths-count-sha256",
+      "bytes": 237951,
+      "files": 59,
+      "sha256": "2e5fb56e3d820a6f7886efc8e08aa3559ef0efae7f8435b2b8af6c11ae9fafef"
+    },
+    {
+      "name": "aureform-ui-source.zip",
+      "status": "passed-crc-paths-count-sha256",
+      "bytes": 82438433,
+      "files": 1327,
+      "sha256": "56cd4f145cec6ae26f3df0689364a8e6367be36c44270bf23a2fc6d7a039855b"
+    }
+  ],
+  "designBundle": {
+    "path": "design/downloads/aureform-design-snapshots.zip",
+    "bytes": 7761167,
+    "sha256": "679b6511a42849b92648370e8576513ac5809f43e25761192c59015138b70e53",
+    "crc": "passed",
+    "nativeFigIncluded": false
+  },
+  "sourceArchiveExactPayloadMatch": true,
+  "publicationAudit": {
+    "status": "passed",
+    "gitFiles": 1341,
+    "scannedFilesAndArchiveEntries": 3137,
+    "archiveEntries": 1796,
+    "findings": [],
+    "scope": "Fresh public snapshot and every embedded release-archive entry"
+  }
+}

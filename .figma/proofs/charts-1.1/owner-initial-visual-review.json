@@ -1,0 +1,33 @@
+{
+  "status": "native-structure-passed-targeted-visual-fix-pending",
+  "checkedAt": "2026-10-19T06:43:41.679195+00:00",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "figmaCallsPerformedByOwner": false,
+  "kindCount": 13,
+  "originalVariantIdsPreserved": true,
+  "screenshots": [
+    {
+      "rootId": "23:501",
+      "proofFile": ".figma/proofs/charts-1.1/charts-library-initial.png",
+      "sha256": "e8dddd4e7fd84440a011a0caac10b7ac005d5308cbe3ecd7e41a024ed6b45667",
+      "width": 1138,
+      "height": 1306,
+      "bytes": 192554,
+      "status": "requires-targeted-label-layout-fix"
+    },
+    {
+      "rootId": "59:2901",
+      "proofFile": ".figma/proofs/charts-1.1/charts-screen-initial.png",
+      "sha256": "da57b3de48efa8d74f37107cffa26ecfa4c4ae3d40a79a897314721e04dc3216",
+      "width": 1440,
+      "height": 3024,
+      "bytes": 1131312,
+      "status": "requires-targeted-label-layout-fix"
+    }
+  ],
+  "findings": [
+    "Services, Expansion, Sep, Retention and Revenue legends wrap inside words; use intrinsic labels and flex layout.",
+    "Oct labels on Area, Line and StackedArea touch or clip against the rounded plot edge."
+  ],
+  "scope": "Native text layout and plot clipping only; no source React changes or new geometric reconstruction."
+}

@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 1,
+  "scope": "Recorded 1.2.1 native route index; not a fresh full-route audit",
+  "stateSha256": "917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03",
+  "routes": [
+    {
+      "route": "",
+      "labels": {
+        "en": "Landing",
+        "es": "Inicio"
+      },
+      "nodeId": "55:8072",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=55-8072",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "ai",
+      "labels": {
+        "en": "AI workspace",
+        "es": "Espacio de IA"
+      },
+      "nodeId": "5:4",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=5-4",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "ai/code",
+      "labels": {
+        "en": "Code assistant",
+        "es": "Asistente de código"
+      },
+      "nodeId": "53:1044",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=53-1044",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "ai/images",
+      "labels": {
+        "en": "Image studio",
+        "es": "Estudio de imágenes"
+      },
+      "nodeId": "45:6768",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6768",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "ai/playground",
+      "labels": {
+        "en": "AI playground",
+        "es": "Laboratorio de IA"
+      },
+      "nodeId": "53:1272",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=53-1272",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "ai/video",
+      "labels": {
+        "en": "Video studio",
+        "es": "Estudio de video"
+      },
+      "nodeId": "45:7088",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-7088",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "analytics",
+      "labels": {
+        "en": "Analytics",
+        "es": "Analítica"
+      },
+      "nodeId": "53:494",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=53-494",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "auth/reset-password",
+      "labels": {
+        "en": "Reset password",
+        "es": "Restablecer contraseña"
+      },
+      "nodeId": "52:7551",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7551",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "auth/sign-in",
+      "labels": {
+        "en": "Sign in",
+        "es": "Iniciar sesión"
+      },
+      "nodeId": "52:7472",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7472",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "auth/sign-up",
+      "labels": {
+        "en": "Create account",
+        "es": "Crear cuenta"
+      },
+      "nodeId": "52:7509",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7509",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "auth/verify",
+      "labels": {
+        "en": "Verify code",
+        "es": "Verificar código"
+      },
+      "nodeId": "52:7581",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7581",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "blocks",
+      "labels": {
+        "en": "Blocks",
+        "es": "Bloques"
+      },
+      "nodeId": "59:3429",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3429",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "calendar",
+      "labels": {
+        "en": "Calendar",
+        "es": "Calendario"
+      },
+      "nodeId": "41:5151",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-5151",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "charts",
+      "labels": {
+        "en": "Chart gallery",
+        "es": "Galería de gráficos"
+      },
+      "nodeId": "59:2901",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-2901",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "chat",
+      "labels": {
+        "en": "Team chat",
+        "es": "Chat del equipo"
+      },
+      "nodeId": "45:5003",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5003",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "components",
+      "labels": {
+        "en": "Components",
+        "es": "Componentes"
+      },
+      "nodeId": "59:2549",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-2549",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "crm",
+      "labels": {
+        "en": "CRM overview",
+        "es": "Resumen CRM"
+      },
+      "nodeId": "39:24",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-24",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "customers",
+      "labels": {
+        "en": "Customers",
+        "es": "Clientes"
+      },
+      "nodeId": "237:18891",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-18891",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "customers/detail",
+      "labels": {
+        "en": "Customer detail",
+        "es": "Detalle de cliente"
+      },
+      "nodeId": "237:17522",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17522",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "dashboard",
+      "labels": {
+        "en": "SaaS overview",
+        "es": "Resumen SaaS"
+      },
+      "nodeId": "5:2",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=5-2",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "docs",
+      "labels": {
+        "en": "Getting started",
+        "es": "Primeros pasos"
+      },
+      "nodeId": "54:1108",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-1108",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "docs/accessibility",
+      "labels": {
+        "en": "Accessibility",
+        "es": "Accesibilidad"
+      },
+      "nodeId": "54:2600",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-2600",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "docs/adapters",
+      "labels": {
+        "en": "Demo adapters",
+        "es": "Adaptadores de demostración"
+      },
+      "nodeId": "54:2325",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-2325",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "docs/cli",
+      "labels": {
+        "en": "CLI & registry",
+        "es": "CLI y registro"
+      },
+      "nodeId": "54:1764",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-1764",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "docs/figma",
+      "labels": {
+        "en": "Figma & Code Connect",
+        "es": "Figma y Code Connect"
+      },
+      "nodeId": "54:2045",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-2045",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "docs/license",
+      "labels": {
+        "en": "Apache 2.0 license",
+        "es": "Licencia Apache 2.0"
+      },
+      "nodeId": "54:2873",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-2873",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "docs/roadmap",
+      "labels": {
+        "en": "Suite coverage",
+        "es": "Cobertura de la suite"
+      },
+      "nodeId": "54:3151",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-3151",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "docs/tokens",
+      "labels": {
+        "en": "Design tokens",
+        "es": "Tokens de diseño"
+      },
+      "nodeId": "54:1451",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=54-1451",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "ecommerce",
+      "labels": {
+        "en": "E-commerce",
+        "es": "Comercio electrónico"
+      },
+      "nodeId": "39:730",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-730",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "effects",
+      "labels": {
+        "en": "Effects & shaders",
+        "es": "Efectos y shaders"
+      },
+      "nodeId": "136:9476",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=136-9476",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "faq",
+      "labels": {
+        "en": "Frequently asked questions",
+        "es": "Preguntas frecuentes"
+      },
+      "nodeId": "55:7856",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=55-7856",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "files",
+      "labels": {
+        "en": "File manager",
+        "es": "Gestor de archivos"
+      },
+      "nodeId": "45:5363",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5363",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "finance",
+      "labels": {
+        "en": "Finance",
+        "es": "Finanzas"
+      },
+      "nodeId": "39:2310",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-2310",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "forms",
+      "labels": {
+        "en": "Form patterns",
+        "es": "Patrones de formularios"
+      },
+      "nodeId": "59:2725",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-2725",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "imports",
+      "labels": {
+        "en": "Import data",
+        "es": "Importar datos"
+      },
+      "nodeId": "237:17965",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17965",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "invoice",
+      "labels": {
+        "en": "Invoice detail",
+        "es": "Detalle de factura"
+      },
+      "nodeId": "45:6451",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6451",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "invoices",
+      "labels": {
+        "en": "Invoices",
+        "es": "Facturas"
+      },
+      "nodeId": "41:3207",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-3207",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "layouts",
+      "labels": {
+        "en": "Layout gallery",
+        "es": "Galería de layouts"
+      },
+      "nodeId": "59:3253",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3253",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "logistics",
+      "labels": {
+        "en": "Logistics",
+        "es": "Logística"
+      },
+      "nodeId": "39:1923",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1923",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "mail",
+      "labels": {
+        "en": "Inbox",
+        "es": "Bandeja de entrada"
+      },
+      "nodeId": "45:4589",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-4589",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "maps",
+      "labels": {
+        "en": "Maps",
+        "es": "Mapas"
+      },
+      "nodeId": "45:6076",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6076",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "marketing",
+      "labels": {
+        "en": "Marketing",
+        "es": "Marketing"
+      },
+      "nodeId": "39:1521",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1521",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "media",
+      "labels": {
+        "en": "Media & carousels",
+        "es": "Medios y carruseles"
+      },
+      "nodeId": "59:3077",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3077",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "onboarding",
+      "labels": {
+        "en": "Get started",
+        "es": "Primeros pasos"
+      },
+      "nodeId": "237:16692",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-16692",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "orders",
+      "labels": {
+        "en": "Orders",
+        "es": "Pedidos"
+      },
+      "nodeId": "41:2816",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-2816",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "pipeline",
+      "labels": {
+        "en": "Sales pipeline",
+        "es": "Embudo de ventas"
+      },
+      "nodeId": "41:4387",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-4387",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "pricing",
+      "labels": {
+        "en": "Pricing demo",
+        "es": "Demo de precios"
+      },
+      "nodeId": "55:7541",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=55-7541",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "products",
+      "labels": {
+        "en": "Products",
+        "es": "Productos"
+      },
+      "nodeId": "41:2363",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-2363",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "sales",
+      "labels": {
+        "en": "Sales",
+        "es": "Ventas"
+      },
+      "nodeId": "39:1132",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1132",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "settings/api-keys",
+      "labels": {
+        "en": "API keys",
+        "es": "Claves API"
+      },
+      "nodeId": "48:7753",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7753",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "settings/billing",
+      "labels": {
+        "en": "Billing",
+        "es": "Facturación"
+      },
+      "nodeId": "48:7437",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7437",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "settings/integrations",
+      "labels": {
+        "en": "Integrations",
+        "es": "Integraciones"
+      },
+      "nodeId": "48:8021",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-8021",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "settings/preferences",
+      "labels": {
+        "en": "Preferences",
+        "es": "Preferencias"
+      },
+      "nodeId": "48:7128",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-7128",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "settings/profile",
+      "labels": {
+        "en": "Profile",
+        "es": "Perfil"
+      },
+      "nodeId": "48:6454",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=48-6454",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "settings/team",
+      "labels": {
+        "en": "Team",
+        "es": "Equipo"
+      },
+      "nodeId": "237:19873",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-19873",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "settings/workspace",
+      "labels": {
+        "en": "Workspace settings",
+        "es": "Ajustes del workspace"
+      },
+      "nodeId": "237:17079",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17079",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "status/coming-soon",
+      "labels": {
+        "en": "Coming soon",
+        "es": "Próximamente"
+      },
+      "nodeId": "52:7713",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7713",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "status/error",
+      "labels": {
+        "en": "Something went wrong",
+        "es": "Algo salió mal"
+      },
+      "nodeId": "52:7650",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7650",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "status/maintenance",
+      "labels": {
+        "en": "Under maintenance",
+        "es": "En mantenimiento"
+      },
+      "nodeId": "52:7684",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7684",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "status/not-found",
+      "labels": {
+        "en": "Page not found",
+        "es": "Página no encontrada"
+      },
+      "nodeId": "52:7622",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7622",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "status/success",
+      "labels": {
+        "en": "All set",
+        "es": "Todo listo"
+      },
+      "nodeId": "52:7751",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=52-7751",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "stocks",
+      "labels": {
+        "en": "Stocks",
+        "es": "Acciones"
+      },
+      "nodeId": "39:2702",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-2702",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "studio",
+      "labels": {
+        "en": "Appearance studio",
+        "es": "Estudio visual"
+      },
+      "nodeId": "134:8412",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=134-8412",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "support",
+      "labels": {
+        "en": "Support tickets",
+        "es": "Solicitudes de soporte"
+      },
+      "nodeId": "45:5707",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5707",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "task-list",
+      "labels": {
+        "en": "Task list",
+        "es": "Lista de tareas"
+      },
+      "nodeId": "41:4794",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-4794",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "tasks",
+      "labels": {
+        "en": "Task board",
+        "es": "Tablero de tareas"
+      },
+      "nodeId": "41:3982",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-3982",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "templates",
+      "labels": {
+        "en": "Templates",
+        "es": "Plantillas"
+      },
+      "nodeId": "59:3605",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=59-3605",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "themes",
+      "labels": {
+        "en": "Palettes & materials",
+        "es": "Paletas y materiales"
+      },
+      "nodeId": "135:8894",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=135-8894",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    },
+    {
+      "route": "transactions",
+      "labels": {
+        "en": "Transactions",
+        "es": "Transacciones"
+      },
+      "nodeId": "41:3597",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=41-3597",
+      "sourceEntryPoint": "src/components/app-page.tsx",
+      "routeCatalog": "src/lib/catalog.ts"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "status": "durable-uploads-completed",
+  "receipts": [
+    {
+      "assetId": "isabel-torres",
+      "success": true,
+      "imageHash": "6bf889679118fd210044ac5e43b1e9944ae914a4",
+      "sizeBytes": 9674,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:73"
+    },
+    {
+      "assetId": "leo-martin",
+      "success": true,
+      "imageHash": "7758199bc9ce6da235dc3d679883f5036f9a0c71",
+      "sizeBytes": 12976,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:78"
+    },
+    {
+      "assetId": "noor-ahmed",
+      "success": true,
+      "imageHash": "a64136c4ba472ed9e749386d8ef91af3c04238b1",
+      "sizeBytes": 8964,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:83"
+    },
+    {
+      "assetId": "daniel-kim",
+      "success": true,
+      "imageHash": "5011e8f43093fa7deee428cab1bee5d36b6681f6",
+      "sizeBytes": 9662,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:89"
+    },
+    {
+      "assetId": "olivia-rhye",
+      "success": true,
+      "imageHash": "f6f60f23b3c2b3c7ecbcc2bf90c3ad2847552d47",
+      "sizeBytes": 9248,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:94"
+    },
+    {
+      "assetId": "phoenix-baker",
+      "success": true,
+      "imageHash": "1d1c05788234cbd1faf5eb04ec531f4ef5f35ef3",
+      "sizeBytes": 8202,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:100"
+    },
+    {
+      "assetId": "lana-steiner",
+      "success": true,
+      "imageHash": "d49a4b21a39ddbe62f17daf4db0efb3438d4b68f",
+      "sizeBytes": 8986,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:105"
+    },
+    {
+      "assetId": "demi-wilkinson",
+      "success": true,
+      "imageHash": "5838e6e15a438650cf1c7f78c4430e29d781635a",
+      "sizeBytes": 11090,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:111"
+    },
+    {
+      "assetId": "drew-cano",
+      "success": true,
+      "imageHash": "c0c37b01351c1d99b3014b8557eae595483e24f2",
+      "sizeBytes": 8916,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:116"
+    },
+    {
+      "assetId": "amelia-wilson",
+      "success": true,
+      "imageHash": "28b4c0675b57f157771f4ae29211b0a165e0fd41",
+      "sizeBytes": 13242,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:121"
+    },
+    {
+      "assetId": "matias-vega",
+      "success": true,
+      "imageHash": "31c807a80f6a2261abe0c2b47bb5f7cff572dc7d",
+      "sizeBytes": 10804,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:126"
+    },
+    {
+      "assetId": "sofia-chen",
+      "success": true,
+      "imageHash": "9bfc4a480ec020ec05bea8e99dae5905ddce14ac",
+      "sizeBytes": 10338,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:133"
+    },
+    {
+      "assetId": "lucas-moreau",
+      "success": true,
+      "imageHash": "ef6d2bd891c047313c51e3c9f305f6969fb1c7e4",
+      "sizeBytes": 10548,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:138"
+    },
+    {
+      "assetId": "alex-rivera",
+      "success": true,
+      "imageHash": "d9e57517823be59ba730bf6a35d0e13c2481fc0b",
+      "sizeBytes": 9992,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:143"
+    },
+    {
+      "assetId": "isabel-moreno",
+      "success": true,
+      "imageHash": "23cf857ffa9568c3956420c3e689b760fd88d958",
+      "sizeBytes": 9506,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:148"
+    }
+  ],
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "263:73",
+    "263:78",
+    "263:83",
+    "263:89",
+    "263:94",
+    "263:100",
+    "263:105",
+    "263:111",
+    "263:116",
+    "263:121",
+    "263:126",
+    "263:133",
+    "263:138",
+    "263:143",
+    "263:148"
+  ]
+}

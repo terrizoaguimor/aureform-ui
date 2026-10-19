@@ -1,0 +1,83 @@
+{
+  "status": "five-existing-native-product-row-thumbnails-confirmed",
+  "rootId": "41:2363",
+  "placements": [
+    {
+      "rowId": "I41:2364;29:224;41:2746",
+      "nodeId": "I41:2364;29:224;41:2746;281:4730",
+      "assetId": "forma-desk-lamp",
+      "width": 36,
+      "height": 36,
+      "visible": true,
+      "imageHash": "676dbff0fed4232342e05ed8a23438dbdf1561b1",
+      "fillMatches": true,
+      "propertyEnabled": true
+    },
+    {
+      "rowId": "I41:2364;29:224;41:2758",
+      "nodeId": "I41:2364;29:224;41:2758;281:4730",
+      "assetId": "arc-lounge-chair",
+      "width": 36,
+      "height": 36,
+      "visible": true,
+      "imageHash": "f050409dc9cc27f0f65cc1b1ff1fd1ded13f8564",
+      "fillMatches": true,
+      "propertyEnabled": true
+    },
+    {
+      "rowId": "I41:2364;29:224;41:2770",
+      "nodeId": "I41:2364;29:224;41:2770;281:4730",
+      "assetId": "linea-notebook",
+      "width": 36,
+      "height": 36,
+      "visible": true,
+      "imageHash": "3a4bedc2ac6f06c0c2dec70bb885924cd81090de",
+      "fillMatches": true,
+      "propertyEnabled": true
+    },
+    {
+      "rowId": "I41:2364;29:224;41:2782",
+      "nodeId": "I41:2364;29:224;41:2782;281:4730",
+      "assetId": "studio-tote",
+      "width": 36,
+      "height": 36,
+      "visible": true,
+      "imageHash": "af5079d02c13ad360bbfa3e52685ba63095ced22",
+      "fillMatches": true,
+      "propertyEnabled": true
+    },
+    {
+      "rowId": "I41:2364;29:224;41:2795",
+      "nodeId": "I41:2364;29:224;41:2795;281:4730",
+      "assetId": "morrow-ceramic-cup",
+      "width": 36,
+      "height": 36,
+      "visible": true,
+      "imageHash": "03321a539bf0ab268bb1a2aa950f42bcb1550533",
+      "fillMatches": true,
+      "propertyEnabled": true
+    }
+  ],
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "I41:2364;29:224;41:2746",
+    "I41:2364;29:224;41:2746;281:4730",
+    "I41:2364;29:224;41:2758",
+    "I41:2364;29:224;41:2758;281:4730",
+    "I41:2364;29:224;41:2770",
+    "I41:2364;29:224;41:2770;281:4730",
+    "I41:2364;29:224;41:2782",
+    "I41:2364;29:224;41:2782;281:4730",
+    "I41:2364;29:224;41:2795",
+    "I41:2364;29:224;41:2795;281:4730"
+  ],
+  "removedNodeIds": [],
+  "sourceAssociation": {
+    "file": "src/components/templates/data-manager.tsx",
+    "role": "ProductThumbnail internal helper; 36px image chosen by immutable prd seed ID.",
+    "export": "DataManagerTemplate",
+    "newSourceExports": []
+  },
+  "currentConfirmation": ".figma/journals/image-assets-1.2.1/19-close-suite-evidence.result.json",
+  "writeCodeRetention": "Prior population write source was not retained. The exact19 code is a current read-only confirmation, not a replayed write."
+}

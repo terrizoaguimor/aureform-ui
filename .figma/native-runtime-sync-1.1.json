@@ -1,0 +1,232 @@
+{
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "createdVariableIds": [
+    "VariableID:108:36",
+    "VariableID:108:37",
+    "VariableID:108:38",
+    "VariableID:108:39",
+    "VariableID:108:40",
+    "VariableID:108:41",
+    "VariableID:108:42",
+    "VariableID:108:43",
+    "VariableID:108:44",
+    "VariableID:108:45",
+    "VariableID:108:46",
+    "VariableID:108:47",
+    "VariableID:108:48",
+    "VariableID:108:49",
+    "VariableID:108:50",
+    "VariableID:108:51",
+    "VariableID:108:52",
+    "VariableID:108:53",
+    "VariableID:108:54",
+    "VariableID:108:55",
+    "VariableID:108:56",
+    "VariableID:108:57",
+    "VariableID:108:58",
+    "VariableID:108:59",
+    "VariableID:108:60",
+    "VariableID:108:61",
+    "VariableID:108:62",
+    "VariableID:108:63",
+    "VariableID:108:64",
+    "VariableID:108:65",
+    "VariableID:108:66",
+    "VariableID:108:67",
+    "VariableID:108:68",
+    "VariableID:108:69",
+    "VariableID:108:70",
+    "VariableID:108:71",
+    "VariableID:108:72",
+    "VariableID:108:73",
+    "VariableID:108:74",
+    "VariableID:108:75",
+    "VariableID:108:76",
+    "VariableID:108:77",
+    "VariableID:108:78",
+    "VariableID:108:79",
+    "VariableID:108:80",
+    "VariableID:108:81",
+    "VariableID:108:82",
+    "VariableID:108:83",
+    "VariableID:108:84",
+    "VariableID:108:85",
+    "VariableID:108:86",
+    "VariableID:108:87",
+    "VariableID:108:88",
+    "VariableID:108:89",
+    "VariableID:108:90",
+    "VariableID:108:91"
+  ],
+  "updatedVariableIds": [
+    "VariableID:95:25",
+    "VariableID:95:30",
+    "VariableID:95:50",
+    "VariableID:95:61",
+    "VariableID:95:57",
+    "VariableID:95:58",
+    "VariableID:95:94",
+    "VariableID:95:115",
+    "VariableID:95:121",
+    "VariableID:95:122",
+    "VariableID:95:123",
+    "VariableID:95:156",
+    "VariableID:95:162",
+    "VariableID:95:163",
+    "VariableID:95:164",
+    "VariableID:95:198",
+    "VariableID:95:236",
+    "VariableID:95:204",
+    "VariableID:95:202",
+    "VariableID:95:205",
+    "VariableID:95:239",
+    "VariableID:95:245",
+    "VariableID:95:246",
+    "VariableID:95:247",
+    "VariableID:2:43",
+    "VariableID:2:44",
+    "VariableID:2:45",
+    "VariableID:2:47",
+    "VariableID:2:52",
+    "VariableID:2:53",
+    "VariableID:95:324",
+    "VariableID:95:325",
+    "VariableID:95:326",
+    "VariableID:95:328",
+    "VariableID:95:333",
+    "VariableID:95:334",
+    "VariableID:95:388",
+    "VariableID:95:389",
+    "VariableID:95:390",
+    "VariableID:95:392",
+    "VariableID:95:397",
+    "VariableID:95:398",
+    "VariableID:95:452",
+    "VariableID:95:453",
+    "VariableID:95:454",
+    "VariableID:95:456",
+    "VariableID:95:461",
+    "VariableID:95:462",
+    "VariableID:95:516",
+    "VariableID:95:517",
+    "VariableID:95:518",
+    "VariableID:95:520",
+    "VariableID:95:525",
+    "VariableID:95:526",
+    "VariableID:95:580",
+    "VariableID:95:581",
+    "VariableID:95:582",
+    "VariableID:95:584",
+    "VariableID:95:589",
+    "VariableID:95:590"
+  ],
+  "updatedStyleIds": [
+    "S:f94b92637c8981e80ad9cb928d38a6e14c05b74e,",
+    "S:4e792a1e5af7cc9f071c45e15dad490e18e5adff,",
+    "S:54bbc44d5036fbc73f10e1293d5bb9f4932207f2,",
+    "S:0256768d7979c09f156534809252a9fc07758327,",
+    "S:4ad8f11257d47c5d70228b9ca0c444a3f290ca1d,",
+    "S:1a39a54f865ddfbcf740d50093f9248b9c3421cd,",
+    "S:1545577e33389d6c2037ab164cd8e32882acd1bd,",
+    "S:21b231e074fd32963dbf604d1424a64c467d26e1,",
+    "S:a98f7ca6e8355a5852ecb35d8a61fe64eed2c1eb,",
+    "S:81ab494324cd85a2337dde97ea0a659d045163dd,",
+    "S:650cd1c52a650d6b6d9e62a89f8841b9ec410906,",
+    "S:29e493ac3c93dd74df0fab7dd4af1b3e673841f4,"
+  ],
+  "paletteResults": [
+    {
+      "palette": "aurora",
+      "collectionId": "VariableCollectionId:2:36",
+      "controlVariables": {
+        "control/color-1": "VariableID:108:68",
+        "control/color-2": "VariableID:108:69",
+        "control/color-3": "VariableID:108:70",
+        "control/color-4": "VariableID:108:71"
+      },
+      "variables": 61,
+      "primary": {
+        "light": "#764ED1",
+        "dark": "#AB8AF9"
+      }
+    },
+    {
+      "palette": "violet",
+      "collectionId": "VariableCollectionId:95:317",
+      "controlVariables": {
+        "control/color-1": "VariableID:108:72",
+        "control/color-2": "VariableID:108:73",
+        "control/color-3": "VariableID:108:74",
+        "control/color-4": "VariableID:108:75"
+      },
+      "variables": 61,
+      "primary": {
+        "light": "#764ED1",
+        "dark": "#AB8AF9"
+      }
+    },
+    {
+      "palette": "ocean",
+      "collectionId": "VariableCollectionId:95:381",
+      "controlVariables": {
+        "control/color-1": "VariableID:108:76",
+        "control/color-2": "VariableID:108:77",
+        "control/color-3": "VariableID:108:78",
+        "control/color-4": "VariableID:108:79"
+      },
+      "variables": 61,
+      "primary": {
+        "light": "#2F67C2",
+        "dark": "#6CA1F8"
+      }
+    },
+    {
+      "palette": "mint",
+      "collectionId": "VariableCollectionId:95:445",
+      "controlVariables": {
+        "control/color-1": "VariableID:108:80",
+        "control/color-2": "VariableID:108:81",
+        "control/color-3": "VariableID:108:82",
+        "control/color-4": "VariableID:108:83"
+      },
+      "variables": 61,
+      "primary": {
+        "light": "#0B7A55",
+        "dark": "#28C08E"
+      }
+    },
+    {
+      "palette": "ember",
+      "collectionId": "VariableCollectionId:95:509",
+      "controlVariables": {
+        "control/color-1": "VariableID:108:84",
+        "control/color-2": "VariableID:108:85",
+        "control/color-3": "VariableID:108:86",
+        "control/color-4": "VariableID:108:87"
+      },
+      "variables": 61,
+      "primary": {
+        "light": "#AC4F0F",
+        "dark": "#FA8432"
+      }
+    },
+    {
+      "palette": "rose",
+      "collectionId": "VariableCollectionId:95:573",
+      "controlVariables": {
+        "control/color-1": "VariableID:108:88",
+        "control/color-2": "VariableID:108:89",
+        "control/color-3": "VariableID:108:90",
+        "control/color-4": "VariableID:108:91"
+      },
+      "variables": 61,
+      "primary": {
+        "light": "#B63776",
+        "dark": "#F072B0"
+      }
+    }
+  ],
+  "modeBoundControlStyles": 12,
+  "source": "src/lib/appearance.ts"
+}

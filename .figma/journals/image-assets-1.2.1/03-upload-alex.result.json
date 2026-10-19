@@ -1,0 +1,17 @@
+{
+  "status": "durable-upload-completed",
+  "receipts": [
+    {
+      "assetId": "alex-morgan",
+      "success": true,
+      "imageHash": "2c7528dec15140ffbebceeb2a78025b96428c271",
+      "sizeBytes": 9276,
+      "contentType": "image/webp",
+      "placedOnNodeId": "263:68"
+    }
+  ],
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "263:68"
+  ]
+}

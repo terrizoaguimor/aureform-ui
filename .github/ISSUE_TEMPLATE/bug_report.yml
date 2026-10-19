@@ -1,0 +1,68 @@
+name: Bug report
+description: Report a reproducible problem in the UI, CLI, registry or documentation.
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and Spanish are welcome. Please remove private information from captures and examples.
+        For security issues, use [private vulnerability reporting](https://github.com/terrizoaguimor/aureform-ui/security/advisories/new).
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Include the commit, release or registry item you used.
+      placeholder: "main at <commit>, or release version"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Route, component or command
+      placeholder: "/en/customers/, DataWorkbench, or node bin/aureform.mjs add …"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: A small reproducible example or public reproduction link is helpful.
+      placeholder: |
+        1. Open …
+        2. Select …
+        3. Observe …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Attach a screenshot or recording if it helps.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include only the details relevant to this issue.
+      placeholder: |
+        Browser and version:
+        OS:
+        Viewport or device:
+        Language / theme / palette:
+        Node and pnpm (installer/build issues):
+        Demo, checkout or downstream project:
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or context
+      description: Remove keys, tokens and personal data before sharing logs.

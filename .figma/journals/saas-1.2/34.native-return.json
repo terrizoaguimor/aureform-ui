@@ -1,0 +1,208 @@
+{
+  "cover": [
+    {
+      "id": "27:6",
+      "text": "aureform ui"
+    },
+    {
+      "id": "27:7",
+      "text": "SOURCE + DESIGN\nNEXT.JS · FIGMA"
+    },
+    {
+      "id": "27:10",
+      "text": "REFINED INTERFACES FOR AMBITIOUS PRODUCTS"
+    },
+    {
+      "id": "27:11",
+      "text": "Less friction.\nMore possibility."
+    },
+    {
+      "id": "27:12",
+      "text": "A considered foundation for the products you are here to build."
+    },
+    {
+      "id": "27:14",
+      "text": "44 component families"
+    },
+    {
+      "id": "27:15",
+      "text": "64 suite routes"
+    },
+    {
+      "id": "27:16",
+      "text": "EN / ES · Light / Dark"
+    },
+    {
+      "id": "27:18",
+      "text": "A good place to begin."
+    },
+    {
+      "id": "27:19",
+      "text": "Studio workspace · Illustrative data"
+    },
+    {
+      "id": "I27:21;3:151",
+      "text": "Monthly revenue"
+    },
+    {
+      "id": "I27:21;3:152",
+      "text": "$48,295"
+    },
+    {
+      "id": "I27:21;3:153;3:115",
+      "text": "+12.8%"
+    },
+    {
+      "id": "I27:27;3:151",
+      "text": "Active customers"
+    },
+    {
+      "id": "I27:27;3:152",
+      "text": "2,420"
+    },
+    {
+      "id": "I27:27;3:153;3:115",
+      "text": "+12.8%"
+    },
+    {
+      "id": "I27:32;189:4713",
+      "text": "May"
+    },
+    {
+      "id": "I27:32;189:4714",
+      "text": "Jun"
+    },
+    {
+      "id": "I27:32;189:4715",
+      "text": "Jul"
+    },
+    {
+      "id": "I27:32;189:4716",
+      "text": "Aug"
+    },
+    {
+      "id": "I27:32;189:4717",
+      "text": "Sep"
+    },
+    {
+      "id": "I27:32;189:4718",
+      "text": "Oct"
+    },
+    {
+      "id": "I27:32;189:4719",
+      "text": "0"
+    },
+    {
+      "id": "I27:32;189:4720",
+      "text": "15K"
+    },
+    {
+      "id": "I27:32;189:4721",
+      "text": "30K"
+    },
+    {
+      "id": "I27:32;189:4722",
+      "text": "45K"
+    },
+    {
+      "id": "I27:32;189:4723",
+      "text": "60K"
+    },
+    {
+      "id": "27:43",
+      "text": "AUREFORM UI / 1.1"
+    },
+    {
+      "id": "27:44",
+      "text": "Native variables · Editable components · Owned source"
+    },
+    {
+      "id": "27:45",
+      "text": "2026"
+    }
+  ],
+  "guide": [
+    {
+      "id": "27:47",
+      "text": "Aureform, with intention."
+    },
+    {
+      "id": "27:48",
+      "text": "A working identity for an original Next.js interface kit."
+    },
+    {
+      "id": "27:53",
+      "text": "aureform ui"
+    },
+    {
+      "id": "27:54",
+      "text": "Aurora violet on light"
+    },
+    {
+      "id": "27:58",
+      "text": "aureform ui"
+    },
+    {
+      "id": "27:59",
+      "text": "Light on Aurora violet"
+    },
+    {
+      "id": "27:63",
+      "text": "aureform ui"
+    },
+    {
+      "id": "27:64",
+      "text": "Graphite on paper"
+    },
+    {
+      "id": "27:65",
+      "text": "Voice"
+    },
+    {
+      "id": "27:66",
+      "text": "Warm, precise and composed. Clear actions. Measured promises. A little room for ambition."
+    },
+    {
+      "id": "27:67",
+      "text": "Say: “A good place to begin.” / “Un buen lugar para empezar.”\nAvoid invented performance claims, technical jargon in the product and exaggerated promises."
+    },
+    {
+      "id": "27:68",
+      "text": "Typography & color"
+    },
+    {
+      "id": "27:69",
+      "text": "Manrope + Instrument Serif · Light #F6F8FC · Ink #172033 · Aurora violet #764ED1"
+    },
+    {
+      "id": "27:70",
+      "text": "Working name only. Domain, trademark and business-name clearance remain unverified."
+    }
+  ],
+  "captureReferences": [
+    {
+      "id": "221:59",
+      "name": "Get started · Aureform UI",
+      "type": "FRAME",
+      "parent": "2:2"
+    },
+    {
+      "id": "226:59",
+      "name": "Workspace settings · Aureform UI",
+      "type": "FRAME",
+      "parent": "2:2"
+    },
+    {
+      "id": "227:59",
+      "name": "Customer detail · Aureform UI",
+      "type": "FRAME",
+      "parent": "2:2"
+    },
+    {
+      "id": "223:59",
+      "name": "Import data · Aureform UI",
+      "type": "FRAME",
+      "parent": "2:2"
+    }
+  ]
+}

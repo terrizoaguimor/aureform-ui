@@ -1,0 +1,1539 @@
+{
+  "schemaVersion": 1,
+  "scope": "Prepared local Code Connect source associations; not cloud registrations",
+  "count": 92,
+  "components": [
+    {
+      "name": "Button",
+      "nodeId": "3:113",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-113",
+      "source": "src/components/ui/button.tsx",
+      "sourceKind": "local",
+      "export": "Button",
+      "template": ".figma/code-connect/Button.figma.ts",
+      "kind": "core",
+      "axes": {
+        "Style": [
+          "Primary",
+          "Outline",
+          "Ghost"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Button / Additional styles",
+      "nodeId": "25:700",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-700",
+      "source": "src/components/ui/button.tsx",
+      "sourceKind": "local",
+      "export": "Button",
+      "template": ".figma/code-connect/ButtonAdditionalStyles.figma.ts",
+      "kind": "button-extension",
+      "axes": {
+        "Style": [
+          "Secondary",
+          "Destructive",
+          "Link"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Button / Loading & icons",
+      "nodeId": "25:773",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-773",
+      "source": "src/components/ui/button.tsx",
+      "sourceKind": "local",
+      "export": "Button",
+      "template": ".figma/code-connect/ButtonLoadingIcons.figma.ts",
+      "kind": "button-extension",
+      "axes": {
+        "Style": [
+          "Primary",
+          "Outline",
+          "Secondary",
+          "Ghost",
+          "Destructive",
+          "Link"
+        ],
+        "Kind": [
+          "Loading",
+          "Icon",
+          "Small icon"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Badge",
+      "nodeId": "3:124",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-124",
+      "source": "src/components/ui/badge.tsx",
+      "sourceKind": "local",
+      "export": "Badge",
+      "template": ".figma/code-connect/Badge.figma.ts",
+      "kind": "core",
+      "axes": {
+        "Tone": [
+          "Success",
+          "Neutral",
+          "Warning",
+          "Destructive",
+          "Outline"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Input",
+      "nodeId": "3:133",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-133",
+      "source": "src/components/ui/input.tsx",
+      "sourceKind": "local",
+      "export": "Input",
+      "template": ".figma/code-connect/Input.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Empty",
+          "Focus",
+          "Error",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Textarea",
+      "nodeId": "15:67",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-67",
+      "source": "src/components/ui/textarea.tsx",
+      "sourceKind": "local",
+      "export": "Textarea",
+      "template": ".figma/code-connect/Textarea.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "Focus",
+          "Error",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Checkbox",
+      "nodeId": "15:14",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-14",
+      "source": "src/components/ui/checkbox.tsx",
+      "sourceKind": "local",
+      "export": "Checkbox",
+      "template": ".figma/code-connect/Checkbox.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Unchecked",
+          "Checked",
+          "Mixed",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Switch",
+      "nodeId": "15:21",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-21",
+      "source": "src/components/ui/switch.tsx",
+      "sourceKind": "local",
+      "export": "Switch",
+      "template": ".figma/code-connect/Switch.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Off",
+          "On",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "RadioGroup",
+      "nodeId": "15:44",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-44",
+      "source": "src/components/ui/radio-group.tsx",
+      "sourceKind": "local",
+      "export": "RadioGroup",
+      "template": ".figma/code-connect/RadioGroup.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Slider",
+      "nodeId": "15:53",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-53",
+      "source": "src/components/ui/slider.tsx",
+      "sourceKind": "local",
+      "export": "Slider",
+      "template": ".figma/code-connect/Slider.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Field",
+      "nodeId": "15:78",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-78",
+      "source": "src/components/ui/field.tsx",
+      "sourceKind": "local",
+      "export": "Field",
+      "template": ".figma/code-connect/Field.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "Error"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Select",
+      "nodeId": "15:98",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-98",
+      "source": "src/components/ui/select.tsx",
+      "sourceKind": "local",
+      "export": "Select",
+      "template": ".figma/code-connect/Select.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Combobox",
+      "nodeId": "15:124",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-124",
+      "source": "src/components/ui/combobox.tsx",
+      "sourceKind": "local",
+      "export": "Combobox",
+      "template": ".figma/code-connect/Combobox.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open",
+          "Empty",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "MultiSelect",
+      "nodeId": "15:150",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-150",
+      "source": "src/components/ui/multi-select.tsx",
+      "sourceKind": "local",
+      "export": "MultiSelect",
+      "template": ".figma/code-connect/MultiSelect.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Empty",
+          "Selected",
+          "Open",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "DatePicker",
+      "nodeId": "15:242",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-242",
+      "source": "src/components/ui/date-picker.tsx",
+      "sourceKind": "local",
+      "export": "DatePicker",
+      "template": ".figma/code-connect/DatePicker.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "DateRangePicker",
+      "nodeId": "15:334",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-334",
+      "source": "src/components/ui/date-picker.tsx",
+      "sourceKind": "local",
+      "export": "DateRangePicker",
+      "template": ".figma/code-connect/DateRangePicker.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "InputOTP",
+      "nodeId": "15:387",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-387",
+      "source": "src/components/ui/input-otp.tsx",
+      "sourceKind": "local",
+      "export": "InputOTP",
+      "template": ".figma/code-connect/InputOTP.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Empty",
+          "Filled",
+          "Error",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "FileUpload",
+      "nodeId": "15:412",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=15-412",
+      "source": "src/components/ui/file-upload.tsx",
+      "sourceKind": "local",
+      "export": "FileUpload",
+      "template": ".figma/code-connect/FileUpload.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Empty",
+          "Uploaded",
+          "Error",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "ButtonGroup",
+      "nodeId": "23:97",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-97",
+      "source": "src/components/ui/button-group.tsx",
+      "sourceKind": "local",
+      "export": "ButtonGroup",
+      "template": ".figma/code-connect/ButtonGroup.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "TextLink",
+      "nodeId": "23:110",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-110",
+      "source": "src/components/ui/link.tsx",
+      "sourceKind": "local",
+      "export": "TextLink",
+      "template": ".figma/code-connect/TextLink.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Breadcrumb",
+      "nodeId": "23:119",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-119",
+      "source": "src/components/ui/breadcrumb.tsx",
+      "sourceKind": "local",
+      "export": "Breadcrumb",
+      "template": ".figma/code-connect/Breadcrumb.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "Long labels"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Pagination",
+      "nodeId": "23:183",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-183",
+      "source": "src/components/ui/pagination.tsx",
+      "sourceKind": "local",
+      "export": "Pagination",
+      "template": ".figma/code-connect/Pagination.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "First",
+          "Middle",
+          "Last"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Tabs",
+      "nodeId": "23:217",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-217",
+      "source": "src/components/ui/tabs.tsx",
+      "sourceKind": "local",
+      "export": "Tabs",
+      "template": ".figma/code-connect/Tabs.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Overview",
+          "Details",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "SidebarItem",
+      "nodeId": "3:142",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-142",
+      "source": "src/components/ui/sidebar.tsx",
+      "sourceKind": "local",
+      "export": "Sidebar",
+      "template": ".figma/code-connect/SidebarItem.figma.ts",
+      "kind": "navigation-fragment",
+      "axes": {
+        "State": [
+          "Default",
+          "Active"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Sidebar",
+      "nodeId": "23:282",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-282",
+      "source": "src/components/ui/sidebar.tsx",
+      "sourceKind": "local",
+      "export": "Sidebar",
+      "template": ".figma/code-connect/Sidebar.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Expanded",
+          "Compact"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Command",
+      "nodeId": "23:320",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-320",
+      "source": "src/components/ui/command.tsx",
+      "sourceKind": "local",
+      "export": "Command",
+      "template": ".figma/code-connect/Command.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Results",
+          "Empty"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Card",
+      "nodeId": "23:335",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-335",
+      "source": "src/components/ui/card.tsx",
+      "sourceKind": "local",
+      "export": "Card",
+      "template": ".figma/code-connect/Card.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "With actions"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Avatar",
+      "nodeId": "3:149",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-149",
+      "source": "src/components/ui/avatar.tsx",
+      "sourceKind": "local",
+      "export": "Avatar",
+      "template": ".figma/code-connect/Avatar.figma.ts",
+      "kind": "core",
+      "axes": {
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Table",
+      "nodeId": "23:355",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-355",
+      "source": "src/components/ui/table.tsx",
+      "sourceKind": "local",
+      "export": "Table",
+      "template": ".figma/code-connect/Table.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "Empty"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "DataTable",
+      "nodeId": "23:443",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-443",
+      "source": "src/components/ui/data-table.tsx",
+      "sourceKind": "local",
+      "export": "DataTable",
+      "template": ".figma/code-connect/DataTable.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Empty",
+          "Loading",
+          "Error"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Chart",
+      "nodeId": "23:501",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=23-501",
+      "source": "src/components/ui/chart.tsx",
+      "sourceKind": "local",
+      "export": "Chart",
+      "template": ".figma/code-connect/Chart.figma.ts",
+      "kind": "core",
+      "axes": {
+        "Kind": [
+          "Area",
+          "Line",
+          "Bar",
+          "Donut",
+          "Radar",
+          "Radial",
+          "HorizontalBar",
+          "StackedBar",
+          "StackedArea",
+          "DivergingBar",
+          "Gauge",
+          "Rings",
+          "Heatmap"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Alert",
+      "nodeId": "24:363",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-363",
+      "source": "src/components/ui/alert.tsx",
+      "sourceKind": "local",
+      "export": "Alert",
+      "template": ".figma/code-connect/Alert.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Info",
+          "Success",
+          "Warning",
+          "Destructive"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Toast",
+      "nodeId": "24:373",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-373",
+      "source": "src/components/ui/toast.tsx",
+      "sourceKind": "local",
+      "export": "toast",
+      "template": ".figma/code-connect/Toast.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Success",
+          "Error",
+          "Loading"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Tooltip",
+      "nodeId": "24:387",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-387",
+      "source": "src/components/ui/tooltip.tsx",
+      "sourceKind": "local",
+      "export": "Tooltip",
+      "template": ".figma/code-connect/Tooltip.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Open",
+          "Closed"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Popover",
+      "nodeId": "24:403",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-403",
+      "source": "src/components/ui/popover.tsx",
+      "sourceKind": "local",
+      "export": "Popover",
+      "template": ".figma/code-connect/Popover.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Open",
+          "Closed"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Dialog",
+      "nodeId": "24:437",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-437",
+      "source": "src/components/ui/dialog.tsx",
+      "sourceKind": "local",
+      "export": "Dialog",
+      "template": ".figma/code-connect/Dialog.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Open",
+          "Destructive",
+          "Closed"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Drawer",
+      "nodeId": "24:457",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-457",
+      "source": "src/components/ui/drawer.tsx",
+      "sourceKind": "local",
+      "export": "Drawer",
+      "template": ".figma/code-connect/Drawer.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Open",
+          "Closed"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "DropdownMenu",
+      "nodeId": "24:480",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-480",
+      "source": "src/components/ui/dropdown-menu.tsx",
+      "sourceKind": "local",
+      "export": "DropdownMenu",
+      "template": ".figma/code-connect/DropdownMenu.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Open",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Progress",
+      "nodeId": "24:492",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-492",
+      "source": "src/components/ui/progress.tsx",
+      "sourceKind": "local",
+      "export": "Progress",
+      "template": ".figma/code-connect/Progress.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "64",
+          "0",
+          "100"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Spinner",
+      "nodeId": "24:501",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-501",
+      "source": "src/components/ui/spinner.tsx",
+      "sourceKind": "local",
+      "export": "Spinner",
+      "template": ".figma/code-connect/Spinner.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Small",
+          "Medium"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Skeleton",
+      "nodeId": "24:512",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-512",
+      "source": "src/components/ui/skeleton.tsx",
+      "sourceKind": "local",
+      "export": "Skeleton",
+      "template": ".figma/code-connect/Skeleton.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Text",
+          "Card"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Empty",
+      "nodeId": "24:531",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-531",
+      "source": "src/components/ui/empty.tsx",
+      "sourceKind": "local",
+      "export": "Empty",
+      "template": ".figma/code-connect/Empty.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Initial",
+          "Search"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Accordion",
+      "nodeId": "24:537",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=24-537",
+      "source": "src/components/ui/accordion.tsx",
+      "sourceKind": "local",
+      "export": "Accordion",
+      "template": ".figma/code-connect/Accordion.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Expanded",
+          "Collapsed"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Carousel",
+      "nodeId": "25:511",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-511",
+      "source": "src/components/ui/carousel.tsx",
+      "sourceKind": "local",
+      "export": "Carousel",
+      "template": ".figma/code-connect/Carousel.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "First",
+          "Middle",
+          "Last"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Gallery",
+      "nodeId": "25:585",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-585",
+      "source": "src/components/ui/gallery.tsx",
+      "sourceKind": "local",
+      "export": "Gallery",
+      "template": ".figma/code-connect/Gallery.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Grid",
+          "Lightbox"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "VideoPlayer",
+      "nodeId": "25:638",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-638",
+      "source": "src/components/ui/video-player.tsx",
+      "sourceKind": "local",
+      "export": "VideoPlayer",
+      "template": ".figma/code-connect/VideoPlayer.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Paused",
+          "Playing",
+          "Unavailable"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Ribbon",
+      "nodeId": "25:645",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=25-645",
+      "source": "src/components/ui/ribbon.tsx",
+      "sourceKind": "local",
+      "export": "Ribbon",
+      "template": ".figma/code-connect/Ribbon.figma.ts",
+      "kind": "core",
+      "axes": {
+        "State": [
+          "Primary",
+          "Subtle",
+          "Warning"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "MetricCard",
+      "nodeId": "3:160",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-160",
+      "source": "src/components/blocks/metric-card.tsx",
+      "sourceKind": "local",
+      "export": "MetricCard",
+      "template": ".figma/code-connect/MetricCard.figma.ts",
+      "kind": "block",
+      "axes": {
+        "Trend": [
+          "Positive",
+          "Negative"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "PageHeading",
+      "nodeId": "29:142",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=29-142",
+      "source": "src/components/blocks/page-heading.tsx",
+      "sourceKind": "local",
+      "export": "PageHeading",
+      "template": ".figma/code-connect/PageHeading.figma.ts",
+      "kind": "block",
+      "axes": {
+        "State": [
+          "Standard",
+          "Editorial"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "DashboardShell",
+      "nodeId": "30:969",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=30-969",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "sourceKind": "local",
+      "export": "DashboardShell",
+      "template": ".figma/code-connect/DashboardShell.figma.ts",
+      "kind": "block",
+      "axes": {
+        "Layout": [
+          "Sidebar",
+          "Compact",
+          "Topbar",
+          "Split",
+          "Centered",
+          "Floating"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "RevenuePanel",
+      "nodeId": "6:2",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-2",
+      "source": "src/components/blocks/revenue-panel.tsx",
+      "sourceKind": "local",
+      "export": "RevenuePanel",
+      "template": ".figma/code-connect/RevenuePanel.figma.ts",
+      "kind": "block",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "PlanBreakdown",
+      "nodeId": "6:33",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-33",
+      "source": "src/components/blocks/plan-breakdown.tsx",
+      "sourceKind": "local",
+      "export": "PlanBreakdown",
+      "template": ".figma/code-connect/PlanBreakdown.figma.ts",
+      "kind": "block",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "CustomerTable",
+      "nodeId": "6:51",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-51",
+      "source": "src/components/blocks/customer-table.tsx",
+      "sourceKind": "local",
+      "export": "CustomerTable",
+      "template": ".figma/code-connect/CustomerTable.figma.ts",
+      "kind": "block",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "CustomerDataTable",
+      "nodeId": "17:18",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=17-18",
+      "source": "src/components/blocks/customer-table.tsx",
+      "sourceKind": "local",
+      "export": "CustomerDataTable",
+      "template": ".figma/code-connect/CustomerDataTable.figma.ts",
+      "kind": "block",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "AIComposer",
+      "nodeId": "6:118",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-118",
+      "source": "src/components/blocks/ai-composer.tsx",
+      "sourceKind": "local",
+      "export": "AIComposer",
+      "template": ".figma/code-connect/AIComposer.figma.ts",
+      "kind": "block",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "RevenuePanel / Bar",
+      "nodeId": "38:1736",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1736",
+      "source": "src/components/blocks/revenue-panel.tsx",
+      "sourceKind": "local",
+      "export": "RevenuePanel",
+      "template": ".figma/code-connect/RevenuePanelBar.figma.ts",
+      "kind": "block-variant",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "RouteMap",
+      "nodeId": "31:1609",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=31-1609",
+      "source": "src/components/blocks/route-map.tsx",
+      "sourceKind": "local",
+      "export": "RouteMap",
+      "template": ".figma/code-connect/RouteMap.figma.ts",
+      "kind": "block",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "LayoutDashboard",
+      "nodeId": "9:6",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-6",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconLayoutDashboard.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "ChartNoAxesCombined",
+      "nodeId": "9:12",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-12",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconChartNoAxesCombined.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Sparkles",
+      "nodeId": "9:15",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-15",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconSparkles.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Users",
+      "nodeId": "9:18",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-18",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconUsers.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Layers",
+      "nodeId": "9:23",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-23",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconLayers.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "BookOpen",
+      "nodeId": "9:26",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-26",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconBookOpen.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Settings",
+      "nodeId": "9:29",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-29",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconSettings.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Search",
+      "nodeId": "9:33",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-33",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconSearch.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Bell",
+      "nodeId": "9:37",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-37",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconBell.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Moon",
+      "nodeId": "9:40",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-40",
+      "source": "src/components/design-icon.tsx",
+      "sourceKind": "local",
+      "export": "DesignIcon",
+      "template": ".figma/code-connect/IconMoon.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Plus",
+      "nodeId": "9:43",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-43",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "Plus",
+      "template": ".figma/code-connect/IconPlus.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "kanban-square",
+      "nodeId": "38:1540",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1540",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "KanbanSquare",
+      "template": ".figma/code-connect/IconKanbanSquare.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "calendar-days",
+      "nodeId": "38:1546",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1546",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "CalendarDays",
+      "template": ".figma/code-connect/IconCalendarDays.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "mail",
+      "nodeId": "38:1558",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1558",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "Mail",
+      "template": ".figma/code-connect/IconMail.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "folder-open",
+      "nodeId": "38:1562",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1562",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "FolderOpen",
+      "template": ".figma/code-connect/IconFolderOpen.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "package",
+      "nodeId": "38:1565",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1565",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "Package",
+      "template": ".figma/code-connect/IconPackage.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "shopping-bag",
+      "nodeId": "38:1571",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1571",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "ShoppingBag",
+      "template": ".figma/code-connect/IconShoppingBag.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "credit-card",
+      "nodeId": "38:1576",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1576",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "CreditCard",
+      "template": ".figma/code-connect/IconCreditCard.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "map-pin",
+      "nodeId": "38:1580",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1580",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "MapPin",
+      "template": ".figma/code-connect/IconMapPin.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "circle-help",
+      "nodeId": "38:1584",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=38-1584",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "CircleHelp",
+      "template": ".figma/code-connect/IconCircleHelp.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "ArrowUpRight",
+      "nodeId": "3:2",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=3-2",
+      "source": "lucide-react",
+      "sourceKind": "dependency",
+      "export": "ArrowUpRight",
+      "template": ".figma/code-connect/IconArrowUpRight.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "AureformMark",
+      "nodeId": "9:46",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=9-46",
+      "source": "src/components/brand.tsx",
+      "sourceKind": "local",
+      "export": "AureformMark",
+      "template": ".figma/code-connect/IconAureformMark.figma.ts",
+      "kind": "icon",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "DashboardSidebar",
+      "nodeId": "29:70",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=29-70",
+      "source": "src/components/ui/sidebar.tsx",
+      "sourceKind": "local",
+      "export": "Sidebar",
+      "template": ".figma/code-connect/DashboardSidebar.figma.ts",
+      "kind": "chrome",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "DashboardHeader",
+      "nodeId": "29:128",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=29-128",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "sourceKind": "local",
+      "export": "DashboardShell",
+      "template": ".figma/code-connect/DashboardHeader.figma.ts",
+      "kind": "chrome",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "DashboardBrandHeader",
+      "nodeId": "34:1492",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=34-1492",
+      "source": "src/components/blocks/dashboard-shell.tsx",
+      "sourceKind": "local",
+      "export": "DashboardShell",
+      "template": ".figma/code-connect/DashboardBrandHeader.figma.ts",
+      "kind": "chrome",
+      "axes": {},
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Button / Shapes",
+      "nodeId": "176:4598",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=176-4598",
+      "source": "src/components/ui/button.tsx",
+      "sourceKind": "local",
+      "export": "Button",
+      "template": ".figma/code-connect/ButtonShapes.figma.ts",
+      "kind": "shape-extension",
+      "axes": {
+        "Shape": [
+          "Rounded",
+          "Pill",
+          "Square"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Button / Appearance",
+      "nodeId": "97:655",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=97-655",
+      "source": "src/components/ui/button.tsx",
+      "sourceKind": "local",
+      "export": "Button",
+      "template": ".figma/code-connect/ButtonAppearance.figma.ts",
+      "kind": "appearance-extension",
+      "axes": {
+        "Appearance": [
+          "Solid",
+          "Soft",
+          "Outline",
+          "Glass",
+          "Gradient"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Badge / Appearance",
+      "nodeId": "97:666",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=97-666",
+      "source": "src/components/ui/badge.tsx",
+      "sourceKind": "local",
+      "export": "Badge",
+      "template": ".figma/code-connect/BadgeAppearance.figma.ts",
+      "kind": "appearance-extension",
+      "axes": {
+        "Appearance": [
+          "Solid",
+          "Soft",
+          "Outline",
+          "Glass",
+          "Gradient"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "Card / Material",
+      "nodeId": "97:715",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=97-715",
+      "source": "src/components/ui/card.tsx",
+      "sourceKind": "local",
+      "export": "Card",
+      "template": ".figma/code-connect/CardMaterial.figma.ts",
+      "kind": "appearance-extension",
+      "axes": {
+        "Appearance": [
+          "Flat",
+          "Elevated",
+          "Glass",
+          "Gradient"
+        ],
+        "State": [
+          "Default",
+          "Hover"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "GradientBackground",
+      "nodeId": "104:734",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-734",
+      "source": "src/components/effects/gradient-background.tsx",
+      "sourceKind": "local",
+      "export": "GradientBackground",
+      "template": ".figma/code-connect/GradientBackground.figma.ts",
+      "kind": "effect",
+      "axes": {
+        "Kind": [
+          "Linear",
+          "Radial",
+          "Mesh"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "ShaderBackground",
+      "nodeId": "104:766",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-766",
+      "source": "src/components/effects/shader-background.tsx",
+      "sourceKind": "local",
+      "export": "ShaderBackground",
+      "template": ".figma/code-connect/ShaderBackground.figma.ts",
+      "kind": "effect",
+      "axes": {
+        "Kind": [
+          "Aurora",
+          "Waves",
+          "Iridescent",
+          "None"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "SpotlightCard",
+      "nodeId": "104:777",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-777",
+      "source": "src/components/effects/spotlight-card.tsx",
+      "sourceKind": "local",
+      "export": "SpotlightCard",
+      "template": ".figma/code-connect/SpotlightCard.figma.ts",
+      "kind": "effect",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "GlowBorder",
+      "nodeId": "104:786",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-786",
+      "source": "src/components/effects/glow-border.tsx",
+      "sourceKind": "local",
+      "export": "GlowBorder",
+      "template": ".figma/code-connect/GlowBorder.figma.ts",
+      "kind": "effect",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "TiltCard",
+      "nodeId": "104:797",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-797",
+      "source": "src/components/effects/tilt-card.tsx",
+      "sourceKind": "local",
+      "export": "TiltCard",
+      "template": ".figma/code-connect/TiltCard.figma.ts",
+      "kind": "effect",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover"
+        ]
+      },
+      "status": "local-unpublished"
+    },
+    {
+      "name": "MagneticButton",
+      "nodeId": "104:804",
+      "figmaUrl": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=104-804",
+      "source": "src/components/effects/magnetic-button.tsx",
+      "sourceKind": "local",
+      "export": "MagneticButton",
+      "template": ".figma/code-connect/MagneticButton.figma.ts",
+      "kind": "effect",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "status": "local-unpublished"
+    }
+  ]
+}

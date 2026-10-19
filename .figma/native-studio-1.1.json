@@ -1,0 +1,75 @@
+{
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "2:6",
+  "rootId": "134:8412",
+  "status": "native-verified",
+  "bounds": {
+    "x": 7080,
+    "y": 80,
+    "width": 1440,
+    "height": 2429
+  },
+  "descendantCount": 861,
+  "nodeTypes": {
+    "FRAME": 295,
+    "VECTOR": 189,
+    "TEXT": 185,
+    "INSTANCE": 92,
+    "SLOT": 1,
+    "ELLIPSE": 6,
+    "RECTANGLE": 69,
+    "GROUP": 25
+  },
+  "fontFamilies": [
+    "Manrope"
+  ],
+  "imageFillCount": 0,
+  "nativeReturn": ".figma/proofs/appearance-views-1.1/studio-build.native-return.json",
+  "executedCode": ".figma/proofs/appearance-views-1.1/studio-build.executed.js",
+  "normalizedReturn": ".figma/proofs/appearance-views-1.1/studio-build.normalized.json",
+  "journalEvidence": {
+    "path": "/home/terrizoaguimor/.codex/sessions/2026/10/18/rollout-2026-10-18T19-27-41-01a1518e-965c-78a2-bac3-6cfafae464b7.jsonl",
+    "callId": "call_b2f389d0cd2f564bbbea6df75480903a",
+    "timestamp": "2026-10-19T02:58:50.523Z"
+  },
+  "compositionScreenshot": ".figma/proofs/appearance-views-1.1/studio-composition.png",
+  "refinement": {
+    "status": "applied-awaiting-visual-proof",
+    "rootId": "134:8412",
+    "proofDirectory": ".figma/proofs/appearance-views-1.1",
+    "returnPath": ".figma/proofs/appearance-views-1.1/studio-refine.native-return.json",
+    "normalizedPath": ".figma/proofs/appearance-views-1.1/studio-refine.normalized.json",
+    "executedCodePath": ".figma/proofs/appearance-views-1.1/studio-refine.executed.js",
+    "executedCodeSha256": "e23f0fd52fcf0d08d5967ed3350ac5a3d5684d271656baf76e07a29826e61df9",
+    "allAffectedIdCounts": {
+      "created": 488,
+      "mutated": 1123,
+      "removed": 2,
+      "unique": 1191
+    }
+  },
+  "view": "studio",
+  "placeholderCount": 0,
+  "visualReview": {
+    "status": "passed",
+    "method": "owner visually inspected full-resolution native PNG",
+    "path": ".figma/proofs/appearance-views-1.1/studio-final.png",
+    "sha256": "74afff363c2c37d44e1fedac7459c548d8e51cc8cbd09a8a06759646438b2640",
+    "width": 1440,
+    "height": 2429,
+    "reviewedAt": "2026-10-19T04:11:16.312600+00:00",
+    "checks": [
+      "complete sidebar and header flow",
+      "readable editable Manrope typography",
+      "native source SVG icons",
+      "full footer in frame",
+      "palette and gradient composition",
+      "no raster fills or pending placeholders"
+    ]
+  },
+  "reconciliation": {
+    "layoutProof": ".figma/native-appearance-views-layout-1.1.json",
+    "iconProof": ".figma/native-appearance-views-icons-1.1.json",
+    "cleanupProof": ".figma/native-appearance-views-cleanup-1.1.json"
+  }
+}

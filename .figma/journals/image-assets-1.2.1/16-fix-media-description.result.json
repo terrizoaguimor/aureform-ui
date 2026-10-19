@@ -1,0 +1,25 @@
+{
+  "status": "native-media-description-matches-current-source",
+  "rootId": "59:3077",
+  "textNodeId": "I59:3078;29:224;59:3252;29:137",
+  "before": "Original vector compositions, a controlled carousel and an accessible video pattern.",
+  "after": "A prepared GPT Image 2.5 editorial collection, a controlled carousel and an accessible video pattern.",
+  "fonts": [
+    {
+      "family": "Manrope",
+      "style": "Regular",
+      "variationSettings": {
+        "wght": 400
+      }
+    }
+  ],
+  "source": {
+    "file": "src/components/templates/media-studio.tsx",
+    "export": "MediaTemplate"
+  },
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "I59:3078;29:224;59:3252;29:137"
+  ],
+  "removedNodeIds": []
+}

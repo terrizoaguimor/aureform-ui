@@ -1,0 +1,31 @@
+{
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "version": "1.1.0",
+  "planKey": "team::1693392656517210156",
+  "shaders": [
+    {
+      "kind": "fill",
+      "name": "Aureform \u00b7 Aurora",
+      "id": "b43d5fbb-f28a-4c95-b650-d4b335629959",
+      "version": "15c8eb1ffadcfc672a62dc13eec2045655b16bc6",
+      "source": ".figma/shaders/aurora/main.ts",
+      "status": "authored-build-passed"
+    },
+    {
+      "name": "Aureform / Waves",
+      "kind": "fill",
+      "id": "93874828-173c-4157-97a3-9606cf71932c",
+      "version": "305b4055db15df0b179c73164759caede172ae83",
+      "source": ".figma/shaders/waves/main.ts",
+      "status": "authored-build-passed"
+    },
+    {
+      "kind": "fill",
+      "name": "Aureform / Iridescent",
+      "id": "b9d3e1cf-3efc-4c33-99c8-e4a105282cf7",
+      "version": "34995a5d24483f6b2b5b260ff56d623ba7b2331a",
+      "source": ".figma/shaders/iridescent/main.ts",
+      "status": "authored-build-passed"
+    }
+  ]
+}

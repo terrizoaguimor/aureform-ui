@@ -1,0 +1,363 @@
+{
+  "reason": "The connector commits exact WebP bytes but exports blank native fills. A PNG upload of decoded source pixels renders correctly. Originals and source SHAs are unchanged.",
+  "conversions": [
+    {
+      "assetId": "alex-morgan",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "d00e73009c7efc6d22cb4c5c058b2f8b6b4f97e8a221163371112ce73a9e32fb",
+      "sha256": "98150b3d4dec483eb1d28c1cc92f11f4c26c5dde4adbe0df67db8e1062426b48",
+      "bytes": 81532,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "0184a246ca2c39475fc10f4c6ebe10eaeb22b4a0f84609f3ffad868ea371c7d5"
+    },
+    {
+      "assetId": "isabel-torres",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "f8805db2acc8b0f1a0ff7c0ebfca06c5ecb66ec004e2d05a15ab5df6b7f9fcbe",
+      "sha256": "79a58b6edb010b7b369b95a229f32ccf77961874a8e1962b2d4bce1d119e01fe",
+      "bytes": 93997,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "c45b0b01d3cb535605d8205b7f7d4b9a00a3420cabab45a9a6ee7c21157eb4e1"
+    },
+    {
+      "assetId": "leo-martin",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "79c74d9e728c691dc7f3fa9c979be14fe307196a55103f5dd6241b6295e93ac0",
+      "sha256": "e96e1ca1ed6fcbb22e2140e09700c239035c9734bd5dd29cc9e8e1edd887042a",
+      "bytes": 104290,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "b93457493c30d1b95640e0aee1a619c9c61d9c075152793d75496446d8b2d693"
+    },
+    {
+      "assetId": "noor-ahmed",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "df70a5177309e415b963a146519bef857f7b7c8b2b83197934a6cec14ba6899e",
+      "sha256": "b850e719c64c6d2e3f608fe7f2e8f846bbdac71b2e5bff0d0e1b377bbf46f4da",
+      "bytes": 81020,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "d50b24093a80e3bc774d08dde30bf44ed83d17cbd3d6a7122edd828211f243b7"
+    },
+    {
+      "assetId": "daniel-kim",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "91b41c8f22c4dc4a9f15236ce9e15617cb340e354e641d474cbab856afb846b4",
+      "sha256": "830367ff70ccc63d00dc35f1922c5c343e81d784c063a5cceb9ee6c9cabd0122",
+      "bytes": 83986,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "9a36059a44fd22d8784133233387822bd46e01afbf5bb6823bbb71831f5d44b8"
+    },
+    {
+      "assetId": "olivia-rhye",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "f270d143ad6077b08dba1d5a833af291fa30018c65c0ddf20ddcb0a8982e194d",
+      "sha256": "d1c7ef7b675827eefbc5e5eeae92ec84b630fe155c520d011859fbde4d85b6d2",
+      "bytes": 86182,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "e16e8e9802dd1e4cfed72230cac42d2799fe126b7a0cec5a13523d235ad07a38"
+    },
+    {
+      "assetId": "phoenix-baker",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "47d33304c9c811a338a20f8ade7eb9a02b39a2193d42ace765a68c9bae729cf0",
+      "sha256": "923792b8d2e8e5bb1213f1e390eb27744b5e9e10ee955469beb288493f6b89e2",
+      "bytes": 77186,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "64f8b410469a4133b96c8adf01a03eca8959f0db63b4413de404d1678b41c0a3"
+    },
+    {
+      "assetId": "lana-steiner",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "92ca129c5a955106c7f4b3a22edea0e4df770947624b290358ce8d25f01145d0",
+      "sha256": "c2aa1a67e9f2ad2cbe6ebe3a21c0434ac1b0774bdf8d8668561a3c9ba0c804d8",
+      "bytes": 86346,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "f3de9c521aa481368d5e3fa3a8d63aacc40fc7a9461d1bb987fe7a9e9d2e71f9"
+    },
+    {
+      "assetId": "demi-wilkinson",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "55c3e54af00a95633085b89aaad4a3de8d184945ab0788ff30966654e6aadb26",
+      "sha256": "cde4af377e953b59902484bfa6d68b58132809d88e35340c261f41313375609e",
+      "bytes": 95031,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "dc3f047e703340a95de2b98375fb431e78e67fef64eff5d2a936c8168a64bca3"
+    },
+    {
+      "assetId": "drew-cano",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "cd3dec104945efa2a6facc7c853d737fba26b21a3dc8955328ab8e85498c7d0b",
+      "sha256": "08970cd3272d21ed5ed54251cd6518e4b189861d69b907ddf6f7cbd7fae0f4c1",
+      "bytes": 87244,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "146f800602583100d552f1bfc0034b9bed09e026743273b1cd1b36fe16ea909d"
+    },
+    {
+      "assetId": "amelia-wilson",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "3f284a1c038b55ff2295484586dedea0e2ce6129c95c4194c490bf7657c2ea5c",
+      "sha256": "8fb7afcfd63ebe838bd8161f269f6ec9ad7ad07980d7932acf354ca7b3d161db",
+      "bytes": 112332,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "98035ebce80717c93058155fb1feaa277f4d32eb48cf94cc4c658e563ecd1428"
+    },
+    {
+      "assetId": "matias-vega",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "0e3eed3a8e9b3521c51b71645e31404ddd501fe3baab5ae2ce03ab2051ee1a21",
+      "sha256": "0ce32bafb908703b1996172b6543d8ab834cd706fcf1034a38752c84fdb1254a",
+      "bytes": 95185,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "b3376d181b0dbbad8322c3fe5b054413654a1e94433c35faa911628310375b40"
+    },
+    {
+      "assetId": "sofia-chen",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "8193c0a06654758722fc6f51b545575274dabb3946c92f5e11701d1ae1869a48",
+      "sha256": "c97f4c41680e86f040dad9f656ad066baed179ec3329d954716a61e25a52a054",
+      "bytes": 90349,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "b13edd1e7859cfc3c72bd8204747eec8ce84fcc691d41d5bf3a9ee95e99210dd"
+    },
+    {
+      "assetId": "lucas-moreau",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "a46a417b0541cb2c6da5e2c35b4c1fd80b22f3918e50d1e7539ff8bbd4abcd33",
+      "sha256": "d4c652112202428aeb6a04b95a657eb2e633414acb8af8db4699944f674a113c",
+      "bytes": 93992,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "046525a1f8bd89630210fce8f6539506e34af64f93dcce3d48750e81fe9f1c45"
+    },
+    {
+      "assetId": "alex-rivera",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "54755fce1a6cc57d8c3a9742ac2309519a51f3026d779ab5d943a86c228093be",
+      "sha256": "9aa9906ed89f4c586a2df536c61f9e9056c2883a06decc6980d7576c3553f05f",
+      "bytes": 86886,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "6af272471e67c69688d63d4b0a9d687ab05450dd3206ee5dc2e703b3717368f4"
+    },
+    {
+      "assetId": "isabel-moreno",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "dff95eef29bf9cc73a5a9dd100fd7e15fd29c24b83c1397ef61456dc57a9618d",
+      "sha256": "2c9f54f3e5b515ed1766c9e22bdd3cc019466cc6b9cc6daaab72a42f81a7750d",
+      "bytes": 89366,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "ff2fd9ffb75f18c8ff668461c2165d927be75c1d5424876d92f1c97d7742d4c9"
+    },
+    {
+      "assetId": "studio-updates",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "8bfefe1d808d239eefa3b08c108f96856929b17274cd2cf0448b587ce8fda255",
+      "sha256": "81cc18391308c741f3ed656a788c945418f443f36869d0ea1172f9102b71637b",
+      "bytes": 38891,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "d41fac65143390a51f13f72cbbd520733637f4ca65a6adbde80805f73be1f4b2"
+    },
+    {
+      "assetId": "forma-collective",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "8261a2a792832207c209abf8d3aecdbe5ab33b8295dbd305e564d8b8600063fb",
+      "sha256": "00d8eb6c6c407f95d8d8af52f2c9545ec31664cd4129a62c63e9a99d3ffe35bb",
+      "bytes": 30448,
+      "width": 320,
+      "height": 320,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "aea0ab077e6022a25492c54419c2526a34deb4a8ea4cf25bab20bb67697c0147"
+    },
+    {
+      "assetId": "forma-desk-lamp",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "0373b76b4db7c0064e454084c1c6ba9ffd2a8e8ee5ccd8eff2818b3cd3f90767",
+      "sha256": "861955c44f8051d316eac95ab861f4fda4e1b6df6d3e8f1966af40f0dd1c5597",
+      "bytes": 72938,
+      "width": 640,
+      "height": 640,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "1922a0dee02c55cdceff96859865d063af3139486358a934d79f94d1b5b9605f"
+    },
+    {
+      "assetId": "arc-lounge-chair",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "406481b41fe4b20aa6d96b674626059a36ad48fd356347e66cdf3868423a721d",
+      "sha256": "cba43f8710f956da38574edadb6571cbedeb032ad3fc0f6261e93a2d57fd31ce",
+      "bytes": 225376,
+      "width": 640,
+      "height": 640,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "a50c6e085b638a2a9f54c0fff32293593c02373775d9158066b1a515e55145a8"
+    },
+    {
+      "assetId": "linea-notebook",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "5280ca05f8f971c1ac0cfbe5a4b6ee3e0a1077dc869ea17c478667fc5b546d68",
+      "sha256": "9e361cd393e8ec37955c46e7c901adfcf780ea525d4590e1fe444bac782e09ea",
+      "bytes": 218290,
+      "width": 640,
+      "height": 640,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "fc16ed4557810be98199346458a78d932ce5be6395cee46f672f3702e43e10a5"
+    },
+    {
+      "assetId": "studio-tote",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "1192da28f1c7d54edc7115e8077d6652584a3e0faaabaebecd51d3e8ebb544a3",
+      "sha256": "efc0b0f486e4c01e1f674d8acee2d1cd282aead2cc96602470e06e9d9f8c308f",
+      "bytes": 205039,
+      "width": 640,
+      "height": 640,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "ab34cc5ef03957db09642e469c67d507311b2ea08f25513e90d22dfc949fab84"
+    },
+    {
+      "assetId": "morrow-ceramic-cup",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "e5ca365c7601b96b6ab94735a0c004ca139219476439cb17ac4fb787045bea42",
+      "sha256": "b66ceb9a6d8750f421e3d04150e98a3b1638bfa783dcc0451ce33d18ba7d6a01",
+      "bytes": 208754,
+      "width": 640,
+      "height": 640,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "a784b3f93ee97f0917fbc4387911ed20c2ef082677e459f1381a4621f912a49c"
+    },
+    {
+      "assetId": "silhouette-vase",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "35ff3aca4a21e8c5003d96330b290b84d64666bbbd043b4992ef453e4a14bb3b",
+      "sha256": "1a506db5e5d55ce4cdf07626b572fdedd9fdff64b0039746dd745165a59f387c",
+      "bytes": 245994,
+      "width": 640,
+      "height": 640,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "c1abc0004953cba265ba22bdb6ae5b6380d4d353f5fb02a254b96f081bdfd668"
+    },
+    {
+      "assetId": "fold-side-table",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "cd4853bac37959463a244c50982f301786180e7d5f0634d859fb702c6ecdd5e0",
+      "sha256": "348b3c9b51934ae5d154ea2d1fd946e675e082b0e8a482109a3f77b9c67f8c63",
+      "bytes": 60453,
+      "width": 640,
+      "height": 640,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "2b6830d5fb9248314db9a45274800a886a6c0c07bcdba7a0e0177be046af4e8e"
+    },
+    {
+      "assetId": "essential-wall-print",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "2659fd014a91bd5e4b89d8805b136027644c51f1780bc7528f4df90d03304eb0",
+      "sha256": "c114bc45718647dee77241150ef2c64d534ede707a2a23eff2d629868555d0b5",
+      "bytes": 124832,
+      "width": 640,
+      "height": 640,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "e5f2dde9de23a2ac01b37ff4ba0d187719efa323fcc68bb5a1775fec19316003"
+    },
+    {
+      "assetId": "quiet-forms",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "c8e9c43848cbd7207179172282ba452726353ac2b7e9e6810c62c523da3b2f19",
+      "sha256": "c2b3a21434f43994ddb7938b29b575cc10de04ba43df61855c81318ce24440a7",
+      "bytes": 420389,
+      "width": 1200,
+      "height": 800,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "3cae3868524347a5f179bd342074cefeafb5a67b160587ec3f40a9abe8021ca7"
+    },
+    {
+      "assetId": "studio",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "b9c399c71367e97268385c73a7ed5befe2b63a0dd4d6fa387178b649cd99a854",
+      "sha256": "33974a600c7a8208c5bf3078d9348775be3ab2e663d1551aeecb8f20380c0dae",
+      "bytes": 667820,
+      "width": 1200,
+      "height": 800,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "337a7870acce1961ffe663a8cc228cee012eae406595cf09b4f4b312e16ecbe0"
+    },
+    {
+      "assetId": "arc",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "ba6a60770173d18b3105a54d2a54eab41778f64f6606e3fe21f8c7f2c1fedeb9",
+      "sha256": "ce8fccb06d05078c1e0fa9ffb87eaf034f37e0706abf0cd1451978a93261f8b0",
+      "bytes": 760882,
+      "width": 1200,
+      "height": 800,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "fccd27c259dae22dc66ac863f7639a48f0348a0864b9617b3211f949a25aeb64"
+    },
+    {
+      "assetId": "morrow",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "56c83ed48def07e3ea11b26b97ab7f5ad62a2e5885bebe8c4bc70bfa5c3235e3",
+      "sha256": "e3565b29191582f79845684e4a673d222855618a34f6ca50348a4c1730c1714b",
+      "bytes": 432902,
+      "width": 1200,
+      "height": 800,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "5de94b0c1b5f561dd65e7c1143e9477b90bba8333a4625296d32d98b0a35d38b"
+    },
+    {
+      "assetId": "silhouette",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "934a4b6dcf25d33870fc3fe0464fca2a0a26811ccd3b1572f4593bd62443f031",
+      "sha256": "d38feabf0e87a55ae8f9a0985c971eec059232df456d00f33a4d201277bce198",
+      "bytes": 533287,
+      "width": 1200,
+      "height": 800,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "aed5cf51af7eea8796aed7f7c80467573bb15ff4f42e84201a6477c5ae9c2079"
+    },
+    {
+      "assetId": "goodform",
+      "method": "lossless PNG of decoded source WebP",
+      "sourceSha256": "577749b5c5779b9702ec48b41212a8528c1d2dfbfdb3a613f6f25d8e932f1443",
+      "sha256": "ee268783af81c06fd397bc666b308fb509ed768ae39f9ec100f8b0c026c7f91b",
+      "bytes": 415499,
+      "width": 1200,
+      "height": 800,
+      "pixelMode": "RGB",
+      "decodedPixelsSha256": "0c55d3503f58f55f175abc79b112d81e2a65d4f629da58ed414ababedea788a4"
+    }
+  ],
+  "firstNativeRender": {
+    "assetId": "alex-morgan",
+    "componentId": "263:68",
+    "imageHash": "5c69b0df761aa936d2a2dbfa7a67c1d8041fd717",
+    "viewed": "visible portrait from the same source pixels"
+  }
+}

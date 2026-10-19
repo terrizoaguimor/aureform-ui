@@ -1,0 +1,587 @@
+{
+  "status": "control-foreground-corrected-and-mode-verified",
+  "pageId": "2:3",
+  "setId": "176:4598",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "I176:4571;3:4",
+    "I176:4583;3:4",
+    "I176:4595;3:4"
+  ],
+  "affectedNodeIds": [
+    "176:4599",
+    "176:4696",
+    "176:4570",
+    "176:4571",
+    "I176:4571;3:4",
+    "176:4582",
+    "176:4583",
+    "I176:4583;3:4",
+    "176:4594",
+    "176:4595",
+    "I176:4595;3:4",
+    "176:4613",
+    "I176:4613;176:4571",
+    "I176:4613;176:4571;3:4",
+    "176:4629",
+    "I176:4629;176:4583",
+    "I176:4629;176:4583;3:4",
+    "176:4645",
+    "I176:4645;176:4595",
+    "I176:4645;176:4595;3:4",
+    "176:4708",
+    "I176:4708;176:4571",
+    "I176:4708;176:4571;3:4",
+    "176:4721",
+    "I176:4721;176:4583",
+    "I176:4721;176:4583;3:4",
+    "176:4734",
+    "I176:4734;176:4595",
+    "I176:4734;176:4595;3:4",
+    "176:4598"
+  ],
+  "repairs": [
+    {
+      "id": "I176:4571;3:4",
+      "field": "strokes",
+      "kind": "Large master"
+    },
+    {
+      "id": "I176:4583;3:4",
+      "field": "strokes",
+      "kind": "Large master"
+    },
+    {
+      "id": "I176:4595;3:4",
+      "field": "strokes",
+      "kind": "Large master"
+    }
+  ],
+  "verified": [
+    {
+      "rootId": "176:4570",
+      "masterId": "176:4570",
+      "mode": "Dark",
+      "labelId": "176:4573",
+      "iconId": "176:4571",
+      "glyphId": "I176:4571;3:4",
+      "variableId": "VariableID:2:45",
+      "labelHex": "#080D17",
+      "glyphHex": "#080D17",
+      "labelUnchanged": true,
+      "geometryAndStylesUnchanged": true,
+      "glyphBefore": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.95686274766922,
+              "g": 0.9686274528503418,
+              "b": 1
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:41"
+              }
+            }
+          }
+        ]
+      },
+      "glyphAfter": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0313725508749485,
+              "g": 0.05098039284348488,
+              "b": 0.09019608050584793
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:45"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rootId": "176:4582",
+      "masterId": "176:4582",
+      "mode": "Dark",
+      "labelId": "176:4585",
+      "iconId": "176:4583",
+      "glyphId": "I176:4583;3:4",
+      "variableId": "VariableID:2:45",
+      "labelHex": "#080D17",
+      "glyphHex": "#080D17",
+      "labelUnchanged": true,
+      "geometryAndStylesUnchanged": true,
+      "glyphBefore": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.95686274766922,
+              "g": 0.9686274528503418,
+              "b": 1
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:41"
+              }
+            }
+          }
+        ]
+      },
+      "glyphAfter": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0313725508749485,
+              "g": 0.05098039284348488,
+              "b": 0.09019608050584793
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:45"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rootId": "176:4594",
+      "masterId": "176:4594",
+      "mode": "Dark",
+      "labelId": "176:4597",
+      "iconId": "176:4595",
+      "glyphId": "I176:4595;3:4",
+      "variableId": "VariableID:2:45",
+      "labelHex": "#080D17",
+      "glyphHex": "#080D17",
+      "labelUnchanged": true,
+      "geometryAndStylesUnchanged": true,
+      "glyphBefore": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.95686274766922,
+              "g": 0.9686274528503418,
+              "b": 1
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:41"
+              }
+            }
+          }
+        ]
+      },
+      "glyphAfter": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0313725508749485,
+              "g": 0.05098039284348488,
+              "b": 0.09019608050584793
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:45"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rootId": "176:4613",
+      "masterId": "176:4570",
+      "mode": "Dark",
+      "labelId": "I176:4613;176:4573",
+      "iconId": "I176:4613;176:4571",
+      "glyphId": "I176:4613;176:4571;3:4",
+      "variableId": "VariableID:2:45",
+      "labelHex": "#080D17",
+      "glyphHex": "#080D17",
+      "labelUnchanged": true,
+      "geometryAndStylesUnchanged": true,
+      "glyphBefore": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.95686274766922,
+              "g": 0.9686274528503418,
+              "b": 1
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:41"
+              }
+            }
+          }
+        ]
+      },
+      "glyphAfter": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0313725508749485,
+              "g": 0.05098039284348488,
+              "b": 0.09019608050584793
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:45"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rootId": "176:4629",
+      "masterId": "176:4582",
+      "mode": "Dark",
+      "labelId": "I176:4629;176:4585",
+      "iconId": "I176:4629;176:4583",
+      "glyphId": "I176:4629;176:4583;3:4",
+      "variableId": "VariableID:2:45",
+      "labelHex": "#080D17",
+      "glyphHex": "#080D17",
+      "labelUnchanged": true,
+      "geometryAndStylesUnchanged": true,
+      "glyphBefore": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.95686274766922,
+              "g": 0.9686274528503418,
+              "b": 1
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:41"
+              }
+            }
+          }
+        ]
+      },
+      "glyphAfter": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0313725508749485,
+              "g": 0.05098039284348488,
+              "b": 0.09019608050584793
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:45"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rootId": "176:4645",
+      "masterId": "176:4594",
+      "mode": "Dark",
+      "labelId": "I176:4645;176:4597",
+      "iconId": "I176:4645;176:4595",
+      "glyphId": "I176:4645;176:4595;3:4",
+      "variableId": "VariableID:2:45",
+      "labelHex": "#080D17",
+      "glyphHex": "#080D17",
+      "labelUnchanged": true,
+      "geometryAndStylesUnchanged": true,
+      "glyphBefore": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.95686274766922,
+              "g": 0.9686274528503418,
+              "b": 1
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:41"
+              }
+            }
+          }
+        ]
+      },
+      "glyphAfter": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0313725508749485,
+              "g": 0.05098039284348488,
+              "b": 0.09019608050584793
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:45"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rootId": "176:4708",
+      "masterId": "176:4570",
+      "mode": "Light",
+      "labelId": "I176:4708;176:4573",
+      "iconId": "I176:4708;176:4571",
+      "glyphId": "I176:4708;176:4571;3:4",
+      "variableId": "VariableID:2:45",
+      "labelHex": "#FFFFFF",
+      "glyphHex": "#FFFFFF",
+      "labelUnchanged": true,
+      "geometryAndStylesUnchanged": true,
+      "glyphBefore": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.09019608050584793,
+              "g": 0.125490203499794,
+              "b": 0.20000000298023224
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:41"
+              }
+            }
+          }
+        ]
+      },
+      "glyphAfter": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:45"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rootId": "176:4721",
+      "masterId": "176:4582",
+      "mode": "Light",
+      "labelId": "I176:4721;176:4585",
+      "iconId": "I176:4721;176:4583",
+      "glyphId": "I176:4721;176:4583;3:4",
+      "variableId": "VariableID:2:45",
+      "labelHex": "#FFFFFF",
+      "glyphHex": "#FFFFFF",
+      "labelUnchanged": true,
+      "geometryAndStylesUnchanged": true,
+      "glyphBefore": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.09019608050584793,
+              "g": 0.125490203499794,
+              "b": 0.20000000298023224
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:41"
+              }
+            }
+          }
+        ]
+      },
+      "glyphAfter": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:45"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rootId": "176:4734",
+      "masterId": "176:4594",
+      "mode": "Light",
+      "labelId": "I176:4734;176:4597",
+      "iconId": "I176:4734;176:4595",
+      "glyphId": "I176:4734;176:4595;3:4",
+      "variableId": "VariableID:2:45",
+      "labelHex": "#FFFFFF",
+      "glyphHex": "#FFFFFF",
+      "labelUnchanged": true,
+      "geometryAndStylesUnchanged": true,
+      "glyphBefore": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.09019608050584793,
+              "g": 0.125490203499794,
+              "b": 0.20000000298023224
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:41"
+              }
+            }
+          }
+        ]
+      },
+      "glyphAfter": {
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2:45"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "loadedFonts": [
+    {
+      "family": "Manrope",
+      "style": "SemiBold",
+      "variationSettings": {
+        "wght": 600
+      }
+    }
+  ],
+  "sharedIconMasterUnchanged": true,
+  "shapeSizePropertiesUnchanged": true,
+  "ownerPostfixVisualReview": "pending"
+}

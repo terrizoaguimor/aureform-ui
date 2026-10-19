@@ -1,0 +1,1321 @@
+{
+  "nodes": [
+    {
+      "id": "225:1708",
+      "name": "WorkspaceStatus",
+      "type": "COMPONENT_SET",
+      "w": 2224,
+      "h": 100,
+      "properties": [
+        "State",
+        "Theme"
+      ],
+      "variants": [
+        {
+          "id": "225:1615",
+          "name": "State=Owner, Theme=Light",
+          "w": 1080,
+          "h": 64
+        },
+        {
+          "id": "225:1629",
+          "name": "State=Owner, Theme=Dark",
+          "w": 1080,
+          "h": 64
+        },
+        {
+          "id": "225:1642",
+          "name": "State=Viewer, Theme=Light",
+          "w": 1080,
+          "h": 64
+        },
+        {
+          "id": "225:1655",
+          "name": "State=Viewer, Theme=Dark",
+          "w": 1080,
+          "h": 64
+        },
+        {
+          "id": "225:1668",
+          "name": "State=Storage-error, Theme=Light",
+          "w": 1080,
+          "h": 256
+        },
+        {
+          "id": "225:1688",
+          "name": "State=Storage-error, Theme=Dark",
+          "w": 1080,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "225:2068",
+      "name": "OnboardingFlow",
+      "type": "COMPONENT_SET",
+      "w": 2224,
+      "h": 100,
+      "properties": [
+        "State",
+        "Theme"
+      ],
+      "variants": [
+        {
+          "id": "225:1709",
+          "name": "State=Organization, Theme=Light",
+          "w": 1080,
+          "h": 350
+        },
+        {
+          "id": "225:1743",
+          "name": "State=Organization, Theme=Dark",
+          "w": 1080,
+          "h": 350
+        },
+        {
+          "id": "225:1776",
+          "name": "State=Workspace, Theme=Light",
+          "w": 1080,
+          "h": 442
+        },
+        {
+          "id": "225:1812",
+          "name": "State=Workspace, Theme=Dark",
+          "w": 1080,
+          "h": 442
+        },
+        {
+          "id": "225:1848",
+          "name": "State=Invitations, Theme=Light",
+          "w": 1080,
+          "h": 480
+        },
+        {
+          "id": "225:1892",
+          "name": "State=Invitations, Theme=Dark",
+          "w": 1080,
+          "h": 480
+        },
+        {
+          "id": "225:1936",
+          "name": "State=Ready, Theme=Light",
+          "w": 1080,
+          "h": 383
+        },
+        {
+          "id": "225:1969",
+          "name": "State=Ready, Theme=Dark",
+          "w": 1080,
+          "h": 383
+        },
+        {
+          "id": "225:2002",
+          "name": "State=Complete, Theme=Light",
+          "w": 1080,
+          "h": 350
+        },
+        {
+          "id": "225:2035",
+          "name": "State=Complete, Theme=Dark",
+          "w": 1080,
+          "h": 350
+        }
+      ]
+    },
+    {
+      "id": "225:2482",
+      "name": "MemberManagement",
+      "type": "COMPONENT_SET",
+      "w": 2224,
+      "h": 100,
+      "properties": [
+        "State",
+        "Theme"
+      ],
+      "variants": [
+        {
+          "id": "225:2069",
+          "name": "State=Default, Theme=Light",
+          "w": 1080,
+          "h": 789
+        },
+        {
+          "id": "225:2135",
+          "name": "State=Default, Theme=Dark",
+          "w": 1080,
+          "h": 789
+        },
+        {
+          "id": "225:2200",
+          "name": "State=Empty, Theme=Light",
+          "w": 1080,
+          "h": 506
+        },
+        {
+          "id": "225:2222",
+          "name": "State=Empty, Theme=Dark",
+          "w": 1080,
+          "h": 506
+        },
+        {
+          "id": "225:2244",
+          "name": "State=Read-only, Theme=Light",
+          "w": 1080,
+          "h": 677
+        },
+        {
+          "id": "225:2286",
+          "name": "State=Read-only, Theme=Dark",
+          "w": 1080,
+          "h": 677
+        },
+        {
+          "id": "225:2328",
+          "name": "State=Confirm, Theme=Light",
+          "w": 1080,
+          "h": 981
+        },
+        {
+          "id": "225:2405",
+          "name": "State=Confirm, Theme=Dark",
+          "w": 1080,
+          "h": 981
+        }
+      ]
+    },
+    {
+      "id": "228:3644",
+      "name": "DataWorkbench",
+      "type": "COMPONENT_SET",
+      "w": 2224,
+      "h": 100,
+      "properties": [
+        "State",
+        "Theme"
+      ],
+      "variants": [
+        {
+          "id": "228:1851",
+          "name": "State=Default, Theme=Light",
+          "w": 1080,
+          "h": 685
+        },
+        {
+          "id": "228:2184",
+          "name": "State=Default, Theme=Dark",
+          "w": 1080,
+          "h": 685
+        },
+        {
+          "id": "228:2475",
+          "name": "State=Filtered, Theme=Light",
+          "w": 1080,
+          "h": 783
+        },
+        {
+          "id": "228:2776",
+          "name": "State=Filtered, Theme=Dark",
+          "w": 1080,
+          "h": 783
+        },
+        {
+          "id": "228:3077",
+          "name": "State=Loading, Theme=Light",
+          "w": 1080,
+          "h": 625
+        },
+        {
+          "id": "228:3208",
+          "name": "State=Loading, Theme=Dark",
+          "w": 1080,
+          "h": 625
+        },
+        {
+          "id": "228:3309",
+          "name": "State=Error, Theme=Light",
+          "w": 1080,
+          "h": 182
+        },
+        {
+          "id": "228:3348",
+          "name": "State=Error, Theme=Dark",
+          "w": 1080,
+          "h": 182
+        },
+        {
+          "id": "228:3383",
+          "name": "State=Empty, Theme=Light",
+          "w": 1080,
+          "h": 569
+        },
+        {
+          "id": "228:3519",
+          "name": "State=Empty, Theme=Dark",
+          "w": 1080,
+          "h": 569
+        }
+      ]
+    },
+    {
+      "id": "228:4134",
+      "name": "ImportWizard",
+      "type": "COMPONENT_SET",
+      "w": 2224,
+      "h": 100,
+      "properties": [
+        "State",
+        "Theme"
+      ],
+      "variants": [
+        {
+          "id": "228:3645",
+          "name": "State=File, Theme=Light",
+          "w": 1080,
+          "h": 558
+        },
+        {
+          "id": "228:3669",
+          "name": "State=File, Theme=Dark",
+          "w": 1080,
+          "h": 558
+        },
+        {
+          "id": "228:3693",
+          "name": "State=Mapping, Theme=Light",
+          "w": 1080,
+          "h": 789
+        },
+        {
+          "id": "228:3759",
+          "name": "State=Mapping, Theme=Dark",
+          "w": 1080,
+          "h": 789
+        },
+        {
+          "id": "228:3824",
+          "name": "State=Preview, Theme=Light",
+          "w": 1080,
+          "h": 588
+        },
+        {
+          "id": "228:3868",
+          "name": "State=Preview, Theme=Dark",
+          "w": 1080,
+          "h": 588
+        },
+        {
+          "id": "228:3912",
+          "name": "State=Review, Theme=Light",
+          "w": 1080,
+          "h": 541
+        },
+        {
+          "id": "228:3941",
+          "name": "State=Review, Theme=Dark",
+          "w": 1080,
+          "h": 541
+        },
+        {
+          "id": "228:3970",
+          "name": "State=Complete, Theme=Light",
+          "w": 1080,
+          "h": 482
+        },
+        {
+          "id": "228:3998",
+          "name": "State=Complete, Theme=Dark",
+          "w": 1080,
+          "h": 482
+        },
+        {
+          "id": "228:4026",
+          "name": "State=Invalid, Theme=Light",
+          "w": 1080,
+          "h": 740
+        },
+        {
+          "id": "228:4080",
+          "name": "State=Invalid, Theme=Dark",
+          "w": 1080,
+          "h": 740
+        }
+      ]
+    },
+    {
+      "id": "228:4817",
+      "name": "RecordDetail",
+      "type": "COMPONENT_SET",
+      "w": 2224,
+      "h": 100,
+      "properties": [
+        "State",
+        "Theme"
+      ],
+      "variants": [
+        {
+          "id": "228:4135",
+          "name": "State=Summary, Theme=Light",
+          "w": 1080,
+          "h": 678
+        },
+        {
+          "id": "228:4221",
+          "name": "State=Summary, Theme=Dark",
+          "w": 1080,
+          "h": 678
+        },
+        {
+          "id": "228:4307",
+          "name": "State=Activity, Theme=Light",
+          "w": 1080,
+          "h": 564
+        },
+        {
+          "id": "228:4365",
+          "name": "State=Activity, Theme=Dark",
+          "w": 1080,
+          "h": 564
+        },
+        {
+          "id": "228:4423",
+          "name": "State=Notes, Theme=Light",
+          "w": 1080,
+          "h": 709
+        },
+        {
+          "id": "228:4488",
+          "name": "State=Notes, Theme=Dark",
+          "w": 1080,
+          "h": 709
+        },
+        {
+          "id": "228:4553",
+          "name": "State=Files, Theme=Light",
+          "w": 1080,
+          "h": 675
+        },
+        {
+          "id": "228:4617",
+          "name": "State=Files, Theme=Dark",
+          "w": 1080,
+          "h": 675
+        },
+        {
+          "id": "228:4681",
+          "name": "State=Related, Theme=Light",
+          "w": 1080,
+          "h": 490
+        },
+        {
+          "id": "228:4737",
+          "name": "State=Related, Theme=Dark",
+          "w": 1080,
+          "h": 490
+        },
+        {
+          "id": "228:4793",
+          "name": "State=Not-found, Theme=Light",
+          "w": 1080,
+          "h": 232
+        },
+        {
+          "id": "228:4805",
+          "name": "State=Not-found, Theme=Dark",
+          "w": 1080,
+          "h": 232
+        }
+      ]
+    },
+    {
+      "id": "232:3939",
+      "name": "WorkspaceSettingsTemplate",
+      "type": "COMPONENT_SET",
+      "w": 2144,
+      "h": 100,
+      "properties": [
+        "State",
+        "Theme"
+      ],
+      "variants": [
+        {
+          "id": "232:3883",
+          "name": "State=Default, Theme=Light",
+          "w": 1024,
+          "h": 670
+        },
+        {
+          "id": "232:3912",
+          "name": "State=Default, Theme=Dark",
+          "w": 1024,
+          "h": 670
+        }
+      ]
+    },
+    {
+      "id": "232:3989",
+      "name": "RowActions",
+      "type": "COMPONENT_SET",
+      "w": 960,
+      "h": 100,
+      "properties": [
+        "State",
+        "Theme"
+      ],
+      "variants": [
+        {
+          "id": "232:3940",
+          "name": "State=Default, Theme=Light",
+          "w": 440,
+          "h": 280
+        },
+        {
+          "id": "232:3957",
+          "name": "State=Default, Theme=Dark",
+          "w": 440,
+          "h": 280
+        },
+        {
+          "id": "232:3973",
+          "name": "State=Read-only, Theme=Light",
+          "w": 440,
+          "h": 168
+        },
+        {
+          "id": "232:3981",
+          "name": "State=Read-only, Theme=Dark",
+          "w": 440,
+          "h": 168
+        }
+      ]
+    },
+    {
+      "id": "232:4040",
+      "name": "DeleteDialog",
+      "type": "COMPONENT_SET",
+      "w": 960,
+      "h": 100,
+      "properties": [
+        "State",
+        "Theme"
+      ],
+      "variants": [
+        {
+          "id": "232:3990",
+          "name": "State=Confirm, Theme=Light",
+          "w": 440,
+          "h": 224
+        },
+        {
+          "id": "232:4002",
+          "name": "State=Confirm, Theme=Dark",
+          "w": 440,
+          "h": 224
+        },
+        {
+          "id": "232:4014",
+          "name": "State=Error, Theme=Light",
+          "w": 440,
+          "h": 260
+        },
+        {
+          "id": "232:4027",
+          "name": "State=Error, Theme=Dark",
+          "w": 440,
+          "h": 260
+        }
+      ]
+    },
+    {
+      "id": "231:3776",
+      "name": "DashboardSidebar / SaaS 1.2",
+      "type": "COMPONENT",
+      "w": 256,
+      "h": 1240,
+      "properties": [
+        "Applications open#38:0"
+      ]
+    },
+    {
+      "id": "29:128",
+      "name": "DashboardHeader",
+      "type": "COMPONENT",
+      "w": 1202,
+      "h": 64,
+      "properties": [
+        "Page title#29:0"
+      ]
+    }
+  ],
+  "trees": [
+    {
+      "id": "228:2475",
+      "children": [
+        {
+          "id": "228:2476",
+          "name": "Table controls",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:2497",
+          "name": "Active AND filters",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:2506",
+          "name": "DataTable / controlled external page",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "228:2775",
+          "name": "All conditions must match. Saved views include filters, colu",
+          "type": "TEXT"
+        }
+      ],
+      "texts": [
+        {
+          "id": "I228:2506;162:926",
+          "name": "Cell / value",
+          "text": "Circooles"
+        },
+        {
+          "id": "I228:2506;162:928;3:123",
+          "name": "label",
+          "text": "Starter"
+        },
+        {
+          "id": "I228:2506;162:933;3:115",
+          "name": "label",
+          "text": "Active"
+        },
+        {
+          "id": "I228:2506;162:936",
+          "name": "Cell / value",
+          "text": "$99"
+        },
+        {
+          "id": "I228:2506;162:938",
+          "name": "Cell / value",
+          "text": "Oct 11, 2026"
+        },
+        {
+          "id": "I228:2506;162:941;3:80",
+          "name": "label",
+          "text": ""
+        },
+        {
+          "id": "I228:2506;162:954;3:146",
+          "name": "initials",
+          "text": "DC"
+        },
+        {
+          "id": "I228:2506;162:957",
+          "name": "Identity / name",
+          "text": "Drew Cano"
+        },
+        {
+          "id": "I228:2506;162:958",
+          "name": "Identity / email",
+          "text": "drew@hourglass.app"
+        },
+        {
+          "id": "I228:2506;162:960",
+          "name": "Cell / value",
+          "text": "Hourglass"
+        },
+        {
+          "id": "I228:2506;162:962;3:123",
+          "name": "label",
+          "text": "Enterprise"
+        },
+        {
+          "id": "I228:2506;162:967;3:117",
+          "name": "label",
+          "text": "Paused"
+        },
+        {
+          "id": "I228:2506;162:970",
+          "name": "Cell / value",
+          "text": "$699"
+        },
+        {
+          "id": "I228:2506;162:972",
+          "name": "Cell / value",
+          "text": "Oct 10, 2026"
+        },
+        {
+          "id": "I228:2506;162:975;3:80",
+          "name": "label",
+          "text": ""
+        },
+        {
+          "id": "I228:2506;162:984",
+          "name": "Pagination / records",
+          "text": "1–5 of 12 rows"
+        },
+        {
+          "id": "I228:2506;162:985",
+          "name": "Pagination / page",
+          "text": "Page 1 of 3"
+        },
+        {
+          "id": "I228:2506;162:987",
+          "name": "Pagination / page size label",
+          "text": "Rows per page"
+        },
+        {
+          "id": "I228:2506;162:989",
+          "name": "Pagination / current page size",
+          "text": "5"
+        },
+        {
+          "id": "I228:2506;162:994;3:52",
+          "name": "label",
+          "text": ""
+        },
+        {
+          "id": "I228:2506;162:1002;3:80",
+          "name": "label",
+          "text": "1"
+        },
+        {
+          "id": "I228:2506;162:1007;3:80",
+          "name": "label",
+          "text": "2"
+        },
+        {
+          "id": "I228:2506;162:1012;3:80",
+          "name": "label",
+          "text": "3"
+        },
+        {
+          "id": "I228:2506;162:1017;3:44",
+          "name": "label",
+          "text": ""
+        },
+        {
+          "id": "228:2775",
+          "name": "All conditions must match. Saved views include filters, colu",
+          "text": "All conditions must match. Saved views include filters, columns and density."
+        }
+      ]
+    },
+    {
+      "id": "228:4135",
+      "children": [
+        {
+          "id": "228:4136",
+          "name": "ghost / Back to customers",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "228:4140",
+          "name": "Frame",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4167",
+          "name": "Customer sections",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4188",
+          "name": "Customer summary",
+          "type": "FRAME"
+        }
+      ],
+      "texts": [
+        {
+          "id": "I228:4176;3:92",
+          "name": "label",
+          "text": "Notes 1"
+        },
+        {
+          "id": "I228:4180;3:92",
+          "name": "label",
+          "text": "Files 0"
+        },
+        {
+          "id": "I228:4184;3:92",
+          "name": "label",
+          "text": "Related 0"
+        },
+        {
+          "id": "228:4190",
+          "name": "Customer details",
+          "text": "Customer details"
+        },
+        {
+          "id": "228:4191",
+          "name": "The essentials for a thoughtful customer relationship.",
+          "text": "The essentials for a thoughtful customer relationship."
+        },
+        {
+          "id": "228:4193",
+          "name": "Full name",
+          "text": "Full name"
+        },
+        {
+          "id": "228:4194",
+          "name": "Email address",
+          "text": "Email address"
+        },
+        {
+          "id": "228:4196",
+          "name": "Olivia Rhye",
+          "text": "Olivia Rhye"
+        },
+        {
+          "id": "228:4197",
+          "name": "olivia@layers.studio",
+          "text": "olivia@layers.studio"
+        },
+        {
+          "id": "228:4199",
+          "name": "Company",
+          "text": "Company"
+        },
+        {
+          "id": "228:4200",
+          "name": "Customer ID",
+          "text": "Customer ID"
+        },
+        {
+          "id": "228:4202",
+          "name": "Layers",
+          "text": "Layers"
+        },
+        {
+          "id": "228:4203",
+          "name": "cus-001",
+          "text": "cus-001"
+        },
+        {
+          "id": "228:4205",
+          "name": "Plan: Pro",
+          "text": "Plan: Pro"
+        },
+        {
+          "id": "228:4206",
+          "name": "Status: Active",
+          "text": "Status: Active"
+        },
+        {
+          "id": "228:4208",
+          "name": "Account at a glance",
+          "text": "Account at a glance"
+        },
+        {
+          "id": "228:4209",
+          "name": "All the context, all in one place.",
+          "text": "All the context, all in one place."
+        },
+        {
+          "id": "228:4210",
+          "name": "Account amount",
+          "text": "Account amount"
+        },
+        {
+          "id": "228:4211",
+          "name": "$249.00",
+          "text": "$249.00"
+        },
+        {
+          "id": "228:4213",
+          "name": "Customer since",
+          "text": "Customer since"
+        },
+        {
+          "id": "228:4214",
+          "name": "Oct 14, 2026",
+          "text": "Oct 14, 2026"
+        },
+        {
+          "id": "228:4216",
+          "name": "Team notes",
+          "text": "Team notes"
+        },
+        {
+          "id": "228:4217",
+          "name": "1",
+          "text": "1"
+        },
+        {
+          "id": "228:4219",
+          "name": "Attached files",
+          "text": "Attached files"
+        },
+        {
+          "id": "228:4220",
+          "name": "0",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "id": "228:4423",
+      "children": [
+        {
+          "id": "228:4424",
+          "name": "ghost / Back to customers",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "228:4428",
+          "name": "Frame",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4455",
+          "name": "Customer sections",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4476",
+          "name": "Team notes",
+          "type": "FRAME"
+        }
+      ],
+      "texts": [
+        {
+          "id": "I228:4431;3:148",
+          "name": "initials",
+          "text": "OR"
+        },
+        {
+          "id": "228:4434",
+          "name": "Olivia Rhye",
+          "text": "Olivia Rhye"
+        },
+        {
+          "id": "228:4435",
+          "name": "Layers · olivia@layers.studio",
+          "text": "Layers · olivia@layers.studio"
+        },
+        {
+          "id": "I228:4436;3:123",
+          "name": "label",
+          "text": "Active"
+        },
+        {
+          "id": "I228:4438;3:56",
+          "name": "label",
+          "text": "Edit customer"
+        },
+        {
+          "id": "228:4444",
+          "name": "Company",
+          "text": "Company"
+        },
+        {
+          "id": "228:4445",
+          "name": "Layers",
+          "text": "Layers"
+        },
+        {
+          "id": "228:4447",
+          "name": "Plan",
+          "text": "Plan"
+        },
+        {
+          "id": "228:4448",
+          "name": "Pro",
+          "text": "Pro"
+        },
+        {
+          "id": "228:4450",
+          "name": "Customer since",
+          "text": "Customer since"
+        },
+        {
+          "id": "228:4451",
+          "name": "Oct 14, 2026",
+          "text": "Oct 14, 2026"
+        },
+        {
+          "id": "228:4453",
+          "name": "Contact",
+          "text": "Contact"
+        },
+        {
+          "id": "228:4454",
+          "name": "olivia@layers.studio",
+          "text": "olivia@layers.studio"
+        },
+        {
+          "id": "I228:4456;3:92",
+          "name": "label",
+          "text": "Summary"
+        },
+        {
+          "id": "I228:4460;3:92",
+          "name": "label",
+          "text": "Activity 2"
+        },
+        {
+          "id": "I228:4464;3:56",
+          "name": "label",
+          "text": "Notes 1"
+        },
+        {
+          "id": "I228:4468;3:92",
+          "name": "label",
+          "text": "Files 0"
+        },
+        {
+          "id": "I228:4472;3:92",
+          "name": "label",
+          "text": "Related 0"
+        },
+        {
+          "id": "228:4477",
+          "name": "Team notes",
+          "text": "Team notes"
+        },
+        {
+          "id": "228:4478",
+          "name": "Keep the context that matters to your team.",
+          "text": "Keep the context that matters to your team."
+        },
+        {
+          "id": "228:4479",
+          "name": "Alex Morgan · Oct 16, 2026",
+          "text": "Alex Morgan · Oct 16, 2026"
+        },
+        {
+          "id": "228:4480",
+          "name": "Interested in bringing the design team into the next workspa",
+          "text": "Interested in bringing the design team into the next workspace."
+        },
+        {
+          "id": "228:4481",
+          "name": "Add a note",
+          "text": "Add a note"
+        },
+        {
+          "id": "I228:4482;3:126",
+          "name": "value",
+          "text": "Share a little context…"
+        },
+        {
+          "id": "I228:4484;3:20",
+          "name": "label",
+          "text": "Add note"
+        }
+      ]
+    }
+  ],
+  "styles": [
+    {
+      "id": "S:5faf04911817250a0f581d8bc0cf614413bd0c07,",
+      "name": "Aureform/Caption",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "S:c9331f77f34964fbf68953e792e55afebd44c2cc,",
+      "name": "Aureform/Body small",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "S:6fd77fbb36be3a4f7565350e600f35691f34a4e4,",
+      "name": "Aureform/Body",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 14
+    },
+    {
+      "id": "S:5edcfcc677c29f2698248accbde30e0839ca5535,",
+      "name": "Aureform/Body strong",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 14
+    },
+    {
+      "id": "S:c44d3974dcfbb8d8e98397aaeff09c2906dc7bce,",
+      "name": "Aureform/Subtitle",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 16
+    },
+    {
+      "id": "S:7779c38bd9d3462e0d7666ce289e1fd2a925c8c8,",
+      "name": "Aureform/Title",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 24
+    },
+    {
+      "id": "S:b2c459051960c8f946a6a315d2e9036c2f7526dd,",
+      "name": "Aureform/Display",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 36
+    },
+    {
+      "id": "S:16b586b0e44e522977001bb778cf85e5e3658f33,",
+      "name": "Aureform/Hero",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 80
+    },
+    {
+      "id": "S:204147353886bcd7b90ed12b86ed3e55b646af9f,",
+      "name": "Aureform/Editorial display",
+      "fontName": {
+        "family": "Instrument Serif",
+        "style": "Regular"
+      },
+      "fontSize": 36
+    },
+    {
+      "id": "S:0637cd94f295e4394e41a5d89d6a0790664235f3,",
+      "name": "Aureform/Editorial hero",
+      "fontName": {
+        "family": "Instrument Serif",
+        "style": "Regular"
+      },
+      "fontSize": 80
+    },
+    {
+      "id": "S:d45f895a9c506b67dcd6818a673cf86afcaab62d,",
+      "name": "Aureform/Control",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "S:2f1bd55235a75aaa6e4a6158bb084596a807617f,",
+      "name": "Aureform/Card title",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 18
+    },
+    {
+      "id": "S:5439cfd6af063a94fd64971a58b270778334c77d,",
+      "name": "Aureform/Label",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "S:9ae2ee283a9f179c5d3f97c0c195945d5735ad7a,",
+      "name": "Aureform/Display large",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 56
+    }
+  ],
+  "paintStyles": [
+    {
+      "id": "S:1ddc80b10ce6bacdeced1fa60b061deaa49a7add,",
+      "name": "Aureform/Gradient/Light/surface"
+    },
+    {
+      "id": "S:f94b92637c8981e80ad9cb928d38a6e14c05b74e,",
+      "name": "Aureform/Gradient/Light/control"
+    },
+    {
+      "id": "S:c776c8f943f650fd082e919a721604b74937c532,",
+      "name": "Aureform/Gradient/Dark/surface"
+    },
+    {
+      "id": "S:4e792a1e5af7cc9f071c45e15dad490e18e5adff,",
+      "name": "Aureform/Gradient/Dark/control"
+    }
+  ],
+  "collections": [
+    {
+      "id": "VariableCollectionId:2:7",
+      "name": "Aureform · Primitives",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "2:0"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:2:36",
+      "name": "Aureform · Color",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "2:1"
+        },
+        {
+          "name": "Dark",
+          "modeId": "2:2"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:2:58",
+      "name": "Aureform · Dimension",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "2:3"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:317",
+      "name": "Aureform · Color · Violet",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:0"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:1"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:381",
+      "name": "Aureform · Color · Ocean",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:2"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:3"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:445",
+      "name": "Aureform · Color · Mint",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:4"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:5"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:509",
+      "name": "Aureform · Color · Ember",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:6"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:7"
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:95:573",
+      "name": "Aureform · Color · Rose",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "95:8"
+        },
+        {
+          "name": "Dark",
+          "modeId": "95:9"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "id": "2:2",
+      "name": "00 · Cover"
+    },
+    {
+      "id": "0:1",
+      "name": "01 · Foundations"
+    },
+    {
+      "id": "2:3",
+      "name": "02 · Core"
+    },
+    {
+      "id": "2:4",
+      "name": "03 · Blocks"
+    },
+    {
+      "id": "2:5",
+      "name": "04 · Templates 1.0"
+    },
+    {
+      "id": "2:6",
+      "name": "05 · Suite 1.1–1.3"
+    }
+  ]
+}

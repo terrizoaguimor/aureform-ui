@@ -1,0 +1,102 @@
+{
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "26:34",
+    "26:38",
+    "26:51",
+    "26:72",
+    "26:76",
+    "26:126",
+    "26:130",
+    "26:143",
+    "26:164",
+    "26:168",
+    "101:27",
+    "101:728"
+  ],
+  "labels": [
+    {
+      "id": "26:34",
+      "role": "primary",
+      "mode": "2:1",
+      "text": "#764ED1 \u00b7 var(--primary)"
+    },
+    {
+      "id": "26:38",
+      "role": "primary-hover",
+      "mode": "2:1",
+      "text": "#6845B8 \u00b7 var(--primary-hover)"
+    },
+    {
+      "id": "26:51",
+      "role": "accent-foreground",
+      "mode": "2:1",
+      "text": "#764ED1 \u00b7 var(--accent-foreground)"
+    },
+    {
+      "id": "26:72",
+      "role": "ring",
+      "mode": "2:1",
+      "text": "#764ED1 \u00b7 var(--ring)"
+    },
+    {
+      "id": "26:76",
+      "role": "chart-1",
+      "mode": "2:1",
+      "text": "#764ED1 \u00b7 var(--chart-1)"
+    },
+    {
+      "id": "26:126",
+      "role": "primary",
+      "mode": "2:2",
+      "text": "#AB8AF9 \u00b7 var(--primary)"
+    },
+    {
+      "id": "26:130",
+      "role": "primary-hover",
+      "mode": "2:2",
+      "text": "#B598FA \u00b7 var(--primary-hover)"
+    },
+    {
+      "id": "26:143",
+      "role": "accent-foreground",
+      "mode": "2:2",
+      "text": "#AB8AF9 \u00b7 var(--accent-foreground)"
+    },
+    {
+      "id": "26:164",
+      "role": "ring",
+      "mode": "2:2",
+      "text": "#AB8AF9 \u00b7 var(--ring)"
+    },
+    {
+      "id": "26:168",
+      "role": "chart-1",
+      "mode": "2:2",
+      "text": "#AB8AF9 \u00b7 var(--chart-1)"
+    }
+  ],
+  "boards": [
+    {
+      "id": "26:2",
+      "width": 1440,
+      "height": 1096
+    },
+    {
+      "id": "26:94",
+      "width": 1440,
+      "height": 1096
+    },
+    {
+      "id": "101:25",
+      "width": 1440,
+      "height": 1055
+    },
+    {
+      "id": "101:726",
+      "width": 1440,
+      "height": 1055
+    }
+  ],
+  "source": "tokens/aureform.tokens.json"
+}

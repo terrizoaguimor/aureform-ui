@@ -1,0 +1,17 @@
+{
+  "status": "OWNER_VIEW_LOADING_FAIL",
+  "nodeId": "169:2062",
+  "path": "/tmp/aureform-consumer-1.1-final-eurkrq2x/native-table-lease/table-1.1-light-dark-composition.png",
+  "width": 2492,
+  "height": 5585,
+  "format": "png",
+  "sha256": "88263af4032a12fec0c81d0edfde256d442faa70d02b4266b7df8a4c2974cb86",
+  "ownerVisualReview": {
+    "passingCases": 9,
+    "failingCase": "Loading",
+    "defect": "Skeleton content overflow and footer overlap",
+    "correctedBy": "loading-body-postfix.native-return.json"
+  },
+  "localObservedSHA256": "88263af4032a12fec0c81d0edfde256d442faa70d02b4266b7df8a4c2974cb86",
+  "bytes": 2401282
+}

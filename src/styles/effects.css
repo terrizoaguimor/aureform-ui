@@ -1,0 +1,342 @@
+/*
+ * Aureform effects. Import after the generated tokens.css in globals.css.
+ * Component-layer rules allow Tailwind utilities to override decoration.
+ * Shadow composition retains Tailwind 4 focus rings.
+ */
+@layer components {
+  .af-surface-gradient {
+    background-color: var(--surface);
+    background-image: var(--af-gradient-surface);
+  }
+
+  .af-hero-gradient {
+    background-color: var(--background);
+    background-image: var(--af-gradient-hero);
+  }
+
+  .af-shadow-soft {
+    --tw-shadow: var(--af-shadow-soft);
+  }
+
+  .af-shadow-elevated {
+    --tw-shadow: var(--af-hover-shadow, var(--af-shadow-elevated));
+  }
+
+  .af-shadow-floating {
+    --tw-shadow: var(--af-shadow-floating);
+  }
+
+  .af-shadow-soft,
+  .af-shadow-elevated,
+  .af-shadow-floating,
+  .af-hover-card,
+  .af-button {
+    box-shadow:
+      var(--tw-inset-shadow, 0 0 #0000), var(--tw-inset-ring-shadow, 0 0 #0000),
+      var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow, 0 0 #0000);
+  }
+
+  .af-button {
+    transition:
+      background-color var(--af-motion-fast) var(--af-motion-easing),
+      border-color var(--af-motion-fast) var(--af-motion-easing),
+      color var(--af-motion-fast) var(--af-motion-easing),
+      box-shadow var(--af-motion-hover) var(--af-motion-easing);
+  }
+
+  .af-button-primary,
+  .af-button-outline,
+  .af-button-surface,
+  .af-button-destructive {
+    background-image: var(--af-gradient-control);
+  }
+
+  .af-button-primary,
+  .af-button-surface,
+  .af-button-destructive {
+    --tw-shadow: var(--af-shadow-soft);
+  }
+
+  .af-hover-card {
+    transition:
+      background-color var(--af-motion-fast) var(--af-motion-easing),
+      border-color var(--af-motion-fast) var(--af-motion-easing),
+      box-shadow var(--af-motion-hover) var(--af-motion-easing),
+      transform var(--af-motion-hover) var(--af-motion-easing);
+  }
+
+  .af-hover-link {
+    color: var(--primary);
+    text-decoration-line: underline;
+    text-decoration-color: color-mix(in srgb, var(--primary) 45%, transparent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+    transition:
+      color var(--af-motion-fast) var(--af-motion-easing),
+      text-decoration-color var(--af-motion-fast) var(--af-motion-easing);
+  }
+
+  .af-hover-link:where(
+      :not(
+        :disabled,
+        [data-disabled],
+        [aria-disabled="true"],
+        [aria-busy="true"]
+      )
+    ):focus-visible {
+    color: var(--primary-hover);
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 2px;
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .af-button-outline:where(
+        :not(
+          :disabled,
+          [data-disabled],
+          [aria-disabled="true"],
+          [aria-busy="true"]
+        )
+      ):hover {
+      --tw-shadow: var(--af-shadow-soft);
+    }
+
+    .af-hover-link:where(
+        :not(
+          :disabled,
+          [data-disabled],
+          [aria-disabled="true"],
+          [aria-busy="true"]
+        )
+      ):hover {
+      color: var(--primary-hover);
+      text-decoration-color: currentColor;
+      text-decoration-thickness: 2px;
+    }
+  }
+
+  .af-button:where(
+      :not(
+        :disabled,
+        [data-disabled],
+        [aria-disabled="true"],
+        [aria-busy="true"]
+      )
+    ):active {
+    --tw-shadow: 0 0 #0000;
+  }
+
+  .af-button:where(
+    :disabled,
+    [data-disabled],
+    [aria-disabled="true"],
+    [aria-busy="true"]
+  ),
+  .af-hover-card:where(
+    :disabled,
+    [data-disabled],
+    [aria-disabled="true"],
+    [aria-busy="true"]
+  ),
+  .af-hover-link:where(
+    :disabled,
+    [data-disabled],
+    [aria-disabled="true"],
+    [aria-busy="true"]
+  ) {
+    cursor: default;
+    pointer-events: none;
+    animation: none;
+    transition: none;
+    transform: none;
+    translate: none;
+  }
+
+  .af-button:where(
+    :disabled,
+    [data-disabled],
+    [aria-disabled="true"],
+    [aria-busy="true"]
+  ) {
+    --tw-shadow: 0 0 #0000;
+    background-image: none;
+  }
+}
+
+/* Interactive state colors must take precedence over a base bg-surface utility. */
+@layer utilities {
+  .af-hover-card:where(
+      :not(
+        :disabled,
+        [data-disabled],
+        [aria-disabled="true"],
+        [aria-busy="true"]
+      )
+    ):focus-visible {
+    --tw-shadow: var(--af-shadow-elevated);
+    background-color: var(--af-shade-card);
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+    transform: translateY(var(--af-motion-lift));
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .af-hover-card:where(
+        :not(
+          :disabled,
+          [data-disabled],
+          [aria-disabled="true"],
+          [aria-busy="true"]
+        )
+      ):hover {
+      --tw-shadow: var(--af-hover-shadow, var(--af-shadow-elevated));
+      background-color: var(--af-shade-card);
+      transform: translateY(var(--af-motion-lift));
+    }
+  }
+}
+
+@layer components {
+  .af-appearance-scope {
+    color: var(--foreground);
+    background-color: var(--background);
+    font-family: var(--font-manrope, "Manrope"), system-ui, sans-serif;
+  }
+
+  .af-gradient-text {
+    color: var(--primary);
+    background-image: var(--af-gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .af-gradient-border {
+    border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+    box-shadow: inset 0 1px 0 color-mix(in srgb, var(--primary) 18%, transparent);
+  }
+
+  .af-card {
+    --tw-shadow: var(--af-card-shadow, var(--af-shadow-soft));
+    background-color: var(--af-card-background, var(--surface));
+    background-image: var(--af-card-image, none);
+    -webkit-backdrop-filter: var(--af-card-blur, none);
+    backdrop-filter: var(--af-card-blur, none);
+    border-radius: var(--af-radius, 16px);
+    transition:
+      border-color var(--af-motion-hover) var(--af-motion-easing),
+      box-shadow var(--af-motion-hover) var(--af-motion-easing),
+      background-color var(--af-motion-fast) var(--af-motion-easing);
+  }
+
+  .af-card-flat {
+    --af-card-background: var(--surface);
+    --af-card-image: none;
+    --af-card-shadow: 0 0 #0000;
+    --af-card-blur: none;
+  }
+  .af-card-elevated {
+    --af-card-background: var(--surface);
+    --af-card-image: none;
+    --af-card-shadow: var(--af-shadow-elevated);
+    --af-card-blur: none;
+  }
+  .af-card-glass {
+    --af-card-background: var(--af-glass-background);
+    --af-card-image: linear-gradient(130deg, color-mix(in srgb, var(--primary) 8%, transparent), transparent 65%);
+    --af-card-shadow: var(--af-shadow-soft);
+    --af-card-blur: blur(var(--af-glass-blur));
+    border-color: color-mix(in srgb, var(--primary) 30%, var(--border));
+  }
+  .af-card-gradient {
+    --af-card-background: var(--surface);
+    --af-card-image: linear-gradient(135deg, var(--surface) 25%, color-mix(in srgb, var(--af-color-primary) 20%, var(--surface)));
+    --af-card-shadow: var(--af-shadow-elevated);
+    --af-card-blur: none;
+    border-color: color-mix(in srgb, var(--primary) 30%, var(--border));
+  }
+
+  .af-control-solid { background-image: none; }
+  .af-control-gradient {
+    background-color: var(--primary);
+    background-image: var(--af-gradient-primary);
+    color: var(--primary-foreground);
+    --tw-shadow: var(--af-shadow-soft);
+  }
+  .af-control-gradient:hover:not(:disabled,[data-disabled]) {
+    --tw-shadow: var(--af-glow);
+  }
+  .af-control-soft {
+    background-color: var(--accent);
+    background-image: none;
+    color: var(--accent-foreground);
+    border: 1px solid color-mix(in srgb, var(--primary) 24%, var(--border));
+  }
+  .af-control-outline {
+    background-color: var(--surface);
+    background-image: none;
+    border: 1px solid color-mix(in srgb, var(--primary) 45%, var(--border));
+    color: var(--foreground);
+    --tw-shadow: 0 0 #0000;
+  }
+  .af-control-glass {
+    background-color: var(--af-glass-background);
+    background-image: linear-gradient(120deg, color-mix(in srgb, var(--primary) 10%, transparent), transparent);
+    backdrop-filter: blur(var(--af-glass-blur));
+    border: 1px solid color-mix(in srgb, var(--primary) 45%, var(--border));
+    color: var(--foreground);
+  }
+
+  .af-badge-solid, .af-badge-gradient {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+  .af-badge-gradient { background-image: var(--af-gradient-primary); }
+  .af-badge-soft { background-color: var(--accent); color: var(--accent-foreground); }
+  .af-badge-outline { background-color: transparent; color: var(--foreground); border: 1px solid var(--border); }
+  .af-badge-glass { background-color: var(--af-glass-background); color: var(--foreground); border: 1px solid var(--border); backdrop-filter: blur(12px); }
+
+  .af-button-destructive[data-appearance] {
+    color: var(--destructive-foreground);
+    background-color: var(--destructive);
+    background-image: none;
+    border-color: color-mix(in srgb, var(--destructive-foreground) 45%, var(--border));
+  }
+  .af-button[data-disabled], .af-button:disabled {
+    background-image: none;
+    backdrop-filter: none;
+  }
+
+  .af-input, .af-textarea {
+    border-color: color-mix(in srgb, var(--muted-foreground) 48%, var(--surface));
+  }
+}
+
+[data-motion-level="off"] :where(.af-button,.af-hover-card,.af-hover-link,.af-card),
+[data-motion-level="off"] :where(.af-button,.af-hover-card,.af-hover-link,.af-card)::before,
+[data-motion-level="off"] :where(.af-button,.af-hover-card,.af-hover-link,.af-card)::after {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .af-button,
+  .af-button::before,
+  .af-button::after,
+  .af-button[aria-busy="true"] > svg,
+  .af-hover-card,
+  .af-hover-card::before,
+  .af-hover-card::after,
+  .af-hover-link,
+  .af-hover-link::before,
+  .af-hover-link::after {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    translate: none !important;
+  }
+}

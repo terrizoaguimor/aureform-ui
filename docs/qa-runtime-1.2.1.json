@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.1",
+  "recordedAt": "2026-10-19T18:06:49.722597+00:00",
+  "status": "passed-scoped-generated-image-source-runtime-and-delivery",
+  "scope": "Generated content, current application image behavior, image installation and local Code Connect. Final archive and publication identities are recorded separately after packaging.",
+  "generation": {
+    "model": "gpt-image-2.5-flare-2026-09-08",
+    "api": "OpenAI Images API",
+    "tool": "imagegen/scripts/image_gen.py",
+    "quality": "high",
+    "background": "opaque",
+    "outputFormat": "webp",
+    "outputCompression": 92,
+    "canary": {
+      "assets": 1,
+      "exitCode": 0,
+      "elapsedSeconds": 20.8
+    },
+    "batch": {
+      "assets": 31,
+      "exitCode": 0,
+      "concurrency": 3,
+      "maxAttempts": 2,
+      "jsonl": "output/imagegen/prompts/collection.jsonl"
+    },
+    "visualReview": {
+      "assetsReviewed": 32,
+      "contactSheets": [
+        "output/imagegen/review/avatars-contact-sheet.jpg",
+        "output/imagegen/review/products-contact-sheet.jpg",
+        "output/imagegen/review/art-contact-sheet.jpg"
+      ],
+      "accepted": 32,
+      "rejected": 0
+    },
+    "masters": 32,
+    "receipt": {
+      "file": "output/imagegen/generation-receipt.json",
+      "bytes": 9983,
+      "sha256": "1fbed04cf3c52a9ee0e51a176be0060c678fd4f366ae0242ec5c95eb516d68ad"
+    },
+    "masterFilesExcludedFromPublicDelivery": true
+  },
+  "assets": {
+    "manifest": {
+      "file": "public/assets/generated-images.json",
+      "bytes": 31838,
+      "sha256": "f172bc614dd05450bc9e7872d8670c59c0b4d4c4e839176e233f68350f0c8a51"
+    },
+    "catalog": {
+      "file": "docs/generated-images/catalog.json",
+      "bytes": 48295,
+      "sha256": "49c7f927890c1e052176efc0481dd304b8d6ee126d9cbc14c84f3d020c989eca"
+    },
+    "count": 32,
+    "groups": {
+      "portraits": 16,
+      "organizationAvatars": 2,
+      "products": 8,
+      "editorial": 6
+    },
+    "webpBytes": 712622,
+    "portableSvgBytes": 958716,
+    "assetPairsVerified": 32,
+    "runtimeGenerationRequired": false
+  },
+  "sourceChecks": {
+    "typecheckAndWholeSourceLint": [
+      {
+        "name": "typecheck",
+        "command": [
+          "pnpm",
+          "typecheck"
+        ],
+        "exitCode": 0,
+        "status": "passed",
+        "startedAt": "2026-10-19T17:22:04.169Z",
+        "finishedAt": "2026-10-19T17:22:06.177Z",
+        "log": "artifacts/image-assets-1.2.1/checks-r2/typecheck.log",
+        "logSha256": "a04f7563e20c1931755dbfe0c0b2bbfb3e75f1be6ec5255dcca52eb784c0d31a"
+      },
+      {
+        "name": "lint",
+        "command": [
+          "pnpm",
+          "exec",
+          "eslint",
+          ".",
+          "--max-warnings=0"
+        ],
+        "exitCode": 0,
+        "status": "passed",
+        "startedAt": "2026-10-19T17:22:04.171Z",
+        "finishedAt": "2026-10-19T17:22:12.144Z",
+        "log": "artifacts/image-assets-1.2.1/checks-r2/lint.log",
+        "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "latestUnitSuite": {
+      "tests": 184,
+      "passed": 184,
+      "failed": 0,
+      "name": "unit",
+      "command": [
+        "pnpm",
+        "test"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "elapsedSeconds": 2.27,
+      "log": "artifacts/image-assets-1.2.1/final-starter-checks/unit.log",
+      "logSha256": "fac9934304589bcb4a03232ccc5f75ab7db035378398fbcc114bb06ab11850b5"
+    },
+    "deliveryScriptLint": {
+      "name": "targeted-lint",
+      "command": [
+        "pnpm",
+        "exec",
+        "eslint",
+        "bin/aureform.mjs",
+        "scripts/capture-image-previews.mjs",
+        "scripts/verify-image-assets.mjs",
+        "scripts/package-source.mjs",
+        "scripts/generate-coverage.mjs",
+        "src/components/blocks/member-management.tsx",
+        "src/components/templates/data-manager.tsx",
+        "--max-warnings=0"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "elapsedSeconds": 1.38,
+      "log": "artifacts/image-assets-1.2.1/final-starter-checks/targeted-lint.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "canonicalExamples": {
+      "evidence": {
+        "file": "artifacts/examples-validation/validation-summary.json",
+        "bytes": 20442,
+        "sha256": "119062630dbeb234ac4cbf8a4cc92c2b7cc075e55c4b61583410c81748337507"
+      },
+      "families": 44,
+      "rootFiles": 733,
+      "diagnostics": 0,
+      "strict": true
+    },
+    "productionBuild": {
+      "version": "1.2.1",
+      "status": "passed",
+      "command": [
+        "pnpm",
+        "build"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-19T17:39:34.985Z",
+      "finishedAt": "2026-10-19T17:39:42.089Z",
+      "log": "artifacts/image-assets-1.2.1/checks-r4/build.log",
+      "logSha256": "c107ff818c1ffff693ed8815e9bbf789cb0359f834d66e273cd8e6abe7ebb753",
+      "staticPages": 141,
+      "buildId": {
+        "file": ".next/BUILD_ID",
+        "bytes": 21,
+        "sha256": "f48c239b8cacc81e33ac5ea960d7ec3b6f29b653c0f2662a532061892ce9a85a"
+      }
+    }
+  },
+  "applicationImages": {
+    "evidence": {
+      "file": "artifacts/image-assets-1.2.1/ui/report.json",
+      "bytes": 353883,
+      "sha256": "1bb091978833b0b67e654fbf062b0f7042dab4411eec646a92cab3c48d6efbd4"
+    },
+    "scope": "Nine image-bearing routes in EN/ES, Light/Dark, 360/1440px; explicit profile/note identities and real Avatar fallbacks.",
+    "routeCases": 72,
+    "scopedAxeRuns": 16,
+    "scopedAxeViolations": 0,
+    "axeIncompleteRetainedInOriginalReport": true,
+    "behaviorChecks": [
+      {
+        "kind": "profile-photo-persists-through-rename-and-reload",
+        "passed": true
+      },
+      {
+        "kind": "note-author-photo-persists-with-explicit-member-id",
+        "passed": true
+      },
+      {
+        "kind": "unknown-profile-initials-fallback",
+        "passed": true
+      },
+      {
+        "kind": "failed-photo-initials-fallback",
+        "intentionalBlockedAsset": "/assets/avatars/alex-morgan.svg",
+        "passed": true
+      }
+    ],
+    "sourceIntegrityVerified": true,
+    "screenshots": [
+      {
+        "file": "settings-team-light-360.png",
+        "sha256": "6f33d3daf66b7f3fb844f41f5398ccc1d39089374295bd4ef0ee3fe9a379e6b2",
+        "bytes": 154075
+      },
+      {
+        "file": "settings-profile-light-360.png",
+        "sha256": "5d9a710a6f311b610ea477b6af4b94f0fd90eb8e465f9ba028f05bb82131c449",
+        "bytes": 123716
+      },
+      {
+        "file": "products-light-360.png",
+        "sha256": "c7902d1fd68e876d7f3b233ab7a13d343acb5e55cfa71bfdb80bc1ea4d1dbc87",
+        "bytes": 152186
+      },
+      {
+        "file": "media-light-360.png",
+        "sha256": "2844dca4df1672695258c7dcd189f72cdcec088b02d1b5236562ef7c6db3af88",
+        "bytes": 202436
+      },
+      {
+        "file": "settings-team-light-1440.png",
+        "sha256": "85c8b6184dba8f3461b94b26f966fb843da810fd16f3f99560a0be1da9509213",
+        "bytes": 450276
+      },
+      {
+        "file": "settings-profile-light-1440.png",
+        "sha256": "9f1f402335de11df066ab5ec30d3aa3e5eb9e4536dea7ede039ab1285956f487",
+        "bytes": 374074
+      },
+      {
+        "file": "products-light-1440.png",
+        "sha256": "4b61c29809ecc1c7f7abcb8954e465508ee351579ce69249e22e55d82c413eb9",
+        "bytes": 435697
+      },
+      {
+        "file": "media-light-1440.png",
+        "sha256": "de780b00d1436593b774fcf9195d42e36af46cf8ca9009be2881f19470d67435",
+        "bytes": 673688
+      },
+      {
+        "file": "settings-team-dark-360.png",
+        "sha256": "8496fd04c64946a6621d7bc2666dc7de8fe4107791e6ee385c49b657e3133607",
+        "bytes": 172625
+      },
+      {
+        "file": "settings-profile-dark-360.png",
+        "sha256": "8bed6ec53855e75618761236949645bd54e582c6b53dee590bc4b2ed2ad94013",
+        "bytes": 138440
+      },
+      {
+        "file": "products-dark-360.png",
+        "sha256": "5af1dc9a2f1baf545cb6a25b19fe8a622d2e3b36be1ee3af2daaf952ebec0184",
+        "bytes": 167395
+      },
+      {
+        "file": "media-dark-360.png",
+        "sha256": "60090bc9e9237896606b985fdd5d7dc3ece90251023aa8577d25a74011b39db1",
+        "bytes": 215157
+      },
+      {
+        "file": "settings-team-dark-1440.png",
+        "sha256": "919f2a36416aec1534eb74e553ed52342bd5240098bc59f4ec4849acebf2a76b",
+        "bytes": 513461
+      },
+      {
+        "file": "settings-profile-dark-1440.png",
+        "sha256": "02ed62e6f17181c77440900230fb11ff694d7d257bc304cd3a8cb5db1dabc041",
+        "bytes": 397206
+      },
+      {
+        "file": "products-dark-1440.png",
+        "sha256": "0cc5ab77785927467bc2a6e083b5462b556c4778827f187f56e420c3502f9653",
+        "bytes": 450036
+      },
+      {
+        "file": "media-dark-1440.png",
+        "sha256": "2cc5294ad8b4195c1689e83bf095a0aa092dedf95b0e5ac245bc73e05cd981fa",
+        "bytes": 682628
+      }
+    ]
+  },
+  "applicationPreviews": {
+    "evidence": {
+      "file": "artifacts/image-assets-1.2.1/previews/report.json",
+      "bytes": 38625,
+      "sha256": "ede32c5de9e62425f51332840691308859d713c2f295d878f095fb229b7b7a0d"
+    },
+    "scope": "Actual EN desktop previews, all 69 views in Light and Dark; image decoding and page errors.",
+    "previews": 138,
+    "pageErrors": 0,
+    "failedImages": 0,
+    "aiGeneratedUiScreenshots": false
+  },
+  "imageConsumers": {
+    "evidence": {
+      "file": "artifacts/image-assets-1.2.1/consumers-r4/image-assets-report.json",
+      "bytes": 407830,
+      "sha256": "c47e59c40458a8201cd1068a8089a5a4f9ec59cc4be47206cd079fd307336b10"
+    },
+    "scope": {
+      "fullReleaseCertification": false,
+      "imageGenerationExecuted": false,
+      "providerInvocationVerified": false,
+      "environmentFilesRead": false,
+      "sourceRepairs": false,
+      "browserExecuted": true,
+      "consumerExecutionStarted": true
+    },
+    "results": {
+      "checks": 1802,
+      "passed": 1802,
+      "failed": 0,
+      "assets": 32,
+      "consumers": 2
+    },
+    "currentInputPinsVerified": 339,
+    "officialShadcnVersion": "4.22.0",
+    "consumers": [
+      {
+        "name": "cli-add",
+        "status": "PASS",
+        "installedSvgImages": 32,
+        "binaryWebpSiblings": 6,
+        "lockfileSha256": "b30eaeb3f7ed2112d446fd75a7c09fabc4eb4ba9b0935b5ae50af84a38fce9e1",
+        "downloadHelperSha256": "fe76e469c6dba800c97f17b5533391e8fb649e4d410ddce1bc9ee57f89a16ab9",
+        "actualInstalledAssetsAndDownloadHelperExecuted": true,
+        "templateTypecheckLintBuildExecuted": false
+      },
+      {
+        "name": "registry",
+        "status": "PASS",
+        "installedSvgImages": 32,
+        "binaryWebpSiblings": 0,
+        "lockfileSha256": "abb40c1fd4d4711c459c59e95950d28470545825e0b57751716cb6584305c8ea",
+        "downloadHelperSha256": "fe76e469c6dba800c97f17b5533391e8fb649e4d410ddce1bc9ee57f89a16ab9",
+        "actualInstalledAssetsAndDownloadHelperExecuted": true,
+        "templateTypecheckLintBuildExecuted": false
+      }
+    ]
+  },
+  "figma": {
+    "ledger": {
+      "file": ".figma/native-generated-images-1.2.1.json",
+      "bytes": 196136,
+      "sha256": "1617802864a78253cb8da0ea4efbef599e3188d3703193ffabad7d66e52405ac"
+    },
+    "state": {
+      "file": ".figma/state.json",
+      "bytes": 220368,
+      "sha256": "917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03"
+    },
+    "status": "passed-scoped-native-image-integration-and-owner-review",
+    "scope": "32 native image asset components, explicitly matched existing photo/product/media slots, seven owner-reviewed scoped exports; inherited1.2 evidence remains immutable.",
+    "coverage": {
+      "assetComponents": 32,
+      "uploadedAssets": 32,
+      "updatedRoutes": [
+        "dashboard",
+        "customers",
+        "ai",
+        "crm",
+        "ecommerce",
+        "sales",
+        "marketing",
+        "logistics",
+        "finance",
+        "stocks",
+        "products",
+        "orders",
+        "invoices",
+        "transactions",
+        "tasks",
+        "pipeline",
+        "task-list",
+        "calendar",
+        "mail",
+        "chat",
+        "files",
+        "support",
+        "maps",
+        "invoice",
+        "ai/images",
+        "ai/video",
+        "settings/profile",
+        "settings/team",
+        "settings/preferences",
+        "settings/billing",
+        "settings/api-keys",
+        "settings/integrations",
+        "pricing",
+        "faq",
+        "",
+        "components",
+        "forms",
+        "charts",
+        "media",
+        "layouts",
+        "blocks",
+        "templates",
+        "studio",
+        "themes",
+        "effects",
+        "onboarding",
+        "settings/workspace",
+        "customers/detail",
+        "imports"
+      ],
+      "wholeUiRasterCount": 0,
+      "renderPngUploads": 32,
+      "nativeImageFillNodesOnBoard": 64,
+      "uploadedOperations": 64,
+      "diagnosticRepeatOperations": 1,
+      "successfulUploadPostRequests": 65,
+      "nativeUiPhotoSlotsApplied": 293,
+      "nativeUiInitialTextsHidden": 293,
+      "unassignedFallbackSlotsRetained": 107,
+      "updatedCanonicalRouteCount": 49,
+      "directUiPhotoRootCountIncludingSixLightPairs": 55,
+      "sharedProfileAvatarMasters": 2,
+      "additionalInheritedProfileInstancesConfirmed": 6,
+      "currentSuitePhotoSlotsConfirmed": 111,
+      "currentSuiteUnassignedFallbackSlotsConfirmed": 34,
+      "nativeMediaImageAreas": 11,
+      "hiddenLegacyVectorNodes": 79,
+      "visibleLegacyVectorOverlaysOnReplacedAreas": 0,
+      "nativeProductRowThumbnails": 5,
+      "optionalProductThumbnailVariantSlots": 2,
+      "visibleDescriptionCorrections": 1,
+      "componentDescriptionCorrections": 3,
+      "ownerReviewedProofs": 7,
+      "createdNodes": 191,
+      "directlyMutatedUniqueNodes": 739,
+      "newVariableCollections": 0,
+      "uploadedOperationsMeaning": "32 exact WebP content uploads plus32 lossless native PNG uploads; one diagnostic repeated-WebP POST is recorded separately."
+    },
+    "proofs": [
+      {
+        "path": ".figma/proofs/images-1.2.1/asset-board-avatars.png",
+        "nodeId": "263:64",
+        "bytes": 715692,
+        "sha256": "9792541b1cd8f9d5022ebadfabcb6a59c8723db4a3fcb3b91d60e8bc780cb3f9",
+        "scope": "Native editable asset board / avatars",
+        "agentReview": "passed-visible-images-native-card-labels",
+        "ownerReview": "passed",
+        "ownerReviewEvidence": "Explicit owner confirmation of all 32 images, legible labels and correct crops."
+      },
+      {
+        "path": ".figma/proofs/images-1.2.1/asset-board-products.png",
+        "nodeId": "263:164",
+        "bytes": 542077,
+        "sha256": "bba66170f651d7beeaacc61ceb27b3ce5ec5161849f85e797df54cd626f9aa7e",
+        "scope": "Native editable asset board / products",
+        "agentReview": "passed-visible-images-native-card-labels",
+        "ownerReview": "passed",
+        "ownerReviewEvidence": "Explicit owner confirmation of all 32 images, legible labels and correct crops."
+      },
+      {
+        "path": ".figma/proofs/images-1.2.1/asset-board-art.png",
+        "nodeId": "263:210",
+        "bytes": 840937,
+        "sha256": "89a5d2fe657f69190a1f9cf14da73c70792aca6c4a4773df18a3661cb3705ec1",
+        "scope": "Native editable asset board / art",
+        "agentReview": "passed-visible-images-native-card-labels",
+        "ownerReview": "passed",
+        "ownerReviewEvidence": "Explicit owner confirmation of all 32 images, legible labels and correct crops."
+      },
+      {
+        "path": ".figma/proofs/images-1.2.1/team-dark-native.png",
+        "nodeId": "237:19873",
+        "bytes": 363517,
+        "sha256": "ddff107d29bb865a91819b8455e49ffd68bec6f4e2e4d27c6ce91f511051b632",
+        "scope": "Team Dark / known member photos",
+        "agentReview": "passed-visible-images-correct-identity-crops-native-ui",
+        "ownerReview": "passed",
+        "ownerReviewEvidence": "Explicit owner review at this exact SHA confirms identity/crop and all visible thumbnails."
+      },
+      {
+        "path": ".figma/proofs/images-1.2.1/customers-light-native.png",
+        "nodeId": "237:18156",
+        "bytes": 209821,
+        "sha256": "dd8b926df57446e05041ad9dff113331cabf468e860a785fa50bbf9cc7a46b12",
+        "scope": "Customers Light / distinct known customer photos",
+        "agentReview": "passed-visible-images-correct-identity-crops-native-ui",
+        "ownerReview": "passed",
+        "ownerReviewEvidence": "Explicit owner review at this exact SHA confirms identity/crop and all visible thumbnails."
+      },
+      {
+        "path": ".figma/proofs/images-1.2.1/products-native.png",
+        "nodeId": "41:2363",
+        "bytes": 142794,
+        "sha256": "f842ab589d12dfdd0c3ef30f25c50e0b1766d3808d9d73baecd0fc82bedae784",
+        "scope": "Products / five existing native row thumbnails",
+        "agentReview": "passed-visible-images-correct-identity-crops-native-ui",
+        "ownerReview": "passed",
+        "ownerReviewEvidence": "Explicit owner review at this exact SHA confirms identity/crop and all visible thumbnails."
+      },
+      {
+        "path": ".figma/proofs/images-1.2.1/media-native-revised.png",
+        "nodeId": "59:3077",
+        "bytes": 1002196,
+        "sha256": "494499d9a83762a38ae66bb20827451986e2f980cffdd2448183ea2667e58ec1",
+        "scope": "Media / six editorial images, controlled carousel, paused poster, current source description",
+        "agentReview": "passed-visible-images-native-ui-correct-current-source-description",
+        "ownerReview": "passed",
+        "replaces": ".figma/proofs/images-1.2.1/media-native.png",
+        "ownerReviewEvidence": "Explicit owner review at this exact SHA confirms current-source caption, six photos, 3:2 gallery crops, carousel/poster/avatar and native editable UI."
+      }
+    ],
+    "nativePngEncodingsPreserveDecodedWebpPixels": true,
+    "allCanonicalRouteIdsPreserved": true,
+    "freshFull69ViewVisualMatrix": false,
+    "codeConnect": {
+      "evidence": {
+        "file": ".figma/code-connect/validation/validation-summary.json",
+        "bytes": 1681,
+        "sha256": "c09f2e4cee7bb2eafd05d03aa8ffbd2f3e182e5cae40dd52bb1bcdc34b588ff0"
+      },
+      "status": "passed-local-smoke",
+      "sourceSnapshotChecks": 99,
+      "templateSnapshotChecks": 92,
+      "totalTemplateEvaluations": 1646,
+      "uniqueTypedExamples": 556,
+      "diagnostics": 0,
+      "liveFigmaRuntimeTested": false,
+      "cloudRegistered": false
+    }
+  },
+  "retainedBaseline": {
+    "version": "1.2.0",
+    "runtime": "docs/qa-runtime-1.2.json",
+    "native": ".figma/native-audit-1.2.json",
+    "state": ".figma/history/state-1.2-final.json",
+    "downloads": "artifacts/release-1.2-original",
+    "historicalIntegratedSuiteRerunForThisPatch": false
+  },
+  "finalDeliveryReceipt": "public/downloads/verification-1.2.1.json",
+  "publicationAcknowledgmentRecordedSeparately": true
+}

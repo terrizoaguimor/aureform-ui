@@ -1,0 +1,382 @@
+{
+  "status": "scoped-current-native-image-master-inspection",
+  "pageId": "2:3",
+  "areas": [
+    {
+      "nodeId": "28:599",
+      "assetId": "quiet-forms",
+      "imageHash": "d3ee962499d363e9c65b9535e1d2ae1a4c1615da",
+      "fillMatches": true,
+      "width": 180,
+      "height": 120,
+      "expectedRatio": 1.5,
+      "ratioMatches": true,
+      "hiddenVectors": 7,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "28:607",
+      "assetId": "studio",
+      "imageHash": "0b2c8366dd48d588342f7a28864dffb5bb8f3170",
+      "fillMatches": true,
+      "width": 180,
+      "height": 120,
+      "expectedRatio": 1.5,
+      "ratioMatches": true,
+      "hiddenVectors": 7,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "28:615",
+      "assetId": "arc",
+      "imageHash": "504133e4d0fc0cd1edbb0270720c3edbf143459e",
+      "fillMatches": true,
+      "width": 180,
+      "height": 120,
+      "expectedRatio": 1.5,
+      "ratioMatches": true,
+      "hiddenVectors": 8,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "28:624",
+      "assetId": "morrow",
+      "imageHash": "870cab8b1cd152cadcd34ed22ba97b99ad7f99ae",
+      "fillMatches": true,
+      "width": 180,
+      "height": 120,
+      "expectedRatio": 1.5,
+      "ratioMatches": true,
+      "hiddenVectors": 7,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "28:632",
+      "assetId": "silhouette",
+      "imageHash": "1c52aa468aabfe6f3a2edac713a136b616fb1450",
+      "fillMatches": true,
+      "width": 180,
+      "height": 120,
+      "expectedRatio": 1.5,
+      "ratioMatches": true,
+      "hiddenVectors": 7,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "28:640",
+      "assetId": "goodform",
+      "imageHash": "b9d975eb69764139d1b96f344f5039f39fcc2710",
+      "fillMatches": true,
+      "width": 180,
+      "height": 120,
+      "expectedRatio": 1.5,
+      "ratioMatches": true,
+      "hiddenVectors": 8,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "25:576",
+      "assetId": "quiet-forms",
+      "imageHash": "d3ee962499d363e9c65b9535e1d2ae1a4c1615da",
+      "fillMatches": true,
+      "width": 568,
+      "height": 378.6666564941406,
+      "expectedRatio": 1.5,
+      "ratioMatches": true,
+      "hiddenVectors": 7,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "25:451",
+      "assetId": "quiet-forms",
+      "imageHash": "d3ee962499d363e9c65b9535e1d2ae1a4c1615da",
+      "fillMatches": true,
+      "width": 446,
+      "height": 278.75,
+      "expectedRatio": 1.6,
+      "ratioMatches": true,
+      "hiddenVectors": 7,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "25:472",
+      "assetId": "arc",
+      "imageHash": "504133e4d0fc0cd1edbb0270720c3edbf143459e",
+      "fillMatches": true,
+      "width": 446,
+      "height": 278.75,
+      "expectedRatio": 1.6,
+      "ratioMatches": true,
+      "hiddenVectors": 7,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "25:492",
+      "assetId": "goodform",
+      "imageHash": "b9d975eb69764139d1b96f344f5039f39fcc2710",
+      "fillMatches": true,
+      "width": 446,
+      "height": 278.75,
+      "expectedRatio": 1.6,
+      "ratioMatches": true,
+      "hiddenVectors": 7,
+      "visibleVectors": 0
+    },
+    {
+      "nodeId": "25:587",
+      "assetId": "quiet-forms",
+      "imageHash": "d3ee962499d363e9c65b9535e1d2ae1a4c1615da",
+      "fillMatches": true,
+      "width": 446,
+      "height": 250.875,
+      "expectedRatio": 1.7777777777777777,
+      "ratioMatches": true,
+      "hiddenVectors": 7,
+      "visibleVectors": 0
+    }
+  ],
+  "profileMasters": [
+    {
+      "nodeId": "29:66",
+      "imageHash": "5c69b0df761aa936d2a2dbfa7a67c1d8041fd717",
+      "initialTextIds": [
+        "I29:66;3:146"
+      ],
+      "allInitialsHidden": true
+    },
+    {
+      "nodeId": "29:127",
+      "imageHash": "5c69b0df761aa936d2a2dbfa7a67c1d8041fd717",
+      "initialTextIds": [
+        "I29:127;3:146"
+      ],
+      "allInitialsHidden": true
+    }
+  ],
+  "wrongLabels": [
+    {
+      "id": "25:585",
+      "type": "COMPONENT_SET",
+      "name": "Gallery",
+      "kind": "description",
+      "text": "Aureform Gallery. Native vectors and component instances; source media uses prepared original assets, with manual controls."
+    },
+    {
+      "id": "25:511",
+      "type": "COMPONENT_SET",
+      "name": "Carousel",
+      "kind": "description",
+      "text": "Aureform Carousel. Native vectors and component instances; source media uses prepared original assets, with manual controls."
+    },
+    {
+      "id": "25:638",
+      "type": "COMPONENT_SET",
+      "name": "VideoPlayer",
+      "kind": "description",
+      "text": "Aureform VideoPlayer. Native vectors and component instances; source media uses prepared original assets, with manual controls."
+    }
+  ],
+  "thumbnailSlots": [
+    {
+      "variantId": "31:1480",
+      "name": "State=Default",
+      "slots": [
+        {
+          "id": "281:4730",
+          "width": 36,
+          "height": 36,
+          "visible": false,
+          "references": {
+            "visible": "Show thumbnail#281:0"
+          }
+        }
+      ],
+      "propertyKeys": [
+        "Name#31:0",
+        "Detail#31:3",
+        "Category#31:6",
+        "Amount#31:9",
+        "Date#31:12",
+        "Actions#31:15",
+        "Show thumbnail#281:0",
+        "State"
+      ]
+    },
+    {
+      "variantId": "31:1491",
+      "name": "State=Selected",
+      "slots": [
+        {
+          "id": "281:4732",
+          "width": 36,
+          "height": 36,
+          "visible": false,
+          "references": {
+            "visible": "Show thumbnail#281:0"
+          }
+        }
+      ],
+      "propertyKeys": [
+        "Name#31:0",
+        "Detail#31:3",
+        "Category#31:6",
+        "Amount#31:9",
+        "Date#31:12",
+        "Actions#31:15",
+        "Show thumbnail#281:0",
+        "State"
+      ]
+    }
+  ],
+  "avatarFallbacks": [
+    {
+      "id": "3:143",
+      "name": "Size=Small",
+      "imageFills": 0
+    },
+    {
+      "id": "3:145",
+      "name": "Size=Medium",
+      "imageFills": 0
+    },
+    {
+      "id": "3:147",
+      "name": "Size=Large",
+      "imageFills": 0
+    }
+  ],
+  "collections": [
+    {
+      "id": "VariableCollectionId:2:7",
+      "name": "Aureform · Primitives"
+    },
+    {
+      "id": "VariableCollectionId:2:36",
+      "name": "Aureform · Color"
+    },
+    {
+      "id": "VariableCollectionId:2:58",
+      "name": "Aureform · Dimension"
+    },
+    {
+      "id": "VariableCollectionId:95:317",
+      "name": "Aureform · Color · Violet"
+    },
+    {
+      "id": "VariableCollectionId:95:381",
+      "name": "Aureform · Color · Ocean"
+    },
+    {
+      "id": "VariableCollectionId:95:445",
+      "name": "Aureform · Color · Mint"
+    },
+    {
+      "id": "VariableCollectionId:95:509",
+      "name": "Aureform · Color · Ember"
+    },
+    {
+      "id": "VariableCollectionId:95:573",
+      "name": "Aureform · Color · Rose"
+    }
+  ],
+  "observedPriorMutatedNodeIds": [
+    "28:599",
+    "28:600",
+    "28:601",
+    "28:602",
+    "28:603",
+    "28:604",
+    "28:605",
+    "28:606",
+    "28:607",
+    "28:608",
+    "28:609",
+    "28:610",
+    "28:611",
+    "28:612",
+    "28:613",
+    "28:614",
+    "28:615",
+    "28:616",
+    "28:617",
+    "28:618",
+    "28:619",
+    "28:620",
+    "28:621",
+    "28:622",
+    "28:623",
+    "28:624",
+    "28:625",
+    "28:626",
+    "28:627",
+    "28:628",
+    "28:629",
+    "28:630",
+    "28:631",
+    "28:632",
+    "28:633",
+    "28:634",
+    "28:635",
+    "28:636",
+    "28:637",
+    "28:638",
+    "28:639",
+    "28:640",
+    "28:641",
+    "28:642",
+    "28:643",
+    "28:644",
+    "28:645",
+    "28:646",
+    "28:647",
+    "28:648",
+    "25:576",
+    "25:577",
+    "25:578",
+    "25:579",
+    "25:580",
+    "25:581",
+    "25:582",
+    "25:583",
+    "25:451",
+    "25:452",
+    "25:453",
+    "25:454",
+    "25:455",
+    "25:456",
+    "25:457",
+    "25:458",
+    "25:472",
+    "25:473",
+    "25:474",
+    "25:475",
+    "25:476",
+    "25:477",
+    "25:478",
+    "25:479",
+    "25:492",
+    "25:493",
+    "25:494",
+    "25:495",
+    "25:496",
+    "25:497",
+    "25:498",
+    "25:499",
+    "25:587",
+    "25:588",
+    "25:589",
+    "25:590",
+    "25:591",
+    "25:592",
+    "25:593",
+    "25:594",
+    "29:66",
+    "I29:66;3:146",
+    "29:127",
+    "I29:127;3:146"
+  ],
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "removedNodeIds": [],
+  "receiptNormalization": "Actual scoped17 read return; repeated ID runs retained losslessly. The three discovered descriptions are corrected by actual18 mutation receipt."
+}

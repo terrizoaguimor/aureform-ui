@@ -1,0 +1,156 @@
+import type { FeatureCollection, Polygon, LineString } from "geojson";
+/** Original, deliberately schematic geometry. Not a navigational basemap. */
+export const land: FeatureCollection<Polygon> = {
+  type: "FeatureCollection",
+  features: [
+    [
+      [-167, 65],
+      [-130, 73],
+      [-90, 68],
+      [-60, 52],
+      [-72, 42],
+      [-80, 25],
+      [-101, 15],
+      [-118, 29],
+      [-136, 56],
+      [-167, 65],
+    ],
+    [
+      [-81, 12],
+      [-62, 9],
+      [-36, -6],
+      [-44, -24],
+      [-67, -55],
+      [-74, -37],
+      [-80, -4],
+      [-81, 12],
+    ],
+    [
+      [-18, 35],
+      [12, 38],
+      [35, 30],
+      [49, 10],
+      [37, -21],
+      [20, -35],
+      [9, -24],
+      [-2, -5],
+      [-18, 20],
+      [-18, 35],
+    ],
+    [
+      [-11, 36],
+      [-4, 58],
+      [22, 72],
+      [80, 75],
+      [145, 57],
+      [180, 60],
+      [166, 33],
+      [132, 19],
+      [103, 1],
+      [81, 8],
+      [48, 30],
+      [30, 35],
+      [-11, 36],
+    ],
+    [
+      [113, -13],
+      [138, -10],
+      [153, -27],
+      [132, -40],
+      [114, -27],
+      [113, -13],
+    ],
+    [
+      [-52, 59],
+      [-24, 69],
+      [-33, 83],
+      [-62, 81],
+      [-52, 59],
+    ],
+  ].map((coordinates, i) => ({
+    type: "Feature" as const,
+    properties: { name: `schematic-land-${i}` },
+    geometry: { type: "Polygon" as const, coordinates: [coordinates] },
+  })),
+};
+export const shipmentRoutes = [
+  {
+    id: "AF-284",
+    from: "Bogotá",
+    to: "Medellín",
+    start: [-74.0721, 4.711] as [number, number],
+    end: [-75.5812, 6.2442] as [number, number],
+    driver: "Isabel Torres",
+    progress: 72,
+    status: "transit",
+    eta: "2026-10-19",
+  },
+  {
+    id: "AF-285",
+    from: "New York",
+    to: "Boston",
+    start: [-74.006, 40.7128] as [number, number],
+    end: [-71.0589, 42.3601] as [number, number],
+    driver: "Leo Martin",
+    progress: 44,
+    status: "transit",
+    eta: "2026-10-20",
+  },
+  {
+    id: "AF-286",
+    from: "Madrid",
+    to: "Barcelona",
+    start: [-3.7038, 40.4168] as [number, number],
+    end: [2.1734, 41.3851] as [number, number],
+    driver: "Alex Morgan",
+    progress: 100,
+    status: "delivered",
+    eta: "2026-10-18",
+  },
+  {
+    id: "AF-287",
+    from: "London",
+    to: "Paris",
+    start: [-0.1276, 51.5072] as [number, number],
+    end: [2.3522, 48.8566] as [number, number],
+    driver: "Noor Ahmed",
+    progress: 18,
+    status: "scheduled",
+    eta: "2026-10-21",
+  },
+];
+export const routeGeometry: FeatureCollection<LineString> = {
+  type: "FeatureCollection",
+  features: shipmentRoutes.map((route) => ({
+    type: "Feature",
+    properties: { id: route.id, from: route.from, to: route.to },
+    geometry: { type: "LineString", coordinates: [route.start, route.end] },
+  })),
+};
+export const gridGeometry: FeatureCollection<LineString> = {
+  type: "FeatureCollection",
+  features: [
+    ...Array.from({ length: 19 }, (_, i) => ({
+      type: "Feature" as const,
+      properties: {},
+      geometry: {
+        type: "LineString" as const,
+        coordinates: [
+          [-180 + i * 20, -70],
+          [-180 + i * 20, 80],
+        ],
+      },
+    })),
+    ...Array.from({ length: 8 }, (_, i) => ({
+      type: "Feature" as const,
+      properties: {},
+      geometry: {
+        type: "LineString" as const,
+        coordinates: [
+          [-180, -60 + i * 20],
+          [180, -60 + i * 20],
+        ],
+      },
+    })),
+  ],
+};

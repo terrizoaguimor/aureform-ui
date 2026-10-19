@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-10-18T22:05:31.870196+00:00",
+  "version": "1.0.0",
+  "sourceChecks": {
+    "typescript": "5.9.3",
+    "typecheck": "passed",
+    "lint": "passed-without-warnings",
+    "nodeTests": 10,
+    "staticBuildPages": 127,
+    "framework": "Next.js 16.4.2"
+  },
+  "browser": {
+    "checkedAt": "2026-10-18T21:55:01.590Z",
+    "checks": 744,
+    "uniqueViews": 62,
+    "locales": ["en", "es"],
+    "themes": ["light", "dark"],
+    "widths": [360, 768, 1440],
+    "http200": 744,
+    "horizontalOverflow": 0,
+    "runtimeErrors": 0,
+    "seriousOrCriticalAxeFindings": 0,
+    "previewCaptures": 62
+  },
+  "e2e": {
+    "startTime": "2026-10-18T21:55:01.610Z",
+    "duration": 17395.513,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "motion": {
+    "scenarios": 14,
+    "plannedScenarios": 14,
+    "passedScenarios": 14,
+    "failedScenarios": 0,
+    "checks": 74,
+    "passedChecks": 74,
+    "failedChecks": 0,
+    "errors": 0,
+    "completedAt": "2026-10-18T21:56:41.171Z"
+  },
+  "clipboard": {
+    "completeFiles": 44,
+    "codeDialogCombinations": 12
+  },
+  "examples": {
+    "families": 44,
+    "typedFilesAndPayloads": 88,
+    "diagnostics": 0
+  },
+  "codeConnect": {
+    "status": "passed-local-smoke",
+    "runtime": "synthetic-figma-stub",
+    "typescript": "5.9.3",
+    "templateFiles": 82,
+    "firstListedVariantCases": 82,
+    "exhaustiveVariantCombinations": 239,
+    "topLevelCases": 754,
+    "nestedTemplateExecutions": 324,
+    "totalTemplateEvaluations": 1078,
+    "uniqueTypedExamples": 367,
+    "templateTypecheck": "passed-against-local-api-declaration-stub",
+    "emittedExampleTypecheck": "passed-against-canonical-source-and-installed-dependency-types",
+    "canonicalSources": "src",
+    "dependencyTypes": "node_modules",
+    "diagnostics": 0,
+    "quoteNewlineUnicodeCases": 82,
+    "nativeIconSwapCases": 44,
+    "unexposedIconChildCases": 44,
+    "missingOrErrorSwapCases": 4,
+    "shellPageContentCases": 18,
+    "rawShellHeaderNotForwarded": true,
+    "liveFigmaRuntimeTested": false,
+    "cloudRegistered": false,
+    "testScript": "scripts/verify-code-connect.cjs"
+  },
+  "nativeFigma": {
+    "routeRoots": 62,
+    "imageFillNodes": 0,
+    "nativeComponentSpecimens": 44,
+    "nativeTemplatePreviews": 46,
+    "variables": 65,
+    "primitiveColors": 28,
+    "semanticColors": 21,
+    "dimensionVariables": 16,
+    "textStyles": 8,
+    "shadowStyles": 6,
+    "gradientStyles": 6,
+    "sourceEffectTokens": 15,
+    "invalidScopes": 0,
+    "invalidWebSyntax": 0
+  },
+  "consumers": [
+    {
+      "kind": "fresh-nextjs-consumer-starter-zip",
+      "status": "passed",
+      "createdAt": "2026-10-18T21:58:07Z",
+      "checks": 4,
+      "archiveSha256": "f213a719a769182c1e1bdaee3e350d99de27502a3c38b2ba672b7ebbb5216eac",
+      "browserRuntimeTested": false
+    },
+    {
+      "kind": "fresh-nextjs-consumer-local-cli",
+      "status": "passed",
+      "createdAt": "2026-10-18T21:54:04Z",
+      "checks": 6,
+      "installedItems": ["motion-system", "date-range-picker", "ai-composer"],
+      "browserRuntimeTested": false
+    },
+    {
+      "kind": "fresh-nextjs-consumer-official-shadcn",
+      "status": "passed",
+      "createdAt": "2026-10-18T21:50:07Z",
+      "checks": 5,
+      "installedItems": ["data-table", "revenue-panel", "motion-system"],
+      "browserRuntimeTested": false
+    }
+  ],
+  "limits": [
+    "Deterministic browser demo adapters; production authentication, AI, email and payments require server integrations.",
+    "Automated Chromium checks and manual native design reviews do not constitute an accessibility certification.",
+    "For two JavaScript-disabled SSR scenarios, navigation and visibility were tested on the original page; axe measured a script-free DOM copy after checking presentation equality.",
+    "Code Connect passed a local API stub and source typecheck; live template execution and cloud publication were not performed.",
+    "Native dense tables consolidate records; Figma represents editable designs, while the browser implements interactions and responsive behavior."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "status": "passed-scoped-native-visual-review",
+  "checkedAt": "2026-10-19T08:18:38.718747+00:00",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "stateSha256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52",
+  "method": "Owner viewed actual Figma PNG exports. Tall component and template galleries were inspected in contiguous crops; source files retain the complete exports.",
+  "proofs": [
+    {
+      "nodeId": "5:3",
+      "path": ".figma/proofs/defaults-1.1/customers-final.png",
+      "sha256": "027c3c1504c2251b997fb48320161141e776f0a47df275be7075c4d765414091",
+      "width": 1440,
+      "height": 1120,
+      "bytes": 187318,
+      "status": "passed-owner-visual-review"
+    },
+    {
+      "nodeId": "39:24",
+      "path": ".figma/proofs/defaults-1.1/crm-final.png",
+      "sha256": "3aa1789a0ac91f5913226f83ae98961eb4df56ebe2989bc6e7927f35951fc1c4",
+      "width": 1440,
+      "height": 1380,
+      "bytes": 153713,
+      "status": "passed-owner-visual-review"
+    },
+    {
+      "nodeId": "59:2549",
+      "path": ".figma/proofs/defaults-1.1/buttons-final.png",
+      "sha256": "25f21bb5ccd6a59931318fb2af729cce4365f9a45503d05e2d72acc8a96eb91a",
+      "width": 603,
+      "height": 4096,
+      "bytes": 228764,
+      "status": "passed-owner-visual-review"
+    },
+    {
+      "nodeId": "59:3605",
+      "path": ".figma/proofs/defaults-1.1/gallery-final.png",
+      "sha256": "a8d6fba293fe4cfc10badbcf9ac4641d875fe70af41578820dd4df2e7560e27f",
+      "width": 1073,
+      "height": 4096,
+      "bytes": 593860,
+      "status": "passed-owner-visual-review"
+    },
+    {
+      "nodeId": "59:2549",
+      "path": ".figma/proofs/defaults-1.1/table-preview-detail.png",
+      "sha256": "8c8ef670a34ce66f825e06d80ff45aa123b46cb62b9bb7a494aa1dd1f8cfdea2",
+      "width": 603,
+      "height": 560,
+      "status": "passed-owner-visual-review",
+      "derivation": "Unaltered crop of current buttons-final.png; illustrates the two corrected table preview bounds."
+    }
+  ],
+  "nativeReports": [
+    {
+      "path": ".figma/native-owner-default-fix-2-5-1.1.json",
+      "sha256": "a8cf78928302d99daed90a732c924ca15c8c6ff5b9761f6977be50069e644544"
+    },
+    {
+      "path": ".figma/native-owner-default-fix-2-6-1.1.json",
+      "sha256": "ad9bc582061abb3f2d68fc5d8904b14a55fe50d9ccf9727e43b8c3a7c5b8af56"
+    },
+    {
+      "path": ".figma/native-owner-gallery-surfaces-fix-1.1.json",
+      "sha256": "5149221e0baa881f86d28fddf0b2049bceaf431a5a9f94df324694d680ff64c4"
+    },
+    {
+      "path": ".figma/native-owner-gallery-table-preview-clipping-1.1.json",
+      "sha256": "6b60f8fa388325a46fb5d60f6a9799661c2ffdba7059ce251f45aa4d68e8d8f9"
+    }
+  ],
+  "changesVerified": [
+    "All 44 component preview surfaces use native Dark background tokens.",
+    "All 46 template captions use native surface tokens; the gallery rows and grid are transparent.",
+    "Current version footer reads 1.1.",
+    "The two table previews clip within their slots and do not cover source-path labels.",
+    "Default Customers and CRM typography, text fit and resolved Dark colors are visible in the actual exports."
+  ],
+  "findings": [],
+  "limits": [
+    "Visual review is scoped to the changed default styles and preview surfaces. The final 65-route structure read is recorded separately.",
+    "Native table previews show a clipped sample; their complete variants are reviewed separately in the Table/DataTable proof board."
+  ],
+  "applicationSourceChanged": false
+}

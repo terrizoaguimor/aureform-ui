@@ -1,0 +1,301 @@
+{
+  "status": "32-render-compatible-assets-structurally-verified",
+  "assets": [
+    {
+      "componentId": "263:68",
+      "imageHash": "5c69b0df761aa936d2a2dbfa7a67c1d8041fd717",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:73",
+      "imageHash": "45fb9581094e472606f99d228cb58e3fedbe7af3",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:78",
+      "imageHash": "174d8bfdf656f63f602245a870123d238f7ce989",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:83",
+      "imageHash": "5aace8ef6333f4a1ae5db1dba9c6ada223fe42d8",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:89",
+      "imageHash": "25233cbb7ab661591a6840443bd16ba111b0ffa9",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:94",
+      "imageHash": "c5faeec021dfec54586b10899acc431635494292",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:100",
+      "imageHash": "60ce9e21b0584ce12bbd9cae7fee747df86251ec",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:105",
+      "imageHash": "6abdc84878a8c40cc0bc072758a150581ecbd9c4",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:111",
+      "imageHash": "d4c04714c48b476e0642134402be819832280a9c",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:116",
+      "imageHash": "1f71cf403b1a0eaf3ae98cea7fca0555e1289714",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:121",
+      "imageHash": "10dab9d6f291b793a0f42c0e2069fa0d45e044ae",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:126",
+      "imageHash": "5956bade8bc1f49ef47525a7cc55d5d9227ddc71",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:133",
+      "imageHash": "a2ab9cc4612de52985fb0cd3412cf53ec85ecf66",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:138",
+      "imageHash": "de8e400422fa4b6097b027a55cd0ccdcaf2181e6",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:143",
+      "imageHash": "ed38046a60bb6125127c97c07bd1eeeda7d81a22",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:148",
+      "imageHash": "974f354f9ae362058ef800f455cd6371b327efca",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:154",
+      "imageHash": "68d72d808ef45a6a0980eea19128c67b603eaecc",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:159",
+      "imageHash": "9f670e7ab6d2e17c2bcfb8ea76c55f70d3641730",
+      "width": 320,
+      "height": 320,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:168",
+      "imageHash": "676dbff0fed4232342e05ed8a23438dbdf1561b1",
+      "width": 640,
+      "height": 640,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:173",
+      "imageHash": "f050409dc9cc27f0f65cc1b1ff1fd1ded13f8564",
+      "width": 640,
+      "height": 640,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:178",
+      "imageHash": "3a4bedc2ac6f06c0c2dec70bb885924cd81090de",
+      "width": 640,
+      "height": 640,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:183",
+      "imageHash": "af5079d02c13ad360bbfa3e52685ba63095ced22",
+      "width": 640,
+      "height": 640,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:190",
+      "imageHash": "03321a539bf0ab268bb1a2aa950f42bcb1550533",
+      "width": 640,
+      "height": 640,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:195",
+      "imageHash": "a352b2e419d1e62cdc550a2a398a9ab936c6db45",
+      "width": 640,
+      "height": 640,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:200",
+      "imageHash": "8eb286941ca3e5d86b05d0dbf9ebccd3b4f0a5e1",
+      "width": 640,
+      "height": 640,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:205",
+      "imageHash": "aef72d90ed4500d8c32f6713c1ea176a6e7ced17",
+      "width": 640,
+      "height": 640,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:214",
+      "imageHash": "d3ee962499d363e9c65b9535e1d2ae1a4c1615da",
+      "width": 1200,
+      "height": 800,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:219",
+      "imageHash": "0b2c8366dd48d588342f7a28864dffb5bb8f3170",
+      "width": 1200,
+      "height": 800,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:224",
+      "imageHash": "504133e4d0fc0cd1edbb0270720c3edbf143459e",
+      "width": 1200,
+      "height": 800,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:230",
+      "imageHash": "870cab8b1cd152cadcd34ed22ba97b99ad7f99ae",
+      "width": 1200,
+      "height": 800,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:236",
+      "imageHash": "1c52aa468aabfe6f3a2edac713a136b616fb1450",
+      "width": 1200,
+      "height": 800,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    },
+    {
+      "componentId": "263:241",
+      "imageHash": "b9d975eb69764139d1b96f344f5039f39fcc2710",
+      "width": 1200,
+      "height": 800,
+      "scaleMode": "FILL",
+      "visible": true,
+      "opacity": 1
+    }
+  ],
+  "componentCount": 32,
+  "imageFillNodes": 64,
+  "fonts": [
+    "Manrope"
+  ],
+  "wholeUiRasterCount": 0,
+  "createdNodeIds": [],
+  "mutatedNodeIds": []
+}

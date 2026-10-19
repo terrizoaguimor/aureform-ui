@@ -1,0 +1,525 @@
+{
+  "schemaVersion": 1,
+  "collection": "Aureform Generated Image Collection",
+  "model": "gpt-image-2.5-flare-2026-09-08",
+  "api": "OpenAI Images API",
+  "quality": "high",
+  "background": "opaque",
+  "outputFormat": "webp",
+  "outputCompression": 92,
+  "fictionalIdentities": true,
+  "items": [
+    {
+      "id": "alex-morgan",
+      "group": "avatars",
+      "name": "Alex Morgan",
+      "master": "portrait-alex-morgan.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Alex Morgan demo profile",
+        "es": "Retrato generado para el perfil ficticio de Alex Morgan"
+      },
+      "prompt": "Use case: photorealistic-natural\nAsset type: reusable profile avatar in the Aureform premium interface kit\nPrimary request: Generate one original fictional adult professional portrait, photographed as part of a consistent contemporary editorial portrait collection.\nSubject: A fictional Afro-Latino man around 32 years old, short neatly shaped dark curls, subtle stubble, warm brown eyes, and a relaxed, understated smile. He wears a charcoal crewneck and an unbranded sand-colored overshirt.\nScene/backdrop: Seamless warm stone-gray studio background, softly out of focus, with no props.\nComposition/framing: Square head-and-shoulders photograph. One person only. Facing the camera with a slight natural angle. Entire hair and both shoulders visible. Center the face, leave generous headroom and side margins, and make the portrait work inside a small circular avatar crop. Face and hair occupy about 60 percent of the frame height.\nLighting/mood: Large soft studio window light from the front-left, natural soft shadows, warm neutral color grading, calm and approachable expression.\nMaterials/textures: Realistic skin texture, natural hair, tactile fabric. Clean sharp eyes. Restrained professional retouching, not airbrushed or glossy.\nText: None.\nConstraints: This is an invented person, not a depiction of a named real person or celebrity. No lettering, logos, brands, watermark, decorative border, collage, split frame, extra people, cropped head, exaggerated beauty filters, or dramatic colored lighting."
+    },
+    {
+      "id": "isabel-torres",
+      "group": "avatars",
+      "name": "Isabel Torres",
+      "master": "portrait-isabel-torres.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Isabel Torres demo profile",
+        "es": "Retrato generado para el perfil ficticio de Isabel Torres"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional Latina adult woman, about 31, with shoulder-length wavy dark brown hair, brown eyes, small brushed-gold earrings, and a calm confident smile; a forest-green knit top.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "leo-martin",
+      "group": "avatars",
+      "name": "Leo Martin",
+      "master": "portrait-leo-martin.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Leo Martin demo profile",
+        "es": "Retrato generado para el perfil ficticio de Leo Martin"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional adult man, about 29, with olive skin, short chestnut hair, light beard and hazel eyes; a slate-blue textured shirt and a relaxed smile.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "noor-ahmed",
+      "group": "avatars",
+      "name": "Noor Ahmed",
+      "master": "portrait-noor-ahmed.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Noor Ahmed demo profile",
+        "es": "Retrato generado para el perfil ficticio de Noor Ahmed"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional adult South Asian woman, about 30, with warm brown skin and dark eyes, wearing a beautifully draped muted sage hijab and a cream linen blouse; a gentle confident smile.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "daniel-kim",
+      "group": "avatars",
+      "name": "Daniel Kim",
+      "master": "portrait-daniel-kim.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Daniel Kim demo profile",
+        "es": "Retrato generado para el perfil ficticio de Daniel Kim"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional East Asian adult man, about 34, with black short softly side-parted hair, no beard, dark eyes, a warm smile; an off-white shirt beneath a charcoal cardigan.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "olivia-rhye",
+      "group": "avatars",
+      "name": "Olivia Rhye",
+      "master": "portrait-olivia-rhye.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Olivia Rhye demo profile",
+        "es": "Retrato generado para el perfil ficticio de Olivia Rhye"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional adult Black woman, about 28, with medium brown skin, dark eyes, softly tied-back natural curls, small gold stud earrings and an easy friendly smile; a warm sand blouse.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "phoenix-baker",
+      "group": "avatars",
+      "name": "Phoenix Baker",
+      "master": "portrait-phoenix-baker.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Phoenix Baker demo profile",
+        "es": "Retrato generado para el perfil ficticio de Phoenix Baker"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional androgynous adult, about 29, with fair lightly freckled skin, cropped auburn hair, green eyes, a calm open expression; a deep plum crewneck knit.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "lana-steiner",
+      "group": "avatars",
+      "name": "Lana Steiner",
+      "master": "portrait-lana-steiner.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Lana Steiner demo profile",
+        "es": "Retrato generado para el perfil ficticio de Lana Steiner"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional adult woman, about 33, with fair skin, a chin-length dark-blonde bob, blue-gray eyes and a composed warm smile; an understated moss-green blouse.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "demi-wilkinson",
+      "group": "avatars",
+      "name": "Demi Wilkinson",
+      "master": "portrait-demi-wilkinson.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Demi Wilkinson demo profile",
+        "es": "Retrato generado para el perfil ficticio de Demi Wilkinson"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional adult woman, about 30, with deep brown skin, neat shoulder-length braids, dark eyes and a bright understated smile; a dusty-lilac cotton shirt.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "drew-cano",
+      "group": "avatars",
+      "name": "Drew Cano",
+      "master": "portrait-drew-cano.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Drew Cano demo profile",
+        "es": "Retrato generado para el perfil ficticio de Drew Cano"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional Latino adult man, about 35, with tan skin, dark eyes, close-cropped black hair, a neat moustache and an approachable smile; a muted rust overshirt.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "amelia-wilson",
+      "group": "avatars",
+      "name": "Amelia Wilson",
+      "master": "portrait-amelia-wilson.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Amelia Wilson demo profile",
+        "es": "Retrato generado para el perfil ficticio de Amelia Wilson"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional adult woman, about 32, with fair skin, copper red shoulder-length waves, light freckles and hazel eyes; a cream knit top and a gentle smile.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "matias-vega",
+      "group": "avatars",
+      "name": "Matías Vega",
+      "master": "portrait-matias-vega.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Matías Vega demo profile",
+        "es": "Retrato generado para el perfil ficticio de Matías Vega"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional Latino adult man, about 31, with medium olive skin, brown wavy hair, a softly trimmed beard, brown eyes and a thoughtful smile; a soft blue chambray shirt.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "sofia-chen",
+      "group": "avatars",
+      "name": "Sofia Chen",
+      "master": "portrait-sofia-chen.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Sofia Chen demo profile",
+        "es": "Retrato generado para el perfil ficticio de Sofia Chen"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional East Asian adult woman, about 27, with warm light skin, long straight black hair tucked behind one ear, dark eyes and a subtle smile; a mauve knit top.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "lucas-moreau",
+      "group": "avatars",
+      "name": "Lucas Moreau",
+      "master": "portrait-lucas-moreau.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Lucas Moreau demo profile",
+        "es": "Retrato generado para el perfil ficticio de Lucas Moreau"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional adult man, about 36, with light skin, sandy brown short hair, light stubble, blue-gray eyes and a warm easy expression; a sage-green linen shirt.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "alex-rivera",
+      "group": "avatars",
+      "name": "Alex Rivera",
+      "master": "portrait-alex-rivera.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Alex Rivera demo profile",
+        "es": "Retrato generado para el perfil ficticio de Alex Rivera"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional Latino adult man, about 28, with medium brown skin, black textured short hair, a neatly trimmed beard, thin rounded tortoiseshell glasses and a warm smile; a charcoal cotton shirt.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "isabel-moreno",
+      "group": "avatars",
+      "name": "Isabel Moreno",
+      "master": "portrait-isabel-moreno.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Generated portrait for the fictional Isabel Moreno demo profile",
+        "es": "Retrato generado para el perfil ficticio de Isabel Moreno"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset: professional avatar photograph for a fictional demo identity.\nSubject: a fictional Latina adult woman, about 34, with warm olive skin, brown eyes, long dark hair in a low ponytail, tiny silver earrings and a calm smile; a terracotta linen blouse.\nScene/background: seamless warm stone-gray studio background, quiet subtle tonal variation. Composition: single person, centered head and shoulders, square crop with generous headroom; the entire head and hair fit safely within the middle 75% so a circular avatar crop remains clean. Camera at eye level, 85mm portrait lens, direct gaze. Style: refined editorial studio photography for Aureform, natural and candid, convincing skin texture and tactile fabrics, premium but approachable. Lighting: large softbox from the upper front left, soft fill, restrained contrast and a gentle catchlight, no dramatic dark shadows. Constraints: exactly one fictional adult; no celebrity or public figure likeness; no text, watermarks, logos, collage, duplicated face, extra people, plastic skin, heavy retouching, beauty filter, aggressive grin, hands, cropped head or cropped hair."
+    },
+    {
+      "id": "studio-updates",
+      "group": "avatars",
+      "name": "Studio Updates",
+      "master": "organization-studio-updates.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "An amber sculptural loop on a warm plum background",
+        "es": "Un lazo escultórico ámbar sobre un fondo ciruela"
+      },
+      "prompt": "Use case: logo-brand. Asset: abstract organization avatar for a fictional creative team.\nSubject: a single beautiful sculptural loop formed from one continuous softly rounded golden-amber ribbon, a subtle translucent orange-to-honey material gradient, floating against deep warm aubergine, soft controlled shadows and one tiny point of studio reflection.\nComposition: a single centered emblem, beautifully legible at 24 pixels, generous margin safe for a circular crop; square image. Style: original premium sculptural studio render, refined materiality, depth and smooth restrained gradients, never a flat stock icon. Constraints: no text, lettering, typography, brand imitation, UI, frame, collage, busy detail, watermark, unrelated objects or extra emblems."
+    },
+    {
+      "id": "forma-collective",
+      "group": "avatars",
+      "name": "Forma Collective",
+      "master": "organization-forma-collective.webp",
+      "size": "1024x1024",
+      "webSize": [
+        320,
+        320
+      ],
+      "alt": {
+        "en": "Interlocking lavender and sage arcs on a forest-green background",
+        "es": "Arcos lavanda y salvia entrelazados sobre verde bosque"
+      },
+      "prompt": "Use case: logo-brand. Asset: abstract organization avatar for a fictional creative team.\nSubject: one architectural interlocking pair of rounded folded ceramic arcs in pale lavender and cool sage, a quiet dark forest-green background, brushed matte surface and a soft lifted shadow, simple precise geometric identity.\nComposition: a single centered emblem, beautifully legible at 24 pixels, generous margin safe for a circular crop; square image. Style: original premium sculptural studio render, refined materiality, depth and smooth restrained gradients, never a flat stock icon. Constraints: no text, lettering, typography, brand imitation, UI, frame, collage, busy detail, watermark, unrelated objects or extra emblems."
+    },
+    {
+      "id": "forma-desk-lamp",
+      "group": "products",
+      "name": "Forma desk lamp",
+      "master": "product-forma-desk-lamp.webp",
+      "size": "1024x1024",
+      "webSize": [
+        640,
+        640
+      ],
+      "alt": {
+        "en": "A forest-green desk lamp with a brass stem",
+        "es": "Una lámpara verde bosque con tallo de latón"
+      },
+      "prompt": "Use case: product-mockup. Asset: ecommerce catalog photograph of a fictional original Aureform object.\nSubject: a sculptural desk lamp with a short curved brushed-brass stem, a perfectly proportioned matte muted forest-green conical shade, a matching round weighted base, gently glowing warm underside; lamp unplugged from view.\nScene: a seamless warm pale stone studio cyclorama and matching surface, absolutely no horizon clutter. Composition: one complete product centered, three-quarter front view, product fills about 70% of the square frame with clean generous margins; no part clipped. Style: expensive design magazine product photography, tactile materials, crisp thoughtful details, refined considered proportions. Lighting: broad soft studio light from upper left, subtle physically realistic contact shadow and beautiful smooth tonal gradients, warm neutral white balance. Constraints: no people, hands, extra unrelated products, props, prices, text, logos, watermarks, labels, UI, collage, brand imitation, distorted geometry, floating legs or missing structural parts."
+    },
+    {
+      "id": "arc-lounge-chair",
+      "group": "products",
+      "name": "Arc lounge chair",
+      "master": "product-arc-lounge-chair.webp",
+      "size": "1024x1024",
+      "webSize": [
+        640,
+        640
+      ],
+      "alt": {
+        "en": "An oak lounge chair with ivory upholstery",
+        "es": "Una silla de roble con tapizado marfil"
+      },
+      "prompt": "Use case: product-mockup. Asset: ecommerce catalog photograph of a fictional original Aureform object.\nSubject: a contemporary lounge chair with a curved natural oak frame, elegantly joined legs, warm ivory textured bouclé seat and backrest; believable ergonomic construction and all four legs clearly formed.\nScene: a seamless warm pale stone studio cyclorama and matching surface, absolutely no horizon clutter. Composition: one complete product centered, three-quarter front view, product fills about 70% of the square frame with clean generous margins; no part clipped. Style: expensive design magazine product photography, tactile materials, crisp thoughtful details, refined considered proportions. Lighting: broad soft studio light from upper left, subtle physically realistic contact shadow and beautiful smooth tonal gradients, warm neutral white balance. Constraints: no people, hands, extra unrelated products, props, prices, text, logos, watermarks, labels, UI, collage, brand imitation, distorted geometry, floating legs or missing structural parts."
+    },
+    {
+      "id": "linea-notebook",
+      "group": "products",
+      "name": "Linea notebook",
+      "master": "product-linea-notebook.webp",
+      "size": "1024x1024",
+      "webSize": [
+        640,
+        640
+      ],
+      "alt": {
+        "en": "A lilac linen notebook with a green bookmark",
+        "es": "Un cuaderno de lino lila con marcador verde"
+      },
+      "prompt": "Use case: product-mockup. Asset: ecommerce catalog photograph of a fictional original Aureform object.\nSubject: one closed linen-bound notebook in muted dusty lilac, a subtle embossed linear abstract motif without lettering, beautifully bound cream paper edges and a thin forest-green ribbon bookmark peeking from the bottom.\nScene: a seamless warm pale stone studio cyclorama and matching surface, absolutely no horizon clutter. Composition: one complete product centered, three-quarter front view, product fills about 70% of the square frame with clean generous margins; no part clipped. Style: expensive design magazine product photography, tactile materials, crisp thoughtful details, refined considered proportions. Lighting: broad soft studio light from upper left, subtle physically realistic contact shadow and beautiful smooth tonal gradients, warm neutral white balance. Constraints: no people, hands, extra unrelated products, props, prices, text, logos, watermarks, labels, UI, collage, brand imitation, distorted geometry, floating legs or missing structural parts."
+    },
+    {
+      "id": "studio-tote",
+      "group": "products",
+      "name": "Studio tote",
+      "master": "product-studio-tote.webp",
+      "size": "1024x1024",
+      "webSize": [
+        640,
+        640
+      ],
+      "alt": {
+        "en": "A natural canvas tote with a sage-green abstract mark",
+        "es": "Un bolso de lona natural con una forma abstracta verde salvia"
+      },
+      "prompt": "Use case: product-mockup. Asset: ecommerce catalog photograph of a fictional original Aureform object.\nSubject: one natural undyed heavy cotton canvas tote bag, two sturdy cotton handles, a simple elegant sage-green abstract curved shape printed on the lower left without lettering, subtle fabric creases, bag upright and gently filled to hold its form.\nScene: a seamless warm pale stone studio cyclorama and matching surface, absolutely no horizon clutter. Composition: one complete product centered, three-quarter front view, product fills about 70% of the square frame with clean generous margins; no part clipped. Style: expensive design magazine product photography, tactile materials, crisp thoughtful details, refined considered proportions. Lighting: broad soft studio light from upper left, subtle physically realistic contact shadow and beautiful smooth tonal gradients, warm neutral white balance. Constraints: no people, hands, extra unrelated products, props, prices, text, logos, watermarks, labels, UI, collage, brand imitation, distorted geometry, floating legs or missing structural parts."
+    },
+    {
+      "id": "morrow-ceramic-cup",
+      "group": "products",
+      "name": "Morrow ceramic cup",
+      "master": "product-morrow-ceramic-cup.webp",
+      "size": "1024x1024",
+      "webSize": [
+        640,
+        640
+      ],
+      "alt": {
+        "en": "A honey-amber ceramic cup and saucer",
+        "es": "Una taza cerámica ámbar con plato"
+      },
+      "prompt": "Use case: product-mockup. Asset: ecommerce catalog photograph of a fictional original Aureform object.\nSubject: one hand-finished ceramic cup with an elegant simple curved handle, a glossy warm honey-amber glaze near the rim transitioning to matte speckled ivory clay at the base, a small refined matching saucer.\nScene: a seamless warm pale stone studio cyclorama and matching surface, absolutely no horizon clutter. Composition: one complete product centered, three-quarter front view, product fills about 70% of the square frame with clean generous margins; no part clipped. Style: expensive design magazine product photography, tactile materials, crisp thoughtful details, refined considered proportions. Lighting: broad soft studio light from upper left, subtle physically realistic contact shadow and beautiful smooth tonal gradients, warm neutral white balance. Constraints: no people, hands, extra unrelated products, props, prices, text, logos, watermarks, labels, UI, collage, brand imitation, distorted geometry, floating legs or missing structural parts."
+    },
+    {
+      "id": "silhouette-vase",
+      "group": "products",
+      "name": "Silhouette vase",
+      "master": "product-silhouette-vase.webp",
+      "size": "1024x1024",
+      "webSize": [
+        640,
+        640
+      ],
+      "alt": {
+        "en": "A sculptural terracotta ceramic vase",
+        "es": "Un jarrón escultórico de cerámica terracota"
+      },
+      "prompt": "Use case: product-mockup. Asset: ecommerce catalog photograph of a fictional original Aureform object.\nSubject: one hand-built sculptural ceramic vase, softly asymmetric rounded organic silhouette, narrow opening, matte warm terracotta surface with fine tactile speckles, no flowers or stems.\nScene: a seamless warm pale stone studio cyclorama and matching surface, absolutely no horizon clutter. Composition: one complete product centered, three-quarter front view, product fills about 70% of the square frame with clean generous margins; no part clipped. Style: expensive design magazine product photography, tactile materials, crisp thoughtful details, refined considered proportions. Lighting: broad soft studio light from upper left, subtle physically realistic contact shadow and beautiful smooth tonal gradients, warm neutral white balance. Constraints: no people, hands, extra unrelated products, props, prices, text, logos, watermarks, labels, UI, collage, brand imitation, distorted geometry, floating legs or missing structural parts."
+    },
+    {
+      "id": "fold-side-table",
+      "group": "products",
+      "name": "Fold side table",
+      "master": "product-fold-side-table.webp",
+      "size": "1024x1024",
+      "webSize": [
+        640,
+        640
+      ],
+      "alt": {
+        "en": "A folded slate-blue metal side table",
+        "es": "Una mesa auxiliar de metal plegado azul pizarra"
+      },
+      "prompt": "Use case: product-mockup. Asset: ecommerce catalog photograph of a fictional original Aureform object.\nSubject: one minimalist side table made from a single visibly folded sheet of powder-coated muted slate-blue metal, refined rounded edges, gently arched rectangular tabletop and stable folded side panels; physically plausible manufacturing.\nScene: a seamless warm pale stone studio cyclorama and matching surface, absolutely no horizon clutter. Composition: one complete product centered, three-quarter front view, product fills about 70% of the square frame with clean generous margins; no part clipped. Style: expensive design magazine product photography, tactile materials, crisp thoughtful details, refined considered proportions. Lighting: broad soft studio light from upper left, subtle physically realistic contact shadow and beautiful smooth tonal gradients, warm neutral white balance. Constraints: no people, hands, extra unrelated products, props, prices, text, logos, watermarks, labels, UI, collage, brand imitation, distorted geometry, floating legs or missing structural parts."
+    },
+    {
+      "id": "essential-wall-print",
+      "group": "products",
+      "name": "Essential wall print",
+      "master": "product-essential-wall-print.webp",
+      "size": "1024x1024",
+      "webSize": [
+        640,
+        640
+      ],
+      "alt": {
+        "en": "An oak-framed abstract print in green, amber and lilac",
+        "es": "Una lámina abstracta en verde, ámbar y lila con marco de roble"
+      },
+      "prompt": "Use case: product-mockup. Asset: ecommerce catalog photograph of a fictional original Aureform object.\nSubject: one portrait-oriented fine art print in a thin natural oak frame, ivory archival paper, an original refined composition of one forest-green soft-edged arch, a small amber circle and a muted lilac rectangle; frame standing slightly angled and entirely within the shot.\nScene: a seamless warm pale stone studio cyclorama and matching surface, absolutely no horizon clutter. Composition: one complete product centered, three-quarter front view, product fills about 70% of the square frame with clean generous margins; no part clipped. Style: expensive design magazine product photography, tactile materials, crisp thoughtful details, refined considered proportions. Lighting: broad soft studio light from upper left, subtle physically realistic contact shadow and beautiful smooth tonal gradients, warm neutral white balance. Constraints: no people, hands, extra unrelated products, props, prices, text, logos, watermarks, labels, UI, collage, brand imitation, distorted geometry, floating legs or missing structural parts."
+    },
+    {
+      "id": "quiet-forms",
+      "group": "art",
+      "name": "Quiet Forms",
+      "master": "art-quiet-forms.webp",
+      "size": "1536x1024",
+      "webSize": [
+        1200,
+        800
+      ],
+      "alt": {
+        "en": "An ivory sculptural arch and sage sphere in warm side light",
+        "es": "Un arco escultórico marfil y una esfera salvia con luz cálida lateral"
+      },
+      "prompt": "Use case: stylized-concept. Asset: original premium editorial cover artwork for the Aureform gallery and image studio.\nSubject: a majestic smooth ivory plaster arch and a small matte sage sphere on a warm limestone plinth, an amber side-light gradient across the background and a long soft sculptural shadow; serene sculptural still life with genuine depth.\nComposition: horizontal 3:2 image, simple purposeful arrangement in the central 80% so both 4:3 and 16:10 crops stay meaningful, generous breathing room and a striking focal object; high-end art direction. Style: photorealistic sculpture or architectural photography with subtle poetic abstraction, contemporary design journal, tactile convincing materials, beautiful nuanced shades and controlled luminous gradients. Constraints: original fictional scene, no text, letters, watermarks, logos, UI, cards, screens, frames, collage, people, noisy glitter or excessive decoration; never a flat vector placeholder."
+    },
+    {
+      "id": "studio",
+      "group": "art",
+      "name": "Studio",
+      "master": "art-studio.webp",
+      "size": "1536x1024",
+      "webSize": [
+        1200,
+        800
+      ],
+      "alt": {
+        "en": "A sunlit creative studio with an oak table and sage chair",
+        "es": "Un estudio creativo iluminado con mesa de roble y silla salvia"
+      },
+      "prompt": "Use case: stylized-concept. Asset: original premium editorial cover artwork for the Aureform gallery and image studio.\nSubject: a sunlit contemporary creative studio with a sculptural oak table, a single sage upholstered chair, ivory plaster walls, one sculptural amber-glass vase and a large blurred window casting soft geometric shadows; an uncluttered design magazine interior.\nComposition: horizontal 3:2 image, simple purposeful arrangement in the central 80% so both 4:3 and 16:10 crops stay meaningful, generous breathing room and a striking focal object; high-end art direction. Style: photorealistic sculpture or architectural photography with subtle poetic abstraction, contemporary design journal, tactile convincing materials, beautiful nuanced shades and controlled luminous gradients. Constraints: original fictional scene, no text, letters, watermarks, logos, UI, cards, screens, frames, collage, people, noisy glitter or excessive decoration; never a flat vector placeholder."
+    },
+    {
+      "id": "arc",
+      "group": "art",
+      "name": "Arc",
+      "master": "art-arc.webp",
+      "size": "1536x1024",
+      "webSize": [
+        1200,
+        800
+      ],
+      "alt": {
+        "en": "A terracotta arch and amber glass sphere with sweeping shadows",
+        "es": "Un arco terracota y una esfera de vidrio ámbar con sombras amplias"
+      },
+      "prompt": "Use case: stylized-concept. Asset: original premium editorial cover artwork for the Aureform gallery and image studio.\nSubject: a dramatic monumental terracotta semicircular arch sculpture with a small honey amber translucent glass sphere in the foreground, warm cream floor and background, sweeping afternoon shadows from upper left; architectural object study.\nComposition: horizontal 3:2 image, simple purposeful arrangement in the central 80% so both 4:3 and 16:10 crops stay meaningful, generous breathing room and a striking focal object; high-end art direction. Style: photorealistic sculpture or architectural photography with subtle poetic abstraction, contemporary design journal, tactile convincing materials, beautiful nuanced shades and controlled luminous gradients. Constraints: original fictional scene, no text, letters, watermarks, logos, UI, cards, screens, frames, collage, people, noisy glitter or excessive decoration; never a flat vector placeholder."
+    },
+    {
+      "id": "morrow",
+      "group": "art",
+      "name": "Morrow",
+      "master": "art-morrow.webp",
+      "size": "1536x1024",
+      "webSize": [
+        1200,
+        800
+      ],
+      "alt": {
+        "en": "A folded sage satin ribbon on a misty green background",
+        "es": "Una cinta plegada de satén salvia sobre un fondo verde brumoso"
+      },
+      "prompt": "Use case: stylized-concept. Asset: original premium editorial cover artwork for the Aureform gallery and image studio.\nSubject: an elegant impossible-but-beautiful folded satin ribbon sculpture in deep sage and pale mint, suspended just above a forest-green plinth, soft misty sea-green gradient backdrop, a warm reflected light along the curves; meditative premium abstract material render.\nComposition: horizontal 3:2 image, simple purposeful arrangement in the central 80% so both 4:3 and 16:10 crops stay meaningful, generous breathing room and a striking focal object; high-end art direction. Style: photorealistic sculpture or architectural photography with subtle poetic abstraction, contemporary design journal, tactile convincing materials, beautiful nuanced shades and controlled luminous gradients. Constraints: original fictional scene, no text, letters, watermarks, logos, UI, cards, screens, frames, collage, people, noisy glitter or excessive decoration; never a flat vector placeholder."
+    },
+    {
+      "id": "silhouette",
+      "group": "art",
+      "name": "Silhouette",
+      "master": "art-silhouette.webp",
+      "size": "1536x1024",
+      "webSize": [
+        1200,
+        800
+      ],
+      "alt": {
+        "en": "A cobalt vessel and orange stone form on a lilac stage",
+        "es": "Un recipiente cobalto y una forma naranja sobre una base lila"
+      },
+      "prompt": "Use case: stylized-concept. Asset: original premium editorial cover artwork for the Aureform gallery and image studio.\nSubject: a gallery-quality sculptural composition of one tall organic cobalt-blue ceramic vessel and a smaller warm orange matte stone form on a pale lilac stage, clean side lighting and exquisite textured surfaces; vivid but sophisticated complementary colors.\nComposition: horizontal 3:2 image, simple purposeful arrangement in the central 80% so both 4:3 and 16:10 crops stay meaningful, generous breathing room and a striking focal object; high-end art direction. Style: photorealistic sculpture or architectural photography with subtle poetic abstraction, contemporary design journal, tactile convincing materials, beautiful nuanced shades and controlled luminous gradients. Constraints: original fictional scene, no text, letters, watermarks, logos, UI, cards, screens, frames, collage, people, noisy glitter or excessive decoration; never a flat vector placeholder."
+    },
+    {
+      "id": "goodform",
+      "group": "art",
+      "name": "Goodform",
+      "master": "art-goodform.webp",
+      "size": "1536x1024",
+      "webSize": [
+        1200,
+        800
+      ],
+      "alt": {
+        "en": "Lavender resin discs, an amber arc and a mint sphere",
+        "es": "Discos de resina lavanda, un arco ámbar y una esfera menta"
+      },
+      "prompt": "Use case: stylized-concept. Asset: original premium editorial cover artwork for the Aureform gallery and image studio.\nSubject: a close sculptural still life of stacked rounded lavender resin discs, one luminous amber translucent arc and a pale mint ceramic sphere; a rich plum-to-lilac seamless background, glossy highlights balanced with matte textures and graceful shadows.\nComposition: horizontal 3:2 image, simple purposeful arrangement in the central 80% so both 4:3 and 16:10 crops stay meaningful, generous breathing room and a striking focal object; high-end art direction. Style: photorealistic sculpture or architectural photography with subtle poetic abstraction, contemporary design journal, tactile convincing materials, beautiful nuanced shades and controlled luminous gradients. Constraints: original fictional scene, no text, letters, watermarks, logos, UI, cards, screens, frames, collage, people, noisy glitter or excessive decoration; never a flat vector placeholder."
+    }
+  ]
+}

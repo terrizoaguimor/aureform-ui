@@ -1,0 +1,8 @@
+{
+  "error": {
+    "message": "Could not read image size from image metadata"
+  },
+  "error_code": "INVALID_ARGUMENT",
+  "safeToRetryWithoutCanvasRead": true,
+  "mutationsPerformed": false
+}

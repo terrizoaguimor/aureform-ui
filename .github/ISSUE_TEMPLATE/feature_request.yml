@@ -1,0 +1,37 @@
+name: Feature request
+description: Propose a useful component, workflow or integration improvement.
+title: "[Feature]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: English and Spanish are welcome. Start with the task a person needs to complete.
+  - type: textarea
+    id: problem
+    attributes:
+      label: User task and current difficulty
+      description: Who needs this, and what makes their task difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the interaction and where it belongs.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Existing components, workarounds or a smaller change.
+  - type: textarea
+    id: references
+    attributes:
+      label: References or examples
+      description: Link public examples. Identify the license of any proposed reusable assets.
+  - type: textarea
+    id: contribution
+    attributes:
+      label: How you could help
+      description: Design, implementation, examples, testing or documentation are all useful.

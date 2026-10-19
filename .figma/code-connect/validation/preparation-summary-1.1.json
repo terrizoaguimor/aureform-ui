@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "version": "1.1.0",
+  "recordedAt": "2026-10-19T06:14:08.529233+00:00",
+  "status": "passed-isolated-preparation-final-owner-checkpoint-held",
+  "scope": "Filesystem generator/input preparation and Markdown only; this is not final Code Connect, native runtime execution or archive verification.",
+  "stagingRoot": "/tmp/aureform-cc-preparation-1.1-_13sbhkg/kit",
+  "nativeRecordsReady": {
+    "Table": 16,
+    "DataTable": 28,
+    "Button / Shapes": 9
+  },
+  "nativeInputs": {
+    "records": ".figma/code-connect/native-additions.json",
+    "schema": ".figma/code-connect/native-records-1.1.schema.json",
+    "sourceOnlyBlocks": [
+      "TableToolbar"
+    ]
+  },
+  "checks": [
+    {
+      "check": "isolated-generation",
+      "status": "PASS",
+      "command": "python3 scripts/generate-code-connect.py",
+      "result": {
+        "coreFamilies": 44,
+        "buttonExtensions": 2,
+        "shapeExtensions": 1,
+        "sourceBlockExports": 10,
+        "sourceBlockFiles": 9,
+        "mappedBlockExports": 9,
+        "nativeIcons": 22,
+        "navigationFragments": 1,
+        "chromeCompositions": 3,
+        "appearanceExtensions": 3,
+        "effectTemplates": 6,
+        "pendingNativeMappings": 1,
+        "totalTemplates": 92
+      }
+    },
+    {
+      "check": "isolated-synthetic-and-source-typecheck",
+      "status": "PASS",
+      "command": "AUREFORM_DEPENDENCIES=/tmp/aureform-ui-build/node_modules node scripts/verify-code-connect.cjs",
+      "result": {
+        "status": "passed-local-smoke",
+        "runtime": "synthetic-figma-stub",
+        "typescript": "5.9.3",
+        "templateFiles": 92,
+        "firstListedVariantCases": 92,
+        "recordedNativeMatrixCases": {
+          "Table": 16,
+          "DataTable": 28,
+          "Button / Shapes": 9
+        },
+        "exhaustiveVariantCombinations": 331,
+        "topLevelCases": 960,
+        "nestedTemplateExecutions": 334,
+        "totalTemplateEvaluations": 1294,
+        "uniqueTypedExamples": 458,
+        "templateTypecheck": "passed-against-local-api-declaration-stub",
+        "emittedExampleTypecheck": "passed-against-canonical-source-and-installed-dependency-types",
+        "canonicalSources": "src",
+        "dependencyTypes": "owner-mirror",
+        "diagnostics": 0,
+        "quoteNewlineUnicodeCases": 92,
+        "nativeIconSwapCases": 44,
+        "unexposedIconChildCases": 44,
+        "missingOrErrorSwapCases": 6,
+        "shellPageContentCases": 18,
+        "sourceAppearanceCases": 14,
+        "sourceEffectContracts": 6,
+        "sourceChartKindCases": 13,
+        "sourceButtonShapeSizeCases": 9,
+        "sourceTableMaterialDensityCases": 16,
+        "sourceDataTableStateCases": 5,
+        "nativeChartVariantCombinations": 6,
+        "starterSourceTypecheck": "passed-against-canonical-source",
+        "sourceSnapshotChecks": 78,
+        "templateSnapshotChecks": 92,
+        "pendingNativeMappings": 1,
+        "rawShellHeaderNotForwarded": true,
+        "liveFigmaRuntimeTested": false,
+        "cloudRegistered": false,
+        "testScript": "scripts/verify-code-connect.cjs"
+      }
+    },
+    {
+      "check": "isolated-docs-only-coverage",
+      "status": "PASS",
+      "command": "AUREFORM_DEPENDENCIES=/tmp/aureform-ui-build/node_modules node scripts/generate-coverage.mjs --docs-only",
+      "result": {
+        "suiteRoutes": 64,
+        "landingPages": 1,
+        "views": 65,
+        "componentFamilies": 44,
+        "completeExamples": 44,
+        "blockFiles": 9,
+        "blockExports": 10,
+        "shellLayouts": 6,
+        "chartFamilies": 13,
+        "registryItems": 83,
+        "codeConnectTemplates": 92,
+        "mappedNativeViews": 65,
+        "pendingNativeViews": 0,
+        "palettes": 6,
+        "reusableEffects": 6,
+        "nativeGalleryPreviews": 46,
+        "semanticColors": 21,
+        "primitiveColors": 270,
+        "effectTokens": 15
+      }
+    },
+    {
+      "check": "owned-js-lint",
+      "status": "PASS",
+      "command": "node /tmp/aureform-ui-build/node_modules/eslint/bin/eslint.js scripts/verify-code-connect.cjs scripts/generate-coverage.mjs --max-warnings 0",
+      "warnings": 0,
+      "exitCode": 0
+    },
+    {
+      "check": "generator-syntax-and-native-record-schema",
+      "status": "PASS",
+      "details": "Python compile without output; Draft-07 validated using the already-installed ESLint Ajv dependency. Only complete Table, DataTable and Shapes records were supplied."
+    },
+    {
+      "check": "frozen-application-and-canonical-cc-integrity",
+      "status": "PASS",
+      "result": {
+        "ownerBuildSession": "17106",
+        "version": "1.1.0",
+        "applicationFiles": 122,
+        "allMatchOwnerFreeze": true,
+        "sourceInventorySHA256": "f4f57aa7bfbe446e9b78704fc311ab8b0f1266edbb640213e344b7f74cf1280a",
+        "docsUiSHA256": "bb986e0720531bd2dae743f488319c5ac332b80b7d189ec565d5e7d6bd9d8554",
+        "providerSHA256": "d4c5cf01f252483f2edb2fee28f5f56a0b5a5b844b39bf323abe4dad4a06a7d5"
+      },
+      "canonicalTemplateFilesUnchanged": 91,
+      "canonicalManifestUnchanged": true
+    }
+  ],
+  "heldCanonicalOutputs": {
+    "manifest": ".figma/code-connect-manifest.json",
+    "manifestSHA256": "1a29238c26679b09c21ce4be5581f1ab2b4072afded6a9bd5a041df2d5bd12e3",
+    "validationStatus": "pending-owner-native-checkpoint",
+    "generatedCanonicalTemplates": false,
+    "generatedCanonicalCoverage": false,
+    "modifiedOwnerState": false,
+    "finalSourceHashesPromoted": false
+  },
+  "remainingInputs": [
+    {
+      "owner": "Newton",
+      "family": "Chart",
+      "currentSetId": "23:501",
+      "currentDefaultId": "23:444",
+      "currentTextProperty": "Label#23:14",
+      "needed": [
+        "Actual complete Kind definitions/options for 13 kinds",
+        "Every observed native variant ID/name/Kind, actual default and exact property definitions",
+        "Targeted native fixes closed, including SaaS Enterprise spacing"
+      ],
+      "sourceKindsAlreadyTyped": 13,
+      "nativeKindsInIsolatedCheckpoint": 6
+    },
+    {
+      "owner": "Huygens/owner",
+      "needed": [
+        "Actual 65-root native audit after owner state completion/pending[] freeze",
+        "Audit stateSha256 matches the final frozen state",
+        "Flat final Code Connect verification summary after changed-input regeneration"
+      ]
+    }
+  ],
+  "finalOrder": [
+    "Newton actual readback/fix completion",
+    "Canonical checkpoint generate/verify",
+    "Owner completed steps and pending[] state freeze",
+    "Huygens actual65 audit bound to final state SHA256",
+    "Final CC regeneration/verification for changed inputs",
+    "Coverage --docs-only and final shipping docs",
+    "Owner archive inventory freeze and final packaging/verification"
+  ],
+  "lease": {
+    "status": "NoLease",
+    "nativeMcpCalls": 0,
+    "pendingNativeCalls": 0
+  },
+  "cloudRegistered": false,
+  "archiveVerificationPerformed": false,
+  "applicationIntegrity": {
+    "ownerBuildSession": "17106",
+    "version": "1.1.0",
+    "applicationFiles": 122,
+    "allMatchOwnerFreeze": true,
+    "sourceInventorySHA256": "f4f57aa7bfbe446e9b78704fc311ab8b0f1266edbb640213e344b7f74cf1280a",
+    "docsUiSHA256": "bb986e0720531bd2dae743f488319c5ac332b80b7d189ec565d5e7d6bd9d8554",
+    "providerSHA256": "d4c5cf01f252483f2edb2fee28f5f56a0b5a5b844b39bf323abe4dad4a06a7d5"
+  },
+  "preparedFiles": [
+    {
+      "file": "scripts/generate-code-connect.py",
+      "sha256": "2962a93f2b960d728333da8c57265aef8acacf870b1471292b7fe2a0ceb5d048"
+    },
+    {
+      "file": "scripts/verify-code-connect.cjs",
+      "sha256": "d37c1c3fbd1df8e15637d17db83bd70c6d9445b471959de5d9b729240cf0c500"
+    },
+    {
+      "file": "scripts/generate-coverage.mjs",
+      "sha256": "eb327f88664151b3081fb841967030a10a983a7b8f69a0022f6ebdcc2bb1a00d"
+    },
+    {
+      "file": ".figma/code-connect/native-additions.json",
+      "sha256": "1cd1c89a9ff1d85b2966f66c008f29244dc6e49e36f1dcfa39408fe2c711cd9b"
+    },
+    {
+      "file": ".figma/code-connect/native-records-1.1.schema.json",
+      "sha256": "703c5f9980b720701cdfbcd7a875bd74f5be7c15b5f2165ddf2fd2c681cf8f51"
+    },
+    {
+      "file": "docs/code-connect-records-1.1.md",
+      "sha256": "23e75567e6c186be6d2512b1494b3fe5966e9e5a4b04086ef5f8a61674942933"
+    },
+    {
+      "file": "docs/release-checklist-1.1.md",
+      "sha256": "46e114414b022f00b1f2a43bb48432ded9360ed1743547f39b6fcb52601a384c"
+    },
+    {
+      "file": "docs/handoff-1.1.md",
+      "sha256": "a02a37074c0df1bb68535f99ff20b218d775f13c23c34355673781ac99aa78fe"
+    },
+    {
+      "file": "docs/community-design-references.md",
+      "sha256": "ae62aebd0794d1dd1d43e2e92887b6173b5d6208665f3e7f34b642a72bfc6e7a"
+    }
+  ]
+}

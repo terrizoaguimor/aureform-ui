@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "collection": "Aureform Generated Image Collection",
+  "license": "Apache-2.0",
+  "model": "gpt-image-2.5-flare-2026-09-08",
+  "promptCatalog": "../../docs/generated-images/catalog.json",
+  "items": [
+    {
+      "id": "alex-morgan",
+      "group": "avatars",
+      "file": "masters/portrait-alex-morgan.webp",
+      "bytes": 183200,
+      "sha256": "8ded8a8d816a7287e928ea32f68fc97336529a03c919556cc1db7be1761c2932",
+      "size": "1024x1024"
+    },
+    {
+      "id": "isabel-torres",
+      "group": "avatars",
+      "file": "masters/portrait-isabel-torres.webp",
+      "bytes": 188686,
+      "sha256": "a8b84c0c1363549d52d374ccb35a2fb1d4d19752eac2c713a328f94b7c7086aa",
+      "size": "1024x1024"
+    },
+    {
+      "id": "leo-martin",
+      "group": "avatars",
+      "file": "masters/portrait-leo-martin.webp",
+      "bytes": 209880,
+      "sha256": "82dc41784800f3af4b732268ded3254ccef1a9dc10049b7166485608725a829b",
+      "size": "1024x1024"
+    },
+    {
+      "id": "noor-ahmed",
+      "group": "avatars",
+      "file": "masters/portrait-noor-ahmed.webp",
+      "bytes": 153018,
+      "sha256": "3d115551847bc1213b9d0f32918829f25b107b4caa17fbbaeed68a971b857d3d",
+      "size": "1024x1024"
+    },
+    {
+      "id": "daniel-kim",
+      "group": "avatars",
+      "file": "masters/portrait-daniel-kim.webp",
+      "bytes": 158132,
+      "sha256": "608233be9b033e6f81f312221c7070a869812531fb4799c68bba7a4dd7bc5cec",
+      "size": "1024x1024"
+    },
+    {
+      "id": "olivia-rhye",
+      "group": "avatars",
+      "file": "masters/portrait-olivia-rhye.webp",
+      "bytes": 149898,
+      "sha256": "762721f53334caf2f40137949385aecf8e6dc338a734c501f23998add0ddb17e",
+      "size": "1024x1024"
+    },
+    {
+      "id": "phoenix-baker",
+      "group": "avatars",
+      "file": "masters/portrait-phoenix-baker.webp",
+      "bytes": 146290,
+      "sha256": "ce236f06c38a52c4d19ebc519135a0897090e4b890da47f640242c537e65212f",
+      "size": "1024x1024"
+    },
+    {
+      "id": "lana-steiner",
+      "group": "avatars",
+      "file": "masters/portrait-lana-steiner.webp",
+      "bytes": 154812,
+      "sha256": "7e558b117edb2cfd4694665c420048b3b54de7adf3709a9125f0151c8b7b7d99",
+      "size": "1024x1024"
+    },
+    {
+      "id": "demi-wilkinson",
+      "group": "avatars",
+      "file": "masters/portrait-demi-wilkinson.webp",
+      "bytes": 177716,
+      "sha256": "1a8be4a5e0498caafd3472eb52bd69c9b5a722cb9e5d249f3341c327e35d4d99",
+      "size": "1024x1024"
+    },
+    {
+      "id": "drew-cano",
+      "group": "avatars",
+      "file": "masters/portrait-drew-cano.webp",
+      "bytes": 159584,
+      "sha256": "29225575cf3cd9667985f139d2f35e8077b310480d4a48113f87c00052e71ec4",
+      "size": "1024x1024"
+    },
+    {
+      "id": "amelia-wilson",
+      "group": "avatars",
+      "file": "masters/portrait-amelia-wilson.webp",
+      "bytes": 193156,
+      "sha256": "f864c36ccf4a63e9e26990492ac93e66d49acb96cf4bb447d1a82ce11842676e",
+      "size": "1024x1024"
+    },
+    {
+      "id": "matias-vega",
+      "group": "avatars",
+      "file": "masters/portrait-matias-vega.webp",
+      "bytes": 166046,
+      "sha256": "ffd72d1b7573df33faec1290de8054750d31aa16a63d98ed6ea8c2d339871111",
+      "size": "1024x1024"
+    },
+    {
+      "id": "sofia-chen",
+      "group": "avatars",
+      "file": "masters/portrait-sofia-chen.webp",
+      "bytes": 167618,
+      "sha256": "14d9769db2ea6837e1dd479aba88e0b71e4a237cffa51ed2619712d1b113ce84",
+      "size": "1024x1024"
+    },
+    {
+      "id": "lucas-moreau",
+      "group": "avatars",
+      "file": "masters/portrait-lucas-moreau.webp",
+      "bytes": 182112,
+      "sha256": "91a1d68fa478361ed0601d4058c6bca6629e0c208a7462bb0c8f92b3badd67b1",
+      "size": "1024x1024"
+    },
+    {
+      "id": "alex-rivera",
+      "group": "avatars",
+      "file": "masters/portrait-alex-rivera.webp",
+      "bytes": 164454,
+      "sha256": "6c8a0e35b3c2c386bb5375fa6272047365c49789336245ed039a1a4fb01fcdcc",
+      "size": "1024x1024"
+    },
+    {
+      "id": "isabel-moreno",
+      "group": "avatars",
+      "file": "masters/portrait-isabel-moreno.webp",
+      "bytes": 167726,
+      "sha256": "18ffb60acfcd306a37047ff5685cb728e0705ac182413334f4653ddc974c18ef",
+      "size": "1024x1024"
+    },
+    {
+      "id": "studio-updates",
+      "group": "avatars",
+      "file": "masters/organization-studio-updates.webp",
+      "bytes": 54242,
+      "sha256": "fc63e995d73976d29890add0c80cd36cb71fb5a17b068c548fe12194db57fde7",
+      "size": "1024x1024"
+    },
+    {
+      "id": "forma-collective",
+      "group": "avatars",
+      "file": "masters/organization-forma-collective.webp",
+      "bytes": 91634,
+      "sha256": "ce36cafe7db2744a97ae25c3dacac1e8d8692bb18a5849752c164c20a1d2272c",
+      "size": "1024x1024"
+    },
+    {
+      "id": "forma-desk-lamp",
+      "group": "products",
+      "file": "masters/product-forma-desk-lamp.webp",
+      "bytes": 58692,
+      "sha256": "8107b1625fcbd91805b9464acf9b50244965eec72d04422881858e3ffe7a48e4",
+      "size": "1024x1024"
+    },
+    {
+      "id": "arc-lounge-chair",
+      "group": "products",
+      "file": "masters/product-arc-lounge-chair.webp",
+      "bytes": 129372,
+      "sha256": "98063163d7233cbe947d15ceea26f2661d1bc80fbc14a32bd9f3dda58274c025",
+      "size": "1024x1024"
+    },
+    {
+      "id": "linea-notebook",
+      "group": "products",
+      "file": "masters/product-linea-notebook.webp",
+      "bytes": 140704,
+      "sha256": "8efbc6ec6a47242be3f05a3fa3388fdee4e8a40edc9fa2fe8c4fe9890463f3a3",
+      "size": "1024x1024"
+    },
+    {
+      "id": "studio-tote",
+      "group": "products",
+      "file": "masters/product-studio-tote.webp",
+      "bytes": 129276,
+      "sha256": "dddeaf78d7c8d132cc55130c724d59ef5c5751ad7fc3e4db21ce3a1c9fa15846",
+      "size": "1024x1024"
+    },
+    {
+      "id": "morrow-ceramic-cup",
+      "group": "products",
+      "file": "masters/product-morrow-ceramic-cup.webp",
+      "bytes": 114276,
+      "sha256": "e82244a9ca08b5963e3ddebdd6bf1fdd8a1d6129a63eb62469aeed01ec0a6c11",
+      "size": "1024x1024"
+    },
+    {
+      "id": "silhouette-vase",
+      "group": "products",
+      "file": "masters/product-silhouette-vase.webp",
+      "bytes": 143288,
+      "sha256": "2466503347a71e8bfa031211b25270c13d88e992c37e020c2bf5155e25cf3383",
+      "size": "1024x1024"
+    },
+    {
+      "id": "fold-side-table",
+      "group": "products",
+      "file": "masters/product-fold-side-table.webp",
+      "bytes": 45692,
+      "sha256": "b716fc7960bdd328c08c7253d5ab6a0638a5c9bd68edcd035ca83419b542525e",
+      "size": "1024x1024"
+    },
+    {
+      "id": "essential-wall-print",
+      "group": "products",
+      "file": "masters/product-essential-wall-print.webp",
+      "bytes": 84266,
+      "sha256": "cd647b0e877fe75c7a69389c75cd10ae6cad2ecb3e83d1cf2ff2ea40834eafda",
+      "size": "1024x1024"
+    },
+    {
+      "id": "quiet-forms",
+      "group": "art",
+      "file": "masters/art-quiet-forms.webp",
+      "bytes": 144336,
+      "sha256": "8ca28326ccff1802e6e388ce6f88404ad10ff8484f7d1bbd9ad5b69a19332095",
+      "size": "1536x1024"
+    },
+    {
+      "id": "studio",
+      "group": "art",
+      "file": "masters/art-studio.webp",
+      "bytes": 190216,
+      "sha256": "fa207c5a3a60a5db0d19a68c604072b5a0917ffa4cc1b8b385c0cfc6d90ea606",
+      "size": "1536x1024"
+    },
+    {
+      "id": "arc",
+      "group": "art",
+      "file": "masters/art-arc.webp",
+      "bytes": 237830,
+      "sha256": "c5fe44a31c24b931063e292f4314622ea065fcb0a2b2eeecf948d9367fc990da",
+      "size": "1536x1024"
+    },
+    {
+      "id": "morrow",
+      "group": "art",
+      "file": "masters/art-morrow.webp",
+      "bytes": 144770,
+      "sha256": "526700004079c0cd1a49eaea00258b46507c5dcf8c487efde4f72157f559567f",
+      "size": "1536x1024"
+    },
+    {
+      "id": "silhouette",
+      "group": "art",
+      "file": "masters/art-silhouette.webp",
+      "bytes": 195312,
+      "sha256": "00d2b696d2cd62ce85bd3c33eb05e4ae0e54b8b9336f0601c975622886427d58",
+      "size": "1536x1024"
+    },
+    {
+      "id": "goodform",
+      "group": "art",
+      "file": "masters/art-goodform.webp",
+      "bytes": 141640,
+      "sha256": "20e6a811599ebac64b9ae42443d8e483c2e660d67ccce308e8672efc0f7a122d",
+      "size": "1536x1024"
+    }
+  ]
+}

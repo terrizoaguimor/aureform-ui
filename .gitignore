@@ -1,0 +1,31 @@
+node_modules
+.next/
+out/
+dist/
+artifacts/
+playwright-report/
+test-results/
+*.tsbuildinfo
+.env*
+!.env.example
+.DS_Store
+# Local deployment, agent, authentication and browser state is never public.
+.openai/
+.codex/
+.claude/
+.cursor/
+.npmrc
+credentials*.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.log
+cookies*.json
+storage-state*.json
+# The reviewed image masters are published in design/images/masters/.
+output/imagegen/
+tmp/imagegen/

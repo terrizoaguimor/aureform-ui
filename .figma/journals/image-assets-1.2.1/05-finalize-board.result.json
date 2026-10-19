@@ -1,0 +1,21 @@
+{
+  "status": "structural-fill-check-passed-visual-render-failed",
+  "sourceExecution": ".figma/journals/image-assets-1.2.1/05-finalize-board.js",
+  "pageId": "263:59",
+  "rootId": "263:60",
+  "componentCount": 32,
+  "imageFillNodes": 64,
+  "uniqueHashes": 32,
+  "fonts": [
+    "Manrope"
+  ],
+  "wholeUiRasterCount": 0,
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "263:60",
+    "263:64",
+    "263:164",
+    "263:210"
+  ],
+  "visualFinding": "The three native group PNGs show labels and cards, but all photo regions are blank. A direct Alex master export is a uniform RGB 245 placeholder; the recovered original WebP matches the local source SHA."
+}

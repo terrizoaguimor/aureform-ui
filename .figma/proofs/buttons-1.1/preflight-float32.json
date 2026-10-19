@@ -1,0 +1,19 @@
+{
+  "status": "preflight-blocked-before-mutation",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "reason": "Source dimension mismatch: radius/md",
+  "diagnosis": {
+    "variableId": "VariableID:2:71",
+    "name": "radius/md",
+    "modeId": "2:3",
+    "sourceValue": 10.4,
+    "nativeFloat32Value": 10.399999618530273,
+    "absoluteDifference": 3.8146972691777137e-07,
+    "maximumComparisonError": 1e-05
+  },
+  "canonicalScript": ".figma/scripts/buttons-1.1.js",
+  "canonicalScriptSha256": "18956057dcec948a6c45343d330b2e608ebddc7a00c82e4b9a76c297852bdfa6",
+  "executionAdjustment": "Only radius/md comparison permits a 0.00001 numeric error; no token, dimensions or other checks changed.",
+  "transportSha256": "2a54fd70987da29de65f4a7111bfcbbb4776602b40f561965cb12c3b0e2244c5"
+}

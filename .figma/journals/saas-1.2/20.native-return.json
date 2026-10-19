@@ -1,0 +1,1656 @@
+{
+  "status": "failed",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pages": [
+    {
+      "id": "2:2",
+      "name": "00 · Cover"
+    },
+    {
+      "id": "0:1",
+      "name": "01 · Foundations"
+    },
+    {
+      "id": "2:3",
+      "name": "02 · Core"
+    },
+    {
+      "id": "2:4",
+      "name": "03 · Blocks"
+    },
+    {
+      "id": "2:5",
+      "name": "04 · Templates 1.0"
+    },
+    {
+      "id": "2:6",
+      "name": "05 · Suite 1.1–1.3"
+    }
+  ],
+  "viewRoots": [
+    {
+      "id": "237:16428",
+      "name": "SaaS 1.2 / onboarding / Light",
+      "width": 1440,
+      "height": 1000,
+      "modes": {
+        "VariableCollectionId:2:36": "2:1"
+      }
+    },
+    {
+      "id": "237:16692",
+      "name": "SaaS 1.2 / onboarding / Dark",
+      "width": 1440,
+      "height": 1000,
+      "modes": {
+        "VariableCollectionId:2:36": "2:2"
+      }
+    },
+    {
+      "id": "237:16887",
+      "name": "SaaS 1.2 / settings/workspace / Light",
+      "width": 1440,
+      "height": 1115,
+      "modes": {
+        "VariableCollectionId:2:36": "2:1"
+      }
+    },
+    {
+      "id": "237:17079",
+      "name": "SaaS 1.2 / settings/workspace / Dark",
+      "width": 1440,
+      "height": 1115,
+      "modes": {
+        "VariableCollectionId:2:36": "2:2"
+      }
+    },
+    {
+      "id": "237:17271",
+      "name": "SaaS 1.2 / customers/detail / Light",
+      "width": 1440,
+      "height": 1293,
+      "modes": {
+        "VariableCollectionId:2:36": "2:1"
+      }
+    },
+    {
+      "id": "237:17522",
+      "name": "SaaS 1.2 / customers/detail / Dark",
+      "width": 1440,
+      "height": 1293,
+      "modes": {
+        "VariableCollectionId:2:36": "2:2"
+      }
+    },
+    {
+      "id": "237:17773",
+      "name": "SaaS 1.2 / imports / Light",
+      "width": 1440,
+      "height": 1069,
+      "modes": {
+        "VariableCollectionId:2:36": "2:1"
+      }
+    },
+    {
+      "id": "237:17965",
+      "name": "SaaS 1.2 / imports / Dark",
+      "width": 1440,
+      "height": 1069,
+      "modes": {
+        "VariableCollectionId:2:36": "2:2"
+      }
+    },
+    {
+      "id": "237:18156",
+      "name": "SaaS 1.2 / customers / Light",
+      "width": 1440,
+      "height": 1217,
+      "modes": {
+        "VariableCollectionId:2:36": "2:1"
+      }
+    },
+    {
+      "id": "237:18891",
+      "name": "SaaS 1.2 / customers / Dark",
+      "width": 1440,
+      "height": 1217,
+      "modes": {
+        "VariableCollectionId:2:36": "2:2"
+      }
+    },
+    {
+      "id": "237:19625",
+      "name": "SaaS 1.2 / settings/team / Light",
+      "width": 1440,
+      "height": 1362,
+      "modes": {
+        "VariableCollectionId:2:36": "2:1"
+      }
+    },
+    {
+      "id": "237:19873",
+      "name": "SaaS 1.2 / settings/team / Dark",
+      "width": 1440,
+      "height": 1362,
+      "modes": {
+        "VariableCollectionId:2:36": "2:2"
+      }
+    }
+  ],
+  "componentSets": [
+    {
+      "id": "225:1708",
+      "name": "WorkspaceStatus",
+      "width": 2288,
+      "height": 592,
+      "variants": [
+        {
+          "id": "225:1615",
+          "name": "State=Owner, Theme=Light",
+          "width": 1080,
+          "height": 64,
+          "axes": {
+            "State": "Owner",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:1629",
+          "name": "State=Owner, Theme=Dark",
+          "width": 1080,
+          "height": 64,
+          "axes": {
+            "State": "Owner",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "225:1642",
+          "name": "State=Viewer, Theme=Light",
+          "width": 1080,
+          "height": 64,
+          "axes": {
+            "State": "Viewer",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:1655",
+          "name": "State=Viewer, Theme=Dark",
+          "width": 1080,
+          "height": 64,
+          "axes": {
+            "State": "Viewer",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "225:1668",
+          "name": "State=Storage-error, Theme=Light",
+          "width": 1080,
+          "height": 256,
+          "axes": {
+            "State": "Storage-error",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:1688",
+          "name": "State=Storage-error, Theme=Dark",
+          "width": 1080,
+          "height": 256,
+          "axes": {
+            "State": "Storage-error",
+            "Theme": "Dark"
+          }
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Owner",
+          "variantOptions": [
+            "Owner",
+            "Viewer",
+            "Storage-error"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "id": "225:2068",
+      "name": "OnboardingFlow",
+      "width": 2288,
+      "height": 2357,
+      "variants": [
+        {
+          "id": "225:1709",
+          "name": "State=Organization, Theme=Light",
+          "width": 1080,
+          "height": 350,
+          "axes": {
+            "State": "Organization",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:1743",
+          "name": "State=Organization, Theme=Dark",
+          "width": 1080,
+          "height": 350,
+          "axes": {
+            "State": "Organization",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "225:1776",
+          "name": "State=Workspace, Theme=Light",
+          "width": 1080,
+          "height": 442,
+          "axes": {
+            "State": "Workspace",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:1812",
+          "name": "State=Workspace, Theme=Dark",
+          "width": 1080,
+          "height": 442,
+          "axes": {
+            "State": "Workspace",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "225:1848",
+          "name": "State=Invitations, Theme=Light",
+          "width": 1080,
+          "height": 480,
+          "axes": {
+            "State": "Invitations",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:1892",
+          "name": "State=Invitations, Theme=Dark",
+          "width": 1080,
+          "height": 480,
+          "axes": {
+            "State": "Invitations",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "225:1936",
+          "name": "State=Ready, Theme=Light",
+          "width": 1080,
+          "height": 383,
+          "axes": {
+            "State": "Ready",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:1969",
+          "name": "State=Ready, Theme=Dark",
+          "width": 1080,
+          "height": 383,
+          "axes": {
+            "State": "Ready",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "225:2002",
+          "name": "State=Complete, Theme=Light",
+          "width": 1080,
+          "height": 350,
+          "axes": {
+            "State": "Complete",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:2035",
+          "name": "State=Complete, Theme=Dark",
+          "width": 1080,
+          "height": 350,
+          "axes": {
+            "State": "Complete",
+            "Theme": "Dark"
+          }
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Organization",
+          "variantOptions": [
+            "Organization",
+            "Workspace",
+            "Invitations",
+            "Ready",
+            "Complete"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "id": "225:2482",
+      "name": "MemberManagement",
+      "width": 2288,
+      "height": 3233,
+      "variants": [
+        {
+          "id": "225:2069",
+          "name": "State=Default, Theme=Light",
+          "width": 1080,
+          "height": 789,
+          "axes": {
+            "State": "Default",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:2135",
+          "name": "State=Default, Theme=Dark",
+          "width": 1080,
+          "height": 789,
+          "axes": {
+            "State": "Default",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "225:2200",
+          "name": "State=Empty, Theme=Light",
+          "width": 1080,
+          "height": 506,
+          "axes": {
+            "State": "Empty",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:2222",
+          "name": "State=Empty, Theme=Dark",
+          "width": 1080,
+          "height": 506,
+          "axes": {
+            "State": "Empty",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "225:2244",
+          "name": "State=Read-only, Theme=Light",
+          "width": 1080,
+          "height": 677,
+          "axes": {
+            "State": "Read-only",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:2286",
+          "name": "State=Read-only, Theme=Dark",
+          "width": 1080,
+          "height": 677,
+          "axes": {
+            "State": "Read-only",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "225:2328",
+          "name": "State=Confirm, Theme=Light",
+          "width": 1080,
+          "height": 981,
+          "axes": {
+            "State": "Confirm",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "225:2405",
+          "name": "State=Confirm, Theme=Dark",
+          "width": 1080,
+          "height": 981,
+          "axes": {
+            "State": "Confirm",
+            "Theme": "Dark"
+          }
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Empty",
+            "Read-only",
+            "Confirm"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "id": "228:3644",
+      "name": "DataWorkbench",
+      "width": 2288,
+      "height": 3048,
+      "variants": [
+        {
+          "id": "228:1851",
+          "name": "State=Default, Theme=Light",
+          "width": 1080,
+          "height": 685,
+          "axes": {
+            "State": "Default",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:2184",
+          "name": "State=Default, Theme=Dark",
+          "width": 1080,
+          "height": 685,
+          "axes": {
+            "State": "Default",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:2475",
+          "name": "State=Filtered, Theme=Light",
+          "width": 1080,
+          "height": 635,
+          "axes": {
+            "State": "Filtered",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:2776",
+          "name": "State=Filtered, Theme=Dark",
+          "width": 1080,
+          "height": 635,
+          "axes": {
+            "State": "Filtered",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:3077",
+          "name": "State=Loading, Theme=Light",
+          "width": 1080,
+          "height": 625,
+          "axes": {
+            "State": "Loading",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:3208",
+          "name": "State=Loading, Theme=Dark",
+          "width": 1080,
+          "height": 625,
+          "axes": {
+            "State": "Loading",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:3309",
+          "name": "State=Error, Theme=Light",
+          "width": 1080,
+          "height": 182,
+          "axes": {
+            "State": "Error",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:3348",
+          "name": "State=Error, Theme=Dark",
+          "width": 1080,
+          "height": 182,
+          "axes": {
+            "State": "Error",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:3383",
+          "name": "State=Empty, Theme=Light",
+          "width": 1080,
+          "height": 569,
+          "axes": {
+            "State": "Empty",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:3519",
+          "name": "State=Empty, Theme=Dark",
+          "width": 1080,
+          "height": 569,
+          "axes": {
+            "State": "Empty",
+            "Theme": "Dark"
+          }
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Filtered",
+            "Loading",
+            "Error",
+            "Empty"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "id": "228:4134",
+      "name": "ImportWizard",
+      "width": 2288,
+      "height": 4122,
+      "variants": [
+        {
+          "id": "228:3645",
+          "name": "State=File, Theme=Light",
+          "width": 1080,
+          "height": 558,
+          "axes": {
+            "State": "File",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:3669",
+          "name": "State=File, Theme=Dark",
+          "width": 1080,
+          "height": 558,
+          "axes": {
+            "State": "File",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:3693",
+          "name": "State=Mapping, Theme=Light",
+          "width": 1080,
+          "height": 789,
+          "axes": {
+            "State": "Mapping",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:3759",
+          "name": "State=Mapping, Theme=Dark",
+          "width": 1080,
+          "height": 789,
+          "axes": {
+            "State": "Mapping",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:3824",
+          "name": "State=Preview, Theme=Light",
+          "width": 1080,
+          "height": 588,
+          "axes": {
+            "State": "Preview",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:3868",
+          "name": "State=Preview, Theme=Dark",
+          "width": 1080,
+          "height": 588,
+          "axes": {
+            "State": "Preview",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:3912",
+          "name": "State=Review, Theme=Light",
+          "width": 1080,
+          "height": 541,
+          "axes": {
+            "State": "Review",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:3941",
+          "name": "State=Review, Theme=Dark",
+          "width": 1080,
+          "height": 541,
+          "axes": {
+            "State": "Review",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:3970",
+          "name": "State=Complete, Theme=Light",
+          "width": 1080,
+          "height": 482,
+          "axes": {
+            "State": "Complete",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:3998",
+          "name": "State=Complete, Theme=Dark",
+          "width": 1080,
+          "height": 482,
+          "axes": {
+            "State": "Complete",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:4026",
+          "name": "State=Invalid, Theme=Light",
+          "width": 1080,
+          "height": 740,
+          "axes": {
+            "State": "Invalid",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:4080",
+          "name": "State=Invalid, Theme=Dark",
+          "width": 1080,
+          "height": 740,
+          "axes": {
+            "State": "Invalid",
+            "Theme": "Dark"
+          }
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "File",
+          "variantOptions": [
+            "File",
+            "Mapping",
+            "Preview",
+            "Review",
+            "Complete",
+            "Invalid"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "id": "228:4817",
+      "name": "RecordDetail",
+      "width": 2288,
+      "height": 4157,
+      "variants": [
+        {
+          "id": "228:4135",
+          "name": "State=Summary, Theme=Light",
+          "width": 1080,
+          "height": 1007,
+          "axes": {
+            "State": "Summary",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:4221",
+          "name": "State=Summary, Theme=Dark",
+          "width": 1080,
+          "height": 1007,
+          "axes": {
+            "State": "Summary",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:4307",
+          "name": "State=Activity, Theme=Light",
+          "width": 1080,
+          "height": 564,
+          "axes": {
+            "State": "Activity",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:4365",
+          "name": "State=Activity, Theme=Dark",
+          "width": 1080,
+          "height": 564,
+          "axes": {
+            "State": "Activity",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:4423",
+          "name": "State=Notes, Theme=Light",
+          "width": 1080,
+          "height": 781,
+          "axes": {
+            "State": "Notes",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:4488",
+          "name": "State=Notes, Theme=Dark",
+          "width": 1080,
+          "height": 781,
+          "axes": {
+            "State": "Notes",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:4553",
+          "name": "State=Files, Theme=Light",
+          "width": 1080,
+          "height": 675,
+          "axes": {
+            "State": "Files",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:4617",
+          "name": "State=Files, Theme=Dark",
+          "width": 1080,
+          "height": 675,
+          "axes": {
+            "State": "Files",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:4681",
+          "name": "State=Related, Theme=Light",
+          "width": 1080,
+          "height": 490,
+          "axes": {
+            "State": "Related",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:4737",
+          "name": "State=Related, Theme=Dark",
+          "width": 1080,
+          "height": 490,
+          "axes": {
+            "State": "Related",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "228:4793",
+          "name": "State=Not-found, Theme=Light",
+          "width": 1080,
+          "height": 232,
+          "axes": {
+            "State": "Not-found",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "228:4805",
+          "name": "State=Not-found, Theme=Dark",
+          "width": 1080,
+          "height": 232,
+          "axes": {
+            "State": "Not-found",
+            "Theme": "Dark"
+          }
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Summary",
+          "variantOptions": [
+            "Summary",
+            "Activity",
+            "Notes",
+            "Files",
+            "Related",
+            "Not-found"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "id": "232:3939",
+      "name": "WorkspaceSettingsTemplate",
+      "width": 2176,
+      "height": 734,
+      "variants": [
+        {
+          "id": "232:3883",
+          "name": "State=Default, Theme=Light",
+          "width": 1024,
+          "height": 670,
+          "axes": {
+            "State": "Default",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "232:3912",
+          "name": "State=Default, Theme=Dark",
+          "width": 1024,
+          "height": 670,
+          "axes": {
+            "State": "Default",
+            "Theme": "Dark"
+          }
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "id": "232:3989",
+      "name": "RowActions",
+      "width": 1008,
+      "height": 584,
+      "variants": [
+        {
+          "id": "232:3940",
+          "name": "State=Default, Theme=Light",
+          "width": 440,
+          "height": 280,
+          "axes": {
+            "State": "Default",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "232:3957",
+          "name": "State=Default, Theme=Dark",
+          "width": 440,
+          "height": 280,
+          "axes": {
+            "State": "Default",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "232:3973",
+          "name": "State=Read-only, Theme=Light",
+          "width": 440,
+          "height": 168,
+          "axes": {
+            "State": "Read-only",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "232:3981",
+          "name": "State=Read-only, Theme=Dark",
+          "width": 440,
+          "height": 168,
+          "axes": {
+            "State": "Read-only",
+            "Theme": "Dark"
+          }
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Read-only"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    },
+    {
+      "id": "232:4040",
+      "name": "DeleteDialog",
+      "width": 1008,
+      "height": 620,
+      "variants": [
+        {
+          "id": "232:3990",
+          "name": "State=Confirm, Theme=Light",
+          "width": 440,
+          "height": 224,
+          "axes": {
+            "State": "Confirm",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "232:4002",
+          "name": "State=Confirm, Theme=Dark",
+          "width": 440,
+          "height": 224,
+          "axes": {
+            "State": "Confirm",
+            "Theme": "Dark"
+          }
+        },
+        {
+          "id": "232:4014",
+          "name": "State=Error, Theme=Light",
+          "width": 440,
+          "height": 260,
+          "axes": {
+            "State": "Error",
+            "Theme": "Light"
+          }
+        },
+        {
+          "id": "232:4027",
+          "name": "State=Error, Theme=Dark",
+          "width": 440,
+          "height": 260,
+          "axes": {
+            "State": "Error",
+            "Theme": "Dark"
+          }
+        }
+      ],
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Confirm",
+          "variantOptions": [
+            "Confirm",
+            "Error"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      }
+    }
+  ],
+  "inspection": {
+    "nodes": 6273,
+    "imageFills": 0,
+    "missingFonts": 0,
+    "fontFamilies": [
+      "Manrope"
+    ],
+    "variableCollections": [
+      {
+        "id": "VariableCollectionId:2:7",
+        "name": "Aureform · Primitives",
+        "modes": [
+          {
+            "name": "Value",
+            "modeId": "2:0"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:2:36",
+        "name": "Aureform · Color",
+        "modes": [
+          {
+            "name": "Light",
+            "modeId": "2:1"
+          },
+          {
+            "name": "Dark",
+            "modeId": "2:2"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:2:58",
+        "name": "Aureform · Dimension",
+        "modes": [
+          {
+            "name": "Value",
+            "modeId": "2:3"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:317",
+        "name": "Aureform · Color · Violet",
+        "modes": [
+          {
+            "name": "Light",
+            "modeId": "95:0"
+          },
+          {
+            "name": "Dark",
+            "modeId": "95:1"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:381",
+        "name": "Aureform · Color · Ocean",
+        "modes": [
+          {
+            "name": "Light",
+            "modeId": "95:2"
+          },
+          {
+            "name": "Dark",
+            "modeId": "95:3"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:445",
+        "name": "Aureform · Color · Mint",
+        "modes": [
+          {
+            "name": "Light",
+            "modeId": "95:4"
+          },
+          {
+            "name": "Dark",
+            "modeId": "95:5"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:509",
+        "name": "Aureform · Color · Ember",
+        "modes": [
+          {
+            "name": "Light",
+            "modeId": "95:6"
+          },
+          {
+            "name": "Dark",
+            "modeId": "95:7"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:95:573",
+        "name": "Aureform · Color · Rose",
+        "modes": [
+          {
+            "name": "Light",
+            "modeId": "95:8"
+          },
+          {
+            "name": "Dark",
+            "modeId": "95:9"
+          }
+        ]
+      }
+    ],
+    "variables": 714,
+    "textStyles": 14,
+    "paintStyles": 36,
+    "effectStyles": 6
+  },
+  "directViewNodeIds": [
+    "237:16428",
+    "237:16429",
+    "237:16610",
+    "237:16611",
+    "237:16627",
+    "237:16628",
+    "237:16644",
+    "237:16645",
+    "237:16646",
+    "237:16647",
+    "237:16648",
+    "237:16649",
+    "237:16689",
+    "237:16690",
+    "237:16691",
+    "237:16692",
+    "237:16693",
+    "237:16805",
+    "237:16806",
+    "237:16822",
+    "237:16823",
+    "237:16839",
+    "237:16840",
+    "237:16841",
+    "237:16842",
+    "237:16843",
+    "237:16844",
+    "237:16884",
+    "237:16885",
+    "237:16886",
+    "237:16887",
+    "237:16888",
+    "237:17000",
+    "237:17001",
+    "237:17017",
+    "237:17018",
+    "237:17019",
+    "237:17020",
+    "237:17021",
+    "237:17022",
+    "237:17023",
+    "237:17024",
+    "237:17025",
+    "237:17026",
+    "237:17027",
+    "237:17028",
+    "237:17029",
+    "237:17030",
+    "237:17031",
+    "237:17043",
+    "237:17076",
+    "237:17077",
+    "237:17078",
+    "237:17079",
+    "237:17080",
+    "237:17192",
+    "237:17193",
+    "237:17209",
+    "237:17210",
+    "237:17211",
+    "237:17212",
+    "237:17213",
+    "237:17214",
+    "237:17215",
+    "237:17216",
+    "237:17217",
+    "237:17218",
+    "237:17219",
+    "237:17220",
+    "237:17221",
+    "237:17222",
+    "237:17223",
+    "237:17235",
+    "237:17268",
+    "237:17269",
+    "237:17270",
+    "237:17271",
+    "237:17272",
+    "237:17384",
+    "237:17385",
+    "237:17401",
+    "237:17402",
+    "237:17414",
+    "237:17519",
+    "237:17520",
+    "237:17521",
+    "237:17522",
+    "237:17523",
+    "237:17635",
+    "237:17636",
+    "237:17652",
+    "237:17653",
+    "237:17665",
+    "237:17770",
+    "237:17771",
+    "237:17772",
+    "237:17773",
+    "237:17774",
+    "237:17886",
+    "237:17887",
+    "237:17903",
+    "237:17904",
+    "237:17905",
+    "237:17906",
+    "237:17907",
+    "237:17908",
+    "237:17909",
+    "237:17910",
+    "237:17915",
+    "237:17927",
+    "237:17928",
+    "237:17929",
+    "237:17930",
+    "237:17931",
+    "237:17933",
+    "237:17962",
+    "237:17963",
+    "237:17964",
+    "237:17965",
+    "237:17966",
+    "237:18078",
+    "237:18079",
+    "237:18095",
+    "237:18096",
+    "237:18097",
+    "237:18098",
+    "237:18099",
+    "237:18100",
+    "237:18101",
+    "237:18102",
+    "237:18106",
+    "237:18118",
+    "237:18119",
+    "237:18120",
+    "237:18121",
+    "237:18122",
+    "237:18124",
+    "237:18153",
+    "237:18154",
+    "237:18155",
+    "237:18156",
+    "237:18157",
+    "237:18269",
+    "237:18270",
+    "237:18286",
+    "237:18287",
+    "237:18288",
+    "237:18289",
+    "237:18290",
+    "237:18291",
+    "237:18292",
+    "237:18293",
+    "237:18297",
+    "237:18302",
+    "237:18314",
+    "237:18315",
+    "237:18316",
+    "237:18317",
+    "237:18318",
+    "237:18319",
+    "237:18320",
+    "237:18321",
+    "237:18322",
+    "237:18323",
+    "237:18324",
+    "237:18888",
+    "237:18889",
+    "237:18890",
+    "237:18891",
+    "237:18892",
+    "237:19004",
+    "237:19005",
+    "237:19021",
+    "237:19022",
+    "237:19023",
+    "237:19024",
+    "237:19025",
+    "237:19026",
+    "237:19027",
+    "237:19028",
+    "237:19032",
+    "237:19036",
+    "237:19048",
+    "237:19049",
+    "237:19050",
+    "237:19051",
+    "237:19052",
+    "237:19053",
+    "237:19054",
+    "237:19055",
+    "237:19056",
+    "237:19057",
+    "237:19058",
+    "237:19622",
+    "237:19623",
+    "237:19624",
+    "237:19625",
+    "237:19626",
+    "237:19738",
+    "237:19739",
+    "237:19755",
+    "237:19756",
+    "237:19757",
+    "237:19758",
+    "237:19759",
+    "237:19760",
+    "237:19761",
+    "237:19762",
+    "237:19763",
+    "237:19764",
+    "237:19765",
+    "237:19766",
+    "237:19767",
+    "237:19768",
+    "237:19769",
+    "237:19781",
+    "237:19782",
+    "237:19783",
+    "237:19784",
+    "237:19785",
+    "237:19786",
+    "237:19787",
+    "237:19788",
+    "237:19789",
+    "237:19790",
+    "237:19791",
+    "237:19870",
+    "237:19871",
+    "237:19872",
+    "237:19873",
+    "237:19874",
+    "237:19986",
+    "237:19987",
+    "237:20003",
+    "237:20004",
+    "237:20005",
+    "237:20006",
+    "237:20007",
+    "237:20008",
+    "237:20009",
+    "237:20010",
+    "237:20011",
+    "237:20012",
+    "237:20013",
+    "237:20014",
+    "237:20015",
+    "237:20016",
+    "237:20017",
+    "237:20029",
+    "237:20030",
+    "237:20031",
+    "237:20032",
+    "237:20033",
+    "237:20034",
+    "237:20035",
+    "237:20036",
+    "237:20037",
+    "237:20038",
+    "237:20039",
+    "237:20118",
+    "237:20119",
+    "237:20120"
+  ],
+  "issues": [
+    {
+      "id": "I237:18324;241:3477;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:18324;241:3505;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:18324;241:3533;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:18324;241:3561;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:18324;241:3589;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:18324;241:3606;3:52",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:18324;241:3616;3:44",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:19058;241:3706;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:19058;241:3734;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:19058;241:3762;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:19058;241:3790;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:19058;241:3818;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:19058;241:3835;3:52",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I237:19058;241:3845;3:44",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3477;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3505;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3533;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3561;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3589;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3606;3:52",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3616;3:44",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3706;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3734;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3762;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3790;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3818;3:80",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3835;3:52",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I241:3845;3:44",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35339",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35352",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35365",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35378",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35391",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35397",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35421",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35715",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35728",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35741",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35754",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35767",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35773",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "235:35797",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I228:3099;164:1522;3:52",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I228:3099;164:1544;3:44",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I228:3230;164:1522;3:52",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I228:3230;164:1544;3:44",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I228:3405;164:1447;3:52",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I228:3405;164:1459;3:52",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I228:3541;164:1447;3:52",
+      "issue": "zero-text-bounds"
+    },
+    {
+      "id": "I228:3541;164:1459;3:52",
+      "issue": "zero-text-bounds"
+    }
+  ]
+}

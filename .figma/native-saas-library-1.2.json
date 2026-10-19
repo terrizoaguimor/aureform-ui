@@ -1,0 +1,712 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "status": "passed-native-structure-and-visual-review",
+  "scope": "Four new and two upgraded SaaS operations views; existing foundations retained.",
+  "components": {
+    "WorkspaceStatus": {
+      "setId": "225:1708",
+      "defaultId": "225:1615",
+      "variants": 6,
+      "nativeName": "WorkspaceStatus",
+      "source": "src/components/blocks/workspace-status.tsx",
+      "export": "WorkspaceStatus",
+      "axes": {
+        "State": ["Owner", "Viewer", "Storage-error"],
+        "Theme": ["Light", "Dark"]
+      },
+      "association": "direct-native-source-map",
+      "codeConnectCloudRegistered": false
+    },
+    "OnboardingFlow": {
+      "setId": "225:2068",
+      "defaultId": "225:1709",
+      "variants": 10,
+      "nativeName": "OnboardingFlow",
+      "source": "src/components/blocks/onboarding-flow.tsx",
+      "export": "OnboardingFlow",
+      "axes": {
+        "State": [
+          "Organization",
+          "Workspace",
+          "Invitations",
+          "Ready",
+          "Complete"
+        ],
+        "Theme": ["Light", "Dark"]
+      },
+      "association": "direct-native-source-map",
+      "codeConnectCloudRegistered": false
+    },
+    "MemberManagement": {
+      "setId": "225:2482",
+      "defaultId": "225:2069",
+      "variants": 8,
+      "nativeName": "MemberManagement",
+      "source": "src/components/blocks/member-management.tsx",
+      "export": "MemberManagement",
+      "axes": {
+        "State": ["Default", "Empty", "Read-only", "Confirm"],
+        "Theme": ["Light", "Dark"]
+      },
+      "association": "direct-native-source-map",
+      "codeConnectCloudRegistered": false
+    },
+    "DataWorkbench": {
+      "setId": "228:3644",
+      "defaultId": "228:1851",
+      "variants": 10,
+      "nativeName": "DataWorkbench",
+      "source": "src/components/blocks/data-workbench.tsx",
+      "export": "DataWorkbench",
+      "axes": {
+        "State": ["Default", "Filtered", "Loading", "Error", "Empty"],
+        "Theme": ["Light", "Dark"]
+      },
+      "association": "direct-native-source-map",
+      "codeConnectCloudRegistered": false
+    },
+    "ImportWizard": {
+      "setId": "228:4134",
+      "defaultId": "228:3645",
+      "variants": 12,
+      "nativeName": "ImportWizard",
+      "source": "src/components/blocks/import-wizard.tsx",
+      "export": "ImportWizard",
+      "axes": {
+        "State": [
+          "File",
+          "Mapping",
+          "Preview",
+          "Review",
+          "Complete",
+          "Invalid"
+        ],
+        "Theme": ["Light", "Dark"]
+      },
+      "association": "direct-native-source-map",
+      "codeConnectCloudRegistered": false
+    },
+    "RecordDetail": {
+      "setId": "228:4817",
+      "defaultId": "228:4135",
+      "variants": 12,
+      "nativeName": "RecordDetail",
+      "source": "src/components/blocks/record-detail.tsx",
+      "export": "GenericRecordDetail",
+      "axes": {
+        "State": [
+          "Summary",
+          "Activity",
+          "Notes",
+          "Files",
+          "Related",
+          "Not-found"
+        ],
+        "Theme": ["Light", "Dark"]
+      },
+      "association": "direct-native-source-map",
+      "codeConnectCloudRegistered": false
+    },
+    "WorkspaceSettingsTemplate": {
+      "setId": "232:3939",
+      "defaultId": "232:3883",
+      "variants": 2,
+      "nativeName": "WorkspaceSettingsTemplate",
+      "source": "src/components/templates/saas-setup.tsx",
+      "export": "WorkspaceSettingsTemplate",
+      "axes": {
+        "State": ["Default"],
+        "Theme": ["Light", "Dark"]
+      },
+      "association": "direct-native-source-map",
+      "codeConnectCloudRegistered": false
+    },
+    "RowActions": {
+      "setId": "232:3989",
+      "defaultId": "232:3940",
+      "variants": 4,
+      "nativeName": "RowActions",
+      "source": "src/components/blocks/record-actions.tsx",
+      "export": "RowActions",
+      "axes": {
+        "State": ["Default", "Read-only"],
+        "Theme": ["Light", "Dark"]
+      },
+      "association": "direct-native-source-map",
+      "codeConnectCloudRegistered": false
+    },
+    "DeleteDialog": {
+      "setId": "232:4040",
+      "defaultId": "232:3990",
+      "variants": 4,
+      "nativeName": "DeleteDialog",
+      "source": "src/components/blocks/record-actions.tsx",
+      "export": "DeleteDialog",
+      "axes": {
+        "State": ["Confirm", "Error"],
+        "Theme": ["Light", "Dark"]
+      },
+      "association": "direct-native-source-map",
+      "codeConnectCloudRegistered": false
+    }
+  },
+  "chrome": {
+    "DashboardSidebar": "231:3776",
+    "DashboardHeader": "29:128"
+  },
+  "views": [
+    {
+      "path": "onboarding",
+      "nodes": {
+        "Light": "237:16428",
+        "Dark": "237:16692"
+      }
+    },
+    {
+      "path": "settings/workspace",
+      "nodes": {
+        "Light": "237:16887",
+        "Dark": "237:17079"
+      }
+    },
+    {
+      "path": "customers/detail",
+      "nodes": {
+        "Light": "237:17271",
+        "Dark": "237:17522"
+      }
+    },
+    {
+      "path": "imports",
+      "nodes": {
+        "Light": "237:17773",
+        "Dark": "237:17965"
+      }
+    },
+    {
+      "path": "customers",
+      "nodes": {
+        "Light": "237:18156",
+        "Dark": "237:18891"
+      }
+    },
+    {
+      "path": "settings/team",
+      "nodes": {
+        "Light": "237:19625",
+        "Dark": "237:19873"
+      }
+    }
+  ],
+  "summary": {
+    "componentSets": 9,
+    "variants": 68,
+    "chromeComponents": 1,
+    "scopedViews": 6,
+    "scopedViewRoots": 12
+  },
+  "tokenCollectionIds": {
+    "color": "VariableCollectionId:2:36",
+    "dimension": "VariableCollectionId:2:58"
+  },
+  "constructionLedger": "journals/saas-1.2-construction.json",
+  "reviewFrames": [
+    {
+      "id": "246:6620",
+      "name": "WorkspaceStatus",
+      "width": 2256,
+      "height": 712,
+      "instances": [
+        {
+          "id": "246:6626",
+          "masterId": "225:1615",
+          "state": "Owner",
+          "theme": "Light"
+        },
+        {
+          "id": "246:6640",
+          "masterId": "225:1629",
+          "state": "Owner",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:6655",
+          "masterId": "225:1642",
+          "state": "Viewer",
+          "theme": "Light"
+        },
+        {
+          "id": "246:6669",
+          "masterId": "225:1655",
+          "state": "Viewer",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:6684",
+          "masterId": "225:1668",
+          "state": "Storage-error",
+          "theme": "Light"
+        },
+        {
+          "id": "246:6704",
+          "masterId": "225:1688",
+          "state": "Storage-error",
+          "theme": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "246:6722",
+      "name": "OnboardingFlow",
+      "width": 2256,
+      "height": 2455,
+      "instances": [
+        {
+          "id": "246:6728",
+          "masterId": "225:1709",
+          "state": "Organization",
+          "theme": "Light"
+        },
+        {
+          "id": "246:6761",
+          "masterId": "225:1743",
+          "state": "Organization",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:6795",
+          "masterId": "225:1776",
+          "state": "Workspace",
+          "theme": "Light"
+        },
+        {
+          "id": "246:6831",
+          "masterId": "225:1812",
+          "state": "Workspace",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:6868",
+          "masterId": "225:1848",
+          "state": "Invitations",
+          "theme": "Light"
+        },
+        {
+          "id": "246:6910",
+          "masterId": "225:1892",
+          "state": "Invitations",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:6953",
+          "masterId": "225:1936",
+          "state": "Ready",
+          "theme": "Light"
+        },
+        {
+          "id": "246:6986",
+          "masterId": "225:1969",
+          "state": "Ready",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:7020",
+          "masterId": "225:2002",
+          "state": "Complete",
+          "theme": "Light"
+        },
+        {
+          "id": "246:7053",
+          "masterId": "225:2035",
+          "state": "Complete",
+          "theme": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "246:7084",
+      "name": "MemberManagement",
+      "width": 2256,
+      "height": 3342,
+      "instances": [
+        {
+          "id": "246:7090",
+          "masterId": "225:2069",
+          "state": "Default",
+          "theme": "Light"
+        },
+        {
+          "id": "246:7152",
+          "masterId": "225:2135",
+          "state": "Default",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:7215",
+          "masterId": "225:2200",
+          "state": "Empty",
+          "theme": "Light"
+        },
+        {
+          "id": "246:7237",
+          "masterId": "225:2222",
+          "state": "Empty",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:7260",
+          "masterId": "225:2244",
+          "state": "Read-only",
+          "theme": "Light"
+        },
+        {
+          "id": "246:7304",
+          "masterId": "225:2286",
+          "state": "Read-only",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:7349",
+          "masterId": "225:2328",
+          "state": "Confirm",
+          "theme": "Light"
+        },
+        {
+          "id": "246:7421",
+          "masterId": "225:2405",
+          "state": "Confirm",
+          "theme": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "246:7491",
+      "name": "DataWorkbench",
+      "width": 2256,
+      "height": 3146,
+      "instances": [
+        {
+          "id": "246:7497",
+          "masterId": "228:1851",
+          "state": "Default",
+          "theme": "Light"
+        },
+        {
+          "id": "246:7785",
+          "masterId": "228:2184",
+          "state": "Default",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:8074",
+          "masterId": "228:2475",
+          "state": "Filtered",
+          "theme": "Light"
+        },
+        {
+          "id": "246:8303",
+          "masterId": "228:2776",
+          "state": "Filtered",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:8533",
+          "masterId": "228:3077",
+          "state": "Loading",
+          "theme": "Light"
+        },
+        {
+          "id": "246:8631",
+          "masterId": "228:3208",
+          "state": "Loading",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:8730",
+          "masterId": "228:3309",
+          "state": "Error",
+          "theme": "Light"
+        },
+        {
+          "id": "246:8762",
+          "masterId": "228:3348",
+          "state": "Error",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:8795",
+          "masterId": "228:3383",
+          "state": "Empty",
+          "theme": "Light"
+        },
+        {
+          "id": "246:8917",
+          "masterId": "228:3519",
+          "state": "Empty",
+          "theme": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "246:9037",
+      "name": "ImportWizard",
+      "width": 2256,
+      "height": 4209,
+      "instances": [
+        {
+          "id": "246:9043",
+          "masterId": "228:3645",
+          "state": "File",
+          "theme": "Light"
+        },
+        {
+          "id": "246:9070",
+          "masterId": "228:3669",
+          "state": "File",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:9098",
+          "masterId": "228:3693",
+          "state": "Mapping",
+          "theme": "Light"
+        },
+        {
+          "id": "246:9159",
+          "masterId": "228:3759",
+          "state": "Mapping",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:9221",
+          "masterId": "228:3824",
+          "state": "Preview",
+          "theme": "Light"
+        },
+        {
+          "id": "246:9268",
+          "masterId": "228:3868",
+          "state": "Preview",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:9316",
+          "masterId": "228:3912",
+          "state": "Review",
+          "theme": "Light"
+        },
+        {
+          "id": "246:9347",
+          "masterId": "228:3941",
+          "state": "Review",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:9379",
+          "masterId": "228:3970",
+          "state": "Complete",
+          "theme": "Light"
+        },
+        {
+          "id": "246:9410",
+          "masterId": "228:3998",
+          "state": "Complete",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:9442",
+          "masterId": "228:4026",
+          "state": "Invalid",
+          "theme": "Light"
+        },
+        {
+          "id": "246:9498",
+          "masterId": "228:4080",
+          "state": "Invalid",
+          "theme": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "246:9552",
+      "name": "RecordDetail",
+      "width": 2256,
+      "height": 4260,
+      "instances": [
+        {
+          "id": "246:9558",
+          "masterId": "228:4135",
+          "state": "Summary",
+          "theme": "Light"
+        },
+        {
+          "id": "246:9649",
+          "masterId": "228:4221",
+          "state": "Summary",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:9741",
+          "masterId": "228:4307",
+          "state": "Activity",
+          "theme": "Light"
+        },
+        {
+          "id": "246:9794",
+          "masterId": "228:4365",
+          "state": "Activity",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:9848",
+          "masterId": "228:4423",
+          "state": "Notes",
+          "theme": "Light"
+        },
+        {
+          "id": "246:9908",
+          "masterId": "228:4488",
+          "state": "Notes",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:9969",
+          "masterId": "228:4553",
+          "state": "Files",
+          "theme": "Light"
+        },
+        {
+          "id": "246:10027",
+          "masterId": "228:4617",
+          "state": "Files",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:10086",
+          "masterId": "228:4681",
+          "state": "Related",
+          "theme": "Light"
+        },
+        {
+          "id": "246:10137",
+          "masterId": "228:4737",
+          "state": "Related",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:10189",
+          "masterId": "228:4793",
+          "state": "Not-found",
+          "theme": "Light"
+        },
+        {
+          "id": "246:10201",
+          "masterId": "228:4805",
+          "state": "Not-found",
+          "theme": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "246:10211",
+      "name": "WorkspaceSettingsTemplate",
+      "width": 2144,
+      "height": 876,
+      "instances": [
+        {
+          "id": "246:10217",
+          "masterId": "232:3883",
+          "state": "Default",
+          "theme": "Light"
+        },
+        {
+          "id": "246:10244",
+          "masterId": "232:3912",
+          "state": "Default",
+          "theme": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "246:10269",
+      "name": "RowActions",
+      "width": 976,
+      "height": 715,
+      "instances": [
+        {
+          "id": "246:10275",
+          "masterId": "232:3940",
+          "state": "Default",
+          "theme": "Light"
+        },
+        {
+          "id": "246:10290",
+          "masterId": "232:3957",
+          "state": "Default",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:10306",
+          "masterId": "232:3973",
+          "state": "Read-only",
+          "theme": "Light"
+        },
+        {
+          "id": "246:10315",
+          "masterId": "232:3981",
+          "state": "Read-only",
+          "theme": "Dark"
+        }
+      ]
+    },
+    {
+      "id": "246:10322",
+      "name": "DeleteDialog",
+      "width": 976,
+      "height": 704,
+      "instances": [
+        {
+          "id": "246:10328",
+          "masterId": "232:3990",
+          "state": "Confirm",
+          "theme": "Light"
+        },
+        {
+          "id": "246:10340",
+          "masterId": "232:4002",
+          "state": "Confirm",
+          "theme": "Dark"
+        },
+        {
+          "id": "246:10353",
+          "masterId": "232:4014",
+          "state": "Error",
+          "theme": "Light"
+        },
+        {
+          "id": "246:10366",
+          "masterId": "232:4027",
+          "state": "Error",
+          "theme": "Dark"
+        }
+      ]
+    }
+  ],
+  "releaseCover": {
+    "id": "27:2",
+    "width": 1440,
+    "height": 960,
+    "version": "1.2",
+    "suiteRoutes": 68
+  },
+  "proof": {
+    "structure": ".figma/native-saas-structure-1.2.json",
+    "views": ".figma/native-saas-views-1.2.json",
+    "exports": ".figma/proofs/saas-1.2/export-manifest.json",
+    "visualApproval": ".figma/proofs/saas-1.2/owner-visual-approval.json",
+    "sourceAssociationValidation": ".figma/native-saas-source-associations-1.2.json"
+  },
+  "checkedAt": "2026-10-19T14:48:35.314296+00:00"
+}

@@ -1,0 +1,496 @@
+{
+  "blocks": [
+    {
+      "id": "6:2",
+      "name": "RevenuePanel",
+      "type": "COMPONENT",
+      "x": 80,
+      "y": 80,
+      "w": 736,
+      "h": 348
+    },
+    {
+      "id": "6:33",
+      "name": "PlanBreakdown",
+      "type": "COMPONENT",
+      "x": 860,
+      "y": 80,
+      "w": 354,
+      "h": 348
+    },
+    {
+      "id": "6:51",
+      "name": "CustomerTable",
+      "type": "COMPONENT",
+      "x": 80,
+      "y": 560,
+      "w": 1138,
+      "h": 450
+    },
+    {
+      "id": "6:118",
+      "name": "AIComposer",
+      "type": "COMPONENT",
+      "x": 80,
+      "y": 1080,
+      "w": 748,
+      "h": 150
+    },
+    {
+      "id": "17:18",
+      "name": "CustomerDataTable",
+      "type": "COMPONENT",
+      "x": 80,
+      "y": 1080,
+      "w": 1138,
+      "h": 553
+    },
+    {
+      "id": "29:70",
+      "name": "DashboardSidebar",
+      "type": "COMPONENT",
+      "x": 1500,
+      "y": 1100,
+      "w": 238,
+      "h": 1240
+    },
+    {
+      "id": "29:128",
+      "name": "DashboardHeader",
+      "type": "COMPONENT",
+      "x": 1820,
+      "y": 1100,
+      "w": 1202,
+      "h": 64
+    },
+    {
+      "id": "29:142",
+      "name": "PageHeading",
+      "type": "COMPONENT_SET",
+      "x": 1500,
+      "y": 1300,
+      "w": 1218,
+      "h": 400
+    },
+    {
+      "id": "30:969",
+      "name": "DashboardShell",
+      "type": "COMPONENT_SET",
+      "x": 1500,
+      "y": 1860,
+      "w": 4640,
+      "h": 2440
+    },
+    {
+      "id": "30:970",
+      "name": "Review / Six layouts",
+      "type": "FRAME",
+      "x": 6500,
+      "y": 1860,
+      "w": 3040,
+      "h": 3520
+    },
+    {
+      "id": "31:1504",
+      "name": "ApplicationRecordRow",
+      "type": "COMPONENT_SET",
+      "x": 80,
+      "y": 4700,
+      "w": 2224,
+      "h": 152
+    },
+    {
+      "id": "31:1523",
+      "name": "TaskCard",
+      "type": "COMPONENT_SET",
+      "x": 2780,
+      "y": 4700,
+      "w": 624,
+      "h": 280
+    },
+    {
+      "id": "31:1536",
+      "name": "CalendarDay",
+      "type": "COMPONENT_SET",
+      "x": 80,
+      "y": 5350,
+      "w": 572,
+      "h": 188
+    },
+    {
+      "id": "31:1551",
+      "name": "MessageBubble",
+      "type": "COMPONENT_SET",
+      "x": 2780,
+      "y": 5350,
+      "w": 1064,
+      "h": 224
+    },
+    {
+      "id": "31:1564",
+      "name": "FileCard",
+      "type": "COMPONENT_SET",
+      "x": 80,
+      "y": 6000,
+      "w": 784,
+      "h": 316
+    },
+    {
+      "id": "31:1609",
+      "name": "RouteMap",
+      "type": "COMPONENT_SET",
+      "x": 2780,
+      "y": 6000,
+      "w": 1576,
+      "h": 480
+    },
+    {
+      "id": "34:1492",
+      "name": "DashboardHeader / Brand",
+      "type": "COMPONENT",
+      "x": 3320,
+      "y": 1100,
+      "w": 1202,
+      "h": 64
+    },
+    {
+      "id": "38:1540",
+      "name": "Icon / kanban-square",
+      "type": "COMPONENT",
+      "x": 5800,
+      "y": 100,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "38:1546",
+      "name": "Icon / calendar-days",
+      "type": "COMPONENT",
+      "x": 5880,
+      "y": 100,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "38:1558",
+      "name": "Icon / mail",
+      "type": "COMPONENT",
+      "x": 5960,
+      "y": 100,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "38:1562",
+      "name": "Icon / folder-open",
+      "type": "COMPONENT",
+      "x": 6040,
+      "y": 100,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "38:1565",
+      "name": "Icon / package",
+      "type": "COMPONENT",
+      "x": 6120,
+      "y": 100,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "38:1571",
+      "name": "Icon / shopping-bag",
+      "type": "COMPONENT",
+      "x": 6200,
+      "y": 100,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "38:1576",
+      "name": "Icon / credit-card",
+      "type": "COMPONENT",
+      "x": 6280,
+      "y": 100,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "38:1580",
+      "name": "Icon / map-pin",
+      "type": "COMPONENT",
+      "x": 6360,
+      "y": 100,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "38:1584",
+      "name": "Icon / circle-help",
+      "type": "COMPONENT",
+      "x": 6440,
+      "y": 100,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "38:1736",
+      "name": "RevenuePanel / Bar",
+      "type": "COMPONENT",
+      "x": 2580,
+      "y": 80,
+      "w": 736,
+      "h": 348
+    },
+    {
+      "id": "46:1564",
+      "name": "PlanBreakdown / Attainment",
+      "type": "COMPONENT",
+      "x": 760,
+      "y": 1220,
+      "w": 354,
+      "h": 348
+    },
+    {
+      "id": "47:1566",
+      "name": "ShipmentProgress",
+      "type": "COMPONENT_SET",
+      "x": 1200,
+      "y": 1260,
+      "w": 308,
+      "h": 196
+    },
+    {
+      "id": "50:1566",
+      "name": "FileCard / Studio",
+      "type": "COMPONENT",
+      "x": 1600,
+      "y": 1260,
+      "w": 340,
+      "h": 236
+    },
+    {
+      "id": "56:12148",
+      "name": "FileCard / Responsive Document",
+      "type": "COMPONENT",
+      "x": 4800,
+      "y": 12000,
+      "w": 340,
+      "h": 236
+    },
+    {
+      "id": "56:12154",
+      "name": "FileCard / Responsive Image",
+      "type": "COMPONENT",
+      "x": 4800,
+      "y": 12320,
+      "w": 340,
+      "h": 236
+    },
+    {
+      "id": "58:1558",
+      "name": "ComponentSpecimen",
+      "type": "COMPONENT",
+      "x": 5200,
+      "y": 13000,
+      "w": 560,
+      "h": 371
+    },
+    {
+      "id": "58:1565",
+      "name": "TemplatePreviewCard",
+      "type": "COMPONENT",
+      "x": 5600,
+      "y": 13000,
+      "w": 364,
+      "h": 306
+    },
+    {
+      "id": "63:1611",
+      "name": "LayoutPreview",
+      "type": "COMPONENT_SET",
+      "x": 6000,
+      "y": 13200,
+      "w": 1092,
+      "h": 426
+    },
+    {
+      "id": "71:1558",
+      "name": "Application icon / Menu",
+      "type": "COMPONENT",
+      "x": 6800,
+      "y": 13800,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "71:1563",
+      "name": "Application icon / ArrowLeft",
+      "type": "COMPONENT",
+      "x": 6880,
+      "y": 13800,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "71:1567",
+      "name": "Application icon / Check",
+      "type": "COMPONENT",
+      "x": 6960,
+      "y": 13800,
+      "w": 20,
+      "h": 20
+    }
+  ],
+  "customers": {
+    "id": "5:3",
+    "name": "SaaS · Customers",
+    "type": "FRAME",
+    "x": 1740,
+    "y": 80,
+    "w": 1440,
+    "h": 1120,
+    "children": [
+      {
+        "id": "19:194",
+        "name": "Sidebar",
+        "type": "FRAME",
+        "x": 0,
+        "y": 0,
+        "w": 238,
+        "h": 1120
+      },
+      {
+        "id": "19:285",
+        "name": "Main",
+        "type": "FRAME",
+        "x": 238,
+        "y": 0,
+        "w": 1202,
+        "h": 1120
+      }
+    ],
+    "instances": [
+      {
+        "id": "19:196",
+        "name": "AureformMark",
+        "component": "9:46"
+      },
+      {
+        "id": "19:200",
+        "name": "Avatar",
+        "component": "3:145"
+      },
+      {
+        "id": "19:207",
+        "name": "Navigation/Overview",
+        "component": "3:134"
+      },
+      {
+        "id": "19:208",
+        "name": "Navigation/Analytics",
+        "component": "3:134"
+      },
+      {
+        "id": "19:209",
+        "name": "Navigation/AI workspace",
+        "component": "3:134"
+      },
+      {
+        "id": "19:210",
+        "name": "Navigation/Customers",
+        "component": "3:138"
+      },
+      {
+        "id": "19:213",
+        "name": "Navigation/Components",
+        "component": "3:134"
+      },
+      {
+        "id": "19:214",
+        "name": "Navigation/Blocks",
+        "component": "3:134"
+      },
+      {
+        "id": "19:215",
+        "name": "Navigation/Templates",
+        "component": "3:134"
+      },
+      {
+        "id": "19:216",
+        "name": "Navigation/Documentation",
+        "component": "3:134"
+      },
+      {
+        "id": "19:219",
+        "name": "Navigation/Settings",
+        "component": "3:134"
+      },
+      {
+        "id": "19:220",
+        "name": "Navigation/Team",
+        "component": "3:134"
+      },
+      {
+        "id": "19:226",
+        "name": "Avatar",
+        "component": "3:145"
+      },
+      {
+        "id": "19:293",
+        "name": "Icon/Search",
+        "component": "9:33"
+      },
+      {
+        "id": "19:294",
+        "name": "Icon/Moon",
+        "component": "9:40"
+      },
+      {
+        "id": "19:295",
+        "name": "Icon/Bell",
+        "component": "9:37"
+      },
+      {
+        "id": "19:296",
+        "name": "Avatar",
+        "component": "3:145"
+      },
+      {
+        "id": "19:309",
+        "name": "Button",
+        "component": "3:53"
+      },
+      {
+        "id": "19:314",
+        "name": "Button",
+        "component": "3:17"
+      },
+      {
+        "id": "19:333",
+        "name": "Select",
+        "component": "15:79"
+      }
+    ]
+  },
+  "team": {
+    "id": "48:6816",
+    "name": "Template / settings/team",
+    "x": 1720,
+    "y": 14300,
+    "w": 1440,
+    "h": 1380,
+    "children": [
+      {
+        "id": "48:6817",
+        "name": "DashboardShell",
+        "type": "INSTANCE",
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 1380
+      }
+    ]
+  }
+}

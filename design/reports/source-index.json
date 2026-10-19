@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "nativeFigIncluded": false,
+  "routeRoots": 69,
+  "codeConnectMappings": 92,
+  "downloadedSvgExports": 8,
+  "frozenImageProofs": 7,
+  "inputs": [
+    {
+      "file": ".figma/state.json",
+      "bytes": 220368,
+      "sha256": "917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03"
+    },
+    {
+      "file": "tokens/aureform.tokens.json",
+      "bytes": 35681,
+      "sha256": "eb131d7f1e9f0457c5568ff557b453c4c9830773875dfe0c85efcc470760e978"
+    },
+    {
+      "file": "src/styles/tokens.css",
+      "bytes": 24779,
+      "sha256": "ebbe0e865f7f7d40bf7ad95d712858f9495813d70b03feda8fc44611b97ac6c7"
+    },
+    {
+      "file": "design/exports/manifest.json",
+      "bytes": 4474,
+      "sha256": "82c9b4f7fce26a216107d7147726047d186a9d10532c6e94abc2e2ae0e6a92ca"
+    }
+  ]
+}

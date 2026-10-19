@@ -1,0 +1,32 @@
+{
+  "status": "affected-image-descriptions-corrected",
+  "changes": [
+    {
+      "id": "25:585",
+      "name": "Gallery",
+      "before": "Aureform Gallery. Native vectors and component instances; source media uses prepared original assets, with manual controls.",
+      "after": "Aureform Gallery. Native editable controls and captions with generated editorial IMAGE fills from the source collection; six 3:2 thumbnails and a 3:2 full-image preview. Callers without dimensions retain the source default ratio."
+    },
+    {
+      "id": "25:511",
+      "name": "Carousel",
+      "before": "Aureform Carousel. Native vectors and component instances; source media uses prepared original assets, with manual controls.",
+      "after": "Aureform Carousel. Native editable manual controls and captions with generated editorial IMAGE fills; native specimens retain the controlled 16:10 crop. Source collection images are 1200 by 800."
+    },
+    {
+      "id": "25:638",
+      "name": "VideoPlayer",
+      "before": "Aureform VideoPlayer. Native vectors and component instances; source media uses prepared original assets, with manual controls.",
+      "after": "Aureform VideoPlayer. Native editable playback controls with a generated Quiet forms IMAGE fill for the paused poster. The original vector motion specimen and unavailable fallback are preserved."
+    }
+  ],
+  "visibleLayoutChanged": false,
+  "approvedProofsRemainCurrent": true,
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "25:585",
+    "25:511",
+    "25:638"
+  ],
+  "removedNodeIds": []
+}

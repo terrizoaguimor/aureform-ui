@@ -1,0 +1,3798 @@
+{
+  "pages": [
+    {
+      "id": "2:2",
+      "name": "00 · Cover"
+    },
+    {
+      "id": "0:1",
+      "name": "01 · Foundations"
+    },
+    {
+      "id": "2:3",
+      "name": "02 · Core"
+    },
+    {
+      "id": "2:4",
+      "name": "03 · Blocks"
+    },
+    {
+      "id": "2:5",
+      "name": "04 · Templates 1.0"
+    },
+    {
+      "id": "2:6",
+      "name": "05 · Suite 1.1–1.3"
+    }
+  ],
+  "inspection": [
+    {
+      "id": "241:3390",
+      "name": "DataTable / controlled external page",
+      "type": "FRAME",
+      "nodes": [
+        {
+          "id": "241:3390",
+          "name": "DataTable / controlled external page",
+          "type": "FRAME",
+          "x": 0,
+          "y": 64,
+          "w": 1080,
+          "h": 621,
+          "hs": "FILL",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3391",
+          "name": "Table / toolbar",
+          "type": "FRAME",
+          "x": 1,
+          "y": 1,
+          "w": 1078,
+          "h": 141,
+          "hs": "FILL",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 16,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3392",
+          "name": "Toolbar / heading",
+          "type": "FRAME",
+          "x": 24,
+          "y": 16,
+          "w": 1090,
+          "h": 52,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 4,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3394",
+          "name": "Toolbar / title",
+          "type": "TEXT",
+          "x": 0,
+          "y": 0,
+          "w": 146,
+          "h": 24,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Customer directory",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "241:3396",
+          "name": "Toolbar / count label",
+          "type": "TEXT",
+          "x": 12,
+          "y": 2,
+          "w": 62,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "12 rows",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "241:3398",
+          "name": "Toolbar / controls",
+          "type": "FRAME",
+          "x": 24,
+          "y": 84,
+          "w": 1090,
+          "h": 40,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I241:3400;3:126",
+          "name": "value",
+          "type": "TEXT",
+          "x": 41,
+          "y": 10,
+          "w": 206,
+          "h": 20,
+          "hs": "FILL",
+          "vs": "HUG",
+          "text": "Search records…",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3450980484485626,
+                "g": 0.40392157435417175,
+                "b": 0.501960813999176
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:42"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I241:3403;3:44",
+          "name": "label",
+          "type": "TEXT",
+          "x": 42,
+          "y": 6,
+          "w": 56,
+          "h": 20,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Columns",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "241:3408",
+          "name": "Table / header",
+          "type": "FRAME",
+          "x": 1,
+          "y": 142,
+          "w": 1078,
+          "h": 48,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3409",
+          "name": "Header / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "241:3411",
+          "name": "Header / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3418",
+          "name": "Header / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3425",
+          "name": "Header / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3432",
+          "name": "Header / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3439",
+          "name": "Header / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3446",
+          "name": "Header / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3453",
+          "name": "Header / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3454",
+          "name": "Row / cus-001",
+          "type": "FRAME",
+          "x": 1,
+          "y": 190,
+          "w": 1078,
+          "h": 74,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3455",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "241:3457",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3463",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3465",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3467",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I241:3470;3:115",
+          "name": "label",
+          "type": "TEXT",
+          "x": 2.5,
+          "y": 0,
+          "w": 34,
+          "h": 16,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Active",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.4627451002597809,
+                "g": 0.30588236451148987,
+                "b": 0.8196078538894653
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:47"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "241:3471",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3473",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3475",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3482",
+          "name": "Row / cus-002",
+          "type": "FRAME",
+          "x": 1,
+          "y": 264,
+          "w": 1078,
+          "h": 74,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3483",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "241:3485",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3491",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3493",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3495",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I241:3498;3:115",
+          "name": "label",
+          "type": "TEXT",
+          "x": 2.5,
+          "y": 0,
+          "w": 34,
+          "h": 16,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Active",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.4627451002597809,
+                "g": 0.30588236451148987,
+                "b": 0.8196078538894653
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:47"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "241:3499",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3501",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3503",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3510",
+          "name": "Row / cus-003",
+          "type": "FRAME",
+          "x": 1,
+          "y": 338,
+          "w": 1078,
+          "h": 74,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3511",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "241:3513",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3519",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3521",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3523",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3527",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3529",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3531",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3538",
+          "name": "Row / cus-004",
+          "type": "FRAME",
+          "x": 1,
+          "y": 412,
+          "w": 1078,
+          "h": 74,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3539",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "241:3541",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3547",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3549",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3551",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I241:3554;3:115",
+          "name": "label",
+          "type": "TEXT",
+          "x": 2.5,
+          "y": 0,
+          "w": 34,
+          "h": 16,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Active",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.4627451002597809,
+                "g": 0.30588236451148987,
+                "b": 0.8196078538894653
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:47"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "241:3555",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3557",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3559",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3566",
+          "name": "Row / cus-005",
+          "type": "FRAME",
+          "x": 1,
+          "y": 486,
+          "w": 1078,
+          "h": 74,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3567",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": 0,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "241:3569",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": 0,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3575",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": 0,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3577",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": 0,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3579",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": 0,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3583",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": 0,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3585",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": 0,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3587",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": 0,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3594",
+          "name": "Table / pagination",
+          "type": "FRAME",
+          "x": 1,
+          "y": 560,
+          "w": 1078,
+          "h": 60,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "241:3595",
+          "name": "Pagination / live range",
+          "type": "FRAME",
+          "x": 24,
+          "y": 20.5,
+          "w": 320,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3596",
+          "name": "Pagination / records",
+          "type": "TEXT",
+          "x": 0,
+          "y": 0,
+          "w": 150,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "1–5 of 12 rows",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "241:3598",
+          "name": "Pagination / page size",
+          "type": "FRAME",
+          "x": 525,
+          "y": 14.5,
+          "w": 164,
+          "h": 32,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "241:3604",
+          "name": "Pagination / navigation",
+          "type": "FRAME",
+          "x": 870,
+          "y": 14.5,
+          "w": 184,
+          "h": 32,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 6,
+          "pl": 0,
+          "pr": 0
+        }
+      ]
+    },
+    {
+      "id": "235:35049",
+      "name": "DataTable / controlled external page",
+      "type": "FRAME",
+      "nodes": [
+        {
+          "id": "235:35049",
+          "name": "DataTable / controlled external page",
+          "type": "FRAME",
+          "x": 0,
+          "y": 120,
+          "w": 1080,
+          "h": 473,
+          "hs": "FILL",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35050",
+          "name": "Table / toolbar",
+          "type": "FRAME",
+          "x": 1,
+          "y": 1,
+          "w": 1078,
+          "h": 141,
+          "hs": "FILL",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 16,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35051",
+          "name": "Toolbar / heading",
+          "type": "FRAME",
+          "x": 24,
+          "y": 16,
+          "w": 1090,
+          "h": 52,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 4,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35053",
+          "name": "Toolbar / title",
+          "type": "TEXT",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 24,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "Customer directory",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "235:35055",
+          "name": "Toolbar / count label",
+          "type": "TEXT",
+          "x": 12,
+          "y": 2,
+          "w": 62,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "12 rows",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "235:35057",
+          "name": "Toolbar / controls",
+          "type": "FRAME",
+          "x": 24,
+          "y": 84,
+          "w": 1090,
+          "h": 40,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35319",
+          "name": "value",
+          "type": "TEXT",
+          "x": 41,
+          "y": 10,
+          "w": 206,
+          "h": 20,
+          "hs": "FILL",
+          "vs": "HUG",
+          "text": "Search records…",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3450980484485626,
+                "g": 0.40392157435417175,
+                "b": 0.501960813999176
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:42"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "235:35325",
+          "name": "label",
+          "type": "TEXT",
+          "x": 42,
+          "y": 6,
+          "w": 56,
+          "h": 20,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Columns",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "235:35067",
+          "name": "Table / header",
+          "type": "FRAME",
+          "x": 1,
+          "y": 142,
+          "w": 1078,
+          "h": 48,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35068",
+          "name": "Header / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "235:35070",
+          "name": "Header / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35077",
+          "name": "Header / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35084",
+          "name": "Header / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35091",
+          "name": "Header / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35098",
+          "name": "Header / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35105",
+          "name": "Header / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35112",
+          "name": "Header / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35113",
+          "name": "Row / cus-001",
+          "type": "FRAME",
+          "x": 1,
+          "y": 190,
+          "w": 1078,
+          "h": 74,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35114",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "235:35116",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35122",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35124",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35126",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35336",
+          "name": "label",
+          "type": "TEXT",
+          "x": 2.5,
+          "y": 0,
+          "w": 34,
+          "h": 16,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Active",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.4627451002597809,
+                "g": 0.30588236451148987,
+                "b": 0.8196078538894653
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:47"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "235:35130",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35132",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35134",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35141",
+          "name": "Row / cus-002",
+          "type": "FRAME",
+          "x": 1,
+          "y": 264,
+          "w": 1078,
+          "h": 74,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35142",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "235:35144",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35150",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35152",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35154",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35349",
+          "name": "label",
+          "type": "TEXT",
+          "x": 2.5,
+          "y": 0,
+          "w": 34,
+          "h": 16,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Active",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.4627451002597809,
+                "g": 0.30588236451148987,
+                "b": 0.8196078538894653
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:47"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "235:35158",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35160",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35162",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35169",
+          "name": "Row / cus-003",
+          "type": "FRAME",
+          "x": 1,
+          "y": 338,
+          "w": 1078,
+          "h": 74,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35170",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "235:35172",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35178",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35180",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35182",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35362",
+          "name": "label",
+          "type": "TEXT",
+          "x": -1,
+          "y": 0,
+          "w": 34,
+          "h": 16,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Active",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.5254902243614197,
+                "g": 0.3333333432674408,
+                "b": 0.10588235408067703
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:49"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "235:35186",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35188",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35190",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35197",
+          "name": "Row / cus-004",
+          "type": "FRAME",
+          "x": 1,
+          "y": 412,
+          "w": 1078,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35198",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "235:35200",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35206",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35208",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35210",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35375",
+          "name": "label",
+          "type": "TEXT",
+          "x": 2.5,
+          "y": 0,
+          "w": 34,
+          "h": 16,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Active",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.4627451002597809,
+                "g": 0.30588236451148987,
+                "b": 0.8196078538894653
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:47"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "235:35214",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35216",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35218",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35225",
+          "name": "Row / cus-005",
+          "type": "FRAME",
+          "x": 1,
+          "y": 412,
+          "w": 1078,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35226",
+          "name": "Cell / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": 0,
+          "w": 56,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "235:35228",
+          "name": "Cell / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": 0,
+          "w": 272,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35234",
+          "name": "Cell / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": 0,
+          "w": 130,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35236",
+          "name": "Cell / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": 0,
+          "w": 134,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35238",
+          "name": "Cell / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": 0,
+          "w": 126,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35242",
+          "name": "Cell / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": 0,
+          "w": 176,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35244",
+          "name": "Cell / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": 0,
+          "w": 164,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35246",
+          "name": "Cell / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": 0,
+          "w": 80,
+          "h": 74,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35253",
+          "name": "Table / pagination",
+          "type": "FRAME",
+          "x": 1,
+          "y": 412,
+          "w": 1078,
+          "h": 60,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "235:35254",
+          "name": "Pagination / live range",
+          "type": "FRAME",
+          "x": 24,
+          "y": 20.5,
+          "w": 320,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35257",
+          "name": "Pagination / page size",
+          "type": "FRAME",
+          "x": 525,
+          "y": 14.5,
+          "w": 164,
+          "h": 32,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "235:35263",
+          "name": "Pagination / navigation",
+          "type": "FRAME",
+          "x": 870,
+          "y": 14.5,
+          "w": 184,
+          "h": 32,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 6,
+          "pl": 0,
+          "pr": 0
+        }
+      ]
+    },
+    {
+      "id": "228:3099",
+      "name": "DataTable / controlled external page",
+      "type": "INSTANCE",
+      "nodes": [
+        {
+          "id": "228:3099",
+          "name": "DataTable / controlled external page",
+          "type": "INSTANCE",
+          "x": 0,
+          "y": 64,
+          "w": 1080,
+          "h": 561,
+          "hs": "FILL",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0,
+          "main": "164:1465"
+        },
+        {
+          "id": "I228:3099;164:1466",
+          "name": "Table / toolbar",
+          "type": "FRAME",
+          "x": 1,
+          "y": 1,
+          "w": 1078,
+          "h": 141,
+          "hs": "FILL",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 16,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3099;164:1467",
+          "name": "Toolbar / heading",
+          "type": "FRAME",
+          "x": 24,
+          "y": 16,
+          "w": 1090,
+          "h": 52,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 4,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3099;164:1469",
+          "name": "Toolbar / title",
+          "type": "TEXT",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 24,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "Customer directory",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3099;164:1471",
+          "name": "Toolbar / count label",
+          "type": "TEXT",
+          "x": 12,
+          "y": 2,
+          "w": 62,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "12 rows",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3099;164:1473",
+          "name": "Toolbar / controls",
+          "type": "FRAME",
+          "x": 24,
+          "y": 84,
+          "w": 1090,
+          "h": 40,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3099;164:1475;3:126",
+          "name": "value",
+          "type": "TEXT",
+          "x": 41,
+          "y": 10,
+          "w": 206,
+          "h": 20,
+          "hs": "FILL",
+          "vs": "HUG",
+          "text": "Search records…",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3450980484485626,
+                "g": 0.40392157435417175,
+                "b": 0.501960813999176
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:42"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3099;164:1481;3:44",
+          "name": "label",
+          "type": "TEXT",
+          "x": 42,
+          "y": 6,
+          "w": 56,
+          "h": 20,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Columns",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3099;164:1489",
+          "name": "Table / loading body",
+          "type": "FRAME",
+          "x": 1,
+          "y": 142,
+          "w": 1078,
+          "h": 358,
+          "hs": "FILL",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 20,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3099;164:1490",
+          "name": "Loading / linked skeleton 1",
+          "type": "INSTANCE",
+          "x": 24,
+          "y": 24,
+          "w": 1090,
+          "h": 46,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 4,
+          "pl": 0,
+          "pr": 0,
+          "main": "24:502"
+        },
+        {
+          "id": "I228:3099;164:1494",
+          "name": "Loading / linked skeleton 2",
+          "type": "INSTANCE",
+          "x": 24,
+          "y": 90,
+          "w": 1090,
+          "h": 46,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 4,
+          "pl": 0,
+          "pr": 0,
+          "main": "24:502"
+        },
+        {
+          "id": "I228:3099;164:1498",
+          "name": "Loading / linked skeleton 3",
+          "type": "INSTANCE",
+          "x": 24,
+          "y": 156,
+          "w": 1090,
+          "h": 46,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 4,
+          "pl": 0,
+          "pr": 0,
+          "main": "24:502"
+        },
+        {
+          "id": "I228:3099;164:1502",
+          "name": "Loading / linked skeleton 4",
+          "type": "INSTANCE",
+          "x": 24,
+          "y": 222,
+          "w": 1090,
+          "h": 46,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 4,
+          "pl": 0,
+          "pr": 0,
+          "main": "24:502"
+        },
+        {
+          "id": "I228:3099;164:1506",
+          "name": "Loading / linked skeleton 5",
+          "type": "INSTANCE",
+          "x": 24,
+          "y": 288,
+          "w": 1090,
+          "h": 46,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 4,
+          "pl": 0,
+          "pr": 0,
+          "main": "24:502"
+        },
+        {
+          "id": "I228:3099;164:1510",
+          "name": "Table / pagination",
+          "type": "FRAME",
+          "x": 1,
+          "y": 500,
+          "w": 1078,
+          "h": 60,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3099;164:1511",
+          "name": "Pagination / live range",
+          "type": "FRAME",
+          "x": 24,
+          "y": 20.5,
+          "w": 320,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3099;164:1512",
+          "name": "Pagination / records",
+          "type": "TEXT",
+          "x": 0,
+          "y": 0,
+          "w": 150,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "1–5 of 12 rows",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3099;164:1514",
+          "name": "Pagination / page size",
+          "type": "FRAME",
+          "x": 525,
+          "y": 14.5,
+          "w": 164,
+          "h": 32,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3099;164:1520",
+          "name": "Pagination / navigation",
+          "type": "FRAME",
+          "x": 870,
+          "y": 14.5,
+          "w": 184,
+          "h": 32,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 6,
+          "pl": 0,
+          "pr": 0
+        }
+      ]
+    },
+    {
+      "id": "228:3405",
+      "name": "DataTable / controlled external page",
+      "type": "INSTANCE",
+      "nodes": [
+        {
+          "id": "228:3405",
+          "name": "DataTable / controlled external page",
+          "type": "INSTANCE",
+          "x": 0,
+          "y": 64,
+          "w": 1080,
+          "h": 505,
+          "hs": "FILL",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0,
+          "main": "23:424"
+        },
+        {
+          "id": "I228:3405;23:425",
+          "name": "Table / toolbar",
+          "type": "FRAME",
+          "x": 1,
+          "y": 1,
+          "w": 1078,
+          "h": 141,
+          "hs": "FILL",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 16,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1363",
+          "name": "Toolbar / heading",
+          "type": "FRAME",
+          "x": 24,
+          "y": 16,
+          "w": 1090,
+          "h": 52,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 4,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3405;164:1365",
+          "name": "Toolbar / title",
+          "type": "TEXT",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 24,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "Customer directory",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3405;164:1369",
+          "name": "Toolbar / controls",
+          "type": "FRAME",
+          "x": 24,
+          "y": 84,
+          "w": 1090,
+          "h": 40,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3405;23:426;3:126",
+          "name": "value",
+          "type": "TEXT",
+          "x": 41,
+          "y": 10,
+          "w": 206,
+          "h": 20,
+          "hs": "FILL",
+          "vs": "HUG",
+          "text": "Search records…",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3450980484485626,
+                "g": 0.40392157435417175,
+                "b": 0.501960813999176
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:42"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3405;164:1375;3:44",
+          "name": "label",
+          "type": "TEXT",
+          "x": 42,
+          "y": 6,
+          "w": 56,
+          "h": 20,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Columns",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3405;164:1383",
+          "name": "Table / header",
+          "type": "FRAME",
+          "x": 1,
+          "y": 142,
+          "w": 1078,
+          "h": 48,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3405;164:1384",
+          "name": "Header / select",
+          "type": "FRAME",
+          "x": 0,
+          "y": -0.5,
+          "w": 56,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 0
+        },
+        {
+          "id": "I228:3405;164:1386",
+          "name": "Header / customer",
+          "type": "FRAME",
+          "x": 56,
+          "y": -0.5,
+          "w": 272,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1393",
+          "name": "Header / company",
+          "type": "FRAME",
+          "x": 328,
+          "y": -0.5,
+          "w": 130,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1400",
+          "name": "Header / plan",
+          "type": "FRAME",
+          "x": 458,
+          "y": -0.5,
+          "w": 134,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1407",
+          "name": "Header / status",
+          "type": "FRAME",
+          "x": 592,
+          "y": -0.5,
+          "w": 126,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1414",
+          "name": "Header / amount",
+          "type": "FRAME",
+          "x": 718,
+          "y": -0.5,
+          "w": 176,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1421",
+          "name": "Header / joined",
+          "type": "FRAME",
+          "x": 894,
+          "y": -0.5,
+          "w": 164,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1428",
+          "name": "Header / actions",
+          "type": "FRAME",
+          "x": 1058,
+          "y": -0.5,
+          "w": 80,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1429",
+          "name": "Table / empty body",
+          "type": "FRAME",
+          "x": 1,
+          "y": 190,
+          "w": 1078,
+          "h": 254,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "VERTICAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1430",
+          "name": "Empty / icon well",
+          "type": "FRAME",
+          "x": 515,
+          "y": 72,
+          "w": 48,
+          "h": 48,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 0,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3405;164:1434",
+          "name": "Empty / title",
+          "type": "TEXT",
+          "x": 359,
+          "y": 132,
+          "w": 360,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "No records found",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3405;164:1435",
+          "name": "Empty / description",
+          "type": "TEXT",
+          "x": 379,
+          "y": 164,
+          "w": 320,
+          "h": 18,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "text": "Try another search or clear the filters.",
+          "auto": "HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3450980484485626,
+                "g": 0.40392157435417175,
+                "b": 0.501960813999176
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:42"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I228:3405;23:433",
+          "name": "Table / pagination",
+          "type": "FRAME",
+          "x": 1,
+          "y": 444,
+          "w": 1078,
+          "h": 60,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 24,
+          "pr": 24
+        },
+        {
+          "id": "I228:3405;164:1436",
+          "name": "Pagination / live range",
+          "type": "FRAME",
+          "x": 24,
+          "y": 20.5,
+          "w": 320,
+          "h": 20,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3405;164:1439",
+          "name": "Pagination / page size",
+          "type": "FRAME",
+          "x": 563,
+          "y": 14.5,
+          "w": 164,
+          "h": 32,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 0,
+          "pr": 0
+        },
+        {
+          "id": "I228:3405;164:1445",
+          "name": "Pagination / navigation",
+          "type": "FRAME",
+          "x": 946,
+          "y": 14.5,
+          "w": 108,
+          "h": 32,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 6,
+          "pl": 0,
+          "pr": 0
+        }
+      ]
+    },
+    {
+      "id": "250:6358",
+      "name": "Delete failure / linked Alert",
+      "type": "INSTANCE",
+      "nodes": [
+        {
+          "id": "250:6358",
+          "name": "Delete failure / linked Alert",
+          "type": "INSTANCE",
+          "x": 25,
+          "y": 103,
+          "w": 390,
+          "h": 80,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 16,
+          "pr": 16,
+          "main": "24:360"
+        },
+        {
+          "id": "I250:6358;24:361",
+          "name": "Something went wrong",
+          "type": "TEXT",
+          "x": 16,
+          "y": 16,
+          "w": 348,
+          "h": 18,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "text": "Something went wrong",
+          "auto": "NONE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 0.9098039269447327,
+                "b": 0.9333333373069763
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:50"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I250:6358;24:362",
+          "name": "We could not finish this step. Please try again.",
+          "type": "TEXT",
+          "x": 16,
+          "y": 46,
+          "w": 348,
+          "h": 18,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "text": "Try again.",
+          "auto": "NONE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 0.9098039269447327,
+                "b": 0.9333333373069763
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:50"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "250:6362",
+      "name": "Delete failure / linked Alert",
+      "type": "INSTANCE",
+      "nodes": [
+        {
+          "id": "250:6362",
+          "name": "Delete failure / linked Alert",
+          "type": "INSTANCE",
+          "x": 25,
+          "y": 103,
+          "w": 390,
+          "h": 80,
+          "hs": "FIXED",
+          "vs": "HUG",
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "counter": "FIXED",
+          "gap": 12,
+          "pl": 16,
+          "pr": 16,
+          "main": "24:360"
+        },
+        {
+          "id": "I250:6362;24:361",
+          "name": "Something went wrong",
+          "type": "TEXT",
+          "x": 16,
+          "y": 16,
+          "w": 348,
+          "h": 18,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "text": "Something went wrong",
+          "auto": "NONE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.2823529541492462,
+                "g": 0.14901961386203766,
+                "b": 0.1921568661928177
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:50"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I250:6362;24:362",
+          "name": "We could not finish this step. Please try again.",
+          "type": "TEXT",
+          "x": 16,
+          "y": 46,
+          "w": 348,
+          "h": 18,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "text": "Try again.",
+          "auto": "NONE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.2823529541492462,
+                "g": 0.14901961386203766,
+                "b": 0.1921568661928177
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:50"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "232:3953",
+      "name": "ghost / Delete",
+      "type": "INSTANCE",
+      "nodes": [
+        {
+          "id": "232:3953",
+          "name": "ghost / Delete",
+          "type": "INSTANCE",
+          "x": 25,
+          "y": 215,
+          "w": 180,
+          "h": 40,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 16,
+          "pr": 16,
+          "main": "3:89"
+        },
+        {
+          "id": "I232:3953;3:92",
+          "name": "label",
+          "type": "TEXT",
+          "x": 69.5,
+          "y": 11,
+          "w": 41,
+          "h": 18,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Delete",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 0.9098039269447327,
+                "b": 0.9333333373069763
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:50"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "232:3969",
+      "name": "ghost / Delete",
+      "type": "INSTANCE",
+      "nodes": [
+        {
+          "id": "232:3969",
+          "name": "ghost / Delete",
+          "type": "INSTANCE",
+          "x": 25,
+          "y": 215,
+          "w": 180,
+          "h": 40,
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "layout": "HORIZONTAL",
+          "primary": "FIXED",
+          "counter": "FIXED",
+          "gap": 8,
+          "pl": 16,
+          "pr": 16,
+          "main": "3:89"
+        },
+        {
+          "id": "I232:3969;3:92",
+          "name": "label",
+          "type": "TEXT",
+          "x": 69.5,
+          "y": 11,
+          "w": 41,
+          "h": 18,
+          "hs": "HUG",
+          "vs": "HUG",
+          "text": "Delete",
+          "auto": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.2823529541492462,
+                "g": 0.14901961386203766,
+                "b": 0.1921568661928177
+              },
+              "bound": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:50"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "id": "VariableID:2:50",
+      "name": "color/destructive",
+      "values": {
+        "2:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:95:36"
+        },
+        "2:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:95:55"
+        }
+      },
+      "code": {
+        "WEB": "var(--destructive)"
+      }
+    },
+    {
+      "id": "VariableID:2:51",
+      "name": "color/destructive-foreground",
+      "values": {
+        "2:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:95:37"
+        },
+        "2:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:95:56"
+        }
+      },
+      "code": {
+        "WEB": "var(--destructive-foreground)"
+      }
+    }
+  ]
+}

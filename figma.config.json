@@ -1,0 +1,13 @@
+{
+  "codeConnect": {
+    "include": [
+      ".figma/*.figma.ts"
+    ],
+    "exclude": [
+      ".figma/state.json",
+      ".figma/component-properties.json"
+    ],
+    "label": "Aureform React · local templates",
+    "language": "tsx"
+  }
+}

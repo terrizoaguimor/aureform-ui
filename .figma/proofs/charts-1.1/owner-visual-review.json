@@ -1,0 +1,36 @@
+{
+  "status": "passed-native-structure-and-visual-review",
+  "checkedAt": "2026-10-19T06:57:39.207285+00:00",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "figmaCallsPerformedByOwner": false,
+  "kindCount": 13,
+  "originalVariantIdsPreserved": true,
+  "screenshots": [
+    {
+      "rootId": "23:501",
+      "proofFile": ".figma/proofs/charts-1.1/charts-library-final.png",
+      "sha256": "80a460237778d8f5f584dad55b75c9bcd05c79875de23794af09246018e05064",
+      "width": 1138,
+      "height": 1306,
+      "bytes": 192567,
+      "status": "passed-owner-visual-review"
+    },
+    {
+      "rootId": "59:2901",
+      "proofFile": ".figma/proofs/charts-1.1/charts-screen-final.png",
+      "sha256": "e43a9696a9bef6b42ac5e95be9a5caa22b43c2c9e5dedee29f7fe9bd8ed3b863",
+      "width": 1440,
+      "height": 3024,
+      "bytes": 1126466,
+      "status": "passed-owner-visual-review"
+    }
+  ],
+  "validated": [
+    "All thirteen plots contain editable geometry and native Manrope labels.",
+    "Legend labels are complete without broken words.",
+    "Oct ticks on Area, Line and StackedArea have visible right-side clearance.",
+    "Controls, metrics and data disclosures fit the Charts composition."
+  ],
+  "sourceChanges": false,
+  "reviewMethod": "Owner inspected both actual final post-fix Figma PNG exports; scoped earlier findings retained in the initial review receipt."
+}

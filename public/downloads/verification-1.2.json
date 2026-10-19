@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "recordedAt": "2026-10-19T15:34:42.514109+00:00",
+  "status": "passed-final-archive-and-consumer-verification",
+  "scope": "Exact final five-archive bytes, independent consumers, and referenced current-source/browser/native evidence. Publication is a separate native host acknowledgment.",
+  "distribution": {
+    "manifest": "/downloads/checksums.json",
+    "manifestSHA256": "ea7a7ebef90b05b242e99b9b800c080380217f2c529a694c3777fab8860c95e8",
+    "archives": [
+      {
+        "name": "aureform-ui-native-evidence-1.1.zip",
+        "files": 23,
+        "bytes": 15997293,
+        "sha256": "a4f80d58b951b7f3ee49ba5fe1a3e9cbca13eb3d88e2e5f2e5ced570eb492465"
+      },
+      {
+        "name": "aureform-ui-native-evidence-1.2.zip",
+        "files": 22,
+        "bytes": 9050463,
+        "sha256": "6ea74097ac854e0271b86f0d12c326f30ed37141d6add6db00723d90bb36324b"
+      },
+      {
+        "name": "aureform-ui-starter.zip",
+        "files": 63,
+        "bytes": 237756,
+        "sha256": "e59e9cf255691791a9f4c3303448af8de853e88c3967409da2205412fb31b2b1"
+      },
+      {
+        "name": "aureform-ui-free.zip",
+        "files": 56,
+        "bytes": 230352,
+        "sha256": "5ce75b1a793178b762e7c0b7d968c97b8f17c9d3a95b85cdbd2b458865463790"
+      },
+      {
+        "name": "aureform-ui-source.zip",
+        "files": 1007,
+        "bytes": 9338275,
+        "sha256": "f273b387269ab5ee8a412e952aa17c566bd779218396a82e973fa80f58b38947"
+      }
+    ],
+    "sourcePayloadFiles": 1007,
+    "sourcePayloadMatchesFrozenCheckout": true,
+    "fiveArchiveCRCAndPathValidation": "passed",
+    "maxArchiveBytes": 15997293,
+    "perAssetLimitBytes": 26214400,
+    "evidenceCompanions": {
+      "optionalForKitUse": true,
+      "historicalPNGCount": 23,
+      "newPNGCount": 22,
+      "originalPNGBytesPreserved": true,
+      "extractionRoot": ".figma/proofs/",
+      "requiredOnlyToReproduceSourcePackagingGate": true
+    },
+    "sourceReceiptExcludedFromSourceZIP": true
+  },
+  "consumers": {
+    "status": "PASS",
+    "startedAt": "2026-10-19T15:31:12.383Z",
+    "finishedAt": "2026-10-19T15:32:59.521Z",
+    "summary": {
+      "plannedConsumers": 6,
+      "executedConsumers": 6,
+      "passedConsumers": 6,
+      "failedConsumers": 0,
+      "checks": 1215,
+      "passedChecks": 1215
+    },
+    "results": [
+      {
+        "mode": "cli-add",
+        "status": "PASS",
+        "passedChecks": 440,
+        "startedAt": "2026-10-19T15:31:13.105Z",
+        "finishedAt": "2026-10-19T15:31:28.221Z",
+        "commands": [
+          {
+            "label": "typecheck",
+            "command": [
+              "pnpm",
+              "exec",
+              "tsc",
+              "--noEmit"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "lint",
+            "command": [
+              "pnpm",
+              "exec",
+              "eslint",
+              ".",
+              "--max-warnings=0"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "production-build",
+            "command": [
+              "pnpm",
+              "build"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "fdc92aacd92e64ed365cfaa41a40b56d48ec6f5d281da606282952988dad620c"
+          }
+        ],
+        "scope": "Typed caller-owned SaaS callbacks, providers, external query and EN/ES static host pages.",
+        "staticServerRenderingVerified": true,
+        "browserInteractionsExecuted": false
+      },
+      {
+        "mode": "registry",
+        "status": "PASS",
+        "passedChecks": 109,
+        "startedAt": "2026-10-19T15:31:28.223Z",
+        "finishedAt": "2026-10-19T15:31:46.630Z",
+        "commands": [
+          {
+            "label": "typecheck",
+            "command": [
+              "pnpm",
+              "exec",
+              "tsc",
+              "--noEmit"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "lint",
+            "command": [
+              "pnpm",
+              "exec",
+              "eslint",
+              ".",
+              "--max-warnings=0"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "production-build",
+            "command": [
+              "pnpm",
+              "build"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "2881230aa0841e81e28c3d14ecb67e1201d255ec1e7a4e61a1835f2b2c644343"
+          }
+        ],
+        "scope": "Typed caller-owned SaaS callbacks, providers, external query and EN/ES static host pages.",
+        "staticServerRenderingVerified": true,
+        "browserInteractionsExecuted": false
+      },
+      {
+        "mode": "cli-init",
+        "status": "PASS",
+        "passedChecks": 262,
+        "startedAt": "2026-10-19T15:31:46.632Z",
+        "finishedAt": "2026-10-19T15:32:05.616Z",
+        "commands": [
+          {
+            "label": "typecheck",
+            "command": [
+              "pnpm",
+              "exec",
+              "tsc",
+              "--noEmit"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "lint",
+            "command": [
+              "pnpm",
+              "exec",
+              "eslint",
+              ".",
+              "--max-warnings=0"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "production-build",
+            "command": [
+              "pnpm",
+              "build"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "5ebcadf2de1aad8705869a472819f318797642a849529c3ba30ddc42a889910e"
+          }
+        ],
+        "scope": "Typed caller-owned SaaS callbacks, providers, external query and EN/ES static host pages.",
+        "staticServerRenderingVerified": true,
+        "browserInteractionsExecuted": false
+      },
+      {
+        "mode": "source",
+        "status": "PASS",
+        "passedChecks": 98,
+        "startedAt": "2026-10-19T15:32:05.618Z",
+        "finishedAt": "2026-10-19T15:32:33.492Z",
+        "commands": [
+          {
+            "label": "typecheck",
+            "command": [
+              "pnpm",
+              "exec",
+              "tsc",
+              "--noEmit"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "lint",
+            "command": [
+              "pnpm",
+              "exec",
+              "eslint",
+              ".",
+              "--max-warnings=0"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "production-build",
+            "command": [
+              "pnpm",
+              "build"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "b5f9698eb1261a8926f2f07434b1f596a29a1aad94d5e9291c80e07db4e565f8"
+          }
+        ],
+        "scope": "Typed caller-owned SaaS callbacks, providers, external query and EN/ES static host pages.",
+        "staticServerRenderingVerified": true,
+        "browserInteractionsExecuted": false
+      },
+      {
+        "mode": "starter",
+        "status": "PASS",
+        "passedChecks": 261,
+        "startedAt": "2026-10-19T15:32:33.495Z",
+        "finishedAt": "2026-10-19T15:32:51.207Z",
+        "commands": [
+          {
+            "label": "typecheck",
+            "command": [
+              "pnpm",
+              "exec",
+              "tsc",
+              "--noEmit"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "lint",
+            "command": [
+              "pnpm",
+              "exec",
+              "eslint",
+              ".",
+              "--max-warnings=0"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "production-build",
+            "command": [
+              "pnpm",
+              "build"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "3c5bd96475efa1eac4b50cd19e4d87e3c4c37d81fcab75e2d57bc2bbf365baa9"
+          }
+        ],
+        "scope": "Typed caller-owned SaaS callbacks, providers, external query and EN/ES static host pages.",
+        "staticServerRenderingVerified": true,
+        "browserInteractionsExecuted": false
+      },
+      {
+        "mode": "free",
+        "status": "PASS",
+        "passedChecks": 45,
+        "startedAt": "2026-10-19T15:32:51.210Z",
+        "finishedAt": "2026-10-19T15:32:59.447Z",
+        "commands": [
+          {
+            "label": "typecheck",
+            "command": [
+              "pnpm",
+              "exec",
+              "tsc",
+              "--noEmit"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "lint",
+            "command": [
+              "pnpm",
+              "exec",
+              "eslint",
+              ".",
+              "--max-warnings=0"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "label": "production-build",
+            "command": [
+              "pnpm",
+              "build"
+            ],
+            "status": "passed",
+            "exitCode": 0,
+            "logSHA256": "2816980edb439490695ef0f5e15215482610963fec233da84c6a4118f909c470"
+          }
+        ],
+        "scope": "Eight free sample components in a caller-added Next.js host.",
+        "staticServerRenderingVerified": true,
+        "browserInteractionsExecuted": false
+      }
+    ],
+    "pendingZIPs": [],
+    "runnerSHA256": "3e9f63ef2f3a27881827a4102ae91c8d84e325d04f1334c19b6904a856afacfd",
+    "sourceInputFiles": 160,
+    "sourceIntegrity": {
+      "startSHA256": "6ae182dcfb8c5850a1597c4e0b4f6b1c390273e603b88c62edae1e8ecc14e1e5",
+      "endSHA256": "6ae182dcfb8c5850a1597c4e0b4f6b1c390273e603b88c62edae1e8ecc14e1e5",
+      "unchanged": true
+    },
+    "httpRegistryInputsUnchanged": true,
+    "archivesUnchanged": true,
+    "tools": {
+      "node": "v26.7.0",
+      "pnpm": "10.34.5"
+    },
+    "policy": {
+      "offline": false,
+      "ignoreDependencyScripts": true,
+      "storeDir": "/tmp/.pnpm-store",
+      "consumerNodeModulesShared": false,
+      "productSourceRepairs": false,
+      "browserExecution": false,
+      "FigmaExecution": false,
+      "releaseCertification": false
+    },
+    "detailedReport": {
+      "retainedLocalPath": "artifacts/consumer-verification-1.2/consumer-report.json",
+      "sha256": "559e7a0a543e952874510162be6e812c56711f2734a367892febc1a421fef690",
+      "includedInSourceZIP": false
+    }
+  },
+  "sourceAndBrowser": {
+    "typecheck": {
+      "command": "pnpm typecheck",
+      "status": "passed",
+      "diagnostics": 0
+    },
+    "eslint": {
+      "command": "pnpm exec eslint . --max-warnings=0",
+      "status": "passed",
+      "warnings": 0
+    },
+    "unit": {
+      "command": "pnpm test",
+      "status": "passed",
+      "tests": 184,
+      "suites": 5,
+      "failed": 0,
+      "skipped": 0
+    },
+    "productionBuild": {
+      "status": "passed",
+      "staticPages": 141,
+      "suiteViews": 68,
+      "landingViews": 1
+    },
+    "flows": {
+      "status": "passed",
+      "stats": {
+        "startTime": "2026-10-19T14:55:36.862Z",
+        "duration": 148481.90399999998,
+        "expected": 74,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "sourceFiles": 149,
+      "sourceUnchanged": true,
+      "buildIdUnchanged": true,
+      "scopedAxeRuns": 54,
+      "axeViolations": 0,
+      "axeIncompleteRuleResults": 54
+    },
+    "responsive": {
+      "status": "passed-real-responsive-matrix-and-gallery-previews",
+      "summary": {
+        "planned": 72,
+        "completed": 72,
+        "passed": 72,
+        "failed": 0,
+        "pageErrors": 0,
+        "previews": 12,
+        "galleryChecks": 2,
+        "galleryPassed": 2,
+        "paletteCounts": {
+          "aurora": 12,
+          "violet": 12,
+          "ocean": 12,
+          "mint": 12,
+          "ember": 12,
+          "rose": 12
+        },
+        "sourceUnchanged": true
+      },
+      "scope": {
+        "routes": [
+          "onboarding",
+          "settings/workspace",
+          "settings/team",
+          "customers",
+          "customers/detail",
+          "imports"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ],
+        "themes": [
+          "light",
+          "dark"
+        ],
+        "widths": [
+          360,
+          768,
+          1440
+        ],
+        "height": 900,
+        "combinations": 72,
+        "paletteDistribution": {
+          "aurora": 12,
+          "violet": 12,
+          "ocean": 12,
+          "mint": 12,
+          "ember": 12,
+          "rose": 12
+        },
+        "formula": "(routeIndex + widthIndex + 3*localeIndex + 2*themeIndex) % 6",
+        "fullPaletteCrossProduct": false,
+        "appearance": "Real createAppearance presets, preference storage and provider hydration; resolved root tokens are checked. No CSS overrides.",
+        "state": "Fresh local-demo owner workspace. Initial onboarding form, workspace form, team, first customer page, Olivia overview, and initial CSV upload.",
+        "screenshots": "Native prefers-reduced-motion: reduce; DPR 1; fonts loaded."
+      }
+    },
+    "motion": {
+      "status": "passed",
+      "summary": {
+        "scenarios": 14,
+        "plannedScenarios": 14,
+        "passedScenarios": 14,
+        "failedScenarios": 0,
+        "checks": 74,
+        "passedChecks": 74,
+        "failedChecks": 0,
+        "errors": 0
+      },
+      "sourceIntegrity": {
+        "unchanged": true
+      }
+    },
+    "actualClipboard": {
+      "status": "passed",
+      "summary": {
+        "families": 44,
+        "dynamicClipboardPayloads": 176,
+        "codeViewCombinations": 12,
+        "passedCodeViewCombinations": 12,
+        "actualPayloadsStrictChecked": 188,
+        "errors": 0
+      },
+      "sourceIntegrity": {
+        "unchanged": true
+      }
+    },
+    "exampleCompilation": {
+      "status": "passed-pure-strict-typecheck",
+      "families": 44,
+      "canonicalExampleFiles": 44,
+      "copiedSourcePayloads": 44,
+      "configuredSpecimenPayloads": 616,
+      "completeStudioPayloads": 28,
+      "compilation": {
+        "typescript": "5.9.3",
+        "strict": true,
+        "noEmit": true,
+        "payloads": 688,
+        "rootFiles": 733,
+        "diagnostics": 0,
+        "diagnosticCodes": [],
+        "canonicalSourceFiles": 64
+      },
+      "negativeControl": {
+        "missingModule": true,
+        "missingExport": true,
+        "invalidTypes": true,
+        "typescript": "5.9.3",
+        "strict": true,
+        "noEmit": true,
+        "payloads": 1,
+        "rootFiles": 1,
+        "diagnostics": 4,
+        "diagnosticCodes": [
+          2305,
+          2307,
+          2322,
+          2322
+        ],
+        "canonicalSourceFiles": 3
+      },
+      "browserRuntimeTested": false
+    }
+  },
+  "figma": {
+    "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N",
+    "status": "passed-native-structure-and-visual-review",
+    "compositeRouteRoots": 69,
+    "inheritedRouteRoots": 63,
+    "freshSaaSRoutes": 6,
+    "freshModeRoots": 12,
+    "nativeComponentSets": 9,
+    "variantsAndLinkedStates": 68,
+    "stateBoards": 9,
+    "freshApprovedExports": 22,
+    "sourceAssociations": "passed-source-path-and-runtime-export-validation",
+    "preservedCodeConnect": {
+      "status": "passed-local-smoke",
+      "templateCheckpointVersion": "1.1.0",
+      "sourceValidationVersion": "1.2.0",
+      "templateFiles": 92,
+      "uniqueTypedExamples": 556,
+      "totalTemplateEvaluations": 1646,
+      "diagnostics": 0,
+      "liveFigmaRuntimeTested": false,
+      "cloudRegistered": false
+    },
+    "evidence": [
+      {
+        "path": "docs/qa-runtime-1.2.json",
+        "sha256": "239aa11eefb060feb0d49b90a194babd48293a0540e99b968cdda7499a6312cf"
+      },
+      {
+        "path": ".figma/state.json",
+        "sha256": "8be9d3c1c46565296bd90c43f086b3d7159889c48167ab48d1d5f88e415b1963"
+      },
+      {
+        "path": ".figma/native-audit-1.2.json",
+        "sha256": "0fdb4ffafd1c10c8ce85fb0fb0703c4870bf7162fe1f9a8867e3fbab4ee04373"
+      },
+      {
+        "path": ".figma/native-saas-library-1.2.json",
+        "sha256": "9cd3f2be340f4497f9cf4766bd31e72da83064b32e9bfffe1d2d70b400321202"
+      },
+      {
+        "path": ".figma/native-saas-source-associations-1.2.json",
+        "sha256": "f5fdfa858d463a280241a5eb40047e65f3b36c5f7ebb7e823766d2c9eece4ab5"
+      },
+      {
+        "path": ".figma/proofs/saas-1.2/export-manifest.json",
+        "sha256": "dc82d75001af99c422e3e49b9168544a3e5d4e073697cd292f37e20a582f4192"
+      },
+      {
+        "path": ".figma/proofs/saas-1.2/owner-visual-approval.json",
+        "sha256": "c20c9201ffe178b9273022629bc1874e1b0aea74600ffe1c116b01ef9e054222"
+      },
+      {
+        "path": ".figma/code-connect/validation/validation-summary.json",
+        "sha256": "2bc64b7e29dc3bc77fd97fb69ecbfe062e2999cf1de15433ca77eb3d8608750b"
+      }
+    ]
+  },
+  "distributionTextAudit": {
+    "status": "passed-scoped-pattern-scan",
+    "sensitiveMarkers": 0,
+    "patterns": [
+      "temporary signed asset URLs",
+      "common credential token forms",
+      "literal long bearer-header values"
+    ],
+    "crcAndUnsafePaths": 0
+  },
+  "publication": {
+    "status": "historical-private-publication-details-omitted",
+    "privacyRedaction": {
+      "reason": "Private hosting addresses and operational publication metadata are omitted from the open-source distribution. Other fields retain their original 1.2 checkpoint scope.",
+      "originalReceiptSha256": "6921c47cde4bd4598058574df819b71b688110e147ab8f491d5fb9316ba075b7"
+    }
+  },
+  "priorAttempt": {
+    "status": "failed-and-preserved",
+    "retainedLocalPath": "/tmp/aureform-consumers-1.2-delivery-final/failure-preservation.json",
+    "reason": "Generated test host used raw internal HTML anchors rejected by the source ESLint rule; cache exhaustion then interrupted the attempt. Harness now uses Next Link; only inactive owned caches were removed. Product sources were not repaired by consumer execution."
+  },
+  "limitations": [
+    "Axe found zero violations in 54 scoped runs; 54 incomplete rule results remain recorded and are not an accessibility certification.",
+    "The responsive matrix has 72 cases across six routes, two locales, two themes and three widths. Each palette appears in 12 cases; it is not a 432-case palette cross-product.",
+    "The pure example and local Code Connect compilers validate emitted source and types. Only the clipboard, responsive, flow and motion checks exercised the browser.",
+    "Temporary detailed QA reports and screenshots are retained at the recorded execution paths. This compact receipt and reproducible test sources are included in the source kit.",
+    "Frontend demo data persists locally. Invitations send no email; customer-detail attachments store metadata only. Backend adapters are separate from this validation.",
+    "The six independent consumers exercised installation, type/lint checks and static builds. Consumer browser interactions and live backend/provider behavior are outside that execution.",
+    "The free package proves its eight sample components; it does not claim all SaaS operations.",
+    "Pilot interviews, paid trials and live Code Connect registration were not performed.",
+    "This public receipt attests the pinned bytes and checks. It does not assert an eventual publication commit or substitute for the native deployment acknowledgment."
+  ]
+}

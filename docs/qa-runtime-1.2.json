@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "recordedAt": "2026-10-19T15:04:26.716218+00:00",
+  "status": "passed-source-and-browser-checkpoint",
+  "scope": "Current source and browser behavior before final archive pin. Exact-byte consumer and publication receipts are separate.",
+  "commands": {
+    "typecheck": {
+      "command": "pnpm typecheck",
+      "status": "passed",
+      "diagnostics": 0
+    },
+    "eslint": {
+      "command": "pnpm exec eslint . --max-warnings=0",
+      "status": "passed",
+      "warnings": 0
+    },
+    "unit": {
+      "command": "pnpm test",
+      "status": "passed",
+      "tests": 184,
+      "suites": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "flows": {
+    "status": "passed",
+    "stats": {
+      "startTime": "2026-10-19T14:55:36.862Z",
+      "duration": 148481.90399999998,
+      "expected": 74,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "byFile": {
+      "flows.spec.ts": {
+        "passed": 9,
+        "failed": 0,
+        "skipped": 0,
+        "retryResults": 0,
+        "axeRuns": 0,
+        "axeViolations": 0,
+        "axeSeriousCritical": 0,
+        "axeIncompleteRuleResults": 0,
+        "pageErrorAssertions": 0,
+        "pageErrors": 0
+      },
+      "mobile.spec.ts": {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "retryResults": 0,
+        "axeRuns": 0,
+        "axeViolations": 0,
+        "axeSeriousCritical": 0,
+        "axeIncompleteRuleResults": 0,
+        "pageErrorAssertions": 0,
+        "pageErrors": 0
+      },
+      "customer-detail.spec.ts": {
+        "passed": 13,
+        "failed": 0,
+        "skipped": 0,
+        "retryResults": 0,
+        "axeRuns": 32,
+        "axeViolations": 0,
+        "axeSeriousCritical": 0,
+        "axeIncompleteRuleResults": 32,
+        "pageErrorAssertions": 13,
+        "pageErrors": 0
+      },
+      "data-workbench.spec.ts": {
+        "passed": 12,
+        "failed": 0,
+        "skipped": 0,
+        "retryResults": 0,
+        "axeRuns": 4,
+        "axeViolations": 0,
+        "axeSeriousCritical": 0,
+        "axeIncompleteRuleResults": 2,
+        "pageErrorAssertions": 12,
+        "pageErrors": 0
+      },
+      "imports.spec.ts": {
+        "passed": 16,
+        "failed": 0,
+        "skipped": 0,
+        "retryResults": 0,
+        "axeRuns": 8,
+        "axeViolations": 0,
+        "axeSeriousCritical": 0,
+        "axeIncompleteRuleResults": 8,
+        "pageErrorAssertions": 16,
+        "pageErrors": 0
+      },
+      "saas-setup.spec.ts": {
+        "passed": 23,
+        "failed": 0,
+        "skipped": 0,
+        "retryResults": 0,
+        "axeRuns": 10,
+        "axeViolations": 0,
+        "axeSeriousCritical": 0,
+        "axeIncompleteRuleResults": 12,
+        "pageErrorAssertions": 23,
+        "pageErrors": 0
+      }
+    },
+    "sourceFiles": 149,
+    "sourceUnchanged": true,
+    "buildIdUnchanged": true,
+    "limits": [
+      "Axe incompletes are retained; this is scoped automated evidence, not a complete accessibility certification."
+    ]
+  },
+  "responsive": {
+    "status": "passed-real-responsive-matrix-and-gallery-previews",
+    "summary": {
+      "planned": 72,
+      "completed": 72,
+      "passed": 72,
+      "failed": 0,
+      "pageErrors": 0,
+      "previews": 12,
+      "galleryChecks": 2,
+      "galleryPassed": 2,
+      "paletteCounts": {
+        "aurora": 12,
+        "violet": 12,
+        "ocean": 12,
+        "mint": 12,
+        "ember": 12,
+        "rose": 12
+      },
+      "sourceUnchanged": true
+    },
+    "scope": {
+      "routes": [
+        "onboarding",
+        "settings/workspace",
+        "settings/team",
+        "customers",
+        "customers/detail",
+        "imports"
+      ],
+      "locales": ["en", "es"],
+      "themes": ["light", "dark"],
+      "widths": [360, 768, 1440],
+      "height": 900,
+      "combinations": 72,
+      "paletteDistribution": {
+        "aurora": 12,
+        "violet": 12,
+        "ocean": 12,
+        "mint": 12,
+        "ember": 12,
+        "rose": 12
+      },
+      "formula": "(routeIndex + widthIndex + 3*localeIndex + 2*themeIndex) % 6",
+      "fullPaletteCrossProduct": false,
+      "appearance": "Real createAppearance presets, preference storage and provider hydration; resolved root tokens are checked. No CSS overrides.",
+      "state": "Fresh local-demo owner workspace. Initial onboarding form, workspace form, team, first customer page, Olivia overview, and initial CSV upload.",
+      "screenshots": "Native prefers-reduced-motion: reduce; DPR 1; fonts loaded."
+    },
+    "gallery": [
+      {
+        "theme": "light",
+        "status": "passed"
+      },
+      {
+        "theme": "dark",
+        "status": "passed"
+      }
+    ]
+  },
+  "motion": {
+    "status": "passed",
+    "summary": {
+      "scenarios": 14,
+      "plannedScenarios": 14,
+      "passedScenarios": 14,
+      "failedScenarios": 0,
+      "checks": 74,
+      "passedChecks": 74,
+      "failedChecks": 0,
+      "errors": 0
+    },
+    "sourceIntegrity": {
+      "unchanged": true
+    }
+  },
+  "actualClipboard": {
+    "status": "passed",
+    "summary": {
+      "families": 44,
+      "dynamicClipboardPayloads": 176,
+      "codeViewCombinations": 12,
+      "passedCodeViewCombinations": 12,
+      "actualPayloadsStrictChecked": 188,
+      "errors": 0
+    },
+    "sourceIntegrity": {
+      "unchanged": true
+    }
+  },
+  "exampleCompilation": {
+    "status": "passed-pure-strict-typecheck",
+    "families": 44,
+    "canonicalExampleFiles": 44,
+    "copiedSourcePayloads": 44,
+    "configuredSpecimenPayloads": 616,
+    "completeStudioPayloads": 28,
+    "compilation": {
+      "typescript": "5.9.3",
+      "strict": true,
+      "noEmit": true,
+      "payloads": 688,
+      "rootFiles": 733,
+      "diagnostics": 0,
+      "diagnosticCodes": [],
+      "canonicalSourceFiles": 64
+    },
+    "negativeControl": {
+      "missingModule": true,
+      "missingExport": true,
+      "invalidTypes": true,
+      "typescript": "5.9.3",
+      "strict": true,
+      "noEmit": true,
+      "payloads": 1,
+      "rootFiles": 1,
+      "diagnostics": 4,
+      "diagnosticCodes": [2305, 2307, 2322, 2322],
+      "canonicalSourceFiles": 3
+    },
+    "browserRuntimeTested": false
+  },
+  "preservedCodeConnect": {
+    "status": "passed-local-smoke",
+    "templateCheckpointVersion": "1.1.0",
+    "sourceValidationVersion": "1.2.0",
+    "templateFiles": 92,
+    "uniqueTypedExamples": 556,
+    "totalTemplateEvaluations": 1646,
+    "diagnostics": 0,
+    "liveFigmaRuntimeTested": false,
+    "cloudRegistered": false
+  },
+  "evidence": {
+    "flows": {
+      "path": "/tmp/aureform-owner-qa-1.2/final-flows/report.json",
+      "sha256": "00c3f44a74a6723536984d884d090c570e69852b6154643d8808be05f4ddf03e"
+    },
+    "flowSummary": {
+      "path": "/tmp/aureform-owner-qa-1.2/final-flows/summary.json",
+      "sha256": "2fdbeeb531da145793927b78b45f91165a568b419054b7cdda83e454239fc1bd"
+    },
+    "motion": {
+      "path": "/tmp/aureform-owner-qa-1.2/motion-report.json",
+      "sha256": "56ef94425c72ebeb62d29622babbcbe25b1fe5ac850150996b4f0ef03d9d7eae"
+    },
+    "actualClipboard": {
+      "path": "/tmp/aureform-owner-qa-1.2/copy-examples-report.json",
+      "sha256": "caf9b65ba81b82d26104b16ff19a4a150d58d243778b787f5484979137606db1"
+    },
+    "responsive": {
+      "path": "/tmp/aureform-saas-responsive-1.2-qa/owner-final-20261019T1456/report.json",
+      "sha256": "74fcedd432405ebda1bef16fb50077ad5199aa52109be2ec87d7ce930fc288e8"
+    },
+    "examples": {
+      "path": "/tmp/aureform-owner-qa-1.2/examples-validation/validation-summary.json",
+      "sha256": "8bfbeb219736faa7af801cbd1b2d3087b297316cc9f6f4e05efc76bf29b0cf1b"
+    },
+    "codeConnect": {
+      "path": ".figma/code-connect/validation/validation-summary.json",
+      "sha256": "2bc64b7e29dc3bc77fd97fb69ecbfe062e2999cf1de15433ca77eb3d8608750b"
+    },
+    "native": {
+      "path": ".figma/native-audit-1.2.json",
+      "sha256": "0fdb4ffafd1c10c8ce85fb0fb0703c4870bf7162fe1f9a8867e3fbab4ee04373"
+    }
+  },
+  "finalDistributionReceipt": "public/downloads/verification-1.2.json",
+  "limitations": [
+    "Axe found zero violations in 54 scoped runs; 54 incomplete rule results remain recorded and are not an accessibility certification.",
+    "The responsive matrix has 72 cases across six routes, two locales, two themes and three widths. Each palette appears in 12 cases; it is not a 432-case palette cross-product.",
+    "The pure example and local Code Connect compilers validate emitted source and types. Only the clipboard, responsive, flow and motion checks exercised the browser.",
+    "Temporary detailed QA reports and screenshots are retained at the recorded execution paths. This compact receipt and reproducible test sources are included in the source kit.",
+    "Frontend demo data persists locally. Invitations send no email; customer-detail attachments store metadata only. Backend adapters are separate from this validation."
+  ]
+}

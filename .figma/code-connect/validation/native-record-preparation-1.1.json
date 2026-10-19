@@ -1,0 +1,63 @@
+{
+  "status": "passed-local-preparation",
+  "schemaDraft": "draft-07",
+  "schemaAcceptedCompleteInMemoryFamilies": 4,
+  "expectedMatrices": {
+    "buttonShapes": 9,
+    "table": 16,
+    "dataTableSparse": 28,
+    "chart": 13
+  },
+  "rejectedMalformedRecordCases": [
+    "incomplete Button matrix",
+    "duplicate Button axes with another ID",
+    "missing full Button property suffix",
+    "Button icon has wrong property type",
+    "Table lacks a material",
+    "replacement of recorded Table set",
+    "Compact DataTable Error is outside sparse matrix",
+    "DataTable full Cartesian expansion exceeds 28",
+    "earlier six-kind Chart record is incomplete",
+    "unreported source Chart kind"
+  ],
+  "sourceDeclarationReflection": "passed",
+  "buttonScriptParse": "passed",
+  "losslessSerialization": [
+    {
+      "name": "empty prerequisite receipt",
+      "created": 0,
+      "mutated": 0,
+      "returnedBytesIncludingStringEscaping": 471
+    },
+    {
+      "name": "gaps, category overlaps, nested prefixes and exact literals",
+      "created": 8,
+      "mutated": 3,
+      "returnedBytesIncludingStringEscaping": 615
+    },
+    {
+      "name": "large nested instance receipt",
+      "created": 2880,
+      "mutated": 2,
+      "returnedBytesIncludingStringEscaping": 11845
+    },
+    {
+      "name": "fifty-thousand exact observed sequential IDs",
+      "created": 50000,
+      "mutated": 0,
+      "returnedBytesIncludingStringEscaping": 499
+    },
+    {
+      "name": "large secondary metadata preserves complete ID receipts",
+      "created": 2880,
+      "mutated": 1,
+      "returnedBytesIncludingStringEscaping": 11929
+    }
+  ],
+  "maxResponseBytes": 20000,
+  "receiptCompactionPreserves": "all affected node IDs, exact property keys and native records",
+  "fixtures": "Synthetic in-memory receipts only; no fixture IDs are written into owner/native ledgers.",
+  "nativeExecutionPerformed": false,
+  "finalCodeConnectGenerationPerformed": false,
+  "sourceHashesRefreshed": false
+}

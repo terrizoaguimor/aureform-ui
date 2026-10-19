@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "status": "passed-source-path-and-runtime-export-validation",
+  "checkedAt": "2026-10-19T14:48:47.062Z",
+  "method": "TypeScript AST inspection of actual exported runtime declarations",
+  "associations": [
+    {
+      "nativeName": "WorkspaceStatus",
+      "setId": "225:1708",
+      "defaultId": "225:1615",
+      "source": "src/components/blocks/workspace-status.tsx",
+      "export": "WorkspaceStatus",
+      "sourceSha256": "c3c35dbfe6072dbbcb702be72e30f0e409c9914fb625347dd1db78e02e4a435f",
+      "runtimeExportExists": true
+    },
+    {
+      "nativeName": "OnboardingFlow",
+      "setId": "225:2068",
+      "defaultId": "225:1709",
+      "source": "src/components/blocks/onboarding-flow.tsx",
+      "export": "OnboardingFlow",
+      "sourceSha256": "6ccfad240475d379bd2412ae893e6d771c94d952ce4a7359d88947444f593917",
+      "runtimeExportExists": true
+    },
+    {
+      "nativeName": "MemberManagement",
+      "setId": "225:2482",
+      "defaultId": "225:2069",
+      "source": "src/components/blocks/member-management.tsx",
+      "export": "MemberManagement",
+      "sourceSha256": "bf6ad194a5ba8edfa9ab4fb0bc5151ab5cb809ce655819adb5307ad00800226e",
+      "runtimeExportExists": true
+    },
+    {
+      "nativeName": "DataWorkbench",
+      "setId": "228:3644",
+      "defaultId": "228:1851",
+      "source": "src/components/blocks/data-workbench.tsx",
+      "export": "DataWorkbench",
+      "sourceSha256": "948820722af0312404966244a9276089b775675261ef89da1d3fda451ae6bceb",
+      "runtimeExportExists": true
+    },
+    {
+      "nativeName": "ImportWizard",
+      "setId": "228:4134",
+      "defaultId": "228:3645",
+      "source": "src/components/blocks/import-wizard.tsx",
+      "export": "ImportWizard",
+      "sourceSha256": "cf3793d1f3cae9ba9eb4ec24b4cc6fd7dc0ef26532651f5513d76529732c46a2",
+      "runtimeExportExists": true
+    },
+    {
+      "nativeName": "RecordDetail",
+      "setId": "228:4817",
+      "defaultId": "228:4135",
+      "source": "src/components/blocks/record-detail.tsx",
+      "export": "GenericRecordDetail",
+      "sourceSha256": "3e88a1f01de159e44d6a457616e5a26653462e03f76e536e75b3a511e92a1dde",
+      "runtimeExportExists": true
+    },
+    {
+      "nativeName": "WorkspaceSettingsTemplate",
+      "setId": "232:3939",
+      "defaultId": "232:3883",
+      "source": "src/components/templates/saas-setup.tsx",
+      "export": "WorkspaceSettingsTemplate",
+      "sourceSha256": "d7d8a1b6493d0e53ec85d46df0c6cff7a6c2e77fa1b7116e9d547e0122cac665",
+      "runtimeExportExists": true
+    },
+    {
+      "nativeName": "RowActions",
+      "setId": "232:3989",
+      "defaultId": "232:3940",
+      "source": "src/components/blocks/record-actions.tsx",
+      "export": "RowActions",
+      "sourceSha256": "347932aa045043a0a06bbb91d88d4f202c35cca5df6de072389714a76829b3a9",
+      "runtimeExportExists": true
+    },
+    {
+      "nativeName": "DeleteDialog",
+      "setId": "232:4040",
+      "defaultId": "232:3990",
+      "source": "src/components/blocks/record-actions.tsx",
+      "export": "DeleteDialog",
+      "sourceSha256": "347932aa045043a0a06bbb91d88d4f202c35cca5df6de072389714a76829b3a9",
+      "runtimeExportExists": true
+    }
+  ],
+  "codeConnectTemplatesGenerated": 0,
+  "cloudRegistered": false
+}

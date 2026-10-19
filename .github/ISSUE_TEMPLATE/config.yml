@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Explore the demo
+    url: https://terrizoaguimor.github.io/aureform-ui/
+    about: Check the current UI in English or Spanish, Light or Dark.
+  - name: Report a vulnerability privately
+    url: https://github.com/terrizoaguimor/aureform-ui/security/advisories/new
+    about: Keep security reports and exploit details out of public issues.

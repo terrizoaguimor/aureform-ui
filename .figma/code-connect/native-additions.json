@@ -1,0 +1,983 @@
+{
+  "schemaVersion": 1,
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "components": {
+    "Button / Appearance": {
+      "setId": "97:655",
+      "defaultId": "97:625",
+      "label": "Label#97:0",
+      "axes": {
+        "Appearance": [
+          "Solid",
+          "Soft",
+          "Outline",
+          "Glass",
+          "Gradient"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      }
+    },
+    "Badge / Appearance": {
+      "setId": "97:666",
+      "defaultId": "97:656",
+      "label": "Label#97:16",
+      "axes": {
+        "Appearance": [
+          "Solid",
+          "Soft",
+          "Outline",
+          "Glass",
+          "Gradient"
+        ]
+      }
+    },
+    "Card / Material": {
+      "setId": "97:715",
+      "defaultId": "97:679",
+      "label": "Title#97:22",
+      "axes": {
+        "Appearance": [
+          "Flat",
+          "Elevated",
+          "Glass",
+          "Gradient"
+        ],
+        "State": [
+          "Default",
+          "Hover"
+        ]
+      }
+    },
+    "Table": {
+      "setId": "23:355",
+      "defaultId": "23:336",
+      "axes": {
+        "State": [
+          "Default",
+          "Empty"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
+      },
+      "variants": [
+        {
+          "id": "23:336",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 346
+        },
+        {
+          "id": "23:353",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 304
+        },
+        {
+          "id": "165:1988",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Elevated",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 290
+        },
+        {
+          "id": "165:2080",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Elevated",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 296
+        },
+        {
+          "id": "165:2099",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 346
+        },
+        {
+          "id": "165:2191",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 304
+        },
+        {
+          "id": "165:2210",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Glass",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 290
+        },
+        {
+          "id": "165:2302",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Glass",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 296
+        },
+        {
+          "id": "165:2321",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 346
+        },
+        {
+          "id": "165:2413",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 304
+        },
+        {
+          "id": "165:2432",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Gradient",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 290
+        },
+        {
+          "id": "165:2524",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Gradient",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 296
+        },
+        {
+          "id": "165:2543",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 346
+        },
+        {
+          "id": "165:2635",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 304
+        },
+        {
+          "id": "165:2654",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Flat",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 290
+        },
+        {
+          "id": "165:2746",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Flat",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 296
+        }
+      ],
+      "propertyDefinitions": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Empty"
+          ]
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Elevated",
+          "variantOptions": [
+            "Elevated",
+            "Glass",
+            "Gradient",
+            "Flat"
+          ]
+        },
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "Comfortable",
+          "variantOptions": [
+            "Comfortable",
+            "Compact"
+          ]
+        }
+      }
+    },
+    "DataTable": {
+      "setId": "23:443",
+      "defaultId": "23:356",
+      "axes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Empty",
+          "Loading",
+          "Error"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
+      },
+      "variants": [
+        {
+          "id": "23:356",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 621
+        },
+        {
+          "id": "23:390",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 691
+        },
+        {
+          "id": "23:424",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 505
+        },
+        {
+          "id": "164:1465",
+          "axes": {
+            "State": "Loading",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 561
+        },
+        {
+          "id": "164:1550",
+          "axes": {
+            "State": "Error",
+            "Appearance": "Elevated",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 118
+        },
+        {
+          "id": "164:1564",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Elevated",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 553
+        },
+        {
+          "id": "164:1844",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Elevated",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 623
+        },
+        {
+          "id": "164:2163",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 621
+        },
+        {
+          "id": "164:2443",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 691
+        },
+        {
+          "id": "164:2762",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 505
+        },
+        {
+          "id": "164:2869",
+          "axes": {
+            "State": "Loading",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 561
+        },
+        {
+          "id": "164:2954",
+          "axes": {
+            "State": "Error",
+            "Appearance": "Glass",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 118
+        },
+        {
+          "id": "164:2968",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Glass",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 553
+        },
+        {
+          "id": "164:3248",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Glass",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 623
+        },
+        {
+          "id": "164:3567",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 621
+        },
+        {
+          "id": "164:3847",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 691
+        },
+        {
+          "id": "164:4166",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 505
+        },
+        {
+          "id": "164:4273",
+          "axes": {
+            "State": "Loading",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 561
+        },
+        {
+          "id": "164:4358",
+          "axes": {
+            "State": "Error",
+            "Appearance": "Gradient",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 118
+        },
+        {
+          "id": "164:4372",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Gradient",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 553
+        },
+        {
+          "id": "164:4652",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Gradient",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 623
+        },
+        {
+          "id": "164:4971",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 621
+        },
+        {
+          "id": "164:5251",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 691
+        },
+        {
+          "id": "164:5570",
+          "axes": {
+            "State": "Empty",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 505
+        },
+        {
+          "id": "164:5677",
+          "axes": {
+            "State": "Loading",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 561
+        },
+        {
+          "id": "164:5762",
+          "axes": {
+            "State": "Error",
+            "Appearance": "Flat",
+            "Density": "Comfortable"
+          },
+          "width": 1138,
+          "height": 118
+        },
+        {
+          "id": "164:5776",
+          "axes": {
+            "State": "Default",
+            "Appearance": "Flat",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 553
+        },
+        {
+          "id": "164:6056",
+          "axes": {
+            "State": "Selected",
+            "Appearance": "Flat",
+            "Density": "Compact"
+          },
+          "width": 1138,
+          "height": 623
+        }
+      ],
+      "propertyDefinitions": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Selected",
+            "Empty",
+            "Loading",
+            "Error"
+          ]
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Elevated",
+          "variantOptions": [
+            "Elevated",
+            "Glass",
+            "Gradient",
+            "Flat"
+          ]
+        },
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "Comfortable",
+          "variantOptions": [
+            "Comfortable",
+            "Compact"
+          ]
+        }
+      }
+    },
+    "Button / Shapes": {
+      "setId": "176:4598",
+      "defaultId": "176:4562",
+      "label": "Label#176:0",
+      "showIcon": "Show icon#176:10",
+      "icon": "Icon#176:20",
+      "axes": {
+        "Shape": [
+          "Rounded",
+          "Pill",
+          "Square"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
+      },
+      "sourceMappings": {
+        "shape": {
+          "Rounded": "rounded",
+          "Pill": "pill",
+          "Square": "square"
+        },
+        "size": {
+          "Small": "sm",
+          "Medium": "default",
+          "Large": "lg"
+        }
+      },
+      "variants": [
+        {
+          "id": "176:4562",
+          "name": "Shape=Rounded, Size=Medium",
+          "axes": {
+            "Shape": "Rounded",
+            "Size": "Medium"
+          }
+        },
+        {
+          "id": "176:4566",
+          "name": "Shape=Rounded, Size=Small",
+          "axes": {
+            "Shape": "Rounded",
+            "Size": "Small"
+          }
+        },
+        {
+          "id": "176:4570",
+          "name": "Shape=Rounded, Size=Large",
+          "axes": {
+            "Shape": "Rounded",
+            "Size": "Large"
+          }
+        },
+        {
+          "id": "176:4574",
+          "name": "Shape=Pill, Size=Medium",
+          "axes": {
+            "Shape": "Pill",
+            "Size": "Medium"
+          }
+        },
+        {
+          "id": "176:4578",
+          "name": "Shape=Pill, Size=Small",
+          "axes": {
+            "Shape": "Pill",
+            "Size": "Small"
+          }
+        },
+        {
+          "id": "176:4582",
+          "name": "Shape=Pill, Size=Large",
+          "axes": {
+            "Shape": "Pill",
+            "Size": "Large"
+          }
+        },
+        {
+          "id": "176:4586",
+          "name": "Shape=Square, Size=Medium",
+          "axes": {
+            "Shape": "Square",
+            "Size": "Medium"
+          }
+        },
+        {
+          "id": "176:4590",
+          "name": "Shape=Square, Size=Small",
+          "axes": {
+            "Shape": "Square",
+            "Size": "Small"
+          }
+        },
+        {
+          "id": "176:4594",
+          "name": "Shape=Square, Size=Large",
+          "axes": {
+            "Shape": "Square",
+            "Size": "Large"
+          }
+        }
+      ],
+      "propertyDefinitions": {
+        "Label#176:0": {
+          "type": "TEXT",
+          "defaultValue": "Continue"
+        },
+        "Show icon#176:10": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Icon#176:20": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "3:2"
+        },
+        "Shape": {
+          "type": "VARIANT",
+          "defaultValue": "Rounded",
+          "variantOptions": [
+            "Rounded",
+            "Pill",
+            "Square"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Medium",
+          "variantOptions": [
+            "Medium",
+            "Small",
+            "Large"
+          ]
+        }
+      }
+    },
+    "Chart": {
+      "setId": "23:501",
+      "defaultId": "23:444",
+      "label": "Label#23:14",
+      "axes": {
+        "Kind": [
+          "Area",
+          "Line",
+          "Bar",
+          "Donut",
+          "Radar",
+          "Radial",
+          "HorizontalBar",
+          "StackedBar",
+          "StackedArea",
+          "DivergingBar",
+          "Gauge",
+          "Rings",
+          "Heatmap"
+        ]
+      },
+      "variants": [
+        {
+          "id": "23:444",
+          "name": "Kind=Area",
+          "axes": {
+            "Kind": "Area"
+          }
+        },
+        {
+          "id": "23:454",
+          "name": "Kind=Line",
+          "axes": {
+            "Kind": "Line"
+          }
+        },
+        {
+          "id": "23:463",
+          "name": "Kind=Bar",
+          "axes": {
+            "Kind": "Bar"
+          }
+        },
+        {
+          "id": "23:476",
+          "name": "Kind=Donut",
+          "axes": {
+            "Kind": "Donut"
+          }
+        },
+        {
+          "id": "23:485",
+          "name": "Kind=Radar",
+          "axes": {
+            "Kind": "Radar"
+          }
+        },
+        {
+          "id": "23:493",
+          "name": "Kind=Radial",
+          "axes": {
+            "Kind": "Radial"
+          }
+        },
+        {
+          "id": "189:5385",
+          "name": "Kind=HorizontalBar",
+          "axes": {
+            "Kind": "HorizontalBar"
+          }
+        },
+        {
+          "id": "189:5599",
+          "name": "Kind=StackedBar",
+          "axes": {
+            "Kind": "StackedBar"
+          }
+        },
+        {
+          "id": "189:5813",
+          "name": "Kind=StackedArea",
+          "axes": {
+            "Kind": "StackedArea"
+          }
+        },
+        {
+          "id": "189:5931",
+          "name": "Kind=DivergingBar",
+          "axes": {
+            "Kind": "DivergingBar"
+          }
+        },
+        {
+          "id": "189:6148",
+          "name": "Kind=Gauge",
+          "axes": {
+            "Kind": "Gauge"
+          }
+        },
+        {
+          "id": "189:6201",
+          "name": "Kind=Rings",
+          "axes": {
+            "Kind": "Rings"
+          }
+        },
+        {
+          "id": "189:6271",
+          "name": "Kind=Heatmap",
+          "axes": {
+            "Kind": "Heatmap"
+          }
+        }
+      ],
+      "propertyDefinitions": {
+        "Label#23:14": {
+          "type": "TEXT",
+          "defaultValue": "Revenue overview"
+        },
+        "Show legend#189:0": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Show data#189:7": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Glow#189:14": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Series 1#189:21": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Series 2#189:28": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Series 3#189:35": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 1#189:42": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 2#189:49": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 3#189:56": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 4#189:63": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 5#189:70": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 6#189:77": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Kind": {
+          "type": "VARIANT",
+          "defaultValue": "Area",
+          "variantOptions": [
+            "Area",
+            "Line",
+            "Bar",
+            "Donut",
+            "Radar",
+            "Radial",
+            "HorizontalBar",
+            "StackedBar",
+            "StackedArea",
+            "DivergingBar",
+            "Gauge",
+            "Rings",
+            "Heatmap"
+          ]
+        }
+      },
+      "legend": "Show legend#189:0",
+      "dataVisibility": "Show data#189:7",
+      "glow": "Glow#189:14",
+      "series1": "Series 1#189:21",
+      "series2": "Series 2#189:28",
+      "series3": "Series 3#189:35",
+      "category1": "Category 1#189:42",
+      "category2": "Category 2#189:49",
+      "category3": "Category 3#189:56",
+      "category4": "Category 4#189:63",
+      "category5": "Category 5#189:70",
+      "category6": "Category 6#189:77"
+    }
+  },
+  "nativeRecordEvidence": {
+    "Table": {
+      "ownerStatePath": [
+        "entities",
+        "components",
+        "Table",
+        "native1_1"
+      ],
+      "receipt": ".figma/proofs/table-1.1/native-table-1.1-report.json",
+      "visualReview": ".figma/proofs/table-1.1/owner-visual-review.json",
+      "variantNameReadback": "not-returned-in-compact-matrix"
+    },
+    "DataTable": {
+      "ownerStatePath": [
+        "entities",
+        "components",
+        "DataTable",
+        "native1_1"
+      ],
+      "receipt": ".figma/proofs/table-1.1/native-table-1.1-report.json",
+      "visualReview": ".figma/proofs/table-1.1/owner-visual-review.json",
+      "variantNameReadback": "not-returned-in-compact-matrix"
+    },
+    "Button / Shapes": {
+      "ownerStatePath": [
+        "entities",
+        "components",
+        "Button / Shapes"
+      ],
+      "receipt": ".figma/native-buttons-1.1.json",
+      "visualReview": ".figma/proofs/buttons-1.1/owner-visual-review.json",
+      "coverReview": ".figma/proofs/buttons-1.1/owner-cover-review.json"
+    },
+    "Chart": {
+      "ownerStatePath": [
+        "entities",
+        "components",
+        "Chart"
+      ],
+      "receipt": ".figma/native-charts-1.1.json",
+      "rawDefinitions": ".figma/code-connect/Chart.native-definitions-1.1.json",
+      "visualReview": "pending-owner-visual-review-layout-postfix"
+    }
+  }
+}

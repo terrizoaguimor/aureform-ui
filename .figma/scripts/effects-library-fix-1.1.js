@@ -1,0 +1,11 @@
+const page=await figma.getNodeByIdAsync('2:3');await figma.setCurrentPageAsync(page);
+await Promise.all(['Regular','Medium','SemiBold','Bold'].map(style=>figma.loadFontAsync({family:'Manrope',style})));
+const primary=await figma.variables.getVariableByIdAsync('VariableID:95:314');
+const mutatedNodeIds=[];
+const review=await figma.getNodeByIdAsync('104:805');
+for(const frame of review.findAllWithCriteria({types:['FRAME']})){frame.fills=[];mutatedNodeIds.push(frame.id);}
+for(const setId of ['104:777','104:797']){const set=await figma.getNodeByIdAsync(setId);for(const variant of set.children){const light=variant.findOne(n=>n.type==='RECTANGLE'&&/Pointer light|Tilt spotlight/.test(n.name));if(light){light.fills=[{type:'GRADIENT_RADIAL',opacity:variant.name.includes('Hover')?.2:.13,gradientTransform:[[.85,0,.06],[0,.8,-.08]],gradientStops:[{position:0,color:{r:.545,g:.361,b:.965,a:1},boundVariables:{color:{type:'VARIABLE_ALIAS',id:primary.id}}},{position:1,color:{r:.545,g:.361,b:.965,a:0}}]}];mutatedNodeIds.push(light.id);}}}
+for(const setId of ['104:734','104:766']){const set=await figma.getNodeByIdAsync(setId);for(const variant of set.children){if(setId==='104:734'&&!variant.name.includes('Mesh'))continue;const fallback=variant.findOne(n=>n.type==='RECTANGLE'&&n.name==='Static fallback');if(fallback){fallback.fills=fallback.fills.map(p=>p.type==='GRADIENT_RADIAL'?{...p,gradientStops:p.gradientStops.map((stop,index)=>index===p.gradientStops.length-1?{position:stop.position,color:{r:.545,g:.361,b:.965,a:0}}:stop)}:p);mutatedNodeIds.push(fallback.id);}}}
+const lightReview=await figma.getNodeByIdAsync('97:788');
+for(const instance of lightReview.findAllWithCriteria({types:['INSTANCE']})){const main=await instance.getMainComponentAsync();if(main&&main.parent&&main.parent.type==='COMPONENT_SET'&&main.parent.name==='Button / Appearance'&&main.name.includes('Gradient')){instance.fillStyleId='S:f94b92637c8981e80ad9cb928d38a6e14c05b74e,';mutatedNodeIds.push(instance.id);}}
+return {createdNodeIds:[],mutatedNodeIds,reviewFrame:{id:review.id,width:review.width,height:review.height,descendants:review.findAll().length},imageFillCount:review.findAll().filter(n=>'fills'in n&&Array.isArray(n.fills)&&n.fills.some(p=>p.type==='IMAGE')).length};

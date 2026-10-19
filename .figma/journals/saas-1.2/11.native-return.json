@@ -1,0 +1,312 @@
+{
+  "inspectionRows": [
+    {
+      "id": "228:2475",
+      "name": "State=Filtered, Theme=Light",
+      "children": [
+        {
+          "id": "228:2476",
+          "name": "Table controls",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:2497",
+          "name": "Active AND filters",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:2506",
+          "name": "DataTable / controlled external page",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "228:2775",
+          "name": "All conditions must match. Saved views include filters, colu",
+          "type": "TEXT"
+        }
+      ],
+      "recent": [],
+      "notesInputs": [],
+      "rows": [
+        {
+          "id": "I228:2506;23:368",
+          "name": "Row / cus-001",
+          "visible": true
+        },
+        {
+          "id": "I228:2506;23:372",
+          "name": "Row / cus-002",
+          "visible": true
+        },
+        {
+          "id": "I228:2506;23:376",
+          "name": "Row / cus-003",
+          "visible": true
+        },
+        {
+          "id": "I228:2506;162:915",
+          "name": "Row / cus-004",
+          "visible": true
+        },
+        {
+          "id": "I228:2506;162:949",
+          "name": "Row / cus-005",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "228:2776",
+      "name": "State=Filtered, Theme=Dark",
+      "children": [
+        {
+          "id": "228:2777",
+          "name": "Table controls",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:2798",
+          "name": "Active AND filters",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:2807",
+          "name": "DataTable / controlled external page",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "228:3076",
+          "name": "All conditions must match. Saved views include filters, colu",
+          "type": "TEXT"
+        }
+      ],
+      "recent": [],
+      "notesInputs": [],
+      "rows": [
+        {
+          "id": "I228:2807;23:368",
+          "name": "Row / cus-001",
+          "visible": true
+        },
+        {
+          "id": "I228:2807;23:372",
+          "name": "Row / cus-002",
+          "visible": true
+        },
+        {
+          "id": "I228:2807;23:376",
+          "name": "Row / cus-003",
+          "visible": true
+        },
+        {
+          "id": "I228:2807;162:915",
+          "name": "Row / cus-004",
+          "visible": true
+        },
+        {
+          "id": "I228:2807;162:949",
+          "name": "Row / cus-005",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "228:4135",
+      "name": "State=Summary, Theme=Light",
+      "children": [
+        {
+          "id": "228:4136",
+          "name": "ghost / Back to customers",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "228:4140",
+          "name": "Frame",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4167",
+          "name": "Customer sections",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4188",
+          "name": "Customer summary",
+          "type": "FRAME"
+        }
+      ],
+      "recent": [],
+      "notesInputs": [],
+      "rows": [
+        {
+          "id": "228:4192",
+          "name": "Row / Full name · Email address",
+          "visible": true
+        },
+        {
+          "id": "228:4195",
+          "name": "Row / Olivia Rhye · olivia@layers.studio",
+          "visible": true
+        },
+        {
+          "id": "228:4198",
+          "name": "Row / Company · Customer ID",
+          "visible": true
+        },
+        {
+          "id": "228:4201",
+          "name": "Row / Layers · cus-001",
+          "visible": true
+        },
+        {
+          "id": "228:4204",
+          "name": "Row / Plan: Pro · Status: Active",
+          "visible": true
+        },
+        {
+          "id": "228:4212",
+          "name": "Row / Customer since · Oct 14, 2026",
+          "visible": true
+        },
+        {
+          "id": "228:4215",
+          "name": "Row / Team notes · 1",
+          "visible": true
+        },
+        {
+          "id": "228:4218",
+          "name": "Row / Attached files · 0",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "228:4221",
+      "name": "State=Summary, Theme=Dark",
+      "children": [
+        {
+          "id": "228:4222",
+          "name": "ghost / Back to customers",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "228:4226",
+          "name": "Frame",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4253",
+          "name": "Customer sections",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4274",
+          "name": "Customer summary",
+          "type": "FRAME"
+        }
+      ],
+      "recent": [],
+      "notesInputs": [],
+      "rows": [
+        {
+          "id": "228:4278",
+          "name": "Row / Full name · Email address",
+          "visible": true
+        },
+        {
+          "id": "228:4281",
+          "name": "Row / Olivia Rhye · olivia@layers.studio",
+          "visible": true
+        },
+        {
+          "id": "228:4284",
+          "name": "Row / Company · Customer ID",
+          "visible": true
+        },
+        {
+          "id": "228:4287",
+          "name": "Row / Layers · cus-001",
+          "visible": true
+        },
+        {
+          "id": "228:4290",
+          "name": "Row / Plan: Pro · Status: Active",
+          "visible": true
+        },
+        {
+          "id": "228:4298",
+          "name": "Row / Customer since · Oct 14, 2026",
+          "visible": true
+        },
+        {
+          "id": "228:4301",
+          "name": "Row / Team notes · 1",
+          "visible": true
+        },
+        {
+          "id": "228:4304",
+          "name": "Row / Attached files · 0",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "228:4423",
+      "name": "State=Notes, Theme=Light",
+      "children": [
+        {
+          "id": "228:4424",
+          "name": "ghost / Back to customers",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "228:4428",
+          "name": "Frame",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4455",
+          "name": "Customer sections",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4476",
+          "name": "Team notes",
+          "type": "FRAME"
+        }
+      ],
+      "recent": [],
+      "notesInputs": [],
+      "rows": []
+    },
+    {
+      "id": "228:4488",
+      "name": "State=Notes, Theme=Dark",
+      "children": [
+        {
+          "id": "228:4489",
+          "name": "ghost / Back to customers",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "228:4493",
+          "name": "Frame",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4520",
+          "name": "Customer sections",
+          "type": "FRAME"
+        },
+        {
+          "id": "228:4541",
+          "name": "Team notes",
+          "type": "FRAME"
+        }
+      ],
+      "recent": [],
+      "notesInputs": [],
+      "rows": []
+    }
+  ]
+}

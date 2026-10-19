@@ -1,0 +1,83 @@
+{
+  "status": "six-views-passed-saas-targeted-fix-pending",
+  "checkedAt": "2026-10-19T06:04:52.064939+00:00",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "reviewMethod": "Owner visual inspection of seven actual post-fix Figma PNG exports; source captures retained without credential-bearing URLs.",
+  "figmaCallsPerformedByOwner": false,
+  "views": [
+    {
+      "rootId": "55:8072",
+      "view": "Landing",
+      "bytes": 2651700,
+      "width": 1448,
+      "height": 4883,
+      "sha256": "5f47bcce78fe2eba08b911e299abf2f3fb8b50a05b52590741e81bae1718bfac",
+      "status": "passed-owner-visual-review",
+      "proofFile": ".figma/proofs/flagships-auth-landing-1.1/landing-final.png"
+    },
+    {
+      "rootId": "5:2",
+      "view": "SaaS",
+      "bytes": 804568,
+      "width": 1440,
+      "height": 1788,
+      "sha256": "3af9a308eaecb0d1828b212db96ceb829dfd30f5ff44bb741041858fe4b2e226",
+      "status": "needs-targeted-spacing-fix",
+      "finding": "Revenue by plan: Enterprise label touches $25,596; align the three amounts to the right with clear spacing."
+    },
+    {
+      "rootId": "5:4",
+      "view": "AI",
+      "bytes": 979410,
+      "width": 1440,
+      "height": 1220,
+      "sha256": "abfbd3b402c08201b9e22ef493a3b1156ea8d6fc8fcb2b8d5222e62730ac1d82",
+      "status": "passed-owner-visual-review",
+      "proofFile": ".figma/proofs/flagships-auth-landing-1.1/ai-final.png"
+    },
+    {
+      "rootId": "52:7472",
+      "view": "Sign in",
+      "bytes": 709646,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "a2106fdecee436c9263f6f4a3aec1f5c70c50ece8107663c073d3987888940e3",
+      "status": "passed-owner-visual-review",
+      "proofFile": ".figma/proofs/flagships-auth-landing-1.1/auth-sign-in-final.png"
+    },
+    {
+      "rootId": "52:7509",
+      "view": "Sign up",
+      "bytes": 716628,
+      "width": 1440,
+      "height": 1004,
+      "sha256": "e48df8a04c600616adb41d26d66fa8a4a06c4aa13a8d6fea3721eb068959123c",
+      "status": "passed-owner-visual-review",
+      "proofFile": ".figma/proofs/flagships-auth-landing-1.1/auth-sign-up-final.png"
+    },
+    {
+      "rootId": "52:7551",
+      "view": "Reset password",
+      "bytes": 698017,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "bd22d85cffa0ae34537e6f31d1fff30d6d4c476665b0739b577a317622be2143",
+      "status": "passed-owner-visual-review",
+      "proofFile": ".figma/proofs/flagships-auth-landing-1.1/auth-reset-password-final.png"
+    },
+    {
+      "rootId": "52:7581",
+      "view": "Verify",
+      "bytes": 693350,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "a4b6b1a1b8e5de13ce9f1322097917b12cc28a9b1d7a609b2222d0a31991e7b7",
+      "status": "passed-owner-visual-review",
+      "proofFile": ".figma/proofs/flagships-auth-landing-1.1/auth-verify-final.png"
+    }
+  ],
+  "pending": [
+    "SaaS Revenue by plan label/value spacing and one post-fix visual review",
+    "Chart library and Charts screen native completion and actual visual review"
+  ]
+}

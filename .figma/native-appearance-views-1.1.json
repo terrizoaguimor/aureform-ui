@@ -1,0 +1,247 @@
+{
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "2:6",
+  "lease": "owner-complete",
+  "views": {
+    "studio": {
+      "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+      "pageId": "2:6",
+      "rootId": "134:8412",
+      "status": "native-verified",
+      "bounds": {
+        "x": 7080,
+        "y": 80,
+        "width": 1440,
+        "height": 2429
+      },
+      "descendantCount": 861,
+      "nodeTypes": {
+        "FRAME": 295,
+        "VECTOR": 189,
+        "TEXT": 185,
+        "INSTANCE": 92,
+        "SLOT": 1,
+        "ELLIPSE": 6,
+        "RECTANGLE": 69,
+        "GROUP": 25
+      },
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "imageFillCount": 0,
+      "nativeReturn": ".figma/proofs/appearance-views-1.1/studio-build.native-return.json",
+      "executedCode": ".figma/proofs/appearance-views-1.1/studio-build.executed.js",
+      "normalizedReturn": ".figma/proofs/appearance-views-1.1/studio-build.normalized.json",
+      "journalEvidence": {
+        "path": "/home/terrizoaguimor/.codex/sessions/2026/10/18/rollout-2026-10-18T19-27-41-01a1518e-965c-78a2-bac3-6cfafae464b7.jsonl",
+        "callId": "call_b2f389d0cd2f564bbbea6df75480903a",
+        "timestamp": "2026-10-19T02:58:50.523Z"
+      },
+      "compositionScreenshot": ".figma/proofs/appearance-views-1.1/studio-composition.png",
+      "refinement": {
+        "status": "applied-awaiting-visual-proof",
+        "rootId": "134:8412",
+        "proofDirectory": ".figma/proofs/appearance-views-1.1",
+        "returnPath": ".figma/proofs/appearance-views-1.1/studio-refine.native-return.json",
+        "normalizedPath": ".figma/proofs/appearance-views-1.1/studio-refine.normalized.json",
+        "executedCodePath": ".figma/proofs/appearance-views-1.1/studio-refine.executed.js",
+        "executedCodeSha256": "e23f0fd52fcf0d08d5967ed3350ac5a3d5684d271656baf76e07a29826e61df9",
+        "allAffectedIdCounts": {
+          "created": 488,
+          "mutated": 1123,
+          "removed": 2,
+          "unique": 1191
+        }
+      },
+      "view": "studio",
+      "placeholderCount": 0,
+      "visualReview": {
+        "status": "passed",
+        "method": "owner visually inspected full-resolution native PNG",
+        "path": ".figma/proofs/appearance-views-1.1/studio-final.png",
+        "sha256": "74afff363c2c37d44e1fedac7459c548d8e51cc8cbd09a8a06759646438b2640",
+        "width": 1440,
+        "height": 2429,
+        "reviewedAt": "2026-10-19T04:11:16.312600+00:00",
+        "checks": [
+          "complete sidebar and header flow",
+          "readable editable Manrope typography",
+          "native source SVG icons",
+          "full footer in frame",
+          "palette and gradient composition",
+          "no raster fills or pending placeholders"
+        ]
+      },
+      "reconciliation": {
+        "layoutProof": ".figma/native-appearance-views-layout-1.1.json",
+        "iconProof": ".figma/native-appearance-views-icons-1.1.json",
+        "cleanupProof": ".figma/native-appearance-views-cleanup-1.1.json"
+      }
+    },
+    "themes": {
+      "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+      "pageId": "2:6",
+      "rootId": "135:8894",
+      "status": "native-verified",
+      "bounds": {
+        "x": 8680,
+        "y": 80,
+        "width": 1440,
+        "height": 3067
+      },
+      "descendantCount": 1117,
+      "nodeTypes": {
+        "FRAME": 345,
+        "VECTOR": 249,
+        "TEXT": 222,
+        "INSTANCE": 103,
+        "SLOT": 1,
+        "RECTANGLE": 12,
+        "GROUP": 168,
+        "ELLIPSE": 18
+      },
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "imageFillCount": 0,
+      "nativeReturn": ".figma/proofs/appearance-views-1.1/themes-build.native-return.json",
+      "executedCode": ".figma/proofs/appearance-views-1.1/themes-build.executed.js",
+      "normalizedReturn": ".figma/proofs/appearance-views-1.1/themes-build.normalized.json",
+      "journalEvidence": {
+        "path": "/home/terrizoaguimor/.codex/sessions/2026/10/18/rollout-2026-10-18T19-27-41-01a1518e-965c-78a2-bac3-6cfafae464b7.jsonl",
+        "callId": "call_5038ce2479f75e64a99d04efb03d4a7a",
+        "timestamp": "2026-10-19T03:03:55.429Z"
+      },
+      "compositionScreenshot": ".figma/proofs/appearance-views-1.1/themes-composition.png",
+      "refinement": {
+        "status": "applied-awaiting-visual-proof",
+        "rootId": "135:8894",
+        "proofDirectory": ".figma/proofs/appearance-views-1.1",
+        "returnPath": ".figma/proofs/appearance-views-1.1/themes-refine.native-return.json",
+        "normalizedPath": ".figma/proofs/appearance-views-1.1/themes-refine.normalized.json",
+        "executedCodePath": ".figma/proofs/appearance-views-1.1/themes-refine.executed.js",
+        "executedCodeSha256": "6efafb79e38e539ecab5a361eb6200518f93bb93f14ee710a231cf18c04e233c",
+        "allAffectedIdCounts": {
+          "created": 706,
+          "mutated": 1459,
+          "removed": 2,
+          "unique": 1725
+        }
+      },
+      "view": "themes",
+      "placeholderCount": 0,
+      "visualReview": {
+        "status": "passed",
+        "method": "owner visually inspected full-resolution native PNG",
+        "path": ".figma/proofs/appearance-views-1.1/themes-final.png",
+        "sha256": "b9510b31f477fad37d3141ce27745781af209539058094a098d3561d718af33d",
+        "width": 1440,
+        "height": 3067,
+        "reviewedAt": "2026-10-19T04:11:16.312600+00:00",
+        "checks": [
+          "complete sidebar and header flow",
+          "readable editable Manrope typography",
+          "native source SVG icons",
+          "full footer in frame",
+          "palette and gradient composition",
+          "no raster fills or pending placeholders"
+        ]
+      },
+      "reconciliation": {
+        "layoutProof": ".figma/native-appearance-views-layout-1.1.json",
+        "iconProof": ".figma/native-appearance-views-icons-1.1.json",
+        "cleanupProof": ".figma/native-appearance-views-cleanup-1.1.json"
+      }
+    },
+    "effects": {
+      "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+      "pageId": "2:6",
+      "rootId": "136:9476",
+      "status": "native-verified",
+      "bounds": {
+        "x": 10280,
+        "y": 80,
+        "width": 1440,
+        "height": 3298
+      },
+      "descendantCount": 927,
+      "nodeTypes": {
+        "FRAME": 367,
+        "VECTOR": 223,
+        "TEXT": 182,
+        "INSTANCE": 90,
+        "SLOT": 1,
+        "RECTANGLE": 52,
+        "ELLIPSE": 13
+      },
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "imageFillCount": 0,
+      "nativeReturn": ".figma/proofs/appearance-views-1.1/effects-build.native-return.json",
+      "executedCode": ".figma/proofs/appearance-views-1.1/effects-build.executed.js",
+      "normalizedReturn": ".figma/proofs/appearance-views-1.1/effects-build.normalized.json",
+      "journalEvidence": {
+        "path": "/home/terrizoaguimor/.codex/sessions/2026/10/18/rollout-2026-10-18T19-27-41-01a1518e-965c-78a2-bac3-6cfafae464b7.jsonl",
+        "callId": "call_44cd0dc90fb95b5a866ebe60bfa9f15a",
+        "timestamp": "2026-10-19T03:06:25.491Z"
+      },
+      "compositionScreenshot": ".figma/proofs/appearance-views-1.1/effects-composition.png",
+      "refinement": {
+        "status": "applied-awaiting-visual-proof",
+        "rootId": "136:9476",
+        "proofDirectory": ".figma/proofs/appearance-views-1.1",
+        "returnPath": ".figma/proofs/appearance-views-1.1/effects-refine.native-return.json",
+        "normalizedPath": ".figma/proofs/appearance-views-1.1/effects-refine.normalized.json",
+        "executedCodePath": ".figma/proofs/appearance-views-1.1/effects-refine.executed.js",
+        "executedCodeSha256": "6386a0f39e63403723f86ebb29f63fa6c5223cf0084b4020472ce1e99c1fe1f5",
+        "allAffectedIdCounts": {
+          "created": 489,
+          "mutated": 1223,
+          "removed": 2,
+          "unique": 1291
+        }
+      },
+      "view": "effects",
+      "placeholderCount": 0,
+      "visualReview": {
+        "status": "passed",
+        "method": "owner visually inspected full-resolution native PNG",
+        "path": ".figma/proofs/appearance-views-1.1/effects-final.png",
+        "sha256": "fd31f47524b1ae4e43352b5c0cdc01e7161c97f673d142815d6df09344c2bc32",
+        "width": 1440,
+        "height": 3298,
+        "reviewedAt": "2026-10-19T04:11:16.312600+00:00",
+        "checks": [
+          "complete sidebar and header flow",
+          "readable editable Manrope typography",
+          "native source SVG icons",
+          "full footer in frame",
+          "palette and gradient composition",
+          "no raster fills or pending placeholders"
+        ]
+      },
+      "reconciliation": {
+        "layoutProof": ".figma/native-appearance-views-layout-1.1.json",
+        "iconProof": ".figma/native-appearance-views-icons-1.1.json",
+        "cleanupProof": ".figma/native-appearance-views-cleanup-1.1.json"
+      }
+    }
+  },
+  "captures": {
+    "studio": {
+      "captureId": "2f567f6b-c1fe-4fb2-a0ef-ef08702f0b0f",
+      "status": "initialized-unsubmitted"
+    },
+    "themes": {
+      "captureId": "5aba0256-07e6-4040-86c9-685eda1fdac3",
+      "status": "initialized-unsubmitted"
+    },
+    "effects": {
+      "captureId": "dac5762e-1e1d-45dc-8e61-5380cb24410a",
+      "status": "initialized-unsubmitted"
+    }
+  },
+  "status": "native-verified-references-cleaned",
+  "cleanupProof": ".figma/native-appearance-views-cleanup-1.1.json"
+}

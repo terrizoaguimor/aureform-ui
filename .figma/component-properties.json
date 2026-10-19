@@ -1,0 +1,909 @@
+{
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "status": "native-local-unpublished",
+  "components": {
+    "Button": {
+      "setId": "3:113",
+      "defaultId": "3:17",
+      "label": "Label#3:0",
+      "showIcon": "Show icon#3:28",
+      "icon": "Icon#3:56",
+      "axes": {
+        "Style": [
+          "Primary",
+          "Outline",
+          "Ghost"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      }
+    },
+    "Badge": {
+      "setId": "3:124",
+      "defaultId": "3:114",
+      "label": "Label#3:84",
+      "axes": {
+        "Tone": [
+          "Success",
+          "Neutral",
+          "Warning",
+          "Destructive",
+          "Outline"
+        ]
+      }
+    },
+    "Input": {
+      "setId": "3:133",
+      "defaultId": "3:125",
+      "value": "Value#3:90",
+      "axes": {
+        "State": [
+          "Empty",
+          "Focus",
+          "Error",
+          "Disabled"
+        ]
+      }
+    },
+    "SidebarItem": {
+      "setId": "3:142",
+      "defaultId": "3:134",
+      "activeId": "3:138",
+      "label": "Label#3:95",
+      "icon": "Icon#3:98",
+      "axes": {
+        "State": [
+          "Default",
+          "Active"
+        ]
+      }
+    },
+    "Avatar": {
+      "setId": "3:149",
+      "defaultId": "3:145",
+      "initials": "Initials#3:101",
+      "axes": {
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
+      }
+    },
+    "MetricCard": {
+      "setId": "3:160",
+      "defaultId": "3:150",
+      "label": "Label#3:105",
+      "value": "Value#3:108",
+      "axes": {
+        "Trend": [
+          "Positive",
+          "Negative"
+        ]
+      }
+    },
+    "ArrowUpRight": {
+      "defaultId": "3:2",
+      "axes": {}
+    },
+    "AureformMark": {
+      "defaultId": "9:46",
+      "axes": {}
+    },
+    "Checkbox": {
+      "setId": "15:14",
+      "defaultId": "15:6",
+      "axes": {
+        "State": [
+          "Unchecked",
+          "Checked",
+          "Mixed",
+          "Disabled"
+        ]
+      }
+    },
+    "Switch": {
+      "setId": "15:21",
+      "defaultId": "15:15",
+      "axes": {
+        "State": [
+          "Off",
+          "On",
+          "Disabled"
+        ]
+      }
+    },
+    "RadioGroup": {
+      "setId": "15:44",
+      "defaultId": "15:22",
+      "label": "Label#15:0",
+      "axes": {
+        "State": [
+          "Default",
+          "Disabled"
+        ]
+      }
+    },
+    "Slider": {
+      "setId": "15:53",
+      "defaultId": "15:45",
+      "axes": {
+        "State": [
+          "Default",
+          "Disabled"
+        ]
+      }
+    },
+    "Textarea": {
+      "setId": "15:67",
+      "defaultId": "15:54",
+      "label": "Label#15:3",
+      "axes": {
+        "State": [
+          "Default",
+          "Focus",
+          "Error",
+          "Disabled"
+        ]
+      }
+    },
+    "Field": {
+      "setId": "15:78",
+      "defaultId": "15:68",
+      "label": "Label#15:8",
+      "axes": {
+        "State": [
+          "Default",
+          "Error"
+        ]
+      }
+    },
+    "Select": {
+      "setId": "15:98",
+      "defaultId": "15:79",
+      "label": "Label#15:11",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open",
+          "Disabled"
+        ]
+      }
+    },
+    "Combobox": {
+      "setId": "15:124",
+      "defaultId": "15:99",
+      "label": "Label#15:15",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open",
+          "Empty",
+          "Disabled"
+        ]
+      }
+    },
+    "MultiSelect": {
+      "setId": "15:150",
+      "defaultId": "15:125",
+      "label": "Label#15:20",
+      "axes": {
+        "State": [
+          "Empty",
+          "Selected",
+          "Open",
+          "Disabled"
+        ]
+      }
+    },
+    "DatePicker": {
+      "setId": "15:242",
+      "defaultId": "15:151",
+      "label": "Label#15:25",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open"
+        ]
+      }
+    },
+    "DateRangePicker": {
+      "setId": "15:334",
+      "defaultId": "15:243",
+      "label": "Label#15:28",
+      "axes": {
+        "State": [
+          "Closed",
+          "Open"
+        ]
+      }
+    },
+    "InputOTP": {
+      "setId": "15:387",
+      "defaultId": "15:335",
+      "label": "Label#15:31",
+      "axes": {
+        "State": [
+          "Empty",
+          "Filled",
+          "Error",
+          "Disabled"
+        ]
+      }
+    },
+    "FileUpload": {
+      "setId": "15:412",
+      "defaultId": "15:388",
+      "label": "Label#15:36",
+      "axes": {
+        "State": [
+          "Empty",
+          "Uploaded",
+          "Error",
+          "Disabled"
+        ]
+      }
+    },
+    "ButtonGroup": {
+      "setId": "23:97",
+      "defaultId": "23:56",
+      "axes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Disabled"
+        ]
+      }
+    },
+    "TextLink": {
+      "setId": "23:110",
+      "defaultId": "23:98",
+      "label": "Label#23:0",
+      "axes": {
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      }
+    },
+    "Breadcrumb": {
+      "setId": "23:119",
+      "defaultId": "23:111",
+      "axes": {
+        "State": [
+          "Default",
+          "Long labels"
+        ]
+      }
+    },
+    "Pagination": {
+      "setId": "23:183",
+      "defaultId": "23:120",
+      "axes": {
+        "State": [
+          "First",
+          "Middle",
+          "Last"
+        ]
+      }
+    },
+    "Tabs": {
+      "setId": "23:217",
+      "defaultId": "23:184",
+      "label": "Label#23:4",
+      "axes": {
+        "State": [
+          "Overview",
+          "Details",
+          "Disabled"
+        ]
+      }
+    },
+    "Sidebar": {
+      "setId": "23:282",
+      "defaultId": "23:218",
+      "label": "Label#23:8",
+      "axes": {
+        "State": [
+          "Expanded",
+          "Compact"
+        ]
+      }
+    },
+    "Command": {
+      "setId": "23:320",
+      "defaultId": "23:283",
+      "axes": {
+        "State": [
+          "Results",
+          "Empty"
+        ]
+      }
+    },
+    "Card": {
+      "setId": "23:335",
+      "defaultId": "23:321",
+      "label": "Label#23:11",
+      "axes": {
+        "State": [
+          "Default",
+          "With actions"
+        ]
+      }
+    },
+    "Table": {
+      "setId": "23:355",
+      "defaultId": "23:336",
+      "axes": {
+        "State": [
+          "Default",
+          "Empty"
+        ]
+      }
+    },
+    "DataTable": {
+      "setId": "23:443",
+      "defaultId": "23:356",
+      "axes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Empty"
+        ]
+      }
+    },
+    "Chart": {
+      "setId": "23:501",
+      "defaultId": "23:444",
+      "label": "Label#23:14",
+      "axes": {
+        "Kind": [
+          "Area",
+          "Line",
+          "Bar",
+          "Donut",
+          "Radar",
+          "Radial",
+          "HorizontalBar",
+          "StackedBar",
+          "StackedArea",
+          "DivergingBar",
+          "Gauge",
+          "Rings",
+          "Heatmap"
+        ]
+      },
+      "variants": [
+        {
+          "id": "23:444",
+          "name": "Kind=Area",
+          "axes": {
+            "Kind": "Area"
+          }
+        },
+        {
+          "id": "23:454",
+          "name": "Kind=Line",
+          "axes": {
+            "Kind": "Line"
+          }
+        },
+        {
+          "id": "23:463",
+          "name": "Kind=Bar",
+          "axes": {
+            "Kind": "Bar"
+          }
+        },
+        {
+          "id": "23:476",
+          "name": "Kind=Donut",
+          "axes": {
+            "Kind": "Donut"
+          }
+        },
+        {
+          "id": "23:485",
+          "name": "Kind=Radar",
+          "axes": {
+            "Kind": "Radar"
+          }
+        },
+        {
+          "id": "23:493",
+          "name": "Kind=Radial",
+          "axes": {
+            "Kind": "Radial"
+          }
+        },
+        {
+          "id": "189:5385",
+          "name": "Kind=HorizontalBar",
+          "axes": {
+            "Kind": "HorizontalBar"
+          }
+        },
+        {
+          "id": "189:5599",
+          "name": "Kind=StackedBar",
+          "axes": {
+            "Kind": "StackedBar"
+          }
+        },
+        {
+          "id": "189:5813",
+          "name": "Kind=StackedArea",
+          "axes": {
+            "Kind": "StackedArea"
+          }
+        },
+        {
+          "id": "189:5931",
+          "name": "Kind=DivergingBar",
+          "axes": {
+            "Kind": "DivergingBar"
+          }
+        },
+        {
+          "id": "189:6148",
+          "name": "Kind=Gauge",
+          "axes": {
+            "Kind": "Gauge"
+          }
+        },
+        {
+          "id": "189:6201",
+          "name": "Kind=Rings",
+          "axes": {
+            "Kind": "Rings"
+          }
+        },
+        {
+          "id": "189:6271",
+          "name": "Kind=Heatmap",
+          "axes": {
+            "Kind": "Heatmap"
+          }
+        }
+      ],
+      "propertyDefinitions": {
+        "Label#23:14": {
+          "type": "TEXT",
+          "defaultValue": "Revenue overview"
+        },
+        "Show legend#189:0": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Show data#189:7": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Glow#189:14": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Series 1#189:21": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Series 2#189:28": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Series 3#189:35": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 1#189:42": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 2#189:49": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 3#189:56": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 4#189:63": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 5#189:70": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Category 6#189:77": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Kind": {
+          "type": "VARIANT",
+          "defaultValue": "Area",
+          "variantOptions": [
+            "Area",
+            "Line",
+            "Bar",
+            "Donut",
+            "Radar",
+            "Radial",
+            "HorizontalBar",
+            "StackedBar",
+            "StackedArea",
+            "DivergingBar",
+            "Gauge",
+            "Rings",
+            "Heatmap"
+          ]
+        }
+      },
+      "legend": "Show legend#189:0",
+      "dataVisibility": "Show data#189:7",
+      "glow": "Glow#189:14",
+      "series1": "Series 1#189:21",
+      "series2": "Series 2#189:28",
+      "series3": "Series 3#189:35",
+      "category1": "Category 1#189:42",
+      "category2": "Category 2#189:49",
+      "category3": "Category 3#189:56",
+      "category4": "Category 4#189:63",
+      "category5": "Category 5#189:70",
+      "category6": "Category 6#189:77"
+    },
+    "Alert": {
+      "setId": "24:363",
+      "defaultId": "24:351",
+      "label": "Label#24:0",
+      "axes": {
+        "State": [
+          "Info",
+          "Success",
+          "Warning",
+          "Destructive"
+        ]
+      }
+    },
+    "Toast": {
+      "setId": "24:373",
+      "defaultId": "24:364",
+      "label": "Label#24:5",
+      "axes": {
+        "State": [
+          "Success",
+          "Error",
+          "Loading"
+        ]
+      }
+    },
+    "Tooltip": {
+      "setId": "24:387",
+      "defaultId": "24:374",
+      "axes": {
+        "State": [
+          "Open",
+          "Closed"
+        ]
+      }
+    },
+    "Popover": {
+      "setId": "24:403",
+      "defaultId": "24:388",
+      "label": "Label#24:9",
+      "axes": {
+        "State": [
+          "Open",
+          "Closed"
+        ]
+      }
+    },
+    "Dialog": {
+      "setId": "24:437",
+      "defaultId": "24:404",
+      "label": "Label#24:12",
+      "axes": {
+        "State": [
+          "Open",
+          "Destructive",
+          "Closed"
+        ]
+      }
+    },
+    "Drawer": {
+      "setId": "24:457",
+      "defaultId": "24:438",
+      "label": "Label#24:16",
+      "axes": {
+        "State": [
+          "Open",
+          "Closed"
+        ]
+      }
+    },
+    "DropdownMenu": {
+      "setId": "24:480",
+      "defaultId": "24:458",
+      "axes": {
+        "State": [
+          "Open",
+          "Disabled"
+        ]
+      }
+    },
+    "Progress": {
+      "setId": "24:492",
+      "defaultId": "24:481",
+      "axes": {
+        "State": [
+          "64",
+          "0",
+          "100"
+        ]
+      }
+    },
+    "Spinner": {
+      "setId": "24:501",
+      "defaultId": "24:493",
+      "axes": {
+        "State": [
+          "Small",
+          "Medium"
+        ]
+      }
+    },
+    "Skeleton": {
+      "setId": "24:512",
+      "defaultId": "24:502",
+      "axes": {
+        "State": [
+          "Text",
+          "Card"
+        ]
+      }
+    },
+    "Empty": {
+      "setId": "24:531",
+      "defaultId": "24:513",
+      "label": "Label#24:19",
+      "axes": {
+        "State": [
+          "Initial",
+          "Search"
+        ]
+      }
+    },
+    "Accordion": {
+      "setId": "24:537",
+      "defaultId": "24:532",
+      "label": "Label#24:22",
+      "axes": {
+        "State": [
+          "Expanded",
+          "Collapsed"
+        ]
+      }
+    },
+    "Carousel": {
+      "setId": "25:511",
+      "defaultId": "25:450",
+      "label": "Label#25:0",
+      "axes": {
+        "State": [
+          "First",
+          "Middle",
+          "Last"
+        ]
+      }
+    },
+    "Gallery": {
+      "setId": "25:585",
+      "defaultId": "25:512",
+      "axes": {
+        "State": [
+          "Grid",
+          "Lightbox"
+        ]
+      }
+    },
+    "VideoPlayer": {
+      "setId": "25:638",
+      "defaultId": "25:586",
+      "axes": {
+        "State": [
+          "Paused",
+          "Playing",
+          "Unavailable"
+        ]
+      }
+    },
+    "Ribbon": {
+      "setId": "25:645",
+      "defaultId": "25:639",
+      "label": "Label#25:4",
+      "axes": {
+        "State": [
+          "Primary",
+          "Subtle",
+          "Warning"
+        ]
+      }
+    },
+    "Button / Additional styles": {
+      "setId": "25:700",
+      "defaultId": "25:646",
+      "label": "Label#25:8",
+      "axes": {
+        "Style": [
+          "Secondary",
+          "Destructive",
+          "Link"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      }
+    },
+    "Button / Loading & icons": {
+      "setId": "25:773",
+      "defaultId": "25:701",
+      "axes": {
+        "Style": [
+          "Primary",
+          "Outline",
+          "Secondary",
+          "Ghost",
+          "Destructive",
+          "Link"
+        ],
+        "Kind": [
+          "Loading",
+          "Icon",
+          "Small icon"
+        ]
+      }
+    },
+    "PageHeading": {
+      "setId": "29:142",
+      "defaultId": "29:134",
+      "eyebrow": "Eyebrow#29:1",
+      "title": "Title#29:4",
+      "description": "Description#29:7",
+      "axes": {
+        "State": [
+          "Standard",
+          "Editorial"
+        ]
+      }
+    },
+    "DashboardShell": {
+      "setId": "30:969",
+      "defaultId": "29:143",
+      "slot": "Content#30:0",
+      "layouts": {
+        "sidebar": "29:143",
+        "compact": "30:223",
+        "topbar": "30:371",
+        "split": "30:519",
+        "centered": "30:673",
+        "floating": "30:821"
+      },
+      "axes": {
+        "Layout": [
+          "Sidebar",
+          "Compact",
+          "Topbar",
+          "Split",
+          "Centered",
+          "Floating"
+        ]
+      }
+    }
+  },
+  "blocks": {
+    "RevenuePanel": "6:2",
+    "PlanBreakdown": "6:33",
+    "CustomerTable": "6:51",
+    "AIComposer": "6:118",
+    "CustomerDataTable": "17:18",
+    "PageHeading": "29:134",
+    "DashboardShell": "29:143",
+    "RevenuePanel / Bar": "38:1736"
+  },
+  "chrome": {
+    "sidebar": "29:70",
+    "header": "29:128",
+    "headerTitle": "Page title#29:0",
+    "shellSlot": "Content#30:0",
+    "brandHeader": "34:1492",
+    "applicationsOpen": "Applications open#38:0"
+  },
+  "applicationComponents": {
+    "ApplicationRecordRow": {
+      "setId": "31:1504",
+      "defaultId": "31:1480",
+      "name": "Name#31:0",
+      "detail": "Detail#31:3",
+      "category": "Category#31:6",
+      "amount": "Amount#31:9",
+      "date": "Date#31:12",
+      "actions": "Actions#31:15"
+    },
+    "TaskCard": {
+      "setId": "31:1523",
+      "defaultId": "31:1505",
+      "dealId": "31:1514",
+      "title": "Title#31:18",
+      "description": "Description#31:21",
+      "meta": "Meta#31:24"
+    },
+    "CalendarDay": {
+      "setId": "31:1536",
+      "defaultId": "31:1524",
+      "selectedId": "31:1528",
+      "otherMonthId": "31:1532",
+      "day": "Day#31:27",
+      "eventLabel": "Event label#31:31",
+      "showEvent": "Show event#42:0"
+    },
+    "MessageBubble": {
+      "setId": "31:1551",
+      "defaultId": "31:1537",
+      "ownId": "31:1544",
+      "author": "Author#31:35",
+      "time": "Time#31:38",
+      "message": "Message#31:41"
+    },
+    "FileCard": {
+      "setId": "31:1564",
+      "defaultId": "31:1552",
+      "imageId": "31:1558",
+      "name": "Name#31:44",
+      "meta": "Meta#31:47"
+    },
+    "RouteMap": {
+      "setId": "31:1609",
+      "defaultId": "31:1565",
+      "selectedId": "31:1587",
+      "caption": "Caption#31:50"
+    }
+  },
+  "icons": {
+    "LayoutDashboard": "9:6",
+    "ChartNoAxesCombined": "9:12",
+    "Sparkles": "9:15",
+    "Users": "9:18",
+    "Layers": "9:23",
+    "BookOpen": "9:26",
+    "Settings": "9:29",
+    "Search": "9:33",
+    "Bell": "9:37",
+    "Moon": "9:40",
+    "Plus": "9:43",
+    "kanban-square": "38:1540",
+    "calendar-days": "38:1546",
+    "mail": "38:1558",
+    "folder-open": "38:1562",
+    "package": "38:1565",
+    "shopping-bag": "38:1571",
+    "credit-card": "38:1576",
+    "map-pin": "38:1580",
+    "circle-help": "38:1584"
+  }
+}

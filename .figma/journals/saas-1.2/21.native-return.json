@@ -1,0 +1,414 @@
+{
+  "rows": [
+    {
+      "id": "I241:3477;3:80",
+      "type": "TEXT",
+      "name": "label",
+      "width": 0,
+      "height": 20,
+      "visible": true,
+      "characters": "",
+      "layoutSizingVertical": "HUG",
+      "minHeight": null,
+      "children": []
+    },
+    {
+      "id": "235:35339",
+      "type": "TEXT",
+      "name": "label",
+      "width": 0,
+      "height": 20,
+      "visible": true,
+      "characters": "",
+      "layoutSizingVertical": "HUG",
+      "minHeight": null,
+      "children": []
+    },
+    {
+      "id": "I228:3099;164:1522;3:52",
+      "type": "TEXT",
+      "name": "label",
+      "width": 0,
+      "height": 20,
+      "visible": true,
+      "characters": "",
+      "layoutSizingVertical": "HUG",
+      "minHeight": null,
+      "children": []
+    },
+    {
+      "id": "231:3776",
+      "type": "COMPONENT",
+      "name": "DashboardSidebar / SaaS 1.2",
+      "width": 256,
+      "height": 1240,
+      "visible": true,
+      "characters": null,
+      "layoutMode": "VERTICAL",
+      "layoutSizingVertical": "FIXED",
+      "minHeight": null,
+      "clipsContent": true,
+      "children": [
+        {
+          "id": "231:3777",
+          "type": "FRAME",
+          "name": "Brand",
+          "x": 16,
+          "y": 16,
+          "width": 206,
+          "height": 52,
+          "visible": true,
+          "layoutSizingVertical": "FIXED"
+        },
+        {
+          "id": "231:3781",
+          "type": "FRAME",
+          "name": "Workspace switcher",
+          "x": 16,
+          "y": 84,
+          "width": 206,
+          "height": 50,
+          "visible": true,
+          "layoutSizingVertical": "FIXED"
+        },
+        {
+          "id": "231:3786",
+          "type": "FRAME",
+          "name": "Navigation",
+          "x": 16,
+          "y": 150,
+          "width": 206,
+          "height": 786,
+          "visible": true,
+          "layoutSizingVertical": "HUG"
+        },
+        {
+          "id": "231:3814",
+          "type": "FRAME",
+          "name": "Flexible space",
+          "x": 16,
+          "y": 952,
+          "width": 206,
+          "height": 74,
+          "visible": true,
+          "layoutSizingVertical": "FILL"
+        },
+        {
+          "id": "231:3815",
+          "type": "FRAME",
+          "name": "Brand note",
+          "x": 16,
+          "y": 1042,
+          "width": 206,
+          "height": 118,
+          "visible": true,
+          "layoutSizingVertical": "FIXED"
+        },
+        {
+          "id": "231:3818",
+          "type": "FRAME",
+          "name": "Profile",
+          "x": 16,
+          "y": 1176,
+          "width": 206,
+          "height": 48,
+          "visible": true,
+          "layoutSizingVertical": "FIXED"
+        }
+      ]
+    },
+    {
+      "id": "237:16429",
+      "type": "INSTANCE",
+      "name": "DashboardSidebar / SaaS 1.2",
+      "width": 256,
+      "height": 1000,
+      "visible": true,
+      "characters": null,
+      "layoutMode": "VERTICAL",
+      "layoutSizingVertical": "FILL",
+      "minHeight": null,
+      "clipsContent": true,
+      "children": [
+        {
+          "id": "I237:16429;231:3777",
+          "type": "FRAME",
+          "name": "Brand",
+          "x": 16,
+          "y": 16,
+          "width": 206,
+          "height": 52,
+          "visible": true,
+          "layoutSizingVertical": "FIXED"
+        },
+        {
+          "id": "I237:16429;231:3781",
+          "type": "FRAME",
+          "name": "Workspace switcher",
+          "x": 16,
+          "y": 84,
+          "width": 206,
+          "height": 50,
+          "visible": true,
+          "layoutSizingVertical": "FIXED"
+        },
+        {
+          "id": "I237:16429;231:3786",
+          "type": "FRAME",
+          "name": "Navigation",
+          "x": 16,
+          "y": 150,
+          "width": 206,
+          "height": 786,
+          "visible": true,
+          "layoutSizingVertical": "HUG"
+        },
+        {
+          "id": "I237:16429;231:3814",
+          "type": "FRAME",
+          "name": "Flexible space",
+          "x": 16,
+          "y": 952,
+          "width": 206,
+          "height": 1,
+          "visible": true,
+          "layoutSizingVertical": "FILL"
+        },
+        {
+          "id": "I237:16429;231:3815",
+          "type": "FRAME",
+          "name": "Brand note",
+          "x": 16,
+          "y": 969,
+          "width": 206,
+          "height": 118,
+          "visible": true,
+          "layoutSizingVertical": "FIXED"
+        },
+        {
+          "id": "I237:16429;231:3818",
+          "type": "FRAME",
+          "name": "Profile",
+          "x": 16,
+          "y": 1103,
+          "width": 206,
+          "height": 48,
+          "visible": true,
+          "layoutSizingVertical": "FIXED"
+        }
+      ]
+    },
+    {
+      "id": "237:16428",
+      "type": "FRAME",
+      "name": "SaaS 1.2 / onboarding / Light",
+      "width": 1440,
+      "height": 1000,
+      "visible": true,
+      "characters": null,
+      "layoutMode": "HORIZONTAL",
+      "layoutSizingVertical": "FIXED",
+      "minHeight": null,
+      "clipsContent": true,
+      "children": [
+        {
+          "id": "237:16429",
+          "type": "INSTANCE",
+          "name": "DashboardSidebar / SaaS 1.2",
+          "x": 0,
+          "y": 0,
+          "width": 256,
+          "height": 1000,
+          "visible": true,
+          "layoutSizingVertical": "FILL"
+        },
+        {
+          "id": "237:16610",
+          "type": "FRAME",
+          "name": "Main",
+          "x": 256,
+          "y": 0,
+          "width": 1184,
+          "height": 1000,
+          "visible": true,
+          "layoutSizingVertical": "FILL"
+        }
+      ]
+    }
+  ],
+  "blocksPageRightmost": 9540,
+  "textStyles": [
+    {
+      "id": "S:5faf04911817250a0f581d8bc0cf614413bd0c07,",
+      "name": "Aureform/Caption",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 12
+    },
+    {
+      "id": "S:c9331f77f34964fbf68953e792e55afebd44c2cc,",
+      "name": "Aureform/Body small",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "S:6fd77fbb36be3a4f7565350e600f35691f34a4e4,",
+      "name": "Aureform/Body",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 14
+    },
+    {
+      "id": "S:5edcfcc677c29f2698248accbde30e0839ca5535,",
+      "name": "Aureform/Body strong",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 14
+    },
+    {
+      "id": "S:c44d3974dcfbb8d8e98397aaeff09c2906dc7bce,",
+      "name": "Aureform/Subtitle",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 16
+    },
+    {
+      "id": "S:7779c38bd9d3462e0d7666ce289e1fd2a925c8c8,",
+      "name": "Aureform/Title",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 24
+    },
+    {
+      "id": "S:b2c459051960c8f946a6a315d2e9036c2f7526dd,",
+      "name": "Aureform/Display",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 36
+    },
+    {
+      "id": "S:16b586b0e44e522977001bb778cf85e5e3658f33,",
+      "name": "Aureform/Hero",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 80
+    },
+    {
+      "id": "S:204147353886bcd7b90ed12b86ed3e55b646af9f,",
+      "name": "Aureform/Editorial display",
+      "fontName": {
+        "family": "Instrument Serif",
+        "style": "Regular"
+      },
+      "fontSize": 36
+    },
+    {
+      "id": "S:0637cd94f295e4394e41a5d89d6a0790664235f3,",
+      "name": "Aureform/Editorial hero",
+      "fontName": {
+        "family": "Instrument Serif",
+        "style": "Regular"
+      },
+      "fontSize": 80
+    },
+    {
+      "id": "S:d45f895a9c506b67dcd6818a673cf86afcaab62d,",
+      "name": "Aureform/Control",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 13
+    },
+    {
+      "id": "S:2f1bd55235a75aaa6e4a6158bb084596a807617f,",
+      "name": "Aureform/Card title",
+      "fontName": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 18
+    },
+    {
+      "id": "S:5439cfd6af063a94fd64971a58b270778334c77d,",
+      "name": "Aureform/Label",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 11
+    },
+    {
+      "id": "S:9ae2ee283a9f179c5d3f97c0c195945d5735ad7a,",
+      "name": "Aureform/Display large",
+      "fontName": {
+        "family": "Manrope",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 56
+    }
+  ],
+  "collection": [
+    {
+      "name": "Light",
+      "modeId": "2:1"
+    },
+    {
+      "name": "Dark",
+      "modeId": "2:2"
+    }
+  ]
+}

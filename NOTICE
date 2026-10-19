@@ -1,0 +1,20 @@
+Aureform UI
+Copyright 2026 terrizoaguimor and Aureform UI contributors.
+https://github.com/terrizoaguimor/aureform-ui
+
+Original Aureform source code, documentation, examples, tokens, layouts,
+design files, artwork, shaders, motion code, and the distributed generated
+image collection are made available under the Apache License, Version 2.0,
+to the extent the contributors hold rights in those materials.
+
+Third-party libraries, Lucide icons, and bundled fonts retain their own
+copyright and license notices. See THIRD_PARTY_NOTICES.md,
+licenses/third-party/, and src/assets/fonts/*-OFL.txt.
+
+The generated collection contains fictional demo subjects. Its prompts,
+generation snapshot, original masters, and prepared image metadata are
+included for provenance. These materials do not imply an endorsement
+by OpenAI, Figma, or any depicted or referenced organization.
+
+This NOTICE is for attribution and information. It does not modify the
+Apache License or grant rights to upstream materials or trademarks.

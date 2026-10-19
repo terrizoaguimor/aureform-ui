@@ -1,0 +1,28 @@
+{
+  "status": "brand-guide-copy-corrected-with-observed-light-colors",
+  "pageId": "2:2",
+  "rootId": "27:46",
+  "createdNodeIds": [],
+  "mutatedNodeIds": ["27:54", "27:59", "27:69"],
+  "affectedNodeIds": ["27:54", "27:50", "27:59", "27:55", "27:69", "27:46"],
+  "colors": {
+    "background": {"variableId": "VariableID:2:37", "name": "color/background", "hex": "#F6F8FC", "value": {"r": 0.9647058844566345, "g": 0.9725490212440491, "b": 0.9882352948188782, "a": 1}},
+    "foreground": {"variableId": "VariableID:2:41", "name": "color/foreground", "hex": "#172033", "value": {"r": 0.09019608050584793, "g": 0.125490203499794, "b": 0.20000000298023224, "a": 1}},
+    "primary": {"variableId": "VariableID:2:43", "name": "color/primary", "hex": "#764ED1", "value": {"r": 0.4627451002597809, "g": 0.30588236451148987, "b": 0.8196078538894653, "a": 1}}
+  },
+  "changes": [
+    {"id": "27:54", "before": "Forest on ivory", "after": "Aurora violet on light", "fontName": {"family": "Manrope", "style": "Regular", "variationSettings": {"wght": 400}}, "width": 340, "heightBefore": 17, "heightAfter": 17},
+    {"id": "27:59", "before": "Ivory on forest", "after": "Light on Aurora violet", "fontName": {"family": "Manrope", "style": "Regular", "variationSettings": {"wght": 400}}, "width": 340, "heightBefore": 17, "heightAfter": 17},
+    {"id": "27:69", "before": "Manrope + Instrument Serif · Ivory #F7F7F2 · Graphite #222C26 · Forest #315D48", "after": "Manrope + Instrument Serif · Light #F6F8FC · Ink #172033 · Aurora violet #764ED1", "fontName": {"family": "Manrope", "style": "Regular", "variationSettings": {"wght": 400}}, "width": 1280, "heightBefore": 20, "heightAfter": 20}
+  ],
+  "loadedFonts": [
+    {"family": "Instrument Serif", "style": "Regular"},
+    {"family": "Manrope", "style": "Regular", "variationSettings": {"wght": 400}},
+    {"family": "Manrope", "style": "SemiBold", "variationSettings": {"wght": 600}}
+  ],
+  "typographyPreserved": true,
+  "unrelatedCopyPreserved": true,
+  "geometryFillsAndModesPreserved": true,
+  "coverRootUnchanged": "27:2",
+  "ownerPostfixVisualReview": "pending"
+}

@@ -1,0 +1,96 @@
+{
+  "recordedAt": "2026-10-19T05:25:26.552458+00:00",
+  "sourceScript": {
+    "path": ".figma/scripts/cover-counts-1.1.js",
+    "sha256": "ec2f62799ec0ca8931fe432f9c0f3ac35fb59bf06e3bbd00c82a460f32ef9aaa"
+  },
+  "executionParameters": {
+    "action": "apply",
+    "targetIds": [
+      "27:15",
+      "27:43"
+    ]
+  },
+  "receiptPath": ".figma/proofs/buttons-1.1/cover-execution-receipt.json",
+  "status": "passed-native-structure-and-visual-review",
+  "targets": [
+    {
+      "id": "27:15",
+      "name": "61 suite routes",
+      "before": "61 suite routes",
+      "after": "64 suite routes",
+      "previewTruncated": false,
+      "edits": [
+        {
+          "start": 0,
+          "end": 2,
+          "before": "61",
+          "after": "64",
+          "sourceCount": "suiteRoutes"
+        }
+      ]
+    },
+    {
+      "id": "27:43",
+      "name": "AUREFORM UI / 1.0",
+      "before": "AUREFORM UI / 1.0",
+      "after": "AUREFORM UI / 1.1",
+      "previewTruncated": false,
+      "edits": [
+        {
+          "start": 14,
+          "end": 17,
+          "before": "1.0",
+          "after": "1.1",
+          "sourceCount": "version"
+        }
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "2:2",
+  "rootIds": [
+    "27:2",
+    "27:46"
+  ],
+  "sourceCounts": {
+    "version": "1.1.0",
+    "suiteRoutes": 64,
+    "viewsIncludingLanding": 65,
+    "coreFamilies": 44,
+    "chartKinds": 13,
+    "palettes": 6,
+    "publicEffects": 6,
+    "registryEntries": 83
+  },
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "27:15",
+    "27:43"
+  ],
+  "nativeCompletionCertified": false,
+  "ownerVisualReview": {
+    "status": "passed",
+    "proof": ".figma/proofs/buttons-1.1/owner-visual-review.json",
+    "coverProof": ".figma/proofs/buttons-1.1/owner-cover-review.json"
+  },
+  "loadedFontCount": 2,
+  "coverOwnerVisualReview": "pass",
+  "coverOwnerPngPath": ".figma/proofs/buttons-1.1/cover-owner-viewed.png",
+  "brandGuideCopyCorrection": {
+    "recordedAt": "2026-10-19T05:44:07.713722+00:00",
+    "receiptPath": ".figma/proofs/buttons-1.1/postfix-guide-execution-receipt.json",
+    "mutatedTextIds": [
+      "27:54",
+      "27:59",
+      "27:69"
+    ],
+    "observedLightHex": {
+      "background": "#F6F8FC",
+      "foreground": "#172033",
+      "primary": "#764ED1"
+    },
+    "ownerPostfixVisualReview": "pending"
+  }
+}

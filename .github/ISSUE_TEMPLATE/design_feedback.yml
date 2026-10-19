@@ -1,0 +1,44 @@
+name: Design and accessibility feedback
+description: Suggest an improvement to appearance, interaction or accessibility.
+title: "[Design]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and Spanish are welcome. Describe the observable problem and the user's task.
+        Captures should show the real application and contain no private information.
+  - type: input
+    id: location
+    attributes:
+      label: Route, component or Figma frame
+      placeholder: "/es/studio/, Button, or a public Figma frame link"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Language, theme, palette, material, viewport and input method.
+      placeholder: "ES / Dark / Aurora / Glass / 360 px / keyboard"
+    validations:
+      required: true
+  - type: textarea
+    id: difficulty
+    attributes:
+      label: What is difficult or inconsistent?
+      description: Include reproduction steps for keyboard, focus, contrast or motion concerns.
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Proposed improvement
+      description: Explain how it helps the person using the interface.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Captures or supporting evidence
+      description: Add real captures, test results or public references where useful.

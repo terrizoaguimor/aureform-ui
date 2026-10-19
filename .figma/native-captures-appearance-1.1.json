@@ -1,0 +1,71 @@
+{
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "capturedBy": "owner",
+  "appVersion": "1.1.0",
+  "capturedSourceBuild": "88953",
+  "captures": [
+    {
+      "view": "studio",
+      "captureId": "2f567f6b-c1fe-4fb2-a0ef-ef08702f0b0f",
+      "nodeId": "138:10024",
+      "status": "deleted-after-native-visual-review",
+      "submissionHTTPStatus": 200,
+      "proof": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "theme": "dark",
+        "font": "manrope, \"manrope Fallback\", sans-serif",
+        "title": "Build your signature."
+      },
+      "runtimeErrors": [],
+      "submittedAt": "2026-10-19T03:10:29.001Z",
+      "sourceScreenshotPath": "/tmp/aureform-ui-integration-Y0Rdcz/native-lease-ready/captures/studio-web-dark-1440.png",
+      "purpose": "temporary-reference-delete-after-native-refinement",
+      "captureStatus": "completed",
+      "removedAt": "2026-10-19T04:11:16.312600+00:00",
+      "removalProof": ".figma/native-appearance-views-cleanup-1.1.json"
+    },
+    {
+      "view": "themes",
+      "captureId": "5aba0256-07e6-4040-86c9-685eda1fdac3",
+      "nodeId": "139:10024",
+      "status": "deleted-after-native-visual-review",
+      "submissionHTTPStatus": 200,
+      "proof": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "theme": "dark",
+        "font": "manrope, \"manrope Fallback\", sans-serif",
+        "title": "A palette for your ambition."
+      },
+      "runtimeErrors": [],
+      "submittedAt": "2026-10-19T03:10:48.030Z",
+      "sourceScreenshotPath": "/tmp/aureform-ui-integration-Y0Rdcz/native-lease-ready/captures/themes-web-dark-1440.png",
+      "purpose": "temporary-reference-delete-after-native-refinement",
+      "captureStatus": "completed",
+      "removedAt": "2026-10-19T04:11:16.312600+00:00",
+      "removalProof": ".figma/native-appearance-views-cleanup-1.1.json"
+    },
+    {
+      "view": "effects",
+      "captureId": "dac5762e-1e1d-45dc-8e61-5380cb24410a",
+      "nodeId": "140:10024",
+      "status": "deleted-after-native-visual-review",
+      "submissionHTTPStatus": 200,
+      "proof": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "theme": "dark",
+        "font": "manrope, \"manrope Fallback\", sans-serif",
+        "title": "Interfaces with a pulse."
+      },
+      "runtimeErrors": [],
+      "submittedAt": "2026-10-19T03:11:05.568Z",
+      "sourceScreenshotPath": "/tmp/aureform-ui-integration-Y0Rdcz/native-lease-ready/captures/effects-web-dark-1440.png",
+      "purpose": "temporary-reference-delete-after-native-refinement",
+      "captureStatus": "completed",
+      "removedAt": "2026-10-19T04:11:16.312600+00:00",
+      "removalProof": ".figma/native-appearance-views-cleanup-1.1.json"
+    }
+  ]
+}

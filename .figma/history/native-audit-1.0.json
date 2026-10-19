@@ -1,0 +1,1031 @@
+{
+  "status": "passed-native-structure-and-visual-review",
+  "checkedAt": "2026-10-18T21:39:23.416960+00:00",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N",
+  "inspection": "Figma Plugin API and rendered native frame screenshots",
+  "stateSha256": "b3d4eff1543618cbeabe75c296c919959de1d713bd05acb29872ce6ce1d3167d",
+  "summary": {
+    "routeRoots": 62,
+    "imageFillNodes": 0,
+    "nativeComponentSpecimens": 44,
+    "nativeTemplatePreviews": 46,
+    "variables": 65,
+    "primitiveColors": 28,
+    "semanticColors": 21,
+    "dimensionVariables": 16,
+    "textStyles": 8,
+    "shadowStyles": 6,
+    "gradientStyles": 6,
+    "sourceEffectTokens": 15,
+    "invalidScopes": 0,
+    "invalidWebSyntax": 0
+  },
+  "routes": [
+    {
+      "route": "dashboard",
+      "nodeId": "5:2",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "descendants": 243,
+      "instances": 49,
+      "texts": 104,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "customers",
+      "nodeId": "5:3",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1120,
+      "descendants": 263,
+      "instances": 54,
+      "texts": 102,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "ai",
+      "nodeId": "5:4",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1100,
+      "descendants": 151,
+      "instances": 40,
+      "texts": 47,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "analytics",
+      "nodeId": "53:494",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 198,
+      "instances": 44,
+      "texts": 81,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "ai/code",
+      "nodeId": "53:1044",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 129,
+      "instances": 35,
+      "texts": 45,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "ai/playground",
+      "nodeId": "53:1272",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 145,
+      "instances": 38,
+      "texts": 53,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "docs",
+      "nodeId": "54:1108",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "descendants": 143,
+      "instances": 40,
+      "texts": 51,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "docs/tokens",
+      "nodeId": "54:1451",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 2030,
+      "descendants": 184,
+      "instances": 41,
+      "texts": 70,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "docs/cli",
+      "nodeId": "54:1764",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "descendants": 143,
+      "instances": 40,
+      "texts": 51,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "docs/figma",
+      "nodeId": "54:2045",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "descendants": 141,
+      "instances": 41,
+      "texts": 50,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "docs/adapters",
+      "nodeId": "54:2325",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "descendants": 140,
+      "instances": 40,
+      "texts": 49,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "docs/accessibility",
+      "nodeId": "54:2600",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "descendants": 139,
+      "instances": 40,
+      "texts": 49,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "docs/license",
+      "nodeId": "54:2873",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "descendants": 140,
+      "instances": 41,
+      "texts": 50,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "docs/roadmap",
+      "nodeId": "54:3151",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "descendants": 146,
+      "instances": 41,
+      "texts": 54,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "components",
+      "nodeId": "59:2549",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 9785,
+      "descendants": 762,
+      "instances": 145,
+      "texts": 320,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "forms",
+      "nodeId": "59:2725",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 167,
+      "instances": 41,
+      "texts": 59,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "charts",
+      "nodeId": "59:2901",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1993.583251953125,
+      "descendants": 198,
+      "instances": 35,
+      "texts": 66,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "media",
+      "nodeId": "59:3077",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1648.77490234375,
+      "descendants": 203,
+      "instances": 34,
+      "texts": 49,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "layouts",
+      "nodeId": "59:3253",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 165,
+      "instances": 32,
+      "texts": 42,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "blocks",
+      "nodeId": "59:3429",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 2431,
+      "descendants": 263,
+      "instances": 52,
+      "texts": 121,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "templates",
+      "nodeId": "59:3605",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 5501,
+      "descendants": 9048,
+      "instances": 2278,
+      "texts": 3137,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "crm",
+      "nodeId": "39:24",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 292,
+      "instances": 65,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "ecommerce",
+      "nodeId": "39:730",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 312,
+      "instances": 71,
+      "texts": 114,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "sales",
+      "nodeId": "39:1132",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 292,
+      "instances": 65,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "marketing",
+      "nodeId": "39:1521",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 320,
+      "instances": 71,
+      "texts": 114,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "logistics",
+      "nodeId": "39:1923",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 282,
+      "instances": 61,
+      "texts": 100,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "finance",
+      "nodeId": "39:2310",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 312,
+      "instances": 71,
+      "texts": 114,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "stocks",
+      "nodeId": "39:2702",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 275,
+      "instances": 61,
+      "texts": 100,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "products",
+      "nodeId": "41:2363",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 265,
+      "instances": 73,
+      "texts": 96,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "orders",
+      "nodeId": "41:2816",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 265,
+      "instances": 73,
+      "texts": 96,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "invoices",
+      "nodeId": "41:3207",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 265,
+      "instances": 73,
+      "texts": 96,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "transactions",
+      "nodeId": "41:3597",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 265,
+      "instances": 73,
+      "texts": 96,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "tasks",
+      "nodeId": "41:3982",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 275,
+      "instances": 81,
+      "texts": 94,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "pipeline",
+      "nodeId": "41:4387",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 276,
+      "instances": 81,
+      "texts": 95,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "task-list",
+      "nodeId": "41:4794",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 229,
+      "instances": 58,
+      "texts": 77,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "calendar",
+      "nodeId": "41:5151",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 305,
+      "instances": 96,
+      "texts": 106,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "mail",
+      "nodeId": "45:4589",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 216,
+      "instances": 58,
+      "texts": 67,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "chat",
+      "nodeId": "45:5003",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 236,
+      "instances": 67,
+      "texts": 74,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "files",
+      "nodeId": "45:5363",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 239,
+      "instances": 64,
+      "texts": 61,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "support",
+      "nodeId": "45:5707",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 258,
+      "instances": 68,
+      "texts": 92,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "maps",
+      "nodeId": "45:6076",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 245,
+      "instances": 61,
+      "texts": 66,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "invoice",
+      "nodeId": "45:6451",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 206,
+      "instances": 54,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "ai/images",
+      "nodeId": "45:6768",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 216,
+      "instances": 57,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "ai/video",
+      "nodeId": "45:7088",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 210,
+      "instances": 56,
+      "texts": 56,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "settings/profile",
+      "nodeId": "48:6454",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 157,
+      "instances": 46,
+      "texts": 57,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "settings/team",
+      "nodeId": "48:6816",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 171,
+      "instances": 47,
+      "texts": 59,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "settings/preferences",
+      "nodeId": "48:7128",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 168,
+      "instances": 45,
+      "texts": 55,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "settings/billing",
+      "nodeId": "48:7437",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 157,
+      "instances": 42,
+      "texts": 62,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "settings/api-keys",
+      "nodeId": "48:7753",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 136,
+      "instances": 41,
+      "texts": 48,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "settings/integrations",
+      "nodeId": "48:8021",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 165,
+      "instances": 46,
+      "texts": 63,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "auth/sign-in",
+      "nodeId": "52:7472",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "descendants": 33,
+      "instances": 5,
+      "texts": 17,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "auth/sign-up",
+      "nodeId": "52:7509",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "descendants": 39,
+      "instances": 7,
+      "texts": 19,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "auth/reset-password",
+      "nodeId": "52:7551",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "descendants": 27,
+      "instances": 4,
+      "texts": 13,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "auth/verify",
+      "nodeId": "52:7581",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "descendants": 38,
+      "instances": 4,
+      "texts": 18,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "status/not-found",
+      "nodeId": "52:7622",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "descendants": 20,
+      "instances": 4,
+      "texts": 8,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "status/error",
+      "nodeId": "52:7650",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "descendants": 22,
+      "instances": 4,
+      "texts": 9,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "status/maintenance",
+      "nodeId": "52:7684",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "descendants": 22,
+      "instances": 4,
+      "texts": 7,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "status/coming-soon",
+      "nodeId": "52:7713",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "descendants": 29,
+      "instances": 6,
+      "texts": 11,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "status/success",
+      "nodeId": "52:7751",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "descendants": 22,
+      "instances": 4,
+      "texts": 7,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "pricing",
+      "nodeId": "55:7541",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 144,
+      "instances": 36,
+      "texts": 61,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "faq",
+      "nodeId": "55:7856",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "descendants": 123,
+      "instances": 40,
+      "texts": 41,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    },
+    {
+      "route": "",
+      "nodeId": "55:8072",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 3198.611083984375,
+      "descendants": 307,
+      "instances": 59,
+      "texts": 142,
+      "imageFillNodes": 0,
+      "fontFamilies": [
+        "Manrope",
+        "Instrument Serif"
+      ]
+    }
+  ],
+  "effectStyles": {
+    "Light": {
+      "shadows": {
+        "soft": "S:c910c6bbb0ca23901963053979c2490f0ce268c6,",
+        "elevated": "S:6c9aa64220ad80dcb9406c53c19bcfab70cb5a54,",
+        "floating": "S:cd056bd94884a7f57fe9e10bde93f555e733a6d0,"
+      },
+      "gradients": {
+        "surface": "S:1ddc80b10ce6bacdeced1fa60b061deaa49a7add,",
+        "hero": "S:262460b7ebfc9a2a8b58dcd699e53ee658f5de7c,",
+        "control": "S:f94b92637c8981e80ad9cb928d38a6e14c05b74e,"
+      }
+    },
+    "Dark": {
+      "shadows": {
+        "soft": "S:8f8bc239d6a0114d60d657275d4b60636e581880,",
+        "elevated": "S:bb48b6721302fd65516d5325e9fe8c1a28295e1f,",
+        "floating": "S:36feb16e83da80484d84fd9a98cdf3f104a6acae,"
+      },
+      "gradients": {
+        "surface": "S:c776c8f943f650fd082e919a721604b74937c532,",
+        "hero": "S:0778f6c9ea6161684bd80ed9ae8096267af1d385,",
+        "control": "S:4e792a1e5af7cc9f071c45e15dad490e18e5adff,"
+      }
+    }
+  },
+  "responsiveProofs": [
+    {
+      "locale": "en",
+      "theme": "dark",
+      "nodeId": "74:8012",
+      "width": 1440,
+      "height": 1240,
+      "imageFillNodes": 0,
+      "visualReview": "passed"
+    },
+    {
+      "locale": "es",
+      "theme": "dark",
+      "nodeId": "77:8192",
+      "width": 360,
+      "height": 1339,
+      "imageFillNodes": 0,
+      "visualReview": "passed"
+    }
+  ],
+  "latestVisualChecks": [
+    {
+      "nodeId": "86:24",
+      "name": "Effects Light",
+      "result": "passed"
+    },
+    {
+      "nodeId": "86:75",
+      "name": "Effects Dark",
+      "result": "passed"
+    },
+    {
+      "nodeId": "54:1451",
+      "name": "Tokens with complete code examples",
+      "height": 2030,
+      "result": "passed"
+    },
+    {
+      "nodeId": "55:8072",
+      "name": "Landing with tonal gradients",
+      "result": "passed"
+    }
+  ],
+  "limits": [
+    "Figma is an editable representation; the browser implements the responsive behavior and motion.",
+    "Choose matching Light/Dark shadow and gradient styles in Figma; CSS effect tokens switch automatically in the application.",
+    "Dense native tables consolidate records for readable design reviews.",
+    "Code Connect cloud publication is separate from the local template validation."
+  ]
+}

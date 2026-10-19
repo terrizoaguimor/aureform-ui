@@ -1,0 +1,1363 @@
+{
+  "version": "1.1",
+  "status": "PASS",
+  "recordedAt": "2026-10-19T05:11:39.743032+00:00",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "frozenBuilderSHA256": "fe82d1303d080363a35c8aaaa204dbebd92599d1cf80d4849efe80fe6f16db6f",
+  "appliedPostfixSHA256": "5037e3dc08eed5232e51f1ca1c04e4cbda17ad782d3ec4929a0c5ac6ef8747b2",
+  "sourceScope": "Native Table only; no application, registry or docs edits",
+  "core": {
+    "DataTable": {
+      "setId": "23:443",
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Selected",
+            "Empty",
+            "Loading",
+            "Error"
+          ]
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Elevated",
+          "variantOptions": [
+            "Elevated",
+            "Glass",
+            "Gradient",
+            "Flat"
+          ]
+        },
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "Comfortable",
+          "variantOptions": [
+            "Comfortable",
+            "Compact"
+          ]
+        }
+      },
+      "currentVariantCount": 28,
+      "expectedFinalVariantCount": 28,
+      "setBounds": [
+        24002,
+        80,
+        5930,
+        7160
+      ],
+      "axisCodes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Empty",
+          "Loading",
+          "Error"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
+      },
+      "variantSchema": [
+        "id",
+        "StateCode",
+        "AppearanceCode",
+        "DensityCode",
+        "width",
+        "height"
+      ],
+      "variants": [
+        [
+          "23:356",
+          0,
+          0,
+          0,
+          1138,
+          621
+        ],
+        [
+          "23:390",
+          1,
+          0,
+          0,
+          1138,
+          691
+        ],
+        [
+          "23:424",
+          2,
+          0,
+          0,
+          1138,
+          505
+        ],
+        [
+          "164:1465",
+          3,
+          0,
+          0,
+          1138,
+          561
+        ],
+        [
+          "164:1550",
+          4,
+          0,
+          0,
+          1138,
+          118
+        ],
+        [
+          "164:1564",
+          0,
+          0,
+          1,
+          1138,
+          553
+        ],
+        [
+          "164:1844",
+          1,
+          0,
+          1,
+          1138,
+          623
+        ],
+        [
+          "164:2163",
+          0,
+          1,
+          0,
+          1138,
+          621
+        ],
+        [
+          "164:2443",
+          1,
+          1,
+          0,
+          1138,
+          691
+        ],
+        [
+          "164:2762",
+          2,
+          1,
+          0,
+          1138,
+          505
+        ],
+        [
+          "164:2869",
+          3,
+          1,
+          0,
+          1138,
+          561
+        ],
+        [
+          "164:2954",
+          4,
+          1,
+          0,
+          1138,
+          118
+        ],
+        [
+          "164:2968",
+          0,
+          1,
+          1,
+          1138,
+          553
+        ],
+        [
+          "164:3248",
+          1,
+          1,
+          1,
+          1138,
+          623
+        ],
+        [
+          "164:3567",
+          0,
+          2,
+          0,
+          1138,
+          621
+        ],
+        [
+          "164:3847",
+          1,
+          2,
+          0,
+          1138,
+          691
+        ],
+        [
+          "164:4166",
+          2,
+          2,
+          0,
+          1138,
+          505
+        ],
+        [
+          "164:4273",
+          3,
+          2,
+          0,
+          1138,
+          561
+        ],
+        [
+          "164:4358",
+          4,
+          2,
+          0,
+          1138,
+          118
+        ],
+        [
+          "164:4372",
+          0,
+          2,
+          1,
+          1138,
+          553
+        ],
+        [
+          "164:4652",
+          1,
+          2,
+          1,
+          1138,
+          623
+        ],
+        [
+          "164:4971",
+          0,
+          3,
+          0,
+          1138,
+          621
+        ],
+        [
+          "164:5251",
+          1,
+          3,
+          0,
+          1138,
+          691
+        ],
+        [
+          "164:5570",
+          2,
+          3,
+          0,
+          1138,
+          505
+        ],
+        [
+          "164:5677",
+          3,
+          3,
+          0,
+          1138,
+          561
+        ],
+        [
+          "164:5762",
+          4,
+          3,
+          0,
+          1138,
+          118
+        ],
+        [
+          "164:5776",
+          0,
+          3,
+          1,
+          1138,
+          553
+        ],
+        [
+          "164:6056",
+          1,
+          3,
+          1,
+          1138,
+          623
+        ]
+      ]
+    },
+    "Table": {
+      "setId": "23:355",
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Empty"
+          ]
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Elevated",
+          "variantOptions": [
+            "Elevated",
+            "Glass",
+            "Gradient",
+            "Flat"
+          ]
+        },
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "Comfortable",
+          "variantOptions": [
+            "Comfortable",
+            "Compact"
+          ]
+        }
+      },
+      "currentVariantCount": 16,
+      "expectedFinalVariantCount": 16,
+      "setBounds": [
+        30092,
+        80,
+        2396,
+        3960
+      ],
+      "axisCodes": {
+        "State": [
+          "Default",
+          "Empty"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
+      },
+      "variantSchema": [
+        "id",
+        "StateCode",
+        "AppearanceCode",
+        "DensityCode",
+        "width",
+        "height"
+      ],
+      "variants": [
+        [
+          "23:336",
+          0,
+          0,
+          0,
+          1138,
+          346
+        ],
+        [
+          "23:353",
+          1,
+          0,
+          0,
+          1138,
+          304
+        ],
+        [
+          "165:1988",
+          0,
+          0,
+          1,
+          1138,
+          290
+        ],
+        [
+          "165:2080",
+          1,
+          0,
+          1,
+          1138,
+          296
+        ],
+        [
+          "165:2099",
+          0,
+          1,
+          0,
+          1138,
+          346
+        ],
+        [
+          "165:2191",
+          1,
+          1,
+          0,
+          1138,
+          304
+        ],
+        [
+          "165:2210",
+          0,
+          1,
+          1,
+          1138,
+          290
+        ],
+        [
+          "165:2302",
+          1,
+          1,
+          1,
+          1138,
+          296
+        ],
+        [
+          "165:2321",
+          0,
+          2,
+          0,
+          1138,
+          346
+        ],
+        [
+          "165:2413",
+          1,
+          2,
+          0,
+          1138,
+          304
+        ],
+        [
+          "165:2432",
+          0,
+          2,
+          1,
+          1138,
+          290
+        ],
+        [
+          "165:2524",
+          1,
+          2,
+          1,
+          1138,
+          296
+        ],
+        [
+          "165:2543",
+          0,
+          3,
+          0,
+          1138,
+          346
+        ],
+        [
+          "165:2635",
+          1,
+          3,
+          0,
+          1138,
+          304
+        ],
+        [
+          "165:2654",
+          0,
+          3,
+          1,
+          1138,
+          290
+        ],
+        [
+          "165:2746",
+          1,
+          3,
+          1,
+          1138,
+          296
+        ]
+      ]
+    },
+    "totalVariants": 44
+  },
+  "blocks": [
+    {
+      "id": "6:51",
+      "name": "CustomerTable",
+      "type": "COMPONENT",
+      "bounds": [
+        80,
+        560,
+        1138,
+        450
+      ],
+      "nodes": 91,
+      "instances": 9
+    },
+    {
+      "id": "17:18",
+      "name": "CustomerDataTable",
+      "type": "COMPONENT",
+      "bounds": [
+        80,
+        1080,
+        1138,
+        553
+      ],
+      "nodes": 239,
+      "instances": 33
+    }
+  ],
+  "customers": [
+    {
+      "id": "19:341",
+      "name": "CustomerDataTable",
+      "type": "INSTANCE",
+      "bounds": [
+        32,
+        374,
+        1138,
+        553
+      ],
+      "nodes": 239,
+      "instances": 34
+    },
+    {
+      "id": "I120:14939;29:224;128:15629",
+      "name": "SaaS 1.1 / Recent customers",
+      "type": "INSTANCE",
+      "bounds": [
+        32,
+        1160.800048828125,
+        1120,
+        450
+      ],
+      "nodes": 91,
+      "instances": 10
+    }
+  ],
+  "suite": [
+    {
+      "id": "74:8076",
+      "name": "CustomerTable",
+      "type": "INSTANCE",
+      "bounds": [
+        32,
+        698,
+        1138,
+        450
+      ],
+      "nodes": 91,
+      "instances": 10
+    },
+    {
+      "id": "77:8255",
+      "name": "CustomerDataTable / unscaled",
+      "type": "INSTANCE",
+      "bounds": [
+        0,
+        0,
+        1138,
+        553
+      ],
+      "nodes": 239,
+      "instances": 34
+    }
+  ],
+  "review": {
+    "pageId": "2:3",
+    "boardId": "169:2062",
+    "actualPostfixBounds": [
+      32648,
+      80,
+      2492,
+      5649
+    ],
+    "themeCodes": [
+      "Light",
+      "Dark"
+    ],
+    "caseSchema": [
+      "family",
+      "state",
+      "appearance",
+      "density"
+    ],
+    "cases": [
+      [
+        "DataTable",
+        "Default",
+        "Elevated",
+        "Comfortable"
+      ],
+      [
+        "DataTable",
+        "Selected",
+        "Glass",
+        "Comfortable"
+      ],
+      [
+        "DataTable",
+        "Empty",
+        "Gradient",
+        "Comfortable"
+      ],
+      [
+        "DataTable",
+        "Loading",
+        "Flat",
+        "Comfortable"
+      ],
+      [
+        "DataTable",
+        "Error",
+        "Elevated",
+        "Comfortable"
+      ],
+      [
+        "DataTable",
+        "Default",
+        "Glass",
+        "Compact"
+      ],
+      [
+        "Table",
+        "Default",
+        "Glass",
+        "Comfortable"
+      ],
+      [
+        "Table",
+        "Default",
+        "Elevated",
+        "Compact"
+      ],
+      [
+        "Table",
+        "Empty",
+        "Flat",
+        "Comfortable"
+      ],
+      [
+        "Table",
+        "Empty",
+        "Gradient",
+        "Compact"
+      ]
+    ],
+    "inventorySchema": [
+      "caseIndex",
+      "themeIndex",
+      "rowId",
+      "panelId",
+      "captionId",
+      "instanceId",
+      "mainId",
+      "width",
+      "height"
+    ],
+    "inventory": [
+      [
+        0,
+        0,
+        "169:2065",
+        "169:2066",
+        "169:2067",
+        "169:2068",
+        "23:356",
+        1138,
+        621
+      ],
+      [
+        0,
+        1,
+        "169:2065",
+        "169:2337",
+        "169:2338",
+        "169:2339",
+        "23:356",
+        1138,
+        621
+      ],
+      [
+        1,
+        0,
+        "169:2608",
+        "169:2609",
+        "169:2610",
+        "169:2611",
+        "164:2443",
+        1138,
+        691
+      ],
+      [
+        1,
+        1,
+        "169:2608",
+        "169:2916",
+        "169:2917",
+        "169:2918",
+        "164:2443",
+        1138,
+        691
+      ],
+      [
+        2,
+        0,
+        "169:3223",
+        "169:3224",
+        "169:3225",
+        "169:3226",
+        "164:4166",
+        1138,
+        505
+      ],
+      [
+        2,
+        1,
+        "169:3223",
+        "169:3329",
+        "169:3330",
+        "169:3331",
+        "164:4166",
+        1138,
+        505
+      ],
+      [
+        3,
+        0,
+        "169:3434",
+        "169:3435",
+        "169:3436",
+        "169:3437",
+        "164:5677",
+        1138,
+        561
+      ],
+      [
+        3,
+        1,
+        "169:3434",
+        "169:3516",
+        "169:3517",
+        "169:3518",
+        "164:5677",
+        1138,
+        561
+      ],
+      [
+        4,
+        0,
+        "169:3597",
+        "169:3598",
+        "169:3599",
+        "169:3600",
+        "164:1550",
+        1138,
+        118
+      ],
+      [
+        4,
+        1,
+        "169:3597",
+        "169:3613",
+        "169:3614",
+        "169:3615",
+        "164:1550",
+        1138,
+        118
+      ],
+      [
+        5,
+        0,
+        "169:3628",
+        "169:3629",
+        "169:3630",
+        "169:3631",
+        "164:2968",
+        1138,
+        553
+      ],
+      [
+        5,
+        1,
+        "169:3628",
+        "169:3900",
+        "169:3901",
+        "169:3902",
+        "164:2968",
+        1138,
+        553
+      ],
+      [
+        6,
+        0,
+        "169:4171",
+        "169:4172",
+        "169:4173",
+        "169:4174",
+        "165:2099",
+        1138,
+        346
+      ],
+      [
+        6,
+        1,
+        "169:4171",
+        "169:4266",
+        "169:4267",
+        "169:4268",
+        "165:2099",
+        1138,
+        346
+      ],
+      [
+        7,
+        0,
+        "169:4360",
+        "169:4361",
+        "169:4362",
+        "169:4363",
+        "165:1988",
+        1138,
+        290
+      ],
+      [
+        7,
+        1,
+        "169:4360",
+        "169:4455",
+        "169:4456",
+        "169:4457",
+        "165:1988",
+        1138,
+        290
+      ],
+      [
+        8,
+        0,
+        "169:4549",
+        "169:4550",
+        "169:4551",
+        "169:4552",
+        "165:2635",
+        1138,
+        304
+      ],
+      [
+        8,
+        1,
+        "169:4549",
+        "169:4571",
+        "169:4572",
+        "169:4573",
+        "165:2635",
+        1138,
+        304
+      ],
+      [
+        9,
+        0,
+        "169:4592",
+        "169:4593",
+        "169:4594",
+        "169:4595",
+        "165:2524",
+        1138,
+        296
+      ],
+      [
+        9,
+        1,
+        "169:4592",
+        "169:4614",
+        "169:4615",
+        "169:4616",
+        "165:2524",
+        1138,
+        296
+      ]
+    ],
+    "initialOwnerReview": {
+      "status": "OWNER_VIEW_LOADING_FAIL",
+      "nodeId": "169:2062",
+      "path": "/tmp/aureform-consumer-1.1-final-eurkrq2x/native-table-lease/table-1.1-light-dark-composition.png",
+      "width": 2492,
+      "height": 5585,
+      "format": "png",
+      "sha256": "88263af4032a12fec0c81d0edfde256d442faa70d02b4266b7df8a4c2974cb86",
+      "ownerVisualReview": {
+        "passingCases": 9,
+        "failingCase": "Loading",
+        "defect": "Skeleton content overflow and footer overlap",
+        "correctedBy": "loading-body-postfix.native-return.json"
+      },
+      "localObservedSHA256": "88263af4032a12fec0c81d0edfde256d442faa70d02b4266b7df8a4c2974cb86",
+      "bytes": 2401282
+    },
+    "postfixCapture": {
+      "status": "OWNER_VISUAL_PASS",
+      "nodeId": "169:2062",
+      "path": ".figma/proofs/table-1.1/owner-final.png",
+      "width": 2492,
+      "height": 5655,
+      "originalWidth": 2492,
+      "originalHeight": 5655,
+      "format": "png",
+      "maxDimension": 8192,
+      "sha256": "3bdcd7a48f3065767122d80ba1308071ba033a6792443990b289f8ec878b0f14",
+      "structuralProof": "loading-body-postfix.native-return.json",
+      "ownerVisualReview": "PASS",
+      "canonicalPath": ".figma/proofs/table-1.1/owner-final.png",
+      "bytes": 2406312,
+      "ownerReview": ".figma/proofs/table-1.1/owner-visual-review.json",
+      "ownerReviewSHA256": "9eec4656873b83a7ece29ac347c52e2fd46fba09c69c27f2eedf6d580849a0ca",
+      "ownerLoadingDetail": {
+        "path": ".figma/proofs/table-1.1/owner-loading-detail.png",
+        "width": 2492,
+        "height": 590,
+        "bytes": 61705,
+        "sha256": "96488eff44c7800bae5ae54794228c0e5f2eed6bc1272a22d38377eb93f1fdf7"
+      },
+      "completedAt": "2026-10-19T05:11:28.452906+00:00"
+    },
+    "visualStatus": "PASS",
+    "ownerFinalReview": {
+      "path": ".figma/proofs/table-1.1/owner-visual-review.json",
+      "sha256": "9eec4656873b83a7ece29ac347c52e2fd46fba09c69c27f2eedf6d580849a0ca",
+      "reviewer": "owner",
+      "checkedAt": "2026-10-19T05:11:28.452906+00:00",
+      "status": "PASS",
+      "image": {
+        "path": ".figma/proofs/table-1.1/owner-final.png",
+        "width": 2492,
+        "height": 5655,
+        "bytes": 2406312,
+        "sha256": "3bdcd7a48f3065767122d80ba1308071ba033a6792443990b289f8ec878b0f14"
+      },
+      "loadingDetail": {
+        "path": ".figma/proofs/table-1.1/owner-loading-detail.png",
+        "width": 2492,
+        "height": 590,
+        "bytes": 61705,
+        "sha256": "96488eff44c7800bae5ae54794228c0e5f2eed6bc1272a22d38377eb93f1fdf7"
+      },
+      "visualCoverage": {
+        "themes": [
+          "Light",
+          "Dark"
+        ],
+        "representativeCases": 10,
+        "representativeInstances": 20,
+        "states": [
+          "Default",
+          "Selected",
+          "Empty",
+          "Loading",
+          "Error"
+        ],
+        "materials": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "densities": [
+          "Comfortable",
+          "Compact"
+        ]
+      },
+      "structuralCoverage": {
+        "DataTableVariants": 28,
+        "TableVariants": 16
+      }
+    }
+  },
+  "loadingCorrection": {
+    "status": "PASS",
+    "variantIds": [
+      "164:1465",
+      "164:2869",
+      "164:4273",
+      "164:5677"
+    ],
+    "density": "Comfortable",
+    "linkedSkeletonCount": 20,
+    "geometry": {
+      "actualBarHeights": [
+        14,
+        12,
+        12
+      ],
+      "gap": 4,
+      "padding": 0,
+      "instanceHeight": 46,
+      "bodyHeight": 358
+    },
+    "masterUnchanged": true,
+    "globalSkeletonMainId": "24:502",
+    "globalSkeletonSetId": "24:512",
+    "minimumFooterClearance": 24,
+    "actualProof": ".figma/proofs/table-1.1/loading-body-postfix.native-return.json",
+    "allAffectedIds": ".figma/proofs/table-1.1/loading-all-affected-node-ids.json",
+    "directAffectedNodeCount": 92,
+    "propagatedAffectedNodeCount": 46,
+    "note": "Native bars resolve to 14/12/12. The authorized real-content alternative uses 46px linked instances, 20px row gaps, 24px body padding, a 358px body and HUG roots. The earlier attempted 8px bar resize is preserved as history.",
+    "ownerVisualStatus": "PASS",
+    "ownerVisualProof": ".figma/proofs/table-1.1/owner-visual-review.json"
+  },
+  "stages": [
+    {
+      "stage": "datatable-all",
+      "actualReturnStatus": "reconciled-awaiting-owner-visual-review",
+      "actualReturnBytes": 18068,
+      "counts": {
+        "created": 4847,
+        "mutated": 5130,
+        "removed": 28,
+        "unique": 5158
+      },
+      "reviewAudit": {
+        "rootsChecked": 28,
+        "totals": {
+          "nodeCount": 5128,
+          "nativeInstanceCount": 656,
+          "boundPaintCount": 3456,
+          "gradientCount": 12,
+          "imageFillCount": 0,
+          "fontFamilies": {
+            "Manrope": 1084
+          },
+          "failures": []
+        }
+      },
+      "artifacts": {
+        "executed.js": {
+          "path": ".figma/proofs/table-1.1/datatable-all.executed.js",
+          "sha256": "5616df1a08e93707adbb4696ba4ea96c0adc5a24ead6ec7f3b483b0168be5a2d"
+        },
+        "native-return.json": {
+          "path": ".figma/proofs/table-1.1/datatable-all.native-return.json",
+          "sha256": "00a25824c2e2252c2dec56a61b116395a4d97ac42280ca884d235369d09070f3"
+        },
+        "all-node-ids.json": {
+          "path": ".figma/proofs/table-1.1/datatable-all.all-node-ids.json",
+          "sha256": "4b157b11c42a70cf1d5a7e8a41b298693431161971029d8fd95daf4120547ef7"
+        }
+      }
+    },
+    {
+      "stage": "table-all",
+      "actualReturnStatus": "reconciled-awaiting-owner-visual-review",
+      "actualReturnBytes": 4923,
+      "counts": {
+        "created": 874,
+        "mutated": 890,
+        "removed": 5,
+        "unique": 895
+      },
+      "reviewAudit": {
+        "rootsChecked": 16,
+        "totals": {
+          "nodeCount": 888,
+          "nativeInstanceCount": 96,
+          "boundPaintCount": 576,
+          "gradientCount": 8,
+          "imageFillCount": 0,
+          "fontFamilies": {
+            "Manrope": 320
+          },
+          "failures": []
+        }
+      },
+      "artifacts": {
+        "executed.js": {
+          "path": ".figma/proofs/table-1.1/table-all.executed.js",
+          "sha256": "101547ff68da028dc1b43e2fce9ae3ee14fc4a12ef37053343bdfd777ed8c7d8"
+        },
+        "native-return.json": {
+          "path": ".figma/proofs/table-1.1/table-all.native-return.json",
+          "sha256": "7c264a142337bb743b9653dee5efd2db7573fac069021e17a118a96202a242ee"
+        },
+        "all-node-ids.json": {
+          "path": ".figma/proofs/table-1.1/table-all.all-node-ids.json",
+          "sha256": "1f8eb9ab9d5bf8cbe446aa2b31f5e621846cca8e287bb2b9964f857ffb227b68"
+        }
+      }
+    },
+    {
+      "stage": "datatable-error-size-fix",
+      "actualReturnStatus": "native-error-axis-size-fixed-awaiting-visual-review",
+      "actualReturnBytes": 2183,
+      "counts": {
+        "createdNodeIds": 0,
+        "mutatedNodeIds": 48,
+        "removedNodeIds": 0
+      },
+      "reviewAudit": null,
+      "artifacts": {
+        "executed.js": {
+          "path": ".figma/proofs/table-1.1/datatable-error-size-fix.executed.js",
+          "sha256": "d46718803ac456e7a28e4f2c5f260c148e1031522bde8387de1b7f4c112f219c"
+        },
+        "native-return.json": {
+          "path": ".figma/proofs/table-1.1/datatable-error-size-fix.native-return.json",
+          "sha256": "53148dfc902236af19f378ea04f8231b94445148e6fb31b2c3cf0198f6d3e6b9"
+        },
+        "all-node-ids.json": {
+          "path": ".figma/proofs/table-1.1/datatable-error-size-fix.all-node-ids.json",
+          "sha256": "ab489fc4d53d0b990a744c76dca949696b700a8ea49edbabdb6f3488f3b2cbc4"
+        }
+      }
+    },
+    {
+      "stage": "blocks-all",
+      "actualReturnStatus": "reconciled-awaiting-owner-visual-review",
+      "actualReturnBytes": 3051,
+      "counts": {
+        "created": 271,
+        "mutated": 332,
+        "removed": 134,
+        "unique": 465
+      },
+      "reviewAudit": {
+        "rootsChecked": 2,
+        "totals": {
+          "nodeCount": 330,
+          "nativeInstanceCount": 42,
+          "boundPaintCount": 205,
+          "gradientCount": 0,
+          "imageFillCount": 0,
+          "fontFamilies": {
+            "Manrope": 88
+          },
+          "failures": []
+        }
+      },
+      "artifacts": {
+        "executed.js": {
+          "path": ".figma/proofs/table-1.1/blocks-all.executed.js",
+          "sha256": "477b4a605c930d51099068577521906deb27f31f3198a7f9ee8f49c6c87bc553"
+        },
+        "native-return.json": {
+          "path": ".figma/proofs/table-1.1/blocks-all.native-return.json",
+          "sha256": "1862b681a29b6bfc55127a2b843ada05d87a5abe2a51d0b1c26e78b8207a9e98"
+        },
+        "all-node-ids.json": {
+          "path": ".figma/proofs/table-1.1/blocks-all.all-node-ids.json",
+          "sha256": "7fc9e72522ae773d774c9333ff5296a85d95f61db5dd823c839f127b9e4e5711"
+        }
+      }
+    },
+    {
+      "stage": "customers",
+      "actualReturnStatus": "reconciled-awaiting-owner-visual-review",
+      "actualReturnBytes": 2842,
+      "counts": {
+        "created": 0,
+        "mutated": 330,
+        "removed": 0,
+        "unique": 330
+      },
+      "reviewAudit": {
+        "rootsChecked": 2,
+        "totals": {
+          "nodeCount": 330,
+          "nativeInstanceCount": 44,
+          "boundPaintCount": 205,
+          "gradientCount": 0,
+          "imageFillCount": 0,
+          "fontFamilies": {
+            "Manrope": 88
+          },
+          "failures": []
+        }
+      },
+      "artifacts": {
+        "executed.js": {
+          "path": ".figma/proofs/table-1.1/customers.executed.js",
+          "sha256": "6c9192512eca7c0c7413d42d64e8a028aa29445c506952ade7ad7f4dcaf05ed8"
+        },
+        "native-return.json": {
+          "path": ".figma/proofs/table-1.1/customers.native-return.json",
+          "sha256": "ca6e2acb66a97bb19bfae912dcff739da217dafd6b1b38b1eb1d1464caaeeab3"
+        },
+        "all-node-ids.json": {
+          "path": ".figma/proofs/table-1.1/customers.all-node-ids.json",
+          "sha256": "2c7c4dc6f6c887cc0ab1c5fa029263c19f07241077ca9c89e54756f6e60ff95c"
+        }
+      }
+    },
+    {
+      "stage": "suite-all",
+      "actualReturnStatus": "reconciled-awaiting-owner-visual-review",
+      "actualReturnBytes": 2683,
+      "counts": {
+        "created": 0,
+        "mutated": 331,
+        "removed": 0,
+        "unique": 331
+      },
+      "reviewAudit": {
+        "rootsChecked": 2,
+        "totals": {
+          "nodeCount": 330,
+          "nativeInstanceCount": 44,
+          "boundPaintCount": 205,
+          "gradientCount": 0,
+          "imageFillCount": 0,
+          "fontFamilies": {
+            "Manrope": 88
+          },
+          "failures": []
+        }
+      },
+      "artifacts": {
+        "executed.js": {
+          "path": ".figma/proofs/table-1.1/suite-all.executed.js",
+          "sha256": "912084d1c4b561232f60e8b589ee278052d8361d996b0b981b8cb6c435ba7282"
+        },
+        "native-return.json": {
+          "path": ".figma/proofs/table-1.1/suite-all.native-return.json",
+          "sha256": "14c3a0ba1c738f46160d341a036d5ee076b2be55bd8c43f04dfb349aee632326"
+        },
+        "all-node-ids.json": {
+          "path": ".figma/proofs/table-1.1/suite-all.all-node-ids.json",
+          "sha256": "c4b3dc45fbfd90b2de27d97c119629dd11327c008102a6009e5eb3d884e2b9c3"
+        }
+      }
+    },
+    {
+      "stage": "review-composition",
+      "actualReturnStatus": "review-composition-ready-awaiting-owner-visual-review",
+      "actualReturnBytes": 11064,
+      "counts": {
+        "created": 2479,
+        "mutated": 2480,
+        "removed": 0,
+        "unique": 2480
+      },
+      "reviewAudit": {
+        "rootsChecked": 1,
+        "totals": {
+          "nodeCount": 2479,
+          "nativeInstanceCount": 322,
+          "boundPaintCount": 1673,
+          "gradientCount": 10,
+          "imageFillCount": 0,
+          "fontFamilies": {
+            "Manrope": 602
+          },
+          "failures": []
+        }
+      },
+      "artifacts": {
+        "executed.js": {
+          "path": ".figma/proofs/table-1.1/review-composition.executed.js",
+          "sha256": "f8d18ca9e56c093b31fd52c112917da63b447f4b8971943870605fc4c809e660"
+        },
+        "native-return.json": {
+          "path": ".figma/proofs/table-1.1/review-composition.native-return.json",
+          "sha256": "68531e03f406fbf651212f99ae980714e12f6ff33eb288fdfd055191664e5111"
+        },
+        "all-node-ids.json": {
+          "path": ".figma/proofs/table-1.1/review-composition.all-node-ids.json",
+          "sha256": "400ed7e0d5fa20d5735781554f8feecae346b7927816c2d833888c45724da060"
+        }
+      }
+    },
+    {
+      "stage": "loading-internals-attempt",
+      "actualReturnStatus": "NEEDS_TARGETED_FIX",
+      "actualReturnBytes": 10405,
+      "counts": {
+        "createdNodeIds": 0,
+        "mutatedNodeIds": 80,
+        "removedNodeIds": 0
+      },
+      "reviewAudit": null,
+      "artifacts": {
+        "executed.js": {
+          "path": ".figma/proofs/table-1.1/loading-internals-attempt.executed.js",
+          "sha256": "0dc89a91b86d264a22f3ee19d606dd235601b27ee25c55510c07bb474d8138d3"
+        },
+        "native-return.json": {
+          "path": ".figma/proofs/table-1.1/loading-internals-attempt.native-return.json",
+          "sha256": "8c29fa8e06ea5772e9b675fac2e1d21ef282382c1ca2bbe3b4f59603186ccb5d"
+        },
+        "all-node-ids.json": {
+          "path": ".figma/proofs/table-1.1/loading-internals-attempt.all-node-ids.json",
+          "sha256": "1a3d9dd6ba999b29d1abe408851ad5733a555acd9cf703730123db70443871d4"
+        }
+      }
+    },
+    {
+      "stage": "loading-body-postfix",
+      "actualReturnStatus": "PASS",
+      "actualReturnBytes": 8332,
+      "counts": {
+        "createdNodeIds": 0,
+        "mutatedNodeIds": 32,
+        "removedNodeIds": 0
+      },
+      "reviewAudit": null,
+      "artifacts": {
+        "executed.js": {
+          "path": ".figma/proofs/table-1.1/loading-body-postfix.executed.js",
+          "sha256": "5037e3dc08eed5232e51f1ca1c04e4cbda17ad782d3ec4929a0c5ac6ef8747b2"
+        },
+        "native-return.json": {
+          "path": ".figma/proofs/table-1.1/loading-body-postfix.native-return.json",
+          "sha256": "ee6eb4220869829c30390a87d842c7789ab17d260fd3cef85acb8179264f8f3a"
+        },
+        "all-node-ids.json": {
+          "path": ".figma/proofs/table-1.1/loading-body-postfix.all-node-ids.json",
+          "sha256": "a73103d02ee4aa26f0b590518dfc63399089aa5778f7c6921406c48c7be1e838"
+        }
+      }
+    }
+  ],
+  "allAffectedIds": ".figma/proofs/table-1.1/all-affected-node-ids.json",
+  "allAffectedCounts": {
+    "createdNodeIds": 8471,
+    "mutatedNodeIds": 9491,
+    "removedNodeIds": 167,
+    "propagatedNodeIds": 46
+  },
+  "preservedRouteScreens": 65,
+  "handoff": {
+    "noMCPCallsInFlight": true,
+    "nextOwnerAction": "Owner coordinates the next Zeno lease and remaining Code Connect/audit work",
+    "finalZIP": "Pending owner final archives; no fresh ZIP validation claimed",
+    "leaseReturnedTo": "OWNER",
+    "leaseReturnedAt": "2026-10-19T05:12:59.128494+00:00"
+  },
+  "completedAt": "2026-10-19T05:11:28.452906+00:00",
+  "ownerProofIntegratedAt": "2026-10-19T05:12:59.128494+00:00",
+  "validationScope": {
+    "structuralVariants": 44,
+    "visuallyReviewedRepresentativeInstances": 20,
+    "themes": [
+      "Light",
+      "Dark"
+    ],
+    "ownerReviewedFullCompositionAndLoadingDetail": true
+  }
+}

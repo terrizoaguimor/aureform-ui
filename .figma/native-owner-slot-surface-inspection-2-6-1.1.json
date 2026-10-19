@@ -1,0 +1,10 @@
+{
+  "status": "read-only",
+  "pageId": "2:6",
+  "rootCount": 44,
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "groups": [],
+  "idEncoding": "Complete front-coded IDs [common-length-from-previous,suffix], previous starts empty per group.",
+  "footers": []
+}

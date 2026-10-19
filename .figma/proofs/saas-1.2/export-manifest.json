@@ -1,0 +1,601 @@
+{
+  "version": "1.2.0",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "status": "exported-lossless-pixel-verification",
+  "visualReviewStatus": "passed-owner-visual-review",
+  "proofs": [
+    {
+      "nodeId": "237:16428",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/onboarding-light.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "originalBytes": 219161,
+      "originalSha256": "d0ac46387dbeed257adbd67a5210797a8a483bd610b2bb58f9a1fc71ce41b3ef",
+      "bytes": 203117,
+      "sha256": "369e6b7e9737d1441837543ce4b18b116ecc36024d55ab243d17e28cf22c3423",
+      "rgbaPixelSha256": "afc4c6311b8277544349189b25d360c42eadd0545706204ccc7b0e312091e4af",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "onboarding",
+      "mode": "Light"
+    },
+    {
+      "nodeId": "237:16692",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/onboarding-dark.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "originalBytes": 261286,
+      "originalSha256": "4dbed06224d5cb450ce1ca387583c3cebdcf0f8081052e66978df3fd5af00215",
+      "bytes": 234801,
+      "sha256": "1d0de87e646dd103be45f3429543e9d9ad247d7ba6078a38c2cde6d7822cf758",
+      "rgbaPixelSha256": "91165e86764908bb6de18f011b85507479924a00cc76800735c8e223eb2c2c3b",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "onboarding",
+      "mode": "Dark"
+    },
+    {
+      "nodeId": "237:16887",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/workspace-light.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "originalBytes": 184442,
+      "originalSha256": "0c09c288c0ea5789e41dd3ebe011f042ec47fe5ec0842261959fadb315b29569",
+      "bytes": 175367,
+      "sha256": "e16dbc84060dde97e0e89103477cc79d501133d47fcba796e7a6c68e0a48448f",
+      "rgbaPixelSha256": "1e3df5026dd6ffb64d1e895ecf9786b2f428957aa26393ddac3af5f69331b753",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "settings/workspace",
+      "mode": "Light"
+    },
+    {
+      "nodeId": "237:17079",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/workspace-dark.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "originalBytes": 218999,
+      "originalSha256": "d4b0868ffed090a8740aee4ef6832a73f85b0141c4414575db798c29f33014cf",
+      "bytes": 200293,
+      "sha256": "6145814c08972c350ccbeada3ee088e4d37c6f99b7d04e2650b134b45a384fb6",
+      "rgbaPixelSha256": "f38fe19b29b695aeebc88f27e05dec04a2ca624d09537b604882e7f33492abbe",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "settings/workspace",
+      "mode": "Dark"
+    },
+    {
+      "nodeId": "237:17271",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/detail-light.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1293
+      },
+      "originalBytes": 260751,
+      "originalSha256": "2b93549212512f215fbde2c5e6c01da9dabf819c7589bda93add74e7048e01e4",
+      "bytes": 243533,
+      "sha256": "f2c677c32feb8de29d383364e2421730560a15f4f5610414207b3f8c8da0e4d2",
+      "rgbaPixelSha256": "bd2b732aad114abc5ce43827c6995f9e8701202bf8151d330fba156dc7411945",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1293
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "customers/detail",
+      "mode": "Light"
+    },
+    {
+      "nodeId": "237:17522",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/detail-dark.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1293
+      },
+      "originalBytes": 314516,
+      "originalSha256": "58478f8d2633946252ce996f39a81708042774456a5a92fa1c80589e0b3ebe54",
+      "bytes": 287600,
+      "sha256": "40561dd5528d867ff2b703e1f75ca23c5d7a0379d916bb172e60e94c0eb03df4",
+      "rgbaPixelSha256": "044391198688d6211ddcf8e117a8c48709128c0541c7232f1ddc02f0601b882b",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1293
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "customers/detail",
+      "mode": "Dark"
+    },
+    {
+      "nodeId": "237:17773",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/imports-light.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "originalBytes": 274337,
+      "originalSha256": "c5b2fbd68adc1a3b250faa3552e1386cc418bb827b87cb288185ad678e37cd76",
+      "bytes": 256382,
+      "sha256": "a721f8fc2e3b1ea5d2422de78283ea7630e59c3a062c37b819b902c4720d6430",
+      "rgbaPixelSha256": "f58816e91c999db123b797df0322e5f10000c932351c1d284d021f856d16b528",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "imports",
+      "mode": "Light"
+    },
+    {
+      "nodeId": "237:17965",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/imports-dark.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "originalBytes": 323572,
+      "originalSha256": "080ec4f98895ec6b9920a9c351b34290fa82719cab811372ca5892fe9153c90d",
+      "bytes": 293833,
+      "sha256": "1a7c7e88a792de64c4807a4f60262d2ff299019607f955cf4f0ff8856c725ae5",
+      "rgbaPixelSha256": "b1963fe90756cdc3670d5437b3f04f97e276a05463d84f44704dc1b2a4f6ac77",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "imports",
+      "mode": "Dark"
+    },
+    {
+      "nodeId": "237:18156",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/customers-light.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "originalBytes": 196455,
+      "originalSha256": "01c2d48334ec106e89dfda146342a8f80934bed229e8ef39dc1b74482de6cf80",
+      "bytes": 192232,
+      "sha256": "585fe82490ba71f5972cb492c42cadcc0da2c0115fe0549c9c1c4395f09e2ee7",
+      "rgbaPixelSha256": "4692ca46947a596a8ec7f297ca98e9007b1b4fe132cf582c41e580e0c82194af",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "customers",
+      "mode": "Light"
+    },
+    {
+      "nodeId": "237:18891",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/customers-dark.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1240
+      },
+      "originalBytes": 234089,
+      "originalSha256": "8559693c18823b21f2b1558b9d843cda2bb8c4a13e7cabfcb610dd344795ea0d",
+      "bytes": 224270,
+      "sha256": "cd024f95be45bda683337a6e8210530458c0832dadc8b0dc2c94ac713665e635",
+      "rgbaPixelSha256": "ba4f11f151f01d72bcffc1298382c6af4865030e0d71425af4a89043ad39acfa",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1240
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "customers",
+      "mode": "Dark"
+    },
+    {
+      "nodeId": "237:19625",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/team-light.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1362
+      },
+      "originalBytes": 291285,
+      "originalSha256": "234452e43441a5b2cc2146c92119fd08021a8e833588e742f25857c7f98b6d91",
+      "bytes": 269424,
+      "sha256": "0d022664c632199a86dcb96a2d84cfaacd56af51add094ed7b0843cde010fa61",
+      "rgbaPixelSha256": "d32616bdb0f146261013d4a9dcfc5df3a05b4bf92157a1c9fbb182a85408b561",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1362
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "settings/team",
+      "mode": "Light"
+    },
+    {
+      "nodeId": "237:19873",
+      "kind": "view",
+      "path": ".figma/proofs/saas-1.2/team-dark.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1362
+      },
+      "originalBytes": 349908,
+      "originalSha256": "88541ee524645b4aaf9642786c402e94610b31b868c0f91fa8269b3f27c70f68",
+      "bytes": 316376,
+      "sha256": "c4e22556d531465aa03c94078fe361d7aca6922db9aa7788be013420ec4c0afb",
+      "rgbaPixelSha256": "775af65baf7bc5e2b7a6232fbafc8577c5a88fa3bf10f0c55908e899ea286c44",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 1362
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "route": "settings/team",
+      "mode": "Dark"
+    },
+    {
+      "nodeId": "246:6620",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-workspace-status.png",
+      "dimensions": {
+        "width": 2256,
+        "height": 712
+      },
+      "originalBytes": 110642,
+      "originalSha256": "0d60c501ba9cde763a22e581b82fef95248745eb53782fcd5fe5520ba649478e",
+      "bytes": 105849,
+      "sha256": "21794b66305a3b73060e4459a2c262228d213856a6e6340a0fab8675626675a1",
+      "rgbaPixelSha256": "bbccafce46f786d0a5d31ba187d2e35e81743555df1a15a4f2cda9da882d86db",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 2256,
+        "height": 712
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "component": "WorkspaceStatus",
+      "variants": 6
+    },
+    {
+      "nodeId": "246:6722",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-onboarding-flow.png",
+      "dimensions": {
+        "width": 2256,
+        "height": 2455
+      },
+      "originalBytes": 1665318,
+      "originalSha256": "6cf14fca60b3e055d48e5c513588c990b2278902a997909ebb725adde3479c54",
+      "bytes": 1442532,
+      "sha256": "3345f62693693ae019365c445d09e7665c6fd7b498b57ea45fa4e2c2e8c83350",
+      "rgbaPixelSha256": "095e1d6d5ffc7aeaa356328520fc96a5d4c595686ebcfd8298388d72d658f610",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 2256,
+        "height": 2455
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "component": "OnboardingFlow",
+      "variants": 10
+    },
+    {
+      "nodeId": "246:7084",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-member-management.png",
+      "dimensions": {
+        "width": 2256,
+        "height": 3342
+      },
+      "originalBytes": 1485177,
+      "originalSha256": "cb517616a550a0d5b37c4f977094c447784ef46b70060c93fd4c09169d01cd4f",
+      "bytes": 1315443,
+      "sha256": "fd07e9030c8f40d708159f8ce95ba497d27c850349ce6a13196a0d1de75be306",
+      "rgbaPixelSha256": "22fb45ba3d3db071f310788a23f0426efdf62123b9407b10e5df25f139eb132d",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 2256,
+        "height": 3342
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "component": "MemberManagement",
+      "variants": 8
+    },
+    {
+      "nodeId": "246:7491",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-data-workbench.png",
+      "dimensions": {
+        "width": 2256,
+        "height": 3146
+      },
+      "originalBytes": 549348,
+      "originalSha256": "c9f2690f7c49a1eb8954fb5132dfc12581dfedaefdc2a395c64cba2d5eeb18e2",
+      "bytes": 530771,
+      "sha256": "644c1dc3d6133bfca88780735919d606fa6aee8c5d3b8558c753f27fde73fdf9",
+      "rgbaPixelSha256": "6e4bb0f2d6ca39fbf855b37c481c2a4b71ea8e0ceeb314c93b9e24a00498f20d",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 2256,
+        "height": 3146
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "component": "DataWorkbench",
+      "variants": 10
+    },
+    {
+      "nodeId": "246:9037",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-import-wizard.png",
+      "dimensions": {
+        "width": 2196,
+        "height": 4096
+      },
+      "originalBytes": 1191905,
+      "originalSha256": "65f250f2afbdeef571df6ce20fd35d2e106cd8a97623e999d6a23034c8a00394",
+      "bytes": 1099824,
+      "sha256": "abcb3b72e0d26ab68f7dd09717ff989219273cf5b73f4d9829ac3ad40b90ed1c",
+      "rgbaPixelSha256": "b427e0f8fe49cac76a8c48b5ef852bf2de888602a5b991de0fb51fb3a62f8153",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 2256,
+        "height": 4209
+      },
+      "exportScale": {
+        "x": 0.973404255319149,
+        "y": 0.9731527678783559
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "component": "ImportWizard",
+      "variants": 12
+    },
+    {
+      "nodeId": "246:9552",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-record-detail.png",
+      "dimensions": {
+        "width": 2170,
+        "height": 4096
+      },
+      "originalBytes": 1699698,
+      "originalSha256": "da71844262e5a4fce62a4060951b683c8474ebd957d399dcca326184261c0ea0",
+      "bytes": 1516926,
+      "sha256": "eba0c66ccc8ace22ce4d9e7d871c8ede7ca562d75e129a2744be6286a86a07c6",
+      "rgbaPixelSha256": "b3d81af13a0067fa9047989d58aa89c8ba4fad8fbd82559dadf206b39bb9efd8",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 2256,
+        "height": 4260
+      },
+      "exportScale": {
+        "x": 0.9618794326241135,
+        "y": 0.9615023474178404
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "component": "RecordDetail",
+      "variants": 12
+    },
+    {
+      "nodeId": "246:10211",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-workspace-settings.png",
+      "dimensions": {
+        "width": 2144,
+        "height": 876
+      },
+      "originalBytes": 239344,
+      "originalSha256": "a3b8c97e69a62854589a719a6d955fe7877bd1e9173263e2bf45abae7477507c",
+      "bytes": 211661,
+      "sha256": "cbf2c73b6d861d9d01a015ad51bcafda3dbce869078b110aef402719f79a3f47",
+      "rgbaPixelSha256": "3325345537f7d102ad3840f5c7874df4280cbbc67a21c150547c90283366d929",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 2144,
+        "height": 876
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "component": "WorkspaceSettingsTemplate",
+      "variants": 2
+    },
+    {
+      "nodeId": "246:10269",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-row-actions.png",
+      "dimensions": {
+        "width": 976,
+        "height": 715
+      },
+      "originalBytes": 54021,
+      "originalSha256": "f74776d4783ab9baf688c6d516305b0181b6baa6fc5ae75c4d4a59e537cb504a",
+      "bytes": 54973,
+      "sha256": "57ae8a87157c257d7ab2c8812b93cb200519e18544263d08d6e54692e0c1d237",
+      "rgbaPixelSha256": "43f1b518b3d6d8a85ed57334988c8246b03cf557c6cdce8200b29e15516ea49c",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 976,
+        "height": 715
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "component": "RowActions",
+      "variants": 4
+    },
+    {
+      "nodeId": "246:10322",
+      "kind": "component-review",
+      "path": ".figma/proofs/saas-1.2/component-delete-dialog.png",
+      "dimensions": {
+        "width": 976,
+        "height": 704
+      },
+      "originalBytes": 63051,
+      "originalSha256": "ad8a48d7e19652f555b6d37c73f8f3b2d8bc4a68de4ee79299b7b2bae295d9b5",
+      "bytes": 63845,
+      "sha256": "a2e2549015be5389d4a2f65eb336c583ebc3c60083a8c5079e1c09229fbf706f",
+      "rgbaPixelSha256": "c4bec318197a7e5811387a867cb6928d4334b5d64eab62815514fa73aec95a56",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 976,
+        "height": 704
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel.",
+      "component": "DeleteDialog",
+      "variants": 4
+    },
+    {
+      "nodeId": "27:2",
+      "kind": "release-cover",
+      "path": ".figma/proofs/saas-1.2/cover-1.2.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 960
+      },
+      "originalBytes": 98769,
+      "originalSha256": "3171e548ebd9afda7d3855057ce8984dc096499c38d93b7020df2550732e089c",
+      "bytes": 95802,
+      "sha256": "b3a5292ee727e735b2f4b9b9e5de706b800068996c454a73281fbbeef9e4f74a",
+      "rgbaPixelSha256": "825a3d752ce5075aa8b209c8212a2188371a88358c75e97d658e7375fe84eb70",
+      "pixelIdentical": true,
+      "transformation": "Lossless PNG re-encoding; no resizing or quantization.",
+      "nativeBounds": {
+        "width": 1440,
+        "height": 960
+      },
+      "exportScale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "exportNote": "Dimensions are the actual Figma export. Large review boards are scaled by Figma's render service; this script preserves every pixel."
+    }
+  ],
+  "visualApproval": ".figma/proofs/saas-1.2/owner-visual-approval.json"
+}

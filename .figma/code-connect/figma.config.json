@@ -1,0 +1,9 @@
+{
+  "codeConnect": {
+    "include": [
+      "*.figma.ts"
+    ],
+    "label": "Aureform React · local templates",
+    "language": "tsx"
+  }
+}

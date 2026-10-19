@@ -1,0 +1,47 @@
+{
+  "recordedAt": "2026-10-19T05:44:07.713722+00:00",
+  "shots": [
+    {
+      "name": "buttons-dark",
+      "nodeId": "176:4599",
+      "format": "png",
+      "width": 1360,
+      "height": 636,
+      "pngPath": "/tmp/aureform-buttons-cover-postfix-owner-proof-1.1/buttons-dark.png",
+      "sha256": null,
+      "status": "actual-postfix-export-owner-download-pending"
+    },
+    {
+      "name": "buttons-light",
+      "nodeId": "176:4696",
+      "format": "png",
+      "width": 1360,
+      "height": 636,
+      "pngPath": "/tmp/aureform-buttons-cover-postfix-owner-proof-1.1/buttons-light.png",
+      "sha256": null,
+      "status": "actual-postfix-export-owner-download-pending"
+    },
+    {
+      "name": "brand-guide",
+      "nodeId": "27:46",
+      "format": "png",
+      "width": 1440,
+      "height": 932,
+      "pngPath": "/tmp/aureform-buttons-cover-postfix-owner-proof-1.1/brand-guide.png",
+      "sha256": null,
+      "status": "actual-postfix-export-owner-download-pending"
+    }
+  ],
+  "ownerPostfixVisualReview": "pending",
+  "agentDownloadedPng": false,
+  "ownerDownloadScript": "/tmp/aureform-buttons-cover-postfix-download-1.1.sh",
+  "unchangedCover": {
+    "nodeId": "27:2",
+    "pngPath": ".figma/proofs/buttons-1.1/cover-owner-viewed.png",
+    "sha256": "75259d1dd30ef21fc3150e2c2dbef72237af279abdc4c1b8320f1fd2ab20200a",
+    "width": 1440,
+    "height": 960,
+    "ownerVisualReview": "pass"
+  },
+  "nativeCanvasMutatedByCaptures": false
+}

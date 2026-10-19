@@ -1,0 +1,49 @@
+{
+  "recordedAt": "2026-10-19T05:27:19.944844+00:00",
+  "shots": [
+    {
+      "name": "buttons-dark",
+      "nodeId": "176:4599",
+      "format": "png",
+      "width": 1360,
+      "height": 636,
+      "pngPath": "/tmp/aureform-buttons-cover-owner-proof-1.1/buttons-dark.png",
+      "sha256": null,
+      "status": "exported-owner-download-pending"
+    },
+    {
+      "name": "buttons-light",
+      "nodeId": "176:4696",
+      "format": "png",
+      "width": 1360,
+      "height": 636,
+      "pngPath": "/tmp/aureform-buttons-cover-owner-proof-1.1/buttons-light.png",
+      "sha256": null,
+      "status": "exported-owner-download-pending"
+    },
+    {
+      "name": "cover",
+      "nodeId": "27:2",
+      "format": "png",
+      "width": 1440,
+      "height": 960,
+      "pngPath": "/tmp/aureform-buttons-cover-owner-proof-1.1/cover.png",
+      "sha256": null,
+      "status": "exported-owner-download-pending"
+    },
+    {
+      "name": "brand-guide",
+      "nodeId": "27:46",
+      "format": "png",
+      "width": 1440,
+      "height": 932,
+      "pngPath": "/tmp/aureform-buttons-cover-owner-proof-1.1/brand-guide.png",
+      "sha256": null,
+      "status": "exported-owner-download-pending"
+    }
+  ],
+  "ownerVisualReview": "pending",
+  "agentDownloadedPng": false,
+  "ownerDownloadScript": "/tmp/aureform-buttons-cover-download-1.1.sh",
+  "nativeCanvasMutatedByCapture": false
+}

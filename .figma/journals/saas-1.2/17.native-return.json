@@ -1,0 +1,1229 @@
+{
+  "modeEvidence": [
+    {
+      "id": "225:1629",
+      "name": "State=Owner, Theme=Dark",
+      "explicitModes": [
+        {
+          "id": "225:1629",
+          "name": "State=Owner, Theme=Dark",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1632",
+          "name": "Avatar / AF",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1635",
+          "name": "Badge / Owner",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1638",
+          "name": "Action / Your role",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        }
+      ],
+      "textGeometry": []
+    },
+    {
+      "id": "228:4221",
+      "name": "State=Summary, Theme=Dark",
+      "explicitModes": [
+        {
+          "id": "228:4221",
+          "name": "State=Summary, Theme=Dark",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:4222",
+          "name": "ghost / Back to customers",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:4229",
+          "name": "avatar / OR",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:4234",
+          "name": "badge / Active",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:4236",
+          "name": "outline / Edit customer",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:4254",
+          "name": "outline / Summary",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:4258",
+          "name": "ghost / Activity 2",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:4262",
+          "name": "ghost / Notes 1",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:4266",
+          "name": "ghost / Files 0",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:4270",
+          "name": "ghost / Related 0",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        }
+      ],
+      "textGeometry": [
+        {
+          "id": "228:4232",
+          "text": "Olivia Rhye",
+          "width": 670,
+          "height": 41,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "228:4276",
+          "text": "Customer details",
+          "width": 602,
+          "height": 26,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "228:4294",
+          "text": "Account at a glance",
+          "width": 362,
+          "height": 26,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "228:4297",
+          "text": "$249.00",
+          "width": 362,
+          "height": 41,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "235:4007",
+          "text": "Recent activity",
+          "width": 362,
+          "height": 18,
+          "autoResize": "NONE",
+          "layoutSizingVertical": "FIXED",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.95686274766922,
+                "g": 0.9686274528503418,
+                "b": 1
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2:41"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "225:1743",
+      "name": "State=Organization, Theme=Dark",
+      "explicitModes": [
+        {
+          "id": "225:1743",
+          "name": "State=Organization, Theme=Dark",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1746",
+          "name": "Badge / 1",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1750",
+          "name": "Badge / 2",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1754",
+          "name": "Badge / 3",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1758",
+          "name": "Badge / 4",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1765",
+          "name": "Input / e.g. Northstar Studio",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1768",
+          "name": "Action / Back",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:1772",
+          "name": "Action / Continue",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        }
+      ],
+      "textGeometry": [
+        {
+          "id": "225:1762",
+          "text": "Give your organization a home.",
+          "width": 1030,
+          "height": 36,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "225:2135",
+      "name": "State=Default, Theme=Dark",
+      "explicitModes": [
+        {
+          "id": "225:2135",
+          "name": "State=Default, Theme=Dark",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2140",
+          "name": "Avatar / AM",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2145",
+          "name": "Badge / Owner",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2148",
+          "name": "Avatar / IT",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2153",
+          "name": "Badge / Admin",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2155",
+          "name": "Action / Manage",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2160",
+          "name": "Avatar / DK",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2165",
+          "name": "Badge / Member",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2167",
+          "name": "Action / Manage",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2172",
+          "name": "Avatar / NA",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2177",
+          "name": "Badge / Viewer",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2179",
+          "name": "Action / Manage",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2187",
+          "name": "Input / name@company.com",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "225:2190",
+          "name": "Action / Member",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        }
+      ],
+      "textGeometry": [
+        {
+          "id": "225:2137",
+          "text": "Workspace members",
+          "width": 1030,
+          "height": 26,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "225:2184",
+          "text": "Invitations",
+          "width": 1030,
+          "height": 26,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "228:3669",
+      "name": "State=File, Theme=Dark",
+      "explicitModes": [
+        {
+          "id": "228:3669",
+          "name": "State=File, Theme=Dark",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:3685",
+          "name": "outline / Choose file",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "228:3689",
+          "name": "ghost / Download sample",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        }
+      ],
+      "textGeometry": [
+        {
+          "id": "232:3837",
+          "text": "Import customers",
+          "width": 1030,
+          "height": 26,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "228:3680",
+          "text": "Choose a CSV file",
+          "width": 980,
+          "height": 26,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "232:3912",
+      "name": "State=Default, Theme=Dark",
+      "explicitModes": [
+        {
+          "id": "232:3912",
+          "name": "State=Default, Theme=Dark",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "232:3917",
+          "name": "input / Aureform Studio",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "232:3920",
+          "name": "input / aureform-studio",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "232:3923",
+          "name": "textarea / A shared space for product operations.",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "232:3927",
+          "name": "outline / Reset changes",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        },
+        {
+          "id": "232:3931",
+          "name": "button / Save workspace",
+          "modes": {
+            "VariableCollectionId:2:36": "2:2"
+          }
+        }
+      ],
+      "textGeometry": [
+        {
+          "id": "232:3914",
+          "text": "Workspace details",
+          "width": 974,
+          "height": 26,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "232:3936",
+          "text": "Aureform",
+          "width": 974,
+          "height": 26,
+          "autoResize": "HEIGHT",
+          "layoutSizingVertical": "HUG",
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.09019608050584793,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:95:578"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "id": "231:3789",
+      "name": "Navigation/Overview",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:6",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Overview"
+        },
+        "State": {
+          "value": "Active",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:138",
+      "label": "Overview"
+    },
+    {
+      "id": "231:3866",
+      "name": "Navigation/Get started",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:43",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Get started"
+        },
+        "State": {
+          "value": "Active",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:138",
+      "label": "Get started"
+    },
+    {
+      "id": "231:3790",
+      "name": "Navigation/Analytics",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:12",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Analytics"
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134",
+      "label": "Analytics"
+    },
+    {
+      "id": "231:3791",
+      "name": "Navigation/AI workspace",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:15",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "AI workspace"
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134",
+      "label": "AI workspace"
+    },
+    {
+      "id": "231:3792",
+      "name": "Navigation/Customers",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:18",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Customers"
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134",
+      "label": "Customers"
+    },
+    {
+      "id": "231:3874",
+      "name": "Navigation/Import data",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1562",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Import data"
+        },
+        "State": {
+          "value": "Active",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:138",
+      "label": "Import data"
+    },
+    {
+      "id": "231:3795",
+      "name": "Navigation/Components",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:23",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Components"
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134",
+      "label": "Components"
+    },
+    {
+      "id": "231:3796",
+      "name": "Navigation/Blocks",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:23",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Blocks"
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134",
+      "label": "Blocks"
+    },
+    {
+      "id": "231:3797",
+      "name": "Navigation/Templates",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:6",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Templates"
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134",
+      "label": "Templates"
+    },
+    {
+      "id": "232:3869",
+      "name": "Navigation/Appearance Studio",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:6",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Appearance Studio"
+        },
+        "State": {
+          "value": "Active",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:138",
+      "label": "Appearance Studio"
+    },
+    {
+      "id": "232:3876",
+      "name": "Navigation/Effects",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:6",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Effects"
+        },
+        "State": {
+          "value": "Active",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:138",
+      "label": "Effects"
+    },
+    {
+      "id": "231:3798",
+      "name": "Navigation/Documentation",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:26",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Documentation"
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134",
+      "label": "Documentation"
+    },
+    {
+      "id": "231:3801",
+      "name": "SidebarItem",
+      "properties": {
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Task board"
+        },
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1540",
+          "preferredValues": []
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134"
+    },
+    {
+      "id": "231:3802",
+      "name": "SidebarItem",
+      "properties": {
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Calendar"
+        },
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1546",
+          "preferredValues": []
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134"
+    },
+    {
+      "id": "231:3803",
+      "name": "SidebarItem",
+      "properties": {
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Inbox"
+        },
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1558",
+          "preferredValues": []
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134"
+    },
+    {
+      "id": "231:3804",
+      "name": "SidebarItem",
+      "properties": {
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Files"
+        },
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1562",
+          "preferredValues": []
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134"
+    },
+    {
+      "id": "231:3805",
+      "name": "SidebarItem",
+      "properties": {
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Products"
+        },
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1565",
+          "preferredValues": []
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134"
+    },
+    {
+      "id": "231:3806",
+      "name": "SidebarItem",
+      "properties": {
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Orders"
+        },
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1571",
+          "preferredValues": []
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134"
+    },
+    {
+      "id": "231:3807",
+      "name": "SidebarItem",
+      "properties": {
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Invoices"
+        },
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1576",
+          "preferredValues": []
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134"
+    },
+    {
+      "id": "231:3808",
+      "name": "SidebarItem",
+      "properties": {
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Maps"
+        },
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1580",
+          "preferredValues": []
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134"
+    },
+    {
+      "id": "231:3809",
+      "name": "SidebarItem",
+      "properties": {
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Support"
+        },
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "38:1584",
+          "preferredValues": []
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134"
+    },
+    {
+      "id": "231:3883",
+      "name": "Navigation/Workspace",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:6",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Workspace"
+        },
+        "State": {
+          "value": "Active",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:138",
+      "label": "Workspace"
+    },
+    {
+      "id": "231:3812",
+      "name": "Navigation/Settings",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:29",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Settings"
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134",
+      "label": "Settings"
+    },
+    {
+      "id": "231:3813",
+      "name": "Navigation/Team",
+      "properties": {
+        "Icon#3:98": {
+          "type": "INSTANCE_SWAP",
+          "value": "9:18",
+          "preferredValues": []
+        },
+        "Label#3:95": {
+          "type": "TEXT",
+          "value": "Team"
+        },
+        "State": {
+          "value": "Default",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "mainId": "3:134",
+      "label": "Team"
+    }
+  ],
+  "titles": [
+    {
+      "id": "I228:1875;162:760",
+      "name": "Toolbar / title",
+      "text": "Customer directory",
+      "w": 100,
+      "h": 24,
+      "parent": {
+        "id": "I228:1875;162:759",
+        "name": "Toolbar / title and count",
+        "w": 1090,
+        "h": 24,
+        "layoutMode": "HORIZONTAL",
+        "primary": "FIXED",
+        "counter": "FIXED"
+      }
+    }
+  ]
+}

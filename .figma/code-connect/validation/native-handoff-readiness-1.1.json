@@ -1,0 +1,41 @@
+{
+  "status": "ready-offcanvas-unexecuted",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "files": {
+    ".figma/scripts/buttons-1.1.js": {
+      "bytes": 38512,
+      "sha256": "18956057dcec948a6c45343d330b2e608ebddc7a00c82e4b9a76c297852bdfa6"
+    },
+    ".figma/scripts/cover-counts-1.1.js": {
+      "bytes": 9192,
+      "sha256": "ec2f62799ec0ca8931fe432f9c0f3ac35fb59bf06e3bbd00c82a460f32ef9aaa"
+    },
+    "src/components/templates/docs.tsx": {
+      "bytes": 49202,
+      "sha256": "bb986e0720531bd2dae743f488319c5ac332b80b7d189ec565d5e7d6bd9d8554"
+    }
+  },
+  "button": {
+    "pageId": "2:3",
+    "variants": 9,
+    "reviewFrames": 2,
+    "examplesPerFrame": 27,
+    "responseBudgetBytes": 20000,
+    "testedMaxReturnBytesIncludingEscaping": 11929,
+    "checks": "syntax/source/schema/lossless-ID serialization passed"
+  },
+  "cover": {
+    "pageId": "2:2",
+    "rootIds": [
+      "27:2",
+      "27:46"
+    ],
+    "defaultAction": "preflight",
+    "nextOwnerAction": "Inspect actual returned text IDs and proposed edits, then use action apply after lease",
+    "checks": "syntax and EN/ES numeric/range-edit fixtures passed"
+  },
+  "nativeCallsPerformed": false,
+  "appDocsChanged": false,
+  "finalCodeConnectHashesRefreshed": false,
+  "hashScope": "Exact owner execution payloads and readonly docs.tsx only; not final source/Code Connect recertification"
+}

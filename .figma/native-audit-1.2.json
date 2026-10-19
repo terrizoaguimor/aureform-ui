@@ -1,0 +1,1852 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "status": "passed-native-structure-and-visual-review",
+  "phase": "composite-1.2-native-checkpoint",
+  "checkedAt": "2026-10-19T14:49:20.610609+00:00",
+  "stateSha256": "8be9d3c1c46565296bd90c43f086b3d7159889c48167ab48d1d5f88e415b1963",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "inspection": "Composite evidence: unchanged route IDs retain accepted 1.1 reads and visual proofs; the six SaaS routes and nine sets have fresh actual Figma Plugin API reads and owner-reviewed native exports.",
+  "summary": {
+    "routeRoots": 69,
+    "inheritedRouteRoots": 63,
+    "freshSaasRoutes": 6,
+    "freshSaasModeRoots": 12,
+    "freshComponentSets": 9,
+    "freshVariants": 68,
+    "linkedReviewInstances": 68,
+    "acceptedExports": 22,
+    "freshImageFillNodes": 0,
+    "freshMissingFonts": 0,
+    "fontFamilies": ["Manrope"],
+    "boundPaintsInScopedComponents": 5925,
+    "variables": 714,
+    "variableCollections": 8,
+    "invalidScopes": 0,
+    "invalidWebSyntax": 0,
+    "textStyles": 14,
+    "paintStyles": 36,
+    "gradientPaintStyles": 36,
+    "effectStyles": 6
+  },
+  "routes": [
+    {
+      "route": "dashboard",
+      "nodeId": "5:2",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1787.300048828125,
+      "inspectedNodes": 739,
+      "texts": 235,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "ai",
+      "nodeId": "5:4",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1219.5,
+      "inspectedNodes": 529,
+      "texts": 148,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "analytics",
+      "nodeId": "53:494",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 279,
+      "texts": 90,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "ai/code",
+      "nodeId": "53:1044",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 204,
+      "texts": 54,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "ai/playground",
+      "nodeId": "53:1272",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 222,
+      "texts": 62,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "docs",
+      "nodeId": "54:1108",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 230,
+      "texts": 60,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "docs/tokens",
+      "nodeId": "54:1451",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 2030,
+      "inspectedNodes": 273,
+      "texts": 79,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "docs/cli",
+      "nodeId": "54:1764",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 230,
+      "texts": 60,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "docs/figma",
+      "nodeId": "54:2045",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 230,
+      "texts": 59,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "docs/adapters",
+      "nodeId": "54:2325",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 227,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "docs/accessibility",
+      "nodeId": "54:2600",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 226,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "docs/license",
+      "nodeId": "54:2873",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 229,
+      "texts": 59,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "docs/roadmap",
+      "nodeId": "54:3151",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1720,
+      "inspectedNodes": 235,
+      "texts": 63,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "components",
+      "nodeId": "59:2549",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 9785,
+      "inspectedNodes": 1300,
+      "texts": 439,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "forms",
+      "nodeId": "59:2725",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 248,
+      "texts": 68,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "charts",
+      "nodeId": "59:2901",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 3023.890625,
+      "inspectedNodes": 2472,
+      "texts": 700,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "media",
+      "nodeId": "59:3077",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1648.77490234375,
+      "inspectedNodes": 278,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "layouts",
+      "nodeId": "59:3253",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 234,
+      "texts": 51,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "blocks",
+      "nodeId": "59:3429",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 2431,
+      "inspectedNodes": 372,
+      "texts": 130,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "templates",
+      "nodeId": "59:3605",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 5501,
+      "inspectedNodes": 10548,
+      "texts": 3299,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "crm",
+      "nodeId": "39:24",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 297,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "ecommerce",
+      "nodeId": "39:730",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 345,
+      "texts": 114,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "sales",
+      "nodeId": "39:1132",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 297,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "marketing",
+      "nodeId": "39:1521",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 353,
+      "texts": 114,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "logistics",
+      "nodeId": "39:1923",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 287,
+      "texts": 100,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "finance",
+      "nodeId": "39:2310",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 345,
+      "texts": 114,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "stocks",
+      "nodeId": "39:2702",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 100,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "products",
+      "nodeId": "41:2363",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "orders",
+      "nodeId": "41:2816",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "invoices",
+      "nodeId": "41:3207",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "transactions",
+      "nodeId": "41:3597",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 280,
+      "texts": 99,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "tasks",
+      "nodeId": "41:3982",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 288,
+      "texts": 94,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "pipeline",
+      "nodeId": "41:4387",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 295,
+      "texts": 98,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "task-list",
+      "nodeId": "41:4794",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 234,
+      "texts": 77,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "calendar",
+      "nodeId": "41:5151",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 384,
+      "texts": 142,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "mail",
+      "nodeId": "45:4589",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 231,
+      "texts": 67,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "chat",
+      "nodeId": "45:5003",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 247,
+      "texts": 74,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "files",
+      "nodeId": "45:5363",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 250,
+      "texts": 61,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "support",
+      "nodeId": "45:5707",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 263,
+      "texts": 92,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "maps",
+      "nodeId": "45:6076",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 250,
+      "texts": 66,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "invoice",
+      "nodeId": "45:6451",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 213,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "ai/images",
+      "nodeId": "45:6768",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 221,
+      "texts": 58,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "ai/video",
+      "nodeId": "45:7088",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 215,
+      "texts": 56,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "settings/profile",
+      "nodeId": "48:6454",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 242,
+      "texts": 66,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "settings/preferences",
+      "nodeId": "48:7128",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 251,
+      "texts": 64,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "settings/billing",
+      "nodeId": "48:7437",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 246,
+      "texts": 71,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "settings/api-keys",
+      "nodeId": "48:7753",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 223,
+      "texts": 57,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "settings/integrations",
+      "nodeId": "48:8021",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 258,
+      "texts": 72,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "auth/sign-in",
+      "nodeId": "52:7472",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 156,
+      "texts": 50,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "auth/sign-up",
+      "nodeId": "52:7509",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1003.9000244140625,
+      "inspectedNodes": 163,
+      "texts": 52,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "auth/reset-password",
+      "nodeId": "52:7551",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 145,
+      "texts": 46,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "auth/verify",
+      "nodeId": "52:7581",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 157,
+      "texts": 51,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "status/not-found",
+      "nodeId": "52:7622",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 25,
+      "texts": 8,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "status/error",
+      "nodeId": "52:7650",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 29,
+      "texts": 9,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "status/maintenance",
+      "nodeId": "52:7684",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 27,
+      "texts": 7,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "status/coming-soon",
+      "nodeId": "52:7713",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 36,
+      "texts": 11,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "status/success",
+      "nodeId": "52:7751",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1000,
+      "inspectedNodes": 27,
+      "texts": 7,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "pricing",
+      "nodeId": "55:7541",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 221,
+      "texts": 70,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "faq",
+      "nodeId": "55:7856",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 1380,
+      "inspectedNodes": 194,
+      "texts": 50,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "",
+      "nodeId": "55:8072",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 4882.7998046875,
+      "inspectedNodes": 624,
+      "texts": 212,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "studio",
+      "nodeId": "134:8412",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 2429,
+      "inspectedNodes": 1258,
+      "texts": 309,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "themes",
+      "nodeId": "135:8894",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 3067,
+      "inspectedNodes": 2634,
+      "texts": 581,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "effects",
+      "nodeId": "136:9476",
+      "pageId": "2:6",
+      "width": 1440,
+      "height": 3298,
+      "inspectedNodes": 1259,
+      "texts": 266,
+      "imageFillNodes": 0,
+      "fontFamilies": ["Manrope"],
+      "mode": ["2:2", "2:2"],
+      "preserved": {
+        "mono": 0,
+        "editorial": 0,
+        "light": 0
+      },
+      "evidence": "inherited-accepted-1.1",
+      "audit": ".figma/native-audit.json"
+    },
+    {
+      "route": "onboarding",
+      "nodeId": "237:16692",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "modeNodes": {
+        "Light": "237:16428",
+        "Dark": "237:16692"
+      },
+      "evidence": "fresh-native-1.2-light-dark",
+      "nativeRead": ".figma/native-saas-views-1.2.json",
+      "visualApproval": ".figma/proofs/saas-1.2/owner-visual-approval.json"
+    },
+    {
+      "route": "settings/workspace",
+      "nodeId": "237:17079",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "modeNodes": {
+        "Light": "237:16887",
+        "Dark": "237:17079"
+      },
+      "evidence": "fresh-native-1.2-light-dark",
+      "nativeRead": ".figma/native-saas-views-1.2.json",
+      "visualApproval": ".figma/proofs/saas-1.2/owner-visual-approval.json"
+    },
+    {
+      "route": "customers/detail",
+      "nodeId": "237:17522",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1293,
+      "modeNodes": {
+        "Light": "237:17271",
+        "Dark": "237:17522"
+      },
+      "evidence": "fresh-native-1.2-light-dark",
+      "nativeRead": ".figma/native-saas-views-1.2.json",
+      "visualApproval": ".figma/proofs/saas-1.2/owner-visual-approval.json"
+    },
+    {
+      "route": "imports",
+      "nodeId": "237:17965",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "modeNodes": {
+        "Light": "237:17773",
+        "Dark": "237:17965"
+      },
+      "evidence": "fresh-native-1.2-light-dark",
+      "nativeRead": ".figma/native-saas-views-1.2.json",
+      "visualApproval": ".figma/proofs/saas-1.2/owner-visual-approval.json"
+    },
+    {
+      "route": "customers",
+      "nodeId": "237:18891",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1240,
+      "modeNodes": {
+        "Light": "237:18156",
+        "Dark": "237:18891"
+      },
+      "evidence": "fresh-native-1.2-light-dark",
+      "nativeRead": ".figma/native-saas-views-1.2.json",
+      "visualApproval": ".figma/proofs/saas-1.2/owner-visual-approval.json"
+    },
+    {
+      "route": "settings/team",
+      "nodeId": "237:19873",
+      "pageId": "2:5",
+      "width": 1440,
+      "height": 1362,
+      "modeNodes": {
+        "Light": "237:19625",
+        "Dark": "237:19873"
+      },
+      "evidence": "fresh-native-1.2-light-dark",
+      "nativeRead": ".figma/native-saas-views-1.2.json",
+      "visualApproval": ".figma/proofs/saas-1.2/owner-visual-approval.json"
+    }
+  ],
+  "proof": {
+    "historicalCheckpoint": {
+      "version": "1.1.0",
+      "audit": {
+        "path": ".figma/native-audit.json",
+        "sha256": "90c2e146740297bcac89fec935356431786f0d06e184d28194b98209eb4eecc5"
+      },
+      "state": {
+        "path": ".figma/history/state-1.1-final.json",
+        "sha256": "7520e555c299b0978de6837e2f504271117a8e563a7538683cd61fc043c1aa52"
+      },
+      "acceptedUnchangedRoutes": 63,
+      "supersededRoutes": ["customers", "settings/team"],
+      "codeConnectManifest": {
+        "path": ".figma/history/code-connect-manifest-1.1-final.json",
+        "sha256": "618a0e2d6f871793ddcb3d5d717e7c398fe2fbd352b4b5737a7e8a8b1337815c"
+      },
+      "codeConnectValidation": {
+        "path": ".figma/history/code-connect-validation-1.1-final.json",
+        "sha256": "635f0f197129bbe20fe2219e2789c6b370a52c6168b1c3f0e635eb375c4f6329"
+      }
+    },
+    "nativeReads": [
+      {
+        "completedAt": "2026-10-19T14:36:56.068Z",
+        "callId": "call_dc9c9e4a6db954f79d690c3432bb8f2c",
+        "decoded": {
+          "path": ".figma/native-saas-structure-1.2.json",
+          "sha256": "28d4bd281246e608c29625e5871f97cb2a8eab51b5aefcff95ccb83ab16e33c3"
+        },
+        "rawReturn": {
+          "path": ".figma/journals/saas-1.2/32.native-return.json",
+          "sha256": "28d4bd281246e608c29625e5871f97cb2a8eab51b5aefcff95ccb83ab16e33c3"
+        },
+        "executedCode": {
+          "path": ".figma/journals/saas-1.2/32.executed.js",
+          "sha256": "d9a5027517e034a69a7d1e1435b2f4621acddcc7970ad64817a93cbf0a7793bf"
+        }
+      },
+      {
+        "completedAt": "2026-10-19T14:38:24.524Z",
+        "callId": "call_6660facb03eb5ab09314ff3e8aa8b248",
+        "decoded": {
+          "path": ".figma/native-saas-views-1.2.json",
+          "sha256": "d6ca9a48c230b3fd5b11974b10b4f54758e99a439575bcdf686067ce668af158"
+        },
+        "rawReturn": {
+          "path": ".figma/journals/saas-1.2/33.native-return.json",
+          "sha256": "d6ca9a48c230b3fd5b11974b10b4f54758e99a439575bcdf686067ce668af158"
+        },
+        "executedCode": {
+          "path": ".figma/journals/saas-1.2/33.executed.js",
+          "sha256": "468f847da3b4dff01d03253ac04002784427aee2adb4de78ecdf651b6bf6d0e0"
+        }
+      }
+    ],
+    "visualApproval": {
+      "path": ".figma/proofs/saas-1.2/owner-visual-approval.json",
+      "sha256": "c20c9201ffe178b9273022629bc1874e1b0aea74600ffe1c116b01ef9e054222"
+    },
+    "exportManifest": {
+      "path": ".figma/proofs/saas-1.2/export-manifest.json",
+      "sha256": "dc82d75001af99c422e3e49b9168544a3e5d4e073697cd292f37e20a582f4192"
+    },
+    "sourceAssociations": {
+      "path": ".figma/native-saas-source-associations-1.2.json",
+      "sha256": "f5fdfa858d463a280241a5eb40047e65f3b36c5f7ebb7e823766d2c9eece4ab5"
+    },
+    "nativeLibrary": {
+      "path": ".figma/native-saas-library-1.2.json",
+      "sha256": "9cd3f2be340f4497f9cf4766bd31e72da83064b32e9bfffe1d2d70b400321202"
+    },
+    "constructionLedger": {
+      "path": ".figma/journals/saas-1.2-construction.json",
+      "sha256": "22a84a05cb9836834a1822ab547a1d00ba0d4436b37c19711441f83ad7d9b996"
+    },
+    "reviewBatches": [
+      {
+        "label": "Six SaaS routes in Light and Dark",
+        "result": "approved",
+        "recordedAt": "2026-10-19T14:48:35.314296+00:00",
+        "routeCount": 6,
+        "modeRootCount": 12,
+        "visualProofs": [
+          {
+            "nodeId": "237:16428",
+            "path": ".figma/proofs/saas-1.2/onboarding-light.png",
+            "sha256": "369e6b7e9737d1441837543ce4b18b116ecc36024d55ab243d17e28cf22c3423",
+            "bytes": 203117,
+            "dimensions": {
+              "width": 1440,
+              "height": 1240
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1240
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:16692",
+            "path": ".figma/proofs/saas-1.2/onboarding-dark.png",
+            "sha256": "1d0de87e646dd103be45f3429543e9d9ad247d7ba6078a38c2cde6d7822cf758",
+            "bytes": 234801,
+            "dimensions": {
+              "width": 1440,
+              "height": 1240
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1240
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:16887",
+            "path": ".figma/proofs/saas-1.2/workspace-light.png",
+            "sha256": "e16dbc84060dde97e0e89103477cc79d501133d47fcba796e7a6c68e0a48448f",
+            "bytes": 175367,
+            "dimensions": {
+              "width": 1440,
+              "height": 1240
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1240
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:17079",
+            "path": ".figma/proofs/saas-1.2/workspace-dark.png",
+            "sha256": "6145814c08972c350ccbeada3ee088e4d37c6f99b7d04e2650b134b45a384fb6",
+            "bytes": 200293,
+            "dimensions": {
+              "width": 1440,
+              "height": 1240
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1240
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:17271",
+            "path": ".figma/proofs/saas-1.2/detail-light.png",
+            "sha256": "f2c677c32feb8de29d383364e2421730560a15f4f5610414207b3f8c8da0e4d2",
+            "bytes": 243533,
+            "dimensions": {
+              "width": 1440,
+              "height": 1293
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1293
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:17522",
+            "path": ".figma/proofs/saas-1.2/detail-dark.png",
+            "sha256": "40561dd5528d867ff2b703e1f75ca23c5d7a0379d916bb172e60e94c0eb03df4",
+            "bytes": 287600,
+            "dimensions": {
+              "width": 1440,
+              "height": 1293
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1293
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:17773",
+            "path": ".figma/proofs/saas-1.2/imports-light.png",
+            "sha256": "a721f8fc2e3b1ea5d2422de78283ea7630e59c3a062c37b819b902c4720d6430",
+            "bytes": 256382,
+            "dimensions": {
+              "width": 1440,
+              "height": 1240
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1240
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:17965",
+            "path": ".figma/proofs/saas-1.2/imports-dark.png",
+            "sha256": "1a7c7e88a792de64c4807a4f60262d2ff299019607f955cf4f0ff8856c725ae5",
+            "bytes": 293833,
+            "dimensions": {
+              "width": 1440,
+              "height": 1240
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1240
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:18156",
+            "path": ".figma/proofs/saas-1.2/customers-light.png",
+            "sha256": "585fe82490ba71f5972cb492c42cadcc0da2c0115fe0549c9c1c4395f09e2ee7",
+            "bytes": 192232,
+            "dimensions": {
+              "width": 1440,
+              "height": 1240
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1240
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:18891",
+            "path": ".figma/proofs/saas-1.2/customers-dark.png",
+            "sha256": "cd024f95be45bda683337a6e8210530458c0832dadc8b0dc2c94ac713665e635",
+            "bytes": 224270,
+            "dimensions": {
+              "width": 1440,
+              "height": 1240
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1240
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:19625",
+            "path": ".figma/proofs/saas-1.2/team-light.png",
+            "sha256": "0d022664c632199a86dcb96a2d84cfaacd56af51add094ed7b0843cde010fa61",
+            "bytes": 269424,
+            "dimensions": {
+              "width": 1440,
+              "height": 1362
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1362
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "237:19873",
+            "path": ".figma/proofs/saas-1.2/team-dark.png",
+            "sha256": "c4e22556d531465aa03c94078fe361d7aca6922db9aa7788be013420ec4c0afb",
+            "bytes": 316376,
+            "dimensions": {
+              "width": 1440,
+              "height": 1362
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 1362
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          }
+        ]
+      },
+      {
+        "label": "Nine native component sets and all 68 linked variant states",
+        "result": "approved",
+        "recordedAt": "2026-10-19T14:48:35.314296+00:00",
+        "componentSets": 9,
+        "linkedVariantInstances": 68,
+        "visualProofs": [
+          {
+            "nodeId": "246:6620",
+            "path": ".figma/proofs/saas-1.2/component-workspace-status.png",
+            "sha256": "21794b66305a3b73060e4459a2c262228d213856a6e6340a0fab8675626675a1",
+            "bytes": 105849,
+            "dimensions": {
+              "width": 2256,
+              "height": 712
+            },
+            "nativeBounds": {
+              "width": 2256,
+              "height": 712
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "246:6722",
+            "path": ".figma/proofs/saas-1.2/component-onboarding-flow.png",
+            "sha256": "3345f62693693ae019365c445d09e7665c6fd7b498b57ea45fa4e2c2e8c83350",
+            "bytes": 1442532,
+            "dimensions": {
+              "width": 2256,
+              "height": 2455
+            },
+            "nativeBounds": {
+              "width": 2256,
+              "height": 2455
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "246:7084",
+            "path": ".figma/proofs/saas-1.2/component-member-management.png",
+            "sha256": "fd07e9030c8f40d708159f8ce95ba497d27c850349ce6a13196a0d1de75be306",
+            "bytes": 1315443,
+            "dimensions": {
+              "width": 2256,
+              "height": 3342
+            },
+            "nativeBounds": {
+              "width": 2256,
+              "height": 3342
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "246:7491",
+            "path": ".figma/proofs/saas-1.2/component-data-workbench.png",
+            "sha256": "644c1dc3d6133bfca88780735919d606fa6aee8c5d3b8558c753f27fde73fdf9",
+            "bytes": 530771,
+            "dimensions": {
+              "width": 2256,
+              "height": 3146
+            },
+            "nativeBounds": {
+              "width": 2256,
+              "height": 3146
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "246:9037",
+            "path": ".figma/proofs/saas-1.2/component-import-wizard.png",
+            "sha256": "abcb3b72e0d26ab68f7dd09717ff989219273cf5b73f4d9829ac3ad40b90ed1c",
+            "bytes": 1099824,
+            "dimensions": {
+              "width": 2196,
+              "height": 4096
+            },
+            "nativeBounds": {
+              "width": 2256,
+              "height": 4209
+            },
+            "exportScale": {
+              "x": 0.973404255319149,
+              "y": 0.9731527678783559
+            }
+          },
+          {
+            "nodeId": "246:9552",
+            "path": ".figma/proofs/saas-1.2/component-record-detail.png",
+            "sha256": "eba0c66ccc8ace22ce4d9e7d871c8ede7ca562d75e129a2744be6286a86a07c6",
+            "bytes": 1516926,
+            "dimensions": {
+              "width": 2170,
+              "height": 4096
+            },
+            "nativeBounds": {
+              "width": 2256,
+              "height": 4260
+            },
+            "exportScale": {
+              "x": 0.9618794326241135,
+              "y": 0.9615023474178404
+            }
+          },
+          {
+            "nodeId": "246:10211",
+            "path": ".figma/proofs/saas-1.2/component-workspace-settings.png",
+            "sha256": "cbf2c73b6d861d9d01a015ad51bcafda3dbce869078b110aef402719f79a3f47",
+            "bytes": 211661,
+            "dimensions": {
+              "width": 2144,
+              "height": 876
+            },
+            "nativeBounds": {
+              "width": 2144,
+              "height": 876
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "246:10269",
+            "path": ".figma/proofs/saas-1.2/component-row-actions.png",
+            "sha256": "57ae8a87157c257d7ab2c8812b93cb200519e18544263d08d6e54692e0c1d237",
+            "bytes": 54973,
+            "dimensions": {
+              "width": 976,
+              "height": 715
+            },
+            "nativeBounds": {
+              "width": 976,
+              "height": 715
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "nodeId": "246:10322",
+            "path": ".figma/proofs/saas-1.2/component-delete-dialog.png",
+            "sha256": "a2e2549015be5389d4a2f65eb336c583ebc3c60083a8c5079e1c09229fbf706f",
+            "bytes": 63845,
+            "dimensions": {
+              "width": 976,
+              "height": 704
+            },
+            "nativeBounds": {
+              "width": 976,
+              "height": 704
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          }
+        ]
+      },
+      {
+        "label": "Release cover 1.2 / 68 suite routes",
+        "result": "approved",
+        "recordedAt": "2026-10-19T14:48:35.314296+00:00",
+        "visualProofs": [
+          {
+            "nodeId": "27:2",
+            "path": ".figma/proofs/saas-1.2/cover-1.2.png",
+            "sha256": "b3a5292ee727e735b2f4b9b9e5de706b800068996c454a73281fbbeef9e4f74a",
+            "bytes": 95802,
+            "dimensions": {
+              "width": 1440,
+              "height": 960
+            },
+            "nativeBounds": {
+              "width": 1440,
+              "height": 960
+            },
+            "exportScale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          }
+        ]
+      }
+    ],
+    "captureCleanup": {
+      "nativeReferencesRemoved": ["221:59", "226:59", "227:59", "223:59"],
+      "removedNodeCount": 1819,
+      "executionReturn": {
+        "path": ".figma/journals/saas-1.2/35.native-return.json",
+        "sha256": "910ecacc3a9f14b1bb1bcea0d6b3e655be2a131384e8d608c4cd50031f96a52d"
+      }
+    },
+    "intentionalExceptions": [],
+    "codeConnect": {
+      "manifest": {
+        "path": ".figma/code-connect-manifest.json",
+        "sha256": "a9fdc79f909ac07426247054ed6fac27e53e00109abd4c24a36069c608ec47a0"
+      },
+      "report": {
+        "path": ".figma/code-connect/validation/validation-summary.json",
+        "sha256": "2bc64b7e29dc3bc77fd97fb69ecbfe062e2999cf1de15433ca77eb3d8608750b"
+      },
+      "status": "passed-local-smoke",
+      "templateCheckpointVersion": "1.1.0",
+      "sourceValidationVersion": "1.2.0",
+      "preservedTemplates": 92,
+      "sourceSnapshots": 98,
+      "uniqueTypedExamples": 556,
+      "diagnostics": 0,
+      "runtime": "synthetic-figma-stub",
+      "liveFigmaRuntimeTested": false,
+      "cloudRegistered": false
+    }
+  },
+  "limits": [
+    "Native SaaS compositions use the base Violet palette in Light and Dark. Browser palette coverage is separate.",
+    "This is a fresh review of six SaaS routes and nine component sets. The other 63 route roots retain accepted 1.1 evidence.",
+    "Figma exported two tall review boards below their native dimensions; accepted exports preserve those actual dimensions and pixels.",
+    "No Code Connect cloud registration or library publication was performed.",
+    "The accepted composite has 69 route roots, with 12 fresh Light/Dark compositions for six scoped routes; it is not a new visual review of every legacy route or every palette.",
+    "Native IDs, reads and exports demonstrate editable structure and reviewed visuals. Frontend runtime, accessibility and consumer installation are tested separately."
+  ]
+}
