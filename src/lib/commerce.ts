@@ -23,6 +23,9 @@ export type CommerceProduct = {
   inventory: number;
   images: ProductImage[];
   tags: string[];
+  /** Optional display references; the backend owns the actual provider mapping. */
+  providerProductId?: string;
+  providerPriceId?: string;
   stripeProductId?: string;
   stripePriceId?: string;
   updatedAt: string;
@@ -46,6 +49,7 @@ export type CommerceOrder = {
   items: OrderLine[];
   createdAt: string;
   shippingAddress: string;
+  providerSessionId?: string;
   stripeSessionId?: string;
 };
 export type CommerceInvoice = {
@@ -59,6 +63,7 @@ export type CommerceInvoice = {
   status: "draft" | "open" | "paid" | "overdue" | "void";
   issuedAt: string;
   dueAt: string;
+  providerInvoiceId?: string;
   stripeInvoiceId?: string;
 };
 export type CommerceBilling = {
@@ -69,8 +74,10 @@ export type CommerceBilling = {
   interval: "month" | "year";
   currentPeriodEnd: string;
   cardBrand: string;
+  /** Empty when the provider does not expose card details. */
   cardLast4: string;
   customerEmail: string;
+  providerCustomerId?: string;
   stripeCustomerId?: string;
 };
 export type CommerceSnapshot = {
@@ -102,10 +109,15 @@ export type CommerceAction =
   | { mode: "mock"; kind: CheckoutRequest["kind"] | "portal"; id: string }
   | { mode: "redirect"; url: string };
 export type CommerceScope = { workspaceId: string; signal?: AbortSignal };
+export type CommerceProviderIdentity = { id: string; label: string };
 
 /** Implement this contract on your own authenticated backend. */
 export type CommerceAdapter = {
-  mode: "stripe";
+  mode: "stripe" | "provider";
+  /** Legacy Stripe adapters can omit these fields and retain their old policy. */
+  provider?: CommerceProviderIdentity;
+  /** Required for provider mode; exact HTTPS origins, with no wildcard hosts. */
+  trustedRedirectOrigins?: readonly string[];
   load: (scope: CommerceScope) => Promise<CommerceSnapshot>;
   saveProduct: (
     product: CommerceProduct,
@@ -142,7 +154,8 @@ export type CommerceAdapter = {
 export type CommerceContextValue = CommerceSnapshot & {
   ready: boolean;
   busy: string | null;
-  mode: "mock" | "stripe";
+  mode: "mock" | CommerceAdapter["mode"];
+  provider?: CommerceProviderIdentity;
   error: CommerceError | null;
   persistenceError: "read" | "write" | "invalid" | null;
   canWrite: boolean;
@@ -167,6 +180,20 @@ export type CommerceContextValue = CommerceSnapshot & {
     outcome: "paid" | "failed",
   ) => Promise<void>;
 };
+
+/** Shared by connected views; legacy Stripe contexts keep their display name. */
+export function getCommerceProviderLabel(
+  value: Pick<CommerceContextValue, "mode" | "provider">,
+) {
+  return (
+    value.provider?.label ??
+    (value.mode === "mock"
+      ? "Demo"
+      : value.mode === "stripe"
+        ? "Stripe"
+        : "Commerce")
+  );
+}
 
 const integerAmount = z.number().int().nonnegative().max(100_000_000);
 const identifier = z.string().trim().min(1).max(100);
@@ -205,6 +232,8 @@ export const commerceProductSchema = z.object({
   inventory: z.number().int().nonnegative().max(1_000_000),
   images: z.array(productImageSchema).max(6),
   tags: z.array(z.string().trim().min(1).max(40)).max(12),
+  providerProductId: identifier.optional(),
+  providerPriceId: identifier.optional(),
   stripeProductId: identifier.optional(),
   stripePriceId: identifier.optional(),
   updatedAt: z.iso.datetime(),
@@ -228,6 +257,7 @@ export const commerceOrderSchema = z.object({
   items: z.array(orderLineSchema).min(1).max(50),
   createdAt: z.iso.datetime(),
   shippingAddress: z.string().max(500),
+  providerSessionId: identifier.optional(),
   stripeSessionId: identifier.optional(),
 });
 export const commerceInvoiceSchema = z.object({
@@ -241,6 +271,7 @@ export const commerceInvoiceSchema = z.object({
   status: z.enum(["draft", "open", "paid", "overdue", "void"]),
   issuedAt: z.iso.datetime(),
   dueAt: z.iso.datetime(),
+  providerInvoiceId: identifier.optional(),
   stripeInvoiceId: identifier.optional(),
 });
 export const commerceBillingSchema = z.object({
@@ -251,8 +282,9 @@ export const commerceBillingSchema = z.object({
   interval: z.enum(["month", "year"]),
   currentPeriodEnd: z.iso.datetime(),
   cardBrand: z.string().min(1).max(40),
-  cardLast4: z.string().regex(/^\d{4}$/),
+  cardLast4: z.string().regex(/^(?:\d{4})?$/),
   customerEmail: z.email(),
+  providerCustomerId: identifier.optional(),
   stripeCustomerId: identifier.optional(),
 });
 export const commerceSnapshotSchema = z.object({

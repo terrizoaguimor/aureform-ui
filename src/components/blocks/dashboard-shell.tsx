@@ -32,6 +32,7 @@ import {
   LogIn,
   UserPlus,
   KeyRound,
+  Plug,
 } from "lucide-react";
 import { Brand } from "@/components/brand";
 import { AppearanceControls } from "@/components/appearance-controls";
@@ -41,7 +42,8 @@ import { Button } from "@/components/ui/button";
 import { Avatar } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import { Command } from "@/components/ui/command";
+import { SearchBridgeCommand } from "@/components/integrations/search-bridge-command";
+import type { ShellSearchAdapter } from "@/lib/integrations/search-bridge";
 import {
   Drawer,
   DrawerContent,
@@ -83,15 +85,18 @@ import { toast } from "sonner";
 
 export type ShellLayout =
   "sidebar" | "compact" | "topbar" | "split" | "centered" | "floating";
+export type DashboardShellProps = {
+  children: ReactNode;
+  path: string;
+  layout?: ShellLayout;
+  searchAdapter?: ShellSearchAdapter;
+};
 export function DashboardShell({
   children,
   path,
   layout = "sidebar",
-}: {
-  children: ReactNode;
-  path: string;
-  layout?: ShellLayout;
-}) {
+  searchAdapter,
+}: DashboardShellProps) {
   const { locale, common: t, l } = useLanguage();
   const { theme, setTheme } = useTheme(),
     router = useRouter();
@@ -125,6 +130,12 @@ export function DashboardShell({
     window.addEventListener("keydown", listener);
     return () => window.removeEventListener("keydown", listener);
   }, []);
+  useEffect(() => {
+    setCommandSearch("");
+  }, [workspaceId, searchAdapter]);
+  useEffect(() => {
+    if (!command) setCommandSearch("");
+  }, [command]);
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
       const horizontal = navigationRef.current;
@@ -191,6 +202,7 @@ export function DashboardShell({
         ),
         link("customers", t("customers"), di("users")),
         link("imports", l("Import data", "Importar datos"), <Upload />),
+        link("integrations", l("Integrations", "Integraciones"), <Plug />),
       ],
     },
     {
@@ -769,7 +781,8 @@ export function DashboardShell({
           {sidebar(true)}
         </DrawerContent>
       </Drawer>
-      <Command
+      <SearchBridgeCommand
+        key={`${workspaceId}:${locale}`}
         open={command}
         onOpenChange={(open) => {
           setCommand(open);
@@ -781,6 +794,13 @@ export function DashboardShell({
         placeholder={t("search")}
         emptyLabel={t("empty")}
         closeLabel={t("close")}
+        workspaceId={workspaceId}
+        enabled={workspaceReady}
+        adapter={searchAdapter}
+        onNavigate={(target) => {
+          if (target.startsWith("/")) router.push(publicPath(target));
+          else window.location.assign(target);
+        }}
         items={[
           ...routes.map((route) => ({
             id: route.path,
@@ -800,30 +820,32 @@ export function DashboardShell({
               ),
             onSelect: () => router.push(href(route.path)),
           })),
-          ...customers
-            .filter((customer) => {
-              const haystack =
-                `${customer.name} ${customer.email} ${customer.company}`.toLocaleLowerCase(
-                  locale,
-                );
-              return commandSearch
-                .toLocaleLowerCase(locale)
-                .trim()
-                .split(/\s+/)
-                .every((term) => haystack.includes(term));
-            })
-            .slice(0, 50)
-            .map((customer) => ({
-              id: `customer-${customer.id}`,
-              label: customer.name,
-              group: t("customers"),
-              keywords: [customer.name, customer.email, customer.company],
-              icon: <DesignIcon name="users" />,
-              onSelect: () =>
-                router.push(
-                  `${href("customers/detail")}?id=${encodeURIComponent(customer.id)}`,
-                ),
-            })),
+          ...(searchAdapter
+            ? []
+            : customers
+                .filter((customer) => {
+                  const haystack =
+                    `${customer.name} ${customer.email} ${customer.company}`.toLocaleLowerCase(
+                      locale,
+                    );
+                  return commandSearch
+                    .toLocaleLowerCase(locale)
+                    .trim()
+                    .split(/\s+/)
+                    .every((term) => haystack.includes(term));
+                })
+                .slice(0, 50)
+                .map((customer) => ({
+                  id: `customer-${customer.id}`,
+                  label: customer.name,
+                  group: t("customers"),
+                  keywords: [customer.name, customer.email, customer.company],
+                  icon: <DesignIcon name="users" />,
+                  onSelect: () =>
+                    router.push(
+                      `${href("customers/detail")}?id=${encodeURIComponent(customer.id)}`,
+                    ),
+                }))),
         ]}
       />
       <Dialog open={resetOpen} onOpenChange={setResetOpen}>

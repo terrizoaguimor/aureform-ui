@@ -1,10 +1,112 @@
 {
   "schemaVersion": 1,
-  "version": "1.4.0",
-  "status": "source-handoff-retained-baseline-and-current-image-review",
+  "version": "1.5.0",
+  "status": "source-inventory-with-retained-native-checkpoints",
+  "sourceInventory": {
+    "version": "1.5.0",
+    "suiteRoutes": 134,
+    "views": 135,
+    "routeDataEvaluation": "restricted-TypeScript-data-AST",
+    "catalogInputs": [
+      {
+        "file": "src/lib/catalog.ts",
+        "sha256": "91254390aa554c6a34517731f6a679b0624cb10d16262bf4f9d9b4fd6152329a"
+      },
+      {
+        "file": "src/lib/integrations/route-index.ts",
+        "sha256": "41a4d87c9497b73d2510b1d9d5fc6b91998a673451607e6576481876af6e60b6"
+      }
+    ],
+    "deliveryCategories": {
+      "1.0": 23,
+      "1.1": 7,
+      "1.2": 12,
+      "1.3": 15,
+      "1.4": 11,
+      "1.5": 66
+    },
+    "sourceOnlyRoutes": [
+      "integrations",
+      "integrations/tanstack-query",
+      "integrations/supabase-data",
+      "integrations/better-auth",
+      "integrations/clerk",
+      "integrations/supabase-auth",
+      "integrations/authjs-nextauth",
+      "integrations/enterprise-identity",
+      "integrations/swr",
+      "integrations/neon-drizzle",
+      "integrations/prisma",
+      "integrations/firebase",
+      "integrations/convex",
+      "integrations/trpc",
+      "integrations/stripe",
+      "integrations/paddle",
+      "integrations/polar",
+      "integrations/lemon-squeezy",
+      "integrations/s3-r2-storage",
+      "integrations/supabase-storage",
+      "integrations/cloudinary",
+      "integrations/uploadthing",
+      "integrations/resend-react-email",
+      "integrations/email-delivery-alternatives",
+      "integrations/sentry",
+      "integrations/posthog",
+      "integrations/vercel-analytics",
+      "integrations/notification-inboxes",
+      "integrations/background-jobs",
+      "integrations/realtime-messaging",
+      "integrations/liveblocks",
+      "integrations/tiptap",
+      "integrations/lexical",
+      "integrations/blocknote",
+      "integrations/algolia",
+      "integrations/self-hostable-search",
+      "integrations/existing-maps",
+      "integrations/mapbox",
+      "integrations/ai-sdk",
+      "integrations/openai-responses",
+      "integrations/anthropic-messages",
+      "integrations/google-gemini",
+      "integrations/ai-gateways",
+      "integrations/pgvector",
+      "integrations/vector-stores",
+      "integrations/langfuse",
+      "integrations/alternative-ai-observability",
+      "integrations/mcp",
+      "integrations/cloudflare-agents",
+      "integrations/langgraph",
+      "integrations/openai-agents",
+      "integrations/slack",
+      "integrations/github-apps",
+      "integrations/google-drive",
+      "integrations/google-calendar",
+      "integrations/notion",
+      "integrations/microsoft-365",
+      "integrations/linear",
+      "integrations/jira",
+      "integrations/hubspot",
+      "integrations/zendesk",
+      "integrations/salesforce",
+      "integrations/oauth-brokers",
+      "integrations/composio",
+      "integrations/n8n",
+      "integrations/managed-automation"
+    ],
+    "dispatcher": "src/components/app-page.tsx",
+    "documentation": {
+      "file": "src/lib/documentation.ts",
+      "sha256": "6da7df0a3f49a19498bbd081b4d99b3f775bfa0f1a63e7b2f0fff8d6dbcd2fe7",
+      "articleCount": 24
+    },
+    "browserRuntimeCertified": false,
+    "nativeProviderCertified": false
+  },
   "sourceOfTruth": [
     "src/lib/catalog.ts",
+    "src/lib/integrations/route-index.ts",
     "src/components/app-page.tsx",
+    "src/lib/documentation.ts",
     ".figma/state.json",
     ".figma/code-connect-manifest.json",
     ".figma/native-audit.json",
@@ -21,19 +123,22 @@
     "scripts/lib/appearance-tokens.mjs"
   ],
   "summary": {
-    "suiteRoutes": 68,
+    "suiteRoutes": 134,
     "landingPages": 1,
-    "views": 69,
+    "views": 135,
     "componentFamilies": 44,
     "completeExamples": 44,
-    "blockFiles": 26,
-    "blockExports": 36,
+    "blockFiles": 27,
+    "blockExports": 37,
     "shellLayouts": 6,
     "chartFamilies": 13,
-    "registryItems": 107,
+    "registryItems": 127,
+    "documentationArticles": 24,
     "codeConnectTemplates": 92,
     "mappedNativeViews": 69,
     "pendingNativeViews": 0,
+    "sourceOnlyViews": 66,
+    "retainedNativeRootCount": 69,
     "directNativeBlockExports": 8,
     "saasNativeViews": 6,
     "saasNativeModeRoots": 12,
@@ -608,7 +713,9 @@
       "checkpointVersion": "1.2.1",
       "historicalCheckpoint": true,
       "status": "passed-scoped-native-image-integration-and-owner-review",
-      "current": true,
+      "current": false,
+      "matchesRetainedCheckpoint": true,
+      "certifiesCurrentVersion": false,
       "scope": "32 native image asset components, explicitly matched existing photo/product/media slots, seven owner-reviewed scoped exports; inherited1.2 evidence remains immutable.",
       "stateSha256": "917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03",
       "matchesCurrentState": true,
@@ -752,9 +859,10 @@
     }
   },
   "delivery": {
-    "version": "1.4.0",
-    "receipt": "public/downloads/verification-1.4.0.json",
-    "status": "passed-local-application-validation",
+    "version": "1.5.0",
+    "receipt": "public/downloads/verification-1.5.0.json",
+    "runtimeReceipt": "docs/qa-runtime-1.5.0.json",
+    "status": "passed-local-frontend-validation",
     "checksums": "public/downloads/checksums.json",
     "checksumsMatchVersion": true,
     "historical": [
@@ -960,10 +1068,82 @@
     }
   ],
   "nativeHandoff": {
-    "status": "passed-retained-baseline-and-current-generated-image-review",
+    "scope": "retained-native-checkpoints-only",
+    "certifiesCurrentVersion": false,
+    "retainedNativeRootCount": 69,
+    "sourceOnlyRoutes": [
+      "integrations",
+      "integrations/tanstack-query",
+      "integrations/supabase-data",
+      "integrations/better-auth",
+      "integrations/clerk",
+      "integrations/supabase-auth",
+      "integrations/authjs-nextauth",
+      "integrations/enterprise-identity",
+      "integrations/swr",
+      "integrations/neon-drizzle",
+      "integrations/prisma",
+      "integrations/firebase",
+      "integrations/convex",
+      "integrations/trpc",
+      "integrations/stripe",
+      "integrations/paddle",
+      "integrations/polar",
+      "integrations/lemon-squeezy",
+      "integrations/s3-r2-storage",
+      "integrations/supabase-storage",
+      "integrations/cloudinary",
+      "integrations/uploadthing",
+      "integrations/resend-react-email",
+      "integrations/email-delivery-alternatives",
+      "integrations/sentry",
+      "integrations/posthog",
+      "integrations/vercel-analytics",
+      "integrations/notification-inboxes",
+      "integrations/background-jobs",
+      "integrations/realtime-messaging",
+      "integrations/liveblocks",
+      "integrations/tiptap",
+      "integrations/lexical",
+      "integrations/blocknote",
+      "integrations/algolia",
+      "integrations/self-hostable-search",
+      "integrations/existing-maps",
+      "integrations/mapbox",
+      "integrations/ai-sdk",
+      "integrations/openai-responses",
+      "integrations/anthropic-messages",
+      "integrations/google-gemini",
+      "integrations/ai-gateways",
+      "integrations/pgvector",
+      "integrations/vector-stores",
+      "integrations/langfuse",
+      "integrations/alternative-ai-observability",
+      "integrations/mcp",
+      "integrations/cloudflare-agents",
+      "integrations/langgraph",
+      "integrations/openai-agents",
+      "integrations/slack",
+      "integrations/github-apps",
+      "integrations/google-drive",
+      "integrations/google-calendar",
+      "integrations/notion",
+      "integrations/microsoft-365",
+      "integrations/linear",
+      "integrations/jira",
+      "integrations/hubspot",
+      "integrations/zendesk",
+      "integrations/salesforce",
+      "integrations/oauth-brokers",
+      "integrations/composio",
+      "integrations/n8n",
+      "integrations/managed-automation"
+    ],
+    "status": "passed-retained-baseline-and-image-checkpoint",
     "pendingRoutes": [],
     "pendingBlocks": [],
     "sourceOnlyBlocks": [
+      "AiMessageParts",
       "CommerceBilling",
       "CommerceCheckout",
       "CommerceStatusBadge",
@@ -988,10 +1168,10 @@
     "codeConnectValidation": "passed-local-smoke",
     "codeConnectCheckpointVersion": "1.4.0",
     "codeConnectSourceValidationVersion": "1.4.0",
-    "codeConnectSourceValidationCurrent": true,
+    "codeConnectSourceValidationCurrent": false,
     "codeConnectCloudRequired": false,
     "newCodeConnectTemplatesRequired": false,
-    "ownerQa": "passed-scoped-generated-image-review-with-retained-baseline",
+    "ownerQa": "retained-scoped-native-evidence-matches",
     "nativeAudit": {
       "file": ".figma/native-audit-1.2.json",
       "version": "1.2.0",
@@ -1323,6 +1503,1458 @@
       }
     },
     {
+      "path": "integrations",
+      "en": "Integration hub",
+      "es": "Centro de integraciones",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/",
+        "es": "/es/integrations/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/tanstack-query",
+      "en": "TanStack Query",
+      "es": "TanStack Query",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/tanstack-query/",
+        "es": "/es/integrations/tanstack-query/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/supabase-data",
+      "en": "Supabase application data",
+      "es": "Supabase application data",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/supabase-data/",
+        "es": "/es/integrations/supabase-data/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/better-auth",
+      "en": "Better Auth",
+      "es": "Better Auth",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/better-auth/",
+        "es": "/es/integrations/better-auth/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/clerk",
+      "en": "Clerk",
+      "es": "Clerk",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/clerk/",
+        "es": "/es/integrations/clerk/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/supabase-auth",
+      "en": "Supabase Auth",
+      "es": "Supabase Auth",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/supabase-auth/",
+        "es": "/es/integrations/supabase-auth/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/authjs-nextauth",
+      "en": "Auth.js / NextAuth",
+      "es": "Auth.js / NextAuth",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/authjs-nextauth/",
+        "es": "/es/integrations/authjs-nextauth/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/enterprise-identity",
+      "en": "WorkOS AuthKit / Auth0",
+      "es": "WorkOS AuthKit / Auth0",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/enterprise-identity/",
+        "es": "/es/integrations/enterprise-identity/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/swr",
+      "en": "SWR",
+      "es": "SWR",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/swr/",
+        "es": "/es/integrations/swr/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/neon-drizzle",
+      "en": "Neon with Drizzle ORM",
+      "es": "Neon with Drizzle ORM",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/neon-drizzle/",
+        "es": "/es/integrations/neon-drizzle/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/prisma",
+      "en": "Prisma ORM",
+      "es": "Prisma ORM",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/prisma/",
+        "es": "/es/integrations/prisma/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/firebase",
+      "en": "Firebase",
+      "es": "Firebase",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/firebase/",
+        "es": "/es/integrations/firebase/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/convex",
+      "en": "Convex",
+      "es": "Convex",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/convex/",
+        "es": "/es/integrations/convex/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/trpc",
+      "en": "tRPC",
+      "es": "tRPC",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/trpc/",
+        "es": "/es/integrations/trpc/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/stripe",
+      "en": "Stripe payment processing",
+      "es": "Stripe payment processing",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/stripe/",
+        "es": "/es/integrations/stripe/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/paddle",
+      "en": "Paddle Merchant of Record",
+      "es": "Paddle Merchant of Record",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/paddle/",
+        "es": "/es/integrations/paddle/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/polar",
+      "en": "Polar Merchant of Record",
+      "es": "Polar Merchant of Record",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/polar/",
+        "es": "/es/integrations/polar/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/lemon-squeezy",
+      "en": "Lemon Squeezy",
+      "es": "Lemon Squeezy",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/lemon-squeezy/",
+        "es": "/es/integrations/lemon-squeezy/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/s3-r2-storage",
+      "en": "Amazon S3 / Cloudflare R2 storage",
+      "es": "Amazon S3 / Cloudflare R2 storage",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/s3-r2-storage/",
+        "es": "/es/integrations/s3-r2-storage/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/supabase-storage",
+      "en": "Supabase Storage",
+      "es": "Supabase Storage",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/supabase-storage/",
+        "es": "/es/integrations/supabase-storage/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/cloudinary",
+      "en": "Cloudinary media",
+      "es": "Cloudinary media",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/cloudinary/",
+        "es": "/es/integrations/cloudinary/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/uploadthing",
+      "en": "UploadThing",
+      "es": "UploadThing",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/uploadthing/",
+        "es": "/es/integrations/uploadthing/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/resend-react-email",
+      "en": "Resend with React Email",
+      "es": "Resend with React Email",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/resend-react-email/",
+        "es": "/es/integrations/resend-react-email/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/email-delivery-alternatives",
+      "en": "Postmark / SendGrid / Amazon SES",
+      "es": "Postmark / SendGrid / Amazon SES",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/email-delivery-alternatives/",
+        "es": "/es/integrations/email-delivery-alternatives/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/sentry",
+      "en": "Sentry",
+      "es": "Sentry",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/sentry/",
+        "es": "/es/integrations/sentry/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/posthog",
+      "en": "PostHog",
+      "es": "PostHog",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/posthog/",
+        "es": "/es/integrations/posthog/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/vercel-analytics",
+      "en": "Vercel Web Analytics",
+      "es": "Vercel Web Analytics",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/vercel-analytics/",
+        "es": "/es/integrations/vercel-analytics/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/notification-inboxes",
+      "en": "Knock / Novu notifications",
+      "es": "Knock / Novu notifications",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/notification-inboxes/",
+        "es": "/es/integrations/notification-inboxes/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/background-jobs",
+      "en": "Inngest / Trigger.dev jobs",
+      "es": "Inngest / Trigger.dev jobs",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/background-jobs/",
+        "es": "/es/integrations/background-jobs/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/realtime-messaging",
+      "en": "Supabase Realtime / Ably / Pusher",
+      "es": "Supabase Realtime / Ably / Pusher",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/realtime-messaging/",
+        "es": "/es/integrations/realtime-messaging/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/liveblocks",
+      "en": "Liveblocks collaboration",
+      "es": "Liveblocks collaboration",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/liveblocks/",
+        "es": "/es/integrations/liveblocks/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/tiptap",
+      "en": "Tiptap editor",
+      "es": "Tiptap editor",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/tiptap/",
+        "es": "/es/integrations/tiptap/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/lexical",
+      "en": "Lexical editor",
+      "es": "Lexical editor",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/lexical/",
+        "es": "/es/integrations/lexical/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/blocknote",
+      "en": "BlockNote editor",
+      "es": "BlockNote editor",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/blocknote/",
+        "es": "/es/integrations/blocknote/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/algolia",
+      "en": "Algolia search",
+      "es": "Algolia search",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/algolia/",
+        "es": "/es/integrations/algolia/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/self-hostable-search",
+      "en": "Meilisearch / Typesense search",
+      "es": "Meilisearch / Typesense search",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/self-hostable-search/",
+        "es": "/es/integrations/self-hostable-search/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/existing-maps",
+      "en": "MapLibre and optional Google Maps",
+      "es": "MapLibre and optional Google Maps",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/existing-maps/",
+        "es": "/es/integrations/existing-maps/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/mapbox",
+      "en": "Mapbox GL JS",
+      "es": "Mapbox GL JS",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/mapbox/",
+        "es": "/es/integrations/mapbox/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/ai-sdk",
+      "en": "AI SDK 7 with React hooks",
+      "es": "AI SDK 7 with React hooks",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/ai-sdk/",
+        "es": "/es/integrations/ai-sdk/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/openai-responses",
+      "en": "OpenAI Responses",
+      "es": "OpenAI Responses",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/openai-responses/",
+        "es": "/es/integrations/openai-responses/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/anthropic-messages",
+      "en": "Anthropic Messages",
+      "es": "Anthropic Messages",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/anthropic-messages/",
+        "es": "/es/integrations/anthropic-messages/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/google-gemini",
+      "en": "Google Gemini / Gen AI SDK",
+      "es": "Google Gemini / Gen AI SDK",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/google-gemini/",
+        "es": "/es/integrations/google-gemini/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/ai-gateways",
+      "en": "Cloudflare AI Gateway / Vercel AI Gateway / OpenRouter",
+      "es": "Cloudflare AI Gateway / Vercel AI Gateway / OpenRouter",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/ai-gateways/",
+        "es": "/es/integrations/ai-gateways/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/pgvector",
+      "en": "Postgres pgvector retrieval",
+      "es": "Postgres pgvector retrieval",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/pgvector/",
+        "es": "/es/integrations/pgvector/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/vector-stores",
+      "en": "Pinecone / Qdrant retrieval",
+      "es": "Pinecone / Qdrant retrieval",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/vector-stores/",
+        "es": "/es/integrations/vector-stores/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/langfuse",
+      "en": "Langfuse",
+      "es": "Langfuse",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/langfuse/",
+        "es": "/es/integrations/langfuse/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/alternative-ai-observability",
+      "en": "LangSmith / Helicone",
+      "es": "LangSmith / Helicone",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/alternative-ai-observability/",
+        "es": "/es/integrations/alternative-ai-observability/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/mcp",
+      "en": "Model Context Protocol",
+      "es": "Model Context Protocol",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/mcp/",
+        "es": "/es/integrations/mcp/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/cloudflare-agents",
+      "en": "Cloudflare Agents SDK",
+      "es": "Cloudflare Agents SDK",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/cloudflare-agents/",
+        "es": "/es/integrations/cloudflare-agents/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/langgraph",
+      "en": "LangGraph with LangChain core",
+      "es": "LangGraph with LangChain core",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/langgraph/",
+        "es": "/es/integrations/langgraph/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/openai-agents",
+      "en": "OpenAI Agents SDK for TypeScript",
+      "es": "OpenAI Agents SDK for TypeScript",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/openai-agents/",
+        "es": "/es/integrations/openai-agents/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/slack",
+      "en": "Slack",
+      "es": "Slack",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/slack/",
+        "es": "/es/integrations/slack/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/github-apps",
+      "en": "GitHub Apps",
+      "es": "GitHub Apps",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/github-apps/",
+        "es": "/es/integrations/github-apps/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/google-drive",
+      "en": "Google Drive with Picker",
+      "es": "Google Drive with Picker",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/google-drive/",
+        "es": "/es/integrations/google-drive/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/google-calendar",
+      "en": "Google Calendar",
+      "es": "Google Calendar",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/google-calendar/",
+        "es": "/es/integrations/google-calendar/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/notion",
+      "en": "Notion",
+      "es": "Notion",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/notion/",
+        "es": "/es/integrations/notion/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/microsoft-365",
+      "en": "Microsoft 365 / Microsoft Graph",
+      "es": "Microsoft 365 / Microsoft Graph",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/microsoft-365/",
+        "es": "/es/integrations/microsoft-365/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/linear",
+      "en": "Linear",
+      "es": "Linear",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/linear/",
+        "es": "/es/integrations/linear/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/jira",
+      "en": "Atlassian Jira Cloud",
+      "es": "Atlassian Jira Cloud",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/jira/",
+        "es": "/es/integrations/jira/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/hubspot",
+      "en": "HubSpot CRM",
+      "es": "HubSpot CRM",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/hubspot/",
+        "es": "/es/integrations/hubspot/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/zendesk",
+      "en": "Zendesk",
+      "es": "Zendesk",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/zendesk/",
+        "es": "/es/integrations/zendesk/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/salesforce",
+      "en": "Salesforce",
+      "es": "Salesforce",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/salesforce/",
+        "es": "/es/integrations/salesforce/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/oauth-brokers",
+      "en": "Nango / Pipedream Connect",
+      "es": "Nango / Pipedream Connect",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/oauth-brokers/",
+        "es": "/es/integrations/oauth-brokers/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/composio",
+      "en": "Composio",
+      "es": "Composio",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/composio/",
+        "es": "/es/integrations/composio/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/n8n",
+      "en": "n8n predefined backend workflows",
+      "es": "n8n predefined backend workflows",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/n8n/",
+        "es": "/es/integrations/n8n/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
+      "path": "integrations/managed-automation",
+      "en": "Make / Zapier",
+      "es": "Make / Zapier",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "IntegrationHub",
+        "file": "src/components/integrations/integration-hub.tsx"
+      },
+      "urls": {
+        "en": "/en/integrations/managed-automation/",
+        "es": "/es/integrations/managed-automation/"
+      },
+      "figma": {
+        "node": null,
+        "url": null,
+        "editable": false,
+        "status": "source-only-route",
+        "certifiesNativeReview": false
+      }
+    },
+    {
       "path": "onboarding",
       "en": "Get started",
       "es": "Primeros pasos",
@@ -1555,7 +3187,10 @@
       "delivery": "1.0",
       "source": {
         "component": "AIWorkspace",
-        "file": "src/components/templates/ai-workspace.tsx"
+        "file": "src/components/templates/ai-workspace.tsx",
+        "dispatcherWrappers": [
+          "ScopedAIWorkspace"
+        ]
       },
       "urls": {
         "en": "/en/ai/",
@@ -1576,7 +3211,10 @@
       "delivery": "1.0",
       "source": {
         "component": "AIWorkspace",
-        "file": "src/components/templates/ai-workspace.tsx"
+        "file": "src/components/templates/ai-workspace.tsx",
+        "dispatcherWrappers": [
+          "ScopedAIWorkspace"
+        ]
       },
       "urls": {
         "en": "/en/ai/playground/",
@@ -1597,7 +3235,10 @@
       "delivery": "1.0",
       "source": {
         "component": "AIWorkspace",
-        "file": "src/components/templates/ai-workspace.tsx"
+        "file": "src/components/templates/ai-workspace.tsx",
+        "dispatcherWrappers": [
+          "ScopedAIWorkspace"
+        ]
       },
       "urls": {
         "en": "/en/ai/code/",
@@ -3778,6 +5419,17 @@
       "codeConnect": ".figma/code-connect/AIComposer.figma.ts"
     },
     {
+      "export": "AiMessageParts",
+      "source": "src/components/blocks/ai-message-parts.tsx",
+      "registry": "ai-message-parts",
+      "figma": {
+        "node": null,
+        "url": null,
+        "status": "source-only-helper"
+      },
+      "codeConnect": null
+    },
+    {
       "export": "CommerceBilling",
       "source": "src/components/blocks/commerce-billing.tsx",
       "registry": "commerce-billing",
@@ -4931,6 +6583,13 @@
       "assets": 0
     },
     {
+      "name": "ai-message-parts",
+      "type": "registry:block",
+      "file": "src/components/blocks/ai-message-parts.tsx",
+      "sourceFiles": 8,
+      "assets": 0
+    },
+    {
       "name": "commerce-billing",
       "type": "registry:block",
       "file": "src/components/blocks/commerce-billing.tsx",
@@ -4962,7 +6621,7 @@
       "name": "commerce-workspace",
       "type": "registry:block",
       "file": "src/components/blocks/commerce-workspace.tsx",
-      "sourceFiles": 41,
+      "sourceFiles": 42,
       "assets": 8
     },
     {
@@ -4976,7 +6635,7 @@
       "name": "dashboard-shell",
       "type": "registry:block",
       "file": "src/components/blocks/dashboard-shell.tsx",
-      "sourceFiles": 42,
+      "sourceFiles": 50,
       "assets": 38
     },
     {
@@ -5004,7 +6663,7 @@
       "name": "maps-workspace",
       "type": "registry:block",
       "file": "src/components/blocks/maps-workspace.tsx",
-      "sourceFiles": 41,
+      "sourceFiles": 42,
       "assets": 26
     },
     {
@@ -5053,7 +6712,7 @@
       "name": "product-manager",
       "type": "registry:block",
       "file": "src/components/blocks/product-manager.tsx",
-      "sourceFiles": 33,
+      "sourceFiles": 34,
       "assets": 8
     },
     {
@@ -5081,7 +6740,7 @@
       "name": "route-map",
       "type": "registry:block",
       "file": "src/components/blocks/route-map.tsx",
-      "sourceFiles": 23,
+      "sourceFiles": 24,
       "assets": 8
     },
     {
@@ -5109,7 +6768,7 @@
       "name": "ai-workspace",
       "type": "registry:block",
       "file": "src/components/templates/ai-workspace.tsx",
-      "sourceFiles": 41,
+      "sourceFiles": 43,
       "assets": 18
     },
     {
@@ -5130,42 +6789,42 @@
       "name": "auth",
       "type": "registry:block",
       "file": "src/components/templates/auth.tsx",
-      "sourceFiles": 31,
+      "sourceFiles": 32,
       "assets": 0
     },
     {
       "name": "auxiliary",
       "type": "registry:block",
       "file": "src/components/templates/auxiliary.tsx",
-      "sourceFiles": 32,
+      "sourceFiles": 34,
       "assets": 8
     },
     {
       "name": "calendar",
       "type": "registry:block",
       "file": "src/components/templates/calendar.tsx",
-      "sourceFiles": 71,
+      "sourceFiles": 72,
       "assets": 26
     },
     {
       "name": "catalogs",
       "type": "registry:block",
       "file": "src/components/templates/catalogs.tsx",
-      "sourceFiles": 60,
+      "sourceFiles": 68,
       "assets": 38
     },
     {
       "name": "communication",
       "type": "registry:block",
       "file": "src/components/templates/communication.tsx",
-      "sourceFiles": 71,
+      "sourceFiles": 72,
       "assets": 26
     },
     {
       "name": "components",
       "type": "registry:block",
       "file": "src/components/templates/components.tsx",
-      "sourceFiles": 102,
+      "sourceFiles": 104,
       "assets": 41
     },
     {
@@ -5200,42 +6859,42 @@
       "name": "data-manager",
       "type": "registry:block",
       "file": "src/components/templates/data-manager.tsx",
-      "sourceFiles": 69,
+      "sourceFiles": 70,
       "assets": 26
     },
     {
       "name": "docs",
       "type": "registry:block",
       "file": "src/components/templates/docs.tsx",
-      "sourceFiles": 14,
+      "sourceFiles": 15,
       "assets": 1
     },
     {
       "name": "files-support",
       "type": "registry:block",
       "file": "src/components/templates/files-support.tsx",
-      "sourceFiles": 75,
+      "sourceFiles": 76,
       "assets": 33
     },
     {
       "name": "forms",
       "type": "registry:block",
       "file": "src/components/templates/forms.tsx",
-      "sourceFiles": 79,
+      "sourceFiles": 80,
       "assets": 33
     },
     {
       "name": "landing",
       "type": "registry:block",
       "file": "src/components/templates/landing.tsx",
-      "sourceFiles": 46,
-      "assets": 18
+      "sourceFiles": 29,
+      "assets": 2
     },
     {
       "name": "map-invoice",
       "type": "registry:block",
       "file": "src/components/templates/map-invoice.tsx",
-      "sourceFiles": 55,
+      "sourceFiles": 56,
       "assets": 26
     },
     {
@@ -5263,14 +6922,14 @@
       "name": "settings",
       "type": "registry:block",
       "file": "src/components/templates/settings.tsx",
-      "sourceFiles": 74,
+      "sourceFiles": 152,
       "assets": 26
     },
     {
       "name": "work-board",
       "type": "registry:block",
       "file": "src/components/templates/work-board.tsx",
-      "sourceFiles": 71,
+      "sourceFiles": 72,
       "assets": 26
     },
     {
@@ -5368,8 +7027,141 @@
       "name": "commerce-provider",
       "type": "registry:block",
       "file": "src/components/commerce-provider.tsx",
-      "sourceFiles": 15,
+      "sourceFiles": 16,
       "assets": 8
+    },
+    {
+      "name": "integration-hub",
+      "type": "registry:block",
+      "file": "src/components/integrations/integration-hub.tsx",
+      "sourceFiles": 134,
+      "assets": 26
+    },
+    {
+      "name": "identity-integration-panel",
+      "type": "registry:block",
+      "file": "src/components/integrations/identity-panel.tsx",
+      "sourceFiles": 16,
+      "assets": 0
+    },
+    {
+      "name": "operational-integration-workbench",
+      "type": "registry:block",
+      "file": "src/components/integrations/operational-workbench.tsx",
+      "sourceFiles": 39,
+      "assets": 0
+    },
+    {
+      "name": "product-integration-workbench",
+      "type": "registry:block",
+      "file": "src/components/integrations/product-workbench.tsx",
+      "sourceFiles": 66,
+      "assets": 8
+    },
+    {
+      "name": "integrations",
+      "type": "registry:lib",
+      "file": "src/lib/integrations/index.ts",
+      "sourceFiles": 52,
+      "assets": 6
+    },
+    {
+      "name": "integrations-http",
+      "type": "registry:lib",
+      "file": "src/lib/integrations/http-adapter.ts",
+      "sourceFiles": 6,
+      "assets": 0
+    },
+    {
+      "name": "integrations-demo",
+      "type": "registry:lib",
+      "file": "src/lib/integrations/demo-adapter.ts",
+      "sourceFiles": 6,
+      "assets": 4
+    },
+    {
+      "name": "integrations-suite",
+      "type": "registry:lib",
+      "file": "src/lib/integrations/http-suite.ts",
+      "sourceFiles": 50,
+      "assets": 3
+    },
+    {
+      "name": "auth-integration",
+      "type": "registry:lib",
+      "file": "src/lib/auth-integration.ts",
+      "sourceFiles": 1,
+      "assets": 0
+    },
+    {
+      "name": "ai-integration",
+      "type": "registry:lib",
+      "file": "src/lib/ai-integration.ts",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "commerce-providers",
+      "type": "registry:lib",
+      "file": "src/lib/provider-commerce-adapter.ts",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "connected-map",
+      "type": "registry:block",
+      "file": "src/components/integrations/connected-map.tsx",
+      "sourceFiles": 30,
+      "assets": 8
+    },
+    {
+      "name": "drive-picker",
+      "type": "registry:lib",
+      "file": "src/lib/integrations/drive-picker.ts",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "drive-picker-panel",
+      "type": "registry:block",
+      "file": "src/components/integrations/drive-picker-panel.tsx",
+      "sourceFiles": 22,
+      "assets": 0
+    },
+    {
+      "name": "media-collection",
+      "type": "registry:lib",
+      "file": "src/lib/integrations/media-collection.ts",
+      "sourceFiles": 6,
+      "assets": 3
+    },
+    {
+      "name": "media-collection-panel",
+      "type": "registry:block",
+      "file": "src/components/integrations/media-collection-panel.tsx",
+      "sourceFiles": 29,
+      "assets": 3
+    },
+    {
+      "name": "enterprise-diagnostics",
+      "type": "registry:block",
+      "file": "src/components/integrations/enterprise-diagnostics.tsx",
+      "sourceFiles": 27,
+      "assets": 0
+    },
+    {
+      "name": "product-editor-controls",
+      "type": "registry:block",
+      "file": "src/components/integrations/product-editor-controls.tsx",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "search-bridge-command",
+      "type": "registry:block",
+      "file": "src/components/integrations/search-bridge-command.tsx",
+      "sourceFiles": 13,
+      "assets": 0
     }
   ],
   "reference": {
@@ -5537,7 +7329,7 @@
     ]
   },
   "limits": {
-    "backend": "Deterministic local demo adapters; real auth, billing, AI providers and email are separate integrations.",
+    "backend": "Deterministic local demos and injected consumer adapters; provider backends, SDK installation and native acceptance remain separate from this source inventory.",
     "figma": "Editable native compositions, including consolidated generic tables; mapping does not claim pixel-perfect parity for every route or browser behavior in Figma.",
     "codeConnect": "Established local parserless templates retain their own checkpoint validation. New SaaS components use direct native/source associations without requiring cloud registration or new Code Connect templates; library unpublished / Professional scope.",
     "brand": "Working name and provisional prices/license; domain and trademark clearance are unverified."

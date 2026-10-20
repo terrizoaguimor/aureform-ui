@@ -1,9 +1,9 @@
 {
   "name": "aureform-ui",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "private": true,
   "type": "module",
-  "description": "An open source Next.js UI kit with SaaS workflows, six palettes, an appearance studio and an editable Figma design system.",
+  "description": "An open source Next.js UI kit with 65 integration recipes, SaaS workflows, six palettes, an appearance studio and an editable Figma companion.",
   "license": "Apache-2.0",
   "author": "terrizoaguimor",
   "repository": {
@@ -32,6 +32,9 @@
     "registry": "node scripts/generate-registry.mjs",
     "coverage": "node scripts/generate-coverage.mjs",
     "verify:examples": "node scripts/verify-component-examples.cjs",
+    "verify:integrations": "node scripts/verify-integration-examples.mjs",
+    "verify:integrations-ui": "playwright test --project=integrations-chromium",
+    "verify:optional-bindings": "node scripts/verify-optional-bindings.mjs",
     "verify:code-connect": "node scripts/verify-code-connect.cjs",
     "verify:copy": "node --experimental-strip-types scripts/verify-copy-examples.mjs",
     "verify:motion": "node scripts/verify-motion.mjs",

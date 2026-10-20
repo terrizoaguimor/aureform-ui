@@ -3,8 +3,9 @@ import { createRequire } from "node:module";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile, copyFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { routes } from "../src/lib/catalog.ts";
+import { importCatalog } from "./lib/catalog-import.mjs";
 import { createAppearance } from "../src/lib/appearance.ts";
+const { routes } = await importCatalog();
 
 const baseURL = process.env.AUREFORM_BASE_URL || "http://127.0.0.1:3012";
 const root = process.cwd();
@@ -151,7 +152,7 @@ try {
     finishedAt: new Date().toISOString(),
     status: completed ? "passed-actual-application-image-previews" : "failed",
     scope:
-      "Actual EN desktop previews, all 69 views in Light and Dark; image decoding and page errors.",
+      `Actual EN desktop previews, all ${paths.length} views in Light and Dark; image decoding and page errors.`,
     viewport: { width: 1440, height: 900 },
     exportedWidth: 960,
     generatedImageManifestSha256: inputManifestSha256,

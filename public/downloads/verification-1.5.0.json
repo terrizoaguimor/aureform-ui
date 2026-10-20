@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "version": "1.5.0",
+  "status": "passed-local-frontend-validation",
+  "license": "Apache-2.0",
+  "recordedAt": "2026-10-20T19:12:52.584460+00:00",
+  "runtimeReceipt": "docs/qa-runtime-1.5.0.json",
+  "runtimeReceiptSha256": "bacbfd28ef90e86a2910522409a8d25790ce1c49b44fe2adf56ed3562940a52c",
+  "sourceFingerprint": {
+    "method": "SHA-256 of sorted relative path, NUL, file SHA-256, LF",
+    "files": 417,
+    "sha256": "985e0cfaa724b48c2ee73a43a46dd052e6892dedced485c5766af8f941d8b257",
+    "roots": [
+      "src",
+      "tests",
+      "examples",
+      "tokens",
+      "bin",
+      "scripts"
+    ],
+    "configInputs": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "next.config.ts",
+      "tsconfig.json",
+      "postcss.config.mjs",
+      "eslint.config.mjs",
+      "playwright.config.ts",
+      ".env.example",
+      "registry.json"
+    ]
+  },
+  "checksums": "public/downloads/checksums.json",
+  "archiveValidation": {
+    "status": "passed",
+    "receipt": "https://github.com/terrizoaguimor/aureform-ui/releases/download/v1.5.0/archive-validation-1.5.0.json",
+    "scope": "Seven exact packaged ZIPs: SHA-256, bytes, CRC, safe paths and limits. Complete source tree matches all 1642 included files."
+  },
+  "publication": {
+    "status": "pending-publication",
+    "repository": "https://github.com/terrizoaguimor/aureform-ui",
+    "demo": "https://aureformui.com",
+    "release": "https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.5.0"
+  },
+  "nativeProviderAcceptance": false,
+  "publicSourceAudit": {
+    "status": "passed",
+    "gitFiles": 1693,
+    "scannedFilesAndArchiveEntries": 3837,
+    "archiveEntries": 2144,
+    "findings": []
+  }
+}

@@ -12,9 +12,10 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
-import type {
-  CommerceBilling as Billing,
-  CommerceContextValue,
+import {
+  getCommerceProviderLabel,
+  type CommerceBilling as Billing,
+  type CommerceContextValue,
 } from "@/lib/commerce";
 import { commercePlans } from "@/lib/commerce-state";
 import { cn } from "@/lib/utils";
@@ -51,6 +52,7 @@ export function CommerceBilling({
   const headingId = useId();
   const { billing } = commerce;
   const mock = commerce.mode === "mock";
+  const providerLabel = getCommerceProviderLabel(commerce);
   const disabled = task.disabled || !commerce.canManageBilling;
   const history = [...commerce.invoices]
     .sort((a, b) => b.issuedAt.localeCompare(a.issuedAt))
@@ -100,7 +102,10 @@ export function CommerceBilling({
             <CreditCard aria-hidden="true" />
             {mock
               ? l("Preview portal", "Ver portal de ejemplo")
-              : l("Manage billing", "Gestionar facturación")}
+              : l(
+                  `Manage billing with ${providerLabel}`,
+                  `Gestionar facturación con ${providerLabel}`,
+                )}
             {!mock && <ArrowUpRight aria-hidden="true" />}
           </Button>
         </div>
@@ -164,8 +169,16 @@ export function CommerceBilling({
               </div>
               <Badge variant="outline">
                 {mock
-                  ? l("Demo subscription", "Suscripción de ejemplo")
-                  : l("Service subscription", "Suscripción del servicio")}
+                  ? commerce.provider
+                    ? l(
+                        `${providerLabel} · demo subscription`,
+                        `${providerLabel} · suscripción de ejemplo`,
+                      )
+                    : l("Demo subscription", "Suscripción de ejemplo")
+                  : l(
+                      `${providerLabel} subscription`,
+                      `Suscripción de ${providerLabel}`,
+                    )}
               </Badge>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-2.5 rounded-xl border border-border bg-surface/60 px-4 py-3 text-xs">
@@ -200,7 +213,12 @@ export function CommerceBilling({
               </span>
               <div className="min-w-0">
                 <p className="text-sm font-semibold">
-                  {billing.cardBrand} · •••• {billing.cardLast4}
+                  {billing.cardLast4
+                    ? `${billing.cardBrand} · •••• ${billing.cardLast4}`
+                    : l(
+                        "No card details available",
+                        "No hay datos de tarjeta disponibles",
+                      )}
                 </p>
                 <p className="mt-1 text-[11px] text-muted-foreground">
                   {mock
@@ -208,7 +226,10 @@ export function CommerceBilling({
                         "Masked demo payment method",
                         "Método de pago de ejemplo enmascarado",
                       )
-                    : l("Saved payment method", "Método de pago guardado")}
+                    : l(
+                        `Payment method managed by ${providerLabel}`,
+                        `Método de pago gestionado por ${providerLabel}`,
+                      )}
                 </p>
               </div>
             </div>
@@ -229,7 +250,10 @@ export function CommerceBilling({
               <ShieldCheck aria-hidden="true" />
               {mock
                 ? l("Review demo billing", "Revisar facturación de ejemplo")
-                : l("Open customer portal", "Abrir portal de cliente")}
+                : l(
+                    `Open ${providerLabel} customer portal`,
+                    `Abrir portal de cliente de ${providerLabel}`,
+                  )}
             </Button>
           </CardContent>
         </Card>

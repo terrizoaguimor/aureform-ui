@@ -52,6 +52,17 @@ Other runtime license identifiers are verified against the installed manifests a
 
 ## Reference material
 
+The 1.5 integration recipes do not install vendor SDKs into the application.
+The isolated [optional SDK verification fixture](scripts/optional-bindings/package.json)
+pins Tiptap 3.32.0 and Lexical 0.52.0 (MIT), BlockNote core/React 0.56.0
+(MPL-2.0), and Mapbox GL JS 3.33.0 (its independent Mapbox license).
+The [verification receipt](docs/integrations/optional-binding-validation.json)
+records the actual installed package declarations. Optional BlockNote XL modules
+have separate GPL/commercial terms and are not included. Refer to the
+[editor recipes](docs/integrations/editors.md) and
+[Mapbox recipe](docs/integrations/mapbox-binding.md) for the installation boundary;
+Apache 2.0 covers Aureform's glue code, not those SDKs or hosted services.
+
 Google, GitHub, Microsoft and Stripe names and marks belong to their respective owners. The inline provider marks identify mock sign-in choices; Apache 2.0 does not grant trademark rights or imply endorsement. Google Maps is loaded only after an explicit connection and remains subject to Google's service terms.
 
 The proprietary TailAdmin Pro reference was read to understand feature categories. No proprietary TailAdmin source, image, font, template or license is included in this distribution.

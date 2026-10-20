@@ -1,3 +1,5 @@
+import { integrationRouteIndex } from "@/lib/integrations/route-index";
+
 export type ModuleKind =
   | "dashboard"
   | "data"
@@ -12,9 +14,23 @@ export type KitRoute = {
   en: string;
   es: string;
   group: ModuleKind;
-  delivery: "1.0" | "1.1" | "1.2" | "1.3" | "1.4";
+  delivery: "1.0" | "1.1" | "1.2" | "1.3" | "1.4" | "1.5";
 };
 export const routes: KitRoute[] = [
+  {
+    path: "integrations",
+    en: "Integration hub",
+    es: "Centro de integraciones",
+    group: "application",
+    delivery: "1.5",
+  },
+  ...integrationRouteIndex.map((definition): KitRoute => ({
+    path: `integrations/${definition.id}`,
+    en: definition.name,
+    es: definition.name,
+    group: "application",
+    delivery: "1.5",
+  })),
   {
     path: "onboarding",
     en: "Get started",
@@ -498,7 +514,7 @@ export const dashboardPaths = routes.filter(
 export const figmaUrl = "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N";
 export const githubUrl = "https://github.com/terrizoaguimor/aureform-ui";
 export const demoUrl = "https://aureformui.com";
-export const kitVersion = "1.4.1";
+export const kitVersion = "1.5.0";
 export const componentFamilies = [
   "Button",
   "ButtonGroup",

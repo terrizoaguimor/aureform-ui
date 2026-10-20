@@ -4,15 +4,15 @@
 
 **Expressive interfaces. Editable source. Open to everyone.**
 
-A Next.js UI kit for dashboards, SaaS workspaces and internal tools, with a visual appearance studio and an editable Figma companion.
+A Next.js UI kit for dashboards, SaaS workspaces and internal tools, with 65 integration recipes, a visual appearance studio and an editable Figma companion.
 
 [**Explore the demo ↗**](https://aureformui.com/en/) · [**Documentation**](https://aureformui.com/en/docs/) · [Quality & Lighthouse](https://aureformui.com/en/quality/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Sponsor](https://github.com/sponsors/terrizoaguimor) · [Get started](#get-started) · [Contribute](CONTRIBUTING.md) · [Español](README.es.md)
 
-[![Live demo on Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/en/) [![Documentation: 23 chapters](https://img.shields.io/badge/docs-23%20chapters-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/en/docs/) [![Editable Figma library](https://img.shields.io/badge/Figma-editable%20library-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![shadcn source registry](https://img.shields.io/badge/shadcn-source%20registry-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
+[![Live demo on Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/en/) [![Documentation: 24 chapters](https://img.shields.io/badge/docs-24%20chapters-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/en/docs/) [![Editable Figma library](https://img.shields.io/badge/Figma-editable%20library-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![shadcn source registry](https://img.shields.io/badge/shadcn-source%20registry-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
 
 ![Aureform homepage in dark mode, with its interface preview and documentation entry](docs/images/aureform-landing-dark.webp)
 
-**69 views · 44 core component families · 107 registry entries · 6 palettes · 13 chart types · English / Español · Light / Dark**
+**69 core views + 65 integration recipes + a hub · 44 core component families · 127 registry entries · 6 palettes · English / Español · Light / Dark**
 
 Built with **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP and Lenis**. Aureform-authored source is available under [Apache 2.0](LICENSE).
 
@@ -36,7 +36,27 @@ Built with **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP and
 | **Charts**                                                                   | **Component library**                                                                                           |
 | ![Aureform chart gallery](docs/images/aureform-charts.webp)                  | ![Aureform component gallery with buttons, inputs and surface treatments](docs/images/aureform-components.webp) |
 
-## Application workflows in 1.4
+## Ready-to-connect integrations in 1.5
+
+[![65 integration recipes](https://img.shields.io/badge/integrations-65%20recipes-8F652A?style=flat-square)](https://aureformui.com/en/integrations/) [![86 provider choices](https://img.shields.io/badge/providers-86%20choices-111827?style=flat-square)](docs/integrations/provider-coverage.json) [![17 workflow families](https://img.shields.io/badge/workflows-17%20families-111827?style=flat-square)](https://aureformui.com/en/docs/integrations/) [![AI streaming and tool approval](https://img.shields.io/badge/AI-streaming%20%2B%20tool%20approval-111827?style=flat-square)](docs/integrations/ai.md)
+
+Open the [integration hub](https://aureformui.com/en/integrations/), then try [Supabase](https://aureformui.com/en/integrations/supabase-data/), [Clerk](https://aureformui.com/en/integrations/clerk/), [Stripe](https://aureformui.com/en/integrations/stripe/), [OpenAI](https://aureformui.com/en/integrations/openai-responses/), [Resend](https://aureformui.com/en/integrations/resend-react-email/) or [Cloudflare Agents](https://aureformui.com/en/integrations/cloudflare-agents/).
+
+The kit includes controlled data tables, complete identity flows, commerce, uploads, email, analytics, notifications, jobs, collaboration, editors, search, maps, AI, knowledge, agents, product connectors and automation. Each recipe has usable local workflows, connection states, logical permissions, resource selection, activity, review and recoverable requests.
+
+| Integration hub · dark | Connected data workflow · light |
+| --- | --- |
+| ![Integration hub with searchable recipes and workflow families](docs/images/aureform-integrations-dark.webp) | ![Connected data workbench with filtering, record editing and pagination](docs/images/aureform-integrations-light.webp) |
+
+Inject `IntegrationSuite` or an individual typed adapter to connect your application. HTTP factories cover the shared hub and specialized identity, AI and commerce transports; editor and realtime callbacks support your chosen SDK. Your application supplies accounts, credentials, authentication, server authorization and provider connectivity. The public demo performs no external account actions.
+
+```sh
+node bin/aureform.mjs add integration-hub integrations-suite --cwd ../my-product
+```
+
+[Connection guide →](https://aureformui.com/en/docs/integrations/) · [Provider coverage →](docs/integrations/provider-coverage.json) · [1.5 release scope →](docs/release-checklist-1.5.0.md)
+
+## Commerce, maps and authentication
 
 [![Stripe typed frontend adapter](https://img.shields.io/badge/Stripe-typed%20adapter-635BFF?style=flat-square&logo=stripe&logoColor=white)](https://aureformui.com/en/docs/adapters/) [![Google Maps with an optional browser key](https://img.shields.io/badge/Google%20Maps-optional%20key-1D4ED8?style=flat-square&logo=googlemaps&logoColor=white)](https://aureformui.com/en/docs/maps/) [![Google, GitHub and Microsoft OAuth frontend mocks](https://img.shields.io/badge/OAuth-frontend%20mocks-111827?style=flat-square)](https://aureformui.com/en/docs/authentication/)
 
@@ -119,7 +139,7 @@ pnpm dlx shadcn@4.22.0 add \
   https://aureformui.com/r/button.json
 ```
 
-Browse the [107-entry registry](https://aureformui.com/r/registry.json). Components and blocks may require the supplied styles and locale or appearance providers; check their examples before integrating. [Registry guide →](docs/registry-compatibility.md)
+Browse the [127-entry registry](https://aureformui.com/r/registry.json). Components and blocks may require the supplied styles and locale or appearance providers; check their examples before integrating. [Registry guide →](docs/registry-compatibility.md)
 
 ## A frontend you can connect
 
@@ -146,7 +166,7 @@ Versioned packaging and QA records retain their original scope. See the [open-so
 
 [![Cloudflare Workers Static Assets](https://img.shields.io/badge/Cloudflare-Workers%20Static%20Assets-111827?style=flat-square&logo=cloudflare&logoColor=F38020)](docs/cloudflare-deployment.md) [![Static HTML, canonical URLs and hreflang](https://img.shields.io/badge/SEO-static%20HTML%20%2B%20hreflang-111827?style=flat-square)](docs/release-checklist-1.4.1.md) [![Gemini 4 Argon research: eight priorities](https://img.shields.io/badge/research-8%20priorities-8F652A?style=flat-square)](https://aureformui.com/en/docs/research/)
 
-[Read the documentation](https://aureformui.com/en/docs/) without opening the demo workspace. Its 23 chapters cover installation, components, tokens, motion, charts, tables, application integrations, integration research, Figma and deployment, with searchable headings, a page outline and copyable code. Navigation is available in English and Spanish; references that retain their original language are identified on the page.
+[Read the documentation](https://aureformui.com/en/docs/) without opening the demo workspace. Its 24 chapters cover installation, components, tokens, motion, charts, tables, application integrations, integration research, Figma and deployment, with searchable headings, a page outline and copyable code. Navigation is available in English and Spanish; references that retain their original language are identified on the page.
 
 ![Aureform documentation with grouped navigation, copyable code and page outline](docs/images/aureform-documentation.webp)
 
@@ -164,7 +184,7 @@ The [bilingual product research](docs/website/en/research.md) combines three hea
 
 [![Integration research: 99 observed searches](https://img.shields.io/badge/integration%20research-99%20searches-8F652A?style=flat-square)](https://aureformui.com/en/docs/integration-research/) [![npm adoption evidence: 70 packages](https://img.shields.io/badge/npm%20evidence-70%20packages-111827?style=flat-square&logo=npm&logoColor=CB3837)](docs/research/2026-10-20/integrations/npm-downloads.json)
 
-The separate [integration research](docs/website/en/integration-research.md) ([Español](docs/website/es/integration-research.md)) reviews auth, data, commerce, AI, operational services and product connectors. Four completed headless AGY investigations recorded 99 searches; the [evidence bundle](docs/research/2026-10-20/integrations/) includes a dated npm snapshot for 70 packages, execution provenance, primary sources and bilingual candidate cards. SDK downloads are adoption signals, not unique users or Next.js market share. New recipes and interfaces are recommendations; the current mock and consumer-backend boundaries remain explicit.
+The separate [integration research](docs/website/en/integration-research.md) ([Español](docs/website/es/integration-research.md)) reviews auth, data, commerce, AI, operational services and product connectors. Four completed headless AGY investigations recorded 99 searches; the [evidence bundle](docs/research/2026-10-20/integrations/) includes a dated npm snapshot for 70 packages, execution provenance, primary sources and bilingual candidate cards. SDK downloads are adoption signals, not unique users or Next.js market share. Version 1.5 implements its 65 frontend recipes. The dated study retains its original baseline and consumer-backend requirements.
 
 ## Quality you can inspect
 
@@ -209,15 +229,20 @@ scope.
 
 Bug reports, better interactions, new patterns, translations and documentation are welcome. English and Spanish contributions are both welcome.
 
-Validation evidence for **v1.4.1**:
+Validation evidence for **v1.5.0**:
 
-[![v1.4.1: 244 passing unit tests](https://img.shields.io/badge/unit%20tests-244%20passed-246B43?style=flat-square&logo=nodedotjs&logoColor=white)](https://github.com/terrizoaguimor/aureform-ui/blob/v1.4.1/docs/qa-runtime-1.4.1.json) [![v1.4.1: 688 examples checked with strict types](https://img.shields.io/badge/strict%20examples-688%20checked-246B43?style=flat-square&logo=typescript&logoColor=white)](https://github.com/terrizoaguimor/aureform-ui/blob/v1.4.1/docs/qa-runtime-1.4.1.json) [![v1.4.1: 19 passing production website browser scenarios](https://img.shields.io/badge/production%20website-19%20passed-246B43?style=flat-square&logo=playwright&logoColor=white)](https://github.com/terrizoaguimor/aureform-ui/releases/download/v1.4.1/cloudflare-deployment-1.4.1.json)
+[![v1.5.0: 865 passing unit tests](https://img.shields.io/badge/unit%20tests-865%20passed-246B43?style=flat-square&logo=nodedotjs&logoColor=white)](docs/qa-runtime-1.5.0.json) [![v1.5.0: 688 component examples checked with strict types](https://img.shields.io/badge/component%20examples-688%20checked-246B43?style=flat-square&logo=typescript&logoColor=white)](docs/qa-runtime-1.5.0.json) [![v1.5.0: 11 strictly typed integration examples](https://img.shields.io/badge/integration%20examples-11%20checked-246B43?style=flat-square&logo=typescript&logoColor=white)](docs/qa-runtime-1.5.0.json) [![317 local provider-action bindings verified](https://img.shields.io/badge/local%20action%20bindings-317%20verified-246B43?style=flat-square)](docs/integrations/provider-action-validation.json) [![6 optional SDK examples strictly compiled](https://img.shields.io/badge/optional%20SDK%20examples-6%20compiled-246B43?style=flat-square)](docs/integrations/optional-binding-validation.json)
+
+[![290 frontend scenarios accepted per root and mounted host](https://img.shields.io/badge/browser%20scenarios-290%20per%20host-246B43?style=flat-square&logo=playwright&logoColor=white)](docs/qa-runtime-1.5.0.json)
+
+Checks use local frontend adapters and bounded consumer fixtures. The [1.5 QA receipt](docs/qa-runtime-1.5.0.json) records each browser cohort, the initial harness failures and their focused reruns. [Earlier QA](https://github.com/terrizoaguimor/aureform-ui/blob/v1.4.1/docs/qa-runtime-1.4.1.json), Figma checkpoints and Lighthouse reports retain their original scope.
 
 ```sh
 pnpm typecheck
 pnpm lint
 pnpm test
 pnpm verify:examples
+pnpm verify:integrations
 pnpm build
 ```
 

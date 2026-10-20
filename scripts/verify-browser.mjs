@@ -3,8 +3,9 @@ import AxeBuilder from "@axe-core/playwright";
 import { access, mkdir, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { resolve } from "node:path";
-import { routes } from "../src/lib/catalog.ts";
+import { importCatalog } from "./lib/catalog-import.mjs";
 import { createAppearance } from "../src/lib/appearance.ts";
+const { routes } = await importCatalog();
 
 const baseURL = process.env.AUREFORM_BASE_URL || "http://127.0.0.1:3001";
 const full = process.argv.includes("--full");

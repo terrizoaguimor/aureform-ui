@@ -4,15 +4,17 @@ Use this page to distinguish delivered frontend capabilities from research propo
 
 ## Delivered in the current kit
 
-The application baseline has 69 demo views, 44 core component families, 107 registry entries, six palettes and 13 chart kinds, with English/Spanish and light/dark support.
+The current application has 69 original views, a hub and 65 integration recipe pages, 44 core component families, 127 registry entries, six palettes and 13 chart kinds, with English/Spanish and light/dark support.
 
 - Editable components, complete examples, local source installation, registry delivery, preview/diff and installation receipts.
 - Appearance Studio, local presets, JSON/CSS/React exports, scoped motion and six reusable effects.
 - Onboarding, workspaces, members, CSV import, controlled customer tables, saved views and customer detail.
 - Product/image editing, purchase-time order prices, mock checkout, invoices and billing, plus typed transport to a consumer Stripe backend.
 - Local maps with optional Google SDK connection, and four authentication layouts with replaceable social callbacks.
+- 65 [integration recipes](integrations.md), 86 provider choices and 17 domain workbenches, with working local mocks, typed HTTP transports, scoped resources, review, cancellation and recovery.
+- Complete identity/session/MFA/team flows; provider-neutral commerce; structured AI streaming with sources, usage and acknowledged tool decisions; injectable editor and realtime callbacks.
 
-These are frontend workflows and contracts. Live identity, tenant authorization, shared storage, financial operations and durable jobs remain consumer responsibilities. See [application integration](../../../docs/application-integrations.md) and the [1.4 release record](../../../docs/release-checklist-1.4.0.md).
+These are frontend workflows and contracts. Live identity, tenant authorization, shared storage, financial operations and durable jobs remain consumer responsibilities. See [integration](integrations.md) and the [1.5 release record](../../../docs/release-checklist-1.5.0.md).
 
 ## Evidence and community delivery
 
@@ -47,7 +49,7 @@ The [pilot plan](../../pilot-validation.es.md) proposes 8â€“12 interviews and 3â
 
 ## Native design and verification boundaries
 
-The native Figma 1.2.1 checkpoint remains frozen. New 1.4 application blocks are source-only, with no claimed new native master. The 92 local Code Connect templates use a synthetic validation runtime; they are not cloud certified or proof of live publication.
+The native Figma 1.2.1 checkpoint remains frozen. New 1.4 and 1.5 application blocks are source-only, with no claimed new native master. The 92 local Code Connect templates use a synthetic validation runtime; they are not cloud certified or proof of live publication.
 
 Browser checks, source checks, native evidence and archive delivery are distinct scopes. Version changes and new screenshots do not recertify historical records. See [design distribution](../../../docs/figma-distribution.md).
 

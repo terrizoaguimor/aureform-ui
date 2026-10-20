@@ -1,12 +1,12 @@
-# Aureform UI 1.4.0 — cobertura de entrega
+# Aureform UI 1.5.0 — cobertura de entrega
 
 Generado desde catálogo y dispatcher reales, state actual, baseline nativo 1.2 conservado y ledger independiente de imágenes 1.2.1. [Datos completos](coverage.json).
 
-69 vistas (68 rutas de suite + landing) · 44 familias y ejemplos completos · 26 archivos / 36 exports de bloques · 6 layouts · 13 gráficos · 6 paletas · 6 efectos reutilizables · 107 elementos de registry · 92 templates locales de Code Connect.
+135 vistas (134 rutas de suite + landing) · 44 familias y ejemplos completos · 27 archivos / 37 exports de bloques · 6 layouts · 13 gráficos · 6 paletas · 6 efectos reutilizables · 127 elementos de registry · 24 artículos de documentación · 92 templates locales de Code Connect.
 
-Source verificado por el catálogo, dispatcher y grafo de imports. 69 raíces con ID nativo; 0 rutas pendientes del owner. Estos conteos describen source e IDs. El [recibo runtime 1.2](qa-runtime-1.2.json) y sus [checks al freeze](release-checklist-1.2.md#recorded-verification-at-source-freeze) son baselines históricos: los resultados 184/74 y sus demás scopes no se reetiquetan como pruebas de 1.2.1. La [verificación 1.1](verification.es.md) mantiene su alcance histórico.
+Source verificado por el catálogo TypeScript restringido, dispatcher (incluidos imports dinámicos literales) y grafo de imports. 69 vistas conservan un ID nativo histórico; 66 rutas son solo código; 0 rutas nativas pendientes del owner. El scope Figma congelado conserva 69 raíces y sus recibos originales. Estos conteos describen source e IDs, sin certificar comportamiento de navegador ni SDK de proveedores. El [recibo runtime 1.2](qa-runtime-1.2.json) y sus [checks al freeze](release-checklist-1.2.md#recorded-verification-at-source-freeze) son baselines históricos: los resultados 184/74 y sus demás scopes no se reetiquetan como pruebas de 1.5.0. La [verificación 1.1](verification.es.md) mantiene su alcance histórico.
 
-Baseline nativo 1.2 conservado: PASS compuesto para 69 raíces (63 heredadas del checkpoint 1.1 y 6 rutas SaaS revisadas en Light/Dark), ligado al SHA256 `8be9d3c1c46565296bd90c43f086b3d7159889c48167ab48d1d5f88e415b1963` de [state-1.2-final](../.figma/history/state-1.2-final.json). [Informe inmutable](../.figma/native-audit-1.2.json). No certifica una revisión visual nueva de las 69 vistas en 1.2.1.
+Baseline nativo 1.2 conservado: PASS compuesto para 69 raíces (63 heredadas del checkpoint 1.1 y 6 rutas SaaS revisadas en Light/Dark), ligado al SHA256 `8be9d3c1c46565296bd90c43f086b3d7159889c48167ab48d1d5f88e415b1963` de [state-1.2-final](../.figma/history/state-1.2-final.json). [Informe inmutable](../.figma/native-audit-1.2.json). No certifica una revisión visual nueva de 1.5.0 ni de las 66 rutas solo código.
 
 Auditoría histórica 1.1: 65 raíces, status `passed-native-structure-and-visual-review`. [Informe histórico](../.figma/native-audit.json). Conserva su propio checkpoint y no certifica 1.2.1.
 
@@ -14,7 +14,7 @@ Prueba nativa SaaS 1.2 retenida: PASS, seis vistas / 12 raíces Light–Dark y 6
 
 Imágenes generadas 1.2.1: 32 recursos (18 avatares, 8 productos y 6 editoriales), con WebP optimizados y SVG que incorporan esos mismos bytes. [Manifest](../public/assets/generated-images.json) y [prompts completos](generated-images/catalog.json). Son imágenes de contenido; no son capturas de interfaz ni gráficos vectoriales editables. No requieren clave API para su uso.
 
-Checkpoint nativo de imágenes 1.2.1 conservado: PASS acotado al scope `32 native image asset components, explicitly matched existing photo/product/media slots, seven owner-reviewed scoped exports; inherited1.2 evidence remains immutable.`, ligado al state `917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03` y al manifest exacto. 7 PNG con bytes verificados; 32 recursos subidos/componentes, cero rasterizaciones de interfaz. [Ledger](../.figma/native-generated-images-1.2.1.json). Es evidencia histórica de la misma colección, no una revisión visual nueva de 1.4.0 ni de las 69 rutas.
+Checkpoint nativo de imágenes 1.2.1 conservado: PASS acotado al scope `32 native image asset components, explicitly matched existing photo/product/media slots, seven owner-reviewed scoped exports; inherited1.2 evidence remains immutable.`, ligado al state `917031950cf95f8b7aa993c2b9e278d03f308f1f12ba54549497c2b207ff9c03` y al manifest exacto. 7 PNG con bytes verificados; 32 recursos subidos/componentes, cero rasterizaciones de interfaz. [Ledger](../.figma/native-generated-images-1.2.1.json). Es evidencia histórica de la misma colección, no una revisión visual nueva de 1.5.0 ni de las 69 rutas.
 
 | Prueba nueva de imágenes | SHA256 |
 | --- | --- |
@@ -26,17 +26,83 @@ Checkpoint nativo de imágenes 1.2.1 conservado: PASS acotado al scope `32 nativ
 | `.figma/proofs/images-1.2.1/products-native.png` | `f842ab589d12dfdd0c3ef30f25c50e0b1766d3808d9d73baecd0fc82bedae784` |
 | `.figma/proofs/images-1.2.1/media-native-revised.png` | `494499d9a83762a38ae66bb20827451986e2f980cffdd2448183ea2667e58ec1` |
 
-Code Connect local: los 92 templates del checkpoint 1.4.0 se conservaron sin modificar y se comprobaron contra el source actual 1.4.0: 1646 evaluaciones, 556 ejemplos tipados y 0 diagnósticos. [Resumen de validación](../.figma/code-connect/validation/validation-summary.json). La prueba utiliza un runtime sintético local; no acredita ejecución en Figma ni publicación cloud.
+Code Connect local conservado, checkpoint 1.4.0: 92 templates. [Última validación registrada](../.figma/code-connect/validation/validation-summary.json). Este registro no coincide con todos los snapshots del source actual; falta una nueva comprobación local.
 
 Los nuevos bloques SaaS se asocian directamente por source/export e IDs del sidecar, aunque `codeConnect` sea null. No se exige cloud ni se generan templates nuevos: biblioteca sin publicar / alcance Professional. El checkpoint original de mappings 1.1 permanece archivado.
 
 La referencia TailAdmin se utiliza para inventariar categorías funcionales. Código, layouts, marca y recursos son originales. Las integraciones de backend se sustituyen mediante los adaptadores documentados.
 
-Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listadas se incluyen en la versión 1.4.0.
+Las etiquetas de entrega son categorías de source; el inventario actual usa la versión 1.5.0. La categoría 1.5 es una expansión solo código, sin nuevos IDs ni revisión nativa Figma.
 
 | Vista | Categoría original | Implementación | Figma editable |
 | --- | --- | --- | --- |
 | landing | 1.0 | [LandingTemplate](../src/components/templates/landing.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=55-8072) |
+| integrations | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/tanstack-query | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/supabase-data | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/better-auth | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/clerk | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/supabase-auth | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/authjs-nextauth | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/enterprise-identity | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/swr | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/neon-drizzle | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/prisma | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/firebase | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/convex | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/trpc | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/stripe | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/paddle | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/polar | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/lemon-squeezy | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/s3-r2-storage | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/supabase-storage | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/cloudinary | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/uploadthing | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/resend-react-email | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/email-delivery-alternatives | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/sentry | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/posthog | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/vercel-analytics | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/notification-inboxes | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/background-jobs | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/realtime-messaging | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/liveblocks | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/tiptap | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/lexical | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/blocknote | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/algolia | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/self-hostable-search | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/existing-maps | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/mapbox | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/ai-sdk | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/openai-responses | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/anthropic-messages | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/google-gemini | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/ai-gateways | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/pgvector | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/vector-stores | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/langfuse | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/alternative-ai-observability | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/mcp | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/cloudflare-agents | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/langgraph | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/openai-agents | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/slack | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/github-apps | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/google-drive | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/google-calendar | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/notion | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/microsoft-365 | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/linear | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/jira | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/hubspot | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/zendesk | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/salesforce | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/oauth-brokers | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/composio | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/n8n | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
+| integrations/managed-automation | 1.5 | [IntegrationHub](../src/components/integrations/integration-hub.tsx) | Solo código; sin nueva certificación Figma |
 | onboarding | 1.2 | [OnboardingOperationsTemplate](../src/components/templates/saas-operations.tsx) | [Light](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-16428) / [Dark](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-16692) |
 | settings/workspace | 1.2 | [SettingsTemplate](../src/components/templates/settings.tsx) | [Light](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-16887) / [Dark](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17079) |
 | customers/detail | 1.2 | [CustomerRecordOperationsTemplate](../src/components/templates/saas-operations.tsx) | [Light](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17271) / [Dark](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=237-17522) |
@@ -109,6 +175,7 @@ Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listada
 | Bloque de source | Archivo | Registry | Figma | Code Connect local |
 | --- | --- | --- | --- | --- |
 | AIComposer | [Fuente](../src/components/blocks/ai-composer.tsx) | `ai-composer` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=6-118) | [Template](../.figma/code-connect/AIComposer.figma.ts) |
+| AiMessageParts | [Fuente](../src/components/blocks/ai-message-parts.tsx) | `ai-message-parts` | Helper de source | Sin template local; asociación directa si consta ID |
 | CommerceBilling | [Fuente](../src/components/blocks/commerce-billing.tsx) | `commerce-billing` | Helper de source | Sin template local; asociación directa si consta ID |
 | CommerceCheckout | [Fuente](../src/components/blocks/commerce-checkout.tsx) | `commerce-checkout` | Helper de source | Sin template local; asociación directa si consta ID |
 | CommerceStatusBadge | [Fuente](../src/components/blocks/commerce-checkout.tsx) | `commerce-checkout` | Helper de source | Sin template local; asociación directa si consta ID |
@@ -168,7 +235,7 @@ Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listada
 
 El registry se calcula desde el grafo de source e incluye `appearance-provider`, `appearance-controls`, `motion-system` y los seis efectos. Los presets y las exportaciones JSON/CSS/React están implementados en source; ver [uso de apariencia](appearance.md).
 
-Helpers de source sin master nativo independiente: CommerceBilling, CommerceCheckout, CommerceStatusBadge, CommerceTotals, CommerceProductThumbnail, CommerceInvoiceView, CommerceInvoiceTable, CommerceInvoiceEditor, CommerceOrderEditor, CommerceOrderDetail, CommerceWorkspace, GoogleMap, MapsWorkspace, ProductImageEditor, ProductImageThumbnail, ProductsManager, SocialAuth, SocialProviderLogo, TableToolbar. Se conserva cada export del registry y no se inventa un ID de Figma.
+Helpers de source sin master nativo independiente: AiMessageParts, CommerceBilling, CommerceCheckout, CommerceStatusBadge, CommerceTotals, CommerceProductThumbnail, CommerceInvoiceView, CommerceInvoiceTable, CommerceInvoiceEditor, CommerceOrderEditor, CommerceOrderDetail, CommerceWorkspace, GoogleMap, MapsWorkspace, ProductImageEditor, ProductImageThumbnail, ProductsManager, SocialAuth, SocialProviderLogo, TableToolbar. Se conserva cada export del registry y no se inventa un ID de Figma.
 
 | Familia | Código | Ejemplo completo | Figma |
 | --- | --- | --- | --- |
@@ -219,6 +286,6 @@ Helpers de source sin master nativo independiente: CommerceBilling, CommerceChec
 
 Code Connect permanece local y sin publicar. El audit compuesto y la prueba SaaS 1.2 se conservan como baseline; el ledger de imágenes 1.2.1 registra exclusivamente su scope nuevo. Las composiciones no implican equivalencia pixel-perfect ni comportamiento de navegador en Figma. Ver [recibo runtime histórico 1.2](qa-runtime-1.2.json), [validación histórica 1.1](verification.es.md), [handoff](figma-handoff.es.md) y [gates de entrega 1.2.1](release-checklist-1.2.1.md).
 
-Este inventario no certifica ZIP ni publicación. La entrega actual es 1.4.0; el owner registra la nueva QA y las identidades finales en `public/downloads/verification-1.4.0.json` después de ejecutar los checks acordados. Los archivos originales de 1.2, su checksum manifest y su recibo se conservan en `artifacts/release-1.2-original/`; el checkpoint público `public/downloads/verification-1.2.json` mantiene su pin histórico y no se compara con checksums nuevos. Los documentos incluidos se congelan antes de empaquetar.
+Este inventario no certifica ZIP ni publicación. La entrega actual es 1.5.0; la [QA runtime de esta versión](qa-runtime-1.5.0.json) registra sus checks observados y `public/downloads/verification-1.5.0.json` conserva el recibo de entrega. Los archivos originales de 1.2, su checksum manifest y su recibo se conservan en `artifacts/release-1.2-original/`; el checkpoint público `public/downloads/verification-1.2.json` mantiene su pin histórico y no se compara con checksums nuevos. Los documentos incluidos se congelan antes de empaquetar.
 
-La distribución 1.4.0 usa Apache 2.0 para el trabajo original: Source, Starter, muestra de componentes e imágenes. Source incluye los 32 originales en `design/images/masters/`, los recursos optimizados, las pruebas PNG, los tokens y los diseños disponibles. Se excluyen credenciales, configuración privada, dependencias instaladas y output/tmp locales. El límite de Source es 90 MiB y el de los otros ZIP es 25 MiB. Los tres ZIP de evidencia conservan sus bytes y scopes históricos: 23 PNG de 1.1, 22 de 1.2 y siete de 1.2.1. Ningún ZIP ni publicación queda certificado solo por generar este inventario. Ver [guía open source](open-source.es.md) y [checklist actual](release-checklist-1.3.0.md).
+La distribución 1.5.0 usa Apache 2.0 para el trabajo original: Source, Starter, muestra de componentes e imágenes. Source incluye los 32 originales en `design/images/masters/`, los recursos optimizados, las pruebas PNG, los tokens y los diseños disponibles. Se excluyen credenciales, configuración privada, dependencias instaladas y output/tmp locales. El límite de Source es 90 MiB y el de los otros ZIP es 25 MiB. Los tres ZIP de evidencia conservan sus bytes y scopes históricos: 23 PNG de 1.1, 22 de 1.2 y siete de 1.2.1. Ningún ZIP ni publicación queda certificado solo por generar este inventario. Ver [guía open source](open-source.es.md) y [checklist actual](release-checklist-1.5.0.md).

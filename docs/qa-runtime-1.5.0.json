@@ -1,0 +1,545 @@
+{
+  "schemaVersion": 1,
+  "version": "1.5.0",
+  "status": "passed-local-frontend-validation",
+  "recordedAt": "2026-10-20T19:12:52.584460+00:00",
+  "baselineCommit": "7cf4baf37b36eaae1fcfeed6091b16c0302ca68c",
+  "scope": "65 frontend recipes and their domain workflows, complete static suite, root and /aureform-ui exports. Consumer accounts, credentials, backend authorization and native provider acceptance are outside these local runs.",
+  "sourceFingerprint": {
+    "method": "SHA-256 of sorted relative path, NUL, file SHA-256, LF",
+    "files": 417,
+    "sha256": "985e0cfaa724b48c2ee73a43a46dd052e6892dedced485c5766af8f941d8b257",
+    "roots": [
+      "src",
+      "tests",
+      "examples",
+      "tokens",
+      "bin",
+      "scripts"
+    ],
+    "configInputs": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "next.config.ts",
+      "tsconfig.json",
+      "postcss.config.mjs",
+      "eslint.config.mjs",
+      "playwright.config.ts",
+      ".env.example",
+      "registry.json"
+    ]
+  },
+  "inventory": {
+    "suiteRoutes": 134,
+    "landingPages": 1,
+    "views": 135,
+    "componentFamilies": 44,
+    "completeExamples": 44,
+    "blockFiles": 27,
+    "blockExports": 37,
+    "shellLayouts": 6,
+    "chartFamilies": 13,
+    "registryItems": 127,
+    "documentationArticles": 24,
+    "codeConnectTemplates": 92,
+    "mappedNativeViews": 69,
+    "pendingNativeViews": 0,
+    "sourceOnlyViews": 66,
+    "retainedNativeRootCount": 69,
+    "directNativeBlockExports": 8,
+    "saasNativeViews": 6,
+    "saasNativeModeRoots": 12,
+    "saasNativeVariants": 68,
+    "palettes": 6,
+    "reusableEffects": 6,
+    "nativeGalleryPreviews": 46,
+    "semanticColors": 21,
+    "primitiveColors": 270,
+    "effectTokens": 15
+  },
+  "checks": {
+    "unitTests": {
+      "passed": 865,
+      "failed": 0,
+      "skipped": 0
+    },
+    "typecheck": "passed",
+    "eslint": {
+      "errors": 0,
+      "warnings": 1,
+      "retainedWarning": "design/rebuild-plugin/backend.js unused afRebuild"
+    },
+    "strictComponentExamples": {
+      "families": 44,
+      "typescript": "5.9.3",
+      "strict": true,
+      "noEmit": true,
+      "payloads": 688,
+      "rootFiles": 733,
+      "diagnostics": 0,
+      "diagnosticCodes": [],
+      "canonicalSourceFiles": 66,
+      "negativeControl": {
+        "missingModule": true,
+        "missingExport": true,
+        "invalidTypes": true,
+        "typescript": "5.9.3",
+        "strict": true,
+        "noEmit": true,
+        "payloads": 1,
+        "rootFiles": 1,
+        "diagnostics": 4,
+        "diagnosticCodes": [
+          2305,
+          2307,
+          2322,
+          2322
+        ],
+        "canonicalSourceFiles": 3
+      }
+    },
+    "strictIntegrationExamples": {
+      "payloads": 11,
+      "canonicalSourceFiles": 208,
+      "diagnostics": 0,
+      "strict": true,
+      "command": "pnpm verify:integrations"
+    },
+    "optionalSdkExamples": {
+      "receipt": "integrations/optional-binding-validation.json",
+      "strictCompiledTsxBlocks": 6,
+      "offlineJsonRoundTrips": 4,
+      "ambientStubs": 0,
+      "nativeProviderAcceptance": false
+    },
+    "providerActionBindings": {
+      "receipt": "integrations/provider-action-validation.json",
+      "bindings": 317,
+      "testsPassed": 318,
+      "candidates": 65,
+      "providerChoices": 86,
+      "actions": 248,
+      "operationKinds": 30,
+      "plannedBindings": 317,
+      "failedBindings": 0,
+      "parsedResults": 698,
+      "preparationExecutions": 56,
+      "verificationExecutions": 8,
+      "idempotentReplays": 317,
+      "workspaceRejections": 317,
+      "requiredFieldRejections": 333,
+      "fileUploads": 5,
+      "fetchAttempts": 0,
+      "nativeProviderAcceptance": false
+    },
+    "rootBrowserScenarios": {
+      "command": "AUREFORM_BASE_URL=http://127.0.0.1:3134 pnpm exec playwright test --workers=4",
+      "broadRunStats": {
+        "startTime": "2026-10-20T18:46:08.516Z",
+        "duration": 301404.973,
+        "expected": 289,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "broadRunProjects": {
+        "integrations-chromium": {
+          "passed": 174,
+          "failed": 1,
+          "skipped": 0
+        },
+        "website-chromium": {
+          "passed": 23,
+          "failed": 0,
+          "skipped": 0
+        },
+        "applications-chromium": {
+          "passed": 18,
+          "failed": 0,
+          "skipped": 0
+        },
+        "desktop-chromium": {
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0
+        },
+        "mobile-chromium": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "saas-chromium": {
+          "passed": 64,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      "finalFocusedRun": {
+        "passed": 2,
+        "failed": 0,
+        "scope": "Notification review/preferences and workspace isolation with committed records, cleared drafts and ignored late results.",
+        "command": "playwright test tests/e2e/integrations-operations.spec.ts --project=integrations-chromium --grep 'workspaces:|notifications:' --workers=1"
+      },
+      "uniqueScenariosAccepted": 290,
+      "note": "The broad run passed 289/290. Its remaining notification tab click raced the initial inbox layout shift before any workspace switch. The helper now waits for loaded records and an enabled Refresh, then asserts aria-selected. Both affected scenarios passed without changed assertions, timeouts or application code."
+    },
+    "mountedBrowserScenarios": {
+      "basePath": "/aureform-ui",
+      "initialFullRunStats": {
+        "startTime": "2026-10-20T19:00:39.382Z",
+        "duration": 236338.041,
+        "expected": 216,
+        "skipped": 12,
+        "unexpected": 62,
+        "flaky": 0
+      },
+      "finalShellRunStats": {
+        "startTime": "2026-10-20T19:07:46.719Z",
+        "duration": 7372.173,
+        "expected": 10,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "finalSaasRunStats": {
+        "startTime": "2026-10-20T19:11:09.522Z",
+        "duration": 69314.601,
+        "expected": 64,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "finalShellRunCommand": "NEXT_PUBLIC_BASE_PATH=/aureform-ui AUREFORM_BASE_URL=http://127.0.0.1:3135/aureform-ui pnpm exec playwright test --project=desktop-chromium --project=mobile-chromium --workers=4",
+      "finalSaasRunCommand": "NEXT_PUBLIC_BASE_PATH=/aureform-ui AUREFORM_BASE_URL=http://127.0.0.1:3135/aureform-ui pnpm exec playwright test --project=saas-chromium --workers=4",
+      "uniqueScenariosAccepted": 290,
+      "acceptedProjects": {
+        "integrations-chromium": {
+          "passed": 175,
+          "failed": 0,
+          "skipped": 0
+        },
+        "website-chromium": {
+          "passed": 23,
+          "failed": 0,
+          "skipped": 0
+        },
+        "applications-chromium": {
+          "passed": 18,
+          "failed": 0,
+          "skipped": 0
+        },
+        "desktop-chromium": {
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0
+        },
+        "mobile-chromium": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "saas-chromium": {
+          "passed": 64,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      "note": "The initial run passed all 216 integration, website and application scenarios. Legacy SaaS, desktop and mobile tests used root-only navigation URLs: 62 failed before exercising their workflows and 12 did not run. Their six test files now include the actual mount in navigation and URL assertions. All 74 affected scenarios then passed. Application code, behavioral assertions, retries and timeouts were unchanged."
+    },
+    "staticExport": {
+      "rootAndMounted": "passed",
+      "htmlPagesPerExport": 326,
+      "documentationChapters": 24,
+      "uniqueLocalDestinationsPerExport": 468
+    },
+    "cloudflarePrebuiltDryRun": "passed",
+    "publicSourceAudit": {
+      "status": "passed",
+      "findings": 0,
+      "scope": "Source freeze audit. The archive and delivery receipt records the separate final packaged-file audit."
+    },
+    "installationConsumers": {
+      "casesPassed": 6,
+      "receipt": "integrations/installation-verification.md",
+      "scope": "Actual CLI dry-run/diff/overwrite/source closure, standalone hub, providers, exports, aliases, styles, assets and license copying. Strict fixture hosts; no native provider accounts."
+    }
+  },
+  "rootDemo": {
+    "status": "passed",
+    "finishedAt": "2026-10-20T18:48:42.029Z",
+    "scope": "All 135 views and 1 additional documentation article in EN/ES desktop dark; 32 ES mobile light views; 14 observed main-region Axe scans; three real browser behaviors",
+    "accessibility": [
+      {
+        "locale": "en",
+        "route": "integrations/supabase-data",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "integrations",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "integrations/cloudinary",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "dashboard",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "customers",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "invoices",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "orders",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "products",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "maps",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "settings/billing",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "media",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "docs/license",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "auth/sign-in",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "docs/integrations",
+        "violations": [],
+        "incomplete": [
+          "aria-prohibited-attr",
+          "color-contrast"
+        ]
+      }
+    ],
+    "interactions": [
+      "Language switch retains the mounted route",
+      "Light theme persists after reload",
+      "Real browser image download preserves the exact WebP bytes"
+    ],
+    "pageErrors": [],
+    "failedResources": []
+  },
+  "mountedDemo": {
+    "status": "passed",
+    "finishedAt": "2026-10-20T19:03:26.900Z",
+    "scope": "All 135 views and 1 additional documentation article in EN/ES desktop dark; 32 ES mobile light views; 14 observed main-region Axe scans; three real browser behaviors",
+    "accessibility": [
+      {
+        "locale": "en",
+        "route": "integrations/supabase-data",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "integrations",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "integrations/cloudinary",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "dashboard",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "customers",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "invoices",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "orders",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "products",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "maps",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "settings/billing",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "media",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "docs/license",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "auth/sign-in",
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "locale": "en",
+        "route": "docs/integrations",
+        "violations": [],
+        "incomplete": [
+          "aria-prohibited-attr",
+          "color-contrast"
+        ]
+      }
+    ],
+    "interactions": [
+      "Language switch retains the mounted route",
+      "Light theme persists after reload",
+      "Real browser image download preserves the exact WebP bytes"
+    ],
+    "pageErrors": [],
+    "failedResources": []
+  },
+  "screenshots": {
+    "manifest": "images/screenshots.json",
+    "captures": 17,
+    "pageErrors": 0,
+    "version": "1.5.0"
+  },
+  "historicalEvidence": {
+    "nativeFigmaRoots": 69,
+    "generatedImages": 32,
+    "imageCheckpoint": "1.2.1",
+    "nativeProviderAcceptance": false,
+    "newLighthouseMeasurement": false,
+    "protectedFilesUnchangedDuringCoverageGeneration": 615
+  },
+  "publication": {
+    "status": "not-claimed-by-this-local-receipt",
+    "receipt": "GitHub release v1.5.0 deployment attachment"
+  },
+  "limits": [
+    "Automated scoped Axe scans have no violations. Incomplete checks, including color-contrast, are retained in each demo receipt; this is not whole-kit WCAG certification.",
+    "Provider action fixtures, strict SDK compilation and JSON serialization do not certify native accounts, OAuth, delivery, payment or browser SDK rendering.",
+    "Logical UI permissions are presentation controls. Consumers implement authenticated endpoints, server authorization, reconciliation, storage and provider connectivity.",
+    "Historical Figma and Lighthouse artifacts retain their original versions, commits, hashes and scope."
+  ]
+}

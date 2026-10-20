@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
 import { readFile, readdir, stat } from "node:fs/promises";
 import { resolve, relative, sep } from "node:path";
-import { routes } from "../src/lib/catalog.ts";
+import { importCatalog } from "./lib/catalog-import.mjs";
 import { documentationArticles } from "../src/lib/documentation.ts";
 import { locales } from "../src/i18n/messages.ts";
+const { routes } = await importCatalog();
 
 const root = resolve("out");
 const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/+$/, "");

@@ -23,6 +23,7 @@ import { useWorkspace } from "@/components/workspace-provider";
 import {
   CommerceError,
   commerceCurrencies,
+  getCommerceProviderLabel,
   type CommerceAction,
   type CommerceContextValue,
   type CommerceInvoice,
@@ -83,7 +84,7 @@ export function CommerceWorkspace({ mode }: { mode: CommerceWorkspaceMode }) {
   const commerce: CommerceContextValue = useCommerce();
   const scope = useWorkspace();
   // Unmount forms and pending callbacks when their workspace or permissions change.
-  const scopeKey = `${scope.workspaceId}:${scope.role}:${commerce.mode}:${commerce.canWrite}:${commerce.canManageBilling}:${mode}`;
+  const scopeKey = `${scope.workspaceId}:${scope.role}:${commerce.mode}:${commerce.provider?.id ?? ""}:${commerce.canWrite}:${commerce.canManageBilling}:${mode}`;
   return (
     <div className="grid min-w-0 gap-5" data-commerce-workspace={mode}>
       <div data-no-print>
@@ -176,7 +177,7 @@ function CommerceWorkspaceBody({
       async () => {
         const action = await request();
         if (action.mode === "redirect") {
-          if (commerce.mode !== "stripe")
+          if (commerce.mode === "mock")
             throw new CommerceError(
               "provider",
               "Unexpected redirect in demo mode.",
@@ -242,13 +243,18 @@ function CommerceWorkspaceBody({
             <div className="min-w-0">
               <p className="text-xs font-semibold">
                 {commerce.mode === "mock"
-                  ? l(
-                      "Demo workspace · mock payments",
-                      "Workspace de ejemplo · pagos simulados",
-                    )
+                  ? commerce.provider
+                    ? l(
+                        `${getCommerceProviderLabel(commerce)} · demo workspace · mock payments`,
+                        `${getCommerceProviderLabel(commerce)} · workspace de ejemplo · pagos simulados`,
+                      )
+                    : l(
+                        "Demo workspace · mock payments",
+                        "Workspace de ejemplo · pagos simulados",
+                      )
                   : l(
-                      "Connected commerce service",
-                      "Servicio de comercio conectado",
+                      `${getCommerceProviderLabel(commerce)} · connected commerce`,
+                      `${getCommerceProviderLabel(commerce)} · comercio conectado`,
                     )}
               </p>
               <p className="mt-1 text-[11px] leading-5 text-muted-foreground">
@@ -258,8 +264,8 @@ function CommerceWorkspaceBody({
                       "No se mueve dinero. Pedidos, existencias, facturas y suscripciones comparten los datos de ejemplo de este workspace.",
                     )
                   : l(
-                      "Checkout opens through your service. Payment status updates after the service confirms it.",
-                      "El pago se abre mediante tu servicio. El estado se actualiza después de la confirmación del servicio.",
+                      `Checkout opens with ${getCommerceProviderLabel(commerce)}. Payment status updates after your service confirms it.`,
+                      `El pago se abre con ${getCommerceProviderLabel(commerce)}. El estado se actualiza después de la confirmación de tu servicio.`,
                     )}
               </p>
             </div>

@@ -131,6 +131,88 @@ export async function entries(root = kitRoot) {
     type: "registry:block",
     file: "src/components/commerce-provider.tsx",
   };
+  for (const [name, file, type] of [
+    [
+      "integration-hub",
+      "src/components/integrations/integration-hub.tsx",
+      "registry:block",
+    ],
+    [
+      "identity-integration-panel",
+      "src/components/integrations/identity-panel.tsx",
+      "registry:block",
+    ],
+    [
+      "operational-integration-workbench",
+      "src/components/integrations/operational-workbench.tsx",
+      "registry:block",
+    ],
+    [
+      "product-integration-workbench",
+      "src/components/integrations/product-workbench.tsx",
+      "registry:block",
+    ],
+    ["integrations", "src/lib/integrations/index.ts", "registry:lib"],
+    [
+      "integrations-http",
+      "src/lib/integrations/http-adapter.ts",
+      "registry:lib",
+    ],
+    [
+      "integrations-demo",
+      "src/lib/integrations/demo-adapter.ts",
+      "registry:lib",
+    ],
+    [
+      "integrations-suite",
+      "src/lib/integrations/http-suite.ts",
+      "registry:lib",
+    ],
+    ["auth-integration", "src/lib/auth-integration.ts", "registry:lib"],
+    ["ai-integration", "src/lib/ai-integration.ts", "registry:lib"],
+    [
+      "commerce-providers",
+      "src/lib/provider-commerce-adapter.ts",
+      "registry:lib",
+    ],
+    [
+      "connected-map",
+      "src/components/integrations/connected-map.tsx",
+      "registry:block",
+    ],
+    ["drive-picker", "src/lib/integrations/drive-picker.ts", "registry:lib"],
+    [
+      "drive-picker-panel",
+      "src/components/integrations/drive-picker-panel.tsx",
+      "registry:block",
+    ],
+    [
+      "media-collection",
+      "src/lib/integrations/media-collection.ts",
+      "registry:lib",
+    ],
+    [
+      "media-collection-panel",
+      "src/components/integrations/media-collection-panel.tsx",
+      "registry:block",
+    ],
+    [
+      "enterprise-diagnostics",
+      "src/components/integrations/enterprise-diagnostics.tsx",
+      "registry:block",
+    ],
+    [
+      "product-editor-controls",
+      "src/components/integrations/product-editor-controls.tsx",
+      "registry:block",
+    ],
+    [
+      "search-bridge-command",
+      "src/components/integrations/search-bridge-command.tsx",
+      "registry:block",
+    ],
+  ])
+    result[name] = { name, type, file };
   return result;
 }
 export async function dependencyClosure(entryFiles, root = kitRoot) {

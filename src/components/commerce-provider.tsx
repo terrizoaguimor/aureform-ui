@@ -23,6 +23,7 @@ import {
   type CommerceAction,
   type CommerceAdapter,
   type CommerceContextValue,
+  type CommerceProviderIdentity,
   type CommerceScope,
   type CommerceSnapshot,
 } from "@/lib/commerce";
@@ -34,10 +35,15 @@ import {
   upsertCommerceProduct,
 } from "@/lib/commerce-state";
 import { parseStripeAction } from "@/lib/stripe-commerce-adapter";
+import {
+  parseProviderCommerceAction,
+  parseProviderCommerceSnapshot,
+} from "@/lib/provider-commerce-adapter";
 
 const Context = createContext<CommerceContextValue | null>(null);
 type Session = {
   workspaceId: string;
+  adapter?: CommerceAdapter;
   snapshot: CommerceSnapshot;
   ready: boolean;
 };
@@ -61,16 +67,26 @@ function asCommerceError(error: unknown) {
 export function CommerceProvider({
   children,
   adapter,
+  demoProvider,
 }: {
   children: ReactNode;
   adapter?: CommerceAdapter;
+  /** Display identity for a local demo; never selects a connected account. */
+  demoProvider?: CommerceProviderIdentity;
 }) {
   const workspace = useWorkspace();
   const workspaceId = workspace.workspaceId;
-  const mode = adapter ? "stripe" : "mock";
+  const mode = adapter?.mode ?? "mock";
+  const provider = adapter
+    ? (adapter.provider ?? {
+        id: mode === "stripe" ? "stripe" : "commerce",
+        label: mode === "stripe" ? "Stripe" : "Commerce",
+      })
+    : demoProvider;
   const initial = useMemo(() => createCommerceSeed(), []);
   const [session, setSession] = useState<Session>({
     workspaceId,
+    adapter,
     snapshot: initial,
     ready: false,
   });
@@ -80,6 +96,7 @@ export function CommerceProvider({
     useState<CommerceContextValue["persistenceError"]>(null);
   const sessionRef = useRef(session);
   const workspaceIdRef = useRef(workspaceId);
+  const adapterRef = useRef(adapter);
   const generationRef = useRef(0);
   const operationRef = useRef<AbortController | null>(null);
   const busyRef = useRef(false);
@@ -89,13 +106,19 @@ export function CommerceProvider({
   const canManageBilling =
     workspace.role === "owner" || workspace.role === "admin";
   useLayoutEffect(() => {
+    if (adapterRef.current !== adapter) {
+      operationRef.current?.abort();
+      generationRef.current += 1;
+      busyRef.current = false;
+      adapterRef.current = adapter;
+    }
     workspaceIdRef.current = workspaceId;
     permissionsRef.current = {
       write: canWrite,
       billing: canManageBilling,
       ready: workspace.ready,
     };
-  }, [workspaceId, canWrite, canManageBilling, workspace.ready]);
+  }, [adapter, workspaceId, canWrite, canManageBilling, workspace.ready]);
 
   const persist = useCallback((scopeId: string, snapshot: CommerceSnapshot) => {
     cacheRef.current.set(scopeId, snapshot);
@@ -121,6 +144,7 @@ export function CommerceProvider({
     setPersistenceError(null);
     const pending: Session = {
       workspaceId: scopeId,
+      adapter,
       snapshot: adapter
         ? { ...createCommerceSeed(), products: [], orders: [], invoices: [] }
         : (cacheRef.current.get(scopeId) ?? createCommerceSeed()),
@@ -131,7 +155,8 @@ export function CommerceProvider({
     const current = () =>
       !controller.signal.aborted &&
       generationRef.current === generation &&
-      workspaceIdRef.current === scopeId;
+      workspaceIdRef.current === scopeId &&
+      adapterRef.current === adapter;
     try {
       let snapshot = pending.snapshot;
       if (adapter) {
@@ -139,7 +164,10 @@ export function CommerceProvider({
           workspaceId: scopeId,
           signal: controller.signal,
         });
-        const parsed = parseCommerceSnapshot(response);
+        const parsed =
+          adapter.mode === "provider"
+            ? parseProviderCommerceSnapshot(response)
+            : parseCommerceSnapshot(response);
         if (!parsed)
           throw new CommerceError(
             "provider",
@@ -160,7 +188,12 @@ export function CommerceProvider({
       }
       if (!current()) return;
       if (!adapter) cacheRef.current.set(scopeId, snapshot);
-      const next: Session = { workspaceId: scopeId, snapshot, ready: true };
+      const next: Session = {
+        workspaceId: scopeId,
+        adapter,
+        snapshot,
+        ready: true,
+      };
       sessionRef.current = next;
       setSession(next);
     } catch (cause) {
@@ -230,7 +263,8 @@ export function CommerceProvider({
       if (
         !permissionsRef.current.ready ||
         !currentSession.ready ||
-        currentSession.workspaceId !== workspaceIdRef.current
+        currentSession.workspaceId !== workspaceIdRef.current ||
+        currentSession.adapter !== adapter
       )
         throw new CommerceError(
           "unavailable",
@@ -257,7 +291,8 @@ export function CommerceProvider({
       const current = () =>
         !controller.signal.aborted &&
         generationRef.current === generation &&
-        workspaceIdRef.current === scopeId;
+        workspaceIdRef.current === scopeId &&
+        adapterRef.current === adapter;
       try {
         const { result, next } = await operation(currentSession.snapshot, {
           workspaceId: scopeId,
@@ -269,7 +304,10 @@ export function CommerceProvider({
             "The workspace changed. Review the current data.",
           );
         if (next) {
-          const parsed = parseCommerceSnapshot(next);
+          const parsed =
+            adapter?.mode === "provider"
+              ? parseProviderCommerceSnapshot(next)
+              : parseCommerceSnapshot(next);
           if (!parsed)
             throw new CommerceError(
               "validation",
@@ -277,6 +315,7 @@ export function CommerceProvider({
             );
           const updated: Session = {
             workspaceId: scopeId,
+            adapter,
             snapshot: parsed,
             ready: true,
           };
@@ -532,7 +571,12 @@ export function CommerceProvider({
             throw new CommerceError("validation", "Choose an available plan.");
           }
           const result: CommerceAction = adapter
-            ? parseStripeAction(await adapter.checkout({ kind, id }, scope))
+            ? adapter.mode === "stripe"
+              ? parseStripeAction(await adapter.checkout({ kind, id }, scope))
+              : parseProviderCommerceAction(
+                  await adapter.checkout({ kind, id }, scope),
+                  adapter.trustedRedirectOrigins ?? [],
+                )
             : { mode: "mock", kind, id };
           return { result };
         },
@@ -555,7 +599,12 @@ export function CommerceProvider({
     () =>
       perform("portal", "billing", async (_snapshot, scope) => ({
         result: adapter
-          ? parseStripeAction(await adapter.portal(scope))
+          ? adapter.mode === "stripe"
+            ? parseStripeAction(await adapter.portal(scope))
+            : parseProviderCommerceAction(
+                await adapter.portal(scope),
+                adapter.trustedRedirectOrigins ?? [],
+              )
           : { mode: "mock", kind: "portal", id: scope.workspaceId },
       })),
     [adapter, perform],
@@ -592,13 +641,15 @@ export function CommerceProvider({
     }
   }, [adapter, persist]);
 
-  const view = session.workspaceId === workspaceId ? session.snapshot : initial;
+  const sameSession =
+    session.workspaceId === workspaceId && session.adapter === adapter;
+  const view = sameSession ? session.snapshot : initial;
   const value: CommerceContextValue = {
     ...view,
-    ready:
-      workspace.ready && session.ready && session.workspaceId === workspaceId,
+    ready: workspace.ready && session.ready && sameSession,
     busy,
     mode,
+    provider,
     error,
     persistenceError,
     canWrite,

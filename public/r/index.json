@@ -1,6 +1,6 @@
 {
   "name": "aureform-ui",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "items": [
     {
       "name": "accordion",
@@ -265,6 +265,12 @@
       "type": "registry:block",
       "title": "Ai Composer",
       "url": "/r/ai-composer.json"
+    },
+    {
+      "name": "ai-message-parts",
+      "type": "registry:block",
+      "title": "Ai Message Parts",
+      "url": "/r/ai-message-parts.json"
     },
     {
       "name": "commerce-billing",
@@ -643,6 +649,120 @@
       "type": "registry:block",
       "title": "Commerce Provider",
       "url": "/r/commerce-provider.json"
+    },
+    {
+      "name": "integration-hub",
+      "type": "registry:block",
+      "title": "Integration Hub",
+      "url": "/r/integration-hub.json"
+    },
+    {
+      "name": "identity-integration-panel",
+      "type": "registry:block",
+      "title": "Identity Integration Panel",
+      "url": "/r/identity-integration-panel.json"
+    },
+    {
+      "name": "operational-integration-workbench",
+      "type": "registry:block",
+      "title": "Operational Integration Workbench",
+      "url": "/r/operational-integration-workbench.json"
+    },
+    {
+      "name": "product-integration-workbench",
+      "type": "registry:block",
+      "title": "Product Integration Workbench",
+      "url": "/r/product-integration-workbench.json"
+    },
+    {
+      "name": "integrations",
+      "type": "registry:lib",
+      "title": "Integrations",
+      "url": "/r/integrations.json"
+    },
+    {
+      "name": "integrations-http",
+      "type": "registry:lib",
+      "title": "Integrations Http",
+      "url": "/r/integrations-http.json"
+    },
+    {
+      "name": "integrations-demo",
+      "type": "registry:lib",
+      "title": "Integrations Demo",
+      "url": "/r/integrations-demo.json"
+    },
+    {
+      "name": "integrations-suite",
+      "type": "registry:lib",
+      "title": "Integrations Suite",
+      "url": "/r/integrations-suite.json"
+    },
+    {
+      "name": "auth-integration",
+      "type": "registry:lib",
+      "title": "Auth Integration",
+      "url": "/r/auth-integration.json"
+    },
+    {
+      "name": "ai-integration",
+      "type": "registry:lib",
+      "title": "Ai Integration",
+      "url": "/r/ai-integration.json"
+    },
+    {
+      "name": "commerce-providers",
+      "type": "registry:lib",
+      "title": "Commerce Providers",
+      "url": "/r/commerce-providers.json"
+    },
+    {
+      "name": "connected-map",
+      "type": "registry:block",
+      "title": "Connected Map",
+      "url": "/r/connected-map.json"
+    },
+    {
+      "name": "drive-picker",
+      "type": "registry:lib",
+      "title": "Drive Picker",
+      "url": "/r/drive-picker.json"
+    },
+    {
+      "name": "drive-picker-panel",
+      "type": "registry:block",
+      "title": "Drive Picker Panel",
+      "url": "/r/drive-picker-panel.json"
+    },
+    {
+      "name": "media-collection",
+      "type": "registry:lib",
+      "title": "Media Collection",
+      "url": "/r/media-collection.json"
+    },
+    {
+      "name": "media-collection-panel",
+      "type": "registry:block",
+      "title": "Media Collection Panel",
+      "url": "/r/media-collection-panel.json"
+    },
+    {
+      "name": "enterprise-diagnostics",
+      "type": "registry:block",
+      "title": "Enterprise Diagnostics",
+      "url": "/r/enterprise-diagnostics.json"
+    },
+    {
+      "name": "product-editor-controls",
+      "type": "registry:block",
+      "title": "Product Editor Controls",
+      "url": "/r/product-editor-controls.json"
+    },
+    {
+      "name": "search-bridge-command",
+      "type": "registry:block",
+      "title": "Search Bridge Command",
+      "url": "/r/search-bridge-command.json"
     }
   ]
 }

@@ -1,9 +1,31 @@
 {
-  "version": "1.4.0",
-  "capturedAt": "2026-10-19T23:11:00.473Z",
+  "version": "1.5.0",
+  "capturedAt": "2026-10-20T18:27:12.879Z",
   "method": "Playwright screenshots of the actual built application, encoded as WebP",
-  "basePath": "/aureform-ui",
+  "basePath": "",
   "captures": [
+    {
+      "file": "aureform-landing-dark.webp",
+      "route": "",
+      "theme": "dark",
+      "palette": "aurora",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 80590,
+      "sha256": "43be1c72e45e5a491c100dbd83893fbd98405cacabe900bb12b4da47734e342d"
+    },
+    {
+      "file": "aureform-documentation.webp",
+      "route": "docs/integrations",
+      "theme": "light",
+      "palette": "ocean",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 85420,
+      "sha256": "916c5d43d0a71baa603cbb9c389fc9b5f2347760ccf1de023a6f16bd6b40e75a"
+    },
     {
       "file": "aureform-overview-dark.webp",
       "route": "dashboard",
@@ -12,8 +34,8 @@
       "locale": "en",
       "width": 1440,
       "height": 1000,
-      "bytes": 79954,
-      "sha256": "8da30fbdf82b79c32e1081da67dcd89f296c16f901bc7a2ce7ed61f9aadc8108"
+      "bytes": 79756,
+      "sha256": "24c86fdb222a008ca756668fe56987e7eab70809de68bc5b49994b8b508adb97"
     },
     {
       "file": "aureform-overview-light.webp",
@@ -23,8 +45,8 @@
       "locale": "en",
       "width": 1440,
       "height": 1000,
-      "bytes": 86464,
-      "sha256": "c5870029c5e66b5ca3ac536a916960af34e667f41d2a9126e4289f67376830dc"
+      "bytes": 86234,
+      "sha256": "5149c7756400c1b7151618d05246a1ce21199b1d232ea5c1d20d17bad466d560"
     },
     {
       "file": "aureform-studio.webp",
@@ -34,8 +56,8 @@
       "locale": "en",
       "width": 1440,
       "height": 1000,
-      "bytes": 77596,
-      "sha256": "9cb917201528e47367b60f031d7053e6dbb10d1ec7b12945e84e6d2b90d5daab"
+      "bytes": 77366,
+      "sha256": "6fc1dc01869caff2fbaa4ab977a1bd698e6cf57a8e05f0cbcc79c3c2d8179e37"
     },
     {
       "file": "aureform-charts.webp",
@@ -56,8 +78,8 @@
       "locale": "en",
       "width": 1440,
       "height": 1000,
-      "bytes": 74916,
-      "sha256": "8fa6ea9272fb265d827790962eb5c0a631069dc1a06f04bf64322392ba1e3a67"
+      "bytes": 74688,
+      "sha256": "0d7d206867e2c5b993617b69a36a709a110d2e15c748013bc0179b402ff9e74c"
     },
     {
       "file": "aureform-effects.webp",
@@ -67,8 +89,8 @@
       "locale": "en",
       "width": 1440,
       "height": 1000,
-      "bytes": 75454,
-      "sha256": "5a56c88c3c8780f104109a2c7050d6aa7f1672fc79acb08325db40199246176a"
+      "bytes": 75216,
+      "sha256": "0b96dbf09b03e082e4d3a43e265a8b711b49435a6c3465617be758fb716b15ca"
     },
     {
       "file": "aureform-media.webp",
@@ -124,7 +146,7 @@
       "width": 1440,
       "height": 1000,
       "bytes": 64674,
-      "sha256": "47df8ecf6fb75d54a4a5c3c2371c21e7ad3c55af7024483f7202d89c4010bb2d"
+      "sha256": "3c1b3d0dffbccf3e3fefbbcd167e844ea43e660f90fcea84096bbc14ab435da0"
     },
     {
       "file": "aureform-maps.webp",
@@ -147,6 +169,29 @@
       "height": 1000,
       "bytes": 57128,
       "sha256": "0c6f8ab164d919abaf9bf2fe64443a13badfc416758581f837a7da8c25fa59ba"
+    },
+    {
+      "file": "aureform-integrations-dark.webp",
+      "route": "integrations",
+      "theme": "dark",
+      "palette": "aurora",
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 76760,
+      "sha256": "d5ec903ee7c8917f1242ce834917f06edc0eaf08299927ee0c96117d7df8d882"
+    },
+    {
+      "file": "aureform-integrations-light.webp",
+      "route": "integrations/supabase-data",
+      "theme": "light",
+      "palette": "ocean",
+      "startIntegrationDemo": true,
+      "locale": "en",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 58962,
+      "sha256": "c5490f6011c07cf10acfb01d001e85a599d0d513cc8c172859442d85a596a143"
     }
   ],
   "pageErrors": []

@@ -80,8 +80,8 @@ export const documentationArticles: readonly DocumentationArticle[] = [
     slug: "registry",
     title: { en: "shadcn registry", es: "Registry de shadcn" },
     description: {
-      en: "Install the 107 source entries, their dependencies and portable assets.",
-      es: "Instala las 107 entradas, sus dependencias y los recursos portables.",
+      en: "Install the 119 source entries, their dependencies and portable assets.",
+      es: "Instala las 119 entradas, sus dependencias y los recursos portables.",
     },
     group: group.start,
     files: { en: "docs/registry-compatibility.md" },
@@ -153,8 +153,8 @@ export const documentationArticles: readonly DocumentationArticle[] = [
       es: "docs/saas-operations.es.md",
     },
     retainedScope: {
-      en: "This contract retains its 1.2 integration checkpoint and test scope. Its SaaS APIs remain available; the current registry contains 107 entries. Newer commerce and authentication contracts are documented separately.",
-      es: "Este contrato conserva su checkpoint 1.2 de integración y pruebas. Sus APIs SaaS siguen disponibles; el registry actual contiene 107 entradas. Los contratos posteriores de comercio y autenticación tienen capítulos propios.",
+      en: "This contract retains its 1.2 integration checkpoint and test scope. Its SaaS APIs remain available; the current registry contains 119 entries. Newer commerce and authentication contracts are documented separately.",
+      es: "Este contrato conserva su checkpoint 1.2 de integración y pruebas. Sus APIs SaaS siguen disponibles; el registry actual contiene 119 entradas. Los contratos posteriores de comercio y autenticación tienen capítulos propios.",
     },
   },
   {
@@ -202,6 +202,16 @@ export const documentationArticles: readonly DocumentationArticle[] = [
       en: "docs/application-integrations.md",
       es: "docs/application-integrations.es.md",
     },
+  },
+  {
+    slug: "integrations",
+    title: { en: "Ready-to-connect integrations", es: "Integraciones listas para conectar" },
+    description: {
+      en: "65 frontend recipes, complete workbenches, functional mocks and injectable transports.",
+      es: "65 recetas de frontend, interfaces completas, mocks funcionales y transportes inyectables.",
+    },
+    group: group.integrations,
+    files: websiteFiles("integrations"),
   },
   {
     slug: "integration-research",

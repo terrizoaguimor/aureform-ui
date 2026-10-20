@@ -5,8 +5,10 @@ import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { routes } from "../src/lib/catalog.ts";
+import { importCatalog } from "./lib/catalog-import.mjs";
 import { createAppearance } from "../src/lib/appearance.ts";
+import { documentationArticles } from "../src/lib/documentation.ts";
+const { routes } = await importCatalog();
 
 const baseURL = (
   process.env.AUREFORM_BASE_URL || "http://127.0.0.1:3012/aureform-ui"
@@ -19,6 +21,76 @@ const reportDirectory = resolve(
   process.env.AUREFORM_QA_DIR || `artifacts/release-${version}/public-demo`,
 );
 const paths = ["", ...routes.map((route) => route.path)];
+const publishedPaths = new Set([
+  ...paths,
+  ...documentationArticles.map(({ slug }) =>
+    slug === "start" ? "docs" : `docs/${slug}`,
+  ),
+]);
+const mobilePaths = [
+  "",
+  "dashboard",
+  "components",
+  "studio",
+  "docs/license",
+  "customers",
+  "products",
+  "orders",
+  "invoices",
+  "maps",
+  "auth/sign-in",
+  "auth/sign-up",
+  "settings/billing",
+  "docs/integrations",
+  "integrations",
+  ...[
+    "supabase-data",
+    "better-auth",
+    "stripe",
+    "cloudinary",
+    "resend-react-email",
+    "posthog",
+    "notification-inboxes",
+    "background-jobs",
+    "liveblocks",
+    "tiptap",
+    "algolia",
+    "existing-maps",
+    "openai-responses",
+    "pgvector",
+    "openai-agents",
+    "jira",
+    "n8n",
+  ].map((recipe) => `integrations/${recipe}`),
+];
+assert.ok(
+  mobilePaths.every((path) => publishedPaths.has(path)),
+  "Every representative mobile path must be a published application or documentation page.",
+);
+const axePaths = new Set([
+  "dashboard",
+  "customers",
+  "docs/license",
+  "media",
+  "products",
+  "orders",
+  "invoices",
+  "maps",
+  "auth/sign-in",
+  "settings/billing",
+  "docs/integrations",
+  "integrations",
+  "integrations/supabase-data",
+  "integrations/cloudinary",
+]);
+assert.ok(
+  [...axePaths].every((path) => publishedPaths.has(path)),
+  "Every accessibility path must be a published application or documentation page.",
+);
+const extraDocumentationPaths = [...axePaths].filter(
+  (path) => !paths.includes(path),
+);
+const desktopPaths = [...paths, ...extraDocumentationPaths];
 const records = [];
 const pageErrors = [];
 const failedResources = [];
@@ -84,6 +156,8 @@ async function visit(context, locale, route, options = {}) {
     Array.from(document.images).every((image) => {
       const bounds = image.getBoundingClientRect();
       return (
+        !bounds.width ||
+        !bounds.height ||
         (image.loading === "lazy" &&
           (bounds.bottom < 0 || bounds.top > innerHeight)) ||
         (image.complete && image.naturalWidth > 0)
@@ -101,6 +175,7 @@ async function visit(context, locale, route, options = {}) {
     ).length,
   }));
   assert.equal(rendered.language, locale);
+  if (options.theme) assert.equal(rendered.theme, options.theme);
   assert.equal(
     rendered.overflow,
     false,
@@ -140,54 +215,25 @@ async function visit(context, locale, route, options = {}) {
 try {
   for (const locale of ["en", "es"]) {
     const context = await contextFor("dark");
-    for (let offset = 0; offset < paths.length; offset += 4) {
+    for (let offset = 0; offset < desktopPaths.length; offset += 4) {
       const results = await Promise.allSettled(
-        paths
-          .slice(offset, offset + 4)
-          .map((route) =>
-            visit(context, locale, route, {
-              axe:
-                locale === "en" &&
-                [
-                  "dashboard",
-                  "customers",
-                  "docs/license",
-                  "media",
-                  "products",
-                  "orders",
-                  "invoices",
-                  "maps",
-                  "auth/sign-in",
-                  "settings/billing",
-                ].includes(route),
-            }),
-          ),
+        desktopPaths.slice(offset, offset + 4).map((route) =>
+          visit(context, locale, route, {
+            axe: locale === "en" && axePaths.has(route),
+          }),
+        ),
       );
       for (const result of results)
         if (result.status === "rejected") throw result.reason;
-      if (offset % 16 === 0 || offset + 4 >= paths.length)
+      if (offset % 16 === 0 || offset + 4 >= desktopPaths.length)
         console.log(
-          `Public demo ${locale}: ${Math.min(offset + 4, paths.length)}/${paths.length}`,
+          `Public demo ${locale}: ${Math.min(offset + 4, desktopPaths.length)}/${desktopPaths.length}`,
         );
     }
     await context.close();
   }
   const mobile = await contextFor("light", { width: 360, height: 900 });
-  for (const route of [
-    "",
-    "dashboard",
-    "components",
-    "studio",
-    "docs/license",
-    "customers",
-    "products",
-    "orders",
-    "invoices",
-    "maps",
-    "auth/sign-in",
-    "auth/sign-up",
-    "settings/billing",
-  ]) {
+  for (const route of mobilePaths) {
     await visit(mobile, "es", route, { mobile: true, theme: "light" });
   }
   await mobile.close();
@@ -245,6 +291,11 @@ try {
   await controls.close();
   assert.equal(pageErrors.length, 0, "No browser application errors");
   assert.equal(failedResources.length, 0, "No failed local HTTP resources");
+  assert.equal(
+    accessibility.length,
+    axePaths.size,
+    "Every configured accessibility scan must have an observed result.",
+  );
   status = "passed";
 } catch (error) {
   runError = String(error);
@@ -259,8 +310,7 @@ try {
         status,
         baseURL,
         finishedAt: new Date().toISOString(),
-        scope:
-          "All 69 views in EN/ES desktop dark; thirteen ES mobile light views; ten main-region Axe scans; three real browser behaviors",
+        scope: `All ${paths.length} views and ${extraDocumentationPaths.length} additional documentation article in EN/ES desktop dark; ${mobilePaths.length} ES mobile light views; ${accessibility.length} observed main-region Axe scans; three real browser behaviors`,
         records,
         accessibility,
         interactions,

@@ -13,6 +13,14 @@ import {
 } from "../../src/lib/saas";
 import type { Customer } from "../../src/demo/dashboard-data";
 
+const suppliedBaseURL = process.env.AUREFORM_BASE_URL;
+const mount = (
+  suppliedBaseURL
+    ? new URL(suppliedBaseURL).pathname
+    : (process.env.NEXT_PUBLIC_BASE_PATH ?? "")
+).replace(/\/+$/, "");
+const mountedPath = (path: string) => `${mount}/${path.replace(/^\/+/, "")}`;
+
 type Locale = "en" | "es";
 const copy = {
   en: {
@@ -118,7 +126,9 @@ async function ready(page: Page, locale: Locale = "en") {
 }
 
 async function openDetail(page: Page, id: string, locale: Locale = "en") {
-  await page.goto(`/${locale}/customers/detail/?id=${encodeURIComponent(id)}`);
+  await page.goto(
+    mountedPath(`/${locale}/customers/detail/?id=${encodeURIComponent(id)}`),
+  );
   await ready(page, locale);
 }
 
@@ -138,7 +148,7 @@ async function createCustomer(
   name: string,
   email: string,
 ): Promise<Customer> {
-  await page.goto("/en/customers/");
+  await page.goto(mountedPath("/en/customers/"));
   await ready(page);
   await page
     .getByRole("button", { name: copy.en.addCustomer, exact: true })
@@ -366,7 +376,7 @@ test("creation from the list opens and preserves the real customer ID", async ({
     .getByRole("button", { name: created.name, exact: true })
     .click();
   await expect(page).toHaveURL(
-    new RegExp(`/en/customers/detail/\\?id=${encodeURIComponent(created.id)}$`),
+    mountedPath(`/en/customers/detail/?id=${encodeURIComponent(created.id)}`),
   );
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     created.name,
@@ -399,7 +409,7 @@ test("creation from the list opens and preserves the real customer ID", async ({
   await expect(summary.getByText(created.id, { exact: true })).toBeVisible();
   await expect(
     page.getByRole("link", { name: copy.en.back, exact: true }),
-  ).toHaveAttribute("href", "/en/customers/");
+  ).toHaveAttribute("href", mountedPath("/en/customers/"));
   await screenshot(page, testInfo, "created-customer-detail");
   await page.reload();
   await ready(page);
@@ -412,14 +422,14 @@ test("creation from the list opens and preserves the real customer ID", async ({
     ),
   ).toEqual(created);
   await page.getByRole("link", { name: copy.en.back, exact: true }).click();
-  await expect(page).toHaveURL(/\/en\/customers\/$/);
+  await expect(page).toHaveURL(mountedPath("/en/customers/"));
   await ready(page);
   await page
     .locator("tbody")
     .getByRole("button", { name: created.name, exact: true })
     .click();
   await expect(page).toHaveURL(
-    new RegExp(`id=${encodeURIComponent(created.id)}$`),
+    mountedPath(`/en/customers/detail/?id=${encodeURIComponent(created.id)}`),
   );
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     created.name,
@@ -634,7 +644,7 @@ test("a customer ID from another workspace is not found and cannot leak notes or
   await attachMetadata(page, "studio-only-proof.txt");
   const studio = (await readState(page)).data.studio;
   await switchWorkspace(page, "personal");
-  await expect(page).toHaveURL(/\/en\/customers\/detail\/\?id=cus-001$/);
+  await expect(page).toHaveURL(mountedPath("/en/customers/detail/?id=cus-001"));
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     copy.en.notFound,
   );
@@ -655,7 +665,7 @@ test("a customer ID from another workspace is not found and cannot leak notes or
   );
   expect((await readState(page)).activeWorkspaceId).toBe("personal");
   await page.getByRole("link", { name: copy.en.back, exact: true }).click();
-  await expect(page).toHaveURL(/\/en\/customers\/$/);
+  await expect(page).toHaveURL(mountedPath("/en/customers/"));
   await ready(page);
   await expect(
     page
@@ -716,7 +726,7 @@ test("viewer role persists across navigation and reload without mutation control
   await assertMetadataHasNoActions(panel);
   await screenshot(page, testInfo, "viewer-files-read-only");
   await page.getByRole("link", { name: copy.en.back, exact: true }).click();
-  await expect(page).toHaveURL(/\/en\/customers\/$/);
+  await expect(page).toHaveURL(mountedPath("/en/customers/"));
   await ready(page);
   await expect(
     page.getByRole("button", { name: copy.en.addCustomer, exact: true }),
@@ -785,7 +795,7 @@ test("a validated persisted workspace mismatch renders not-found without disclos
   expect(after.data.studio).toEqual(before.data.studio);
   await screenshot(page, testInfo, "persisted-wrong-workspace-not-found");
   await page.getByRole("link", { name: copy.en.back, exact: true }).click();
-  await expect(page).toHaveURL(/\/en\/customers\/$/);
+  await expect(page).toHaveURL(mountedPath("/en/customers/"));
   await ready(page);
   await expect(
     page
@@ -863,8 +873,9 @@ test("actual Next router push and replace resolve the requested ID and preserve 
     await page.evaluate((value) => {
       Object.assign(window, { __qaDetailDocument: value });
     }, marker);
+    // Next's router adds basePath; browser navigation and native history do not.
     await routerNavigate(page, `/en/customers/detail/?id=${id}`, method);
-    await expect(page).toHaveURL(new RegExp(`id=${id}$`));
+    await expect(page).toHaveURL(mountedPath(`/en/customers/detail/?id=${id}`));
     await expect(page.getByRole("heading", { level: 1 })).toHaveText(
       records.find((item) => item.id === id)!.name,
     );
@@ -909,17 +920,17 @@ test("same-document pushState and replaceState must refresh ID without an artifi
     ["replaceState", "cus-003"],
   ] as const) {
     await page.evaluate(
-      ({ method, id }) =>
+      ({ method, href }) =>
         window.history[method](
           // Use the public API with fresh state. Passing Next's internal __NA
           // deliberately bypasses its useSearchParams synchronization.
           null,
           "",
-          `/en/customers/detail/?id=${id}`,
+          href,
         ),
-      { method, id },
+      { method, href: mountedPath(`/en/customers/detail/?id=${id}`) },
     );
-    await expect(page).toHaveURL(new RegExp(`id=${id}$`));
+    await expect(page).toHaveURL(mountedPath(`/en/customers/detail/?id=${id}`));
     const expectedName = records.find((item) => item.id === id)!.name;
     await expect
       .soft(

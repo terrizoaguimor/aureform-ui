@@ -1,5 +1,6 @@
 "use client";
 import { publicPath } from "@/lib/public-path";
+import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -7,17 +8,11 @@ import { z } from "zod";
 import { useRouter } from "next/navigation";
 import {
   Plus,
-  Mail,
   Trash2,
   Copy,
   Eye,
   EyeOff,
   KeyRound,
-  GitBranch,
-  Database,
-  MessageSquare,
-  Webhook,
-  CreditCard,
 } from "lucide-react";
 import { toast } from "sonner";
 import { useDemoStore } from "@/hooks/use-demo-store";
@@ -55,6 +50,8 @@ import {
 import { demoAvatarSources } from "@/demo/avatar-assets";
 import { cn } from "@/lib/utils";
 import { CommerceWorkspace } from "@/components/blocks/commerce-workspace";
+import type { IntegrationHubProps } from "@/components/integrations/integration-hub";
+const IntegrationHub = dynamic(() => import("@/components/integrations/integration-hub").then((module) => module.IntegrationHub));
 const profileSeed = {
   name: "Alex Morgan",
   email: "alex@studio.demo",
@@ -63,7 +60,7 @@ const profileSeed = {
   bio: "Building thoughtful products, one considered detail at a time.",
   website: "https://example.com",
 };
-export function SettingsTemplate({ section }: { section: string }) {
+export function SettingsTemplate({ section, integrationHubProps }: { section: string; integrationHubProps?: IntegrationHubProps }) {
   const { l, common: t, locale } = useLanguage();
   const tabs = [
     ["workspace", l("Workspace", "Espacio de trabajo")],
@@ -104,7 +101,7 @@ export function SettingsTemplate({ section }: { section: string }) {
           </a>
         ))}
       </nav>
-      <div className="max-w-5xl">
+      <div className={section === "integrations" ? "min-w-0" : "max-w-5xl"}>
         {section === "workspace" ? (
           <WorkspaceOperationsPanel />
         ) : section === "profile" ? (
@@ -118,7 +115,7 @@ export function SettingsTemplate({ section }: { section: string }) {
         ) : section === "api-keys" ? (
           <ApiKeys />
         ) : (
-          <Integrations />
+          <IntegrationHub {...integrationHubProps} />
         )}
       </div>
     </div>
@@ -590,156 +587,6 @@ function ApiKeys() {
           toast.success(l("Demo key revoked", "Clave de ejemplo revocada"));
         }}
       />
-    </div>
-  );
-}
-function Integrations() {
-  const { l } = useLanguage(),
-    [connected, setConnected] = useDemoStore<string[]>("integrations", [
-      "github",
-      "database",
-    ]),
-    [filter, setFilter] = useState("all");
-  const integrations = [
-    {
-      id: "github",
-      name: "GitHub",
-      category: "development",
-      icon: GitBranch,
-      description: l(
-        "Keep code and collaboration connected.",
-        "Conecta el código y la colaboración.",
-      ),
-    },
-    {
-      id: "database",
-      name: "Database",
-      category: "development",
-      icon: Database,
-      description: l(
-        "Bring your product’s data into focus.",
-        "Dale claridad a los datos de tu producto.",
-      ),
-    },
-    {
-      id: "slack",
-      name: "Slack",
-      category: "communication",
-      icon: MessageSquare,
-      description: l(
-        "A shared place for timely updates.",
-        "Un lugar compartido para estar al día.",
-      ),
-    },
-    {
-      id: "webhooks",
-      name: "Webhooks",
-      category: "development",
-      icon: Webhook,
-      description: l(
-        "Make events part of your workflow.",
-        "Integra los eventos en tu flujo de trabajo.",
-      ),
-    },
-    {
-      id: "stripe",
-      name: "Stripe",
-      category: "payments",
-      icon: CreditCard,
-      description: l(
-        "A starting point for payment workflows.",
-        "Un punto de partida para flujos de pago.",
-      ),
-    },
-    {
-      id: "mail",
-      name: "Email",
-      category: "communication",
-      icon: Mail,
-      description: l("Keep every message considered.", "Cuida cada mensaje."),
-    },
-  ];
-  return (
-    <div className="grid gap-5">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h2 className="text-sm font-semibold">
-            {l("Better together", "Mejor juntos")}
-          </h2>
-          <p className="mt-1 text-xs text-muted-foreground">
-            {l(
-              "Choose the tools that fit your direction.",
-              "Elige las herramientas que acompañan tu dirección.",
-            )}
-          </p>
-        </div>
-        <Select
-          aria-label={l("Integration category", "Categoría de integración")}
-          value={filter}
-          onValueChange={setFilter}
-          className="h-9 w-44"
-          options={[
-            {
-              value: "all",
-              label: l("All integrations", "Todas las integraciones"),
-            },
-            { value: "development", label: l("Development", "Desarrollo") },
-            {
-              value: "communication",
-              label: l("Communication", "Comunicación"),
-            },
-            { value: "payments", label: l("Payments", "Pagos") },
-          ]}
-        />
-      </div>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {integrations
-          .filter((i) => filter === "all" || i.category === filter)
-          .map((item) => (
-            <Card key={item.id} className="flex flex-col p-5">
-              <div className="mb-5 flex items-center justify-between">
-                <span className="flex size-10 items-center justify-center rounded-lg border border-border bg-surface-subtle">
-                  <item.icon className="size-5" />
-                </span>
-                {connected.includes(item.id) && (
-                  <Badge>{l("Connected", "Conectado")}</Badge>
-                )}
-              </div>
-              <h3 className="text-sm font-semibold">{item.name}</h3>
-              <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">
-                {item.description}
-              </p>
-              <Button
-                className="mt-5 w-full"
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  setConnected((p) =>
-                    p.includes(item.id)
-                      ? p.filter((id) => id !== item.id)
-                      : [...p, item.id],
-                  );
-                  toast.success(
-                    l(
-                      "Demo connection updated",
-                      "Conexión de ejemplo actualizada",
-                    ),
-                  );
-                }}
-              >
-                {connected.includes(item.id)
-                  ? l("Disconnect demo", "Desconectar demo")
-                  : l("Connect demo", "Conectar demo")}
-              </Button>
-            </Card>
-          ))}
-      </div>
-      <Alert title={l("Connection previews", "Vistas previas de conexión")}>
-        {l(
-          "Connection states are local examples. No third-party account access is requested.",
-          "Los estados de conexión son ejemplos locales. No se solicita acceso a cuentas externas.",
-        )}
-      </Alert>
     </div>
   );
 }

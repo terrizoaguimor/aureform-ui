@@ -30,6 +30,7 @@ import {
 } from "@/components/effects";
 import { AureformMark } from "@/components/brand";
 import { AIComposer } from "@/components/blocks/ai-composer";
+import { AiMessageParts } from "@/components/blocks/ai-message-parts";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -37,6 +38,7 @@ import { Avatar } from "@/components/ui/avatar";
 import { Alert } from "@/components/ui/alert";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
+import { Select } from "@/components/ui/select";
 
 import { Field } from "@/components/ui/field";
 import { Textarea } from "@/components/ui/textarea";
@@ -55,21 +57,48 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Spinner } from "@/components/ui/spinner";
 import { cn, downloadText } from "@/lib/utils";
-import { streamDemoReply, type DemoModel } from "@/demo/ai-adapter";
+import type { DemoModel } from "@/demo/ai-adapter";
+import {
+  AiProtocolError,
+  applyAiEvent,
+  createDemoAiWorkspaceAdapter,
+  defaultAiWorkspaceId,
+  validateAiEventStream,
+  validateAiWorkspaceRequest,
+  type AiApprovalActionState,
+  type AiApprovalPart,
+  type AiMessage,
+  type AiWorkspaceAdapter,
+} from "@/lib/ai-integration";
 import { demoAvatarSources } from "@/demo/avatar-assets";
-type ChatMessage = {
-  id: string;
-  role: "user" | "assistant";
-  content: string;
-  status?: "complete" | "streaming" | "cancelled" | "failed";
-};
-export function AIWorkspace({
-  mode = "chat",
-}: {
+type ChatMessage = AiMessage;
+export type AIWorkspaceProps = {
   mode?: "chat" | "playground" | "code";
-}) {
+  /** Inject from a Client Component; adapters contain non-serializable functions. */
+  adapter?: AiWorkspaceAdapter;
+  /** Selection context only. A real selection without an adapter cannot run the demo. */
+  providerOptionId?: string;
+  /** Remounts the session and cancels work when the consumer workspace changes. */
+  workspaceId?: string;
+  initialModel?: string;
+  /** Displays authorized backend diagnostics; this flag does not grant access. */
+  diagnostics?: boolean;
+};
+export function AIWorkspace(props: AIWorkspaceProps) {
+  const workspaceId = props.workspaceId ?? defaultAiWorkspaceId;
+  return <AIWorkspaceSession key={`${workspaceId}:${props.mode ?? "chat"}`} {...props} workspaceId={workspaceId} />;
+}
+function AIWorkspaceSession({
+  mode = "chat",
+  adapter,
+  initialModel,
+  providerOptionId,
+  workspaceId,
+  diagnostics = false,
+}: AIWorkspaceProps & { workspaceId: string }) {
   const { locale, l, common: t } = useLanguage();
   const { appearance } = useAppearance();
+  const defaultDemoAllowed = !providerOptionId || providerOptionId === "demo";
   const colors = useMemo<[string, string, string]>(
     () => [
       appearance.colors.primary,
@@ -82,11 +111,18 @@ export function AIWorkspace({
       appearance.colors.tertiary,
     ],
   );
-  const [messages, setMessages] = useDemoStore<ChatMessage[]>(`ai-${mode}`, []);
+  const [demoMessages, setDemoMessages] = useDemoStore<ChatMessage[]>(
+    workspaceId === defaultAiWorkspaceId ? `ai-${mode}` : `ai-${workspaceId}-${mode}`, [],
+  );
+  const [sessionMessages, setSessionMessages] = useState<ChatMessage[]>([]);
+  const sessionOnly = Boolean(adapter) || !defaultDemoAllowed;
+  const storedMessages = sessionOnly ? sessionMessages : demoMessages;
+  const setMessages = sessionOnly ? setSessionMessages : setDemoMessages;
   const [prompt, setPrompt] = useState(""),
     [pending, setPending] = useState(false),
     [error, setError] = useState("");
   const [model, setModel] = useState<DemoModel>("balanced"),
+    [selectedModelId, setSelectedModelId] = useState<string | undefined>(initialModel),
     [temperature, setTemperature] = useState(0.7),
     [system, setSystem] = useState("");
   const [simulateError, setSimulateError] = useState(false),
@@ -95,11 +131,26 @@ export function AIWorkspace({
       name: string;
       content: string;
     } | null>(null);
+  const [approvalActions, setApprovalActions] = useState<Record<string, AiApprovalActionState>>({});
+  const selectedModel = selectedModelId === undefined
+    ? adapter?.models[0] : adapter?.models.find((option) => option.id === selectedModelId);
+  const isDemo = adapter?.kind === "demo" || (!adapter && defaultDemoAllowed);
+  const configured = adapter ? Boolean(selectedModel) : defaultDemoAllowed;
+  const demoAdapter = useMemo(() => createDemoAiWorkspaceAdapter({ fail: simulateError }), [simulateError]);
+  const activeRequest = useRef<{ id: string; adapter: AiWorkspaceAdapter; controller: AbortController } | null>(null);
+  const resolvedApprovals = useRef(new Set<string>());
+  const submittingApprovals = useRef(new Set<string>());
   const controller = useRef<AbortController | null>(null),
     lastPrompt = useRef(""),
     lastAssistant = useRef(""),
     bottom = useRef<HTMLDivElement>(null),
     mounted = useRef(true);
+  const messages = storedMessages.map((message): ChatMessage =>
+    (message.status === "streaming" || message.status === "waiting-approval") &&
+    message.id !== activeRequest.current?.id
+      ? { ...message, status: "cancelled", activity: undefined, activitySummary: undefined }
+      : message,
+  );
   useEffect(() => {
     mounted.current = true;
     return () => {
@@ -107,6 +158,7 @@ export function AIWorkspace({
       controller.current?.abort();
     };
   }, []);
+  useEffect(() => () => { controller.current?.abort(); }, [adapter, mode, providerOptionId, workspaceId]);
   useEffect(() => {
     if (messages.length)
       bottom.current?.scrollIntoView({
@@ -124,97 +176,137 @@ export function AIWorkspace({
     addUser = true,
     ignoreFailure = false,
   ) => {
-    if (pending || !text.trim()) return;
+    if (controller.current || pending || !configured || !text.trim()) return;
     const active = new AbortController();
     controller.current = active;
+    const current = () => mounted.current && controller.current === active;
+    const previousAssistant = lastAssistant.current;
+    const selectedAdapter = adapter ?? (ignoreFailure ? createDemoAiWorkspaceAdapter() : demoAdapter);
     setPending(true);
     setError("");
+    setApprovalActions({});
+    resolvedApprovals.current.clear();
+    submittingApprovals.current.clear();
     lastPrompt.current = text;
     const id = crypto.randomUUID();
     lastAssistant.current = id;
+    const userMessage: ChatMessage = {
+      id: crypto.randomUUID(), role: "user", content: text, status: "complete",
+    };
+    let response: ChatMessage = { id, role: "assistant", content: "", status: "streaming", parts: [] };
+    activeRequest.current = { id, adapter: selectedAdapter, controller: active };
     setMessages((previous) => [
       ...previous,
       ...(addUser
         ? [
-            {
-              id: crypto.randomUUID(),
-              role: "user" as const,
-              content: text,
-              status: "complete" as const,
-            },
+            userMessage,
           ]
         : []),
-      { id, role: "assistant", content: "", status: "streaming" },
+      response,
     ]);
     setPrompt("");
     try {
-      let content = "";
-      const context = attachment
-        ? `${text}\n\n${attachment.name}: ${attachment.content.slice(0, 1000)}`
-        : text;
-      for await (const chunk of streamDemoReply(
-        system ? `${system}\n${context}` : context,
-        {
-          locale,
-          model,
-          signal: active.signal,
-          fail: ignoreFailure ? false : simulateError,
-          mode: mode === "code" ? "code" : "chat",
-          temperature,
-        },
-      )) {
-        if (!mounted.current) break;
-        content += chunk;
+      const history = (addUser
+        ? [...messages, userMessage]
+        : messages.filter((message) => message.id !== previousAssistant)
+      ).filter((message) => message.content.trim()).slice(-20);
+      if (history.at(-1)?.role !== "user") history.push(userMessage);
+      const request = validateAiWorkspaceRequest({
+        v: 1, id, workspaceId, locale, mode,
+        model: adapter ? { id: selectedModel?.id, provider: selectedModel?.provider } : { id: model, provider: "demo" },
+        messages: history.map((message) => ({ role: message.role, content: message.content.slice(-32 * 1024) })),
+        system, temperature,
+        attachments: attachment ? [{ name: attachment.name, mediaType: "text/plain", text: attachment.content }] : [],
+      });
+      for await (const event of validateAiEventStream(selectedAdapter.stream(request, active.signal), {
+        requestId: id, workspaceId, signal: active.signal,
+      })) {
+        if (!current()) break;
+        response = applyAiEvent(response, event);
+        if (event.type === "approval" && event.state !== "requested") {
+          resolvedApprovals.current.add(event.id);
+          submittingApprovals.current.delete(event.id);
+          setApprovalActions((previous) => {
+            const next = { ...previous };
+            delete next[event.id];
+            return next;
+          });
+        }
+        const published = response;
         setMessages((previous) =>
           previous.map((message) =>
-            message.id === id ? { ...message, content } : message,
+            message.id === id ? published : message,
           ),
         );
       }
-      if (mounted.current && !active.signal.aborted)
-        setMessages((previous) =>
-          previous.map((message) =>
-            message.id === id ? { ...message, status: "complete" } : message,
-          ),
-        );
+      if (current() && !active.signal.aborted) {
+        if (response.status === "failed") setError(response.error?.message ?? l("Response interrupted.", "Respuesta interrumpida."));
+        if (response.status === "incomplete") setError(l("The response ended before completion. You can retry.", "La respuesta terminó antes de completarse. Puedes reintentar."));
+      }
     } catch (cause) {
-      if (mounted.current) {
+      if (current()) {
         if (active.signal.aborted) {
           setMessages((previous) =>
             previous.map((message) =>
-              message.id === id ? { ...message, status: "cancelled" } : message,
+              message.id === id ? { ...message, status: "cancelled", activity: undefined, activitySummary: undefined } : message,
             ),
           );
           toast(l("Generation stopped", "Generación detenida"));
         } else {
           setError(
-            cause instanceof Error
+            cause instanceof AiProtocolError || (selectedAdapter.kind === "demo" && cause instanceof Error)
               ? cause.message
               : l(
-                  "Could not generate a response.",
-                  "No se pudo generar una respuesta.",
+                  "The AI connection could not complete this response. Please retry.",
+                  "La conexión de IA no pudo completar esta respuesta. Reintenta.",
                 ),
           );
           setMessages((previous) =>
             previous.map((message) =>
-              message.id === id ? { ...message, status: "failed" } : message,
+              message.id === id ? { ...message, status: "failed", activity: undefined, activitySummary: undefined } : message,
             ),
           );
           setSimulateError(false);
         }
       }
     } finally {
-      if (mounted.current && controller.current === active) {
+      if (current()) {
         setPending(false);
         controller.current = null;
+        activeRequest.current = null;
       }
     }
   };
   const retry = () => {
+    if (controller.current || pending ||
+        messages.find((message) => message.id === lastAssistant.current)?.error?.retryable === false) return;
     setMessages((previous) =>
       previous.filter((message) => message.id !== lastAssistant.current),
     );
     void generate(lastPrompt.current, false, true);
+  };
+  const decideApproval = async (approval: AiApprovalPart, approved: boolean) => {
+    const active = activeRequest.current;
+    if (!active || active.controller.signal.aborted || !active.adapter.respondToApproval ||
+        submittingApprovals.current.has(approval.id) ||
+        resolvedApprovals.current.has(approval.id)) return;
+    submittingApprovals.current.add(approval.id);
+    setApprovalActions((previous) => ({ ...previous, [approval.id]: { state: "sending" } }));
+    try {
+      await active.adapter.respondToApproval({
+        v: 1, workspaceId, requestId: active.id, approvalId: approval.id, toolId: approval.toolId, approved,
+      }, active.controller.signal);
+      if (activeRequest.current === active && !resolvedApprovals.current.has(approval.id)) {
+        setApprovalActions((previous) => ({ ...previous, [approval.id]: { state: "submitted" } }));
+      }
+    } catch (cause) {
+      if (activeRequest.current === active && !active.controller.signal.aborted && !resolvedApprovals.current.has(approval.id)) {
+        submittingApprovals.current.delete(approval.id);
+        setApprovalActions((previous) => ({ ...previous, [approval.id]: {
+          state: "failed", error: cause instanceof AiProtocolError ? cause.message : l("Could not send the decision. Try again.", "No se pudo enviar la decisión. Reintenta."),
+        } }));
+      }
+    }
   };
   const attach = async (file: File) => {
     if (file.size > 1024 * 1024) {
@@ -229,8 +321,8 @@ export function AIWorkspace({
     setAttachment({ name: file.name, content: await file.text() });
     toast.success(
       l(
-        "File attached to demo context",
-        "Archivo añadido al contexto de demostración",
+        isDemo ? "File attached to demo context" : "Text file attached to this request",
+        isDemo ? "Archivo añadido al contexto de demostración" : "Archivo de texto añadido a esta solicitud",
       ),
     );
   };
@@ -275,8 +367,12 @@ export function AIWorkspace({
       ),
     },
   ];
+  const retryAllowed = messages.find((message) => message.id === lastAssistant.current)?.error?.retryable !== false;
   return (
     <div
+      data-ai-workspace={workspaceId}
+      data-ai-provider-option={providerOptionId ?? selectedModel?.provider ?? "demo"}
+      data-ai-connection={!configured ? "unconfigured" : isDemo ? "demo" : "consumer"}
       className={cn(
         "grid min-w-0 gap-5",
         mode === "playground" ? "xl:grid-cols-[minmax(0,1fr)_280px]" : "",
@@ -284,11 +380,11 @@ export function AIWorkspace({
     >
       <div className="flex min-h-[calc(100dvh-185px)] min-w-0 flex-col">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-border/80 pb-5">
-          <div className="flex items-center gap-3">
+          <div className="flex min-w-0 flex-wrap items-center gap-3">
             <span className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-primary/30 bg-primary/15">
               <Sparkles className="size-5 text-primary" />
             </span>
-            <div>
+            <div className="min-w-0">
               <h1 className="text-lg font-bold tracking-tight">
                 {mode === "playground"
                   ? l("AI playground", "Laboratorio de IA")
@@ -303,8 +399,9 @@ export function AIWorkspace({
                 )}
               </p>
             </div>
-            <Badge variant="outline" className="hidden sm:inline-flex">
-              {l("Demo", "Demostración")}
+            <Badge variant={!configured ? "warning" : "outline"}>
+              {!configured ? l("Not configured", "Sin configurar") : isDemo
+                ? l("Demo", "Demostración") : l("Consumer adapter", "Adaptador del consumidor")}
             </Badge>
           </div>
           <div className="flex flex-wrap items-center gap-2">
@@ -352,14 +449,14 @@ export function AIWorkspace({
                   <Download />
                   {l("Export conversation", "Exportar conversación")}
                 </DropdownMenuItem>
-                <DropdownMenuItem
-                  onClick={() => setSimulateError(!simulateError)}
-                >
-                  <TriangleAlert />
-                  {simulateError
-                    ? l("Disable next error", "Desactivar próximo error")
-                    : l("Simulate next error", "Simular próximo error")}
-                </DropdownMenuItem>
+                 {!adapter && defaultDemoAllowed && (
+                  <DropdownMenuItem onClick={() => setSimulateError(!simulateError)}>
+                    <TriangleAlert />
+                    {simulateError
+                      ? l("Disable next error", "Desactivar próximo error")
+                      : l("Simulate next error", "Simular próximo error")}
+                  </DropdownMenuItem>
+                )}
                 <DropdownMenuItem onClick={() => setClearOpen(true)}>
                   <Trash2 />
                   {l("Clear conversation", "Borrar conversación")}
@@ -439,11 +536,18 @@ export function AIWorkspace({
               className="grid gap-7 rounded-2xl border border-border/70 bg-surface/35 p-4 sm:p-6"
             >
               {messages.map((message) => (
-                <Message key={message.id} message={message} pending={pending} />
+                <Message key={message.id} message={message} pending={pending} diagnostics={diagnostics}
+                  approvalActions={message.id === activeRequest.current?.id ? approvalActions : undefined}
+                  onApprovalDecision={pending && message.id === activeRequest.current?.id &&
+                    activeRequest.current?.adapter.respondToApproval
+                    ? (approval, approved) => { void decideApproval(approval, approved); } : undefined}
+                />
               ))}
               {pending && (
                 <Spinner
-                  label={l("Thinking with you…", "Pensando contigo…")}
+                  label={messages.at(-1)?.status === "waiting-approval"
+                    ? l("Waiting for your tool decision…", "Esperando tu decisión sobre la herramienta…")
+                    : l("Thinking with you…", "Pensando contigo…")}
                   className="ml-12"
                 />
               )}
@@ -452,14 +556,24 @@ export function AIWorkspace({
           )}
         </div>
         <div className="mx-auto w-full max-w-[920px]">
+          {!configured && (
+            <Alert title={l("AI connection needed", "Falta la conexión de IA")} className="mb-3">
+              {adapter
+                ? l("Choose a model configured on the injected AI adapter. The initial model must match its exact ID.",
+                    "Elige un modelo configurado en el adaptador de IA. El modelo inicial debe coincidir con su ID exacto.")
+                : l("This provider needs an injected AI adapter. A connection for integration reports does not configure AI responses.",
+                    "Este proveedor necesita un adaptador de IA inyectado. Una conexión para informes de integración no configura respuestas de IA.")}
+            </Alert>
+          )}
           {error && (
             <Alert
               variant="destructive"
-              title={l("Let’s try that again.", "Intentémoslo de nuevo.")}
+              title={retryAllowed ? l("Let’s try that again.", "Intentémoslo de nuevo.")
+                : l("Response interrupted", "Respuesta interrumpida")}
               className="mb-3"
             >
               {error}
-              <Button
+              {retryAllowed && <Button
                 size="sm"
                 variant="outline"
                 className="mt-3"
@@ -467,7 +581,7 @@ export function AIWorkspace({
               >
                 <RotateCcw />
                 {t("retry")}
-              </Button>
+              </Button>}
             </Alert>
           )}
           {attachment && (
@@ -484,24 +598,42 @@ export function AIWorkspace({
               </Button>
             </div>
           )}
-          <GlowBorder colors={colors} className="rounded-2xl p-0">
-            <AIComposer
-              prompt={prompt}
-              onPromptChange={setPrompt}
-              onSend={() => void generate(prompt)}
-              onCancel={() => controller.current?.abort()}
-              pending={pending}
-              model={model}
-              onModelChange={(value) => setModel(value as DemoModel)}
-              labels={labels}
-              onAttach={(file) => void attach(file)}
-              className="rounded-2xl border-primary/30 bg-surface/95 p-4 backdrop-blur-xl [&_textarea]:min-h-28 [&_textarea]:text-sm sm:p-5"
-            />
-          </GlowBorder>
+          {adapter && (
+            <Field label={l("Provider and model", "Proveedor y modelo")} className="mb-3">
+              <Select
+                value={selectedModel?.id}
+                onValueChange={setSelectedModelId}
+                options={adapter.models.map((option) => ({
+                  value: option.id,
+                  label: `${option.provider} · ${locale === "es" ? option.labelEs ?? option.label : option.label}`,
+                }))}
+                disabled={pending}
+                aria-label={l("Choose provider and model", "Elegir proveedor y modelo")}
+                className="w-full"
+              />
+            </Field>
+          )}
+          <fieldset disabled={!configured} className="min-w-0 border-0 p-0">
+            <GlowBorder colors={colors} className="rounded-2xl p-0">
+              <AIComposer
+                prompt={prompt}
+                onPromptChange={setPrompt}
+                onSend={() => void generate(prompt)}
+                onCancel={() => controller.current?.abort()}
+                pending={pending}
+                model={model}
+                onModelChange={(value) => setModel(value as DemoModel)}
+                labels={labels}
+                onAttach={(file) => void attach(file)}
+                className={cn("rounded-2xl border-primary/30 bg-surface/95 p-4 backdrop-blur-xl [&_textarea]:min-h-28 [&_textarea]:text-sm sm:p-5",
+                  adapter && "[&_[role=combobox]]:hidden")}
+              />
+            </GlowBorder>
+          </fieldset>
           <p className="mt-4 text-center text-xs leading-6 text-muted-foreground">
             {l(
-              "Simulated responses · Connect your provider through the adapter.",
-              "Respuestas simuladas · Conecta tu proveedor mediante el adaptador.",
+              !configured ? "No AI request will run until an adapter and model are configured." : isDemo ? "Simulated responses · Connect your provider through the adapter." : "Responses from your injected backend · Usage appears only when reported.",
+              !configured ? "No se enviará ninguna solicitud de IA hasta configurar adaptador y modelo." : isDemo ? "Respuestas simuladas · Conecta tu proveedor mediante el adaptador." : "Respuestas de tu backend inyectado · El consumo aparece solo cuando se reporta.",
             )}
           </p>
           {!messages.length && (
@@ -556,8 +688,8 @@ export function AIWorkspace({
             <Field
               label={l("System instruction", "Instrucción del sistema")}
               description={l(
-                "Passed into the local adapter context.",
-                "Se envía al contexto del adaptador local.",
+                isDemo ? "Passed into the local adapter context." : "Sent to the consumer backend with the request.",
+                isDemo ? "Se envía al contexto del adaptador local." : "Se envía al backend del consumidor con la solicitud.",
               )}
             >
               <Textarea
@@ -584,25 +716,23 @@ export function AIWorkspace({
               />
               <p className="mt-2 text-xs leading-6 text-muted-foreground">
                 {l(
-                  "Changes the creative model’s demo response.",
-                  "Cambia la respuesta de ejemplo del modelo creativo.",
+                  isDemo ? "Changes the creative model’s demo response." : "The backend applies parameters supported by the selected model.",
+                  isDemo ? "Cambia la respuesta de ejemplo del modelo creativo." : "El backend aplica los parámetros que admite el modelo elegido.",
                 )}
               </p>
             </div>
-            <div className="flex items-center justify-between gap-3 text-xs">
-              <label htmlFor="ai-failure">
-                {l("Simulate an error", "Simular un error")}
-              </label>
-              <Switch
-                id="ai-failure"
-                checked={simulateError}
-                onCheckedChange={setSimulateError}
-              />
-            </div>
-            <Alert title={l("Demo adapter", "Adaptador de demostración")}>
+            {!adapter && defaultDemoAllowed && (
+              <div className="flex items-center justify-between gap-3 text-xs">
+                <label htmlFor="ai-failure">
+                  {l("Simulate an error", "Simular un error")}
+                </label>
+                <Switch id="ai-failure" checked={simulateError} onCheckedChange={setSimulateError} />
+              </div>
+            )}
+            <Alert title={isDemo ? l("Demo adapter", "Adaptador de demostración") : l("Consumer adapter", "Adaptador del consumidor")}>
               {l(
-                "No model credentials or network calls are needed.",
-                "No requiere credenciales ni llamadas a un modelo.",
+                isDemo ? "No model credentials or network calls are needed." : "Your backend owns provider connectivity, credentials and tool execution.",
+                isDemo ? "No requiere credenciales ni llamadas a un modelo." : "Tu backend gestiona la conexión, las credenciales y la ejecución de herramientas.",
               )}
             </Alert>
           </div>
@@ -615,8 +745,8 @@ export function AIWorkspace({
           </DialogTitle>
           <DialogDescription>
             {l(
-              "This clears the current demo conversation.",
-              "Se borrará la conversación actual de demostración.",
+              adapter ? "This clears this browser session, without deleting backend records." : "This clears the current demo conversation.",
+              adapter ? "Se limpia esta sesión del navegador sin eliminar registros del backend." : "Se borrará la conversación actual de demostración.",
             )}
           </DialogDescription>
           <DialogFooter>
@@ -625,7 +755,16 @@ export function AIWorkspace({
             </Button>
             <Button
               onClick={() => {
-                controller.current?.abort();
+                const active = controller.current;
+                controller.current = null;
+                activeRequest.current = null;
+                active?.abort();
+                setPending(false);
+                setApprovalActions({});
+                resolvedApprovals.current.clear();
+                submittingApprovals.current.clear();
+                lastPrompt.current = "";
+                lastAssistant.current = "";
                 setMessages([]);
                 setPrompt("");
                 setError("");
@@ -643,11 +782,17 @@ export function AIWorkspace({
 function Message({
   message,
   pending,
+  onApprovalDecision,
+  approvalActions,
+  diagnostics,
 }: {
   message: ChatMessage;
   pending: boolean;
+  onApprovalDecision?: (approval: AiApprovalPart, approved: boolean) => void;
+  approvalActions?: Readonly<Record<string, AiApprovalActionState>>;
+  diagnostics?: boolean;
 }) {
-  const { l } = useLanguage(),
+  const { locale, l } = useLanguage(),
     { copy, copied } = useCopy();
   const user = message.role === "user";
   return (
@@ -672,17 +817,8 @@ function Message({
         <p className="mb-2 text-xs font-semibold">
           {user ? l("You", "Tú") : "Aureform"}
         </p>
-        <Markdown text={message.content} />
-        {message.status === "cancelled" && (
-          <Badge variant="neutral" className="mt-3">
-            {l("Stopped", "Detenido")}
-          </Badge>
-        )}
-        {message.status === "failed" && (
-          <p className="text-xs text-destructive-foreground">
-            {l("Response interrupted", "Respuesta interrumpida")}
-          </p>
-        )}
+        <AiMessageParts message={message} locale={locale}
+          onApprovalDecision={onApprovalDecision} approvalActions={approvalActions} diagnostics={diagnostics} />
         {!user && message.content && !pending && (
           <Button
             variant="ghost"
@@ -697,27 +833,6 @@ function Message({
           </Button>
         )}
       </div>
-    </div>
-  );
-}
-function Markdown({ text }: { text: string }) {
-  const parts = text.split(/(```[\s\S]*?```)/g);
-  return (
-    <div className="text-[13px] leading-[1.85] text-foreground/90">
-      {parts.map((part, i) =>
-        part.startsWith("```") ? (
-          <pre
-            key={i}
-            className="my-4 overflow-x-auto rounded-lg border border-border bg-surface-subtle p-4 font-mono text-xs"
-          >
-            <code>{part.replace(/^```\w*\n?/, "").replace(/```$/, "")}</code>
-          </pre>
-        ) : (
-          <span key={i} className="whitespace-pre-wrap break-words">
-            {part}
-          </span>
-        ),
-      )}
     </div>
   );
 }

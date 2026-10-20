@@ -1,6 +1,6 @@
 # Componentes y composición
 
-Aureform separa componentes básicos, bloques reutilizables y plantillas de aplicación. Empieza por la capa más pequeña que resuelva tu necesidad. Las 44 familias principales tienen ejemplos independientes; las 107 entradas del registro también incluyen proveedores, efectos y flujos compuestos.
+Aureform separa componentes básicos, bloques reutilizables y plantillas de aplicación. Empieza por la capa más pequeña que resuelva tu necesidad. Las 44 familias principales tienen ejemplos independientes; las 127 entradas del registro también incluyen proveedores, efectos y flujos compuestos.
 
 ## Copia un ejemplo completo
 

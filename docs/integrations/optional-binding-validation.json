@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "checkedAt": "2026-10-20T18:12:16.286Z",
+  "aureformVersion": "1.5.0",
+  "toolchain": {
+    "node": "26.7.0",
+    "pnpm": "10.34.5",
+    "typescript": "5.9.3"
+  },
+  "reproduction": "node scripts/verify-optional-bindings.mjs --write-receipt",
+  "installation": {
+    "isolated": true,
+    "registry": "https://registry.npmjs.org",
+    "frozenLockfile": true,
+    "lifecycleScripts": false,
+    "manifest": "scripts/optional-bindings/package.json",
+    "manifestSha256": "e88355272ab5a467ec83c8586c0e81af3196691c23364788bf883f4179483087",
+    "lockfile": "scripts/optional-bindings/pnpm-lock.yaml",
+    "lockfileSha256": "aa70c5fb198e9f89a4b3262e59bfd31f1fe810e17e57b289e31f8c9cb076d371"
+  },
+  "compiler": {
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "ambientStubs": 0,
+    "diagnostics": 0,
+    "tsxBlocks": 6,
+    "realAureformImports": true,
+    "additionalCheck": {
+      "binding": "mapbox",
+      "strict": true,
+      "noEmit": true,
+      "skipLibCheck": false,
+      "diagnostics": 0,
+      "tsxBlocks": 1
+    }
+  },
+  "scripts": [
+    {
+      "file": "scripts/verify-optional-bindings.mjs",
+      "sha256": "9cccf95fde905ec31ba77e20841ccf9d9fa74dca584a08d344f1f3baa689c5a0"
+    },
+    {
+      "file": "scripts/optional-bindings/roundtrips.mjs",
+      "sha256": "a0760aec3071213b0610c671f16cfd538df88481396c807af992dea40cb5192f"
+    }
+  ],
+  "examples": [
+    {
+      "file": "docs/integrations/editors.md",
+      "block": 1,
+      "filename": "editor-shared.tsx",
+      "bytes": 3223,
+      "sha256": "10968f59f78c29044aaf2690893324a7d518441fd055b74d12ce2e2dae99f79a"
+    },
+    {
+      "file": "docs/integrations/editors.md",
+      "block": 2,
+      "filename": "tiptap-editor.tsx",
+      "bytes": 6270,
+      "sha256": "f4b60d9498729429e806262cd81a9c1aed83ba8f41df9706651267dd2a9b505e"
+    },
+    {
+      "file": "docs/integrations/editors.md",
+      "block": 3,
+      "filename": "lexical-editor.tsx",
+      "bytes": 8351,
+      "sha256": "2e2e2626593ec541b764d13da67da54212faf10d2e9a2d79b07470e4ab110540"
+    },
+    {
+      "file": "docs/integrations/editors.md",
+      "block": 4,
+      "filename": "blocknote-editor.tsx",
+      "bytes": 4970,
+      "sha256": "534b5e1916612b665ad7bb16397fe0f6b1fb4cc087875704d9eaf02ce1bbd784"
+    },
+    {
+      "file": "docs/integrations/editors.md",
+      "block": 5,
+      "filename": "blocknote-workbench.tsx",
+      "bytes": 580,
+      "sha256": "0499ed52762369b217c6d98b69a5d16dda06b4faf9faaa81901c9c9aa6d377ad"
+    },
+    {
+      "file": "docs/integrations/mapbox-binding.md",
+      "block": 1,
+      "filename": "mapbox-binding.tsx",
+      "bytes": 5608,
+      "sha256": "3ba478b09a5483444aa63a39ce951fc67c13ee54e2f10583d82abada74ffd2c1"
+    }
+  ],
+  "packages": [
+    {
+      "name": "@blocknote/core",
+      "version": "0.56.0",
+      "license": "MPL-2.0",
+      "packageJsonSha256": "0a51a61511bdb58c51c3772c71c39d03bfb6a5b920b38aaebe05438e6ee3740f",
+      "declarations": "./types/src/index.d.ts",
+      "declarationsSha256": "8e0db7e4a53286169ea52900b04b9c99e735c24c7a8dd221f1f2c5d62a5c420f"
+    },
+    {
+      "name": "@blocknote/react",
+      "version": "0.56.0",
+      "license": "MPL-2.0",
+      "packageJsonSha256": "d10a08ce56414c6aaa5f9b263f340e3584101fedb57a4e29901b9520359b0b8b",
+      "declarations": "./types/src/index.d.ts",
+      "declarationsSha256": "3cea584c5c3899b0c528ad344ef3ec30e02ae595dba286b2719f6ed0781b56d4"
+    },
+    {
+      "name": "@lexical/clipboard",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "cb9b0f440fe07ed92557b2c6be76e95fb6b42396064a0351eaf23417e4c42350",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "@lexical/code",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "b2f795a1ee627b501082141ff36bc7e2b8ac0e27ed36b47a5b468dddeb0e6d90",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "@lexical/extension",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "65159b092324102c11944bec702a94d6d7805ceb92de4c980389538fa99c4808",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "@lexical/history",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "16dc3712a97eb2dac801055e80941d428d5c1cb1f0de4f2015995ecb842737af",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "@lexical/list",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "477575efe33539e8bf05d3e28ed30b83029bd58813bc839158ce925db5915496",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "@lexical/react",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "930a7834c5c187504d75819f5b941cc4df75a4471570aa884c13b92b323d2863",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "@lexical/rich-text",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "5e81eb0589a8f733d39be0d78802a8202d68a7ab830e8159df47b3139d1068d1",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "@lexical/selection",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "eab417333a5b2f5589b8960dd9e6e25cfea887c850066f67eebe393c1292d87e",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "@lexical/utils",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "c14ccee7e43748972446a406777e773e756324d00547c3e51344f346e50dbb1f",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "@tiptap/core",
+      "version": "3.32.0",
+      "license": "MIT",
+      "packageJsonSha256": "5708a2f668566ef7e19024709efb8540c9f66a4ad4be88ab420c15fab0fa15ed",
+      "declarations": "dist/index.d.ts",
+      "declarationsSha256": "640b40dc8521f054f0c18597aa7b5108200fa4d53bbc48932223ebcfea479185"
+    },
+    {
+      "name": "@tiptap/pm",
+      "version": "3.32.0",
+      "license": "MIT",
+      "packageJsonSha256": "483d81ee080a915151cc3d6046163c5f42c3a8ce4d80509338d9ba1efea392c8"
+    },
+    {
+      "name": "@tiptap/react",
+      "version": "3.32.0",
+      "license": "MIT",
+      "packageJsonSha256": "4044ed198a1e3c2f8407edc8d82fd842555d5c113ec49900f3cae30a74fc0446",
+      "declarations": "dist/index.d.ts",
+      "declarationsSha256": "def4df5b73640990a279d7345a4d43fe30e59dc24db1ae906998f5e931b39637"
+    },
+    {
+      "name": "@tiptap/starter-kit",
+      "version": "3.32.0",
+      "license": "MIT",
+      "packageJsonSha256": "aa1ea0213815eecfe4ef7e376e51812e6e14414e8e14684e4b9153c3e86726ce",
+      "declarations": "dist/index.d.ts",
+      "declarationsSha256": "926b1b660ad5cf0e34b993208c5549c9d7d3e1392673f2105ee1e53926c841dc"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.2.17",
+      "license": "MIT",
+      "packageJsonSha256": "36496fc09a9dcf31b0ca969ce5677c9ce9ebb5c89da9bd6212e0c89b6fae3f88",
+      "declarations": "index.d.ts",
+      "declarationsSha256": "dc782ff85b2cb10075ecffc158af7bfb27ff97bf8491c917efea0c3d622d5ac4"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.2.3",
+      "license": "MIT",
+      "packageJsonSha256": "bf90986beaec5f757c164bf1d374f3038dc41b0b06673de4a55fd975d1e5deca",
+      "declarations": "index.d.ts",
+      "declarationsSha256": "be1cc4d94ea60cbe567bc29ed479d42587bf1e6cba490f123d329976b0fe4ee5"
+    },
+    {
+      "name": "jsdom",
+      "version": "30.1.3",
+      "license": "MIT",
+      "packageJsonSha256": "d05b7f08c60feb43d726447adf6f8eaec18913a8f0fe8cbd7e3af06f7c8510ba"
+    },
+    {
+      "name": "lexical",
+      "version": "0.52.0",
+      "license": "MIT",
+      "packageJsonSha256": "11657635d44bf9c655c73ed6a1063674c8ec1132ae484fd5721cea36ff71b42c",
+      "declarations": "./dist/typescript-too-old.d.ts",
+      "declarationsSha256": "022f0ce2f8477683d3cf4c92f7366f356e5ba1b2ab04912fffcd50229199e4fd"
+    },
+    {
+      "name": "mapbox-gl",
+      "version": "3.33.0",
+      "license": "SEE LICENSE IN LICENSE.txt",
+      "packageJsonSha256": "6789c6cc91271502487ba952287de0cec0194e0561e0f36b2a4342250399a4ea",
+      "declarations": "dist/mapbox-gl.d.ts",
+      "declarationsSha256": "98534222cb8e17c23f3ab6a87b110684a89ab983296ece466b24830bbd916c40"
+    },
+    {
+      "name": "next",
+      "version": "16.4.2",
+      "license": "MIT",
+      "packageJsonSha256": "e84ada0a68191fed192392bfb8ee35ad4ed8e7439f645a40dd48cf139588ddc5",
+      "declarations": "index.d.ts",
+      "declarationsSha256": "d3b315763d91265d6b0e7e7fa93cfdb8a80ce7cdd2d9f55ba0f37a22db00bdb8"
+    },
+    {
+      "name": "react",
+      "version": "19.3.1",
+      "license": "MIT",
+      "packageJsonSha256": "9cc9c3de5441a2eea7f41f52f3f2a15a4fc51f90c0b72741f0d7638643a85e67"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.1",
+      "license": "MIT",
+      "packageJsonSha256": "89d54f11575c9b0f7819962d9d72a31970dfb4d103f07e8b1d1b37e6d1fc3258"
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "license": "Apache-2.0",
+      "packageJsonSha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6",
+      "declarations": "./lib/typescript.d.ts",
+      "declarationsSha256": "e134052a6b1ded61693b4037f615dc72f14e2881e79c1ddbff6c514c8a516b05"
+    }
+  ],
+  "roundtrips": {
+    "passed": 4,
+    "failed": 0,
+    "networkRequests": 0,
+    "tests": [
+      {
+        "binding": "tiptap",
+        "description": "Native JSON, formatting and onUpdate round-trip",
+        "status": "passed"
+      },
+      {
+        "binding": "lexical",
+        "description": "SerializedEditorState JSON and update-listener round-trip",
+        "status": "passed"
+      },
+      {
+        "binding": "blocknote",
+        "description": "Native block-array JSON and onChange round-trip",
+        "status": "passed"
+      },
+      {
+        "binding": "mapbox",
+        "description": "Native coordinates/bounds and returned GeoJSON serialization",
+        "status": "passed"
+      }
+    ]
+  },
+  "scope": [
+    "Strict consumer code using official SDK types; local JSON/change-event verification.",
+    "Consumer examples skip upstream declaration checking as in G5; a separate Mapbox-only project checks declarations completely.",
+    "Mapbox runtime fixture checks coordinates/bounds and GeoJSON serialization, not WebGL rendering or tile delivery.",
+    "No native provider/account connection, credential validation, browser certification or Figma certification.",
+    "BlockNote exports optional Yjs declarations; their library internals are not verified or replaced with ambient stubs."
+  ]
+}

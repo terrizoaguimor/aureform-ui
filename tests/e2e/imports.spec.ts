@@ -7,6 +7,14 @@ import { join } from "node:path";
 import { SAAS_STORAGE_KEY } from "../../src/lib/saas";
 import type { Customer } from "../../src/demo/dashboard-data";
 
+const suppliedBaseURL = process.env.AUREFORM_BASE_URL;
+const mount = (
+  suppliedBaseURL
+    ? new URL(suppliedBaseURL).pathname
+    : (process.env.NEXT_PUBLIC_BASE_PATH ?? "")
+).replace(/\/+$/, "");
+const mountedPath = (path: string) => `${mount}/${path.replace(/^\/+/, "")}`;
+
 // The shared saas-chromium project supplies baseURL. Set AUREFORM_BASE_URL to
 // reuse an existing server; normal CI inherits the config's server on port 3001.
 test.use({
@@ -56,7 +64,7 @@ async function snapshotBuild(baseURL: string) {
   const assetPaths = new Set<string>();
   const routes = await Promise.all(
     ["/en/imports/", "/es/imports/"].map(async (path) => {
-      const response = await fetch(new URL(path, baseURL), {
+      const response = await fetch(new URL(mountedPath(path), baseURL), {
         signal: AbortSignal.timeout(15_000),
       });
       expect(response.status, path).toBe(200);
@@ -69,7 +77,8 @@ async function snapshotBuild(baseURL: string) {
       for (const match of content
         .toString("utf8")
         .matchAll(/(?:src|href)="([^"]+\.(?:js|css)(?:\?[^"]*)?)"/g)) {
-        if (match[1].startsWith("/_next/")) assetPaths.add(match[1]);
+        if (match[1].startsWith(mountedPath("/_next/")))
+          assetPaths.add(match[1]);
       }
       return {
         path,
@@ -80,6 +89,10 @@ async function snapshotBuild(baseURL: string) {
       };
     }),
   );
+  expect(
+    assetPaths.size,
+    "Exported HTML references mounted Next assets",
+  ).toBeGreaterThan(0);
   const assets = await Promise.all(
     [...assetPaths].sort().map(async (path) => {
       const response = await fetch(new URL(path, baseURL), {
@@ -87,7 +100,8 @@ async function snapshotBuild(baseURL: string) {
       });
       expect(response.status, path).toBe(200);
       const content = Buffer.from(await response.arrayBuffer());
-      const exported = await readFile(`out${new URL(path, baseURL).pathname}`);
+      const assetPath = new URL(path, baseURL).pathname;
+      const exported = await readFile(`out${assetPath.slice(mount.length)}`);
       expect(sha256(content), `served/exported asset ${path}`).toBe(
         sha256(exported),
       );
@@ -101,7 +115,7 @@ async function snapshotBuild(baseURL: string) {
   );
   const rsc = await Promise.all(
     ["/en/imports/index.txt", "/es/imports/index.txt"].map(async (path) => {
-      const response = await fetch(new URL(path, baseURL), {
+      const response = await fetch(new URL(mountedPath(path), baseURL), {
         signal: AbortSignal.timeout(15_000),
       });
       expect(response.status, path).toBe(200);
@@ -249,7 +263,7 @@ test.afterEach(async ({ page }, info) => {
 });
 
 async function open(page: Page, locale: "en" | "es" = "en") {
-  await page.goto(`/${locale}/imports/`);
+  await page.goto(mountedPath(`/${locale}/imports/`));
   const wizard = page.locator('[data-slot="import-wizard"]');
   await expect(wizard).toBeVisible();
   await page.waitForFunction(
@@ -671,7 +685,7 @@ test("an actual rejected staging callback retries once without duplicate commits
       stored.filter((customer) => customer.email === record.email),
     ).toHaveLength(1);
   await wizard.getByRole("link", { name: "View records", exact: true }).click();
-  await expect(page).toHaveURL(/\/en\/customers\/$/);
+  await expect(page).toHaveURL(mountedPath("/en/customers/"));
   await page.reload();
   expect(
     (await customers(page)).filter((customer) =>
@@ -1026,7 +1040,7 @@ for (const device of ["desktop", "mobile"] as const) {
           await wizard
             .getByRole("link", { name: text.resource, exact: true })
             .click();
-          await expect(page).toHaveURL(new RegExp(`/${locale}/customers/$`));
+          await expect(page).toHaveURL(mountedPath(`/${locale}/customers/`));
           await page.reload();
           expect(await customers(page)).toHaveLength(original.length + 1001);
           if (theme === "dark")

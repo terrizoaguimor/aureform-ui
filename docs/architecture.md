@@ -2,11 +2,13 @@
 
 ## Source contract
 
-The suite uses one typed catalog with 68 suite routes plus the landing: 69 views before locale expansion. A statically generated `[locale]/[[...slug]]` route dispatches each entry to an actual template. Studio, Themes and Effects extend the 44 core families. Shared primitives follow shadcn conventions and use Base UI. The local CLI copies source; there is no npm-hosted Aureform runtime dependency.
+The suite uses one typed catalog with 68 original suite routes, a landing, an integration hub and 65 integration recipes: 135 routes before locale expansion. A statically generated `[locale]/[[...slug]]` route dispatches each entry to its actual template. Integration routes share 17 domain workbenches; they are provider recipes, rather than 65 independent applications. Studio, Themes and Effects extend the 44 core families. Shared primitives follow shadcn conventions and use Base UI. The local CLI copies source; there is no npm-hosted Aureform runtime dependency.
 
 The locale layout renders the document's `lang` on the server. A separate entry layout serves the Spanish landing at `/`; both share `DocumentLayout`, local fonts and metadata. English and Spanish content carry the correct language before JavaScript executes.
 
 UI components take explicit props. Templates own demo state and compose blocks. The shell controls navigation, workspace selection, command search, language and theme. Component imports remain individually addressable; consumers need not import the entire demo.
+
+`IntegrationHub` accepts `IntegrationSuite` or a shared `IntegrationsAdapter`, plus an explicit workspace and management capability. The suite can inject specialized identity, AI and commerce adapters. The default shared adapter keeps scoped fixtures in memory; identity/AI/commerce demos have their documented browser persistence. Provider SDKs are optional consumer dependencies. See [ready-to-connect integrations](website/en/integrations.md) and the [provider coverage manifest](integrations/provider-coverage.json).
 
 ## Data boundaries
 

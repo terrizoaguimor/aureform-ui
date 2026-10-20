@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import {
   commerceCurrencies,
+  getCommerceProviderLabel,
   newOrderSchema,
   type CommerceContextValue,
   type CommerceCurrency,
@@ -588,8 +589,8 @@ export function CommerceOrderEditor({
                             "Las existencias de ejemplo se revisan al pagar. Crear un pedido no reserva artículos.",
                           )
                         : l(
-                            "Your commerce service confirms availability and the checkout amount.",
-                            "Tu servicio de comercio confirma la disponibilidad y el importe al pagar.",
+                            `Your service confirms availability and the ${getCommerceProviderLabel(commerce)} checkout amount.`,
+                            `Tu servicio confirma la disponibilidad y el importe al pagar con ${getCommerceProviderLabel(commerce)}.`,
                           )}
                     </p>
                   </div>
@@ -886,7 +887,10 @@ export function CommerceOrderDetail({
               <CreditCard aria-hidden="true" />
               {commerce.mode === "mock"
                 ? l("Preview checkout", "Ver pago de ejemplo")
-                : l("Continue to checkout", "Continuar al pago")}
+                : l(
+                    `Continue to ${getCommerceProviderLabel(commerce)} checkout`,
+                    `Continuar al pago con ${getCommerceProviderLabel(commerce)}`,
+                  )}
             </Button>
           )}
           {order.status === "processing" && (

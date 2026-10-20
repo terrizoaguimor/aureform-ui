@@ -2,8 +2,15 @@ import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 
+const mount = (
+  process.env.AUREFORM_BASE_URL
+    ? new URL(process.env.AUREFORM_BASE_URL).pathname
+    : (process.env.NEXT_PUBLIC_BASE_PATH ?? "")
+).replace(/\/+$/, "");
+const route = (path: string) => `${mount}${path}`;
+
 async function cleanPage(page: Page, path: string) {
-  await page.goto(`/en/${path}/`);
+  await page.goto(route(`/en/${path}/`));
   await page.evaluate(() => {
     localStorage.clear();
   });
@@ -123,7 +130,7 @@ test("dialog traps focus, Escape restores it, and command search navigates by ke
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.getByRole("combobox").fill("Calendar");
   await page.keyboard.press("Enter");
-  await expect(page).toHaveURL(/\/en\/calendar\/$/);
+  await expect(page).toHaveURL(route("/en/calendar/"));
 });
 
 test("AI streaming stops, a simulated error retries, and history persists", async ({
@@ -182,7 +189,7 @@ test("sign-up, password visibility, reset and OTP are explicit local flows", asy
   await page
     .getByRole("button", { name: "Create demo account", exact: true })
     .click();
-  await expect(page).toHaveURL(/\/en\/onboarding\/$/);
+  await expect(page).toHaveURL(route("/en/onboarding/"));
   await expect(
     page.getByRole("heading", { name: "Build your shared workspace." }),
   ).toBeVisible();
@@ -192,16 +199,16 @@ test("sign-up, password visibility, reset and OTP are explicit local flows", asy
   expect(session.demo).toBe(true);
   expect(session).not.toHaveProperty("password");
 
-  await page.goto("/en/auth/reset-password/");
+  await page.goto(route("/en/auth/reset-password/"));
   await page.getByLabel("Email", { exact: true }).fill("tester@aureform.demo");
   await page.getByRole("button", { name: "Preview recovery" }).click();
   await expect(
     page.getByText("No email was sent", { exact: false }),
   ).toBeVisible();
-  await page.goto("/en/auth/verify/");
+  await page.goto(route("/en/auth/verify/"));
   await page.getByRole("textbox").fill("123456");
   await page.getByRole("button", { name: "Verify code" }).click();
-  await expect(page).toHaveURL(/\/en\/dashboard\/$/);
+  await expect(page).toHaveURL(route("/en/dashboard/"));
 });
 
 test("calendar creation persists and month controls update the visible calendar", async ({
@@ -272,7 +279,7 @@ test("settings save actual profile data and every shell layout can be selected",
   await expect(page.getByText("Changes saved", { exact: true })).toBeVisible();
   await page.reload();
   await expect(page.getByLabel("Full name")).toHaveValue("Aureform Profile QA");
-  await page.goto("/en/layouts/");
+  await page.goto(route("/en/layouts/"));
   for (const [value, name] of [
     ["compact", "Compact navigation"],
     ["topbar", "Top navigation"],

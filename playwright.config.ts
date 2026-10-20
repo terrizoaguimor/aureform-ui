@@ -26,6 +26,11 @@ export default defineConfig({
   },
   projects: [
     {
+      name: "integrations-chromium",
+      testMatch: /integrations(?:-[a-z]+)?\.spec\.ts/,
+      use: { viewport: { width: 1440, height: 1000 } },
+    },
+    {
       name: "website-chromium",
       testMatch: /website\.spec\.ts/,
       use: { viewport: { width: 1440, height: 1000 } },

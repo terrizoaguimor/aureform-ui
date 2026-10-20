@@ -19,6 +19,18 @@ const { version } = JSON.parse(
 );
 const captures = [
   {
+    file: "aureform-landing-dark.webp",
+    route: "",
+    theme: "dark",
+    palette: "aurora",
+  },
+  {
+    file: "aureform-documentation.webp",
+    route: "docs/integrations",
+    theme: "light",
+    palette: "ocean",
+  },
+  {
     file: "aureform-overview-dark.webp",
     route: "dashboard",
     theme: "dark",
@@ -97,6 +109,19 @@ const captures = [
     theme: "dark",
     palette: "aurora",
   },
+  {
+    file: "aureform-integrations-dark.webp",
+    route: "integrations",
+    theme: "dark",
+    palette: "aurora",
+  },
+  {
+    file: "aureform-integrations-light.webp",
+    route: "integrations/supabase-data",
+    theme: "light",
+    palette: "ocean",
+    startIntegrationDemo: true,
+  },
 ];
 const browser = await chromium.launch({
   executablePath:
@@ -131,7 +156,7 @@ try {
       pageErrors.push({ file: capture.file, message: error.message }),
     );
     const response = await page.goto(
-      `${origin}${basePath}/en/${capture.route}/`,
+      `${origin}${basePath}/en/${capture.route ? `${capture.route}/` : ""}`,
       { waitUntil: "networkidle" },
     );
     if (!response?.ok())
@@ -163,6 +188,18 @@ try {
         .getByRole("dialog")
         .getByRole("heading", { name: "Edit product", exact: true })
         .waitFor();
+    }
+    if (capture.startIntegrationDemo) {
+      await page
+        .getByRole("button", { name: "Start local demo", exact: true })
+        .click();
+      const workbench = page.locator('[data-product-workbench="data"]');
+      await workbench.getByRole("table").waitFor();
+      await workbench
+        .getByRole("button", { name: /^Edit / })
+        .first()
+        .waitFor();
+      await workbench.scrollIntoViewIfNeeded();
     }
     const png = await page.screenshot({ animations: "disabled" });
     const webp = await sharp(png).webp({ quality: 90 }).toBuffer();

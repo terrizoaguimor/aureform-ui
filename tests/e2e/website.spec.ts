@@ -48,7 +48,7 @@ const copy = {
   },
 } as const;
 
-// Independent publication expectations: 21 bilingual chapters plus 2 fallbacks.
+// Independent publication expectations: 22 bilingual chapters plus 2 fallbacks.
 const bilingualChapters = [
   "",
   "installation",
@@ -65,6 +65,7 @@ const bilingualChapters = [
   "maps",
   "adapters",
   "integration-research",
+  "integrations",
   "figma",
   "accessibility",
   "deployment",
@@ -399,7 +400,7 @@ for (const locale of locales) {
       name: text.sections,
       exact: true,
     });
-    await expect(guides.getByRole("link")).toHaveCount(23);
+    await expect(guides.getByRole("link")).toHaveCount(24);
     await guides
       .getByRole("link", { name: text.installation, exact: true })
       .click();
@@ -796,7 +797,7 @@ test("Spanish touch navigation contains focus, restores the trigger on Escape an
       exact: true,
     });
     await expect(drawer).toBeVisible();
-    await expect(drawer.getByRole("link")).toHaveCount(23);
+    await expect(drawer.getByRole("link")).toHaveCount(24);
     await page.keyboard.press("Tab");
     expect(
       await drawer.evaluate((element) =>

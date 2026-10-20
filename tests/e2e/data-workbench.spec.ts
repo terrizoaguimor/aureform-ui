@@ -7,6 +7,14 @@ import {
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 
+const suppliedBaseURL = process.env.AUREFORM_BASE_URL;
+const mount = (
+  suppliedBaseURL
+    ? new URL(suppliedBaseURL).pathname
+    : (process.env.NEXT_PUBLIC_BASE_PATH ?? "")
+).replace(/\/+$/, "");
+const mountedPath = (path: string) => `${mount}/${path.replace(/^\/+/, "")}`;
+
 const storageKey = "aureform:saas:v1";
 const firstPage = [
   "Olivia Rhye",
@@ -68,7 +76,7 @@ async function expectRows(page: Page, names: string[]) {
 }
 
 async function openCustomers(page: Page, locale = "en") {
-  await page.goto(`/${locale}/customers/`);
+  await page.goto(mountedPath(`/${locale}/customers/`));
   await expect(table(page)).toHaveAttribute("data-mode", "external");
   await expectRows(page, firstPage);
 }
@@ -761,7 +769,7 @@ test("shared URL carries query, columns and density only; a fresh context restor
   const url = new URL(link),
     payload = JSON.parse(url.searchParams.get("view")!);
   expect(url.origin).toBe(new URL(baseURL!).origin);
-  expect(url.pathname).toBe("/en/customers/");
+  expect(url.pathname).toBe(mountedPath("/en/customers/"));
   expect([...url.searchParams.keys()]).toEqual(["view"]);
   expect(Object.keys(payload).sort()).toEqual(["value", "version"]);
   expect(payload.version).toBe(1);

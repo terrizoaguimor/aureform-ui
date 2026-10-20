@@ -4,15 +4,17 @@ Esta página distingue las capacidades de frontend entregadas de las propuestas 
 
 ## Incluido en el kit actual
 
-La base de la aplicación tiene 69 vistas de demo, 44 familias principales, 107 entradas del registro, seis paletas y 13 tipos de gráficos, con inglés/español y temas claro/oscuro.
+La aplicación actual tiene 69 vistas originales, un hub y 65 páginas de recetas de integración, 44 familias principales, 127 entradas del registro, seis paletas y 13 tipos de gráficos, con inglés/español y temas claro/oscuro.
 
 - Componentes editables, ejemplos completos, instalación local, registro, preview/diff y recibos de instalación.
 - Estudio de apariencia, presets locales, exportaciones JSON/CSS/React, movimiento acotado y seis efectos reutilizables.
 - Onboarding, workspaces, miembros, importación CSV, tablas controladas de clientes, vistas guardadas y detalle.
 - Edición de productos e imágenes, precios fijados al comprar, pagos simulados, facturas y facturación, con transporte tipado hacia un backend Stripe del consumidor.
 - Mapas locales con conexión Google opcional y cuatro pantallas de autenticación con callbacks sociales sustituibles.
+- 65 [recetas de integración](integrations.md), 86 opciones de proveedor y 17 familias de flujos con mocks funcionales, transportes HTTP tipados, recursos por workspace, revisión, cancelación y recuperación.
+- Flujos completos de identidad, sesiones, MFA y equipos; comercio para varios proveedores; AI con streaming estructurado, fuentes, consumo y decisiones de herramientas confirmadas; callbacks de edición y tiempo real.
 
-Son flujos y contratos de frontend. Identidad real, autorización de tenants, almacenamiento compartido, operaciones financieras y jobs duraderos pertenecen al consumidor. Consulta la [integración de aplicaciones](../../../docs/application-integrations.es.md) y el [registro de la versión 1.4](../../../docs/release-checklist-1.4.0.md).
+Son flujos y contratos de frontend. Identidad real, autorización de tenants, almacenamiento compartido, operaciones financieras y jobs duraderos pertenecen al consumidor. Consulta la [integración](integrations.md) y el [registro de la versión 1.5](../../../docs/release-checklist-1.5.0.md).
 
 ## Evidencia y comunidad
 
@@ -47,7 +49,7 @@ El [plan de piloto](../../pilot-validation.es.md) propone 8–12 entrevistas y 3
 
 ## Límites del diseño nativo y la verificación
 
-El checkpoint nativo de Figma 1.2.1 sigue congelado. Los bloques de aplicación nuevos de 1.4 son solo código, sin nuevos masters nativos declarados. Las 92 plantillas locales de Code Connect usan un runtime sintético; no están certificadas en la nube ni acreditan publicación real.
+El checkpoint nativo de Figma 1.2.1 sigue congelado. Los bloques nuevos de 1.4 y 1.5 son solo código, sin nuevos masters nativos declarados. Las 92 plantillas locales de Code Connect usan un runtime sintético; no están certificadas en la nube ni acreditan publicación real.
 
 Las pruebas de navegador, código, diseño nativo y archivos distribuidos tienen alcances distintos. Cambiar la versión o añadir capturas no recertifica evidencias históricas. Consulta la [distribución de diseño](../../../docs/figma-distribution.es.md).
 

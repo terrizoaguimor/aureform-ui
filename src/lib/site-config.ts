@@ -29,4 +29,5 @@ export const indexableDemoPaths = new Set([
   "studio",
   "forms",
   "layouts",
+  "integrations",
 ]);

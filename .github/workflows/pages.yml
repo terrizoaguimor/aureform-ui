@@ -37,6 +37,7 @@ jobs:
       - run: pnpm lint
       - run: pnpm test
       - run: pnpm verify:examples
+      - run: pnpm verify:integrations
       - name: Export demo
         run: pnpm build
         env:

@@ -16,7 +16,7 @@ concurrency:
 jobs:
   website:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     env:
       NEXT_PUBLIC_BASE_PATH: ""
       NEXT_PUBLIC_SITE_URL: https://aureformui.com
@@ -35,6 +35,7 @@ jobs:
       - run: pnpm lint
       - run: pnpm test
       - run: pnpm verify:examples
+      - run: pnpm verify:integrations
       - run: pnpm build:cloudflare
       - run: pnpm verify:pages
       - name: Check the prebuilt deployment
@@ -42,6 +43,7 @@ jobs:
       - name: Install browser for website checks
         run: pnpm exec playwright install --with-deps chromium
       - run: pnpm verify:website
+      - run: pnpm verify:integrations-ui
       - name: Verify the public source download
         if: github.event_name != 'pull_request'
         run: pnpm verify:cloudflare-release

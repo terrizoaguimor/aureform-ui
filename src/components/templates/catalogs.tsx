@@ -549,6 +549,7 @@ export function TemplatesTemplate() {
   const visible = routes.filter(
     (route) =>
       route.group !== "catalog" &&
+      !route.path.startsWith("integrations") &&
       (group === "all" || route.group === group) &&
       `${route[locale]} ${route.path}`
         .toLowerCase()
@@ -570,6 +571,14 @@ export function TemplatesTemplate() {
           "Explora pantallas completas de aplicaciones locales. Abre una vista previa para ver tu paleta, materiales y efectos actuales.",
         )}
         actions={
+          <>
+          <a
+            href={publicPath(`/${locale}/integrations/`)}
+            className={buttonVariants({ variant: "outline", size: "sm" })}
+          >
+            <ArrowUpRight aria-hidden="true" />
+            {l("Integration workflows", "Flujos de integración")}
+          </a>
           <a
             href={publicPath(`/${locale}/studio/`)}
             className={buttonVariants({ variant: "outline", size: "sm" })}
@@ -577,6 +586,7 @@ export function TemplatesTemplate() {
             <SlidersHorizontal aria-hidden="true" />
             {l("Appearance Studio", "Estudio de apariencia")}
           </a>
+          </>
         }
       />
       <div className="flex flex-wrap items-center gap-3 rounded-xl border border-border/70 bg-surface/55 p-3">

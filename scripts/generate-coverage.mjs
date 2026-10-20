@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { access, mkdir, readFile, writeFile } from "node:fs/promises";
-import { resolve } from "node:path";
+import { dirname, resolve } from "node:path";
 import { createRequire } from "node:module";
 import { createHash } from "node:crypto";
 import { entries, kitRoot, dependencyClosure } from "./lib/source-graph.mjs";
@@ -33,7 +33,7 @@ const parsed = (file, text) =>
     text,
     ts.ScriptTarget.Latest,
     true,
-    ts.ScriptKind.TSX,
+    file.endsWith(".tsx") ? ts.ScriptKind.TSX : ts.ScriptKind.TS,
   );
 const [
   catalogText,
@@ -48,6 +48,7 @@ const [
   tokens,
   effectIndexText,
   chartText,
+  documentationText,
 ] = await Promise.all([
   read("src/lib/catalog.ts"),
   read("src/components/app-page.tsx"),
@@ -61,6 +62,7 @@ const [
   read("tokens/aureform.tokens.json").then(JSON.parse),
   read("src/components/effects/index.ts"),
   read("src/components/ui/chart.tsx"),
+  read("src/lib/documentation.ts"),
 ]);
 const state = JSON.parse(stateText);
 const digest = (content) => createHash("sha256").update(content).digest("hex");
@@ -85,7 +87,12 @@ const catalog = parsed("catalog.ts", catalogText);
 const app = parsed("app-page.tsx", appText);
 
 function literal(node) {
-  if (ts.isAsExpression(node) || ts.isParenthesizedExpression(node))
+  if (
+    ts.isAsExpression(node) ||
+    ts.isTypeAssertionExpression(node) ||
+    ts.isSatisfiesExpression(node) ||
+    ts.isParenthesizedExpression(node)
+  )
     return literal(node.expression);
   if (ts.isStringLiteral(node)) return node.text;
   if (ts.isNumericLiteral(node)) return Number(node.text);
@@ -99,19 +106,309 @@ function literal(node) {
     );
   throw new Error(`Unsupported catalog value: ${node.getText(catalog)}`);
 }
-const declarations = catalog.statements
-  .filter(ts.isVariableStatement)
-  .flatMap((statement) => statement.declarationList.declarations);
-const data = (name) => {
-  const declaration = declarations.find(
-    (item) => item.name.getText(catalog) === name,
+// Interpret a small, pure data subset instead of importing/evaluating the TS
+// module. The route index can use literals, assertions and a mapped spread;
+// filesystem access, arbitrary calls, getters and module side effects never run.
+const catalogDataFiles = new Set([
+  "src/lib/catalog.ts",
+  "src/lib/integrations/route-index.ts",
+]);
+const catalogModules = new Map();
+function catalogModule(file, source) {
+  assert.equal(source.parseDiagnostics.length, 0, `Invalid TS data: ${file}`);
+  const declarations = new Map(
+    source.statements
+      .filter(ts.isVariableStatement)
+      .flatMap((statement) => statement.declarationList.declarations)
+      .filter((declaration) => ts.isIdentifier(declaration.name))
+      .map((declaration) => [declaration.name.text, declaration]),
   );
-  assert(declaration, `Missing ${name}`);
-  return literal(declaration.initializer);
-};
-const suiteRoutes = data("routes");
-const families = data("componentFamilies");
-assert.equal(suiteRoutes.length, 68, "Aureform 1.2 has 68 suite routes.");
+  const imports = new Map();
+  for (const statement of source.statements.filter(ts.isImportDeclaration)) {
+    if (statement.importClause?.isTypeOnly) continue;
+    const bindings = statement.importClause?.namedBindings;
+    assert(
+      !statement.importClause?.name && bindings && ts.isNamedImports(bindings),
+      `Only named data imports are supported: ${file}`,
+    );
+    const valueBindings = bindings.elements.filter((item) => !item.isTypeOnly);
+    if (!valueBindings.length) continue;
+    assert(
+      ts.isStringLiteral(statement.moduleSpecifier) &&
+        (statement.moduleSpecifier.text.startsWith(".") ||
+          statement.moduleSpecifier.text.startsWith("@/")),
+      `Only allowlisted local data imports are supported: ${file}`,
+    );
+    const target = statement.moduleSpecifier.text.startsWith("@/")
+      ? resolve(kitRoot, "src", statement.moduleSpecifier.text.slice(2))
+      : resolve(
+          dirname(resolve(kitRoot, file)),
+          statement.moduleSpecifier.text,
+        );
+    const importedFile = [...catalogDataFiles].find(
+      (candidate) =>
+        resolve(kitRoot, candidate) === target ||
+        resolve(kitRoot, candidate) === `${target}.ts`,
+    );
+    assert(importedFile, `Data import outside catalog allowlist: ${target}`);
+    for (const binding of valueBindings)
+      imports.set(binding.name.text, {
+        file: importedFile,
+        name: binding.propertyName?.text ?? binding.name.text,
+      });
+  }
+  return { file, source, declarations, imports };
+}
+catalogModules.set(
+  "src/lib/catalog.ts",
+  Promise.resolve(catalogModule("src/lib/catalog.ts", catalog)),
+);
+async function getCatalogModule(file) {
+  assert(catalogDataFiles.has(file), `Unapproved TS data module: ${file}`);
+  if (!catalogModules.has(file))
+    catalogModules.set(
+      file,
+      read(file).then((source) => catalogModule(file, parsed(file, source))),
+    );
+  return catalogModules.get(file);
+}
+async function catalogData(file, name, chain = new Set()) {
+  const key = `${file}:${name}`;
+  assert(!chain.has(key), `Circular TS data declaration: ${key}`);
+  const nextChain = new Set([...chain, key]);
+  const sourceModule = await getCatalogModule(file);
+  const imported = sourceModule.imports.get(name);
+  if (imported) return catalogData(imported.file, imported.name, nextChain);
+  const declaration = sourceModule.declarations.get(name);
+  assert(declaration?.initializer, `Missing TS data declaration: ${key}`);
+  return catalogValue(
+    declaration.initializer,
+    sourceModule,
+    new Map(),
+    nextChain,
+  );
+}
+async function catalogValue(node, sourceModule, locals, chain) {
+  if (
+    ts.isAsExpression(node) ||
+    ts.isTypeAssertionExpression(node) ||
+    ts.isSatisfiesExpression(node) ||
+    ts.isParenthesizedExpression(node)
+  )
+    return catalogValue(node.expression, sourceModule, locals, chain);
+  if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node))
+    return node.text;
+  if (ts.isNumericLiteral(node)) return Number(node.text);
+  if (node.kind === ts.SyntaxKind.TrueKeyword) return true;
+  if (node.kind === ts.SyntaxKind.FalseKeyword) return false;
+  if (node.kind === ts.SyntaxKind.NullKeyword) return null;
+  if (ts.isIdentifier(node)) {
+    if (locals.has(node.text)) return locals.get(node.text);
+    return catalogData(sourceModule.file, node.text, chain);
+  }
+  if (ts.isArrayLiteralExpression(node)) {
+    const values = [];
+    for (const element of node.elements) {
+      if (ts.isSpreadElement(element)) {
+        const spread = await catalogValue(
+          element.expression,
+          sourceModule,
+          locals,
+          chain,
+        );
+        assert(Array.isArray(spread), "TS data array spread must be an array");
+        values.push(...spread);
+      } else
+        values.push(await catalogValue(element, sourceModule, locals, chain));
+      assert(values.length <= 1000, "TS route data exceeds bounded array size");
+    }
+    return values;
+  }
+  if (ts.isObjectLiteralExpression(node)) {
+    const properties = [];
+    for (const property of node.properties) {
+      assert(
+        ts.isPropertyAssignment(property) ||
+          ts.isShorthandPropertyAssignment(property),
+        `Only literal TS data properties are supported: ${sourceModule.file}`,
+      );
+      assert(
+        ts.isIdentifier(property.name) ||
+          ts.isStringLiteral(property.name) ||
+          ts.isNumericLiteral(property.name),
+        "Computed TS data properties are not supported",
+      );
+      properties.push([
+        property.name.text,
+        await catalogValue(
+          ts.isPropertyAssignment(property)
+            ? property.initializer
+            : property.name,
+          sourceModule,
+          locals,
+          chain,
+        ),
+      ]);
+    }
+    return Object.fromEntries(properties);
+  }
+  if (ts.isPropertyAccessExpression(node)) {
+    const target = await catalogValue(
+      node.expression,
+      sourceModule,
+      locals,
+      chain,
+    );
+    assert(
+      target !== null &&
+        typeof target === "object" &&
+        Object.hasOwn(target, node.name.text),
+      `TS data property is not an own field: ${node.name.text}`,
+    );
+    return target[node.name.text];
+  }
+  if (ts.isTemplateExpression(node)) {
+    let value = node.head.text;
+    for (const span of node.templateSpans) {
+      const part = await catalogValue(
+        span.expression,
+        sourceModule,
+        locals,
+        chain,
+      );
+      assert(
+        ["string", "number", "boolean"].includes(typeof part),
+        "TS data template interpolations must be primitives",
+      );
+      value += String(part) + span.literal.text;
+    }
+    return value;
+  }
+  if (
+    ts.isCallExpression(node) &&
+    ts.isPropertyAccessExpression(node.expression) &&
+    node.expression.name.text === "map"
+  ) {
+    const values = await catalogValue(
+      node.expression.expression,
+      sourceModule,
+      locals,
+      chain,
+    );
+    assert(
+      Array.isArray(values) && values.length <= 1000,
+      "TS data map requires a bounded literal array",
+    );
+    const mapper = node.arguments[0];
+    assert(
+      node.arguments.length === 1 &&
+        mapper &&
+        ts.isArrowFunction(mapper) &&
+        mapper.parameters.length === 1 &&
+        ts.isIdentifier(mapper.parameters[0].name) &&
+        !mapper.parameters[0].initializer &&
+        !mapper.parameters[0].dotDotDotToken &&
+        !mapper.modifiers?.some(
+          (modifier) => modifier.kind === ts.SyntaxKind.AsyncKeyword,
+        ),
+      "TS data map requires a single-parameter pure arrow",
+    );
+    const body = ts.isBlock(mapper.body)
+      ? mapper.body.statements.length === 1 &&
+        ts.isReturnStatement(mapper.body.statements[0])
+        ? mapper.body.statements[0].expression
+        : null
+      : mapper.body;
+    assert(body, "TS data map body must be a data expression");
+    return Promise.all(
+      values.map((value) =>
+        catalogValue(
+          body,
+          sourceModule,
+          new Map([...locals, [mapper.parameters[0].name.text, value]]),
+          chain,
+        ),
+      ),
+    );
+  }
+  throw new Error(
+    `Unsupported TS data expression in ${sourceModule.file}: ${node.getText(sourceModule.source)}`,
+  );
+}
+const suiteRoutes = await catalogData("src/lib/catalog.ts", "routes");
+const families = await catalogData("src/lib/catalog.ts", "componentFamilies");
+assert(Array.isArray(suiteRoutes), "Expected suite routes array");
+assert(Array.isArray(families), "Expected component families array");
+const documentationSource = parsed("documentation.ts", documentationText);
+const documentationDeclaration = documentationSource.statements
+  .filter(ts.isVariableStatement)
+  .flatMap((statement) => statement.declarationList.declarations)
+  .find(
+    (declaration) =>
+      ts.isIdentifier(declaration.name) &&
+      declaration.name.text === "documentationArticles",
+  );
+let documentationArray = documentationDeclaration?.initializer;
+while (
+  documentationArray &&
+  (ts.isAsExpression(documentationArray) ||
+    ts.isSatisfiesExpression(documentationArray) ||
+    ts.isParenthesizedExpression(documentationArray))
+)
+  documentationArray = documentationArray.expression;
+assert(
+  documentationArray && ts.isArrayLiteralExpression(documentationArray),
+  "Documentation inventory must declare an article array",
+);
+const documentationSlugs = documentationArray.elements.map((element) => {
+  assert(
+    ts.isObjectLiteralExpression(element),
+    "Expected a documentation entry",
+  );
+  const slug = element.properties.find(
+    (property) =>
+      ts.isPropertyAssignment(property) &&
+      property.name.getText(documentationSource) === "slug",
+  );
+  assert(
+    slug && ts.isStringLiteral(slug.initializer),
+    "Expected an article slug",
+  );
+  return slug.initializer.text;
+});
+assert.equal(
+  new Set(documentationSlugs).size,
+  documentationSlugs.length,
+  "Documentation article slugs must be unique",
+);
+const documentationArticleCount = documentationSlugs.length;
+for (const route of suiteRoutes) {
+  assert(
+    route &&
+      ["path", "en", "es", "group", "delivery"].every(
+        (key) => typeof route[key] === "string" && route[key].length > 0,
+      ) &&
+      !route.path.startsWith("/") &&
+      !route.path.includes("\\") &&
+      !route.path
+        .split("/")
+        .some((segment) => ["", ".", ".."].includes(segment)),
+    "Invalid route metadata",
+  );
+}
+const retainedNativeRoots = baselineState.entities.routeScreens;
+const retainedNativeRootCount = Object.keys(retainedNativeRoots).length;
+assert.equal(
+  retainedNativeRootCount,
+  69,
+  "Preserve the frozen 1.2 Figma scope.",
+);
+assert(
+  Object.keys(retainedNativeRoots).every(
+    (path) => !path || suiteRoutes.some((route) => route.path === path),
+  ),
+  "Current source must preserve every frozen native route",
+);
 assert.equal(families.length, 44);
 assert.equal(
   new Set(suiteRoutes.map((route) => route.path)).size,
@@ -223,6 +520,49 @@ for (const statement of app.statements.filter(ts.isImportDeclaration)) {
         statement.moduleSpecifier.text.replace("@/", "src/") + ".tsx",
       );
 }
+const dynamicBindings = new Set(
+  app.statements
+    .filter(ts.isImportDeclaration)
+    .filter(
+      (statement) =>
+        statement.moduleSpecifier.text === "next/dynamic" &&
+        statement.importClause?.name,
+    )
+    .map((statement) => statement.importClause.name.text),
+);
+for (const declaration of app.statements
+  .filter(ts.isVariableStatement)
+  .flatMap((statement) => statement.declarationList.declarations)) {
+  const value = declaration.initializer;
+  if (
+    !ts.isIdentifier(declaration.name) ||
+    !value ||
+    !ts.isCallExpression(value) ||
+    !ts.isIdentifier(value.expression) ||
+    !dynamicBindings.has(value.expression.text)
+  )
+    continue;
+  const modules = [];
+  function visit(node) {
+    if (
+      ts.isCallExpression(node) &&
+      node.expression.kind === ts.SyntaxKind.ImportKeyword
+    ) {
+      assert(
+        node.arguments.length === 1 && ts.isStringLiteral(node.arguments[0]),
+        "Dispatcher dynamic imports must use literal local module paths",
+      );
+      modules.push(node.arguments[0].text);
+    }
+    ts.forEachChild(node, visit);
+  }
+  visit(value);
+  assert(
+    modules.length === 1 && modules[0].startsWith("@/components/"),
+    `Expected one component module for ${declaration.name.text}`,
+  );
+  imports.set(declaration.name.text, modules[0].replace("@/", "src/") + ".tsx");
+}
 const dispatcher = app.statements.find(
   (statement) =>
     ts.isFunctionDeclaration(statement) && statement.name?.text === "AppPage",
@@ -282,15 +622,49 @@ function contentTag(statement) {
     ts.forEachChild(node, visit);
   }
   visit(statement);
-  assert(tag && imports.has(tag), "Missing imported template for route");
+  assert(tag, "Missing component assignment for route");
   return tag;
+}
+function componentSource(component, wrappers = []) {
+  if (imports.has(component))
+    return {
+      component,
+      file: imports.get(component),
+      ...(wrappers.length ? { dispatcherWrappers: wrappers } : {}),
+    };
+  assert(
+    !wrappers.includes(component),
+    `Circular dispatcher wrapper: ${component}`,
+  );
+  const declaration = app.statements.find(
+    (statement) =>
+      ts.isFunctionDeclaration(statement) && statement.name?.text === component,
+  );
+  assert(declaration?.body, `Unknown dispatcher component: ${component}`);
+  const returns = declaration.body.statements.filter(ts.isReturnStatement);
+  assert.equal(
+    returns.length,
+    1,
+    `Dispatcher wrapper must return one JSX component: ${component}`,
+  );
+  let value = returns[0].expression;
+  while (value && ts.isParenthesizedExpression(value)) value = value.expression;
+  const tag =
+    value &&
+    (ts.isJsxElement(value)
+      ? value.openingElement.tagName.getText(app)
+      : ts.isJsxSelfClosingElement(value)
+        ? value.tagName.getText(app)
+        : null);
+  assert(tag, `Dispatcher wrapper must return direct JSX: ${component}`);
+  return componentSource(tag, [...wrappers, component]);
 }
 function handler(path) {
   let branch = firstBranch;
   while (branch && ts.isIfStatement(branch)) {
     if (condition(branch.expression, path)) {
       const component = contentTag(branch.thenStatement);
-      return { component, file: imports.get(component) };
+      return componentSource(component);
     }
     branch = branch.elseStatement;
   }
@@ -308,15 +682,18 @@ const views = [
   },
   ...suiteRoutes,
 ].map((route) => {
+  const sourceOnly = route.delivery === "1.5";
   const pairedView = saasNativeViews.find((view) => view.path === route.path);
   const recordedRoot = nativeRoots[route.path];
-  const figmaNode = pairedView
-    ? Object.values(pairedView.nodes).includes(recordedRoot)
-      ? recordedRoot
-      : pairedView.nodes.Dark
-    : recordedRoot;
+  const figmaNode = sourceOnly
+    ? null
+    : pairedView
+      ? Object.values(pairedView.nodes).includes(recordedRoot)
+        ? recordedRoot
+        : pairedView.nodes.Dark
+      : recordedRoot;
   assert(
-    figmaNode || newRoutes.includes(route.path),
+    sourceOnly || figmaNode || newRoutes.includes(route.path),
     `Missing established Figma root: ${route.path || "landing"}`,
   );
   return {
@@ -345,22 +722,40 @@ const views = [
               }
             : {}),
         }
-      : {
-          node: null,
-          url: null,
-          editable: false,
-          status: "pending-owner-native-id",
-        },
+      : sourceOnly
+        ? {
+            node: null,
+            url: null,
+            editable: false,
+            status: "source-only-route",
+            certifiesNativeReview: false,
+          }
+        : {
+            node: null,
+            url: null,
+            editable: false,
+            status: "pending-owner-native-id",
+          },
   };
 });
-assert.equal(views.length, 69, "Aureform 1.2 has 69 views including landing.");
+const retainedNativeViews = views.filter((view) =>
+  Object.hasOwn(retainedNativeRoots, view.path),
+);
+assert.equal(
+  retainedNativeViews.length,
+  retainedNativeRootCount,
+  "Keep all 69 frozen Figma routes represented in current source",
+);
 for (const path of Object.keys(nativeRoots))
   assert(
     views.some((view) => view.path === path),
     `Native root outside the route catalog: ${path}`,
   );
 const pendingNativeRoutes = views
-  .filter((view) => !view.figma.node)
+  .filter((view) => view.figma.status === "pending-owner-native-id")
+  .map((view) => view.path);
+const sourceOnlyRoutes = views
+  .filter((view) => view.figma.status === "source-only-route")
   .map((view) => view.path);
 const components = families.map((family) => {
   const connection = manifest.templates.find(
@@ -446,7 +841,7 @@ const blockExportOverrides = {
     "CommerceInvoiceEditor",
   ],
 };
-// 1.4 is a frontend expansion. These modules have no claimed native master;
+// 1.4/1.5 frontend expansions have no claimed new native master;
 // keep the owner's historical Figma IDs/reviews instead of inventing bindings.
 const sourceOnlyApplicationFiles = new Set(
   [
@@ -460,6 +855,8 @@ const sourceOnlyApplicationFiles = new Set(
     "maps-workspace",
     "google-map",
     "social-auth",
+    "data-workbench",
+    "ai-message-parts",
   ].map((name) => `src/components/blocks/${name}.tsx`),
 );
 const blocks = (
@@ -707,12 +1104,12 @@ const nativeAuditBaselineMatches =
   nativeAudit?.status === "passed-native-structure-and-visual-review" &&
   (!nativeAudit.fileKey || nativeAudit.fileKey === baselineState.fileKey) &&
   nativeAudit.stateSha256 === baselineStateSha256 &&
-  nativeAudit.summary?.routeRoots === views.length &&
+  nativeAudit.summary?.routeRoots === retainedNativeRootCount &&
   Array.isArray(nativeAudit.routes) &&
-  nativeAudit.routes.length === views.length &&
+  nativeAudit.routes.length === retainedNativeRootCount &&
   new Set(nativeAudit.routes.map((route) => route.route || "landing")).size ===
-    views.length &&
-  views.every((view) =>
+    retainedNativeRootCount &&
+  retainedNativeViews.every((view) =>
     nativeAudit.routes.some(
       (route) =>
         (route.route || "landing") === (view.path || "landing") &&
@@ -862,8 +1259,8 @@ const protectedBaselineMatches =
     )
   ).every(Boolean);
 const canonicalRouteIdsPreserved =
-  Object.keys(state.entities.routeScreens).length === 69 &&
-  Object.entries(baselineState.entities.routeScreens).every(
+  Object.keys(state.entities.routeScreens).length === retainedNativeRootCount &&
+  Object.entries(retainedNativeRoots).every(
     ([path, id]) => state.entities.routeScreens[path] === id,
   );
 const generatedImageReviewCurrent =
@@ -903,19 +1300,51 @@ const codeConnectSourceValidationCurrent =
     )
   ).every(Boolean);
 const deliveryReceiptFile = `public/downloads/verification-${packageManifest.version}.json`;
+const runtimeReceiptFile = `docs/qa-runtime-${packageManifest.version}.json`;
 const [deliveryReceipt, deliveryChecksums] = await Promise.all([
   readOptionalJson(deliveryReceiptFile),
   readOptionalJson("public/downloads/checksums.json"),
 ]);
+const catalogInputs = await Promise.all(
+  [...catalogModules.entries()].map(async ([file, module]) => ({
+    file,
+    sha256: digest((await module).source.text),
+  })),
+);
 const coverage = {
   schemaVersion: 1,
   version: packageManifest.version,
   status: nativeHandoffComplete
-    ? "source-handoff-retained-baseline-and-current-image-review"
-    : "source-handoff-pending-generated-image-closure",
+    ? "source-inventory-with-retained-native-checkpoints"
+    : "source-inventory-with-unmatched-retained-native-checkpoints",
+  sourceInventory: {
+    version: packageManifest.version,
+    suiteRoutes: suiteRoutes.length,
+    views: views.length,
+    routeDataEvaluation: "restricted-TypeScript-data-AST",
+    catalogInputs,
+    deliveryCategories: Object.fromEntries(
+      [...new Set(suiteRoutes.map((route) => route.delivery))]
+        .sort()
+        .map((category) => [
+          category,
+          suiteRoutes.filter((route) => route.delivery === category).length,
+        ]),
+    ),
+    sourceOnlyRoutes,
+    dispatcher: "src/components/app-page.tsx",
+    documentation: {
+      file: "src/lib/documentation.ts",
+      sha256: digest(documentationText),
+      articleCount: documentationArticleCount,
+    },
+    browserRuntimeCertified: false,
+    nativeProviderCertified: false,
+  },
   sourceOfTruth: [
-    "src/lib/catalog.ts",
+    ...catalogInputs.map((input) => input.file),
     "src/components/app-page.tsx",
+    "src/lib/documentation.ts",
     ".figma/state.json",
     ".figma/code-connect-manifest.json",
     ".figma/native-audit.json",
@@ -942,9 +1371,12 @@ const coverage = {
     shellLayouts: layoutNames.length,
     chartFamilies: chartNames.length,
     registryItems: Object.keys(registry).length,
+    documentationArticles: documentationArticleCount,
     codeConnectTemplates: manifest.templates.length,
-    mappedNativeViews: views.length - pendingNativeRoutes.length,
+    mappedNativeViews: views.filter((view) => view.figma.node).length,
     pendingNativeViews: pendingNativeRoutes.length,
+    sourceOnlyViews: sourceOnlyRoutes.length,
+    retainedNativeRootCount,
     directNativeBlockExports: blocks.filter(
       (block) => block.figma.status === "mapped-direct-native-id",
     ).length,
@@ -1013,7 +1445,11 @@ const coverage = {
       checkpointVersion: imageAudit?.version ?? null,
       historicalCheckpoint: imageAudit?.version !== packageManifest.version,
       status: imageAudit?.status ?? "pending-owner-generated-image-review",
-      current: generatedImageReviewCurrent,
+      current:
+        generatedImageReviewCurrent &&
+        imageAudit?.version === packageManifest.version,
+      matchesRetainedCheckpoint: generatedImageReviewCurrent,
+      certifiesCurrentVersion: false,
       scope: imageAudit?.scope ?? null,
       stateSha256: imageAudit?.stateSha256 ?? null,
       matchesCurrentState: imageAudit?.stateSha256 === stateSha256,
@@ -1035,6 +1471,7 @@ const coverage = {
   delivery: {
     version: packageManifest.version,
     receipt: deliveryReceiptFile,
+    runtimeReceipt: runtimeReceiptFile,
     status:
       deliveryReceipt?.version === packageManifest.version
         ? (deliveryReceipt.status ?? "recorded-owner-receipt")
@@ -1084,11 +1521,15 @@ const coverage = {
     };
   }),
   nativeHandoff: {
+    scope: "retained-native-checkpoints-only",
+    certifiesCurrentVersion: false,
+    retainedNativeRootCount,
+    sourceOnlyRoutes,
     status:
       pendingNativeRoutes.length || pendingNativeBlocks.length
         ? "pending-owner-native-additions"
         : nativeHandoffComplete
-          ? "passed-retained-baseline-and-current-generated-image-review"
+          ? "passed-retained-baseline-and-image-checkpoint"
           : !nativeAuditBaselineMatches
             ? "retained-baseline-mismatch"
             : "mapped-ids-pending-generated-image-review",
@@ -1107,7 +1548,7 @@ const coverage = {
       ? { codeConnectReason: manifest.validation.reason }
       : {}),
     ownerQa: nativeHandoffComplete
-      ? "passed-scoped-generated-image-review-with-retained-baseline"
+      ? "retained-scoped-native-evidence-matches"
       : "pending-scoped-generated-image-review",
     nativeAudit: {
       file: nativeAuditFile,
@@ -1207,7 +1648,7 @@ const coverage = {
   },
   limits: {
     backend:
-      "Deterministic local demo adapters; real auth, billing, AI providers and email are separate integrations.",
+      "Deterministic local demos and injected consumer adapters; provider backends, SDK installation and native acceptance remain separate from this source inventory.",
     figma:
       "Editable native compositions, including consolidated generic tables; mapping does not claim pixel-perfect parity for every route or browser behavior in Figma.",
     codeConnect:
@@ -1227,12 +1668,12 @@ const markdown = [
   "",
   "Generado desde catálogo y dispatcher reales, state actual, baseline nativo 1.2 conservado y ledger independiente de imágenes 1.2.1. [Datos completos](coverage.json).",
   "",
-  `${views.length} vistas (${suiteRoutes.length} rutas de suite + landing) · ${components.length} familias y ejemplos completos · ${coverage.summary.blockFiles} archivos / ${coverage.summary.blockExports} exports de bloques · ${layoutNames.length} layouts · ${chartNames.length} gráficos · ${palettes.length} paletas · ${effects.length} efectos reutilizables · ${coverage.summary.registryItems} elementos de registry · ${manifest.templates.length} templates locales de Code Connect.`,
+  `${views.length} vistas (${suiteRoutes.length} rutas de suite + landing) · ${components.length} familias y ejemplos completos · ${coverage.summary.blockFiles} archivos / ${coverage.summary.blockExports} exports de bloques · ${layoutNames.length} layouts · ${chartNames.length} gráficos · ${palettes.length} paletas · ${effects.length} efectos reutilizables · ${coverage.summary.registryItems} elementos de registry · ${documentationArticleCount} artículos de documentación · ${manifest.templates.length} templates locales de Code Connect.`,
   "",
-  `Source verificado por el catálogo, dispatcher y grafo de imports. ${coverage.summary.mappedNativeViews} raíces con ID nativo; ${pendingNativeRoutes.length} rutas pendientes del owner${pendingNativeRoutes.length ? `: ${pendingNativeRoutes.join(", ")}` : ""}. Estos conteos describen source e IDs. El [recibo runtime 1.2](qa-runtime-1.2.json) y sus [checks al freeze](release-checklist-1.2.md#recorded-verification-at-source-freeze) son baselines históricos: los resultados 184/74 y sus demás scopes no se reetiquetan como pruebas de 1.2.1. La [verificación 1.1](verification.es.md) mantiene su alcance histórico.`,
+  `Source verificado por el catálogo TypeScript restringido, dispatcher (incluidos imports dinámicos literales) y grafo de imports. ${coverage.summary.mappedNativeViews} vistas conservan un ID nativo histórico; ${sourceOnlyRoutes.length} rutas son solo código; ${pendingNativeRoutes.length} rutas nativas pendientes del owner${pendingNativeRoutes.length ? `: ${pendingNativeRoutes.join(", ")}` : ""}. El scope Figma congelado conserva ${retainedNativeRootCount} raíces y sus recibos originales. Estos conteos describen source e IDs, sin certificar comportamiento de navegador ni SDK de proveedores. El [recibo runtime 1.2](qa-runtime-1.2.json) y sus [checks al freeze](release-checklist-1.2.md#recorded-verification-at-source-freeze) son baselines históricos: los resultados 184/74 y sus demás scopes no se reetiquetan como pruebas de ${packageManifest.version}. La [verificación 1.1](verification.es.md) mantiene su alcance histórico.`,
   "",
   nativeAuditBaselineMatches
-    ? `Baseline nativo 1.2 conservado: PASS compuesto para ${nativeAudit.summary.routeRoots} raíces (${nativeAudit.summary.inheritedRouteRoots} heredadas del checkpoint 1.1 y ${nativeAudit.summary.freshSaasRoutes} rutas SaaS revisadas en Light/Dark), ligado al SHA256 \`${baselineStateSha256}\` de [state-1.2-final](../${baselineStateFile}). [Informe inmutable](../${nativeAuditFile}). No certifica una revisión visual nueva de las 69 vistas en 1.2.1.`
+    ? `Baseline nativo 1.2 conservado: PASS compuesto para ${nativeAudit.summary.routeRoots} raíces (${nativeAudit.summary.inheritedRouteRoots} heredadas del checkpoint 1.1 y ${nativeAudit.summary.freshSaasRoutes} rutas SaaS revisadas en Light/Dark), ligado al SHA256 \`${baselineStateSha256}\` de [state-1.2-final](../${baselineStateFile}). [Informe inmutable](../${nativeAuditFile}). No certifica una revisión visual nueva de ${packageManifest.version} ni de las ${sourceOnlyRoutes.length} rutas solo código.`
     : `Baseline nativo 1.2: no coincide con su snapshot congelado en \`${baselineStateFile}\`; el informe retenido mantiene su propio alcance.`,
   "",
   `Auditoría histórica 1.1: ${historicalNativeAudit?.summary?.routeRoots ?? "no registrado"} raíces, status \`${historicalNativeAudit?.status ?? "not-recorded"}\`. [Informe histórico](../${historicalNativeAuditFile}). Conserva su propio checkpoint y no certifica 1.2.1.`,
@@ -1264,13 +1705,13 @@ const markdown = [
   "",
   "La referencia TailAdmin se utiliza para inventariar categorías funcionales. Código, layouts, marca y recursos son originales. Las integraciones de backend se sustituyen mediante los adaptadores documentados.",
   "",
-  `Las etiquetas 1.0–1.3 son categorías del roadmap original; las vistas listadas se incluyen en la versión ${coverage.version}.`,
+  `Las etiquetas de entrega son categorías de source; el inventario actual usa la versión ${coverage.version}. La categoría 1.5 es una expansión solo código, sin nuevos IDs ni revisión nativa Figma.`,
   "",
   "| Vista | Categoría original | Implementación | Figma editable |",
   "| --- | --- | --- | --- |",
   ...views.map(
     (route) =>
-      `| ${route.path || "landing"} | ${route.delivery} | [${route.source.component}](../${route.source.file}) | ${route.figma.modeUrls ? ["Light", "Dark"].map((mode) => `[${mode}](${route.figma.modeUrls[mode]})`).join(" / ") : route.figma.url ? `[Abrir](${route.figma.url})` : "Pendiente: ID nativo del owner"} |`,
+      `| ${route.path || "landing"} | ${route.delivery} | [${route.source.component}](../${route.source.file}) | ${route.figma.modeUrls ? ["Light", "Dark"].map((mode) => `[${mode}](${route.figma.modeUrls[mode]})`).join(" / ") : route.figma.url ? `[Abrir](${route.figma.url})` : route.figma.status === "source-only-route" ? "Solo código; sin nueva certificación Figma" : "Pendiente: ID nativo del owner"} |`,
   ),
   "",
   "| Bloque de source | Archivo | Registry | Figma | Code Connect local |",
@@ -1311,9 +1752,9 @@ const markdown = [
   "",
   "Code Connect permanece local y sin publicar. El audit compuesto y la prueba SaaS 1.2 se conservan como baseline; el ledger de imágenes 1.2.1 registra exclusivamente su scope nuevo. Las composiciones no implican equivalencia pixel-perfect ni comportamiento de navegador en Figma. Ver [recibo runtime histórico 1.2](qa-runtime-1.2.json), [validación histórica 1.1](verification.es.md), [handoff](figma-handoff.es.md) y [gates de entrega 1.2.1](release-checklist-1.2.1.md).",
   "",
-  `Este inventario no certifica ZIP ni publicación. La entrega actual es ${packageManifest.version}; el owner registra la nueva QA y las identidades finales en \`${deliveryReceiptFile}\` después de ejecutar los checks acordados. Los archivos originales de 1.2, su checksum manifest y su recibo se conservan en \`artifacts/release-1.2-original/\`; el checkpoint público \`public/downloads/verification-1.2.json\` mantiene su pin histórico y no se compara con checksums nuevos. Los documentos incluidos se congelan antes de empaquetar.`,
+  `Este inventario no certifica ZIP ni publicación. La entrega actual es ${packageManifest.version}; la [QA runtime de esta versión](qa-runtime-${packageManifest.version}.json) registra sus checks observados y \`${deliveryReceiptFile}\` conserva el recibo de entrega. Los archivos originales de 1.2, su checksum manifest y su recibo se conservan en \`artifacts/release-1.2-original/\`; el checkpoint público \`public/downloads/verification-1.2.json\` mantiene su pin histórico y no se compara con checksums nuevos. Los documentos incluidos se congelan antes de empaquetar.`,
   "",
-  `La distribución ${packageManifest.version} usa Apache 2.0 para el trabajo original: Source, Starter, muestra de componentes e imágenes. Source incluye los 32 originales en \`design/images/masters/\`, los recursos optimizados, las pruebas PNG, los tokens y los diseños disponibles. Se excluyen credenciales, configuración privada, dependencias instaladas y output/tmp locales. El límite de Source es 90 MiB y el de los otros ZIP es 25 MiB. Los tres ZIP de evidencia conservan sus bytes y scopes históricos: 23 PNG de 1.1, 22 de 1.2 y siete de 1.2.1. Ningún ZIP ni publicación queda certificado solo por generar este inventario. Ver [guía open source](open-source.es.md) y [checklist actual](release-checklist-1.3.0.md).`,
+  `La distribución ${packageManifest.version} usa Apache 2.0 para el trabajo original: Source, Starter, muestra de componentes e imágenes. Source incluye los 32 originales en \`design/images/masters/\`, los recursos optimizados, las pruebas PNG, los tokens y los diseños disponibles. Se excluyen credenciales, configuración privada, dependencias instaladas y output/tmp locales. El límite de Source es 90 MiB y el de los otros ZIP es 25 MiB. Los tres ZIP de evidencia conservan sus bytes y scopes históricos: 23 PNG de 1.1, 22 de 1.2 y siete de 1.2.1. Ningún ZIP ni publicación queda certificado solo por generar este inventario. Ver [guía open source](open-source.es.md) y [checklist actual](release-checklist-${packageManifest.version}.md).`,
   "",
 ].join("\n");
 const outputs = [

@@ -8,8 +8,8 @@ import {
 } from "@/lib/site-config";
 
 export const siteDescriptions = {
-  en: "An open-source Next.js UI kit for dashboards, SaaS and internal tools. Explore 69 demo views, 44 component families, six palettes, editable Figma design and complete documentation. Apache 2.0.",
-  es: "Un UI kit abierto de Next.js para dashboards, SaaS y herramientas internas. Explora 69 vistas demo, 44 familias de componentes, seis paletas, diseño editable en Figma y documentación. Apache 2.0.",
+  en: "Open-source Next.js UI kit with 65 integration recipes, AI and SaaS workflows, six palettes, light/dark themes and complete documentation. Apache 2.0.",
+  es: "UI kit abierto de Next.js con 65 recetas de integración, flujos AI y SaaS, seis paletas, temas claro/oscuro y documentación completa. Apache 2.0.",
 } satisfies Record<Locale, string>;
 export const siteTitles = {
   en: "Aureform UI — Open-source Next.js UI kit & dashboard templates",

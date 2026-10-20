@@ -60,6 +60,7 @@ import {
   CommerceError,
   commerceCurrencies,
   commerceProductSchema,
+  getCommerceProviderLabel,
   type CommerceContextValue,
   type CommerceCurrency,
   type CommerceProduct,
@@ -89,6 +90,9 @@ type ProductDraft = {
 type DraftErrors = Partial<Record<keyof ProductDraft, string>>;
 type EditorSection = "details" | "pricing" | "inventory" | "media";
 type StockFilter = "all" | "low" | "out";
+function productIsLinked(product: CommerceProduct) {
+  return Boolean((product.providerProductId ?? product.stripeProductId) && (product.providerPriceId ?? product.stripePriceId));
+}
 
 function productDraft(product: CommerceProduct): ProductDraft {
   return {
@@ -499,7 +503,7 @@ function ProductDetailsDialog({
   const categories = [
     ...new Set(commerce.products.map((item) => item.category)),
   ].sort();
-  const connected = !!original.stripeProductId && !!original.stripePriceId;
+  const connected = productIsLinked(original);
 
   useEffect(() => {
     mounted.current = true;
@@ -610,8 +614,8 @@ function ProductDetailsDialog({
                   "Sincronización de prueba completada. El producto y precio están vinculados en esta demo.",
                 )
               : l(
-                  "Stripe sync complete. The product and price are linked.",
-                  "Sincronización con Stripe completada. El producto y precio están vinculados.",
+                  `${getCommerceProviderLabel(commerce)} sync complete. The product and price are linked.`,
+                  `Sincronización con ${getCommerceProviderLabel(commerce)} completada. El producto y precio están vinculados.`,
                 ),
       );
       onSaved(saved, action);
@@ -1062,8 +1066,8 @@ function ProductDetailsDialog({
                         {commerce.mode === "mock"
                           ? l("Mock product sync", "Sincronización de prueba")
                           : l(
-                              "Stripe product sync",
-                              "Sincronización con Stripe",
+                              `${getCommerceProviderLabel(commerce)} product sync`,
+                              `Sincronización con ${getCommerceProviderLabel(commerce)}`,
                             )}
                       </p>
                       <p className="mt-2 text-[11px] leading-5 text-muted-foreground">
@@ -1082,7 +1086,7 @@ function ProductDetailsDialog({
                                   "Product and price linked.",
                                   "Producto y precio vinculados.",
                                 )
-                              : original.stripeProductId
+                              : (original.providerProductId ?? original.stripeProductId)
                                 ? l(
                                     "Product linked; price sync pending.",
                                     "Producto vinculado; precio pendiente.",
@@ -1113,7 +1117,7 @@ function ProductDetailsDialog({
                         ? l("Sync again", "Sincronizar de nuevo")
                         : commerce.mode === "mock"
                           ? l("Run mock sync", "Sincronizar prueba")
-                          : l("Sync with Stripe", "Sincronizar con Stripe")}
+                          : l(`Sync with ${getCommerceProviderLabel(commerce)}`, `Sincronizar con ${getCommerceProviderLabel(commerce)}`)}
                     </Button>
                   </div>
                 </div>
@@ -1392,8 +1396,8 @@ function CatalogWorkspace({ workspaceName }: { workspaceName: string }) {
                 `${saved.name}: sincronización de prueba completada.`,
               )
             : l(
-                `${saved.name}: Stripe sync complete.`,
-                `${saved.name}: sincronización con Stripe completada.`,
+                `${saved.name}: ${getCommerceProviderLabel(commerce)} sync complete.`,
+                `${saved.name}: sincronización con ${getCommerceProviderLabel(commerce)} completada.`,
               ),
         );
     } catch (cause) {
@@ -1531,7 +1535,7 @@ function CatalogWorkspace({ workspaceName }: { workspaceName: string }) {
             <Badge variant="outline" className="py-1.5">
               {commerce.mode === "mock"
                 ? l("Local demo", "Demo local")
-                : l("Stripe connected", "Stripe conectado")}
+                : l(`${getCommerceProviderLabel(commerce)} connected`, `${getCommerceProviderLabel(commerce)} conectado`)}
             </Badge>
             <Button
               type="button"
@@ -1928,13 +1932,13 @@ function CatalogWorkspace({ workspaceName }: { workspaceName: string }) {
                     disabled={locked || !commerce.canWrite}
                     loading={localBusy === product.id}
                     aria-label={l(
-                      `${product.stripeProductId && product.stripePriceId ? "Synced" : "Sync"} ${product.name}`,
-                      `${product.stripeProductId && product.stripePriceId ? "Vinculado" : "Sincronizar"} ${product.name}`,
+                      `${productIsLinked(product) ? "Synced" : "Sync"} ${product.name}`,
+                      `${productIsLinked(product) ? "Vinculado" : "Sincronizar"} ${product.name}`,
                     )}
                     onClick={() => void sync(product.id)}
                   >
                     <RefreshCw aria-hidden="true" />
-                    {product.stripeProductId && product.stripePriceId
+                    {productIsLinked(product)
                       ? l("Synced", "Vinculado")
                       : l("Sync", "Sincronizar")}
                   </Button>
@@ -2046,13 +2050,13 @@ function CatalogWorkspace({ workspaceName }: { workspaceName: string }) {
                           disabled={locked || !commerce.canWrite}
                           loading={localBusy === product.id}
                           aria-label={l(
-                            `${product.stripeProductId && product.stripePriceId ? "Synced" : "Sync"} ${product.name}`,
-                            `${product.stripeProductId && product.stripePriceId ? "Vinculado" : "Sincronizar"} ${product.name}`,
+                            `${productIsLinked(product) ? "Synced" : "Sync"} ${product.name}`,
+                            `${productIsLinked(product) ? "Vinculado" : "Sincronizar"} ${product.name}`,
                           )}
                           onClick={() => void sync(product.id)}
                         >
                           <RefreshCw aria-hidden="true" />
-                          {product.stripeProductId && product.stripePriceId
+                          {productIsLinked(product)
                             ? l("Synced", "Vinculado")
                             : l("Sync", "Sincronizar")}
                         </Button>

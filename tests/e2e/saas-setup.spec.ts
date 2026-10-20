@@ -13,6 +13,14 @@ import {
   type SaasDemoState,
 } from "../../src/lib/saas";
 
+const suppliedBaseURL = process.env.AUREFORM_BASE_URL;
+const mount = (
+  suppliedBaseURL
+    ? new URL(suppliedBaseURL).pathname
+    : (process.env.NEXT_PUBLIC_BASE_PATH ?? "")
+).replace(/\/+$/, "");
+const mountedPath = (path: string) => `${mount}/${path.replace(/^\/+/, "")}`;
+
 type Locale = "en" | "es";
 const copy = {
   en: {
@@ -169,7 +177,7 @@ async function ready(page: Page, locale: Locale = "en") {
 }
 
 async function open(page: Page, route: string, locale: Locale = "en") {
-  const response = await page.goto(`/${locale}/${route}/`);
+  const response = await page.goto(mountedPath(`/${locale}/${route}/`));
   expect(response?.status(), "The production route responds successfully").toBe(
     200,
   );

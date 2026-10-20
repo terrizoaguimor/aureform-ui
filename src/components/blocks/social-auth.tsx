@@ -81,7 +81,7 @@ export interface SocialAuthProps {
   authAdapter?: AuthAdapter;
   /** Overrides authAdapter. The default adapter is entirely local and mock. */
   onProviderSignIn?: ProviderSignInHandler;
-  /** UI disclosure; defaults to true when no integration is supplied. */
+  /** False requires a provider handler; missing connectivity disables the buttons. */
   demo?: boolean;
   onConsentRequired?: () => void;
   onComplete?: (result: ProviderSignInResult) => void;
@@ -118,6 +118,7 @@ export function SocialAuth({
   const headingId = useId();
   const disclosureId = useId();
   const defaultAdapter = useMemo(() => createDemoAuthAdapter(), []);
+  const unconfigured = !demo && !authAdapter && !onProviderSignIn;
   const runner = useMemo(() => createProviderSignInRunner(), []);
   const pendingRequest = useRef<AbortController | null>(null);
   const [state, setState] = useState<SocialAuthState>({ phase: "idle" });
@@ -132,7 +133,13 @@ export function SocialAuth({
   }, []);
 
   async function signIn(provider: SocialAuthProvider) {
-    if (disabled || runner.pending || state.phase === "complete") return;
+    if (
+      disabled ||
+      unconfigured ||
+      runner.pending ||
+      state.phase === "complete"
+    )
+      return;
     const controller = new AbortController();
     pendingRequest.current = controller;
     setState({ phase: "busy", provider });
@@ -171,22 +178,31 @@ export function SocialAuth({
         </h2>
         <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-2 py-1 text-[10px] font-semibold text-primary">
           <FlaskConical className="size-3" aria-hidden="true" />
-          {demo ? l("Demo", "Demo") : l("Adapter", "Adaptador")}
+          {unconfigured
+            ? l("Not configured", "Sin configurar")
+            : demo
+              ? l("Demo", "Demo")
+              : l("Adapter", "Adaptador")}
         </span>
       </div>
       <p
         id={disclosureId}
         className="mb-4 text-xs leading-5 text-muted-foreground"
       >
-        {demo
+        {unconfigured
           ? l(
-              "Local preview. No connection to your provider account.",
-              "Vista previa local. No se conecta con tu cuenta del proveedor.",
+              "Configure a provider handler to enable social sign-in. No provider account or local demo session is created.",
+              "Configura un handler de proveedor para habilitar el acceso social. No se crea ninguna cuenta del proveedor ni sesión local de demostración.",
             )
-          : l(
-              "Your app handles provider requests and any server session.",
-              "Tu aplicación gestiona al proveedor y la sesión del servidor.",
-            )}
+          : demo
+            ? l(
+                "Local preview. No connection to your provider account.",
+                "Vista previa local. No se conecta con tu cuenta del proveedor.",
+              )
+            : l(
+                "Your app handles provider requests and any server session.",
+                "Tu aplicación gestiona al proveedor y la sesión del servidor.",
+              )}
       </p>
       {state.phase === "complete" ? (
         <div className="grid gap-3">
@@ -247,7 +263,7 @@ export function SocialAuth({
                 type="button"
                 variant="outline"
                 loading={loading}
-                disabled={disabled || state.phase === "busy"}
+                disabled={disabled || unconfigured || state.phase === "busy"}
                 aria-label={label}
                 aria-describedby={disclosureId}
                 onClick={() => void signIn(provider)}
@@ -295,8 +311,12 @@ export function SocialAuth({
               <p>
                 {state.consentRequired
                   ? l(
-                      "Accept the demo terms, then try again.",
-                      "Acepta los términos de demostración e inténtalo de nuevo.",
+                      demo
+                        ? "Accept the demo terms, then try again."
+                        : "Accept the account terms, then try again.",
+                      demo
+                        ? "Acepta los términos de demostración e inténtalo de nuevo."
+                        : "Acepta los términos de la cuenta e inténtalo de nuevo.",
                     )
                   : l(
                       "The provider flow did not finish. Please try again.",

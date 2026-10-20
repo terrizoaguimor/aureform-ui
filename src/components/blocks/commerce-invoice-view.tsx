@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import {
   commerceCurrencies,
+  getCommerceProviderLabel,
   newInvoiceSchema,
   type CommerceContextValue,
   type CommerceCurrency,
@@ -803,8 +804,8 @@ export function CommerceInvoiceView({
                   "Registro local de ejemplo. Descargar o imprimir esta factura no cobra ningún pago.",
                 )
               : l(
-                  "This document reflects the selected invoice from your commerce service.",
-                  "Este documento refleja la factura seleccionada de tu servicio de comercio.",
+                  `This document reflects the selected invoice from your ${getCommerceProviderLabel(commerce)} commerce service.`,
+                  `Este documento refleja la factura seleccionada de tu servicio de comercio de ${getCommerceProviderLabel(commerce)}.`,
                 )}
           </p>
         </Card>
@@ -833,7 +834,10 @@ export function CommerceInvoiceView({
                   <CreditCard aria-hidden="true" />
                   {commerce.mode === "mock"
                     ? l("Preview payment", "Ver pago de ejemplo")
-                    : l("Pay invoice", "Pagar factura")}
+                    : l(
+                        `Pay invoice with ${getCommerceProviderLabel(commerce)}`,
+                        `Pagar factura con ${getCommerceProviderLabel(commerce)}`,
+                      )}
                 </Button>
                 <p className="flex items-start gap-2 text-[11px] leading-6 text-muted-foreground">
                   <ShieldCheck
@@ -846,8 +850,8 @@ export function CommerceInvoiceView({
                         "Prueba un pago exitoso o fallido en la vista previa de ejemplo.",
                       )
                     : l(
-                        "Checkout opens through your commerce service. Payment status updates after confirmation.",
-                        "El pago se abre mediante tu servicio de comercio. El estado se actualiza después de la confirmación.",
+                        `Checkout opens with ${getCommerceProviderLabel(commerce)}. Payment status updates after your service confirms it.`,
+                        `El pago se abre con ${getCommerceProviderLabel(commerce)}. El estado se actualiza después de la confirmación de tu servicio.`,
                       )}
                 </p>
               </>
