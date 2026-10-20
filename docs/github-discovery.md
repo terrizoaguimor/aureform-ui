@@ -6,7 +6,7 @@ Checked **2026-10-19, America/Bogota / 2026-10-20 UTC**. Repository: [terrizoagu
 
 The best immediate work is to make the repository easy to understand, preview and install. The strongest external destinations are **awesome-shadcn-ui**, the **official shadcn Registry Directory**, **unicodeveloper/awesome-nextjs**, **dalisoft/awesome-ui-libraries**, and **alexpate/awesome-design-systems**. Ranking reflects project fit, current editorial activity and submission rules; it does not predict traffic or rank projects by stars.
 
-The main implementation applied the About description below and added eight relevant topics while preserving the original eleven: the repository now has **19 topics**. These guides and drafts document external destinations; no external submissions have been sent.
+The main implementation applied the About description below and added eight relevant topics while preserving the original eleven: the repository now has **19 topics**. Following the maintainer's authorization on October 20, two proposals were opened: [awesome-nextjs #681](https://github.com/unicodeveloper/awesome-nextjs/pull/681) and [awesome-shadcn-ui #693](https://github.com/birobirobiro/awesome-shadcn-ui/pull/693). Both were open and awaiting review at submission. The other destinations remain proposals; see the [submission record](promotion/github-submissions.md#submission-record) for scope and validation.
 
 ## Repository metadata ready for the main implementation
 

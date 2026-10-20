@@ -2,9 +2,22 @@
 
 [Research in English](../github-discovery.md) · [Investigación en español](../github-discovery.es.md)
 
-Checked **2026-10-19, America/Bogota / 2026-10-20 UTC**. These are proposed entries for owner review. **Nothing has been submitted.** Opening a third-party PR, issue, discussion or submission form requires explicit user authorization. Review the destination's current template and pending proposals before use.
+Initial research checked **2026-10-19, America/Bogota / 2026-10-20 UTC**. The maintainer authorized the awesome-nextjs and awesome-shadcn-ui proposals on October 20; their submitted entries are recorded below. Other entries remain drafts. Any additional third-party PR, issue, discussion or submission form requires explicit user authorization. Review the destination's current template and pending proposals before use.
 
 The project provides 69 demo views, 44 core families, 107 registry entries and six palettes. [Current project scope](../../README.md), [installation](../website/en/installation.md). Authentication/payment demos use mocks and backend adapters. The native Figma 1.2.1 checkpoint is frozen; 1.4 application additions are source-only. [Design scope](../figma-distribution.md). Keep those boundaries in the proposed PR notes even when the list entry is shorter.
+
+## Submission record
+
+Both proposals were submitted from `terrizoaguimor` as ready-for-review PRs on **2026-10-20 UTC**, with maintainer edits allowed. Each changes only `README.md`, adding one line with no deletions. State at submission: **open, awaiting review**, not accepted or listed.
+
+| Destination                    | Submitted proposal                                                    | Created at (UTC) | Category     |
+| ------------------------------ | --------------------------------------------------------------------- | ---------------- | ------------ |
+| unicodeveloper/awesome-nextjs  | [PR #681](https://github.com/unicodeveloper/awesome-nextjs/pull/681)  | 12:30:29         | Boilerplates |
+| birobirobiro/awesome-shadcn-ui | [PR #693](https://github.com/birobirobiro/awesome-shadcn-ui/pull/693) | 12:30:42         | Registries   |
+
+Before submission, the current contribution guides and available PR template were read. Searches for `aureform`, `aureformui.com` and `terrizoaguimor/aureform-ui` across previous suggestions returned no matches; neither README had an existing entry. Project, demo, documentation and registry links returned HTTP 200. The published catalog and tested Button/provider payloads retained their recorded hashes.
+
+The original shadcn-list formatter (`node scripts/format-readme.js`) passed its link-cell and duplicate checks, remained idempotent and preserved the single added line. The Next.js-list entry passed its documented title-case, short-description, final-period and commit-body-link requirements. PR metadata, author, body and actual file diffs were read back after creation. These local checks are separate from upstream CI: at initial verification, shadcn's [Format README workflow](https://github.com/birobirobiro/awesome-shadcn-ui/actions/runs/39422825897) reported `action_required` and no jobs had run.
 
 ## birobirobiro/awesome-shadcn-ui
 
@@ -15,7 +28,7 @@ The project provides 69 demo views, 44 core families, 107 registry entries and s
 Entry:
 
 ```markdown
-| aureform-ui | Apache-2.0 shadcn-compatible registry of editable React components and SaaS dashboard blocks with an appearance studio. | [Link](https://aureformui.com/) |
+| aureform-ui | Apache-2.0 registry of editable dashboard components and SaaS blocks, installed with the shadcn CLI and customizable through an appearance studio. | [Link](https://aureformui.com/) |
 ```
 
 Proposed PR note:

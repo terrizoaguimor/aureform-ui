@@ -6,7 +6,7 @@ Consulta: **2026-10-19, America/Bogota / 2026-10-20 UTC**. Repositorio: [terrizo
 
 Lo más útil ahora es facilitar que alguien encuentre el repositorio, entienda su alcance y consiga instalarlo. Los destinos externos con mejor encaje son **awesome-shadcn-ui**, el **Registry Directory oficial de shadcn**, **unicodeveloper/awesome-nextjs**, **dalisoft/awesome-ui-libraries** y **alexpate/awesome-design-systems**. El orden considera encaje, actividad editorial y reglas; no estima tráfico ni premia el número de estrellas.
 
-La implementación principal aplicó la descripción About siguiente y añadió ocho topics relevantes, conservando los once anteriores: el repositorio tiene **19 topics**. Las guías y borradores documentan los destinos externos; todavía no se han enviado propuestas.
+La implementación principal aplicó la descripción About siguiente y añadió ocho topics relevantes, conservando los once anteriores: el repositorio tiene **19 topics**. Con autorización del mantenedor el 20 de octubre se abrieron dos propuestas: [awesome-nextjs #681](https://github.com/unicodeveloper/awesome-nextjs/pull/681) y [awesome-shadcn-ui #693](https://github.com/birobirobiro/awesome-shadcn-ui/pull/693). Ambas quedaron abiertas y pendientes de revisión al enviarlas. Los demás destinos siguen como propuestas; el [registro de envíos](promotion/github-submissions.md#submission-record) conserva su alcance y validación.
 
 ## Metadatos listos para la implementación principal
 
