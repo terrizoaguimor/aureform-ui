@@ -204,6 +204,19 @@ export const documentationArticles: readonly DocumentationArticle[] = [
     },
   },
   {
+    slug: "integration-research",
+    title: {
+      en: "Integration research",
+      es: "Research de integraciones",
+    },
+    description: {
+      en: "Compare data, auth, payments, AI and product connectors using dated evidence and frontend boundaries.",
+      es: "Compara datos, auth, pagos, AI y conectores con evidencia fechada y límites de frontend.",
+    },
+    group: group.integrations,
+    files: websiteFiles("integration-research"),
+  },
+  {
     slug: "figma",
     title: { en: "Figma & Code Connect", es: "Figma y Code Connect" },
     description: {

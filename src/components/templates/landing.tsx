@@ -1441,8 +1441,8 @@ export function LandingTemplate() {
               </h2>
               <p className="mt-6 max-w-lg text-sm leading-8 text-muted-foreground sm:text-base">
                 {l(
-                  "Explore 22 documentation chapters, from foundations and practical examples to integration contracts. Articles are translated where available; otherwise, their original source language is shown.",
-                  "Explora 22 capítulos de documentación: bases, ejemplos prácticos y contratos de integración. Los artículos tienen traducción cuando está disponible; en los demás se indica el idioma de la fuente original.",
+                  "Explore 23 documentation chapters, from foundations and practical examples to integration research and contracts. Articles are translated where available; otherwise, their original source language is shown.",
+                  "Explora 23 capítulos de documentación: bases, ejemplos prácticos, research y contratos de integración. Los artículos tienen traducción cuando está disponible; en los demás se indica el idioma de la fuente original.",
                 )}
               </p>
               <Link

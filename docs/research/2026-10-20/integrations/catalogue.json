@@ -1,0 +1,2759 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-20",
+  "baselineCommit": "a93ab113170ec1456608cf1f85d1a89b23aaec68",
+  "evidenceWindow": {
+    "start": "2026-10-12",
+    "end": "2026-10-18"
+  },
+  "methodology": {
+    "en": "Reviewed four completed AGY reports against baseline contracts, primary documentation, fixed package metadata and the npm window. npmEvidence marks installation events or unmeasured role/service adoption; extra SDKs are unmeasured. Downloads are biased proxies, never unique users or a global ranking; do not sum related packages. Priorities and effort are relative research judgments within roles. Grouped options are choices, not a required stack. This research did not runtime-test candidate recipes in Aureform.",
+    "es": "Se contrastaron cuatro informes AGY completados con contratos base, fuentes primarias, metadatos fijos y la ventana npm. npmEvidence indica instalaciones o adopción de rol/servicio no medida; los SDK adicionales no están medidos. Las descargas son proxies sesgados, nunca usuarios únicos ni ranking global; no sumar paquetes relacionados. Prioridad y esfuerzo son juicios relativos por rol. Las opciones agrupadas son elecciones, no una pila obligatoria. Esta investigación no probó las recetas en Aureform."
+  },
+  "candidates": [
+    {
+      "id": "tanstack-query",
+      "name": "TanStack Query",
+      "category": "data-fetching",
+      "priority": "P0",
+      "recommendation": "primary",
+      "role": {
+        "en": "Client cache and query/mutation lifecycle over the consumer’s existing API; distinct from TanStack Table.",
+        "es": "Caché cliente y ciclo de consultas/mutaciones sobre la API del consumidor; distinto de TanStack Table."
+      },
+      "npmPackages": ["@tanstack/react-query"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://tanstack.com/query/latest/docs/framework/react/overview",
+        "https://tanstack.com/query/latest/docs/framework/react/guides/paginated-queries"
+      ],
+      "currentState": {
+        "en": "DataTable already supports controlled queries and external filtering, sorting and pagination; application records use local demo state.",
+        "es": "DataTable ya admite consultas controladas y filtrado, ordenación y paginación externos; los registros usan estado local de demostración."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete an optional recipe that maps DataTable query/onQueryChange and external mode to an authenticated fetcher.",
+          "Preserve loading, empty, error, retry, cancellation and workspace-switch behavior."
+        ],
+        "es": [
+          "Completar una receta opcional que conecte query/onQueryChange y el modo externo de DataTable con consultas autenticadas.",
+          "Conservar carga, vacío, error, reintento, cancelación y cambio de espacio de trabajo."
+        ]
+      },
+      "runtime": "browser-client",
+      "license": {
+        "sdk": "MIT",
+        "service": "conditional"
+      },
+      "effort": "small",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Already supplied table controls need a provider recipe, not another public table API. Scope query keys by identity/workspace; caching does not authorize records.",
+        "es": "Los controles existentes requieren una receta de proveedor, no otra API pública de tablas. Delimitar la caché por identidad/espacio; la caché no autoriza registros."
+      }
+    },
+    {
+      "id": "supabase-data",
+      "name": "Supabase application data",
+      "category": "application-data",
+      "priority": "P0",
+      "recommendation": "primary",
+      "role": {
+        "en": "Postgres-backed application data through Supabase’s client API; choose Auth, Storage and Realtime independently.",
+        "es": "Datos de aplicación en Postgres mediante la API cliente de Supabase; elegir Auth, Storage y Realtime por separado."
+      },
+      "npmPackages": ["@supabase/supabase-js"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://supabase.com/docs/guides/database/postgres/row-level-security",
+        "https://supabase.com/docs/reference/javascript/introduction"
+      ],
+      "currentState": {
+        "en": "DataTable already supports controlled queries and external filtering, sorting and pagination; application records use local demo state.",
+        "es": "DataTable ya admite consultas controladas y filtrado, ordenación y paginación externos; los registros usan estado local de demostración."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a controlled-table recipe with server-authoritative filtering, mutations and tenant policies.",
+          "Show loading, access-denied, conflict and refresh states using the existing components."
+        ],
+        "es": [
+          "Completar una receta de tablas controladas con filtrado, mutaciones y políticas de tenant autoritativos.",
+          "Mostrar carga, acceso denegado, conflictos y actualización con los componentes existentes."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Browser access requires correct RLS and authenticated identity. Privileged operations stay on the consumer backend. supabase-js downloads span several services and do not measure BaaS users.",
+        "es": "El acceso desde navegador exige RLS e identidad autenticada correctos. Las operaciones privilegiadas quedan en el backend. Las descargas de supabase-js abarcan varios servicios y no miden usuarios del BaaS."
+      }
+    },
+    {
+      "id": "better-auth",
+      "name": "Better Auth",
+      "category": "identity",
+      "priority": "P0",
+      "recommendation": "primary",
+      "role": {
+        "en": "Authentication framework for teams operating their own application server and database.",
+        "es": "Framework de autenticación para equipos que operan su servidor de aplicación y base de datos."
+      },
+      "npmPackages": ["better-auth"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://better-auth.com/docs/integrations/next",
+        "https://better-auth.com/docs/plugins/organization",
+        "https://authjs.dev/"
+      ],
+      "currentState": {
+        "en": "AuthAdapter.signInWithProvider and injectable social callbacks already exist; email, recovery, OTP and social sessions remain demos.",
+        "es": "AuthAdapter.signInWithProvider y los callbacks sociales inyectables ya existen; email, recuperación, OTP y sesiones sociales siguen siendo demostraciones."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete an AuthAdapter/callback recipe with the consumer’s provider sign-in and session lifecycle.",
+          "Document complete email, recovery and verification flows and organization/session settings."
+        ],
+        "es": [
+          "Completar una receta de AuthAdapter/callback con inicio social y ciclo de sesión del consumidor.",
+          "Documentar flujos completos de email, recuperación y verificación, y ajustes de organizaciones/sesiones."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The static demo supplies no auth server, cookies or database. Choose this own-server route or a managed alternative; do not combine all identity providers. Existing callback completion is not proof of authentication.",
+        "es": "La demo estática no aporta servidor de autenticación, cookies ni base de datos. Elegir esta ruta con servidor propio o una alternativa gestionada; no combinar todos los proveedores. Completar el callback no prueba autenticación."
+      }
+    },
+    {
+      "id": "clerk",
+      "name": "Clerk",
+      "category": "identity",
+      "priority": "P0",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Managed identity alternative to an own-server authentication framework.",
+        "es": "Alternativa de identidad gestionada frente a un framework con servidor propio."
+      },
+      "npmPackages": ["@clerk/nextjs"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://clerk.com/docs/nextjs/getting-started/quickstart"
+      ],
+      "currentState": {
+        "en": "AuthAdapter.signInWithProvider and injectable social callbacks already exist; email, recovery, OTP and social sessions remain demos.",
+        "es": "AuthAdapter.signInWithProvider y los callbacks sociales inyectables ya existen; email, recuperación, OTP y sesiones sociales siguen siendo demostraciones."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a recipe that preserves Aureform’s sign-in presentation while connecting Clerk identity.",
+          "Add consumer-backed organization, invitation and session settings where required."
+        ],
+        "es": [
+          "Completar una receta que conserve la presentación de acceso de Aureform y conecte la identidad de Clerk.",
+          "Añadir ajustes de organizaciones, invitaciones y sesiones respaldados por el consumidor cuando se necesiten."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "managed"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The Next.js server recipe requires consumer deployment and authorization checks; do not claim that its middleware/callback flow runs in a static export. Current peer ranges are a declaration, not an Aureform runtime test.",
+        "es": "La receta de servidor Next.js exige despliegue y autorización del consumidor; no afirmar que su middleware/callback funciona en una exportación estática. Los rangos de pares declarados no constituyen una prueba en Aureform."
+      }
+    },
+    {
+      "id": "supabase-auth",
+      "name": "Supabase Auth",
+      "category": "identity",
+      "priority": "P0",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Identity choice when Supabase is the selected BaaS; browser sign-in and optional consumer-server cookie handling have different roles.",
+        "es": "Elección de identidad cuando Supabase es el BaaS elegido; acceso en navegador y cookies opcionales del servidor tienen roles distintos."
+      },
+      "npmPackages": ["@supabase/ssr", "@supabase/supabase-js"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://supabase.com/docs/guides/auth",
+        "https://supabase.com/docs/guides/auth/server-side/creating-a-client?queryGroups=framework&framework=nextjs"
+      ],
+      "currentState": {
+        "en": "AuthAdapter.signInWithProvider and injectable social callbacks already exist; email, recovery, OTP and social sessions remain demos.",
+        "es": "AuthAdapter.signInWithProvider y los callbacks sociales inyectables ya existen; email, recuperación, OTP y sesiones sociales siguen siendo demostraciones."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete the existing social callback recipe with Supabase sign-in and authenticated session state.",
+          "Document password, recovery and verification completion plus RLS alignment."
+        ],
+        "es": [
+          "Completar la receta del callback social existente con acceso y estado de sesión autenticada de Supabase.",
+          "Documentar contraseña, recuperación y verificación completas y su relación con RLS."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Supabase Auth is conditional on the BaaS choice, not an additional identity layer beside every provider. SSR cookie refresh belongs to a consumer server; browser-only and SSR recipes must be distinguished. Broad SDK counts do not isolate Auth adoption.",
+        "es": "Supabase Auth depende de elegir ese BaaS; no es una capa adicional junto a todos los proveedores. La actualización de cookies SSR corresponde al servidor consumidor; separar recetas de navegador y SSR. El SDK general no permite medir adopción específica de Auth."
+      }
+    },
+    {
+      "id": "authjs-nextauth",
+      "name": "Auth.js / NextAuth",
+      "category": "identity",
+      "priority": "P2",
+      "recommendation": "reference",
+      "role": {
+        "en": "Migration and installed-base reference for existing NextAuth applications.",
+        "es": "Referencia de migración y aplicaciones existentes con NextAuth."
+      },
+      "npmPackages": ["next-auth"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://authjs.dev/",
+        "https://github.com/nextauthjs/next-auth"
+      ],
+      "currentState": {
+        "en": "AuthAdapter.signInWithProvider and injectable social callbacks already exist; email, recovery, OTP and social sessions remain demos.",
+        "es": "AuthAdapter.signInWithProvider y los callbacks sociales inyectables ya existen; email, recuperación, OTP y sesiones sociales siguen siendo demostraciones."
+      },
+      "proposedUi": {
+        "en": [
+          "Document how an existing consumer session connects to the current callbacks.",
+          "Provide migration context instead of making NextAuth the new-project default."
+        ],
+        "es": [
+          "Documentar cómo conectar una sesión existente del consumidor con los callbacks actuales.",
+          "Aportar contexto de migración sin convertir NextAuth en la opción predeterminada para proyectos nuevos."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "ISC",
+        "service": "conditional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Auth.js joined Better Auth in 2025. Security maintenance continues; official guidance favors Better Auth for new projects unless exceptions apply. Organizational change is not itself deprecation, and npm release/channel differences require checking.",
+        "es": "Auth.js se unió a Better Auth en 2025. Continúa el mantenimiento de seguridad; la orientación oficial favorece Better Auth para proyectos nuevos salvo excepciones. Un cambio organizativo no implica por sí solo deprecación; comprobar versión y canal npm."
+      }
+    },
+    {
+      "id": "enterprise-identity",
+      "name": "WorkOS AuthKit / Auth0",
+      "category": "identity-enterprise",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Alternative enterprise identity recipes for SSO and organization governance; select one provider.",
+        "es": "Recetas alternativas de identidad empresarial para SSO y gobierno de organizaciones; elegir un proveedor."
+      },
+      "npmPackages": ["@workos-inc/authkit-nextjs", "@auth0/nextjs-auth0"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://workos.com/docs/authkit/nextjs",
+        "https://auth0.com/docs/quickstart/webapp/nextjs"
+      ],
+      "currentState": {
+        "en": "AuthAdapter.signInWithProvider and injectable social callbacks already exist; email, recovery, OTP and social sessions remain demos.",
+        "es": "AuthAdapter.signInWithProvider y los callbacks sociales inyectables ya existen; email, recuperación, OTP y sesiones sociales siguen siendo demostraciones."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete consumer-owned identity callbacks and expose organization/domain connection status.",
+          "Show invitation, session and administrator-approval states for the selected enterprise flow."
+        ],
+        "es": [
+          "Completar los callbacks de identidad del consumidor y mostrar estado de organizaciones/dominios.",
+          "Mostrar invitaciones, sesiones y aprobación administrativa para el flujo empresarial elegido."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "managed"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Next.js server SDKs are not static-only SPA recipes. Consumer callbacks, secure sessions and access policies remain required. Enterprise feature availability depends on provider configuration and commercial terms.",
+        "es": "Los SDK de servidor Next.js no equivalen a recetas SPA puramente estáticas. Siguen siendo necesarios callbacks, sesiones seguras y políticas de acceso del consumidor. Las funciones empresariales dependen de configuración y condiciones comerciales."
+      }
+    },
+    {
+      "id": "swr",
+      "name": "SWR",
+      "category": "data-fetching",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Client fetch/cache alternative for teams preferring SWR over TanStack Query.",
+        "es": "Alternativa de consultas/caché cliente para equipos que prefieren SWR frente a TanStack Query."
+      },
+      "npmPackages": ["swr"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://swr.vercel.app/docs/getting-started",
+        "https://swr.vercel.app/docs/mutation"
+      ],
+      "currentState": {
+        "en": "DataTable already supports controlled queries and external filtering, sorting and pagination; application records use local demo state.",
+        "es": "DataTable ya admite consultas controladas y filtrado, ordenación y paginación externos; los registros usan estado local de demostración."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a recipe over existing controlled-table inputs and the consumer’s fetcher.",
+          "Map revalidation and mutations to current loading, error and retry controls."
+        ],
+        "es": [
+          "Completar una receta sobre las entradas de tabla controlada y las consultas del consumidor.",
+          "Conectar revalidación y mutaciones con los controles actuales de carga, error y reintento."
+        ]
+      },
+      "runtime": "browser-client",
+      "license": {
+        "sdk": "MIT",
+        "service": "conditional"
+      },
+      "effort": "small",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Choose one cache strategy per workflow. Cache keys and invalidation must follow workspace changes; SWR does not supply the API or application authorization.",
+        "es": "Elegir una estrategia de caché por flujo. Claves e invalidación deben seguir los cambios de espacio; SWR no aporta la API ni la autorización de aplicación."
+      }
+    },
+    {
+      "id": "neon-drizzle",
+      "name": "Neon with Drizzle ORM",
+      "category": "application-data-server",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Consumer-server Postgres recipe: Neon supplies the database/driver; Drizzle supplies typed SQL access.",
+        "es": "Receta Postgres del servidor consumidor: Neon aporta base de datos/driver; Drizzle aporta acceso SQL tipado."
+      },
+      "npmPackages": ["@neondatabase/serverless", "drizzle-orm"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://neon.com/docs/serverless/serverless-driver",
+        "https://orm.drizzle.team/docs/tutorials/drizzle-with-neon"
+      ],
+      "currentState": {
+        "en": "DataTable already supports controlled queries and external filtering, sorting and pagination; application records use local demo state.",
+        "es": "DataTable ya admite consultas controladas y filtrado, ordenación y paginación externos; los registros usan estado local de demostración."
+      },
+      "proposedUi": {
+        "en": [
+          "Connect existing tables and editors through an authenticated consumer API.",
+          "Return server-validated mutation results and useful conflict/retry states."
+        ],
+        "es": [
+          "Conectar las tablas y editores existentes mediante una API autenticada del consumidor.",
+          "Devolver resultados validados en servidor y estados útiles de conflicto/reintento."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT (Neon driver); Apache-2.0 (Drizzle ORM)",
+        "service": "managed"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "These are complementary server roles, not two BaaS competitors. Never ship database credentials in the browser. Connection/runtime choices and migrations need consumer validation; acquisition does not establish deprecation.",
+        "es": "Son roles de servidor complementarios, no dos BaaS competidores. No incluir credenciales de base de datos en navegador. El consumidor debe validar conexiones, runtime y migraciones; una adquisición no establece deprecación."
+      }
+    },
+    {
+      "id": "prisma",
+      "name": "Prisma ORM",
+      "category": "application-data-server",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Schema-driven ORM alternative for the consumer backend, distinct from managed database hosting.",
+        "es": "Alternativa ORM basada en esquemas para el backend consumidor, distinta del alojamiento gestionado de bases de datos."
+      },
+      "npmPackages": ["@prisma/client"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://www.prisma.io/docs/orm/v7/core-concepts/supported-databases/database-drivers"
+      ],
+      "currentState": {
+        "en": "DataTable already supports controlled queries and external filtering, sorting and pagination; application records use local demo state.",
+        "es": "DataTable ya admite consultas controladas y filtrado, ordenación y paginación externos; los registros usan estado local de demostración."
+      },
+      "proposedUi": {
+        "en": [
+          "Document a consumer API recipe for existing tables and record editors.",
+          "Show validation/conflict results from authorized server mutations."
+        ],
+        "es": [
+          "Documentar una receta de API del consumidor para tablas y editores existentes.",
+          "Mostrar validación y conflictos de mutaciones autorizadas en servidor."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0",
+        "service": "conditional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Prisma 7 driver-adapter and generation requirements must match the selected runtime. Do not infer deployment size or cold-start improvements without measurements. The browser remains an API consumer.",
+        "es": "Los requisitos de adaptadores y generación de Prisma 7 deben corresponder al runtime elegido. No inferir tamaño de despliegue ni mejoras de arranque sin mediciones. El navegador sigue consumiendo una API."
+      }
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "category": "application-data",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Managed application-data/auth alternative with its own document model and security rules.",
+        "es": "Alternativa gestionada de datos/autenticación con su propio modelo documental y reglas de seguridad."
+      },
+      "npmPackages": ["firebase"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://firebase.google.com/docs/web/setup",
+        "https://firebase.google.com/docs/firestore/security/get-started"
+      ],
+      "currentState": {
+        "en": "DataTable already supports controlled queries and external filtering, sorting and pagination; application records use local demo state.",
+        "es": "DataTable ya admite consultas controladas y filtrado, ordenación y paginación externos; los registros usan estado local de demostración."
+      },
+      "proposedUi": {
+        "en": [
+          "Document a Firestore query/mutation recipe adapted to current table controls.",
+          "Expose permission-denied, offline and synchronization states with existing UI."
+        ],
+        "es": [
+          "Documentar una receta de consultas/mutaciones Firestore adaptada a los controles de tabla actuales.",
+          "Mostrar acceso denegado, desconexión y sincronización con la interfaz existente."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0",
+        "service": "managed"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Firestore pagination, filtering and rules do not mirror SQL/RLS automatically. Admin operations belong on the consumer backend. SDK downloads include uses beyond this web-data role.",
+        "es": "La paginación, el filtrado y las reglas de Firestore no reproducen SQL/RLS automáticamente. Las operaciones administrativas quedan en el backend. Las descargas del SDK incluyen usos ajenos a este rol web."
+      }
+    },
+    {
+      "id": "convex",
+      "name": "Convex",
+      "category": "application-data",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Reactive application backend with browser subscriptions and consumer-defined authenticated functions.",
+        "es": "Backend reactivo con suscripciones de navegador y funciones autenticadas definidas por el consumidor."
+      },
+      "npmPackages": ["convex"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://docs.convex.dev/quickstart/nextjs",
+        "https://docs.convex.dev/auth/overview"
+      ],
+      "currentState": {
+        "en": "DataTable already supports controlled queries and external filtering, sorting and pagination; application records use local demo state.",
+        "es": "DataTable ya admite consultas controladas y filtrado, ordenación y paginación externos; los registros usan estado local de demostración."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a reactive table/editor recipe using consumer-defined query and mutation functions.",
+          "Keep authentication-pending, empty and mutation-failure states explicit."
+        ],
+        "es": [
+          "Completar una receta reactiva de tablas/editores con funciones de consulta y mutación del consumidor.",
+          "Mantener explícitos espera de autenticación, vacío y fallo de mutación."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0 (convex package)",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Consumer backend functions must authorize tenant access. This is an alternative data architecture, not an automatic cache/backend addition. SDK licensing does not determine every backend/Enterprise component license.",
+        "es": "Las funciones del backend deben autorizar acceso por tenant. Es una arquitectura de datos alternativa, no un complemento automático de caché/backend. La licencia del SDK no determina la de todos los componentes backend/Enterprise."
+      }
+    },
+    {
+      "id": "trpc",
+      "name": "tRPC",
+      "category": "typed-api",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Typed RPC recipe for TypeScript consumer backends; client, server router and Query bridge have separate roles.",
+        "es": "Receta RPC tipada para backends TypeScript; cliente, router de servidor y puente Query tienen roles distintos."
+      },
+      "npmPackages": [
+        "@trpc/client",
+        "@trpc/server",
+        "@trpc/tanstack-react-query"
+      ],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": ["https://trpc.io/docs/client/tanstack-react-query/setup"],
+      "currentState": {
+        "en": "DataTable already supports controlled queries and external filtering, sorting and pagination; application records use local demo state.",
+        "es": "DataTable ya admite consultas controladas y filtrado, ordenación y paginación externos; los registros usan estado local de demostración."
+      },
+      "proposedUi": {
+        "en": [
+          "Document an optional TypeScript API recipe feeding existing table/query controls.",
+          "Reuse existing validation, mutation and error presentations."
+        ],
+        "es": [
+          "Documentar una receta opcional de API TypeScript que alimente los controles de tabla/consulta existentes.",
+          "Reutilizar presentaciones de validación, mutación y error."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "conditional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "This requires a consumer TypeScript router and authorization layer; it is not the default for unrelated REST backends. These SDKs were not observed in the fixed npm-download window.",
+        "es": "Exige router TypeScript y autorización del consumidor; no es la opción predeterminada para backends REST ajenos. Estos SDK no se observaron en la ventana fija de descargas npm."
+      }
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe payment processing",
+      "category": "payments-psp",
+      "priority": "P0",
+      "recommendation": "primary",
+      "role": {
+        "en": "PSP recipe for existing commerce: stripe runs on the consumer server; stripe-js is optional browser payment UI, unnecessary for hosted redirects.",
+        "es": "Receta PSP para el comercio existente: stripe se ejecuta en servidor; stripe-js es interfaz de pago opcional y no se necesita para redirecciones alojadas."
+      },
+      "npmPackages": ["stripe", "@stripe/stripe-js"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://docs.stripe.com/checkout/quickstart",
+        "https://docs.stripe.com/customer-management/integrate-customer-portal",
+        "https://docs.stripe.com/webhooks"
+      ],
+      "currentState": {
+        "en": "CommerceAdapter, shared mock commerce and the typed Stripe browser-to-consumer-backend transport already exist; live payment processing is absent.",
+        "es": "Ya existen CommerceAdapter, comercio simulado compartido y transporte Stripe tipado de navegador a backend consumidor; no hay procesamiento real de pagos."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete the existing transport with authorized Products/Prices, Checkout, invoicing and portal endpoints.",
+          "Refresh orders and billing from verified, idempotently processed provider events."
+        ],
+        "es": [
+          "Completar el transporte existente con endpoints autorizados de productos/precios, Checkout, facturación y portal.",
+          "Actualizar pedidos y suscripciones desde eventos verificados y procesados con idempotencia."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The supplied transport accepts same-origin consumer API paths and allowlisted Stripe HTTPS redirects. Browser totals and return URLs cannot establish payment. Separate PSP responsibilities from Paddle/Polar MoR terms; a complete backend/webhook recipe is the remaining work.",
+        "es": "El transporte admite rutas API del mismo origen y redirecciones HTTPS Stripe permitidas. Totales del navegador y URLs de retorno no prueban pago. Separar responsabilidades PSP de las condiciones MoR de Paddle/Polar; falta completar backend y webhooks."
+      }
+    },
+    {
+      "id": "paddle",
+      "name": "Paddle Merchant of Record",
+      "category": "payments-mor",
+      "priority": "P0",
+      "recommendation": "alternative",
+      "role": {
+        "en": "MoR alternative: paddle-js controls browser checkout; the Node SDK and authoritative subscription state belong to the consumer backend.",
+        "es": "Alternativa MoR: paddle-js controla el checkout en navegador; el SDK Node y el estado autoritativo de suscripción pertenecen al backend consumidor."
+      },
+      "npmPackages": ["@paddle/paddle-js", "@paddle/paddle-node-sdk"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://developer.paddle.com/paddle-js/",
+        "https://developer.paddle.com/webhooks/"
+      ],
+      "currentState": {
+        "en": "CommerceAdapter, shared mock commerce and the typed Stripe browser-to-consumer-backend transport already exist; live payment processing is absent.",
+        "es": "Ya existen CommerceAdapter, comercio simulado compartido y transporte Stripe tipado de navegador a backend consumidor; no hay procesamiento real de pagos."
+      },
+      "proposedUi": {
+        "en": [
+          "Document a Paddle-specific recipe using the existing plan, invoice and payment-state presentation.",
+          "Show checkout pending, verified completion, cancellation and reconnection states."
+        ],
+        "es": [
+          "Documentar una receta Paddle con las presentaciones existentes de planes, facturas y pagos.",
+          "Mostrar checkout pendiente, finalización verificada, cancelación y reconexión."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Choose an MoR when its product/country eligibility and commercial responsibilities fit. Paddle event and checkout models differ from Stripe; the unchanged Stripe redirect allowlist cannot be reused as a Paddle adapter. Webhook verification remains required.",
+        "es": "Elegir MoR cuando encajen elegibilidad de producto/país y responsabilidades comerciales. Eventos y checkout Paddle difieren de Stripe; su lista de redirecciones no se reutiliza sin cambios como adaptador Paddle. Sigue siendo necesaria la verificación de webhooks."
+      }
+    },
+    {
+      "id": "polar",
+      "name": "Polar Merchant of Record",
+      "category": "payments-mor",
+      "priority": "P0",
+      "recommendation": "alternative",
+      "role": {
+        "en": "MoR alternative using consumer-server API calls and hosted checkout/customer-state flows.",
+        "es": "Alternativa MoR con llamadas API del servidor consumidor y flujos de checkout/estado de cliente alojados."
+      },
+      "npmPackages": ["@polar-sh/sdk"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://polar.sh/docs/integrate/sdk/typescript",
+        "https://polar.sh/docs/merchant-of-record/introduction"
+      ],
+      "currentState": {
+        "en": "CommerceAdapter, shared mock commerce and the typed Stripe browser-to-consumer-backend transport already exist; live payment processing is absent.",
+        "es": "Ya existen CommerceAdapter, comercio simulado compartido y transporte Stripe tipado de navegador a backend consumidor; no hay procesamiento real de pagos."
+      },
+      "proposedUi": {
+        "en": [
+          "Document a Polar recipe that maps customer state and entitlements to existing billing UI.",
+          "Preserve pending, failed and server-confirmed payment states."
+        ],
+        "es": [
+          "Documentar una receta Polar que conecte estado de cliente y derechos con la interfaz de facturación existente.",
+          "Conservar estados pendiente, fallido y confirmado por servidor."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Use current SDK/API-version guidance and consumer-owned customer mappings. The Stripe transport is not already a Polar integration. MoR eligibility, supported products and entitlement/webhook semantics require provider-specific review.",
+        "es": "Usar orientación vigente de SDK/versión API y relaciones de cliente controladas por el consumidor. El transporte Stripe no es una integración Polar existente. Elegibilidad MoR, productos y semántica de derechos/webhooks requieren revisión específica."
+      }
+    },
+    {
+      "id": "lemon-squeezy",
+      "name": "Lemon Squeezy",
+      "category": "payments-mor",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Additional MoR option for consumers already using its checkout, subscriptions or digital-product model.",
+        "es": "Opción MoR adicional para consumidores que ya usan su checkout, suscripciones o modelo de productos digitales."
+      },
+      "npmPackages": ["@lemonsqueezy/lemonsqueezy.js"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://docs.lemonsqueezy.com/guides/developer-guide",
+        "https://docs.lemonsqueezy.com/guides/developer-guide/webhooks"
+      ],
+      "currentState": {
+        "en": "CommerceAdapter, shared mock commerce and the typed Stripe browser-to-consumer-backend transport already exist; live payment processing is absent.",
+        "es": "Ya existen CommerceAdapter, comercio simulado compartido y transporte Stripe tipado de navegador a backend consumidor; no hay procesamiento real de pagos."
+      },
+      "proposedUi": {
+        "en": [
+          "Document provider-state mapping into existing billing and invoice screens.",
+          "Expose hosted checkout/portal actions through a consumer-specific recipe."
+        ],
+        "es": [
+          "Documentar cómo representar el estado del proveedor en las pantallas de facturación existentes.",
+          "Exponer checkout/portal alojados mediante una receta específica del consumidor."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Provider acquisition alone is not deprecation. Check current eligibility and product fit rather than inferred growth. SDK operations and signed webhooks remain server-side; existing Stripe redirect rules require deliberate replacement for this choice.",
+        "es": "La adquisición de un proveedor no implica deprecación. Comprobar elegibilidad y encaje actuales sin inferir crecimiento. SDK y webhooks firmados quedan en servidor; elegir esta opción exige adaptar deliberadamente las reglas de redirección Stripe."
+      }
+    },
+    {
+      "id": "s3-r2-storage",
+      "name": "Amazon S3 / Cloudflare R2 storage",
+      "category": "files-storage",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "Object-storage recipe: consumer backend authorizes and signs uploads; the browser uploads via short-lived URLs without a server SDK.",
+        "es": "Receta de objetos: el backend autoriza y firma subidas; el navegador carga mediante URLs temporales sin SDK de servidor."
+      },
+      "npmPackages": ["@aws-sdk/client-s3"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html",
+        "https://developers.cloudflare.com/r2/api/s3/presigned-urls/"
+      ],
+      "currentState": {
+        "en": "Local file/image selection, editing and demo persistence already exist; authorized hosted storage is consumer-owned.",
+        "es": "Ya existen selección y edición local de archivos/imágenes y persistencia de demostración; el almacenamiento alojado autorizado corresponde al consumidor."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete hosted upload/progress/retry using existing file and image controls.",
+          "Return authorized file metadata and distinguish private attachments from public commerce images."
+        ],
+        "es": [
+          "Completar subida alojada, progreso y reintento con los controles existentes de archivos e imágenes.",
+          "Devolver metadatos autorizados y separar adjuntos privados de imágenes públicas de comercio."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0",
+        "service": "managed"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "CORS, object ownership, content validation and expiry need consumer handling. S3-compatible APIs are not identical. The observed AWS client is a broad SDK proxy, not a measurement of R2 adoption.",
+        "es": "El consumidor debe gestionar CORS, propiedad de objetos, validación y caducidad. Las API compatibles con S3 no son idénticas. El cliente AWS observado es un proxy general de SDK, no una medición de adopción R2."
+      }
+    },
+    {
+      "id": "supabase-storage",
+      "name": "Supabase Storage",
+      "category": "files-storage",
+      "priority": "P1",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Storage choice for an existing Supabase application, with authenticated browser operations and consumer-controlled object policies.",
+        "es": "Elección de almacenamiento para una aplicación Supabase, con operaciones autenticadas de navegador y políticas de objetos del consumidor."
+      },
+      "npmPackages": ["@supabase/storage-js"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://supabase.com/docs/guides/storage",
+        "https://supabase.com/docs/guides/storage/security/access-control"
+      ],
+      "currentState": {
+        "en": "Local file/image selection, editing and demo persistence already exist; authorized hosted storage is consumer-owned.",
+        "es": "Ya existen selección y edición local de archivos/imágenes y persistencia de demostración; el almacenamiento alojado autorizado corresponde al consumidor."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a bucket/policy recipe for existing uploads and downloads.",
+          "Show upload rejection, expired-link and recovery states without losing local edits."
+        ],
+        "es": [
+          "Completar una receta de buckets/políticas para subidas y descargas existentes.",
+          "Mostrar rechazo, enlace caducado y recuperación sin perder ediciones locales."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Public buckets, private objects and service-role operations require different policies. storage-js may arrive transitively through supabase-js; do not sum their downloads or call them distinct storage users.",
+        "es": "Buckets públicos, objetos privados y operaciones privilegiadas requieren políticas diferentes. storage-js puede llegar mediante supabase-js; no sumar sus descargas ni interpretarlas como usuarios distintos de almacenamiento."
+      }
+    },
+    {
+      "id": "cloudinary",
+      "name": "Cloudinary media",
+      "category": "files-media",
+      "priority": "P1",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Hosted media upload/transformation alternative; the observed cloudinary package is a server SDK, distinct from browser upload/delivery.",
+        "es": "Alternativa alojada de subida/transformación multimedia; el paquete cloudinary observado es SDK de servidor, distinto de subida/entrega en navegador."
+      },
+      "npmPackages": ["cloudinary"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": ["https://cloudinary.com/documentation/upload_images"],
+      "currentState": {
+        "en": "Local file/image selection, editing and demo persistence already exist; authorized hosted storage is consumer-owned.",
+        "es": "Ya existen selección y edición local de archivos/imágenes y persistencia de demostración; el almacenamiento alojado autorizado corresponde al consumidor."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete signed upload and delivery recipes around existing image crop/order/alt-text controls.",
+          "Show upload processing and recoverable media errors."
+        ],
+        "es": [
+          "Completar recetas de subida firmada y entrega alrededor de recorte, orden y texto alternativo existentes.",
+          "Mostrar procesamiento de subida y errores multimedia recuperables."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Do not present existing local image editing as new functionality. Signing secrets and privileged transformations belong to the backend; define ownership, moderation and delivery policies for the consumer’s media.",
+        "es": "No presentar la edición local existente como funcionalidad nueva. Firma y transformaciones privilegiadas corresponden al backend; definir propiedad, moderación y entrega para los archivos del consumidor."
+      }
+    },
+    {
+      "id": "uploadthing",
+      "name": "UploadThing",
+      "category": "files-storage",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Managed upload alternative: server authorization/file routes and optional React upload helpers have different responsibilities.",
+        "es": "Alternativa gestionada de subida: autorización/rutas de servidor y helpers React opcionales tienen responsabilidades distintas."
+      },
+      "npmPackages": ["uploadthing", "@uploadthing/react"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": ["https://docs.uploadthing.com/getting-started/appdir"],
+      "currentState": {
+        "en": "Local file/image selection, editing and demo persistence already exist; authorized hosted storage is consumer-owned.",
+        "es": "Ya existen selección y edición local de archivos/imágenes y persistencia de demostración; el almacenamiento alojado autorizado corresponde al consumidor."
+      },
+      "proposedUi": {
+        "en": [
+          "Document an optional provider upload recipe using existing file-selection and retry UI.",
+          "Map authorized upload results into current file/product records."
+        ],
+        "es": [
+          "Documentar una receta opcional de subida con selección y reintento existentes.",
+          "Conectar resultados de subida autorizada con los registros actuales de archivos/productos."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "managed"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The App Router setup requires consumer server routes or an appropriate external backend. Browser helpers do not provide authorization or durable file ownership; adapt the recipe rather than assuming the static demo hosts upload endpoints.",
+        "es": "La configuración App Router exige rutas de servidor consumidor o backend externo adecuado. Los helpers de navegador no aportan autorización ni propiedad duradera; adaptar la receta sin asumir endpoints de subida en la demo estática."
+      }
+    },
+    {
+      "id": "resend-react-email",
+      "name": "Resend with React Email",
+      "category": "email-transactional",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "Consumer-server transactional delivery via Resend; React Email renders templates at build/server time and is not a delivery provider.",
+        "es": "Entrega transaccional desde servidor mediante Resend; React Email renderiza plantillas en compilación/servidor y no es proveedor de entrega."
+      },
+      "npmPackages": ["resend", "@react-email/components"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://resend.com/docs/send-with-nextjs",
+        "https://react.email/docs/introduction",
+        "https://registry.npmjs.org/%40react-email%2Fcomponents/1.0.12"
+      ],
+      "currentState": {
+        "en": "Mail and Email integration screens contain local demo interactions; no transactional sender is supplied.",
+        "es": "Las pantallas de correo e integración Email contienen interacciones locales; no se aporta un emisor transaccional."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a template-preview and consumer-send recipe for invitations, recovery or invoices.",
+          "Show queued, sent, rejected and bounced states from provider events."
+        ],
+        "es": [
+          "Completar una receta de vista previa y envío para invitaciones, recuperación o facturas.",
+          "Mostrar en cola, enviado, rechazado y rebotado desde eventos del proveedor."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The observed @react-email/components 1.0.12 metadata carries a deprecation notice; verify current React Email imports/migration before publishing a recipe. This is not evidence that Resend or React Email as a product is discontinued. Sender/domain validation and deliverability remain consumer work.",
+        "es": "Los metadatos observados de @react-email/components 1.0.12 incluyen aviso de deprecación; verificar imports/migración de React Email antes de publicar la receta. No prueba discontinuación de Resend ni de React Email como producto. Validación de remitente/dominio y entregabilidad corresponden al consumidor."
+      }
+    },
+    {
+      "id": "email-delivery-alternatives",
+      "name": "Postmark / SendGrid / Amazon SES",
+      "category": "email-transactional",
+      "priority": "P1",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Choose one alternate transactional sender: Postmark is the shortlist alternative; SendGrid and SES suit an existing provider/AWS stack.",
+        "es": "Elegir un emisor transaccional alternativo: Postmark es la alternativa priorizada; SendGrid y SES encajan con una plataforma existente o AWS."
+      },
+      "npmPackages": ["postmark", "@sendgrid/mail", "@aws-sdk/client-ses"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://postmarkapp.com/developer",
+        "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/quickstart-nodejs",
+        "https://docs.aws.amazon.com/ses/latest/dg/send-email-api.html"
+      ],
+      "currentState": {
+        "en": "Email UI and local messages exist; no production delivery credentials, domain setup or event receiver is supplied.",
+        "es": "Ya existen interfaz Email y mensajes locales; no se aporta configuración de dominios, credenciales productivas ni receptor de eventos."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete one provider send recipe using the same template-preview and delivery-status presentation.",
+          "Expose retryable delivery failures and domain/setup status."
+        ],
+        "es": [
+          "Completar una receta de envío con la misma presentación de plantillas y estado de entrega.",
+          "Mostrar fallos recuperables de entrega y estado de dominio/configuración."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT (Postmark/SendGrid); Apache-2.0 (SES client)",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "These server SDKs are alternatives, not a mandatory bundle or adoption ranking. Provider-specific events, sender verification, suppression and retry/idempotency behavior require mapping; no fixed quota or deliverability advantage is asserted.",
+        "es": "Estos SDK de servidor son alternativas, no un paquete obligatorio ni un ranking. Es necesario mapear eventos, remitentes, supresión, reintentos e idempotencia por proveedor; no se afirman cuotas fijas ni ventajas de entregabilidad."
+      }
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "category": "observability-errors",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "JavaScript error/performance reporting for browser and consumer Next.js server code.",
+        "es": "Registro de errores/rendimiento JavaScript para navegador y servidor Next.js consumidor."
+      },
+      "npmPackages": ["@sentry/nextjs"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://docs.sentry.io/platforms/javascript/guides/nextjs/",
+        "https://github.com/getsentry/sentry-javascript/blob/develop/LICENSE"
+      ],
+      "currentState": {
+        "en": "Recoverable UI errors and retry controls exist; package.json includes no Sentry integration.",
+        "es": "Ya existen errores recuperables y controles de reintento; package.json no incluye integración Sentry."
+      },
+      "proposedUi": {
+        "en": [
+          "Document optional error instrumentation and connect existing error screens to a report reference.",
+          "Preserve useful recovery actions while allowing consent/redaction configuration."
+        ],
+        "es": [
+          "Documentar instrumentación opcional y conectar errores existentes con una referencia de informe.",
+          "Conservar acciones de recuperación y permitir configuración de consentimiento/ocultación de datos."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT (JavaScript SDK)",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "JavaScript SDK licensing is distinct from Sentry server/CLI FSL terms; do not call the whole stack MIT. Source-map release handling and data redaction belong to the consumer. Server instrumentation cannot be supplied by static assets alone.",
+        "es": "La licencia del SDK JavaScript es distinta de las condiciones FSL de servidor/CLI Sentry; no llamar MIT a toda la plataforma. El consumidor gestiona mapas de código y ocultación de datos. Los archivos estáticos no aportan instrumentación de servidor."
+      }
+    },
+    {
+      "id": "posthog",
+      "name": "PostHog",
+      "category": "analytics-product",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "Optional product analytics, feature flags and replay instrumentation, separate from error monitoring.",
+        "es": "Instrumentación opcional de analítica de producto, flags y reproducción, separada del seguimiento de errores."
+      },
+      "npmPackages": ["posthog-js"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": ["https://posthog.com/docs/libraries/next-js"],
+      "currentState": {
+        "en": "The baseline has no posthog-js dependency or configured collection service.",
+        "es": "La línea base no incluye posthog-js ni servicio de recopilación configurado."
+      },
+      "proposedUi": {
+        "en": [
+          "Document explicit opt-in event/flag recipes for existing product workflows.",
+          "Expose consent/preferences and useful flag fallback states."
+        ],
+        "es": [
+          "Documentar recetas explícitamente opcionales de eventos/flags para flujos existentes.",
+          "Mostrar consentimiento/preferencias y estados de respaldo de flags."
+        ]
+      },
+      "runtime": "browser-client",
+      "license": {
+        "sdk": "(Apache-2.0 AND MIT)",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Avoid collecting private form, attachment or model content by default. Feature flags guide presentation, not authorization. SDK licensing and event volume do not establish service pricing or unique-user adoption.",
+        "es": "Evitar recopilar por defecto contenido privado de formularios, adjuntos o modelos. Los flags orientan presentación, no autorización. Licencia y volumen de SDK no establecen precios del servicio ni usuarios únicos."
+      }
+    },
+    {
+      "id": "vercel-analytics",
+      "name": "Vercel Web Analytics",
+      "category": "analytics-web",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Managed web-analytics alternative for consumers choosing the corresponding collection/deployment setup.",
+        "es": "Alternativa gestionada de analítica web para consumidores que eligen su configuración de recopilación/despliegue."
+      },
+      "npmPackages": ["@vercel/analytics"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": ["https://vercel.com/docs/analytics/quickstart"],
+      "currentState": {
+        "en": "The public frontend uses a static export; Vercel Analytics is not a baseline dependency.",
+        "es": "El frontend público usa exportación estática; Vercel Analytics no es dependencia de la línea base."
+      },
+      "proposedUi": {
+        "en": [
+          "Document a deployment-specific opt-in collection recipe.",
+          "Reuse consent/preferences UI when required by the consumer’s collection policy."
+        ],
+        "es": [
+          "Documentar una receta opcional de recopilación específica del despliegue.",
+          "Reutilizar consentimiento/preferencias cuando lo exija la política del consumidor."
+        ]
+      },
+      "runtime": "browser-client",
+      "license": {
+        "sdk": "MIT",
+        "service": "managed"
+      },
+      "effort": "small",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Installing the SDK alone does not establish a working analytics endpoint on Cloudflare Workers Static Assets. Verify the selected hosting/service setup; npm package events are not comparable to analytics customers.",
+        "es": "Instalar el SDK no establece por sí solo un endpoint de analítica funcional en Cloudflare Workers Static Assets. Verificar alojamiento/servicio elegidos; las instalaciones npm no son comparables con clientes de analítica."
+      }
+    },
+    {
+      "id": "notification-inboxes",
+      "name": "Knock / Novu notifications",
+      "category": "notifications",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Alternative inbox/preferences and notification-orchestration recipes; React SDKs display feeds while the backend triggers delivery.",
+        "es": "Recetas alternativas de bandeja/preferencias y orquestación; los SDK React muestran el feed y el backend dispara la entrega."
+      },
+      "npmPackages": ["@knocklabs/react", "@novu/react"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://docs.knock.app/in-app-ui/react/overview",
+        "https://docs.novu.co/platform/inbox",
+        "https://github.com/novuhq/novu"
+      ],
+      "currentState": {
+        "en": "Existing notification, mail and settings interactions use demo state; no notification service is connected.",
+        "es": "Las interacciones existentes de notificaciones, correo y ajustes usan estado demo; no hay servicio conectado."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete an optional inbox/unread/preference recipe with consumer-authenticated subscriber identity.",
+          "Show read, delivery-failure and reconnect states with Aureform components."
+        ],
+        "es": [
+          "Completar una receta opcional de bandeja/no leído/preferencias con identidad autenticada del suscriptor.",
+          "Mostrar leído, fallo de entrega y reconexión con componentes Aureform."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT (Knock); ISC (@novu/react 3.19.2 metadata)",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Choose one orchestration provider. Knock is managed; Novu’s repository mixes open and Enterprise components and optional self-hosting. Do not infer a uniform platform license from a React package. Backend subscriber authorization and workflow triggers remain necessary.",
+        "es": "Elegir un proveedor de orquestación. Knock es gestionado; el repositorio Novu mezcla componentes abiertos/Enterprise y autoalojamiento opcional. No inferir una licencia uniforme desde un paquete React. Siguen siendo necesarios autorización y disparadores del backend."
+      }
+    },
+    {
+      "id": "background-jobs",
+      "name": "Inngest / Trigger.dev jobs",
+      "category": "background-jobs",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Alternative consumer-backend runtimes for durable jobs and retries; browser run-status UI is a separate integration.",
+        "es": "Runtimes alternativos del backend para trabajos duraderos y reintentos; la interfaz de estado de ejecución es una integración separada."
+      },
+      "npmPackages": ["inngest", "@trigger.dev/sdk"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://www.inngest.com/docs",
+        "https://trigger.dev/docs/introduction"
+      ],
+      "currentState": {
+        "en": "The static frontend has no job runner or provider run-status transport; current async demos are local.",
+        "es": "El frontend estático no aporta ejecutor ni transporte de estado del proveedor; las demostraciones asíncronas actuales son locales."
+      },
+      "proposedUi": {
+        "en": [
+          "Propose consumer-backed run progress, step status and retry/cancel controls.",
+          "Document authorized status subscriptions or polling for long-running uploads, sync and AI tasks."
+        ],
+        "es": [
+          "Proponer progreso, estado de pasos y controles de reintento/cancelación respaldados por el consumidor.",
+          "Documentar suscripciones o consultas de estado autorizadas para subidas, sincronización e IA prolongadas."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0 (Inngest SDK); MIT (Trigger.dev SDK)",
+        "service": "self-hosted optional"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "A frontend AbortSignal does not guarantee job cancellation. Consumer code must define idempotency, side effects, retries and run authorization. SDK licenses differ from platform/hosting terms; do not reuse old major-version claims from research.",
+        "es": "AbortSignal del frontend no garantiza cancelar un trabajo. El consumidor debe definir idempotencia, efectos, reintentos y autorización. Las licencias SDK difieren de términos de plataforma/alojamiento; no reutilizar afirmaciones de versiones principales antiguas."
+      }
+    },
+    {
+      "id": "realtime-messaging",
+      "name": "Supabase Realtime / Ably / Pusher",
+      "category": "realtime-messaging",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Alternative live-event/presence transports: prefer Supabase Realtime within a chosen Supabase stack; Ably/Pusher are separate managed choices.",
+        "es": "Transportes alternativos de eventos/presencia: preferir Supabase Realtime dentro de esa plataforma; Ably/Pusher son opciones gestionadas separadas."
+      },
+      "npmPackages": ["@supabase/supabase-js", "ably", "pusher-js"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://supabase.com/docs/guides/realtime",
+        "https://ably.com/docs",
+        "https://pusher.com/docs/channels/"
+      ],
+      "currentState": {
+        "en": "Chat, avatars and record updates use local demo state; no provider socket/session authorization is supplied.",
+        "es": "Chat, avatares y actualizaciones usan estado local; no se aporta autorización de sockets/sesiones del proveedor."
+      },
+      "proposedUi": {
+        "en": [
+          "Document an optional live-update/presence recipe over existing record and avatar UI.",
+          "Show reconnect/stale states and clean up subscriptions when identity/workspace changes."
+        ],
+        "es": [
+          "Documentar una receta opcional de actualización/presencia sobre registros y avatares existentes.",
+          "Mostrar reconexión/datos desactualizados y cerrar suscripciones al cambiar identidad/espacio."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT (Supabase/Pusher); Apache-2.0 (Ably)",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Private-channel authorization, tenant scoping and reconnect consistency require consumer implementation. Pub/sub is not document conflict resolution. Ably/Pusher downloads were not measured in this window, and supabase-js cannot isolate Realtime adoption.",
+        "es": "Canales privados, ámbito por tenant y consistencia al reconectar requieren implementación del consumidor. Pub/sub no resuelve conflictos documentales. Ably/Pusher no están medidos en esta ventana y supabase-js no permite aislar adopción Realtime."
+      }
+    },
+    {
+      "id": "liveblocks",
+      "name": "Liveblocks collaboration",
+      "category": "collaboration",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Managed room-based presence, comments and collaborative state, distinct from a general notification transport.",
+        "es": "Presencia, comentarios y estado colaborativo por salas gestionadas, distinto de un transporte general de notificaciones."
+      },
+      "npmPackages": ["@liveblocks/client", "@liveblocks/react"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": ["https://liveblocks.io/docs/get-started/nextjs"],
+      "currentState": {
+        "en": "The baseline contains local collaboration-style UI but no Liveblocks dependency or room-auth endpoint.",
+        "es": "La línea base contiene interfaz de estilo colaborativo local, pero no dependencia Liveblocks ni endpoint de autorización de salas."
+      },
+      "proposedUi": {
+        "en": [
+          "Document a room-auth recipe with presence avatars and consumer-backed comment threads.",
+          "Show access-denied, reconnect and concurrent-edit states."
+        ],
+        "es": [
+          "Documentar una receta de autorización de salas con avatares y comentarios respaldados por el consumidor.",
+          "Mostrar acceso denegado, reconexión y edición concurrente."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0 (current client/React package metadata)",
+        "service": "managed"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Room membership must follow application authorization. SDK availability does not prove React 19.3.1 behavior in Aureform; no Liveblocks download observation exists in the fixed dataset. Choose appropriate persistence/conflict semantics for the collaboration feature.",
+        "es": "La pertenencia a salas debe seguir la autorización de aplicación. La disponibilidad SDK no prueba comportamiento React 19.3.1 en Aureform; no hay observación de descargas Liveblocks en el conjunto fijo. Elegir persistencia y resolución de conflictos adecuadas."
+      }
+    },
+    {
+      "id": "tiptap",
+      "name": "Tiptap editor",
+      "category": "editing-rich-text",
+      "priority": "P2",
+      "recommendation": "primary",
+      "role": {
+        "en": "Headless rich-text editor recipe for consumers needing structured document editing.",
+        "es": "Receta de editor de texto enriquecido para consumidores que necesitan documentos estructurados."
+      },
+      "npmPackages": ["@tiptap/react"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://tiptap.dev/docs/editor/getting-started/install/nextjs"
+      ],
+      "currentState": {
+        "en": "Text inputs and local content editing exist; no Tiptap, Lexical or BlockNote dependency is installed.",
+        "es": "Ya existen entradas de texto y edición local; no se incluyen dependencias Tiptap, Lexical ni BlockNote."
+      },
+      "proposedUi": {
+        "en": [
+          "Propose an optional Aureform toolbar, block menu and structured content editor.",
+          "Document save/conflict/error states and consumer-controlled persistence."
+        ],
+        "es": [
+          "Proponer barra Aureform, menú de bloques y editor estructurado opcionales.",
+          "Documentar guardado, conflictos, errores y persistencia controlada por el consumidor."
+        ]
+      },
+      "runtime": "browser-client",
+      "license": {
+        "sdk": "MIT (editor core/React package)",
+        "service": "conditional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Follow documented Next.js initialization, including immediatelyRender: false where appropriate. Validate/sanitize externally supplied content. Core licensing does not include every Pro/cloud extension; collaborative persistence requires a separate consumer service.",
+        "es": "Seguir la inicialización Next.js documentada, incluido immediatelyRender: false cuando corresponda. Validar/sanear contenido externo. La licencia del núcleo no incluye toda extensión Pro/cloud; la persistencia colaborativa exige servicio separado."
+      }
+    },
+    {
+      "id": "lexical",
+      "name": "Lexical editor",
+      "category": "editing-rich-text",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Alternative editor framework for teams wanting explicit node/plugin and React-binding control.",
+        "es": "Framework alternativo de edición para equipos que necesitan control explícito de nodos, plugins y enlaces React."
+      },
+      "npmPackages": ["lexical", "@lexical/react"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://lexical.dev/docs/intro",
+        "https://github.com/facebook/lexical"
+      ],
+      "currentState": {
+        "en": "Text inputs and local content editing exist; no Tiptap, Lexical or BlockNote dependency is installed.",
+        "es": "Ya existen entradas de texto y edición local; no se incluyen dependencias Tiptap, Lexical ni BlockNote."
+      },
+      "proposedUi": {
+        "en": [
+          "Propose an optional editor/composer recipe with Aureform formatting controls.",
+          "Document content serialization, recovery and consumer save actions."
+        ],
+        "es": [
+          "Proponer una receta opcional de editor/composición con controles de formato Aureform.",
+          "Documentar serialización, recuperación y acciones de guardado del consumidor."
+        ]
+      },
+      "runtime": "browser-client",
+      "license": {
+        "sdk": "MIT",
+        "service": "conditional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The observed lexical package is the editor core; React bindings are a separate package without a download observation here. Toolbar, schema conversion, content validation and persistence are consumer work, not an already-connected editor.",
+        "es": "El paquete lexical observado es el núcleo; los enlaces React son otro paquete sin observación de descargas aquí. Barra, conversión de esquemas, validación y persistencia corresponden al consumidor; no hay editor ya conectado."
+      }
+    },
+    {
+      "id": "blocknote",
+      "name": "BlockNote editor",
+      "category": "editing-blocks",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Block-document editor option where its document model and licensing fit the consumer product.",
+        "es": "Opción de edición por bloques cuando su modelo documental y licencia encajan con el producto consumidor."
+      },
+      "npmPackages": ["@blocknote/react"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://www.blocknotejs.org/docs",
+        "https://www.blocknotejs.org/legal/terms-and-conditions",
+        "https://www.blocknotejs.org/legal/blocknote-xl-commercial-license"
+      ],
+      "currentState": {
+        "en": "Text inputs and local content editing exist; no Tiptap, Lexical or BlockNote dependency is installed.",
+        "es": "Ya existen entradas de texto y edición local; no se incluyen dependencias Tiptap, Lexical ni BlockNote."
+      },
+      "proposedUi": {
+        "en": [
+          "Document an optional block/slash-menu editor with save and attachment states.",
+          "Separate core-only recipes from optional XL export/AI features."
+        ],
+        "es": [
+          "Documentar editor opcional por bloques/comandos con estados de guardado y adjuntos.",
+          "Separar recetas del núcleo de funciones XL opcionales de exportación/IA."
+        ]
+      },
+      "runtime": "browser-client",
+      "license": {
+        "sdk": "MPL-2.0 (@blocknote/react 0.56.0)",
+        "service": "conditional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The core is MPL-2.0, not MIT. XL packages are separately GPL-3.0/commercial licensed; do not call all features permissively licensed. Review modification/redistribution terms and consumer persistence rather than assuming a turnkey backend.",
+        "es": "El núcleo es MPL-2.0, no MIT. Los paquetes XL tienen licencia GPL-3.0/comercial separada; no llamar permisivas a todas las funciones. Revisar condiciones de modificación/distribución y persistencia sin asumir backend listo."
+      }
+    },
+    {
+      "id": "algolia",
+      "name": "Algolia search",
+      "category": "search",
+      "priority": "P2",
+      "recommendation": "primary",
+      "role": {
+        "en": "Managed indexed search recipe with restricted browser queries and consumer-backend indexing.",
+        "es": "Receta de búsqueda indexada gestionada con consultas restringidas de navegador e indexación del backend."
+      },
+      "npmPackages": ["algoliasearch"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react"
+      ],
+      "currentState": {
+        "en": "Command search, filters and controlled tables already exist over demo records; no hosted or self-hosted search index is connected.",
+        "es": "Ya existen búsqueda de comandos, filtros y tablas controladas sobre datos demo; no hay índice de búsqueda conectado."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a provider search recipe for the existing command palette and optional faceted results.",
+          "Preserve keyboard navigation, empty results and retry/error states."
+        ],
+        "es": [
+          "Completar una receta de búsqueda para la paleta existente y resultados con facetas opcionales.",
+          "Conservar teclado, resultados vacíos y estados de error/reintento."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "managed"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Search-only/secured credentials must enforce tenant filters; admin keys and indexing remain on the backend. React SSR examples are not proof of static-export support in Aureform. Do not infer service users from algoliasearch installs.",
+        "es": "Las credenciales de búsqueda deben aplicar filtros por tenant; claves administrativas e indexación quedan en backend. Los ejemplos SSR React no prueban exportación estática en Aureform. No inferir usuarios del servicio desde instalaciones algoliasearch."
+      }
+    },
+    {
+      "id": "self-hostable-search",
+      "name": "Meilisearch / Typesense search",
+      "category": "search",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Alternative search-engine recipes: JavaScript clients query a separately operated or managed index; choose one engine.",
+        "es": "Recetas alternativas de búsqueda: clientes JavaScript consultan un índice gestionado o propio; elegir un motor."
+      },
+      "npmPackages": ["meilisearch", "typesense"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://www.meilisearch.com/docs/getting_started/overview",
+        "https://typesense.org/docs/"
+      ],
+      "currentState": {
+        "en": "Command search, filters and controlled tables already exist over demo records; no hosted or self-hosted search index is connected.",
+        "es": "Ya existen búsqueda de comandos, filtros y tablas controladas sobre datos demo; no hay índice de búsqueda conectado."
+      },
+      "proposedUi": {
+        "en": [
+          "Document one engine recipe for the current command search and faceted record results.",
+          "Expose index freshness, access denial and recoverable query failures."
+        ],
+        "es": [
+          "Documentar una receta de motor para búsqueda de comandos y resultados con facetas.",
+          "Mostrar frescura del índice, acceso denegado y fallos recuperables."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT (Meilisearch JS); Apache-2.0 (Typesense JS)",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "SDK licenses are distinct from engine/Enterprise licenses. Use tenant-scoped query credentials and server-controlled ingestion/deletion; similarity/search hits do not authorize records. These alternatives are not an additive SDK bundle.",
+        "es": "Las licencias SDK difieren de las del motor/Enterprise. Usar credenciales por tenant e ingesta/borrado controlados en servidor; los resultados no autorizan acceso. Estas alternativas no forman un paquete SDK acumulativo."
+      }
+    },
+    {
+      "id": "existing-maps",
+      "name": "MapLibre and optional Google Maps",
+      "category": "maps",
+      "priority": "P2",
+      "recommendation": "reference",
+      "role": {
+        "en": "Existing browser-map capabilities: MapLibre renders local GeoJSON; Google Maps is already an explicit browser-key opt-in.",
+        "es": "Capacidades de mapa existentes: MapLibre renderiza GeoJSON local; Google Maps ya se conecta opcionalmente con clave de navegador."
+      },
+      "npmPackages": ["maplibre-gl", "@googlemaps/js-api-loader"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://maplibre.org/maplibre-gl-js/docs/",
+        "https://developers.google.com/maps/documentation/javascript/load-maps-js-api"
+      ],
+      "currentState": {
+        "en": "MapLibre 5.13.0 is installed in the baseline; observed registry metadata is 6.15.0. RouteMap/MapsWorkspace and opt-in Google Maps are already shipped; the Google loader package is not a baseline dependency.",
+        "es": "MapLibre 5.13.0 está instalado en la línea base; los metadatos observados son 6.15.0. RouteMap/MapsWorkspace y Google Maps opcional ya están entregados; el paquete cargador Google no es dependencia base."
+      },
+      "proposedUi": {
+        "en": [
+          "Document complete consumer recipes around existing map props, data, selection and fallback controls.",
+          "Add licensed tiles/geocoding/directions only when a consumer explicitly chooses those services."
+        ],
+        "es": [
+          "Documentar recetas completas sobre props, datos, selección y respaldo de mapas existentes.",
+          "Añadir teselas/geocodificación/rutas licenciadas solo cuando el consumidor elija esos servicios."
+        ]
+      },
+      "runtime": "browser-client",
+      "license": {
+        "sdk": "BSD-3-Clause (MapLibre); Apache-2.0 (Google loader package)",
+        "service": "conditional"
+      },
+      "effort": "small",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The registry snapshot is research evidence, not an upgrade recommendation. Do not describe existing maps as missing or require a duplicate Google loader. Browser keys require provider restrictions. Local geometry is not real routing; licensed data/service terms remain separate.",
+        "es": "La versión del registro es evidencia de investigación, no recomendación de actualización. No describir mapas existentes como ausentes ni exigir otro cargador Google. Las claves requieren restricciones. La geometría local no calcula rutas reales; datos y términos son separados."
+      }
+    },
+    {
+      "id": "mapbox",
+      "name": "Mapbox GL JS",
+      "category": "maps",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Commercial browser mapping alternative when a consumer specifically needs Mapbox services/styles.",
+        "es": "Alternativa comercial de mapas en navegador cuando el consumidor necesita servicios/estilos Mapbox."
+      },
+      "npmPackages": ["mapbox-gl"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": ["https://docs.mapbox.com/mapbox-gl-js/guides/"],
+      "currentState": {
+        "en": "MapLibre and optional Google Maps are already supplied; Mapbox GL JS is not a baseline dependency.",
+        "es": "Ya se aportan MapLibre y Google Maps opcional; Mapbox GL JS no es dependencia base."
+      },
+      "proposedUi": {
+        "en": [
+          "Document an optional replacement map-rendering recipe preserving current selection and error states.",
+          "Expose the chosen style/data attribution and useful fallback behavior."
+        ],
+        "es": [
+          "Documentar una receta opcional de renderizado que conserve selección y errores actuales.",
+          "Mostrar atribución de estilo/datos y comportamiento útil de respaldo."
+        ]
+      },
+      "runtime": "browser-client",
+      "license": {
+        "sdk": "Mapbox GL JS proprietary license (SEE LICENSE IN LICENSE.txt)",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Review current Mapbox SDK/service terms and token restrictions; do not label modern mapbox-gl as BSD/MIT or equate it with the existing MapLibre license. No price, free-use allowance or performance advantage is assumed.",
+        "es": "Revisar condiciones SDK/servicio y restricciones de tokens; no llamar BSD/MIT a mapbox-gl moderno ni equipararlo con MapLibre. No se asumen precios, permisos gratuitos ni ventajas de rendimiento."
+      }
+    },
+    {
+      "id": "ai-sdk",
+      "name": "AI SDK 7 with React hooks",
+      "category": "ai-ui-transport",
+      "priority": "P0",
+      "recommendation": "primary",
+      "role": {
+        "en": "Optional transport/state recipe: ai supplies server model/stream utilities; @ai-sdk/react supplies browser chat hooks. Aureform keeps its visual components.",
+        "es": "Receta opcional de transporte/estado: ai aporta utilidades de modelos/streams en servidor; @ai-sdk/react aporta hooks de chat en navegador. Aureform conserva sus componentes visuales."
+      },
+      "npmPackages": ["ai", "@ai-sdk/react"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://ai-sdk.dev/docs/ai-sdk-ui/stream-protocol",
+        "https://registry.npmjs.org/ai/7.0.146",
+        "https://registry.npmjs.org/%40ai-sdk%2Freact/4.0.150",
+        "https://ui.shadcn.com/docs/changelog/2026-10-ai-elements",
+        "https://elements.ai-sdk.dev/components/sources"
+      ],
+      "currentState": {
+        "en": "AIWorkspace already streams deterministic local text with stop, retry and text attachments; messages use content strings, not provider UIMessage parts.",
+        "es": "AIWorkspace ya transmite texto local determinista con detener, reintentar y adjuntos de texto; los mensajes usan cadenas content, no partes UIMessage del proveedor."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a consumer recipe mapping existing text/cancellation/retry behavior to AI SDK UIMessage.parts and its stream protocol.",
+          "Propose tool-approval, source and structured-result rendering only for events emitted by the authorized consumer backend."
+        ],
+        "es": [
+          "Completar una receta que conecte texto/cancelación/reintento existentes con UIMessage.parts y su protocolo.",
+          "Proponer visualización de aprobación de herramientas, fuentes y resultados estructurados solo para eventos del backend autorizado."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0",
+        "service": "conditional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Checked versions are ai 7.0.146 and @ai-sdk/react 4.0.150, requiring Node 22; the declared React range permits 19.3.1 but is not a runtime test. Plain-text, native-provider and UI-message streams need explicit mapping. October 2026 shadcn AI Elements offers 21 copied patterns with Base UI support; older AI SDK Elements is scheduled for deprecation at the end of November, not already removed.",
+        "es": "Se comprobaron ai 7.0.146 y @ai-sdk/react 4.0.150, con Node 22; el rango React declarado admite 19.3.1, pero no es prueba de ejecución. Streams de texto, proveedor nativo y mensajes UI requieren mapeo explícito. AI Elements de shadcn ofrece 21 patrones copiados con Base UI en octubre de 2026; la biblioteca anterior prevé deprecación a finales de noviembre, no eliminación ya realizada."
+      }
+    },
+    {
+      "id": "openai-responses",
+      "name": "OpenAI Responses",
+      "category": "ai-model-provider",
+      "priority": "P0",
+      "recommendation": "primary",
+      "role": {
+        "en": "Consumer-backend model recipe using Responses; choose native openai or the optional AI SDK provider adapter.",
+        "es": "Receta de modelos del backend con Responses; elegir openai nativo o el adaptador opcional AI SDK."
+      },
+      "npmPackages": ["openai", "@ai-sdk/openai"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://developers.openai.com/api/docs/guides/migrate-to-responses",
+        "https://github.com/openai/openai-node"
+      ],
+      "currentState": {
+        "en": "AIWorkspace already streams deterministic local text with stop, retry and text attachments; messages use content strings, not provider UIMessage parts.",
+        "es": "AIWorkspace ya transmite texto local determinista con detener, reintentar y adjuntos de texto; los mensajes usan cadenas content, no partes UIMessage del proveedor."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a provider-backed streaming recipe while preserving current stop/retry UI.",
+          "Expose authorized tool approvals, sources and actual returned usage metadata when available."
+        ],
+        "es": [
+          "Completar una receta de streaming del proveedor conservando detener/reintentar.",
+          "Mostrar aprobaciones autorizadas, fuentes y metadatos de uso realmente devueltos cuando existan."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Assistants closed on 2026-08-26; new recipes use Responses. Chat Completions still exists, so do not equate the Assistants shutdown with all older APIs being unavailable. Provider secrets stay on the consumer server; native events require mapping to the chosen browser protocol. Citation pointers do not prove factual correctness.",
+        "es": "Assistants cerró el 2026-08-26; las recetas nuevas usan Responses. Chat Completions sigue disponible: el cierre no implica desaparición de toda API anterior. Los secretos quedan en servidor; los eventos nativos requieren mapeo al protocolo cliente. Las referencias de cita no prueban veracidad."
+      }
+    },
+    {
+      "id": "anthropic-messages",
+      "name": "Anthropic Messages",
+      "category": "ai-model-provider",
+      "priority": "P0",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Alternative consumer-backend model recipe through native Messages or an optional AI SDK adapter.",
+        "es": "Receta alternativa de modelos del backend mediante Messages nativo o adaptador AI SDK opcional."
+      },
+      "npmPackages": ["@anthropic-ai/sdk", "@ai-sdk/anthropic"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://platform.claude.com/docs/en/api/messages/create",
+        "https://github.com/anthropics/anthropic-sdk-typescript"
+      ],
+      "currentState": {
+        "en": "AIWorkspace already streams deterministic local text with stop, retry and text attachments; messages use content strings, not provider UIMessage parts.",
+        "es": "AIWorkspace ya transmite texto local determinista con detener, reintentar y adjuntos de texto; los mensajes usan cadenas content, no partes UIMessage del proveedor."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a streaming/error/cancellation recipe with the existing conversation UI.",
+          "Propose source/citation and tool-result displays when the backend supplies them."
+        ],
+        "es": [
+          "Completar una receta de streaming/error/cancelación con la conversación existente.",
+          "Proponer visualización de fuentes/citas y herramientas cuando las aporte el backend."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT (native SDK); Apache-2.0 (AI SDK adapter)",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Content blocks and stream events differ from both content strings and AI SDK parts. Consumer code must map supported capabilities and authorize retrieval/actions. Citations identify referenced material; they do not certify truth, current permissions or complete evidence.",
+        "es": "Los bloques y eventos difieren de cadenas content y partes AI SDK. El consumidor debe mapear capacidades y autorizar recuperación/acciones. Las citas identifican material referenciado; no certifican veracidad, permisos actuales ni evidencia completa."
+      }
+    },
+    {
+      "id": "google-gemini",
+      "name": "Google Gemini / Gen AI SDK",
+      "category": "ai-model-provider",
+      "priority": "P0",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Alternative model recipe using recommended @google/genai or the AI SDK adapter; @google/generative-ai is legacy migration coverage only.",
+        "es": "Receta alternativa con @google/genai recomendado o adaptador AI SDK; @google/generative-ai se incluye solo como referencia de migración."
+      },
+      "npmPackages": [
+        "@google/genai",
+        "@ai-sdk/google",
+        "@google/generative-ai"
+      ],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://ai.google.dev/gemini-api/docs/libraries",
+        "https://ai.google.dev/gemini-api/docs/migrate",
+        "https://github.com/googleapis/js-genai"
+      ],
+      "currentState": {
+        "en": "AIWorkspace already streams deterministic local text with stop, retry and text attachments; messages use content strings, not provider UIMessage parts.",
+        "es": "AIWorkspace ya transmite texto local determinista con detener, reintentar y adjuntos de texto; los mensajes usan cadenas content, no partes UIMessage del proveedor."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a current Gen AI streaming recipe with the existing text conversation controls.",
+          "Document file/modality expansion separately from the already shipped local text attachment flow."
+        ],
+        "es": [
+          "Completar una receta vigente Gen AI con los controles de conversación existentes.",
+          "Documentar ampliación de archivos/modalidades por separado de los adjuntos locales de texto ya entregados."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The actual legacy npm name is @google/generative-ai, with the hyphen. Google recommends @google/genai; do not select the legacy SDK for a new recipe or infer current model availability from old research examples. Secrets and provider file processing belong to the consumer backend.",
+        "es": "El nombre npm real heredado es @google/generative-ai, con guion. Google recomienda @google/genai; no elegir el SDK heredado para una receta nueva ni inferir modelos actuales desde ejemplos antiguos. Secretos y procesamiento de archivos corresponden al backend."
+      }
+    },
+    {
+      "id": "ai-gateways",
+      "name": "Cloudflare AI Gateway / Vercel AI Gateway / OpenRouter",
+      "category": "ai-routing",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Alternative server-side routing/observability services; choose a gateway when its deployment, provider and data-handling policy fit.",
+        "es": "Servicios alternativos de enrutamiento/observabilidad de servidor; elegir gateway según despliegue, proveedores y tratamiento de datos."
+      },
+      "npmPackages": [],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developers.cloudflare.com/ai-gateway/",
+        "https://vercel.com/docs/ai-gateway",
+        "https://openrouter.ai/docs/quickstart"
+      ],
+      "currentState": {
+        "en": "AIWorkspace has local model presets and deterministic output; no gateway or provider-routing policy is connected.",
+        "es": "AIWorkspace tiene presets locales y salida determinista; no hay gateway ni política de enrutamiento conectados."
+      },
+      "proposedUi": {
+        "en": [
+          "Propose an administrator-visible selected-provider/fallback status fed by actual backend metadata.",
+          "Document policy/error presentation without exposing gateway credentials in the browser."
+        ],
+        "es": [
+          "Proponer estado de proveedor/respaldo visible para administradores desde metadatos reales del backend.",
+          "Documentar políticas y errores sin exponer credenciales de gateway en navegador."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "managed"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "These are network services, not comparable npm adoption observations. Model/tool/structured-output capabilities and retention policies vary across routes; failover must not silently change required behavior. Gateway authentication does not replace application authorization. No latency, cost-saving or growth ranking is asserted.",
+        "es": "Son servicios de red, no observaciones comparables de adopción npm. Capacidades de modelos/herramientas/resultados y retención varían por ruta; el respaldo no debe cambiar requisitos silenciosamente. Autenticación del gateway no sustituye autorización de aplicación. No se afirma ranking de latencia, ahorro ni crecimiento."
+      }
+    },
+    {
+      "id": "pgvector",
+      "name": "Postgres pgvector retrieval",
+      "category": "ai-retrieval",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "SQL vector-retrieval recipe for consumers already choosing Postgres, including optional Supabase-backed deployments.",
+        "es": "Receta SQL de recuperación vectorial para consumidores con Postgres, incluidos despliegues Supabase opcionales."
+      },
+      "npmPackages": [],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://github.com/pgvector/pgvector",
+        "https://supabase.com/docs/guides/ai"
+      ],
+      "currentState": {
+        "en": "Local files and text attachments exist, but the baseline has no document ingestion, retrieval index or source-ACL enforcement service.",
+        "es": "Ya existen archivos y adjuntos de texto locales, pero no hay servicio de ingesta, índice de recuperación ni aplicación de ACL de fuentes."
+      },
+      "proposedUi": {
+        "en": [
+          "Propose source selection, ingestion/freshness status and linked citation presentation.",
+          "Document consumer-authorized retrieval and deletion alongside existing file controls."
+        ],
+        "es": [
+          "Proponer selección de fuentes, estado de ingesta/frescura y citas enlazadas.",
+          "Documentar recuperación y borrado autorizados junto a controles de archivos existentes."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "self-hosted optional"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "pgvector is a Postgres extension under the PostgreSQL License, not an npm service-usage proxy. The retrieval server must enforce tenant/source ACLs before returning snippets. Embeddings, similarity scores and citation links do not prove truth or grant source access.",
+        "es": "pgvector es extensión Postgres bajo PostgreSQL License, no un proxy npm de uso del servicio. El servidor debe aplicar ACL por tenant/fuente antes de devolver fragmentos. Embeddings, similitud y citas no prueban veracidad ni otorgan acceso."
+      }
+    },
+    {
+      "id": "vector-stores",
+      "name": "Pinecone / Qdrant retrieval",
+      "category": "ai-retrieval",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Alternative vector stores: Pinecone is managed; Qdrant supports managed or separately operated infrastructure. SDKs run on the consumer backend.",
+        "es": "Almacenes vectoriales alternativos: Pinecone es gestionado; Qdrant permite infraestructura gestionada o propia. Los SDK se ejecutan en backend."
+      },
+      "npmPackages": ["@pinecone-database/pinecone", "@qdrant/js-client-rest"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://docs.pinecone.io/reference/sdks/node/overview",
+        "https://qdrant.tech/documentation/"
+      ],
+      "currentState": {
+        "en": "Local files and text attachments exist, but the baseline has no document ingestion, retrieval index or source-ACL enforcement service.",
+        "es": "Ya existen archivos y adjuntos de texto locales, pero no hay servicio de ingesta, índice de recuperación ni aplicación de ACL de fuentes."
+      },
+      "proposedUi": {
+        "en": [
+          "Document one store-specific ingestion/retrieval recipe with source/freshness states.",
+          "Propose traceable source links and consumer-backed access-denied/deletion status."
+        ],
+        "es": [
+          "Documentar una receta de ingesta/recuperación con estados de fuente/frescura.",
+          "Proponer enlaces rastreables y estados de acceso denegado/borrado respaldados por el consumidor."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0 (both observed SDKs)",
+        "service": "self-hosted optional"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "These SDKs do not supply an end-to-end RAG application. Retrieval ACLs, tenant isolation, updates and deletion must be enforced by the consumer server; browser citation controls cannot provide them. Namespace/payload filtering must be validated for the selected store.",
+        "es": "Estos SDK no aportan una aplicación RAG completa. El servidor debe aplicar ACL, aislamiento, actualizaciones y borrado; los controles de cita no lo hacen. Validar filtros de namespace/payload para el almacén elegido."
+      }
+    },
+    {
+      "id": "langfuse",
+      "name": "Langfuse",
+      "category": "ai-observability",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "Optional consumer-backend tracing/evaluation recipe; the observed langfuse package and current scoped SDKs represent different generations.",
+        "es": "Receta opcional de trazas/evaluación en backend; el paquete langfuse observado y los SDK actuales representan generaciones distintas."
+      },
+      "npmPackages": [
+        "langfuse",
+        "@langfuse/tracing",
+        "@langfuse/otel",
+        "@langfuse/vercel-ai-sdk"
+      ],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://langfuse.com/docs/observability/sdk/overview",
+        "https://github.com/langfuse/langfuse-js",
+        "https://langfuse.com/integrations/frameworks/vercel-ai-sdk"
+      ],
+      "currentState": {
+        "en": "The deterministic AI demo has no provider trace, token-accounting or evaluation backend.",
+        "es": "La demo IA determinista no tiene backend de trazas, contabilidad de tokens ni evaluación del proveedor."
+      },
+      "proposedUi": {
+        "en": [
+          "Propose trace links and run diagnostics from actual consumer metadata.",
+          "Show unavailable usage/evaluation data explicitly rather than generating estimates."
+        ],
+        "es": [
+          "Proponer enlaces de traza y diagnóstico desde metadatos reales del consumidor.",
+          "Mostrar datos de uso/evaluación ausentes explícitamente sin generar estimaciones."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT (JavaScript SDKs)",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "For AI SDK 7 use registerTelemetry with @langfuse/vercel-ai-sdk, distinct from v6 experimental_telemetry. Use the current documented tracing/OpenTelemetry path rather than assuming an older langfuse import is current. Scoped SDK downloads were not measured here. Redact sensitive content and review retention/platform Enterprise terms separately; tracing does not measure answer correctness automatically.",
+        "es": "Para AI SDK 7 usar registerTelemetry con @langfuse/vercel-ai-sdk, distinto de experimental_telemetry de v6. Usar la ruta vigente de trazas/OpenTelemetry sin asumir que el import antiguo langfuse es actual. Los SDK con ámbito no están medidos aquí. Ocultar contenido sensible y revisar retención/condiciones Enterprise; las trazas no miden automáticamente la corrección."
+      }
+    },
+    {
+      "id": "alternative-ai-observability",
+      "name": "LangSmith / Helicone",
+      "category": "ai-observability",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Alternative LLM diagnostics: LangSmith traces/evaluates runs; Helicone provides proxy/instrumentation-oriented observability. Select a deployment approach.",
+        "es": "Diagnóstico LLM alternativo: LangSmith traza/evalúa ejecuciones; Helicone ofrece observabilidad mediante proxy/instrumentación. Elegir un enfoque."
+      },
+      "npmPackages": ["langsmith"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://docs.langchain.com/langsmith/observability",
+        "https://docs.helicone.ai/getting-started/quick-start"
+      ],
+      "currentState": {
+        "en": "The baseline has no LLM tracing exporter, evaluation store or observability proxy.",
+        "es": "La línea base no incluye exportador de trazas LLM, almacén de evaluación ni proxy de observabilidad."
+      },
+      "proposedUi": {
+        "en": [
+          "Document a selected-provider trace/diagnostic recipe and links from AI run errors.",
+          "Expose only returned usage, routing and evaluation metadata."
+        ],
+        "es": [
+          "Documentar trazas/diagnóstico del proveedor elegido y enlaces desde errores IA.",
+          "Mostrar solo metadatos devueltos de uso, enrutamiento y evaluación."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT (LangSmith SDK); check provider package for optional Helicone SDK",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "langsmith installations do not measure the managed service or Helicone adoption; Helicone is unmeasured in this dataset. LangSmith service and optional Helicone self-hosting have distinct commercial/license terms. Traces need consumer redaction, retention and identity policy.",
+        "es": "Las instalaciones langsmith no miden el servicio gestionado ni adopción Helicone, no medida en este conjunto. Servicio LangSmith y autoalojamiento Helicone tienen condiciones distintas. Las trazas requieren políticas de ocultación, retención e identidad del consumidor."
+      }
+    },
+    {
+      "id": "mcp",
+      "name": "Model Context Protocol",
+      "category": "ai-protocol",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Protocol for consumer-owned hosts/clients/servers exposing tools, resources and prompts; distinct from an application connector broker.",
+        "es": "Protocolo para hosts/clientes/servidores del consumidor que exponen herramientas, recursos y prompts; distinto de un broker de conectores."
+      },
+      "npmPackages": ["@modelcontextprotocol/sdk"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://modelcontextprotocol.io/specification/2026-07-28",
+        "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+        "https://github.com/modelcontextprotocol/typescript-sdk"
+      ],
+      "currentState": {
+        "en": "No MCP client/server, connection registry or tool-authorization runtime is supplied by the static demo.",
+        "es": "La demo estática no aporta cliente/servidor MCP, registro de conexiones ni runtime de autorización de herramientas."
+      },
+      "proposedUi": {
+        "en": [
+          "Propose connection, capability and permission inspection with consumer-backed status.",
+          "Document explicit scoped tool-action review and resumable UI states where the consumer supports them."
+        ],
+        "es": [
+          "Proponer inspección de conexiones, capacidades y permisos con estado del consumidor.",
+          "Documentar revisión explícita de acciones delimitadas y estados reanudables cuando los soporte el consumidor."
+        ]
+      },
+      "runtime": "protocol",
+      "license": {
+        "sdk": "MIT (TypeScript SDK)",
+        "service": "conditional"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Use the current 2026-07-28 specification snapshot and verify selected SDK transport/extension support. Transport authentication does not replace tenant/tool application authorization, durable workflow execution or source synchronization. Optional task handles/extensions are not automatically an application workflow engine.",
+        "es": "Usar la especificación vigente 2026-07-28 y verificar soporte de transporte/extensiones del SDK elegido. La autenticación de transporte no sustituye autorización por tenant/herramienta, ejecución duradera ni sincronización. Handles/extensiones de tareas no constituyen automáticamente un motor de aplicación."
+      }
+    },
+    {
+      "id": "cloudflare-agents",
+      "name": "Cloudflare Agents SDK",
+      "category": "ai-orchestration",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Consumer Workers/Durable Objects agent runtime with optional browser hooks exported from agents/react.",
+        "es": "Runtime de agentes del consumidor en Workers/Durable Objects con hooks opcionales de navegador exportados desde agents/react."
+      },
+      "npmPackages": ["agents"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developers.cloudflare.com/agents/",
+        "https://github.com/cloudflare/agents"
+      ],
+      "currentState": {
+        "en": "The frontend is statically exported and AI output is local; no Agents runtime or Durable Object is supplied.",
+        "es": "El frontend se exporta estáticamente y la salida IA es local; no se aporta runtime Agents ni Durable Object."
+      },
+      "proposedUi": {
+        "en": [
+          "Document an advanced consumer recipe connecting agent events to existing AI controls.",
+          "Propose authorized persistent-run, reconnect and approval presentation."
+        ],
+        "es": [
+          "Documentar una receta avanzada que conecte eventos de agentes con controles IA existentes.",
+          "Proponer visualización autorizada de ejecuciones persistentes, reconexión y aprobación."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "managed"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Workers Static Assets hosting is separate from the consumer’s Agents/Durable Objects runtime. Identity, storage, scheduling and tool side-effect policies need an explicit consumer design. agents is a package with a browser export, not two independent adoption observations; its downloads are unmeasured here.",
+        "es": "Workers Static Assets es distinto del runtime Agents/Durable Objects consumidor. Identidad, almacenamiento, programación y efectos de herramientas requieren diseño explícito. agents es un paquete con exportación de navegador, no dos observaciones independientes; sus descargas no están medidas aquí."
+      }
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph with LangChain core",
+      "category": "ai-orchestration",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Consumer-backend graph/state orchestration; LangChain core supplies shared primitives, not another independently selected agent platform.",
+        "es": "Orquestación de grafos/estado en backend; LangChain core aporta primitivas compartidas, no otra plataforma de agentes elegida de forma independiente."
+      },
+      "npmPackages": ["@langchain/langgraph", "@langchain/core"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://docs.langchain.com/oss/javascript/langgraph/overview",
+        "https://github.com/langchain-ai/langgraphjs"
+      ],
+      "currentState": {
+        "en": "AIWorkspace runs a local text generator; no graph execution, checkpoint store or interrupt-resume backend exists.",
+        "es": "AIWorkspace ejecuta un generador local de texto; no hay backend de grafos, checkpoints ni interrupción/reanudación."
+      },
+      "proposedUi": {
+        "en": [
+          "Propose run/step/checkpoint status and a consumer-backed approval/resume view.",
+          "Keep basic streaming chat independent of the optional orchestration recipe."
+        ],
+        "es": [
+          "Proponer estado de ejecución/pasos/checkpoints y aprobación/reanudación respaldadas por backend.",
+          "Mantener el chat básico independiente de la receta de orquestación opcional."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "conditional"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Durability requires a chosen checkpoint/persistence and deployment design; graph APIs alone do not authorize tools or prevent repeated side effects. Do not sum core and LangGraph installs as independent users, or infer superiority/latency from downloads.",
+        "es": "La durabilidad exige persistencia y despliegue definidos; las API de grafos no autorizan herramientas ni evitan efectos repetidos por sí solas. No sumar core y LangGraph como usuarios independientes ni inferir superioridad/latencia desde descargas."
+      }
+    },
+    {
+      "id": "openai-agents",
+      "name": "OpenAI Agents SDK for TypeScript",
+      "category": "ai-orchestration",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Optional consumer-backend agent orchestration for tools, handoffs and run lifecycle, separate from the basic Responses provider recipe.",
+        "es": "Orquestación opcional de agentes en backend para herramientas, transferencias y ciclo de ejecución, separada de la receta básica Responses."
+      },
+      "npmPackages": ["@openai/agents"],
+      "npmEvidence": "observed-install-events",
+      "sourceUrls": [
+        "https://openai.github.io/openai-agents-js/",
+        "https://github.com/openai/openai-agents-js"
+      ],
+      "currentState": {
+        "en": "The deterministic AI demo has no agent run, handoff, tool execution or durable session service.",
+        "es": "La demo IA determinista no tiene servicio de ejecuciones, transferencias, herramientas ni sesiones duraderas."
+      },
+      "proposedUi": {
+        "en": [
+          "Document an advanced run-event recipe for tool results and explicit action approval.",
+          "Propose handoff/progress/error presentation using actual consumer run metadata."
+        ],
+        "es": [
+          "Documentar una receta avanzada de eventos para resultados de herramientas y aprobación explícita.",
+          "Proponer transferencia/progreso/error con metadatos reales de ejecución."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "conditional"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The SDK does not automatically supply application-session/tenant authorization, third-party credential storage or a durable workflow engine. Consumer code must define approval, persistence and side-effect semantics. Model/service charges are separate from the SDK license.",
+        "es": "El SDK no aporta automáticamente autorización de sesión/tenant, almacenamiento de credenciales externas ni motor duradero. El consumidor debe definir aprobación, persistencia y efectos. Los cargos de modelos/servicios son distintos de la licencia SDK."
+      }
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "category": "connector-communication",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "End-user workspace connection for channel notifications and authorized message/tool actions; the observed Node SDK is server-side.",
+        "es": "Conexión del espacio Slack del usuario para notificaciones y acciones autorizadas de mensajes/herramientas; el SDK Node observado es de servidor."
+      },
+      "npmPackages": ["@slack/web-api"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "https://docs.slack.dev/apis/events-api/"
+      ],
+      "currentState": {
+        "en": "A Slack settings card already toggles local demo connection state; it does not install a Slack app or receive events.",
+        "es": "Ya existe tarjeta Slack que cambia conexión demo local; no instala una app Slack ni recibe eventos."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete workspace/channel selection and granted read/write scope presentation.",
+          "Show reconnect, permission-denied, delivery failure and explicit review of proposed message writes."
+        ],
+        "es": [
+          "Completar selección de espacio/canales y permisos concedidos de lectura/escritura.",
+          "Mostrar reconexión, acceso denegado, fallo de entrega y revisión explícita de publicaciones propuestas."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Consumer backend must own OAuth token exchange/storage, signed events and tenant/channel authorization. Slack app installation differs from Slack sign-in. SDK installations are not Slack customer demand or active-user counts; API policy/rate behavior must be checked per app.",
+        "es": "El backend debe gestionar OAuth/tokens, eventos firmados y autorización por tenant/canal. Instalar una app Slack difiere de iniciar sesión con Slack. Las instalaciones SDK no miden demanda ni usuarios; revisar políticas/límites por app."
+      }
+    },
+    {
+      "id": "github-apps",
+      "name": "GitHub Apps",
+      "category": "connector-development",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "End-user repository connection using GitHub App installation permissions; Octokit REST is an API client, not the installation/credential lifecycle.",
+        "es": "Conexión de repositorios mediante permisos de instalación GitHub App; Octokit REST es cliente API, no ciclo de instalación/credenciales."
+      },
+      "npmPackages": ["@octokit/rest"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps",
+        "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/differences-between-github-apps-and-oauth-apps"
+      ],
+      "currentState": {
+        "en": "A GitHub settings card and mock GitHub sign-in button exist; neither installs an app or authorizes repository access.",
+        "es": "Ya existen tarjeta GitHub y acceso GitHub simulado; ninguno instala una app ni autoriza repositorios."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete installation/repository pickers and permission/connection status.",
+          "Propose issue/PR actions with preview, approval and provider-backed result state."
+        ],
+        "es": [
+          "Completar selectores de instalación/repositorios y estado de permisos/conexión.",
+          "Proponer acciones de issues/PR con vista previa, aprobación y resultado del proveedor."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "App installations and OAuth sign-in are separate flows. Consumer backend must handle installation tokens, verified webhooks and repository authorization; do not treat Octokit downloads as GitHub App installation counts or reuse a demo connected badge as authority.",
+        "es": "Instalación de app y acceso OAuth son flujos distintos. El backend debe gestionar tokens, webhooks verificados y autorización de repositorios; no interpretar descargas Octokit como instalaciones de apps ni usar la insignia demo como autorización."
+      }
+    },
+    {
+      "id": "google-drive",
+      "name": "Google Drive with Picker",
+      "category": "connector-documents",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "User-selected Drive document connection via browser Picker plus drive.file; googleapis is a broad server API library, not the Picker SDK.",
+        "es": "Conexión de documentos Drive elegidos por el usuario mediante Picker y drive.file; googleapis es biblioteca general de servidor, no SDK Picker."
+      },
+      "npmPackages": ["googleapis"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developers.google.com/workspace/drive/picker/guides/overview",
+        "https://developers.google.com/workspace/drive/api/guides/api-specific-auth"
+      ],
+      "currentState": {
+        "en": "Local file selection/downloads and text attachments exist; no Google Picker or Drive OAuth connection is supplied.",
+        "es": "Ya existen selección/descarga local y adjuntos de texto; no se aporta Picker ni conexión OAuth Drive."
+      },
+      "proposedUi": {
+        "en": [
+          "Document a Picker/drive.file recipe for explicitly selected files and source links.",
+          "Propose connected, indexing, stale, revoked and permission-denied source states."
+        ],
+        "es": [
+          "Documentar una receta Picker/drive.file para archivos elegidos explícitamente y enlaces de fuente.",
+          "Proponer conectado, indexando, desactualizado, revocado y acceso denegado."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0 (googleapis)",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "drive.file is per-file access, not permission to index an entire Drive. Wider scopes can require additional verification/assessment. Consumer retrieval must enforce source ACLs and deletions; googleapis installs cannot isolate Drive/Picker adoption or end-user demand.",
+        "es": "drive.file concede acceso por archivo, no permiso para indexar todo Drive. Permisos amplios pueden exigir verificación/evaluación adicional. El servidor debe aplicar ACL y borrados; googleapis no permite aislar adopción Drive/Picker ni demanda."
+      }
+    },
+    {
+      "id": "google-calendar",
+      "name": "Google Calendar",
+      "category": "connector-calendar",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Separate end-user calendar connection for availability/events with explicitly selected read/write permissions.",
+        "es": "Conexión de calendarios independiente para disponibilidad/eventos con permisos de lectura/escritura elegidos explícitamente."
+      },
+      "npmPackages": ["googleapis"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developers.google.com/workspace/calendar/api/guides/overview",
+        "https://developers.google.com/workspace/calendar/api/guides/push"
+      ],
+      "currentState": {
+        "en": "Calendar/event UI uses local demo records; Google Calendar OAuth, subscriptions and synchronization are absent.",
+        "es": "La interfaz de calendario/eventos usa registros locales; no hay OAuth, suscripciones ni sincronización Google Calendar."
+      },
+      "proposedUi": {
+        "en": [
+          "Document calendar/resource selection and timezone-aware event/availability states.",
+          "Propose sync freshness, reconnect and review before creating or modifying external events."
+        ],
+        "es": [
+          "Documentar selección de calendarios/recursos y eventos/disponibilidad con zona horaria.",
+          "Proponer frescura, reconexión y revisión antes de crear/modificar eventos externos."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "Apache-2.0 (googleapis)",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Drive Picker/drive.file does not authorize Calendar. Consumer backend must handle calendar-specific scopes, recurrence/timezones and watch renewal/delta state. Broad googleapis installs are not Calendar adoption; no fixed API quota is assumed.",
+        "es": "Picker/drive.file no autoriza Calendar. El backend debe gestionar permisos propios, recurrencia/zonas horarias y renovación de canales/estado incremental. googleapis no mide adopción Calendar; no se asume cuota API fija."
+      }
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "category": "connector-documents",
+      "priority": "P1",
+      "recommendation": "primary",
+      "role": {
+        "en": "End-user knowledge connection for authorized pages and database data sources, with optional reviewed writes.",
+        "es": "Conexión de conocimiento a páginas y fuentes de datos autorizadas, con escrituras revisadas opcionales."
+      },
+      "npmPackages": ["@notionhq/client"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developers.notion.com/guides/get-started/authorization",
+        "https://developers.notion.com/guides/get-started/upgrade-guide-2025-09-03"
+      ],
+      "currentState": {
+        "en": "Local document/note interactions exist; no Notion connection, source selection or synchronization service is supplied.",
+        "es": "Ya existen documentos/notas locales; no se aporta conexión, selección de fuentes ni sincronización Notion."
+      },
+      "proposedUi": {
+        "en": [
+          "Document page/data-source pickers, granted access and synchronization status.",
+          "Propose source citations and permission/reconnect states without exposing inaccessible documents."
+        ],
+        "es": [
+          "Documentar selectores de páginas/fuentes, acceso concedido y sincronización.",
+          "Proponer citas y estados de permiso/reconexión sin exponer documentos inaccesibles."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Pin a currently supported Notion API version and distinguish database containers from data sources after the documented model change. Connections only access granted content; consumer retrieval must enforce source permissions. SDK installs do not measure Notion workspace adoption.",
+        "es": "Fijar una versión API admitida y distinguir contenedores de base de datos de fuentes tras el cambio documentado. Las conexiones acceden solo a contenido concedido; el servidor debe aplicar permisos. Las instalaciones SDK no miden espacios Notion."
+      }
+    },
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365 / Microsoft Graph",
+      "category": "connector-workspace",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Provider connection for SharePoint/OneDrive, Teams and Outlook Calendar; the Graph client needs a separately chosen identity/token-acquisition flow.",
+        "es": "Conexión a SharePoint/OneDrive, Teams y Outlook Calendar; el cliente Graph exige flujo separado de identidad/adquisición de tokens."
+      },
+      "npmPackages": ["@microsoft/microsoft-graph-client"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://learn.microsoft.com/en-us/graph/permissions-overview",
+        "https://learn.microsoft.com/en-us/graph/delta-query-overview",
+        "https://learn.microsoft.com/en-us/graph/change-notifications-overview"
+      ],
+      "currentState": {
+        "en": "Microsoft mock sign-in exists, but it does not connect Microsoft 365 resources, admin consent or Graph delta subscriptions.",
+        "es": "Existe acceso Microsoft simulado, pero no conecta recursos Microsoft 365, consentimiento administrativo ni suscripciones incrementales Graph."
+      },
+      "proposedUi": {
+        "en": [
+          "Document tenant/account/resource selection and delegated-versus-application permission status.",
+          "Propose admin-consent, renewal, delta-sync freshness and reviewed calendar/document actions."
+        ],
+        "es": [
+          "Documentar selección de tenant/cuenta/recursos y permisos delegados frente a permisos de aplicación.",
+          "Proponer consentimiento administrativo, renovación, frescura incremental y acciones de calendario/documentos revisadas."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "MIT",
+        "service": "commercial"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Consent, application permissions, delegated identity and source ACLs are different boundaries. Consumer backend must handle subscription renewal, supported resource deltas and authorization before retrieval/actions. Graph SDK installs span many services and cannot measure any one Microsoft 365 provider workflow.",
+        "es": "Consentimiento, permisos de aplicación, identidad delegada y ACL son límites distintos. El backend debe gestionar renovación, cambios por recurso y autorización antes de recuperar/actuar. Graph abarca muchos servicios y no mide un flujo Microsoft 365 específico."
+      }
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "category": "connector-project-management",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "End-user engineering-project connection using OAuth/GraphQL and provider events.",
+        "es": "Conexión de proyectos de ingeniería mediante OAuth/GraphQL y eventos del proveedor."
+      },
+      "npmPackages": [],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://linear.app/developers/oauth-2-0-authentication",
+        "https://linear.app/developers/webhooks"
+      ],
+      "currentState": {
+        "en": "Tasks/project-management views use local demo records; no Linear OAuth connection or issue synchronization exists.",
+        "es": "Las vistas de tareas/proyectos usan registros locales; no hay OAuth Linear ni sincronización de issues."
+      },
+      "proposedUi": {
+        "en": [
+          "Document team/project/status mapping and connection freshness.",
+          "Propose issue create/update previews, explicit approval and provider-backed results."
+        ],
+        "es": [
+          "Documentar mapeo de equipos/proyectos/estados y frescura de conexión.",
+          "Proponer vista previa de crear/actualizar issues, aprobación y resultados del proveedor."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "OAuth consent does not grant every user access to every team/issue. Consumer code owns token refresh/storage, webhook verification and issue-level authorization. No comparable npm observation or fixed provider limit is asserted.",
+        "es": "El consentimiento OAuth no da acceso a todo equipo/issue. El consumidor gestiona tokens, verificación de webhooks y autorización por issue. No se afirma observación npm comparable ni límite fijo."
+      }
+    },
+    {
+      "id": "jira",
+      "name": "Atlassian Jira Cloud",
+      "category": "connector-project-management",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "End-user Jira Cloud connection with site/project permissions and schema-dependent issue operations.",
+        "es": "Conexión Jira Cloud con permisos por sitio/proyecto y operaciones de incidencias dependientes del esquema."
+      },
+      "npmPackages": [],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+        "https://developer.atlassian.com/cloud/jira/platform/webhooks/",
+        "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/"
+      ],
+      "currentState": {
+        "en": "Task and board UI exists over local records; no Atlassian site connection or external issue-schema mapping is supplied.",
+        "es": "Ya existen tareas/tableros locales; no se aporta conexión Atlassian ni mapeo de esquemas de incidencias."
+      },
+      "proposedUi": {
+        "en": [
+          "Document site/project/issue-type selection and custom-field mapping.",
+          "Propose permission/reconnect states and reviewed issue transitions with useful validation errors."
+        ],
+        "es": [
+          "Documentar selección de sitio/proyecto/tipo de incidencia y mapeo de campos propios.",
+          "Proponer permiso/reconexión y transiciones revisadas con errores de validación útiles."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "commercial"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Issue fields/transitions and OAuth permissions vary by site/project. Consumer backend must validate operations and handle current rate-limit/backoff behavior; do not reuse numerical quotas from unverified research. SDK/API availability is not a completed Jira integration.",
+        "es": "Campos/transiciones y permisos varían por sitio/proyecto. El backend debe validar operaciones y gestionar límites/reintentos vigentes; no reutilizar cuotas numéricas de investigación no verificada. La disponibilidad API no constituye integración Jira terminada."
+      }
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot CRM",
+      "category": "connector-crm",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "End-user CRM connection for contact/company/deal data and reviewed field/property updates.",
+        "es": "Conexión CRM para contactos/empresas/negocios y cambios revisados de campos/propiedades."
+      },
+      "npmPackages": [],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developers.hubspot.com/docs",
+        "https://developers.hubspot.com/changelog/v1-oauth-api-deprecation"
+      ],
+      "currentState": {
+        "en": "CRM-style tables and record editors use local fixtures; no HubSpot connection or property synchronization is supplied.",
+        "es": "Las tablas/editores de estilo CRM usan datos locales; no se aporta conexión HubSpot ni sincronización de propiedades."
+      },
+      "proposedUi": {
+        "en": [
+          "Document account/object/property mapping and initial/incremental sync status.",
+          "Propose conflict resolution, permission denial and review of outbound CRM updates."
+        ],
+        "es": [
+          "Documentar mapeo de cuenta/objetos/propiedades y sincronización inicial/incremental.",
+          "Proponer resolución de conflictos, acceso denegado y revisión de cambios CRM salientes."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "commercial"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Choose supported developer-platform/API/OAuth versions from current docs rather than treating legacy endpoints as the new default. Scopes, object schemas and account entitlements vary; consumer code owns token lifecycle, webhook validation and record authorization. No npm proxy or fixed rate/token-expiry value is claimed.",
+        "es": "Elegir versiones admitidas de plataforma/API/OAuth desde documentación vigente sin tomar endpoints heredados como predeterminados nuevos. Permisos, esquemas y derechos varían; el consumidor gestiona tokens, webhooks y autorización. No se afirma proxy npm ni límite/caducidad fijo."
+      }
+    },
+    {
+      "id": "zendesk",
+      "name": "Zendesk",
+      "category": "connector-support",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "End-user support-account connection for authorized tickets and reviewed support actions.",
+        "es": "Conexión de cuenta de soporte para tickets autorizados y acciones revisadas."
+      },
+      "npmPackages": [],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developer.zendesk.com/documentation/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/",
+        "https://developer.zendesk.com/documentation/webhooks/"
+      ],
+      "currentState": {
+        "en": "Support/ticket views operate on local demo records; no Zendesk subdomain/OAuth connection or event receiver exists.",
+        "es": "Las vistas de soporte/tickets operan con registros locales; no hay conexión de subdominio/OAuth ni receptor de eventos Zendesk."
+      },
+      "proposedUi": {
+        "en": [
+          "Document subdomain/account selection and ticket/status mapping.",
+          "Propose delivery/sync health, reconnect and reviewed external ticket updates."
+        ],
+        "es": [
+          "Documentar selección de subdominio/cuenta y mapeo de tickets/estados.",
+          "Proponer salud de entrega/sincronización, reconexión y cambios de tickets externos revisados."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "commercial"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Consumer backend must validate account targets, OAuth/token lifecycle, webhook signatures and ticket permissions. API limits and webhook failure behavior depend on current provider policy; no hard quota or failure threshold is assumed. Connecting UI alone is not a sync service.",
+        "es": "El backend debe validar destinos, OAuth/tokens, firmas y permisos de tickets. Límites y comportamiento ante fallos dependen de políticas vigentes; no se asumen cuotas ni umbrales fijos. Conectar la interfaz no aporta sincronización."
+      }
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "category": "connector-crm",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Enterprise CRM connection with environment/org policies and schema/permission-aware record operations.",
+        "es": "Conexión CRM empresarial con políticas de entorno/organización y operaciones conscientes de esquemas/permisos."
+      },
+      "npmPackages": [],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest.html",
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+      ],
+      "currentState": {
+        "en": "CRM-style records remain local demos; no Salesforce org connection, OAuth client or CDC/Pub/Sub consumer is supplied.",
+        "es": "Los registros de estilo CRM siguen siendo locales; no se aporta conexión Salesforce, cliente OAuth ni consumidor CDC/Pub/Sub."
+      },
+      "proposedUi": {
+        "en": [
+          "Document org/production-sandbox selection, object/field mapping and administrator-policy status.",
+          "Propose authorized change/sync state and explicit review of CRM writes."
+        ],
+        "es": [
+          "Documentar selección de organización/producción-sandbox, mapeo de objetos/campos y políticas administrativas.",
+          "Proponer cambios/sincronización autorizados y revisión explícita de escrituras CRM."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "commercial"
+      },
+      "effort": "large",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Current official guidance recommends External Client Apps; new Connected App creation is restricted, while existing apps can continue. Consumer backend owns OAuth, object/field permissions and supported event subscriptions. API/license limits vary by org; no universal quota or SDK adoption proxy is asserted.",
+        "es": "La orientación vigente recomienda External Client Apps; la creación de Connected Apps está restringida, aunque las existentes pueden continuar. El backend gestiona OAuth, permisos por objeto/campo y eventos admitidos. Límites varían por organización; no se afirma cuota universal ni proxy SDK."
+      }
+    },
+    {
+      "id": "oauth-brokers",
+      "name": "Nango / Pipedream Connect",
+      "category": "connector-brokers",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Alternative broker recipes for end-user OAuth, credential lifecycle, API proxying and optional synchronization; choose one service and its current SDK roles.",
+        "es": "Recetas alternativas de broker para OAuth, ciclo de credenciales, proxy API y sincronización opcional; elegir servicio y roles SDK actuales."
+      },
+      "npmPackages": ["nango", "@pipedream/sdk", "@pipedream/connect-react"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://nango.dev/docs/getting-started/intro-to-nango",
+        "https://github.com/NangoHQ/nango/blob/master/LICENSE",
+        "https://registry.npmjs.org/nango/0.71.13",
+        "https://pipedream.com/docs/connect",
+        "https://github.com/PipedreamHQ/pipedream/blob/master/LICENSE"
+      ],
+      "currentState": {
+        "en": "Settings already contains six mock integration cards: GitHub, Database, Slack, Webhooks, Stripe and Email; toggles persist local IDs, not real provider connections.",
+        "es": "Ajustes ya contiene seis tarjetas simuladas: GitHub, Database, Slack, Webhooks, Stripe y Email; los controles guardan IDs locales, no conexiones reales."
+      },
+      "proposedUi": {
+        "en": [
+          "Complete a connection-modal/session recipe around existing cards and consumer-owned identity.",
+          "Propose mock, connected, reconnect, permission-denied, syncing, stale and disconnected states with scopes/resources and last-sync status."
+        ],
+        "es": [
+          "Completar una receta de modal/sesión sobre tarjetas existentes e identidad del consumidor.",
+          "Proponer simulado, conectado, reconexión, acceso denegado, sincronizando, desactualizado y desconectado con permisos/recursos y última sincronización."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "nango 0.71.13 declares SEE LICENSE IN LICENSE FILE IN GIT REPOSITORY and Node >=22.22.2; its platform is ELv2, not Apache/MIT. Pipedream’s component repository is Source Available; its checked React SDK declares MIT while the server SDK refers to a license file. Verify release-specific terms and Node floors independently. Broker auth/sync does not replace consumer tenant/source authorization.",
+        "es": "nango 0.71.13 declara SEE LICENSE IN LICENSE FILE IN GIT REPOSITORY y Node >=22.22.2; su plataforma es ELv2, no Apache/MIT. El repositorio de componentes Pipedream es Source Available; el SDK React declara MIT y el de servidor remite a un archivo de licencia. Verificar condiciones y mínimos Node por versión. Autenticación/sincronización no sustituyen autorización del consumidor."
+      }
+    },
+    {
+      "id": "composio",
+      "name": "Composio",
+      "category": "connector-agent-tools",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Managed end-user account/tool-session recipe for agent actions, distinct from a durable workflow or full document-sync application.",
+        "es": "Receta gestionada de cuentas/sesiones de herramientas para agentes, distinta de un flujo duradero o aplicación completa de sincronización."
+      },
+      "npmPackages": ["@composio/core"],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://docs.composio.dev/docs",
+        "https://registry.npmjs.org/%40composio%2Fcore/0.25.0",
+        "https://github.com/ComposioHQ/composio/blob/next/LICENSE"
+      ],
+      "currentState": {
+        "en": "Settings already contains six mock integration cards: GitHub, Database, Slack, Webhooks, Stripe and Email; toggles persist local IDs, not real provider connections.",
+        "es": "Ajustes ya contiene seis tarjetas simuladas: GitHub, Database, Slack, Webhooks, Stripe y Email; los controles guardan IDs locales, no conexiones reales."
+      },
+      "proposedUi": {
+        "en": [
+          "Propose linked-account, granted-tool and reconnect presentation within the existing hub.",
+          "Document consumer-authorized action previews, explicit approval and execution results."
+        ],
+        "es": [
+          "Proponer cuentas enlazadas, herramientas concedidas y reconexión en el hub existente.",
+          "Documentar vistas previas autorizadas, aprobación explícita y resultados de ejecución."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "ISC (@composio/core 0.25.0 metadata)",
+        "service": "commercial"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Checked npm metadata declares ISC and Node >=22.22.3; upstream SDK repository licensing is MIT, so verify the shipped release notices rather than flattening the distinction. SDK licensing does not license the commercial service. Token/session isolation, source ACLs and tool-write authorization remain consumer responsibilities; npm installs do not measure connected end-user accounts.",
+        "es": "Los metadatos npm declaran ISC y Node >=22.22.3; el repositorio SDK usa MIT, por lo que deben verificarse avisos de la versión distribuida sin borrar la distinción. La licencia SDK no licencia el servicio comercial. Aislamiento, ACL y autorización de escrituras corresponden al consumidor; npm no mide cuentas conectadas."
+      }
+    },
+    {
+      "id": "n8n",
+      "name": "n8n predefined backend workflows",
+      "category": "automation",
+      "priority": "P2",
+      "recommendation": "specialist",
+      "role": {
+        "en": "Optional organization-controlled backend automation triggered through consumer-owned APIs/webhooks.",
+        "es": "Automatización opcional del backend controlada por la organización y disparada mediante API/webhooks del consumidor."
+      },
+      "npmPackages": [],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://docs.n8n.io/n8n-community-license/community-license/license-faq.md",
+        "https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
+      ],
+      "currentState": {
+        "en": "Settings already contains six mock integration cards: GitHub, Database, Slack, Webhooks, Stripe and Email; toggles persist local IDs, not real provider connections.",
+        "es": "Ajustes ya contiene seis tarjetas simuladas: GitHub, Database, Slack, Webhooks, Stripe y Email; los controles guardan IDs locales, no conexiones reales."
+      },
+      "proposedUi": {
+        "en": [
+          "Document triggering predefined workflows and showing consumer-backed run/retry results.",
+          "Keep workflow ownership and selected connected accounts visible in the consumer recipe."
+        ],
+        "es": [
+          "Documentar activación de flujos predefinidos y resultados/reintentos respaldados por backend.",
+          "Mostrar propiedad del flujo y cuentas conectadas elegidas en la receta."
+        ]
+      },
+      "runtime": "consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "self-hosted optional"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "The current SUL FAQ permits org-owned predefined backend workflows, including end-user accounts. It restricts end users building/configuring workflow logic via UI, API, MCP or an agent without an agreement. Review actual distribution/commercial terms; do not blanket-ban SaaS backends or label the platform Apache/MIT.",
+        "es": "La FAQ SUL permite flujos backend predefinidos de la organización, incluidas cuentas de usuarios finales. Restringe que usuarios construyan/configuren lógica mediante UI, API, MCP o agentes sin acuerdo. Revisar distribución y condiciones; no prohibir todo backend SaaS ni llamar Apache/MIT a la plataforma."
+      }
+    },
+    {
+      "id": "managed-automation",
+      "name": "Make / Zapier",
+      "category": "automation",
+      "priority": "P2",
+      "recommendation": "alternative",
+      "role": {
+        "en": "Alternative managed workflow ecosystems using consumer APIs/webhooks or eligible published integration widgets.",
+        "es": "Ecosistemas alternativos de flujos gestionados mediante API/webhooks o widgets de integraciones publicadas elegibles."
+      },
+      "npmPackages": [],
+      "npmEvidence": "unmeasured",
+      "sourceUrls": [
+        "https://developers.make.com/custom-apps-documentation",
+        "https://docs.zapier.com/integrations/embed/powered-by-zapier"
+      ],
+      "currentState": {
+        "en": "Settings already contains six mock integration cards: GitHub, Database, Slack, Webhooks, Stripe and Email; toggles persist local IDs, not real provider connections.",
+        "es": "Ajustes ya contiene seis tarjetas simuladas: GitHub, Database, Slack, Webhooks, Stripe y Email; los controles guardan IDs locales, no conexiones reales."
+      },
+      "proposedUi": {
+        "en": [
+          "Document outbound trigger/action configuration and links to chosen workflow templates.",
+          "Propose delivery, run-status, retry and reconnect views from actual consumer events."
+        ],
+        "es": [
+          "Documentar configuración de disparadores/acciones salientes y enlaces a plantillas elegidas.",
+          "Proponer entrega, estado, reintento y reconexión desde eventos reales."
+        ]
+      },
+      "runtime": "browser-and-consumer-backend",
+      "license": {
+        "sdk": "check provider package",
+        "service": "managed"
+      },
+      "effort": "medium",
+      "compatibility": "documented-not-tested-in-aureform",
+      "caveats": {
+        "en": "Choose one ecosystem; partner/publication eligibility and execution ownership differ. Backend authorization, webhook validation and idempotency remain necessary. Managed workflow adoption has no comparable npm observation here; do not treat a template/widget as an installed native connector or broker.",
+        "es": "Elegir un ecosistema; elegibilidad de socios/publicación y propiedad de ejecución difieren. Siguen siendo necesarias autorización, validación e idempotencia. No hay observación npm comparable; una plantilla/widget no equivale a conector nativo instalado ni broker."
+      }
+    }
+  ],
+  "evidenceFiles": {
+    "npmDownloads": "npm-downloads.json",
+    "packageMetadata": "package-metadata.json",
+    "sources": "sources.json",
+    "execution": "agy-provenance.json"
+  }
+}

@@ -8,7 +8,7 @@ A Next.js UI kit for dashboards, SaaS workspaces and internal tools, with a visu
 
 [**Explore the demo ↗**](https://aureformui.com/en/) · [**Documentation**](https://aureformui.com/en/docs/) · [Quality & Lighthouse](https://aureformui.com/en/quality/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Sponsor](https://github.com/sponsors/terrizoaguimor) · [Get started](#get-started) · [Contribute](CONTRIBUTING.md) · [Español](README.es.md)
 
-[![Live demo on Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/en/) [![Documentation: 22 chapters](https://img.shields.io/badge/docs-22%20chapters-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/en/docs/) [![Editable Figma library](https://img.shields.io/badge/Figma-editable%20library-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![shadcn source registry](https://img.shields.io/badge/shadcn-source%20registry-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
+[![Live demo on Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/en/) [![Documentation: 23 chapters](https://img.shields.io/badge/docs-23%20chapters-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/en/docs/) [![Editable Figma library](https://img.shields.io/badge/Figma-editable%20library-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![shadcn source registry](https://img.shields.io/badge/shadcn-source%20registry-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
 
 ![Aureform homepage in dark mode, with its interface preview and documentation entry](docs/images/aureform-landing-dark.webp)
 
@@ -146,7 +146,7 @@ Versioned packaging and QA records retain their original scope. See the [open-so
 
 [![Cloudflare Workers Static Assets](https://img.shields.io/badge/Cloudflare-Workers%20Static%20Assets-111827?style=flat-square&logo=cloudflare&logoColor=F38020)](docs/cloudflare-deployment.md) [![Static HTML, canonical URLs and hreflang](https://img.shields.io/badge/SEO-static%20HTML%20%2B%20hreflang-111827?style=flat-square)](docs/release-checklist-1.4.1.md) [![Gemini 4 Argon research: eight priorities](https://img.shields.io/badge/research-8%20priorities-8F652A?style=flat-square)](https://aureformui.com/en/docs/research/)
 
-[Read the documentation](https://aureformui.com/en/docs/) without opening the demo workspace. Its 22 chapters cover installation, components, tokens, motion, charts, tables, application integrations, Figma and deployment, with searchable headings, a page outline and copyable code. Navigation is available in English and Spanish; references that retain their original language are identified on the page.
+[Read the documentation](https://aureformui.com/en/docs/) without opening the demo workspace. Its 23 chapters cover installation, components, tokens, motion, charts, tables, application integrations, integration research, Figma and deployment, with searchable headings, a page outline and copyable code. Navigation is available in English and Spanish; references that retain their original language are identified on the page.
 
 ![Aureform documentation with grouped navigation, copyable code and page outline](docs/images/aureform-documentation.webp)
 
@@ -161,6 +161,10 @@ pnpm deploy:cloudflare
 Set `NEXT_PUBLIC_SITE_URL` for your own canonical origin. Cloudflare deployment requires your account credentials; the demo and local build require none. Generated deployment state is excluded from Git and source packages.
 
 The [bilingual product research](docs/website/en/research.md) combines three headless Gemini 4 Argon investigations, 52 observed searches, independent source review and eight priorities with acceptance criteria. Its [execution and verification ledgers](docs/research/2026-10-20/) separate recorded evidence from proposals that need user validation. The [original 20-finding study](docs/research-gaps-1.4.es.md) remains available.
+
+[![Integration research: 99 observed searches](https://img.shields.io/badge/integration%20research-99%20searches-8F652A?style=flat-square)](https://aureformui.com/en/docs/integration-research/) [![npm adoption evidence: 70 packages](https://img.shields.io/badge/npm%20evidence-70%20packages-111827?style=flat-square&logo=npm&logoColor=CB3837)](docs/research/2026-10-20/integrations/npm-downloads.json)
+
+The separate [integration research](docs/website/en/integration-research.md) ([Español](docs/website/es/integration-research.md)) reviews auth, data, commerce, AI, operational services and product connectors. Four completed headless AGY investigations recorded 99 searches; the [evidence bundle](docs/research/2026-10-20/integrations/) includes a dated npm snapshot for 70 packages, execution provenance, primary sources and bilingual candidate cards. SDK downloads are adoption signals, not unique users or Next.js market share. New recipes and interfaces are recommendations; the current mock and consumer-backend boundaries remain explicit.
 
 ## Quality you can inspect
 

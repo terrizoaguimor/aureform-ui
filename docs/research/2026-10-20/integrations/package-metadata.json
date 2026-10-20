@@ -1,0 +1,1573 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "a93ab113170ec1456608cf1f85d1a89b23aaec68",
+  "checkedAt": "2026-10-20T15:25:03.423530+00:00",
+  "method": "Official npm latest stable metadata observed on the evidence date; retain fixed-version URLs. Only public package name, version, license, engines, peers and response digest are published. SDK metadata is not a server/service license or runtime acceptance test.",
+  "compatibility": "documented-not-tested-in-aureform",
+  "packageCount": 70,
+  "results": [
+    {
+      "package": "next-auth",
+      "version": "4.24.15",
+      "checkedAt": "2026-10-20T15:24:58.365594+00:00",
+      "observedUrl": "https://registry.npmjs.org/next-auth/latest",
+      "url": "https://registry.npmjs.org/next-auth/4.24.15",
+      "httpStatus": 200,
+      "license": "ISC",
+      "engines": {},
+      "peerDependencies": {
+        "next": "^12.2.5 || ^13 || ^14 || ^15 || ^16",
+        "react": "^17.0.2 || ^18 || ^19",
+        "react-dom": "^17.0.2 || ^18 || ^19",
+        "@auth/core": "0.34.3",
+        "nodemailer": "^7.0.7"
+      },
+      "peerDependenciesMeta": {
+        "@auth/core": {
+          "optional": true
+        },
+        "nodemailer": {
+          "optional": true
+        }
+      },
+      "responseSha256": "31f942bf76794fcfd17b8a7c1d681c9bad7d90e8ca457fc42fc9694e64b30941"
+    },
+    {
+      "package": "better-auth",
+      "version": "1.7.12",
+      "checkedAt": "2026-10-20T15:24:57.815628+00:00",
+      "observedUrl": "https://registry.npmjs.org/better-auth/latest",
+      "url": "https://registry.npmjs.org/better-auth/1.7.12",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "pg": "^8.0.0",
+        "vue": "^3.0.0",
+        "next": "^14.0.0 || ^15.0.0 || ^16.0.0",
+        "react": "^18.0.0 || ^19.0.0",
+        "mysql2": "^3.0.0",
+        "prisma": "^5.0.0 || ^6.0.0 || ^7.0.0",
+        "svelte": "^4.0.0 || ^5.0.0",
+        "vitest": "^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0",
+        "mongodb": "^6.0.0 || ^7.0.0",
+        "solid-js": "^1.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0",
+        "drizzle-kit": ">=0.31.4 || >=1.0.0-beta.1",
+        "drizzle-orm": "^0.45.2 || >=1.0.0-rc.1 <2.0.0",
+        "@sveltejs/kit": "^2.0.0 || ^3.0.0",
+        "@lynx-js/react": "*",
+        "@prisma/client": "^5.0.0 || ^6.0.0 || ^7.0.0",
+        "@tanstack/react-start": "^1.0.0",
+        "@tanstack/solid-start": "^1.0.0"
+      },
+      "peerDependenciesMeta": {
+        "pg": {
+          "optional": true
+        },
+        "vue": {
+          "optional": true
+        },
+        "next": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        },
+        "mysql2": {
+          "optional": true
+        },
+        "prisma": {
+          "optional": true
+        },
+        "svelte": {
+          "optional": true
+        },
+        "vitest": {
+          "optional": true
+        },
+        "mongodb": {
+          "optional": true
+        },
+        "solid-js": {
+          "optional": true
+        },
+        "react-dom": {
+          "optional": true
+        },
+        "drizzle-kit": {
+          "optional": true
+        },
+        "drizzle-orm": {
+          "optional": true
+        },
+        "@sveltejs/kit": {
+          "optional": true
+        },
+        "@lynx-js/react": {
+          "optional": true
+        },
+        "@prisma/client": {
+          "optional": true
+        },
+        "@tanstack/react-start": {
+          "optional": true
+        },
+        "@tanstack/solid-start": {
+          "optional": true
+        }
+      },
+      "responseSha256": "7870818973689b2c793668fc06ed2c61e60cf889ac451ad9c26af42a2d610666"
+    },
+    {
+      "package": "@clerk/nextjs",
+      "version": "7.9.17",
+      "checkedAt": "2026-10-20T15:24:58.010105+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40clerk%2Fnextjs/latest",
+      "url": "https://registry.npmjs.org/%40clerk%2Fnextjs/7.9.17",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "peerDependencies": {
+        "next": "^15.2.8 || ^15.3.8 || ^15.4.10 || ^15.5.9 || ^15.6.0-0 || ^16.0.10 || ^16.1.0-0",
+        "react": "^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0",
+        "react-dom": "^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "5c4fd518f190065c13352f1c06cb550639a3c6c6daf36a633e2fb3471a5e367c"
+    },
+    {
+      "package": "@supabase/ssr",
+      "version": "0.12.7",
+      "checkedAt": "2026-10-20T15:24:57.998873+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40supabase%2Fssr/latest",
+      "url": "https://registry.npmjs.org/%40supabase%2Fssr/0.12.7",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "@supabase/supabase-js": "^2.114.0"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "bab5343c7f5661914098bf6dc3668fb04a8be98dab08df125993441bbd14668d"
+    },
+    {
+      "package": "@workos-inc/authkit-nextjs",
+      "version": "4.4.0",
+      "checkedAt": "2026-10-20T15:24:58.144204+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40workos-inc%2Fauthkit-nextjs/latest",
+      "url": "https://registry.npmjs.org/%40workos-inc%2Fauthkit-nextjs/4.4.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=22.11.0"
+      },
+      "peerDependencies": {
+        "next": "^13.5.9 || ^14.2.26 || ^15.2.3 || ^16",
+        "react": "^18.0 || ^19.0.0",
+        "react-dom": "^18.0 || ^19.0.0",
+        "@workos-inc/node": "^9.0.0 || ^10.0.0"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "2fbdedc4e5f8651a1eedda18bc3eb5aa09467660928440d5ed6b0d513dd48e3a"
+    },
+    {
+      "package": "@auth0/nextjs-auth0",
+      "version": "4.32.1",
+      "checkedAt": "2026-10-20T15:24:58.099530+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40auth0%2Fnextjs-auth0/latest",
+      "url": "https://registry.npmjs.org/%40auth0%2Fnextjs-auth0/4.32.1",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "next": "^14.2.35 || ~15.0.7 || ~15.1.11 || ~15.2.8 || ~15.3.8 || ~15.4.10 || ~15.5.9 || ^16.0.10",
+        "react": "^18.0.0 || ~19.0.1 ||  ~19.1.2 || ^19.2.1",
+        "react-dom": "^18.0.0 || ~19.0.1 || ~19.1.2 || ^19.2.1"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "8b6f4a96628cf365549ca4545d916075b4c2c80544ebfb5297acbcd85cc35e5c"
+    },
+    {
+      "package": "@tanstack/react-query",
+      "version": "5.104.5",
+      "checkedAt": "2026-10-20T15:24:58.271045+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40tanstack%2Freact-query/latest",
+      "url": "https://registry.npmjs.org/%40tanstack%2Freact-query/5.104.5",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^18 || ^19",
+        "@types/react": "^18 || ^19"
+      },
+      "peerDependenciesMeta": {
+        "@types/react": {
+          "optional": true
+        }
+      },
+      "responseSha256": "ab91127ddbadcd6a52f2cdcfaff40afbacf8f11a3527a29fb06ca45c3eef246c"
+    },
+    {
+      "package": "swr",
+      "version": "2.5.1",
+      "checkedAt": "2026-10-20T15:24:58.392109+00:00",
+      "observedUrl": "https://registry.npmjs.org/swr/latest",
+      "url": "https://registry.npmjs.org/swr/2.5.1",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "08aed6a245fe3c079d12a94e4475c8d99fc49c4a620eeab67df788e600329ced"
+    },
+    {
+      "package": "@supabase/supabase-js",
+      "version": "2.118.0",
+      "checkedAt": "2026-10-20T15:24:58.366015+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40supabase%2Fsupabase-js/latest",
+      "url": "https://registry.npmjs.org/%40supabase%2Fsupabase-js/2.118.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "peerDependencies": {
+        "@opentelemetry/api": ">=1.0.0"
+      },
+      "peerDependenciesMeta": {
+        "@opentelemetry/api": {
+          "optional": true
+        }
+      },
+      "responseSha256": "0141ca9c569346409fe8f11c0094faf0512156b149e9daf9eaacae6b9bbb6a7d"
+    },
+    {
+      "package": "@neondatabase/serverless",
+      "version": "1.2.0",
+      "checkedAt": "2026-10-20T15:24:58.387783+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40neondatabase%2Fserverless/latest",
+      "url": "https://registry.npmjs.org/%40neondatabase%2Fserverless/1.2.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=19.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "5babefb7deb30845f43a8917171d07ffff5c5de267f17ec8de79e5891ba4f9cb"
+    },
+    {
+      "package": "convex",
+      "version": "1.47.0",
+      "checkedAt": "2026-10-20T15:24:58.554560+00:00",
+      "observedUrl": "https://registry.npmjs.org/convex/latest",
+      "url": "https://registry.npmjs.org/convex/1.47.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "npm": ">=7.0.0",
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0-0 || ^19.0.0",
+        "@clerk/react": "^6.4.3",
+        "@auth0/auth0-react": "^2.0.1",
+        "@clerk/clerk-react": "^4.12.8 || ^5.0.0"
+      },
+      "peerDependenciesMeta": {
+        "react": {
+          "optional": true
+        },
+        "@clerk/react": {
+          "optional": true
+        },
+        "@auth0/auth0-react": {
+          "optional": true
+        },
+        "@clerk/clerk-react": {
+          "optional": true
+        }
+      },
+      "responseSha256": "2451a6072e72c233d62458897371cd0f57a2acd9c39d43e5dcb705db6dc74a9b"
+    },
+    {
+      "package": "firebase",
+      "version": "13.0.0",
+      "checkedAt": "2026-10-20T15:24:58.601673+00:00",
+      "observedUrl": "https://registry.npmjs.org/firebase/latest",
+      "url": "https://registry.npmjs.org/firebase/13.0.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "69e66f2af00d942f10bb2db8cdf09656788608334d36dfd3ecc92016342d1d65"
+    },
+    {
+      "package": "drizzle-orm",
+      "version": "0.45.4",
+      "checkedAt": "2026-10-20T15:24:58.451871+00:00",
+      "observedUrl": "https://registry.npmjs.org/drizzle-orm/latest",
+      "url": "https://registry.npmjs.org/drizzle-orm/0.45.4",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {},
+      "peerDependencies": {
+        "pg": ">=8",
+        "gel": ">=2",
+        "knex": "*",
+        "kysely": "*",
+        "mysql2": ">=2",
+        "sql.js": ">=1",
+        "sqlite3": ">=5",
+        "postgres": ">=3",
+        "@types/pg": "*",
+        "bun-types": "*",
+        "@netlify/db": ">=0.4.0",
+        "expo-sqlite": ">=14.0.0",
+        "@types/sql.js": "*",
+        "@libsql/client": ">=0.10.0",
+        "@prisma/client": "*",
+        "@upstash/redis": ">=1.34.7",
+        "better-sqlite3": ">=7",
+        "@xata.io/client": "*",
+        "@vercel/postgres": ">=0.8.0",
+        "@opentelemetry/api": "^1.4.1",
+        "@libsql/client-wasm": ">=0.10.0",
+        "@electric-sql/pglite": ">=0.2.0",
+        "@planetscale/database": ">=1.13",
+        "@tidbcloud/serverless": "*",
+        "@types/better-sqlite3": "*",
+        "@aws-sdk/client-rds-data": ">=3",
+        "@neondatabase/serverless": ">=0.10.0",
+        "@cloudflare/workers-types": ">=4",
+        "@op-engineering/op-sqlite": ">=2"
+      },
+      "peerDependenciesMeta": {
+        "pg": {
+          "optional": true
+        },
+        "gel": {
+          "optional": true
+        },
+        "knex": {
+          "optional": true
+        },
+        "kysely": {
+          "optional": true
+        },
+        "mysql2": {
+          "optional": true
+        },
+        "prisma": {
+          "optional": true
+        },
+        "sql.js": {
+          "optional": true
+        },
+        "sqlite3": {
+          "optional": true
+        },
+        "postgres": {
+          "optional": true
+        },
+        "@types/pg": {
+          "optional": true
+        },
+        "bun-types": {
+          "optional": true
+        },
+        "@netlify/db": {
+          "optional": true
+        },
+        "expo-sqlite": {
+          "optional": true
+        },
+        "@types/sql.js": {
+          "optional": true
+        },
+        "@libsql/client": {
+          "optional": true
+        },
+        "@prisma/client": {
+          "optional": true
+        },
+        "@upstash/redis": {
+          "optional": true
+        },
+        "better-sqlite3": {
+          "optional": true
+        },
+        "@xata.io/client": {
+          "optional": true
+        },
+        "@vercel/postgres": {
+          "optional": true
+        },
+        "@opentelemetry/api": {
+          "optional": true
+        },
+        "@libsql/client-wasm": {
+          "optional": true
+        },
+        "@electric-sql/pglite": {
+          "optional": true
+        },
+        "@planetscale/database": {
+          "optional": true
+        },
+        "@tidbcloud/serverless": {
+          "optional": true
+        },
+        "@types/better-sqlite3": {
+          "optional": true
+        },
+        "@aws-sdk/client-rds-data": {
+          "optional": true
+        },
+        "@neondatabase/serverless": {
+          "optional": true
+        },
+        "@cloudflare/workers-types": {
+          "optional": true
+        },
+        "@op-engineering/op-sqlite": {
+          "optional": true
+        }
+      },
+      "responseSha256": "516d3f7794bccc29e6edfbd339828fa534e26f3be22dd35a9f21fe95ed975b44"
+    },
+    {
+      "package": "@prisma/client",
+      "version": "7.10.1",
+      "checkedAt": "2026-10-20T15:24:58.631561+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40prisma%2Fclient/latest",
+      "url": "https://registry.npmjs.org/%40prisma%2Fclient/7.10.1",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": "^20.19 || ^22.12 || >=24.0"
+      },
+      "peerDependencies": {
+        "prisma": "*",
+        "typescript": ">=5.4.0"
+      },
+      "peerDependenciesMeta": {
+        "prisma": {
+          "optional": true
+        },
+        "typescript": {
+          "optional": true
+        }
+      },
+      "responseSha256": "ab3ad090e48a07b89bdd368e0110bb02976288ebf7d5fb50fc3a16b340b1e285"
+    },
+    {
+      "package": "stripe",
+      "version": "23.0.0",
+      "checkedAt": "2026-10-20T15:24:58.637792+00:00",
+      "observedUrl": "https://registry.npmjs.org/stripe/latest",
+      "url": "https://registry.npmjs.org/stripe/23.0.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=20"
+      },
+      "peerDependencies": {
+        "@types/node": ">=20"
+      },
+      "peerDependenciesMeta": {
+        "@types/node": {
+          "optional": true
+        }
+      },
+      "responseSha256": "7534f08582f408147975bc9bece9e69f151edf10d55d3d49da1fc79ca6059e2f"
+    },
+    {
+      "package": "@stripe/stripe-js",
+      "version": "10.1.0",
+      "checkedAt": "2026-10-20T15:24:58.706964+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40stripe%2Fstripe-js/latest",
+      "url": "https://registry.npmjs.org/%40stripe%2Fstripe-js/10.1.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.16"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "1c9e8ec9c250b6452624ef0ccf0bf30585a675653a240b526d044c066651549a"
+    },
+    {
+      "package": "@paddle/paddle-js",
+      "version": "1.6.5",
+      "checkedAt": "2026-10-20T15:24:58.837416+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40paddle%2Fpaddle-js/latest",
+      "url": "https://registry.npmjs.org/%40paddle%2Fpaddle-js/1.6.5",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "c1c804147454fb3a4ea48885bdd3e65abb071b52ca9991b12e50d865f107c608"
+    },
+    {
+      "package": "@paddle/paddle-node-sdk",
+      "version": "3.10.0",
+      "checkedAt": "2026-10-20T15:25:00.717120+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40paddle%2Fpaddle-node-sdk/latest",
+      "url": "https://registry.npmjs.org/%40paddle%2Fpaddle-node-sdk/3.10.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=20"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "17d5da9f6e5ed70c8d0e0161499d378d621aee7555be7c387fa2fcbf84dceef6"
+    },
+    {
+      "package": "@lemonsqueezy/lemonsqueezy.js",
+      "version": "4.0.0",
+      "checkedAt": "2026-10-20T15:24:58.890496+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40lemonsqueezy%2Flemonsqueezy.js/latest",
+      "url": "https://registry.npmjs.org/%40lemonsqueezy%2Flemonsqueezy.js/4.0.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=20"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "6c11e994b5ac9e07565e560460367f4e7127ba4ba82644170bc60fd87a1c6e33"
+    },
+    {
+      "package": "@polar-sh/sdk",
+      "version": "1.0.2",
+      "checkedAt": "2026-10-20T15:24:58.878789+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40polar-sh%2Fsdk/latest",
+      "url": "https://registry.npmjs.org/%40polar-sh%2Fsdk/1.0.2",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=22"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "b406c51854eea725e928bd97b4d864cb66efe330b301f586403653004a5c1619"
+    },
+    {
+      "package": "resend",
+      "version": "6.34.1",
+      "checkedAt": "2026-10-20T15:24:58.763941+00:00",
+      "observedUrl": "https://registry.npmjs.org/resend/latest",
+      "url": "https://registry.npmjs.org/resend/6.34.1",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=20"
+      },
+      "peerDependencies": {
+        "@react-email/render": "*"
+      },
+      "peerDependenciesMeta": {
+        "@react-email/render": {
+          "optional": true
+        }
+      },
+      "responseSha256": "cff0f6daa7d52061f84c68342e91b65e9268af45dbb2338fcf5dbf7ba9465cdc"
+    },
+    {
+      "package": "@sendgrid/mail",
+      "version": "8.1.6",
+      "checkedAt": "2026-10-20T15:24:58.992591+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40sendgrid%2Fmail/latest",
+      "url": "https://registry.npmjs.org/%40sendgrid%2Fmail/8.1.6",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.*"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "a1a8c678076f9cce17dd5fbcae0b6e521e68b7fbac43bef6ddd1511c7e10ab00"
+    },
+    {
+      "package": "postmark",
+      "version": "5.1.0",
+      "checkedAt": "2026-10-20T15:24:59.073028+00:00",
+      "observedUrl": "https://registry.npmjs.org/postmark/latest",
+      "url": "https://registry.npmjs.org/postmark/5.1.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "cf0c7210f117c7b599db5f77714bd78fd9b983e611e53a95dadb7ed0c618885f"
+    },
+    {
+      "package": "@react-email/components",
+      "version": "1.0.12",
+      "checkedAt": "2026-10-20T15:24:59.139310+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40react-email%2Fcomponents/latest",
+      "url": "https://registry.npmjs.org/%40react-email%2Fcomponents/1.0.12",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {
+        "react": "^18.0 || ^19.0 || ^19.0.0-rc"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "bfb36e43602aa5b8e17500d91061036353a6aa19025424670a658b73a2029f82"
+    },
+    {
+      "package": "@aws-sdk/client-ses",
+      "version": "3.1153.0",
+      "checkedAt": "2026-10-20T15:24:59.183505+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40aws-sdk%2Fclient-ses/latest",
+      "url": "https://registry.npmjs.org/%40aws-sdk%2Fclient-ses/3.1153.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "977ead3f323bce26fe1ac90c511a9125c9e9aba584e0cfb4f7f3eaf0608a4b05"
+    },
+    {
+      "package": "@sentry/nextjs",
+      "version": "11.8.0",
+      "checkedAt": "2026-10-20T15:24:59.298561+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40sentry%2Fnextjs/latest",
+      "url": "https://registry.npmjs.org/%40sentry%2Fnextjs/11.8.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0"
+      },
+      "peerDependencies": {
+        "next": "^14.0 || ^15.0.0-rc.0 || ^16.0.0-0"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "7709f9bf0a0262db1f67bcfe4fe56fd9986f47edfea59e6c54b9cb32d1bdfa91"
+    },
+    {
+      "package": "posthog-js",
+      "version": "1.438.12",
+      "checkedAt": "2026-10-20T15:24:59.360398+00:00",
+      "observedUrl": "https://registry.npmjs.org/posthog-js/latest",
+      "url": "https://registry.npmjs.org/posthog-js/1.438.12",
+      "httpStatus": 200,
+      "license": "(Apache-2.0 AND MIT)",
+      "engines": {},
+      "peerDependencies": {
+        "react": ">=16.8.0",
+        "@types/react": ">=16.8.0"
+      },
+      "peerDependenciesMeta": {
+        "react": {
+          "optional": true
+        },
+        "@types/react": {
+          "optional": true
+        }
+      },
+      "responseSha256": "52b41a14ae2e3df2b139903b73d077d63a032d32095101eacac120223e6fa184"
+    },
+    {
+      "package": "@vercel/analytics",
+      "version": "2.0.1",
+      "checkedAt": "2026-10-20T15:24:59.534019+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40vercel%2Fanalytics/latest",
+      "url": "https://registry.npmjs.org/%40vercel%2Fanalytics/2.0.1",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "vue": "^3",
+        "next": ">= 13",
+        "nuxt": ">= 3",
+        "react": "^18 || ^19 || ^19.0.0-rc",
+        "svelte": ">= 4",
+        "vue-router": "^4",
+        "@sveltejs/kit": "^1 || ^2",
+        "@remix-run/react": "^2"
+      },
+      "peerDependenciesMeta": {
+        "vue": {
+          "optional": true
+        },
+        "next": {
+          "optional": true
+        },
+        "nuxt": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        },
+        "svelte": {
+          "optional": true
+        },
+        "vue-router": {
+          "optional": true
+        },
+        "@sveltejs/kit": {
+          "optional": true
+        },
+        "@remix-run/react": {
+          "optional": true
+        }
+      },
+      "responseSha256": "27717a853b05427189ac4a6bfd4f020c5be2c56b25454e8fea81a4882e8a3dbc"
+    },
+    {
+      "package": "inngest",
+      "version": "4.25.0",
+      "checkedAt": "2026-10-20T15:24:59.451491+00:00",
+      "observedUrl": "https://registry.npmjs.org/inngest/latest",
+      "url": "https://registry.npmjs.org/inngest/4.25.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=20"
+      },
+      "peerDependencies": {
+        "h3": ">=1.8.1",
+        "koa": ">=2.14.2",
+        "zod": "^3.25.0 || ^4.0.0",
+        "hono": ">=4.2.7",
+        "next": ">=12.0.0",
+        "react": ">=18.0.0",
+        "express": ">=4.19.2",
+        "fastify": ">=4.21.0",
+        "aws-lambda": ">=1.0.7",
+        "typescript": ">=5.8.0",
+        "@vercel/node": ">=2.15.9",
+        "@sveltejs/kit": ">=1.27.3"
+      },
+      "peerDependenciesMeta": {
+        "h3": {
+          "optional": true
+        },
+        "koa": {
+          "optional": true
+        },
+        "hono": {
+          "optional": true
+        },
+        "next": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        },
+        "express": {
+          "optional": true
+        },
+        "fastify": {
+          "optional": true
+        },
+        "aws-lambda": {
+          "optional": true
+        },
+        "typescript": {
+          "optional": true
+        },
+        "@vercel/node": {
+          "optional": true
+        },
+        "@sveltejs/kit": {
+          "optional": true
+        }
+      },
+      "responseSha256": "6d16f57173d0b0a9810dd7ec9461b59a76e8597910dd1b165abf64930b6696b3"
+    },
+    {
+      "package": "@trigger.dev/sdk",
+      "version": "4.7.5",
+      "checkedAt": "2026-10-20T15:24:59.967064+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40trigger.dev%2Fsdk/latest",
+      "url": "https://registry.npmjs.org/%40trigger.dev%2Fsdk/4.7.5",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18.20.0"
+      },
+      "peerDependencies": {
+        "ai": "^5.0.0 || ^6.0.0 || >=7.0.0-canary <8",
+        "zod": "^3.25.56 || ^4.0.0",
+        "react": "^18.0 || ^19.0",
+        "@ai-sdk/otel": ">=1.0.0-0 <2"
+      },
+      "peerDependenciesMeta": {
+        "ai": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        },
+        "@ai-sdk/otel": {
+          "optional": true
+        }
+      },
+      "responseSha256": "f1f5a34b963cb90e8a4d3256cfeced1c97eca0feaf95b8e3fb71f3978b50ec84"
+    },
+    {
+      "package": "@novu/react",
+      "version": "3.19.2",
+      "checkedAt": "2026-10-20T15:24:59.588699+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40novu%2Freact/latest",
+      "url": "https://registry.npmjs.org/%40novu%2Freact/3.19.2",
+      "httpStatus": 200,
+      "license": "ISC",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0 || ^19.0.0-0",
+        "react-dom": "^18.0.0 || ^19.0.0 || ^19.0.0-0"
+      },
+      "peerDependenciesMeta": {
+        "react-dom": {
+          "optional": true
+        }
+      },
+      "responseSha256": "72380791539b3cbcfe28c6cec589ea9160cbecd478f45cf8cbd73decf7fb5498"
+    },
+    {
+      "package": "@knocklabs/react",
+      "version": "0.14.0",
+      "checkedAt": "2026-10-20T15:24:59.708557+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40knocklabs%2Freact/latest",
+      "url": "https://registry.npmjs.org/%40knocklabs%2Freact/0.14.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "next": "^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0",
+        "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+        "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0",
+        "@tanstack/react-router": "^1.0.0"
+      },
+      "peerDependenciesMeta": {
+        "next": {
+          "optional": true
+        },
+        "@tanstack/react-router": {
+          "optional": true
+        }
+      },
+      "responseSha256": "4e57ede11136b128acb346303bd038c6946c27f494038501937ccd99f50056cc"
+    },
+    {
+      "package": "uploadthing",
+      "version": "7.7.4",
+      "checkedAt": "2026-10-20T15:24:59.975977+00:00",
+      "observedUrl": "https://registry.npmjs.org/uploadthing/latest",
+      "url": "https://registry.npmjs.org/uploadthing/7.7.4",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18.13.0"
+      },
+      "peerDependencies": {
+        "h3": "*",
+        "express": "*",
+        "tailwindcss": "^3.0.0 || ^4.0.0-beta.0"
+      },
+      "peerDependenciesMeta": {
+        "h3": {
+          "optional": true
+        },
+        "next": {
+          "optional": true
+        },
+        "express": {
+          "optional": true
+        },
+        "fastify": {
+          "optional": true
+        },
+        "tailwindcss": {
+          "optional": true
+        }
+      },
+      "responseSha256": "f0db1083c0c489c0c623b74614eba8b998e2879f2dc0f69c8814cbb172463ecb"
+    },
+    {
+      "package": "@uploadthing/react",
+      "version": "7.3.3",
+      "checkedAt": "2026-10-20T15:24:59.842644+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40uploadthing%2Freact/latest",
+      "url": "https://registry.npmjs.org/%40uploadthing%2Freact/7.3.3",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "next": "*",
+        "react": "^17.0.2 || ^18.0.0 || ^19.0.0",
+        "uploadthing": "^7.2.0"
+      },
+      "peerDependenciesMeta": {
+        "next": {
+          "optional": true
+        }
+      },
+      "responseSha256": "ca2efbd5393faa33fe4f8bb3d15083d5e2f77e6cfa4a2739ad23ccf40015ec42"
+    },
+    {
+      "package": "cloudinary",
+      "version": "2.11.0",
+      "checkedAt": "2026-10-20T15:24:59.989104+00:00",
+      "observedUrl": "https://registry.npmjs.org/cloudinary/latest",
+      "url": "https://registry.npmjs.org/cloudinary/2.11.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=9"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "c42dc7be8ffc4fd488df5d99c1ed1c1a95d45ad65d4e2add0bc49c504fba1321"
+    },
+    {
+      "package": "@supabase/storage-js",
+      "version": "2.118.0",
+      "checkedAt": "2026-10-20T15:25:00.598050+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40supabase%2Fstorage-js/latest",
+      "url": "https://registry.npmjs.org/%40supabase%2Fstorage-js/2.118.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "f9a72d8b845917cf93a31efbb7b8415937588eb406c455fa370970fe5f3049bc"
+    },
+    {
+      "package": "@aws-sdk/client-s3",
+      "version": "3.1153.0",
+      "checkedAt": "2026-10-20T15:25:00.587881+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40aws-sdk%2Fclient-s3/latest",
+      "url": "https://registry.npmjs.org/%40aws-sdk%2Fclient-s3/3.1153.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "f7f3ca640d8630ef3bdf728b3ce4b6877e5be2986296424ab091385756931d9e"
+    },
+    {
+      "package": "@tiptap/react",
+      "version": "3.32.0",
+      "checkedAt": "2026-10-20T15:25:00.227063+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40tiptap%2Freact/latest",
+      "url": "https://registry.npmjs.org/%40tiptap%2Freact/3.32.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+        "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0",
+        "@tiptap/pm": "3.32.0",
+        "@tiptap/core": "3.32.0",
+        "@types/react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+        "@types/react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "765dd69ce25063a960454056299ed670371652229474ff1c0b4ee5ec1050a8d9"
+    },
+    {
+      "package": "lexical",
+      "version": "0.52.0",
+      "checkedAt": "2026-10-20T15:25:00.225989+00:00",
+      "observedUrl": "https://registry.npmjs.org/lexical/latest",
+      "url": "https://registry.npmjs.org/lexical/0.52.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "typescript": ">=5.2"
+      },
+      "peerDependenciesMeta": {
+        "typescript": {
+          "optional": true
+        }
+      },
+      "responseSha256": "7c60a255b4cdfa67f3943f0add7ee2d7aa99e79cbe35efc89a5a0948496d4116"
+    },
+    {
+      "package": "@blocknote/react",
+      "version": "0.56.0",
+      "checkedAt": "2026-10-20T15:25:00.454990+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40blocknote%2Freact/latest",
+      "url": "https://registry.npmjs.org/%40blocknote%2Freact/0.56.0",
+      "httpStatus": 200,
+      "license": "MPL-2.0",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^18.0 || ^19.0 || >= 19.0.0-rc",
+        "react-dom": "^18.0 || ^19.0 || >= 19.0.0-rc"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "f95eeea6003eecf49e54a4295cf316cc3e66994c7778d171ebad8e8fa1d6b39c"
+    },
+    {
+      "package": "algoliasearch",
+      "version": "5.60.0",
+      "checkedAt": "2026-10-20T15:25:00.621634+00:00",
+      "observedUrl": "https://registry.npmjs.org/algoliasearch/latest",
+      "url": "https://registry.npmjs.org/algoliasearch/5.60.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 14.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "ccc07d802a8ed79d994c7818eaba51e4907bceb8899c668e9a2f6162840bf8fe"
+    },
+    {
+      "package": "meilisearch",
+      "version": "0.62.0",
+      "checkedAt": "2026-10-20T15:25:00.702349+00:00",
+      "observedUrl": "https://registry.npmjs.org/meilisearch/latest",
+      "url": "https://registry.npmjs.org/meilisearch/0.62.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "5503b6f6decb5d6e06c3df77dbf294be77e925c0e04be09a3d9203a1d0ab965b"
+    },
+    {
+      "package": "typesense",
+      "version": "3.2.0",
+      "checkedAt": "2026-10-20T15:25:00.827177+00:00",
+      "observedUrl": "https://registry.npmjs.org/typesense/latest",
+      "url": "https://registry.npmjs.org/typesense/3.2.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {},
+      "peerDependencies": {
+        "@babel/runtime": "^7.23.2"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "97053617b7bde5cdfa98696074a19acd08e7456b1f57fb58d7ddd1bf56e18226"
+    },
+    {
+      "package": "maplibre-gl",
+      "version": "6.15.0",
+      "checkedAt": "2026-10-20T15:25:00.824959+00:00",
+      "observedUrl": "https://registry.npmjs.org/maplibre-gl/latest",
+      "url": "https://registry.npmjs.org/maplibre-gl/6.15.0",
+      "httpStatus": 200,
+      "license": "BSD-3-Clause",
+      "engines": {
+        "npm": ">=8.1.0",
+        "node": ">=16.14.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "3efd7f79bc47d0163a26e8692c3a80645582362b0bd16f20475751ad46ea779e"
+    },
+    {
+      "package": "mapbox-gl",
+      "version": "3.33.0",
+      "checkedAt": "2026-10-20T15:25:00.890103+00:00",
+      "observedUrl": "https://registry.npmjs.org/mapbox-gl/latest",
+      "url": "https://registry.npmjs.org/mapbox-gl/3.33.0",
+      "httpStatus": 200,
+      "license": "SEE LICENSE IN LICENSE.txt",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "4fef573054c4075617a3c42bd3eb2b91a563035655d6bfaa635a2a158de595fb"
+    },
+    {
+      "package": "@googlemaps/js-api-loader",
+      "version": "2.1.3",
+      "checkedAt": "2026-10-20T15:25:01.039149+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40googlemaps%2Fjs-api-loader/latest",
+      "url": "https://registry.npmjs.org/%40googlemaps%2Fjs-api-loader/2.1.3",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "3f81ba19ae1e214b042d959da732c9d2c9e03716f2e6ac0f36c7038cfb60b1e4"
+    },
+    {
+      "package": "ai",
+      "version": "7.0.146",
+      "checkedAt": "2026-10-20T15:25:01.002437+00:00",
+      "observedUrl": "https://registry.npmjs.org/ai/latest",
+      "url": "https://registry.npmjs.org/ai/7.0.146",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=22"
+      },
+      "peerDependencies": {
+        "zod": "^3.25.76 || ^4.1.8"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "dbbcaed9ae7a7eccd246da6490ec51996737bbce9c9e75298f930be9dd6745b7"
+    },
+    {
+      "package": "@ai-sdk/react",
+      "version": "4.0.150",
+      "checkedAt": "2026-10-20T15:25:01.082588+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40ai-sdk%2Freact/latest",
+      "url": "https://registry.npmjs.org/%40ai-sdk%2Freact/4.0.150",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=22"
+      },
+      "peerDependencies": {
+        "react": "^18 || ~19.0.1 || ~19.1.2 || ^19.2.1"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "3a5e2d0ec5184ac63640d0685733f9ebf1b014d648911163c87320c767239dbc"
+    },
+    {
+      "package": "@ai-sdk/openai",
+      "version": "4.0.98",
+      "checkedAt": "2026-10-20T15:25:01.155621+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40ai-sdk%2Fopenai/latest",
+      "url": "https://registry.npmjs.org/%40ai-sdk%2Fopenai/4.0.98",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=22"
+      },
+      "peerDependencies": {
+        "zod": "^3.25.76 || ^4.1.8"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "b63a641638fc6b23f2c531855b4d72fdab8b3cf326739c8cbed9790369ab1a58"
+    },
+    {
+      "package": "@ai-sdk/anthropic",
+      "version": "4.0.84",
+      "checkedAt": "2026-10-20T15:25:01.141513+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40ai-sdk%2Fanthropic/latest",
+      "url": "https://registry.npmjs.org/%40ai-sdk%2Fanthropic/4.0.84",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=22"
+      },
+      "peerDependencies": {
+        "zod": "^3.25.76 || ^4.1.8"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "e4dd2628c38123af8c9d0e2e423d55f3eb9816a7bc18daf26c9495aa2ed1aadd"
+    },
+    {
+      "package": "@ai-sdk/google",
+      "version": "4.0.101",
+      "checkedAt": "2026-10-20T15:25:01.311753+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40ai-sdk%2Fgoogle/latest",
+      "url": "https://registry.npmjs.org/%40ai-sdk%2Fgoogle/4.0.101",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=22"
+      },
+      "peerDependencies": {
+        "zod": "^3.25.76 || ^4.1.8"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "3b714a86afa9b973bd87a8b6a05fafd9e53f96b2c3cf28f6600db16182d4e0ee"
+    },
+    {
+      "package": "openai",
+      "version": "7.39.0",
+      "checkedAt": "2026-10-20T15:25:01.276305+00:00",
+      "observedUrl": "https://registry.npmjs.org/openai/latest",
+      "url": "https://registry.npmjs.org/openai/7.39.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "peerDependencies": {
+        "ws": "^8.21.0",
+        "zod": "^3.25 || ^4.0",
+        "undici": ">=5 <9",
+        "@smithy/hash-node": ">=4.3.0 <5",
+        "@smithy/signature-v4": ">=5.4.0 <6",
+        "@aws-sdk/credential-provider-node": ">=3.972.0 <4"
+      },
+      "peerDependenciesMeta": {
+        "ws": {
+          "optional": true
+        },
+        "zod": {
+          "optional": true
+        },
+        "undici": {
+          "optional": true
+        },
+        "@smithy/hash-node": {
+          "optional": true
+        },
+        "@smithy/signature-v4": {
+          "optional": true
+        },
+        "@aws-sdk/credential-provider-node": {
+          "optional": true
+        }
+      },
+      "responseSha256": "2397d60a1a4a9e92372bcffc0005888cfffad459310098bedd0968d49abdfd41"
+    },
+    {
+      "package": "@anthropic-ai/sdk",
+      "version": "0.135.0",
+      "checkedAt": "2026-10-20T15:25:01.422395+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40anthropic-ai%2Fsdk/latest",
+      "url": "https://registry.npmjs.org/%40anthropic-ai%2Fsdk/0.135.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "zod": "^3.25.0 || ^4.0.0"
+      },
+      "peerDependenciesMeta": {
+        "zod": {
+          "optional": true
+        }
+      },
+      "responseSha256": "dfe22c612ffcf1cba8fa9384764dfb160dc90c3a926e6a662a50e1afeaf90ed0"
+    },
+    {
+      "package": "@google/genai",
+      "version": "2.30.0",
+      "checkedAt": "2026-10-20T15:25:01.489378+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40google%2Fgenai/latest",
+      "url": "https://registry.npmjs.org/%40google%2Fgenai/2.30.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {
+        "@modelcontextprotocol/sdk": "^1.25.2"
+      },
+      "peerDependenciesMeta": {
+        "@modelcontextprotocol/sdk": {
+          "optional": true
+        }
+      },
+      "responseSha256": "0f1365664d6bb9f26dd1ff876c83165a321ac41fb8216ff3f77b7ac09eda89c4"
+    },
+    {
+      "package": "@google/generative-ai",
+      "version": "0.24.1",
+      "checkedAt": "2026-10-20T15:25:01.466095+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40google%2Fgenerative-ai/latest",
+      "url": "https://registry.npmjs.org/%40google%2Fgenerative-ai/0.24.1",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=18.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "d64395641cf6faf41024e0f0573a40917eef0cdc3eb04a4f3fe0114454270b05"
+    },
+    {
+      "package": "@openai/agents",
+      "version": "0.20.0",
+      "checkedAt": "2026-10-20T15:25:01.547199+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40openai%2Fagents/latest",
+      "url": "https://registry.npmjs.org/%40openai%2Fagents/0.20.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "zod": "^4.0.0"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "5bce3759d5e7d5688184dcfd95475c0d63815d7db070a9e31ce90d6f82a2a3d4"
+    },
+    {
+      "package": "@langchain/langgraph",
+      "version": "1.5.1",
+      "checkedAt": "2026-10-20T15:25:01.610375+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40langchain%2Flanggraph/latest",
+      "url": "https://registry.npmjs.org/%40langchain%2Flanggraph/1.5.1",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": {
+        "zod": "^3.25.32 || ^4.2.0",
+        "@langchain/core": "^1.1.48"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "a612b815a56fcd15541071b9a27a43891714f984aa227abcc921ed444a0f2a23"
+    },
+    {
+      "package": "@langchain/core",
+      "version": "1.2.19",
+      "checkedAt": "2026-10-20T15:25:01.807396+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40langchain%2Fcore/latest",
+      "url": "https://registry.npmjs.org/%40langchain%2Fcore/1.2.19",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=20"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "670ab374e625abe81186a5e665ce3b702e535bab6965ba318f14866f3d4f6255"
+    },
+    {
+      "package": "langfuse",
+      "version": "3.39.2",
+      "checkedAt": "2026-10-20T15:25:01.708752+00:00",
+      "observedUrl": "https://registry.npmjs.org/langfuse/latest",
+      "url": "https://registry.npmjs.org/langfuse/3.39.2",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "7fa0221def209a89daac7aab68ff553f4b172f539ea18aa477a5c30e5b0ae7f3"
+    },
+    {
+      "package": "langsmith",
+      "version": "0.11.0",
+      "checkedAt": "2026-10-20T15:25:01.734042+00:00",
+      "observedUrl": "https://registry.npmjs.org/langsmith/latest",
+      "url": "https://registry.npmjs.org/langsmith/0.11.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "ws": ">=7",
+        "openai": "*",
+        "@opentelemetry/api": "*",
+        "@opentelemetry/sdk-trace-base": "*",
+        "@opentelemetry/exporter-trace-otlp-proto": "*"
+      },
+      "peerDependenciesMeta": {
+        "ws": {
+          "optional": true
+        },
+        "openai": {
+          "optional": true
+        },
+        "@opentelemetry/api": {
+          "optional": true
+        },
+        "@opentelemetry/sdk-trace-base": {
+          "optional": true
+        },
+        "@opentelemetry/exporter-trace-otlp-proto": {
+          "optional": true
+        }
+      },
+      "responseSha256": "ace293b713de45faeef15bbdf0ba876c7944bc519c627e7eab515229c8e762d4"
+    },
+    {
+      "package": "@pinecone-database/pinecone",
+      "version": "9.0.0",
+      "checkedAt": "2026-10-20T15:25:01.810407+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40pinecone-database%2Fpinecone/latest",
+      "url": "https://registry.npmjs.org/%40pinecone-database%2Fpinecone/9.0.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "d8b8a977283d9955a6950e26e28f0f09ca64f04f531f63859fcfddd7c284e128"
+    },
+    {
+      "package": "@qdrant/js-client-rest",
+      "version": "1.19.0",
+      "checkedAt": "2026-10-20T15:25:01.878184+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40qdrant%2Fjs-client-rest/latest",
+      "url": "https://registry.npmjs.org/%40qdrant%2Fjs-client-rest/1.19.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "peerDependencies": {
+        "typescript": ">=4.7"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "95c86861852eed279fd1e6e35a4eb08b9f419913b5b49c9bf81a7c3ff81722ae"
+    },
+    {
+      "package": "@modelcontextprotocol/sdk",
+      "version": "1.32.1",
+      "checkedAt": "2026-10-20T15:25:02.047585+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40modelcontextprotocol%2Fsdk/latest",
+      "url": "https://registry.npmjs.org/%40modelcontextprotocol%2Fsdk/1.32.1",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": {
+        "zod": "^3.25 || ^4.0",
+        "@cfworker/json-schema": "^4.1.1"
+      },
+      "peerDependenciesMeta": {
+        "zod": {
+          "optional": false
+        },
+        "@cfworker/json-schema": {
+          "optional": true
+        }
+      },
+      "responseSha256": "f5c128c7275b7df970fac494cdc8036897cff9312cbb105bb0ba166ae5089846"
+    },
+    {
+      "package": "@slack/web-api",
+      "version": "8.2.0",
+      "checkedAt": "2026-10-20T15:25:03.422278+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40slack%2Fweb-api/latest",
+      "url": "https://registry.npmjs.org/%40slack%2Fweb-api/8.2.0",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "npm": ">=9.6.4",
+        "node": ">= 20"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "2c4025830e77eb43d2864263564bca75e41749eb0d7979ecf18557b64d3c7a8a"
+    },
+    {
+      "package": "@notionhq/client",
+      "version": "5.27.1",
+      "checkedAt": "2026-10-20T15:25:02.099897+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40notionhq%2Fclient/latest",
+      "url": "https://registry.npmjs.org/%40notionhq%2Fclient/5.27.1",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "c95ed71cd48a315084495dd683473a03797c7823edb140913de481e615e1164c"
+    },
+    {
+      "package": "@octokit/rest",
+      "version": "22.0.1",
+      "checkedAt": "2026-10-20T15:25:02.072603+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40octokit%2Frest/latest",
+      "url": "https://registry.npmjs.org/%40octokit%2Frest/22.0.1",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 20"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "880049992076ea62dbf614c5bed121ce5dfee9e0b83e86d2bba7ac240cfb24f0"
+    },
+    {
+      "package": "googleapis",
+      "version": "186.0.0",
+      "checkedAt": "2026-10-20T15:25:02.221058+00:00",
+      "observedUrl": "https://registry.npmjs.org/googleapis/latest",
+      "url": "https://registry.npmjs.org/googleapis/186.0.0",
+      "httpStatus": 200,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "22d1dcf4ae5be60b4548a1c855fe9b3c8b46e8996c4f477f36037ca57004a488"
+    },
+    {
+      "package": "@microsoft/microsoft-graph-client",
+      "version": "3.0.7",
+      "checkedAt": "2026-10-20T15:25:02.348718+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40microsoft%2Fmicrosoft-graph-client/latest",
+      "url": "https://registry.npmjs.org/%40microsoft%2Fmicrosoft-graph-client/3.0.7",
+      "httpStatus": 200,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {
+        "buffer": {
+          "optional": true
+        },
+        "@azure/identity": {
+          "optional": true
+        },
+        "stream-browserify": {
+          "optional": true
+        },
+        "@azure/msal-browser": {
+          "optional": true
+        }
+      },
+      "responseSha256": "bbf521e6790dfda5c9708d69bacc01aeddd1e6d7dce75585db5bdf26dd5ee5c4"
+    },
+    {
+      "package": "nango",
+      "version": "0.71.13",
+      "checkedAt": "2026-10-20T15:25:02.319081+00:00",
+      "observedUrl": "https://registry.npmjs.org/nango/latest",
+      "url": "https://registry.npmjs.org/nango/0.71.13",
+      "httpStatus": 200,
+      "license": "SEE LICENSE IN LICENSE FILE IN GIT REPOSITORY",
+      "engines": {
+        "node": ">=22.22.2"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {},
+      "responseSha256": "df5ae84f6cf1734df430accd3d09f96bb302fd260856ef9171ae09f83b9188df"
+    },
+    {
+      "package": "@composio/core",
+      "version": "0.25.0",
+      "checkedAt": "2026-10-20T15:25:02.727639+00:00",
+      "observedUrl": "https://registry.npmjs.org/%40composio%2Fcore/latest",
+      "url": "https://registry.npmjs.org/%40composio%2Fcore/0.25.0",
+      "httpStatus": 200,
+      "license": "ISC",
+      "engines": {
+        "node": ">=22.22.3"
+      },
+      "peerDependencies": {
+        "zod": ">=3.25.76 <5"
+      },
+      "peerDependenciesMeta": {},
+      "responseSha256": "2e3469404b466dfe9b2d12afbfcbe81a5f6b54b8bacd8d174004bf650640e62b"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,829 @@
+{
+  "checkedAt": "2026-10-20T14:54:39.497444+00:00",
+  "method": "Official npm downloads last-week endpoint; one observed window per record. Installation event counts are usage proxies with CI/transitive/SDK scope bias, not unique users, active customers or Next.js market share. Do not sum related client/server packages or compare unlike categories.",
+  "results": [
+    {
+      "group": "auth",
+      "package": "next-auth",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/next-auth",
+      "httpStatus": 200,
+      "downloads": 3991213,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/next-auth"
+    },
+    {
+      "group": "auth",
+      "package": "better-auth",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/better-auth",
+      "httpStatus": 200,
+      "downloads": 7801856,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/better-auth"
+    },
+    {
+      "group": "auth",
+      "package": "@clerk/nextjs",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40clerk%2Fnextjs",
+      "httpStatus": 200,
+      "downloads": 1724508,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40clerk%2Fnextjs"
+    },
+    {
+      "group": "auth",
+      "package": "@supabase/ssr",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40supabase%2Fssr",
+      "httpStatus": 200,
+      "downloads": 6424184,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40supabase%2Fssr"
+    },
+    {
+      "group": "auth",
+      "package": "@workos-inc/authkit-nextjs",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40workos-inc%2Fauthkit-nextjs",
+      "httpStatus": 200,
+      "downloads": 538814,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40workos-inc%2Fauthkit-nextjs"
+    },
+    {
+      "group": "auth",
+      "package": "@auth0/nextjs-auth0",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40auth0%2Fnextjs-auth0",
+      "httpStatus": 200,
+      "downloads": 614254,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40auth0%2Fnextjs-auth0"
+    },
+    {
+      "group": "data",
+      "package": "@tanstack/react-query",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40tanstack%2Freact-query",
+      "httpStatus": 200,
+      "downloads": 40112338,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40tanstack%2Freact-query"
+    },
+    {
+      "group": "data",
+      "package": "swr",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/swr",
+      "httpStatus": 200,
+      "downloads": 11391409,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/swr"
+    },
+    {
+      "group": "data",
+      "package": "@supabase/supabase-js",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40supabase%2Fsupabase-js",
+      "httpStatus": 200,
+      "downloads": 20655219,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40supabase%2Fsupabase-js"
+    },
+    {
+      "group": "data",
+      "package": "@neondatabase/serverless",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40neondatabase%2Fserverless",
+      "httpStatus": 200,
+      "downloads": 2955828,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40neondatabase%2Fserverless"
+    },
+    {
+      "group": "data",
+      "package": "convex",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/convex",
+      "httpStatus": 200,
+      "downloads": 1069594,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/convex"
+    },
+    {
+      "group": "data",
+      "package": "firebase",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/firebase",
+      "httpStatus": 200,
+      "downloads": 6174971,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/firebase"
+    },
+    {
+      "group": "data",
+      "package": "drizzle-orm",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/drizzle-orm",
+      "httpStatus": 200,
+      "downloads": 18338838,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/drizzle-orm"
+    },
+    {
+      "group": "data",
+      "package": "@prisma/client",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40prisma%2Fclient",
+      "httpStatus": 200,
+      "downloads": 11124022,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40prisma%2Fclient"
+    },
+    {
+      "group": "billing",
+      "package": "stripe",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/stripe",
+      "httpStatus": 200,
+      "downloads": 14526076,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/stripe"
+    },
+    {
+      "group": "billing",
+      "package": "@stripe/stripe-js",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40stripe%2Fstripe-js",
+      "httpStatus": 200,
+      "downloads": 8389460,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40stripe%2Fstripe-js"
+    },
+    {
+      "group": "billing",
+      "package": "@paddle/paddle-js",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40paddle%2Fpaddle-js",
+      "httpStatus": 200,
+      "downloads": 122976,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40paddle%2Fpaddle-js"
+    },
+    {
+      "group": "billing",
+      "package": "@paddle/paddle-node-sdk",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40paddle%2Fpaddle-node-sdk",
+      "httpStatus": 200,
+      "downloads": 101088,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40paddle%2Fpaddle-node-sdk"
+    },
+    {
+      "group": "billing",
+      "package": "@lemonsqueezy/lemonsqueezy.js",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40lemonsqueezy%2Flemonsqueezy.js",
+      "httpStatus": 200,
+      "downloads": 77657,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40lemonsqueezy%2Flemonsqueezy.js"
+    },
+    {
+      "group": "billing",
+      "package": "@polar-sh/sdk",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40polar-sh%2Fsdk",
+      "httpStatus": 200,
+      "downloads": 204424,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40polar-sh%2Fsdk"
+    },
+    {
+      "group": "email",
+      "package": "resend",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/resend",
+      "httpStatus": 200,
+      "downloads": 8132768,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/resend"
+    },
+    {
+      "group": "email",
+      "package": "@sendgrid/mail",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40sendgrid%2Fmail",
+      "httpStatus": 200,
+      "downloads": 2559309,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40sendgrid%2Fmail"
+    },
+    {
+      "group": "email",
+      "package": "postmark",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/postmark",
+      "httpStatus": 200,
+      "downloads": 642418,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/postmark"
+    },
+    {
+      "group": "email",
+      "package": "@react-email/components",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40react-email%2Fcomponents",
+      "httpStatus": 200,
+      "downloads": 4390731,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40react-email%2Fcomponents"
+    },
+    {
+      "group": "email",
+      "package": "@aws-sdk/client-ses",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40aws-sdk%2Fclient-ses",
+      "httpStatus": 200,
+      "downloads": 2280674,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40aws-sdk%2Fclient-ses"
+    },
+    {
+      "group": "operations",
+      "package": "@sentry/nextjs",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40sentry%2Fnextjs",
+      "httpStatus": 200,
+      "downloads": 7173701,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40sentry%2Fnextjs"
+    },
+    {
+      "group": "operations",
+      "package": "posthog-js",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/posthog-js",
+      "httpStatus": 200,
+      "downloads": 10131121,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/posthog-js"
+    },
+    {
+      "group": "operations",
+      "package": "@vercel/analytics",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40vercel%2Fanalytics",
+      "httpStatus": 200,
+      "downloads": 5088223,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40vercel%2Fanalytics"
+    },
+    {
+      "group": "operations",
+      "package": "inngest",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/inngest",
+      "httpStatus": 200,
+      "downloads": 1366095,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/inngest"
+    },
+    {
+      "group": "operations",
+      "package": "@trigger.dev/sdk",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40trigger.dev%2Fsdk",
+      "httpStatus": 200,
+      "downloads": 719542,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40trigger.dev%2Fsdk"
+    },
+    {
+      "group": "operations",
+      "package": "@novu/react",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40novu%2Freact",
+      "httpStatus": 200,
+      "downloads": 111828,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40novu%2Freact"
+    },
+    {
+      "group": "operations",
+      "package": "@knocklabs/react",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40knocklabs%2Freact",
+      "httpStatus": 200,
+      "downloads": 245355,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40knocklabs%2Freact"
+    },
+    {
+      "group": "files",
+      "package": "uploadthing",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/uploadthing",
+      "httpStatus": 200,
+      "downloads": 116430,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/uploadthing"
+    },
+    {
+      "group": "files",
+      "package": "@uploadthing/react",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40uploadthing%2Freact",
+      "httpStatus": 200,
+      "downloads": 85946,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40uploadthing%2Freact"
+    },
+    {
+      "group": "files",
+      "package": "cloudinary",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/cloudinary",
+      "httpStatus": 200,
+      "downloads": 558201,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/cloudinary"
+    },
+    {
+      "group": "files",
+      "package": "@supabase/storage-js",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40supabase%2Fstorage-js",
+      "httpStatus": 200,
+      "downloads": 20854850,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40supabase%2Fstorage-js"
+    },
+    {
+      "group": "files",
+      "package": "@aws-sdk/client-s3",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40aws-sdk%2Fclient-s3",
+      "httpStatus": 200,
+      "downloads": 29254399,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40aws-sdk%2Fclient-s3"
+    },
+    {
+      "group": "editing-search-maps",
+      "package": "@tiptap/react",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40tiptap%2Freact",
+      "httpStatus": 200,
+      "downloads": 11348991,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40tiptap%2Freact"
+    },
+    {
+      "group": "editing-search-maps",
+      "package": "lexical",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/lexical",
+      "httpStatus": 200,
+      "downloads": 3508231,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/lexical"
+    },
+    {
+      "group": "editing-search-maps",
+      "package": "@blocknote/react",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40blocknote%2Freact",
+      "httpStatus": 200,
+      "downloads": 451003,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40blocknote%2Freact"
+    },
+    {
+      "group": "editing-search-maps",
+      "package": "algoliasearch",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/algoliasearch",
+      "httpStatus": 200,
+      "downloads": 4655361,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/algoliasearch"
+    },
+    {
+      "group": "editing-search-maps",
+      "package": "meilisearch",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/meilisearch",
+      "httpStatus": 200,
+      "downloads": 443756,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/meilisearch"
+    },
+    {
+      "group": "editing-search-maps",
+      "package": "typesense",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/typesense",
+      "httpStatus": 200,
+      "downloads": 598289,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/typesense"
+    },
+    {
+      "group": "editing-search-maps",
+      "package": "maplibre-gl",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/maplibre-gl",
+      "httpStatus": 200,
+      "downloads": 3833943,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/maplibre-gl"
+    },
+    {
+      "group": "editing-search-maps",
+      "package": "mapbox-gl",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/mapbox-gl",
+      "httpStatus": 200,
+      "downloads": 2387306,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/mapbox-gl"
+    },
+    {
+      "group": "editing-search-maps",
+      "package": "@googlemaps/js-api-loader",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40googlemaps%2Fjs-api-loader",
+      "httpStatus": 200,
+      "downloads": 3520586,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40googlemaps%2Fjs-api-loader"
+    },
+    {
+      "group": "ai",
+      "package": "ai",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/ai",
+      "httpStatus": 200,
+      "downloads": 18352661,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/ai"
+    },
+    {
+      "group": "ai",
+      "package": "@ai-sdk/react",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40ai-sdk%2Freact",
+      "httpStatus": 200,
+      "downloads": 5664731,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40ai-sdk%2Freact"
+    },
+    {
+      "group": "ai",
+      "package": "@ai-sdk/openai",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40ai-sdk%2Fopenai",
+      "httpStatus": 200,
+      "downloads": 9228393,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40ai-sdk%2Fopenai"
+    },
+    {
+      "group": "ai",
+      "package": "@ai-sdk/anthropic",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40ai-sdk%2Fanthropic",
+      "httpStatus": 200,
+      "downloads": 8947087,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40ai-sdk%2Fanthropic"
+    },
+    {
+      "group": "ai",
+      "package": "@ai-sdk/google",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40ai-sdk%2Fgoogle",
+      "httpStatus": 200,
+      "downloads": 5527304,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40ai-sdk%2Fgoogle"
+    },
+    {
+      "group": "ai",
+      "package": "openai",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/openai",
+      "httpStatus": 200,
+      "downloads": 25338213,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/openai"
+    },
+    {
+      "group": "ai",
+      "package": "@anthropic-ai/sdk",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40anthropic-ai%2Fsdk",
+      "httpStatus": 200,
+      "downloads": 28258993,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40anthropic-ai%2Fsdk"
+    },
+    {
+      "group": "ai",
+      "package": "@google/genai",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40google%2Fgenai",
+      "httpStatus": 200,
+      "downloads": 14706880,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40google%2Fgenai"
+    },
+    {
+      "group": "ai",
+      "package": "@google/generative-ai",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40google%2Fgenerative-ai",
+      "httpStatus": 200,
+      "downloads": 2291499,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40google%2Fgenerative-ai"
+    },
+    {
+      "group": "ai",
+      "package": "@openai/agents",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40openai%2Fagents",
+      "httpStatus": 200,
+      "downloads": 1155073,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40openai%2Fagents"
+    },
+    {
+      "group": "ai",
+      "package": "@langchain/langgraph",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40langchain%2Flanggraph",
+      "httpStatus": 200,
+      "downloads": 2065793,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40langchain%2Flanggraph"
+    },
+    {
+      "group": "ai",
+      "package": "@langchain/core",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40langchain%2Fcore",
+      "httpStatus": 200,
+      "downloads": 3551272,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40langchain%2Fcore"
+    },
+    {
+      "group": "ai",
+      "package": "langfuse",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/langfuse",
+      "httpStatus": 200,
+      "downloads": 957202,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/langfuse"
+    },
+    {
+      "group": "ai",
+      "package": "langsmith",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/langsmith",
+      "httpStatus": 200,
+      "downloads": 4115594,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/langsmith"
+    },
+    {
+      "group": "ai",
+      "package": "@pinecone-database/pinecone",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40pinecone-database%2Fpinecone",
+      "httpStatus": 200,
+      "downloads": 473895,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40pinecone-database%2Fpinecone"
+    },
+    {
+      "group": "ai",
+      "package": "@qdrant/js-client-rest",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40qdrant%2Fjs-client-rest",
+      "httpStatus": 200,
+      "downloads": 542651,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40qdrant%2Fjs-client-rest"
+    },
+    {
+      "group": "ai",
+      "package": "@modelcontextprotocol/sdk",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40modelcontextprotocol%2Fsdk",
+      "httpStatus": 200,
+      "downloads": 39432481,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40modelcontextprotocol%2Fsdk"
+    },
+    {
+      "group": "connectors",
+      "package": "@slack/web-api",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40slack%2Fweb-api",
+      "httpStatus": 200,
+      "downloads": 7347713,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40slack%2Fweb-api"
+    },
+    {
+      "group": "connectors",
+      "package": "@notionhq/client",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40notionhq%2Fclient",
+      "httpStatus": 200,
+      "downloads": 1087506,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40notionhq%2Fclient"
+    },
+    {
+      "group": "connectors",
+      "package": "@octokit/rest",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40octokit%2Frest",
+      "httpStatus": 200,
+      "downloads": 11394096,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40octokit%2Frest"
+    },
+    {
+      "group": "connectors",
+      "package": "googleapis",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/googleapis",
+      "httpStatus": 200,
+      "downloads": 6242041,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/googleapis"
+    },
+    {
+      "group": "connectors",
+      "package": "@microsoft/microsoft-graph-client",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40microsoft%2Fmicrosoft-graph-client",
+      "httpStatus": 200,
+      "downloads": 1243474,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40microsoft%2Fmicrosoft-graph-client"
+    },
+    {
+      "group": "connectors",
+      "package": "nango",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/nango",
+      "httpStatus": 200,
+      "downloads": 71385,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/nango"
+    },
+    {
+      "group": "connectors",
+      "package": "@composio/core",
+      "url": "https://api.npmjs.org/downloads/point/2026-10-12:2026-10-18/%40composio%2Fcore",
+      "httpStatus": 200,
+      "downloads": 727460,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "observedUrl": "https://api.npmjs.org/downloads/point/last-week/%40composio%2Fcore"
+    }
+  ],
+  "retryCheckedAt": "2026-10-20T14:57:20.643810+00:00",
+  "retryAttempts": [
+    {
+      "package": "maplibre-gl",
+      "status": 200
+    },
+    {
+      "package": "mapbox-gl",
+      "status": 200
+    },
+    {
+      "package": "@googlemaps/js-api-loader",
+      "status": 200
+    },
+    {
+      "package": "ai",
+      "status": 200
+    },
+    {
+      "package": "@ai-sdk/react",
+      "status": 200
+    },
+    {
+      "package": "@ai-sdk/openai",
+      "status": 200
+    },
+    {
+      "package": "@ai-sdk/anthropic",
+      "status": 200
+    },
+    {
+      "package": "@ai-sdk/google",
+      "status": 200
+    },
+    {
+      "package": "openai",
+      "status": 200
+    },
+    {
+      "package": "@anthropic-ai/sdk",
+      "status": 200
+    },
+    {
+      "package": "@google/genai",
+      "status": 200
+    },
+    {
+      "package": "@google/generative-ai",
+      "status": 200
+    },
+    {
+      "package": "@openai/agents",
+      "status": 200
+    },
+    {
+      "package": "@langchain/langgraph",
+      "status": 200
+    },
+    {
+      "package": "@langchain/core",
+      "status": 200
+    },
+    {
+      "package": "langfuse",
+      "status": 200
+    },
+    {
+      "package": "langsmith",
+      "status": 200
+    },
+    {
+      "package": "@pinecone-database/pinecone",
+      "status": 200
+    },
+    {
+      "package": "@qdrant/js-client-rest",
+      "status": 200
+    },
+    {
+      "package": "@modelcontextprotocol/sdk",
+      "status": 200
+    },
+    {
+      "package": "@slack/web-api",
+      "status": 200
+    },
+    {
+      "package": "@notionhq/client",
+      "status": 200
+    },
+    {
+      "package": "@octokit/rest",
+      "status": 200
+    },
+    {
+      "package": "googleapis",
+      "status": 200
+    },
+    {
+      "package": "@microsoft/microsoft-graph-client",
+      "status": 200
+    },
+    {
+      "package": "nango",
+      "status": 200
+    },
+    {
+      "package": "@composio/core",
+      "status": 200
+    }
+  ],
+  "schemaVersion": 1,
+  "baselineCommit": "a93ab113170ec1456608cf1f85d1a89b23aaec68",
+  "window": {
+    "start": "2026-10-12",
+    "end": "2026-10-18",
+    "inclusive": true
+  },
+  "packageCount": 70,
+  "limitations": {
+    "en": "Package installation counts include CI, transitive dependencies and different SDK roles. This is a selected JavaScript package sample, not unique users, active customers, provider revenue or Next.js market share. Do not sum related packages or create a ranking across unlike roles.",
+    "es": "Los recuentos incluyen CI, dependencias transitivas y SDKs con funciones distintas. Es una muestra de paquetes JavaScript seleccionados, no usuarios únicos, clientes activos, ingresos ni cuota de Next.js. No sumar paquetes relacionados ni clasificar funciones distintas en un ranking común."
+  }
+}

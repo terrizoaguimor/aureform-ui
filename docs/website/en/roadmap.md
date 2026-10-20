@@ -18,6 +18,8 @@ These are frontend workflows and contracts. Live identity, tenant authorization,
 
 The [October 2026 research](research.md) compares eight references, reviews the original 20 findings against commit `70b40b5`, and prioritizes eight improvements. Three completed headless AGY investigations recorded 52 web searches, followed by independent primary-source and code review. The [earlier gap study](../../research-gaps-1.4.es.md) remains available with its original scope.
 
+The separate [integration research](integration-research.md) reviews baseline `a93ab113`, with four completed AGY investigations, 99 observed searches and a common 12–18 October npm window for 70 packages. Its P0/P1/P2 shortlist starts with connected data, replaceable identity, the existing Stripe transport and optional AI SDK recipes, then operational services and product connectors. Candidate cards identify existing frontend seams, proposed UI, consumer-backend requirements and license boundaries. These recommendations do not add live provider connections or new public adapter APIs.
+
 The [public quality page](https://aureformui.com/en/quality/) displays the latest published Lighthouse snapshot and its exact audited commit. Collection covers three pages, two profiles and three runs per combination. The tooling retains complete reports and verifies their hashes; an empty snapshot is presented without invented scores.
 
 The first measured application commit is `0caf7c8`: landing performance 93/100, installation docs 94/100 and dashboard 40/67, mobile/desktop. These lab medians make dashboard profiling and route-loading work a concrete next step. They do not identify one cause or certify other application pages.
