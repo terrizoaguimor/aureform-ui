@@ -6,7 +6,7 @@
 
 A Next.js UI kit for dashboards, SaaS workspaces and internal tools, with a visual appearance studio and an editable Figma companion.
 
-[**Explore the demo ↗**](https://aureformui.com/en/) · [**Documentation**](https://aureformui.com/en/docs/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Get started](#get-started) · [Contribute](CONTRIBUTING.md) · [Español](README.es.md)
+[**Explore the demo ↗**](https://aureformui.com/en/) · [**Documentation**](https://aureformui.com/en/docs/) · [Quality & Lighthouse](https://aureformui.com/en/quality/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Sponsor](https://github.com/sponsors/terrizoaguimor) · [Get started](#get-started) · [Contribute](CONTRIBUTING.md) · [Español](README.es.md)
 
 [![Live demo on Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/en/) [![Documentation: 22 chapters](https://img.shields.io/badge/docs-22%20chapters-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/en/docs/) [![Editable Figma library](https://img.shields.io/badge/Figma-editable%20library-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![shadcn source registry](https://img.shields.io/badge/shadcn-source%20registry-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
 
@@ -144,7 +144,7 @@ Versioned packaging and QA records retain their original scope. See the [open-so
 
 ## Documentation and deployment
 
-[![Cloudflare Workers Static Assets](https://img.shields.io/badge/Cloudflare-Workers%20Static%20Assets-111827?style=flat-square&logo=cloudflare&logoColor=F38020)](docs/cloudflare-deployment.md) [![Static HTML, canonical URLs and hreflang](https://img.shields.io/badge/SEO-static%20HTML%20%2B%20hreflang-111827?style=flat-square)](docs/release-checklist-1.4.1.md) [![Product gap research: 20 findings](https://img.shields.io/badge/research-20%20findings-8F652A?style=flat-square)](https://aureformui.com/es/docs/research/)
+[![Cloudflare Workers Static Assets](https://img.shields.io/badge/Cloudflare-Workers%20Static%20Assets-111827?style=flat-square&logo=cloudflare&logoColor=F38020)](docs/cloudflare-deployment.md) [![Static HTML, canonical URLs and hreflang](https://img.shields.io/badge/SEO-static%20HTML%20%2B%20hreflang-111827?style=flat-square)](docs/release-checklist-1.4.1.md) [![Gemini 4 Argon research: eight priorities](https://img.shields.io/badge/research-8%20priorities-8F652A?style=flat-square)](https://aureformui.com/en/docs/research/)
 
 [Read the documentation](https://aureformui.com/en/docs/) without opening the demo workspace. Its 22 chapters cover installation, components, tokens, motion, charts, tables, application integrations, Figma and deployment, with searchable headings, a page outline and copyable code. Navigation is available in English and Spanish; references that retain their original language are identified on the page.
 
@@ -160,9 +160,33 @@ pnpm deploy:cloudflare
 
 Set `NEXT_PUBLIC_SITE_URL` for your own canonical origin. Cloudflare deployment requires your account credentials; the demo and local build require none. Generated deployment state is excluded from Git and source packages.
 
-The [product gap research](docs/research-gaps-1.4.es.md) records observed limitations, primary sources, proposed workflows and acceptance criteria. It separates delivered features from ideas that still need user validation.
+The [bilingual product research](docs/website/en/research.md) combines three headless Gemini 4 Argon investigations, 52 observed searches, independent source review and eight priorities with acceptance criteria. Its [execution and verification ledgers](docs/research/2026-10-20/) separate recorded evidence from proposals that need user validation. The [original 20-finding study](docs/research-gaps-1.4.es.md) remains available.
+
+## Quality you can inspect
+
+[![Lighthouse audit workflow](https://img.shields.io/github/actions/workflow/status/terrizoaguimor/aureform-ui/quality.yml?branch=main&style=flat-square&label=Lighthouse%20CI)](https://github.com/terrizoaguimor/aureform-ui/actions/workflows/quality.yml)
+
+<!-- BEGIN:quality-results -->
+The first reproducible Lighthouse snapshot will be published after the corresponding production build is verified. [The quality page](https://aureformui.com/en/quality/) records the audited commit, methodology and full reports; no scores are advertised before measurement.
+<!-- END:quality-results -->
+
+Each snapshot audits the landing, installation documentation and demo dashboard on mobile and desktop, three times per combination. Published values are medians of laboratory measurements. Raw HTML and JSON reports remain available in [the repository](docs/quality/lighthouse/) and on the website. See [the measurement guide](docs/quality/README.md) to reproduce or update them.
+
+The demo dashboard deliberately remains `noindex`; its SEO result reflects that policy. Lighthouse accessibility checks cover the audited pages and do not certify the whole kit. Laboratory loading metrics are separate from field Core Web Vitals.
+
+## Support the maintainer
+
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-support%20the%20maintainer-8F652A?style=flat-square&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/terrizoaguimor)
+
+If Aureform helps your work, you can [sponsor the maintainer](https://github.com/sponsors/terrizoaguimor) through the existing personal GitHub Sponsors profile. Support is voluntary; the source, original assets and documentation remain open under Apache 2.0.
 
 ## Contribute
+
+Help people find and evaluate the kit through relevant GitHub communities.
+[Discovery research and eligible destinations](docs/github-discovery.md) include
+maintained frontend lists, registry directories and focused submission drafts.
+The repository's topics and About description identify its actual stack and
+scope.
 
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-8F652A?style=flat-square)](CONTRIBUTING.md) [![GitHub stars](https://img.shields.io/github/stars/terrizoaguimor/aureform-ui?style=flat-square&logo=github&color=8F652A)](https://github.com/terrizoaguimor/aureform-ui/stargazers) [![GitHub forks](https://img.shields.io/github/forks/terrizoaguimor/aureform-ui?style=flat-square&logo=github&color=8F652A)](https://github.com/terrizoaguimor/aureform-ui/forks) [![Open issues](https://img.shields.io/github/issues/terrizoaguimor/aureform-ui?style=flat-square&logo=github&color=8F652A)](https://github.com/terrizoaguimor/aureform-ui/issues)
 

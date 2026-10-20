@@ -6,7 +6,7 @@
 
 Un UI kit de Next.js para dashboards, espacios SaaS y herramientas internas, con un estudio de apariencia y una biblioteca editable de Figma.
 
-[**Explorar la demo ↗**](https://aureformui.com/es/) · [**Documentación**](https://aureformui.com/es/docs/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Empezar](#empezar) · [Contribuir](CONTRIBUTING.md) · [English](README.md)
+[**Explorar la demo ↗**](https://aureformui.com/es/) · [**Documentación**](https://aureformui.com/es/docs/) · [Calidad y Lighthouse](https://aureformui.com/es/quality/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Patrocinar](https://github.com/sponsors/terrizoaguimor) · [Empezar](#empezar) · [Contribuir](CONTRIBUTING.md) · [English](README.md)
 
 [![Demo publicada en Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/es/) [![Documentación: 22 capítulos](https://img.shields.io/badge/docs-22%20cap%C3%ADtulos-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/es/docs/) [![Biblioteca editable de Figma](https://img.shields.io/badge/Figma-biblioteca%20editable-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![Registry de código de shadcn](https://img.shields.io/badge/shadcn-registry%20de%20c%C3%B3digo-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
 
@@ -144,7 +144,7 @@ Los registros de packaging y QA conservan su versión y alcance originales. La [
 
 ## Documentación y despliegue
 
-[![Cloudflare Workers Static Assets](https://img.shields.io/badge/Cloudflare-Workers%20Static%20Assets-111827?style=flat-square&logo=cloudflare&logoColor=F38020)](docs/cloudflare-deployment.es.md) [![HTML estático, URLs canónicas y hreflang](https://img.shields.io/badge/SEO-HTML%20est%C3%A1tico%20%2B%20hreflang-111827?style=flat-square)](docs/release-checklist-1.4.1.md) [![Research de oportunidades: 20 hallazgos](https://img.shields.io/badge/research-20%20hallazgos-8F652A?style=flat-square)](https://aureformui.com/es/docs/research/)
+[![Cloudflare Workers Static Assets](https://img.shields.io/badge/Cloudflare-Workers%20Static%20Assets-111827?style=flat-square&logo=cloudflare&logoColor=F38020)](docs/cloudflare-deployment.es.md) [![HTML estático, URLs canónicas y hreflang](https://img.shields.io/badge/SEO-HTML%20est%C3%A1tico%20%2B%20hreflang-111827?style=flat-square)](docs/release-checklist-1.4.1.md) [![Research Gemini 4 Argon: ocho prioridades](https://img.shields.io/badge/research-8%20prioridades-8F652A?style=flat-square)](https://aureformui.com/es/docs/research/)
 
 [Lee la documentación](https://aureformui.com/es/docs/) sin abrir el workspace de la demo. Sus 22 capítulos cubren instalación, componentes, tokens, movimiento, charts, tablas, integraciones, Figma y despliegue, con búsqueda por títulos y secciones, índice de página y código copiable. La navegación está disponible en español e inglés; las referencias que conservan su idioma original lo indican en la página.
 
@@ -160,9 +160,33 @@ pnpm deploy:cloudflare
 
 Configura `NEXT_PUBLIC_SITE_URL` con el dominio canónico de tu proyecto. Desplegar requiere acceso a tu cuenta de Cloudflare; ejecutar la demo y construirla localmente no requiere credenciales. El estado generado de despliegue se excluye de Git y de los paquetes de código.
 
-El [research de oportunidades](docs/research-gaps-1.4.es.md) reúne limitaciones observadas, fuentes primarias, flujos propuestos y criterios de aceptación. Distingue lo entregado de las ideas que aún necesitan validación con usuarios.
+La [investigación bilingüe de producto](docs/website/es/research.md) combina tres investigaciones headless con Gemini 4 Argon, 52 búsquedas observadas, revisión independiente de fuentes y ocho prioridades con criterios de aceptación. Sus [registros de ejecución y verificación](docs/research/2026-10-20/) separan evidencia de propuestas que necesitan validación con usuarios. El [estudio original de 20 hallazgos](docs/research-gaps-1.4.es.md) sigue disponible.
+
+## Calidad que puedes comprobar
+
+[![Workflow de auditorías Lighthouse](https://img.shields.io/github/actions/workflow/status/terrizoaguimor/aureform-ui/quality.yml?branch=main&style=flat-square&label=Lighthouse%20CI)](https://github.com/terrizoaguimor/aureform-ui/actions/workflows/quality.yml)
+
+<!-- BEGIN:quality-results -->
+La primera medición Lighthouse reproducible se publicará tras verificar el build correspondiente en producción. [La página de calidad](https://aureformui.com/es/quality/) registra el commit auditado, la metodología y los informes completos; los puntajes se publican después de medirlos.
+<!-- END:quality-results -->
+
+Cada medición audita la landing, la documentación de instalación y el dashboard demo en móvil y escritorio, tres veces por combinación. Los valores publicados son medianas de mediciones de laboratorio. Los informes HTML y JSON originales están disponibles en [el repositorio](docs/quality/lighthouse/) y en el sitio. Consulta [la guía de medición](docs/quality/README.md) para reproducirlos o actualizarlos.
+
+El dashboard demo conserva deliberadamente `noindex`; su resultado SEO refleja esa política. Las comprobaciones de accesibilidad de Lighthouse cubren las páginas auditadas y no certifican todo el kit. Las métricas de carga de laboratorio tienen un alcance distinto de Core Web Vitals de usuarios reales.
+
+## Apoya al mantenedor
+
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-apoya%20al%20mantenedor-8F652A?style=flat-square&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/terrizoaguimor)
+
+Si Aureform te ayuda en tu trabajo, puedes [patrocinar al mantenedor](https://github.com/sponsors/terrizoaguimor) mediante su perfil personal actual de GitHub Sponsors. El apoyo es voluntario; el código, los recursos originales y la documentación siguen abiertos bajo Apache 2.0.
 
 ## Contribuir
+
+Ayuda a que otras personas encuentren y evalúen el kit en comunidades relevantes
+de GitHub. La [investigación de difusión y destinos adecuados](docs/github-discovery.es.md)
+incluye listas de frontend mantenidas, directorios de registros y borradores
+específicos. Los topics y la descripción About identifican el stack y alcance
+reales del repositorio.
 
 [![Contribuciones bienvenidas](https://img.shields.io/badge/contribuciones-bienvenidas-8F652A?style=flat-square)](CONTRIBUTING.md) [![Estrellas en GitHub](https://img.shields.io/github/stars/terrizoaguimor/aureform-ui?style=flat-square&logo=github&color=8F652A)](https://github.com/terrizoaguimor/aureform-ui/stargazers) [![Forks en GitHub](https://img.shields.io/github/forks/terrizoaguimor/aureform-ui?style=flat-square&logo=github&color=8F652A)](https://github.com/terrizoaguimor/aureform-ui/forks) [![Issues abiertas](https://img.shields.io/github/issues/terrizoaguimor/aureform-ui?style=flat-square&logo=github&color=8F652A)](https://github.com/terrizoaguimor/aureform-ui/issues)
 

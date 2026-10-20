@@ -1,5 +1,7 @@
 import { test, expect, type BrowserContext, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { readFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 
 type WebsiteLocale = "en" | "es";
 const locales = ["en", "es"] as const;
@@ -46,7 +48,7 @@ const copy = {
   },
 } as const;
 
-// Independent publication expectations: 19 bilingual chapters plus 3 fallbacks.
+// Independent publication expectations: 20 bilingual chapters plus 2 fallbacks.
 const bilingualChapters = [
   "",
   "installation",
@@ -67,11 +69,192 @@ const bilingualChapters = [
   "deployment",
   "license",
   "roadmap",
+  "research",
 ] as const;
 
 function targetURL(baseURL?: string) {
   return new URL(baseURL || defaultBaseURL);
 }
+
+for (const locale of locales) {
+  test(`${locale}: public quality evidence has localized metadata, six real route/profile rows and a maintainer sponsorship link`, async ({
+    page,
+    request,
+    baseURL,
+  }) => {
+    const url = localPage(baseURL, locale, "quality");
+    const response = await request.get(url);
+    expect(response.status()).toBe(200);
+    const source = await response.text();
+    const metadata = await readHTML(page, source);
+    expectPublishedAlternates(metadata, locale, "quality");
+    expect(metadata.documentLanguage).toBe(locale);
+    expect(metadata.robots).not.toMatch(/\bnoindex\b/);
+    const rendered = await page.evaluate((html) => {
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      return {
+        rows: Array.from(
+          doc.querySelectorAll(
+            "#quality-measurements tbody tr[data-quality-route]",
+          ),
+          (row) => ({
+            route: row.getAttribute("data-quality-route"),
+            profile: row.getAttribute("data-quality-profile"),
+            status: row.getAttribute("data-quality-status"),
+          }),
+        ),
+        reportLinks: Array.from(
+          doc.querySelectorAll<HTMLAnchorElement>(
+            '#quality-measurements a[href*="/quality-reports/"]',
+          ),
+          (link) => link.getAttribute("href"),
+        ),
+      };
+    }, source);
+    expect(rendered.rows).toHaveLength(6);
+    expect(
+      rendered.rows.map((row) => `${row.route}:${row.profile}`).sort(),
+    ).toEqual([
+      "dashboard:desktop",
+      "dashboard:mobile",
+      "documentation:desktop",
+      "documentation:mobile",
+      "landing:desktop",
+      "landing:mobile",
+    ]);
+
+    const history = JSON.parse(
+      await readFile("docs/quality/lighthouse/index.json", "utf8"),
+    ) as Array<{
+      id: string;
+      createdAt: string;
+      sourceCommit: string;
+      targetOrigin: string;
+      environment: { lighthouse: string };
+      results: Array<{
+        pathname: string;
+        runs: Array<{
+          json: string;
+          html: string;
+          sha256: { json: string; html: string };
+        }>;
+      }>;
+    }>;
+    const snapshot = history.sort((left, right) =>
+      right.createdAt.localeCompare(left.createdAt),
+    )[0];
+    if (snapshot) {
+      expect(rendered.rows.every((row) => row.status === "recorded")).toBe(
+        true,
+      );
+      expect(rendered.reportLinks).toHaveLength(36);
+      if (locale === "en") {
+        // Fetch the actual published bytes, not only rendered summary values.
+        for (const result of snapshot.results) {
+          for (const run of result.runs) {
+            for (const format of ["json", "html"] as const) {
+              const report = await request.get(
+                localResource(
+                  baseURL,
+                  `quality-reports/${snapshot.id}/${run[format]}`,
+                ),
+              );
+              expect(report.status()).toBe(200);
+              const bytes = await report.body();
+              expect(createHash("sha256").update(bytes).digest("hex")).toBe(
+                run.sha256[format],
+              );
+              if (format === "json") {
+                const raw = JSON.parse(bytes.toString("utf8"));
+                expect(raw.lighthouseVersion).toBe(
+                  snapshot.environment.lighthouse,
+                );
+                expect(raw.runtimeError).toBeUndefined();
+                expect(raw.finalDisplayedUrl ?? raw.finalUrl).toBe(
+                  `${snapshot.targetOrigin}${result.pathname}`,
+                );
+              }
+            }
+          }
+        }
+      }
+    } else {
+      expect(rendered.rows.every((row) => row.status === "unmeasured")).toBe(
+        true,
+      );
+      expect(rendered.reportLinks).toEqual([]);
+    }
+
+    await page.goto(url);
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    await expect(
+      page
+        .locator('a[href="https://github.com/sponsors/terrizoaguimor"]')
+        .first(),
+    ).toBeVisible();
+    if (snapshot) {
+      await expect(
+        page
+          .locator(
+            `a[href="https://github.com/terrizoaguimor/aureform-ui/commit/${snapshot.sourceCommit}"]`,
+          )
+          .first(),
+      ).toBeVisible();
+    }
+  });
+}
+
+test("Spanish quality remains readable on touch in both themes and keyboard navigation reaches its evidence", async ({
+  browser,
+  baseURL,
+}, testInfo) => {
+  const context = await browser.newContext({
+    viewport: { width: 360, height: 900 },
+    reducedMotion: "reduce",
+  });
+  await context.addInitScript(() => {
+    localStorage.setItem("aureform:theme", "light");
+  });
+  const page = await context.newPage();
+  try {
+    await page.goto(localPage(baseURL, "es", "quality"));
+    await expect(page.locator("html")).not.toHaveClass(/\bdark\b/);
+    await page.keyboard.press("Tab");
+    await expect(
+      page.getByRole("link", { name: "Saltar a los informes de calidad" }),
+    ).toBeFocused();
+    await page.keyboard.press("Enter");
+    await expect(page.getByRole("main")).toBeFocused();
+    for (const appearance of ["light", "dark"]) {
+      const bounds = await page.evaluate(() => ({
+        viewport: window.innerWidth,
+        document: document.documentElement.scrollWidth,
+        rows: document.querySelectorAll("[data-quality-route]").length,
+      }));
+      expect(bounds.document).toBeLessThanOrEqual(bounds.viewport + 1);
+      expect(bounds.rows).toBeGreaterThanOrEqual(6);
+      const result = await new AxeBuilder({ page })
+        .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
+        .analyze();
+      await testInfo.attach(`quality-${appearance}-axe.json`, {
+        body: Buffer.from(JSON.stringify(result)),
+        contentType: "application/json",
+      });
+      expect(
+        result.violations.filter(
+          (violation) =>
+            violation.impact === "serious" || violation.impact === "critical",
+        ),
+      ).toEqual([]);
+      if (appearance === "light") {
+        await page.getByRole("button", { name: /theme|tema/i }).click();
+        await expect(page.locator("html")).toHaveClass(/\bdark\b/);
+      }
+    }
+  } finally {
+    await context.close();
+  }
+});
 
 function localResource(baseURL: string | undefined, resource: string) {
   const target = targetURL(baseURL);
@@ -399,7 +582,6 @@ test("sitemap and robots use the public domain and only publish available chapte
     ),
     publishedPage("en", "docs/registry"),
     publishedPage("en", "docs/contributing"),
-    publishedPage("es", "docs/research"),
   ];
   expect(
     locations.filter((url) => new URL(url).pathname.includes("/docs/")).sort(),
@@ -429,7 +611,10 @@ test("sitemap and robots use the public domain and only publish available chapte
   expect(
     entries.find((entry) => entry.url === publishedPage("es", "docs/research"))
       ?.alternates,
-  ).toEqual({ es: publishedPage("es", "docs/research") });
+  ).toEqual({
+    en: publishedPage("en", "docs/research"),
+    es: publishedPage("es", "docs/research"),
+  });
 
   const robotsResponse = await request.get(
     localResource(baseURL, "robots.txt"),
@@ -482,33 +667,29 @@ test("Spanish registry and contributing retain Spanish navigation with an explic
   }
 });
 
-test("English research retains English navigation with an explicit Spanish-content notice and no English hreflang", async ({
+test("the grounded research is available in English with its own canonical and reciprocal Spanish hreflang", async ({
   page,
   request,
   baseURL,
 }) => {
   const url = localPage(baseURL, "en", "docs/research");
-  const notice =
-    "This research chapter is currently available in Spanish. Navigation remains in English.";
   const response = await request.get(url);
   expect(response.status()).toBe(200);
   const html = await readHTML(page, await response.text());
-  const canonical = publishedPage("es", "docs/research");
   expect(html.documentLanguage).toBe("en");
-  expect(html.articleLanguage).toBe("es");
-  expect(html.articleText).toContain(notice);
-  expect(html.canonicals).toEqual([canonical]);
-  expect(html.alternates).toEqual({ es: canonical });
-  expect(html.robots).toMatch(/\bnoindex\b/);
+  expect(html.articleLanguage).toBe("en");
+  expect(html.articleText).toContain("Gemini 4 Argon High");
+  expect(html.articleText).not.toContain(
+    "This research chapter is currently available in Spanish.",
+  );
+  expectPublishedAlternates(html, "en", "docs/research");
+  expect(html.robots).not.toMatch(/\bnoindex\b/);
 
   await page.goto(url);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Product gap research",
   );
-  await expect(
-    page.getByRole("main").getByText(notice, { exact: true }),
-  ).toBeVisible();
-  await expect(page.locator("main article")).toHaveAttribute("lang", "es");
+  await expect(page.locator("main article")).toHaveAttribute("lang", "en");
   await expect(
     page.getByRole("navigation", { name: copy.en.sections, exact: true }),
   ).toBeVisible();
@@ -724,7 +905,7 @@ test("landing and docs share the selected light/dark mode across reloads, locale
   await expect(root).toHaveClass(/\bdark\b/);
 });
 
-for (const sitePath of ["", "docs/installation"]) {
+for (const sitePath of ["", "docs/installation", "quality"]) {
   test(`${sitePath || "landing"}: application code loads only after opening the demo`, async ({
     page,
     request,

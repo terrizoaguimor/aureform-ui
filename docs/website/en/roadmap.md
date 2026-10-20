@@ -14,16 +14,32 @@ The application baseline has 69 demo views, 44 core component families, 107 regi
 
 These are frontend workflows and contracts. Live identity, tenant authorization, shared storage, financial operations and durable jobs remain consumer responsibilities. See [application integration](../../../docs/application-integrations.md) and the [1.4 release record](../../../docs/release-checklist-1.4.0.md).
 
-## Research candidates
+## Evidence and community delivery
 
-The [current gap study](../../../docs/research-gaps-1.4.es.md) records proposals against the 1.4 baseline. Examples include:
+The [October 2026 research](research.md) compares eight references, reviews the original 20 findings against commit `70b40b5`, and prioritizes eight improvements. Three completed headless AGY investigations recorded 52 web searches, followed by independent primary-source and code review. The [earlier gap study](../../research-gaps-1.4.es.md) remains available with its original scope.
 
-- Better continuity when updating customized copied source, building on existing previews and receipts.
-- Explicit expired-session, stale-response, conflict and partial-failure scenarios with recoverable drafts.
-- Richer commerce quotations, deferred payment states, returns/refunds and plan-change previews.
-- Analytics freshness and missing-data semantics, regional preferences, and additional touch/keyboard interaction for dense views.
+The [public quality page](https://aureformui.com/en/quality/) displays the latest published Lighthouse snapshot and its exact audited commit. Collection covers three pages, two profiles and three runs per combination. The tooling retains complete reports and verifies their hashes; an empty snapshot is presented without invented scores.
 
-These proposals do not introduce public APIs by appearing in a document. A candidate needs implementation and a new acceptance record before it becomes delivered behavior. The [pilot plan](../../../docs/pilot-validation.es.md) proposes interviews and voluntary integrations; it does not establish adoption rates or measured time savings.
+GitHub Sponsors supports the maintainer, and the [GitHub discovery guide](../../github-discovery.md) records appropriate directories, their submission rules and prepared proposals. Directory acceptance and community adoption remain external outcomes.
+
+## Priorities for the next product changes
+
+These proposals do not introduce public APIs by appearing in a document. Each needs a bounded implementation and new acceptance evidence. The detailed research records impact, effort, confidence and observable acceptance for every priority.
+
+| Priority | Proposed change                               | Evidence needed before delivery                                                                                                 |
+| -------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 1        | Installation recipes and consumer diagnostics | Install in clean applications, validate actual dependency ranges and explain module CSS/context requirements                    |
+| 2        | Scenario and recovery lab                     | Demonstrate late responses, conflicts, partial failure, cancellation and recoverable drafts through shared contracts            |
+| 3        | Dense task accessibility and visual budgets   | Complete representative tasks by keyboard and touch, review focus/overlay behavior and measure motion at the actual data volume |
+| 4        | Data absence, freshness and shared formatting | Distinguish zero, unknown and error; preserve chart/table values, units, timezones and filters                                  |
+| 5        | Continuity for customized source updates      | Retain a comparison base, review local/upstream conflicts before writes and restore the previous installation                   |
+| 6        | Context, sessions and long-running work       | Exercise workspace changes, concurrent tabs, recipient invitations and discoverable import status                               |
+| 7        | Commerce and integration operation states     | Choose and complete a quote/payment/return journey with replaceable typed transports and explicit pending/error states          |
+| 8        | Evidence, documentation and discovery         | Retain measured quality evidence, validate installation examples and report actual community integrations                       |
+
+Start with installation clarity and a small scenario lab, then evaluate dense task interactions and analytics semantics. Source-update continuity and durable workflow boundaries require broader contracts. Choose one integration journey at a time instead of treating every proposed screen as a simultaneous release.
+
+The [pilot plan](../../pilot-validation.es.md) proposes 8–12 interviews and 3–5 voluntary integrations. Those are recruitment targets, not completed interviews or adoption figures. Record completion, assistance, failures and willingness to reuse the kit before changing the order.
 
 ## Native design and verification boundaries
 

@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const locale of locales) {
     for (const path of [
       "",
+      "quality",
       ...routes
         .filter((route) => indexableDemoPaths.has(route.path))
         .map((route) => route.path),

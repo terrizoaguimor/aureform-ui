@@ -33219,6 +33219,11 @@
           "target": "@lib/public-path.ts"
         },
         {
+          "path": "src/lib/site-config.ts",
+          "type": "registry:lib",
+          "target": "@lib/site-config.ts"
+        },
+        {
           "path": "src/lib/utils.ts",
           "type": "registry:lib",
           "target": "@lib/utils.ts"

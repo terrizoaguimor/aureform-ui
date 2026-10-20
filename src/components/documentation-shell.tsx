@@ -10,7 +10,9 @@ import {
   BookOpen,
   ChevronDown,
   ChevronRight,
+  CircleGauge,
   Github,
+  Heart,
   Menu,
   Moon,
   Sun,
@@ -18,6 +20,7 @@ import {
 import { messages, type Locale } from "@/i18n/messages";
 import type { DocNavigationItem } from "@/lib/documentation";
 import { githubUrl, kitVersion } from "@/lib/catalog";
+import { sponsorsUrl } from "@/lib/site-config";
 import { Brand } from "@/components/brand";
 import {
   AppearanceProvider,
@@ -257,7 +260,7 @@ function DocumentationFrame({
         <div className="mx-auto max-w-[1536px] px-4 sm:px-6 lg:px-8">
           <nav
             aria-label={l("Main navigation", "Navegación principal")}
-            className="-mb-px flex min-h-12 items-end gap-1 overflow-x-auto"
+            className="relative -mb-px flex min-h-12 items-end gap-1 overflow-x-auto"
           >
             <Link
               prefetch={false}
@@ -291,6 +294,27 @@ function DocumentationFrame({
             >
               {l("Components", "Componentes")}
             </Link>
+            <Link
+              prefetch={false}
+              href={`/${locale}/quality/`}
+              className={cn(
+                navigationLink,
+                "shrink-0 pb-3 text-muted-foreground",
+              )}
+            >
+              <CircleGauge className="size-3.5" aria-hidden="true" />
+              {l("Quality", "Calidad")}
+            </Link>
+            <a
+              href={sponsorsUrl}
+              className={cn(
+                navigationLink,
+                "shrink-0 pb-3 text-muted-foreground",
+              )}
+            >
+              <Heart className="size-3.5" aria-hidden="true" />
+              {l("Sponsors", "Patrocinar")}
+            </a>
             <a
               href={githubUrl}
               target="_blank"
@@ -432,6 +456,26 @@ function DocumentationFrame({
           )}
           <footer className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground">
             <span>Aureform UI · v{kitVersion}</span>
+            <nav
+              aria-label={l("Quality and support", "Calidad y apoyo")}
+              className="flex flex-wrap items-center gap-4"
+            >
+              <Link
+                prefetch={false}
+                href={`/${locale}/quality/`}
+                className="inline-flex min-h-8 items-center gap-1.5 rounded hover:text-foreground"
+              >
+                <CircleGauge className="size-3.5" aria-hidden="true" />
+                {l("Quality", "Calidad")}
+              </Link>
+              <a
+                href={sponsorsUrl}
+                className="inline-flex min-h-8 items-center gap-1.5 rounded hover:text-foreground"
+              >
+                <Heart className="size-3.5" aria-hidden="true" />
+                {l("Sponsors", "Patrocinar")}
+              </a>
+            </nav>
             <a
               href={`${githubUrl}/issues`}
               target="_blank"

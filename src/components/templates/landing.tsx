@@ -12,6 +12,7 @@ import {
   Copy,
   Download,
   Figma,
+  Heart,
   Layers,
   Menu,
   Moon,
@@ -42,6 +43,7 @@ import {
   type PaletteId,
 } from "@/lib/appearance";
 import { publicPath } from "@/lib/public-path";
+import { sponsorsUrl } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
 const sourceCommands = [
@@ -261,6 +263,7 @@ export function LandingTemplate() {
     { label: l("The kit", "El kit"), href: "#kit" },
     { label: l("Templates", "Plantillas"), href: href("templates") },
     { label: "Studio", href: href("studio") },
+    { label: l("Quality", "Calidad"), href: href("quality") },
   ];
   const workflows = [
     {
@@ -432,7 +435,7 @@ export function LandingTemplate() {
           </Link>
           <nav
             aria-label={l("Product navigation", "Navegación del producto")}
-            className="hidden items-center gap-7 text-[13px] font-medium lg:flex"
+            className="hidden items-center gap-5 text-[13px] font-medium lg:flex xl:gap-7"
           >
             {navigation.map((item) => (
               <Link
@@ -444,6 +447,13 @@ export function LandingTemplate() {
                 {item.label}
               </Link>
             ))}
+            <a
+              href={sponsorsUrl}
+              className="inline-flex items-center gap-1.5 text-muted-foreground transition-colors hover:text-primary motion-reduce:transition-none"
+            >
+              <Heart className="size-3.5" aria-hidden="true" />
+              {l("Sponsors", "Patrocinar")}
+            </a>
           </nav>
           <div className="flex min-w-0 items-center gap-1.5 sm:gap-3">
             <Link
@@ -525,6 +535,14 @@ export function LandingTemplate() {
                 {item.label}
               </Link>
             ))}
+            <a
+              href={sponsorsUrl}
+              className="flex items-center gap-2 rounded-lg px-3 py-3 text-sm hover:bg-accent"
+              onClick={() => setMenu(false)}
+            >
+              <Heart className="size-4" aria-hidden="true" />
+              {l("Sponsors", "Patrocinar")}
+            </a>
             <Link
               prefetch={false}
               href={href("dashboard")}
@@ -1611,6 +1629,7 @@ export function LandingTemplate() {
                 title: l("Learn", "Aprende"),
                 links: [
                   [l("Documentation", "Documentación"), href("docs")],
+                  [l("Quality", "Calidad"), href("quality")],
                   [l("Installation", "Instalación"), href("docs/cli")],
                   [l("Tokens & themes", "Tokens y temas"), href("docs/tokens")],
                   [
@@ -1650,6 +1669,13 @@ export function LandingTemplate() {
                 className="w-fit text-xs leading-6 text-muted-foreground hover:text-foreground hover:underline"
               >
                 GitHub
+              </a>
+              <a
+                href={sponsorsUrl}
+                className="inline-flex w-fit items-center gap-1.5 text-xs leading-6 text-muted-foreground hover:text-primary hover:underline"
+              >
+                <Heart className="size-3" aria-hidden="true" />
+                {l("Sponsors", "Patrocinar")}
               </a>
               <a
                 href={figmaUrl}

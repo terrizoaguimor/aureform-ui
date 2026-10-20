@@ -14,16 +14,32 @@ La base de la aplicación tiene 69 vistas de demo, 44 familias principales, 107 
 
 Son flujos y contratos de frontend. Identidad real, autorización de tenants, almacenamiento compartido, operaciones financieras y jobs duraderos pertenecen al consumidor. Consulta la [integración de aplicaciones](../../../docs/application-integrations.es.md) y el [registro de la versión 1.4](../../../docs/release-checklist-1.4.0.md).
 
-## Propuestas de investigación
+## Evidencia y comunidad
 
-El [estudio actual de brechas](../../../docs/research-gaps-1.4.es.md) registra propuestas sobre la base 1.4. Incluye:
+La [investigación de octubre de 2026](research.md) compara ocho referencias, revisa los 20 hallazgos originales sobre el commit `70b40b5` y prioriza ocho mejoras. Tres investigaciones headless de AGY completadas registraron 52 búsquedas web, seguidas por revisión independiente de fuentes primarias y código. El [estudio anterior](../../research-gaps-1.4.es.md) conserva su alcance original.
 
-- Mejor continuidad al actualizar código copiado y personalizado, aprovechando previews y recibos existentes.
-- Escenarios explícitos de sesión vencida, respuesta obsoleta, conflicto y fallo parcial con borradores recuperables.
-- Cotizaciones comerciales más completas, pagos diferidos, devoluciones/reembolsos y previews de cambio de plan.
-- Frescura y ausencia de datos analíticos, preferencias regionales e interacción táctil y de teclado en vistas densas.
+La [página pública de calidad](https://aureformui.com/es/quality/) muestra la última muestra publicada de Lighthouse y el commit exacto que se auditó. La recolección cubre tres páginas, dos perfiles y tres ejecuciones por combinación. Las herramientas conservan informes completos y verifican sus hashes; una muestra vacía se presenta sin inventar scores.
 
-Su presencia en un documento no añade APIs públicas. Cada propuesta necesita implementación y una nueva aceptación para considerarse entregada. El [plan de piloto](../../../docs/pilot-validation.es.md) propone entrevistas e integraciones voluntarias; no demuestra tasas de adopción ni ahorro de tiempo medido.
+GitHub Sponsors permite apoyar al mantenedor. La [guía de difusión en GitHub](../../github-discovery.es.md) registra directorios adecuados, reglas de contribución y propuestas preparadas. La aceptación en directorios y la adopción siguen siendo resultados externos.
+
+## Prioridades para los siguientes cambios de producto
+
+Su presencia en un documento no añade APIs públicas. Cada propuesta necesita una implementación acotada y nueva evidencia de aceptación. El informe detalla impacto, esfuerzo, confianza y resultados observables para cada prioridad.
+
+| Prioridad | Cambio propuesto                                       | Evidencia necesaria para considerarlo entregado                                                                                             |
+| --------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1         | Recetas de instalación y diagnóstico del consumidor    | Instalar en aplicaciones nuevas, comprobar rangos reales de dependencias y explicar requisitos de CSS/contexto                              |
+| 2         | Laboratorio de escenarios y recuperación               | Demostrar respuestas tardías, conflictos, fallos parciales, cancelación y borradores recuperables con contratos compartidos                 |
+| 3         | Accesibilidad de tareas densas y presupuestos visuales | Completar tareas con teclado y tacto, revisar foco/overlays y medir movimiento con el volumen de datos real                                 |
+| 4         | Ausencia, frescura y formato común de datos            | Distinguir cero, desconocido y error; conservar valores, unidades, zonas horarias y filtros entre gráfico y tabla                           |
+| 5         | Continuidad al actualizar código personalizado         | Conservar una base de comparación, revisar conflictos locales/upstream antes de escribir y restaurar la instalación                         |
+| 6         | Contexto, sesiones y trabajos prolongados              | Ejercitar cambios de workspace, pestañas concurrentes, invitaciones del destinatario y estado consultable de importaciones                  |
+| 7         | Estados operativos de comercio e integraciones         | Elegir y completar un recorrido de cotización/pago/devolución con transportes tipados sustituibles y estados pendientes/de error explícitos |
+| 8         | Evidencia, documentación y difusión                    | Conservar mediciones, validar ejemplos de instalación y registrar integraciones reales de la comunidad                                      |
+
+Empezar por claridad de instalación y un laboratorio pequeño; después evaluar tareas densas y semántica analítica. La continuidad de actualizaciones y los flujos duraderos necesitan contratos más amplios. Elegir un recorrido de integración cada vez, sin convertir todas las pantallas propuestas en una entrega simultánea.
+
+El [plan de piloto](../../pilot-validation.es.md) propone 8–12 entrevistas y 3–5 integraciones voluntarias. Son objetivos de convocatoria, no entrevistas realizadas ni cifras de adopción. Registrar tareas completadas, ayuda necesaria, fallos e intención de reutilizar antes de cambiar el orden.
 
 ## Límites del diseño nativo y la verificación
 

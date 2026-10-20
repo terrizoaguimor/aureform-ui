@@ -1,0 +1,217 @@
+.hero {
+  --quality-gold: #72501f;
+  border-bottom: 1px solid var(--border);
+  background:
+    radial-gradient(
+      ellipse at 86% 20%,
+      color-mix(in srgb, #c6a261 14%, transparent),
+      transparent 58%
+    ),
+    var(--background);
+}
+
+.heroAccent {
+  color: var(--quality-gold);
+}
+
+.heroTitle {
+  background-image: linear-gradient(
+    115deg,
+    #72501f 0%,
+    #a07731 45%,
+    #6b471b 100%
+  );
+  background-clip: text;
+  color: transparent;
+  padding-bottom: 0.1em;
+}
+
+:global(.dark) .hero {
+  --quality-gold: #c5a062;
+}
+
+:global(.dark) .heroTitle {
+  background-image: linear-gradient(
+    115deg,
+    #b89350 0%,
+    #f3dfaf 45%,
+    #c5a062 100%
+  );
+}
+
+.surface {
+  border: 1px solid color-mix(in srgb, var(--primary) 20%, var(--border));
+  background-color: var(--surface);
+  background-image: var(--af-gradient-surface);
+  box-shadow: 0 12px 50px color-mix(in srgb, var(--foreground) 3%, transparent);
+}
+
+.hero .surface {
+  border-color: color-mix(in srgb, #b99557 30%, var(--border));
+}
+
+.support {
+  border-color: color-mix(in srgb, #b99557 30%, var(--border));
+  background-image:
+    radial-gradient(
+      ellipse at 100% 0%,
+      color-mix(in srgb, #c6a261 12%, transparent),
+      transparent 70%
+    ),
+    var(--af-gradient-surface);
+}
+
+.matrix {
+  width: 100%;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.matrixHead th {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-size: 10px;
+  font-weight: 500;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.matrixHead th:first-child {
+  width: 168px;
+  padding-left: 16px;
+  text-align: left;
+}
+
+.matrixHead th:last-child {
+  width: 112px;
+  text-align: left;
+}
+
+.matrixBody tr {
+  background: var(--surface);
+  transition: background-color 180ms ease;
+}
+
+.matrixBody tr:hover {
+  background: color-mix(in srgb, var(--accent) 25%, var(--surface));
+}
+
+.matrixBody th,
+.matrixBody td {
+  padding: 20px 8px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  text-align: right;
+}
+
+.matrixBody th {
+  padding-left: 16px;
+  text-align: left;
+}
+
+.matrixBody .reportCell {
+  text-align: left;
+}
+
+.score {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.unmeasured {
+  color: var(--muted-foreground);
+}
+
+.reports summary {
+  padding-block: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .matrixHead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .matrixBody {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .matrixBody tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    min-width: 0;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    background-image: var(--af-gradient-surface);
+    transition:
+      border-color 180ms ease,
+      background-color 180ms ease;
+  }
+
+  .matrixBody tr:hover {
+    border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+  }
+
+  .matrixBody th,
+  .matrixBody td {
+    min-width: 0;
+    border: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .matrixBody th {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+  }
+
+  .matrixBody td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 6px;
+    color: var(--muted-foreground);
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .matrixBody .reportCell {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+  }
+
+  .reports summary {
+    padding-block: 8px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 580px) {
+  .matrixBody {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .matrixBody tr {
+    transition: none;
+  }
+}

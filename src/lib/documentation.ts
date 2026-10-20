@@ -273,12 +273,11 @@ export const documentationArticles: readonly DocumentationArticle[] = [
     slug: "research",
     title: { en: "Product gap research", es: "Research de oportunidades" },
     description: {
-      en: "The Spanish research report: evidence, adoption gaps and proposed workflows.",
-      es: "Evidencia, dificultades de adopción y flujos propuestos para la siguiente etapa.",
+      en: "Eight benchmark references, verified source evidence and priorities for adoption and workflows.",
+      es: "Ocho referencias, evidencia verificada y prioridades de adopción y flujos de trabajo.",
     },
     group: group.community,
-    files: { es: "docs/research-gaps-1.4.es.md" },
-    defaultLocale: "es",
+    files: websiteFiles("research"),
   },
 ];
 

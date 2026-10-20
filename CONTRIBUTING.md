@@ -10,6 +10,20 @@ For a bug, include a route, reproduction steps, expected behavior and your brows
 
 Screenshots help with appearance changes. Use real application captures and remove personal information.
 
+## Help others discover Aureform
+
+The [GitHub discovery guide](docs/github-discovery.md) and its
+[Spanish version](docs/github-discovery.es.md) identify maintained frontend
+lists, registry directories and their contribution requirements. Review the
+guide when preparing a public release, then refresh the destination's rules,
+project fit and installation evidence before proposing an entry.
+
+Keep descriptions specific to delivered frontend capabilities. Link the
+[public quality record](https://aureformui.com/en/quality/) for dated performance
+evidence and the design-distribution guide for Figma scope. Community
+recommendations should reflect actual use; a component count does not measure
+adoption.
+
 ## Set up
 
 Use Node.js **22.18.0 or newer** and pnpm **10**. If `corepack` is unavailable, install it first with `npm install --global corepack`; Node.js 25 and newer do not bundle it. See the [Corepack installation guide](https://github.com/nodejs/corepack#default-installs).

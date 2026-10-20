@@ -1,0 +1,3197 @@
+{
+  "lighthouseVersion": "13.5.0",
+  "auditIds": [
+    "is-on-https",
+    "redirects-http",
+    "first-contentful-paint",
+    "largest-contentful-paint",
+    "speed-index",
+    "screenshot-thumbnails",
+    "final-screenshot",
+    "total-blocking-time",
+    "max-potential-fid",
+    "cumulative-layout-shift",
+    "errors-in-console",
+    "server-response-time",
+    "interactive",
+    "user-timings",
+    "redirects",
+    "image-aspect-ratio",
+    "image-size-responsive",
+    "deprecations",
+    "third-party-cookies",
+    "mainthread-work-breakdown",
+    "bootup-time",
+    "diagnostics",
+    "network-requests",
+    "network-rtt",
+    "network-server-latency",
+    "main-thread-tasks",
+    "metrics",
+    "resource-summary",
+    "layout-shifts",
+    "long-tasks",
+    "non-composited-animations",
+    "unsized-images",
+    "valid-source-maps",
+    "csp-xss",
+    "has-hsts",
+    "origin-isolation",
+    "clickjacking-mitigation",
+    "trusted-types-xss",
+    "script-treemap-data",
+    "accesskeys",
+    "aria-allowed-attr",
+    "aria-allowed-role",
+    "aria-command-name",
+    "aria-conditional-attr",
+    "aria-deprecated-role",
+    "aria-dialog-name",
+    "aria-hidden-body",
+    "aria-hidden-focus",
+    "aria-input-field-name",
+    "aria-meter-name",
+    "aria-progressbar-name",
+    "aria-prohibited-attr",
+    "aria-required-attr",
+    "aria-required-children",
+    "aria-required-parent",
+    "aria-roles",
+    "aria-text",
+    "aria-toggle-field-name",
+    "aria-tooltip-name",
+    "aria-treeitem-name",
+    "aria-valid-attr-value",
+    "aria-valid-attr",
+    "button-name",
+    "bypass",
+    "color-contrast",
+    "definition-list",
+    "dlitem",
+    "document-title",
+    "duplicate-id-aria",
+    "empty-heading",
+    "form-field-multiple-labels",
+    "frame-title",
+    "heading-order",
+    "html-has-lang",
+    "html-lang-valid",
+    "html-xml-lang-mismatch",
+    "identical-links-same-purpose",
+    "image-alt",
+    "image-redundant-alt",
+    "input-button-name",
+    "input-image-alt",
+    "label-content-name-mismatch",
+    "label",
+    "landmark-one-main",
+    "link-name",
+    "link-in-text-block",
+    "list",
+    "listitem",
+    "meta-refresh",
+    "meta-viewport",
+    "object-alt",
+    "select-name",
+    "skip-link",
+    "tabindex",
+    "table-duplicate-name",
+    "table-fake-caption",
+    "target-size",
+    "td-has-header",
+    "td-headers-attr",
+    "th-has-data-cells",
+    "valid-lang",
+    "video-caption",
+    "custom-controls-labels",
+    "custom-controls-roles",
+    "focus-traps",
+    "focusable-controls",
+    "interactive-element-affordance",
+    "logical-tab-order",
+    "managed-focus",
+    "offscreen-content-hidden",
+    "use-landmarks",
+    "visual-order-follows-dom",
+    "autocomplete-valid",
+    "presentation-role-conflict",
+    "svg-img-alt",
+    "total-byte-weight",
+    "unminified-css",
+    "unminified-javascript",
+    "unused-css-rules",
+    "unused-javascript",
+    "doctype",
+    "charset",
+    "geolocation-on-start",
+    "inspector-issues",
+    "js-libraries",
+    "notification-on-start",
+    "paste-preventing-inputs",
+    "baseline",
+    "meta-description",
+    "http-status-code",
+    "link-text",
+    "crawlable-anchors",
+    "is-crawlable",
+    "robots-txt",
+    "hreflang",
+    "canonical",
+    "structured-data",
+    "bf-cache",
+    "cache-insight",
+    "cls-culprits-insight",
+    "document-latency-insight",
+    "dom-size-insight",
+    "duplicated-javascript-insight",
+    "font-display-insight",
+    "forced-reflow-insight",
+    "image-delivery-insight",
+    "inp-breakdown-insight",
+    "lcp-breakdown-insight",
+    "lcp-discovery-insight",
+    "legacy-javascript-insight",
+    "modern-http-insight",
+    "network-dependency-tree-insight",
+    "render-blocking-insight",
+    "third-parties-insight",
+    "viewport-insight"
+  ],
+  "profiles": {
+    "mobile": {
+      "artifacts": [
+        {
+          "id": "DevtoolsLog",
+          "gatherer": "devtools-log"
+        },
+        {
+          "id": "Trace",
+          "gatherer": "trace"
+        },
+        {
+          "id": "Accessibility",
+          "gatherer": "accessibility"
+        },
+        {
+          "id": "AnchorElements",
+          "gatherer": "anchor-elements"
+        },
+        {
+          "id": "ConsoleMessages",
+          "gatherer": "console-messages"
+        },
+        {
+          "id": "CSSUsage",
+          "gatherer": "css-usage"
+        },
+        {
+          "id": "Doctype",
+          "gatherer": "dobetterweb/doctype"
+        },
+        {
+          "id": "Inputs",
+          "gatherer": "inputs"
+        },
+        {
+          "id": "ImageElements",
+          "gatherer": "image-elements"
+        },
+        {
+          "id": "InspectorIssues",
+          "gatherer": "inspector-issues"
+        },
+        {
+          "id": "JsUsage",
+          "gatherer": "js-usage"
+        },
+        {
+          "id": "LinkElements",
+          "gatherer": "link-elements"
+        },
+        {
+          "id": "MainDocumentContent",
+          "gatherer": "main-document-content"
+        },
+        {
+          "id": "MetaElements",
+          "gatherer": "meta-elements"
+        },
+        {
+          "id": "NetworkUserAgent",
+          "gatherer": "network-user-agent"
+        },
+        {
+          "id": "RobotsTxt",
+          "gatherer": "seo/robots-txt"
+        },
+        {
+          "id": "Scripts",
+          "gatherer": "scripts"
+        },
+        {
+          "id": "SourceMaps",
+          "gatherer": "source-maps"
+        },
+        {
+          "id": "Stacks",
+          "gatherer": "stacks"
+        },
+        {
+          "id": "Stylesheets",
+          "gatherer": "stylesheets"
+        },
+        {
+          "id": "TraceElements",
+          "gatherer": "trace-elements"
+        },
+        {
+          "id": "ViewportDimensions",
+          "gatherer": "viewport-dimensions"
+        },
+        {
+          "id": "FullPageScreenshot",
+          "gatherer": "full-page-screenshot"
+        },
+        {
+          "id": "BFCacheFailures",
+          "gatherer": "bf-cache-failures"
+        }
+      ],
+      "audits": [
+        {
+          "path": "is-on-https"
+        },
+        {
+          "path": "redirects-http"
+        },
+        {
+          "path": "metrics/first-contentful-paint"
+        },
+        {
+          "path": "metrics/largest-contentful-paint"
+        },
+        {
+          "path": "metrics/speed-index"
+        },
+        {
+          "path": "screenshot-thumbnails"
+        },
+        {
+          "path": "final-screenshot"
+        },
+        {
+          "path": "metrics/total-blocking-time"
+        },
+        {
+          "path": "metrics/max-potential-fid"
+        },
+        {
+          "path": "metrics/cumulative-layout-shift"
+        },
+        {
+          "path": "errors-in-console"
+        },
+        {
+          "path": "server-response-time"
+        },
+        {
+          "path": "metrics/interactive"
+        },
+        {
+          "path": "user-timings"
+        },
+        {
+          "path": "redirects"
+        },
+        {
+          "path": "image-aspect-ratio"
+        },
+        {
+          "path": "image-size-responsive"
+        },
+        {
+          "path": "deprecations"
+        },
+        {
+          "path": "third-party-cookies"
+        },
+        {
+          "path": "mainthread-work-breakdown"
+        },
+        {
+          "path": "bootup-time"
+        },
+        {
+          "path": "diagnostics"
+        },
+        {
+          "path": "network-requests"
+        },
+        {
+          "path": "network-rtt"
+        },
+        {
+          "path": "network-server-latency"
+        },
+        {
+          "path": "main-thread-tasks"
+        },
+        {
+          "path": "metrics"
+        },
+        {
+          "path": "resource-summary"
+        },
+        {
+          "path": "layout-shifts"
+        },
+        {
+          "path": "long-tasks"
+        },
+        {
+          "path": "non-composited-animations"
+        },
+        {
+          "path": "unsized-images"
+        },
+        {
+          "path": "valid-source-maps"
+        },
+        {
+          "path": "csp-xss"
+        },
+        {
+          "path": "has-hsts"
+        },
+        {
+          "path": "origin-isolation"
+        },
+        {
+          "path": "clickjacking-mitigation"
+        },
+        {
+          "path": "trusted-types-xss"
+        },
+        {
+          "path": "script-treemap-data"
+        },
+        {
+          "path": "accessibility/accesskeys"
+        },
+        {
+          "path": "accessibility/aria-allowed-attr"
+        },
+        {
+          "path": "accessibility/aria-allowed-role"
+        },
+        {
+          "path": "accessibility/aria-command-name"
+        },
+        {
+          "path": "accessibility/aria-conditional-attr"
+        },
+        {
+          "path": "accessibility/aria-deprecated-role"
+        },
+        {
+          "path": "accessibility/aria-dialog-name"
+        },
+        {
+          "path": "accessibility/aria-hidden-body"
+        },
+        {
+          "path": "accessibility/aria-hidden-focus"
+        },
+        {
+          "path": "accessibility/aria-input-field-name"
+        },
+        {
+          "path": "accessibility/aria-meter-name"
+        },
+        {
+          "path": "accessibility/aria-progressbar-name"
+        },
+        {
+          "path": "accessibility/aria-prohibited-attr"
+        },
+        {
+          "path": "accessibility/aria-required-attr"
+        },
+        {
+          "path": "accessibility/aria-required-children"
+        },
+        {
+          "path": "accessibility/aria-required-parent"
+        },
+        {
+          "path": "accessibility/aria-roles"
+        },
+        {
+          "path": "accessibility/aria-text"
+        },
+        {
+          "path": "accessibility/aria-toggle-field-name"
+        },
+        {
+          "path": "accessibility/aria-tooltip-name"
+        },
+        {
+          "path": "accessibility/aria-treeitem-name"
+        },
+        {
+          "path": "accessibility/aria-valid-attr-value"
+        },
+        {
+          "path": "accessibility/aria-valid-attr"
+        },
+        {
+          "path": "accessibility/button-name"
+        },
+        {
+          "path": "accessibility/bypass"
+        },
+        {
+          "path": "accessibility/color-contrast"
+        },
+        {
+          "path": "accessibility/definition-list"
+        },
+        {
+          "path": "accessibility/dlitem"
+        },
+        {
+          "path": "accessibility/document-title"
+        },
+        {
+          "path": "accessibility/duplicate-id-aria"
+        },
+        {
+          "path": "accessibility/empty-heading"
+        },
+        {
+          "path": "accessibility/form-field-multiple-labels"
+        },
+        {
+          "path": "accessibility/frame-title"
+        },
+        {
+          "path": "accessibility/heading-order"
+        },
+        {
+          "path": "accessibility/html-has-lang"
+        },
+        {
+          "path": "accessibility/html-lang-valid"
+        },
+        {
+          "path": "accessibility/html-xml-lang-mismatch"
+        },
+        {
+          "path": "accessibility/identical-links-same-purpose"
+        },
+        {
+          "path": "accessibility/image-alt"
+        },
+        {
+          "path": "accessibility/image-redundant-alt"
+        },
+        {
+          "path": "accessibility/input-button-name"
+        },
+        {
+          "path": "accessibility/input-image-alt"
+        },
+        {
+          "path": "accessibility/label-content-name-mismatch"
+        },
+        {
+          "path": "accessibility/label"
+        },
+        {
+          "path": "accessibility/landmark-one-main"
+        },
+        {
+          "path": "accessibility/link-name"
+        },
+        {
+          "path": "accessibility/link-in-text-block"
+        },
+        {
+          "path": "accessibility/list"
+        },
+        {
+          "path": "accessibility/listitem"
+        },
+        {
+          "path": "accessibility/meta-refresh"
+        },
+        {
+          "path": "accessibility/meta-viewport"
+        },
+        {
+          "path": "accessibility/object-alt"
+        },
+        {
+          "path": "accessibility/select-name"
+        },
+        {
+          "path": "accessibility/skip-link"
+        },
+        {
+          "path": "accessibility/tabindex"
+        },
+        {
+          "path": "accessibility/table-duplicate-name"
+        },
+        {
+          "path": "accessibility/table-fake-caption"
+        },
+        {
+          "path": "accessibility/target-size"
+        },
+        {
+          "path": "accessibility/td-has-header"
+        },
+        {
+          "path": "accessibility/td-headers-attr"
+        },
+        {
+          "path": "accessibility/th-has-data-cells"
+        },
+        {
+          "path": "accessibility/valid-lang"
+        },
+        {
+          "path": "accessibility/video-caption"
+        },
+        {
+          "path": "accessibility/manual/custom-controls-labels"
+        },
+        {
+          "path": "accessibility/manual/custom-controls-roles"
+        },
+        {
+          "path": "accessibility/manual/focus-traps"
+        },
+        {
+          "path": "accessibility/manual/focusable-controls"
+        },
+        {
+          "path": "accessibility/manual/interactive-element-affordance"
+        },
+        {
+          "path": "accessibility/manual/logical-tab-order"
+        },
+        {
+          "path": "accessibility/manual/managed-focus"
+        },
+        {
+          "path": "accessibility/manual/offscreen-content-hidden"
+        },
+        {
+          "path": "accessibility/manual/use-landmarks"
+        },
+        {
+          "path": "accessibility/manual/visual-order-follows-dom"
+        },
+        {
+          "path": "accessibility/autocomplete-valid"
+        },
+        {
+          "path": "accessibility/presentation-role-conflict"
+        },
+        {
+          "path": "accessibility/svg-img-alt"
+        },
+        {
+          "path": "byte-efficiency/total-byte-weight"
+        },
+        {
+          "path": "byte-efficiency/unminified-css"
+        },
+        {
+          "path": "byte-efficiency/unminified-javascript"
+        },
+        {
+          "path": "byte-efficiency/unused-css-rules"
+        },
+        {
+          "path": "byte-efficiency/unused-javascript"
+        },
+        {
+          "path": "dobetterweb/doctype"
+        },
+        {
+          "path": "dobetterweb/charset"
+        },
+        {
+          "path": "dobetterweb/geolocation-on-start"
+        },
+        {
+          "path": "dobetterweb/inspector-issues"
+        },
+        {
+          "path": "dobetterweb/js-libraries"
+        },
+        {
+          "path": "dobetterweb/notification-on-start"
+        },
+        {
+          "path": "dobetterweb/paste-preventing-inputs"
+        },
+        {
+          "path": "baseline"
+        },
+        {
+          "path": "seo/meta-description"
+        },
+        {
+          "path": "seo/http-status-code"
+        },
+        {
+          "path": "seo/link-text"
+        },
+        {
+          "path": "seo/crawlable-anchors"
+        },
+        {
+          "path": "seo/is-crawlable"
+        },
+        {
+          "path": "seo/robots-txt"
+        },
+        {
+          "path": "seo/hreflang"
+        },
+        {
+          "path": "seo/canonical"
+        },
+        {
+          "path": "seo/manual/structured-data"
+        },
+        {
+          "path": "bf-cache"
+        },
+        {
+          "path": "insights/cache-insight"
+        },
+        {
+          "path": "insights/cls-culprits-insight"
+        },
+        {
+          "path": "insights/document-latency-insight"
+        },
+        {
+          "path": "insights/dom-size-insight"
+        },
+        {
+          "path": "insights/duplicated-javascript-insight"
+        },
+        {
+          "path": "insights/font-display-insight"
+        },
+        {
+          "path": "insights/forced-reflow-insight"
+        },
+        {
+          "path": "insights/image-delivery-insight"
+        },
+        {
+          "path": "insights/inp-breakdown-insight"
+        },
+        {
+          "path": "insights/lcp-breakdown-insight"
+        },
+        {
+          "path": "insights/lcp-discovery-insight"
+        },
+        {
+          "path": "insights/legacy-javascript-insight"
+        },
+        {
+          "path": "insights/modern-http-insight"
+        },
+        {
+          "path": "insights/network-dependency-tree-insight"
+        },
+        {
+          "path": "insights/render-blocking-insight"
+        },
+        {
+          "path": "insights/third-parties-insight"
+        },
+        {
+          "path": "insights/viewport-insight"
+        }
+      ],
+      "categories": {
+        "performance": {
+          "title": "Performance",
+          "supportedModes": ["navigation", "timespan", "snapshot"],
+          "auditRefs": [
+            {
+              "id": "first-contentful-paint",
+              "weight": 10,
+              "group": "metrics",
+              "acronym": "FCP"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "weight": 25,
+              "group": "metrics",
+              "acronym": "LCP"
+            },
+            {
+              "id": "total-blocking-time",
+              "weight": 30,
+              "group": "metrics",
+              "acronym": "TBT"
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "weight": 25,
+              "group": "metrics",
+              "acronym": "CLS"
+            },
+            {
+              "id": "speed-index",
+              "weight": 10,
+              "group": "metrics",
+              "acronym": "SI"
+            },
+            {
+              "id": "cache-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "cls-culprits-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "document-latency-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "dom-size-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "duplicated-javascript-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "font-display-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "image-delivery-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "inp-breakdown-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "lcp-breakdown-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "legacy-javascript-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "modern-http-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "render-blocking-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "third-parties-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "viewport-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "interactive",
+              "weight": 0,
+              "group": "hidden",
+              "acronym": "TTI"
+            },
+            {
+              "id": "max-potential-fid",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "unminified-css",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "unminified-javascript",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "unused-css-rules",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "unused-javascript",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "total-byte-weight",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "user-timings",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "bootup-time",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "long-tasks",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "non-composited-animations",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "unsized-images",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "bf-cache",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "network-requests",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "network-rtt",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "network-server-latency",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "main-thread-tasks",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "diagnostics",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "metrics",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "screenshot-thumbnails",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "final-screenshot",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "script-treemap-data",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "resource-summary",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "redirects",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "server-response-time",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "layout-shifts",
+              "weight": 0,
+              "group": "hidden"
+            }
+          ]
+        },
+        "accessibility": {
+          "title": "Accessibility",
+          "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developer.chrome.com/docs/lighthouse/accessibility/). Automatic detection can only detect a subset of issues and does not guarantee the accessibility of your web app, so [manual testing](https://web.dev/articles/how-to-review) is also encouraged.",
+          "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://web.dev/articles/how-to-review).",
+          "supportedModes": ["navigation", "snapshot"],
+          "auditRefs": [
+            {
+              "id": "accesskeys",
+              "weight": 7,
+              "group": "a11y-navigation"
+            },
+            {
+              "id": "aria-allowed-attr",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-command-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-conditional-attr",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-deprecated-role",
+              "weight": 1,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-dialog-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-hidden-body",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-hidden-focus",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-input-field-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-meter-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-progressbar-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-prohibited-attr",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-required-attr",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-required-children",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-required-parent",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-roles",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-text",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-toggle-field-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-tooltip-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-treeitem-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-valid-attr-value",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-valid-attr",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "button-name",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "bypass",
+              "weight": 7,
+              "group": "a11y-navigation"
+            },
+            {
+              "id": "color-contrast",
+              "weight": 7,
+              "group": "a11y-color-contrast"
+            },
+            {
+              "id": "definition-list",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "dlitem",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "document-title",
+              "weight": 7,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "duplicate-id-aria",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "form-field-multiple-labels",
+              "weight": 3,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "frame-title",
+              "weight": 7,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "heading-order",
+              "weight": 3,
+              "group": "a11y-navigation"
+            },
+            {
+              "id": "html-has-lang",
+              "weight": 7,
+              "group": "a11y-language"
+            },
+            {
+              "id": "html-lang-valid",
+              "weight": 7,
+              "group": "a11y-language"
+            },
+            {
+              "id": "html-xml-lang-mismatch",
+              "weight": 3,
+              "group": "a11y-language"
+            },
+            {
+              "id": "image-alt",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "input-button-name",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "input-image-alt",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "label",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "link-in-text-block",
+              "weight": 7,
+              "group": "a11y-color-contrast"
+            },
+            {
+              "id": "link-name",
+              "weight": 7,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "list",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "listitem",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "meta-refresh",
+              "weight": 10,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "meta-viewport",
+              "weight": 10,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "object-alt",
+              "weight": 7,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "select-name",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "skip-link",
+              "weight": 3,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "tabindex",
+              "weight": 7,
+              "group": "a11y-navigation"
+            },
+            {
+              "id": "target-size",
+              "weight": 7,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "td-headers-attr",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "th-has-data-cells",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "valid-lang",
+              "weight": 7,
+              "group": "a11y-language"
+            },
+            {
+              "id": "video-caption",
+              "weight": 10,
+              "group": "a11y-audio-video"
+            },
+            {
+              "id": "landmark-one-main",
+              "weight": 3,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "autocomplete-valid",
+              "weight": 1,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "presentation-role-conflict",
+              "weight": 1,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "svg-img-alt",
+              "weight": 1,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "focusable-controls",
+              "weight": 0
+            },
+            {
+              "id": "interactive-element-affordance",
+              "weight": 0
+            },
+            {
+              "id": "logical-tab-order",
+              "weight": 0
+            },
+            {
+              "id": "visual-order-follows-dom",
+              "weight": 0
+            },
+            {
+              "id": "focus-traps",
+              "weight": 0
+            },
+            {
+              "id": "managed-focus",
+              "weight": 0
+            },
+            {
+              "id": "use-landmarks",
+              "weight": 0
+            },
+            {
+              "id": "offscreen-content-hidden",
+              "weight": 0
+            },
+            {
+              "id": "custom-controls-labels",
+              "weight": 0
+            },
+            {
+              "id": "custom-controls-roles",
+              "weight": 0
+            },
+            {
+              "id": "table-duplicate-name",
+              "weight": 0,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "empty-heading",
+              "weight": 0,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "aria-allowed-role",
+              "weight": 0,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "image-redundant-alt",
+              "weight": 0,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "identical-links-same-purpose",
+              "weight": 0,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "label-content-name-mismatch",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "table-fake-caption",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "td-has-header",
+              "weight": 0,
+              "group": "hidden"
+            }
+          ]
+        },
+        "best-practices": {
+          "title": "Best Practices",
+          "supportedModes": ["navigation", "timespan", "snapshot"],
+          "auditRefs": [
+            {
+              "id": "is-on-https",
+              "weight": 5,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "redirects-http",
+              "weight": 1,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "geolocation-on-start",
+              "weight": 1,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "notification-on-start",
+              "weight": 1,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "csp-xss",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "has-hsts",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "origin-isolation",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "clickjacking-mitigation",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "trusted-types-xss",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "paste-preventing-inputs",
+              "weight": 3,
+              "group": "best-practices-ux"
+            },
+            {
+              "id": "image-aspect-ratio",
+              "weight": 1,
+              "group": "best-practices-ux"
+            },
+            {
+              "id": "image-size-responsive",
+              "weight": 1,
+              "group": "best-practices-ux"
+            },
+            {
+              "id": "doctype",
+              "weight": 1,
+              "group": "best-practices-browser-compat"
+            },
+            {
+              "id": "charset",
+              "weight": 1,
+              "group": "best-practices-browser-compat"
+            },
+            {
+              "id": "baseline",
+              "weight": 0,
+              "group": "best-practices-browser-compat"
+            },
+            {
+              "id": "js-libraries",
+              "weight": 0,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "deprecations",
+              "weight": 5,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "third-party-cookies",
+              "weight": 5,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "errors-in-console",
+              "weight": 1,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "valid-source-maps",
+              "weight": 0,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "inspector-issues",
+              "weight": 1,
+              "group": "best-practices-general"
+            }
+          ]
+        },
+        "seo": {
+          "title": "SEO",
+          "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/explore/vitals). [Learn more about Google Search Essentials](https://support.google.com/webmasters/answer/35769).",
+          "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+          "supportedModes": ["navigation", "snapshot"],
+          "auditRefs": [
+            {
+              "id": "is-crawlable",
+              "weight": 4.043478260869565,
+              "group": "seo-crawl"
+            },
+            {
+              "id": "document-title",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "meta-description",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "http-status-code",
+              "weight": 1,
+              "group": "seo-crawl"
+            },
+            {
+              "id": "link-text",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "crawlable-anchors",
+              "weight": 1,
+              "group": "seo-crawl"
+            },
+            {
+              "id": "robots-txt",
+              "weight": 1,
+              "group": "seo-crawl"
+            },
+            {
+              "id": "image-alt",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "hreflang",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "canonical",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "structured-data",
+              "weight": 0
+            }
+          ]
+        }
+      },
+      "groups": {
+        "metrics": {
+          "title": "Metrics"
+        },
+        "insights": {
+          "title": "Insights",
+          "description": "These insights are also available in the Chrome DevTools Performance Panel - [record a trace](https://developer.chrome.com/docs/devtools/performance/reference) to view more detailed information."
+        },
+        "diagnostics": {
+          "title": "Diagnostics",
+          "description": "More information about the performance of your application. These numbers don't [directly affect](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) the Performance score."
+        },
+        "a11y-best-practices": {
+          "title": "Best practices",
+          "description": "These items highlight common accessibility best practices."
+        },
+        "a11y-color-contrast": {
+          "title": "Contrast",
+          "description": "These are opportunities to improve the legibility of your content."
+        },
+        "a11y-names-labels": {
+          "title": "Names and labels",
+          "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+        },
+        "a11y-navigation": {
+          "title": "Navigation",
+          "description": "These are opportunities to improve keyboard navigation in your application."
+        },
+        "a11y-aria": {
+          "title": "ARIA",
+          "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+        },
+        "a11y-language": {
+          "title": "Internationalization and localization",
+          "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+        },
+        "a11y-audio-video": {
+          "title": "Audio and video",
+          "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+        },
+        "a11y-tables-lists": {
+          "title": "Tables and lists",
+          "description": "These are opportunities to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+        },
+        "seo-mobile": {
+          "title": "Mobile Friendly",
+          "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn how to make pages mobile-friendly](https://developers.google.com/search/mobile-sites/)."
+        },
+        "seo-content": {
+          "title": "Content Best Practices",
+          "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+        },
+        "seo-crawl": {
+          "title": "Crawling and Indexing",
+          "description": "To appear in search results, crawlers need access to your app."
+        },
+        "best-practices-trust-safety": {
+          "title": "Trust and Safety"
+        },
+        "best-practices-ux": {
+          "title": "User Experience"
+        },
+        "best-practices-browser-compat": {
+          "title": "Browser Compatibility"
+        },
+        "best-practices-general": {
+          "title": "General"
+        },
+        "webmcp": {
+          "title": "WebMCP",
+          "description": "Audits validating WebMCP integration."
+        },
+        "agent-accessibility": {
+          "title": "Agent Accessibility",
+          "description": "These audits highlight best practices for improving the accessibility of the website for AI agents."
+        },
+        "agent-discoverability": {
+          "title": "Agent Discoverability",
+          "description": "These audits validate that websites expose discoverable resources, documentation, and catalogs for AI agents."
+        },
+        "hidden": {
+          "title": ""
+        }
+      },
+      "settings": {
+        "output": ["json", "html"],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      }
+    },
+    "desktop": {
+      "artifacts": [
+        {
+          "id": "DevtoolsLog",
+          "gatherer": "devtools-log"
+        },
+        {
+          "id": "Trace",
+          "gatherer": "trace"
+        },
+        {
+          "id": "Accessibility",
+          "gatherer": "accessibility"
+        },
+        {
+          "id": "AnchorElements",
+          "gatherer": "anchor-elements"
+        },
+        {
+          "id": "ConsoleMessages",
+          "gatherer": "console-messages"
+        },
+        {
+          "id": "CSSUsage",
+          "gatherer": "css-usage"
+        },
+        {
+          "id": "Doctype",
+          "gatherer": "dobetterweb/doctype"
+        },
+        {
+          "id": "Inputs",
+          "gatherer": "inputs"
+        },
+        {
+          "id": "ImageElements",
+          "gatherer": "image-elements"
+        },
+        {
+          "id": "InspectorIssues",
+          "gatherer": "inspector-issues"
+        },
+        {
+          "id": "JsUsage",
+          "gatherer": "js-usage"
+        },
+        {
+          "id": "LinkElements",
+          "gatherer": "link-elements"
+        },
+        {
+          "id": "MainDocumentContent",
+          "gatherer": "main-document-content"
+        },
+        {
+          "id": "MetaElements",
+          "gatherer": "meta-elements"
+        },
+        {
+          "id": "NetworkUserAgent",
+          "gatherer": "network-user-agent"
+        },
+        {
+          "id": "RobotsTxt",
+          "gatherer": "seo/robots-txt"
+        },
+        {
+          "id": "Scripts",
+          "gatherer": "scripts"
+        },
+        {
+          "id": "SourceMaps",
+          "gatherer": "source-maps"
+        },
+        {
+          "id": "Stacks",
+          "gatherer": "stacks"
+        },
+        {
+          "id": "Stylesheets",
+          "gatherer": "stylesheets"
+        },
+        {
+          "id": "TraceElements",
+          "gatherer": "trace-elements"
+        },
+        {
+          "id": "ViewportDimensions",
+          "gatherer": "viewport-dimensions"
+        },
+        {
+          "id": "FullPageScreenshot",
+          "gatherer": "full-page-screenshot"
+        },
+        {
+          "id": "BFCacheFailures",
+          "gatherer": "bf-cache-failures"
+        }
+      ],
+      "audits": [
+        {
+          "path": "is-on-https"
+        },
+        {
+          "path": "redirects-http"
+        },
+        {
+          "path": "metrics/first-contentful-paint"
+        },
+        {
+          "path": "metrics/largest-contentful-paint"
+        },
+        {
+          "path": "metrics/speed-index"
+        },
+        {
+          "path": "screenshot-thumbnails"
+        },
+        {
+          "path": "final-screenshot"
+        },
+        {
+          "path": "metrics/total-blocking-time"
+        },
+        {
+          "path": "metrics/max-potential-fid"
+        },
+        {
+          "path": "metrics/cumulative-layout-shift"
+        },
+        {
+          "path": "errors-in-console"
+        },
+        {
+          "path": "server-response-time"
+        },
+        {
+          "path": "metrics/interactive"
+        },
+        {
+          "path": "user-timings"
+        },
+        {
+          "path": "redirects"
+        },
+        {
+          "path": "image-aspect-ratio"
+        },
+        {
+          "path": "image-size-responsive"
+        },
+        {
+          "path": "deprecations"
+        },
+        {
+          "path": "third-party-cookies"
+        },
+        {
+          "path": "mainthread-work-breakdown"
+        },
+        {
+          "path": "bootup-time"
+        },
+        {
+          "path": "diagnostics"
+        },
+        {
+          "path": "network-requests"
+        },
+        {
+          "path": "network-rtt"
+        },
+        {
+          "path": "network-server-latency"
+        },
+        {
+          "path": "main-thread-tasks"
+        },
+        {
+          "path": "metrics"
+        },
+        {
+          "path": "resource-summary"
+        },
+        {
+          "path": "layout-shifts"
+        },
+        {
+          "path": "long-tasks"
+        },
+        {
+          "path": "non-composited-animations"
+        },
+        {
+          "path": "unsized-images"
+        },
+        {
+          "path": "valid-source-maps"
+        },
+        {
+          "path": "csp-xss"
+        },
+        {
+          "path": "has-hsts"
+        },
+        {
+          "path": "origin-isolation"
+        },
+        {
+          "path": "clickjacking-mitigation"
+        },
+        {
+          "path": "trusted-types-xss"
+        },
+        {
+          "path": "script-treemap-data"
+        },
+        {
+          "path": "accessibility/accesskeys"
+        },
+        {
+          "path": "accessibility/aria-allowed-attr"
+        },
+        {
+          "path": "accessibility/aria-allowed-role"
+        },
+        {
+          "path": "accessibility/aria-command-name"
+        },
+        {
+          "path": "accessibility/aria-conditional-attr"
+        },
+        {
+          "path": "accessibility/aria-deprecated-role"
+        },
+        {
+          "path": "accessibility/aria-dialog-name"
+        },
+        {
+          "path": "accessibility/aria-hidden-body"
+        },
+        {
+          "path": "accessibility/aria-hidden-focus"
+        },
+        {
+          "path": "accessibility/aria-input-field-name"
+        },
+        {
+          "path": "accessibility/aria-meter-name"
+        },
+        {
+          "path": "accessibility/aria-progressbar-name"
+        },
+        {
+          "path": "accessibility/aria-prohibited-attr"
+        },
+        {
+          "path": "accessibility/aria-required-attr"
+        },
+        {
+          "path": "accessibility/aria-required-children"
+        },
+        {
+          "path": "accessibility/aria-required-parent"
+        },
+        {
+          "path": "accessibility/aria-roles"
+        },
+        {
+          "path": "accessibility/aria-text"
+        },
+        {
+          "path": "accessibility/aria-toggle-field-name"
+        },
+        {
+          "path": "accessibility/aria-tooltip-name"
+        },
+        {
+          "path": "accessibility/aria-treeitem-name"
+        },
+        {
+          "path": "accessibility/aria-valid-attr-value"
+        },
+        {
+          "path": "accessibility/aria-valid-attr"
+        },
+        {
+          "path": "accessibility/button-name"
+        },
+        {
+          "path": "accessibility/bypass"
+        },
+        {
+          "path": "accessibility/color-contrast"
+        },
+        {
+          "path": "accessibility/definition-list"
+        },
+        {
+          "path": "accessibility/dlitem"
+        },
+        {
+          "path": "accessibility/document-title"
+        },
+        {
+          "path": "accessibility/duplicate-id-aria"
+        },
+        {
+          "path": "accessibility/empty-heading"
+        },
+        {
+          "path": "accessibility/form-field-multiple-labels"
+        },
+        {
+          "path": "accessibility/frame-title"
+        },
+        {
+          "path": "accessibility/heading-order"
+        },
+        {
+          "path": "accessibility/html-has-lang"
+        },
+        {
+          "path": "accessibility/html-lang-valid"
+        },
+        {
+          "path": "accessibility/html-xml-lang-mismatch"
+        },
+        {
+          "path": "accessibility/identical-links-same-purpose"
+        },
+        {
+          "path": "accessibility/image-alt"
+        },
+        {
+          "path": "accessibility/image-redundant-alt"
+        },
+        {
+          "path": "accessibility/input-button-name"
+        },
+        {
+          "path": "accessibility/input-image-alt"
+        },
+        {
+          "path": "accessibility/label-content-name-mismatch"
+        },
+        {
+          "path": "accessibility/label"
+        },
+        {
+          "path": "accessibility/landmark-one-main"
+        },
+        {
+          "path": "accessibility/link-name"
+        },
+        {
+          "path": "accessibility/link-in-text-block"
+        },
+        {
+          "path": "accessibility/list"
+        },
+        {
+          "path": "accessibility/listitem"
+        },
+        {
+          "path": "accessibility/meta-refresh"
+        },
+        {
+          "path": "accessibility/meta-viewport"
+        },
+        {
+          "path": "accessibility/object-alt"
+        },
+        {
+          "path": "accessibility/select-name"
+        },
+        {
+          "path": "accessibility/skip-link"
+        },
+        {
+          "path": "accessibility/tabindex"
+        },
+        {
+          "path": "accessibility/table-duplicate-name"
+        },
+        {
+          "path": "accessibility/table-fake-caption"
+        },
+        {
+          "path": "accessibility/target-size"
+        },
+        {
+          "path": "accessibility/td-has-header"
+        },
+        {
+          "path": "accessibility/td-headers-attr"
+        },
+        {
+          "path": "accessibility/th-has-data-cells"
+        },
+        {
+          "path": "accessibility/valid-lang"
+        },
+        {
+          "path": "accessibility/video-caption"
+        },
+        {
+          "path": "accessibility/manual/custom-controls-labels"
+        },
+        {
+          "path": "accessibility/manual/custom-controls-roles"
+        },
+        {
+          "path": "accessibility/manual/focus-traps"
+        },
+        {
+          "path": "accessibility/manual/focusable-controls"
+        },
+        {
+          "path": "accessibility/manual/interactive-element-affordance"
+        },
+        {
+          "path": "accessibility/manual/logical-tab-order"
+        },
+        {
+          "path": "accessibility/manual/managed-focus"
+        },
+        {
+          "path": "accessibility/manual/offscreen-content-hidden"
+        },
+        {
+          "path": "accessibility/manual/use-landmarks"
+        },
+        {
+          "path": "accessibility/manual/visual-order-follows-dom"
+        },
+        {
+          "path": "accessibility/autocomplete-valid"
+        },
+        {
+          "path": "accessibility/presentation-role-conflict"
+        },
+        {
+          "path": "accessibility/svg-img-alt"
+        },
+        {
+          "path": "byte-efficiency/total-byte-weight"
+        },
+        {
+          "path": "byte-efficiency/unminified-css"
+        },
+        {
+          "path": "byte-efficiency/unminified-javascript"
+        },
+        {
+          "path": "byte-efficiency/unused-css-rules"
+        },
+        {
+          "path": "byte-efficiency/unused-javascript"
+        },
+        {
+          "path": "dobetterweb/doctype"
+        },
+        {
+          "path": "dobetterweb/charset"
+        },
+        {
+          "path": "dobetterweb/geolocation-on-start"
+        },
+        {
+          "path": "dobetterweb/inspector-issues"
+        },
+        {
+          "path": "dobetterweb/js-libraries"
+        },
+        {
+          "path": "dobetterweb/notification-on-start"
+        },
+        {
+          "path": "dobetterweb/paste-preventing-inputs"
+        },
+        {
+          "path": "baseline"
+        },
+        {
+          "path": "seo/meta-description"
+        },
+        {
+          "path": "seo/http-status-code"
+        },
+        {
+          "path": "seo/link-text"
+        },
+        {
+          "path": "seo/crawlable-anchors"
+        },
+        {
+          "path": "seo/is-crawlable"
+        },
+        {
+          "path": "seo/robots-txt"
+        },
+        {
+          "path": "seo/hreflang"
+        },
+        {
+          "path": "seo/canonical"
+        },
+        {
+          "path": "seo/manual/structured-data"
+        },
+        {
+          "path": "bf-cache"
+        },
+        {
+          "path": "insights/cache-insight"
+        },
+        {
+          "path": "insights/cls-culprits-insight"
+        },
+        {
+          "path": "insights/document-latency-insight"
+        },
+        {
+          "path": "insights/dom-size-insight"
+        },
+        {
+          "path": "insights/duplicated-javascript-insight"
+        },
+        {
+          "path": "insights/font-display-insight"
+        },
+        {
+          "path": "insights/forced-reflow-insight"
+        },
+        {
+          "path": "insights/image-delivery-insight"
+        },
+        {
+          "path": "insights/inp-breakdown-insight"
+        },
+        {
+          "path": "insights/lcp-breakdown-insight"
+        },
+        {
+          "path": "insights/lcp-discovery-insight"
+        },
+        {
+          "path": "insights/legacy-javascript-insight"
+        },
+        {
+          "path": "insights/modern-http-insight"
+        },
+        {
+          "path": "insights/network-dependency-tree-insight"
+        },
+        {
+          "path": "insights/render-blocking-insight"
+        },
+        {
+          "path": "insights/third-parties-insight"
+        },
+        {
+          "path": "insights/viewport-insight"
+        }
+      ],
+      "categories": {
+        "performance": {
+          "title": "Performance",
+          "supportedModes": ["navigation", "timespan", "snapshot"],
+          "auditRefs": [
+            {
+              "id": "first-contentful-paint",
+              "weight": 10,
+              "group": "metrics",
+              "acronym": "FCP"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "weight": 25,
+              "group": "metrics",
+              "acronym": "LCP"
+            },
+            {
+              "id": "total-blocking-time",
+              "weight": 30,
+              "group": "metrics",
+              "acronym": "TBT"
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "weight": 25,
+              "group": "metrics",
+              "acronym": "CLS"
+            },
+            {
+              "id": "speed-index",
+              "weight": 10,
+              "group": "metrics",
+              "acronym": "SI"
+            },
+            {
+              "id": "cache-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "cls-culprits-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "document-latency-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "dom-size-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "duplicated-javascript-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "font-display-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "image-delivery-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "inp-breakdown-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "lcp-breakdown-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "legacy-javascript-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "modern-http-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "render-blocking-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "third-parties-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "viewport-insight",
+              "weight": 0,
+              "group": "insights"
+            },
+            {
+              "id": "interactive",
+              "weight": 0,
+              "group": "hidden",
+              "acronym": "TTI"
+            },
+            {
+              "id": "max-potential-fid",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "unminified-css",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "unminified-javascript",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "unused-css-rules",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "unused-javascript",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "total-byte-weight",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "user-timings",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "bootup-time",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "long-tasks",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "non-composited-animations",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "unsized-images",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "bf-cache",
+              "weight": 0,
+              "group": "diagnostics"
+            },
+            {
+              "id": "network-requests",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "network-rtt",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "network-server-latency",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "main-thread-tasks",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "diagnostics",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "metrics",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "screenshot-thumbnails",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "final-screenshot",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "script-treemap-data",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "resource-summary",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "redirects",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "server-response-time",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "layout-shifts",
+              "weight": 0,
+              "group": "hidden"
+            }
+          ]
+        },
+        "accessibility": {
+          "title": "Accessibility",
+          "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developer.chrome.com/docs/lighthouse/accessibility/). Automatic detection can only detect a subset of issues and does not guarantee the accessibility of your web app, so [manual testing](https://web.dev/articles/how-to-review) is also encouraged.",
+          "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://web.dev/articles/how-to-review).",
+          "supportedModes": ["navigation", "snapshot"],
+          "auditRefs": [
+            {
+              "id": "accesskeys",
+              "weight": 7,
+              "group": "a11y-navigation"
+            },
+            {
+              "id": "aria-allowed-attr",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-command-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-conditional-attr",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-deprecated-role",
+              "weight": 1,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-dialog-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-hidden-body",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-hidden-focus",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-input-field-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-meter-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-progressbar-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-prohibited-attr",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-required-attr",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-required-children",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-required-parent",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-roles",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-text",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-toggle-field-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-tooltip-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-treeitem-name",
+              "weight": 7,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-valid-attr-value",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "aria-valid-attr",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "button-name",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "bypass",
+              "weight": 7,
+              "group": "a11y-navigation"
+            },
+            {
+              "id": "color-contrast",
+              "weight": 7,
+              "group": "a11y-color-contrast"
+            },
+            {
+              "id": "definition-list",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "dlitem",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "document-title",
+              "weight": 7,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "duplicate-id-aria",
+              "weight": 10,
+              "group": "a11y-aria"
+            },
+            {
+              "id": "form-field-multiple-labels",
+              "weight": 3,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "frame-title",
+              "weight": 7,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "heading-order",
+              "weight": 3,
+              "group": "a11y-navigation"
+            },
+            {
+              "id": "html-has-lang",
+              "weight": 7,
+              "group": "a11y-language"
+            },
+            {
+              "id": "html-lang-valid",
+              "weight": 7,
+              "group": "a11y-language"
+            },
+            {
+              "id": "html-xml-lang-mismatch",
+              "weight": 3,
+              "group": "a11y-language"
+            },
+            {
+              "id": "image-alt",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "input-button-name",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "input-image-alt",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "label",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "link-in-text-block",
+              "weight": 7,
+              "group": "a11y-color-contrast"
+            },
+            {
+              "id": "link-name",
+              "weight": 7,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "list",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "listitem",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "meta-refresh",
+              "weight": 10,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "meta-viewport",
+              "weight": 10,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "object-alt",
+              "weight": 7,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "select-name",
+              "weight": 10,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "skip-link",
+              "weight": 3,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "tabindex",
+              "weight": 7,
+              "group": "a11y-navigation"
+            },
+            {
+              "id": "target-size",
+              "weight": 7,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "td-headers-attr",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "th-has-data-cells",
+              "weight": 7,
+              "group": "a11y-tables-lists"
+            },
+            {
+              "id": "valid-lang",
+              "weight": 7,
+              "group": "a11y-language"
+            },
+            {
+              "id": "video-caption",
+              "weight": 10,
+              "group": "a11y-audio-video"
+            },
+            {
+              "id": "landmark-one-main",
+              "weight": 3,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "autocomplete-valid",
+              "weight": 1,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "presentation-role-conflict",
+              "weight": 1,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "svg-img-alt",
+              "weight": 1,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "focusable-controls",
+              "weight": 0
+            },
+            {
+              "id": "interactive-element-affordance",
+              "weight": 0
+            },
+            {
+              "id": "logical-tab-order",
+              "weight": 0
+            },
+            {
+              "id": "visual-order-follows-dom",
+              "weight": 0
+            },
+            {
+              "id": "focus-traps",
+              "weight": 0
+            },
+            {
+              "id": "managed-focus",
+              "weight": 0
+            },
+            {
+              "id": "use-landmarks",
+              "weight": 0
+            },
+            {
+              "id": "offscreen-content-hidden",
+              "weight": 0
+            },
+            {
+              "id": "custom-controls-labels",
+              "weight": 0
+            },
+            {
+              "id": "custom-controls-roles",
+              "weight": 0
+            },
+            {
+              "id": "table-duplicate-name",
+              "weight": 0,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "empty-heading",
+              "weight": 0,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "aria-allowed-role",
+              "weight": 0,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "image-redundant-alt",
+              "weight": 0,
+              "group": "a11y-names-labels"
+            },
+            {
+              "id": "identical-links-same-purpose",
+              "weight": 0,
+              "group": "a11y-best-practices"
+            },
+            {
+              "id": "label-content-name-mismatch",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "table-fake-caption",
+              "weight": 0,
+              "group": "hidden"
+            },
+            {
+              "id": "td-has-header",
+              "weight": 0,
+              "group": "hidden"
+            }
+          ]
+        },
+        "best-practices": {
+          "title": "Best Practices",
+          "supportedModes": ["navigation", "timespan", "snapshot"],
+          "auditRefs": [
+            {
+              "id": "is-on-https",
+              "weight": 5,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "redirects-http",
+              "weight": 1,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "geolocation-on-start",
+              "weight": 1,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "notification-on-start",
+              "weight": 1,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "csp-xss",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "has-hsts",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "origin-isolation",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "clickjacking-mitigation",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "trusted-types-xss",
+              "weight": 0,
+              "group": "best-practices-trust-safety"
+            },
+            {
+              "id": "paste-preventing-inputs",
+              "weight": 3,
+              "group": "best-practices-ux"
+            },
+            {
+              "id": "image-aspect-ratio",
+              "weight": 1,
+              "group": "best-practices-ux"
+            },
+            {
+              "id": "image-size-responsive",
+              "weight": 1,
+              "group": "best-practices-ux"
+            },
+            {
+              "id": "doctype",
+              "weight": 1,
+              "group": "best-practices-browser-compat"
+            },
+            {
+              "id": "charset",
+              "weight": 1,
+              "group": "best-practices-browser-compat"
+            },
+            {
+              "id": "baseline",
+              "weight": 0,
+              "group": "best-practices-browser-compat"
+            },
+            {
+              "id": "js-libraries",
+              "weight": 0,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "deprecations",
+              "weight": 5,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "third-party-cookies",
+              "weight": 5,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "errors-in-console",
+              "weight": 1,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "valid-source-maps",
+              "weight": 0,
+              "group": "best-practices-general"
+            },
+            {
+              "id": "inspector-issues",
+              "weight": 1,
+              "group": "best-practices-general"
+            }
+          ]
+        },
+        "seo": {
+          "title": "SEO",
+          "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/explore/vitals). [Learn more about Google Search Essentials](https://support.google.com/webmasters/answer/35769).",
+          "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+          "supportedModes": ["navigation", "snapshot"],
+          "auditRefs": [
+            {
+              "id": "is-crawlable",
+              "weight": 4.043478260869565,
+              "group": "seo-crawl"
+            },
+            {
+              "id": "document-title",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "meta-description",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "http-status-code",
+              "weight": 1,
+              "group": "seo-crawl"
+            },
+            {
+              "id": "link-text",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "crawlable-anchors",
+              "weight": 1,
+              "group": "seo-crawl"
+            },
+            {
+              "id": "robots-txt",
+              "weight": 1,
+              "group": "seo-crawl"
+            },
+            {
+              "id": "image-alt",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "hreflang",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "canonical",
+              "weight": 1,
+              "group": "seo-content"
+            },
+            {
+              "id": "structured-data",
+              "weight": 0
+            }
+          ]
+        }
+      },
+      "groups": {
+        "metrics": {
+          "title": "Metrics"
+        },
+        "insights": {
+          "title": "Insights",
+          "description": "These insights are also available in the Chrome DevTools Performance Panel - [record a trace](https://developer.chrome.com/docs/devtools/performance/reference) to view more detailed information."
+        },
+        "diagnostics": {
+          "title": "Diagnostics",
+          "description": "More information about the performance of your application. These numbers don't [directly affect](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) the Performance score."
+        },
+        "a11y-best-practices": {
+          "title": "Best practices",
+          "description": "These items highlight common accessibility best practices."
+        },
+        "a11y-color-contrast": {
+          "title": "Contrast",
+          "description": "These are opportunities to improve the legibility of your content."
+        },
+        "a11y-names-labels": {
+          "title": "Names and labels",
+          "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+        },
+        "a11y-navigation": {
+          "title": "Navigation",
+          "description": "These are opportunities to improve keyboard navigation in your application."
+        },
+        "a11y-aria": {
+          "title": "ARIA",
+          "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+        },
+        "a11y-language": {
+          "title": "Internationalization and localization",
+          "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+        },
+        "a11y-audio-video": {
+          "title": "Audio and video",
+          "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+        },
+        "a11y-tables-lists": {
+          "title": "Tables and lists",
+          "description": "These are opportunities to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+        },
+        "seo-mobile": {
+          "title": "Mobile Friendly",
+          "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn how to make pages mobile-friendly](https://developers.google.com/search/mobile-sites/)."
+        },
+        "seo-content": {
+          "title": "Content Best Practices",
+          "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+        },
+        "seo-crawl": {
+          "title": "Crawling and Indexing",
+          "description": "To appear in search results, crawlers need access to your app."
+        },
+        "best-practices-trust-safety": {
+          "title": "Trust and Safety"
+        },
+        "best-practices-ux": {
+          "title": "User Experience"
+        },
+        "best-practices-browser-compat": {
+          "title": "Browser Compatibility"
+        },
+        "best-practices-general": {
+          "title": "General"
+        },
+        "webmcp": {
+          "title": "WebMCP",
+          "description": "Audits validating WebMCP integration."
+        },
+        "agent-accessibility": {
+          "title": "Agent Accessibility",
+          "description": "These audits highlight best practices for improving the accessibility of the website for AI agents."
+        },
+        "agent-discoverability": {
+          "title": "Agent Discoverability",
+          "description": "These audits validate that websites expose discoverable resources, documentation, and catalogs for AI agents."
+        },
+        "hidden": {
+          "title": ""
+        }
+      },
+      "settings": {
+        "output": ["json", "html"],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      }
+    }
+  },
+  "htmlTemplateSha256": "9eb7d2f9f13ed104749d8200fae6babab828e42fe835b582ea2e79f0f8015a99"
+}

@@ -11,6 +11,7 @@ import { tmpdir } from "node:os";
 import { createHash } from "node:crypto";
 import { kitRoot, dependencyClosure } from "./lib/source-graph.mjs";
 import { zipFiles } from "./lib/zip.mjs";
+import { excludeQualitySource } from "./lib/quality-source.mjs";
 import { initProject } from "../bin/aureform.mjs";
 const kitManifest = JSON.parse(
   await readFile(resolve(kitRoot, "package.json"), "utf8"),
@@ -274,8 +275,10 @@ async function tree(root, directory = "", files = new Map()) {
   for (const item of await readdir(resolve(root, directory), {
     withFileTypes: true,
   })) {
+    const path = [directory, item.name].filter(Boolean).join("/");
     if (
       excluded.has(item.name) ||
+      excludeQualitySource(path) ||
       (item.name.startsWith(".env") && item.name !== ".env.example") ||
       (item.name.startsWith(".dev.vars") &&
         item.name !== ".dev.vars.example") ||
@@ -285,7 +288,6 @@ async function tree(root, directory = "", files = new Map()) {
       (directory === "public" && item.name === "downloads")
     )
       continue;
-    const path = [directory, item.name].filter(Boolean).join("/");
     // Include native proof files and original masters so the source archive
     // can reproduce packaging gates without unpublished workspace artifacts.
     if (item.isDirectory()) await tree(root, path, files);

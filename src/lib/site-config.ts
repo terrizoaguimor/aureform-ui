@@ -7,6 +7,7 @@ if (!["https:", "http:"].includes(parsedUrl.protocol)) {
 }
 export const siteOrigin = parsedUrl.origin;
 export const siteName = "Aureform UI";
+export const sponsorsUrl = "https://github.com/sponsors/terrizoaguimor";
 
 export function siteUrl(path = "/"): string {
   return new URL(path.replace(/^\/?/, "/"), `${siteOrigin}/`).toString();

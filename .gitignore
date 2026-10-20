@@ -33,3 +33,7 @@ storage-state*.json
 # The reviewed image masters are published in design/images/masters/.
 output/imagegen/
 tmp/imagegen/
+# Build identity and local Lighthouse bundles are generated, never committed.
+public/build-info.json
+public/build-info.json.*.tmp
+docs/quality/lighthouse/.import*

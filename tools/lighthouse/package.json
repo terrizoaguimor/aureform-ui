@@ -1,0 +1,13 @@
+{
+  "name": "@aureform/lighthouse-tools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "packageManager": "pnpm@10.34.5",
+  "dependencies": {
+    "lighthouse": "13.5.0"
+  }
+}

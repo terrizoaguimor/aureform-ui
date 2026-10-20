@@ -1,0 +1,2935 @@
+{
+  "baselineCommit": "70b40b56ffc7096ffa32ef2f1210ee550ea6d0b0",
+  "checkedAt": "2026-10-20T05:13:23.308435Z",
+  "reviewScope": {
+    "originalFindingsDocument": "docs/research-gaps-1.4.es.md",
+    "originalFindingsCommit": "56803d54f48dc00b635d19197e0de792ac5f7ead",
+    "method": "Read immutable baseline source, documentation, registry metadata, test descriptions and existing QA receipts. Retrieve primary sources with unauthenticated live HTTP GETs, follow redirects and read relevant content. Inspect public issue/PR bodies, status and available response/resolution context; individual source limitations bound body-only and code-review checks. Read all three completed AGY final responses without republishing them. No builds, new application tests, provider operations, secrets/configuration access or installation commands were performed.",
+    "evidencePathConvention": "Paths and line anchors in baselineFindings, claimCorrections and independent recommendation reviews refer to the immutable baselineCommit, not the changing implementation checkout. AGY artifact paths refer to research outputs in the healthy implementation checkout. A :number suffix is a starting source line.",
+    "sourceVersionConvention": "Version labels describe the retrieved documentation or the environment reported in an issue. They do not establish the latest npm release, the installed Aureform dependency version, or tested compatibility.",
+    "categoryConvention": "Benchmark categories are reviewer classifications inferred from documented product focus and distribution. These are heterogeneous references, not eight interchangeable direct competitors.",
+    "stateDefinitions": {
+      "delivered": "The finding's bounded requested outcome is supported in the baseline. This can mean preserving an explicit documentation boundary, without implementing the optional expansion.",
+      "partial": "A concrete portion of the requested outcome is supported, while acceptance or coverage remains incomplete.",
+      "persists": "The additional behavior proposed by the finding remains absent from the reviewed contracts or unsupported by acceptance evidence. Existing capabilities described in the finding are still acknowledged."
+    },
+    "receiptIdentityReview": {
+      "receipt": "docs/qa-runtime-1.4.0.json",
+      "eligibleRecordedSourceDigestsCompared": 4,
+      "matched": 4,
+      "mismatched": 0,
+      "limitations": "Only eligible recorded source-file hashes were compared. Configuration, dependency, native-state and secret files were not opened. Matching identities do not rerun tests or certify every baseline file."
+    },
+    "inProgressExcludedFromBaseline": [
+      "New Lighthouse implementation remains outside the immutable baseline regardless of separate-agent completion.",
+      "New Sponsors implementation remains outside the immutable baseline regardless of separate-agent completion."
+    ],
+    "agyFinalResponsesReviewed": true,
+    "agyAvailability": {
+      "checkedAt": "2026-10-20T05:09:12.380486Z",
+      "workflows": "Completed original artifact with final response reviewed.",
+      "design": "Completed retry artifact with final response reviewed.",
+      "adoption": "Completed retry artifact with final response reviewed.",
+      "limitations": "Both retries are web-only; independent local code corroboration is attributed to this reviewer. Per-run runner versions and recorded query counts are stored in their review sections."
+    },
+    "demandBoundary": "Documentation verifies advertised contracts and examples. Issue threads verify particular reported experiences and replies. Neither establishes adoption, representative user demand, conversion, market share, measured time savings or comparative quality.",
+    "agyReviewedTopics": [
+      "workflows",
+      "design",
+      "adoption"
+    ],
+    "registryMetadataReview": {
+      "path": "public/r/registry.json",
+      "itemCount": 107,
+      "itemsWithDocs": 0,
+      "itemsWithMeta": 0,
+      "itemsDeclaringLenis": [
+        "motion-system"
+      ],
+      "itemsDeclaringGsap": [
+        "motion-system"
+      ],
+      "itemsDeclaringMotionOrFramerMotion": 0,
+      "limitations": "Exact generated metadata was read, including version-suffixed dependency names. This does not prove every demo route has no animation runtime or certify installed package versions."
+    },
+    "sourceCountConvention": "primarySourceCount and distinctSuccessfulPrimaryUrls count distinct successful final primary URLs. sourceCheckCount counts requested-URL checks, including redirect aliases and unavailable citations. Each original retrieval time/status is retained.",
+    "reportPathConvention": "Documents and locations under reportReview refer to read-only snapshots of the healthy implementation checkout. They are not baseline evidencePaths and do not certify production publication."
+  },
+  "summary": {
+    "primarySourceCount": 79,
+    "distinctRequestedUrls": 83,
+    "distinctFinalUrls": 81,
+    "successfulFinalHttpResponses": 81,
+    "firstPartyIssueThreads": 20,
+    "benchmarkCount": 8,
+    "baselineFindingCount": 20,
+    "baselineFindingStates": {
+      "partial": 3,
+      "persists": 16,
+      "delivered": 1
+    },
+    "newTestExecutions": 0,
+    "sourceCheckCount": 83,
+    "unavailableOfficialUrls": 1,
+    "firstPartyDiscussions": 1,
+    "agyWorkflowClaimChecks": 14,
+    "agyWorkflowRecommendationSlices": 8,
+    "distinctSuccessfulPrimaryUrls": 79,
+    "unavailableFirstPartyUrls": 1,
+    "firstPartyPullRequests": 2,
+    "agyReviewedTopics": 3,
+    "agyRecordedSearchQueries": 52,
+    "claimCorrectionCount": 45,
+    "successfulPrimarySourceChecks": 81,
+    "reportDocumentsReviewed": 2,
+    "reportFactualCorrections": 1,
+    "reportScopeClarifications": 1
+  },
+  "sources": [
+    {
+      "id": "tailadmin-next-install",
+      "title": "TailAdmin Next.js Installation Guide",
+      "url": "https://tailadmin.com/docs/installation/nextjs",
+      "finalUrl": "https://tailadmin.com/docs/installation/nextjs",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:38:45.477378Z",
+      "httpStatus": 200,
+      "version": "Unversioned Next.js edition guide; the separate changelog identifies its release track.",
+      "observed": "Documents adoption of a complete Next.js/Tailwind dashboard project through the official repository or ZIP, followed by dependency installation, development and production commands.",
+      "limitations": "A setup recipe is not a measured installation success, backend implementation or component-by-component consumer integration test."
+    },
+    {
+      "id": "tailadmin-react-install",
+      "title": "TailAdmin React Installation Guide",
+      "url": "https://tailadmin.com/docs/installation/react",
+      "finalUrl": "https://tailadmin.com/docs/installation/react",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:38:45.557718Z",
+      "httpStatus": 200,
+      "version": "Unversioned React/Vite edition guide.",
+      "observed": "Documents a React/Vite/Tailwind dashboard checkout or ZIP, package installation, a development server and a deployable dist directory.",
+      "limitations": "The React and Next.js editions have separate instructions; capabilities and release numbers must not be assumed identical."
+    },
+    {
+      "id": "tailadmin-faq",
+      "title": "TailAdmin FAQ",
+      "url": "https://tailadmin.com/docs/others/faq",
+      "finalUrl": "https://tailadmin.com/docs/others/faq",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:39:27.920223Z",
+      "httpStatus": 200,
+      "version": "Rolling multi-edition FAQ.",
+      "observed": "Describes framework editions, customization of themes/layouts/components, light/dark modes, support and updates.",
+      "limitations": "Responsive behavior and update promises are vendor descriptions, not independent device tests or service-level measurements. Commercial terms were not evaluated."
+    },
+    {
+      "id": "tailadmin-dark-mode",
+      "title": "TailAdmin Dark Mode",
+      "url": "https://tailadmin.com/docs/customizations/dark-mode",
+      "finalUrl": "https://tailadmin.com/docs/customizations/dark-mode",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:40:12.199861Z",
+      "httpStatus": 200,
+      "version": "Tailwind CSS v4 instructions.",
+      "observed": "Explains class-driven dark variants and a Next.js example using next-themes for theme state and persistence.",
+      "limitations": "Does not verify contrast, absence of hydration problems in a consumer, or isolation from the host's global styles."
+    },
+    {
+      "id": "tailadmin-next-changelog",
+      "title": "TailAdmin Next.js Changelogs",
+      "url": "https://tailadmin.com/docs/update-logs/nextjs",
+      "finalUrl": "https://tailadmin.com/docs/update-logs/nextjs",
+      "kind": "official-changelog",
+      "checkedAt": "2026-10-20T04:40:12.153079Z",
+      "httpStatus": 200,
+      "version": "Top listed entry: 2.4.0, September 13, 2026. Earlier entries include 2.3.0, April 28, 2026.",
+      "observed": "The Next.js track records evolving dashboard/layout features; the 2.3.0 entry describes AI, sales and finance dashboards and ApexCharts visualizations.",
+      "limitations": "The changelog does not establish free/Pro parity or equivalent availability in every framework edition."
+    },
+    {
+      "id": "untitled-introduction",
+      "title": "Untitled UI React Introduction",
+      "url": "https://www.untitledui.com/react/docs/introduction",
+      "finalUrl": "https://www.untitledui.com/react/docs/introduction",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:38:44.507441Z",
+      "httpStatus": 200,
+      "version": "Rolling documentation. Prose names Tailwind 4.3 and React Aria 1.21; the stack graphic and FAQ disagree on some dependency versions.",
+      "observed": "Distributes editable styled React source built on React Aria and Tailwind. Distinguishes free base components from additional Pro components/page examples and identifies its matching Figma kit as a separate product.",
+      "limitations": "Do not repeat the marketing implication that copying source removes npm dependencies: the installation guide explicitly requires them. Exact dependency versions require a separately pinned source snapshot."
+    },
+    {
+      "id": "untitled-installation",
+      "title": "Untitled UI React Installation",
+      "url": "https://www.untitledui.com/react/docs/installation",
+      "finalUrl": "https://www.untitledui.com/react/docs/installation",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:38:44.533592Z",
+      "httpStatus": 200,
+      "version": "Rolling Tailwind v4 instructions; CLI examples use untitledui@latest.",
+      "observed": "Provides CLI scaffolding and manual setup. Manual setup requires React Aria-related packages, style/theme files and utilities; some components need additional packages. Updating copied components uses overwrite.",
+      "limitations": "Source ownership does not eliminate shared setup, styling effects or the need to preserve customized files before an overwrite."
+    },
+    {
+      "id": "untitled-cli",
+      "title": "Untitled UI CLI",
+      "url": "https://www.untitledui.com/react/docs/cli",
+      "finalUrl": "https://www.untitledui.com/react/docs/cli",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:52.939692Z",
+      "httpStatus": 200,
+      "version": "Rolling CLI documentation using untitledui@latest; exact CLI version unpinned.",
+      "observed": "Documents initialization, component/page installation, discovery and licensed Pro access. add overwrite replaces local components. Also documents a bounded v7-to-v8 upgrade, dry-run and a review report, and physical-to-logical RTL migration.",
+      "limitations": "The documented major-version migration keeps brand colors and can require manual review. It is not proof of generic three-way component merging or retention of every local edit; exact CLI version remains unpinned."
+    },
+    {
+      "id": "untitled-theming",
+      "title": "Untitled UI Theming",
+      "url": "https://www.untitledui.com/react/docs/theming",
+      "finalUrl": "https://www.untitledui.com/react/docs/theming",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:38:44.894155Z",
+      "httpStatus": 200,
+      "version": "Rolling CSS-first Tailwind v4 theme documentation.",
+      "observed": "Brand selection repoints the brand shade variables. Custom colors require the full shade scale; dark-mode tokens reference that scale. Gray and feedback colors remain independent of brand selection.",
+      "limitations": "A brand palette change is not a complete token-system migration, component isolation guarantee or contrast audit."
+    },
+    {
+      "id": "shadcn-introduction",
+      "title": "shadcn/ui Introduction",
+      "url": "https://ui.shadcn.com/docs",
+      "finalUrl": "https://ui.shadcn.com/docs",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:39:27.402525Z",
+      "httpStatus": 200,
+      "version": "Rolling documentation; no single component release pin on this page.",
+      "observed": "Describes styled, composable components delivered as editable source and a code distribution platform using schemas and a CLI.",
+      "limitations": "This verifies the distribution model, not representative demand, performance savings or superiority over packaged libraries."
+    },
+    {
+      "id": "shadcn-cli",
+      "title": "shadcn CLI",
+      "url": "https://ui.shadcn.com/docs/cli",
+      "finalUrl": "https://ui.shadcn.com/docs/cli",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T05:03:22.572755Z",
+      "httpStatus": 200,
+      "version": "Rolling shadcn@latest documentation; Aureform's reviewed consumer documentation separately pins 4.22.0.",
+      "observed": "Documents init/add, source and dependency installation, dry-run/diff/view previews, registry inspection/search, registry builds and named migrations. Add has an explicit overwrite option. Current documentation exposes add --diff and --dry-run; no standalone shadcn diff entry was found in the retrieved page. It also documents preset/apply commands.",
+      "limitations": "Current upstream command coverage must not be attributed to the historically pinned Aureform installer without a new consumer check. Do not reuse a historical standalone diff command as current guidance without a versioned reference."
+    },
+    {
+      "id": "shadcn-registry-item",
+      "title": "shadcn Registry Item Specification",
+      "url": "https://ui.shadcn.com/docs/registry/registry-item-json",
+      "finalUrl": "https://ui.shadcn.com/docs/registry/registry-item-json",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:39:27.445778Z",
+      "httpStatus": 200,
+      "version": "Rolling registry-item schema documentation; Tailwind v4 uses cssVars.theme rather than the deprecated tailwind property.",
+      "observed": "Defines files, targets, dependencies and registry dependencies, CSS variables/rules, installer documentation through docs, and arbitrary metadata through meta. Reproducible GitHub registry dependencies require their own explicit pins.",
+      "limitations": "A schema-supported field is a capability, not evidence that Aureform populates it or that consumers can integrate without host changes."
+    },
+    {
+      "id": "shadcn-registry-examples",
+      "title": "shadcn Registry Examples",
+      "url": "https://ui.shadcn.com/docs/registry/examples",
+      "finalUrl": "https://ui.shadcn.com/docs/registry/examples",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:39:27.496318Z",
+      "httpStatus": 200,
+      "version": "Rolling examples; universal item section explicitly mentions availability from 2.9.0.",
+      "observed": "Shows styles created with extends: none, blocks, components, metadata, target placeholders and custom CSS. The linked custom-style example supplies context for the maintainer's issue #8669 reply.",
+      "limitations": "The documented custom-style approach does not establish that adding cssVars to arbitrary registry:block items avoids every default CSS injection."
+    },
+    {
+      "id": "shadcn-theming",
+      "title": "shadcn Theming",
+      "url": "https://ui.shadcn.com/docs/theming",
+      "finalUrl": "https://ui.shadcn.com/docs/theming",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:39:27.415499Z",
+      "httpStatus": 200,
+      "version": "Rolling CSS-variable/Tailwind theme documentation.",
+      "observed": "Explains semantic surface/foreground pairs, root/dark token overrides, Tailwind token mappings and an alternative installation mode without CSS variables.",
+      "limitations": "The alternative is an installation-time choice; changing an existing installation requires replacing components. Theming does not prove host-style isolation."
+    },
+    {
+      "id": "shadcn-cssvars-issue",
+      "title": "shadcn/ui #8669: custom registry cssVars and default base styles",
+      "url": "https://github.com/shadcn-ui/ui/issues/8669",
+      "finalUrl": "https://github.com/shadcn-ui/ui/issues/8669",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T04:39:28.014379Z",
+      "httpStatus": 200,
+      "issueStatus": "open",
+      "issueStatusCheckedAt": "2026-10-20T04:37:46.022816Z",
+      "issueUpdatedAt": "2026-02-07T16:44:33Z",
+      "version": "Reporter provides no useful CLI version in System Info.",
+      "observed": "Reports extra @layer base and dark-variant injection when a custom block adds cssVars. The maintainer proposes extends: none on a custom style and initialization before adding blocks, later says the scenario works. The reporter then supplies a contrary example; a subsequent comment requests an update.",
+      "limitations": "The thread remains open, with no confirmed resolution or fixed release established here. It concerns CSS injection, not theme-preset drift. It does not prove an Aureform failure or frequency."
+    },
+    {
+      "id": "tremor-about",
+      "title": "Tremor: Towards Copy and Paste",
+      "url": "https://www.tremor.so/docs/getting-started/about",
+      "finalUrl": "https://www.tremor.so/docs/getting-started/about",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:40:11.707507Z",
+      "httpStatus": 200,
+      "version": "Tremor Raw track; no package release pin.",
+      "observed": "Distinguishes the packaged Tremor component library from Raw's copyable React source. Raw emphasizes dashboards and describes styled adaptations of Radix primitives.",
+      "limitations": "Its negative Figma answer conflicts with the installation page's Figma-kit link. Do not conclude current native Figma coverage or absence from this page alone."
+    },
+    {
+      "id": "tremor-installation",
+      "title": "Tremor Raw Installation",
+      "url": "https://www.tremor.so/docs/getting-started/installation",
+      "finalUrl": "https://www.tremor.so/docs/getting-started/installation",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:40:11.640528Z",
+      "httpStatus": 200,
+      "version": "Guide requires React 18.2.0+ and Tailwind CSS 4.0+.",
+      "observed": "Provides framework setup paths for Raw and links separately to copyable dashboard blocks and a Figma UI kit.",
+      "limitations": "Raw's requirements differ from the separately hosted NPM library instructions. The Figma link does not verify native design/source parity."
+    },
+    {
+      "id": "tremor-area-chart",
+      "title": "Tremor Area Chart",
+      "url": "https://www.tremor.so/docs/visualizations/area-chart",
+      "finalUrl": "https://www.tremor.so/docs/visualizations/area-chart",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:53.298580Z",
+      "httpStatus": 200,
+      "version": "Rolling Raw chart documentation.",
+      "observed": "Shows default/stacked/percent areas, axis labels, value events and custom tooltip hooks. Source exposes connectNulls with default false and includes an example with null category values.",
+      "limitations": "Null-gap configuration does not establish data freshness, data correctness or a universal visual rule. Raw and NPM distribution requirements must remain separate."
+    },
+    {
+      "id": "tremor-npm-installation",
+      "title": "Tremor NPM Installation",
+      "url": "https://npm.tremor.so/docs/getting-started/installation",
+      "finalUrl": "https://npm.tremor.so/docs/getting-started/installation",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:40:11.816542Z",
+      "httpStatus": 200,
+      "version": "Separate guide specifies Tremor 3.18.0+, React 18.2.0+, Tailwind 3.4+, and Headless UI 2.2.0.",
+      "observed": "Documents the packaged library's dependency/theme setup and a module-content path for generated Tailwind styles.",
+      "limitations": "These instructions are not interchangeable with Raw's Tailwind v4 setup and do not establish the latest published package release."
+    },
+    {
+      "id": "magic-installation",
+      "title": "Magic UI Installation",
+      "url": "https://magicui.design/docs/installation",
+      "finalUrl": "https://magicui.design/docs/installation",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:40:12.080134Z",
+      "httpStatus": 200,
+      "version": "Rolling source registry documentation using shadcn@latest.",
+      "observed": "Uses shadcn initialization and namespaced component installation, illustrated by adding and importing Globe.",
+      "limitations": "No complete admin backend or business workflow is established by this installation example. An exact component snapshot was not installed."
+    },
+    {
+      "id": "magic-animated-beam",
+      "title": "Magic UI Animated Beam",
+      "url": "https://magicui.design/docs/components/animated-beam",
+      "finalUrl": "https://magicui.design/docs/components/animated-beam",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:40:12.325976Z",
+      "httpStatus": 200,
+      "version": "Rolling copyable component documentation.",
+      "observed": "Provides a decorative animated path linking rendered elements, with examples for multiple inputs/outputs and direction changes. The demo connects visual logo nodes through element references.",
+      "limitations": "A diagram depicting integrations is not evidence that those third-party integrations execute. Motion accessibility and performance were not tested."
+    },
+    {
+      "id": "magic-bento-grid",
+      "title": "Magic UI Bento Grid",
+      "url": "https://magicui.design/docs/components/bento-grid",
+      "finalUrl": "https://magicui.design/docs/components/bento-grid",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:40:12.187971Z",
+      "httpStatus": 200,
+      "version": "Rolling component/example documentation.",
+      "observed": "Supplies a feature-card layout with example backgrounds, headings and links.",
+      "limitations": "Sample card copy about automatic saves, search, notifications, languages or integrations is presentation content, not evidence of those implemented services."
+    },
+    {
+      "id": "magic-mcp",
+      "title": "Magic UI MCP Server",
+      "url": "https://magicui.design/docs/mcp",
+      "finalUrl": "https://magicui.design/docs/mcp",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.303839Z",
+      "httpStatus": 200,
+      "version": "Rolling MCP setup guide; no server version pin.",
+      "observed": "Documents an official MCP route for providing component context to an AI-assisted editor.",
+      "limitations": "The vendor's claims about easier generation do not measure coding-error reduction, adoption or saved development time."
+    },
+    {
+      "id": "magic-motion-dependency-issue",
+      "title": "Magic UI #611: unresolved motion/react import during manual setup",
+      "url": "https://github.com/magicuidesign/magicui/issues/611",
+      "finalUrl": "https://github.com/magicuidesign/magicui/issues/611",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T04:42:01.635665Z",
+      "httpStatus": 200,
+      "issueStatus": "closed",
+      "issueStateReason": "completed",
+      "issueStatusCheckedAt": "2026-10-20T04:41:02.435831Z",
+      "issueClosedAt": "2025-04-08T02:32:30Z",
+      "version": "Historical March-April 2025 report; no precise component version.",
+      "observed": "The reporter attempted to install the import subpath motion/react as a package. A contributor corrected the package name to motion and acknowledged that component installation should bring its dependency.",
+      "limitations": "The issue is closed. Its thread does not identify a verified fixing commit/release or establish a current unresolved defect."
+    },
+    {
+      "id": "mantine-nextjs",
+      "title": "Mantine Usage with Next.js",
+      "url": "https://mantine.dev/guides/next/",
+      "finalUrl": "https://mantine.dev/guides/next/",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.292714Z",
+      "httpStatus": 200,
+      "version": "Retrieved documentation displays 9.7.3.",
+      "observed": "Provides full and minimal starter templates, optional feature packages, provider/style setup, color-scheme setup and guidance for server/client and compound components.",
+      "limitations": "The guide is a version-specific integration reference, not evidence that every consumer can adopt it without framework configuration or a provider."
+    },
+    {
+      "id": "mantine-styles",
+      "title": "Mantine Styles",
+      "url": "https://mantine.dev/styles/mantine-styles/",
+      "finalUrl": "https://mantine.dev/styles/mantine-styles/",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.295748Z",
+      "httpStatus": 200,
+      "version": "Retrieved documentation displays 9.7.3.",
+      "observed": "Documents bundled CSS imports, per-component imports for core components, stylesheet ordering and alternative styles.layer.css files wrapped in the mantine layer. Warns against importing both layered and unlayered variants.",
+      "limitations": "Layer precedence is a documented styling tool, not complete isolation from host resets or independently measured bundle reduction."
+    },
+    {
+      "id": "mantine-accessibility",
+      "title": "Are Mantine Components Accessible?",
+      "url": "https://help.mantine.dev/q/are-mantine-components-accessible",
+      "finalUrl": "https://help.mantine.dev/q/are-mantine-components-accessible",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.534780Z",
+      "httpStatus": 200,
+      "version": "Unversioned first-party Help Center article.",
+      "observed": "Describes WAI-ARIA-oriented components, axe/unit checks and manual VoiceOver checks. Explicitly states that application authors still have accessibility responsibilities and required component props.",
+      "limitations": "This describes the project's testing approach. It is not an independent WCAG certification or a certification of Aureform."
+    },
+    {
+      "id": "mantine-form-validation",
+      "title": "Mantine Form Validation",
+      "url": "https://mantine.dev/form/validation/",
+      "finalUrl": "https://mantine.dev/form/validation/",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.384979Z",
+      "httpStatus": 200,
+      "version": "Retrieved documentation displays 9.7.3.",
+      "observed": "Documents field and cross-field rules, errors, change/blur/submit validation, async validation state, cancellation signals for superseded validation, debounce and focusing an invalid field.",
+      "limitations": "Client validation and cancellation are not server authorization, idempotent mutations or a durable job system."
+    },
+    {
+      "id": "heroui-legacy-cli-url",
+      "title": "HeroUI Legacy CLI URL Now Resolves to Migration",
+      "url": "https://www.heroui.com/docs/guide/cli",
+      "finalUrl": "https://heroui.com/en/docs/react/migration",
+      "kind": "official-docs-redirect",
+      "checkedAt": "2026-10-20T04:41:02.574368Z",
+      "httpStatus": 200,
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://www.heroui.com/docs/guide/cli",
+          "to": "https://heroui.com/docs/guide/cli"
+        },
+        {
+          "status": 308,
+          "from": "https://heroui.com/docs/guide/cli",
+          "to": "https://heroui.com/en/docs/react/migration"
+        }
+      ],
+      "version": "Final page documents v2 to v3 migration and displays React documentation version 3.2.6.",
+      "observed": "The final content is a migration guide. It describes React 19+/Tailwind v4 requirements, removal of the provider/plugin setup and changed compound component APIs.",
+      "limitations": "This URL is not current CLI documentation. It cannot support importing historical doctor behavior into v3; use the separately verified current CLI page."
+    },
+    {
+      "id": "heroui-current-cli",
+      "title": "HeroUI Current React CLI",
+      "url": "https://heroui.com/en/docs/react/getting-started/cli",
+      "finalUrl": "https://heroui.com/en/docs/react/getting-started/cli",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.150330Z",
+      "httpStatus": 200,
+      "version": "React docs display 3.2.6; commands use heroui-cli@latest. Exact CLI package version is not established.",
+      "observed": "Documents init/install/upgrade, terminal component documentation and doctor. Doctor checks that @heroui/react and @heroui/styles are installed and required peer dependencies meet minimum requirements; reports issues with exit status 1.",
+      "limitations": "Doctor is currently documented, but its stated checks are package/peer checks. Do not claim it validates all Tailwind setup, runtime behavior, accessibility or application health. No CLI command was executed."
+    },
+    {
+      "id": "heroui-quick-start",
+      "title": "HeroUI React Quick Start",
+      "url": "https://heroui.com/en/docs/react/getting-started/quick-start",
+      "finalUrl": "https://heroui.com/en/docs/react/getting-started/quick-start",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.724433Z",
+      "httpStatus": 200,
+      "version": "HeroUI v3 documentation displaying 3.2.6; requirements list React 19+ and Tailwind v4.",
+      "observed": "Installs separate @heroui/react and @heroui/styles packages, imports Tailwind before HeroUI styles and shows direct component usage.",
+      "limitations": "Do not mix this setup with historical v2 provider/Tailwind-plugin instructions."
+    },
+    {
+      "id": "heroui-styling-migration",
+      "title": "HeroUI Styling and Theming Migration",
+      "url": "https://heroui.com/en/docs/react/migration/styling",
+      "finalUrl": "https://heroui.com/en/docs/react/migration/styling",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.137696Z",
+      "httpStatus": 200,
+      "version": "v2 to v3 comparison; React docs display 3.2.6.",
+      "observed": "Documents the move from plugin-generated styles to imported CSS, semantic CSS variables, className/utility changes and different default radii/color naming.",
+      "limitations": "This is evidence of explicit migration work, not automatic visual parity or preservation of arbitrary v2 customizations."
+    },
+    {
+      "id": "baseui-about",
+      "title": "About Base UI",
+      "url": "https://base-ui.com/react/overview/about",
+      "finalUrl": "https://base-ui.com/react/overview/about",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.013599Z",
+      "httpStatus": 200,
+      "version": "Retrieved documentation displays 1.9.0 and states React 17+ support.",
+      "observed": "Defines an unstyled React component library with open component parts, no bundled CSS and support for multiple styling solutions. Describes its accessibility and compatibility goals.",
+      "limitations": "Base UI is a behavior foundation used by Aureform, not a complete styled dashboard or application-service implementation."
+    },
+    {
+      "id": "baseui-accessibility",
+      "title": "Base UI Accessibility",
+      "url": "https://base-ui.com/react/overview/accessibility",
+      "finalUrl": "https://base-ui.com/react/overview/accessibility",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.097011Z",
+      "httpStatus": 200,
+      "version": "Retrieved documentation displays 1.9.0.",
+      "observed": "Documents keyboard, ARIA and focus behavior and configurable focus targets. Assigns visual focus indication, color contrast and meaningful accessible labels to the application author.",
+      "limitations": "Accessible primitives do not establish accessible consumer styling or whole-application WCAG conformance."
+    },
+    {
+      "id": "baseui-styling",
+      "title": "Base UI Styling",
+      "url": "https://base-ui.com/react/handbook/styling",
+      "finalUrl": "https://base-ui.com/react/handbook/styling",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:41:02.382718Z",
+      "httpStatus": 200,
+      "version": "Retrieved documentation displays 1.9.0.",
+      "observed": "Provides className/style state functions, state data attributes, dynamic CSS variables and examples for Tailwind, CSS Modules and CSS-in-JS.",
+      "limitations": "The application must supply styles and compose parts. This does not provide a ready-made visual system or backend workflow."
+    },
+    {
+      "id": "baseui-releases",
+      "title": "Base UI Releases",
+      "url": "https://base-ui.com/react/overview/releases",
+      "finalUrl": "https://base-ui.com/react/overview/releases",
+      "kind": "official-changelog",
+      "checkedAt": "2026-10-20T04:41:02.453118Z",
+      "httpStatus": 200,
+      "version": "Release index displays v1.9.0 above earlier v1.8.0/v1.7.0/v1.6.0 entries.",
+      "observed": "Separates release changelogs from commit/PR canary builds and explicitly warns that canaries may include breaking changes.",
+      "limitations": "A documentation release label does not establish Aureform's installed version or certify a reported issue has been fixed."
+    },
+    {
+      "id": "baseui-webkit-focus-issue",
+      "title": "Base UI #5237: focus guard names in WebKit accessibility checks",
+      "url": "https://github.com/mui/base-ui/issues/5237",
+      "finalUrl": "https://github.com/mui/base-ui/issues/5237",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T04:42:01.885598Z",
+      "httpStatus": 200,
+      "issueStatus": "open",
+      "issueStatusCheckedAt": "2026-10-20T04:41:02.429221Z",
+      "issueUpdatedAt": "2026-10-10T17:08:10Z",
+      "version": "Initial report: Base UI 1.6.0, Playwright 1.61.1 and axe 4.12.1. Later reply reports Base UI 1.8.0 and discusses 1.9.0.",
+      "observed": "Reports focus-guard findings in WebKit. A contributor explains an intentional Safari/VoiceOver focus requirement and suggests a scoped scanner exclusion. A later report adds Chromium findings and describes reverting a behavior-changing workaround.",
+      "limitations": "Read the response before treating every scanner result as a confirmed defect. No local reproduction, safe blanket exclusion, Aureform regression or verified fix is established by this review."
+    },
+    {
+      "id": "tanstack-row-selection",
+      "title": "TanStack Table v8 row selection guide",
+      "url": "https://tanstack.com/table/v8/docs/guide/row-selection",
+      "finalUrl": "https://tanstack.com/table/v8/docs/guide/row-selection",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:54:29.970334Z",
+      "httpStatus": 200,
+      "version": "Explicit v8 documentation.",
+      "observed": "With manual pagination, selected row models contain loaded rows, while controlled selection state can retain IDs outside the current data. The guide recommends useful stable row IDs.",
+      "limitations": "Retaining IDs does not encode a query-wide selection intention or authorize unseen rows."
+    },
+    {
+      "id": "tanstack-pagination",
+      "title": "TanStack Table v8 pagination guide",
+      "url": "https://tanstack.com/table/v8/docs/guide/pagination",
+      "finalUrl": "https://tanstack.com/table/v8/docs/guide/pagination",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:54:30.381036Z",
+      "httpStatus": 200,
+      "version": "Explicit v8 documentation.",
+      "observed": "Documents client and manual server pagination. Unknown page counts can use pageCount=-1, with next/previous capability checks then always true.",
+      "limitations": "This is the underlying engine contract. Aureform external mode still requires a numeric rowCount; cursor behavior and end-of-list handling need their own adapter."
+    },
+    {
+      "id": "tanstack-selection-issue",
+      "title": "TanStack Table #4781: pagination and row selection",
+      "url": "https://github.com/TanStack/table/issues/4781",
+      "finalUrl": "https://github.com/TanStack/table/issues/4781",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T04:54:30.718031Z",
+      "httpStatus": 200,
+      "version": "Initial report: TanStack Table 8.8.4 in 2023; member response in 2026.",
+      "observed": "The report concerns global selection with server pagination. A member replied on 2026-08-05 that selecting only known rows is expected and true select-all needs application-owned flag and logic; the issue was closed that day.",
+      "limitations": "Read the body and all eleven available comments. Closure documents expected behavior, not a fix for Aureform or representative user demand.",
+      "issueStatus": "closed",
+      "issueStateReason": "completed",
+      "issueStatusCheckedAt": "2026-10-20T04:52:37.461672Z",
+      "issueUpdatedAt": "2026-08-05T13:00:03Z",
+      "issueClosedAt": "2026-08-05T13:00:03Z"
+    },
+    {
+      "id": "shadcn-sticky-header-issue",
+      "title": "shadcn/ui #1151: fixed table header with scrollable body",
+      "url": "https://github.com/shadcn-ui/ui/issues/1151",
+      "finalUrl": "https://github.com/shadcn-ui/ui/issues/1151",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T04:54:31.730484Z",
+      "httpStatus": 200,
+      "version": "Historical report opened 2023-08-08; no current library version established.",
+      "observed": "The title and body request sticky header behavior inside a scroll area. This is not a report about query-wide selection.",
+      "limitations": "Body/status reviewed for citation relevance; the entire 68-comment discussion was not reviewed. Do not attribute global-selection maintainer guidance or a verified header fix to this check.",
+      "issueStatus": "closed",
+      "issueStatusCheckedAt": "2026-10-20T04:52:37.659007Z",
+      "issueUpdatedAt": "2026-01-08T20:16:39Z",
+      "issueClosedAt": "2024-01-19T03:57:39Z"
+    },
+    {
+      "id": "shadcn-selection-freeze-issue",
+      "title": "shadcn/ui #1960: row selection freezes a data table",
+      "url": "https://github.com/shadcn-ui/ui/issues/1960",
+      "finalUrl": "https://github.com/shadcn-ui/ui/issues/1960",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T04:54:30.809811Z",
+      "httpStatus": 200,
+      "version": "Historical report opened 2023-11-16; no precise package version established.",
+      "observed": "The reporter describes a freeze on selecting a row. Later comments discuss wrong Checkbox imports and memoizing data/columns. A collaborator closure message states inactivity.",
+      "limitations": "Read all eight comments returned by the API, whose issue counter reports nine. The thread does not contain the claimed maintainer guidance about selecting all server-filtered rows. Closure is not evidence of a verified fix.",
+      "issueStatus": "closed",
+      "issueStateReason": "completed",
+      "issueStatusCheckedAt": "2026-10-20T04:52:37.470505Z",
+      "issueUpdatedAt": "2024-08-05T10:09:43Z",
+      "issueClosedAt": "2024-02-12T23:43:04Z"
+    },
+    {
+      "id": "shadcn-data-table",
+      "title": "shadcn/ui current Base UI data-table recipe",
+      "url": "https://ui.shadcn.com/docs/components/data-table",
+      "finalUrl": "https://ui.shadcn.com/docs/components/base/data-table",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:54:30.885845Z",
+      "httpStatus": 200,
+      "version": "Retrieved recipe explicitly labels TanStack Table v9.",
+      "observed": "The requested URL redirects to the Base UI recipe. It explains building a custom table instead of a single closed component and explicitly uses TanStack Table v9 with feature registration.",
+      "limitations": "Do not cite this current recipe as v8 documentation or as evidence that Aureform has migrated its table implementation.",
+      "redirects": [
+        {
+          "httpStatus": 307,
+          "url": "https://ui.shadcn.com/docs/components/data-table",
+          "location": "/docs/components/base/data-table"
+        }
+      ]
+    },
+    {
+      "id": "shadcn-changelog",
+      "title": "shadcn/ui changelog: CLI v4 and October 2026 agentic patterns",
+      "url": "https://ui.shadcn.com/docs/changelog",
+      "finalUrl": "https://ui.shadcn.com/docs/changelog",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:53.312174Z",
+      "httpStatus": 200,
+      "version": "Dated changelog entries: March and October 2026.",
+      "observed": "Lists CLI v4 in March 2026 and an October 2026 entry announcing Trace, Code Block and AI Elements patterns, with primitive/style choices.",
+      "limitations": "Published UI patterns do not execute agent tools, prove market demand or establish compatibility with Aureform installed dependencies."
+    },
+    {
+      "id": "mantine-notifications",
+      "title": "Mantine notifications and promise lifecycle",
+      "url": "https://mantine.dev/x/notifications/",
+      "finalUrl": "https://mantine.dev/x/notifications/",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:14.338747Z",
+      "httpStatus": 200,
+      "version": "Retrieved documentation header: v9.7.3.",
+      "observed": "Documents imperative show/update/hide APIs and notifications.promise for loading/success/error states around an existing promise.",
+      "limitations": "Notification presentation is not a durable job runner, background persistence or resumable backend. Current documentation cannot alone establish which older release first provided this API."
+    },
+    {
+      "id": "mantine-eight-changelog",
+      "title": "Mantine 8.0.0 historical changelog",
+      "url": "https://mantine.dev/changelog/8-0-0/",
+      "finalUrl": "https://mantine.dev/changelog/8-0-0/",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:14.316659Z",
+      "httpStatus": 200,
+      "version": "Release 8.0.0; shared site header v9.7.3.",
+      "observed": "Lists the release date as 2025-05-05 and describes migration and granular global-style exports. The retrieved page has no promise API entry.",
+      "limitations": "Do not use this page to prove notifications.promise in v8 or treat an archived release page as current installation guidance."
+    },
+    {
+      "id": "mantine-form-actions-changelog",
+      "title": "Mantine 7.2.0: named form actions",
+      "url": "https://mantine.dev/changelog/7-2-0/",
+      "finalUrl": "https://mantine.dev/changelog/7-2-0/",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:53.096502Z",
+      "httpStatus": 200,
+      "version": "Release 7.2.0 dated 2023-11-07; shared site header v9.7.3.",
+      "observed": "The 2023-11-07 release documents createFormActions with a matching form name to change form state from elsewhere in an application.",
+      "limitations": "It does not establish tenant isolation, tenant-specific persistence keys, session-expiry recovery or durable import jobs."
+    },
+    {
+      "id": "heroui-table",
+      "title": "HeroUI v3 Table composition and infinite loading",
+      "url": "https://heroui.com/docs/components/table",
+      "finalUrl": "https://heroui.com/en/docs/react/components/table",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:15.920107Z",
+      "httpStatus": 200,
+      "version": "Retrieved React documentation header: v3.2.6.",
+      "observed": "The legacy path redirects to React v3 Table docs. They show ScrollContainer, Content, Footer and a LoadMore sentinel with onLoadMore, alongside controlled selection and sorting.",
+      "limitations": "SWR is not named in the retrieved current page. Do not mix historical v2 asynchronous examples with verified v3 composition or imply an included backend.",
+      "redirects": [
+        {
+          "httpStatus": 308,
+          "url": "https://heroui.com/docs/components/table",
+          "location": "/en/docs/react/components/table"
+        }
+      ]
+    },
+    {
+      "id": "stripe-integration-options",
+      "title": "Stripe payment-method integration comparison",
+      "url": "https://docs.stripe.com/payments/payment-methods/integration-options#delayed-notification",
+      "finalUrl": "https://docs.stripe.com/payments/payment-methods/integration-options#delayed-notification",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:53.803605Z",
+      "httpStatus": 200,
+      "version": "Rolling Stripe documentation; API version not established.",
+      "observed": "The requested comparison page returns HTTP 200, but its retrieved HTML and official Markdown content do not include the cited delayed-notification discussion or async event names.",
+      "limitations": "This check does not support the quoted delayed-payment claim. Use Stripe checkout fulfillment documentation for that claim.",
+      "publicationUrl": "https://docs.stripe.com/payments/payment-methods/integration-options",
+      "publicationNote": "The old delayed-notification fragment is absent; the report links to the comparison page without that fragment. Checkout fulfillment supports delayed-confirmation discussion."
+    },
+    {
+      "id": "stripe-fulfillment",
+      "title": "Stripe Checkout fulfillment and delayed payment confirmation",
+      "url": "https://docs.stripe.com/checkout/fulfillment",
+      "finalUrl": "https://docs.stripe.com/checkout/fulfillment",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:53.946362Z",
+      "httpStatus": 200,
+      "version": "Rolling Stripe documentation; API version not established.",
+      "observed": "Explains server-side fulfillment, checking payment status, processing delayed methods and checkout.session.async_payment_succeeded for later payment success.",
+      "limitations": "Documents the consumer backend responsibilities. It does not validate a live payment or show that a redirect already confirms payment in Aureform."
+    },
+    {
+      "id": "stripe-prorations",
+      "title": "Stripe subscription prorations and previews",
+      "url": "https://docs.stripe.com/billing/subscriptions/prorations",
+      "finalUrl": "https://docs.stripe.com/billing/subscriptions/prorations",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:54.026785Z",
+      "httpStatus": 200,
+      "version": "Rolling Stripe documentation; API version not established.",
+      "observed": "Documents proration previews, unpaid-invoice considerations and the distinction between credits, billing and automatic refunds.",
+      "limitations": "Preview calculation belongs to the consumer backend. This does not prescribe a universal policy or prove the UI needs a native quote for every consumer."
+    },
+    {
+      "id": "ai-sdk-use-chat",
+      "title": "Vercel AI SDK useChat states and tool approval response",
+      "url": "https://ai-sdk.dev/docs/reference/ai-sdk-ui/use-chat",
+      "finalUrl": "https://ai-sdk.dev/docs/reference/ai-sdk-ui/use-chat",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:14.848543Z",
+      "httpStatus": 200,
+      "version": "Rolling reference; page notes architecture changes in AI SDK 5.0, not a pinned current package version.",
+      "observed": "Documents submitted/streaming/ready/error states and addToolApprovalResponse, along with stream finish/abort/error information.",
+      "limitations": "A reference contract does not prove grounded output, immutable retry, user demand for agents or real tool execution in Aureform. No SDK was installed or exercised."
+    },
+    {
+      "id": "google-maps-billing",
+      "title": "Google Maps JavaScript usage and billing",
+      "url": "https://developers.google.com/maps/documentation/javascript/usage-and-billing",
+      "finalUrl": "https://developers.google.com/maps/documentation/javascript/usage-and-billing",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:53:14.949049Z",
+      "httpStatus": 200,
+      "version": "Rolling Google Maps Platform documentation; exact SDK version not established.",
+      "observed": "Documents map loads triggering Dynamic Maps and separately priced service requests, plus quota and billing controls.",
+      "limitations": "The review observed no real account consumption, successful production SDK load or charge. Do not convert local constructor counts directly into invoiced money."
+    },
+    {
+      "id": "google-dynamic-maps-sku",
+      "title": "Google Maps Platform Dynamic Maps billable event",
+      "url": "https://developers.google.com/maps/billing-and-pricing/sku-details#dynamic-maps",
+      "finalUrl": "https://developers.google.com/maps/billing-and-pricing/sku-details#dynamic-maps",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T04:54:31.307373Z",
+      "httpStatus": 200,
+      "version": "Rolling SKU documentation; no account-specific pricing or usage inspected.",
+      "observed": "The Dynamic Maps section defines the billable event as a successful map load for Maps JavaScript API, with or without a map ID.",
+      "limitations": "This supports a potential billing consequence of unnecessary successful loads. It does not prove every constructor invocation incurs a paid charge, a specific savings amount or that every setOptions operation is cost-free.",
+      "publicationUrl": "https://developers.google.com/maps/billing-and-pricing/sku-details#dynamic-maps-ess-sku",
+      "publicationNote": "The current Dynamic Maps Essentials section uses dynamic-maps-ess-sku; requested/final URL fields retain the originally checked citation."
+    },
+    {
+      "id": "baseui-invalid-releases-url",
+      "title": "Base UI unsupported short releases URL",
+      "url": "https://base-ui.com/releases",
+      "finalUrl": "https://base-ui.com/releases",
+      "kind": "unavailable-official-url",
+      "checkedAt": "2026-10-20T04:53:14.744484Z",
+      "httpStatus": 404,
+      "version": "No content/version retrieved.",
+      "observed": "The workflow response cited this short path, which returns HTTP 404 without redirect. The verified current release URL is /react/overview/releases.",
+      "limitations": "No capability or release assertion may rely on this missing page; use the existing baseui-releases evidence record."
+    },
+    {
+      "id": "recharts-null-tooltip-issue",
+      "title": "Recharts #877: tooltip visibility for null values",
+      "url": "https://github.com/recharts/recharts/issues/877",
+      "finalUrl": "https://github.com/recharts/recharts/issues/877",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T04:54:30.738100Z",
+      "httpStatus": 200,
+      "version": "Reported Recharts ^1.0.0-alpha.4.",
+      "observed": "A 2017 feature request asks to show custom tooltip content for null values. Later comments still ask about visibility and suggest filterNull=false.",
+      "limitations": "Read the body and all three comments. This historical tooltip thread does not prove a current null-to-zero defect, a verified fixed release or a normative analytics contract.",
+      "issueStatus": "closed",
+      "issueStatusCheckedAt": "2026-10-20T04:52:37.503678Z",
+      "issueUpdatedAt": "2017-12-05T22:19:59Z",
+      "issueClosedAt": "2017-09-16T14:07:43Z"
+    },
+    {
+      "id": "recharts-null-series-tooltip-issue",
+      "title": "Recharts #5552: tooltip when all Y values are null",
+      "url": "https://github.com/recharts/recharts/issues/5552",
+      "finalUrl": "https://github.com/recharts/recharts/issues/5552",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T04:54:30.832118Z",
+      "httpStatus": 200,
+      "version": "Thread compares a 2025 beta/alpha with 2.x; precise tested version not independently established.",
+      "observed": "A member explains the absence of tooltip content when all Y values are null, notes the same behavior in 2.x and treats changing it as a feature request; disabling animation addresses a separate reported lag.",
+      "limitations": "Read the body and all ten comments. This is not confirmation that a chart must coerce nulls to zero or that Aureform reproduces the reported behavior.",
+      "issueStatus": "open",
+      "issueStatusCheckedAt": "2026-10-20T04:52:37.484360Z",
+      "issueUpdatedAt": "2025-02-07T16:58:26Z"
+    },
+    {
+      "id": "recharts-stacked-null-issue",
+      "title": "Recharts #6782: connectNulls edge behavior in stacked areas",
+      "url": "https://github.com/recharts/recharts/issues/6782",
+      "finalUrl": "https://github.com/recharts/recharts/issues/6782",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T04:54:30.560806Z",
+      "httpStatus": 200,
+      "version": "Reported Recharts 3; patch version unreported.",
+      "observed": "The reporter requests different leading/trailing-null strokes for stacked areas when connectNulls is enabled. A collaborator asks what the desired output should look like.",
+      "limitations": "Read the body and its sole comment. The issue remains open; it is a particular rendering request, not a verified fix or universal requirement to preserve every missing value in one way.",
+      "issueStatus": "open",
+      "issueStatusCheckedAt": "2026-10-20T04:52:37.457794Z",
+      "issueUpdatedAt": "2025-12-15T23:35:38Z"
+    },
+    {
+      "id": "recharts-null-tooltip-discussion",
+      "title": "Recharts discussion #4228: snapping at null points",
+      "url": "https://github.com/recharts/recharts/discussions/4228",
+      "finalUrl": "https://github.com/recharts/recharts/discussions/4228",
+      "kind": "first-party-discussion",
+      "checkedAt": "2026-10-20T04:56:49.992840Z",
+      "httpStatus": 200,
+      "version": "Discussion dated 2024-02-23/24; package version unreported.",
+      "observed": "An unanswered 2024 question describes cursor/tooltip snapping around null points. A maintainer explains the remaining X-axis value and distinguishes position animation from removing cursor snapping.",
+      "limitations": "Read the initial question, one comment and both replies. It supports a specific reported interaction, not a demand estimate or a universal null-data rendering rule.",
+      "discussionStatus": "unanswered"
+    },
+    {
+      "id": "magicui-globe-performance-issue",
+      "title": "Magic UI #42: historical Globe GPU/scroll report",
+      "url": "https://github.com/magicuidesign/magicui/issues/42",
+      "finalUrl": "https://github.com/magicuidesign/magicui/issues/42",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:41.685055Z",
+      "httpStatus": 200,
+      "version": "Opened 2024-05-23; exact package version not stated.",
+      "observed": "A May 2024 reporter described very high GPU use on a Windows laptop. A collaborator linked a performance commit, users reported improvement and the issue closed; later users still reported problems.",
+      "limitations": "Read the body and all eighteen comments. This historical, mixed thread is not an Aureform profile, a current universal GPU result or proof of fatigue in prolonged work sessions.",
+      "issueStatus": "closed",
+      "issueStatusCheckedAt": "2026-10-20T04:59:49.691531Z",
+      "issueUpdatedAt": "2024-10-24T17:19:58Z",
+      "issueClosedAt": "2024-05-26T03:07:17Z"
+    },
+    {
+      "id": "baseui-clear-keyboard-issue",
+      "title": "Base UI #3630: keyboard access to Combobox.Clear",
+      "url": "https://github.com/mui/base-ui/issues/3630",
+      "finalUrl": "https://github.com/mui/base-ui/issues/3630",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:41.595164Z",
+      "httpStatus": 200,
+      "version": "Reported version unpinned; no installed dependency or local reproduction verified.",
+      "observed": "The feature request asks for more Clear-button navigation. Members/contributors explain Escape/Delete alternatives and avoiding additional tab stops. A contributor says Escape stops bubbling with Base UI Dialog. The issue is closed as not planned.",
+      "limitations": "Read all ten comments. A later future-release notification does not identify a verified released fix here. Do not equate tabIndex=-1 with absence of keyboard functionality or a confirmed Aureform defect.",
+      "issueStatus": "closed",
+      "issueStateReason": "not_planned",
+      "issueStatusCheckedAt": "2026-10-20T04:59:49.675752Z",
+      "issueUpdatedAt": "2026-06-19T10:23:33Z",
+      "issueClosedAt": "2026-06-19T10:23:24Z"
+    },
+    {
+      "id": "baseui-closing-popups-pr",
+      "title": "Base UI PR #5537: proposed closing-popup focus/accessibility changes",
+      "url": "https://github.com/mui/base-ui/pull/5537",
+      "finalUrl": "https://github.com/mui/base-ui/pull/5537",
+      "kind": "first-party-pull-request",
+      "checkedAt": "2026-10-20T05:04:41.790586Z",
+      "httpStatus": 200,
+      "version": "Reported version unpinned; no installed dependency or local reproduction verified.",
+      "observed": "The rewritten proposal addresses popups retained during exit animations using inert and earlier focus return. It describes intended behavior, tests and explicit remaining edge cases. The PR is open and unmerged.",
+      "limitations": "Read the complete current body and issue-comment discussion, not every inline code review. Proposed verification is author/reviewer reporting, not a released Base UI fix or an independently reproduced Aureform defect.",
+      "pullRequestStatus": "open",
+      "merged": false,
+      "statusCheckedAt": "2026-10-20T05:01:59.992656Z",
+      "updatedAt": "2026-10-13T04:03:33Z"
+    },
+    {
+      "id": "mantine-aria-controls-issue",
+      "title": "Mantine #7085: closed combobox aria-controls report",
+      "url": "https://github.com/mantinedev/mantine/issues/7085",
+      "finalUrl": "https://github.com/mantinedev/mantine/issues/7085",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:41.231667Z",
+      "httpStatus": 200,
+      "version": "Reported Mantine 7.11.0 in November 2024.",
+      "observed": "Reports aria-controls referencing an unmounted dropdown. A member invites a PR; the issue is closed.",
+      "limitations": "Read the body and sole comment. No released fix or equivalent Aureform failure was verified through this thread.",
+      "issueStatus": "closed",
+      "issueStatusCheckedAt": "2026-10-20T04:59:49.715826Z",
+      "issueUpdatedAt": "2024-11-16T08:23:46Z",
+      "issueClosedAt": "2024-11-16T08:23:46Z"
+    },
+    {
+      "id": "mantine-disabled-options-issue",
+      "title": "Mantine #9233: disabled options and aria-disabled",
+      "url": "https://github.com/mantinedev/mantine/issues/9233",
+      "finalUrl": "https://github.com/mantinedev/mantine/issues/9233",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:41.182072Z",
+      "httpStatus": 200,
+      "version": "Reported Mantine 9.6.2 in September 2026.",
+      "observed": "Reports disabled options skipped by keyboard navigation but not exposed as aria-disabled. A contributor offers a PR; the issue is closed.",
+      "limitations": "Read the body and sole comment. There is no maintainer response in the returned discussion confirming a released fix. Aureform Select passes disabled to its Base UI Item; Mantine behavior is not its implementation.",
+      "issueStatus": "closed",
+      "issueStatusCheckedAt": "2026-10-20T04:59:49.701870Z",
+      "issueUpdatedAt": "2026-10-06T12:09:23Z",
+      "issueClosedAt": "2026-10-06T12:09:23Z"
+    },
+    {
+      "id": "baseui-mobile-keyboard-issue",
+      "title": "Base UI #1455: mobile keyboard/dialog positioning",
+      "url": "https://github.com/mui/base-ui/issues/1455",
+      "finalUrl": "https://github.com/mui/base-ui/issues/1455",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:41.402517Z",
+      "httpStatus": 200,
+      "version": "February-April 2025 thread; exact package version unstated.",
+      "observed": "A 2025 feature request describes virtual-keyboard positioning and jumping. Replies discuss iOS scroll locking; a contributor links a possible solution. The issue is closed.",
+      "limitations": "Read all six comments. It supports a mobile acceptance scenario, not an observed Aureform failure or a claim that adding dvh alone solves scroll locking.",
+      "issueStatus": "closed",
+      "issueStatusCheckedAt": "2026-10-20T04:59:49.712983Z",
+      "issueUpdatedAt": "2025-04-17T09:51:38Z",
+      "issueClosedAt": "2025-04-17T09:51:38Z"
+    },
+    {
+      "id": "mantine-nested-escape-issue",
+      "title": "Mantine #6553: nested overlay Escape report",
+      "url": "https://github.com/mantinedev/mantine/issues/6553",
+      "finalUrl": "https://github.com/mantinedev/mantine/issues/6553",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:41.292693Z",
+      "httpStatus": 200,
+      "version": "Reported Mantine 7.11.2 in July 2024.",
+      "observed": "Reports Escape closing multiple nested overlays, while Select reportedly behaves as desired. A member closes it as duplicate of another issue.",
+      "limitations": "Read the body and sole comment. Duplicate closure does not verify a fix, the current version or the behavior of Aureform Base UI overlays.",
+      "issueStatus": "closed",
+      "issueStatusCheckedAt": "2026-10-20T04:59:49.766754Z",
+      "issueUpdatedAt": "2024-07-19T12:19:47Z",
+      "issueClosedAt": "2024-07-19T12:19:40Z"
+    },
+    {
+      "id": "tremor-invalid-tooltip-pr-url",
+      "title": "Tremor Raw invalid PR #1087 citation",
+      "url": "https://github.com/tremorlabs/tremor/pull/1087",
+      "finalUrl": "https://github.com/tremorlabs/tremor/issues/1087",
+      "kind": "unavailable-first-party-url",
+      "checkedAt": "2026-10-20T05:00:33.239221Z",
+      "httpStatus": 404,
+      "version": "Reported version unpinned; no installed dependency or local reproduction verified.",
+      "observed": "The cited Raw-repository pull URL redirects to an issue URL returning 404. The actual tooltip proposal is in tremor-npm.",
+      "limitations": "No fix assertion is supported by this missing URL.",
+      "redirects": [
+        {
+          "httpStatus": 302,
+          "url": "https://github.com/tremorlabs/tremor/pull/1087",
+          "location": "https://github.com/tremorlabs/tremor/issues/1087"
+        }
+      ]
+    },
+    {
+      "id": "tremor-npm-tooltip-pr",
+      "title": "Tremor NPM PR #1087: proposed tooltip z-index change",
+      "url": "https://github.com/tremorlabs/tremor-npm/pull/1087",
+      "finalUrl": "https://github.com/tremorlabs/tremor-npm/pull/1087",
+      "kind": "first-party-pull-request",
+      "checkedAt": "2026-10-20T05:00:34.025648Z",
+      "httpStatus": 200,
+      "version": "Proposal opened 2024-06-17; package version unstated.",
+      "observed": "The proposal describes increasing tooltip z-index and reports manual tests. Its last returned comment asks for merging. The PR remains open and unmerged.",
+      "limitations": "Read the body and four issue comments. This is a proposal in the NPM track, not a delivered fix in Raw/Blocks or proof of Aureform tooltip clipping.",
+      "pullRequestStatus": "open",
+      "merged": false,
+      "statusCheckedAt": "2026-10-20T05:02:00.162380Z",
+      "updatedAt": "2025-03-05T10:47:47Z"
+    },
+    {
+      "id": "wai-target-size-minimum",
+      "title": "W3C explanation of WCAG 2.2 target-size minimum",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+      "finalUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+      "kind": "official-standard-guidance",
+      "checkedAt": "2026-10-20T05:00:32.770600Z",
+      "httpStatus": 200,
+      "version": "WCAG 2.2, criterion 2.5.8, Level AA.",
+      "observed": "Explains AA criterion 2.5.8: 24 by 24 CSS pixels, with spacing, equivalent-control, inline, user-agent and essential exceptions.",
+      "limitations": "An informative Understanding page explains the criterion. Source dimensions alone do not establish rendered target size, spacing or whole-kit conformance."
+    },
+    {
+      "id": "wai-target-size-enhanced",
+      "title": "W3C explanation of enhanced target size",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html",
+      "finalUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html",
+      "kind": "official-standard-guidance",
+      "checkedAt": "2026-10-20T05:00:32.777011Z",
+      "httpStatus": 200,
+      "version": "WCAG 2.2, criterion 2.5.5, Level AAA.",
+      "observed": "Explains criterion 2.5.5: 44 by 44 CSS pixels with exceptions, at Level AAA.",
+      "limitations": "44 pixels can be a design recommendation; it is not the blanket AA requirement. This review does not measure every rendered control."
+    },
+    {
+      "id": "wai-non-text-contrast",
+      "title": "W3C explanation of meaningful non-text contrast",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "finalUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "kind": "official-standard-guidance",
+      "checkedAt": "2026-10-20T05:00:32.783628Z",
+      "httpStatus": 200,
+      "version": "WCAG criterion 1.4.11, Level AA.",
+      "observed": "Explains 3:1 contrast for visual information necessary to identify active UI components/states and meaningful graphics, subject to exceptions. Borders are not required to define every hit area.",
+      "limitations": "Do not apply a blanket 3:1 rule to every decorative border or inactive control. Evaluate necessary cues, adjacent backgrounds and rendered focus states."
+    },
+    {
+      "id": "wai-text-contrast",
+      "title": "W3C explanation of text contrast minimum",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "finalUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "kind": "official-standard-guidance",
+      "checkedAt": "2026-10-20T05:00:32.774517Z",
+      "httpStatus": 200,
+      "version": "WCAG criterion 1.4.3, Level AA.",
+      "observed": "Explains 4.5:1 text contrast, 3:1 for large text and specified incidental/logo exceptions.",
+      "limitations": "Nominal opaque-token calculations do not alone verify rendered translucent composites, every state or full WCAG conformance."
+    },
+    {
+      "id": "wai-grid-pattern",
+      "title": "WAI-ARIA APG interactive grid pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/grid/",
+      "finalUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/grid/",
+      "kind": "official-accessibility-pattern",
+      "checkedAt": "2026-10-20T05:03:22.854320Z",
+      "httpStatus": 200,
+      "version": "Current APG grid pattern.",
+      "observed": "Describes a composite grid with one element in the page tab sequence and author-managed internal directional focus. It distinguishes interactive grids from ordinary tables.",
+      "limitations": "A useful reference for optional dense-chart/grid navigation, not a requirement to turn every static table or chart into an ARIA grid."
+    },
+    {
+      "id": "shadcn-style-override-issue",
+      "title": "shadcn/ui #10496: third-party registry style override",
+      "url": "https://github.com/shadcn-ui/ui/issues/10496",
+      "finalUrl": "https://github.com/shadcn-ui/ui/issues/10496",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:41.218191Z",
+      "httpStatus": 200,
+      "version": "Reported CLI 4.5.0, April 2026.",
+      "observed": "A reporter describes Tailwind v4 style interpolation overriding a third-party registry style in CLI 4.5.0. The issue is open with no comments.",
+      "limitations": "The thread has no maintainer response, despite the adoption report attribution. It does not reproduce a failure for Aureform full item URLs or establish behavior in its documented shadcn 4.22.0 path.",
+      "issueStatus": "open",
+      "issueStatusCheckedAt": "2026-10-20T05:01:59.913044Z",
+      "issueUpdatedAt": "2026-04-26T10:19:11Z"
+    },
+    {
+      "id": "heroui-tailwind-plugin-issue",
+      "title": "HeroUI #4753: historical plugin/Tailwind v4 report",
+      "url": "https://github.com/heroui-inc/heroui/issues/4753",
+      "finalUrl": "https://github.com/heroui-inc/heroui/issues/4753",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:42.287508Z",
+      "httpStatus": 200,
+      "version": "Reported tabs/tooltip packages 2.2.8 in January 2025.",
+      "observed": "Reports missing CSS classes after moving to Tailwind v4 in the plugin-based package track. It closed as duplicate; the sole comment is a tracking link.",
+      "limitations": "No maintainer confirmation or current v3 defect is established by the returned discussion.",
+      "issueStatus": "closed",
+      "issueStateReason": "duplicate",
+      "issueStatusCheckedAt": "2026-10-20T05:01:59.929045Z",
+      "issueUpdatedAt": "2025-01-29T04:07:34Z",
+      "issueClosedAt": "2025-01-29T04:07:34Z"
+    },
+    {
+      "id": "heroui-tailwind-config-issue",
+      "title": "HeroUI #5733: historical package/style configuration",
+      "url": "https://github.com/heroui-inc/heroui/issues/5733",
+      "finalUrl": "https://github.com/heroui-inc/heroui/issues/5733",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:42.411963Z",
+      "httpStatus": 200,
+      "version": "Reported 2.8.4; later comment 2.8.5, September-November 2025.",
+      "observed": "A v2.8.x report asks about global-package styles. A member diagnoses missing configuration and supplies config-first and CSS-first alternatives; the reporter says it helped.",
+      "limitations": "Read all seven comments. This is configuration guidance in the v2 track, not proof that current v3 requires the old theme plugin or source setup.",
+      "issueStatus": "closed",
+      "issueStateReason": "not_planned",
+      "issueStatusCheckedAt": "2026-10-20T05:01:59.925441Z",
+      "issueUpdatedAt": "2025-11-23T14:00:07Z",
+      "issueClosedAt": "2025-09-25T16:24:31Z"
+    },
+    {
+      "id": "tremor-react19-charts-issue",
+      "title": "Tremor NPM #1054: React 19 RC chart report",
+      "url": "https://github.com/tremorlabs/tremor-npm/issues/1054",
+      "finalUrl": "https://github.com/tremorlabs/tremor-npm/issues/1054",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:42.382755Z",
+      "httpStatus": 200,
+      "version": "Reported Tremor 3.17.2 in 2024.",
+      "observed": "Reports charts not rendering in React 19 RC. A member states 19 was unsupported then; a later member reply reports Recharts working but other dependencies still needed updates for publication. The issue is open.",
+      "limitations": "Read all seven comments. Historical package friction does not prove the reason Tremor Raw was created, current universal breakage or a recommendation to install user forks.",
+      "issueStatus": "open",
+      "issueStatusCheckedAt": "2026-10-20T05:01:59.904426Z",
+      "issueUpdatedAt": "2024-11-09T12:17:40Z"
+    },
+    {
+      "id": "tremor-react19-support-issue",
+      "title": "Tremor NPM #1072: React 19 support request",
+      "url": "https://github.com/tremorlabs/tremor-npm/issues/1072",
+      "finalUrl": "https://github.com/tremorlabs/tremor-npm/issues/1072",
+      "kind": "first-party-issue",
+      "checkedAt": "2026-10-20T05:04:42.478740Z",
+      "httpStatus": 200,
+      "version": "Opened 2024-05-30; thread updated 2026-06-11. No exact current package version verified.",
+      "observed": "The feature request discusses Recharts/Headless UI compatibility; later users ask for support and one advertises an unofficial Raw fork. The thread remains open.",
+      "limitations": "Read all ten comments and current body/status. User fork/test/maintenance claims were not independently verified and are not official support. This does not establish causal migration or package-free copied source.",
+      "issueStatus": "open",
+      "issueStatusCheckedAt": "2026-10-20T05:04:42.933000Z",
+      "issueUpdatedAt": "2026-06-11T01:16:01Z"
+    },
+    {
+      "id": "baseui-llms-index",
+      "title": "Base UI public machine-readable documentation index",
+      "url": "https://base-ui.com/llms.txt",
+      "finalUrl": "https://base-ui.com/llms.txt",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T05:03:22.317521Z",
+      "httpStatus": 200,
+      "version": "Rolling public index; version not pinned in retrieved header.",
+      "observed": "Provides an index for @base-ui/react documentation, including per-page Markdown links for overview, primitives and utilities.",
+      "limitations": "An available documentation format does not demonstrate model accuracy, demand or speed improvement."
+    },
+    {
+      "id": "mantine-llms-guide",
+      "title": "Mantine documentation, MCP and skills for coding assistants",
+      "url": "https://mantine.dev/guides/llms/",
+      "finalUrl": "https://mantine.dev/guides/llms/",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T05:03:22.409078Z",
+      "httpStatus": 200,
+      "version": "Current guide explicitly targets v9 documentation.",
+      "observed": "Documents generated llms.txt/per-page Markdown, llms-full.txt, an MCP documentation server and skills. The guide explicitly tells readers to identify Mantine v9.",
+      "limitations": "Advertised access does not demonstrate comparative coding accuracy or measured time saved; no MCP client/server was exercised."
+    },
+    {
+      "id": "shadcn-mcp",
+      "title": "shadcn/ui MCP server and configured registries",
+      "url": "https://ui.shadcn.com/docs/mcp",
+      "finalUrl": "https://ui.shadcn.com/docs/mcp",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T05:03:22.777922Z",
+      "httpStatus": 200,
+      "version": "Rolling shadcn@latest setup documentation; exact server version unpinned.",
+      "observed": "Documents an MCP server for browsing, searching and adding components from configured registries, including third-party registries and setup examples.",
+      "limitations": "No Aureform namespace/client configuration or live MCP discovery was validated; use as an integration proposal rather than an already tested Aureform capability."
+    },
+    {
+      "id": "heroui-legacy-tailwind-url",
+      "title": "HeroUI legacy Tailwind v4 guide redirect",
+      "url": "https://www.heroui.com/docs/guide/tailwind-v4",
+      "finalUrl": "https://heroui.com/en/docs/react/migration",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T05:03:23.339198Z",
+      "httpStatus": 200,
+      "version": "Final React migration docs header v3.2.6.",
+      "observed": "The old guide URL redirects through the non-www domain to the v2-to-v3 migration page; it does not retain the cited old source/plugin guide.",
+      "limitations": "Use current v3 styling/quick-start evidence. Historical v2 issue instructions do not establish current v3 setup.",
+      "redirects": [
+        {
+          "httpStatus": 301,
+          "url": "https://www.heroui.com/docs/guide/tailwind-v4",
+          "location": "https://heroui.com/docs/guide/tailwind-v4"
+        },
+        {
+          "httpStatus": 308,
+          "url": "https://heroui.com/docs/guide/tailwind-v4",
+          "location": "/en/docs/react/migration"
+        }
+      ]
+    },
+    {
+      "id": "heroui-legacy-llms-url",
+      "title": "HeroUI legacy LLM guide redirect",
+      "url": "https://www.heroui.com/docs/guide/llms",
+      "finalUrl": "https://heroui.com/en/docs/react/migration",
+      "kind": "official-docs",
+      "checkedAt": "2026-10-20T05:03:23.357264Z",
+      "httpStatus": 200,
+      "version": "Final React migration docs header v3.2.6.",
+      "observed": "The old LLM guide URL redirects to v2-to-v3 migration. That destination advertises migration-specific AI approaches, not the original generic LLM documentation guide.",
+      "limitations": "Do not treat the legacy URL as verification of a generic llms.txt endpoint, or infer that HeroUI lacks agent documentation.",
+      "redirects": [
+        {
+          "httpStatus": 301,
+          "url": "https://www.heroui.com/docs/guide/llms",
+          "location": "https://heroui.com/docs/guide/llms"
+        },
+        {
+          "httpStatus": 308,
+          "url": "https://heroui.com/docs/guide/llms",
+          "location": "/en/docs/react/migration"
+        }
+      ]
+    }
+  ],
+  "benchmark": [
+    {
+      "name": "TailAdmin",
+      "category": "dashboardtemplate",
+      "evidenceIds": [
+        "tailadmin-next-install",
+        "tailadmin-react-install",
+        "tailadmin-faq",
+        "tailadmin-dark-mode",
+        "tailadmin-next-changelog"
+      ],
+      "observed": "Useful reference for complete dashboard starting points, edition-specific setup, layouts and theme controls. Its Next.js changelog has a 2.4.0 entry. Feature availability must remain qualified by edition and free/Pro scope."
+    },
+    {
+      "name": "UntitledUIReact",
+      "category": "styledkit",
+      "evidenceIds": [
+        "untitled-introduction",
+        "untitled-installation",
+        "untitled-cli",
+        "untitled-theming"
+      ],
+      "observed": "Styled editable source built on React Aria/Tailwind, with CLI/manual adoption, brand tokens and a separate Figma product. Updating customized copies involves replacement guidance; integration still needs packages, styles and utilities. The CLI documents a bounded v7-to-v8 migration with dry-run and manual-review reporting, alongside replacing copied components through add overwrite."
+    },
+    {
+      "name": "shadcn/ui",
+      "category": "styledkit",
+      "evidenceIds": [
+        "shadcn-introduction",
+        "shadcn-cli",
+        "shadcn-registry-item",
+        "shadcn-registry-examples",
+        "shadcn-theming",
+        "shadcn-cssvars-issue",
+        "shadcn-data-table",
+        "shadcn-changelog",
+        "shadcn-mcp",
+        "shadcn-style-override-issue"
+      ],
+      "observed": "Reference for source distribution, composable defaults, registry metadata and reviewable installs. Issue #8669 is a bounded CSS-injection report with disputed follow-up, not a resolved general failure of theming. The current redirected table recipe explicitly uses TanStack Table v9; dated changelog entries separately document CLI v4 and October 2026 agentic UI patterns."
+    },
+    {
+      "name": "Tremor",
+      "category": "datafocused",
+      "evidenceIds": [
+        "tremor-about",
+        "tremor-installation",
+        "tremor-area-chart",
+        "tremor-npm-installation",
+        "tremor-react19-charts-issue",
+        "tremor-react19-support-issue"
+      ],
+      "observed": "Reference for dashboard/chart composition and chart interactions. Raw copyable source and the NPM library have different dependency tracks. Their documentation cannot be merged into one current install recipe."
+    },
+    {
+      "name": "MagicUI",
+      "category": "visualinspiration",
+      "evidenceIds": [
+        "magic-installation",
+        "magic-animated-beam",
+        "magic-bento-grid",
+        "magic-mcp",
+        "magic-motion-dependency-issue",
+        "magicui-globe-performance-issue"
+      ],
+      "observed": "Reference for decorative motion, feature presentation and component discovery. Integration diagrams and sample feature copy do not implement the depicted services. Historical dependency issue #611 is closed."
+    },
+    {
+      "name": "Mantine",
+      "category": "styledkit",
+      "evidenceIds": [
+        "mantine-nextjs",
+        "mantine-styles",
+        "mantine-accessibility",
+        "mantine-form-validation",
+        "mantine-notifications",
+        "mantine-form-actions-changelog",
+        "mantine-eight-changelog",
+        "mantine-llms-guide"
+      ],
+      "observed": "Broad packaged toolkit with documented framework setup, stylesheet layering and form/error interactions. Retrieved docs display 9.7.3. Its accessibility guidance separates library testing from application responsibilities. Current notification docs include promise-based state presentation. Historical 7.2 form actions are an imperative UI API, not tenant isolation or a durable job runner."
+    },
+    {
+      "name": "HeroUI",
+      "category": "styledkit",
+      "evidenceIds": [
+        "heroui-legacy-cli-url",
+        "heroui-current-cli",
+        "heroui-quick-start",
+        "heroui-styling-migration",
+        "heroui-table"
+      ],
+      "observed": "Current v3 setup separates styles and React behavior and requires explicit migration from v2. The React docs display 3.2.6. The current CLI documents doctor package/peer checks; the legacy URL is a migration redirect. Current v3 Table documentation confirms compound composition and a LoadMore sentinel; SWR integration was not verified on that page."
+    },
+    {
+      "name": "BaseUI",
+      "category": "unstyledfoundation",
+      "evidenceIds": [
+        "baseui-about",
+        "baseui-accessibility",
+        "baseui-styling",
+        "baseui-releases",
+        "baseui-webkit-focus-issue",
+        "baseui-clear-keyboard-issue",
+        "baseui-closing-popups-pr",
+        "baseui-mobile-keyboard-issue",
+        "baseui-llms-index"
+      ],
+      "observed": "Unstyled behavior foundation already used by Aureform. Retrieved docs display 1.9.0. Application styling/labels remain the consumer's responsibility, and focus-guard issue context illustrates why scanner results need behavioral review.",
+      "evidencePaths": [
+        "src/components/providers.tsx:3"
+      ]
+    }
+  ],
+  "baselineFindings": [
+    {
+      "id": "01",
+      "title": "Medir y reducir el coste de entrada por ruta",
+      "state": "partial",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:23",
+        "src/app/[locale]/page.tsx:3",
+        "src/components/marketing-page.tsx:3",
+        "src/components/site-providers.tsx:13",
+        "src/components/app-page.tsx:9",
+        "src/components/app-page.tsx:160",
+        "tests/e2e/website.spec.ts:727",
+        "docs/research/1.4.1-website-loading.json:1",
+        "docs/qa-runtime-1.4.1.json:114",
+        "src/app/[locale]/docs/[[...chapter]]/page.tsx:3",
+        "src/components/documentation-shell.tsx:75",
+        "src/components/documentation-shell.tsx:618"
+      ],
+      "explanation": "The current public landing uses MarketingPage/SiteProviders, separate from the application providers. The dedicated docs route renders DocumentationShell with AppearanceProvider and a small Intl boundary for appearance controls instead of the full application provider tree. The website test checks that demo-only scripts wait until explicit navigation; the 1.4.1 receipt records local initial body sizes. AppPage still statically imports application template families and wraps app/auth views in Providers. The requested four-route before/after comparison and field/interactions evidence remain incomplete. New Lighthouse work is outside this baseline."
+    },
+    {
+      "id": "02",
+      "title": "Convertir el QA registrado en puertas reproducibles",
+      "state": "partial",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:38",
+        "docs/qa-runtime-1.4.0.json:30",
+        "docs/qa-runtime-1.4.0.json:47",
+        "docs/qa-runtime-1.4.1.json:24",
+        "docs/qa-runtime-1.4.1.json:53",
+        "docs/release-checklist-1.4.1.md:23",
+        "tests/e2e/website.spec.ts:593",
+        "tests/e2e/website.spec.ts:795"
+      ],
+      "explanation": "Reproducible website tests now include touch emulation, keyboard behavior, application-loading checks and scoped Axe scans. The release document describes PR browser gates; existing QA receipts record successful root/mounted cohorts. Configuration files and remote CI runs were not inspected, so actual gate enforcement is not independently certified. Reviewed receipts retain incomplete contrast/ARIA checks and do not supply the requested cross-engine and human accessibility acceptance."
+    },
+    {
+      "id": "03",
+      "title": "Explicar la integración mínima y el alcance de estilos",
+      "state": "partial",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:48",
+        "docs/website/en/installation.md:27",
+        "docs/website/en/components.md:14",
+        "docs/website/en/components.md:44",
+        "docs/website/en/cli.md:34",
+        "docs/website/en/tokens.md:19",
+        "src/components/appearance-provider.tsx:123",
+        "src/app/globals.css:35",
+        "scripts/generate-registry.mjs:175",
+        "public/r/registry.json"
+      ],
+      "explanation": "The current docs give a provider-free Button example, context composition, a smaller starter, scoped appearance and an explicit global-CSS warning. AppearanceScope does not apply settings to the document, but global selectors still exist. Registry metadata inspection found 107 items, none with docs or meta. Item-specific integration recipes and a new host-style acceptance receipt are not established by this baseline."
+    },
+    {
+      "id": "04",
+      "title": "Dar continuidad verificable a las actualizaciones copiadas",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:58",
+        "docs/cli-updates-1.2.md:18",
+        "docs/cli-updates-1.2.md:59",
+        "docs/website/en/cli.md:38",
+        "bin/aureform.mjs:1036",
+        "bin/aureform.mjs:1110"
+      ],
+      "explanation": "Preview/diff, protection, receipt hashes and rollback already exist and are documented. The receipt stores source/target hashes, not a retained transformed base for three-way comparison; dependency checks still compare majors. The new docs explicitly acknowledge those limits. Provenance bases, per-file conflict decisions and full range acceptance remain proposals."
+    },
+    {
+      "id": "05",
+      "title": "Mantener explícita la frontera Figma nativo / source-only",
+      "state": "delivered",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:68",
+        "design/README.md:23",
+        "design/README.md:27",
+        "design/README.md:29",
+        "docs/website/en/roadmap.md:28",
+        "docs/qa-runtime-1.4.0.json:909",
+        "docs/qa-runtime-1.4.1.json:118"
+      ],
+      "explanation": "The requested honest boundary is present and preserved: 1.4 application expansion is source-only, SVG imports do not recreate native semantics, and local Code Connect is unpublished. The QA receipt identifies its synthetic runtime and says live Figma/cloud registration were not tested. Delivered here means documented scope, not new native masters, increased native coverage or live published connections."
+    },
+    {
+      "id": "06",
+      "title": "Un laboratorio de escenarios sobre contratos compartidos",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:78",
+        "src/components/templates/components.tsx:798",
+        "src/lib/stripe-commerce-adapter.ts:65",
+        "src/lib/saas.ts:131",
+        "docs/website/en/roadmap.md:17"
+      ],
+      "explanation": "The gallery supports preview/code and adapters have bounded error vocabularies. Stripe maps several HTTP statuses, while SaaS has a different error enum; the reviewed source does not establish a shared field/retry/late-result contract or a selectable multi-application scenario laboratory. Documenting the proposal on the roadmap does not deliver it."
+    },
+    {
+      "id": "07",
+      "title": "Sesión vencida e invitación desde la perspectiva del destinatario",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:88",
+        "src/lib/demo-auth.ts:8",
+        "src/components/templates/auth.tsx:41",
+        "src/components/workspace-provider.tsx:420",
+        "docs/website/en/authentication.md:3",
+        "docs/website/en/authentication.md:47"
+      ],
+      "explanation": "Four auth layouts, consent, social callbacks and admin invitation expiry checks already exist. The demo session has createdAt but no expiration state. acceptInvitation requires members.manage rather than modeling the recipient's eligible-account journey. Reauthentication with recoverable drafts and recipient acceptance/rejection states remain absent; none of the defaults prove real identity."
+    },
+    {
+      "id": "08",
+      "title": "Scope de aplicaciones y conflictos entre pestañas",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:98",
+        "src/components/workspace-provider.tsx:122",
+        "src/components/workspace-provider.tsx:175",
+        "src/components/commerce-provider.tsx:220",
+        "src/hooks/use-demo-store.ts:7",
+        "src/components/templates/ai-workspace.tsx:85",
+        "src/components/templates/communication.tsx:64",
+        "src/components/templates/work-board.tsx:109"
+      ],
+      "explanation": "SaaS checks capabilities/member activity and commerce rejects stale scoped operations. AI, communication and boards still use demo namespaces without workspace identity; useDemoStore serializes only its supplied key. The SaaS storage listener still replaces incoming state without revision/conflict resolution. Broader scope declarations and multi-tab conflict handling remain open; no production tenant leak is asserted."
+    },
+    {
+      "id": "09",
+      "title": "Extender DataTable solo donde el contrato lo necesita",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:108",
+        "src/components/ui/data-table.tsx:132",
+        "src/components/ui/data-table.tsx:158",
+        "docs/data-table.md",
+        "docs/qa-table-1.2.md"
+      ],
+      "explanation": "Controlled query/manual pagination and stable selected IDs are already delivered. The external mode still requires a numeric rowCount; the reviewed public props do not model unknown totals, cursors or all-matching-query selection with exclusions. These are optional extensions to an existing table, not evidence that server-controlled tables or stable selection are missing."
+    },
+    {
+      "id": "10",
+      "title": "Importaciones como jobs y continuidad de actividad",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:118",
+        "src/lib/csv-import.ts:21",
+        "src/lib/csv-import.ts:684",
+        "src/components/blocks/import-wizard.tsx:444",
+        "src/components/blocks/import-wizard.tsx:488",
+        "src/components/blocks/import-wizard.tsx:568",
+        "src/components/blocks/import-wizard.tsx:611",
+        "docs/qa-imports1.2.md"
+      ],
+      "explanation": "Imports already have cancellation, progress, partial outcomes and failed-only retry contracts. State remains in the wizard and unmount aborts the operation; parse/preview still execute synchronously after file reading. A durable/consultable job snapshot and activity continuity are not established. Source inspection alone does not demonstrate an INP failure or real resume capability."
+    },
+    {
+      "id": "11",
+      "title": "Analytics: ausencia, cero, frescura y drilldown",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:128",
+        "src/components/ui/chart.tsx:28",
+        "src/components/ui/chart.tsx:654",
+        "src/components/ui/chart.tsx:818",
+        "src/components/templates/dashboard.tsx:452",
+        "src/components/templates/dashboard.tsx:477",
+        "docs/charts.md"
+      ],
+      "explanation": "ChartDatum still requires a number, the heatmap uses zero for an absent series value, and its accessible table renders raw numbers rather than the supplied visual formatter. Dashboard still derives periods from seed scaling with a kind-only entry contract. Typed freshness, quality, time domain, null semantics and drilldown adapters remain proposals."
+    },
+    {
+      "id": "12",
+      "title": "Preferencias regionales que gobiernen la presentación",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:138",
+        "src/components/templates/settings.tsx:269",
+        "src/components/providers.tsx:32",
+        "src/components/site-providers.tsx:22",
+        "src/hooks/use-language.ts:12",
+        "src/lib/commerce.ts:13",
+        "docs/application-integrations.md:22"
+      ],
+      "explanation": "EN/ES and a preferences preview already exist. Both locale providers still fix America/Bogota, and the shared language helper does not consume the persisted timezone/date-format preferences. Its currency helper uses whole-dollar formatting, while commerce separately stores integer minor units. A common regional presentation contract remains absent; this is not proof that every commerce amount loses cents."
+    },
+    {
+      "id": "13",
+      "title": "Pan táctil y navegación de visualizaciones densas",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:148",
+        "src/components/blocks/maps-workspace.tsx:1283",
+        "src/components/blocks/maps-workspace.tsx:1439",
+        "src/components/ui/chart.tsx:665",
+        "tests/e2e/website.spec.ts:593"
+      ],
+      "explanation": "The local map has keyboard-arrow pan and visible zoom/reset controls, but still no directional tap controls. Heatmap cells remain separate tab stops. The new website touch test covers documentation navigation, not the map/chart acceptance. Rendered target-size measurements, dense navigation and assistive-technology evidence remain incomplete; SVG dimensions alone do not establish WCAG failure."
+    },
+    {
+      "id": "14",
+      "title": "Cotización completa; variantes como extensión P2",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:158",
+        "src/lib/commerce.ts:14",
+        "src/lib/commerce.ts:30",
+        "src/lib/commerce.ts:338",
+        "src/lib/commerce-state.ts:43",
+        "tests/commerce.test.mjs:55",
+        "docs/application-integrations.md:22"
+      ],
+      "explanation": "The existing catalog/editor and purchase-time price snapshots are delivered. Products remain single-SKU records; order totals equal the sum of lines, and snapshot parsing enforces that equality. Taxes, discounts, shipping, quote expiry and variant identity are not part of these contracts. Existing Stripe Price invalidation must not be described as missing."
+    },
+    {
+      "id": "15",
+      "title": "Pago diferido e inventario comprometido",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:168",
+        "src/lib/commerce.ts:37",
+        "src/lib/commerce-state.ts:104",
+        "src/lib/stripe-commerce-adapter.ts:238",
+        "tests/commerce.test.mjs:128",
+        "tests/commerce.test.mjs:155",
+        "docs/qa-runtime-1.4.0.json:972"
+      ],
+      "explanation": "The Stripe adapter returns a validated redirect without claiming payment confirmation. Mock checkout rechecks stock and applies success once. The payment enum still lacks a distinct deferred/processing state and inventory has no available/committed/reservation contract. Those extensions persist; recorded simulated HTTP/mock checks do not validate live payment or atomic reservations."
+    },
+    {
+      "id": "16",
+      "title": "Reembolso parcial y devolución como operaciones distintas",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:178",
+        "src/lib/commerce.ts:45",
+        "src/lib/commerce.ts:51",
+        "src/lib/commerce.ts:107",
+        "src/components/blocks/commerce-order-editor.tsx:704",
+        "docs/qa-runtime-1.4.0.json:972"
+      ],
+      "explanation": "The UI can display a recorded refunded status, but CommerceAdapter has no refund/return operation or adjustment ledger. Invoices remain an amount and status rather than balances of partial adjustments. Cancellation does not establish refunded money or returned stock. No partial refund or return acceptance is recorded."
+    },
+    {
+      "id": "17",
+      "title": "Planes: fecha efectiva, prorrata y factura pendiente",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:188",
+        "src/lib/commerce.ts:64",
+        "src/lib/commerce-state.ts:196",
+        "tests/commerce.test.mjs:192",
+        "docs/application-integrations.md:24"
+      ],
+      "explanation": "The mock plan switch still creates a full paid invoice and resets a monthly period with setUTCMonth. It has no plan-change quote, prorated debits/credits or scheduled effective date. The month-end overflow concern remains an inference from this calculation; this review did not execute a failing date case or certify Stripe billing equivalence."
+    },
+    {
+      "id": "18",
+      "title": "Media: recuperación por archivo y límites de transporte",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:198",
+        "src/lib/product-images.ts:3",
+        "src/components/blocks/product-image-editor.tsx:594",
+        "src/components/blocks/product-image-editor.tsx:615",
+        "tests/product-images.test.mjs:75",
+        "tests/product-images.test.mjs:343",
+        "docs/application-integrations.md:26"
+      ],
+      "explanation": "Crop, image ordering/alt, signature/size/decode guards and URL cleanup already exist. The upload loop accumulates additions and applies onChange only after completing the batch; an error has no per-file recovery queue preserving partial additions. Per-file retry/retention and consumer transport capabilities remain proposals. Local processing is not resumable network upload."
+    },
+    {
+      "id": "19",
+      "title": "Mapas: degradación y coste observable",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:208",
+        "src/components/blocks/maps-workspace.tsx:813",
+        "src/components/blocks/maps-workspace.tsx:834",
+        "src/components/blocks/google-map.tsx:258",
+        "src/components/blocks/google-map.tsx:298",
+        "src/lib/google-maps.ts:27",
+        "tests/e2e/applications.spec.ts:627",
+        "docs/qa-runtime-1.4.0.json:974"
+      ],
+      "explanation": "Local fallback, optional SDK opt-in and bounded loader errors are delivered. Google mounting still depends on provider/configuration rather than the visible list/map mode, and theme/language-related effect dependencies recreate the map instance. Routes remain authored geometry. Quota/cost diagnostics and real-account billing behavior are not verified; shared SDK loading is not map-instance reuse."
+    },
+    {
+      "id": "20",
+      "title": "IA: capturar petición, resultado parcial y continuidad",
+      "state": "persists",
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:218",
+        "src/components/templates/ai-workspace.tsx:60",
+        "src/components/templates/ai-workspace.tsx:85",
+        "src/components/templates/ai-workspace.tsx:147",
+        "src/components/templates/ai-workspace.tsx:152",
+        "src/components/templates/ai-workspace.tsx:213",
+        "docs/website/en/roadmap.md:22"
+      ],
+      "explanation": "Streaming/stop/retry exist in the local demo. Messages still lack sources/tools and immutable request metadata; storage is mode-scoped rather than workspace-scoped. Retry calls generate with the current controls, and attachment context is truncated without the requested included/omitted model. Exact replay, waiting/partial distinctions and structured evidence remain proposals; mock output does not establish groundedness."
+    }
+  ],
+  "claimCorrections": [
+    {
+      "id": "heroui-cli-citation",
+      "claim": "The historical /docs/guide/cli page establishes current HeroUI doctor behavior.",
+      "verdict": "invalid-citation-and-overbroad-scope",
+      "evidenceIds": [
+        "heroui-legacy-cli-url",
+        "heroui-current-cli"
+      ],
+      "correction": "The old URL redirects to v3 migration. The current CLI page independently documents doctor, specifically for installed HeroUI packages and peer requirements. Historical broader checks are not established."
+    },
+    {
+      "id": "shadcn-issue-resolution",
+      "claim": "shadcn #8669 is a confirmed resolved theming problem or a theme-preset drift report.",
+      "verdict": "unsupported",
+      "evidenceIds": [
+        "shadcn-cssvars-issue",
+        "shadcn-registry-examples"
+      ],
+      "correction": "It concerns custom-registry CSS/base-layer injection. The maintainer explains a custom-style path; the reporter counters it. The issue remains open and no fixed version was verified."
+    },
+    {
+      "id": "tremor-single-track",
+      "claim": "Tremor Raw and the Tremor NPM library share one current installation/version contract, or Tremor has definitively no Figma resource.",
+      "verdict": "unsupported",
+      "evidenceIds": [
+        "tremor-about",
+        "tremor-installation",
+        "tremor-npm-installation"
+      ],
+      "correction": "Keep the Raw/Tailwind v4 and NPM/Tailwind v3 tracks distinct. The retrieved About and Installation pages disagree on Figma availability; native coverage was not verified."
+    },
+    {
+      "id": "copied-source-without-dependencies",
+      "claim": "Untitled UI source copying eliminates third-party npm dependencies and setup.",
+      "verdict": "unsupported",
+      "evidenceIds": [
+        "untitled-introduction",
+        "untitled-installation"
+      ],
+      "correction": "The copied component source remains editable, but the actual installation requires packages, theme/global CSS and utilities. Marketing language does not remove those requirements."
+    },
+    {
+      "id": "magic-demo-services",
+      "claim": "Magic UI Animated Beam/Bento Grid implements the integrations, persistence, notifications or search named by its sample visuals.",
+      "verdict": "unsupported",
+      "evidenceIds": [
+        "magic-animated-beam",
+        "magic-bento-grid"
+      ],
+      "correction": "These pages support decorative linking and feature-card layouts. Logos and sample feature copy do not establish executable services."
+    },
+    {
+      "id": "issue-status-as-fix-proof",
+      "claim": "A closed dependency issue proves a current fixing release, or an open focus-guard report proves a confirmed library accessibility defect.",
+      "verdict": "unsupported",
+      "evidenceIds": [
+        "magic-motion-dependency-issue",
+        "baseui-webkit-focus-issue"
+      ],
+      "correction": "Magic #611 is closed without a verified fixing release in the reviewed thread. Base UI #5237 includes an intentional focus-behavior explanation and later reporter context; neither was reproduced locally."
+    },
+    {
+      "id": "original-route-finding-as-current-site",
+      "claim": "Every current public Aureform route still enters through the full AppPage provider tree.",
+      "verdict": "outdated-if-applied-to-current-baseline",
+      "evidencePaths": [
+        "src/app/[locale]/page.tsx:3",
+        "src/components/marketing-page.tsx:8",
+        "src/components/site-providers.tsx:13",
+        "src/components/app-page.tsx:160",
+        "src/app/[locale]/docs/[[...chapter]]/page.tsx:3",
+        "src/components/documentation-shell.tsx:75"
+      ],
+      "correction": "The original finding is pinned to 1.4.0. The reviewed 1.4.1 public landing has separate site providers and the dedicated docs shell also avoids the full application provider tree; full app/auth route partitioning remains incomplete."
+    },
+    {
+      "id": "baseline-lighthouse-and-sponsors",
+      "claim": "The new Lighthouse work or Sponsors UI is already baseline-delivered and verified by this review.",
+      "verdict": "unsupported-baseline-attribution",
+      "evidencePaths": [
+        "docs/research/1.4.1-website-loading.json:1",
+        "docs/qa-runtime-1.4.1.json:114"
+      ],
+      "correction": "Those scopes are implementation under way. The baseline loading receipt expressly excludes Lighthouse/CWV/INP claims. New acceptance belongs to the implementing agents' separately identified source state."
+    },
+    {
+      "id": "existing-workflow-absence",
+      "claim": "Aureform lacks controlled tables, import cancellation/partial retry, real local crop, workspace commerce scope or protections against repeated mock payment effects.",
+      "verdict": "incorrect",
+      "evidencePaths": [
+        "src/components/ui/data-table.tsx:132",
+        "src/lib/csv-import.ts:684",
+        "src/components/blocks/import-wizard.tsx:611",
+        "src/lib/product-images.ts:33",
+        "src/components/commerce-provider.tsx:220",
+        "src/lib/commerce-state.ts:104",
+        "docs/qa-runtime-1.4.0.json:61"
+      ],
+      "correction": "Those baseline capabilities exist. The reviewed gaps propose extensions and additional continuity/acceptance, not replacement of nonexistent workflows."
+    },
+    {
+      "id": "certification-and-demand",
+      "claim": "Official capabilities, selected automated passes or issue counts prove market demand, adoption, live backend behavior or whole-kit accessibility.",
+      "verdict": "unsupported",
+      "evidenceIds": [
+        "mantine-accessibility",
+        "baseui-accessibility"
+      ],
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:9",
+        "docs/qa-runtime-1.4.0.json:972",
+        "docs/qa-runtime-1.4.1.json:114",
+        "docs/website/en/roadmap.md:26"
+      ],
+      "correction": "Keep capability evidence, particular issue reports, recorded QA and user validation distinct. Mock contracts and scoped scans retain their documented limits."
+    },
+    {
+      "id": "workflow-shadcn-1151",
+      "claim": "shadcn issue 1151 supplies maintainer guidance on global server-side row selection.",
+      "verdict": "incorrect-citation",
+      "evidenceIds": [
+        "shadcn-sticky-header-issue"
+      ],
+      "evidencePaths": [],
+      "correction": "It concerns fixed/sticky headers. Use the versioned TanStack selection guide and issue 4781 for global-selection scope."
+    },
+    {
+      "id": "workflow-shadcn-1960",
+      "claim": "shadcn issue 1960 confirms maintainer instructions for a global selection/exclusion contract.",
+      "verdict": "incorrect-attribution",
+      "evidenceIds": [
+        "shadcn-selection-freeze-issue"
+      ],
+      "evidencePaths": [],
+      "correction": "It reports a selection freeze and was closed for inactivity. Later user suggestions concern imports and stable/memoized inputs; they are not the claimed global-selection response."
+    },
+    {
+      "id": "workflow-shadcn-table-version",
+      "claim": "The current shadcn table guide uses TanStack Table v8.",
+      "verdict": "outdated-version",
+      "evidenceIds": [
+        "shadcn-data-table",
+        "tanstack-pagination"
+      ],
+      "evidencePaths": [
+        "src/components/ui/data-table.tsx:3"
+      ],
+      "correction": "The fetched legacy URL redirects to a current Base UI recipe explicitly using v9. Keep separate v8 guides and current v9 recipe evidence; do not infer Aureform compatibility or migrate dependencies as part of this review."
+    },
+    {
+      "id": "workflow-heroui-table-fetching",
+      "claim": "HeroUI v3 Table has compound parts and documented SWR pagination on the cited page.",
+      "verdict": "partially-supported",
+      "evidenceIds": [
+        "heroui-table"
+      ],
+      "evidencePaths": [],
+      "correction": "Current v3 parts and LoadMore are verified. SWR is not named on that retrieved page, so the specific fetching-library claim remains unsupported by this citation."
+    },
+    {
+      "id": "workflow-mantine-versions",
+      "claim": "Historical Mantine v7/v8 references prove the current promise notification API and tenant/job behavior.",
+      "verdict": "overbroad-version-and-capability",
+      "evidenceIds": [
+        "mantine-notifications",
+        "mantine-eight-changelog",
+        "mantine-form-actions-changelog"
+      ],
+      "evidencePaths": [],
+      "correction": "Promise notifications are verified in current docs labeled 9.7.3; the 8.0 page has no such entry. Named form actions were documented in 7.2 on 2023-11-07 and establish imperative form updates, not tenant isolation or durable jobs."
+    },
+    {
+      "id": "workflow-baseui-releases-url",
+      "claim": "https://base-ui.com/releases is valid release evidence.",
+      "verdict": "invalid-url",
+      "evidenceIds": [
+        "baseui-invalid-releases-url",
+        "baseui-releases"
+      ],
+      "evidencePaths": [
+        "src/components/providers.tsx:3"
+      ],
+      "correction": "The short URL returns 404. Use /react/overview/releases. Source imports demonstrate use of @base-ui/react, without reading configuration or certifying the installed package version."
+    },
+    {
+      "id": "workflow-stripe-delayed-link",
+      "claim": "The cited integration-options delayed-notification anchor documents the quoted async payment events.",
+      "verdict": "unsupported-by-cited-content",
+      "evidenceIds": [
+        "stripe-integration-options",
+        "stripe-fulfillment",
+        "stripe-prorations"
+      ],
+      "evidencePaths": [],
+      "correction": "The comparison page was retrieved successfully but lacks the quoted delayed-event discussion in reviewed HTML/Markdown. Checkout fulfillment directly supports delayed payment confirmation; prorations directly supports previews."
+    },
+    {
+      "id": "workflow-recharts-generalization",
+      "claim": "The four Recharts threads confirm a universal obligation for dashboard libraries to preserve missing values in one specific manner.",
+      "verdict": "overgeneralized",
+      "evidenceIds": [
+        "recharts-null-tooltip-issue",
+        "recharts-null-series-tooltip-issue",
+        "recharts-stacked-null-issue",
+        "recharts-null-tooltip-discussion",
+        "tremor-area-chart"
+      ],
+      "evidencePaths": [
+        "src/components/ui/chart.tsx:654"
+      ],
+      "correction": "They show distinct historical tooltip, animation and stacked-area questions, including maintainer explanations. Null versus zero is a justified product/data contract proposal based on Aureform source, not a universal rule or demand measurement proved by those threads."
+    },
+    {
+      "id": "workflow-map-cost-guarantee",
+      "claim": "Every new google.maps.Map constructor generates a paid charge, while setOptions guarantees no new cost.",
+      "verdict": "overstated-billing",
+      "evidenceIds": [
+        "google-maps-billing",
+        "google-dynamic-maps-sku"
+      ],
+      "evidencePaths": [
+        "src/components/blocks/google-map.tsx:258"
+      ],
+      "correction": "Official SKU documentation identifies successful map loads. Unnecessary construction can cause additional successful loads, but failed loads, pricing allowances and unrelated API services prevent equating constructor counts with paid charges. No real invoice or savings amount was checked."
+    },
+    {
+      "id": "workflow-novelty",
+      "claim": "Synchronous import preview/unmount abort, session recovery, demo scope, null/formatter/tab stops, quote equality/processing/refunds and AI/map lifecycle observations are genuinely new findings.",
+      "verdict": "contradicted-by-original-findings",
+      "evidenceIds": [],
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:80",
+        "docs/research-gaps-1.4.es.md:88",
+        "docs/research-gaps-1.4.es.md:98",
+        "docs/research-gaps-1.4.es.md:118",
+        "docs/research-gaps-1.4.es.md:128",
+        "docs/research-gaps-1.4.es.md:148",
+        "docs/research-gaps-1.4.es.md:160",
+        "docs/research-gaps-1.4.es.md:170",
+        "docs/research-gaps-1.4.es.md:180",
+        "docs/research-gaps-1.4.es.md:208",
+        "docs/research-gaps-1.4.es.md:218"
+      ],
+      "correction": "These were already explicit in the original twenty. Label them corroborated persisting gaps. Downloadable failed-row CSV and expanded credential/OTP callback design are additional proposal details; do not imply the broad gaps were newly discovered."
+    },
+    {
+      "id": "workflow-demo-key-and-leak",
+      "claim": "Baseline demo keys are aureform:ai-chat and aureform:data:Customer, proving a production tenant data leak.",
+      "verdict": "incorrect-examples-and-overreach",
+      "evidenceIds": [],
+      "evidencePaths": [
+        "src/hooks/use-demo-store.ts:14",
+        "src/components/templates/ai-workspace.tsx:85",
+        "src/components/templates/data-manager.tsx:83",
+        "src/components/templates/data-manager.tsx:94",
+        "docs/research-gaps-1.4.es.md:106"
+      ],
+      "correction": "The hook prefixes its supplied key; AI supplies ai-${mode}, and residual EntityManager uses kind. Customers delegate to scoped CustomerOperations. Demo scope ambiguity is supported; a production tenant leak is not."
+    },
+    {
+      "id": "workflow-comparative-absence",
+      "claim": "TailAdmin and Untitled UI lack domain adapters or background workflows as a verified comparative disadvantage.",
+      "verdict": "not-established-by-reviewed-docs",
+      "evidenceIds": [
+        "tailadmin-next-install",
+        "tailadmin-next-changelog",
+        "untitled-introduction",
+        "untitled-cli"
+      ],
+      "evidencePaths": [],
+      "correction": "Reviewed capability/installation pages and examples do not exhaust every edition or repository contract. Preserve product categories and frame domain-adapter fit as a question requiring a bounded audit, not a proved absence."
+    },
+    {
+      "id": "design-web-only-scope",
+      "claim": "The design retry independently inspected Aureform source or proved local defects.",
+      "verdict": "not-performed",
+      "evidenceIds": [],
+      "evidencePaths": [],
+      "correction": "The retry was web-only and labels internal paths as supplied baseline or hypotheses. Local corroboration in this evidence matrix belongs to the independent reviewer, not that research run."
+    },
+    {
+      "id": "design-effect-guards",
+      "claim": "Offscreen, document-visibility and reduced-motion guards for decorative effects remain unverified or absent.",
+      "verdict": "baseline-already-contains-guards",
+      "evidenceIds": [
+        "magicui-globe-performance-issue"
+      ],
+      "evidencePaths": [
+        "src/components/effects/effect-motion.ts:14",
+        "src/components/effects/effect-motion.ts:97",
+        "src/components/effects/effect-motion.ts:157",
+        "src/components/effects/effect-motion.ts:250",
+        "src/components/effects/effect-motion.ts:304",
+        "src/components/effects/spotlight-card.tsx:32",
+        "src/components/motion-system.tsx:57",
+        "src/components/motion-system.tsx:198",
+        "tests/appearance.test.mjs:1175"
+      ],
+      "correction": "Pinned source already gates effect activity by intersection, visibility, reduced/forced/off motion and fine pointer, with frame-coalesced pointer writes and teardown. A context-specific workspace motion default is an optional extension, not a missing guard fix. Existing test source was inspected, not rerun."
+    },
+    {
+      "id": "design-magic-gpu-generalization",
+      "claim": "Magic UI issue 42 demonstrates current high GPU use or visual fatigue for Aureform workspaces.",
+      "verdict": "historical-anecdote-only",
+      "evidenceIds": [
+        "magicui-globe-performance-issue"
+      ],
+      "evidencePaths": [],
+      "correction": "The issue began in May 2024, includes a claimed performance commit/improvement, closure and later reports. It motivates a profiling scenario, not a current Aureform measurement or six-to-eight-hour fatigue/demand finding."
+    },
+    {
+      "id": "design-clear-button-defect",
+      "claim": "Base UI 3630 establishes a confirmed accessibility bug because Clear has no Tab stop.",
+      "verdict": "missing-resolution-context",
+      "evidenceIds": [
+        "baseui-clear-keyboard-issue"
+      ],
+      "evidencePaths": [
+        "src/components/ui/combobox.tsx:45",
+        "src/components/ui/combobox.tsx:52",
+        "src/components/ui/multi-select.tsx:54"
+      ],
+      "correction": "The thread explains Escape/Delete keyboard alternatives and is closed not planned. Aureform supplies labels on Clear/Trigger and chip removal plus a keyboard hint. Review the functionality and naming in context instead of adding a mandatory extra Tab stop or declaring the local control inaccessible."
+    },
+    {
+      "id": "design-popup-and-tooltip-fixes",
+      "claim": "Base UI 5537 and Tremor 1087 are delivered accessibility/tooltip fixes.",
+      "verdict": "unmerged-proposals-and-wrong-url",
+      "evidenceIds": [
+        "baseui-closing-popups-pr",
+        "tremor-invalid-tooltip-pr-url",
+        "tremor-npm-tooltip-pr"
+      ],
+      "evidencePaths": [],
+      "correction": "Base UI 5537 is open/unmerged. The cited Tremor Raw URL ends at 404; the correct tremor-npm tooltip PR is also open/unmerged. Both support test scenarios, not released fixes or equivalent Aureform defects."
+    },
+    {
+      "id": "design-mantine-confirmation",
+      "claim": "Both cited Mantine combobox reports have maintainer-confirmed resolutions applicable to Aureform.",
+      "verdict": "overstated-attribution",
+      "evidenceIds": [
+        "mantine-aria-controls-issue",
+        "mantine-disabled-options-issue"
+      ],
+      "evidencePaths": [
+        "src/components/ui/select.tsx:73"
+      ],
+      "correction": "7085 has a member invitation to submit a fix; 9233 has a contributor offering a PR. Closure alone does not verify a released fix. Their reported versions differ, and Aureform Select delegates disabled to Base UI Item."
+    },
+    {
+      "id": "design-mobile-dialog-baseline",
+      "claim": "Aureform lacks dynamic viewport sizing or scrolling dialogs and has the cited keyboard/overlay failures.",
+      "verdict": "hypothesis-needs-acceptance",
+      "evidenceIds": [
+        "baseui-mobile-keyboard-issue",
+        "mantine-nested-escape-issue"
+      ],
+      "evidencePaths": [
+        "src/components/ui/dialog.tsx:21",
+        "src/components/ui/drawer.tsx:23"
+      ],
+      "correction": "Dialog already uses 90dvh and internal overflow; Drawer is a scrollable Base UI Dialog popup. Neither establishes real virtual-keyboard visibility or nested Escape behavior. Treat those as targeted acceptance scenarios rather than confirmed defects or wholly missing dvh support."
+    },
+    {
+      "id": "design-touch-and-wcag",
+      "claim": "The baseline lacks coarse-pointer safeguards; every target below 24 pixels fails AA and every border must meet 3:1.",
+      "verdict": "overbroad-standard-and-baseline",
+      "evidenceIds": [
+        "wai-target-size-minimum",
+        "wai-target-size-enhanced",
+        "wai-non-text-contrast"
+      ],
+      "evidencePaths": [
+        "src/components/ui/button.tsx:10",
+        "src/lib/appearance.ts:256"
+      ],
+      "correction": "Button already requests coarse-pointer minimum height/width; compact control height is 36px. Audit other rendered controls and spacing. AA target size has explicit exceptions; 44px is the enhanced AAA criterion. The 3:1 rule concerns necessary visual cues, not every decorative border."
+    },
+    {
+      "id": "design-chart-table-absence",
+      "claim": "Aureform charts have no accessible table alternative.",
+      "verdict": "contradicted-by-source",
+      "evidenceIds": [
+        "wai-grid-pattern"
+      ],
+      "evidencePaths": [
+        "src/components/ui/chart.tsx:818",
+        "docs/research-gaps-1.4.es.md:130"
+      ],
+      "correction": "A screen-reader table already exists. Align its formatter and series visibility, then consider a visible table toggle, secondary series encodings or tooltip layering only where acceptance demonstrates need."
+    },
+    {
+      "id": "design-contrast-engine-absence",
+      "claim": "Contrast calculation and safeguards would be wholly new to Aureform Appearance Studio.",
+      "verdict": "partly-existing-with-ui-extension",
+      "evidenceIds": [
+        "wai-text-contrast",
+        "wai-non-text-contrast"
+      ],
+      "evidencePaths": [
+        "src/lib/appearance.ts:134",
+        "src/lib/appearance.ts:138",
+        "src/lib/appearance.ts:189",
+        "src/lib/appearance.ts:207",
+        "src/components/templates/appearance-studio.tsx:78",
+        "tests/appearance.test.mjs:241"
+      ],
+      "correction": "Contrast helpers and resolved primary/control-gradient adjustments already exist. A visible live-ratio panel is an additional proposal; no explicit one was found in Studio. This does not prove a failing palette or fully validate translucent backgrounds."
+    },
+    {
+      "id": "design-native-badge-and-demand",
+      "claim": "Uniform native Figma parity, per-item native metadata and high demand for those features are established.",
+      "verdict": "bounded-documentation-only",
+      "evidenceIds": [
+        "untitled-introduction"
+      ],
+      "evidencePaths": [
+        "design/README.md:23",
+        "design/README.md:29",
+        "public/r/registry.json",
+        "docs/website/en/roadmap.md:28"
+      ],
+      "correction": "The native/source-only boundary is already documented; all 107 registry items lack docs/meta. Per-item evidence-backed coverage labels are an optional extension. Vendor matching-kit marketing does not independently verify its variant parity, a speed tradeoff or Aureform customer demand."
+    },
+    {
+      "id": "design-tailadmin-accessibility-absence",
+      "claim": "TailAdmin delegates deep keyboard accessibility to manual consumer implementation as a verified comparative deficiency.",
+      "verdict": "not-established-by-reviewed-evidence",
+      "evidenceIds": [
+        "tailadmin-next-install",
+        "tailadmin-faq"
+      ],
+      "evidencePaths": [],
+      "correction": "Installation/template pages do not establish absence of focus management across editions. Omit the negative capability assertion unless a bounded source and behavior audit supports it."
+    },
+    {
+      "id": "adoption-web-only-and-runner-versions",
+      "claim": "The adoption retry audited local code or all three AGY runs used the earlier 1.3.5 runner.",
+      "verdict": "scope-and-metadata-correction",
+      "evidenceIds": [],
+      "evidencePaths": [],
+      "correction": "Both retries are web-only. Artifact metadata records workflow/design CLI 1.4.2 and adoption CLI 1.4.3. These are research-runner versions, separate from Aureform baseline 1.4.1; recorded query lists contain 18/17/17 entries, without an independent provider replay."
+    },
+    {
+      "id": "adoption-style-alias-failure",
+      "claim": "shadcn 10496 has maintainer-confirmed failures requiring Aureform style aliases now.",
+      "verdict": "reported-risk-not-local-reproduction",
+      "evidenceIds": [
+        "shadcn-style-override-issue",
+        "shadcn-cli"
+      ],
+      "evidencePaths": [
+        "docs/website/en/installation.md:43",
+        "docs/website/en/cli.md:49",
+        "docs/registry-compatibility.md:29"
+      ],
+      "correction": "10496 has zero comments and reports CLI 4.5.0 with a style-placeholder registry. Aureform documents full item URLs and pinned 4.22.0, plus separate historical transform/consumer receipts. Do not assert an Aureform failure or require mirrored aliases without a matching reproduction."
+    },
+    {
+      "id": "adoption-heroui-current-style-guide",
+      "claim": "The old HeroUI Tailwind/LLM guide paths and v2 issue instructions verify current v3 setup.",
+      "verdict": "redirect-and-version-mismatch",
+      "evidenceIds": [
+        "heroui-legacy-tailwind-url",
+        "heroui-legacy-llms-url",
+        "heroui-tailwind-plugin-issue",
+        "heroui-tailwind-config-issue",
+        "heroui-styling-migration",
+        "heroui-current-cli"
+      ],
+      "evidencePaths": [],
+      "correction": "Both old guides redirect to migration. 4753 is a duplicate from the plugin track; 5733 resolves a v2 configuration case. Use current v3 CSS-package guidance and narrow current doctor documentation. Do not infer legacy plugin/source checks or generic LLM endpoints from these redirects."
+    },
+    {
+      "id": "adoption-css-isolation-absence",
+      "claim": "Aureform has no container-scoped theme variant; CSS layers alone isolate host styles.",
+      "verdict": "partly-existing-and-cascade-mischaracterized",
+      "evidenceIds": [
+        "mantine-styles"
+      ],
+      "evidencePaths": [
+        "src/components/appearance-provider.tsx:123",
+        "src/lib/appearance.ts:266",
+        "docs/website/en/cli.md:36",
+        "src/app/globals.css:35"
+      ],
+      "correction": "AppearanceScope already scopes variables and avoids document application. CSS export still uses :root and shared CSS has global selectors. A scoped-export option and host coexistence acceptance are useful extensions. Cascade layers govern precedence; they do not namespace variables or selectors."
+    },
+    {
+      "id": "adoption-animation-dependency-separation",
+      "claim": "Separating Lenis/GSAP registry declarations from application entries is genuinely new or entirely absent.",
+      "verdict": "manifest-separation-already-present",
+      "evidenceIds": [],
+      "evidencePaths": [
+        "public/r/registry.json",
+        "src/components/motion-system.tsx:4",
+        "src/components/app-page.tsx:162"
+      ],
+      "correction": "Across the pinned 107-item metadata, only motion-system declares lenis and gsap; no item declares motion or framer-motion. Preserve and document that separation. It does not prove the demo app imports no GSAP: AppPage still wraps its views in MotionSystem."
+    },
+    {
+      "id": "adoption-source-copy-and-tremor-causality",
+      "claim": "Copied source eliminates dependency compatibility locks, and React 19 reports prove why Tremor migrated to Raw.",
+      "verdict": "overgeneralized-and-causal-inference",
+      "evidenceIds": [
+        "tremor-react19-charts-issue",
+        "tremor-react19-support-issue",
+        "tremor-about",
+        "tremor-npm-installation",
+        "untitled-installation",
+        "magic-motion-dependency-issue"
+      ],
+      "evidencePaths": [],
+      "correction": "The reports verify historical NPM-track friction, not an organizational cause or current universal failure. Copied components still depend on packages. Keep Raw/NPM separate and treat user forks and maintenance opinions as unverified user claims."
+    },
+    {
+      "id": "adoption-current-shadcn-diff",
+      "claim": "Current shadcn documentation describes a standalone shadcn diff command and only CLI v2/v3.",
+      "verdict": "outdated-cli-guidance",
+      "evidenceIds": [
+        "shadcn-cli",
+        "shadcn-changelog"
+      ],
+      "evidencePaths": [],
+      "correction": "Current docs expose add --diff and --dry-run; the changelog lists v4. Do not use unversioned historical standalone diff syntax as current installation/update guidance. Aureform own preview/receipt commands remain separately documented."
+    },
+    {
+      "id": "adoption-agent-docs-speed",
+      "claim": "Machine-readable docs/MCP already exist in Aureform and dramatically improve coding accuracy/time.",
+      "verdict": "proposal-with-unmeasured-benefit",
+      "evidenceIds": [
+        "baseui-llms-index",
+        "mantine-llms-guide",
+        "shadcn-mcp",
+        "magic-mcp",
+        "heroui-legacy-llms-url"
+      ],
+      "evidencePaths": [
+        "docs/website/en/installation.md:39",
+        "docs/qa-runtime-1.4.1.json:41"
+      ],
+      "correction": "Baseline public/llms.txt and public/llms-full.txt are absent. The referenced official formats support a proposed distribution feature; no Aureform MCP connection or measurable model benefit was tested. Bilingual acceptance must account for 19 translated chapters and three original-language fallbacks."
+    },
+    {
+      "id": "adoption-vendor-negatives",
+      "claim": "TailAdmin lacks granular distribution and requires full view rewrites; Magic UI has a verified standalone magicui-cli in the cited guide.",
+      "verdict": "unsupported-by-reviewed-citations",
+      "evidenceIds": [
+        "tailadmin-next-install",
+        "tailadmin-react-install",
+        "untitled-installation",
+        "magic-installation"
+      ],
+      "evidencePaths": [],
+      "correction": "The reviewed template paths show full-project entry, without proving every selective-use option is absent or that consumers must rewrite views. Magic installation documents shadcn registry commands, not the asserted standalone tool. Omit unverified negatives and separate advertised paths from measured adoption outcomes."
+    },
+    {
+      "id": "adoption-secret-free-and-ci-certification",
+      "claim": "The review certifies a 100 percent secret-free repository and enforced CI budgets/dependency approvals.",
+      "verdict": "outside-reviewed-scope",
+      "evidenceIds": [],
+      "evidencePaths": [
+        "src/lib/stripe-commerce-adapter.ts:74",
+        "docs/release-checklist-1.4.1.md:23",
+        "docs/qa-runtime-1.4.1.json:24"
+      ],
+      "correction": "The reviewed frontend transport documents a credential boundary, and docs/receipts describe checks. Secrets/configuration were intentionally not accessed; no security scan, CI configuration enforcement audit or new application test was performed. Treat budgets/approval policy as proposals and attach independent implementation receipts."
+    },
+    {
+      "id": "adoption-lighthouse-sponsors-attribution",
+      "claim": "Committed Lighthouse/Sponsors work is part of the immutable baseline acceptance.",
+      "verdict": "excluded-from-baseline",
+      "evidenceIds": [],
+      "evidencePaths": [
+        "docs/research-gaps-1.4.es.md:236"
+      ],
+      "correction": "These separately implemented features remain excluded from this baseline matrix. Any final report may describe them only with their separate implementation acceptance evidence, not by changing the original twenty finding states."
+    }
+  ],
+  "agyWorkflowReview": {
+    "artifact": "artifacts/research-agy/2026-10-20/workflows.json",
+    "baselineCommit": "70b40b56ffc7096ffa32ef2f1210ee550ea6d0b0",
+    "artifactStatus": "completed",
+    "artifactCompletedAt": "2026-10-20T04:48:33.777Z",
+    "checkedAt": "2026-10-20T04:59:07.438472Z",
+    "fullFinalResponseRead": true,
+    "recordedSearchQueryCount": 18,
+    "recommendationGroupCount": 7,
+    "reviewedRecommendationSlices": 8,
+    "sourceClaimCheckCount": 14,
+    "method": "Read the final response without republishing it; compare its major recommendations with pinned source and original findings; independently retrieve supporting and disputed primary citations. The recorded query list is artifact metadata, not an independent replay of provider searches.",
+    "overall": "Useful corroboration and contract proposals after citation, version, novelty and scope corrections. None changes the independently audited original twenty states or certifies implementation completion, market demand or production behavior.",
+    "recommendations": [
+      {
+        "id": "workflow-table",
+        "topic": "Preserve loaded rows during refresh; model query-wide selection and unknown totals",
+        "baselineFindingIds": [
+          "09"
+        ],
+        "verdict": "supported-extension-with-qualifications",
+        "evidenceIds": [
+          "tanstack-row-selection",
+          "tanstack-pagination",
+          "tanstack-selection-issue",
+          "shadcn-data-table"
+        ],
+        "evidencePaths": [
+          "src/components/ui/data-table.tsx:132",
+          "src/components/ui/data-table.tsx:160",
+          "src/components/ui/data-table.tsx:703",
+          "src/components/templates/customer-operations.tsx:500",
+          "docs/research-gaps-1.4.es.md:108"
+        ],
+        "observed": "Baseline external tables require numeric totals, retain controlled IDs and replace the rendered table with skeletons while loading. Explicit refresh and query/cursor contracts are reasonable extensions.",
+        "qualification": "Existing cross-page IDs are already delivered. Focus retention under refresh remains an acceptance scenario, not a browser result from this review. The current shadcn recipe is v9; TanStack v8 guides must be version-labeled."
+      },
+      {
+        "id": "workflow-import",
+        "topic": "Persist import activity and offer downloadable failed-row results",
+        "baselineFindingIds": [
+          "10"
+        ],
+        "verdict": "supported-extension-with-qualifications",
+        "evidenceIds": [
+          "mantine-notifications"
+        ],
+        "evidencePaths": [
+          "src/components/blocks/import-wizard.tsx:444",
+          "src/components/blocks/import-wizard.tsx:488",
+          "src/components/blocks/import-wizard.tsx:582",
+          "src/lib/csv-import.ts:684",
+          "src/lib/csv-import.ts:879",
+          "docs/research-gaps-1.4.es.md:118"
+        ],
+        "observed": "Baseline has synchronous preview, unmount abort, partial results, retry and a general CSV serializer/sample download. No dedicated failed-row report download was found in the reviewed wizard/helpers.",
+        "qualification": "Synchronous preview and unmount abort were already identified in finding 10. A failure-report action is an additional proposal. Mantine promise notifications present state; they do not make an aborted job continue or provide durable resume. No INP failure, 1000-row threshold or effort estimate was measured."
+      },
+      {
+        "id": "workflow-commerce",
+        "topic": "Represent order quotes, delayed payments, partial refunds, proration and transport error details",
+        "baselineFindingIds": [
+          "06",
+          "14",
+          "15",
+          "16",
+          "17"
+        ],
+        "verdict": "supported-extension-with-qualifications",
+        "evidenceIds": [
+          "stripe-fulfillment",
+          "stripe-prorations"
+        ],
+        "evidencePaths": [
+          "src/lib/commerce-state.ts:43",
+          "src/lib/commerce.ts:45",
+          "src/lib/commerce.ts:107",
+          "src/lib/commerce-state.ts:196",
+          "src/lib/stripe-commerce-adapter.ts:65",
+          "src/lib/stripe-commerce-adapter.ts:127",
+          "docs/research-gaps-1.4.es.md:160",
+          "docs/research-gaps-1.4.es.md:170",
+          "docs/research-gaps-1.4.es.md:180",
+          "docs/research-gaps-1.4.es.md:190"
+        ],
+        "observed": "The baseline validates total as the line sum, lacks explicit processing/partial-refund operations and creates a simple full-price monthly plan invoice. Non-OK transport responses use generic status mappings without reading field-error bodies or retry headers.",
+        "qualification": "Quote equality, processing and partial refunds were already covered by findings 14-16. Error-body/header omission adds implementation detail to finding 06. The adapter consumes an application CommerceSnapshot, not raw Stripe Tax responses; no production rejection was reproduced. Backend calculation/confirmation remains external."
+      },
+      {
+        "id": "workflow-auth",
+        "topic": "Recover expired sessions without losing drafts; render recipient invitation states",
+        "baselineFindingIds": [
+          "07"
+        ],
+        "verdict": "supported-extension-with-qualifications",
+        "evidenceIds": [
+          "baseui-about",
+          "baseui-accessibility"
+        ],
+        "evidencePaths": [
+          "src/lib/demo-auth.ts:8",
+          "src/lib/demo-auth.ts:50",
+          "src/components/templates/auth.tsx:41",
+          "src/components/workspace-provider.tsx:420",
+          "docs/research-gaps-1.4.es.md:88"
+        ],
+        "observed": "Baseline authentication is demonstrative and invitation acceptance is an administrative members.manage action. Session recovery and an eligible-recipient journey are supported roadmap extensions.",
+        "qualification": "Recovery with a preserved draft is already in original finding 07. Credential/OTP callbacks are a proposed API extension. Base UI dialog/form capability does not demonstrate frequent lost work, identity verification or a working session backend. Current commerce maps HTTP 401 to forbidden; a new expired-session mapping needs an explicit contract."
+      },
+      {
+        "id": "workflow-scope",
+        "topic": "Declare persistence scope and make cross-tab conflicts visible",
+        "baselineFindingIds": [
+          "08"
+        ],
+        "verdict": "supported-extension-with-qualifications",
+        "evidenceIds": [
+          "mantine-form-actions-changelog"
+        ],
+        "evidencePaths": [
+          "src/hooks/use-demo-store.ts:7",
+          "src/components/templates/ai-workspace.tsx:85",
+          "src/components/templates/data-manager.tsx:83",
+          "src/components/templates/data-manager.tsx:94",
+          "src/components/workspace-provider.tsx:122",
+          "docs/research-gaps-1.4.es.md:98"
+        ],
+        "observed": "Generic demo storage has no workspace input, and workspace storage events replace incoming state. The AI key is ai-${mode}; residual EntityManager records use kind. Customer routes instead delegate to CustomerOperationsTemplate.",
+        "qualification": "Do not publish the workflow response's invented aureform:ai-chat or aureform:data:Customer keys. This is the already documented demo scope ambiguity in finding 08, not an observed production tenant data leak. Mantine named form actions are not isolation evidence."
+      },
+      {
+        "id": "workflow-analytics",
+        "topic": "Distinguish absence from zero; align accessible values and dense-chart navigation",
+        "baselineFindingIds": [
+          "11",
+          "13"
+        ],
+        "verdict": "supported-extension-with-qualifications",
+        "evidenceIds": [
+          "tremor-area-chart",
+          "recharts-null-tooltip-issue",
+          "recharts-null-series-tooltip-issue",
+          "recharts-stacked-null-issue",
+          "recharts-null-tooltip-discussion",
+          "wai-grid-pattern"
+        ],
+        "evidencePaths": [
+          "src/components/ui/chart.tsx:28",
+          "src/components/ui/chart.tsx:654",
+          "src/components/ui/chart.tsx:665",
+          "src/components/ui/chart.tsx:818",
+          "src/components/templates/dashboard.tsx:452",
+          "docs/research-gaps-1.4.es.md:128",
+          "docs/research-gaps-1.4.es.md:148"
+        ],
+        "observed": "Numeric-only data, heatmap absent-to-zero coercion, raw accessible table values and many focusable cells are directly supported by source. Tremor documents configurable null connections.",
+        "qualification": "These details are already in findings 11 and 13. Recharts reports concern several different rendering/tooltip cases with different statuses; they do not establish a universal normative rule or comparative quality. Human accessibility acceptance and rendered target measurements remain outstanding."
+      },
+      {
+        "id": "workflow-ai",
+        "topic": "Capture immutable request context and show first-token/truncation states",
+        "baselineFindingIds": [
+          "20"
+        ],
+        "verdict": "supported-extension-with-qualifications",
+        "evidenceIds": [
+          "ai-sdk-use-chat",
+          "shadcn-changelog"
+        ],
+        "evidencePaths": [
+          "src/components/templates/ai-workspace.tsx:60",
+          "src/components/templates/ai-workspace.tsx:147",
+          "src/components/templates/ai-workspace.tsx:152",
+          "src/components/templates/ai-workspace.tsx:213",
+          "docs/research-gaps-1.4.es.md:218"
+        ],
+        "observed": "Retry reads current controls, attachment text is sliced at 1000 characters and streaming is set before the first chunk. The SDK reference and agentic UI patterns provide useful state vocabulary.",
+        "qualification": "These source details were already documented in original finding 20. The recommendation does not prove grounded model output, tool execution or consumer demand for a full agent interface. Stop and retry are existing capabilities."
+      },
+      {
+        "id": "workflow-maps",
+        "topic": "Gate map mounting by visible demand and evaluate instance reuse and touch pan",
+        "baselineFindingIds": [
+          "13",
+          "19"
+        ],
+        "verdict": "supported-extension-with-qualifications",
+        "evidenceIds": [
+          "google-maps-billing",
+          "google-dynamic-maps-sku"
+        ],
+        "evidencePaths": [
+          "src/components/blocks/maps-workspace.tsx:813",
+          "src/components/blocks/maps-workspace.tsx:834",
+          "src/components/blocks/google-map.tsx:258",
+          "src/components/blocks/google-map.tsx:298",
+          "src/components/blocks/maps-workspace.tsx:1283",
+          "src/components/blocks/maps-workspace.tsx:1439",
+          "docs/research-gaps-1.4.es.md:208"
+        ],
+        "observed": "The list view hides a container without adding view to the Google mounting condition; the map creation effect depends on options such as theme. Local pan is keyboard-based with visible zoom/reset controls.",
+        "qualification": "These observations already appear in findings 13 and 19. Google is still opt-in. Official billing identifies successful map loads, not every constructor call as an invoiced charge. No live account usage, amount saved or generic setOptions cost guarantee was verified."
+      }
+    ],
+    "sourceClaimChecks": [
+      {
+        "id": "workflow-shadcn-1151",
+        "claim": "shadcn issue 1151 supplies maintainer guidance on global server-side row selection.",
+        "verdict": "incorrect-citation",
+        "evidenceIds": [
+          "shadcn-sticky-header-issue"
+        ],
+        "evidencePaths": [],
+        "correction": "It concerns fixed/sticky headers. Use the versioned TanStack selection guide and issue 4781 for global-selection scope."
+      },
+      {
+        "id": "workflow-shadcn-1960",
+        "claim": "shadcn issue 1960 confirms maintainer instructions for a global selection/exclusion contract.",
+        "verdict": "incorrect-attribution",
+        "evidenceIds": [
+          "shadcn-selection-freeze-issue"
+        ],
+        "evidencePaths": [],
+        "correction": "It reports a selection freeze and was closed for inactivity. Later user suggestions concern imports and stable/memoized inputs; they are not the claimed global-selection response."
+      },
+      {
+        "id": "workflow-tanstack-4781",
+        "claim": "TanStack issue 4781 documents the limits of manual-pagination selection.",
+        "verdict": "supported-with-context",
+        "evidenceIds": [
+          "tanstack-selection-issue",
+          "tanstack-row-selection"
+        ],
+        "evidencePaths": [],
+        "correction": "A member explicitly describes expected behavior and application-owned global intent. This closure is not a released defect fix."
+      },
+      {
+        "id": "workflow-shadcn-table-version",
+        "claim": "The current shadcn table guide uses TanStack Table v8.",
+        "verdict": "outdated-version",
+        "evidenceIds": [
+          "shadcn-data-table",
+          "tanstack-pagination"
+        ],
+        "evidencePaths": [
+          "src/components/ui/data-table.tsx:3"
+        ],
+        "correction": "The fetched legacy URL redirects to a current Base UI recipe explicitly using v9. Keep separate v8 guides and current v9 recipe evidence; do not infer Aureform compatibility or migrate dependencies as part of this review."
+      },
+      {
+        "id": "workflow-heroui-table-fetching",
+        "claim": "HeroUI v3 Table has compound parts and documented SWR pagination on the cited page.",
+        "verdict": "partially-supported",
+        "evidenceIds": [
+          "heroui-table"
+        ],
+        "evidencePaths": [],
+        "correction": "Current v3 parts and LoadMore are verified. SWR is not named on that retrieved page, so the specific fetching-library claim remains unsupported by this citation."
+      },
+      {
+        "id": "workflow-untitled-upgrade",
+        "claim": "Untitled UI exposes an upgrade command.",
+        "verdict": "supported-with-boundary",
+        "evidenceIds": [
+          "untitled-cli"
+        ],
+        "evidencePaths": [],
+        "correction": "The current CLI docs explicitly document v7-to-v8 migration, dry-run and reporting. This bounded migration is distinct from generic conflict-preserving component updates."
+      },
+      {
+        "id": "workflow-mantine-versions",
+        "claim": "Historical Mantine v7/v8 references prove the current promise notification API and tenant/job behavior.",
+        "verdict": "overbroad-version-and-capability",
+        "evidenceIds": [
+          "mantine-notifications",
+          "mantine-eight-changelog",
+          "mantine-form-actions-changelog"
+        ],
+        "evidencePaths": [],
+        "correction": "Promise notifications are verified in current docs labeled 9.7.3; the 8.0 page has no such entry. Named form actions were documented in 7.2 on 2023-11-07 and establish imperative form updates, not tenant isolation or durable jobs."
+      },
+      {
+        "id": "workflow-baseui-releases-url",
+        "claim": "https://base-ui.com/releases is valid release evidence.",
+        "verdict": "invalid-url",
+        "evidenceIds": [
+          "baseui-invalid-releases-url",
+          "baseui-releases"
+        ],
+        "evidencePaths": [
+          "src/components/providers.tsx:3"
+        ],
+        "correction": "The short URL returns 404. Use /react/overview/releases. Source imports demonstrate use of @base-ui/react, without reading configuration or certifying the installed package version."
+      },
+      {
+        "id": "workflow-stripe-delayed-link",
+        "claim": "The cited integration-options delayed-notification anchor documents the quoted async payment events.",
+        "verdict": "unsupported-by-cited-content",
+        "evidenceIds": [
+          "stripe-integration-options",
+          "stripe-fulfillment",
+          "stripe-prorations"
+        ],
+        "evidencePaths": [],
+        "correction": "The comparison page was retrieved successfully but lacks the quoted delayed-event discussion in reviewed HTML/Markdown. Checkout fulfillment directly supports delayed payment confirmation; prorations directly supports previews."
+      },
+      {
+        "id": "workflow-recharts-generalization",
+        "claim": "The four Recharts threads confirm a universal obligation for dashboard libraries to preserve missing values in one specific manner.",
+        "verdict": "overgeneralized",
+        "evidenceIds": [
+          "recharts-null-tooltip-issue",
+          "recharts-null-series-tooltip-issue",
+          "recharts-stacked-null-issue",
+          "recharts-null-tooltip-discussion",
+          "tremor-area-chart"
+        ],
+        "evidencePaths": [
+          "src/components/ui/chart.tsx:654"
+        ],
+        "correction": "They show distinct historical tooltip, animation and stacked-area questions, including maintainer explanations. Null versus zero is a justified product/data contract proposal based on Aureform source, not a universal rule or demand measurement proved by those threads."
+      },
+      {
+        "id": "workflow-map-cost-guarantee",
+        "claim": "Every new google.maps.Map constructor generates a paid charge, while setOptions guarantees no new cost.",
+        "verdict": "overstated-billing",
+        "evidenceIds": [
+          "google-maps-billing",
+          "google-dynamic-maps-sku"
+        ],
+        "evidencePaths": [
+          "src/components/blocks/google-map.tsx:258"
+        ],
+        "correction": "Official SKU documentation identifies successful map loads. Unnecessary construction can cause additional successful loads, but failed loads, pricing allowances and unrelated API services prevent equating constructor counts with paid charges. No real invoice or savings amount was checked."
+      },
+      {
+        "id": "workflow-novelty",
+        "claim": "Synchronous import preview/unmount abort, session recovery, demo scope, null/formatter/tab stops, quote equality/processing/refunds and AI/map lifecycle observations are genuinely new findings.",
+        "verdict": "contradicted-by-original-findings",
+        "evidenceIds": [],
+        "evidencePaths": [
+          "docs/research-gaps-1.4.es.md:80",
+          "docs/research-gaps-1.4.es.md:88",
+          "docs/research-gaps-1.4.es.md:98",
+          "docs/research-gaps-1.4.es.md:118",
+          "docs/research-gaps-1.4.es.md:128",
+          "docs/research-gaps-1.4.es.md:148",
+          "docs/research-gaps-1.4.es.md:160",
+          "docs/research-gaps-1.4.es.md:170",
+          "docs/research-gaps-1.4.es.md:180",
+          "docs/research-gaps-1.4.es.md:208",
+          "docs/research-gaps-1.4.es.md:218"
+        ],
+        "correction": "These were already explicit in the original twenty. Label them corroborated persisting gaps. Downloadable failed-row CSV and expanded credential/OTP callback design are additional proposal details; do not imply the broad gaps were newly discovered."
+      },
+      {
+        "id": "workflow-demo-key-and-leak",
+        "claim": "Baseline demo keys are aureform:ai-chat and aureform:data:Customer, proving a production tenant data leak.",
+        "verdict": "incorrect-examples-and-overreach",
+        "evidenceIds": [],
+        "evidencePaths": [
+          "src/hooks/use-demo-store.ts:14",
+          "src/components/templates/ai-workspace.tsx:85",
+          "src/components/templates/data-manager.tsx:83",
+          "src/components/templates/data-manager.tsx:94",
+          "docs/research-gaps-1.4.es.md:106"
+        ],
+        "correction": "The hook prefixes its supplied key; AI supplies ai-${mode}, and residual EntityManager uses kind. Customers delegate to scoped CustomerOperations. Demo scope ambiguity is supported; a production tenant leak is not."
+      },
+      {
+        "id": "workflow-comparative-absence",
+        "claim": "TailAdmin and Untitled UI lack domain adapters or background workflows as a verified comparative disadvantage.",
+        "verdict": "not-established-by-reviewed-docs",
+        "evidenceIds": [
+          "tailadmin-next-install",
+          "tailadmin-next-changelog",
+          "untitled-introduction",
+          "untitled-cli"
+        ],
+        "evidencePaths": [],
+        "correction": "Reviewed capability/installation pages and examples do not exhaust every edition or repository contract. Preserve product categories and frame domain-adapter fit as a question requiring a bounded audit, not a proved absence."
+      }
+    ],
+    "researchRunnerCliVersion": "1.4.2"
+  },
+  "agyDesignReview": {
+    "artifact": "artifacts/research-agy/2026-10-20-retry/design.json",
+    "baselineCommit": "70b40b56ffc7096ffa32ef2f1210ee550ea6d0b0",
+    "artifactStatus": "completed",
+    "artifactCompletedAt": "2026-10-20T04:55:57.404Z",
+    "researchRunnerCliVersion": "1.4.2",
+    "checkedAt": "2026-10-20T05:09:12.380486Z",
+    "researchScope": "Public-web-only retry. Supplied baseline/hypotheses are not counted as the research process inspecting local code.",
+    "independentReviewerScope": "This reviewer separately inspected the immutable baseline source/docs/registry/test descriptions and QA receipts; no builds or new application tests.",
+    "fullFinalResponseRead": true,
+    "recordedSearchQueryCount": 17,
+    "recommendations": [
+      {
+        "id": "design-motion",
+        "topic": "Motion policy and effect budgets",
+        "verdict": "existing-guards-optional-context-policy",
+        "evidenceIds": [
+          "magicui-globe-performance-issue",
+          "heroui-styling-migration"
+        ],
+        "evidencePaths": [
+          "src/components/effects/effect-motion.ts:14",
+          "src/components/motion-system.tsx:198",
+          "src/components/app-page.tsx:77"
+        ],
+        "observed": "Motion gates and landing-only Lenis conditions are present. A workspace default is a product choice requiring measurement; no GPU/fatigue profile was run."
+      },
+      {
+        "id": "design-composites",
+        "topic": "Keyboard/ARIA behavior of composite fields",
+        "verdict": "acceptance-hypothesis-with-existing-labels",
+        "evidenceIds": [
+          "baseui-clear-keyboard-issue",
+          "baseui-closing-popups-pr",
+          "mantine-aria-controls-issue",
+          "mantine-disabled-options-issue"
+        ],
+        "evidencePaths": [
+          "src/components/ui/combobox.tsx:45",
+          "src/components/ui/multi-select.tsx:54",
+          "src/components/ui/select.tsx:75"
+        ],
+        "observed": "Labels and primitive delegation exist. Clear keyboard alternatives and unmerged popup work qualify the cited reports; no local ARIA/focus regression was reproduced."
+      },
+      {
+        "id": "design-overlays",
+        "topic": "Real mobile keyboard visibility and nested Escape",
+        "verdict": "additional-targeted-acceptance",
+        "evidenceIds": [
+          "baseui-mobile-keyboard-issue",
+          "mantine-nested-escape-issue"
+        ],
+        "evidencePaths": [
+          "src/components/ui/dialog.tsx:23",
+          "src/components/ui/drawer.tsx:25"
+        ],
+        "observed": "Dynamic-height/scroll support is present. Native virtual keyboard and nested overlay behavior still need dedicated acceptance beyond a resized mobile viewport."
+      },
+      {
+        "id": "design-density",
+        "topic": "Dense controls, touch targets and refresh focus",
+        "verdict": "partly-existing-with-rendered-coverage-needed",
+        "evidenceIds": [
+          "wai-target-size-minimum",
+          "wai-target-size-enhanced",
+          "wai-grid-pattern"
+        ],
+        "evidencePaths": [
+          "src/components/ui/button.tsx:10",
+          "src/components/ui/data-table.tsx:703",
+          "src/lib/appearance.ts:256"
+        ],
+        "observed": "Coarse-pointer Button safeguards already exist; verify remaining controls, spacing and refresh focus rather than declaring every compact target a failure."
+      },
+      {
+        "id": "design-chart",
+        "topic": "Secondary series encodings, tooltip layers and accessible data",
+        "verdict": "existing-table-with-possible-enhancements",
+        "evidenceIds": [
+          "tremor-npm-tooltip-pr",
+          "wai-grid-pattern",
+          "wai-non-text-contrast"
+        ],
+        "evidencePaths": [
+          "src/components/ui/chart.tsx:201",
+          "src/components/ui/chart.tsx:818"
+        ],
+        "observed": "Accessible chart data already exists; formatting/visibility alignment remains in original finding 11. No tooltip clipping or grayscale failure was measured, and the cited fix is unmerged."
+      },
+      {
+        "id": "design-coverage-contrast",
+        "topic": "Coverage metadata and visible contrast feedback",
+        "verdict": "documented-boundary-existing-math-additional-ui",
+        "evidenceIds": [
+          "wai-text-contrast",
+          "wai-non-text-contrast",
+          "untitled-introduction"
+        ],
+        "evidencePaths": [
+          "design/README.md:29",
+          "public/r/registry.json",
+          "src/lib/appearance.ts:134",
+          "src/components/templates/appearance-studio.tsx:78"
+        ],
+        "observed": "Native/source-only limits and contrast calculations already exist. Evidence-backed per-item labels and a visible contrast panel are extensions, without native parity or whole-kit conformance certification."
+      }
+    ],
+    "claimCorrectionIds": [
+      "design-web-only-scope",
+      "design-effect-guards",
+      "design-magic-gpu-generalization",
+      "design-clear-button-defect",
+      "design-popup-and-tooltip-fixes",
+      "design-mantine-confirmation",
+      "design-mobile-dialog-baseline",
+      "design-touch-and-wcag",
+      "design-chart-table-absence",
+      "design-contrast-engine-absence",
+      "design-native-badge-and-demand",
+      "design-tailadmin-accessibility-absence"
+    ],
+    "limitations": "Query counts are recorded artifact metadata, not an independent replay. Recommendations/impact/effort are hypotheses unless directly corroborated; no raw response is republished."
+  },
+  "agyAdoptionReview": {
+    "artifact": "artifacts/research-agy/2026-10-20-retry/adoption.json",
+    "baselineCommit": "70b40b56ffc7096ffa32ef2f1210ee550ea6d0b0",
+    "artifactStatus": "completed",
+    "artifactCompletedAt": "2026-10-20T04:57:51.032Z",
+    "researchRunnerCliVersion": "1.4.3",
+    "checkedAt": "2026-10-20T05:09:12.380486Z",
+    "researchScope": "Public-web-only retry. Supplied baseline/hypotheses are not counted as the research process inspecting local code.",
+    "independentReviewerScope": "This reviewer separately inspected the immutable baseline source/docs/registry/test descriptions and QA receipts; no builds or new application tests.",
+    "fullFinalResponseRead": true,
+    "recordedSearchQueryCount": 17,
+    "recommendations": [
+      {
+        "id": "adoption-installation",
+        "topic": "Selective installation and registry robustness",
+        "verdict": "existing-paths-reported-upstream-risk",
+        "evidenceIds": [
+          "shadcn-style-override-issue"
+        ],
+        "evidencePaths": [
+          "docs/website/en/installation.md:27",
+          "docs/website/en/installation.md:43",
+          "docs/registry-compatibility.md:29"
+        ],
+        "observed": "A minimal starter, local selective add and full-URL shadcn installation are documented. Style aliases are a conditional compatibility proposal; no matching Aureform failure was reproduced."
+      },
+      {
+        "id": "adoption-css",
+        "topic": "Scoped exports and legacy-host coexistence",
+        "verdict": "existing-variable-scope-incomplete-global-isolation",
+        "evidenceIds": [
+          "mantine-styles"
+        ],
+        "evidencePaths": [
+          "src/components/appearance-provider.tsx:123",
+          "src/lib/appearance.ts:266",
+          "docs/website/en/cli.md:36"
+        ],
+        "observed": "Container variable scope exists; CSS export/global-selector coexistence remains additional acceptance under original finding 03."
+      },
+      {
+        "id": "adoption-maintenance",
+        "topic": "Update receipts and explicit motion dependencies",
+        "verdict": "existing-receipts-and-manifest-separation",
+        "evidenceIds": [
+          "shadcn-cli",
+          "untitled-cli"
+        ],
+        "evidencePaths": [
+          "docs/website/en/cli.md:40",
+          "docs/website/en/cli.md:47",
+          "public/r/registry.json"
+        ],
+        "observed": "Receipts/previews are present and only motion-system declares GSAP/Lenis. Generic three-way merging/full semver compatibility still are not delivered; documentation and regression guards can preserve existing separation."
+      },
+      {
+        "id": "adoption-machine-docs",
+        "topic": "Generated indexes, Markdown and MCP integration",
+        "verdict": "new-distribution-proposal-unmeasured-benefit",
+        "evidenceIds": [
+          "baseui-llms-index",
+          "mantine-llms-guide",
+          "shadcn-mcp"
+        ],
+        "evidencePaths": [
+          "docs/qa-runtime-1.4.1.json:41"
+        ],
+        "observed": "Public baseline llms index files are absent. A single-source generated index and tested MCP namespace are supported proposals; language parity and model benefits require their own acceptance."
+      },
+      {
+        "id": "adoption-contracts",
+        "topic": "Per-view integration contract cards and public QA",
+        "verdict": "existing-grouped-contract-docs-extension",
+        "evidenceIds": [
+          "baseui-about",
+          "untitled-installation"
+        ],
+        "evidencePaths": [
+          "docs/application-integrations.md:22",
+          "docs/website/en/authentication.md:47",
+          "docs/website/en/cli.md:47",
+          "docs/qa-runtime-1.4.1.json:24"
+        ],
+        "observed": "Typed frontend boundaries and scoped QA are documented. Per-view discoverability cards are an extension, not proof every consumer must rebuild vendor views or that a live backend is already included."
+      },
+      {
+        "id": "adoption-governance",
+        "topic": "Coverage labels and dependency/performance policy",
+        "verdict": "optional-policy-separate-implementation-acceptance",
+        "evidenceIds": [
+          "magicui-globe-performance-issue"
+        ],
+        "evidencePaths": [
+          "design/README.md:29",
+          "docs/release-checklist-1.4.1.md:23",
+          "docs/qa-runtime-1.4.1.json:24"
+        ],
+        "observed": "Evidence-backed labels and budgets can clarify maintenance scope. No CI configuration or secrets were inspected, and Lighthouse/Sponsors are outside this pinned baseline."
+      }
+    ],
+    "claimCorrectionIds": [
+      "adoption-web-only-and-runner-versions",
+      "adoption-style-alias-failure",
+      "adoption-heroui-current-style-guide",
+      "adoption-css-isolation-absence",
+      "adoption-animation-dependency-separation",
+      "adoption-source-copy-and-tremor-causality",
+      "adoption-current-shadcn-diff",
+      "adoption-agent-docs-speed",
+      "adoption-vendor-negatives",
+      "adoption-secret-free-and-ci-certification",
+      "adoption-lighthouse-sponsors-attribution"
+    ],
+    "limitations": "Query counts are recorded artifact metadata, not an independent replay. Recommendations/impact/effort are hypotheses unless directly corroborated; no raw response is republished."
+  },
+  "reportReview": {
+    "checkedAt": "2026-10-20T05:13:23.308435Z",
+    "documents": [
+      {
+        "path": "docs/website/en/research.md",
+        "sha256": "7e294d01440ca0a97639285ca9224bb907c45d959a681f3af4573edf573b3d28",
+        "readOnly": true
+      },
+      {
+        "path": "docs/website/es/research.md",
+        "sha256": "a63d37ccb267d7863f945da88785e0ada9ff753f95a1c628ee22b0f78b9cbc76",
+        "readOnly": true
+      }
+    ],
+    "method": "Read both report snapshots, compare major statements with the three completed AGY review sections and the pinned evidence matrix. No report, roadmap, manifest or provenance file was modified.",
+    "claimsToCorrect": [
+      {
+        "id": "report-per-run-cli-versions",
+        "priority": "factual-correction",
+        "locations": [
+          {
+            "path": "docs/website/en/research.md",
+            "line": 9
+          },
+          {
+            "path": "docs/website/es/research.md",
+            "line": 9
+          }
+        ],
+        "observed": "Both method paragraphs describe all three completed runs as agy CLI 1.4.2.",
+        "correction": "State workflows/design CLI 1.4.2 and adoption CLI 1.4.3. Keep 18/17/17 recorded queries (52 total), completed original workflow artifact and successful retry design/adoption artifacts. Both retries are public-web-only; local corroboration belongs to the independent reviewer.",
+        "claimCorrectionIds": [
+          "adoption-web-only-and-runner-versions",
+          "design-web-only-scope"
+        ]
+      },
+      {
+        "id": "report-css-layer-scope",
+        "priority": "scope-clarification",
+        "locations": [
+          {
+            "path": "docs/website/en/research.md",
+            "line": 28
+          },
+          {
+            "path": "docs/website/es/research.md",
+            "line": 28
+          }
+        ],
+        "observed": "The Mantine row combines stylesheet order and scope when citing CSS layer guidance.",
+        "correction": "Describe layers as a way to control stylesheet precedence. Scoped variables/selectors and host coexistence are separate responsibilities; layers alone do not isolate styles.",
+        "evidenceIds": [
+          "mantine-styles"
+        ],
+        "claimCorrectionIds": [
+          "adoption-css-isolation-absence"
+        ]
+      }
+    ],
+    "verifiedWorkflowReferenceIds": [
+      "tanstack-row-selection",
+      "tanstack-pagination",
+      "wai-grid-pattern",
+      "stripe-fulfillment",
+      "stripe-prorations",
+      "google-maps-billing",
+      "google-dynamic-maps-sku",
+      "ai-sdk-use-chat"
+    ],
+    "acceptanceBoundary": "The reports correctly retain the immutable 1.4.1 finding states. New Lighthouse/Sponsors and assertions about their current published snapshots require separately attributed implementation/publication receipts. This source review does not certify those features.",
+    "overall": "The major comparative and baseline statements retain the reviewed limitations. One factual method correction and one CSS wording clarification are identified; no unsupported broad negative vendor capability claim is needed for the recommendations."
+  },
+  "publicationReview": {
+    "reviewer": "Independent link and publication review",
+    "changes": [
+      "Corrected both published section links without replacing originally recorded request URLs.",
+      "Public research links and ledgers ship together.",
+      "Priority 8 marks measurements pending until verified production reports are imported."
+    ],
+    "originalEvidencePreserved": true
+  }
+}
