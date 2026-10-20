@@ -132,11 +132,19 @@ Acompañar ese recorrido con fallos recuperables por archivo en media, montaje v
 
 ### 8. Evidencia pública, documentación y descubrimiento
 
-**Impacto alto · esfuerzo pequeño/medio · confianza alta · entrega parcial; mediciones de producción pendientes.** Publicar mediciones por ruta y perfil, mantener referencias bilingües y ofrecer una entrada clara al patrocinio voluntario. La [página de calidad](https://aureformui.com/es/quality/) mostrará snapshots verificados y sus commits auditados, conservando el alcance de laboratorio. Las combinaciones sin medición se indican expresamente.
+**Impacto alto · esfuerzo pequeño/medio · confianza alta · primera entrega medida verificada.** Publicar mediciones por ruta y perfil, mantener referencias bilingües y ofrecer una entrada clara al patrocinio voluntario. La [página de calidad](https://aureformui.com/es/quality/) presenta snapshots verificados y sus commits auditados, conservando el alcance de laboratorio. Las combinaciones sin medición se indican expresamente.
 
 La [investigación de difusión en GitHub](../../github-discovery.es.md) revisa 17 destinos y prepara propuestas para los cinco prioritarios. About y topics describen capacidades reales. El directorio oficial de shadcn es una oportunidad que requiere su validador y una instalación nueva antes de enviar una propuesta.
 
 **Aceptación:** cada badge deriva del mismo snapshot que la página; todos los originales descargan con su hash; enlaces de patrocinio apuntan al mantenedor; las propuestas cumplen el formato del destino y declaran el vínculo con el proyecto. La aceptación y la exposición dependen de cada comunidad.
+
+## Medición posterior a la base de investigación
+
+El **20 de octubre de 2026**, la [primera muestra de producción](../../quality/lighthouse/index.json) auditó el commit **`0caf7c8874ea8bb2b1580c0d59a9bda4497cbdd4`**, posterior a la base inmutable del estudio. Dieciocho auditorías secuenciales dieron medianas de rendimiento móvil/escritorio de **93/100 en landing, 94/100 en documentación de instalación y 40/67 en dashboard**. La [página de calidad](https://aureformui.com/es/quality/) presenta las cuatro categorías completas y cinco métricas de carga.
+
+Esto aporta evidencia medida para continuar mejorando la carga de aplicaciones y el coste del hilo principal. No determina una causa única, el rendimiento de otras rutas ni la experiencia de usuarios reales. Perfilar el dashboard antes de elegir el cambio; conservar los mejores resultados del sitio público al aislar módulos de aplicación. La mediana SEO de 69 del dashboard refleja su política deliberada `noindex`, sin justificar la indexación de registros ficticios.
+
+Este suplemento no cambia la clasificación de los veinte hallazgos originales ni atribuye Lighthouse retrospectivamente al commit `70b40b5`. Describe una medición separada y plenamente identificada.
 
 ## Secuencia de trabajo
 

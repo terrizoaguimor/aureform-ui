@@ -167,7 +167,20 @@ The [bilingual product research](docs/website/en/research.md) combines three hea
 [![Lighthouse audit workflow](https://img.shields.io/github/actions/workflow/status/terrizoaguimor/aureform-ui/quality.yml?branch=main&style=flat-square&label=Lighthouse%20CI)](https://github.com/terrizoaguimor/aureform-ui/actions/workflows/quality.yml)
 
 <!-- BEGIN:quality-results -->
-The first reproducible Lighthouse snapshot will be published after the corresponding production build is verified. [The quality page](https://aureformui.com/en/quality/) records the audited commit, methodology and full reports; no scores are advertised before measurement.
+[![Lighthouse landing mobile median](public/badges/lighthouse-mobile.svg)](https://aureformui.com/en/quality/) [![Lighthouse landing desktop median](public/badges/lighthouse-desktop.svg)](https://aureformui.com/en/quality/)
+
+**Measured: 2026-10-20 05:47:39 UTC · Lighthouse 13.5.0 · commit [0caf7c8](https://github.com/terrizoaguimor/aureform-ui/commit/0caf7c8874ea8bb2b1580c0d59a9bda4497cbdd4).** Medians of three runs per page and device; scores out of 100.
+
+| Page · Device | Performance | Accessibility | Best practices | SEO |
+| --- | ---: | ---: | ---: | ---: |
+| Landing · Mobile | 93 | 100 | 100 | 100 |
+| Landing · Desktop | 100 | 100 | 100 | 100 |
+| Documentation · Mobile | 94 | 100 | 100 | 100 |
+| Documentation · Desktop | 100 | 100 | 100 | 100 |
+| Demo dashboard · Mobile | 40 | 100 | 100 | 69 |
+| Demo dashboard · Desktop | 67 | 100 | 100 | 69 |
+
+[Methodology, metrics and all 18 reports →](https://aureformui.com/en/quality/) · [Original JSON and HTML](docs/quality/lighthouse/production-39375951507-1/)
 <!-- END:quality-results -->
 
 Each snapshot audits the landing, installation documentation and demo dashboard on mobile and desktop, three times per combination. Published values are medians of laboratory measurements. Raw HTML and JSON reports remain available in [the repository](docs/quality/lighthouse/) and on the website. See [the measurement guide](docs/quality/README.md) to reproduce or update them.

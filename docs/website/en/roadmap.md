@@ -20,6 +20,8 @@ The [October 2026 research](research.md) compares eight references, reviews the 
 
 The [public quality page](https://aureformui.com/en/quality/) displays the latest published Lighthouse snapshot and its exact audited commit. Collection covers three pages, two profiles and three runs per combination. The tooling retains complete reports and verifies their hashes; an empty snapshot is presented without invented scores.
 
+The first measured application commit is `0caf7c8`: landing performance 93/100, installation docs 94/100 and dashboard 40/67, mobile/desktop. These lab medians make dashboard profiling and route-loading work a concrete next step. They do not identify one cause or certify other application pages.
+
 GitHub Sponsors supports the maintainer, and the [GitHub discovery guide](../../github-discovery.md) records appropriate directories, their submission rules and prepared proposals. Directory acceptance and community adoption remain external outcomes.
 
 ## Priorities for the next product changes

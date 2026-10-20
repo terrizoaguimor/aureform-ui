@@ -6,6 +6,29 @@ Aureform publishes loading audits as dated evidence for specific pages and
 commits. This is a laboratory baseline, separate from real-user Core Web Vitals,
 the application's behavioral tests, and manual accessibility review.
 
+## First production snapshot
+
+The [October 20, 2026 snapshot](lighthouse/production-39375951507-1/) contains
+18 verified audits of commit
+[`0caf7c8874ea8bb2b1580c0d59a9bda4497cbdd4`](https://github.com/terrizoaguimor/aureform-ui/commit/0caf7c8874ea8bb2b1580c0d59a9bda4497cbdd4).
+The [successful audit job](https://github.com/terrizoaguimor/aureform-ui/actions/runs/39375951507)
+used Node 24.21.0, Lighthouse 13.5.0 and Chromium 156.0.8078.4 on Ubuntu 24.04.
+Raw reports preserve runner image `20261012.334.1` and kernel
+`6.17.0-1022-azure`.
+
+| Page                       | Mobile performance | Desktop performance |
+| -------------------------- | -----------------: | ------------------: |
+| Landing                    |                 93 |                 100 |
+| Installation documentation |                 94 |                 100 |
+| Demo dashboard             |                 40 |                  67 |
+
+The dashboard has a substantially larger measured main-thread cost. Its raw
+timings are simulated laboratory values; inspect the individual reports before
+attributing the cost to a component or generalizing to other pages. The
+dashboard's SEO median is 69 because the `is-crawlable` audit encounters the
+intentional `noindex` policy. All categories and timings remain in the public
+matrix rather than being reduced to the landing score badges.
+
 ## What is measured
 
 | Page           | Production pathname      | Why this page                                                         |

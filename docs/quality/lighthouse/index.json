@@ -1,1 +1,299 @@
-[]
+[
+  {
+    "id": "production-39375951507-1",
+    "createdAt": "2026-10-20T05:47:39.980Z",
+    "sourceCommit": "0caf7c8874ea8bb2b1580c0d59a9bda4497cbdd4",
+    "version": "1.4.1",
+    "targetOrigin": "https://aureformui.com",
+    "environment": {
+      "node": "v24.21.0",
+      "lighthouse": "13.5.0",
+      "chrome": "156.0.8078.4",
+      "platform": "linux-x64"
+    },
+    "results": [
+      {
+        "route": "landing",
+        "pathname": "/en/",
+        "profile": "mobile",
+        "scores": {
+          "performance": 93,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "fcp": 1079.941,
+          "lcp": 2797.941,
+          "cls": 0,
+          "tbt": 174.5,
+          "speedIndex": 1388.8831595035915
+        },
+        "runs": [
+          {
+            "id": "landing-mobile-1",
+            "json": "landing-mobile-1.json",
+            "html": "landing-mobile-1.html",
+            "sha256": {
+              "json": "c1e423873537a210964278c451b33b1823b615d954b2c62a80fdc9eda0feba18",
+              "html": "82791e0c74f53a9ce84b8dba20e2b0afa125d45600e277c3a1eda559718bf9d4"
+            }
+          },
+          {
+            "id": "landing-mobile-2",
+            "json": "landing-mobile-2.json",
+            "html": "landing-mobile-2.html",
+            "sha256": {
+              "json": "50ba3dc5a4a651ff366f43bd30c68defa76ac247756dccc06992470e7d8209e5",
+              "html": "68561b04046e6ff7fd88463b3f2649fa62d8e08e66a9d92b40a0eaf08e2e4569"
+            }
+          },
+          {
+            "id": "landing-mobile-3",
+            "json": "landing-mobile-3.json",
+            "html": "landing-mobile-3.html",
+            "sha256": {
+              "json": "825eb64ff17d10a720f94575171c17e1695cb268256d4363ec7183c5d4787bcf",
+              "html": "720098dbe90ffac6cae5b48a316cf1d1ad3134cf84200ae1036fec53d60ca501"
+            }
+          }
+        ]
+      },
+      {
+        "route": "landing",
+        "pathname": "/en/",
+        "profile": "desktop",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "fcp": 306.499,
+          "lcp": 661.8779999999999,
+          "cls": 0,
+          "tbt": 0,
+          "speedIndex": 504.14235010773723
+        },
+        "runs": [
+          {
+            "id": "landing-desktop-1",
+            "json": "landing-desktop-1.json",
+            "html": "landing-desktop-1.html",
+            "sha256": {
+              "json": "dd58e6f0b8733decaac61ba6f4f3412aca0acfe8444fb5ea866e4a3cf2c0a5cc",
+              "html": "570eba71f3ba5e9dca219cc3f32b94e3c75cb4177ef01af4e9bafac8cf79f319"
+            }
+          },
+          {
+            "id": "landing-desktop-2",
+            "json": "landing-desktop-2.json",
+            "html": "landing-desktop-2.html",
+            "sha256": {
+              "json": "a2800824d9b3783da06ee4b8409181f5e5c2415a48d92a022c7a2ae3edaf8450",
+              "html": "be6c3da5bb2ee50d77fcd61a27d393739883ad98d42fe7e6881b26ba3c4e6726"
+            }
+          },
+          {
+            "id": "landing-desktop-3",
+            "json": "landing-desktop-3.json",
+            "html": "landing-desktop-3.html",
+            "sha256": {
+              "json": "8646ce3d27415bde70096d3c01dc6a5103cfa2af5098cbeec16a51cb881fbafb",
+              "html": "7f332460a01c0004723c4022541634a613ae045c678c00c66f7486ce380c59fb"
+            }
+          }
+        ]
+      },
+      {
+        "route": "documentation",
+        "pathname": "/en/docs/installation/",
+        "profile": "mobile",
+        "scores": {
+          "performance": 94,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "fcp": 1005.524,
+          "lcp": 2869.524,
+          "cls": 0,
+          "tbt": 115,
+          "speedIndex": 1005.524
+        },
+        "runs": [
+          {
+            "id": "documentation-mobile-1",
+            "json": "documentation-mobile-1.json",
+            "html": "documentation-mobile-1.html",
+            "sha256": {
+              "json": "fbf4423a8950fc60386b758aac11b6eded27ac218e27b171b1263291a1d83289",
+              "html": "caa45bd67a4b5fc60fb9aa8c6793435bc2312dd36cf5905faecbe26c3602d8e7"
+            }
+          },
+          {
+            "id": "documentation-mobile-2",
+            "json": "documentation-mobile-2.json",
+            "html": "documentation-mobile-2.html",
+            "sha256": {
+              "json": "701a80e7b2f62a4c04d3de268ef18e844a1f28b513ffc78db75a20f014b81a40",
+              "html": "98accbc18bb5bc8dc86c1b01ea6c9f94a877b39a14f89dd35301daea7ec8533e"
+            }
+          },
+          {
+            "id": "documentation-mobile-3",
+            "json": "documentation-mobile-3.json",
+            "html": "documentation-mobile-3.html",
+            "sha256": {
+              "json": "97eb82c02b8181b848af22d904dc24ab502762eff09b6af814d184ed2717abe3",
+              "html": "cc3f17d97e19d71d8914864740a06d865dac75986b5ff63c56efab7d7bb6dce7"
+            }
+          }
+        ]
+      },
+      {
+        "route": "documentation",
+        "pathname": "/en/docs/installation/",
+        "profile": "desktop",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "fcp": 285.743,
+          "lcp": 617.7429999999999,
+          "cls": 0,
+          "tbt": 0,
+          "speedIndex": 286.2000640833254
+        },
+        "runs": [
+          {
+            "id": "documentation-desktop-1",
+            "json": "documentation-desktop-1.json",
+            "html": "documentation-desktop-1.html",
+            "sha256": {
+              "json": "24ae4d6cd538f13116c7aeab4b823c8b5f3464d636e33166871bef7e4175b693",
+              "html": "c2bba41412352b4362fa555bc6d57a6dfa07659a1207263fc8a2bdaeffd66c91"
+            }
+          },
+          {
+            "id": "documentation-desktop-2",
+            "json": "documentation-desktop-2.json",
+            "html": "documentation-desktop-2.html",
+            "sha256": {
+              "json": "379acd4d32c8118d6f3f0064b921e534aaa43e1784529ca67789fae2303d8a16",
+              "html": "943a229f7dbdc6d020f2aa8646b6eefa8e8c32640a062fdd1f989c00e6a0c798"
+            }
+          },
+          {
+            "id": "documentation-desktop-3",
+            "json": "documentation-desktop-3.json",
+            "html": "documentation-desktop-3.html",
+            "sha256": {
+              "json": "9fc5a6acb1952798089a1dc7656fbf94ee74b7cbafad84cb849f6b53edb09093",
+              "html": "a96d6ebd3ba81395f9bf7285b66950d2e9d3b5dcec8d9167d95f977f3f386a49"
+            }
+          }
+        ]
+      },
+      {
+        "route": "dashboard",
+        "pathname": "/en/dashboard/",
+        "profile": "mobile",
+        "scores": {
+          "performance": 40,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 69
+        },
+        "metrics": {
+          "fcp": 1064.673,
+          "lcp": 6121.117,
+          "cls": 0,
+          "tbt": 155343,
+          "speedIndex": 7670.6770143626
+        },
+        "runs": [
+          {
+            "id": "dashboard-mobile-1",
+            "json": "dashboard-mobile-1.json",
+            "html": "dashboard-mobile-1.html",
+            "sha256": {
+              "json": "f98288534f00160a50036932d2ca4ca7ee382609b7693dcf7a57610577e39e06",
+              "html": "bfd4735cfc2b94ca2fa393c00ee9192f190cb46b656be0a19c3224647b21b444"
+            }
+          },
+          {
+            "id": "dashboard-mobile-2",
+            "json": "dashboard-mobile-2.json",
+            "html": "dashboard-mobile-2.html",
+            "sha256": {
+              "json": "1e905b012acdd43576f18e7804aec28ef6812e6b90289f17252d271ab14e0291",
+              "html": "7d3356ef96d5cb586469a28e4e7439f148b490e38650e86b345e2472ed9fa6bd"
+            }
+          },
+          {
+            "id": "dashboard-mobile-3",
+            "json": "dashboard-mobile-3.json",
+            "html": "dashboard-mobile-3.html",
+            "sha256": {
+              "json": "4b70398560ad63ea86dfd856643bc91292a51520d91051e69cfff4cec0150d60",
+              "html": "83b5371ee971c6bce6e143434efd8e29cf60b4172bacdf29f87502e9b629ca61"
+            }
+          }
+        ]
+      },
+      {
+        "route": "dashboard",
+        "pathname": "/en/dashboard/",
+        "profile": "desktop",
+        "scores": {
+          "performance": 67,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 69
+        },
+        "metrics": {
+          "fcp": 293.896,
+          "lcp": 1103.4575,
+          "cls": 0,
+          "tbt": 14909,
+          "speedIndex": 1413.8653212944746
+        },
+        "runs": [
+          {
+            "id": "dashboard-desktop-1",
+            "json": "dashboard-desktop-1.json",
+            "html": "dashboard-desktop-1.html",
+            "sha256": {
+              "json": "131dec2a36cf6a0bb65603aebbcadfcd52054110894f5e5d73f8b6158558c1f3",
+              "html": "bbab4bce533231a58833c743c8b4f7c1413b274e48e1c624a7dfba78af913adc"
+            }
+          },
+          {
+            "id": "dashboard-desktop-2",
+            "json": "dashboard-desktop-2.json",
+            "html": "dashboard-desktop-2.html",
+            "sha256": {
+              "json": "1438e16ff3f3bf5a5bf869dcced8f28c52df7dcd5b32d27858a6b77aed02b4e4",
+              "html": "2f14a6df9af3d8151d31f64f6e6b6fbc24f42dcd2e886857d8e94281c629ef17"
+            }
+          },
+          {
+            "id": "dashboard-desktop-3",
+            "json": "dashboard-desktop-3.json",
+            "html": "dashboard-desktop-3.html",
+            "sha256": {
+              "json": "c3e45efa404cca72b5ab90c967999dd5d7ab3679adcde312f37d5b61c028465e",
+              "html": "f003019055f3763c86d3961f1a12ba34fa5635771bbeb01968042831654d5e51"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

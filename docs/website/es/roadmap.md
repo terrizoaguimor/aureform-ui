@@ -20,6 +20,8 @@ La [investigación de octubre de 2026](research.md) compara ocho referencias, re
 
 La [página pública de calidad](https://aureformui.com/es/quality/) muestra la última muestra publicada de Lighthouse y el commit exacto que se auditó. La recolección cubre tres páginas, dos perfiles y tres ejecuciones por combinación. Las herramientas conservan informes completos y verifican sus hashes; una muestra vacía se presenta sin inventar scores.
 
+El primer commit de aplicación medido es `0caf7c8`: rendimiento 93/100 en landing, 94/100 en documentación y 40/67 en dashboard, móvil/escritorio. Estas medianas de laboratorio convierten el profiling del dashboard y la carga de rutas en un siguiente paso concreto. No identifican una causa única ni acreditan otras pantallas de aplicación.
+
 GitHub Sponsors permite apoyar al mantenedor. La [guía de difusión en GitHub](../../github-discovery.es.md) registra directorios adecuados, reglas de contribución y propuestas preparadas. La aceptación en directorios y la adopción siguen siendo resultados externos.
 
 ## Prioridades para los siguientes cambios de producto

@@ -221,6 +221,12 @@ export function QualityContent({
               "Un poco de contexto para los números.",
             )}
           </h2>
+          <p className="mt-4 max-w-3xl text-xs leading-7 text-muted-foreground">
+            {l(
+              "The recorded URLs are English routes in the demo's default configuration. The dashboard deliberately uses noindex for fictional application records, so its SEO score reflects that policy. Each page keeps its own loading results.",
+              "Las URLs registradas son rutas en inglés con la configuración predeterminada de la demo. El dashboard utiliza noindex para sus registros ficticios; su puntuación SEO refleja esa política. Cada página conserva sus propios resultados de carga.",
+            )}
+          </p>
           <div className="mt-8 grid gap-7 sm:grid-cols-3 sm:gap-10">
             {[
               [

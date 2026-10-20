@@ -167,7 +167,20 @@ La [investigación bilingüe de producto](docs/website/es/research.md) combina t
 [![Workflow de auditorías Lighthouse](https://img.shields.io/github/actions/workflow/status/terrizoaguimor/aureform-ui/quality.yml?branch=main&style=flat-square&label=Lighthouse%20CI)](https://github.com/terrizoaguimor/aureform-ui/actions/workflows/quality.yml)
 
 <!-- BEGIN:quality-results -->
-La primera medición Lighthouse reproducible se publicará tras verificar el build correspondiente en producción. [La página de calidad](https://aureformui.com/es/quality/) registra el commit auditado, la metodología y los informes completos; los puntajes se publican después de medirlos.
+[![Lighthouse landing mobile median](public/badges/lighthouse-mobile.svg)](https://aureformui.com/es/quality/) [![Lighthouse landing desktop median](public/badges/lighthouse-desktop.svg)](https://aureformui.com/es/quality/)
+
+**Medición: 2026-10-20 05:47:39 UTC · Lighthouse 13.5.0 · commit [0caf7c8](https://github.com/terrizoaguimor/aureform-ui/commit/0caf7c8874ea8bb2b1580c0d59a9bda4497cbdd4).** Medianas de tres pasadas por página y dispositivo; puntajes sobre 100.
+
+| Página · Dispositivo | Rendimiento | Accesibilidad | Buenas prácticas | SEO |
+| --- | ---: | ---: | ---: | ---: |
+| Landing · Móvil | 93 | 100 | 100 | 100 |
+| Landing · Escritorio | 100 | 100 | 100 | 100 |
+| Documentación · Móvil | 94 | 100 | 100 | 100 |
+| Documentación · Escritorio | 100 | 100 | 100 | 100 |
+| Dashboard demo · Móvil | 40 | 100 | 100 | 69 |
+| Dashboard demo · Escritorio | 67 | 100 | 100 | 69 |
+
+[Metodología, métricas y los 18 informes →](https://aureformui.com/es/quality/) · [JSON y HTML originales](docs/quality/lighthouse/production-39375951507-1/)
 <!-- END:quality-results -->
 
 Cada medición audita la landing, la documentación de instalación y el dashboard demo en móvil y escritorio, tres veces por combinación. Los valores publicados son medianas de mediciones de laboratorio. Los informes HTML y JSON originales están disponibles en [el repositorio](docs/quality/lighthouse/) y en el sitio. Consulta [la guía de medición](docs/quality/README.md) para reproducirlos o actualizarlos.

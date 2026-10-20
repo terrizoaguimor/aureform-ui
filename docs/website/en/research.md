@@ -132,11 +132,19 @@ Pair that journey with per-file recovery in media, visible/reusable map mounting
 
 ### 8. Public evidence, documentation and discovery
 
-**High impact · small/medium effort · high confidence · partially delivered; production measurements pending.** Publish measurements by route/profile, maintain bilingual references and provide a clear voluntary sponsorship route. The [quality page](https://aureformui.com/en/quality/) will show verified snapshots and their audited commits while retaining the laboratory scope. Unmeasured combinations are explicit.
+**High impact · small/medium effort · high confidence · first measured delivery verified.** Publish measurements by route/profile, maintain bilingual references and provide a clear voluntary sponsorship route. The [quality page](https://aureformui.com/en/quality/) presents verified snapshots and their audited commits while retaining the laboratory scope. Unmeasured combinations are explicit.
 
 The [GitHub discovery study](../../github-discovery.md) reviews 17 destinations and prepares proposals for the five priorities. About/topics describe actual capabilities. The official shadcn directory requires its validator and a fresh consumer install before a proposal is submitted.
 
 **Acceptance:** badges derive from the same snapshot as the page; original downloads match their hashes; sponsorship links point to the maintainer; proposals follow destination formatting and disclose the project relationship. Acceptance and exposure belong to each community.
+
+## Measured supplement to the research baseline
+
+On **October 20, 2026**, the [first production snapshot](../../quality/lighthouse/index.json) audited commit **`0caf7c8874ea8bb2b1580c0d59a9bda4497cbdd4`**, after the immutable research baseline. Eighteen sequential audits produced mobile/desktop performance medians of **93/100 for the landing, 94/100 for installation documentation and 40/67 for the dashboard**. The complete four-category results and five loading metrics are available on the [quality page](https://aureformui.com/en/quality/).
+
+This supplies measured evidence for continued work on application loading and main-thread cost. It does not establish a single cause, other-route performance or real-user experience. Profile the dashboard before choosing a change; preserve the stronger public-site results when isolating application modules. The dashboard's SEO median of 69 reflects its deliberate `noindex` policy, not a reason to index fictional application records.
+
+This supplement does not change the original twenty finding classifications or retrospectively add Lighthouse to commit `70b40b5`. It describes a separate, fully identified measurement.
 
 ## Work sequence
 
