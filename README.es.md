@@ -4,9 +4,9 @@
 
 Un UI kit de Next.js para dashboards, espacios SaaS y herramientas internas, con un estudio de apariencia y una biblioteca editable de Figma.
 
-[**Explorar la demo ↗**](https://terrizoaguimor.github.io/aureform-ui/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Empezar](#empezar) · [Contribuir](CONTRIBUTING.md) · [English](README.md)
+[**Explorar la demo ↗**](https://aureformui.com/es/) · [**Documentación**](https://aureformui.com/es/docs/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Empezar](#empezar) · [Contribuir](CONTRIBUTING.md) · [English](README.md)
 
-![Resumen SaaS de Aureform en modo oscuro, con navegación, métricas y gráficos](docs/images/aureform-overview-dark.webp)
+![Portada de Aureform en modo oscuro, con vista previa de la interfaz y acceso a documentación](docs/images/aureform-landing-dark.webp)
 
 **69 vistas · 44 familias de componentes · 107 entradas de registry · 6 paletas · 13 tipos de gráficos · English / Español · Claro / Oscuro**
 
@@ -30,11 +30,11 @@ Construido con **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP
 
 ## Aplicaciones ampliadas en 1.4
 
-Explora [Productos](https://terrizoaguimor.github.io/aureform-ui/es/products/), [Pedidos](https://terrizoaguimor.github.io/aureform-ui/es/orders/), [Facturas](https://terrizoaguimor.github.io/aureform-ui/es/invoices/), [Facturación](https://terrizoaguimor.github.io/aureform-ui/es/settings/billing/) y [Mapas](https://terrizoaguimor.github.io/aureform-ui/es/maps/).
+Explora [Productos](https://aureformui.com/es/products/), [Pedidos](https://aureformui.com/es/orders/), [Facturas](https://aureformui.com/es/invoices/), [Facturación](https://aureformui.com/es/settings/billing/) y [Mapas](https://aureformui.com/es/maps/).
 
 El editor de productos incluye vista previa y galería con carga, recorte, rotación, texto alternativo, imagen principal y orden. Los precios del catálogo alimentan los pedidos; un pago mock exitoso actualiza existencias y genera una factura. Facturación ofrece planes, historial y vista previa del portal. El adaptador tipado de Stripe conecta estas pantallas con **tu backend autenticado**.
 
-Mapas funciona con geometría local y admite Google Maps mediante una clave de navegador restringida. [Login](https://terrizoaguimor.github.io/aureform-ui/es/auth/sign-in/) y [registro](https://terrizoaguimor.github.io/aureform-ui/es/auth/sign-up/) muestran **botones mock de Google, GitHub y Microsoft**, con callbacks para tu proveedor. También están disponibles recuperación y verificación. La demo pública no realiza OAuth ni cobros reales.
+Mapas funciona con geometría local y admite Google Maps mediante una clave de navegador restringida. [Login](https://aureformui.com/es/auth/sign-in/) y [registro](https://aureformui.com/es/auth/sign-up/) muestran **botones mock de Google, GitHub y Microsoft**, con callbacks para tu proveedor. También están disponibles recuperación y verificación. La demo pública no realiza OAuth ni cobros reales.
 
 | Catálogo de productos                                                                                    | Acceso social                                                                               |
 | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
@@ -52,7 +52,7 @@ Mapas funciona con geometría local y admite Google Maps mediante una clave de n
 
 ## Empezar
 
-Necesitas **Node.js 22.16+** y **pnpm 10**. El repositorio fija la versión de pnpm en `package.json`.
+Necesitas **Node.js 22.18.0+** y **pnpm 10**. El repositorio fija la versión de pnpm en `package.json`. Si `corepack` no está disponible, instálalo primero con `npm install --global corepack`; Node.js 25+ requiere instalarlo por separado. Consulta la [guía de Corepack](https://github.com/nodejs/corepack#default-installs).
 
 ```sh
 git clone https://github.com/terrizoaguimor/aureform-ui.git
@@ -106,10 +106,10 @@ La CLI copia dependencias y los activos usados, respeta los aliases configurados
 
 ```sh
 pnpm dlx shadcn@4.22.0 add \
-  https://terrizoaguimor.github.io/aureform-ui/r/button.json
+  https://aureformui.com/r/button.json
 ```
 
-Explora el [registry de 107 entradas](https://terrizoaguimor.github.io/aureform-ui/r/registry.json). Algunos componentes y bloques requieren los estilos incluidos y los providers de idioma o apariencia; consulta sus ejemplos antes de integrarlos. [Guía del registry →](docs/registry-compatibility.md)
+Explora el [registry de 107 entradas](https://aureformui.com/r/registry.json). Algunos componentes y bloques requieren los estilos incluidos y los providers de idioma o apariencia; consulta sus ejemplos antes de integrarlos. [Guía del registry →](docs/registry-compatibility.md)
 
 ## Un frontend que puedes conectar
 
@@ -129,6 +129,24 @@ Los bloques de operaciones reciben datos y callbacks para conectar tus servicios
 - **Imágenes:** [colección de 32 imágenes](docs/generated-images/README.es.md), [prompts completos](docs/generated-images/catalog.json), [WebP originales](design/images/masters/) y [manifest de activos](public/assets/generated-images.json). Se incluyen WebP optimizados; sus archivos SVG incorporan los mismos píxeles para transportarlos mediante el registry de texto.
 
 Los registros de packaging y QA conservan su versión y alcance originales. La [guía de código abierto](docs/open-source.es.md#verificar-cambios-y-contribuir) explica cómo interpretarlos.
+
+## Documentación y despliegue
+
+[Lee la documentación](https://aureformui.com/es/docs/) sin abrir el workspace de la demo. Sus 22 capítulos cubren instalación, componentes, tokens, movimiento, charts, tablas, integraciones, Figma y despliegue, con búsqueda por títulos y secciones, índice de página y código copiable. La navegación está disponible en español e inglés; las referencias que conservan su idioma original lo indican en la página.
+
+![Documentación de Aureform con navegación por grupos, código copiable e índice de página](docs/images/aureform-documentation.webp)
+
+El sitio principal funciona en **Cloudflare Workers Static Assets**. La [guía de despliegue](docs/cloudflare-deployment.es.md) explica el export estático, los dominios y la redirección de descarga del código. [GitHub Pages](https://terrizoaguimor.github.io/aureform-ui/) mantiene un despliegue separado con su propio base path.
+
+```sh
+NEXT_PUBLIC_BASE_PATH="" pnpm build:cloudflare
+pnpm exec cf deploy --prebuilt --dry-run
+pnpm deploy:cloudflare
+```
+
+Configura `NEXT_PUBLIC_SITE_URL` con el dominio canónico de tu proyecto. Desplegar requiere acceso a tu cuenta de Cloudflare; ejecutar la demo y construirla localmente no requiere credenciales. El estado generado de despliegue se excluye de Git y de los paquetes de código.
+
+El [research de oportunidades](docs/research-gaps-1.4.es.md) reúne limitaciones observadas, fuentes primarias, flujos propuestos y criterios de aceptación. Distingue lo entregado de las ideas que aún necesitan validación con usuarios.
 
 ## Contribuir
 

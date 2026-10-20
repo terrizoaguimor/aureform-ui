@@ -1,4 +1,14 @@
-import { AppPage } from "@/components/app-page";
+import { MarketingPage } from "@/components/marketing-page";
+import { SiteStructuredData } from "@/components/site-structured-data";
+import { pageMetadata } from "@/lib/site-metadata";
+
+export const metadata = pageMetadata({ locale: "es" });
+
 export default function Entry() {
-  return <AppPage locale="es" path="" />;
+  return (
+    <>
+      <SiteStructuredData locale="es" />
+      <MarketingPage locale="es" />
+    </>
+  );
 }

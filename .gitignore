@@ -26,6 +26,10 @@ id_ed25519*
 *.log
 cookies*.json
 storage-state*.json
+.cloudflare/
+.wrangler/
+.dev.vars*
+!.dev.vars.example
 # The reviewed image masters are published in design/images/masters/.
 output/imagegen/
 tmp/imagegen/

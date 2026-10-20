@@ -259,6 +259,12 @@ const excluded = new Set([
   "out",
   ".git",
   ".openai",
+  ".config",
+  ".codex",
+  ".claude",
+  ".cursor",
+  ".cloudflare",
+  ".wrangler",
   "artifacts",
   "test-results",
   "playwright-report",
@@ -270,7 +276,9 @@ async function tree(root, directory = "", files = new Map()) {
   })) {
     if (
       excluded.has(item.name) ||
-      item.name.startsWith(".env") ||
+      (item.name.startsWith(".env") && item.name !== ".env.example") ||
+      (item.name.startsWith(".dev.vars") &&
+        item.name !== ".dev.vars.example") ||
       item.name.endsWith(".tsbuildinfo") ||
       item.name === "next-env.d.ts" ||
       (directory === "" && ["output", "tmp"].includes(item.name)) ||

@@ -2,9 +2,9 @@
 
 [English](saas-operations.md).
 
-Esta guía documenta los **contratos de frontend implementados** para operaciones SaaS de equipos en Source 1.2 actual. Incluye onboarding, workspaces, miembros, importación CSV, consulta externa de clientes, vistas guardadas y detalle. Los exports y ejemplos siguientes proceden de las APIs reales de source. Los checkpoints ejecutados de consumers/nativo conservan su alcance en el [handoff](#handoff-del-release); estos ejemplos no certifican todos los estados interactivos ni la entrega final.
+Esta guía conserva los **contratos de frontend implementados** para operaciones SaaS de equipos desde Source 1.2. Esas APIs siguen disponibles en el kit actual. Incluye onboarding, workspaces, miembros, importación CSV, consulta externa de clientes, vistas guardadas y detalle. Los exports y ejemplos siguientes proceden de las APIs reales de source. Los checkpoints ejecutados de consumers/nativo conservan su alcance en el [handoff](#handoff-del-release); estos ejemplos no certifican todos los estados interactivos ni la entrega final.
 
-La base histórica 1.1 tiene **65 vistas, 44 familias y 83 entradas de registro**. El [catálogo actual](../src/lib/catalog.ts) añade cuatro rutas para **69 vistas: 68 de suite más landing**, antes de expandir idiomas, y mejora clientes/equipo en dos rutas existentes. El [registro generado 1.2.0](../public/r/index.json) contiene **96 entradas, incluidas 13 instalaciones nuevas**. Se conservan seis paletas y entrega EN/ES. El inventario no acredita pruebas 1.2.
+La base histórica 1.1 tiene **65 vistas, 44 familias y 83 entradas de registro**. La versión 1.2 añadió cuatro rutas para **69 vistas: 68 de suite más landing**, antes de expandir idiomas, y mejoró clientes/equipo en dos rutas existentes. Su registro contenía **96 entradas, incluidas 13 instalaciones nuevas**. El [catálogo actual](../src/lib/catalog.ts) conserva esas rutas y el [registro generado actual](../public/r/index.json) contiene **107 entradas**. Se conservan seis paletas y entrega EN/ES. El inventario actual no amplía el alcance de las pruebas históricas 1.2.
 
 ## Entrega y responsabilidad sobre los datos
 

@@ -1,0 +1,173 @@
+.af-doc-prose {
+  min-width: 0;
+  color: var(--muted-foreground);
+  font-size: 0.9375rem;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+.af-doc-prose > :first-child {
+  margin-top: 0;
+}
+.af-doc-prose p {
+  margin: 1.2rem 0;
+}
+.af-doc-prose strong {
+  color: var(--foreground);
+  font-weight: 650;
+}
+.af-doc-prose h2,
+.af-doc-prose h3,
+.af-doc-prose h4 {
+  color: var(--foreground);
+  font-weight: 650;
+  line-height: 1.35;
+  scroll-margin-top: 7rem;
+}
+.af-doc-prose h2 {
+  margin: 3rem 0 1rem;
+  padding-top: 0.5rem;
+  font-size: clamp(1.375rem, 3vw, 1.75rem);
+  letter-spacing: -0.035em;
+}
+.af-doc-prose h3 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+}
+.af-doc-prose h4 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1rem;
+}
+.af-doc-prose a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 0.24em;
+  text-decoration-color: var(--border);
+}
+.af-doc-prose a:hover {
+  color: var(--primary);
+  text-decoration-color: var(--primary);
+}
+.af-doc-prose h2 a,
+.af-doc-prose h3 a {
+  text-decoration: none;
+}
+.af-doc-prose h2 a:hover::after,
+.af-doc-prose h3 a:hover::after {
+  content: " #";
+  opacity: 0.5;
+}
+.af-doc-prose a:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+.af-doc-prose ul,
+.af-doc-prose ol {
+  margin: 1rem 0;
+  padding-left: 1.4rem;
+}
+.af-doc-prose ul {
+  list-style-type: disc;
+}
+.af-doc-prose ol {
+  list-style-type: decimal;
+}
+.af-doc-prose li {
+  margin: 0.4rem 0;
+  padding-left: 0.15rem;
+}
+.af-doc-prose li::marker {
+  color: var(--primary);
+}
+.af-doc-prose :not(pre) > code {
+  padding: 0.15rem 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  background: var(--muted);
+  color: var(--foreground);
+  font-size: 0.85em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.af-doc-prose .af-doc-code pre {
+  margin: 0;
+  color: var(--foreground);
+}
+.af-doc-prose .af-doc-code button {
+  color: var(--muted-foreground);
+}
+.af-doc-prose blockquote {
+  margin: 1.5rem 0;
+  border-left: 2px solid var(--primary);
+  border-radius: 0 1rem 1rem 0;
+  padding: 0.35rem 1.2rem;
+  background: color-mix(in srgb, var(--primary) 5%, var(--background));
+}
+.af-doc-prose blockquote p {
+  margin: 0.6rem 0;
+}
+.af-doc-prose .af-doc-table {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+.af-doc-prose .af-doc-table:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+.af-doc-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  line-height: 1.65;
+}
+.af-doc-prose th {
+  padding: 0.85rem 1rem;
+  background: var(--muted);
+  color: var(--foreground);
+  font-weight: 650;
+  text-align: left;
+}
+.af-doc-prose td {
+  min-width: 7rem;
+  padding: 0.9rem 1rem;
+  border-top: 1px solid var(--border);
+  vertical-align: top;
+}
+.af-doc-prose td:first-child {
+  color: var(--foreground);
+}
+.af-doc-prose th code,
+.af-doc-prose td code {
+  overflow-wrap: anywhere;
+}
+.af-doc-prose img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+.af-doc-prose hr {
+  margin: 2.5rem 0;
+  border-color: var(--border);
+}
+.af-doc-prose .contains-task-list {
+  list-style: none;
+  padding-left: 0;
+}
+.af-doc-prose .task-list-item input {
+  margin-right: 0.5rem;
+  accent-color: var(--primary);
+}
+@media (max-width: 640px) {
+  .af-doc-prose {
+    font-size: 0.875rem;
+  }
+  .af-doc-prose .af-doc-code pre {
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+}

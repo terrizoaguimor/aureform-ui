@@ -26,6 +26,11 @@ export default defineConfig({
   },
   projects: [
     {
+      name: "website-chromium",
+      testMatch: /website\.spec\.ts/,
+      use: { viewport: { width: 1440, height: 1000 } },
+    },
+    {
       name: "applications-chromium",
       testMatch: /applications\.spec\.ts/,
       use: { viewport: { width: 1440, height: 1000 } },

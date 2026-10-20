@@ -6,6 +6,8 @@ export default defineConfig([
   ...nextTs,
   globalIgnores([
     ".next/**",
+    ".cloudflare/**",
+    ".wrangler/**",
     "out/**",
     ".figma/**",
     "public/r/**",

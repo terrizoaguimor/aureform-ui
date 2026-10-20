@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { appearanceBootstrap } from "@/lib/appearance-bootstrap";
-import { demoUrl } from "@/lib/catalog";
 import { publicPath } from "@/lib/public-path";
+import { siteOrigin } from "@/lib/site-config";
+import { siteDescriptions, siteTitles } from "@/lib/site-metadata";
 import "../app/globals.css";
 const manrope = localFont({
   src: "../assets/fonts/Manrope.ttf",
@@ -27,13 +28,12 @@ const instrument = localFont({
   display: "swap",
 });
 export const metadata: Metadata = {
-  metadataBase: new URL(`${demoUrl}/`),
+  metadataBase: new URL(`${siteOrigin}/`),
   title: {
-    default: "Aureform UI — Refined interfaces for ambitious products",
+    default: siteTitles.en,
     template: "%s · Aureform UI",
   },
-  description:
-    "An open-source Next.js UI kit with six palettes, light and dark themes, a live appearance studio, reusable effects and an editable Figma design system. Apache 2.0.",
+  description: siteDescriptions.en,
   icons: { icon: publicPath("/favicon.svg") },
   robots: { index: true, follow: true },
 };

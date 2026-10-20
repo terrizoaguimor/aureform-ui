@@ -33085,45 +33085,18 @@
       "description": "Original Aureform composition. Editable Base UI + Tailwind 4 source.",
       "dependencies": [
         "@base-ui/react@1.9.0",
-        "@tanstack/react-table@^8.21.3",
         "class-variance-authority@^0.7.1",
         "clsx@^2.1.1",
         "lucide-react@^0.562.0",
         "next-intl@4.14.9",
-        "recharts@^3.7.0",
         "tailwind-merge@^3.4.0"
       ],
       "devDependencies": [],
       "files": [
         {
-          "path": "src/components/appearance-controls.tsx",
-          "type": "registry:component",
-          "target": "@components/appearance-controls.tsx"
-        },
-        {
           "path": "src/components/appearance-provider.tsx",
           "type": "registry:component",
           "target": "@components/appearance-provider.tsx"
-        },
-        {
-          "path": "src/components/blocks/customer-table.tsx",
-          "type": "registry:component",
-          "target": "@components/blocks/customer-table.tsx"
-        },
-        {
-          "path": "src/components/blocks/metric-card.tsx",
-          "type": "registry:component",
-          "target": "@components/blocks/metric-card.tsx"
-        },
-        {
-          "path": "src/components/blocks/revenue-panel.tsx",
-          "type": "registry:component",
-          "target": "@components/blocks/revenue-panel.tsx"
-        },
-        {
-          "path": "src/components/blocks/table-toolbar.tsx",
-          "type": "registry:component",
-          "target": "@components/blocks/table-toolbar.tsx"
         },
         {
           "path": "src/components/brand.tsx",
@@ -33201,16 +33174,6 @@
           "target": "@components/templates/landing.tsx"
         },
         {
-          "path": "src/components/ui/alert.tsx",
-          "type": "registry:ui",
-          "target": "@ui/alert.tsx"
-        },
-        {
-          "path": "src/components/ui/avatar.tsx",
-          "type": "registry:ui",
-          "target": "@ui/avatar.tsx"
-        },
-        {
           "path": "src/components/ui/badge.tsx",
           "type": "registry:ui",
           "target": "@ui/badge.tsx"
@@ -33221,69 +33184,14 @@
           "target": "@ui/button.tsx"
         },
         {
-          "path": "src/components/ui/card.tsx",
+          "path": "src/components/ui/tabs.tsx",
           "type": "registry:ui",
-          "target": "@ui/card.tsx"
+          "target": "@ui/tabs.tsx"
         },
         {
-          "path": "src/components/ui/chart.tsx",
-          "type": "registry:ui",
-          "target": "@ui/chart.tsx"
-        },
-        {
-          "path": "src/components/ui/checkbox.tsx",
-          "type": "registry:ui",
-          "target": "@ui/checkbox.tsx"
-        },
-        {
-          "path": "src/components/ui/data-table.tsx",
-          "type": "registry:ui",
-          "target": "@ui/data-table.tsx"
-        },
-        {
-          "path": "src/components/ui/drawer.tsx",
-          "type": "registry:ui",
-          "target": "@ui/drawer.tsx"
-        },
-        {
-          "path": "src/components/ui/dropdown-menu.tsx",
-          "type": "registry:ui",
-          "target": "@ui/dropdown-menu.tsx"
-        },
-        {
-          "path": "src/components/ui/empty.tsx",
-          "type": "registry:ui",
-          "target": "@ui/empty.tsx"
-        },
-        {
-          "path": "src/components/ui/input.tsx",
-          "type": "registry:ui",
-          "target": "@ui/input.tsx"
-        },
-        {
-          "path": "src/components/ui/select.tsx",
-          "type": "registry:ui",
-          "target": "@ui/select.tsx"
-        },
-        {
-          "path": "src/components/ui/skeleton.tsx",
-          "type": "registry:ui",
-          "target": "@ui/skeleton.tsx"
-        },
-        {
-          "path": "src/components/ui/table.tsx",
-          "type": "registry:ui",
-          "target": "@ui/table.tsx"
-        },
-        {
-          "path": "src/demo/avatar-assets.ts",
-          "type": "registry:file",
-          "target": "~/src/demo/avatar-assets.ts"
-        },
-        {
-          "path": "src/demo/dashboard-data.ts",
-          "type": "registry:file",
-          "target": "~/src/demo/dashboard-data.ts"
+          "path": "src/hooks/use-copy.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-copy.ts"
         },
         {
           "path": "src/hooks/use-language.ts",
@@ -33306,11 +33214,6 @@
           "target": "@lib/catalog.ts"
         },
         {
-          "path": "src/lib/data-query.ts",
-          "type": "registry:lib",
-          "target": "@lib/data-query.ts"
-        },
-        {
           "path": "src/lib/public-path.ts",
           "type": "registry:lib",
           "target": "@lib/public-path.ts"
@@ -33324,96 +33227,6 @@
           "path": "src/styles/effects.css",
           "type": "registry:file",
           "target": "~/src/styles/effects.css"
-        },
-        {
-          "path": "public/assets/avatars/alex-morgan.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/alex-morgan.svg"
-        },
-        {
-          "path": "public/assets/avatars/alex-rivera.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/alex-rivera.svg"
-        },
-        {
-          "path": "public/assets/avatars/amelia-wilson.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/amelia-wilson.svg"
-        },
-        {
-          "path": "public/assets/avatars/daniel-kim.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/daniel-kim.svg"
-        },
-        {
-          "path": "public/assets/avatars/demi-wilkinson.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/demi-wilkinson.svg"
-        },
-        {
-          "path": "public/assets/avatars/drew-cano.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/drew-cano.svg"
-        },
-        {
-          "path": "public/assets/avatars/forma-collective.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/forma-collective.svg"
-        },
-        {
-          "path": "public/assets/avatars/isabel-moreno.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/isabel-moreno.svg"
-        },
-        {
-          "path": "public/assets/avatars/isabel-torres.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/isabel-torres.svg"
-        },
-        {
-          "path": "public/assets/avatars/lana-steiner.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/lana-steiner.svg"
-        },
-        {
-          "path": "public/assets/avatars/leo-martin.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/leo-martin.svg"
-        },
-        {
-          "path": "public/assets/avatars/lucas-moreau.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/lucas-moreau.svg"
-        },
-        {
-          "path": "public/assets/avatars/matias-vega.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/matias-vega.svg"
-        },
-        {
-          "path": "public/assets/avatars/noor-ahmed.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/noor-ahmed.svg"
-        },
-        {
-          "path": "public/assets/avatars/olivia-rhye.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/olivia-rhye.svg"
-        },
-        {
-          "path": "public/assets/avatars/phoenix-baker.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/phoenix-baker.svg"
-        },
-        {
-          "path": "public/assets/avatars/sofia-chen.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/sofia-chen.svg"
-        },
-        {
-          "path": "public/assets/avatars/studio-updates.svg",
-          "type": "registry:file",
-          "target": "~/public/assets/avatars/studio-updates.svg"
         }
       ],
       "cssVars": {

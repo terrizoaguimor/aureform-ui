@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.4.1",
   "archives": [
     {
       "name": "aureform-ui-native-evidence-1.1.zip",
@@ -21,27 +21,27 @@
     },
     {
       "name": "aureform-ui-images.zip",
-      "files": 127,
-      "bytes": 5853683,
-      "sha256": "434f9cd248a9077e6562b8f893db2006c7b7aabde7139f5221c8053d0debaac8"
+      "files": 132,
+      "bytes": 5857573,
+      "sha256": "61c3b825978a37cc0625d0d2675337cbbbdd2618ec92ba88b873e29dc7556c99"
     },
     {
       "name": "aureform-ui-starter.zip",
-      "files": 105,
-      "bytes": 465168,
-      "sha256": "637f534a1786006b18ff0fb7af3e31715dd0dbd44f326f0e5a425c6b99cb0a4f"
+      "files": 111,
+      "bytes": 468640,
+      "sha256": "dd79a7a77a2583a5787ffda8f775900a85f6773e2c66e0a7cb90d7396bca6533"
     },
     {
       "name": "aureform-ui-free.zip",
-      "files": 59,
-      "bytes": 237979,
-      "sha256": "0afc5269bdb0fc66b66fde200f44702721cc663a8b073321bb27bf19c267ebd6"
+      "files": 64,
+      "bytes": 241870,
+      "sha256": "f0c6c2f2b601b2d01c6d98265db74475076f81f011d002a9d78f554803e5b74c"
     },
     {
       "name": "aureform-ui-source.zip",
-      "files": 1373,
-      "bytes": 85944206,
-      "sha256": "97ae1bbbb03dcfa16de94f0922ebb533fd48bf2f8ccf0bd360f8350f0dd58075"
+      "files": 1454,
+      "bytes": 87205029,
+      "sha256": "727890ddd37753dc2fef875222d1ea4bb4dd6665a9bd5133c57321361e528825"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "receiptType": "summary recovered from recorded exploratory measurements after temporary files were lost",
+  "sourceCommit": "50c917933d7a4868ade143afc6e6069738b5923d",
+  "baselineReferenceCommit": "56803d54f48dc00b635d19197e0de792ac5f7ead",
+  "recordedAt": "2026-10-20T01:26:09.963Z",
+  "limits": "No field data, INP, Lighthouse score, repeated benchmark or Core Web Vitals certification. These summaries retain observed totals; the original per-resource trace is not included.",
+  "scope": "Initial script tags in four static v1.4.0 exports; file sizes, not browser transfer measurements",
+  "sampledRoutes": [
+    "en/auth/sign-in",
+    "en/dashboard",
+    "en/products",
+    "en/maps"
+  ],
+  "totalsPerRoute": {
+    "scriptTags": 10,
+    "rawBytes": 2899159,
+    "gzip9Bytes": 864709
+  },
+  "compressionNote": "gzip level 9 is a local estimate; it does not describe negotiated production response sizes."
+}

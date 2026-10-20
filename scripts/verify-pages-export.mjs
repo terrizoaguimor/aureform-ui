@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
 import { readFile, readdir, stat } from "node:fs/promises";
 import { resolve, relative, sep } from "node:path";
+import { routes } from "../src/lib/catalog.ts";
+import { documentationArticles } from "../src/lib/documentation.ts";
+import { locales } from "../src/i18n/messages.ts";
 
 const root = resolve("out");
 const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/+$/, "");
@@ -17,10 +20,24 @@ async function walk(directory) {
 }
 
 await walk(root);
-assert.equal(
-  htmlFiles.filter((file) => /^(?:en|es)\//.test(relative(root, file))).length,
-  138,
-  "The export must include all 69 views in both languages.",
+const applicationPaths = routes
+  .map((route) => route.path)
+  .filter((path) => path !== "docs" && !path.startsWith("docs/"));
+const expectedLocalePages = locales.flatMap((locale) => [
+  `${locale}/index.html`,
+  ...applicationPaths.map((path) => `${locale}/${path}/index.html`),
+  ...documentationArticles.map(
+    ({ slug }) =>
+      `${locale}/docs/${slug === "start" ? "" : `${slug}/`}index.html`,
+  ),
+]);
+const exportedLocalePages = htmlFiles
+  .map((file) => relative(root, file).split(sep).join("/"))
+  .filter((file) => locales.some((locale) => file.startsWith(`${locale}/`)));
+assert.deepEqual(
+  [...exportedLocalePages].sort(),
+  [...expectedLocalePages].sort(),
+  "Every catalog application and documentation chapter must be exported in both languages.",
 );
 await stat(resolve(root, ".nojekyll"));
 
@@ -77,6 +94,7 @@ console.log(
       status: failures.length ? "failed" : "passed",
       basePath: basePath || "/",
       htmlPages: htmlFiles.length,
+      documentationChapters: documentationArticles.length,
       uniqueLocalDestinations: seen.size,
       failures,
     },

@@ -2,7 +2,7 @@
 
 The original Aureform work is licensed under [Apache 2.0](LICENSE). Each upstream library retains its own license; that grant does not relicense dependencies, icons or fonts.
 
-This table is generated from the installed runtime dependency manifests, rather than the package manifest's requested ranges. The 21 bundled upstream license texts are copied byte for byte from those installed distributions. GSAP's distribution declares its official license URL instead of bundling a standalone license text. Transitive dependencies and development tools retain the notices in their package distributions.
+This table is generated from the installed runtime dependency manifests, rather than the package manifest's requested ranges. The 26 bundled upstream license texts are copied byte for byte from those installed distributions. GSAP's distribution declares its official license URL instead of bundling a standalone license text. Transitive dependencies and development tools retain the notices in their package distributions.
 
 | Package | Verified version | Declared license | Included text |
 | --- | --- | --- | --- |
@@ -13,6 +13,7 @@ This table is generated from the installed runtime dependency manifests, rather 
 | clsx | 2.1.1 | MIT | [License text](licenses/third-party/clsx.txt) |
 | cmdk | 1.1.1 | MIT | [License text](licenses/third-party/cmdk.txt) |
 | date-fns | 4.4.0 | MIT | [License text](licenses/third-party/date-fns.txt) |
+| github-slugger | 2.0.0 | ISC | [License text](licenses/third-party/github-slugger.txt) |
 | gsap | 3.15.0 | Standard No Charge license; separate from Apache 2.0 | [License reference](licenses/third-party/gsap-reference.txt) |
 | input-otp | 1.5.0 | MIT | [License text](licenses/third-party/input-otp.txt) |
 | lenis | 1.3.27 | MIT | [License text](licenses/third-party/lenis.txt) |
@@ -24,9 +25,13 @@ This table is generated from the installed runtime dependency manifests, rather 
 | react-day-picker | 9.14.0 | MIT | [License text](licenses/third-party/react-day-picker.txt) |
 | react-dom | 19.3.1 | MIT | [License text](licenses/third-party/react-dom.txt) |
 | react-hook-form | 7.90.0 | MIT | [License text](licenses/third-party/react-hook-form.txt) |
+| react-markdown | 10.1.0 | MIT | [License text](licenses/third-party/react-markdown.txt) |
 | recharts | 3.10.1 | MIT | [License text](licenses/third-party/recharts.txt) |
+| remark-gfm | 4.0.1 | MIT | [License text](licenses/third-party/remark-gfm.txt) |
+| remark-parse | 11.0.0 | MIT | [License text](licenses/third-party/remark-parse.txt) |
 | sonner | 2.0.8 | MIT | [License text](licenses/third-party/sonner.txt) |
 | tailwind-merge | 3.7.0 | MIT | [License text](licenses/third-party/tailwind-merge.txt) |
+| unified | 11.0.5 | MIT | [License text](licenses/third-party/unified.txt) |
 | zod | 4.6.7 | MIT | [License text](licenses/third-party/zod.txt) |
 
 ## Fonts

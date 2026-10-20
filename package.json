@@ -1,6 +1,6 @@
 {
   "name": "aureform-ui",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "private": true,
   "type": "module",
   "description": "An open source Next.js UI kit with SaaS workflows, six palettes, an appearance studio and an editable Figma design system.",
@@ -10,17 +10,20 @@
     "type": "git",
     "url": "https://github.com/terrizoaguimor/aureform-ui.git"
   },
-  "homepage": "https://terrizoaguimor.github.io/aureform-ui/",
+  "homepage": "https://aureformui.com/",
   "bugs": {
     "url": "https://github.com/terrizoaguimor/aureform-ui/issues"
   },
   "engines": {
-    "node": ">=22.16.0"
+    "node": ">=22.18.0"
   },
   "packageManager": "pnpm@10.34.5",
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0",
     "build": "pnpm tokens && pnpm registry && next build",
+    "build:cloudflare": "pnpm build && node scripts/prepare-cloudflare.mjs",
+    "deploy:cloudflare": "pnpm exec cf deploy --prebuilt",
+    "verify:cloudflare-release": "node scripts/verify-cloudflare-release.mjs",
     "start": "node scripts/preview.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
@@ -35,7 +38,8 @@
     "test:e2e": "playwright test",
     "package:source": "node scripts/package-source.mjs",
     "verify:public": "python3 scripts/audit-public.py",
-    "verify:pages": "node scripts/verify-pages-export.mjs",
+    "verify:pages": "node --experimental-strip-types scripts/verify-pages-export.mjs",
+    "verify:website": "playwright test --project=website-chromium",
     "verify:demo": "node --experimental-strip-types scripts/verify-public-demo.mjs",
     "capture:readme": "node --experimental-strip-types scripts/capture-readme.mjs",
     "format": "prettier --write src scripts bin tests *.mjs *.json",
@@ -49,6 +53,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "date-fns": "^4.1.0",
+    "github-slugger": "2.0.0",
     "gsap": "^3.15.0",
     "input-otp": "^1.4.2",
     "lenis": "^1.3.27",
@@ -60,9 +65,13 @@
     "react-day-picker": "^9.13.0",
     "react-dom": "19.3.1",
     "react-hook-form": "^7.71.1",
+    "react-markdown": "10.1.0",
     "recharts": "^3.7.0",
+    "remark-gfm": "4.0.1",
+    "remark-parse": "11.0.0",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.4.0",
+    "unified": "11.0.5",
     "zod": "^4.3.5"
   },
   "devDependencies": {
@@ -73,6 +82,7 @@
     "@types/node": "^22.19.0",
     "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",
+    "cf": "1.0.0-beta.18",
     "eslint": "^9.39.2",
     "eslint-config-next": "16.4.2",
     "prettier": "^3.9.10",

@@ -2,9 +2,9 @@
 
 [Español](saas-operations.es.md).
 
-This guide documents the **implemented frontend contracts** for team SaaS operations in the current 1.2 source. It covers onboarding, workspaces, members, CSV import, an external customer query, saved views and customer detail. The exports and examples below are based on actual source APIs. Executed consumer/native checkpoints have their own scope in [release handoff](#release-handoff); these examples do not certify every interactive state or final delivery.
+This guide retains the **implemented frontend contracts** introduced for team SaaS operations in the 1.2 source. Those APIs remain available in the current kit. It covers onboarding, workspaces, members, CSV import, an external customer query, saved views and customer detail. The exports and examples below are based on actual source APIs. Executed consumer/native checkpoints have their own scope in [release handoff](#release-handoff); these examples do not certify every interactive state or final delivery.
 
-The historical 1.1 baseline is **65 views, 44 families and 83 registry entries**. The current [route catalog](../src/lib/catalog.ts) adds four routes for **69 views: 68 suite views plus landing**, before locale expansion, and upgrades customers/team on two existing routes. The generated [1.2.0 registry](../public/r/index.json) contains **96 entries, including 13 new installable items**. The six palettes and EN/ES delivery remain available. Inventory does not establish a 1.2 test result.
+The historical 1.1 baseline is **65 views, 44 families and 83 registry entries**. Version 1.2 added four routes for **69 views: 68 suite views plus landing**, before locale expansion, and upgraded customers/team on two existing routes. Its registry contained **96 entries, including 13 new installable items**. The current [route catalog](../src/lib/catalog.ts) retains those routes and the current [generated registry](../public/r/index.json) contains **107 entries**. The six palettes and EN/ES delivery remain available. Current inventory does not extend the historical 1.2 test scope.
 
 ## Delivery and data ownership
 

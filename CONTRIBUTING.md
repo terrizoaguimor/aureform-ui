@@ -12,7 +12,7 @@ Screenshots help with appearance changes. Use real application captures and remo
 
 ## Set up
 
-Use Node.js **22.16+** and pnpm **10**:
+Use Node.js **22.18.0 or newer** and pnpm **10**. If `corepack` is unavailable, install it first with `npm install --global corepack`; Node.js 25 and newer do not bundle it. See the [Corepack installation guide](https://github.com/nodejs/corepack#default-installs).
 
 ```sh
 git clone https://github.com/terrizoaguimor/aureform-ui.git

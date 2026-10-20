@@ -1,0 +1,50 @@
+{
+  "receiptType": "summary recovered from recorded exploratory measurements after temporary files were lost",
+  "sourceCommit": "50c917933d7a4868ade143afc6e6069738b5923d",
+  "baselineReferenceCommit": "56803d54f48dc00b635d19197e0de792ac5f7ead",
+  "recordedAt": "2026-10-20T01:26:09.963Z",
+  "limits": "No field data, INP, Lighthouse score, repeated benchmark or Core Web Vitals certification. These summaries retain observed totals; the original per-resource trace is not included.",
+  "scope": "Two cold-context headless Chromium loads, one per route",
+  "profile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "touch": true,
+    "reducedMotion": "reduce",
+    "cpuThrottlingRelativeToHost": 4,
+    "latencyMs": 150,
+    "downloadBytesPerSecond": 200000,
+    "uploadBytesPerSecond": 93750,
+    "cacheDisabled": true,
+    "observationAfterLoadMs": 2000
+  },
+  "records": [
+    {
+      "route": "en/auth/sign-in",
+      "scriptRequests": 8,
+      "scriptEncodedBodyBytes": 829527,
+      "scriptDecodedBodyBytes": 2781204,
+      "totalResourceEncodedBodyBytes": 1021565,
+      "exploratoryLcpMs": 1032,
+      "layoutShiftSumWithoutRecentInput": 0.0005803657046890577,
+      "observedLongTaskCount": 4,
+      "observedLongTaskDurationMs": 645,
+      "navigationLoadMs": 6155.79999999702,
+      "pageErrors": []
+    },
+    {
+      "route": "en/products",
+      "scriptRequests": 8,
+      "scriptEncodedBodyBytes": 829527,
+      "scriptDecodedBodyBytes": 2781204,
+      "totalResourceEncodedBodyBytes": 1092616,
+      "exploratoryLcpMs": 2088,
+      "layoutShiftSumWithoutRecentInput": 0,
+      "observedLongTaskCount": 4,
+      "observedLongTaskDurationMs": 744,
+      "navigationLoadMs": 6204.29999999702,
+      "pageErrors": []
+    }
+  ]
+}

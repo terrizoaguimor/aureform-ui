@@ -1,0 +1,259 @@
+{
+  "version": "1.4.1",
+  "recordedAt": "2026-10-20T03:16:08.027Z",
+  "scope": "Fresh local Chromium contexts; uncompressed static preview; initial script downloads and actual theme/viewport captures.",
+  "limits": "These are network/body counts, not field Core Web Vitals, Lighthouse, LCP or INP measurements.",
+  "records": [
+    {
+      "name": "landing-dark",
+      "route": "en/",
+      "theme": "dark",
+      "width": 1440,
+      "height": 1000,
+      "dark": true,
+      "horizontalOverflowPixels": 0,
+      "headingCount": 1,
+      "scripts": [
+        {
+          "path": "/_next/static/chunks/2s6i0lxlrv9h9.js",
+          "decodedBodyBytes": 28878
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "decodedBodyBytes": 10030
+        },
+        {
+          "path": "/_next/static/chunks/1chtyllmdpfso.js",
+          "decodedBodyBytes": 21509
+        },
+        {
+          "path": "/_next/static/chunks/2yrsknsuiz81y.js",
+          "decodedBodyBytes": 9429
+        },
+        {
+          "path": "/_next/static/chunks/031tg13xyrmqc.js",
+          "decodedBodyBytes": 44064
+        },
+        {
+          "path": "/_next/static/chunks/1rfn6_wts4lm0.js",
+          "decodedBodyBytes": 168906
+        },
+        {
+          "path": "/_next/static/chunks/0e_f217bvvjz1.js",
+          "decodedBodyBytes": 229594
+        },
+        {
+          "path": "/_next/static/chunks/2id79z-493osw.js",
+          "decodedBodyBytes": 146342
+        },
+        {
+          "path": "/_next/static/chunks/2qmqh23hwuknl.js",
+          "decodedBodyBytes": 239962
+        }
+      ],
+      "scriptRequests": 9,
+      "scriptDecodedBodyBytes": 898714
+    },
+    {
+      "name": "landing-light",
+      "route": "en/",
+      "theme": "light",
+      "width": 1440,
+      "height": 1000,
+      "dark": false,
+      "horizontalOverflowPixels": 0,
+      "headingCount": 1,
+      "scripts": [
+        {
+          "path": "/_next/static/chunks/2s6i0lxlrv9h9.js",
+          "decodedBodyBytes": 28878
+        },
+        {
+          "path": "/_next/static/chunks/0e_f217bvvjz1.js",
+          "decodedBodyBytes": 229594
+        },
+        {
+          "path": "/_next/static/chunks/1rfn6_wts4lm0.js",
+          "decodedBodyBytes": 168906
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "decodedBodyBytes": 10030
+        },
+        {
+          "path": "/_next/static/chunks/1chtyllmdpfso.js",
+          "decodedBodyBytes": 21509
+        },
+        {
+          "path": "/_next/static/chunks/2yrsknsuiz81y.js",
+          "decodedBodyBytes": 9429
+        },
+        {
+          "path": "/_next/static/chunks/031tg13xyrmqc.js",
+          "decodedBodyBytes": 44064
+        },
+        {
+          "path": "/_next/static/chunks/2id79z-493osw.js",
+          "decodedBodyBytes": 146342
+        },
+        {
+          "path": "/_next/static/chunks/2qmqh23hwuknl.js",
+          "decodedBodyBytes": 239962
+        }
+      ],
+      "scriptRequests": 9,
+      "scriptDecodedBodyBytes": 898714
+    },
+    {
+      "name": "landing-mobile",
+      "route": "es/",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "dark": true,
+      "horizontalOverflowPixels": 0,
+      "headingCount": 1,
+      "scripts": [
+        {
+          "path": "/_next/static/chunks/2s6i0lxlrv9h9.js",
+          "decodedBodyBytes": 28878
+        },
+        {
+          "path": "/_next/static/chunks/0e_f217bvvjz1.js",
+          "decodedBodyBytes": 229594
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "decodedBodyBytes": 10030
+        },
+        {
+          "path": "/_next/static/chunks/1chtyllmdpfso.js",
+          "decodedBodyBytes": 21509
+        },
+        {
+          "path": "/_next/static/chunks/2yrsknsuiz81y.js",
+          "decodedBodyBytes": 9429
+        },
+        {
+          "path": "/_next/static/chunks/031tg13xyrmqc.js",
+          "decodedBodyBytes": 44064
+        },
+        {
+          "path": "/_next/static/chunks/1rfn6_wts4lm0.js",
+          "decodedBodyBytes": 168906
+        },
+        {
+          "path": "/_next/static/chunks/2id79z-493osw.js",
+          "decodedBodyBytes": 146342
+        },
+        {
+          "path": "/_next/static/chunks/2qmqh23hwuknl.js",
+          "decodedBodyBytes": 239962
+        }
+      ],
+      "scriptRequests": 9,
+      "scriptDecodedBodyBytes": 898714
+    },
+    {
+      "name": "documentation",
+      "route": "es/docs/installation/",
+      "theme": "dark",
+      "width": 1440,
+      "height": 1000,
+      "dark": true,
+      "horizontalOverflowPixels": 0,
+      "headingCount": 1,
+      "scripts": [
+        {
+          "path": "/_next/static/chunks/2s6i0lxlrv9h9.js",
+          "decodedBodyBytes": 28878
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "decodedBodyBytes": 10030
+        },
+        {
+          "path": "/_next/static/chunks/0xweoiynq8shl.js",
+          "decodedBodyBytes": 30900
+        },
+        {
+          "path": "/_next/static/chunks/1chtyllmdpfso.js",
+          "decodedBodyBytes": 21509
+        },
+        {
+          "path": "/_next/static/chunks/1rfn6_wts4lm0.js",
+          "decodedBodyBytes": 168906
+        },
+        {
+          "path": "/_next/static/chunks/0e_f217bvvjz1.js",
+          "decodedBodyBytes": 229594
+        },
+        {
+          "path": "/_next/static/chunks/031tg13xyrmqc.js",
+          "decodedBodyBytes": 44064
+        },
+        {
+          "path": "/_next/static/chunks/2id79z-493osw.js",
+          "decodedBodyBytes": 146342
+        },
+        {
+          "path": "/_next/static/chunks/1zcvvlfd3s4ut.js",
+          "decodedBodyBytes": 125571
+        }
+      ],
+      "scriptRequests": 9,
+      "scriptDecodedBodyBytes": 805794
+    },
+    {
+      "name": "documentation-mobile",
+      "route": "en/docs/installation/",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "dark": false,
+      "horizontalOverflowPixels": 0,
+      "headingCount": 1,
+      "scripts": [
+        {
+          "path": "/_next/static/chunks/2s6i0lxlrv9h9.js",
+          "decodedBodyBytes": 28878
+        },
+        {
+          "path": "/_next/static/chunks/0e_f217bvvjz1.js",
+          "decodedBodyBytes": 229594
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "decodedBodyBytes": 10030
+        },
+        {
+          "path": "/_next/static/chunks/1rfn6_wts4lm0.js",
+          "decodedBodyBytes": 168906
+        },
+        {
+          "path": "/_next/static/chunks/1chtyllmdpfso.js",
+          "decodedBodyBytes": 21509
+        },
+        {
+          "path": "/_next/static/chunks/0xweoiynq8shl.js",
+          "decodedBodyBytes": 30900
+        },
+        {
+          "path": "/_next/static/chunks/031tg13xyrmqc.js",
+          "decodedBodyBytes": 44064
+        },
+        {
+          "path": "/_next/static/chunks/2id79z-493osw.js",
+          "decodedBodyBytes": 146342
+        },
+        {
+          "path": "/_next/static/chunks/1zcvvlfd3s4ut.js",
+          "decodedBodyBytes": 125571
+        }
+      ],
+      "scriptRequests": 9,
+      "scriptDecodedBodyBytes": 805794
+    }
+  ],
+  "reproduction": "pnpm build:cloudflare && pnpm verify:website; the application-loading tests independently compare app-only initial scripts and verify explicit demo navigation."
+}

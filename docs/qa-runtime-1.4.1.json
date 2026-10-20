@@ -1,0 +1,120 @@
+{
+  "version": "1.4.1",
+  "status": "passed-local-checks",
+  "baselineCommit": "56803d54f48dc00b635d19197e0de792ac5f7ead",
+  "scope": "Static Next.js marketing, documentation and Cloudflare packaging, with application regression checks. New evidence does not replace historical 1.4.0 or native Figma records.",
+  "checks": {
+    "unitTests": {
+      "passed": 244,
+      "failed": 0
+    },
+    "typecheck": "passed",
+    "eslint": {
+      "errors": 0,
+      "warnings": 1,
+      "retainedWarning": "design/rebuild-plugin/backend.js unused afRebuild"
+    },
+    "strictExamples": {
+      "families": 44,
+      "payloads": 688,
+      "rootFiles": 733,
+      "diagnostics": 0,
+      "negativeControl": "passed"
+    },
+    "rootBrowserScenarios": {
+      "passed": 46,
+      "website": 19,
+      "applications": 18,
+      "desktopFlows": 9,
+      "note": "The final 19-case website suite passes, including English contract anchors and external backup links. The unchanged application and desktop cohorts passed 18 and 9 cases in the initial root run."
+    },
+    "mountedBrowserScenarios": {
+      "basePath": "/aureform-ui",
+      "passed": 37,
+      "website": 19,
+      "applications": 18,
+      "failed": 0,
+      "note": "The final 19-case website suite passes under /aureform-ui. The unchanged application cohort passed 18 cases in the preceding mounted run."
+    },
+    "staticExport": {
+      "htmlPages": 170,
+      "localizedDocumentationChapters": 22,
+      "actualBilingualChapters": 19,
+      "originalLanguageFallbacks": 3,
+      "rootAndMountedLocalDestinationsChecked": true
+    },
+    "cloudflarePrebuiltDryRun": "passed",
+    "publicSourceAudit": {
+      "status": "passed",
+      "findings": 0,
+      "scope": "Repository sources and existing archive entries; rerun on regenerated release archives before publishing."
+    }
+  },
+  "automatedAccessibility": [
+    {
+      "name": "website-axe-en-dark-article.json",
+      "scope": "docs main and nav",
+      "locale": "en",
+      "theme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "rule": "aria-prohibited-attr",
+          "nodes": 3
+        },
+        {
+          "rule": "color-contrast",
+          "nodes": 4
+        }
+      ]
+    },
+    {
+      "name": "website-axe-en-dark-search-open.json",
+      "scope": "documentation search dialog",
+      "locale": "en",
+      "theme": "dark",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "website-axe-es-light-article.json",
+      "scope": "docs main and nav",
+      "locale": "es",
+      "theme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "rule": "aria-prohibited-attr",
+          "nodes": 3
+        },
+        {
+          "rule": "color-contrast",
+          "nodes": 4
+        }
+      ]
+    },
+    {
+      "name": "website-axe-es-light-search-open.json",
+      "scope": "documentation search dialog",
+      "locale": "es",
+      "theme": "light",
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "networkReceipt": "research/1.4.1-website-loading.json",
+  "screenshots": {
+    "actualThemes": "dark/light",
+    "desktop": "1440 x 1000",
+    "mobile": "390 x 844",
+    "pageErrors": 0,
+    "documentHorizontalOverflowPixels": 0
+  },
+  "productionEvidence": "A separate deployment receipt is attached to the GitHub v1.4.1 release after actual publication. This local receipt does not claim a live deployment.",
+  "limits": [
+    "Scoped automated Axe checks have zero violations; article scans retain incomplete aria-prohibited-attr and color-contrast results. No whole-kit WCAG certification.",
+    "Local initial script body sizes are not Lighthouse, field Core Web Vitals, LCP or INP.",
+    "Authentication, payments and business operations remain frontend mocks and consumer adapter contracts.",
+    "Figma native/generated-image reviews retain their immutable 1.2.1 and earlier checkpoints."
+  ]
+}

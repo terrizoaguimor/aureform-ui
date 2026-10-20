@@ -497,8 +497,8 @@ export const dashboardPaths = routes.filter(
 );
 export const figmaUrl = "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N";
 export const githubUrl = "https://github.com/terrizoaguimor/aureform-ui";
-export const demoUrl = "https://terrizoaguimor.github.io/aureform-ui";
-export const kitVersion = "1.4.0";
+export const demoUrl = "https://aureformui.com";
+export const kitVersion = "1.4.1";
 export const componentFamilies = [
   "Button",
   "ButtonGroup",
