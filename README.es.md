@@ -1,10 +1,14 @@
 # Aureform UI
 
+[![Última versión](https://img.shields.io/github/v/release/terrizoaguimor/aureform-ui?style=flat-square&color=8F652A&label=release)](https://github.com/terrizoaguimor/aureform-ui/releases/latest) [![Licencia Apache 2.0](https://img.shields.io/github/license/terrizoaguimor/aureform-ui?style=flat-square&color=8F652A)](LICENSE) [![Build, verificaciones y despliegue en Cloudflare](https://img.shields.io/github/actions/workflow/status/terrizoaguimor/aureform-ui/cloudflare.yml?branch=main&style=flat-square&logo=cloudflare&logoColor=white&label=Cloudflare%20CI)](https://github.com/terrizoaguimor/aureform-ui/actions/workflows/cloudflare.yml) [![Build y despliegue en GitHub Pages](https://img.shields.io/github/actions/workflow/status/terrizoaguimor/aureform-ui/pages.yml?branch=main&style=flat-square&logo=github&label=Pages%20CI)](https://github.com/terrizoaguimor/aureform-ui/actions/workflows/pages.yml)
+
 **Interfaces con personalidad. Código editable. Abierto para todos.**
 
 Un UI kit de Next.js para dashboards, espacios SaaS y herramientas internas, con un estudio de apariencia y una biblioteca editable de Figma.
 
 [**Explorar la demo ↗**](https://aureformui.com/es/) · [**Documentación**](https://aureformui.com/es/docs/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Empezar](#empezar) · [Contribuir](CONTRIBUTING.md) · [English](README.md)
+
+[![Demo publicada en Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/es/) [![Documentación: 22 capítulos](https://img.shields.io/badge/docs-22%20cap%C3%ADtulos-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/es/docs/) [![Biblioteca editable de Figma](https://img.shields.io/badge/Figma-biblioteca%20editable-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![Registry de código de shadcn](https://img.shields.io/badge/shadcn-registry%20de%20c%C3%B3digo-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
 
 ![Portada de Aureform en modo oscuro, con vista previa de la interfaz y acceso a documentación](docs/images/aureform-landing-dark.webp)
 
@@ -12,7 +16,11 @@ Un UI kit de Next.js para dashboards, espacios SaaS y herramientas internas, con
 
 Construido con **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP y Lenis**. El código original de Aureform está disponible bajo [Apache 2.0](LICENSE).
 
+[![Next.js 16](https://img.shields.io/badge/Next.js-16-111827?style=flat-square&logo=nextdotjs&logoColor=white)](package.json) [![React 19](https://img.shields.io/badge/React-19-111827?style=flat-square&logo=react&logoColor=61DAFB)](package.json) [![TypeScript 5.9](https://img.shields.io/badge/TypeScript-5.9-111827?style=flat-square&logo=typescript&logoColor=3178C6)](package.json) [![Tailwind CSS 4](https://img.shields.io/badge/Tailwind%20CSS-4-111827?style=flat-square&logo=tailwindcss&logoColor=06B6D4)](package.json) [![Base UI 1.9](https://img.shields.io/badge/Base%20UI-1.9-111827?style=flat-square)](package.json) [![Node.js 22.18.0 o posterior](https://img.shields.io/badge/Node.js-%E2%89%A522.18.0-111827?style=flat-square&logo=nodedotjs&logoColor=5FA04E)](#empezar) [![pnpm 10](https://img.shields.io/badge/pnpm-10-111827?style=flat-square&logo=pnpm&logoColor=F69220)](package.json) [![Navegación en español e inglés](https://img.shields.io/badge/i18n-English%20%2F%20Espa%C3%B1ol-111827?style=flat-square)](https://aureformui.com/es/docs/) [![Temas claro y oscuro](https://img.shields.io/badge/temas-claro%20%2F%20oscuro-111827?style=flat-square)](https://aureformui.com/es/docs/tokens/)
+
 ## Qué incluye
+
+[![TanStack Table 8](https://img.shields.io/badge/TanStack%20Table-8-111827?style=flat-square&logo=tanstack&logoColor=FF4154)](https://aureformui.com/es/docs/data-table/) [![Recharts 3](https://img.shields.io/badge/Recharts-3-111827?style=flat-square)](https://aureformui.com/es/docs/charts/) [![React Hook Form 7](https://img.shields.io/badge/React%20Hook%20Form-7-111827?style=flat-square&logo=reacthookform&logoColor=EC5990)](https://aureformui.com/es/forms/) [![Zod 4](https://img.shields.io/badge/Zod-4-111827?style=flat-square&logo=zod&logoColor=3E67B1)](package.json) [![MapLibre GL 5](https://img.shields.io/badge/MapLibre%20GL-5-111827?style=flat-square&logo=maplibre&logoColor=white)](https://aureformui.com/es/docs/maps/)
 
 | Incluido                                | Qué puedes construir                                                                                                                                                                           |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,6 +37,8 @@ Construido con **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP
 | ![Galería de gráficos de Aureform](docs/images/aureform-charts.webp)           | ![Galería de componentes con botones, campos y materiales](docs/images/aureform-components.webp) |
 
 ## Aplicaciones ampliadas en 1.4
+
+[![Adaptador frontend tipado de Stripe](https://img.shields.io/badge/Stripe-adaptador%20tipado-635BFF?style=flat-square&logo=stripe&logoColor=white)](https://aureformui.com/es/docs/adapters/) [![Google Maps con clave de navegador opcional](https://img.shields.io/badge/Google%20Maps-clave%20opcional-1D4ED8?style=flat-square&logo=googlemaps&logoColor=white)](https://aureformui.com/es/docs/maps/) [![Mocks frontend de OAuth con Google, GitHub y Microsoft](https://img.shields.io/badge/OAuth-mocks%20frontend-111827?style=flat-square)](https://aureformui.com/es/docs/authentication/)
 
 Explora [Productos](https://aureformui.com/es/products/), [Pedidos](https://aureformui.com/es/orders/), [Facturas](https://aureformui.com/es/invoices/), [Facturación](https://aureformui.com/es/settings/billing/) y [Mapas](https://aureformui.com/es/maps/).
 
@@ -123,6 +133,8 @@ Los bloques de operaciones reciben datos y callbacks para conectar tus servicios
 
 ## Diseño, movimiento e imágenes
 
+[![GSAP 3.15](https://img.shields.io/badge/GSAP-3.15-111827?style=flat-square&logo=gsap&logoColor=88CE02)](docs/motion-runtime.md) [![Lenis 1.3](https://img.shields.io/badge/Lenis-1.3-111827?style=flat-square)](docs/motion-runtime.md) [![32 recursos originales generados con GPT Image 2.5](https://img.shields.io/badge/GPT%20Image%202.5-32%20recursos%20originales-8F652A?style=flat-square)](docs/generated-images/README.es.md)
+
 - **Figma:** [biblioteca editable](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) y [archivos de diseño / notas de exportación](design/README.md). Consulta esas notas para conocer los archivos disponibles y sus formatos reales.
 - **Apariencia:** [configuración y exportaciones](docs/appearance.md), [efectos](docs/effects.es.md), [shaders](docs/shaders.md) y [gráficos](docs/charts.md).
 - **Movimiento:** GSAP controla las entradas dentro de su ámbito; Lenis es opcional en la landing. Las pantallas de aplicación mantienen el scroll nativo. [Contrato de runtime](docs/motion-runtime.md).
@@ -131,6 +143,8 @@ Los bloques de operaciones reciben datos y callbacks para conectar tus servicios
 Los registros de packaging y QA conservan su versión y alcance originales. La [guía de código abierto](docs/open-source.es.md#verificar-cambios-y-contribuir) explica cómo interpretarlos.
 
 ## Documentación y despliegue
+
+[![Cloudflare Workers Static Assets](https://img.shields.io/badge/Cloudflare-Workers%20Static%20Assets-111827?style=flat-square&logo=cloudflare&logoColor=F38020)](docs/cloudflare-deployment.es.md) [![HTML estático, URLs canónicas y hreflang](https://img.shields.io/badge/SEO-HTML%20est%C3%A1tico%20%2B%20hreflang-111827?style=flat-square)](docs/release-checklist-1.4.1.md) [![Research de oportunidades: 20 hallazgos](https://img.shields.io/badge/research-20%20hallazgos-8F652A?style=flat-square)](https://aureformui.com/es/docs/research/)
 
 [Lee la documentación](https://aureformui.com/es/docs/) sin abrir el workspace de la demo. Sus 22 capítulos cubren instalación, componentes, tokens, movimiento, charts, tablas, integraciones, Figma y despliegue, con búsqueda por títulos y secciones, índice de página y código copiable. La navegación está disponible en español e inglés; las referencias que conservan su idioma original lo indican en la página.
 
@@ -150,7 +164,13 @@ El [research de oportunidades](docs/research-gaps-1.4.es.md) reúne limitaciones
 
 ## Contribuir
 
+[![Contribuciones bienvenidas](https://img.shields.io/badge/contribuciones-bienvenidas-8F652A?style=flat-square)](CONTRIBUTING.md) [![Estrellas en GitHub](https://img.shields.io/github/stars/terrizoaguimor/aureform-ui?style=flat-square&logo=github&color=8F652A)](https://github.com/terrizoaguimor/aureform-ui/stargazers) [![Forks en GitHub](https://img.shields.io/github/forks/terrizoaguimor/aureform-ui?style=flat-square&logo=github&color=8F652A)](https://github.com/terrizoaguimor/aureform-ui/forks) [![Issues abiertas](https://img.shields.io/github/issues/terrizoaguimor/aureform-ui?style=flat-square&logo=github&color=8F652A)](https://github.com/terrizoaguimor/aureform-ui/issues)
+
 Son bienvenidos los reportes de errores, mejoras de interacción, nuevos patrones, traducciones y documentación. Puedes contribuir en español o inglés.
+
+Evidencia de validación de **v1.4.1**:
+
+[![v1.4.1: 244 pruebas unitarias aprobadas](https://img.shields.io/badge/unit%20tests-244%20passed-246B43?style=flat-square&logo=nodedotjs&logoColor=white)](https://github.com/terrizoaguimor/aureform-ui/blob/v1.4.1/docs/qa-runtime-1.4.1.json) [![v1.4.1: 688 ejemplos verificados con tipos estrictos](https://img.shields.io/badge/strict%20examples-688%20checked-246B43?style=flat-square&logo=typescript&logoColor=white)](https://github.com/terrizoaguimor/aureform-ui/blob/v1.4.1/docs/qa-runtime-1.4.1.json) [![v1.4.1: 19 escenarios de navegador aprobados en producción](https://img.shields.io/badge/production%20website-19%20passed-246B43?style=flat-square&logo=playwright&logoColor=white)](https://github.com/terrizoaguimor/aureform-ui/releases/download/v1.4.1/cloudflare-deployment-1.4.1.json)
 
 ```sh
 pnpm typecheck
