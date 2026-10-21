@@ -37,14 +37,23 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm test
+      - run: npm ci --prefix examples/communications-backend --ignore-scripts
+      - run: pnpm verify:communications-backend
       - run: pnpm verify:examples
       - run: pnpm verify:integrations
+      - run: pnpm verify:communications-design
       - name: Export demo
         run: pnpm build
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
       - name: Verify Pages export
         run: pnpm verify:pages
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+      - name: Install browser for communications checks
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Verify the mounted Softphone demo
+        run: pnpm verify:communications-ui
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
       - name: Upload demo

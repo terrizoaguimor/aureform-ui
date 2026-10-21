@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "observedUTC": "2026-10-21T23:15:46.126366+00:00",
+  "status": "native-source-readback-pass",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "route": "softphone",
+  "pageId": "559:59",
+  "pageName": "13 · Applications · Softphone MVP",
+  "scope": "Implemented Softphone frontend source association, separate from the frozen69route roots and92localtemplates. Selected source readback only; no exhaustive pixel parity or carrier acceptance.",
+  "nodes": {
+    "Light": "574:1984",
+    "Dark": "574:2368",
+    "Mobile": "574:2748"
+  },
+  "compositions": [
+    {
+      "id": "574:1984",
+      "profile": "Default disconnected",
+      "view": "DesktopLight",
+      "bodyInstanceId": "574:2051",
+      "bodyMasterId": "570:227",
+      "headerId": "574:2021",
+      "dialogId": null,
+      "width": 1440,
+      "height": 1831
+    },
+    {
+      "id": "574:2368",
+      "profile": "Default disconnected",
+      "view": "DesktopDark",
+      "bodyInstanceId": "574:2431",
+      "bodyMasterId": "570:227",
+      "headerId": "574:2405",
+      "dialogId": null,
+      "width": 1440,
+      "height": 1831
+    },
+    {
+      "id": "574:2748",
+      "profile": "Default disconnected",
+      "view": "Mobile390",
+      "bodyInstanceId": "574:2779",
+      "bodyMasterId": "570:1544",
+      "headerId": "574:2750",
+      "dialogId": null,
+      "width": 390,
+      "height": 2966
+    },
+    {
+      "id": "574:3088",
+      "profile": "ActiveWithQueue",
+      "view": "DesktopLight",
+      "bodyInstanceId": "574:3151",
+      "bodyMasterId": "570:649",
+      "headerId": "574:3125",
+      "dialogId": null,
+      "width": 1440,
+      "height": 2294
+    },
+    {
+      "id": "574:3476",
+      "profile": "ActiveWithQueue",
+      "view": "DesktopDark",
+      "bodyInstanceId": "574:3539",
+      "bodyMasterId": "570:649",
+      "headerId": "574:3513",
+      "dialogId": null,
+      "width": 1440,
+      "height": 2294
+    },
+    {
+      "id": "574:3864",
+      "profile": "ActiveWithQueue",
+      "view": "Mobile390",
+      "bodyInstanceId": "574:3895",
+      "bodyMasterId": "570:1936",
+      "headerId": "574:3866",
+      "dialogId": null,
+      "width": 390,
+      "height": 3245
+    },
+    {
+      "id": "574:4212",
+      "profile": "businesshoursDialog",
+      "view": "DesktopLight",
+      "bodyInstanceId": "574:4275",
+      "bodyMasterId": "570:227",
+      "headerId": "574:4249",
+      "dialogId": "574:4552",
+      "width": 1440,
+      "height": 1831
+    },
+    {
+      "id": "574:4671",
+      "profile": "businesshoursDialog",
+      "view": "DesktopDark",
+      "bodyInstanceId": "574:4734",
+      "bodyMasterId": "570:227",
+      "headerId": "574:4708",
+      "dialogId": "574:5011",
+      "width": 1440,
+      "height": 1831
+    },
+    {
+      "id": "574:5130",
+      "profile": "businesshoursDialog",
+      "view": "Mobile390",
+      "bodyInstanceId": "574:5161",
+      "bodyMasterId": "570:1544",
+      "headerId": "574:5132",
+      "dialogId": "574:5430",
+      "width": 390,
+      "height": 2966
+    },
+    {
+      "id": "574:5549",
+      "profile": "devicePermission",
+      "view": "DesktopLight",
+      "bodyInstanceId": "574:5612",
+      "bodyMasterId": "570:1111",
+      "headerId": "574:5586",
+      "dialogId": "574:5905",
+      "width": 1440,
+      "height": 1992
+    },
+    {
+      "id": "574:5992",
+      "profile": "devicePermission",
+      "view": "DesktopDark",
+      "bodyInstanceId": "574:6055",
+      "bodyMasterId": "570:1111",
+      "headerId": "574:6029",
+      "dialogId": "574:6348",
+      "width": 1440,
+      "height": 1992
+    },
+    {
+      "id": "574:6435",
+      "profile": "devicePermission",
+      "view": "Mobile390",
+      "bodyInstanceId": "574:6466",
+      "bodyMasterId": "570:2380",
+      "headerId": "574:6437",
+      "dialogId": "574:6751",
+      "width": 390,
+      "height": 3137
+    }
+  ],
+  "components": [
+    {
+      "nativeName": "Softphone",
+      "source": "src/components/blocks/softphone.tsx",
+      "export": "Softphone",
+      "setId": "563:377",
+      "defaultId": "563:115",
+      "axes": {
+        "State": [
+          "idle",
+          "ringing",
+          "active",
+          "held",
+          "recovering",
+          "permission-denied",
+          "error"
+        ],
+        "Pending": [
+          "false",
+          "true"
+        ]
+      },
+      "sparseVariantCount": 8,
+      "template": ".figma/Softphone.figma.ts",
+      "metadata": "design/figma/softphone-native-source-2026-10-21.json",
+      "nativePropertyKeys": [
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16",
+        "State",
+        "Pending"
+      ]
+    },
+    {
+      "nativeName": "SoftphoneWorkspace",
+      "source": "src/components/blocks/softphone-workspace.tsx",
+      "export": "SoftphoneWorkspace",
+      "setId": "570:2797",
+      "defaultId": "570:227",
+      "axes": {
+        "Viewport": [
+          "desktop",
+          "mobile"
+        ],
+        "Activity": [
+          "disconnected",
+          "active",
+          "permission"
+        ]
+      },
+      "sparseVariantCount": 6,
+      "template": ".figma/SoftphoneWorkspace.figma.ts",
+      "metadata": "design/figma/softphone-native-source-2026-10-21.json"
+    }
+  ],
+  "sourceSnapshots": [
+    {
+      "file": "src/components/blocks/softphone.tsx",
+      "sha256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42"
+    },
+    {
+      "file": "src/components/blocks/softphone-workspace.tsx",
+      "sha256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139"
+    },
+    {
+      "file": "src/components/templates/softphone-template.tsx",
+      "sha256": "bef464d5261a63120f9ecb03adc0b4d03caa674bbc596c76943e33fe12d97b18"
+    },
+    {
+      "file": "src/hooks/use-softphone-audio.ts",
+      "sha256": "48d2459aa0d435f55dafd7b1b9c518caec641361b83c5b99201fcbc3777a3b59"
+    },
+    {
+      "file": "src/components/blocks/dashboard-shell.tsx",
+      "sha256": "de13280392c8a47a0fcca8656ba4edda68e5d3729c098d4f6c9ee6b99f59eff7"
+    },
+    {
+      "file": "src/components/templates/landing.tsx",
+      "sha256": "8935cc8e810d3c17eaacb76aa13bfb343d5480c88a2f0fec9c9a1ce8a6bfed1c"
+    },
+    {
+      "file": "src/components/communications/provider-logo.tsx",
+      "sha256": "5015629a3070479ce46801cbf48d946acc17f1f0b6742a3713b3a176bd5f0edb"
+    },
+    {
+      "file": "src/lib/communications/contracts.ts",
+      "sha256": "31df71c1b4d7d931f9f632216888c5d76833741994b10ab49110efe0c5256bee"
+    },
+    {
+      "file": "src/lib/communications/business-hours.ts",
+      "sha256": "03f26a7751579946c100a17cbb239e7b0dc493ba82931a4d1a337a38d8b24c1b"
+    },
+    {
+      "file": "src/lib/communications/fixtures.ts",
+      "sha256": "8cbd5a0ca3ca9755a4b72426fe3e32b8dc4d77e3804dfddbbb6bb9fb42162715"
+    },
+    {
+      "file": "src/lib/communications/demo-adapter.ts",
+      "sha256": "cccfc0236c912206782ba94a8dd1a205e45cfc47dcadbdabc723b4b213fcb440"
+    },
+    {
+      "file": "src/lib/communications/live-adapter.ts",
+      "sha256": "0ef8d6564df8127651f926bc73a5c5b04f779661440187e174c7934f7bb2fe98"
+    },
+    {
+      "file": "src/lib/communications/demo-session.ts",
+      "sha256": "12f106db51bb11e7ca73990227b34094d31670de086a10ba743604c255fba6c0"
+    },
+    {
+      "file": "src/lib/communications/twilio-browser.ts",
+      "sha256": "db2ff59a67dd61ebffe32830d9d576f6eba3472906340605761c0604f6cc68eb"
+    },
+    {
+      "file": "src/lib/communications/telnyx-browser.ts",
+      "sha256": "09375ed940861c32329f9694559f9763d5f815bde9b852205987da76450f72f2"
+    },
+    {
+      "file": "src/lib/communications/brands.ts",
+      "sha256": "58efb1aa569a90747896ac44cf065b6ad47f1c602ded096b244c0fa8aaa96731"
+    },
+    {
+      "file": "public/assets/communications/twilio.svg",
+      "sha256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068"
+    },
+    {
+      "file": "public/assets/communications/telnyx.svg",
+      "sha256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e"
+    },
+    {
+      "file": "public/assets/communications/README.md",
+      "sha256": "ac7564f39712ac056c5d8e38433e7852a2a9091e272d0a3fbcf90c0ebec3f76a"
+    },
+    {
+      "file": "public/assets/communications/manifest.json",
+      "sha256": "ecc6909ff4e0360cdf905d89118bf14514fe5a11e3235764d934215f571f4a5d"
+    }
+  ],
+  "dialogs": {
+    "businesshoursDesktop": "571:1815",
+    "devicePermissionDesktop": "571:1899",
+    "keypadDesktop": "571:1949",
+    "historyDesktop": "571:2004",
+    "readonlyHoursDesktop": "571:2028",
+    "businesshoursMobile": "571:2061",
+    "devicePermissionMobile": "571:2142",
+    "keypadMobile": "571:2192",
+    "historyMobile": "571:2247",
+    "readonlyHoursMobile": "571:2271"
+  },
+  "nativeProofManifest": "design/proofs/softphone-2026-10-21/manifest.json",
+  "browserProofs": [
+    "docs/images/aureform-softphone-light.webp",
+    "docs/images/aureform-softphone-dark.webp"
+  ],
+  "foundationBaseline": [
+    714,
+    14,
+    6
+  ],
+  "sharedFoundationWrites": 0,
+  "researchPageWrites": 0,
+  "cloudRegistered": false,
+  "nativeFigIncluded": false,
+  "finalReadback": {
+    "UTC": "2026-10-21T23:06:56.295Z",
+    "stateModePreviews": {
+      "created": 14,
+      "expectedModes": 14,
+      "conflicts": 0,
+      "status": "PASS"
+    },
+    "compositions": {
+      "created": 12,
+      "modeConflicts": 0,
+      "status": "PASS"
+    },
+    "dialogMasters": {
+      "created": 10,
+      "currentSourceHashMatch": 10,
+      "status": "PASS"
+    },
+    "foundationReadback": [
+      714,
+      14,
+      6
+    ],
+    "oldResearchRFCFoundationWrites": 0,
+    "nativeNodes": {
+      "PAGE": 1,
+      "COMPONENT": 62,
+      "FRAME": 1954,
+      "VECTOR": 1606,
+      "COMPONENT_SET": 3,
+      "RECTANGLE": 80,
+      "ELLIPSE": 37,
+      "TEXT": 1945,
+      "INSTANCE": 1533,
+      "SLOT": 139,
+      "GROUP": 39
+    },
+    "fonts": [
+      {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      }
+    ],
+    "inheritedContentImageFills": 17,
+    "fullUIRasterSourcesCreated": 0
+  },
+  "limitations": [
+    "Native source fixtures are English; EN/ES runtime acceptance is separate.",
+    "Native application chrome is a scoped fixture; previous design/source audits retain their historical scope.",
+    "Native background gradients approximate the source CSS radial washes; exact pixel parity is not certified.",
+    "Live carrier calls, physical audio and production security are not certified."
+  ],
+  "stateModeGalleryId": "576:6244",
+  "stateModePreviews": [
+    {
+      "state": "idle",
+      "masterId": "563:115",
+      "lightInstanceId": "576:6248",
+      "darkInstanceId": "576:6277"
+    },
+    {
+      "state": "ringing",
+      "masterId": "563:144",
+      "lightInstanceId": "576:6307",
+      "darkInstanceId": "576:6346"
+    },
+    {
+      "state": "active",
+      "masterId": "563:184",
+      "lightInstanceId": "576:6386",
+      "darkInstanceId": "576:6432"
+    },
+    {
+      "state": "held",
+      "masterId": "563:231",
+      "lightInstanceId": "576:6479",
+      "darkInstanceId": "576:6524"
+    },
+    {
+      "state": "recovering",
+      "masterId": "563:277",
+      "lightInstanceId": "576:6570",
+      "darkInstanceId": "576:6609"
+    },
+    {
+      "state": "permission-denied",
+      "masterId": "563:316",
+      "lightInstanceId": "576:6649",
+      "darkInstanceId": "576:6680"
+    },
+    {
+      "state": "error",
+      "masterId": "563:346",
+      "lightInstanceId": "576:6712",
+      "darkInstanceId": "576:6744"
+    }
+  ],
+  "sourceReadbackReceipt": "design/reports/softphone-native-receipt-2026-10-21.json"
+}

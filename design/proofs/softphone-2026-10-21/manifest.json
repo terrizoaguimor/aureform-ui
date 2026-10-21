@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "observedUTC": "2026-10-21T23:13:57.182109+00:00",
+  "origin": "Actual Figma MCP screenshot after scoped visual corrections",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "screenshots": [
+    {
+      "nodeId": "574:3476",
+      "file": "design/proofs/softphone-2026-10-21/native-desktop-dark.png",
+      "width": 1440,
+      "height": 2294,
+      "naturalWidth": 1440,
+      "naturalHeight": 2294,
+      "bytes": 809556,
+      "sha256": "73bc754657c8831b2185a84dcfefad776c6ec275b934ef6dc0804480e5be694b"
+    },
+    {
+      "nodeId": "574:3864",
+      "file": "design/proofs/softphone-2026-10-21/native-mobile-390.png",
+      "width": 390,
+      "height": 3245,
+      "naturalWidth": 390,
+      "naturalHeight": 3245,
+      "bytes": 305673,
+      "sha256": "c51df37c1446dcd83fad5f1dedc5dee878e86fe74ab7b416628979882561e307"
+    }
+  ],
+  "limitations": [
+    "Selected source compositions only; no exhaustive pixel comparison or live carrier evidence.",
+    "The final mobile PNG is exported at its390px native width after the compactheader correction."
+  ]
+}

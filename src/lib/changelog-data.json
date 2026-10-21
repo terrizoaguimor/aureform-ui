@@ -11,7 +11,10 @@
     },
     "groups": [
       {
-        "title": { "en": "Added", "es": "Añadido" },
+        "title": {
+          "en": "Added",
+          "es": "Añadido"
+        },
         "items": [
           {
             "en": "A public, bilingual changelog with release dates, version navigation and links to the original GitHub releases.",
@@ -36,13 +39,29 @@
           {
             "en": "Original provider logos in integration cards, connection headers and provider choices, with bundled assets, source attribution and reusable Figma artwork.",
             "es": "Logos originales de los proveedores en tarjetas de integración, cabeceras de conexión y selección de proveedor, con archivos incluidos, atribución de fuentes y recursos reutilizables en Figma."
+          },
+          {
+            "en": "An installable Softphone workspace and public EN/ES demo with inbound simulation, FIFO routing, presence, business hours, explicit holidays, call controls, notes, history, CSV and recovery.",
+            "es": "Un workspace Softphone instalable y demo pública EN/ES con simulación entrante, routing FIFO, presencia, horario, festivos explícitos, controles, notas, historial, CSV y recuperación."
+          },
+          {
+            "en": "Typed communications contracts, optional Twilio and Telnyx browser SDK factories, and an authenticated inbound reference backend with signed webhooks and explicit per-call cost gates.",
+            "es": "Contratos tipados de comunicaciones, fábricas opcionales de SDK de navegador Twilio y Telnyx, y un backend de referencia entrante autenticado con webhooks firmados y autorización de costos por llamada."
+          },
+          {
+            "en": "A bilingual communications guide and separate implementation evidence, preserving the original research RFCs and provider-specific live acceptance requirements.",
+            "es": "Una guía bilingüe de comunicaciones y evidencia de implementación separada, conservando los RFCs de investigación originales y la aceptación real independiente por proveedor."
+          },
+          {
+            "en": "Editable Softphone implementation source in Figma, seven call states in Light/Dark, desktop/mobile compositions, dialogs and two additional local Code Connect templates.",
+            "es": "Fuente editable del Softphone implementado en Figma, siete estados de llamada en claro/oscuro, composiciones de escritorio/móvil, diálogos y dos templates locales adicionales de Code Connect."
           }
         ]
       }
     ],
     "notes": {
-      "en": "These changes are available on main and are not part of the immutable 1.5.0 release archives. Communications is research and proposed design; carrier integrations and complete runtime parity are not certified.",
-      "es": "Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0. Communications es investigación y diseño propuesto; las integraciones con carriers y la paridad completa en ejecución no están certificadas."
+      "en": "These changes are available on main and are not part of the immutable 1.5.0 release archives. The Softphone demo is local. Optional SDK/backend source is an inbound laboratory reference; real audible carrier calls and production readiness are not certified. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.",
+      "es": "Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0. La demo Softphone es local. El código opcional de SDK/backend es una referencia de laboratorio entrante; las llamadas audibles con carriers y la preparación para producción no están certificadas. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación."
     }
   },
   "releases": [
@@ -59,7 +78,10 @@
       },
       "groups": [
         {
-          "title": { "en": "Added", "es": "Añadido" },
+          "title": {
+            "en": "Added",
+            "es": "Añadido"
+          },
           "items": [
             {
               "en": "17 workflow families and 86 provider choices covering data, identity, commerce, files, email, analytics, notifications, jobs, collaboration, editors, search, maps, AI, knowledge, agents, product connectors and automation.",
@@ -80,7 +102,10 @@
           ]
         },
         {
-          "title": { "en": "Improved", "es": "Mejorado" },
+          "title": {
+            "en": "Improved",
+            "es": "Mejorado"
+          },
           "items": [
             {
               "en": "The catalogue now includes 135 views, 127 source registry entries and 24 documentation chapters.",
@@ -93,7 +118,10 @@
           ]
         },
         {
-          "title": { "en": "Verified", "es": "Verificado" },
+          "title": {
+            "en": "Verified",
+            "es": "Verificado"
+          },
           "items": [
             {
               "en": "865 passing unit tests, strict component and integration examples, and 317 local provider/action bindings.",
@@ -112,7 +140,10 @@
       },
       "links": [
         {
-          "label": { "en": "QA receipt", "es": "Registro de QA" },
+          "label": {
+            "en": "QA receipt",
+            "es": "Registro de QA"
+          },
           "path": "docs/qa-runtime-1.5.0.json"
         },
         {
@@ -137,7 +168,10 @@
       },
       "groups": [
         {
-          "title": { "en": "Added", "es": "Añadido" },
+          "title": {
+            "en": "Added",
+            "es": "Añadido"
+          },
           "items": [
             {
               "en": "An editorial landing with real product previews, six palettes, light/dark themes, gradients and GSAP/Lenis motion.",
@@ -154,7 +188,10 @@
           ]
         },
         {
-          "title": { "en": "Improved", "es": "Mejorado" },
+          "title": {
+            "en": "Improved",
+            "es": "Mejorado"
+          },
           "items": [
             {
               "en": "Marketing and documentation load separately from the application demo. GitHub Pages remains available as a backup.",
@@ -167,7 +204,10 @@
           ]
         },
         {
-          "title": { "en": "Verified", "es": "Verificado" },
+          "title": {
+            "en": "Verified",
+            "es": "Verificado"
+          },
           "items": [
             {
               "en": "244 unit tests, 46 root browser scenarios, 37 mounted browser scenarios and successful static exports.",
@@ -182,7 +222,10 @@
       },
       "links": [
         {
-          "label": { "en": "QA receipt", "es": "Registro de QA" },
+          "label": {
+            "en": "QA receipt",
+            "es": "Registro de QA"
+          },
           "path": "docs/qa-runtime-1.4.1.json"
         }
       ]
@@ -200,7 +243,10 @@
       },
       "groups": [
         {
-          "title": { "en": "Added", "es": "Añadido" },
+          "title": {
+            "en": "Added",
+            "es": "Añadido"
+          },
           "items": [
             {
               "en": "A product editor with prices, currency, stock and image upload, crop, rotation, alt text, ordering and live preview.",
@@ -221,7 +267,10 @@
           ]
         },
         {
-          "title": { "en": "Improved", "es": "Mejorado" },
+          "title": {
+            "en": "Improved",
+            "es": "Mejorado"
+          },
           "items": [
             {
               "en": "107 source registry entries, bilingual application integration guides and updated application screenshots.",
@@ -230,7 +279,10 @@
           ]
         },
         {
-          "title": { "en": "Verified", "es": "Verificado" },
+          "title": {
+            "en": "Verified",
+            "es": "Verificado"
+          },
           "items": [
             {
               "en": "244 unit tests, 92 full-suite browser tests and a separate set of 18 final mounted application tests.",
@@ -266,7 +318,10 @@
       },
       "groups": [
         {
-          "title": { "en": "Added", "es": "Añadido" },
+          "title": {
+            "en": "Added",
+            "es": "Añadido"
+          },
           "items": [
             {
               "en": "69 views, 44 core component families and 96 source registry entries for dashboards, SaaS workspaces and internal tools.",
@@ -287,7 +342,10 @@
           ]
         },
         {
-          "title": { "en": "Verified", "es": "Verificado" },
+          "title": {
+            "en": "Verified",
+            "es": "Verificado"
+          },
           "items": [
             {
               "en": "189 unit tests and 74 end-to-end tests passed; all 69 views were exercised in both languages under the Pages base path.",

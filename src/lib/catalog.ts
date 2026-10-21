@@ -263,6 +263,13 @@ export const routes: KitRoute[] = [
     delivery: "1.4",
   },
   {
+    path: "softphone",
+    en: "Softphone",
+    es: "Softphone",
+    group: "application",
+    delivery: "1.5",
+  },
+  {
     path: "logistics",
     en: "Logistics",
     es: "Logística",

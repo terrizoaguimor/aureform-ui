@@ -1,0 +1,72 @@
+# Referencia ejecutable de voz entrante
+
+**Estado: implementación de laboratorio; integración con ambos carriers y audio real pendientes.** Fecha de implementación y nueva consulta de fuentes: **2026-10-21, America/Bogota**. Los siete RFC originales conservan su corte documental del **2026-10-20**; este documento no cambia sus estimaciones ni convierte propuestas en aceptación. La recuperación de diseño cerrada no certifica telefonía.
+
+El [backend independiente](../../examples/communications-backend/README.md) ejecuta Node 22/built-in HTTP y mantiene el sitio Next en static export. Sus archivos, dependencias fijadas, lockfile y pruebas viven en `examples/communications-backend/`. El componente React, los contratos públicos, bindings de SDK y registry pertenecen a entregas de integración separadas.
+
+## Alcance implementado
+
+- Sesión autenticada con identidad/tenant/origen configurados por servidor; bearer breve y renovación de la misma sesión/reserva.
+- Tokens Twilio VoiceGrant **solo entrante**, generados mediante SDK servidor 6.2.0; JWT Telnyx emitido mediante HTTP oficial solo después de comprobar identidad SIP y expiración breve del recurso padre.
+- Webhooks Twilio HMAC con URL HTTPS externa fija y todos los parámetros; Telnyx Ed25519 con cuerpo original, timestamp ±300 s y límites de cuerpo.
+- Horarios IANA/festivos explícitos, una FIFO, hasta dos agentes configurados y una reserva por agente entre carriers; funcionamiento básico con un único agente por laboratorio.
+- Correlación explícita PSTN/browser, callbacks por proveedor y acciones reales de answer/conexión/terminación. Un ACK HTTP, una intención de respuesta o el ID local del SDK no prueban un bridge.
+- Deduplicación en memoria, terminales monotónicos, resultado externo desconocido con reserva/permiso retenidos, y reconciliación restringida a operador para piernas conocidas.
+- Transportes reales separados de fixtures. Las pruebas de firmas/horarios/FIFO/lifecycle/HTTP usan identidades ficticias y transportes inyectados; no hubo llamadas, cuentas ni gasto.
+
+Fuera de alcance: llamadas PSTN salientes, compra de números, grabación, campañas, hold, transferencia, voicemail, callback, IA, Flow DSL, persistencia/HA/OIDC de producción y certificación móvil. `hold`, transfer, recording y outbound PSTN no se habilitan live. La demo puede simular estados locales y debe conservar esa etiqueta.
+
+## Dos topologías, sin equivalencia de API inventada
+
+| Proveedor | Recorrido concreto del código | Requisitos/restricciones y verificación pendiente |
+| --- | --- | --- |
+| Twilio | Número → webhook TwiML → horario/FIFO del dominio → `Say/Pause/Redirect` mientras espera, o `Dial/Client` con identidad fija → callbacks del hijo y `dial-action` → `Hangup`. REST `calls(sid).fetch()` inspecciona; `.update({status:"completed"})` solicita fin de una pierna activa y `canceled` cancela una aún en marcación/timbre. | Número y cuenta aprobados, Account SID esperado, Auth Token HMAC, API key/secret servidor, Voice SDK registrado. No es `<Queue>`, Conference, TaskRouter ni Flex. El CallSid del SDK entrante es hijo; el PSTN es padre. Timeout de `<Dial>` puede incluir el buffer documentado. Audio y callbacks verdaderos todavía no probados. |
+| Telnyx | Número → Call Control Application → `answer` → observar `call.answered` → FIFO/reserva → **SIP browser fijo** por `POST /v2/calls` con `link_to/bridge_on_answer/prevent_double_bridge` → observar IDs/bridge/hangup. `GET /v2/calls/{id}` reconcilia solo lo conocido. | Application y Credential Connection son recursos distintos. Una telephony credential breve por dispositivo, conexión SIP apta para recibir el destino interno y browser origination PSTN bloqueada. La pierna SIP secundaria es saliente para Telnyx y facturable aunque el usuario final solo reciba PSTN. No mezcla TeXML/Call Control, ni abre un destino libre. Registro/routing SIP/bridge y restricciones de cuenta siguen pendientes de prueba. |
+
+Fuera de horario, con permiso de laboratorio válido, Twilio devuelve mensaje fijo + Hangup. Telnyx espera answer observado, solicita `speak` básico en inglés, espera `call.speak.ended` y solicita hangup. Sin permiso, no ejecuta una acción de call control con costo. No existe voicemail/callback alternativo. Telnyx abierto mantiene espera silenciosa; no se incorporó audio de assets ni se equiparó la FIFO a su API nativa de cola.
+
+El ejemplo guarda IDs reales observados y deja los aún ausentes en null. El browser debe correlacionar CallSid/custom parameters Twilio o `telnyxIDs` con el binding del envelope autenticado. No compara por suposición el ID lógico del dominio con un Call Control ID ni con `call.id` del SDK.
+
+## Guardas y wire
+
+La [guía operativa](../../examples/communications-backend/README.md#wire-http-v1) describe exactamente GET/POST `/v1/communications/session`, GET `/v1/communications/events` y POST `/v1/communications/commands`, sus headers y respuestas. SSE funciona con `fetch` + bearer en header; no hay auth en query ni cookies implícitas. Comandos y SSE transportan el mismo envelope con `scope`, `revision`, `cursor`, `snapshot`, `bindings` y `capabilities`.
+
+El servidor valida selector de proveedor contra el principal configurado; no confía en tenant/identidad/conexión/caller/destino/horario aportados por el navegador. El horario solo se carga en configuración del servidor. `accept` autoriza la reserva antes de responder el objeto SDK; `mute` y `dtmf` registran intención para el efecto local del SDK. El backend no se atribuye la observación del permiso de micrófono ni la audibilidad.
+
+`capabilities` es inventario de intenciones autorizables, no evidencia de medios. El snapshot backend emite `caps` en false; el consumidor solo habilita mute/DTMF cuando la leg SDK única coincide con el binding autenticado, la conexión está ready y el estado nativo es activo (mute también held). IDs pendientes, reconexión/reconciliación y ausencia del SDK mantienen esos controles deshabilitados.
+
+**Prerrequisito Telnyx no automatizado:** el JWT autentica una credencial SIP; `outboundPstn: false` no modifica sus privilegios. El operador debe revisar la Credential Connection exacta en Portal → Voice Suite → SIP Trunking → Outbound Settings y confirmar ausencia de Outbound Voice Profile; D38/403 es el rechazo documentado para esa condición. Cada emisión además exige un GET con ID coincidente y `outbound.outbound_voice_profile_id: null` explícito: perfil asignado o política ausente/ambigua impiden solicitar JWT. La representación real de esa respuesta, otras reglas de cuenta y el rechazo efectivo desde SDK siguen sin verificar; la bandera `browserOutboundDisabledVerified` no sustituye esas comprobaciones ni inmoviliza la configuración mientras el token vive. Es un gate de laboratorio, no una certificación productiva.
+
+`ENABLE_CARRIER_OPERATIONS=false` y `approvals: []` son los defaults. Habilitar operaciones requiere además una autorización de configuración **por una llamada**: proveedor, número configurado, caller exacto, ventana UTC, `consentScope`, duración máxima, una sola pierna browser y acciones limitadas. El primer ingreso firmado autorizado queda ligado a su ID PSTN. Los USD 75 del roadmap **siguen no autorizados**; escribir o probar el backend no habilita gasto.
+
+El permiso se conserva cuando el resultado externo es unknown. SDK perdido, heartbeat vencido, falta de callback o respuesta HTTP incierta no liberan al agente ni prueban que PSTN terminó. Reconciliación vive fuera de un AST/Flow DSL: consulta los recursos conocidos y libera con prueba terminal de ambas piernas. Si el ID de la secundaria falta, no inventa su ausencia; requiere inspección del operador.
+
+## Fuentes reconsultadas para esta implementación
+
+Todas las siguientes se consultaron **2026-10-21, America/Bogota**, independientemente de las fuentes D20. Estado usado aquí: **documentado; ejecución en cuenta real no verificada**. No se deriva GA ni un certificado de compatibilidad de precios.
+
+| Fuente primaria | Evidencia usada y restricción |
+| --- | --- |
+| [Twilio Access Tokens](https://www.twilio.com/docs/iam/access-tokens) y [SDK servidor publicado](https://github.com/twilio/twilio-node/blob/main/package.json) | JWT generado en servidor, grants y duración configurable. Versión publicada fijada 6.2.0, MIT; no outgoing application grant en esta referencia. |
+| [Twilio webhook security](https://www.twilio.com/docs/usage/security) | `validateRequest` oficial, Auth Token, URL externa completa y todos los campos del formulario. Este endpoint acepta formulario, no JSON/`bodySHA256`. Firma clásica sin ventana temporal universal. |
+| [TwiML Client](https://www.twilio.com/docs/voice/twiml/client), [Dial](https://www.twilio.com/docs/voice/twiml/dial) y [Voice SDKs](https://www.twilio.com/docs/voice/sdks) | Identidad, Parameter, status callback, padre/hijo, `DialBridged`, action al finalizar y control de grabación/timeout. Una notificación pre-child no certifica una pierna browser. |
+| [Twilio Pause](https://www.twilio.com/docs/voice/twiml/pause) y [Call Resource](https://www.twilio.com/docs/voice/api/call-resource) | Espera mediante TwiML, actualización a completed y consulta de estado. Polling/REST no constituyen storage durable ni garantía de audio. |
+| [Telnyx JWT](https://developers.telnyx.com/docs/voice/webrtc/auth/jwt) y [Telephony Credentials](https://developers.telnyx.com/docs/voice/webrtc/auth/telephony-credentials) | POST token; JWT vence a 24 h o al expirar su credencial, lo primero. Aquí se exige credencial padre breve, se valida su identidad/resource/exp y se rechaza un token de duración no acotada. Credencial por dispositivo y propagación antes del login. |
+| [Credential Connections](https://developers.telnyx.com/docs/voice/webrtc/auth/credential-connections), [Contact Center](https://developers.telnyx.com/docs/voice/webrtc/use-cases/contact-center) y [recurso oficial de conexión](https://github.com/team-telnyx/telnyx-node/blob/master/src/resources/credential-connections/credential-connections.ts) | WebRTC usa conexión de credenciales; se distingue el patrón SIP interno del browser saliente. El código consulta la conexión y rechaza un outbound profile observado; además exige comprobación del operador. No crea recursos ni presume que esa bandera certifica todas las rutas. |
+| [SDK JS](https://developers.telnyx.com/docs/development/webrtc/js-sdk/reference/telnyxrtc), [ajustes SIP](https://support.telnyx.com/en/articles/4404448-sip-connection-inbound-outbound-settings) y [SIP response codes D38](https://support.telnyx.com/en/articles/4409457-telnyx-sip-response-codes) | El SDK autenticado expone `newCall`; el inventario UI no reduce permisos del JWT. Outbound Voice Profile pertenece a la conexión; D38/403 documenta su ausencia. La revisión de Portal y su rechazo real son prerrequisitos de aceptación independientes. `internal` limita recepción SIP; parking/channel limit no se presentan como permisos entrantes. |
+| [Telnyx Answer](https://developers.telnyx.com/api-reference/call-commands/answer-call), [Dial](https://developers.telnyx.com/api-reference/call-commands/dial) y [Bridge](https://developers.telnyx.com/api-reference/call-commands/bridge-calls) | Answer precede comandos entrantes; éxito HTTP puede adelantarse al evento. Dial SIP/link/bridge-on-answer y prevención de doble bridge son APIs propias. `call.answered/call.bridged` siguen siendo necesarias; no se habilita IA ni grabación. |
+| [Speak](https://developers.telnyx.com/api-reference/call-commands/speak-text), [Hangup](https://developers.telnyx.com/api-reference/call-commands/hangup-call) y [recurso oficial Calls](https://github.com/team-telnyx/telnyx-node/blob/master/src/resources/calls/calls.ts) | Mensaje fijo básico `en-US`, hangup, GET de status y IDs de respuesta. `is_alive:false` de dial asíncrono no es evidencia de fin. No hay fallback voicemail. La consulta de estado puede resultar insuficiente/no disponible. |
+| [Telnyx Voice webhooks](https://developers.telnyx.com/docs/voice/programmable-voice/receiving-webhooks), [fundamentals](https://developers.telnyx.com/docs/development/api-fundamentals/webhooks/receiving-webhooks) y [verificador oficial](https://github.com/team-telnyx/telnyx-node/blob/master/src/lib/webhooks.ts) | Raw body, Ed25519, timestamp, ventana ±300 s, ACK y eventos duplicados/desordenados. El código conserva bytes para firma y deduplica data/id; no cuenta el cambio de `meta.attempt` como otra llamada. |
+| [Índice oficial Node](https://nodejs.org/dist/index.json) | Node 22.23.4 publicado 2026-10-20; rama usada para la comprobación de esta referencia. No prueba disponibilidad/digest de una imagen Docker ni estado de producción. |
+
+## Qué falta para aceptación
+
+**Hecho comprobable local:** sintaxis Node y pruebas automáticas del propio ejemplo, transportes inyectados, JWT Twilio mediante SDK real sin tráfico al carrier, y servidor HTTP local para ambos recorridos. El número de pruebas/cierre de integración se registra en la entrega; no se atribuye a llamadas reales.
+
+**Gate Twilio:** revisar cuenta/región, número/webhook/status callback, permisos de la API key, token/register SDK, oferta y CallSid padre/hijo reales, cola con agente away, cerrado/festivo, timbre/answer/audio/mute/DTMF/hangup, pérdida de SDK y renovación/reconciliación. Falta prueba independiente del carrier.
+
+**Gate Telnyx:** revisar Application/número y Credential Connection, recepción SIP interna, origination browser PSTN bloqueada, expiración/propagación real de credencial, JWT/registro, metadata/IDs de las dos piernas, callbacks de answer/bridge, mensaje cerrado, cola silenciosa, audio/mute/DTMF/hangup, pérdidas y sustitución de credencial. Falta prueba independiente del carrier.
+
+**Límite de diseño:** el runtime es un proceso con memoria; no tiene SQL/outbox/HA ni recuperación de eventos/llamadas tras reinicio. Un ACK no es recepción durable. Reiniciar ante una llamada incierta pierde el ledger y exige reconciliar cuenta antes de rearmar. Las guardas de duración/acciones no garantizan factura: piernas, cola, anuncios, renta, redondeo e impuestos requieren medición/cotización y presupuesto autorizado posterior.
+
+El scope implementado es una referencia ejecutable P1, no el cierre de P1 ni de sus 8–12 engineer-weeks. Las 51–76 EW del roadmap permanecen como estimación del plan; la evidencia de diseño publicada no sustituye la aceptación de estas integraciones.

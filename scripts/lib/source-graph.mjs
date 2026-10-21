@@ -211,6 +211,26 @@ export async function entries(root = kitRoot) {
       "src/components/integrations/search-bridge-command.tsx",
       "registry:block",
     ],
+    [
+      "communications-demo",
+      "src/lib/communications/demo-adapter.ts",
+      "registry:lib",
+    ],
+    [
+      "communications-live",
+      "src/lib/communications/live-adapter.ts",
+      "registry:lib",
+    ],
+    [
+      "twilio-browser-voice",
+      "src/lib/communications/twilio-browser.ts",
+      "registry:lib",
+    ],
+    [
+      "telnyx-browser-voice",
+      "src/lib/communications/telnyx-browser.ts",
+      "registry:lib",
+    ],
   ])
     result[name] = { name, type, file };
   return result;

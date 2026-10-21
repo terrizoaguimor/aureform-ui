@@ -80,8 +80,8 @@ export const documentationArticles: readonly DocumentationArticle[] = [
     slug: "registry",
     title: { en: "shadcn registry", es: "Registry de shadcn" },
     description: {
-      en: "Install the 119 source entries, their dependencies and portable assets.",
-      es: "Instala las 119 entradas, sus dependencias y los recursos portables.",
+      en: "Install source entries with their dependencies and portable assets.",
+      es: "Instala las entradas de código con sus dependencias y recursos portables.",
     },
     group: group.start,
     files: { en: "docs/registry-compatibility.md" },
@@ -153,8 +153,8 @@ export const documentationArticles: readonly DocumentationArticle[] = [
       es: "docs/saas-operations.es.md",
     },
     retainedScope: {
-      en: "This contract retains its 1.2 integration checkpoint and test scope. Its SaaS APIs remain available; the current registry contains 119 entries. Newer commerce and authentication contracts are documented separately.",
-      es: "Este contrato conserva su checkpoint 1.2 de integración y pruebas. Sus APIs SaaS siguen disponibles; el registry actual contiene 119 entradas. Los contratos posteriores de comercio y autenticación tienen capítulos propios.",
+      en: "This contract retains its 1.2 integration checkpoint and test scope. Its SaaS APIs remain available. Newer commerce, authentication and communications contracts are documented separately.",
+      es: "Este contrato conserva su checkpoint 1.2 de integración y pruebas. Sus APIs SaaS siguen disponibles. Los contratos posteriores de comercio, autenticación y comunicaciones tienen capítulos propios.",
     },
   },
   {
@@ -191,6 +191,16 @@ export const documentationArticles: readonly DocumentationArticle[] = [
     files: websiteFiles("maps"),
   },
   {
+    slug: "communications",
+    title: { en: "Softphone & inbound voice", es: "Softphone y voz entrante" },
+    description: {
+      en: "Use the call workspace, local lab, typed adapters and dual-provider backend reference.",
+      es: "Usa el espacio de llamadas, el laboratorio local, los adaptadores tipados y el backend de referencia para ambos proveedores.",
+    },
+    group: group.workflows,
+    files: websiteFiles("communications"),
+  },
+  {
     slug: "adapters",
     title: { en: "Integration adapters", es: "Adaptadores de integración" },
     description: {
@@ -205,7 +215,10 @@ export const documentationArticles: readonly DocumentationArticle[] = [
   },
   {
     slug: "integrations",
-    title: { en: "Ready-to-connect integrations", es: "Integraciones listas para conectar" },
+    title: {
+      en: "Ready-to-connect integrations",
+      es: "Integraciones listas para conectar",
+    },
     description: {
       en: "65 frontend recipes, complete workbenches, functional mocks and injectable transports.",
       es: "65 recetas de frontend, interfaces completas, mocks funcionales y transportes inyectables.",

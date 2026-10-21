@@ -6,7 +6,7 @@ Browse the [demo](https://aureformui.com/en/dashboard/) and [documentation](http
 
 ## Understand what is included
 
-The application demo contains 69 original views, an integration hub and 65 provider recipe pages. The recipes share 17 workflow families and offer 86 provider choices. Its 44 core component families underpin 127 registry entries, including composed blocks, templates, providers and effects. Six palettes work in both light and dark themes; charts support 13 kinds. English and Spanish are included throughout the demo.
+The application demo contains 70 core views, an integration hub and 65 provider recipe pages. The recipes share 17 workflow families and offer 86 provider choices. Its 44 core component families underpin 134 registry entries, including composed blocks, templates, providers and effects. Six palettes work in both light and dark themes; charts support 13 kinds. English and Spanish are included throughout the demo.
 
 The 32 supplied generated images depict fictional people, organizations, products and editorial scenes. They are local assets with recorded prompts, alternative text and original masters. Running the kit requires no image generation service.
 

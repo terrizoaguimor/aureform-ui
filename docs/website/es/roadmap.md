@@ -4,7 +4,7 @@ Esta página distingue las capacidades de frontend entregadas de las propuestas 
 
 ## Incluido en el kit actual
 
-La aplicación actual tiene 69 vistas originales, un hub y 65 páginas de recetas de integración, 44 familias principales, 127 entradas del registro, seis paletas y 13 tipos de gráficos, con inglés/español y temas claro/oscuro.
+La aplicación actual tiene 70 vistas principales, un hub y 65 páginas de recetas de integración, 44 familias principales, 134 entradas del registro, seis paletas y 13 tipos de gráficos, con inglés/español y temas claro/oscuro.
 
 - Componentes editables, ejemplos completos, instalación local, registro, preview/diff y recibos de instalación.
 - Estudio de apariencia, presets locales, exportaciones JSON/CSS/React, movimiento acotado y seis efectos reutilizables.

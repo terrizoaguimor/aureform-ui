@@ -1,0 +1,465 @@
+{
+  "UTC": "2026-10-21T23:19:48.000Z",
+  "status": "PASS",
+  "execution": "Only parserless template code evaluated with synthetic selectedInstance; no React/provider/network execution.",
+  "templates": [
+    {
+      "name": "Softphone",
+      "file": ".figma/Softphone.figma.ts",
+      "sha256": "124aacbe9fb56b7aa1ac5117c81a632c9abc8eb2b866939cc86479eef2f102b6",
+      "syntax": "PASS"
+    },
+    {
+      "name": "SoftphoneWorkspace",
+      "file": ".figma/SoftphoneWorkspace.figma.ts",
+      "sha256": "6cee8e6a1c1ff14c6c5d1e39088651a8fbf27d44e9a69acb40de5cf07a41fe7a",
+      "syntax": "PASS"
+    }
+  ],
+  "sourceManifestVerified": [
+    {
+      "file": "src/components/blocks/softphone.tsx",
+      "sha256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42",
+      "currentSHA256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/components/blocks/softphone-workspace.tsx",
+      "sha256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139",
+      "currentSHA256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/components/templates/softphone-template.tsx",
+      "sha256": "bef464d5261a63120f9ecb03adc0b4d03caa674bbc596c76943e33fe12d97b18",
+      "currentSHA256": "bef464d5261a63120f9ecb03adc0b4d03caa674bbc596c76943e33fe12d97b18",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/hooks/use-softphone-audio.ts",
+      "sha256": "48d2459aa0d435f55dafd7b1b9c518caec641361b83c5b99201fcbc3777a3b59",
+      "currentSHA256": "48d2459aa0d435f55dafd7b1b9c518caec641361b83c5b99201fcbc3777a3b59",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/components/blocks/dashboard-shell.tsx",
+      "sha256": "de13280392c8a47a0fcca8656ba4edda68e5d3729c098d4f6c9ee6b99f59eff7",
+      "currentSHA256": "de13280392c8a47a0fcca8656ba4edda68e5d3729c098d4f6c9ee6b99f59eff7",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/components/templates/landing.tsx",
+      "sha256": "8935cc8e810d3c17eaacb76aa13bfb343d5480c88a2f0fec9c9a1ce8a6bfed1c",
+      "currentSHA256": "8935cc8e810d3c17eaacb76aa13bfb343d5480c88a2f0fec9c9a1ce8a6bfed1c",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/components/communications/provider-logo.tsx",
+      "sha256": "5015629a3070479ce46801cbf48d946acc17f1f0b6742a3713b3a176bd5f0edb",
+      "currentSHA256": "5015629a3070479ce46801cbf48d946acc17f1f0b6742a3713b3a176bd5f0edb",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/lib/communications/contracts.ts",
+      "sha256": "31df71c1b4d7d931f9f632216888c5d76833741994b10ab49110efe0c5256bee",
+      "currentSHA256": "31df71c1b4d7d931f9f632216888c5d76833741994b10ab49110efe0c5256bee",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/lib/communications/business-hours.ts",
+      "sha256": "03f26a7751579946c100a17cbb239e7b0dc493ba82931a4d1a337a38d8b24c1b",
+      "currentSHA256": "03f26a7751579946c100a17cbb239e7b0dc493ba82931a4d1a337a38d8b24c1b",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/lib/communications/fixtures.ts",
+      "sha256": "8cbd5a0ca3ca9755a4b72426fe3e32b8dc4d77e3804dfddbbb6bb9fb42162715",
+      "currentSHA256": "8cbd5a0ca3ca9755a4b72426fe3e32b8dc4d77e3804dfddbbb6bb9fb42162715",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/lib/communications/demo-adapter.ts",
+      "sha256": "cccfc0236c912206782ba94a8dd1a205e45cfc47dcadbdabc723b4b213fcb440",
+      "currentSHA256": "cccfc0236c912206782ba94a8dd1a205e45cfc47dcadbdabc723b4b213fcb440",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/lib/communications/live-adapter.ts",
+      "sha256": "0ef8d6564df8127651f926bc73a5c5b04f779661440187e174c7934f7bb2fe98",
+      "currentSHA256": "0ef8d6564df8127651f926bc73a5c5b04f779661440187e174c7934f7bb2fe98",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/lib/communications/demo-session.ts",
+      "sha256": "12f106db51bb11e7ca73990227b34094d31670de086a10ba743604c255fba6c0",
+      "currentSHA256": "12f106db51bb11e7ca73990227b34094d31670de086a10ba743604c255fba6c0",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/lib/communications/twilio-browser.ts",
+      "sha256": "db2ff59a67dd61ebffe32830d9d576f6eba3472906340605761c0604f6cc68eb",
+      "currentSHA256": "db2ff59a67dd61ebffe32830d9d576f6eba3472906340605761c0604f6cc68eb",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/lib/communications/telnyx-browser.ts",
+      "sha256": "09375ed940861c32329f9694559f9763d5f815bde9b852205987da76450f72f2",
+      "currentSHA256": "09375ed940861c32329f9694559f9763d5f815bde9b852205987da76450f72f2",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "src/lib/communications/brands.ts",
+      "sha256": "58efb1aa569a90747896ac44cf065b6ad47f1c602ded096b244c0fa8aaa96731",
+      "currentSHA256": "58efb1aa569a90747896ac44cf065b6ad47f1c602ded096b244c0fa8aaa96731",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "public/assets/communications/twilio.svg",
+      "sha256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068",
+      "currentSHA256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "public/assets/communications/telnyx.svg",
+      "sha256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e",
+      "currentSHA256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "public/assets/communications/README.md",
+      "sha256": "ac7564f39712ac056c5d8e38433e7852a2a9091e272d0a3fbcf90c0ebec3f76a",
+      "currentSHA256": "ac7564f39712ac056c5d8e38433e7852a2a9091e272d0a3fbcf90c0ebec3f76a",
+      "recordedSourceMatches": true
+    },
+    {
+      "file": "public/assets/communications/manifest.json",
+      "sha256": "ecc6909ff4e0360cdf905d89118bf14514fe5a11e3235764d934215f571f4a5d",
+      "currentSHA256": "ecc6909ff4e0360cdf905d89118bf14514fe5a11e3235764d934215f571f4a5d",
+      "recordedSourceMatches": true
+    }
+  ],
+  "actualSourcePropKeys": {
+    "Softphone": [
+      "state",
+      "contact",
+      "metadata",
+      "seconds",
+      "muted",
+      "pending",
+      "busy",
+      "holdAvailable",
+      "disabled",
+      "labels",
+      "onAccept",
+      "onDecline",
+      "onHangup",
+      "onMute",
+      "onHold",
+      "onReconnect",
+      "onTestDevice",
+      "className"
+    ],
+    "SoftphoneWorkspace": [
+      "adapter",
+      "defaultProvider",
+      "onDemoProviderChange",
+      "className"
+    ]
+  },
+  "actualStateUnion": [
+    "idle",
+    "ringing",
+    "active",
+    "held",
+    "recovering",
+    "permission-denied",
+    "error"
+  ],
+  "syntheticCases": [
+    {
+      "name": "panel-idle",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"idle\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={0} pending={false} />"
+    },
+    {
+      "name": "panel-ringing",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"ringing\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={0} pending={false} />"
+    },
+    {
+      "name": "panel-active",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"active\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={0} pending={false} />"
+    },
+    {
+      "name": "panel-held",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"held\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={0} pending={false} />"
+    },
+    {
+      "name": "panel-recovering",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"recovering\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={0} pending={false} />"
+    },
+    {
+      "name": "panel-permission-denied",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"permission-denied\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={0} pending={false} />"
+    },
+    {
+      "name": "panel-error",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"error\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={0} pending={false} />"
+    },
+    {
+      "name": "panel-ringing-pending",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"ringing\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={0} pending={true} labels={{ ringing: \"Connecting call\" }} />"
+    },
+    {
+      "name": "workspace-desktop-disconnected-Twilio",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"twilio\" />"
+    },
+    {
+      "name": "workspace-desktop-disconnected-Telnyx",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"telnyx\" />"
+    },
+    {
+      "name": "workspace-desktop-active-Twilio",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"twilio\" />"
+    },
+    {
+      "name": "workspace-desktop-active-Telnyx",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"telnyx\" />"
+    },
+    {
+      "name": "workspace-desktop-permission-Twilio",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"twilio\" />"
+    },
+    {
+      "name": "workspace-desktop-permission-Telnyx",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"telnyx\" />"
+    },
+    {
+      "name": "workspace-mobile-disconnected-Twilio",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"twilio\" />"
+    },
+    {
+      "name": "workspace-mobile-disconnected-Telnyx",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"telnyx\" />"
+    },
+    {
+      "name": "workspace-mobile-active-Twilio",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"twilio\" />"
+    },
+    {
+      "name": "workspace-mobile-active-Telnyx",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"telnyx\" />"
+    },
+    {
+      "name": "workspace-mobile-permission-Twilio",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"twilio\" />"
+    },
+    {
+      "name": "workspace-mobile-permission-Telnyx",
+      "template": "SoftphoneWorkspace",
+      "readPropertyKeys": [
+        "Voice provider / Twilio::Label#15:11",
+        "Viewport",
+        "Activity"
+      ],
+      "emittedCode": "import { SoftphoneWorkspace } from \"@/components/blocks/softphone-workspace\";\n<SoftphoneWorkspace defaultProvider=\"telnyx\" />"
+    },
+    {
+      "name": "duration-123",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"active\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={123} pending={false} />"
+    },
+    {
+      "name": "duration-3723",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"active\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={3723} pending={false} />"
+    },
+    {
+      "name": "duration-0",
+      "template": "Softphone",
+      "readPropertyKeys": [
+        "State",
+        "Pending",
+        "Contact#563:0",
+        "Metadata#563:8",
+        "Duration#563:16"
+      ],
+      "emittedCode": "import { Softphone } from \"@/components/blocks/softphone\";\n<Softphone state=\"active\" contact={\"Your call workspace\"} metadata={\"Customer support · inbound calls\"} seconds={0} pending={false} />"
+    }
+  ],
+  "emittedCases": 23,
+  "strictCompile": {
+    "strict": true,
+    "noEmit": true,
+    "sourceCheckout": ".",
+    "sourceModuleFiles": [
+      {
+        "file": "src/components/blocks/softphone.tsx",
+        "sha256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42"
+      },
+      {
+        "file": "src/components/blocks/softphone-workspace.tsx",
+        "sha256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139"
+      }
+    ],
+    "errors": []
+  },
+  "guardTests": [
+    {
+      "name": "missing native Select",
+      "rejected": true
+    },
+    {
+      "name": "unsupported provider label",
+      "rejected": true
+    }
+  ],
+  "limitations": [
+    "Local parserless artifacts, unpublished and unregistered.",
+    "Synthetic template execution and actual-source compile do not prove execution inside the hosted Code Connect service."
+  ],
+  "producer": "design/scripts/verify-softphone-code-connect.mjs",
+  "reproduce": "pnpm verify:communications-design"
+}

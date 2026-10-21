@@ -2,9 +2,9 @@
 
 Generado desde catálogo y dispatcher reales, state actual, baseline nativo 1.2 conservado y ledger independiente de imágenes 1.2.1. [Datos completos](coverage.json).
 
-135 vistas (134 rutas de suite + landing) · 44 familias y ejemplos completos · 27 archivos / 37 exports de bloques · 6 layouts · 13 gráficos · 6 paletas · 6 efectos reutilizables · 127 elementos de registry · 24 artículos de documentación · 92 templates locales de Code Connect.
+136 vistas (135 rutas de suite + landing) · 44 familias y ejemplos completos · 29 archivos / 39 exports de bloques · 6 layouts · 13 gráficos · 6 paletas · 6 efectos reutilizables · 134 elementos de registry · 25 artículos de documentación · 92 templates locales de Code Connect.
 
-Source verificado por el catálogo TypeScript restringido, dispatcher (incluidos imports dinámicos literales) y grafo de imports. 69 vistas conservan un ID nativo histórico; 66 rutas son solo código; 0 rutas nativas pendientes del owner. El scope Figma congelado conserva 69 raíces y sus recibos originales. Estos conteos describen source e IDs, sin certificar comportamiento de navegador ni SDK de proveedores. El [recibo runtime 1.2](qa-runtime-1.2.json) y sus [checks al freeze](release-checklist-1.2.md#recorded-verification-at-source-freeze) son baselines históricos: los resultados 184/74 y sus demás scopes no se reetiquetan como pruebas de 1.5.0. La [verificación 1.1](verification.es.md) mantiene su alcance histórico.
+Source verificado por el catálogo TypeScript restringido, dispatcher (incluidos imports dinámicos literales) y grafo de imports. 70 vistas tienen un ID nativo registrado; 66 rutas son solo código; 0 rutas nativas pendientes del owner. El scope Figma congelado conserva 69 raíces y sus recibos originales. El [suplemento de Softphone](../design/figma/softphone-native-source-2026-10-21.json) registra su fuente nueva y 2 templates locales adicionales por separado. Estos conteos describen source e IDs, sin certificar comportamiento de navegador ni SDK de proveedores. El [recibo runtime 1.2](qa-runtime-1.2.json) y sus [checks al freeze](release-checklist-1.2.md#recorded-verification-at-source-freeze) son baselines históricos: los resultados 184/74 y sus demás scopes no se reetiquetan como pruebas de 1.5.0. La [verificación 1.1](verification.es.md) mantiene su alcance histórico.
 
 Baseline nativo 1.2 conservado: PASS compuesto para 69 raíces (63 heredadas del checkpoint 1.1 y 6 rutas SaaS revisadas en Light/Dark), ligado al SHA256 `8be9d3c1c46565296bd90c43f086b3d7159889c48167ab48d1d5f88e415b1963` de [state-1.2-final](../.figma/history/state-1.2-final.json). [Informe inmutable](../.figma/native-audit-1.2.json). No certifica una revisión visual nueva de 1.5.0 ni de las 66 rutas solo código.
 
@@ -26,7 +26,7 @@ Checkpoint nativo de imágenes 1.2.1 conservado: PASS acotado al scope `32 nativ
 | `.figma/proofs/images-1.2.1/products-native.png` | `f842ab589d12dfdd0c3ef30f25c50e0b1766d3808d9d73baecd0fc82bedae784` |
 | `.figma/proofs/images-1.2.1/media-native-revised.png` | `494499d9a83762a38ae66bb20827451986e2f980cffdd2448183ea2667e58ec1` |
 
-Code Connect local conservado, checkpoint 1.4.0: 92 templates. [Última validación registrada](../.figma/code-connect/validation/validation-summary.json). Este registro no coincide con todos los snapshots del source actual; falta una nueva comprobación local.
+Code Connect local: los 92 templates del checkpoint 1.4.0 se conservaron sin modificar y se comprobaron contra el source actual 1.5.0+unreleased-softphone: 1646 evaluaciones, 556 ejemplos tipados y 0 diagnósticos. [Resumen de validación](../.figma/code-connect/validation/validation-summary.json). La prueba utiliza un runtime sintético local; no acredita ejecución en Figma ni publicación cloud.
 
 Los nuevos bloques SaaS se asocian directamente por source/export e IDs del sidecar, aunque `codeConnect` sea null. No se exige cloud ni se generan templates nuevos: biblioteca sin publicar / alcance Professional. El checkpoint original de mappings 1.1 permanece archivado.
 
@@ -136,6 +136,7 @@ Las etiquetas de entrega son categorías de source; el inventario actual usa la 
 | files | 1.2 | [FilesTemplate](../src/components/templates/files-support.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5363) |
 | support | 1.2 | [SupportTemplate](../src/components/templates/files-support.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-5707) |
 | maps | 1.4 | [MapsTemplate](../src/components/templates/map-invoice.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=45-6076) |
+| softphone | 1.5 | [SoftphoneTemplate](../src/components/templates/softphone-template.tsx) | [Light](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=574-1984) / [Dark](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=574-2368) |
 | logistics | 1.2 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-1923) |
 | finance | 1.3 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-2310) |
 | stocks | 1.3 | [DashboardTemplate](../src/components/templates/dashboard.tsx) | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=39-2702) |
@@ -208,6 +209,8 @@ Las etiquetas de entrega son categorías de source; el inventario actual usa la 
 | RouteMap | [Fuente](../src/components/blocks/route-map.tsx) | `route-map` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=31-1609) | [Template](../.figma/code-connect/RouteMap.figma.ts) |
 | SocialAuth | [Fuente](../src/components/blocks/social-auth.tsx) | `social-auth` | Helper de source | Sin template local; asociación directa si consta ID |
 | SocialProviderLogo | [Fuente](../src/components/blocks/social-auth.tsx) | `social-auth` | Helper de source | Sin template local; asociación directa si consta ID |
+| SoftphoneWorkspace | [Fuente](../src/components/blocks/softphone-workspace.tsx) | `softphone-workspace` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=570-227) | [Template](../.figma/SoftphoneWorkspace.figma.ts) |
+| Softphone | [Fuente](../src/components/blocks/softphone.tsx) | `softphone` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=563-115) | [Template](../.figma/Softphone.figma.ts) |
 | TableToolbar | [Fuente](../src/components/blocks/table-toolbar.tsx) | `table-toolbar` | Helper de source | Sin template local; asociación directa si consta ID |
 | WorkspaceStatus | [Fuente](../src/components/blocks/workspace-status.tsx) | `workspace-status` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=225-1615) | Sin template local; asociación directa si consta ID |
 | CustomerDataTable | [Fuente](../src/components/blocks/customer-table.tsx) | `customer-data-table` | [Abrir](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N/Aureform-UI?node-id=17-18) | [Template](../.figma/code-connect/CustomerDataTable.figma.ts) |

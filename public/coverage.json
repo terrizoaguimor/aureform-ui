@@ -4,13 +4,13 @@
   "status": "source-inventory-with-retained-native-checkpoints",
   "sourceInventory": {
     "version": "1.5.0",
-    "suiteRoutes": 134,
-    "views": 135,
+    "suiteRoutes": 135,
+    "views": 136,
     "routeDataEvaluation": "restricted-TypeScript-data-AST",
     "catalogInputs": [
       {
         "file": "src/lib/catalog.ts",
-        "sha256": "91254390aa554c6a34517731f6a679b0624cb10d16262bf4f9d9b4fd6152329a"
+        "sha256": "fbaa0093c2d3102334af3ee8d817993e4dd2b05c96847c626705360eeb2e3386"
       },
       {
         "file": "src/lib/integrations/route-index.ts",
@@ -23,7 +23,7 @@
       "1.2": 12,
       "1.3": 15,
       "1.4": 11,
-      "1.5": 66
+      "1.5": 67
     },
     "sourceOnlyRoutes": [
       "integrations",
@@ -96,8 +96,8 @@
     "dispatcher": "src/components/app-page.tsx",
     "documentation": {
       "file": "src/lib/documentation.ts",
-      "sha256": "6da7df0a3f49a19498bbd081b4d99b3f775bfa0f1a63e7b2f0fff8d6dbcd2fe7",
-      "articleCount": 24
+      "sha256": "41ebb0cf6f1620bd0ffb3c5195b271cf217cc00d57fd87f718a245fbe3f6c82c",
+      "articleCount": 25
     },
     "browserRuntimeCertified": false,
     "nativeProviderCertified": false
@@ -115,6 +115,7 @@
     ".figma/native-generated-images-1.2.1.json",
     ".figma/native-audit-1.2.json",
     ".figma/native-saas-library-1.2.json",
+    "design/figma/softphone-native-source-2026-10-21.json",
     "scripts/lib/source-graph.mjs",
     "src/lib/appearance.ts",
     "src/components/effects/index.ts",
@@ -123,23 +124,25 @@
     "scripts/lib/appearance-tokens.mjs"
   ],
   "summary": {
-    "suiteRoutes": 134,
+    "suiteRoutes": 135,
     "landingPages": 1,
-    "views": 135,
+    "views": 136,
     "componentFamilies": 44,
     "completeExamples": 44,
-    "blockFiles": 27,
-    "blockExports": 37,
+    "blockFiles": 29,
+    "blockExports": 39,
     "shellLayouts": 6,
     "chartFamilies": 13,
-    "registryItems": 127,
-    "documentationArticles": 24,
+    "registryItems": 134,
+    "documentationArticles": 25,
     "codeConnectTemplates": 92,
-    "mappedNativeViews": 69,
+    "supplementalCodeConnectTemplates": 2,
+    "mappedNativeViews": 70,
     "pendingNativeViews": 0,
     "sourceOnlyViews": 66,
     "retainedNativeRootCount": 69,
-    "directNativeBlockExports": 8,
+    "supplementalNativeViews": 1,
+    "directNativeBlockExports": 10,
     "saasNativeViews": 6,
     "saasNativeModeRoots": 12,
     "saasNativeVariants": 68,
@@ -1067,6 +1070,15 @@
       "codeConnect": ".figma/code-connect/MagneticButton.figma.ts"
     }
   ],
+  "nativeSourceSupplements": [
+    {
+      "route": "softphone",
+      "metadata": "design/figma/softphone-native-source-2026-10-21.json",
+      "scope": "Implemented Softphone frontend source association, separate from the frozen69route roots and92localtemplates. Selected source readback only; no exhaustive pixel parity or carrier acceptance.",
+      "certifiesFullRouteAudit": false,
+      "cloudRegistered": false
+    }
+  ],
   "nativeHandoff": {
     "scope": "retained-native-checkpoints-only",
     "certifiesCurrentVersion": false,
@@ -1167,8 +1179,8 @@
     "pendingReusableMappings": [],
     "codeConnectValidation": "passed-local-smoke",
     "codeConnectCheckpointVersion": "1.4.0",
-    "codeConnectSourceValidationVersion": "1.4.0",
-    "codeConnectSourceValidationCurrent": false,
+    "codeConnectSourceValidationVersion": "1.5.0+unreleased-softphone",
+    "codeConnectSourceValidationCurrent": true,
     "codeConnectCloudRequired": false,
     "newCodeConnectTemplatesRequired": false,
     "ownerQa": "retained-scoped-native-evidence-matches",
@@ -3702,6 +3714,36 @@
       }
     },
     {
+      "path": "softphone",
+      "en": "Softphone",
+      "es": "Softphone",
+      "group": "application",
+      "delivery": "1.5",
+      "source": {
+        "component": "SoftphoneTemplate",
+        "file": "src/components/templates/softphone-template.tsx"
+      },
+      "urls": {
+        "en": "/en/softphone/",
+        "es": "/es/softphone/"
+      },
+      "figma": {
+        "node": "574:2368",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=574-2368",
+        "editable": true,
+        "status": "mapped-native-id",
+        "nodes": {
+          "Light": "574:1984",
+          "Dark": "574:2368"
+        },
+        "modeUrls": {
+          "Light": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=574-1984",
+          "Dark": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=574-2368"
+        },
+        "metadata": "design/figma/softphone-native-source-2026-10-21.json"
+      }
+    },
+    {
       "path": "logistics",
       "en": "Logistics",
       "es": "Logística",
@@ -6078,6 +6120,119 @@
       "codeConnect": null
     },
     {
+      "export": "SoftphoneWorkspace",
+      "source": "src/components/blocks/softphone-workspace.tsx",
+      "registry": "softphone-workspace",
+      "figma": {
+        "node": "570:227",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=570-227",
+        "setId": "570:2797",
+        "axes": {
+          "Viewport": [
+            "desktop",
+            "mobile"
+          ],
+          "Activity": [
+            "disconnected",
+            "active",
+            "permission"
+          ]
+        },
+        "nativeName": "SoftphoneWorkspace",
+        "status": "mapped-direct-native-id",
+        "metadata": "design/figma/softphone-native-source-2026-10-21.json",
+        "associations": [
+          {
+            "nativeName": "SoftphoneWorkspace",
+            "source": "src/components/blocks/softphone-workspace.tsx",
+            "export": "SoftphoneWorkspace",
+            "setId": "570:2797",
+            "defaultId": "570:227",
+            "axes": {
+              "Viewport": [
+                "desktop",
+                "mobile"
+              ],
+              "Activity": [
+                "disconnected",
+                "active",
+                "permission"
+              ]
+            },
+            "sparseVariantCount": 6,
+            "template": ".figma/SoftphoneWorkspace.figma.ts",
+            "metadata": "design/figma/softphone-native-source-2026-10-21.json",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=570-227"
+          }
+        ]
+      },
+      "codeConnect": ".figma/SoftphoneWorkspace.figma.ts"
+    },
+    {
+      "export": "Softphone",
+      "source": "src/components/blocks/softphone.tsx",
+      "registry": "softphone",
+      "figma": {
+        "node": "563:115",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=563-115",
+        "setId": "563:377",
+        "axes": {
+          "State": [
+            "idle",
+            "ringing",
+            "active",
+            "held",
+            "recovering",
+            "permission-denied",
+            "error"
+          ],
+          "Pending": [
+            "false",
+            "true"
+          ]
+        },
+        "nativeName": "Softphone",
+        "status": "mapped-direct-native-id",
+        "metadata": "design/figma/softphone-native-source-2026-10-21.json",
+        "associations": [
+          {
+            "nativeName": "Softphone",
+            "source": "src/components/blocks/softphone.tsx",
+            "export": "Softphone",
+            "setId": "563:377",
+            "defaultId": "563:115",
+            "axes": {
+              "State": [
+                "idle",
+                "ringing",
+                "active",
+                "held",
+                "recovering",
+                "permission-denied",
+                "error"
+              ],
+              "Pending": [
+                "false",
+                "true"
+              ]
+            },
+            "sparseVariantCount": 8,
+            "template": ".figma/Softphone.figma.ts",
+            "metadata": "design/figma/softphone-native-source-2026-10-21.json",
+            "nativePropertyKeys": [
+              "Contact#563:0",
+              "Metadata#563:8",
+              "Duration#563:16",
+              "State",
+              "Pending"
+            ],
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=563-115"
+          }
+        ]
+      },
+      "codeConnect": ".figma/Softphone.figma.ts"
+    },
+    {
       "export": "TableToolbar",
       "source": "src/components/blocks/table-toolbar.tsx",
       "registry": "table-toolbar",
@@ -6751,6 +6906,20 @@
       "assets": 0
     },
     {
+      "name": "softphone-workspace",
+      "type": "registry:block",
+      "file": "src/components/blocks/softphone-workspace.tsx",
+      "sourceFiles": 26,
+      "assets": 4
+    },
+    {
+      "name": "softphone",
+      "type": "registry:block",
+      "file": "src/components/blocks/softphone.tsx",
+      "sourceFiles": 6,
+      "assets": 0
+    },
+    {
       "name": "table-toolbar",
       "type": "registry:block",
       "file": "src/components/blocks/table-toolbar.tsx",
@@ -6922,8 +7091,15 @@
       "name": "settings",
       "type": "registry:block",
       "file": "src/components/templates/settings.tsx",
-      "sourceFiles": 152,
-      "assets": 26
+      "sourceFiles": 154,
+      "assets": 148
+    },
+    {
+      "name": "softphone-template",
+      "type": "registry:block",
+      "file": "src/components/templates/softphone-template.tsx",
+      "sourceFiles": 28,
+      "assets": 4
     },
     {
       "name": "work-board",
@@ -7034,8 +7210,8 @@
       "name": "integration-hub",
       "type": "registry:block",
       "file": "src/components/integrations/integration-hub.tsx",
-      "sourceFiles": 134,
-      "assets": 26
+      "sourceFiles": 136,
+      "assets": 148
     },
     {
       "name": "identity-integration-panel",
@@ -7161,6 +7337,34 @@
       "type": "registry:block",
       "file": "src/components/integrations/search-bridge-command.tsx",
       "sourceFiles": 13,
+      "assets": 0
+    },
+    {
+      "name": "communications-demo",
+      "type": "registry:lib",
+      "file": "src/lib/communications/demo-adapter.ts",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "communications-live",
+      "type": "registry:lib",
+      "file": "src/lib/communications/live-adapter.ts",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "twilio-browser-voice",
+      "type": "registry:lib",
+      "file": "src/lib/communications/twilio-browser.ts",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "telnyx-browser-voice",
+      "type": "registry:lib",
+      "file": "src/lib/communications/telnyx-browser.ts",
+      "sourceFiles": 3,
       "assets": 0
     }
   ],

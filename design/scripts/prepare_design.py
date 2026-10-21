@@ -179,8 +179,11 @@ def main() -> None:
             files.extend(p for p in (DESIGN / directory).rglob("*") if p.is_file())
         files.extend(ROOT / item["file"] for item in proofs)
         files.extend(sorted((ROOT / ".figma/code-connect").glob("*.figma.ts")))
+        files.extend(sorted((ROOT / ".figma").glob("Softphone*.figma.ts")))
         files.extend(sorted((ROOT / "docs/communications").glob("*.md")))
+        files.extend(sorted((ROOT / "docs/communications").glob("*.json")))
         files.extend(sorted((ROOT / "public/assets/integrations").glob("*")))
+        files.extend(sorted((ROOT / "public/assets/communications").glob("*")))
         files.extend(sorted((DESIGN / "assets/provider-brands").glob("*")))
         files.extend([
             ROOT / ".figma/code-connect/figma.config.json",

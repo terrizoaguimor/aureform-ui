@@ -23,7 +23,9 @@ Start with the [design bundle](downloads/aureform-design-snapshots.zip), or clon
 | [Dated artwork and source proofs](proofs/2026-10-21/manifest.json) | Additional actual artifacts, with hashes and explicit distinctions between native Figma exports and offline artwork composites. |
 | [Open-source design change record](release-1.3.0.json) | The separately recorded cover and licensing changes; earlier audit evidence remains historical. |
 | [Communications research and source recovery](reports/communications-2026-10-21.md) | Proposed Communications views and RFC boards, plus native recovery of 1.4/1.5 application and integration sources, with explicit acceptance limits. |
+| [Softphone implementation source](reports/softphone-native-source-2026-10-21.md) | A separate editable workspace, call states, dialogs, Light/Dark and mobile compositions, with two additional local Code Connect templates and current source hashes. |
 | [Original integration logos](../public/assets/integrations/README.md) | 79 brand identities for 86 provider choices, including the original artwork, attribution and the two declared raster originals. |
+| [Communications provider artwork](../public/assets/communications/README.md) | Original Twilio and Telnyx artwork used by the Softphone, with separate attribution and usage terms. |
 
 The SVGs contain editable vector geometry and embedded photos. Their text is outlined. Importing them does **not** recreate Figma auto-layout, text properties, component variants or variable bindings. The rebuild plugin creates native editable text and starter components separately; its documented scope is smaller than the complete original Figma library.
 
@@ -32,6 +34,8 @@ A native `.fig` download is **not included**. The available connector does not e
 The Code Connect files are **local and unpublished**. Their source is in [`.figma/code-connect`](../.figma/code-connect); publishing this repository does not register them in Figma or create a live Dev Mode connection. Imported or rebuilt components receive new IDs and need their own mappings.
 
 The [1.4 application expansion](../docs/application-integrations.md) adds source blocks and actual browser screenshots. The [2026-10-21 recovery](reports/communications-2026-10-21.md) adds native product, commerce, maps, social-auth and 1.5 integration sources to the same Figma file. Its dated source map separates native creation, selected visual reviews and browser parity that remains unverified; the earlier checkpoints keep their historical scope.
+
+The [Softphone source supplement](figma/softphone-native-source-2026-10-21.json) records the implemented frontend separately from the earlier Communications proposals. The frozen route map and 92-template checkpoint retain their original scope. The two Softphone templates are local, unpublished additions; [frontend and backend validation](../docs/communications/VALIDATION.md) does not certify real carrier audio.
 
 Refresh the derived indexes and the download from a complete checkout:
 

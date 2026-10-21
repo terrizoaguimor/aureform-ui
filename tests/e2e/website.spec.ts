@@ -400,7 +400,7 @@ for (const locale of locales) {
       name: text.sections,
       exact: true,
     });
-    await expect(guides.getByRole("link")).toHaveCount(24);
+    await expect(guides.getByRole("link")).toHaveCount(25);
     await guides
       .getByRole("link", { name: text.installation, exact: true })
       .click();
@@ -797,7 +797,7 @@ test("Spanish touch navigation contains focus, restores the trigger on Escape an
       exact: true,
     });
     await expect(drawer).toBeVisible();
-    await expect(drawer.getByRole("link")).toHaveCount(24);
+    await expect(drawer.getByRole("link")).toHaveCount(25);
     await page.keyboard.press("Tab");
     expect(
       await drawer.evaluate((element) =>

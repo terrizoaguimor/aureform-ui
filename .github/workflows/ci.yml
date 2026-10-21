@@ -30,6 +30,11 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm test
+      - run: npm ci --prefix examples/communications-backend --ignore-scripts
+      - run: pnpm verify:communications-backend
       - run: pnpm verify:examples
+      - run: pnpm verify:communications-design
       - run: pnpm build
       - run: pnpm verify:pages
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm verify:communications-ui

@@ -4,7 +4,7 @@ Use this page to distinguish delivered frontend capabilities from research propo
 
 ## Delivered in the current kit
 
-The current application has 69 original views, a hub and 65 integration recipe pages, 44 core component families, 127 registry entries, six palettes and 13 chart kinds, with English/Spanish and light/dark support.
+The current application has 70 core views, a hub and 65 integration recipe pages, 44 core component families, 134 registry entries, six palettes and 13 chart kinds, with English/Spanish and light/dark support.
 
 - Editable components, complete examples, local source installation, registry delivery, preview/diff and installation receipts.
 - Appearance Studio, local presets, JSON/CSS/React exports, scoped motion and six reusable effects.

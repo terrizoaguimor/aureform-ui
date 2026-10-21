@@ -67,6 +67,10 @@ Google, GitHub, Microsoft and Stripe names and marks belong to their respective 
 
 Integration provider logos are original third-party brand assets used to identify the corresponding services and projects. Their source URLs, consultation dates, file checksums, normalization notes and available brand terms are recorded in the [asset manifest](public/assets/integrations/manifest.json) and [brand asset notice](public/assets/integrations/README.md). They retain their owners' rights and are excluded from Aureform's Apache 2.0 grant. A source repository's code license does not by itself grant trademark rights. Their inclusion does not imply endorsement or a working provider connection.
 
+The Softphone's original Twilio and Telnyx artwork has a separate [source manifest](public/assets/communications/manifest.json) and [brand notice](public/assets/communications/README.md). These marks are also excluded from the Apache grant; the records state the applicable permission boundary without claiming brand approval.
+
+The optional [inbound backend reference](examples/communications-backend/) installs `twilio` 6.2.0 under MIT through its own package lock. Browser voice SDKs are supplied separately by the consuming application and retain their upstream licenses. The default Softphone demo installs and loads neither browser carrier SDK.
+
 The proprietary TailAdmin Pro reference was read to understand feature categories. No proprietary TailAdmin source, image, font, template or license is included in this distribution.
 
 Community files linked in [design research](docs/community-design-references.md) are references, not bundled asset grants. Their publishers' licenses remain independent. The Apache 2.0 grant covers Aureform's original work and does not grant rights to external linked Figma Community files.

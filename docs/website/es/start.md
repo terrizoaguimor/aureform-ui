@@ -6,7 +6,7 @@ Explora la [demo](https://aureformui.com/es/dashboard/) y la [documentación](ht
 
 ## Conoce lo que incluye
 
-La demo contiene 69 vistas originales, un centro de integraciones y 65 páginas de recetas de proveedor. Las recetas comparten 17 familias de flujos y ofrecen 86 opciones de proveedor. Sus 44 familias de componentes principales sirven de base para 127 entradas del registro, entre bloques, plantillas, proveedores y efectos. Las seis paletas funcionan en temas claro y oscuro; los gráficos admiten 13 tipos. La demo incluye inglés y español.
+La demo contiene 70 vistas principales, un centro de integraciones y 65 páginas de recetas de proveedor. Las recetas comparten 17 familias de flujos y ofrecen 86 opciones de proveedor. Sus 44 familias de componentes principales sirven de base para 134 entradas del registro, entre bloques, plantillas, proveedores y efectos. Las seis paletas funcionan en temas claro y oscuro; los gráficos admiten 13 tipos. La demo incluye inglés y español.
 
 Las 32 imágenes generadas incluidas representan personas, organizaciones, productos y escenas editoriales ficticias. Son archivos locales con prompts documentados, textos alternativos y originales. No necesitas un servicio de generación de imágenes para ejecutar el kit.
 

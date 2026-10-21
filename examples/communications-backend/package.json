@@ -1,0 +1,15 @@
+{
+  "name": "@aureform/inbound-voice-reference",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=22.18.0 <23" },
+  "scripts": {
+    "start": "node server.js",
+    "start:env": "node --env-file=.env server.js",
+    "check": "node --check server.js && node --check lib/config.js && node --check lib/security.js && node --check lib/providers.js && node --check lib/engine.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": { "twilio": "6.2.0" }
+}

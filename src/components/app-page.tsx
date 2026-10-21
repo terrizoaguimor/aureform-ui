@@ -63,6 +63,7 @@ import type { AuthWorkflowAdapter } from "@/lib/auth-integration";
 import type { IntegrationSuite } from "@/lib/integrations/suite";
 import type { IntegrationUiBindings } from "@/lib/integrations/ui-bindings";
 import type { IntegrationsAdapter } from "@/lib/integrations/contracts";
+import type { CommunicationsAdapter } from "@/lib/communications/contracts";
 import { useWorkspace } from "@/components/workspace-provider";
 import { Card } from "@/components/ui/card";
 import { Empty } from "@/components/ui/empty";
@@ -79,6 +80,11 @@ const IntegrationHub = dynamic(() =>
     (module) => module.IntegrationHub,
   ),
 );
+const SoftphoneTemplate = dynamic(() =>
+  import("@/components/templates/softphone-template").then(
+    (module) => module.SoftphoneTemplate,
+  ),
+);
 export type AppPageProps = {
   locale: Locale;
   path: string;
@@ -90,6 +96,7 @@ export type AppPageProps = {
   integrationsAdapter?: IntegrationsAdapter;
   integrationSuite?: IntegrationSuite;
   integrationUi?: IntegrationUiBindings;
+  communicationsAdapter?: CommunicationsAdapter;
 };
 export function AppPage({
   locale,
@@ -102,6 +109,7 @@ export function AppPage({
   integrationsAdapter,
   integrationSuite,
   integrationUi,
+  communicationsAdapter,
 }: AppPageProps) {
   const [layout, setLayout] = useState<ShellLayout>("sidebar");
   const selectedIdentity =
@@ -190,6 +198,8 @@ export function AppPage({
   else if (path === "files") content = <FilesTemplate />;
   else if (path === "support") content = <SupportTemplate />;
   else if (path === "maps") content = <MapsTemplate />;
+  else if (path === "softphone")
+    content = <SoftphoneTemplate adapter={communicationsAdapter} />;
   else if (path === "invoice") content = <InvoiceTemplate />;
   else if (path === "ai/images" || path === "ai/video")
     content = (
@@ -234,7 +244,14 @@ export function AppPage({
         "pricing",
         "settings/billing",
       ].includes(path) && !selectedCommerce;
-    if (missingIdentity || missingAi || missingCommerce) {
+    const missingCommunications =
+      path === "softphone" && !communicationsAdapter;
+    if (
+      missingIdentity ||
+      missingAi ||
+      missingCommerce ||
+      missingCommunications
+    ) {
       content = <ConnectedWorkflowSetup locale={locale} />;
     }
   }
@@ -277,8 +294,8 @@ function ConnectedWorkflowSetup({ locale }: { locale: Locale }) {
         }
         description={
           locale === "es"
-            ? "Añade el adaptador de identidad, AI o comercio a tu suite para usar esta pantalla con los servicios de tu aplicación."
-            : "Add the identity, AI or commerce adapter to your suite to use this screen with your application's services."
+            ? "Añade el adaptador de identidad, AI, comercio o comunicaciones para usar esta pantalla con los servicios de tu aplicación."
+            : "Add the identity, AI, commerce or communications adapter to use this screen with your application's services."
         }
         action={
           <a

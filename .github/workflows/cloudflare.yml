@@ -35,8 +35,11 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm test
+      - run: npm ci --prefix examples/communications-backend --ignore-scripts
+      - run: pnpm verify:communications-backend
       - run: pnpm verify:examples
       - run: pnpm verify:integrations
+      - run: pnpm verify:communications-design
       - run: pnpm build:cloudflare
       - run: pnpm verify:pages
       - name: Check the prebuilt deployment
@@ -45,6 +48,7 @@ jobs:
         run: pnpm exec playwright install --with-deps chromium
       - run: pnpm verify:website
       - run: pnpm verify:integrations-ui
+      - run: pnpm verify:communications-ui
       - name: Verify the public source download
         if: github.event_name != 'pull_request'
         run: pnpm verify:cloudflare-release

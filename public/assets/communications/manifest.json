@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "consultationDate": "2026-10-21",
+  "recordedAtUTC": "2026-10-21T22:08:09.421777+00:00",
+  "purpose": "Provider identification in Aureform Communications Softphone",
+  "coverage": {
+    "providers": ["twilio", "telnyx"],
+    "brandIdentities": 2,
+    "originalSVGFiles": 2,
+    "generatedLogos": 0
+  },
+  "presentation": {
+    "background": "neutral-white-plate",
+    "objectFit": "contain",
+    "recolor": false,
+    "filters": false,
+    "crop": false,
+    "originalAspectRatio": true,
+    "decorativeWhenProviderTextIsAdjacent": true
+  },
+  "notices": "/assets/communications/README.md",
+  "licenseBoundary": "Third-party artwork and trademarks remain with their owners and are excluded from Aureform Apache-2.0. No endorsement, account connectivity or carrier verification is implied.",
+  "existingIntegrationCatalog": {
+    "brandIdentities": 79,
+    "providerOptions": 86,
+    "artFiles": 122,
+    "modified": false
+  },
+  "nativeFigma": {
+    "mutatedInThisTask": false,
+    "artworkParityStatus": "Native Twilio/Telnyx original-artwork bindings not independently verified in this asset task."
+  },
+  "records": [
+    {
+      "id": "twilio",
+      "name": "Twilio",
+      "file": "twilio.svg",
+      "src": "/assets/communications/twilio.svg",
+      "width": 520,
+      "height": 520,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.twilio.com/content/dam/twilio-com/core-assets/social/safari-pinned-tab.svg",
+      "officialPageURL": "https://www.twilio.com/en-us/legal/trademark",
+      "sourceKind": "original-official-site-svg",
+      "sourceDiscovery": "Public HTML asset reference on officialPageURL",
+      "consultedDate": "2026-10-21",
+      "retrieval": {
+        "httpStatus": 200,
+        "contentType": "image/svg+xml"
+      },
+      "bytes": 2358,
+      "sourceSha256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068",
+      "sha256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068",
+      "sourceViewBox": "0 0 520.000000 520.000000",
+      "normalizations": [],
+      "originalBytesPreserved": true,
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Twilio Inc. or its affiliates",
+        "excludedFromAureformApacheGrant": true,
+        "termsURL": "https://www.twilio.com/en-us/legal/trademark",
+        "permissionStatus": "express-written-logo-permission-not-established",
+        "usageSummary": "Corporate-logo permission and visible trademark notice required by published guidelines."
+      },
+      "notes": [
+        "Upstream pinned-tab asset has its original monochrome paint, metadata and SVG DTD declaration; Aureform did not trace or recreate it."
+      ]
+    },
+    {
+      "id": "telnyx",
+      "name": "Telnyx",
+      "file": "telnyx.svg",
+      "src": "/assets/communications/telnyx.svg",
+      "width": 128,
+      "height": 40,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://dila2qpfw3s64.cloudfront.net/_next/static/media/telnyx-logo-text.3ol7qfk480jrf.svg?dpl=1dfe2a0",
+      "officialPageURL": "https://telnyx.com/media-kit",
+      "sourceKind": "original-official-site-svg",
+      "sourceDiscovery": "Public HTML asset reference on officialPageURL",
+      "consultedDate": "2026-10-21",
+      "retrieval": {
+        "httpStatus": 200,
+        "contentType": "image/svg+xml"
+      },
+      "bytes": 4594,
+      "sourceSha256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e",
+      "sha256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e",
+      "sourceViewBox": "0 0 128 40",
+      "normalizations": [],
+      "originalBytesPreserved": true,
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Telnyx LLC",
+        "excludedFromAureformApacheGrant": true,
+        "termsURL": "https://telnyx.com/media-kit",
+        "permissionStatus": "media-kit-guidance-recorded-no-independent-license-inferred",
+        "usageSummary": "Keep original horizontal wordmark, clearspace and proportions; black artwork on light background."
+      },
+      "notes": [
+        "The CDN URL is directly linked in the official media-kit page HTML.",
+        "Official media-kit ZIP was also retrieved for provenance; its PNG originals were not converted or substituted for this original standalone SVG."
+      ]
+    }
+  ]
+}

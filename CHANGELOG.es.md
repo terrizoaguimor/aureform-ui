@@ -22,8 +22,12 @@ Consulta los cambios de main antes de publicar la siguiente versión.
 - Siete documentos de investigación de Communications sobre capacidades Twilio/Telnyx, arquitectura independiente del proveedor, voz con IA, Flow DSL, Prompt-to-Flow, seguridad y entrega por fases.
 - Mapas fechados de fuentes nativas de Figma para las propuestas de Communications y la recuperación de diseños de comercio, mapas, autenticación e integraciones, con límites de paridad explícitos.
 - Logos originales de los proveedores en tarjetas de integración, cabeceras de conexión y selección de proveedor, con archivos incluidos, atribución de fuentes y recursos reutilizables en Figma.
+- Un workspace Softphone instalable y demo pública EN/ES con simulación entrante, routing FIFO, presencia, horario, festivos explícitos, controles, notas, historial, CSV y recuperación.
+- Contratos tipados de comunicaciones, fábricas opcionales de SDK de navegador Twilio y Telnyx, y un backend de referencia entrante autenticado con webhooks firmados y autorización de costos por llamada.
+- Una guía bilingüe de comunicaciones y evidencia de implementación separada, conservando los RFCs de investigación originales y la aceptación real independiente por proveedor.
+- Fuente editable del Softphone implementado en Figma, siete estados de llamada en claro/oscuro, composiciones de escritorio/móvil, diálogos y dos templates locales adicionales de Code Connect.
 
-Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0. Communications es investigación y diseño propuesto; las integraciones con carriers y la paridad completa en ejecución no están certificadas.
+Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0. La demo Softphone es local. El código opcional de SDK/backend es una referencia de laboratorio entrante; las llamadas audibles con carriers y la preparación para producción no están certificadas. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación.
 
 ## [1.5.0](https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.5.0) — 2026-10-20
 

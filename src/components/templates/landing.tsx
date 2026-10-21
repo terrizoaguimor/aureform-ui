@@ -781,9 +781,9 @@ export function LandingTemplate() {
             )}
           >
             {[
-              ["69", l("core views", "vistas principales")],
+              ["70", l("core views", "vistas principales")],
               ["65", l("integration recipes", "recetas de integración")],
-              ["127", l("registry entries", "entradas de registro")],
+              ["134", l("registry entries", "entradas de registro")],
               ["6", l("signature palettes", "paletas de color")],
             ].map(([value, label]) => (
               <div
@@ -973,14 +973,32 @@ export function LandingTemplate() {
           className={cn(sectionWidth, "pb-16 sm:pb-24")}
         >
           <div className="af-shadow-floating relative isolate overflow-hidden rounded-3xl border border-border bg-surface p-6 sm:p-10 lg:p-12">
-            <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10" style={{ background: "radial-gradient(ellipse at top right, color-mix(in srgb, var(--primary) 12%, transparent), transparent 65%)" }} />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 -z-10"
+              style={{
+                background:
+                  "radial-gradient(ellipse at top right, color-mix(in srgb, var(--primary) 12%, transparent), transparent 65%)",
+              }}
+            />
             <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-12">
               <div className="min-w-0">
-                <Badge appearance="soft">{l("New in 1.5 · 17 workflow families", "Nuevo en 1.5 · 17 familias de flujos")}</Badge>
-                <h2 id="integrations-title" className="mt-5 text-3xl font-normal leading-[1.12] tracking-[-.035em] sm:text-4xl lg:text-5xl" style={editorialFont}>
+                <Badge appearance="soft">
+                  {l(
+                    "New in 1.5 · 17 workflow families",
+                    "Nuevo en 1.5 · 17 familias de flujos",
+                  )}
+                </Badge>
+                <h2
+                  id="integrations-title"
+                  className="mt-5 text-3xl font-normal leading-[1.12] tracking-[-.035em] sm:text-4xl lg:text-5xl"
+                  style={editorialFont}
+                >
                   {l("Your services.", "Tus servicios.")}
                   <br />
-                  <span className="italic text-muted-foreground">{l("A considered interface.", "Una interfaz cuidada.")}</span>
+                  <span className="italic text-muted-foreground">
+                    {l("A considered interface.", "Una interfaz cuidada.")}
+                  </span>
                 </h2>
                 <p className="mt-5 max-w-lg text-sm leading-7 text-muted-foreground">
                   {l(
@@ -989,35 +1007,86 @@ export function LandingTemplate() {
                   )}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <Link prefetch={false} href={href("integrations")} className={buttonVariants({ size: "lg" })}>
-                    {l("Explore integrations", "Explorar integraciones")}<ArrowUpRight aria-hidden="true" />
+                  <Link
+                    prefetch={false}
+                    href={href("integrations")}
+                    className={buttonVariants({ size: "lg" })}
+                  >
+                    {l("Explore integrations", "Explorar integraciones")}
+                    <ArrowUpRight aria-hidden="true" />
                   </Link>
-                  <Link prefetch={false} href={href("docs/integrations")} className={buttonVariants({ variant: "outline", size: "lg" })}>
-                    {l("Connection guide", "Guía de conexión")}<BookOpen aria-hidden="true" />
+                  <Link
+                    prefetch={false}
+                    href={href("docs/integrations")}
+                    className={buttonVariants({
+                      variant: "outline",
+                      size: "lg",
+                    })}
+                  >
+                    {l("Connection guide", "Guía de conexión")}
+                    <BookOpen aria-hidden="true" />
                   </Link>
                 </div>
               </div>
               <div className="min-w-0 lg:pt-4">
                 <div className="grid grid-cols-2 gap-3">
                   {[
-                    ["Supabase", l("Connected tables", "Tablas conectadas"), "supabase-data"],
-                    ["Clerk", l("Accounts & teams", "Cuentas y equipos"), "clerk"],
-                    ["Stripe", l("Products & billing", "Productos y cobros"), "stripe"],
-                    ["OpenAI", l("Streaming & tools", "Streaming y herramientas"), "openai-responses"],
+                    [
+                      "Supabase",
+                      l("Connected tables", "Tablas conectadas"),
+                      "supabase-data",
+                    ],
+                    [
+                      "Clerk",
+                      l("Accounts & teams", "Cuentas y equipos"),
+                      "clerk",
+                    ],
+                    [
+                      "Stripe",
+                      l("Products & billing", "Productos y cobros"),
+                      "stripe",
+                    ],
+                    [
+                      "OpenAI",
+                      l("Streaming & tools", "Streaming y herramientas"),
+                      "openai-responses",
+                    ],
                     [
                       "Resend",
                       l("Email workflows", "Flujos de correo"),
                       "resend-react-email",
                     ],
-                    ["Cloudflare", l("Agents & checkpoints", "Agentes y checkpoints"), "cloudflare-agents"],
+                    [
+                      "Cloudflare",
+                      l("Agents & checkpoints", "Agentes y checkpoints"),
+                      "cloudflare-agents",
+                    ],
                   ].map(([name, detail, path]) => (
-                    <Link prefetch={false} key={path} href={href(`integrations/${path}`)} className="af-hover-card group min-w-0 rounded-2xl border border-border bg-background/60 p-4 sm:p-5">
-                      <span className="flex items-center justify-between gap-2 text-sm font-semibold">{name}<ArrowUpRight aria-hidden="true" className="size-3.5 shrink-0 text-muted-foreground group-hover:text-primary" /></span>
-                      <span className="mt-2 block text-xs leading-5 text-muted-foreground">{detail}</span>
+                    <Link
+                      prefetch={false}
+                      key={path}
+                      href={href(`integrations/${path}`)}
+                      className="af-hover-card group min-w-0 rounded-2xl border border-border bg-background/60 p-4 sm:p-5"
+                    >
+                      <span className="flex items-center justify-between gap-2 text-sm font-semibold">
+                        {name}
+                        <ArrowUpRight
+                          aria-hidden="true"
+                          className="size-3.5 shrink-0 text-muted-foreground group-hover:text-primary"
+                        />
+                      </span>
+                      <span className="mt-2 block text-xs leading-5 text-muted-foreground">
+                        {detail}
+                      </span>
                     </Link>
                   ))}
                 </div>
-                <p className="mt-4 text-xs leading-6 text-muted-foreground">{l("86 provider choices · local mocks · replaceable adapters", "86 opciones de proveedor · mocks locales · adaptadores reemplazables")}</p>
+                <p className="mt-4 text-xs leading-6 text-muted-foreground">
+                  {l(
+                    "86 provider choices · local mocks · replaceable adapters",
+                    "86 opciones de proveedor · mocks locales · adaptadores reemplazables",
+                  )}
+                </p>
               </div>
             </div>
           </div>
@@ -1498,8 +1567,8 @@ export function LandingTemplate() {
               </h2>
               <p className="mt-6 max-w-lg text-sm leading-8 text-muted-foreground sm:text-base">
                 {l(
-                  "Explore 24 documentation chapters, from foundations and practical examples to integration recipes and contracts. Articles are translated where available; otherwise, their original source language is shown.",
-                  "Explora 24 capítulos de documentación: bases, ejemplos prácticos, recetas y contratos de integración. Los artículos tienen traducción cuando está disponible; en los demás se indica el idioma de la fuente original.",
+                  "Explore 25 documentation chapters, from foundations and practical examples to integration recipes and contracts. Articles are translated where available; otherwise, their original source language is shown.",
+                  "Explora 25 capítulos de documentación: bases, ejemplos prácticos, recetas y contratos de integración. Los artículos tienen traducción cuando está disponible; en los demás se indica el idioma de la fuente original.",
                 )}
               </p>
               <Link

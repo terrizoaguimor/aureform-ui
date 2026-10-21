@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "observedUTC": "2026-10-21T23:15:46.126366+00:00",
+  "status": "passed-scoped-native-source-readback",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageId": "559:59",
+  "sourceMap": "design/figma/softphone-native-source-2026-10-21.json",
+  "boundedQA": {
+    "UTC": "2026-10-21T23:06:56.295Z",
+    "stateModePreviews": {
+      "created": 14,
+      "expectedModes": 14,
+      "conflicts": 0,
+      "status": "PASS"
+    },
+    "compositions": {
+      "created": 12,
+      "modeConflicts": 0,
+      "status": "PASS"
+    },
+    "dialogMasters": {
+      "created": 10,
+      "currentSourceHashMatch": 10,
+      "status": "PASS"
+    },
+    "foundationReadback": [
+      714,
+      14,
+      6
+    ],
+    "oldResearchRFCFoundationWrites": 0,
+    "nativeNodes": {
+      "PAGE": 1,
+      "COMPONENT": 62,
+      "FRAME": 1954,
+      "VECTOR": 1606,
+      "COMPONENT_SET": 3,
+      "RECTANGLE": 80,
+      "ELLIPSE": 37,
+      "TEXT": 1945,
+      "INSTANCE": 1533,
+      "SLOT": 139,
+      "GROUP": 39
+    },
+    "fonts": [
+      {
+        "family": "Manrope",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      }
+    ],
+    "inheritedContentImageFills": 17,
+    "fullUIRasterSourcesCreated": 0
+  },
+  "createdNodeJournal": {
+    "count": 7399,
+    "unique": true,
+    "compact": "design/reports/softphone-native-node-journal-2026-10-21.json",
+    "expanded": "design/reports/softphone-native-node-ids-2026-10-21.json",
+    "scope": "Actual settled nodes on the new own page, including virtual descendants. This is not a7399-master-component claim."
+  },
+  "sourceSnapshots": [
+    {
+      "file": "src/components/blocks/softphone.tsx",
+      "sha256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42"
+    },
+    {
+      "file": "src/components/blocks/softphone-workspace.tsx",
+      "sha256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139"
+    },
+    {
+      "file": "src/components/templates/softphone-template.tsx",
+      "sha256": "bef464d5261a63120f9ecb03adc0b4d03caa674bbc596c76943e33fe12d97b18"
+    },
+    {
+      "file": "src/hooks/use-softphone-audio.ts",
+      "sha256": "48d2459aa0d435f55dafd7b1b9c518caec641361b83c5b99201fcbc3777a3b59"
+    },
+    {
+      "file": "src/components/blocks/dashboard-shell.tsx",
+      "sha256": "de13280392c8a47a0fcca8656ba4edda68e5d3729c098d4f6c9ee6b99f59eff7"
+    },
+    {
+      "file": "src/components/templates/landing.tsx",
+      "sha256": "8935cc8e810d3c17eaacb76aa13bfb343d5480c88a2f0fec9c9a1ce8a6bfed1c"
+    },
+    {
+      "file": "src/components/communications/provider-logo.tsx",
+      "sha256": "5015629a3070479ce46801cbf48d946acc17f1f0b6742a3713b3a176bd5f0edb"
+    },
+    {
+      "file": "src/lib/communications/contracts.ts",
+      "sha256": "31df71c1b4d7d931f9f632216888c5d76833741994b10ab49110efe0c5256bee"
+    },
+    {
+      "file": "src/lib/communications/business-hours.ts",
+      "sha256": "03f26a7751579946c100a17cbb239e7b0dc493ba82931a4d1a337a38d8b24c1b"
+    },
+    {
+      "file": "src/lib/communications/fixtures.ts",
+      "sha256": "8cbd5a0ca3ca9755a4b72426fe3e32b8dc4d77e3804dfddbbb6bb9fb42162715"
+    },
+    {
+      "file": "src/lib/communications/demo-adapter.ts",
+      "sha256": "cccfc0236c912206782ba94a8dd1a205e45cfc47dcadbdabc723b4b213fcb440"
+    },
+    {
+      "file": "src/lib/communications/live-adapter.ts",
+      "sha256": "0ef8d6564df8127651f926bc73a5c5b04f779661440187e174c7934f7bb2fe98"
+    },
+    {
+      "file": "src/lib/communications/demo-session.ts",
+      "sha256": "12f106db51bb11e7ca73990227b34094d31670de086a10ba743604c255fba6c0"
+    },
+    {
+      "file": "src/lib/communications/twilio-browser.ts",
+      "sha256": "db2ff59a67dd61ebffe32830d9d576f6eba3472906340605761c0604f6cc68eb"
+    },
+    {
+      "file": "src/lib/communications/telnyx-browser.ts",
+      "sha256": "09375ed940861c32329f9694559f9763d5f815bde9b852205987da76450f72f2"
+    },
+    {
+      "file": "src/lib/communications/brands.ts",
+      "sha256": "58efb1aa569a90747896ac44cf065b6ad47f1c602ded096b244c0fa8aaa96731"
+    },
+    {
+      "file": "public/assets/communications/twilio.svg",
+      "sha256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068"
+    },
+    {
+      "file": "public/assets/communications/telnyx.svg",
+      "sha256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e"
+    },
+    {
+      "file": "public/assets/communications/README.md",
+      "sha256": "ac7564f39712ac056c5d8e38433e7852a2a9091e272d0a3fbcf90c0ebec3f76a"
+    },
+    {
+      "file": "public/assets/communications/manifest.json",
+      "sha256": "ecc6909ff4e0360cdf905d89118bf14514fe5a11e3235764d934215f571f4a5d"
+    }
+  ],
+  "codeConnect": {
+    "templates": 2,
+    "syntheticCases": 23,
+    "strictCompileErrors": 0,
+    "registered": false,
+    "published": false,
+    "proof": "design/reports/softphone-code-connect-validation-2026-10-21.json",
+    "reproduce": "pnpm verify:communications-design"
+  },
+  "visualFixes": {
+    "paintOrder": 12,
+    "topAlignment": 3,
+    "controlGradients": 45,
+    "compactMobileHeader": true,
+    "nativeProofManifest": "design/proofs/softphone-2026-10-21/manifest.json"
+  },
+  "preserved": {
+    "sharedFoundationCounts": [
+      714,
+      14,
+      6
+    ],
+    "sharedFoundationWrites": 0,
+    "researchPageWrites": 0,
+    "historical69routeLedgerChanged": false,
+    "retained92templateBytesChanged": false
+  },
+  "limitations": [
+    "Native source fixtures are English; EN/ES runtime acceptance is separate.",
+    "Native application chrome is a scoped fixture; previous design/source audits retain their historical scope.",
+    "Native background gradients approximate the source CSS radial washes; exact pixel parity is not certified.",
+    "Live carrier calls, physical audio and production security are not certified."
+  ],
+  "writerLease": {
+    "active": false,
+    "returned": true,
+    "status": "complete-bounded-native-source;writer-lease-returned"
+  },
+  "implementationProgress": {
+    "controlledStateUnion": 7,
+    "nativeControlledVariants": 8,
+    "pendingTrueOnly": "ringing",
+    "stateModePreviewsCreated": 14,
+    "workspaceBodiesCreated": 6,
+    "workspaceViewsCreated": 12,
+    "dialogMastersCreated": 10,
+    "providerMenuMastersCreated": 1,
+    "sourceIconComponentsCreated": 31,
+    "originalProviderBrandComponentsCreated": 2,
+    "localParserlessTemplatesCreated": 2,
+    "allCurrentNodeIDs": 7399,
+    "fullUIRasterSourcesCreated": 0,
+    "additionalActiveContextViewCreated": false,
+    "remainingAuthorizedCanvasWrites": 0,
+    "boundedQA": "PASS; visual/runtime limitations explicit"
+  }
+}

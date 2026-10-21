@@ -1,0 +1,1409 @@
+{
+  "schemaVersion": 1,
+  "observedUTC": "2026-10-21T23:17:25.001270+00:00",
+  "consultedDate": "2026-10-21",
+  "status": "local-and-scoped-native-validation-pass",
+  "scope": "Unreleased inbound-softphone frontend, local demo, provider-binding compilation and reference laboratory; no production or real-media certification.",
+  "source": {
+    "baseCommit": "966a00586d4d7d48bbe1ed16416323247fe68694",
+    "baseRefVerified": true,
+    "packageVersion": "1.5.0",
+    "content": "working-tree-unreleased-softphone",
+    "publicationCommit": null,
+    "publicationCommitStatus": "identified-separately-by-git-history-and-deployed-build-info",
+    "note": "File SHA-256 records bind the reviewed unreleased source. Git history identifies the commit containing these files; the deployed build-info.json identifies each production build. This local receipt is not a deployed-release certification.",
+    "files": [
+      {
+        "path": ".figma/Softphone.figma.ts",
+        "sha256": "124aacbe9fb56b7aa1ac5117c81a632c9abc8eb2b866939cc86479eef2f102b6",
+        "bytes": 3277
+      },
+      {
+        "path": ".figma/SoftphoneWorkspace.figma.ts",
+        "sha256": "6cee8e6a1c1ff14c6c5d1e39088651a8fbf27d44e9a69acb40de5cf07a41fe7a",
+        "bytes": 3162
+      },
+      {
+        "path": ".figma/code-connect-manifest.json",
+        "sha256": "121485e3cb299e6446d393bfadad4f0109ef652b27552733147ae3990ad3c789",
+        "bytes": 180855
+      },
+      {
+        "path": "design/figma/softphone-native-source-2026-10-21.json",
+        "sha256": "fb2516773ffd7e624c5f3e930788d7953662e0f9fc2f669caf8a468f757174a5",
+        "bytes": 11878
+      },
+      {
+        "path": "design/reports/softphone-native-source-2026-10-21.md",
+        "sha256": "4cbc3771446596f1a76087ef3ad9d9f8dfd2baadcedf50b04cba3c76ed8d7938",
+        "bytes": 5272
+      },
+      {
+        "path": "design/scripts/verify-softphone-code-connect.mjs",
+        "sha256": "0d36bc0a9d59a227c9bf98d14e9bc0b22f0cb2a868c3df60cdbd6d8caa00acfe",
+        "bytes": 10804
+      },
+      {
+        "path": "docs/website/en/communications.md",
+        "sha256": "b22e7bfebf50f3af1595b5d95b542e5e0d3f34ad54eeed1fc2d91c58d3de39ab",
+        "bytes": 10270
+      },
+      {
+        "path": "docs/website/es/communications.md",
+        "sha256": "7748e27b2838b0ab5793126488357a4d589bae5b79e2b9d6ba955532d55c0878",
+        "bytes": 11047
+      },
+      {
+        "path": "examples/communications-backend/lib/engine.js",
+        "sha256": "85f855c214d11e656f27edfe6cb20f5d0967cd78afc22130fe563b2da812d7fc",
+        "bytes": 27991
+      },
+      {
+        "path": "examples/communications-backend/lib/providers.js",
+        "sha256": "e9fabcd933e796244b6856b6454fffbc89d23a158c35fa0accb3e643bb709b72",
+        "bytes": 9975
+      },
+      {
+        "path": "examples/communications-backend/lib/security.js",
+        "sha256": "549356eedeb46cfae7d9aff67624a2df05dc1460c7cc7f01ffb0c8aa46950014",
+        "bytes": 5327
+      },
+      {
+        "path": "examples/communications-backend/server.js",
+        "sha256": "2e268d321b68b2c3714172309c0b60b57ccd62effc9774730042edaa3f7f3023",
+        "bytes": 11059
+      },
+      {
+        "path": "examples/communications-backend/test/fixtures.js",
+        "sha256": "2966f41dba956d5183f59b88441bd79690e33279ce16bf11b5dab2fd06a6532f",
+        "bytes": 5425
+      },
+      {
+        "path": "examples/communications-softphone.tsx",
+        "sha256": "9a05c9a2449d23b6725002819f30f7ad2dda8cb954180b712a30a19a8e9cc04d",
+        "bytes": 1126
+      },
+      {
+        "path": "playwright.config.ts",
+        "sha256": "93b21034f14a934f6dd1f6b6292e932107f573038e6e6b0ea79ee4ba7dfcafd4",
+        "bytes": 2072
+      },
+      {
+        "path": "public/assets/communications/README.md",
+        "sha256": "ac7564f39712ac056c5d8e38433e7852a2a9091e272d0a3fbcf90c0ebec3f76a",
+        "bytes": 2409
+      },
+      {
+        "path": "public/assets/communications/manifest.json",
+        "sha256": "ecc6909ff4e0360cdf905d89118bf14514fe5a11e3235764d934215f571f4a5d",
+        "bytes": 4433
+      },
+      {
+        "path": "public/assets/communications/telnyx.svg",
+        "sha256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e",
+        "bytes": 4594
+      },
+      {
+        "path": "public/assets/communications/twilio.svg",
+        "sha256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068",
+        "bytes": 2358
+      },
+      {
+        "path": "scripts/generate-coverage.mjs",
+        "sha256": "c70d64869c3d366e65e38bda411c72714835de028ed47360d3e0be353c9c49d0",
+        "bytes": 71169
+      },
+      {
+        "path": "scripts/verify-code-connect.cjs",
+        "sha256": "713571ea96dc23246ee5e4178654373f4007c68f5aa72bcd6df5c79a5badc78a",
+        "bytes": 54919
+      },
+      {
+        "path": "scripts/verify-pages-export.mjs",
+        "sha256": "a9f58e3e09f54fbf3b7924bf7f2dc42afd73e5d61f9a77f6ed87d2dd5667722f",
+        "bytes": 3593
+      },
+      {
+        "path": "src/components/blocks/dashboard-shell.tsx",
+        "sha256": "de13280392c8a47a0fcca8656ba4edda68e5d3729c098d4f6c9ee6b99f59eff7",
+        "bytes": 32612
+      },
+      {
+        "path": "src/components/blocks/page-heading.tsx",
+        "sha256": "2f30261856e06f23b176d372e81dd22cfe9287db59d795b0017462fdf42575e8",
+        "bytes": 1510
+      },
+      {
+        "path": "src/components/blocks/softphone-workspace.tsx",
+        "sha256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139",
+        "bytes": 64383
+      },
+      {
+        "path": "src/components/blocks/softphone.tsx",
+        "sha256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42",
+        "bytes": 10576
+      },
+      {
+        "path": "src/components/communications/provider-logo.tsx",
+        "sha256": "5015629a3070479ce46801cbf48d946acc17f1f0b6742a3713b3a176bd5f0edb",
+        "bytes": 1911
+      },
+      {
+        "path": "src/components/templates/softphone-template.tsx",
+        "sha256": "bef464d5261a63120f9ecb03adc0b4d03caa674bbc596c76943e33fe12d97b18",
+        "bytes": 811
+      },
+      {
+        "path": "src/components/ui/badge.tsx",
+        "sha256": "1b75103b2193a6007c03a951b65f53afaab3d4a60e2ba7be7e14109241a3c509",
+        "bytes": 2093
+      },
+      {
+        "path": "src/components/ui/button.tsx",
+        "sha256": "7a4ba03ec89978c4f15545255256876c682ba49bf6bad80d6728fe632ccf563e",
+        "bytes": 4878
+      },
+      {
+        "path": "src/components/ui/card.tsx",
+        "sha256": "5735ec1257a9bd6687014f0579a401b80305f042a0bd80d5e8076fb4057d2f16",
+        "bytes": 2091
+      },
+      {
+        "path": "src/components/ui/dialog.tsx",
+        "sha256": "3e6aee4a82ec79782f923257b90136ace310300b80f3891bdf14905766d16acb",
+        "bytes": 2341
+      },
+      {
+        "path": "src/components/ui/empty.tsx",
+        "sha256": "e2ada13eeaba19c138d6ceb094c47938fd24dbcac1b501d3af1e0fd49a5de415",
+        "bytes": 922
+      },
+      {
+        "path": "src/components/ui/field.tsx",
+        "sha256": "87d53f7f8e0eadebc51c468ba165e188a35918578918517d77c131dfa456c8ec",
+        "bytes": 1237
+      },
+      {
+        "path": "src/components/ui/input.tsx",
+        "sha256": "e298407c39e3a2b219d9ab26a78e00c0462ebf7398a3661df4d96cec2e1d12b0",
+        "bytes": 972
+      },
+      {
+        "path": "src/components/ui/progress.tsx",
+        "sha256": "4fd9fd0a93df6dca63789af023e2a81ef6733b7b90d0e121dad221cb4b7f68dd",
+        "bytes": 722
+      },
+      {
+        "path": "src/components/ui/select.tsx",
+        "sha256": "78cdbafa47d6a5d74d65748d4c5e21b0dd09a1c5b701bdcfd2ca5c63564400a1",
+        "bytes": 3801
+      },
+      {
+        "path": "src/components/ui/sidebar.tsx",
+        "sha256": "f7cb90533741339fb84002b9d562cb379ed58c70738c6f3851a7fbbd962b8fe2",
+        "bytes": 3519
+      },
+      {
+        "path": "src/components/ui/tabs.tsx",
+        "sha256": "c8812a8dff0df05e6964e5b26e48bea7d2893ec4c193c6dc004d37d166b04868",
+        "bytes": 1808
+      },
+      {
+        "path": "src/components/ui/textarea.tsx",
+        "sha256": "892321898dd4e0cc9102d4446a50aa320c957644350fdc70fe383857602a47c2",
+        "bytes": 420
+      },
+      {
+        "path": "src/hooks/use-language.ts",
+        "sha256": "d28044071689786e41142fa124fab6dd00ead6b44ef80f7dc72197c405a8ca6a",
+        "bytes": 1278
+      },
+      {
+        "path": "src/hooks/use-softphone-audio.ts",
+        "sha256": "48d2459aa0d435f55dafd7b1b9c518caec641361b83c5b99201fcbc3777a3b59",
+        "bytes": 7539
+      },
+      {
+        "path": "src/i18n/messages.ts",
+        "sha256": "b60b250101ac905121faba7f92d87dd8ed81b81a4bb19f58b7e890731459216c",
+        "bytes": 3596
+      },
+      {
+        "path": "src/lib/communications/brands.ts",
+        "sha256": "58efb1aa569a90747896ac44cf065b6ad47f1c602ded096b244c0fa8aaa96731",
+        "bytes": 1964
+      },
+      {
+        "path": "src/lib/communications/business-hours.ts",
+        "sha256": "03f26a7751579946c100a17cbb239e7b0dc493ba82931a4d1a337a38d8b24c1b",
+        "bytes": 6555
+      },
+      {
+        "path": "src/lib/communications/contracts.ts",
+        "sha256": "31df71c1b4d7d931f9f632216888c5d76833741994b10ab49110efe0c5256bee",
+        "bytes": 6177
+      },
+      {
+        "path": "src/lib/communications/demo-adapter.ts",
+        "sha256": "cccfc0236c912206782ba94a8dd1a205e45cfc47dcadbdabc723b4b213fcb440",
+        "bytes": 24195
+      },
+      {
+        "path": "src/lib/communications/demo-session.ts",
+        "sha256": "12f106db51bb11e7ca73990227b34094d31670de086a10ba743604c255fba6c0",
+        "bytes": 1169
+      },
+      {
+        "path": "src/lib/communications/fixtures.ts",
+        "sha256": "8cbd5a0ca3ca9755a4b72426fe3e32b8dc4d77e3804dfddbbb6bb9fb42162715",
+        "bytes": 2588
+      },
+      {
+        "path": "src/lib/communications/live-adapter.ts",
+        "sha256": "0ef8d6564df8127651f926bc73a5c5b04f779661440187e174c7934f7bb2fe98",
+        "bytes": 62774
+      },
+      {
+        "path": "src/lib/communications/telnyx-browser.ts",
+        "sha256": "09375ed940861c32329f9694559f9763d5f815bde9b852205987da76450f72f2",
+        "bytes": 24137
+      },
+      {
+        "path": "src/lib/communications/twilio-browser.ts",
+        "sha256": "db2ff59a67dd61ebffe32830d9d576f6eba3472906340605761c0604f6cc68eb",
+        "bytes": 19206
+      },
+      {
+        "path": "src/lib/public-path.ts",
+        "sha256": "5b81a51e40d104bfefdcca96869e33432669d40514658a3e94a9b461372e3f26",
+        "bytes": 639
+      },
+      {
+        "path": "src/lib/utils.ts",
+        "sha256": "f0cc529b0869734a239de0c8de8415824d0578f58e7cac92a94812d49e92fea8",
+        "bytes": 915
+      },
+      {
+        "path": "src/styles/effects.css",
+        "sha256": "944f6d23be8d830a6e0473f754aa586bb80e11e2413a83bbcf87e982f44416ee",
+        "bytes": 10015
+      },
+      {
+        "path": "tests/communications-domain.test.mjs",
+        "sha256": "17125578ce4dc47845ea942d6e22b2cffe4ca070472969167e2acfb52a08bfb0",
+        "bytes": 29074
+      },
+      {
+        "path": "tests/communications-providers.test.mjs",
+        "sha256": "38caa2237b31c7fc8ad9d66e058caf226587f18bb589ba0b308ebd64b6f659e8",
+        "bytes": 59341
+      },
+      {
+        "path": "tests/e2e/communications.spec.ts",
+        "sha256": "ff96fb9e6f816c78fdbe1cc6b186024a14c76a02579dc3fe8fd03c9588abfc7c",
+        "bytes": 32551
+      }
+    ]
+  },
+  "artifactPolicy": {
+    "paths": "All published source/artifact paths are repository-relative. External runner artifacts are identified by basename and digest only.",
+    "rawRunnerArtifactsPublished": false,
+    "note": "Null publishedPath does not mean a failed check; its normalized evidence is embedded here."
+  },
+  "evidenceInputs": [
+    {
+      "artifactName": "unit.log",
+      "bytes": 88181,
+      "sha256": "5d81f47a8a1d744885318e8c4b95b096a488068067dbbbb68556ae278d202499",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "backend.log",
+      "bytes": 5519,
+      "sha256": "c76dbab207528799c23b6692b65bd66eb9d3e15ed640514a2817a9668c1bdc92",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "final-typecheck.log",
+      "bytes": 98,
+      "sha256": "0a53c2833f638a4cde5463ae16416510047bda265600b2cfdc674df347e73aad",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "final-lint.log",
+      "bytes": 303,
+      "sha256": "1268763a8494a7d94e327d6687e199b82f7179502c7ea22c94ac942f672ae31b",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "checks.json",
+      "bytes": 6293,
+      "sha256": "6f97188dded2ce7e7f436a40068629688076334a2127d88bed0d0c4b395d4d26",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "compatibility-checks.json",
+      "bytes": 538,
+      "sha256": "9adf0193ed2d9dd2f6a079d951a90e75d16709dd4d3ed80babe2801338d6b56c",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "verify-code-connect.log",
+      "bytes": 2023,
+      "sha256": "1e122eacad18d06274ab4e413c52d7a875bf558add89b08c65937068396433da",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "verify-examples.log",
+      "bytes": 1101,
+      "sha256": "422f92d410172244da540286e8df9822155c2e193c5154fe4de86c65768ebca0",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "verify-integrations.log",
+      "bytes": 428,
+      "sha256": "ea46b4a22325de176a702d08f20794179b0b7bf5123431c7ba61a81da083d3bb",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "aureform-softphone-providers-receipt.json",
+      "bytes": 14146,
+      "sha256": "7432c6eb96eead2da352c8c54ef09457a8609c095813d9d3d2a2069605b71eb5",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "aureform-softphone-backend-interop-proof.json",
+      "bytes": 4861,
+      "sha256": "2033f62d2189f9ff649d3f53e2cf636044a12858fd86c5eb7219d6a27a670c23",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "compile-proof.json",
+      "bytes": 2790,
+      "sha256": "990fa15d11ee1362e07354a1406c4a9dc8bb8c5fc369b8d26c876f8236ddaa42",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "published-types-proof.json",
+      "bytes": 691,
+      "sha256": "ac3a00e67f77f0291232497ce923c4d14341cd6d4bff0f6458820924b4bbddc8",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "browser-check.json",
+      "bytes": 1213,
+      "sha256": "3fbaeea006565db003d72399ac94b4dd99a3efdfc201ee18ab0f4c0811f10de4",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "aureform-softphone-brands-ready.json",
+      "bytes": 7637,
+      "sha256": "4ba41c18eaafdd90a47d467caa93340498ac5be3308eb137cc63b8dd32e66444",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "final-acceptance-receipt.json",
+      "bytes": 21077,
+      "sha256": "73c7694c3f8c7df569a0b32044d5ced57c6ff83b46e1a44cdc4bf8e902a02821",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "final-root-acceptance-receipt.json",
+      "bytes": 12845,
+      "sha256": "753a269adb403e630a6004fd7fd0af8aed487c0613e2aad9228b1f5248b463b6",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "final-mounted-acceptance-receipt.json",
+      "bytes": 12896,
+      "sha256": "f49d32ef7a176a39364cb476275c00b8312e895e5e937785f7bd6ea7c7936937",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "final-root-report.json",
+      "bytes": 31576,
+      "sha256": "50a47f691e1e8aaab2e8db39e0d681146190a68f8dcccd09ff17affdd3737659",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "final-mounted-corrected-report.json",
+      "bytes": 31705,
+      "sha256": "1c96bf7bda33b5cdf2e50909eb4c103f9a9d29472c08d045009711b2849734e1",
+      "publishedPath": null
+    }
+  ],
+  "checks": {
+    "rootUnit": {
+      "status": "pass",
+      "exitCode": 0,
+      "command": "pnpm test",
+      "counts": {
+        "tests": 963,
+        "suites": 5,
+        "pass": 963,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "durationMS": 15560.560932
+      },
+      "scope": "Local tests; communications provider runtime tests use fake SDK objects and mocked authenticated HTTP/SSE."
+    },
+    "backendUnit": {
+      "status": "pass",
+      "exitCode": 0,
+      "command": "pnpm verify:communications-backend",
+      "counts": {
+        "tests": 54,
+        "suites": 0,
+        "pass": 54,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "durationMS": 526.384741
+      },
+      "scope": "Synthetic carrier effects and loopback HTTP; actual Twilio server SDK local token minting makes no carrier request."
+    },
+    "rootTypecheck": {
+      "status": "pass",
+      "exitCode": 0,
+      "command": "pnpm typecheck",
+      "noEmit": true
+    },
+    "rootLint": {
+      "status": "PASS",
+      "exitCode": 0,
+      "command": "pnpm lint",
+      "errors": 0,
+      "warnings": 1,
+      "warning": {
+        "path": "design/rebuild-plugin/backend.js",
+        "line": 44,
+        "column": 16,
+        "rule": "@typescript-eslint/no-unused-vars",
+        "message": "'afRebuild' is defined but never used"
+      }
+    },
+    "installedBrowserSDKTypes": {
+      "status": "pass",
+      "completedUTC": "2026-10-21T22:22:10.006996Z",
+      "exitCode": 0,
+      "packages": [
+        {
+          "package": "@twilio/voice-sdk",
+          "version": "2.18.5",
+          "types": "./es5/twilio.d.ts",
+          "tarball": "https://registry.npmjs.org/@twilio/voice-sdk/-/voice-sdk-2.18.5.tgz",
+          "integrity": "sha512-2/tw1IDAIn7j6yFDOln8p93v3aHIxNIN93JwL98cHIlbkSNeU/Jt9zGM/0TvDpNjo+k88lvAew4jgOjKlc9/KA==",
+          "packageJsonSHA256": "46ea13613e1a366fd3932dbfde718b64deae53a23cb96bdc1a5ecd734b6ee906"
+        },
+        {
+          "package": "@telnyx/webrtc",
+          "version": "2.28.0",
+          "types": "lib/src/index.d.ts",
+          "tarball": "https://registry.npmjs.org/@telnyx/webrtc/-/webrtc-2.28.0.tgz",
+          "integrity": "sha512-ayOq8jAE+qO3EHR/sZCI42TF/9b7u3TmzgzIE+wzske0qPXBjZtdIdqiMfFCp8YZmWNbmbiwRefnI8vSa6/MVA==",
+          "packageJsonSHA256": "8bec665c6db4a3afeb4bfffd2f6874f3b556e40fd1e95dc83dc4558e2549108a"
+        }
+      ],
+      "typescript": "5.9.3",
+      "strict": true,
+      "noEmit": true,
+      "skipLibCheck": true,
+      "skipLibCheckScope": "Upstream declaration diagnostics only; consumer constructor/factory/loader assignability and method signatures are still checked.",
+      "fixtureArtifactName": "consumer.ts",
+      "fixtureSHA256": "75f8832af85eea72317554ead7bb58f5a2ac329266ee5641d1fa3ebe8cacb60e",
+      "rootSDKDependenciesAdded": false,
+      "realSDKConnectInvoked": false,
+      "realProviderRequests": 0,
+      "assertions": [
+        "Twilio createDevice accepts the actual exported Device constructor with tokenRefreshMs.",
+        "Twilio loadSdk accepts the actual package import type.",
+        "Telnyx createClient accepts the actual exported TelnyxRTC constructor with login_token.",
+        "Telnyx loadSdk accepts the actual package import type.",
+        "Telnyx remoteElement accepts a host-owned HTMLAudioElement.",
+        "Telnyx answer/hangup/muteAudio/unmuteAudio/dtmf and exact telnyxIDs fields compile.",
+        "Telnyx connect/login/disconnect/clearReconnectToken compile.",
+        "Twilio register/updateToken and Call accept/reject/disconnect/mute/sendDigits compile.",
+        "Negative @ts-expect-error assertions confirm no native Twilio Call hold/transfer methods."
+      ],
+      "scope": "Actual installed official package types; compile evidence only. Provider runtime tests use fake SDKs."
+    },
+    "referenceEngineBrowserSchemaInterop": {
+      "status": "pass",
+      "wireVersion": "aureform.inbound-voice.v1",
+      "method": "Actual reference InboundEngine envelopes/commands and synthetic provider observations -> actual browser Zod parser",
+      "casesPassed": 18,
+      "cases": [
+        {
+          "provider": "twilio",
+          "stage": "session",
+          "revision": 1,
+          "cursor": 1,
+          "status": null,
+          "bindings": 0,
+          "history": 0,
+          "events": 1
+        },
+        {
+          "provider": "twilio",
+          "stage": "queued-null-IDs",
+          "revision": 2,
+          "cursor": 2,
+          "status": null,
+          "bindings": 1,
+          "history": 0,
+          "events": 2
+        },
+        {
+          "provider": "twilio",
+          "stage": "offered-owned-reservation",
+          "revision": 5,
+          "cursor": 5,
+          "status": "ringing",
+          "bindings": 1,
+          "history": 0,
+          "events": 5
+        },
+        {
+          "provider": "twilio",
+          "stage": "accept-intent",
+          "revision": 6,
+          "cursor": 6,
+          "status": "connecting",
+          "bindings": 1,
+          "history": 0,
+          "events": 6
+        },
+        {
+          "provider": "twilio",
+          "stage": "connected-observation",
+          "revision": 8,
+          "cursor": 8,
+          "status": "active",
+          "bindings": 1,
+          "history": 0,
+          "events": 8
+        },
+        {
+          "provider": "twilio",
+          "stage": "mute-dtmf-notes",
+          "revision": 11,
+          "cursor": 11,
+          "status": "active",
+          "bindings": 1,
+          "history": 0,
+          "events": 11
+        },
+        {
+          "provider": "twilio",
+          "stage": "hangup-retains-remote-state",
+          "revision": 14,
+          "cursor": 14,
+          "status": "connecting",
+          "bindings": 1,
+          "history": 0,
+          "events": 14
+        },
+        {
+          "provider": "twilio",
+          "stage": "disconnect-reconciliation",
+          "revision": 15,
+          "cursor": 15,
+          "status": "connecting",
+          "bindings": 1,
+          "history": 0,
+          "events": 15
+        },
+        {
+          "provider": "twilio",
+          "stage": "terminal-endReason-history",
+          "revision": 19,
+          "cursor": 19,
+          "status": null,
+          "bindings": 0,
+          "history": 1,
+          "events": 19
+        },
+        {
+          "provider": "telnyx",
+          "stage": "session",
+          "revision": 1,
+          "cursor": 1,
+          "status": null,
+          "bindings": 0,
+          "history": 0,
+          "events": 1
+        },
+        {
+          "provider": "telnyx",
+          "stage": "queued-null-IDs",
+          "revision": 5,
+          "cursor": 5,
+          "status": null,
+          "bindings": 1,
+          "history": 0,
+          "events": 5
+        },
+        {
+          "provider": "telnyx",
+          "stage": "offered-owned-reservation",
+          "revision": 9,
+          "cursor": 9,
+          "status": "ringing",
+          "bindings": 1,
+          "history": 0,
+          "events": 9
+        },
+        {
+          "provider": "telnyx",
+          "stage": "accept-intent",
+          "revision": 10,
+          "cursor": 10,
+          "status": "connecting",
+          "bindings": 1,
+          "history": 0,
+          "events": 10
+        },
+        {
+          "provider": "telnyx",
+          "stage": "connected-observation",
+          "revision": 13,
+          "cursor": 13,
+          "status": "active",
+          "bindings": 1,
+          "history": 0,
+          "events": 13
+        },
+        {
+          "provider": "telnyx",
+          "stage": "mute-dtmf-notes",
+          "revision": 16,
+          "cursor": 16,
+          "status": "active",
+          "bindings": 1,
+          "history": 0,
+          "events": 16
+        },
+        {
+          "provider": "telnyx",
+          "stage": "hangup-retains-remote-state",
+          "revision": 19,
+          "cursor": 19,
+          "status": "connecting",
+          "bindings": 1,
+          "history": 0,
+          "events": 19
+        },
+        {
+          "provider": "telnyx",
+          "stage": "disconnect-reconciliation",
+          "revision": 20,
+          "cursor": 20,
+          "status": "connecting",
+          "bindings": 1,
+          "history": 0,
+          "events": 20
+        },
+        {
+          "provider": "telnyx",
+          "stage": "terminal-endReason-history",
+          "revision": 24,
+          "cursor": 24,
+          "status": null,
+          "bindings": 0,
+          "history": 1,
+          "events": 20
+        }
+      ],
+      "realProviderRequests": 0,
+      "browserSDKRuntimeInvoked": false,
+      "realSDKConnectInvoked": false,
+      "referenceNodeHelperDependencyImported": true,
+      "supersedes": "Earlier initial/queued-only schema check.",
+      "limits": [
+        "Provider transports injected from reference synthetic fixtures; no network, authentication/webhook signature or audible media certification.",
+        "This schema proof complements the independent fake-official-SDK + mocked HTTP/SSE module tests."
+      ]
+    },
+    "installedCLIConsumer": {
+      "status": "pass",
+      "registryItems": [
+        "softphone-workspace",
+        "communications-live",
+        "twilio-browser-voice",
+        "telnyx-browser-voice"
+      ],
+      "distinctSourceFiles": 29,
+      "assets": 4,
+      "sourceTargetHashMismatches": 0,
+      "sourceTargetHashRecordsChecked": 33,
+      "consumerManifestSHA256": "afbacf8ea36e232404855bc47f94f9b6b4db22b6dfb99d97fcaac603198e4b13",
+      "strictTypecheck": {
+        "status": "pass",
+        "exitCode": 0,
+        "strict": true,
+        "noEmit": true,
+        "incremental": false,
+        "command": "tsc --noEmit --incremental false"
+      },
+      "scope": "Actual installed source closure and read-only compilation; no provider activation."
+    },
+    "mountedStaticExport": {
+      "status": "pass",
+      "basePath": "/aureform-ui",
+      "successfulExportManifest": true,
+      "prerenderedRoutes": 315,
+      "prerenderManifestSHA256": "b63f6c4d50a5274f7e240bd873df6e596c764273668b6773973a64c167d65eb2",
+      "htmlPages": 332,
+      "documentationChapters": 25,
+      "uniqueLocalDestinations": 560,
+      "failures": [],
+      "verification": {
+        "status": "pass",
+        "exitCode": 0,
+        "command": "NEXT_PUBLIC_BASE_PATH=/aureform-ui pnpm verify:pages",
+        "scriptPath": "scripts/verify-pages-export.mjs",
+        "method": "Read-only rerun against the actual mounted static output."
+      },
+      "scope": "Static build/link verification; not a deployment or live-media certificate."
+    },
+    "manualBrowser": {
+      "status": "pass-bounded",
+      "scope": "local simulated inbound; source reviewed 2026-10-21; no physical audio or carrier",
+      "views": [
+        {
+          "view": "desktop-light",
+          "state": "active",
+          "bodyWidth": 1440,
+          "viewport": 1440,
+          "brandImage": [
+            {
+              "src": "/assets/communications/twilio.svg",
+              "loaded": true
+            },
+            {
+              "src": "/assets/communications/twilio.svg",
+              "loaded": true
+            }
+          ],
+          "errors": [],
+          "publishedScreenshotPath": "docs/images/aureform-softphone-light.webp"
+        },
+        {
+          "view": "desktop-dark",
+          "state": "active",
+          "bodyWidth": 1440,
+          "viewport": 1440,
+          "brandImage": [
+            {
+              "src": "/assets/communications/twilio.svg",
+              "loaded": true
+            },
+            {
+              "src": "/assets/communications/twilio.svg",
+              "loaded": true
+            }
+          ],
+          "errors": [],
+          "publishedScreenshotPath": "docs/images/aureform-softphone-dark.webp"
+        },
+        {
+          "view": "mobile-light",
+          "state": "active",
+          "bodyWidth": 390,
+          "viewport": 390,
+          "brandImage": [
+            {
+              "src": "/assets/communications/twilio.svg",
+              "loaded": true
+            },
+            {
+              "src": "/assets/communications/twilio.svg",
+              "loaded": true
+            }
+          ],
+          "errors": [],
+          "publishedScreenshotPath": null
+        }
+      ],
+      "publishedScreenshots": [
+        {
+          "path": "docs/images/aureform-softphone-light.webp",
+          "bytes": 65222,
+          "sha256": "329f7aef481437d205aa6ebe1eec97c637385ecb965cad3f80b2f0c09bcbad5c",
+          "width": 1440,
+          "height": 1000,
+          "kind": "manual-local-demo-browser-viewport",
+          "theme": "light"
+        },
+        {
+          "path": "docs/images/aureform-softphone-dark.webp",
+          "bytes": 64600,
+          "sha256": "85232466bf8aabf889c1f054e2e76315d01c40a8c3c716617e7361cc1d507c0f",
+          "width": 1440,
+          "height": 1000,
+          "kind": "manual-local-demo-browser-viewport",
+          "theme": "dark"
+        }
+      ],
+      "limits": [
+        "Active local-demo views only.",
+        "Mobile-light capture was inspected externally; no published screenshot path is recorded here.",
+        "No physical audio or real carrier connection."
+      ]
+    },
+    "browserE2E": {
+      "status": "pass",
+      "observedUTC": "2026-10-21T22:51:59.723Z",
+      "project": "communications-chromium",
+      "scriptPath": "tests/e2e/communications.spec.ts",
+      "command": "pnpm verify:communications-ui",
+      "caseLabelsInRunOrder": [
+        "en: Twilio local call, controls, DTMF, private notes and history export",
+        "en: Telnyx local call, controls, DTMF, private notes and history export",
+        "en: FIFO, away/offline admission and recovery retain the local call",
+        "en: closed, explicit holiday and overflow outcomes never offer a call",
+        "en: IANA hours validate and persist explicit dates only in the session",
+        "en: 390px call and dialogs stay within the viewport",
+        "en: keyboard controls, dialog focus and default axe critical checks",
+        "en: microphone denial is requested only by its explicit button",
+        "es: Twilio local call, controls, DTMF, private notes and history export",
+        "es: Telnyx local call, controls, DTMF, private notes and history export",
+        "es: FIFO, away/offline admission and recovery retain the local call",
+        "es: closed, explicit holiday and overflow outcomes never offer a call",
+        "es: IANA hours validate and persist explicit dates only in the session",
+        "es: 390px call and dialogs stay within the viewport",
+        "es: keyboard controls, dialog focus and default axe critical checks",
+        "es: microphone denial is requested only by its explicit button",
+        "client navigation preserves the active call, queue and saved notes; reload does not",
+        "private notes enforce the 2000-character browser limit and remain in call details",
+        "an absent microphone reports unavailable without granting physical access",
+        "closing audio settings stops tracks from a later-resolved permission request",
+        "direct demo reset clears call, queue and notes and restores disconnected fixtures",
+        "server closed snapshot hydrates against an open browser clock without mismatch"
+      ],
+      "runs": [
+        {
+          "kind": "root",
+          "status": "pass",
+          "basePath": "/",
+          "startUTC": "2026-10-21T22:48:42.862Z",
+          "durationMS": 35777.764,
+          "passed": 22,
+          "failed": 0,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0,
+          "allRetries": 0,
+          "allCasesPassed": true,
+          "caseDurationsMS": [
+            4344,
+            4747,
+            3678,
+            2689,
+            3604,
+            2158,
+            2981,
+            2103,
+            3981,
+            4180,
+            3911,
+            2635,
+            3852,
+            2190,
+            2934,
+            2006,
+            5113,
+            2392,
+            1906,
+            2247,
+            3347,
+            2415
+          ],
+          "reportArtifactName": "final-root-report.json",
+          "reportSHA256": "50a47f691e1e8aaab2e8db39e0d681146190a68f8dcccd09ff17affdd3737659",
+          "receiptArtifactName": "final-root-acceptance-receipt.json",
+          "measurements": [
+            {
+              "case": "en: keyboard controls, dialog focus and default axe critical checks",
+              "kind": "Default axe rules, #softphone-workspace, active state",
+              "totalViolations": 0,
+              "criticalViolations": 0
+            },
+            {
+              "case": "es: keyboard controls, dialog focus and default axe critical checks",
+              "kind": "Default axe rules, #softphone-workspace, active state",
+              "totalViolations": 0,
+              "criticalViolations": 0
+            },
+            {
+              "case": "server closed snapshot hydrates against an open browser clock without mismatch",
+              "kind": "Server/browser clock disagreement",
+              "serverBadge": "Closed",
+              "monday": "2026-10-26T14:00:00.000Z",
+              "callerReceived": "2026-10-26T14:00:00.000Z",
+              "sunday": "2026-11-01T14:00:00.000Z",
+              "mondayBadge": "Open",
+              "sundayBadge": "Closed",
+              "consoleErrors": [],
+              "pageErrors": [],
+              "hydrationErrors": []
+            }
+          ]
+        },
+        {
+          "kind": "mounted-static",
+          "status": "pass",
+          "basePath": "/aureform-ui",
+          "startUTC": "2026-10-21T22:50:06.515Z",
+          "durationMS": 21358.588,
+          "passed": 22,
+          "failed": 0,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0,
+          "allRetries": 0,
+          "allCasesPassed": true,
+          "caseDurationsMS": [
+            2510,
+            2773,
+            2321,
+            1624,
+            1929,
+            1239,
+            1980,
+            1249,
+            2416,
+            2525,
+            2200,
+            1680,
+            2176,
+            1180,
+            1991,
+            1237,
+            2561,
+            1454,
+            1002,
+            1332,
+            1827,
+            1304
+          ],
+          "reportArtifactName": "final-mounted-corrected-report.json",
+          "reportSHA256": "1c96bf7bda33b5cdf2e50909eb4c103f9a9d29472c08d045009711b2849734e1",
+          "receiptArtifactName": "final-mounted-acceptance-receipt.json",
+          "measurements": [
+            {
+              "case": "en: keyboard controls, dialog focus and default axe critical checks",
+              "kind": "Default axe rules, #softphone-workspace, active state",
+              "totalViolations": 0,
+              "criticalViolations": 0
+            },
+            {
+              "case": "es: keyboard controls, dialog focus and default axe critical checks",
+              "kind": "Default axe rules, #softphone-workspace, active state",
+              "totalViolations": 0,
+              "criticalViolations": 0
+            },
+            {
+              "case": "server closed snapshot hydrates against an open browser clock without mismatch",
+              "kind": "Server/browser clock disagreement",
+              "serverBadge": "Closed",
+              "monday": "2026-10-26T14:00:00.000Z",
+              "callerReceived": "2026-10-26T14:00:00.000Z",
+              "sunday": "2026-11-01T14:00:00.000Z",
+              "mondayBadge": "Open",
+              "sundayBadge": "Closed",
+              "consoleErrors": [],
+              "pageErrors": [],
+              "hydrationErrors": []
+            }
+          ]
+        }
+      ],
+      "sourceGuards": [
+        {
+          "path": "tests/e2e/communications.spec.ts",
+          "sha256": "ff96fb9e6f816c78fdbe1cc6b186024a14c76a02579dc3fe8fd03c9588abfc7c",
+          "unchangedAcrossFinalRuns": true
+        },
+        {
+          "path": "src/components/blocks/softphone.tsx",
+          "sha256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42",
+          "unchangedAcrossFinalRuns": true,
+          "mountedSourceMatches": true
+        },
+        {
+          "path": "src/components/blocks/softphone-workspace.tsx",
+          "sha256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139",
+          "unchangedAcrossFinalRuns": true,
+          "mountedSourceMatches": true
+        },
+        {
+          "path": "src/components/templates/softphone-template.tsx",
+          "sha256": "bef464d5261a63120f9ecb03adc0b4d03caa674bbc596c76943e33fe12d97b18",
+          "unchangedAcrossFinalRuns": true,
+          "mountedSourceMatches": true
+        },
+        {
+          "path": "src/hooks/use-softphone-audio.ts",
+          "sha256": "48d2459aa0d435f55dafd7b1b9c518caec641361b83c5b99201fcbc3777a3b59",
+          "unchangedAcrossFinalRuns": true,
+          "mountedSourceMatches": true
+        },
+        {
+          "path": "src/lib/communications/demo-adapter.ts",
+          "sha256": "cccfc0236c912206782ba94a8dd1a205e45cfc47dcadbdabc723b4b213fcb440",
+          "unchangedAcrossFinalRuns": true,
+          "mountedSourceMatches": true
+        },
+        {
+          "path": "src/lib/communications/demo-session.ts",
+          "sha256": "12f106db51bb11e7ca73990227b34094d31670de086a10ba743604c255fba6c0",
+          "unchangedAcrossFinalRuns": true,
+          "mountedSourceMatches": true
+        },
+        {
+          "path": "src/components/blocks/dashboard-shell.tsx",
+          "sha256": "de13280392c8a47a0fcca8656ba4edda68e5d3729c098d4f6c9ee6b99f59eff7",
+          "unchangedAcrossFinalRuns": true,
+          "mountedSourceMatches": true
+        },
+        {
+          "path": "src/components/ui/sidebar.tsx",
+          "sha256": "f7cb90533741339fb84002b9d562cb379ed58c70738c6f3851a7fbbd962b8fe2",
+          "unchangedAcrossFinalRuns": true,
+          "mountedSourceMatches": true
+        },
+        {
+          "path": "playwright.config.ts",
+          "sha256": "93b21034f14a934f6dd1f6b6292e932107f573038e6e6b0ea79ee4ba7dfcafd4",
+          "unchangedAcrossFinalRuns": true
+        }
+      ],
+      "allSourcesUnchanged": true,
+      "physicalDevices": false,
+      "realTelephony": false,
+      "scope": "Chromium local-demo UI validation; microphone denial/unavailability and late-stream cleanup use browser stubs.",
+      "accessibilityScope": "Default axe rules scoped to active #softphone-workspace in EN/ES; not whole-site/all-state certification.",
+      "resolvedConfigurationIssue": {
+        "issue": "Mounted preview prefix initially returned 404.",
+        "status": "corrected-and-superseded",
+        "resolution": "Preview served with NEXT_PUBLIC_BASE_PATH=/aureform-ui; final full mounted suite passed.",
+        "finalRouteStatus": 200,
+        "finalRoutePaths": [
+          "/en/softphone/",
+          "/es/softphone/",
+          "/aureform-ui/en/softphone/",
+          "/aureform-ui/es/softphone/"
+        ]
+      },
+      "buildProvenanceLimit": "Before/after hashes and matching mounted source copies do not independently attest a publication commit or deployed release."
+    },
+    "retainedCodeConnect": {
+      "status": "pass-local",
+      "command": "pnpm verify:code-connect",
+      "manifestPath": ".figma/code-connect-manifest.json",
+      "checkedAt": "2026-10-21T22:48:24.798Z",
+      "templateFiles": 92,
+      "sourceSnapshotChecks": 103,
+      "topLevelCases": 1312,
+      "exhaustiveVariantCombinations": 338,
+      "uniqueTypedExamples": 556,
+      "diagnostics": 0,
+      "runtime": "synthetic-figma-stub",
+      "liveFigmaRuntimeTested": false,
+      "cloudRegistered": false,
+      "sourceCompatibilityRefresh": {
+        "observedUTC": "2026-10-21T22:48:17.324664+00:00",
+        "refreshedSourceSnapshots": 12,
+        "changedInSoftphoneWork": 3,
+        "preExistingHEADDigestDrift": 9,
+        "allCurrentHashesMatched": true,
+        "nativeLedgersChanged": false,
+        "templateBytesChanged": false,
+        "detailsField": "sourceCompatibilityRefresh"
+      },
+      "scope": "Retained templates only; no new Softphone binding publication or native/browser parity claim."
+    },
+    "canonicalExamples": {
+      "status": "passed-pure-strict-typecheck",
+      "command": "pnpm verify:examples",
+      "families": 44,
+      "compilation": {
+        "typescript": "5.9.3",
+        "strict": true,
+        "noEmit": true,
+        "payloads": 688,
+        "rootFiles": 733,
+        "diagnostics": 0,
+        "diagnosticCodes": [],
+        "canonicalSourceFiles": 66
+      },
+      "negativeControl": {
+        "missingModule": true,
+        "missingExport": true,
+        "invalidTypes": true,
+        "typescript": "5.9.3",
+        "strict": true,
+        "noEmit": true,
+        "payloads": 1,
+        "rootFiles": 1,
+        "diagnostics": 4,
+        "diagnosticCodes": [
+          2305,
+          2307,
+          2322,
+          2322
+        ],
+        "canonicalSourceFiles": 3
+      },
+      "browserRuntimeTested": false
+    },
+    "integrationExamples": {
+      "status": "passed-strict-integration-examples",
+      "command": "pnpm verify:integrations",
+      "compilation": {
+        "typescript": "5.9.3",
+        "strict": true,
+        "noEmit": true,
+        "payloads": 11,
+        "rootFiles": 11,
+        "diagnostics": 0,
+        "diagnosticCodes": [],
+        "canonicalSourceFiles": 221
+      },
+      "realProviderExecution": false
+    },
+    "communicationArtwork": {
+      "status": "pass-bounded",
+      "manifestPath": "public/assets/communications/manifest.json",
+      "providerCount": 2,
+      "staticLogoRenders": 24,
+      "basePaths": [
+        "/",
+        "/aureform-ui"
+      ],
+      "assets": [
+        {
+          "provider": "twilio",
+          "path": "public/assets/communications/twilio.svg",
+          "bytes": 2358,
+          "sha256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068",
+          "originalBytesPreserved": true,
+          "sourceURL": "https://www.twilio.com/content/dam/twilio-com/core-assets/social/safari-pinned-tab.svg",
+          "officialGuidanceURL": "https://www.twilio.com/en-us/legal/trademark"
+        },
+        {
+          "provider": "telnyx",
+          "path": "public/assets/communications/telnyx.svg",
+          "bytes": 4594,
+          "sha256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e",
+          "originalBytesPreserved": true,
+          "officialGuidanceURL": "https://telnyx.com/media-kit"
+        }
+      ],
+      "recolored": false,
+      "cropped": false,
+      "openLicenseEstablished": false,
+      "includedInApacheGrant": false,
+      "twilioExpressWrittenLogoPermissionEstablished": false,
+      "scope": "Original official artwork provenance and technical validation only; no trademark permission or native Figma grant."
+    },
+    "softphoneCodeConnect": {
+      "status": "PASS",
+      "templates": 2,
+      "syntheticCases": 23,
+      "emittedCases": 23,
+      "strictCompileErrors": 0,
+      "sourceFilesVerified": 20,
+      "proof": "design/reports/softphone-code-connect-validation-2026-10-21.json",
+      "producer": "design/scripts/verify-softphone-code-connect.mjs",
+      "cloudRegistered": false,
+      "liveFigmaRuntimeTested": false
+    },
+    "websiteDocumentation": {
+      "status": "PASS",
+      "cases": 5,
+      "skipped": 0,
+      "flaky": 0,
+      "scope": "Landing-to-docs navigation EN/ES, backup Pages links, heading search/anchor and preserved chapter across language switch on mounted static export.",
+      "producer": "tests/e2e/website.spec.ts"
+    }
+  },
+  "nativeFigma": {
+    "status": "passed-scoped-native-source-readback",
+    "sourceReceiptPath": "design/reports/softphone-native-receipt-2026-10-21.json",
+    "sourceMap": "design/figma/softphone-native-source-2026-10-21.json",
+    "implementedComponentSetId": "563:377",
+    "implementedWorkspaceSetId": "570:2797",
+    "implementedDesktopRootId": "574:2368",
+    "implementedMobileRootIds": [
+      "574:2748",
+      "574:3864"
+    ],
+    "sourceHashes": [
+      {
+        "file": "src/components/blocks/softphone.tsx",
+        "sha256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42"
+      },
+      {
+        "file": "src/components/blocks/softphone-workspace.tsx",
+        "sha256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139"
+      },
+      {
+        "file": "src/components/templates/softphone-template.tsx",
+        "sha256": "bef464d5261a63120f9ecb03adc0b4d03caa674bbc596c76943e33fe12d97b18"
+      },
+      {
+        "file": "src/hooks/use-softphone-audio.ts",
+        "sha256": "48d2459aa0d435f55dafd7b1b9c518caec641361b83c5b99201fcbc3777a3b59"
+      },
+      {
+        "file": "src/components/blocks/dashboard-shell.tsx",
+        "sha256": "de13280392c8a47a0fcca8656ba4edda68e5d3729c098d4f6c9ee6b99f59eff7"
+      },
+      {
+        "file": "src/components/templates/landing.tsx",
+        "sha256": "8935cc8e810d3c17eaacb76aa13bfb343d5480c88a2f0fec9c9a1ce8a6bfed1c"
+      },
+      {
+        "file": "src/components/communications/provider-logo.tsx",
+        "sha256": "5015629a3070479ce46801cbf48d946acc17f1f0b6742a3713b3a176bd5f0edb"
+      },
+      {
+        "file": "src/lib/communications/contracts.ts",
+        "sha256": "31df71c1b4d7d931f9f632216888c5d76833741994b10ab49110efe0c5256bee"
+      },
+      {
+        "file": "src/lib/communications/business-hours.ts",
+        "sha256": "03f26a7751579946c100a17cbb239e7b0dc493ba82931a4d1a337a38d8b24c1b"
+      },
+      {
+        "file": "src/lib/communications/fixtures.ts",
+        "sha256": "8cbd5a0ca3ca9755a4b72426fe3e32b8dc4d77e3804dfddbbb6bb9fb42162715"
+      },
+      {
+        "file": "src/lib/communications/demo-adapter.ts",
+        "sha256": "cccfc0236c912206782ba94a8dd1a205e45cfc47dcadbdabc723b4b213fcb440"
+      },
+      {
+        "file": "src/lib/communications/live-adapter.ts",
+        "sha256": "0ef8d6564df8127651f926bc73a5c5b04f779661440187e174c7934f7bb2fe98"
+      },
+      {
+        "file": "src/lib/communications/demo-session.ts",
+        "sha256": "12f106db51bb11e7ca73990227b34094d31670de086a10ba743604c255fba6c0"
+      },
+      {
+        "file": "src/lib/communications/twilio-browser.ts",
+        "sha256": "db2ff59a67dd61ebffe32830d9d576f6eba3472906340605761c0604f6cc68eb"
+      },
+      {
+        "file": "src/lib/communications/telnyx-browser.ts",
+        "sha256": "09375ed940861c32329f9694559f9763d5f815bde9b852205987da76450f72f2"
+      },
+      {
+        "file": "src/lib/communications/brands.ts",
+        "sha256": "58efb1aa569a90747896ac44cf065b6ad47f1c602ded096b244c0fa8aaa96731"
+      },
+      {
+        "file": "public/assets/communications/twilio.svg",
+        "sha256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068"
+      },
+      {
+        "file": "public/assets/communications/telnyx.svg",
+        "sha256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e"
+      },
+      {
+        "file": "public/assets/communications/README.md",
+        "sha256": "ac7564f39712ac056c5d8e38433e7852a2a9091e272d0a3fbcf90c0ebec3f76a"
+      },
+      {
+        "file": "public/assets/communications/manifest.json",
+        "sha256": "ecc6909ff4e0360cdf905d89118bf14514fe5a11e3235764d934215f571f4a5d"
+      }
+    ],
+    "boundedQA": {
+      "UTC": "2026-10-21T23:06:56.295Z",
+      "stateModePreviews": {
+        "created": 14,
+        "expectedModes": 14,
+        "conflicts": 0,
+        "status": "PASS"
+      },
+      "compositions": {
+        "created": 12,
+        "modeConflicts": 0,
+        "status": "PASS"
+      },
+      "dialogMasters": {
+        "created": 10,
+        "currentSourceHashMatch": 10,
+        "status": "PASS"
+      },
+      "foundationReadback": [
+        714,
+        14,
+        6
+      ],
+      "oldResearchRFCFoundationWrites": 0,
+      "nativeNodes": {
+        "PAGE": 1,
+        "COMPONENT": 62,
+        "FRAME": 1954,
+        "VECTOR": 1606,
+        "COMPONENT_SET": 3,
+        "RECTANGLE": 80,
+        "ELLIPSE": 37,
+        "TEXT": 1945,
+        "INSTANCE": 1533,
+        "SLOT": 139,
+        "GROUP": 39
+      },
+      "fonts": [
+        {
+          "family": "Manrope",
+          "style": "Medium",
+          "variationSettings": {
+            "wght": 500
+          }
+        },
+        {
+          "family": "Manrope",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wght": 600
+          }
+        },
+        {
+          "family": "Manrope",
+          "style": "Regular",
+          "variationSettings": {
+            "wght": 400
+          }
+        }
+      ],
+      "inheritedContentImageFills": 17,
+      "fullUIRasterSourcesCreated": 0
+    },
+    "capturePaths": [
+      "design/proofs/softphone-2026-10-21/native-desktop-dark.png",
+      "design/proofs/softphone-2026-10-21/native-mobile-390.png"
+    ],
+    "researchLedgerPath": "design/reports/communications-native-source-2026-10-21.json",
+    "note": "Implemented source is separate from research prototypes. Selected structural/visual evidence only; native chrome and radial washes remain approximate, and exact pixel parity is not certified."
+  },
+  "notCertified": [
+    "Real incoming or outgoing PSTN call through either provider.",
+    "Physical microphone/speaker audio or actual browser microphone permission.",
+    "Complete authenticated backend/official-browser-SDK/WebRTC media lifecycle.",
+    "Live Telnyx account/browser-credential inbound-only restriction.",
+    "Uninterrupted token renewal, mobile background audio or measured media latency.",
+    "Production multitenant security, durable state, regulatory compliance or financial caps.",
+    "Whole-site/all-state accessibility or exhaustive responsive coverage.",
+    "New Softphone native/browser parity or cloud Code Connect publication.",
+    "Final deployed release/publication source SHA."
+  ]
+}

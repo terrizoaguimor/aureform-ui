@@ -6,6 +6,8 @@ artifacts/
 playwright-report/
 test-results/
 *.tsbuildinfo
+__pycache__/
+*.py[cod]
 .env*
 !.env.example
 .DS_Store

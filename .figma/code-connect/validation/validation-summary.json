@@ -1,8 +1,8 @@
 {
   "status": "passed-local-smoke",
-  "checkedAt": "2026-10-19T23:37:48.590Z",
+  "checkedAt": "2026-10-21T22:48:24.798Z",
   "templateCheckpointVersion": "1.4.0",
-  "sourceValidationVersion": "1.4.0",
+  "sourceValidationVersion": "1.5.0+unreleased-softphone",
   "scope": "Existing local templates checked against the recorded current source snapshot",
   "runtime": "synthetic-figma-stub",
   "typescript": "5.9.3",

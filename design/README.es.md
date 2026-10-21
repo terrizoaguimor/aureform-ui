@@ -26,7 +26,9 @@ Empieza con el [paquete de diseño](downloads/aureform-design-snapshots.zip), o 
 | [Pruebas fechadas de marcas y fuentes](proofs/2026-10-21/manifest.json) | Artefactos adicionales reales, con hashes y distinción explícita entre exportaciones nativas de Figma y composiciones locales de las marcas. |
 | [Registro del cambio open source](release-1.3.0.json) | Los cambios de portada y licencia registrados por separado; las auditorías anteriores conservan su contexto histórico. |
 | [Research de comunicaciones y recuperación de fuentes](reports/communications-2026-10-21.md) | Propuestas de Communications y tableros de RFC, junto con la recuperación nativa de aplicaciones e integraciones 1.4/1.5 y sus límites de aceptación. |
+| [Fuente del Softphone implementado](reports/softphone-native-source-2026-10-21.md) | Workspace editable, estados de llamada, diálogos, composiciones claras/oscuras y móviles, con dos templates locales adicionales de Code Connect y hashes del código actual. |
 | [Logos originales de las integraciones](../public/assets/integrations/README.md) | 79 marcas para 86 opciones de proveedor, con los archivos originales, su atribución y los dos originales raster declarados. |
+| [Marcas de los proveedores de comunicaciones](../public/assets/communications/README.md) | Originales de Twilio y Telnyx utilizados por el Softphone, con atribución y condiciones de uso propias. |
 
 Los SVG contienen geometría vectorial editable y fotografías incrustadas. Sus textos están convertidos en contornos. Importarlos **no** recupera auto-layout, propiedades de texto, variantes ni enlaces a variables de Figma. El plugin crea por separado textos editables y componentes iniciales nativos; su alcance documentado es menor que el de la biblioteca original completa.
 
@@ -35,6 +37,8 @@ Los SVG contienen geometría vectorial editable y fotografías incrustadas. Sus 
 Los archivos de Code Connect son **locales y no están publicados**. El código está en [`.figma/code-connect`](../.figma/code-connect); publicar este repositorio no los registra en Figma ni crea una conexión activa de Dev Mode. Los componentes importados o reconstruidos reciben IDs nuevos y necesitan sus propias asociaciones.
 
 La [ampliación de aplicaciones 1.4](../docs/application-integrations.es.md) añade bloques de código y capturas reales del navegador. La [recuperación del 21 de octubre de 2026](reports/communications-2026-10-21.md) incorpora fuentes nativas de productos, comercio, mapas, acceso social e integraciones 1.5 al mismo archivo de Figma. Su mapa fechado distingue la creación nativa, las revisiones visuales parciales y la paridad con navegador aún no verificada; los checkpoints anteriores conservan su alcance histórico.
+
+El [suplemento de fuentes del Softphone](figma/softphone-native-source-2026-10-21.json) registra el frontend implementado por separado de las propuestas anteriores de Communications. El mapa congelado de rutas y el checkpoint de 92 templates conservan su alcance original. Los dos templates del Softphone son adiciones locales sin publicar; la [validación del frontend y backend](../docs/communications/VALIDATION.md) no certifica audio real de los proveedores.
 
 Actualiza los índices derivados y el paquete descargable desde un checkout completo:
 

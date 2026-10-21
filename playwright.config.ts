@@ -41,6 +41,11 @@ export default defineConfig({
       use: { viewport: { width: 1440, height: 1000 } },
     },
     {
+      name: "communications-chromium",
+      testMatch: /communications\.spec\.ts/,
+      use: { viewport: { width: 1440, height: 1000 } },
+    },
+    {
       name: "desktop-chromium",
       testMatch: /flows\.spec\.ts/,
       use: { viewport: { width: 1440, height: 1000 } },

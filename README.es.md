@@ -8,13 +8,13 @@ Un UI kit de Next.js para dashboards, espacios SaaS y herramientas internas, con
 
 [**Explorar la demo ↗**](https://aureformui.com/es/) · [**Documentación**](https://aureformui.com/es/docs/) · [Changelog](CHANGELOG.es.md) · [Calidad y Lighthouse](https://aureformui.com/es/quality/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Patrocinar](https://github.com/sponsors/terrizoaguimor) · [Empezar](#empezar) · [Contribuir](CONTRIBUTING.md) · [English](README.md)
 
-[![Demo publicada en Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/es/) [![Documentación: 24 capítulos](https://img.shields.io/badge/docs-24%20cap%C3%ADtulos-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/es/docs/) [![Biblioteca editable de Figma](https://img.shields.io/badge/Figma-biblioteca%20editable-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![Registry de código de shadcn](https://img.shields.io/badge/shadcn-registry%20de%20c%C3%B3digo-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
+[![Demo publicada en Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/es/) [![Documentación: 25 capítulos](https://img.shields.io/badge/docs-25%20cap%C3%ADtulos-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/es/docs/) [![Biblioteca editable de Figma](https://img.shields.io/badge/Figma-biblioteca%20editable-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![Registry de código de shadcn](https://img.shields.io/badge/shadcn-registry%20de%20c%C3%B3digo-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
 
 [![Changelog en inglés y español](https://img.shields.io/badge/changelog-English%20%2F%20Espa%C3%B1ol-8F652A?style=flat-square&logo=github&logoColor=white)](https://aureformui.com/es/changelog/)
 
 ![Portada de Aureform en modo oscuro, con vista previa de la interfaz y acceso a documentación](docs/images/aureform-landing-dark.webp)
 
-**69 vistas principales + 65 recetas de integración + un hub · 44 familias de componentes · 127 entradas de registry · 6 paletas · English / Español · Claro / Oscuro**
+**70 vistas principales + 65 recetas de integración + un hub · 44 familias de componentes · 134 entradas de registry · 6 paletas · English / Español · Claro / Oscuro**
 
 Construido con **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP y Lenis**. El código original de Aureform está disponible bajo [Apache 2.0](LICENSE).
 
@@ -58,13 +58,27 @@ node bin/aureform.mjs add integration-hub integrations-suite --cwd ../mi-product
 
 [Guía de conexión →](https://aureformui.com/es/docs/integrations/) · [Cobertura de proveedores →](docs/integrations/provider-coverage.json) · [Alcance de la versión 1.5 →](docs/release-checklist-1.5.0.md)
 
-## Research de comunicaciones
+## Softphone y comunicaciones
 
-El [paquete de investigación de Communications](docs/communications/RESEARCH.md) estudia un framework de contact center con Twilio y Telnyx, un Flow DSL tipado, voz con IA y Prompt-to-Flow. Incluye [arquitectura](docs/communications/ARCHITECTURE-RFC.md), [matriz de capacidades](docs/communications/CAPABILITY-MATRIX.md), [gates de seguridad](docs/communications/SECURITY-COMPLIANCE.md) y [roadmap por fases](docs/communications/ROADMAP.md). Es investigación y diseño nativo; las integraciones con carriers no están implementadas ni certificadas.
+[![Demo local de Softphone](https://img.shields.io/badge/Softphone-demo%20entrante%20local-8F652A?style=flat-square)](https://aureformui.com/es/softphone/) [![Conexiones opcionales de SDK Twilio y Telnyx](https://img.shields.io/badge/Twilio%20%2B%20Telnyx-SDKs%20opcionales-111827?style=flat-square)](docs/communications/IMPLEMENTATION-STATUS.md)
 
-El [registro de fuentes Figma](design/reports/communications-2026-10-21.md) enlaza las vistas y los tableros de RFC propuestos, y registra la recuperación de diseños de aplicaciones e integraciones anteriores.
+[Abrir el softphone →](https://aureformui.com/es/softphone/) · [Guía de conexión →](https://aureformui.com/es/docs/communications/) · [Implementación y evidencia →](docs/communications/IMPLEMENTATION-STATUS.md)
 
-El [softphone tiene una propuesta en Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-298), pero todavía no tiene pantalla React, ruta en la demo ni conexión telefónica implementadas. Su primera entrega funcional corresponde al MVP de voz entrante del roadmap.
+| Workspace oscuro | Workspace claro |
+| --- | --- |
+| ![Softphone con llamada simulada activa, contacto en cola y notas guardadas en tema oscuro](docs/images/aureform-softphone-dark.webp) | ![El mismo espacio de llamadas entrantes en tema claro](docs/images/aureform-softphone-light.webp) |
+
+El espacio de llamadas entrantes incluye presencia, cola FIFO, horario y fechas explícitas de festivos, contestar/rechazar, silenciar, espera, DTMF, notas, historial, exportación CSV y recuperación de conexión. La demo local funciona sin credenciales ni cargos telefónicos. Las pruebas de micrófono y altavoz comienzan únicamente cuando se solicitan.
+
+Los contratos editables, las conexiones opcionales de navegador para Twilio/Telnyx y un [backend de referencia separado](examples/communications-backend/) preparan un laboratorio autorizado de llamadas entrantes. Cada consumidor aporta SDKs oficiales, cuentas, identidad del navegador, secretos y aprobación de llamadas. La demo estática no contacta a un carrier. Las llamadas audibles reales y la compatibilidad de producción requieren aceptación independiente por proveedor.
+
+```sh
+node bin/aureform.mjs add softphone-workspace --cwd ../mi-producto
+# Cliente real y conexión opcional de proveedor:
+node bin/aureform.mjs add communications-live twilio-browser-voice --cwd ../mi-producto
+```
+
+El [paquete de investigación de Communications](docs/communications/RESEARCH.md) conserva la [arquitectura](docs/communications/ARCHITECTURE-RFC.md), [matriz de capacidades](docs/communications/CAPABILITY-MATRIX.md), [controles de seguridad](docs/communications/SECURITY-COMPLIANCE.md) y [roadmap por fases](docs/communications/ROADMAP.md). Aprovisionamiento de números, mensajería omnicanal, voz con IA y Prompt-to-Flow corresponden a etapas posteriores. El [registro de fuentes Figma](design/reports/communications-2026-10-21.md) conserva el research original y la recuperación anterior; el estado de implementación enlaza la fuente editable del softphone.
 
 ## Comercio, mapas y autenticación
 
@@ -149,7 +163,7 @@ pnpm dlx shadcn@4.22.0 add \
   https://aureformui.com/r/button.json
 ```
 
-Explora el [registry de 127 entradas](https://aureformui.com/r/registry.json). Algunos componentes y bloques requieren los estilos incluidos y los providers de idioma o apariencia; consulta sus ejemplos antes de integrarlos. [Guía del registry →](docs/registry-compatibility.md)
+Explora el [registry de 134 entradas](https://aureformui.com/r/registry.json). Algunos componentes y bloques requieren los estilos incluidos y los providers de idioma o apariencia; consulta sus ejemplos antes de integrarlos. [Guía del registry →](docs/registry-compatibility.md)
 
 ## Un frontend que puedes conectar
 
@@ -176,7 +190,7 @@ Los registros de packaging y QA conservan su versión y alcance originales. La [
 
 [![Cloudflare Workers Static Assets](https://img.shields.io/badge/Cloudflare-Workers%20Static%20Assets-111827?style=flat-square&logo=cloudflare&logoColor=F38020)](docs/cloudflare-deployment.es.md) [![HTML estático, URLs canónicas y hreflang](https://img.shields.io/badge/SEO-HTML%20est%C3%A1tico%20%2B%20hreflang-111827?style=flat-square)](docs/release-checklist-1.4.1.md) [![Research Gemini 4 Argon: ocho prioridades](https://img.shields.io/badge/research-8%20prioridades-8F652A?style=flat-square)](https://aureformui.com/es/docs/research/)
 
-[Lee la documentación](https://aureformui.com/es/docs/) sin abrir el workspace de la demo. Sus 24 capítulos cubren instalación, componentes, tokens, movimiento, charts, tablas, integraciones, research de integraciones, Figma y despliegue, con búsqueda por títulos y secciones, índice de página y código copiable. La navegación está disponible en español e inglés; las referencias que conservan su idioma original lo indican en la página.
+[Lee la documentación](https://aureformui.com/es/docs/) sin abrir el workspace de la demo. Sus 25 capítulos cubren instalación, componentes, tokens, movimiento, charts, tablas, integraciones, comunicaciones, research de integraciones, Figma y despliegue, con búsqueda por títulos y secciones, índice de página y código copiable. La navegación está disponible en español e inglés; las referencias que conservan su idioma original lo indican en la página.
 
 ![Documentación de Aureform con navegación por grupos, código copiable e índice de página](docs/images/aureform-documentation.webp)
 

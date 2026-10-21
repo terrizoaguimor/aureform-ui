@@ -411,6 +411,18 @@
       "url": "/r/social-auth.json"
     },
     {
+      "name": "softphone-workspace",
+      "type": "registry:block",
+      "title": "Softphone Workspace",
+      "url": "/r/softphone-workspace.json"
+    },
+    {
+      "name": "softphone",
+      "type": "registry:block",
+      "title": "Softphone",
+      "url": "/r/softphone.json"
+    },
+    {
       "name": "table-toolbar",
       "type": "registry:block",
       "title": "Table Toolbar",
@@ -559,6 +571,12 @@
       "type": "registry:block",
       "title": "Settings",
       "url": "/r/settings.json"
+    },
+    {
+      "name": "softphone-template",
+      "type": "registry:block",
+      "title": "Softphone Template",
+      "url": "/r/softphone-template.json"
     },
     {
       "name": "work-board",
@@ -763,6 +781,30 @@
       "type": "registry:block",
       "title": "Search Bridge Command",
       "url": "/r/search-bridge-command.json"
+    },
+    {
+      "name": "communications-demo",
+      "type": "registry:lib",
+      "title": "Communications Demo",
+      "url": "/r/communications-demo.json"
+    },
+    {
+      "name": "communications-live",
+      "type": "registry:lib",
+      "title": "Communications Live",
+      "url": "/r/communications-live.json"
+    },
+    {
+      "name": "twilio-browser-voice",
+      "type": "registry:lib",
+      "title": "Twilio Browser Voice",
+      "url": "/r/twilio-browser-voice.json"
+    },
+    {
+      "name": "telnyx-browser-voice",
+      "type": "registry:lib",
+      "title": "Telnyx Browser Voice",
+      "url": "/r/telnyx-browser-voice.json"
     }
   ]
 }

@@ -33,6 +33,7 @@ import {
   UserPlus,
   KeyRound,
   Plug,
+  Phone,
 } from "lucide-react";
 import { Brand } from "@/components/brand";
 import { AppearanceControls } from "@/components/appearance-controls";
@@ -243,6 +244,7 @@ export function DashboardShell({
           <CreditCard />,
         ),
         link("maps", l("Maps", "Mapas"), <MapPin />),
+        link("softphone", "Softphone", <Phone />),
         link("support", l("Support", "Soporte"), <CircleHelp />),
       ],
     },

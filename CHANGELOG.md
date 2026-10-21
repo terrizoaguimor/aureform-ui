@@ -22,8 +22,12 @@ Follow the work on main before the next version is tagged.
 - Seven Communications research documents covering Twilio/Telnyx capabilities, provider-neutral architecture, voice AI, Flow DSL, Prompt-to-Flow, security and phased delivery.
 - Dated native Figma source maps for Communications proposals and recovery of existing commerce, maps, authentication and integration designs, with explicit parity limits.
 - Original provider logos in integration cards, connection headers and provider choices, with bundled assets, source attribution and reusable Figma artwork.
+- An installable Softphone workspace and public EN/ES demo with inbound simulation, FIFO routing, presence, business hours, explicit holidays, call controls, notes, history, CSV and recovery.
+- Typed communications contracts, optional Twilio and Telnyx browser SDK factories, and an authenticated inbound reference backend with signed webhooks and explicit per-call cost gates.
+- A bilingual communications guide and separate implementation evidence, preserving the original research RFCs and provider-specific live acceptance requirements.
+- Editable Softphone implementation source in Figma, seven call states in Light/Dark, desktop/mobile compositions, dialogs and two additional local Code Connect templates.
 
-These changes are available on main and are not part of the immutable 1.5.0 release archives. Communications is research and proposed design; carrier integrations and complete runtime parity are not certified.
+These changes are available on main and are not part of the immutable 1.5.0 release archives. The Softphone demo is local. Optional SDK/backend source is an inbound laboratory reference; real audible carrier calls and production readiness are not certified. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.
 
 ## [1.5.0](https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.5.0) — 2026-10-20
 

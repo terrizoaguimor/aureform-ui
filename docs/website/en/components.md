@@ -1,6 +1,6 @@
 # Components and composition
 
-Aureform separates UI primitives, reusable blocks and application templates. Start with the smallest layer that solves your problem. The 44 core families have independent examples; the 127 registry entries also include providers, effects and composed workflows.
+Aureform separates UI primitives, reusable blocks and application templates. Start with the smallest layer that solves your problem. The 44 core families have independent examples; the 134 registry entries also include providers, effects and composed workflows.
 
 ## Copy a complete example
 

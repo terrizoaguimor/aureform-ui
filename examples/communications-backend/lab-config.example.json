@@ -1,0 +1,44 @@
+{
+  "tenantId": "us-lab",
+  "origins": ["https://softphone.example.invalid"],
+  "schedule": {
+    "timezone": "America/New_York",
+    "weekly": [
+      { "day": 1, "start": "09:00", "end": "17:00" },
+      { "day": 2, "start": "09:00", "end": "17:00" },
+      { "day": 3, "start": "09:00", "end": "17:00" },
+      { "day": 4, "start": "09:00", "end": "17:00" },
+      { "day": 5, "start": "09:00", "end": "17:00" }
+    ],
+    "holidays": []
+  },
+  "maxQueueSize": 8,
+  "maxWaitSeconds": 120,
+  "ringSeconds": 20,
+  "heartbeatSeconds": 45,
+  "sessionSeconds": 600,
+  "carrierTokenSeconds": 300,
+  "closedMessage": "Our office is closed. Please call again during business hours.",
+  "waitMessage": "Please wait for the next available agent.",
+  "agents": [
+    {
+      "id": "lab-agent",
+      "bootstrapHashEnv": "LAB_AGENT_AUTH_SHA256",
+      "providers": ["twilio", "telnyx"],
+      "twilioIdentity": "aureform_lab_agent",
+      "telnyxCredentialId": "REPLACE_WITH_SHORT_LIVED_CREDENTIAL_ID",
+      "telnyxSipUsername": "REPLACE_WITH_GENCRED_USERNAME",
+      "operator": false
+    }
+  ],
+  "providers": {
+    "twilio": { "inboundNumber": "REPLACE_WITH_APPROVED_TWILIO_E164_NUMBER" },
+    "telnyx": {
+      "inboundNumber": "REPLACE_WITH_APPROVED_TELNYX_E164_NUMBER",
+      "applicationId": "REPLACE_WITH_CALL_CONTROL_APPLICATION_ID",
+      "credentialConnectionId": "REPLACE_WITH_CREDENTIAL_CONNECTION_ID",
+      "browserOutboundDisabledVerified": false
+    }
+  },
+  "approvals": []
+}

@@ -572,20 +572,20 @@ export function TemplatesTemplate() {
         )}
         actions={
           <>
-          <a
-            href={publicPath(`/${locale}/integrations/`)}
-            className={buttonVariants({ variant: "outline", size: "sm" })}
-          >
-            <ArrowUpRight aria-hidden="true" />
-            {l("Integration workflows", "Flujos de integración")}
-          </a>
-          <a
-            href={publicPath(`/${locale}/studio/`)}
-            className={buttonVariants({ variant: "outline", size: "sm" })}
-          >
-            <SlidersHorizontal aria-hidden="true" />
-            {l("Appearance Studio", "Estudio de apariencia")}
-          </a>
+            <a
+              href={publicPath(`/${locale}/integrations/`)}
+              className={buttonVariants({ variant: "outline", size: "sm" })}
+            >
+              <ArrowUpRight aria-hidden="true" />
+              {l("Integration workflows", "Flujos de integración")}
+            </a>
+            <a
+              href={publicPath(`/${locale}/studio/`)}
+              className={buttonVariants({ variant: "outline", size: "sm" })}
+            >
+              <SlidersHorizontal aria-hidden="true" />
+              {l("Appearance Studio", "Estudio de apariencia")}
+            </a>
           </>
         }
       />
@@ -1030,6 +1030,15 @@ export function BlocksTemplate() {
               description: l(
                 "Local routes, search, layers and optional Google Maps configuration.",
                 "Rutas locales, búsqueda, capas y configuración opcional de Google Maps.",
+              ),
+            },
+            {
+              name: "SoftphoneWorkspace",
+              install: "softphone-workspace",
+              path: "softphone",
+              description: l(
+                "Inbound calls, a FIFO queue, business hours and a replaceable voice adapter.",
+                "Llamadas entrantes, cola FIFO, horarios y un adaptador de voz sustituible.",
               ),
             },
             {
