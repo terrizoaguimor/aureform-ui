@@ -263,6 +263,7 @@ export function LandingTemplate() {
     { label: l("The kit", "El kit"), href: "#kit" },
     { label: l("Integrations", "Integraciones"), href: href("integrations") },
     { label: "Studio", href: href("studio") },
+    { label: "Changelog", href: href("changelog") },
     { label: l("Quality", "Calidad"), href: href("quality") },
   ];
   const workflows = [
@@ -1685,6 +1686,7 @@ export function LandingTemplate() {
                 title: l("Learn", "Aprende"),
                 links: [
                   [l("Documentation", "Documentación"), href("docs")],
+                  ["Changelog", href("changelog")],
                   [l("Quality", "Calidad"), href("quality")],
                   [l("Installation", "Instalación"), href("docs/cli")],
                   [l("Tokens & themes", "Tokens y temas"), href("docs/tokens")],

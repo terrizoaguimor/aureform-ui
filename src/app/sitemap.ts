@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const path of [
       "",
       "quality",
+      "changelog",
       ...routes
         .filter((route) => indexableDemoPaths.has(route.path))
         .map((route) => route.path),

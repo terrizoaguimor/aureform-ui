@@ -78,6 +78,13 @@ pnpm build
 
 `pnpm build` regenerates tokens and registry items and creates `out/`. Review the resulting changes.
 
+Release history lives in `src/lib/changelog-data.json`. Update its English and
+Spanish copy together, keep published entries tied to their original GitHub
+release dates in UTC, and put changes since the latest tag under `unreleased`.
+Run `pnpm changelog` to regenerate [CHANGELOG.md](CHANGELOG.md) and
+[CHANGELOG.es.md](CHANGELOG.es.md); the website reads the same source.
+`pnpm verify:changelog` checks that both Markdown histories are current.
+
 The public-release checks are `pnpm verify:public` for the distributable source and `pnpm verify:pages` for the Pages export. Follow the [Pages guide](docs/github-pages.md) for the required build configuration.
 
 For an interaction change, run the relevant browser tests against that build:

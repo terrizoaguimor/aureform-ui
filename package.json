@@ -20,7 +20,7 @@
   "packageManager": "pnpm@10.34.5",
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0",
-    "build": "pnpm tokens && pnpm registry && pnpm build:info && next build && pnpm quality:export",
+    "build": "pnpm tokens && pnpm registry && pnpm changelog && pnpm build:info && next build && pnpm quality:export",
     "build:info": "node scripts/generate-build-info.mjs",
     "build:cloudflare": "pnpm build && node scripts/prepare-cloudflare.mjs",
     "deploy:cloudflare": "pnpm exec cf deploy --prebuilt",
@@ -31,6 +31,8 @@
     "tokens": "node --experimental-strip-types scripts/generate-tokens.mjs",
     "registry": "node scripts/generate-registry.mjs",
     "coverage": "node scripts/generate-coverage.mjs",
+    "changelog": "node scripts/generate-changelog.mjs",
+    "verify:changelog": "node scripts/generate-changelog.mjs --check",
     "verify:examples": "node scripts/verify-component-examples.cjs",
     "verify:integrations": "node scripts/verify-integration-examples.mjs",
     "verify:integrations-ui": "playwright test --project=integrations-chromium",

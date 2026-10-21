@@ -296,6 +296,16 @@ function DocumentationFrame({
             </Link>
             <Link
               prefetch={false}
+              href={`/${locale}/changelog/`}
+              className={cn(
+                navigationLink,
+                "shrink-0 pb-3 text-muted-foreground",
+              )}
+            >
+              Changelog
+            </Link>
+            <Link
+              prefetch={false}
               href={`/${locale}/quality/`}
               className={cn(
                 navigationLink,
@@ -460,6 +470,13 @@ function DocumentationFrame({
               aria-label={l("Quality and support", "Calidad y apoyo")}
               className="flex flex-wrap items-center gap-4"
             >
+              <Link
+                prefetch={false}
+                href={`/${locale}/changelog/`}
+                className="inline-flex min-h-8 items-center rounded hover:text-foreground"
+              >
+                Changelog
+              </Link>
               <Link
                 prefetch={false}
                 href={`/${locale}/quality/`}

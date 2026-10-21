@@ -1,0 +1,294 @@
+{
+  "repository": "https://github.com/terrizoaguimor/aureform-ui",
+  "unreleased": {
+    "title": {
+      "en": "Changes since the latest release",
+      "es": "Cambios desde la última versión"
+    },
+    "summary": {
+      "en": "Follow the work on main before the next version is tagged.",
+      "es": "Consulta los cambios de main antes de publicar la siguiente versión."
+    },
+    "groups": [
+      {
+        "title": { "en": "Added", "es": "Añadido" },
+        "items": [
+          {
+            "en": "A public, bilingual changelog with release dates, version navigation and links to the original GitHub releases.",
+            "es": "Un changelog público y bilingüe con fechas, navegación por versiones y enlaces a las releases originales de GitHub."
+          },
+          {
+            "en": "English and Spanish Markdown histories generated from the same source as the website.",
+            "es": "Historiales Markdown en inglés y español generados desde la misma fuente que la página web."
+          },
+          {
+            "en": "Changelog links in the landing, documentation, quality pages and README, with localized metadata and sitemap entries.",
+            "es": "Enlaces al changelog en la landing, documentación, páginas de calidad y README, con metadatos localizados y entradas en el sitemap."
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": "These changes are available on main and are not part of the immutable 1.5.0 release archives.",
+      "es": "Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0."
+    }
+  },
+  "releases": [
+    {
+      "version": "1.5.0",
+      "publishedAt": "2026-10-20T19:21:43Z",
+      "title": {
+        "en": "Your connected workspace",
+        "es": "Tu espacio de trabajo conectado"
+      },
+      "summary": {
+        "en": "65 frontend integration recipes, a shared hub and practical workflows for connected SaaS products.",
+        "es": "65 recetas de integración frontend, un hub compartido y flujos prácticos para productos SaaS conectados."
+      },
+      "groups": [
+        {
+          "title": { "en": "Added", "es": "Añadido" },
+          "items": [
+            {
+              "en": "17 workflow families and 86 provider choices covering data, identity, commerce, files, email, analytics, notifications, jobs, collaboration, editors, search, maps, AI, knowledge, agents, product connectors and automation.",
+              "es": "17 familias de flujos y 86 opciones de proveedor para datos, identidad, comercio, archivos, correo, analítica, notificaciones, tareas, colaboración, editores, búsqueda, mapas, AI, conocimiento, agentes, conectores de producto y automatización."
+            },
+            {
+              "en": "AI streaming, reviewed tool calls, routing and fallback diagnostics, knowledge-source management and agent progress.",
+              "es": "Streaming de AI, revisión de herramientas, diagnóstico de rutas y fallback, gestión de fuentes de conocimiento y progreso de agentes."
+            },
+            {
+              "en": "Injectable IntegrationSuite adapters, HTTP transports and optional editor, map, Picker, media, enterprise, realtime and command-search bindings.",
+              "es": "Adaptadores inyectables de IntegrationSuite, transportes HTTP y conexiones opcionales de editores, mapas, Picker, medios, empresa, tiempo real y búsqueda de comandos."
+            },
+            {
+              "en": "A public quality page, version-scoped Lighthouse reports, sponsorship links and bilingual integration research.",
+              "es": "Una página pública de calidad, informes de Lighthouse con alcance por versión, enlaces para patrocinar y research bilingüe de integraciones."
+            }
+          ]
+        },
+        {
+          "title": { "en": "Improved", "es": "Mejorado" },
+          "items": [
+            {
+              "en": "The catalogue now includes 135 views, 127 source registry entries and 24 documentation chapters.",
+              "es": "El catálogo reúne 135 vistas, 127 entradas del registry de código y 24 capítulos de documentación."
+            },
+            {
+              "en": "Connection workflows support cancellation, revision checks, reviewed requests and idempotent retries at the consumer boundary.",
+              "es": "Los flujos de conexión admiten cancelación, revisión de versiones, solicitudes revisadas y reintentos idempotentes en los contratos del consumidor."
+            }
+          ]
+        },
+        {
+          "title": { "en": "Verified", "es": "Verificado" },
+          "items": [
+            {
+              "en": "865 passing unit tests, strict component and integration examples, and 317 local provider/action bindings.",
+              "es": "865 pruebas unitarias aprobadas, ejemplos estrictos de componentes e integraciones y 317 conexiones locales de proveedor y acción."
+            },
+            {
+              "en": "Browser acceptance covers 290 scenarios for each root and mounted host through recorded cohorts and focused reruns; the QA receipt preserves the exact scope.",
+              "es": "La aceptación de navegador cubre 290 escenarios por montaje raíz y con prefijo mediante grupos registrados y repeticiones específicas; el registro de QA conserva el alcance exacto."
+            }
+          ]
+        }
+      ],
+      "notes": {
+        "en": "The public demo uses local mocks. Consumers supply their backend, accounts and credentials. Native Figma and Lighthouse evidence retains its original version and scope.",
+        "es": "La demo pública usa mocks locales. Cada consumidor aporta su backend, cuentas y credenciales. La evidencia nativa de Figma y Lighthouse conserva su versión y alcance originales."
+      },
+      "links": [
+        {
+          "label": { "en": "QA receipt", "es": "Registro de QA" },
+          "path": "docs/qa-runtime-1.5.0.json"
+        },
+        {
+          "label": {
+            "en": "Provider coverage",
+            "es": "Cobertura de proveedores"
+          },
+          "path": "docs/integrations/provider-coverage.json"
+        }
+      ]
+    },
+    {
+      "version": "1.4.1",
+      "publishedAt": "2026-10-20T03:23:31Z",
+      "title": {
+        "en": "A new home for the kit",
+        "es": "Un nuevo hogar para el kit"
+      },
+      "summary": {
+        "en": "The public website and complete documentation arrive on aureformui.com, hosted on Cloudflare.",
+        "es": "La página pública y la documentación completa llegan a aureformui.com, alojadas en Cloudflare."
+      },
+      "groups": [
+        {
+          "title": { "en": "Added", "es": "Añadido" },
+          "items": [
+            {
+              "en": "An editorial landing with real product previews, six palettes, light/dark themes, gradients and GSAP/Lenis motion.",
+              "es": "Una landing editorial con vistas reales del producto, seis paletas, temas claro y oscuro, gradientes y movimiento con GSAP y Lenis."
+            },
+            {
+              "en": "22 documentation chapters with heading search, mobile navigation and code copy; 19 chapters have English/Spanish sources and three retain their original language explicitly.",
+              "es": "22 capítulos con búsqueda de encabezados, navegación móvil y copia de código; 19 tienen fuentes en inglés y español y tres conservan explícitamente su idioma original."
+            },
+            {
+              "en": "Localized metadata, canonical URLs, reciprocal language links, sitemap, robots, structured data and a social sharing image.",
+              "es": "Metadatos localizados, URLs canónicas, enlaces recíprocos de idioma, sitemap, robots, datos estructurados e imagen para compartir."
+            }
+          ]
+        },
+        {
+          "title": { "en": "Improved", "es": "Mejorado" },
+          "items": [
+            {
+              "en": "Marketing and documentation load separately from the application demo. GitHub Pages remains available as a backup.",
+              "es": "La landing y la documentación cargan por separado de la aplicación demo. GitHub Pages sigue disponible como alternativa."
+            },
+            {
+              "en": "Cloudflare deployment automation and SHA-256 verification for the public source download.",
+              "es": "Despliegue automatizado en Cloudflare y verificación SHA-256 de la descarga pública del código."
+            }
+          ]
+        },
+        {
+          "title": { "en": "Verified", "es": "Verificado" },
+          "items": [
+            {
+              "en": "244 unit tests, 46 root browser scenarios, 37 mounted browser scenarios and successful static exports.",
+              "es": "244 pruebas unitarias, 46 escenarios de navegador en raíz, 37 con prefijo y exportaciones estáticas satisfactorias."
+            }
+          ]
+        }
+      ],
+      "notes": {
+        "en": "Historical QA numbers describe this release only. Its documentation and design evidence keep their recorded language and version boundaries.",
+        "es": "Los resultados históricos de QA corresponden solo a esta versión. La documentación y la evidencia de diseño conservan sus límites de idioma y versión registrados."
+      },
+      "links": [
+        {
+          "label": { "en": "QA receipt", "es": "Registro de QA" },
+          "path": "docs/qa-runtime-1.4.1.json"
+        }
+      ]
+    },
+    {
+      "version": "1.4.0",
+      "publishedAt": "2026-10-19T23:46:39Z",
+      "title": {
+        "en": "Commerce, maps and access",
+        "es": "Comercio, mapas y acceso"
+      },
+      "summary": {
+        "en": "Richer application workflows for products, orders, invoices, billing, maps and authentication.",
+        "es": "Flujos de aplicación más completos para productos, pedidos, facturas, suscripciones, mapas y autenticación."
+      },
+      "groups": [
+        {
+          "title": { "en": "Added", "es": "Añadido" },
+          "items": [
+            {
+              "en": "A product editor with prices, currency, stock and image upload, crop, rotation, alt text, ordering and live preview.",
+              "es": "Un editor de productos con precios, moneda, existencias y carga, recorte, rotación, texto alternativo, orden y vista previa de imágenes."
+            },
+            {
+              "en": "Connected mock orders, stock updates, invoice creation and export, payment retries, plans and a customer portal preview.",
+              "es": "Pedidos mock conectados, actualización de existencias, creación y exportación de facturas, reintentos de pago, planes y vista previa del portal del cliente."
+            },
+            {
+              "en": "Typed Stripe transport contracts and optional Google Maps with a restricted browser key, local layers and GeoJSON export.",
+              "es": "Contratos tipados para Stripe y Google Maps opcional con clave de navegador restringida, capas locales y exportación GeoJSON."
+            },
+            {
+              "en": "Discoverable sign-in, registration, recovery and verification screens, plus replaceable Google, GitHub and Microsoft mock callbacks.",
+              "es": "Pantallas accesibles desde la navegación para login, registro, recuperación y verificación, con callbacks mock reemplazables de Google, GitHub y Microsoft."
+            }
+          ]
+        },
+        {
+          "title": { "en": "Improved", "es": "Mejorado" },
+          "items": [
+            {
+              "en": "107 source registry entries, bilingual application integration guides and updated application screenshots.",
+              "es": "107 entradas del registry de código, guías bilingües de integración de aplicaciones y capturas actualizadas."
+            }
+          ]
+        },
+        {
+          "title": { "en": "Verified", "es": "Verificado" },
+          "items": [
+            {
+              "en": "244 unit tests, 92 full-suite browser tests and a separate set of 18 final mounted application tests.",
+              "es": "244 pruebas unitarias, 92 pruebas de navegador de la suite y un grupo separado de 18 pruebas finales de aplicaciones con prefijo."
+            }
+          ]
+        }
+      ],
+      "notes": {
+        "en": "Payments and social access remain mock in the public demo. Real Stripe endpoints, webhooks, OAuth sessions and Google configuration belong to the consuming application.",
+        "es": "Los pagos y el acceso social siguen siendo mock en la demo pública. Los endpoints de Stripe, webhooks, sesiones OAuth y configuración de Google pertenecen a la aplicación consumidora."
+      },
+      "links": [
+        {
+          "label": {
+            "en": "Application contracts",
+            "es": "Contratos de aplicaciones"
+          },
+          "path": "docs/application-integrations.md"
+        }
+      ]
+    },
+    {
+      "version": "1.3.0",
+      "publishedAt": "2026-10-19T19:41:34Z",
+      "title": {
+        "en": "Open source, for everyone",
+        "es": "Código abierto, para todos"
+      },
+      "summary": {
+        "en": "The first public GitHub release opens the Aureform kit, source, design resources and original images under Apache 2.0.",
+        "es": "La primera release pública de GitHub abre el kit Aureform, el código, los recursos de diseño y las imágenes originales bajo Apache 2.0."
+      },
+      "groups": [
+        {
+          "title": { "en": "Added", "es": "Añadido" },
+          "items": [
+            {
+              "en": "69 views, 44 core component families and 96 source registry entries for dashboards, SaaS workspaces and internal tools.",
+              "es": "69 vistas, 44 familias de componentes principales y 96 entradas del registry para dashboards, espacios SaaS y herramientas internas."
+            },
+            {
+              "en": "Six palettes, light/dark themes, gradients, shades, hover treatments and an appearance studio with JSON, CSS and React exports.",
+              "es": "Seis paletas, temas claro y oscuro, gradientes, shades, estados hover y un estudio de apariencia con exportación JSON, CSS y React."
+            },
+            {
+              "en": "GSAP entrances, optional Lenis scrolling, reduced-motion support, customer operations, CSV imports, workspace/team flows and bilingual examples.",
+              "es": "Entradas con GSAP, scroll opcional con Lenis, movimiento reducido, operaciones de clientes, importaciones CSV, flujos de workspace y equipo, y ejemplos bilingües."
+            },
+            {
+              "en": "32 original generated images, an editable Figma companion, SVG exports, shared tokens, local Code Connect templates and scoped native evidence.",
+              "es": "32 imágenes originales generadas, biblioteca editable de Figma, exports SVG, tokens compartidos, plantillas locales de Code Connect y evidencia nativa con alcance definido."
+            }
+          ]
+        },
+        {
+          "title": { "en": "Verified", "es": "Verificado" },
+          "items": [
+            {
+              "en": "189 unit tests and 74 end-to-end tests passed; all 69 views were exercised in both languages under the Pages base path.",
+              "es": "189 pruebas unitarias y 74 pruebas end-to-end aprobadas; las 69 vistas se recorrieron en ambos idiomas bajo el prefijo de Pages."
+            }
+          ]
+        }
+      ],
+      "notes": {
+        "en": "Original Aureform resources use Apache 2.0; upstream licenses remain in place. The design bundle documents its available formats and does not claim a native .fig export.",
+        "es": "Los recursos originales de Aureform usan Apache 2.0; se conservan las licencias de terceros. El paquete de diseño documenta los formatos disponibles y no afirma incluir una exportación nativa .fig."
+      },
+      "links": []
+    }
+  ]
+}

@@ -27,6 +27,7 @@ const applicationPaths = routes
 const expectedLocalePages = locales.flatMap((locale) => [
   `${locale}/index.html`,
   `${locale}/quality/index.html`,
+  `${locale}/changelog/index.html`,
   ...applicationPaths.map((path) => `${locale}/${path}/index.html`),
   ...documentationArticles.map(
     ({ slug }) =>
@@ -39,7 +40,7 @@ const exportedLocalePages = htmlFiles
 assert.deepEqual(
   [...exportedLocalePages].sort(),
   [...expectedLocalePages].sort(),
-  "Every catalog application, documentation chapter and quality page must be exported in both languages.",
+  "Every catalog application, documentation chapter, quality page and changelog must be exported in both languages.",
 );
 await stat(resolve(root, ".nojekyll"));
 

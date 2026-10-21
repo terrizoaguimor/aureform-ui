@@ -6,9 +6,11 @@
 
 A Next.js UI kit for dashboards, SaaS workspaces and internal tools, with 65 integration recipes, a visual appearance studio and an editable Figma companion.
 
-[**Explore the demo ↗**](https://aureformui.com/en/) · [**Documentation**](https://aureformui.com/en/docs/) · [Quality & Lighthouse](https://aureformui.com/en/quality/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Sponsor](https://github.com/sponsors/terrizoaguimor) · [Get started](#get-started) · [Contribute](CONTRIBUTING.md) · [Español](README.es.md)
+[**Explore the demo ↗**](https://aureformui.com/en/) · [**Documentation**](https://aureformui.com/en/docs/) · [Changelog](CHANGELOG.md) · [Quality & Lighthouse](https://aureformui.com/en/quality/) · [Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) · [Sponsor](https://github.com/sponsors/terrizoaguimor) · [Get started](#get-started) · [Contribute](CONTRIBUTING.md) · [Español](README.es.md)
 
 [![Live demo on Cloudflare](https://img.shields.io/badge/demo-aureformui.com-8F652A?style=flat-square&logo=cloudflare&logoColor=white)](https://aureformui.com/en/) [![Documentation: 24 chapters](https://img.shields.io/badge/docs-24%20chapters-8F652A?style=flat-square&logo=readthedocs&logoColor=white)](https://aureformui.com/en/docs/) [![Editable Figma library](https://img.shields.io/badge/Figma-editable%20library-8F652A?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N) [![shadcn source registry](https://img.shields.io/badge/shadcn-source%20registry-8F652A?style=flat-square&logo=shadcnui&logoColor=white)](https://aureformui.com/r/registry.json)
+
+[![Changelog in English and Spanish](https://img.shields.io/badge/changelog-English%20%2F%20Espa%C3%B1ol-8F652A?style=flat-square&logo=github&logoColor=white)](https://aureformui.com/en/changelog/)
 
 ![Aureform homepage in dark mode, with its interface preview and documentation entry](docs/images/aureform-landing-dark.webp)
 
