@@ -6,28 +6,15 @@ import {
   Activity,
   ArrowLeft,
   ArrowUpRight,
-  Bot,
-  Cable,
   Check,
   ChevronRight,
   CircleCheck,
-  CloudUpload,
   Code2,
-  Database,
-  FileText,
   Globe2,
-  Layers,
-  Mail,
-  MapPin,
-  Network,
   Plug,
   RefreshCw,
   Search,
   Settings2,
-  ShieldCheck,
-  ShoppingBag,
-  Sparkles,
-  Users,
   Workflow,
   X,
 } from "lucide-react";
@@ -55,6 +42,10 @@ import { Empty } from "@/components/ui/empty";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
+import {
+  IntegrationProviderLogo,
+  IntegrationProviderMarks,
+} from "@/components/integrations/provider-logo";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -63,7 +54,6 @@ import {
   type IntegrationConnection,
   type IntegrationDefinition,
   type IntegrationEvent,
-  type IntegrationFamily,
   type IntegrationResource,
   type IntegrationStatus,
   type IntegrationValues,
@@ -143,25 +133,6 @@ const EnterpriseDiagnostics = dynamic(
   { loading: WorkbenchLoading },
 );
 
-const familyIcons = {
-  data: Database,
-  identity: ShieldCheck,
-  commerce: ShoppingBag,
-  files: CloudUpload,
-  email: Mail,
-  observability: Activity,
-  notifications: Layers,
-  jobs: Workflow,
-  collaboration: Users,
-  content: FileText,
-  search: Search,
-  maps: MapPin,
-  ai: Sparkles,
-  knowledge: Database,
-  agents: Bot,
-  connectors: Cable,
-  automation: Network,
-} satisfies Record<IntegrationFamily, typeof Plug>;
 const statusLabels: Record<IntegrationStatus, [string, string]> = {
   "not-configured": ["Ready to configure", "Lista para configurar"],
   connected: ["Connected", "Conectada"],
@@ -484,7 +455,6 @@ export function IntegrationHub({
           </div>
           <div className="grid gap-4 md:grid-cols-2 2xl:grid-cols-3">
             {visible.map((item) => {
-              const Icon = familyIcons[item.family];
               return (
                 <EffectSurface key={item.id} asChild className="af-hover-card">
                   <button
@@ -494,9 +464,7 @@ export function IntegrationHub({
                     className="group flex min-w-0 flex-col rounded-2xl border border-border bg-surface p-5 text-left outline-none transition-[border-color,box-shadow,transform] hover:border-primary/40 focus-visible:ring-2 focus-visible:ring-ring"
                   >
                     <span className="mb-5 flex w-full items-center justify-between gap-2">
-                      <span className="flex size-11 items-center justify-center rounded-xl border border-primary/20 bg-accent text-primary">
-                        <Icon aria-hidden className="size-5" />
-                      </span>
+                      <IntegrationProviderMarks options={item.options} />
                       <ConnectionBadge
                         status={byId.get(item.id)?.status ?? "not-configured"}
                       />
@@ -955,7 +923,6 @@ function ConnectionWorkbench({
     });
   };
   const isConnected = connection?.status === "connected";
-  const Icon = familyIcons[definition.family];
   const workflowDefinition = useMemo(
     () =>
       connection
@@ -980,9 +947,7 @@ function ConnectionWorkbench({
       <Card className="p-5 sm:p-6">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="flex min-w-0 items-start gap-4">
-            <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl border border-primary/20 bg-accent text-primary">
-              <Icon aria-hidden className="size-6" />
-            </span>
+            <IntegrationProviderLogo optionId={option} size="lg" />
             <div className="min-w-0">
               <h2 className="text-xl font-semibold tracking-tight">
                 {definition.name}
@@ -1234,6 +1199,9 @@ function ConnectionWorkbench({
                 options={definition.options.map((item) => ({
                   value: item.id,
                   label: item.name,
+                  icon: (
+                    <IntegrationProviderLogo optionId={item.id} size="inline" />
+                  ),
                 }))}
               />
               <ConfigurationFields

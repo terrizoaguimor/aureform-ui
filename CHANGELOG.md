@@ -19,8 +19,11 @@ Follow the work on main before the next version is tagged.
 - A public, bilingual changelog with release dates, version navigation and links to the original GitHub releases.
 - English and Spanish Markdown histories generated from the same source as the website.
 - Changelog links in the landing, documentation, quality pages and README, with localized metadata and sitemap entries.
+- Seven Communications research documents covering Twilio/Telnyx capabilities, provider-neutral architecture, voice AI, Flow DSL, Prompt-to-Flow, security and phased delivery.
+- Dated native Figma source maps for Communications proposals and recovery of existing commerce, maps, authentication and integration designs, with explicit parity limits.
+- Original provider logos in integration cards, connection headers and provider choices, with bundled assets, source attribution and reusable Figma artwork.
 
-These changes are available on main and are not part of the immutable 1.5.0 release archives.
+These changes are available on main and are not part of the immutable 1.5.0 release archives. Communications is research and proposed design; carrier integrations and complete runtime parity are not certified.
 
 ## [1.5.0](https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.5.0) — 2026-10-20
 

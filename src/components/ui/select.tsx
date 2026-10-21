@@ -1,9 +1,15 @@
 "use client";
+import type { ReactNode } from "react";
 import { Select as SelectPrimitive } from "@base-ui/react/select";
 import { Check, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { inputClasses } from "@/components/ui/input";
-export type SelectOption = { value: string; label: string; disabled?: boolean };
+export type SelectOption = {
+  value: string;
+  label: string;
+  disabled?: boolean;
+  icon?: ReactNode;
+};
 export type SelectProps = {
   options: SelectOption[];
   value?: string;
@@ -59,7 +65,22 @@ export function Select({
         <SelectPrimitive.Value
           placeholder={placeholder}
           className="min-w-0 truncate whitespace-nowrap"
-        />
+        >
+          {options.some((option) => option.icon)
+            ? (selectedValue: string | null) => {
+                const selected = options.find(
+                  (option) => option.value === selectedValue,
+                );
+                if (!selected) return placeholder;
+                return (
+                  <span className="flex min-w-0 items-center gap-2">
+                    {selected.icon}
+                    <span className="truncate">{selected.label}</span>
+                  </span>
+                );
+              }
+            : undefined}
+        </SelectPrimitive.Value>
         <SelectPrimitive.Icon>
           <ChevronDown className="size-3.5 opacity-60" />
         </SelectPrimitive.Icon>
@@ -80,7 +101,10 @@ export function Select({
                   className="flex cursor-default items-center justify-between gap-6 rounded-md px-3 py-2 outline-none data-highlighted:bg-accent data-disabled:opacity-40"
                 >
                   <SelectPrimitive.ItemText>
-                    {option.label}
+                    <span className="flex items-center gap-2">
+                      {option.icon}
+                      <span>{option.label}</span>
+                    </span>
                   </SelectPrimitive.ItemText>
                   <SelectPrimitive.ItemIndicator>
                     <Check className="size-3.5" />

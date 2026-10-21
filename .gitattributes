@@ -1,0 +1,5 @@
+# Keep original provider artwork byte-identical, including upstream line endings.
+public/assets/integrations/*.svg -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+
+# Intentional Markdown hard breaks and the frozen research source ending.
+docs/communications/SECURITY-COMPLIANCE.md whitespace=-blank-at-eol,-blank-at-eof

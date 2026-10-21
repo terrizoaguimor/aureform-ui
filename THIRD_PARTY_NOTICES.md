@@ -65,6 +65,8 @@ Apache 2.0 covers Aureform's glue code, not those SDKs or hosted services.
 
 Google, GitHub, Microsoft and Stripe names and marks belong to their respective owners. The inline provider marks identify mock sign-in choices; Apache 2.0 does not grant trademark rights or imply endorsement. Google Maps is loaded only after an explicit connection and remains subject to Google's service terms.
 
+Integration provider logos are original third-party brand assets used to identify the corresponding services and projects. Their source URLs, consultation dates, file checksums, normalization notes and available brand terms are recorded in the [asset manifest](public/assets/integrations/manifest.json) and [brand asset notice](public/assets/integrations/README.md). They retain their owners' rights and are excluded from Aureform's Apache 2.0 grant. A source repository's code license does not by itself grant trademark rights. Their inclusion does not imply endorsement or a working provider connection.
+
 The proprietary TailAdmin Pro reference was read to understand feature categories. No proprietary TailAdmin source, image, font, template or license is included in this distribution.
 
 Community files linked in [design research](docs/community-design-references.md) are references, not bundled asset grants. Their publishers' licenses remain independent. The Apache 2.0 grant covers Aureform's original work and does not grant rights to external linked Figma Community files.

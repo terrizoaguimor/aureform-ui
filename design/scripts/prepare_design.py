@@ -179,6 +179,9 @@ def main() -> None:
             files.extend(p for p in (DESIGN / directory).rglob("*") if p.is_file())
         files.extend(ROOT / item["file"] for item in proofs)
         files.extend(sorted((ROOT / ".figma/code-connect").glob("*.figma.ts")))
+        files.extend(sorted((ROOT / "docs/communications").glob("*.md")))
+        files.extend(sorted((ROOT / "public/assets/integrations").glob("*")))
+        files.extend(sorted((DESIGN / "assets/provider-brands").glob("*")))
         files.extend([
             ROOT / ".figma/code-connect/figma.config.json",
             ROOT / "docs/figma-distribution.md", ROOT / "docs/figma-distribution.es.md",
@@ -202,7 +205,7 @@ def main() -> None:
                 raise ValueError("Unexpected ZIP paths")
         write("design/downloads/checksums.json", {
             "schemaVersion": 1,
-            "scope": "Selected design snapshots, native starter plugin and local Code Connect templates",
+            "scope": "Selected design snapshots, native starter plugin, local Code Connect templates, Communications research documents and original provider artwork",
             "nativeFigIncluded": False,
             "files": len(paths),
             "bundle": asset(target.relative_to(ROOT).as_posix()),

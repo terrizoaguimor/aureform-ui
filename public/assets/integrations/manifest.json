@@ -1,0 +1,3566 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-10-21T16:21:43.229Z",
+  "consultationDate": "2026-10-21",
+  "purpose": "Nominative service/project identification in Aureform integration UI",
+  "source": "Verified original official brand assets; provider and host/project relationships explicitly recorded",
+  "coverage": {
+    "recipes": 65,
+    "providerOptions": 86,
+    "coveredOptions": 86,
+    "brandIdentities": 79,
+    "files": 122,
+    "missingOptions": [],
+    "generatedLogos": 0
+  },
+  "presentation": {
+    "objectFit": "contain",
+    "recolor": false,
+    "filters": false,
+    "crop": false,
+    "originalNeutralBackground": true,
+    "decorativeWhenProviderTextIsAdjacent": true
+  },
+  "licenseBoundary": "Third-party brands retain their owners rights. Aureform Apache-2.0 does not grant logo or trademark rights. No endorsement or working provider connection is implied.",
+  "nativeFigma": {
+    "status": "original-artwork-imported-and-source-UI-bound",
+    "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+    "recordedAtUTC": "2026-10-21T18:04:37.433041+00:00",
+    "libraryBoardId": "456:31420",
+    "galleryId": "478:37714",
+    "galleryURL": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=478-37714",
+    "hubViewportId": "379:30393",
+    "tileSetId": "463:31508",
+    "artworkComponents": 120,
+    "sourceUsedArtworks": 80,
+    "optionalOriginalVariants": 40,
+    "recipesBound": 65,
+    "providerOptionsBound": 86,
+    "nativeVisualReview": "PASS for identity gallery and selected Fresh Hub viewport",
+    "alternateVisualReview": "Not individually certified; original file hashes and native editable imports recorded",
+    "receipt": "design/reports/native-integration-brands-recovery-2026-10-21.json",
+    "browserParity": "not-verified",
+    "rasterImport": "Full-resolution originals. Auth.js is decoded to lossless PNG for Figma only; identical RGBA pixels, original WebP and portable SVG unchanged."
+  },
+  "records": [
+    {
+      "id": "tanstack-query",
+      "name": "TanStack",
+      "optionIds": [
+        "tanstack-query"
+      ],
+      "file": "tanstack-query.svg",
+      "width": 321.33,
+      "height": 50,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://tanstack.com/images/brand/tanstack-landscape-black.svg",
+      "officialURL": "https://tanstack.com/query/latest",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "85159c237b2d955f231a9b0faf47648b7b8cb757c3566c0d00c5ed42507175ea",
+      "sha256": "85159c237b2d955f231a9b0faf47648b7b8cb757c3566c0d00c5ed42507175ea",
+      "bytes": 4796,
+      "sourceViewBox": "0 0 321.33 50",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://tanstack.com/query/latest",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "tanstack-query-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://tanstack.com/images/brand/tanstack-landscape-white.svg",
+          "sha256": "a1e07a8b452040cd0a6f601347ebe4db41ce46367aea0e7243ed92cb94deedde",
+          "bytes": 4793,
+          "viewBox": "0 0 321.33 50",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "optionIds": [
+        "supabase-data",
+        "supabase-auth",
+        "supabase-storage",
+        "supabase-realtime"
+      ],
+      "file": "supabase.svg",
+      "width": 109,
+      "height": 113,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://supabase.com/brand-assets.zip",
+      "officialURL": "https://supabase.com/brand-assets",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-brand-kit",
+      "sourceSha256": "eb9ffcd100ad26228a578100ba7cbfc5b383e4995338d122abdc6a3b4d210ed3",
+      "sha256": "eb9ffcd100ad26228a578100ba7cbfc5b383e4995338d122abdc6a3b4d210ed3",
+      "bytes": 1107,
+      "sourceViewBox": "0 0 109 113",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Represent Supabase only; official guidance prohibits modifying brand elements or wordmark colors.",
+        "referenceURL": "https://supabase.com/brand-assets",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "better-auth",
+      "name": "Better Auth",
+      "optionIds": [
+        "better-auth"
+      ],
+      "file": "better-auth.svg",
+      "width": 500,
+      "height": 500,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://raw.githubusercontent.com/better-auth/better-auth/fd62eba1d0ec71b3abb17ece92a4aae0c3c85270/docs/public/branding/better-auth-logo-light.svg",
+      "officialURL": "https://better-auth.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-repository-svg",
+      "sourceSha256": "78d2079d89266476a576ea788714a323fad10f0b1b997948956376999ff9477e",
+      "sha256": "78d2079d89266476a576ea788714a323fad10f0b1b997948956376999ff9477e",
+      "bytes": 622,
+      "sourceViewBox": "0 0 500 500",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://better-auth.com/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "better-auth-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://raw.githubusercontent.com/better-auth/better-auth/fd62eba1d0ec71b3abb17ece92a4aae0c3c85270/docs/public/branding/better-auth-logo-dark.svg",
+          "sha256": "fc322de57a34d9b3b004e4967231ba119750cd2b25034c268e03135940c0e5e7",
+          "bytes": 622,
+          "viewBox": "0 0 500 500",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "clerk",
+      "name": "Clerk",
+      "optionIds": [
+        "clerk"
+      ],
+      "file": "clerk.svg",
+      "width": 160,
+      "height": 160,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://clerk.com/v2/downloads/avatar-square-primary-light.svg",
+      "officialURL": "https://clerk.com/brand-assets",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "597ed56187839e3362d2d98b8c025c4735395db0b969747514f24b98fc8e78a8",
+      "sha256": "597ed56187839e3362d2d98b8c025c4735395db0b969747514f24b98fc8e78a8",
+      "bytes": 1249,
+      "sourceViewBox": "0 0 160 160",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://clerk.com/brand-assets",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "clerk-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://clerk.com/v2/downloads/avatar-square-primary-dark.svg",
+          "sha256": "9ffdc3f42fc27d68f58b687220e76539432628e82c82247c3189ae189893cd06",
+          "bytes": 1312,
+          "viewBox": "0 0 160 160",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "workos",
+      "name": "WorkOS AuthKit",
+      "optionIds": [
+        "workos"
+      ],
+      "file": "workos.svg",
+      "width": 242,
+      "height": 210,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://cdn.prod.website-files.com/621f54116cab10f6e9215d8b/6908e076c85d9ad71e6c6b6b_WorkOS%20Logos.zip",
+      "officialURL": "https://workos.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-brand-kit",
+      "sourceSha256": "c215f201adb0bb8c282a86ab0247aa6423009562d2781c566a89fee3732c38d8",
+      "sha256": "c215f201adb0bb8c282a86ab0247aa6423009562d2781c566a89fee3732c38d8",
+      "bytes": 865,
+      "sourceViewBox": "0 0 242 210",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://workos.com/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "workos-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://cdn.prod.website-files.com/621f54116cab10f6e9215d8b/6908e076c85d9ad71e6c6b6b_WorkOS%20Logos.zip",
+          "sha256": "ba66d155301f211f9141c96b2faecdb2b2687b928ead14b26f9717d90f06c7a4",
+          "bytes": 865,
+          "viewBox": "0 0 242 210",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "auth0",
+      "name": "Auth0",
+      "optionIds": [
+        "auth0"
+      ],
+      "file": "auth0.svg",
+      "width": 1163.77,
+      "height": 343.8,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://cdn.auth0.com/website/home-page/evolution_logo_Auth0_black.svg",
+      "officialURL": "https://auth0.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "78d27567d76e49aba35a2d37f077d45e12b9fa3d51ac4e1c31e92ff50d529ded",
+      "sha256": "78d27567d76e49aba35a2d37f077d45e12b9fa3d51ac4e1c31e92ff50d529ded",
+      "bytes": 1713,
+      "sourceViewBox": "0 0 1163.77 343.8",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://auth0.com/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "swr",
+      "name": "SWR",
+      "optionIds": [
+        "swr"
+      ],
+      "file": "swr.svg",
+      "width": 450,
+      "height": 96,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://vercel.com/oss/swr",
+      "officialURL": "https://vercel.com/oss/swr",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-inline-svg-static-reduced-motion-artwork",
+      "sourceSha256": "79530c95be2be4442600ad98cd4b3c9b70c91472919a35e93fbe41c4006dbca0",
+      "sha256": "6de1d88cd8f5fcbe7ac0433d554790530671059fae70f119eeba1fed520c4a0d",
+      "bytes": 999,
+      "sourceViewBox": "-95 -8 450 96",
+      "normalizations": [
+        "Added SVG namespace. Materialized original light --ds-gray-1000 as #171717 from the fetched official stylesheet. Original path, stroke geometry, viewBox and static reduced-motion fallback group retained."
+      ],
+      "license": "Original SWR/Vercel brand asset; nominative identification. No Apache-2.0 or independent trademark license inferred.",
+      "notes": [
+        "Official completed SWR mark from the product page static reduced-motion rendering, not the earlier Simple Icons bridge. No redraw, trace, arbitrary recolor or animation included."
+      ],
+      "sourceColorBindings": [
+        {
+          "sourceURL": "https://vercel.com/vc-ap-50fec7/_next/static/chunks/0~_bw5q23pnxr.css?dpl=dpl_FiF54X6RBCJugP9sUkFxJWeQHyX6",
+          "sha256": "1283d60179c44ac9236522a5a65e52e7438ce14ca8d979feade2e876122ba90d",
+          "rule": "--ds-gray-1000:#171717",
+          "target": "Original SWR path fill and stroke"
+        }
+      ],
+      "variants": []
+    },
+    {
+      "id": "neon",
+      "name": "Neon serverless driver",
+      "optionIds": [
+        "neon"
+      ],
+      "file": "neon.svg",
+      "width": 64,
+      "height": 64,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://neon.com/brand/neon-logomark-light-color.svg?updated=2026-06-03&dpl=dpl_91SuDvf4uWm3BxP12JZyZFtp9LLv",
+      "officialURL": "https://neon.com/brand",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "2b1aaef0b2de5d30b9a00778a0a9b9df2255be08a939a9521f3c93a46de521cf",
+      "sha256": "2b1aaef0b2de5d30b9a00778a0a9b9df2255be08a939a9521f3c93a46de521cf",
+      "bytes": 275,
+      "sourceViewBox": "0 0 64 64",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://neon.com/brand",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "neon-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://neon.com/brand/neon-logomark-dark-color.svg?updated=2026-06-03&dpl=dpl_91SuDvf4uWm3BxP12JZyZFtp9LLv",
+          "sha256": "6f36debfc1d707351c7bc3a1e771fb24bc47700a622950e7f987edebd13efdef",
+          "bytes": 275,
+          "viewBox": "0 0 64 64",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "drizzle",
+      "name": "Drizzle ORM",
+      "optionIds": [
+        "drizzle"
+      ],
+      "file": "drizzle.svg",
+      "width": 160,
+      "height": 160,
+      "display": "symbol",
+      "background": "dark",
+      "sourceURL": "https://orm.drizzle.team/svg/drizzle.svg",
+      "officialURL": "https://orm.drizzle.team/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "3550db1618e31974357c31e09a16e6d0b99ecf1b79e881e8d806f734a2f9a20f",
+      "sha256": "3550db1618e31974357c31e09a16e6d0b99ecf1b79e881e8d806f734a2f9a20f",
+      "bytes": 1172,
+      "sourceViewBox": "0 0 160 160",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://orm.drizzle.team/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "prisma",
+      "name": "Prisma ORM",
+      "optionIds": [
+        "prisma"
+      ],
+      "file": "prisma.svg",
+      "width": 264,
+      "height": 67,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://www.prisma.io/logo/full-color.svg",
+      "officialURL": "https://www.prisma.io/brand",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "b357a3cb393416ea48c9b9d6dba74ee7ad89cbd1da2c52d4c14f91351175cfd4",
+      "sha256": "b357a3cb393416ea48c9b9d6dba74ee7ad89cbd1da2c52d4c14f91351175cfd4",
+      "bytes": 6059,
+      "sourceViewBox": "0 0 264 67",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://www.prisma.io/brand",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "prisma-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://www.prisma.io/logo/full-color-white.svg",
+          "sha256": "7f49d3ffc9408181b3fc8dac5ff6d1a4fc4acc9938a947f14ec9c721fc14872a",
+          "bytes": 6050,
+          "viewBox": "0 0 264 67",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase / Firestore",
+      "optionIds": [
+        "firebase"
+      ],
+      "file": "firebase.svg",
+      "width": 600,
+      "height": 600,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://firebase.google.com/static/downloads/brand-guidelines/firebase-brand-assets.zip",
+      "officialURL": "https://firebase.google.com/brand-guidelines",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-brand-kit",
+      "sourceSha256": "120799f51cff880e87bdc5c3954f1938ecc4cd401bec3fe188e1e22db641c556",
+      "sha256": "120799f51cff880e87bdc5c3954f1938ecc4cd401bec3fe188e1e22db641c556",
+      "bytes": 1367,
+      "sourceViewBox": "0 0 600 600",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://firebase.google.com/brand-guidelines",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "convex",
+      "name": "Convex",
+      "optionIds": [
+        "convex"
+      ],
+      "file": "convex.svg",
+      "width": 184,
+      "height": 188,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.convex.dev/resources/logos.zip",
+      "officialURL": "https://www.convex.dev/brand",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-brand-kit",
+      "sourceSha256": "5fba077bbae5a44e878d297fd4053babfefbc297a3c3404b0316c27948c2581b",
+      "sha256": "5fba077bbae5a44e878d297fd4053babfefbc297a3c3404b0316c27948c2581b",
+      "bytes": 948,
+      "sourceViewBox": "0 0 184 188",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://www.convex.dev/brand",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "convex-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://www.convex.dev/resources/logos.zip",
+          "sha256": "6fbf3e8261f64860bf6ab2f3d9e429c7900bf4f72b7a725553d379814a5cea8b",
+          "bytes": 942,
+          "viewBox": "0 0 184 188",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "trpc",
+      "name": "tRPC",
+      "optionIds": [
+        "trpc"
+      ],
+      "file": "trpc.svg",
+      "width": 512,
+      "height": 512,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://trpc.io/img/logo.svg",
+      "officialURL": "https://trpc.io/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "107ca29eb1c4b9f898773513e48d5227043f0c17a859bfa7f629763e06c6ba67",
+      "sha256": "107ca29eb1c4b9f898773513e48d5227043f0c17a859bfa7f629763e06c6ba67",
+      "bytes": 1379,
+      "sourceViewBox": "0 0 512 512",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://trpc.io/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "optionIds": [
+        "stripe"
+      ],
+      "file": "stripe.svg",
+      "width": 360,
+      "height": 150,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://assets.stripeassets.com/fzn2n1nzq965/7q0dJGs6fRS1LRmMpChoAF/87def4edfbb7fd5aef4ab9baf904b2db/Stripe_logo_kit.zip",
+      "officialURL": "https://stripe.com/newsroom/information",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-brand-kit",
+      "sourceSha256": "4448c4b4f954285d2b2aeb6d92391c85fdc290e008c2679d2c006d6d72ae1ae9",
+      "sha256": "4448c4b4f954285d2b2aeb6d92391c85fdc290e008c2679d2c006d6d72ae1ae9",
+      "bytes": 2139,
+      "sourceViewBox": "0 0 360 150",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://stripe.com/newsroom/information",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "stripe-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://assets.stripeassets.com/fzn2n1nzq965/7q0dJGs6fRS1LRmMpChoAF/87def4edfbb7fd5aef4ab9baf904b2db/Stripe_logo_kit.zip",
+          "sha256": "c3b7d6fce2f2beb40d808a094b02b32eaa60ff8fa2f97e8bc7a7785e7a859a2b",
+          "bytes": 2176,
+          "viewBox": "0 0 360 151",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "paddle",
+      "name": "Paddle",
+      "optionIds": [
+        "paddle"
+      ],
+      "file": "paddle.svg",
+      "width": 175,
+      "height": 51,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://www.paddle.com/_next/static/media/paddle-logo-inverted.02kelud1d95as.svg?dpl=ab33860b8a5497f8316805d847b427ce74a861375545c52de66f7ade185eaad7366164386364663162313435626639363331346534396437",
+      "officialURL": "https://www.paddle.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "7890c7aa0fdf74babcbded6ab6dd2acf3a68d44564378042585a2f5f2db68698",
+      "sha256": "7890c7aa0fdf74babcbded6ab6dd2acf3a68d44564378042585a2f5f2db68698",
+      "bytes": 2667,
+      "sourceViewBox": "0 0 175 51",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://www.paddle.com/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "paddle-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://www.paddle.com/_next/static/media/paddle-logo.3nuh_p47ikphg.svg?dpl=ab33860b8a5497f8316805d847b427ce74a861375545c52de66f7ade185eaad7366164386364663162313435626639363331346534396437",
+          "sha256": "0171e2f7a41502301979bb4359abe9c46f44792b29eeae4473b427257c96627a",
+          "bytes": 2667,
+          "viewBox": "0 0 175 51",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "polar",
+      "name": "Polar",
+      "optionIds": [
+        "polar"
+      ],
+      "file": "polar.svg",
+      "width": 1510,
+      "height": 1510,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://polar.sh/assets/brand/polar_brand.zip",
+      "officialURL": "https://polar.sh/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-brand-kit",
+      "sourceSha256": "053708ce5b8565f4bedcb801b17604585b56abcceadc496c8e2cbcaf2cd15df5",
+      "sha256": "053708ce5b8565f4bedcb801b17604585b56abcceadc496c8e2cbcaf2cd15df5",
+      "bytes": 860,
+      "sourceViewBox": "0 0 1510 1510",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://polar.sh/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "polar-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://polar.sh/assets/brand/polar_brand.zip",
+          "sha256": "3ae46cecbdbbd5b9ef80cddab8046ec4bb99df455840eb8879d0fb372048740d",
+          "bytes": 864,
+          "viewBox": "0 0 1510 1510",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "lemon-squeezy",
+      "name": "Lemon Squeezy",
+      "optionIds": [
+        "lemon-squeezy"
+      ],
+      "file": "lemon-squeezy.svg",
+      "width": 21,
+      "height": 28,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://cdn.prod.website-files.com/6347244ba8d63489ba51c08e/6347244ba8d63469e851c0d6_footer%20small%20logo.svg",
+      "officialURL": "https://www.lemonsqueezy.com/brand",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "c3d33485e7dda5dc487193d5aeb03d49de2b00a3b59757ab74921b4d3862d447",
+      "sha256": "c3d33485e7dda5dc487193d5aeb03d49de2b00a3b59757ab74921b4d3862d447",
+      "bytes": 1334,
+      "sourceViewBox": "0 0 21 28",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://www.lemonsqueezy.com/brand",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "amazon-s3",
+      "name": "Amazon S3",
+      "optionIds": [
+        "amazon-s3"
+      ],
+      "file": "amazon-s3.svg",
+      "width": 80,
+      "height": 80,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://d1.awsstatic.com/onedam/marketing-channels/website/public/shared/architecture-icon-release/Icon-package_07312026.5846e92413caa21490223536cc97f1269e44fa92.zip",
+      "officialURL": "https://aws.amazon.com/architecture/icons/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-brand-kit",
+      "sourceSha256": "b92c5101cc6565dd12df37655802279f8fba0c719279f62f93106d26750b36c6",
+      "sha256": "b92c5101cc6565dd12df37655802279f8fba0c719279f62f93106d26750b36c6",
+      "bytes": 2010,
+      "sourceViewBox": "0 0 80 80",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "AWS architecture icon usage terms; no OSS/Apache logo license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Official AWS product icon; source terms describe architectural/technical materials. UI identification is not independently legally certified.",
+        "referenceURL": "https://aws.amazon.com/architecture/icons/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": {
+        "kind": "official AWS service architecture icon",
+        "brand": "Amazon S3",
+        "companyLogo": false
+      },
+      "variants": []
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "optionIds": [
+        "cloudflare-r2",
+        "cloudflare-ai-gateway",
+        "cloudflare-agents"
+      ],
+      "file": "cloudflare.svg",
+      "width": 66,
+      "height": 30,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg",
+      "officialURL": "https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-provider-source",
+      "sourceSha256": "62523a61fc4c3bd5fdf255fc90643af397df68639dbf10cc9c3bad644f0d82a5",
+      "sha256": "62523a61fc4c3bd5fdf255fc90643af397df68639dbf10cc9c3bad644f0d82a5",
+      "bytes": 1893,
+      "sourceViewBox": "0 0 66 30",
+      "normalizations": [],
+      "license": "Brand asset: respective owner; nominative integration identification under linked brand terms. Not relicensed Apache-2.0.",
+      "notes": [
+        "Official developer navigation cloud symbol. Two orange brand shades preserved."
+      ],
+      "variants": []
+    },
+    {
+      "id": "cloudinary",
+      "name": "Cloudinary",
+      "optionIds": [
+        "cloudinary"
+      ],
+      "file": "cloudinary.svg",
+      "width": 500,
+      "height": 96.77,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://cloudinary.com/glossary/brand-assets",
+      "officialURL": "https://cloudinary.com/glossary/brand-assets",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-inline-svg",
+      "sourceSha256": "b7df0ea93864a0ff47113c3635481c61760368fdeb8677642ef5821ae405da38",
+      "sha256": "b7df0ea93864a0ff47113c3635481c61760368fdeb8677642ef5821ae405da38",
+      "bytes": 4485,
+      "sourceViewBox": "0 0 500 96.77",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://cloudinary.com/glossary/brand-assets",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "resend",
+      "name": "Resend",
+      "optionIds": [
+        "resend"
+      ],
+      "file": "resend.svg",
+      "width": 1800,
+      "height": 1800,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://cdn.resend.com/brand/resend-icon-black.svg",
+      "officialURL": "https://resend.com/brand",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "7251dba7137e25a4117154bfdaef8333128a9dcc67446912ddcf6d6048573b12",
+      "sha256": "7251dba7137e25a4117154bfdaef8333128a9dcc67446912ddcf6d6048573b12",
+      "bytes": 504,
+      "sourceViewBox": "0 0 1800 1800",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://resend.com/brand",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "resend-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://cdn.resend.com/brand/resend-icon-white.svg",
+          "sha256": "9d6a386b319b8d0f421918e270f843d9996e31021fad9e41bc4c10a8882b9908",
+          "bytes": 506,
+          "viewBox": "0 0 1800 1800",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "postmark",
+      "name": "Postmark",
+      "optionIds": [
+        "postmark"
+      ],
+      "file": "postmark.svg",
+      "width": 30,
+      "height": 30,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://postmarkapp.com/images/logo-stamp-simple.svg",
+      "officialURL": "https://postmarkapp.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "be44c8d132657e19c0a1f43b4f31e7bfa27be327e8f8a2b5c9796281bb64758e",
+      "sha256": "be44c8d132657e19c0a1f43b4f31e7bfa27be327e8f8a2b5c9796281bb64758e",
+      "bytes": 3699,
+      "sourceViewBox": "0 0 30 30",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://postmarkapp.com/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "sendgrid",
+      "name": "SendGrid",
+      "optionIds": [
+        "sendgrid"
+      ],
+      "file": "sendgrid.svg",
+      "width": 597,
+      "height": 150,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://www.twilio.com/en-us/sendgrid",
+      "officialURL": "https://www.twilio.com/en-us/sendgrid",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-inline-svg",
+      "sourceSha256": "4dfdba98ca5775333c15b9b7c035ab1fa882949f92ae210b5a3b1168d52aabef",
+      "sha256": "4dfdba98ca5775333c15b9b7c035ab1fa882949f92ae210b5a3b1168d52aabef",
+      "bytes": 9880,
+      "sourceViewBox": "0 0 597 150",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://www.twilio.com/en-us/sendgrid",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "amazon-ses",
+      "name": "Amazon SES",
+      "optionIds": [
+        "amazon-ses"
+      ],
+      "file": "amazon-ses.svg",
+      "width": 80,
+      "height": 80,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://d1.awsstatic.com/onedam/marketing-channels/website/public/shared/architecture-icon-release/Icon-package_07312026.5846e92413caa21490223536cc97f1269e44fa92.zip",
+      "officialURL": "https://aws.amazon.com/architecture/icons/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-brand-kit",
+      "sourceSha256": "5c0e6fac68ba71af3febf40540aba7b177ae152a571ce1e15312f47bfef0c60e",
+      "sha256": "5c0e6fac68ba71af3febf40540aba7b177ae152a571ce1e15312f47bfef0c60e",
+      "bytes": 3246,
+      "sourceViewBox": "0 0 80 80",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "AWS architecture icon usage terms; no OSS/Apache logo license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Official AWS product icon; source terms describe architectural/technical materials. UI identification is not independently legally certified.",
+        "referenceURL": "https://aws.amazon.com/architecture/icons/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": {
+        "kind": "official AWS service architecture icon",
+        "brand": "Amazon SES",
+        "companyLogo": false
+      },
+      "variants": []
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "optionIds": [
+        "sentry"
+      ],
+      "file": "sentry.svg",
+      "width": 200,
+      "height": 44,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://sentry.io/branding/",
+      "officialURL": "https://sentry.io/branding/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-inline-svg",
+      "sourceSha256": "a2e5b646a812386291aecb35cb833afbdaba7cdd8a37aae75a5500ad05f5b6ef",
+      "sha256": "a2e5b646a812386291aecb35cb833afbdaba7cdd8a37aae75a5500ad05f5b6ef",
+      "bytes": 1460,
+      "sourceViewBox": "0 0 200 44",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://sentry.io/branding/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "posthog",
+      "name": "PostHog",
+      "optionIds": [
+        "posthog"
+      ],
+      "file": "posthog.svg",
+      "width": 52,
+      "height": 28,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://posthog.com/handbook/brand/assets",
+      "officialURL": "https://posthog.com/handbook/brand/assets",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-inline-svg",
+      "sourceSha256": "64a020f39babbfe0e7a3b937494b3e2a427fe5ae4f5e62fed940a6d15a2fb58a",
+      "sha256": "c062713827cc6ea2790763c6fa5dad8f216c704c937d8c89e091a50d5b77d105",
+      "bytes": 1198,
+      "sourceViewBox": "0 0 52 28",
+      "normalizations": [
+        "Removed self-referential root color:currentColor for standalone compatibility; fill/stroke and default/inherited color unchanged",
+        "Resolved standalone width/height from the original viewBox because root used width/height=auto; paths, class/style and paints untouched"
+      ],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://posthog.com/handbook/brand/assets",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "optionIds": [
+        "vercel-analytics",
+        "vercel-ai-gateway"
+      ],
+      "file": "vercel.svg",
+      "width": 16,
+      "height": 16,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://vercel.com/vc-ap-b3331f/_next/static/immutable/media/logo-vercel-light.1xgi91gcqswpt.svg",
+      "officialURL": "https://vercel.com/vc-ap-b3331f/_next/static/immutable/media/logo-vercel-light.1xgi91gcqswpt.svg",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-provider-source",
+      "sourceSha256": "e8b07b340f180cbf0e2b1094b6361c46562f07efd70ebfa65d6bdf63b0b2f8c9",
+      "sha256": "e8b07b340f180cbf0e2b1094b6361c46562f07efd70ebfa65d6bdf63b0b2f8c9",
+      "bytes": 179,
+      "sourceViewBox": "0 0 16 16",
+      "normalizations": [],
+      "license": "Brand asset: respective owner; nominative integration identification under linked brand terms. Not relicensed Apache-2.0.",
+      "notes": [
+        "Original brand asset linked by official Geist Brand page. White original variant also independently downloaded; registry may select matching original for dark theme."
+      ],
+      "variants": [
+        {
+          "file": "vercel-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://vercel.com/vc-ap-b3331f/_next/static/immutable/media/logo-vercel-dark.3bae9lxmoeqty.svg",
+          "sha256": "7fdfb0f2383bfe985f6399fc6f2e1927161481aae9c6e68b6a3e83e8c3dac954",
+          "bytes": 178,
+          "viewBox": "0 0 16 16",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "knock",
+      "name": "Knock",
+      "optionIds": [
+        "knock"
+      ],
+      "file": "knock.svg",
+      "width": 88,
+      "height": 88,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://knock.app/assets/icons/knock-brandmark.svg",
+      "officialURL": "https://knock.app/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "634cbd8eb2a36ef4248bb3fd5ec1b6b36efbfca2372af66adfb7378df6c1ba38",
+      "sha256": "634cbd8eb2a36ef4248bb3fd5ec1b6b36efbfca2372af66adfb7378df6c1ba38",
+      "bytes": 726,
+      "sourceViewBox": "0 0 88 88",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://knock.app/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "novu",
+      "name": "Novu",
+      "optionIds": [
+        "novu"
+      ],
+      "file": "novu.svg",
+      "width": 102,
+      "height": 32,
+      "display": "wordmark",
+      "background": "dark",
+      "sourceURL": "https://www.novu.co/images/logo.svg",
+      "officialURL": "https://www.novu.co/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "a09a487978946fb2478fee4a32b542c9cfefc0eabe23d2967ee768dc1e81a300",
+      "sha256": "a09a487978946fb2478fee4a32b542c9cfefc0eabe23d2967ee768dc1e81a300",
+      "bytes": 6722,
+      "sourceViewBox": "0 0 102 32",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://www.novu.co/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "inngest",
+      "name": "Inngest",
+      "optionIds": [
+        "inngest"
+      ],
+      "file": "inngest.svg",
+      "width": 116,
+      "height": 17,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://www.inngest.com/",
+      "officialURL": "https://www.inngest.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-inline-svg",
+      "sourceSha256": "bbb81afd9951fa8776e3e126fc66afae9abc278fd2800db24f27147846925b70",
+      "sha256": "bbb81afd9951fa8776e3e126fc66afae9abc278fd2800db24f27147846925b70",
+      "bytes": 5022,
+      "sourceViewBox": "0 0 116 17",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://www.inngest.com/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "trigger-dev",
+      "name": "Trigger.dev",
+      "optionIds": [
+        "trigger-dev"
+      ],
+      "file": "trigger-dev.svg",
+      "width": 120,
+      "height": 120,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://trigger.dev/assets/triggerdev-logo--light.svg",
+      "officialURL": "https://trigger.dev/brand",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "fa256f9d5b6b2821d80013ed2cf233407daa096315ba27694c7de527fcb749a0",
+      "sha256": "a8997c38bef39b2793de4a75003b9465138ab25363008ed74076ac894d5e6220",
+      "bytes": 567,
+      "sourceViewBox": "0 0 120 120",
+      "normalizations": [
+        "Normalize React fillRule/clipRule attribute spelling to standalone SVG fill-rule/clip-rule; path coordinates, paint values, gradient stops and viewBox unchanged."
+      ],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://trigger.dev/brand",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "trigger-dev-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://trigger.dev/assets/triggerdev-logo--dark.svg",
+          "sha256": "b3f1c5b70c3479c76a8d4c00863266369884a0c0c36cd31f0aae3433f7ec5570",
+          "bytes": 322,
+          "viewBox": "0 0 120 120",
+          "background": "light",
+          "normalizations": [
+            "Normalize React fillRule/clipRule attribute spelling to standalone SVG fill-rule/clip-rule; path coordinates, paint values, gradient stops and viewBox unchanged.",
+            "The original dark-ink variant uses a white neutral UI plate; the dark file label describes ink, not the required backdrop."
+          ],
+          "sourceSha256": "095a0c860f581862cdccf660ae7ca975456f13169392c6db025267ed9ad58ca7"
+        }
+      ]
+    },
+    {
+      "id": "ably",
+      "name": "Ably",
+      "optionIds": [
+        "ably"
+      ],
+      "file": "ably.svg",
+      "width": 204,
+      "height": 64,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://voltaire.ably.com/static/ably-logo-200721285a51085f43e8a849a85667bc.svg",
+      "officialURL": "https://ably.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "1982e0e20f09c630f1f83be3a6b9f5b398c29841bf160f40ff3eef46669547d2",
+      "sha256": "1982e0e20f09c630f1f83be3a6b9f5b398c29841bf160f40ff3eef46669547d2",
+      "bytes": 2332,
+      "sourceViewBox": "0 0 204 64",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://ably.com/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "ably-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://voltaire.ably.com/static/ably-logo-white-749ef5fc6551d0e3b4940c2e3e42463f.svg",
+          "sha256": "72d9801cac613caa8654adfc39cad71d9f7986f95c7fe84badcd87328274bd86",
+          "bytes": 2345,
+          "viewBox": "0 0 205 64",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "pusher",
+      "name": "Pusher Channels",
+      "optionIds": [
+        "pusher"
+      ],
+      "file": "pusher.svg",
+      "width": 310,
+      "height": 134,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://pusher.com/static/pusher-logo-0576fd4af5c38706f96f632235f3124a.svg",
+      "officialURL": "https://pusher.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "b6c5790e3ba7dca3b94b3b83fd4747dbb5be3641ff5e274bbb5ae4e2e3d697f1",
+      "sha256": "b6c5790e3ba7dca3b94b3b83fd4747dbb5be3641ff5e274bbb5ae4e2e3d697f1",
+      "bytes": 33098,
+      "sourceViewBox": "0 0 310 134",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://pusher.com/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "liveblocks",
+      "name": "Liveblocks",
+      "optionIds": [
+        "liveblocks"
+      ],
+      "file": "liveblocks.svg",
+      "width": 128,
+      "height": 24,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://liveblocks.io/",
+      "officialURL": "https://liveblocks.io/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-inline-svg",
+      "sourceSha256": "1023f485e73c6089032533872584da7c1a29adbf8adb7e0422456190aa6af306",
+      "sha256": "1023f485e73c6089032533872584da7c1a29adbf8adb7e0422456190aa6af306",
+      "bytes": 6583,
+      "sourceViewBox": "0 0 128 24",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://liveblocks.io/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "langfuse",
+      "name": "Langfuse",
+      "optionIds": [
+        "langfuse"
+      ],
+      "file": "langfuse.svg",
+      "width": 2255,
+      "height": 527,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://langfuse.com/langfuse-wordart.svg?dpl=dpl_J6HJKXgKjar6pHpF9dADTs5XHMrk",
+      "officialURL": "https://langfuse.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "8a79830daf1d2782b126242dcae4056f865f10201c2c230b9c6806b8a6975220",
+      "sha256": "8a79830daf1d2782b126242dcae4056f865f10201c2c230b9c6806b8a6975220",
+      "bytes": 7448,
+      "sourceViewBox": "0 0 2255 527",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://langfuse.com/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": [
+        {
+          "file": "langfuse-dark.svg",
+          "label": "dark",
+          "sourceURL": "https://langfuse.com/langfuse-wordart-white.svg?dpl=dpl_J6HJKXgKjar6pHpF9dADTs5XHMrk",
+          "sha256": "bf7e57a4abedf451aa272fee2744b8291ed97a924b9ddb711ac45b8c3e0ebd8e",
+          "bytes": 7431,
+          "viewBox": "0 0 2233 527",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "langsmith",
+      "name": "LangSmith",
+      "optionIds": [
+        "langsmith"
+      ],
+      "file": "langsmith.svg",
+      "width": 131,
+      "height": 24,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://www.langchain.com/langsmith/observability",
+      "officialURL": "https://www.langchain.com/langsmith/observability",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-inline-svg",
+      "sourceSha256": "5ca001e099e0a1baa69aae4492acf000a4a72bb2b00602fe440bf314a7a6bd1a",
+      "sha256": "5ca001e099e0a1baa69aae4492acf000a4a72bb2b00602fe440bf314a7a6bd1a",
+      "bytes": 5406,
+      "sourceViewBox": "0 0 131 24",
+      "normalizations": [],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://www.langchain.com/langsmith/observability",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "Original LangChain provider wordmark, explicitly a parent-provider identification; not asserted to be a LangSmith-specific product logo.",
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": {
+        "brand": "LangChain",
+        "relationship": "Original provider/parent masthead on the official LangSmith product page",
+        "langsmithSpecificProductSVGVerified": false
+      },
+      "variants": []
+    },
+    {
+      "id": "helicone",
+      "name": "Helicone",
+      "optionIds": [
+        "helicone"
+      ],
+      "file": "helicone.svg",
+      "width": 4230,
+      "height": 1500,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://www.helicone.ai/static/logo.svg",
+      "officialURL": "https://www.helicone.ai/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-site-svg",
+      "sourceSha256": "53323e1466ebc95ca2e8b9958a313b4944a49d1810645220afa704187f1e0a3f",
+      "sha256": "4cb8509614605c3b62a144176622e74992a7dab1254c0551a208c3ce48e029f1",
+      "bytes": 8582,
+      "sourceViewBox": "0 0 4230 1500",
+      "normalizations": [
+        "Removed legacy external DOCTYPE; geometry/colors untouched",
+        "Added viewBox from explicit source width/height; no geometry edit"
+      ],
+      "license": {
+        "assetLicense": "No separate open license asserted",
+        "trademark": "Owned by the respective brand; not Apache-2.0",
+        "usage": "Unmodified brand identification in an integration UI; no endorsement claimed",
+        "referenceURL": "https://www.helicone.ai/",
+        "repositoryCodeLicenseIsNotLogoPermission": true
+      },
+      "notes": [
+        "SVG asset safety and local rendering are checked; neither provider connectivity nor endorsement is inferred."
+      ],
+      "identity": null,
+      "variants": []
+    },
+    {
+      "id": "tiptap",
+      "name": "Tiptap",
+      "optionIds": [
+        "tiptap"
+      ],
+      "file": "tiptap.svg",
+      "width": 84,
+      "height": 20,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://tiptap.dev/",
+      "officialURL": "https://tiptap.dev/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "f0e8fba00656fe84a1b8d429b8dc8b2d328047e3aad56d8779e7f843ebc528df",
+      "sha256": "f0e8fba00656fe84a1b8d429b8dc8b2d328047e3aad56d8779e7f843ebc528df",
+      "bytes": 4256,
+      "sourceViewBox": "0 0 84 20",
+      "normalizations": [],
+      "license": {
+        "identifier": "MIT",
+        "status": "repository-code-license-only",
+        "sourceURL": "https://github.com/ueberdosis/tiptap/blob/main/LICENSE.md",
+        "verifiedDate": "2026-10-21",
+        "scope": "Trademark/logo terms; not a general OSS redistribution license.",
+        "restrictions": [
+          "MIT license inspected for repository code; website brand SVG is not established as covered."
+        ],
+        "permissionStatus": "No account, contract or independent permission checked.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "codeOrDocumentationLicenseIdentifier": "MIT",
+        "identifierScope": "Code/documentation scope only; logo copyright and trademark grant not established."
+      },
+      "notes": [
+        "Official navbar SVG, wordmark lockup. Preserve currentColor as the original monochrome rendering; logo use/redistribution license remains unverified."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "lexical",
+      "name": "Lexical",
+      "optionIds": [
+        "lexical"
+      ],
+      "file": "lexical.svg",
+      "width": 597,
+      "height": 134,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://lexical.dev/img/logo.svg",
+      "officialURL": "https://lexical.dev/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "0ccc38b6c5cecc52bf2cb603c8259212598d11084007241e34aae4ebe6594c2c",
+      "sha256": "c68ca108f046c8d9712d3c313e5b864a5066f228eb877cbdf833b7b55b7f9a14",
+      "bytes": 3210,
+      "sourceViewBox": "0 0 597 134",
+      "normalizations": [
+        "Added viewBox 0 0 597 134 from explicit source width/height; paths, coordinates and colors unchanged."
+      ],
+      "license": {
+        "identifier": "MIT",
+        "status": "repository-license-verified-trademark-scope-unverified",
+        "sourceURL": "https://github.com/facebook/lexical/blob/main/LICENSE",
+        "verifiedDate": "2026-10-21",
+        "scope": "Trademark/logo terms; not a general OSS redistribution license.",
+        "restrictions": [
+          "Repository MIT text verified; Meta/Lexical trademark permission is not inferred."
+        ],
+        "permissionStatus": "No account, contract or independent permission checked.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "codeOrDocumentationLicenseIdentifier": "MIT",
+        "identifierScope": "Code/documentation scope only; logo copyright and trademark grant not established."
+      },
+      "notes": [
+        "Original header wordmark, with blue symbol and black lettering. Added matching viewBox only."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "blocknote",
+      "name": "BlockNote",
+      "optionIds": [
+        "blocknote"
+      ],
+      "file": "blocknote.svg",
+      "width": 500,
+      "height": 500,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.blocknotejs.org/favicon.svg",
+      "officialURL": "https://www.blocknotejs.org/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "ae74a08948e15f8f64293c6f9a3a17361b11d0e1dd9eb40df62f94e86c567382",
+      "sha256": "ae74a08948e15f8f64293c6f9a3a17361b11d0e1dd9eb40df62f94e86c567382",
+      "bytes": 3196,
+      "sourceViewBox": "0 0 500 500",
+      "normalizations": [],
+      "license": {
+        "identifier": "MPL-2.0 / GPL-3.0 (code scopes only)",
+        "status": "repository-code-licenses-verified-logo-scope-unverified",
+        "sourceURL": "https://raw.githubusercontent.com/TypeCellOS/BlockNote/main/LICENSE.txt",
+        "verifiedDate": "2026-10-21",
+        "scope": "Code MPL-2.0; XL packages GPL-3.0/commercial. Brand artwork/trademark grant not established.",
+        "restrictions": [
+          "Do not infer unrestricted brand use from repository code licensing."
+        ],
+        "permissionStatus": "Asset-specific rights unresolved.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "codeOrDocumentationLicenseIdentifier": "MPL-2.0 / GPL-3.0 (code scopes only)",
+        "identifierScope": "Code/documentation scope only; logo copyright and trademark grant not established."
+      },
+      "notes": [
+        "Separate original 500×500 vector project icon published by the official site; not a small raster favicon. Full official banner retained as a separate variant; no lockup cropping.",
+        "Repository source is MPL-2.0 except XL packages GPL-3.0; neither statement is treated as a logo/trademark redistribution grant."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "blocknote--wordmark.svg",
+          "label": "Official complete colored wordmark",
+          "sourceURL": "https://www.blocknotejs.org/_next/static/immutable/media/banner.3az_s89zzvve1.svg",
+          "sha256": "75ef4cdc5bdc0659b572429a6ecf0110d7df26a88efb40df260e74671c523025",
+          "bytes": 8776,
+          "viewBox": "0 0 469 88",
+          "background": "light",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "algolia",
+      "name": "Algolia",
+      "optionIds": [
+        "algolia"
+      ],
+      "file": "algolia.svg",
+      "width": 500,
+      "height": 500.34,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.algolia.com/algolia-logo-pack.zip",
+      "officialURL": "https://www.algolia.com/about/news",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "92490f716cf1752c0a909cd90412551f4537fbab2f2883be76a22d1a8ec49866",
+      "sha256": "92490f716cf1752c0a909cd90412551f4537fbab2f2883be76a22d1a8ec49866",
+      "bytes": 1020,
+      "sourceViewBox": "0 0 500 500.34",
+      "normalizations": [],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://www.algolia.com/about/news",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Official press logo pack. General brand redistribution permission not inferred from download availability."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "algolia--white.svg",
+          "label": "Official white mark",
+          "sourceURL": "https://www.algolia.com/algolia-logo-pack.zip",
+          "sha256": "baa6f6b259757ca500a5f41bdb199bdd879b05d6d09ef2b1d9ed2ef41ad811c6",
+          "bytes": 1017,
+          "viewBox": "0 0 500 500.34",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "meilisearch",
+      "name": "Meilisearch",
+      "optionIds": [
+        "meilisearch"
+      ],
+      "file": "meilisearch.svg",
+      "width": 300,
+      "height": 300,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://raw.githubusercontent.com/meilisearch/meilisearch/main/assets/logo.svg",
+      "officialURL": "https://www.meilisearch.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-repository",
+      "sourceSha256": "9e9aecb57526b612666d146ad160ed85b9052d9a5ba1f54af983e903e297808e",
+      "sha256": "9e9aecb57526b612666d146ad160ed85b9052d9a5ba1f54af983e903e297808e",
+      "bytes": 1315,
+      "sourceViewBox": "0 0 300 300",
+      "normalizations": [],
+      "license": {
+        "identifier": "MIT AND BUSL-1.1 (code scopes only)",
+        "status": "repository-license-verified-logo-scope-unverified",
+        "sourceURL": "https://raw.githubusercontent.com/meilisearch/meilisearch/main/LICENSE",
+        "verifiedDate": "2026-10-21",
+        "scope": "Repository distinguishes community MIT and enterprise BUSL-1.1 work; trademark/logo permission is not implied.",
+        "restrictions": [
+          "Specific asset copyright scope and trademark permission remain to verify."
+        ],
+        "permissionStatus": "Asset-specific rights unresolved.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "codeOrDocumentationLicenseIdentifier": "MIT AND BUSL-1.1 (code scopes only)",
+        "identifierScope": "Code/documentation scope only; logo copyright and trademark grant not established."
+      },
+      "notes": [
+        "Separate original repo symbol plus official complete wordmark variants; no path extraction or cropping."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "meilisearch--wordmark-color.svg",
+          "label": "Official colored mark with dark wordmark",
+          "sourceURL": "https://raw.githubusercontent.com/meilisearch/meilisearch/main/assets/meilisearch-logo-light.svg",
+          "sha256": "a95addb8ec2a08210a6d7256c24aeb80132040da6ff83ba91959d8d5c260340b",
+          "bytes": 6000,
+          "viewBox": "0 0 495 74",
+          "background": "light",
+          "normalizations": []
+        },
+        {
+          "file": "meilisearch--white-wordmark.svg",
+          "label": "Official colored mark with white wordmark",
+          "sourceURL": "https://raw.githubusercontent.com/meilisearch/meilisearch/main/assets/meilisearch-logo-dark.svg",
+          "sha256": "1ae08d10f9357502d99c681d6125b40685d691a1459d3850918f8a3d607c6538",
+          "bytes": 5983,
+          "viewBox": "0 0 495 74",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "typesense",
+      "name": "Typesense",
+      "optionIds": [
+        "typesense"
+      ],
+      "file": "typesense.svg",
+      "width": 275,
+      "height": 56,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://typesense.org/typesense-logo.svg",
+      "officialURL": "https://typesense.org/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "db9095883797b3f119b695a7a5cb8ba25a51ec63df2d01bb9dd6c14bad20c28c",
+      "sha256": "db9095883797b3f119b695a7a5cb8ba25a51ec63df2d01bb9dd6c14bad20c28c",
+      "bytes": 31044,
+      "sourceViewBox": "0 0 275 56",
+      "normalizations": [],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://typesense.org/",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Official light-background website lockup. Asset-specific usage and redistribution rights not established."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "maplibre",
+      "name": "MapLibre",
+      "optionIds": [
+        "maplibre"
+      ],
+      "file": "maplibre.svg",
+      "width": 400,
+      "height": 400,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://maplibre.org/img/maplibre-logos/maplibre-logo-square-for-light-bg.svg",
+      "officialURL": "https://maplibre.org/brand-assets/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "43a4ef99b42ac78e90eee4c46fdc1c98dd4368d5a86fe18990b581687a421970",
+      "sha256": "43a4ef99b42ac78e90eee4c46fdc1c98dd4368d5a86fe18990b581687a421970",
+      "bytes": 1862,
+      "sourceViewBox": "0 0 400 400",
+      "normalizations": [],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://maplibre.org/brand-assets/",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Official square mark. Brand page publishes assets and colors but no general trademark/redistribution license was found there."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "google-maps",
+      "name": "Google Maps",
+      "optionIds": [
+        "google-maps"
+      ],
+      "file": "google-maps.svg",
+      "width": 192,
+      "height": 192,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.gstatic.com/images/branding/productlogos/maps_2025/v1/web/192px.svg",
+      "officialURL": "https://about.google/products/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "760dbe94a1b8c070f9d912bbb78fea9e2aa9149ff31112840aa2e14333fe528c",
+      "sha256": "760dbe94a1b8c070f9d912bbb78fea9e2aa9149ff31112840aa2e14333fe528c",
+      "bytes": 15275,
+      "sourceViewBox": "0 0 192 192",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-Google-brand-features",
+        "status": "official-trademark-guidelines-verified-specific-context-permission-pending",
+        "sourceURL": "https://about.google/brand-resource-center/rules/",
+        "currentGuidelinesURL": "https://partnermarketinghub.withgoogle.com/brands/google/trademarks-and-terms/trademark-guidelines-for-proper-usage/",
+        "verifiedDate": "2026-10-21",
+        "scope": "Google trademark/brand-feature rules; public product vectors do not establish a general OSS licence.",
+        "restrictions": [
+          "Use approved original artwork, clear space and correct product names; do not alter marks or imply affiliation.",
+          "Confirm the applicable product/API identification allowance or permission for the intended display and redistribution."
+        ],
+        "permissionStatus": "missing-legal-verification-for-specific-use",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official gstatic productlogos/maps_2025/v1 vector, located using naming consistent with the current official Google product catalog Maps 2025 asset. Not a Simple Icons mono recreation. Native gradients and blur filters are retained; target renderer filter support has not been checked."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "mapbox",
+      "name": "Mapbox",
+      "optionIds": [
+        "mapbox"
+      ],
+      "file": "mapbox.svg",
+      "width": 126,
+      "height": 28,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://www.mapbox.com/",
+      "officialURL": "https://www.mapbox.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "c993c64edfd07ef04c9dce99c9d8e10b965c44f2ab67e0a100bfddcf7912b938",
+      "sha256": "c993c64edfd07ef04c9dce99c9d8e10b965c44f2ab67e0a100bfddcf7912b938",
+      "bytes": 4877,
+      "sourceViewBox": "0 0 126 28",
+      "normalizations": [],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://www.mapbox.com/",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Original official navigation lockup; preserve monochrome currentColor and native proportions. Separate official symbol not yet verified; no cropping."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "pgvector",
+      "name": "PostgreSQL (host for pgvector)",
+      "optionIds": [
+        "pgvector"
+      ],
+      "file": "pgvector.svg",
+      "width": 432.071,
+      "height": 445.383,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg",
+      "officialURL": "https://wiki.postgresql.org/wiki/Logo",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-project-wiki",
+      "sourceSha256": "51f93e19516081fc7d6fe6ab9bbab07abe5f7819e28016eefacea6dea691bc54",
+      "sha256": "7a16c253acc8d0687bbf7af239d8d477e36077fcaf0bffcb3893171ce97c748d",
+      "bytes": 4360,
+      "sourceViewBox": "0 0 432.071 445.383",
+      "normalizations": [
+        "Removed external SVG DTD declaration only; no entities, path, color or geometry changes."
+      ],
+      "license": {
+        "identifier": null,
+        "status": "official-artwork-license-unspecified-trademark-policy-verified",
+        "sourceURL": "https://wiki.postgresql.org/wiki/File:PostgreSQL_logo.3colors.svg",
+        "trademarkURL": "https://www.postgresql.org/about/policies/trademarks/",
+        "policyLastUpdated": "2024-11-20",
+        "verifiedDate": "2026-10-21",
+        "scope": "Official wiki file lists its artwork licence as unspecified (question mark). PostgreSQL code licence and Apache licences are not asserted for the logo. Slonik is a registered trademark of PostgreSQL Community Association of Canada.",
+        "restrictions": [
+          "Use an approved original elephant form without altering the mark or implying PostgreSQL endorsement.",
+          "Policy permits truthful factual use of the Postgres/PostgreSQL names; logo use must be assessed against permitted contexts and approval section.",
+          "Respect trademark attribution and avoid combining with other marks."
+        ],
+        "permissionStatus": "Host identity mapping authorized by task owner; owner trademark/redistribution permission for the intended UI remains unverified.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "artworkLicenseStatus": "Unspecified on the official artwork file page; no PostgreSQL-code or Apache logo licence asserted."
+      },
+      "notes": [
+        "This is the PostgreSQL host-project mark, not an independent pgvector logo. Explicit recipe/option names support that mapping.",
+        "Official complete pgvector repository tree lookup returned 164 nodes and no graphic files; this bounded lookup does not prove absence everywhere.",
+        "Removed the source SVG external DTD wrapper only for safe standalone rendering; original geometry and colors are retained.",
+        "Official copyright licence is not stated; no generic, third-party elephant, invented brand or Apache logo licence used."
+      ],
+      "identity": {
+        "role": "host-project",
+        "mapping": "Official PostgreSQL mark identifies the PostgreSQL extension context; pgvector independent brandmark not found."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "pgvector--official-blue.svg",
+          "label": "Official single-color blue elephant",
+          "sourceURL": "https://wiki.postgresql.org/images/9/90/PostgreSQL_logo.1color_blue.svg",
+          "sha256": "ecb961c8aa4a3c70a1ebdcc538992c13c3874aec00baa5598e0421f3d632f6c0",
+          "bytes": 7299,
+          "viewBox": "0 0 432.071 445.383",
+          "background": "light",
+          "normalizations": []
+        },
+        {
+          "file": "pgvector--official-white.svg",
+          "label": "Official white elephant with supplied violet background",
+          "sourceURL": "https://wiki.postgresql.org/images/7/72/PostgreSQL_logo.1color_white.svg",
+          "sha256": "485f67262d0ed5938878e84fa36b55d2a8683b7acdd0344f9211d71f8e0b7eff",
+          "bytes": 7087,
+          "viewBox": "0 0 432.071 445.383",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "pinecone",
+      "name": "Pinecone",
+      "optionIds": [
+        "pinecone"
+      ],
+      "file": "pinecone.svg",
+      "width": 66.28,
+      "height": 74.39,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.pinecone.io/newsroom/",
+      "officialURL": "https://www.pinecone.io/newsroom/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "0ca89593de50934f8d4a40ffea76026c93d51ca6c2673f9a6eb9742550727c7b",
+      "sha256": "0ca89593de50934f8d4a40ffea76026c93d51ca6c2673f9a6eb9742550727c7b",
+      "bytes": 2397,
+      "sourceViewBox": "0.75 0.69 66.28 74.39",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-Pinecone-site-content",
+        "status": "website-terms-verified-internal-use-only-scope",
+        "sourceURL": "https://www.pinecone.io/terms/",
+        "policyDisplayedDate": "2022-05-26",
+        "verifiedDate": "2026-10-21",
+        "scope": "Website terms allow limited personal/internal-business site access and reserve IP; newsroom supplies media logos but no broad redistribution licence was established.",
+        "restrictions": [
+          "Confirm an applicable media/brand permission before public display or OSS bundling.",
+          "Do not infer a transferable trademark licence from site access."
+        ],
+        "permissionStatus": "media-logo-intended-use-clearance-pending",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official newsroom Media Kit provides this separate symbol; no cropping of the full wordmark. Trademark/redistribution permission under website terms remains to review."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "pinecone--white.svg",
+          "label": "Official white symbol",
+          "sourceURL": "https://www.pinecone.io/newsroom/",
+          "sha256": "16d09eca082a61c7e2c448425cab54a965b500e42fdc2f085cdda79779bbf0de",
+          "bytes": 2340,
+          "viewBox": "0.75 0.69 66.28 74.39",
+          "background": "dark",
+          "normalizations": []
+        },
+        {
+          "file": "pinecone--wordmark-dark.svg",
+          "label": "Official dark full lockup",
+          "sourceURL": "https://www.pinecone.io/newsroom/",
+          "sha256": "d2fbc2088a1de23f3d527de5c9c07bd42ac58df331e93085b38ac860e3b37c9a",
+          "bytes": 3301,
+          "viewBox": "0 0 1077 220",
+          "background": "light",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "qdrant",
+      "name": "Qdrant",
+      "optionIds": [
+        "qdrant"
+      ],
+      "file": "qdrant.svg",
+      "width": 346.42,
+      "height": 400,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://qdrant.tech/img/brand-resources-logos/qdrant-brandmark-red.svg",
+      "officialURL": "https://qdrant.tech/brand-resources/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "1642d28e5c93229b5f0d13546a4275e6120a8a6be159ac2ebaaf2f1a8feddaca",
+      "sha256": "1642d28e5c93229b5f0d13546a4275e6120a8a6be159ac2ebaaf2f1a8feddaca",
+      "bytes": 1478,
+      "sourceViewBox": "0 0 346.42 400",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-Qdrant-brand-assets",
+        "status": "official-brand-page-trademark-condition-verified",
+        "sourceURL": "https://qdrant.tech/brand-resources/",
+        "verifiedDate": "2026-10-21",
+        "scope": "Page explicitly reserves trademark/copyright rights and refers to Qdrant Trademark Standards for Use; not an OSS grant.",
+        "restrictions": [
+          "Maintain approved logo, sizing, spacing and colors; separate permission and referenced trademark standards remain to verify."
+        ],
+        "permissionStatus": "No separate permission checked.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Native full-color brandmark downloaded directly from official brand page assets; official mono/wordmark are distinct unmodified variants."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "qdrant--white.svg",
+          "label": "Official white brandmark",
+          "sourceURL": "https://qdrant.tech/img/brand-resources-logos/qdrant-brandmark-white.svg",
+          "sha256": "e33298840c013c9d088b020a77e43bb940dd0f43948dde128a9eee0360feba29",
+          "bytes": 599,
+          "viewBox": "0 0 346.42 400",
+          "background": "dark",
+          "normalizations": []
+        },
+        {
+          "file": "qdrant--wordmark.svg",
+          "label": "Official complete red/black wordmark",
+          "sourceURL": "https://qdrant.tech/img/qdrant-logo-red-black.svg",
+          "sha256": "1617c15a3039cbf7b040227c4aa2ed216c8e80bf4d3da1958682ed38e9f295c1",
+          "bytes": 5089,
+          "viewBox": "0 0 752 200",
+          "background": "light",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "mcp",
+      "name": "Model Context Protocol",
+      "optionIds": [
+        "mcp"
+      ],
+      "file": "mcp.svg",
+      "width": 180,
+      "height": 180,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/main/docs/favicon.svg",
+      "officialURL": "https://modelcontextprotocol.io/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-repository",
+      "sourceSha256": "f6f33e24e95846f9ae2582ab72c4eae7beec5ec52c13d767d9f342bf639dd3e6",
+      "sha256": "f6f33e24e95846f9ae2582ab72c4eae7beec5ec52c13d767d9f342bf639dd3e6",
+      "bytes": 1095,
+      "sourceViewBox": "0 0 180 180",
+      "normalizations": [],
+      "license": {
+        "identifier": "CC-BY-4.0 (documentation scope; logo coverage unconfirmed)",
+        "status": "documentation-license-and-owner-trademark-policy-verified-logo-scope-unverified",
+        "sourceURL": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/main/LICENSE",
+        "trademarkURL": "https://www.lfprojects.org/policies/trademark-policy/",
+        "governanceURL": "https://modelcontextprotocol.io/community/governance",
+        "verifiedDate": "2026-10-21",
+        "scope": "Docs excluding specification CC-BY-4.0; code/spec contributions transitioning from MIT to Apache-2.0. No flattening of these scopes into a logo grant.",
+        "restrictions": [
+          "LF Projects governs project trademarks; truthful references must avoid endorsement/confusion and preserve approved marks."
+        ],
+        "permissionStatus": "Specific logo copyright, trademark and redistribution context unresolved.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "codeOrDocumentationLicenseIdentifier": "CC-BY-4.0 (documentation scope; logo coverage unconfirmed)",
+        "identifierScope": "Code/documentation scope only; logo copyright and trademark grant not established."
+      },
+      "notes": [
+        "Separate official native 180×180 vector icon, also supplied by the protocol docs as favicon.svg; not a raster favicon and not the unrelated MCP Registry mark.",
+        "Current repo licensing transition does not itself grant trademark rights."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "mcp--wordmark.svg",
+          "label": "Official black documentation wordmark",
+          "sourceURL": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/main/docs/logo/light.svg",
+          "sha256": "3163a85f9db4b98c3b5af846ea284b3296295dbd51a138b2e77ebd438342e902",
+          "bytes": 16772,
+          "viewBox": "0 0 1338 195",
+          "background": "light",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph + LangChain core",
+      "optionIds": [
+        "langgraph"
+      ],
+      "file": "langgraph.svg",
+      "width": 472,
+      "height": 100,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/6a9998494f7b532d49a38525_langchain-brand-assets.zip",
+      "officialURL": "https://www.langchain.com/brand-assets",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "ae233ae698ba70f316ca6ded63d7d6e7707ab84bc3ccc75c6a5e5a732fb3988f",
+      "sha256": "ae233ae698ba70f316ca6ded63d7d6e7707ab84bc3ccc75c6a5e5a732fb3988f",
+      "bytes": 4817,
+      "sourceViewBox": "0 0 472 100",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-brand-assets",
+        "status": "verified-conditional-official-brand-guidelines",
+        "sourceURL": "https://www.langchain.com/brand-assets",
+        "verifiedDate": "2026-10-21",
+        "scope": "Published logo usage approval for documentation, presentations, press and community content; in-product catalog and redistribution not explicitly cleared.",
+        "restrictions": [
+          "Use official variants, locked proportions and clear space; no recoloring, effects or Community-logo substitution."
+        ],
+        "permissionStatus": "Specific intended catalog/redistribution use remains to confirm.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official current LangGraph OSS lockup; separate symbol not supplied in downloaded pack. Not cropped or combined with another framework logo."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Official LangGraph OSS lockup for LangGraph + LangChain core; no new combined brand drawn."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "optionIds": [
+        "slack"
+      ],
+      "file": "slack.svg",
+      "width": 54,
+      "height": 54,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://a.slack-edge.com/9cc0056/marketing/img/nav/logo.svg",
+      "officialURL": "https://slack.com/media-kit",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "1f40066b694020057218c46eb2a11982b278d89b2dc8f96a21e4ea04e2b9db3b",
+      "sha256": "1f40066b694020057218c46eb2a11982b278d89b2dc8f96a21e4ea04e2b9db3b",
+      "bytes": 2101,
+      "sourceViewBox": "0 0 54 54",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-brand-assets",
+        "status": "verified-conditional-brand-terms",
+        "sourceURL": "https://slack.com/terms-of-service/slack-brand",
+        "verifiedDate": "2026-10-21",
+        "scope": "Trademark/logo terms; not a general OSS redistribution license.",
+        "restrictions": [
+          "Limited permitted contexts; most uses need a written license.",
+          "Do not alter colors, crop, imply endorsement, or distribute brand assets."
+        ],
+        "permissionStatus": "No account, contract or independent permission checked.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official current header mark, original four colors. Private research copy does not authorize OSS bundling or public logo use."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "github-apps",
+      "name": "GitHub",
+      "optionIds": [
+        "github-apps"
+      ],
+      "file": "github-apps.svg",
+      "width": 98,
+      "height": 96,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://brand.github.com/GitHub_Logos.zip",
+      "officialURL": "https://brand.github.com/foundations/logo",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "693d7abe6f899646cc2e96856723b45e95f71885a54910b2749f6decdf7e1ee1",
+      "sha256": "693d7abe6f899646cc2e96856723b45e95f71885a54910b2749f6decdf7e1ee1",
+      "bytes": 1559,
+      "sourceViewBox": "0 0 98 96",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-brand-assets",
+        "status": "verified-conditional-brand-terms",
+        "sourceURL": "https://brand.github.com/foundations/logo",
+        "verifiedDate": "2026-10-21",
+        "scope": "Trademark/logo terms; not a general OSS redistribution license.",
+        "restrictions": [
+          "Page explicitly lists truthful integration identification and secondary placement.",
+          "Legal text also requires prior written permission; reconcile permission for the intended use.",
+          "Do not change geometry/color or imply affiliation."
+        ],
+        "permissionStatus": "No account, contract or independent permission checked.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [],
+      "identity": {
+        "role": "parent-service-brand",
+        "mapping": "GitHub App identifies the GitHub service; no distinct GitHub Apps mark invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "github-apps--white.svg",
+          "label": "Official white Invertocat",
+          "sourceURL": "https://brand.github.com/GitHub_Logos.zip",
+          "sha256": "ccd84c89b1056345608fc3489357f8acc7397e49a3cdc2d418b6c8016911d47b",
+          "bytes": 1559,
+          "viewBox": "0 0 98 96",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "google-drive",
+      "name": "Google Drive",
+      "optionIds": [
+        "google-drive"
+      ],
+      "file": "google-drive.svg",
+      "width": 192,
+      "height": 192,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.gstatic.com/images/branding/productlogos/drive_2026/v2/web/192px.svg",
+      "officialURL": "https://workspace.google.com/products/drive/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "60a6496d705d8bf010ce126469be89889db331622b14d8ae1645a38c2aaa23f5",
+      "sha256": "dcdebf05bef2cece561975e552f5d30d5cb4046a7a884b817799eb61d93c43ac",
+      "bytes": 1315,
+      "sourceViewBox": "0 0 192 192",
+      "normalizations": [
+        "Added viewBox 0 0 192 192 from explicit source width/height; paths, coordinates and colors unchanged."
+      ],
+      "license": {
+        "identifier": "proprietary-Google-brand-features",
+        "status": "official-trademark-guidelines-verified-specific-context-permission-pending",
+        "sourceURL": "https://about.google/brand-resource-center/rules/",
+        "currentGuidelinesURL": "https://partnermarketinghub.withgoogle.com/brands/google/trademarks-and-terms/trademark-guidelines-for-proper-usage/",
+        "verifiedDate": "2026-10-21",
+        "scope": "Google trademark/brand-feature rules; public product vectors do not establish a general OSS licence.",
+        "restrictions": [
+          "Use approved original artwork, clear space and correct product names; do not alter marks or imply affiliation.",
+          "Confirm the applicable product/API identification allowance or permission for the intended display and redistribution."
+        ],
+        "permissionStatus": "missing-legal-verification-for-specific-use",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official Google Workspace product image explicitly labels Drive; source is the 2026/v2 original vector. Added matching viewBox only."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Drive + Picker uses the actual Google Drive product mark; no separate Picker logo."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "google-calendar",
+      "name": "Google Calendar",
+      "optionIds": [
+        "google-calendar"
+      ],
+      "file": "google-calendar.svg",
+      "width": 192,
+      "height": 192,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.gstatic.com/images/branding/productlogos/calendar_2026/v2/web/192px.svg",
+      "officialURL": "https://workspace.google.com/products/calendar/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "7f55cd877b2261948168db3d2e9468c0cf3f07766789489e853a0f9931dff8ea",
+      "sha256": "3a566c7c429a4dff8d801dd97ab8903a7abf0ca65b47317dec06f863011edc28",
+      "bytes": 3352,
+      "sourceViewBox": "0 0 192 192",
+      "normalizations": [
+        "Added viewBox 0 0 192 192 from explicit source width/height; paths, coordinates and colors unchanged."
+      ],
+      "license": {
+        "identifier": "proprietary-Google-brand-features",
+        "status": "official-trademark-guidelines-verified-specific-context-permission-pending",
+        "sourceURL": "https://about.google/brand-resource-center/rules/",
+        "currentGuidelinesURL": "https://partnermarketinghub.withgoogle.com/brands/google/trademarks-and-terms/trademark-guidelines-for-proper-usage/",
+        "verifiedDate": "2026-10-21",
+        "scope": "Google trademark/brand-feature rules; public product vectors do not establish a general OSS licence.",
+        "restrictions": [
+          "Use approved original artwork, clear space and correct product names; do not alter marks or imply affiliation.",
+          "Confirm the applicable product/API identification allowance or permission for the intended display and redistribution."
+        ],
+        "permissionStatus": "missing-legal-verification-for-specific-use",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official Calendar 2026/v2 original vector. Added matching viewBox only."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "optionIds": [
+        "notion"
+      ],
+      "file": "notion.svg",
+      "width": 33,
+      "height": 34,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.notion.com/",
+      "officialURL": "https://www.notion.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "5d193cca5938822e668ebf4655da02ec39b280d0ab3b4ec1b36b43ec4ff39c73",
+      "sha256": "645529d4b7dfccd51fe958566ede58d7decfabbe9396d7d99c9f58904337893e",
+      "bytes": 3302,
+      "sourceViewBox": "0 0 33 34",
+      "normalizations": [
+        "Resolved original SVG CSS fallback var(--notion-logo-fill, var(--tatami-color-black)) to its official stylesheet value #000; geometry and brand color unchanged."
+      ],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://www.notion.com/",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Original current Notion header symbol. Resolved its black fallback from the official page stylesheet; no geometry or brand color alteration.",
+        "Public brand/terms app shells did not expose a verifiable full brand license; asset reuse remains unresolved."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [
+        {
+          "from": "var(--notion-logo-fill, var(--tatami-color-black))",
+          "to": "#000",
+          "evidenceURL": "https://www.notion.com/_next/static/chunks/3nr739qv1y-ex.css",
+          "evidenceSha256": "1c4df6982aa30920efc5389881467fc18913ca16ff02634fc77dfbf9eaf90420",
+          "declaration": "--tatami-color-black:#000"
+        }
+      ],
+      "variants": []
+    },
+    {
+      "id": "sharepoint",
+      "name": "SharePoint",
+      "optionIds": [
+        "sharepoint"
+      ],
+      "file": "sharepoint.svg",
+      "width": 48,
+      "height": 48,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.microsoft.com/content/dam/microsoft/bade/images/icons/en-us/m365-app-icons-fy26/SharePoint-Icon-FY26.svg",
+      "officialURL": "https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "0e2713d7afa583ab45efc68a64cfe4e5a735c61a5f41f7d884c2df6130869a54",
+      "sha256": "0e2713d7afa583ab45efc68a64cfe4e5a735c61a5f41f7d884c2df6130869a54",
+      "bytes": 7927,
+      "sourceViewBox": "0 0 48 48",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-Microsoft-brand-assets",
+        "status": "verified-express-license-condition",
+        "sourceURL": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks",
+        "verifiedDate": "2026-10-21",
+        "scope": "Microsoft product icons, separate from any software repository license.",
+        "restrictions": [
+          "Microsoft states logos and product icons require an express license or an applicable specific published permission.",
+          "No endorsement, no brand substitution; preserve original icon."
+        ],
+        "permissionStatus": "Not checked; no account, agreement or permission request.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official FY26 product icon linked from current Microsoft product pages. Original gradients/paths retained."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "onedrive",
+      "name": "OneDrive",
+      "optionIds": [
+        "onedrive"
+      ],
+      "file": "onedrive.svg",
+      "width": 48,
+      "height": 48,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.microsoft.com/content/dam/microsoft/bade/images/icons/en-us/m365-app-icons-fy26/OneDrive-Icon-FY26.svg",
+      "officialURL": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "9f72ac359c7e03ca4723ce1a3b60f932a0bc5d2ce72dbdce365e83223142f6bc",
+      "sha256": "9f72ac359c7e03ca4723ce1a3b60f932a0bc5d2ce72dbdce365e83223142f6bc",
+      "bytes": 5939,
+      "sourceViewBox": "0 0 48 48",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-Microsoft-brand-assets",
+        "status": "verified-express-license-condition",
+        "sourceURL": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks",
+        "verifiedDate": "2026-10-21",
+        "scope": "Microsoft product icons, separate from any software repository license.",
+        "restrictions": [
+          "Microsoft states logos and product icons require an express license or an applicable specific published permission.",
+          "No endorsement, no brand substitution; preserve original icon."
+        ],
+        "permissionStatus": "Not checked; no account, agreement or permission request.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official FY26 product icon linked from current Microsoft product pages. Original gradients/paths retained."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "teams",
+      "name": "Microsoft Teams",
+      "optionIds": [
+        "teams"
+      ],
+      "file": "teams.svg",
+      "width": 48,
+      "height": 48,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.microsoft.com/content/dam/microsoft/bade/images/icons/en-us/m365-app-icons-fy26/Teams-Icon-FY26.svg",
+      "officialURL": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "6a33d49f19d1be2bcdf86921935a2171e5c18c3b11abe297ca03d5f4f302ba3a",
+      "sha256": "6a33d49f19d1be2bcdf86921935a2171e5c18c3b11abe297ca03d5f4f302ba3a",
+      "bytes": 6359,
+      "sourceViewBox": "0 0 48 48",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-Microsoft-brand-assets",
+        "status": "verified-express-license-condition",
+        "sourceURL": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks",
+        "verifiedDate": "2026-10-21",
+        "scope": "Microsoft product icons, separate from any software repository license.",
+        "restrictions": [
+          "Microsoft states logos and product icons require an express license or an applicable specific published permission.",
+          "No endorsement, no brand substitution; preserve original icon."
+        ],
+        "permissionStatus": "Not checked; no account, agreement or permission request.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official FY26 vector linked from Microsoft OneDrive and SharePoint pages; Teams page independently uses the corresponding FY26 CDN asset. Original gradients/paths retained."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "outlook-calendar",
+      "name": "Microsoft Outlook",
+      "optionIds": [
+        "outlook-calendar"
+      ],
+      "file": "outlook-calendar.svg",
+      "width": 48,
+      "height": 48,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.microsoft.com/content/dam/microsoft/bade/images/icons/en-us/m365-app-icons-fy26/Outlook-Icon-FY26.svg",
+      "officialURL": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "d67b8bb4bb8d7afe8e71e066112452d5d681ea7991fa1ec7c37df962246b2c31",
+      "sha256": "d67b8bb4bb8d7afe8e71e066112452d5d681ea7991fa1ec7c37df962246b2c31",
+      "bytes": 8681,
+      "sourceViewBox": "0 0 48 48",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-Microsoft-brand-assets",
+        "status": "verified-express-license-condition",
+        "sourceURL": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks",
+        "verifiedDate": "2026-10-21",
+        "scope": "Microsoft product icons, separate from any software repository license.",
+        "restrictions": [
+          "Microsoft states logos and product icons require an express license or an applicable specific published permission.",
+          "No endorsement, no brand substitution; preserve original icon."
+        ],
+        "permissionStatus": "Not checked; no account, agreement or permission request.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official FY26 Outlook product vector linked from current product pages. Original gradients/paths retained."
+      ],
+      "identity": {
+        "role": "parent-product-brand",
+        "mapping": "Outlook Calendar uses the actual Outlook product mark; no distinct calendar sub-resource logo invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "optionIds": [
+        "linear"
+      ],
+      "file": "linear.svg",
+      "width": 100,
+      "height": 100,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://static.linear.app/design-assets/Linear-Brand-Assets.zip?v=3",
+      "officialURL": "https://linear.app/brand",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "e683e95a5eb9b360ae06360c0350fd1b5fcf3d2222ef9de8e71fa0bc413dccc3",
+      "sha256": "e683e95a5eb9b360ae06360c0350fd1b5fcf3d2222ef9de8e71fa0bc413dccc3",
+      "bytes": 1060,
+      "sourceViewBox": "0 0 100 100",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-brand-assets",
+        "status": "verified-conditional-brand-terms",
+        "sourceURL": "https://linear.app/brand",
+        "verifiedDate": "2026-10-21",
+        "scope": "Trademark/logo terms; not a general OSS redistribution license.",
+        "restrictions": [
+          "Graphics are proprietary; no alterations or implied affiliation.",
+          "No combining with other graphics or using as own brand without written consent."
+        ],
+        "permissionStatus": "No account, contract or independent permission checked.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "linear--white.svg",
+          "label": "Official light mark",
+          "sourceURL": "https://static.linear.app/design-assets/Linear-Brand-Assets.zip?v=3",
+          "sha256": "32f9883452188b39787f8242c7bfce723ded255f35f13254e727871d3dae2fd1",
+          "bytes": 1057,
+          "viewBox": "0 0 100 100",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "optionIds": [
+        "jira"
+      ],
+      "file": "jira.svg",
+      "width": 48,
+      "height": 48,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://atlassian.design/assets/a13657c7ab32/logos/jira_app.zip",
+      "officialURL": "https://atlassian.design/foundations/logos/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "ad20a13973de9ff9b4ad7354881c84ba2207b9117b6aad9bfce68b611c6fb9a8",
+      "sha256": "ad20a13973de9ff9b4ad7354881c84ba2207b9117b6aad9bfce68b611c6fb9a8",
+      "bytes": 1045,
+      "sourceViewBox": "0 0 48 48",
+      "normalizations": [],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://atlassian.design/foundations/logos/",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "App tile is the current official downloaded variant, not the previous untiled mark. Third-party distribution/license scope still to verify."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "jira--attribution-light.svg",
+          "label": "Official Jira attribution lockup for light background",
+          "sourceURL": "https://atlassian.design/assets/a13657c7ab32/logos/jira_attribution.zip",
+          "sha256": "47bce60824acdb126b925221efd47f1b859f836baf6119438f3f6c1a8e78cfa6",
+          "bytes": 5018,
+          "viewBox": "0 0 232 75",
+          "background": "light",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "optionIds": [
+        "hubspot"
+      ],
+      "file": "hubspot.svg",
+      "width": 345.8,
+      "height": 356,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.hubspot.com/",
+      "officialURL": "https://www.hubspot.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "b06912289dd946cfbfe63598efe503c495a17e591fa44faf2a05dad8eb6c36e3",
+      "sha256": "b06912289dd946cfbfe63598efe503c495a17e591fa44faf2a05dad8eb6c36e3",
+      "bytes": 1003,
+      "sourceViewBox": "0 0 345.8 356",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-HubSpot-brand-assets",
+        "status": "website-terms-verified-no-logo-license-granted",
+        "sourceURL": "https://legal.hubspot.com/website-terms-of-use",
+        "verifiedDate": "2026-10-21",
+        "scope": "Website terms identify HubSpot/Sprocket marks and state those terms do not grant rights to use them. Specific integration/partner allowance remains unchecked.",
+        "restrictions": [
+          "Preserve original mark and do not imply endorsement.",
+          "Confirm specific logo-use and redistribution permission for the intended context."
+        ],
+        "permissionStatus": "missing-legal-verification-for-specific-use",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Separate orange sprocket symbol is already published as a base64 SVG in the official fixed navigation image; decoded without drawing or cropping. Original current #FF4800 differs from older third-party icon catalogs. Brand permission still to verify."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "zendesk",
+      "name": "Zendesk",
+      "optionIds": [
+        "zendesk"
+      ],
+      "file": "zendesk.svg",
+      "width": 101.01,
+      "height": 19.38,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://web-assets.zendesk.com/images/navigation/header/zendesk-logo.svg",
+      "officialURL": "https://www.zendesk.com/company/press/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "ce475c44d9a98b49e23a90eb385d449954b49fe17933b61cedf8c70ba18602c3",
+      "sha256": "ce475c44d9a98b49e23a90eb385d449954b49fe17933b61cedf8c70ba18602c3",
+      "bytes": 1675,
+      "sourceViewBox": "0 0 101.01 19.38",
+      "normalizations": [],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://www.zendesk.com/company/press/",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Official current navigation wordmark; safe SVG from vendor CDN linked by official page. Brand terms still to verify."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "optionIds": [
+        "salesforce"
+      ],
+      "file": "salesforce.svg",
+      "width": 205.73,
+      "height": 144,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/11/logo-salesforce.svg?w=1024",
+      "officialURL": "https://www.salesforce.com/company/legal/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "29bc87240df68c546f04cb1bf3398b524b7d5e37a2d56f3b102b62f349244703",
+      "sha256": "29bc87240df68c546f04cb1bf3398b524b7d5e37a2d56f3b102b62f349244703",
+      "bytes": 6663,
+      "sourceViewBox": "0 0 205.73 144",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-Salesforce-brand-assets",
+        "status": "verified-conditional-brand-terms",
+        "sourceURL": "https://www.salesforce.com/company/legal/tmcusageguidelines/",
+        "verifiedDate": "2026-10-21",
+        "scope": "Limited truthful compatibility diagram use is described; a general in-product logo catalog or OSS redistribution license is not established.",
+        "restrictions": [
+          "Most uses need written permission; logos must remain secondary and not imply affiliation.",
+          "Brand guidelines restrict modifications, marketing use, and use of brand/content for AI model/tool creation or training.",
+          "Do not transfer any granted rights to another party."
+        ],
+        "permissionStatus": "Intended context and any separate permission remain unverified.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Current official page cloud wordmark retains source blue/white. Trademark usage guidelines cached separately for review."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "nango",
+      "name": "Nango",
+      "optionIds": [
+        "nango"
+      ],
+      "file": "nango.svg",
+      "width": 256,
+      "height": 256,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://nango.dev/brand/nango-brand-assets.zip",
+      "officialURL": "https://nango.dev/brand",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "e1c07d37a39bb8014dbf3096801ce1cf4661a62253aa852ac8364de23d9770be",
+      "sha256": "e1c07d37a39bb8014dbf3096801ce1cf4661a62253aa852ac8364de23d9770be",
+      "bytes": 1971,
+      "sourceViewBox": "0 0 256 256",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-brand-assets",
+        "status": "verified-brand-guidelines-identification-context",
+        "sourceURL": "https://nango.dev/brand",
+        "verifiedDate": "2026-10-21",
+        "scope": "Trademark/logo terms; not a general OSS redistribution license.",
+        "restrictions": [
+          "Brand assets presented for docs, articles and integration directories.",
+          "Do not alter files or imply sponsorship/partnership without written approval."
+        ],
+        "permissionStatus": "No account, contract or independent permission checked.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Recommended plate must remain outside the unmodified icon and its clear space, not become a second enclosing shape."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "nango--black.svg",
+          "label": "Official black compact logo",
+          "sourceURL": "https://nango.dev/brand/nango-brand-assets.zip",
+          "sha256": "25878796a6039dbb9e14c867911ae8a89aa81626abe7d318901909cf5b84daa4",
+          "bytes": 1548,
+          "viewBox": "0 0 200 200",
+          "background": "light",
+          "normalizations": []
+        },
+        {
+          "file": "nango--white.svg",
+          "label": "Official white compact logo",
+          "sourceURL": "https://nango.dev/brand/nango-brand-assets.zip",
+          "sha256": "4a81c728ba6de6efc820efb53ed475767086248d09c96aceb262943e931365c0",
+          "bytes": 1548,
+          "viewBox": "0 0 200 200",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "pipedream-connect",
+      "name": "Pipedream",
+      "optionIds": [
+        "pipedream-connect"
+      ],
+      "file": "pipedream-connect.svg",
+      "width": 600,
+      "height": 600,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://mintlify.s3.us-west-1.amazonaws.com/pipedream/logo/pipedream_icon.svg",
+      "officialURL": "https://pipedream.com/docs/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-docs-linked-asset",
+      "sourceSha256": "5885b9394c423ea4d4555d16c5dbc9104e862f0a9996b25f0ee8a67a2d799507",
+      "sha256": "6983438718d0dcf8e07b6bc3cc67133d1affa41e1e0f79b685998fdcedf0a4f8",
+      "bytes": 1269,
+      "sourceViewBox": "0 0 600 600",
+      "normalizations": [
+        "Added viewBox 0 0 600 600 from explicit source width/height; paths, coordinates and colors unchanged."
+      ],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://pipedream.com/docs/",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Separate original vector icon URL published in current official documentation metadata. Added matching viewBox from explicit dimensions only.",
+        "Official website favicon SVG candidate was rejected because it embeds a raster image; no raster candidate used as source. Brand guidelines/redistribution permission remain unverified."
+      ],
+      "identity": {
+        "role": "parent-service-brand",
+        "mapping": "Pipedream Connect identifies Pipedream; no invented separate Connect logo."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "composio",
+      "name": "Composio",
+      "optionIds": [
+        "composio"
+      ],
+      "file": "composio.svg",
+      "width": 64,
+      "height": 64,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://composio.dev/logos/composio-black.svg",
+      "officialURL": "https://composio.dev/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "2d5f01b6b63bfea909c89397dd7b662a6319f3d8d6bda689b98452207670ef36",
+      "sha256": "2d5f01b6b63bfea909c89397dd7b662a6319f3d8d6bda689b98452207670ef36",
+      "bytes": 2244,
+      "sourceViewBox": "0 0 64 64",
+      "normalizations": [],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://composio.dev/",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Official website compact logo asset; no generated tool/integration icon. Asset-specific rights/guidelines still to verify."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": []
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "optionIds": [
+        "n8n"
+      ],
+      "file": "n8n.svg",
+      "width": 240,
+      "height": 96,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://guidelines.n8n.design/downloads/logo/symbol/n8n-symbol-accent.svg",
+      "officialURL": "https://guidelines.n8n.design/logo",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "30c9c3805971765a8d3b30e1ba488d957f18c86d623296c3482a36213bf44646",
+      "sha256": "30c9c3805971765a8d3b30e1ba488d957f18c86d623296c3482a36213bf44646",
+      "bytes": 938,
+      "sourceViewBox": "0 0 240 96",
+      "normalizations": [],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://guidelines.n8n.design/logo",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Separate original download vectors are provided by the official brand guide, including pink, black and white symbols. No lockup cropping, generated mono variant, or recoloring.",
+        "Brand artwork copyright/redistribution grant not stated on consulted guide; source availability and layout guidance do not certify public reuse."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "n8n--black.svg",
+          "label": "Official dark symbol",
+          "sourceURL": "https://guidelines.n8n.design/downloads/logo/symbol/n8n-symbol-black.svg",
+          "sha256": "13339446e29ead0ee2d5b9cb134b5adf1bccf0ceac0af5007155dce869812ae1",
+          "bytes": 938,
+          "viewBox": "0 0 240 96",
+          "background": "light",
+          "normalizations": []
+        },
+        {
+          "file": "n8n--white.svg",
+          "label": "Official white symbol",
+          "sourceURL": "https://guidelines.n8n.design/downloads/logo/symbol/n8n-symbol-white.svg",
+          "sha256": "e003ea67bbdf53c9556cf09aa77cfd9786fe965793478e2cde264d54c53badca",
+          "bytes": 938,
+          "viewBox": "0 0 240 96",
+          "background": "dark",
+          "normalizations": []
+        },
+        {
+          "file": "n8n--lockup-dark.svg",
+          "label": "Official pink/dark complete lockup",
+          "sourceURL": "https://guidelines.n8n.design/downloads/logo/lockup/n8n-logo-black-accent.svg",
+          "sha256": "58877cb59240ba5e0f150e0bd7d0bd9a229e8de2b94730132089ba965e85e654",
+          "bytes": 2813,
+          "viewBox": "0 0 480 96",
+          "background": "light",
+          "normalizations": []
+        },
+        {
+          "file": "n8n--wordmark.svg",
+          "label": "Official bare dark wordmark",
+          "sourceURL": "https://guidelines.n8n.design/brand/n8n-wordmark.svg",
+          "sha256": "2721a573894a4bd70c69703a60b9593cde6472cfaa8a4d7a3d62e59043986946",
+          "bytes": 1458,
+          "viewBox": "0 0 52.5 23.4375",
+          "background": "light",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "optionIds": [
+        "make"
+      ],
+      "file": "make.svg",
+      "width": 512,
+      "height": 512,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.make.com/make-app-icon.zip",
+      "officialURL": "https://www.make.com/press",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-website",
+      "sourceSha256": "efbc5f3f4cb348f9a87c1552e5eb4ad35a0b6dc8639172aed50c17563bbdb173",
+      "sha256": "efbc5f3f4cb348f9a87c1552e5eb4ad35a0b6dc8639172aed50c17563bbdb173",
+      "bytes": 1522,
+      "sourceViewBox": "0 0 512 512",
+      "normalizations": [],
+      "license": {
+        "status": "not-located",
+        "identifier": null,
+        "scope": "No general trademark or logo redistribution license established.",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null,
+        "sourceURL": "https://cdn.make.com/cms/documents/brand-guidelines.pdf",
+        "sourceRole": "Official asset publication/guidance reviewed; not a located logo licence document.",
+        "verificationStatus": "missing-legal-verification",
+        "permissionStatus": "Intended in-product display and OSS redistribution not independently cleared.",
+        "restrictions": [
+          "Public download availability and visual guidance do not establish a general copyright or trademark licence."
+        ]
+      },
+      "notes": [
+        "Original app symbol from the official app-icon kit, supplied separately from the wordmark; no crop or redraw.",
+        "Recommended white plate matches the PDF third-party holding-shape guidance; app-icon size/scope and copyright/redistribution licence still require review."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "make--circle-color.svg",
+          "label": "Official color app icon in circle",
+          "sourceURL": "https://www.make.com/make-app-icon.zip",
+          "sha256": "13e84de1f5ced2638538eae9fc0369e06679ff2fa5ae494f4abddd21a575a921",
+          "bytes": 1641,
+          "viewBox": "0 0 512 512",
+          "background": "light",
+          "normalizations": []
+        },
+        {
+          "file": "make--circle-purple.svg",
+          "label": "Official purple app circle icon",
+          "sourceURL": "https://www.make.com/make-app-icon.zip",
+          "sha256": "a5c386043a28c3e811c86f6c6064d43792444a4101f0518948380f3693c3a0c7",
+          "bytes": 1215,
+          "viewBox": "0 0 512 512",
+          "background": "light",
+          "normalizations": []
+        },
+        {
+          "file": "make--square-purple.svg",
+          "label": "Official purple app square icon",
+          "sourceURL": "https://www.make.com/make-app-icon.zip",
+          "sha256": "42120e45a8b735f50fabbaf8d9258a57ae74d0a0ac8e5fdae10905b9e63b22ec",
+          "bytes": 1169,
+          "viewBox": "0 0 512 512",
+          "background": "light",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "optionIds": [
+        "zapier"
+      ],
+      "file": "zapier.svg",
+      "width": 500,
+      "height": 136,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://firebasestorage.googleapis.com/v0/b/standards-site-beta.appspot.com/o/documents%2F279072ea39f%2F8fc2c38ae5f%2Fzapier-logo_earth.svg?alt=media&token=f29092e4-a8f0-49cd-b7e9-1c9161ea4383",
+      "officialURL": "https://brand.zapier.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-brand-page-linked-asset",
+      "sourceSha256": "c6a08123e46c77fd665b59113b0fa3fbf4ef98177866b34ac7b70eb769f6b3e8",
+      "sha256": "c6a08123e46c77fd665b59113b0fa3fbf4ef98177866b34ac7b70eb769f6b3e8",
+      "bytes": 5049,
+      "sourceViewBox": "0 0 500 136",
+      "normalizations": [],
+      "license": {
+        "identifier": "proprietary-Zapier-brand-assets",
+        "status": "verified-trademark-consent-condition",
+        "sourceURL": "https://zapier.com/legal/terms-of-service",
+        "verifiedDate": "2026-10-21",
+        "scope": "Service terms reserve Zapier marks and do not grant a trademark licence without prior written consent. Brand guideline download is separate from that clearance.",
+        "restrictions": [
+          "Use supplied colors/variants; no lockup cropping or rearranging.",
+          "Specific trademark-use/redistribution consent remains unverified."
+        ],
+        "permissionStatus": "specific-context-clearance-pending",
+        "consultedDate": "2026-10-21",
+        "consultedTimezone": "America/Bogota",
+        "logoCopyrightIdentifier": null
+      },
+      "notes": [
+        "Official Earth wordmark lockup and supplied Frost variants retained. No separate downloadable native symbol verified; do not crop the lockup.",
+        "App Icon.svg linked by brand page is a multi-example illustration, so it is not installed as a service mark. Brand asset license and intended redistribution remain to verify."
+      ],
+      "identity": {
+        "role": "service-or-project",
+        "mapping": "Exact named service/project; no independent sub-resource brand invented."
+      },
+      "sourceColorBindings": [],
+      "variants": [
+        {
+          "file": "zapier--frost.svg",
+          "label": "Official orange mark with frost wordmark",
+          "sourceURL": "https://firebasestorage.googleapis.com/v0/b/standards-site-beta.appspot.com/o/documents%2F279072ea39f%2F8fc2c38ae5f%2Fzapier-logo_frost.svg?alt=media&token=dc5441c3-0ee3-4d26-b085-e08590b5697c",
+          "sha256": "f9312cd9548ea1386c05921479f48db1f3dcecbb2d3bb18eb9c0724cf6d3d536",
+          "bytes": 5049,
+          "viewBox": "0 0 500 136",
+          "background": "dark",
+          "normalizations": []
+        },
+        {
+          "file": "zapier--all-frost.svg",
+          "label": "Official all-frost monochrome lockup",
+          "sourceURL": "https://firebasestorage.googleapis.com/v0/b/standards-site-beta.appspot.com/o/documents%2F279072ea39f%2F8fc2c38ae5f%2Fzapier-logo_all_frost.svg?alt=media&token=49b436f4-21a6-4748-bac3-7994d4587464",
+          "sha256": "619418769f7adf84513a561a39687b8c805a69e9102c6762628025c105206f38",
+          "bytes": 5049,
+          "viewBox": "0 0 500 136",
+          "background": "dark",
+          "normalizations": []
+        }
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "optionIds": [
+        "openai-responses",
+        "openai-agents"
+      ],
+      "file": "openai.svg",
+      "width": 411,
+      "height": 411,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://developers.openai.com/",
+      "officialURL": "https://developers.openai.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-provider-source",
+      "sourceSha256": "18b4613fe0aee6dd4535ac7c5cff4254c7b6e63ff98a0ebb9587df546bc2369e",
+      "sha256": "18b4613fe0aee6dd4535ac7c5cff4254c7b6e63ff98a0ebb9587df546bc2369e",
+      "bytes": 2480,
+      "sourceViewBox": "100 100 411 411",
+      "normalizations": [],
+      "license": "Brand asset: respective owner; nominative integration identification under linked brand terms. Not relicensed Apache-2.0.",
+      "notes": [
+        "Original official developer header Blossom; currentColor is the original monochrome. Full source vector, including path styles, preserved."
+      ],
+      "variants": []
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "optionIds": [
+        "anthropic-messages"
+      ],
+      "file": "anthropic.svg",
+      "width": 35,
+      "height": 24,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://www.anthropic.com/",
+      "officialURL": "https://www.anthropic.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-provider-source",
+      "sourceSha256": "02b68b125b2a70c58d089529d2433e1e18dc0fcdbb4bd7da7674d28516c4ccd3",
+      "sha256": "02b68b125b2a70c58d089529d2433e1e18dc0fcdbb4bd7da7674d28516c4ccd3",
+      "bytes": 362,
+      "sourceViewBox": "0 0 35 24",
+      "normalizations": [
+        "Added SVG namespace. Original paths, classes, styles, gradients and viewBox preserved."
+      ],
+      "license": "Brand asset: respective owner; nominative integration identification under linked brand terms. Not relicensed Apache-2.0.",
+      "notes": [
+        "Original official abbreviated Anthropic monogram; original paths and viewBox preserved. Light monochrome; no Claude substitution.",
+        "No standalone public brand policy verified at the candidate URL; original asset source remains independently verified."
+      ],
+      "variants": []
+    },
+    {
+      "id": "ai-sdk",
+      "name": "AI SDK",
+      "optionIds": [
+        "ai-sdk"
+      ],
+      "file": "ai-sdk.svg",
+      "width": 146,
+      "height": 40,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://ai-sdk.dev/",
+      "officialURL": "https://ai-sdk.dev/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-provider-source",
+      "sourceSha256": "aaf4a82238c8589f27abb9546fd96a88758d21b309225860a88c34fea854e65a",
+      "sha256": "aaf4a82238c8589f27abb9546fd96a88758d21b309225860a88c34fea854e65a",
+      "bytes": 1873,
+      "sourceViewBox": "0 0 146 40",
+      "normalizations": [],
+      "license": "Brand asset: respective owner; nominative integration identification under linked brand terms. Not relicensed Apache-2.0.",
+      "notes": [
+        "Original AI SDK navigation wordmark; wide mark needs contain and proportional scaling."
+      ],
+      "variants": []
+    },
+    {
+      "id": "google-gemini",
+      "name": "Google Gemini",
+      "optionIds": [
+        "google-gemini"
+      ],
+      "file": "google-gemini.svg",
+      "width": 288,
+      "height": 65,
+      "display": "wordmark",
+      "background": "light",
+      "sourceURL": "https://gemini.google/about/",
+      "officialURL": "https://gemini.google/about/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-provider-source",
+      "sourceSha256": "e8b04f7b1b5d32077b63ccf7adb190b8f9fad7ac35b3bf8258dd8e8d2c84a57a",
+      "sha256": "e8b04f7b1b5d32077b63ccf7adb190b8f9fad7ac35b3bf8258dd8e8d2c84a57a",
+      "bytes": 15704,
+      "sourceViewBox": "0 0 288 65",
+      "normalizations": [],
+      "license": "Brand asset: respective owner; nominative integration identification under linked brand terms. Not relicensed Apache-2.0.",
+      "notes": [
+        "Original gradient Gemini wordmark from official About navigation; full paths and gradient definitions preserved.",
+        "Official separate monochrome Gemini symbol retained for compact provider choices; wordmark never cropped."
+      ],
+      "compact": {
+        "file": "google-gemini-symbol.svg",
+        "width": 66,
+        "height": 66,
+        "sourceURL": "https://storage.googleapis.com/gweb-gemini-cdn/gemini/uploads/c546a20243c57b297546630cf76e417a2483acb8.svg",
+        "sha256": "608eb8b32660c792ba1dc7031b08e56d642b2f8d16077dc0a0b3d4fdd48d2960",
+        "bytes": 1258,
+        "background": "light",
+        "role": "Official standalone symbol for compact provider select; no cropped lockup."
+      },
+      "variants": []
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "optionIds": [
+        "openrouter"
+      ],
+      "file": "openrouter.svg",
+      "width": 401.4,
+      "height": 293.7,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://openrouter.ai/brand/v2/openrouter-glyph-light.svg",
+      "officialURL": "https://openrouter.ai/brand/v2/openrouter-glyph-light.svg",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-provider-source",
+      "sourceSha256": "7ff618bfacc251db5194a9e3224968eec0b53e11ed023c5d15766d0cf92bddd6",
+      "sha256": "7ff618bfacc251db5194a9e3224968eec0b53e11ed023c5d15766d0cf92bddd6",
+      "bytes": 662,
+      "sourceViewBox": "0 0 401.4 293.7",
+      "normalizations": [],
+      "license": "Brand asset: respective owner; nominative integration identification under linked brand terms. Not relicensed Apache-2.0.",
+      "notes": [
+        "Original current v2 glyph; original purple stylesheet remains self-contained.",
+        "Public homepage verifies asset origin. No separate trademark/redistribution policy located; no trademark license inferred."
+      ],
+      "variants": []
+    },
+    {
+      "id": "uploadthing",
+      "name": "UploadThing",
+      "optionIds": [
+        "uploadthing"
+      ],
+      "file": "uploadthing.svg",
+      "width": 300,
+      "height": 300,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://docs.uploadthing.com/",
+      "officialURL": "https://docs.uploadthing.com/",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-inline-svg",
+      "sourceSha256": "809acb2060b071a09a4c264b81ebf74173c63eaf800db898173c7a3731289f78",
+      "sha256": "3c1eddab0038935752d84b8671f8294987c7e5015e3d7d5d1a6770bcad77fabe",
+      "bytes": 921,
+      "sourceViewBox": "0 0 300 300",
+      "normalizations": [
+        "Materialized the original light fill #e22400 and stroke none from the official navbar Tailwind classes, independently matched against its fetched stylesheet. No shape/path/viewBox changes."
+      ],
+      "license": "Original provider trademark asset; nominative identification. No Apache-2.0 or independent trademark license inferred.",
+      "notes": [
+        "Original standalone UploadThing symbol from the official docs Home link. Existing inline paths, transforms and dimensions retained."
+      ],
+      "sourceColorBindings": [
+        {
+          "sourceURL": "https://docs.uploadthing.com/_next/static/css/beb0f281affe00a5.css",
+          "sha256": "457116076604b8098bbfd7c88430714ff5b295e7d64635419e3e3dde02d95bba",
+          "rule": "fill:#e22400",
+          "target": "Original symbol g fill"
+        }
+      ],
+      "variants": []
+    },
+    {
+      "id": "authjs-nextauth",
+      "name": "Auth.js / NextAuth",
+      "optionIds": [
+        "authjs-nextauth"
+      ],
+      "file": "authjs-nextauth.svg",
+      "width": 327,
+      "height": 361,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://authjs.dev/img/etc/logo-sm.webp",
+      "officialURL": "https://authjs.dev/img/etc/logo-sm.webp",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-raster-brand-asset",
+      "sourceSha256": "f4c4baedf7e1e666c89be171a7aa1dbd4104b5cf7076b9185ebf477ea4bf8ac0",
+      "sha256": "5dcd7422d629b5ba5aaf40af41b37fcc723257dd3023d99e02c2a7791dc1dcb1",
+      "bytes": 25826,
+      "normalizations": [
+        "Wrapped the unmodified official raster as a data URI for the text-based shadcn registry. No generation, tracing, crop, recolor or pixel changes."
+      ],
+      "license": "Original provider trademark asset; nominative integration identification. No Apache-2.0 or separate trademark license inferred.",
+      "notes": [
+        "Original transparent brand raster served by the official project website; preserved byte for byte. Not generated, traced, redrawn or converted to SVG."
+      ],
+      "nativeRasterReference": {
+        "file": "design/assets/provider-brands/authjs-nextauth-reference.png",
+        "sha256": "ff1cf2ddca42cad8556a66046737f5bfb75fb4a9a5e1a6e2fd67a911e2a33abe",
+        "bytes": 18468,
+        "width": 130,
+        "height": 144,
+        "method": "Proportional PNG reference rendered from the official raster for the connector 50,000-character input limit.",
+        "originalAssetPreserved": true,
+        "originalSourceDimensions": [
+          327,
+          361
+        ],
+        "originalSourceSha256": "f4c4baedf7e1e666c89be171a7aa1dbd4104b5cf7076b9185ebf477ea4bf8ac0",
+        "noTraceOrGeneration": true,
+        "sourcePixelsResampled": true,
+        "fullResolutionNativeRasterImported": false,
+        "usage": "Declared optional portable preview derivative. The actual native Figma master uses the full-resolution original pixels."
+      },
+      "originalRasterFile": "authjs-nextauth.webp",
+      "originalRasterSha256": "f4c4baedf7e1e666c89be171a7aa1dbd4104b5cf7076b9185ebf477ea4bf8ac0",
+      "representation": "self-contained SVG container with byte-identical official raster; not vector artwork",
+      "variants": []
+    },
+    {
+      "id": "react-email",
+      "name": "React Email",
+      "optionIds": [
+        "react-email"
+      ],
+      "file": "react-email.svg",
+      "width": 359,
+      "height": 359,
+      "display": "symbol",
+      "background": "light",
+      "sourceURL": "https://react.email/brand/logo.png",
+      "officialURL": "https://react.email/brand/logo.png",
+      "consultedDate": "2026-10-21",
+      "sourceKind": "official-raster-brand-asset",
+      "sourceSha256": "2e1e7d66f8f7241070488411ed7e9c97517be401b31f4a25d1fd274288017600",
+      "sha256": "d443d0916200ad21b904e2f573eebc1a37a7f2584d2e011c622305cea04723a0",
+      "bytes": 155485,
+      "normalizations": [
+        "Wrapped the unmodified official raster as a data URI for the text-based shadcn registry. No generation, tracing, crop, recolor or pixel changes."
+      ],
+      "license": "Original provider trademark asset; nominative integration identification. No Apache-2.0 or separate trademark license inferred.",
+      "notes": [
+        "Original transparent brand raster served by the official project website; preserved byte for byte. Not generated, traced, redrawn or converted to SVG."
+      ],
+      "nativeRasterReference": {
+        "file": "design/assets/provider-brands/react-email-reference.png",
+        "sha256": "adaada4b470616cc908f2a43d43c277cd823fab6c4c81824f84e17d98ede1612",
+        "bytes": 28411,
+        "width": 144,
+        "height": 144,
+        "method": "Proportional PNG reference rendered from the official raster for the connector 50,000-character input limit.",
+        "originalAssetPreserved": true,
+        "originalSourceDimensions": [
+          359,
+          359
+        ],
+        "originalSourceSha256": "2e1e7d66f8f7241070488411ed7e9c97517be401b31f4a25d1fd274288017600",
+        "noTraceOrGeneration": true,
+        "sourcePixelsResampled": true,
+        "fullResolutionNativeRasterImported": false,
+        "usage": "Declared optional portable preview derivative. The actual native Figma master uses the full-resolution original pixels."
+      },
+      "originalRasterFile": "react-email.png",
+      "originalRasterSha256": "2e1e7d66f8f7241070488411ed7e9c97517be401b31f4a25d1fd274288017600",
+      "representation": "self-contained SVG container with byte-identical official raster; not vector artwork",
+      "variants": []
+    }
+  ]
+}

@@ -24,13 +24,25 @@
           {
             "en": "Changelog links in the landing, documentation, quality pages and README, with localized metadata and sitemap entries.",
             "es": "Enlaces al changelog en la landing, documentación, páginas de calidad y README, con metadatos localizados y entradas en el sitemap."
+          },
+          {
+            "en": "Seven Communications research documents covering Twilio/Telnyx capabilities, provider-neutral architecture, voice AI, Flow DSL, Prompt-to-Flow, security and phased delivery.",
+            "es": "Siete documentos de investigación de Communications sobre capacidades Twilio/Telnyx, arquitectura independiente del proveedor, voz con IA, Flow DSL, Prompt-to-Flow, seguridad y entrega por fases."
+          },
+          {
+            "en": "Dated native Figma source maps for Communications proposals and recovery of existing commerce, maps, authentication and integration designs, with explicit parity limits.",
+            "es": "Mapas fechados de fuentes nativas de Figma para las propuestas de Communications y la recuperación de diseños de comercio, mapas, autenticación e integraciones, con límites de paridad explícitos."
+          },
+          {
+            "en": "Original provider logos in integration cards, connection headers and provider choices, with bundled assets, source attribution and reusable Figma artwork.",
+            "es": "Logos originales de los proveedores en tarjetas de integración, cabeceras de conexión y selección de proveedor, con archivos incluidos, atribución de fuentes y recursos reutilizables en Figma."
           }
         ]
       }
     ],
     "notes": {
-      "en": "These changes are available on main and are not part of the immutable 1.5.0 release archives.",
-      "es": "Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0."
+      "en": "These changes are available on main and are not part of the immutable 1.5.0 release archives. Communications is research and proposed design; carrier integrations and complete runtime parity are not certified.",
+      "es": "Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0. Communications es investigación y diseño propuesto; las integraciones con carriers y la paridad completa en ejecución no están certificadas."
     }
   },
   "releases": [

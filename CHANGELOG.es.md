@@ -19,8 +19,11 @@ Consulta los cambios de main antes de publicar la siguiente versión.
 - Un changelog público y bilingüe con fechas, navegación por versiones y enlaces a las releases originales de GitHub.
 - Historiales Markdown en inglés y español generados desde la misma fuente que la página web.
 - Enlaces al changelog en la landing, documentación, páginas de calidad y README, con metadatos localizados y entradas en el sitemap.
+- Siete documentos de investigación de Communications sobre capacidades Twilio/Telnyx, arquitectura independiente del proveedor, voz con IA, Flow DSL, Prompt-to-Flow, seguridad y entrega por fases.
+- Mapas fechados de fuentes nativas de Figma para las propuestas de Communications y la recuperación de diseños de comercio, mapas, autenticación e integraciones, con límites de paridad explícitos.
+- Logos originales de los proveedores en tarjetas de integración, cabeceras de conexión y selección de proveedor, con archivos incluidos, atribución de fuentes y recursos reutilizables en Figma.
 
-Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0.
+Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0. Communications es investigación y diseño propuesto; las integraciones con carriers y la paridad completa en ejecución no están certificadas.
 
 ## [1.5.0](https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.5.0) — 2026-10-20
 

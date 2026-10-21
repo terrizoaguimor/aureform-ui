@@ -7,6 +7,8 @@ El propietario confirmó el 19 de octubre de 2026 el acceso público por enlace 
 
 El código y diseño originales de Aureform se distribuyen bajo [Apache 2.0](../LICENSE). Las fuentes y dependencias conservan sus licencias en [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
 
+Los logos de los proveedores conservan los derechos de sus propietarios; el [manifiesto de marcas](../public/assets/integrations/manifest.json) registra sus fuentes originales y límites de uso.
+
 ![Portada nativa de Figma para la versión open source de Aureform](releases/1.3.0/cover.png)
 
 Empieza con el [paquete de diseño](downloads/aureform-design-snapshots.zip), o clona el repositorio para obtener el código, los tokens y los recursos de diseño juntos.
@@ -21,7 +23,10 @@ Empieza con el [paquete de diseño](downloads/aureform-design-snapshots.zip), o 
 | [Tokens](tokens/README.md) | El JSON del sistema y su CSS generado, con seis paletas y valores claros/oscuros. |
 | [Colección de imágenes](images/README.md) | Retratos, productos e imágenes editoriales generadas, con prompts originales y metadatos de entrega. |
 | [Pruebas nativas de imágenes](proofs/manifest.json) | Siete exportaciones aceptadas y congeladas del trabajo de imágenes en 1.2.1. |
+| [Pruebas fechadas de marcas y fuentes](proofs/2026-10-21/manifest.json) | Artefactos adicionales reales, con hashes y distinción explícita entre exportaciones nativas de Figma y composiciones locales de las marcas. |
 | [Registro del cambio open source](release-1.3.0.json) | Los cambios de portada y licencia registrados por separado; las auditorías anteriores conservan su contexto histórico. |
+| [Research de comunicaciones y recuperación de fuentes](reports/communications-2026-10-21.md) | Propuestas de Communications y tableros de RFC, junto con la recuperación nativa de aplicaciones e integraciones 1.4/1.5 y sus límites de aceptación. |
+| [Logos originales de las integraciones](../public/assets/integrations/README.md) | 79 marcas para 86 opciones de proveedor, con los archivos originales, su atribución y los dos originales raster declarados. |
 
 Los SVG contienen geometría vectorial editable y fotografías incrustadas. Sus textos están convertidos en contornos. Importarlos **no** recupera auto-layout, propiedades de texto, variantes ni enlaces a variables de Figma. El plugin crea por separado textos editables y componentes iniciales nativos; su alcance documentado es menor que el de la biblioteca original completa.
 
@@ -29,7 +34,7 @@ Los SVG contienen geometría vectorial editable y fotografías incrustadas. Sus 
 
 Los archivos de Code Connect son **locales y no están publicados**. El código está en [`.figma/code-connect`](../.figma/code-connect); publicar este repositorio no los registra en Figma ni crea una conexión activa de Dev Mode. Los componentes importados o reconstruidos reciben IDs nuevos y necesitan sus propias asociaciones.
 
-La [ampliación de aplicaciones 1.4](../docs/application-integrations.es.md) añade bloques de código y capturas reales del navegador. Mantiene estos checkpoints nativos de Figma; los bloques nuevos de comercio, edición de productos, mapas y acceso social no se presentan como masters nativos ni como una nueva revisión nativa.
+La [ampliación de aplicaciones 1.4](../docs/application-integrations.es.md) añade bloques de código y capturas reales del navegador. La [recuperación del 21 de octubre de 2026](reports/communications-2026-10-21.md) incorpora fuentes nativas de productos, comercio, mapas, acceso social e integraciones 1.5 al mismo archivo de Figma. Su mapa fechado distingue la creación nativa, las revisiones visuales parciales y la paridad con navegador aún no verificada; los checkpoints anteriores conservan su alcance histórico.
 
 Actualiza los índices derivados y el paquete descargable desde un checkout completo:
 

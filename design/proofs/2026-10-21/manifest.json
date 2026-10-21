@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "recordedDate": "2026-10-21",
+  "scope": "Dated additional artifacts; the seven frozen 1.2.1 image proofs remain unchanged",
+  "status": "actual-artifacts-only; additional-source-recovery-exports-recorded-separately",
+  "artifacts": [
+    {
+      "file": "provider-artwork-01.png",
+      "sha256": "35b41b905f554e4272916ca70d9f4a7b46db998fa2858b0436f5c57c39e2c726",
+      "bytes": 192866,
+      "size": [
+        1428,
+        1500
+      ],
+      "kind": "offline-artwork-contact-sheet",
+      "method": "CairoSVG/PIL local composition of original bundled assets",
+      "visuallyInspected": true,
+      "nativeFigmaExport": false,
+      "browserCapture": false,
+      "scope": "Original artwork readability; not application composition or runtime acceptance"
+    },
+    {
+      "file": "provider-artwork-02.png",
+      "sha256": "1707c10c04ea75a6424e71ecee70c0e0d877ccc165278245cf644dc8e2acb20b",
+      "bytes": 214415,
+      "size": [
+        1428,
+        1500
+      ],
+      "kind": "offline-artwork-contact-sheet",
+      "method": "CairoSVG/PIL local composition of original bundled assets",
+      "visuallyInspected": true,
+      "nativeFigmaExport": false,
+      "browserCapture": false,
+      "scope": "Original artwork readability; not application composition or runtime acceptance"
+    },
+    {
+      "file": "provider-artwork-03.png",
+      "sha256": "404d3b76acefceee8976e6c76188e35477d9a64c14d52ee106f29b1b0433c78c",
+      "bytes": 268549,
+      "size": [
+        1428,
+        1500
+      ],
+      "kind": "offline-artwork-contact-sheet",
+      "method": "CairoSVG/PIL local composition of original bundled assets",
+      "visuallyInspected": true,
+      "nativeFigmaExport": false,
+      "browserCapture": false,
+      "scope": "Original artwork readability; not application composition or runtime acceptance"
+    },
+    {
+      "file": "provider-artwork-04.png",
+      "sha256": "a715b42eaa546db0edb8246306c00085e8c2ae246bdd1337ffd8a9e2803dfc70",
+      "bytes": 242713,
+      "size": [
+        1428,
+        1500
+      ],
+      "kind": "offline-artwork-contact-sheet",
+      "method": "CairoSVG/PIL local composition of original bundled assets",
+      "visuallyInspected": true,
+      "nativeFigmaExport": false,
+      "browserCapture": false,
+      "scope": "Original artwork readability; not application composition or runtime acceptance"
+    },
+    {
+      "file": "provider-artwork-05.png",
+      "sha256": "f8a1601170e623aeea2d91920b5dc3604435e9a0a67e34f03187e27767f3b0c3",
+      "bytes": 215668,
+      "size": [
+        1428,
+        1500
+      ],
+      "kind": "offline-artwork-contact-sheet",
+      "method": "CairoSVG/PIL local composition of original bundled assets",
+      "visuallyInspected": true,
+      "nativeFigmaExport": false,
+      "browserCapture": false,
+      "scope": "Original artwork readability; not application composition or runtime acceptance"
+    },
+    {
+      "file": "provider-artwork-06.png",
+      "sha256": "eb85927277639ce218fffb45afab0819976aecceb88009e1e647a1e4c14b3c29",
+      "bytes": 78262,
+      "size": [
+        1428,
+        310
+      ],
+      "kind": "offline-artwork-contact-sheet",
+      "method": "CairoSVG/PIL local composition of original bundled assets",
+      "visuallyInspected": true,
+      "nativeFigmaExport": false,
+      "browserCapture": false,
+      "scope": "Original artwork readability; not application composition or runtime acceptance"
+    },
+    {
+      "file": "product-table.png",
+      "sha256": "65481d3555b7ee694252926bd02bc00e5b0ba980a84fa3ea600c6c176a5d461c",
+      "bytes": 145567,
+      "size": [
+        1120,
+        1244
+      ],
+      "kind": "native-Figma-export",
+      "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+      "sourceNodeId": "336:900",
+      "method": "Actual Figma native PNG export",
+      "visuallyInspected": true,
+      "nativeFigmaExport": true,
+      "browserCapture": false,
+      "scope": "Current source Table composition with seven columns and eight fixture rows; browser/interaction acceptance unverified"
+    },
+    {
+      "file": "integration-provider-gallery.png",
+      "nodeId": "478:37714",
+      "sha256": "3e5b92bda8d6ddd0ac749a835dc6af7efd1a95e037bcf97590d6a4b397feae56",
+      "bytes": 166698,
+      "size": [
+        1440,
+        1328
+      ],
+      "renderedAtUTC": "2026-10-21T17:57:40.302Z",
+      "actualFigmaExport": true,
+      "mainVisualReview": "PASS for bounded changed source",
+      "browserParityCertified": false,
+      "kind": "native-Figma-export",
+      "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+      "sourceNodeId": "478:37714",
+      "method": "Actual final Figma native PNG; saved byte for byte",
+      "visuallyInspected": true,
+      "nativeFigmaExport": true,
+      "browserCapture": false,
+      "scope": "79 primary identities plus Gemini compact gallery and selected 1440×1000 Fresh Hub viewport; no full-scroll/browser/individual-alternate certification"
+    },
+    {
+      "file": "integration-provider-hub.png",
+      "nodeId": "379:30393",
+      "sha256": "808e345390ab16b39def05cc1a7a6707157776a607f390aa955783b31ee7e8a4",
+      "bytes": 141741,
+      "size": [
+        1440,
+        1000
+      ],
+      "renderedAtUTC": "2026-10-21T17:57:40.470Z",
+      "actualFigmaExport": true,
+      "mainVisualReview": "PASS for bounded changed source",
+      "browserParityCertified": false,
+      "kind": "native-Figma-export",
+      "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+      "sourceNodeId": "379:30393",
+      "method": "Actual final Figma native PNG; saved byte for byte",
+      "visuallyInspected": true,
+      "nativeFigmaExport": true,
+      "browserCapture": false,
+      "scope": "79 primary identities plus Gemini compact gallery and selected 1440×1000 Fresh Hub viewport; no full-scroll/browser/individual-alternate certification"
+    }
+  ],
+  "browserParityCertified": false
+}

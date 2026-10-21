@@ -36407,6 +36407,11 @@
           "target": "@components/integrations/product-workbench.tsx"
         },
         {
+          "path": "src/components/integrations/provider-logo.tsx",
+          "type": "registry:component",
+          "target": "@components/integrations/provider-logo.tsx"
+        },
+        {
           "path": "src/components/integrations/search-bridge-facets.tsx",
           "type": "registry:component",
           "target": "@components/integrations/search-bridge-facets.tsx"
@@ -36707,6 +36712,11 @@
           "target": "@lib/data-query.ts"
         },
         {
+          "path": "src/lib/integrations/brands.ts",
+          "type": "registry:lib",
+          "target": "@lib/integrations/brands.ts"
+        },
+        {
           "path": "src/lib/integrations/cancelled-task.ts",
           "type": "registry:lib",
           "target": "@lib/integrations/cancelled-task.ts"
@@ -36910,6 +36920,616 @@
           "path": "public/assets/avatars/studio-updates.svg",
           "type": "registry:file",
           "target": "~/public/assets/avatars/studio-updates.svg"
+        },
+        {
+          "path": "public/assets/integrations/README.md",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/README.md"
+        },
+        {
+          "path": "public/assets/integrations/ably-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/ably-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/ably.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/ably.svg"
+        },
+        {
+          "path": "public/assets/integrations/ai-sdk.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/ai-sdk.svg"
+        },
+        {
+          "path": "public/assets/integrations/algolia--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/algolia--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/algolia.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/algolia.svg"
+        },
+        {
+          "path": "public/assets/integrations/amazon-s3.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/amazon-s3.svg"
+        },
+        {
+          "path": "public/assets/integrations/amazon-ses.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/amazon-ses.svg"
+        },
+        {
+          "path": "public/assets/integrations/anthropic.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/anthropic.svg"
+        },
+        {
+          "path": "public/assets/integrations/auth0.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/auth0.svg"
+        },
+        {
+          "path": "public/assets/integrations/authjs-nextauth.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/authjs-nextauth.svg"
+        },
+        {
+          "path": "public/assets/integrations/better-auth-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/better-auth-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/better-auth.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/better-auth.svg"
+        },
+        {
+          "path": "public/assets/integrations/blocknote--wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/blocknote--wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/blocknote.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/blocknote.svg"
+        },
+        {
+          "path": "public/assets/integrations/clerk-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/clerk-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/clerk.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/clerk.svg"
+        },
+        {
+          "path": "public/assets/integrations/cloudflare.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/cloudflare.svg"
+        },
+        {
+          "path": "public/assets/integrations/cloudinary.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/cloudinary.svg"
+        },
+        {
+          "path": "public/assets/integrations/composio.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/composio.svg"
+        },
+        {
+          "path": "public/assets/integrations/convex-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/convex-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/convex.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/convex.svg"
+        },
+        {
+          "path": "public/assets/integrations/drizzle.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/drizzle.svg"
+        },
+        {
+          "path": "public/assets/integrations/firebase.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/firebase.svg"
+        },
+        {
+          "path": "public/assets/integrations/github-apps--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/github-apps--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/github-apps.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/github-apps.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-calendar.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-calendar.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-drive.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-drive.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-gemini-symbol.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-gemini-symbol.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-gemini.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-gemini.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-maps.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-maps.svg"
+        },
+        {
+          "path": "public/assets/integrations/helicone.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/helicone.svg"
+        },
+        {
+          "path": "public/assets/integrations/hubspot.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/hubspot.svg"
+        },
+        {
+          "path": "public/assets/integrations/inngest.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/inngest.svg"
+        },
+        {
+          "path": "public/assets/integrations/jira--attribution-light.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/jira--attribution-light.svg"
+        },
+        {
+          "path": "public/assets/integrations/jira.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/jira.svg"
+        },
+        {
+          "path": "public/assets/integrations/knock.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/knock.svg"
+        },
+        {
+          "path": "public/assets/integrations/langfuse-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/langfuse-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/langfuse.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/langfuse.svg"
+        },
+        {
+          "path": "public/assets/integrations/langgraph.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/langgraph.svg"
+        },
+        {
+          "path": "public/assets/integrations/langsmith.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/langsmith.svg"
+        },
+        {
+          "path": "public/assets/integrations/lemon-squeezy.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/lemon-squeezy.svg"
+        },
+        {
+          "path": "public/assets/integrations/lexical.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/lexical.svg"
+        },
+        {
+          "path": "public/assets/integrations/linear--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/linear--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/linear.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/linear.svg"
+        },
+        {
+          "path": "public/assets/integrations/liveblocks.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/liveblocks.svg"
+        },
+        {
+          "path": "public/assets/integrations/make--circle-color.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/make--circle-color.svg"
+        },
+        {
+          "path": "public/assets/integrations/make--circle-purple.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/make--circle-purple.svg"
+        },
+        {
+          "path": "public/assets/integrations/make--square-purple.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/make--square-purple.svg"
+        },
+        {
+          "path": "public/assets/integrations/make.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/make.svg"
+        },
+        {
+          "path": "public/assets/integrations/manifest.json",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/manifest.json"
+        },
+        {
+          "path": "public/assets/integrations/mapbox.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/mapbox.svg"
+        },
+        {
+          "path": "public/assets/integrations/maplibre.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/maplibre.svg"
+        },
+        {
+          "path": "public/assets/integrations/mcp--wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/mcp--wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/mcp.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/mcp.svg"
+        },
+        {
+          "path": "public/assets/integrations/meilisearch--white-wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/meilisearch--white-wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/meilisearch--wordmark-color.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/meilisearch--wordmark-color.svg"
+        },
+        {
+          "path": "public/assets/integrations/meilisearch.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/meilisearch.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n--black.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n--black.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n--lockup-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n--lockup-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n--wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n--wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n.svg"
+        },
+        {
+          "path": "public/assets/integrations/nango--black.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/nango--black.svg"
+        },
+        {
+          "path": "public/assets/integrations/nango--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/nango--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/nango.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/nango.svg"
+        },
+        {
+          "path": "public/assets/integrations/neon-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/neon-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/neon.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/neon.svg"
+        },
+        {
+          "path": "public/assets/integrations/notion.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/notion.svg"
+        },
+        {
+          "path": "public/assets/integrations/novu.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/novu.svg"
+        },
+        {
+          "path": "public/assets/integrations/onedrive.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/onedrive.svg"
+        },
+        {
+          "path": "public/assets/integrations/openai.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/openai.svg"
+        },
+        {
+          "path": "public/assets/integrations/openrouter.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/openrouter.svg"
+        },
+        {
+          "path": "public/assets/integrations/outlook-calendar.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/outlook-calendar.svg"
+        },
+        {
+          "path": "public/assets/integrations/paddle-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/paddle-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/paddle.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/paddle.svg"
+        },
+        {
+          "path": "public/assets/integrations/pgvector--official-blue.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pgvector--official-blue.svg"
+        },
+        {
+          "path": "public/assets/integrations/pgvector--official-white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pgvector--official-white.svg"
+        },
+        {
+          "path": "public/assets/integrations/pgvector.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pgvector.svg"
+        },
+        {
+          "path": "public/assets/integrations/pinecone--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pinecone--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/pinecone--wordmark-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pinecone--wordmark-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/pinecone.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pinecone.svg"
+        },
+        {
+          "path": "public/assets/integrations/pipedream-connect.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pipedream-connect.svg"
+        },
+        {
+          "path": "public/assets/integrations/polar-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/polar-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/polar.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/polar.svg"
+        },
+        {
+          "path": "public/assets/integrations/posthog.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/posthog.svg"
+        },
+        {
+          "path": "public/assets/integrations/postmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/postmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/prisma-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/prisma-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/prisma.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/prisma.svg"
+        },
+        {
+          "path": "public/assets/integrations/pusher.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pusher.svg"
+        },
+        {
+          "path": "public/assets/integrations/qdrant--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/qdrant--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/qdrant--wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/qdrant--wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/qdrant.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/qdrant.svg"
+        },
+        {
+          "path": "public/assets/integrations/react-email.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/react-email.svg"
+        },
+        {
+          "path": "public/assets/integrations/resend-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/resend-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/resend.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/resend.svg"
+        },
+        {
+          "path": "public/assets/integrations/salesforce.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/salesforce.svg"
+        },
+        {
+          "path": "public/assets/integrations/sendgrid.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/sendgrid.svg"
+        },
+        {
+          "path": "public/assets/integrations/sentry.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/sentry.svg"
+        },
+        {
+          "path": "public/assets/integrations/sharepoint.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/sharepoint.svg"
+        },
+        {
+          "path": "public/assets/integrations/slack.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/slack.svg"
+        },
+        {
+          "path": "public/assets/integrations/stripe-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/stripe-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/stripe.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/stripe.svg"
+        },
+        {
+          "path": "public/assets/integrations/supabase.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/supabase.svg"
+        },
+        {
+          "path": "public/assets/integrations/swr.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/swr.svg"
+        },
+        {
+          "path": "public/assets/integrations/tanstack-query-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/tanstack-query-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/tanstack-query.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/tanstack-query.svg"
+        },
+        {
+          "path": "public/assets/integrations/teams.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/teams.svg"
+        },
+        {
+          "path": "public/assets/integrations/tiptap.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/tiptap.svg"
+        },
+        {
+          "path": "public/assets/integrations/trigger-dev-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/trigger-dev-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/trigger-dev.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/trigger-dev.svg"
+        },
+        {
+          "path": "public/assets/integrations/trpc.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/trpc.svg"
+        },
+        {
+          "path": "public/assets/integrations/typesense.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/typesense.svg"
+        },
+        {
+          "path": "public/assets/integrations/uploadthing.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/uploadthing.svg"
+        },
+        {
+          "path": "public/assets/integrations/vercel-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/vercel-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/vercel.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/vercel.svg"
+        },
+        {
+          "path": "public/assets/integrations/workos-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/workos-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/workos.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/workos.svg"
+        },
+        {
+          "path": "public/assets/integrations/zapier--all-frost.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/zapier--all-frost.svg"
+        },
+        {
+          "path": "public/assets/integrations/zapier--frost.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/zapier--frost.svg"
+        },
+        {
+          "path": "public/assets/integrations/zapier.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/zapier.svg"
+        },
+        {
+          "path": "public/assets/integrations/zendesk.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/zendesk.svg"
         },
         {
           "path": "public/assets/products/arc-lounge-chair.svg",
@@ -42765,6 +43385,11 @@
           "target": "@components/integrations/product-workbench.tsx"
         },
         {
+          "path": "src/components/integrations/provider-logo.tsx",
+          "type": "registry:component",
+          "target": "@components/integrations/provider-logo.tsx"
+        },
+        {
           "path": "src/components/integrations/search-bridge-facets.tsx",
           "type": "registry:component",
           "target": "@components/integrations/search-bridge-facets.tsx"
@@ -43005,6 +43630,11 @@
           "target": "@lib/data-query.ts"
         },
         {
+          "path": "src/lib/integrations/brands.ts",
+          "type": "registry:lib",
+          "target": "@lib/integrations/brands.ts"
+        },
+        {
           "path": "src/lib/integrations/cancelled-task.ts",
           "type": "registry:lib",
           "target": "@lib/integrations/cancelled-task.ts"
@@ -43203,6 +43833,616 @@
           "path": "public/assets/avatars/studio-updates.svg",
           "type": "registry:file",
           "target": "~/public/assets/avatars/studio-updates.svg"
+        },
+        {
+          "path": "public/assets/integrations/README.md",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/README.md"
+        },
+        {
+          "path": "public/assets/integrations/ably-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/ably-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/ably.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/ably.svg"
+        },
+        {
+          "path": "public/assets/integrations/ai-sdk.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/ai-sdk.svg"
+        },
+        {
+          "path": "public/assets/integrations/algolia--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/algolia--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/algolia.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/algolia.svg"
+        },
+        {
+          "path": "public/assets/integrations/amazon-s3.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/amazon-s3.svg"
+        },
+        {
+          "path": "public/assets/integrations/amazon-ses.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/amazon-ses.svg"
+        },
+        {
+          "path": "public/assets/integrations/anthropic.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/anthropic.svg"
+        },
+        {
+          "path": "public/assets/integrations/auth0.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/auth0.svg"
+        },
+        {
+          "path": "public/assets/integrations/authjs-nextauth.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/authjs-nextauth.svg"
+        },
+        {
+          "path": "public/assets/integrations/better-auth-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/better-auth-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/better-auth.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/better-auth.svg"
+        },
+        {
+          "path": "public/assets/integrations/blocknote--wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/blocknote--wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/blocknote.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/blocknote.svg"
+        },
+        {
+          "path": "public/assets/integrations/clerk-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/clerk-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/clerk.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/clerk.svg"
+        },
+        {
+          "path": "public/assets/integrations/cloudflare.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/cloudflare.svg"
+        },
+        {
+          "path": "public/assets/integrations/cloudinary.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/cloudinary.svg"
+        },
+        {
+          "path": "public/assets/integrations/composio.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/composio.svg"
+        },
+        {
+          "path": "public/assets/integrations/convex-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/convex-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/convex.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/convex.svg"
+        },
+        {
+          "path": "public/assets/integrations/drizzle.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/drizzle.svg"
+        },
+        {
+          "path": "public/assets/integrations/firebase.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/firebase.svg"
+        },
+        {
+          "path": "public/assets/integrations/github-apps--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/github-apps--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/github-apps.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/github-apps.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-calendar.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-calendar.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-drive.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-drive.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-gemini-symbol.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-gemini-symbol.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-gemini.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-gemini.svg"
+        },
+        {
+          "path": "public/assets/integrations/google-maps.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/google-maps.svg"
+        },
+        {
+          "path": "public/assets/integrations/helicone.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/helicone.svg"
+        },
+        {
+          "path": "public/assets/integrations/hubspot.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/hubspot.svg"
+        },
+        {
+          "path": "public/assets/integrations/inngest.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/inngest.svg"
+        },
+        {
+          "path": "public/assets/integrations/jira--attribution-light.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/jira--attribution-light.svg"
+        },
+        {
+          "path": "public/assets/integrations/jira.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/jira.svg"
+        },
+        {
+          "path": "public/assets/integrations/knock.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/knock.svg"
+        },
+        {
+          "path": "public/assets/integrations/langfuse-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/langfuse-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/langfuse.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/langfuse.svg"
+        },
+        {
+          "path": "public/assets/integrations/langgraph.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/langgraph.svg"
+        },
+        {
+          "path": "public/assets/integrations/langsmith.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/langsmith.svg"
+        },
+        {
+          "path": "public/assets/integrations/lemon-squeezy.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/lemon-squeezy.svg"
+        },
+        {
+          "path": "public/assets/integrations/lexical.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/lexical.svg"
+        },
+        {
+          "path": "public/assets/integrations/linear--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/linear--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/linear.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/linear.svg"
+        },
+        {
+          "path": "public/assets/integrations/liveblocks.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/liveblocks.svg"
+        },
+        {
+          "path": "public/assets/integrations/make--circle-color.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/make--circle-color.svg"
+        },
+        {
+          "path": "public/assets/integrations/make--circle-purple.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/make--circle-purple.svg"
+        },
+        {
+          "path": "public/assets/integrations/make--square-purple.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/make--square-purple.svg"
+        },
+        {
+          "path": "public/assets/integrations/make.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/make.svg"
+        },
+        {
+          "path": "public/assets/integrations/manifest.json",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/manifest.json"
+        },
+        {
+          "path": "public/assets/integrations/mapbox.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/mapbox.svg"
+        },
+        {
+          "path": "public/assets/integrations/maplibre.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/maplibre.svg"
+        },
+        {
+          "path": "public/assets/integrations/mcp--wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/mcp--wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/mcp.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/mcp.svg"
+        },
+        {
+          "path": "public/assets/integrations/meilisearch--white-wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/meilisearch--white-wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/meilisearch--wordmark-color.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/meilisearch--wordmark-color.svg"
+        },
+        {
+          "path": "public/assets/integrations/meilisearch.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/meilisearch.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n--black.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n--black.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n--lockup-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n--lockup-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n--wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n--wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/n8n.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/n8n.svg"
+        },
+        {
+          "path": "public/assets/integrations/nango--black.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/nango--black.svg"
+        },
+        {
+          "path": "public/assets/integrations/nango--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/nango--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/nango.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/nango.svg"
+        },
+        {
+          "path": "public/assets/integrations/neon-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/neon-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/neon.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/neon.svg"
+        },
+        {
+          "path": "public/assets/integrations/notion.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/notion.svg"
+        },
+        {
+          "path": "public/assets/integrations/novu.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/novu.svg"
+        },
+        {
+          "path": "public/assets/integrations/onedrive.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/onedrive.svg"
+        },
+        {
+          "path": "public/assets/integrations/openai.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/openai.svg"
+        },
+        {
+          "path": "public/assets/integrations/openrouter.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/openrouter.svg"
+        },
+        {
+          "path": "public/assets/integrations/outlook-calendar.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/outlook-calendar.svg"
+        },
+        {
+          "path": "public/assets/integrations/paddle-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/paddle-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/paddle.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/paddle.svg"
+        },
+        {
+          "path": "public/assets/integrations/pgvector--official-blue.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pgvector--official-blue.svg"
+        },
+        {
+          "path": "public/assets/integrations/pgvector--official-white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pgvector--official-white.svg"
+        },
+        {
+          "path": "public/assets/integrations/pgvector.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pgvector.svg"
+        },
+        {
+          "path": "public/assets/integrations/pinecone--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pinecone--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/pinecone--wordmark-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pinecone--wordmark-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/pinecone.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pinecone.svg"
+        },
+        {
+          "path": "public/assets/integrations/pipedream-connect.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pipedream-connect.svg"
+        },
+        {
+          "path": "public/assets/integrations/polar-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/polar-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/polar.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/polar.svg"
+        },
+        {
+          "path": "public/assets/integrations/posthog.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/posthog.svg"
+        },
+        {
+          "path": "public/assets/integrations/postmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/postmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/prisma-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/prisma-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/prisma.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/prisma.svg"
+        },
+        {
+          "path": "public/assets/integrations/pusher.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/pusher.svg"
+        },
+        {
+          "path": "public/assets/integrations/qdrant--white.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/qdrant--white.svg"
+        },
+        {
+          "path": "public/assets/integrations/qdrant--wordmark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/qdrant--wordmark.svg"
+        },
+        {
+          "path": "public/assets/integrations/qdrant.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/qdrant.svg"
+        },
+        {
+          "path": "public/assets/integrations/react-email.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/react-email.svg"
+        },
+        {
+          "path": "public/assets/integrations/resend-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/resend-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/resend.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/resend.svg"
+        },
+        {
+          "path": "public/assets/integrations/salesforce.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/salesforce.svg"
+        },
+        {
+          "path": "public/assets/integrations/sendgrid.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/sendgrid.svg"
+        },
+        {
+          "path": "public/assets/integrations/sentry.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/sentry.svg"
+        },
+        {
+          "path": "public/assets/integrations/sharepoint.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/sharepoint.svg"
+        },
+        {
+          "path": "public/assets/integrations/slack.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/slack.svg"
+        },
+        {
+          "path": "public/assets/integrations/stripe-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/stripe-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/stripe.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/stripe.svg"
+        },
+        {
+          "path": "public/assets/integrations/supabase.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/supabase.svg"
+        },
+        {
+          "path": "public/assets/integrations/swr.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/swr.svg"
+        },
+        {
+          "path": "public/assets/integrations/tanstack-query-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/tanstack-query-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/tanstack-query.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/tanstack-query.svg"
+        },
+        {
+          "path": "public/assets/integrations/teams.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/teams.svg"
+        },
+        {
+          "path": "public/assets/integrations/tiptap.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/tiptap.svg"
+        },
+        {
+          "path": "public/assets/integrations/trigger-dev-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/trigger-dev-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/trigger-dev.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/trigger-dev.svg"
+        },
+        {
+          "path": "public/assets/integrations/trpc.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/trpc.svg"
+        },
+        {
+          "path": "public/assets/integrations/typesense.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/typesense.svg"
+        },
+        {
+          "path": "public/assets/integrations/uploadthing.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/uploadthing.svg"
+        },
+        {
+          "path": "public/assets/integrations/vercel-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/vercel-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/vercel.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/vercel.svg"
+        },
+        {
+          "path": "public/assets/integrations/workos-dark.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/workos-dark.svg"
+        },
+        {
+          "path": "public/assets/integrations/workos.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/workos.svg"
+        },
+        {
+          "path": "public/assets/integrations/zapier--all-frost.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/zapier--all-frost.svg"
+        },
+        {
+          "path": "public/assets/integrations/zapier--frost.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/zapier--frost.svg"
+        },
+        {
+          "path": "public/assets/integrations/zapier.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/zapier.svg"
+        },
+        {
+          "path": "public/assets/integrations/zendesk.svg",
+          "type": "registry:file",
+          "target": "~/public/assets/integrations/zendesk.svg"
         },
         {
           "path": "public/assets/products/arc-lounge-chair.svg",

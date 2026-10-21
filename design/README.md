@@ -4,6 +4,8 @@
 
 Use Aureform's original source and design under [Apache 2.0](../LICENSE). Fonts and dependencies retain the licenses in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
 
+Third-party provider logos retain their owners' rights; the [brand asset manifest](../public/assets/integrations/manifest.json) records their original sources and usage boundaries.
+
 ![Aureform's native Figma cover for the open-source release](releases/1.3.0/cover.png)
 
 Start with the [design bundle](downloads/aureform-design-snapshots.zip), or clone the repository to get the source, tokens and editable design resources together.
@@ -18,7 +20,10 @@ Start with the [design bundle](downloads/aureform-design-snapshots.zip), or clon
 | [Tokens](tokens/README.md) | The application's token JSON and generated CSS, including six palettes and Light/Dark values. |
 | [Image collection](images/README.md) | Generated portraits, products and editorial images, with original prompts and delivery metadata. |
 | [Native image proofs](proofs/manifest.json) | Seven accepted, frozen image-integration exports from the 1.2.1 checkpoint. |
+| [Dated artwork and source proofs](proofs/2026-10-21/manifest.json) | Additional actual artifacts, with hashes and explicit distinctions between native Figma exports and offline artwork composites. |
 | [Open-source design change record](release-1.3.0.json) | The separately recorded cover and licensing changes; earlier audit evidence remains historical. |
+| [Communications research and source recovery](reports/communications-2026-10-21.md) | Proposed Communications views and RFC boards, plus native recovery of 1.4/1.5 application and integration sources, with explicit acceptance limits. |
+| [Original integration logos](../public/assets/integrations/README.md) | 79 brand identities for 86 provider choices, including the original artwork, attribution and the two declared raster originals. |
 
 The SVGs contain editable vector geometry and embedded photos. Their text is outlined. Importing them does **not** recreate Figma auto-layout, text properties, component variants or variable bindings. The rebuild plugin creates native editable text and starter components separately; its documented scope is smaller than the complete original Figma library.
 
@@ -26,7 +31,7 @@ A native `.fig` download is **not included**. The available connector does not e
 
 The Code Connect files are **local and unpublished**. Their source is in [`.figma/code-connect`](../.figma/code-connect); publishing this repository does not register them in Figma or create a live Dev Mode connection. Imported or rebuilt components receive new IDs and need their own mappings.
 
-The [1.4 application expansion](../docs/application-integrations.md) adds source blocks and actual browser screenshots. It retains these native Figma checkpoints; the new commerce, product editor, maps and social-auth blocks have no new native master or native review claimed.
+The [1.4 application expansion](../docs/application-integrations.md) adds source blocks and actual browser screenshots. The [2026-10-21 recovery](reports/communications-2026-10-21.md) adds native product, commerce, maps, social-auth and 1.5 integration sources to the same Figma file. Its dated source map separates native creation, selected visual reviews and browser parity that remains unverified; the earlier checkpoints keep their historical scope.
 
 Refresh the derived indexes and the download from a complete checkout:
 

@@ -58,6 +58,12 @@ node bin/aureform.mjs add integration-hub integrations-suite --cwd ../mi-product
 
 [Guía de conexión →](https://aureformui.com/es/docs/integrations/) · [Cobertura de proveedores →](docs/integrations/provider-coverage.json) · [Alcance de la versión 1.5 →](docs/release-checklist-1.5.0.md)
 
+## Research de comunicaciones
+
+El [paquete de investigación de Communications](docs/communications/RESEARCH.md) estudia un framework de contact center con Twilio y Telnyx, un Flow DSL tipado, voz con IA y Prompt-to-Flow. Incluye [arquitectura](docs/communications/ARCHITECTURE-RFC.md), [matriz de capacidades](docs/communications/CAPABILITY-MATRIX.md), [gates de seguridad](docs/communications/SECURITY-COMPLIANCE.md) y [roadmap por fases](docs/communications/ROADMAP.md). Es investigación y diseño nativo; las integraciones con carriers no están implementadas ni certificadas.
+
+El [registro de fuentes Figma](design/reports/communications-2026-10-21.md) enlaza las vistas y los tableros de RFC propuestos, y registra la recuperación de diseños de aplicaciones e integraciones anteriores.
+
 ## Comercio, mapas y autenticación
 
 [![Adaptador frontend tipado de Stripe](https://img.shields.io/badge/Stripe-adaptador%20tipado-635BFF?style=flat-square&logo=stripe&logoColor=white)](https://aureformui.com/es/docs/adapters/) [![Google Maps con clave de navegador opcional](https://img.shields.io/badge/Google%20Maps-clave%20opcional-1D4ED8?style=flat-square&logo=googlemaps&logoColor=white)](https://aureformui.com/es/docs/maps/) [![Mocks frontend de OAuth con Google, GitHub y Microsoft](https://img.shields.io/badge/OAuth-mocks%20frontend-111827?style=flat-square)](https://aureformui.com/es/docs/authentication/)

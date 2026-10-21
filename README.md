@@ -58,6 +58,12 @@ node bin/aureform.mjs add integration-hub integrations-suite --cwd ../my-product
 
 [Connection guide →](https://aureformui.com/en/docs/integrations/) · [Provider coverage →](docs/integrations/provider-coverage.json) · [1.5 release scope →](docs/release-checklist-1.5.0.md)
 
+## Communications research
+
+The [Communications research package](docs/communications/RESEARCH.md) explores a provider-neutral contact center framework with Twilio and Telnyx, a typed Flow DSL, voice AI and Prompt-to-Flow. Read the [architecture](docs/communications/ARCHITECTURE-RFC.md), [capability matrix](docs/communications/CAPABILITY-MATRIX.md), [security gates](docs/communications/SECURITY-COMPLIANCE.md) and [phased roadmap](docs/communications/ROADMAP.md). This is research and native design work; carrier integrations are not implemented or certified.
+
+The [Figma source record](design/reports/communications-2026-10-21.md) links the proposed views and RFC boards, and tracks recovery of existing application and integration design sources.
+
 ## Commerce, maps and authentication
 
 [![Stripe typed frontend adapter](https://img.shields.io/badge/Stripe-typed%20adapter-635BFF?style=flat-square&logo=stripe&logoColor=white)](https://aureformui.com/en/docs/adapters/) [![Google Maps with an optional browser key](https://img.shields.io/badge/Google%20Maps-optional%20key-1D4ED8?style=flat-square&logo=googlemaps&logoColor=white)](https://aureformui.com/en/docs/maps/) [![Google, GitHub and Microsoft OAuth frontend mocks](https://img.shields.io/badge/OAuth-frontend%20mocks-111827?style=flat-square)](https://aureformui.com/en/docs/authentication/)
