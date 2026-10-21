@@ -20,6 +20,7 @@ The frontend, reference backend and optional provider bindings have bounded loca
 | Manual local-demo browser check | **3 active views**, no recorded errors | Desktop light/dark 1440px and mobile light 390px; body width matched viewport, and both displayed Twilio image instances loaded in each view. |
 | Final root browser E2E | **22/22 passed**, **35.8s** | Local demo, EN/ES; zero skipped, unexpected or flaky cases, all retries zero. |
 | Final mounted browser E2E | **22/22 passed**, **21.4s** | Independent full run against the static build at `/aureform-ui`, with the same zero skipped/unexpected/flaky/retry result. |
+| Publication harness recovery | **963 mounted unit tests / 23 browser cases passed** | The corrected automatic preview started at `/aureform-ui/`; 22 Softphone cases and one sitemap case passed in 17.8s. No external preview URL was supplied. |
 | Retained Code Connect | **92 templates / 103 source snapshots**, zero diagnostics | Synthetic Figma API stub; strict emitted examples checked against canonical source/dependencies. No live Figma runtime or cloud registration. |
 | Canonical examples | **PASS**, 688 typed payloads across 44 families | Strict source/example compilation; negative controls detected the expected invalid cases. No browser runtime. |
 | Integration examples | **PASS**, 11 typed payloads | Strict TypeScript; no provider execution. |
@@ -56,6 +57,8 @@ The final [22-case suite](../../tests/e2e/communications.spec.ts) passed indepen
 Default axe rules reported **zero total and critical violations** within the active `#softphone-workspace` in EN/ES in both runs. The server/browser-clock disagreement case reported **zero console, page and hydration errors** in each run. This is scoped accessibility and temporal-hydration evidence, not all-state/whole-site accessibility or physical-device certification.
 
 The earlier mounted preview 404 was corrected by restarting the preview with its `/aureform-ui` base path. Both final EN/ES mounted routes returned 200 and the full mounted suite passed. Historical configuration failures are superseded, not interpreted as a remaining source failure.
+
+The first publication runs exposed three root-only quality-link assertions, an independent sitemap expectation missing the new Communications chapter, and a Playwright readiness probe aimed at `/` instead of the mounted export. The test expectations now use the public prefix and include the chapter; the default preview readiness URL now includes `NEXT_PUBLIC_BASE_PATH`. Production UI and sitemap behavior did not change. The corrected harness passed all 963 mounted unit tests and an additional automatic-preview run of all 22 Softphone cases plus the sitemap case, with no skips, unexpected failures or retries. Its source digests and normalized evidence are recorded separately in `publicationHarnessRecovery`; the earlier run guards remain historical evidence for their original configurations.
 
 ## Source compatibility provenance
 

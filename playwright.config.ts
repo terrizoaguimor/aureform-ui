@@ -7,7 +7,12 @@ const executablePath =
     ? "/usr/bin/chromium-browser"
     : undefined);
 const suppliedBaseURL = process.env.AUREFORM_BASE_URL;
-const baseURL = suppliedBaseURL || "http://127.0.0.1:3001";
+const configuredBasePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(
+  /\/+$/,
+  "",
+);
+const baseURL =
+  suppliedBaseURL || `http://127.0.0.1:3001${configuredBasePath}/`;
 
 export default defineConfig({
   testDir: "./tests/e2e",

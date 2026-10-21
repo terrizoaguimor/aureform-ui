@@ -19,6 +19,11 @@ import {
 import { publicPath } from "../src/lib/public-path.ts";
 import { siteOrigin } from "../src/lib/site-config.ts";
 
+function publicHrefPattern(path, suffix = "") {
+  const escaped = publicPath(path).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`href="${escaped}"${suffix}`);
+}
+
 // Render the real server content without running Next or generating its state.
 const sourceRoot = new URL("../src/", import.meta.url);
 const hooks = registerHooks({
@@ -165,7 +170,10 @@ test("an empty index renders all six pairs with honest bilingual empty states", 
     assert.doesNotMatch(output, /class="score"/);
     assert.match(output, /\/en\/docs\/installation\//);
     assert.doesNotMatch(output, /\/quality-reports\/|prefetch|<script/);
-    assert.match(output, new RegExp(`href="/${locale}/dashboard/"[^>]*>Demo<`));
+    assert.match(
+      output,
+      publicHrefPattern(`/${locale}/dashboard/`, "[^>]*>Demo<"),
+    );
     assert.match(output, /https:\/\/github\.com\/sponsors\/terrizoaguimor/);
   }
 });
@@ -280,7 +288,10 @@ test("archive fallback applies per snapshot and never masks an incomplete presen
   const output = html("en", data.snapshots, data.sourceArchive);
   assert.match(
     output,
-    /href="\/quality-reports\/test-snapshot\/landing-mobile-1\.json" download=""/,
+    publicHrefPattern(
+      "/quality-reports/test-snapshot/landing-mobile-1.json",
+      ' download=""',
+    ),
   );
   assert.match(
     output,
@@ -288,7 +299,10 @@ test("archive fallback applies per snapshot and never masks an incomplete presen
   );
   assert.doesNotMatch(
     output,
-    /href="https:\/\/aureformui\.com\/quality-reports\/test-snapshot\/|href="\/quality-reports\/earlier\//,
+    /href="https:\/\/aureformui\.com\/quality-reports\/test-snapshot\//,
+  );
+  assert.ok(
+    !output.includes(`href="${publicPath("/quality-reports/earlier/")}`),
   );
 });
 
@@ -308,7 +322,7 @@ test("a Git directory or worktree pointer rejects missing bundles instead of usi
     assert.equal(data.sourceArchive, null);
     assert.match(
       html("en", data.snapshots, data.sourceArchive),
-      /href="\/quality-reports\/test-snapshot\/landing-mobile-1\.json"/,
+      publicHrefPattern("/quality-reports/test-snapshot/landing-mobile-1.json"),
     );
   }
 });

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "observedUTC": "2026-10-21T23:17:25.001270+00:00",
+  "observedUTC": "2026-10-21T23:36:13.986Z",
   "consultedDate": "2026-10-21",
   "status": "local-and-scoped-native-validation-pass",
   "scope": "Unreleased inbound-softphone frontend, local demo, provider-binding compilation and reference laboratory; no production or real-media certification.",
@@ -85,8 +85,8 @@
       },
       {
         "path": "playwright.config.ts",
-        "sha256": "93b21034f14a934f6dd1f6b6292e932107f573038e6e6b0ea79ee4ba7dfcafd4",
-        "bytes": 2072
+        "sha256": "e7ea6f252fd45d6d75901219d62dd6ed79623f5cc34fc0a644354c6925eaa8a0",
+        "bytes": 2193
       },
       {
         "path": "public/assets/communications/README.md",
@@ -302,6 +302,16 @@
         "path": "tests/e2e/communications.spec.ts",
         "sha256": "ff96fb9e6f816c78fdbe1cc6b186024a14c76a02579dc3fe8fd03c9588abfc7c",
         "bytes": 32551
+      },
+      {
+        "path": "tests/e2e/website.spec.ts",
+        "sha256": "8880a59cffafcd3776c3f23856389f2d616f515c78eb08bbce6e93c592eeef57",
+        "bytes": 36235
+      },
+      {
+        "path": "tests/quality.test.mjs",
+        "sha256": "5b86d8b7671e7f481a5a3f18022e68a00a9f58b93353e5ad0cf9e79621e5f16a",
+        "bytes": 16500
       }
     ]
   },
@@ -429,6 +439,36 @@
       "artifactName": "final-mounted-corrected-report.json",
       "bytes": 31705,
       "sha256": "1c96bf7bda33b5cdf2e50909eb4c103f9a9d29472c08d045009711b2849734e1",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "quality-root.log",
+      "bytes": 1051,
+      "sha256": "4ab0e36fff0528d564ed74e546b6cd7223602a3bb61488f612c7456f1e2106d8",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "root-unit-mounted.log",
+      "bytes": 88120,
+      "sha256": "7036d05f09e5b524dd3e7ec9c6126f9035150fe2c2892a2fea1b0da520fad4c7",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "auto-mounted-e2e.log",
+      "bytes": 4630,
+      "sha256": "9e2a7b53eee79fb225324a206ef204af7eff627b16667308727880552e46bafe",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "auto-mounted-e2e-report.json",
+      "bytes": 34195,
+      "sha256": "d79fe7ed16349b18156d0f6ba79fbb7812f3f83f39872ddf3674ec16e42a400e",
+      "publishedPath": null
+    },
+    {
+      "artifactName": "ci-correction-receipt.json",
+      "bytes": 8244,
+      "sha256": "06f452179e1fc83c0e9f49217bfe309f2cc5b60f5a075194bf4d4302b963c315",
       "publishedPath": null
     }
   ],
@@ -1230,6 +1270,78 @@
       "flaky": 0,
       "scope": "Landing-to-docs navigation EN/ES, backup Pages links, heading search/anchor and preserved chapter across language switch on mounted static export.",
       "producer": "tests/e2e/website.spec.ts"
+    },
+    "publicationHarnessRecovery": {
+      "status": "pass",
+      "observedUTC": "2026-10-21T23:36:13.986Z",
+      "rootQualityCases": 10,
+      "mountedRootUnit": {
+        "tests": 963,
+        "passed": 963,
+        "failed": 0,
+        "skipped": 0,
+        "durationMS": 12169.109573
+      },
+      "automaticMountedBrowser": {
+        "stats": {
+          "startTime": "2026-10-21T23:35:20.241Z",
+          "duration": 17781.225,
+          "expected": 23,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "communicationsCases": 22,
+        "sitemapCases": 1,
+        "passed": 23,
+        "failed": 0,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0,
+        "allRetries": 0,
+        "serverStartedByPlaywright": true,
+        "externalBaseURLSupplied": false,
+        "basePath": "/aureform-ui",
+        "receiptArtifactName": "ci-correction-receipt.json",
+        "reportArtifactName": "auto-mounted-e2e-report.json",
+        "sourceFiles": [
+          {
+            "path": "playwright.config.ts",
+            "sha256": "e7ea6f252fd45d6d75901219d62dd6ed79623f5cc34fc0a644354c6925eaa8a0",
+            "bytes": 2193
+          },
+          {
+            "path": "tests/e2e/communications.spec.ts",
+            "sha256": "ff96fb9e6f816c78fdbe1cc6b186024a14c76a02579dc3fe8fd03c9588abfc7c",
+            "bytes": 32551
+          },
+          {
+            "path": "tests/e2e/website.spec.ts",
+            "sha256": "8880a59cffafcd3776c3f23856389f2d616f515c78eb08bbce6e93c592eeef57",
+            "bytes": 36235
+          },
+          {
+            "path": "tests/quality.test.mjs",
+            "sha256": "5b86d8b7671e7f481a5a3f18022e68a00a9f58b93353e5ad0cf9e79621e5f16a",
+            "bytes": 16500
+          }
+        ]
+      },
+      "corrections": [
+        {
+          "problem": "Three pre-existing quality rendering assertions assumed root URLs during mounted CI.",
+          "change": "Use publicPath-derived expectations for localized demo and report links; preserve the earlier-report negative assertion."
+        },
+        {
+          "problem": "Sitemap expectations omitted the new bilingual Communications documentation chapter.",
+          "change": "Add communications to the independent bilingual chapter list; production sitemap is unchanged."
+        },
+        {
+          "problem": "Playwright preview readiness probed the root URL although the Pages export is mounted.",
+          "change": "Include NEXT_PUBLIC_BASE_PATH and a trailing slash in the default readiness/base URL; supplied AUREFORM_BASE_URL remains authoritative."
+        }
+      ],
+      "scope": "Test expectations and test-server readiness only; earlier browser source guards remain records of their own runs. No carrier, SDK-media or production-call evidence."
     }
   },
   "nativeFigma": {

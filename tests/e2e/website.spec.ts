@@ -48,7 +48,7 @@ const copy = {
   },
 } as const;
 
-// Independent publication expectations: 22 bilingual chapters plus 2 fallbacks.
+// Independent publication expectations: 23 bilingual chapters plus 2 fallbacks.
 const bilingualChapters = [
   "",
   "installation",
@@ -66,6 +66,7 @@ const bilingualChapters = [
   "adapters",
   "integration-research",
   "integrations",
+  "communications",
   "figma",
   "accessibility",
   "deployment",
