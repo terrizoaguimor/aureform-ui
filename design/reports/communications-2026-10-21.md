@@ -22,6 +22,8 @@ The original structural checkpoint has **714 variables, 14 text styles and 6 sha
 
 The Communications page is a **research proposal**, not an implemented application module. Its shared components cover connection state, softphone state, flow nodes, queue summaries and deployment review.
 
+**Softphone implementation status:** the proposed native source is linked below. The current Next.js application has no softphone component, route or menu entry, and no Twilio/Telnyx voice connection. The inbound voice MVP in the roadmap is a future implementation phase; a provider logo or design source does not demonstrate working telephony.
+
 | Proposed view | Native source |
 | --- | --- |
 | Number Manager | [317:142](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-142) |
@@ -40,6 +42,10 @@ The Communications page is a **research proposal**, not an implemented applicati
 The Flow Builder composition shows a labelled **six-node extract** of the illustrative **14-node, 32-edge** graph in the RFC. It is not the full graph, a simulator or a deployed flow. Provider credentials and cost estimates in these views are illustrative, never live credentials or approval to spend.
 
 Seven editable RFC boards summarize the documents and link to their source. These are navigation and review boards; the Markdown documents remain the full research text.
+
+The later [responsive Communications receipt](native-communications-responsive-recovery-2026-10-21.json) records **36 additional editable views**: twelve desktop Light, twelve mobile Light and twelve mobile Dark. The original twelve desktop Dark masters and 25 shared state variants are preserved. Full text occurrence coverage passed for all 36 derived views; the 24 mobile views have no visible horizontal overflow in the bounded native checks. The [Light mobile softphone](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=538-1520) and [Dark mobile softphone](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-1807) are 390 pixels wide. Seven RFC boards were synchronized to the unchanged committed Markdown source hashes and dated summaries.
+
+One actual Softphone Mobile Light PNG was emitted inline and inspected by the writer. No persistent URL, local image bytes or image hash was returned, so it is not listed as a downloadable proof. The 394 native rectangles of at least 44 pixels are structural evidence, not browser hit-area or accessibility certification. Native checks do not demonstrate all-view visual parity, runtime behavior or working telephony.
 
 | Document | Native review board |
 | --- | --- |
@@ -69,12 +75,22 @@ The recovery uses the actual source contracts, public props, seed data, navigati
 | Public documentation | [24 full editable chapters](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=384-59) using the repository Markdown parser: 679 visible blocks, 49 code blocks and 20 tables with 524 cells. | Native source, editability and navigation checks passed. A selected native viewport was reviewed; chrome is approximate and browser, interaction and responsive parity remain unverified. |
 | Public Quality | [Full native source view](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=422-10716), with the source HTML table's eleven columns, six rows and historical version context. | Bounded English desktop Dark composition and text review passed. These are published 1.4.1 measurements, not a new Lighthouse run; browser parity remains unverified. |
 | Public Changelog | [Full native source view](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=422-11028), four published releases plus the current Unreleased entry. | Independent native readback passed for six Unreleased items and 31 total English bullets in both master and view; the four published articles were read back unchanged. The earlier whole-page composition review covered 30 items and remains historical. Immutable release archives remain unchanged; browser parity remains unverified. |
+| Blocks and templates catalogs | [12 block cards and seven source compositions](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=491-3161), [50 template cards and 100 mounted preview slots](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=503-4398). | Current source content and bounded native checks passed. The preview height was corrected; browser interaction and full responsive parity are separate checks. |
+| Pricing example | [Current pricing source](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=509-6801), with illustrative 0/19/49 plans. | Source columns and copy passed native checks. These are template examples, separate from billing data and actual Aureform pricing. |
 
 The machine-readable [source map](communications-native-source-2026-10-21.json) records exact native IDs, source hashes and acceptance status separately from the historical route and Code Connect indexes.
 
 The [commerce and authentication recovery receipt](native-commerce-auth-recovery-2026-10-21.json) records the actual five order states, eight-row product table, four preserved authentication roots and source image sizing. The [product table export](../proofs/2026-10-21/product-table.png) is an actual native Figma PNG. Image-editor actions, mobile composition and the final order search placement are recorded separately from these completed checks.
 
+The later [image-editor and order recovery receipt](native-image-editor-order-recovery-2026-10-21.json) closes native copy, actions and visual state rules for the six preserved image-editor masters. Its [mobile fixture](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=540-71) is 390 pixels wide, with one column and a 112-pixel FIT thumbnail. The [crop source](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=332-297) uses its initial Preparing preview state, four ratios in two columns and preserved range faces. Five Order search fields are aligned left and nine button bounds are preserved. One actual postfix Order PNG was returned inline and reviewed by the writer; no local copy or hash is available, and the earlier pre-fix capture is not presented as final. Shared foundations remain 714/14/6; locally exact typography has partial shared-style links. Browser behavior, image encoding/decoding and live callbacks remain unverified.
+
+The [Sending-state receipt](native-sending-recovery-2026-10-21.json) closes the missing 16-pixel source LoaderCircle glyph in the preserved native Sending master. Shared Core instances and foundations were preserved. This narrow correction does not certify animation or whole-card parity: the pre-existing button height, opacity, gap and missing Check/X differences are explicitly recorded outside its scope.
+
 The [Maps recovery receipt](native-maps-recovery-2026-10-21.json) records the editable Demo body, four routes, eight locations and source-layer controls. Its [actual native map export](../exports/2026-10-21/maps-demo-map.svg) is a local schematic, not a live map service. A selected post-fix Figma view passed visual review after opaque vector-wrapper fills and the wrapped Routes label were corrected. Dark Demo body composition was inspected; Light/mobile/Spanish views, runtime controls and complete body parity of the other five states remain unverified. Source typography overrides detach some live text-style links; preserving the 14-style inventory does not certify that every new text node is bound to a style.
+
+The [catalog and inherited-root recovery receipt](native-catalog-inherited-recovery-2026-10-21.json) records **23 preserved root identities** bound to their current sources, three catalog masters and five corrected owned scroll containers. Settings retain their heading and all seven tabs; billing fits its source width of 1024 without scaling fonts. The [actual Transactions PNG](../proofs/2026-10-21/transactions-native.png) was inspected: seven total records, five visible, four completed and a USD 3,540 total, with zero-decimal row amounts. Its inherited sidebar selection remains outside the owned content scope.
+
+The delivered transaction ledgers contain **11,479 created, 21,379 mutated and 4,922 removed IDs**. An interrupted application call lost its complete mutation ledger: five mounts and 4,457 currently owned IDs were subsequently confirmed by fresh readback. Those observed IDs and the template height census are recorded separately; they are not inferred creation or mutation counts. Native source binding checks passed within the documented scope, without claiming complete transaction coverage or browser/runtime parity.
 
 ## Original provider artwork
 
@@ -90,18 +106,22 @@ The existing Core Select retains the string label/value contract and its origina
 
 Current frontend verification passed TypeScript, the strict component/integration examples, the 865 unit tests and the consumer installation checks. ESLint completed with one pre-existing unused-function warning in the starter rebuild plugin. The [document and verification record](communications-document-checks-2026-10-21.json) preserves the exact scope.
 
+The original-logo checkpoint was published on `main` as [f711450](https://github.com/terrizoaguimor/aureform-ui/commit/f711450313d93e8c0ea566fa017e27357ee945a1). Both [Cloudflare](https://github.com/terrizoaguimor/aureform-ui/actions/runs/39652109694) and [GitHub Pages](https://github.com/terrizoaguimor/aureform-ui/actions/runs/39652109619) completed successfully, including their website and integration browser checks. The live pages returned 65 recipe cards and 86 original marks; both build identities matched that commit. Five representative original SVGs were verified byte for byte on both deployments. These are bounded CI/runtime checks, separate from exhaustive Figma pixel, motion, localization or responsive acceptance.
+
 ## Remaining acceptance work
 
-- Reconcile inherited route roots without changing their identities, using the current native source masters.
+- All native recovery writer scopes are closed. Review the documented residual typography, inherited content and Sending whole-card differences against their source.
 - Review the documentation chrome and responsive/interaction behavior against a real browser; full article text and navigation have passed native source checks.
 - Check responsive behavior of image editing, product/order controls, maps and shared chrome against the source.
-- Review Communications light/mobile compositions and the connection, loading, empty, error, permission and recovery states appropriate to each view.
+- Implement the Communications React screens and test their connection, loading, empty, error, permission and recovery behavior; current desktop/mobile designs remain research proposals.
 - Compare Figma against a real browser in EN/ES, Light/Dark and supported breakpoints, including keyboard navigation and reduced motion.
 - Run the future dual-provider laboratory only after its scope, accounts and spending are explicitly authorized.
 
 ## Tool limits observed
 
 No browser surface is available in the enabled computer tools in this session. The in-app browser creation attempt failed, and a requested capture did not complete. Native Figma review can proceed, but browser screenshots, pixel comparisons and interactive parity cannot be certified from this environment.
+
+The separate deployment CI did execute and pass its browser suites for the original-logo checkpoint. This provides evidence for those existing tests without turning native Figma screenshots or node inventories into a full browser-parity certificate.
 
 Agy was invoked headlessly for both provider research tracks. The logs show actual search-tool calls and useful partial results, but both runs ended with an error status. The underlying Google grounding mode was not independently confirmed. The seven documents therefore rely on independently consulted, dated official sources and mark contradictions or missing evidence as pending.
 

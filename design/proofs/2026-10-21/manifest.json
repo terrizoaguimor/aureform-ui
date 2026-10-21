@@ -154,6 +154,23 @@
       "nativeFigmaExport": true,
       "browserCapture": false,
       "scope": "79 primary identities plus Gemini compact gallery and selected 1440×1000 Fresh Hub viewport; no full-scroll/browser/individual-alternate certification"
+    },
+    {
+      "file": "transactions-native.png",
+      "sourceNodeId": "41:3597",
+      "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+      "sha256": "f348ad877b04192aea2ee7df1ce0d00c843ba40d664c2e7e0d1da6b82fbcd5ff",
+      "bytes": 199632,
+      "size": [
+        1440,
+        1380
+      ],
+      "kind": "native-Figma-export",
+      "method": "Original inline PNG image of the single native screenshot call; no additional screenshot or export",
+      "visuallyInspected": true,
+      "nativeFigmaExport": true,
+      "browserCapture": false,
+      "scope": "Transactions owned Main: seven records, five visible, USD3540 total, four completed and zero-decimal row amounts; inherited sidebar selection is outside scope"
     }
   ],
   "browserParityCertified": false

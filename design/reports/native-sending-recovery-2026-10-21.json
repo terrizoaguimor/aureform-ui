@@ -1,0 +1,482 @@
+{
+  "status": "ACTUAL_PASS_SCOPED_SENDING_GLYPH",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "scope": {
+    "pageId": "344:59",
+    "rootId": "357:1707",
+    "setId": "357:1763",
+    "allowed": "Missing source LoaderCircle only, owned subtree of Sending; no Core/shared foundation mutations or instance detaching",
+    "forbiddenWritePages": [
+      "313:59",
+      "321:59",
+      "2:5",
+      "2:6"
+    ],
+    "scopeReleaseUTC": "2026-10-21T20:55:42Z"
+  },
+  "lease": {
+    "active": false,
+    "explicitUserGrant": true,
+    "scopeReleaseUTC": "2026-10-21T20:55:42Z",
+    "returnedExplicitly": true,
+    "noPendingFigmaCalls": true,
+    "releasedPageIds": [
+      "344:59"
+    ]
+  },
+  "sources": {
+    "src/components/blocks/ai-message-parts.tsx": {
+      "sha256": "c228f64be957b0c5ede44ba01666f554422afa8462aaade858c6294f7306da16",
+      "bytes": 21273
+    },
+    "src/components/ui/button.tsx": {
+      "sha256": "7a4ba03ec89978c4f15545255256876c682ba49bf6bad80d6728fe632ccf563e",
+      "bytes": 4878
+    },
+    "src/components/ui/spinner.tsx": {
+      "sha256": "0eef86a65d7a7efe2836b8c68832893f9c0d9d0004663299fe4eb919c35557c2",
+      "bytes": 513
+    },
+    "src/components/templates/ai-workspace.tsx": {
+      "sha256": "c5b74b975f68fb580086a462dcc1938706f47a51b8e138ea6cd2178ff43a4c3b",
+      "bytes": 35285
+    },
+    "node_modules/lucide-react/dist/esm/icons/loader-circle.js": {
+      "sha256": "48d572082bb057cd6630c08c04404dfce2623cbb488bb68ab86b1ca1bb47d35f",
+      "bytes": 473
+    },
+    "node_modules/lucide-react/dist/esm/defaultAttributes.js": {
+      "sha256": "aeafb38d6464355ef7bbfd158e92920fb168356ae08bae2b00c6132eb855c82a",
+      "bytes": 493
+    }
+  },
+  "sourceBranch": {
+    "file": "src/components/blocks/ai-message-parts.tsx",
+    "lines": [
+      183,
+      210
+    ],
+    "active": "part.state===requested && Boolean(onApprovalDecision)",
+    "busy": "action.state===sending || action.state===submitted",
+    "loading": "Approve Button loading={action.state===sending}, Button renders LoaderCircle before children",
+    "glyphSize": 16,
+    "ariaHidden": true,
+    "sourceMotionClasses": "motion-safe:animate-spin motion-reduce:animate-none [[data-motion-level=off]_&]:animate-none",
+    "standaloneSpinner": "Source ui/spinner.tsx is a separate labelled status component, not used by the Sending button branch"
+  },
+  "actualPreflight": {
+    "writes": 0,
+    "rootId": "357:1707",
+    "pageId": "344:59",
+    "rootType": "COMPONENT",
+    "rootSize": [
+      600,
+      215
+    ],
+    "ownedChildIds": [
+      "357:1708",
+      "357:1709",
+      "357:1710",
+      "357:1711"
+    ],
+    "actionsParentId": "357:1711",
+    "buttonIds": [
+      "357:1712",
+      "357:1716"
+    ],
+    "buttonSizes": [
+      [
+        180,
+        40
+      ],
+      [
+        180,
+        40
+      ]
+    ],
+    "buttonOpacities": [
+      0.4000000059604645,
+      0.4000000059604645
+    ],
+    "approveTextId": "I357:1712;3:20",
+    "approveText": "Approve tool",
+    "approveTextBounds": [
+      50.5,
+      11,
+      79,
+      18
+    ],
+    "spinnerPresent": false,
+    "fonts": [
+      {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      }
+    ],
+    "foundationCounts": {
+      "variables": 714,
+      "textStyles": 14,
+      "effectStyles": 6
+    }
+  },
+  "createdIds": [
+    "550:63",
+    "550:64"
+  ],
+  "mutatedIds": [
+    "357:1711",
+    "357:1712"
+  ],
+  "removedIds": [],
+  "errors": [
+    {
+      "phase": "read_source_path_probe",
+      "error": "src/components/blocks/tool-approval.tsx absent; located actual private approval branch in ai-message-parts.tsx",
+      "figmaWrites": 0
+    },
+    {
+      "phase": "read_dependency_path_probe",
+      "error": "rg ignored node_modules; reran explicit local package path with -L --no-ignore",
+      "figmaWrites": 0
+    }
+  ],
+  "repositoryWrites": 0,
+  "sharedLedgerWrites": 0,
+  "captures": [],
+  "limitations": [
+    "Current native Sending buttons have40px height/.4opacity/gap12 and omit sourceCheck/X; source hasmin44/.45/gap8. These pre-existing differences remain outside the requested missing-spinner change; no whole-card parity claim.",
+    "No backend/React runtime/CSS motion/reduced-motion/browser certificate."
+  ],
+  "recordedAtUTC": "2026-10-21T20:52:27.989031+00:00",
+  "affectedInheritedIds": [
+    "I357:1712;3:20"
+  ],
+  "allAffectedIds": [
+    "357:1707",
+    "357:1711",
+    "357:1712",
+    "I357:1712;3:20",
+    "550:63",
+    "550:64"
+  ],
+  "lastActualUTC": "2026-10-21T20:55:08.138605+00:00",
+  "actualMutation": {
+    "spinnerId": "550:63",
+    "parentId": "357:1711",
+    "vectorId": "550:64",
+    "size": [
+      16,
+      16
+    ],
+    "position": [
+      38.5,
+      12
+    ],
+    "opacity": 0.4000000059604645,
+    "paintVariableId": "VariableID:2:45",
+    "paintVariableName": "color/primary-foreground",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12a9 9 0 1 1-6.219-8.56\"/></svg>",
+    "svgSha256": "51da46df554ca2bf1a6753f7e15d01650ffb6479c9c554de3b481115b887c5b9",
+    "pathD": "M21 12a9 9 0 1 1-6.219-8.56",
+    "lucideVersion": "0.562.0",
+    "approveIdPreserved": "357:1712",
+    "approvePaddingBefore": [
+      16,
+      16
+    ],
+    "approvePaddingAfter": [
+      40,
+      16
+    ],
+    "labelBoundsBefore": [
+      50.5,
+      11,
+      79,
+      18
+    ],
+    "labelBoundsAfter": [
+      62.5,
+      11,
+      79,
+      18
+    ],
+    "iconLabelGap": 8,
+    "rootSizePreserved": [
+      600,
+      215
+    ],
+    "approveRejectSizesPreserved": [
+      [
+        180,
+        40
+      ],
+      [
+        180,
+        40
+      ]
+    ],
+    "fontsLoaded": [
+      {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      {
+        "family": "Manrope",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      }
+    ],
+    "coreDefinitionsMutated": false,
+    "instancesDetached": false,
+    "animationExecuted": false,
+    "proof": "Post-mutation observation; independent readback pending"
+  },
+  "sourceHashesFinalGuard": {
+    "src/components/blocks/ai-message-parts.tsx": {
+      "sha256": "c228f64be957b0c5ede44ba01666f554422afa8462aaade858c6294f7306da16",
+      "matchesInitialRead": true
+    },
+    "src/components/ui/button.tsx": {
+      "sha256": "7a4ba03ec89978c4f15545255256876c682ba49bf6bad80d6728fe632ccf563e",
+      "matchesInitialRead": true
+    },
+    "src/components/ui/spinner.tsx": {
+      "sha256": "0eef86a65d7a7efe2836b8c68832893f9c0d9d0004663299fe4eb919c35557c2",
+      "matchesInitialRead": true
+    },
+    "src/components/templates/ai-workspace.tsx": {
+      "sha256": "c5b74b975f68fb580086a462dcc1938706f47a51b8e138ea6cd2178ff43a4c3b",
+      "matchesInitialRead": true
+    },
+    "node_modules/lucide-react/dist/esm/icons/loader-circle.js": {
+      "sha256": "48d572082bb057cd6630c08c04404dfce2623cbb488bb68ab86b1ca1bb47d35f",
+      "matchesInitialRead": true
+    },
+    "node_modules/lucide-react/dist/esm/defaultAttributes.js": {
+      "sha256": "aeafb38d6464355ef7bbfd158e92920fb168356ae08bae2b00c6132eb855c82a",
+      "matchesInitialRead": true
+    }
+  },
+  "independentReadback": {
+    "writes": 0,
+    "root": {
+      "id": "357:1707",
+      "pageId": "344:59",
+      "type": "COMPONENT",
+      "size": [
+        600,
+        215
+      ],
+      "ownedChildIds": [
+        "357:1708",
+        "357:1709",
+        "357:1710",
+        "357:1711"
+      ]
+    },
+    "set": {
+      "id": "357:1763",
+      "stateOptions": [
+        "Requested",
+        "Sending",
+        "Submitted",
+        "Decision failed",
+        "Inactive",
+        "Backend approved",
+        "Backend rejected"
+      ],
+      "unchanged": true
+    },
+    "actions": {
+      "id": "357:1711",
+      "size": [
+        552,
+        40
+      ],
+      "children": [
+        "357:1712",
+        "357:1716",
+        "550:63"
+      ]
+    },
+    "spinner": {
+      "id": "550:63",
+      "parentId": "357:1711",
+      "size": [
+        16,
+        16
+      ],
+      "position": [
+        38.5,
+        12
+      ],
+      "layoutPositioning": "ABSOLUTE",
+      "opacity": 0.4000000059604645,
+      "visible": true,
+      "resolvedModes": {
+        "VariableCollectionId:2:7": "2:0",
+        "VariableCollectionId:2:36": "2:2"
+      }
+    },
+    "path": {
+      "id": "550:64",
+      "type": "VECTOR",
+      "size": [
+        12,
+        12
+      ],
+      "strokeWeight": 1.3333333730697632,
+      "strokeCap": "ROUND",
+      "strokeJoin": "ROUND",
+      "vectorPathCount": 1,
+      "windingRule": "NONE",
+      "nativeImport": "Source Lucide arc normalized by actual Figma SVG parser to cubic path; observed via vectorPaths",
+      "colorAlias": "VariableID:2:45"
+    },
+    "approve": {
+      "id": "357:1712",
+      "type": "INSTANCE",
+      "size": [
+        180,
+        40
+      ],
+      "padding": [
+        40,
+        16
+      ],
+      "labelId": "I357:1712;3:20",
+      "label": "Approve tool",
+      "labelBounds": [
+        62.5,
+        11,
+        79,
+        18
+      ],
+      "iconLabelGap": 8,
+      "font": {
+        "family": "Manrope",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "textStyleId": "",
+      "style": "Primary",
+      "sizeVariant": "Medium",
+      "stateVariant": "Default"
+    },
+    "reject": {
+      "id": "357:1716",
+      "type": "INSTANCE",
+      "size": [
+        180,
+        40
+      ],
+      "label": "Reject tool",
+      "style": "Outline",
+      "sizeVariant": "Medium",
+      "stateVariant": "Default"
+    },
+    "foundations": {
+      "variables": 714,
+      "textStyles": 14,
+      "effectStyles": 6,
+      "fingerprint": "a4c377f0",
+      "effectFingerprint": "d7c8e028",
+      "matchesPriorActualImmutableFoundationFingerprint": true
+    },
+    "instancesDetached": 0,
+    "captures": 0,
+    "animationRuntimeCertified": false,
+    "wholeCardSourceParityCertified": false,
+    "certificate": "PASS only for missing SourceLoaderCircle16 shape/currentColor/placement and preserved native instances; no whole-card, CSS motion, browser or backend claims."
+  },
+  "leaseReturned": true,
+  "pending": [],
+  "completedAtUTC": "2026-10-21T20:57:05.113155+00:00",
+  "operations": [
+    {
+      "phase": "ACTUAL_SOURCE_AND_NODE_PREFLIGHT",
+      "figmaWrites": 0
+    },
+    {
+      "phase": "SOURCE_SENDING_LOADER_APPLY",
+      "createdIds": [
+        "550:63",
+        "550:64"
+      ],
+      "mutatedIds": [
+        "357:1711",
+        "357:1712"
+      ],
+      "removedIds": [],
+      "affectedInheritedIds": [
+        "I357:1712;3:20"
+      ]
+    },
+    {
+      "phase": "ONE_BOUNDED_INDEPENDENT_READBACK",
+      "figmaWrites": 0,
+      "actualResult": "PASS_SCOPED_GLYPH"
+    }
+  ],
+  "preservedIds": [
+    "357:1707",
+    "357:1763",
+    "357:1712",
+    "357:1716"
+  ],
+  "sharedFoundationMutations": [],
+  "newStyles": [],
+  "newVariables": [],
+  "newComponents": [],
+  "proofLimitations": {
+    "glyph": "Actual native SVG nodes were read, not just prepared script",
+    "motion": "Source CSS motion and reduced-motion gates documented only; static native face, no runtime animation proof",
+    "styling": "Existing instance/label typography untouched; label13/auto18 and textStyleIdempty were already present",
+    "container": "Owned SVG is absolute in Sending actions at coordinates inside preserved Approve bounds. It is not inserted into or detached from the Core instance; dynamic flex-wrap/responsive geometry was not certified."
+  },
+  "publicCuration": {
+    "method": "Preserved IDs/source hashes/scoped actual readback; removed private paths and internal RPC identifiers",
+    "atUTC": "2026-10-21T20:59:30.363843+00:00",
+    "publicationStatus": "Included in repository source; publication recorded in Git history",
+    "browserOrMotionCertified": false
+  },
+  "mainReview": {
+    "reviewedAtUTC": "2026-10-21T21:11:46.637246+00:00",
+    "status": "accepted-missing-glyph-scope-only",
+    "source": "Installed Lucide LoaderCircle loading branch",
+    "nativeCreatedIDs": [
+      "550:63",
+      "550:64"
+    ],
+    "nativeMutatedIDs": [
+      "357:1711",
+      "357:1712"
+    ],
+    "wholeCardParityOrMotionAcceptance": false,
+    "remainingDifferences": [
+      "Current native Sending buttons have40px height/.4opacity/gap12 and omit sourceCheck/X; source hasmin44/.45/gap8. These pre-existing differences remain outside the requested missing-spinner change; no whole-card parity claim.",
+      "No backend/React runtime/CSS motion/reduced-motion/browser certificate."
+    ]
+  }
+}

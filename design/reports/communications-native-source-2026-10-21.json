@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T18:14:16.540Z",
+  "generatedAt": "2026-10-21T21:12:11.439Z",
   "timezone": "America/Bogota",
   "status": "research-and-native-source-recorded-runtime-acceptance-pending",
   "sourceBaseline": {
@@ -29,16 +29,14 @@
         "Dark"
       ],
       "currentReadback": {
-        "recordedAtUTC": "2026-10-21T17:59:17.209Z",
-        "method": "Actual final branded-integration native readback",
+        "atUTC": "2026-10-21T21:01:04.830Z",
         "counts": {
-          "variables": 714,
+          "localVariables": 714,
           "textStyles": 14,
           "effectStyles": 6
         },
-        "variables": 714,
-        "textStyles": 14,
-        "effectStyles": 6
+        "foundationFNV1a": "6769bd9d",
+        "scope": "Actual bounded native Communications readback; original masters and shared foundations preserved"
       }
     }
   },
@@ -55,15 +53,23 @@
   "acceptance": {
     "nativeInventoryIsNotParity": true,
     "browserSurfaceAvailable": false,
-    "browserParity": "not-verified-browser-surface-unavailable",
+    "browserParity": "exhaustive-Figma-browser-parity-not-verified",
     "nativeVisualReview": "selected-compositions-only",
     "remaining": [
-      "Inherited native root reconciliation and source refinements in progress",
-      "Communications Light/mobile source proposals and current RFC board text in progress",
-      "EN/ES, Light/Dark and breakpoint parity against browser",
-      "Keyboard, focus, accessibility, motion, disconnected and recovery interaction tests",
-      "Provider laboratory separately authorized and independently evidenced"
-    ]
+      "All recovery writer scopes are closed; selected inline-only captures have no local image bytes",
+      "Exhaustive Figma/browser parity in EN/ES, Light/Dark and supported breakpoints",
+      "Keyboard, focus, accessibility, reduced motion, disconnected and recovery interactions",
+      "Documented inherited content, typography and Sending whole-card differences outside the completed scopes",
+      "Communications React screens, adapters and backend are not implemented",
+      "Future provider laboratory requires separately explicit account and spending authorization"
+    ],
+    "browserTestScope": {
+      "websiteAndIntegrationCISuites": "passed-for-commit-f711450313d93e8c0ea566fa017e27357ee945a1",
+      "cloudflareRun": "https://github.com/terrizoaguimor/aureform-ui/actions/runs/39652109694",
+      "pagesRun": "https://github.com/terrizoaguimor/aureform-ui/actions/runs/39652109619",
+      "localInteractiveBrowserSurface": "unavailable-in-this-session",
+      "fullResponsiveLocaleMotionAccessibilityParity": "not-certified"
+    }
   },
   "communications": {
     "page": {
@@ -340,10 +346,799 @@
       }
     ],
     "responsiveDesign": {
-      "status": "awaiting-native-execution"
+      "status": "completed-scoped-native-source-runtime-pending",
+      "completedAtUTC": "2026-10-21T21:07:22.548Z",
+      "receipt": "design/reports/native-communications-responsive-recovery-2026-10-21.json",
+      "progress": {
+        "desktopLight": 12,
+        "mobileLight": 12,
+        "mobileDark": 12,
+        "rfcBoards": 7,
+        "totalDerivedViews": 36
+      },
+      "views": [
+        {
+          "slug": "number-manager",
+          "desktopDark": {
+            "id": "317:142",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-142"
+          },
+          "desktopLight": {
+            "id": "528:108747",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-108747",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "538:1320",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=538-1320"
+          },
+          "mobileDark": {
+            "id": "542:1607",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-1607"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 2942,
+          "pairedGeometryFNV1a": "b35f0c2c",
+          "pairedTextFNV1a": "edc0563a",
+          "native44RectanglesPerView": 18
+        },
+        {
+          "slug": "unified-inbox",
+          "desktopDark": {
+            "id": "317:233",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-233"
+          },
+          "desktopLight": {
+            "id": "528:108835",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-108835",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "538:1443",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=538-1443"
+          },
+          "mobileDark": {
+            "id": "542:1730",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-1730"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 1972,
+          "pairedGeometryFNV1a": "48be7fc8",
+          "pairedTextFNV1a": "88245010",
+          "native44RectanglesPerView": 15
+        },
+        {
+          "slug": "softphone",
+          "desktopDark": {
+            "id": "317:298",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-298"
+          },
+          "desktopLight": {
+            "id": "528:108900",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-108900",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "538:1520",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=538-1520"
+          },
+          "mobileDark": {
+            "id": "542:1807",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-1807"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 2965,
+          "pairedGeometryFNV1a": "46852667",
+          "pairedTextFNV1a": "2dcf7d01",
+          "native44RectanglesPerView": 20
+        },
+        {
+          "slug": "call-history",
+          "desktopDark": {
+            "id": "317:393",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-393"
+          },
+          "desktopLight": {
+            "id": "528:108993",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-108993",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "538:1648",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=538-1648"
+          },
+          "mobileDark": {
+            "id": "542:1935",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-1935"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 2698,
+          "pairedGeometryFNV1a": "f7df1067",
+          "pairedTextFNV1a": "b852c03f",
+          "native44RectanglesPerView": 15
+        },
+        {
+          "slug": "agent-workspace",
+          "desktopDark": {
+            "id": "317:468",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-468"
+          },
+          "desktopLight": {
+            "id": "528:109068",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-109068",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "539:1387",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=539-1387"
+          },
+          "mobileDark": {
+            "id": "542:2045",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-2045"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 2178,
+          "pairedGeometryFNV1a": "82751226",
+          "pairedTextFNV1a": "297ad777",
+          "native44RectanglesPerView": 17
+        },
+        {
+          "slug": "queue-manager",
+          "desktopDark": {
+            "id": "317:542",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-542"
+          },
+          "desktopLight": {
+            "id": "528:109142",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-109142",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "539:1473",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=539-1473"
+          },
+          "mobileDark": {
+            "id": "542:2131",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-2131"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 2797,
+          "pairedGeometryFNV1a": "14e734d4",
+          "pairedTextFNV1a": "c3e03824",
+          "native44RectanglesPerView": 16
+        },
+        {
+          "slug": "business-hours",
+          "desktopDark": {
+            "id": "319:414",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=319-414"
+          },
+          "desktopLight": {
+            "id": "528:109220",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-109220",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "539:1586",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=539-1586"
+          },
+          "mobileDark": {
+            "id": "542:2244",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-2244"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 2561,
+          "pairedGeometryFNV1a": "173db68f",
+          "pairedTextFNV1a": "4c1dd273",
+          "native44RectanglesPerView": 17
+        },
+        {
+          "slug": "flow-builder",
+          "desktopDark": {
+            "id": "319:486",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=319-486"
+          },
+          "desktopLight": {
+            "id": "528:109290",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-109290",
+            "width": 1440,
+            "height": 1140
+          },
+          "mobileLight": {
+            "id": "539:1691",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=539-1691"
+          },
+          "mobileDark": {
+            "id": "542:2349",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-2349"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 3659,
+          "pairedGeometryFNV1a": "5fa9b7e8",
+          "pairedTextFNV1a": "b0f7a1c6",
+          "native44RectanglesPerView": 18
+        },
+        {
+          "slug": "ai-agent-studio",
+          "desktopDark": {
+            "id": "319:581",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=319-581"
+          },
+          "desktopLight": {
+            "id": "528:109387",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-109387",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "540:1567",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=540-1567"
+          },
+          "mobileDark": {
+            "id": "542:2458",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-2458"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 2634,
+          "pairedGeometryFNV1a": "19b3db0a",
+          "pairedTextFNV1a": "b5f1bc59",
+          "native44RectanglesPerView": 15
+        },
+        {
+          "slug": "campaign-dialer",
+          "desktopDark": {
+            "id": "319:654",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=319-654"
+          },
+          "desktopLight": {
+            "id": "528:109460",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-109460",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "540:1667",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=540-1667"
+          },
+          "mobileDark": {
+            "id": "542:2558",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-2558"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 2590,
+          "pairedGeometryFNV1a": "a01d1434",
+          "pairedTextFNV1a": "f265173f",
+          "native44RectanglesPerView": 14
+        },
+        {
+          "slug": "supervisor-dashboard",
+          "desktopDark": {
+            "id": "319:727",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=319-727"
+          },
+          "desktopLight": {
+            "id": "528:109531",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-109531",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "540:1765",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=540-1765"
+          },
+          "mobileDark": {
+            "id": "542:2656",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-2656"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 3196,
+          "pairedGeometryFNV1a": "319b8aca",
+          "pairedTextFNV1a": "d7bb7a60",
+          "native44RectanglesPerView": 12
+        },
+        {
+          "slug": "provider-settings",
+          "desktopDark": {
+            "id": "319:804",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=319-804"
+          },
+          "desktopLight": {
+            "id": "528:109608",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=528-109608",
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileLight": {
+            "id": "540:1892",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=540-1892"
+          },
+          "mobileDark": {
+            "id": "542:2783",
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=542-2783"
+          },
+          "mobileWidth": 390,
+          "mobileHeight": 3008,
+          "pairedGeometryFNV1a": "5a9e4008",
+          "pairedTextFNV1a": "ba11f297",
+          "native44RectanglesPerView": 20
+        }
+      ],
+      "boundedQA": {
+        "desktopLight": "12/12 full text and native editability PASS",
+        "originalDarkAnd25Variants": "PASS actual before/after",
+        "foundations": "714/14/6 and6769bd9d preserved",
+        "runtimeBrowser": "not verified",
+        "PNG": "One actual native Softphone Mobile390 Light PNG captured and inspected; selected-view evidence only",
+        "original12DarkRoots": "PASS same actual native fingerprint",
+        "original5Sets25Variants": "PASS same actual native fingerprint",
+        "sharedMasters": "PASS same actual native fingerprint",
+        "foundationCounts": [
+          714,
+          14,
+          6
+        ],
+        "foundationFP": "6769bd9d",
+        "mobileDarkDerivedFromActualNewMobileLight": "PASS12/12 geometry/content identical",
+        "browserRuntime": "unverified",
+        "canonicalRFC7Payload": "PASS exact native TEXT+source hash/date; hashes7/7 locally rechecked",
+        "firstReadUTC": "2026-10-21T20:44:19.035Z",
+        "fullSourceAllOccurrences": "PASS36/36, including duplicate occurrence counts",
+        "imagePaints": 0,
+        "mobileHorizontalBounds": "PASS24/24: zero visible horizontal overflow",
+        "modeAuditCorrection": "Unused collections resolve as undefined; compare only actual resolved or explicit modes. Five undefined/unused collection results per node were false positives.",
+        "sameNewLightDarkLayout": "PASS12/12 final corrected native geometry",
+        "finalReadUTC": "2026-10-21T21:01:04.830Z",
+        "finalStatus": "PASS36/36",
+        "textUnchanged": "PASS36/36 against expected actual source-derived content fingerprints",
+        "resolvedOrExplicitWrongModes": 0,
+        "mobileTargetErrors": 0,
+        "rebuiltFreeBodyBelow14": 0,
+        "native44RectTargets": 394,
+        "geometryIsNotBrowserHitAreaEvidence": true,
+        "protectedOriginal12And25VariantsAndSharedMasters": "PASS unchanged",
+        "selectedFinalReadback": "PASS actual Light mode,20 native44 rectangles,zero horizontal overflow at2026-10-21T21:05:45.517Z"
+      },
+      "finalNativeQA": {
+        "status": "final-bounded-native-QA36-PASS",
+        "utc": "2026-10-21T21:01:04.830Z",
+        "pageId": "313:59",
+        "viewCount": 36,
+        "pairQA": [
+          {
+            "slug": "number-manager",
+            "lightId": "538:1320",
+            "darkId": "542:1607",
+            "geometryFNV1a": "b35f0c2c",
+            "height": 2942,
+            "textFNV1a": "edc0563a",
+            "native44TargetsPerView": 18
+          },
+          {
+            "slug": "unified-inbox",
+            "lightId": "538:1443",
+            "darkId": "542:1730",
+            "geometryFNV1a": "48be7fc8",
+            "height": 1972,
+            "textFNV1a": "88245010",
+            "native44TargetsPerView": 15
+          },
+          {
+            "slug": "softphone",
+            "lightId": "538:1520",
+            "darkId": "542:1807",
+            "geometryFNV1a": "46852667",
+            "height": 2965,
+            "textFNV1a": "2dcf7d01",
+            "native44TargetsPerView": 20
+          },
+          {
+            "slug": "call-history",
+            "lightId": "538:1648",
+            "darkId": "542:1935",
+            "geometryFNV1a": "f7df1067",
+            "height": 2698,
+            "textFNV1a": "b852c03f",
+            "native44TargetsPerView": 15
+          },
+          {
+            "slug": "agent-workspace",
+            "lightId": "539:1387",
+            "darkId": "542:2045",
+            "geometryFNV1a": "82751226",
+            "height": 2178,
+            "textFNV1a": "297ad777",
+            "native44TargetsPerView": 17
+          },
+          {
+            "slug": "queue-manager",
+            "lightId": "539:1473",
+            "darkId": "542:2131",
+            "geometryFNV1a": "14e734d4",
+            "height": 2797,
+            "textFNV1a": "c3e03824",
+            "native44TargetsPerView": 16
+          },
+          {
+            "slug": "business-hours",
+            "lightId": "539:1586",
+            "darkId": "542:2244",
+            "geometryFNV1a": "173db68f",
+            "height": 2561,
+            "textFNV1a": "4c1dd273",
+            "native44TargetsPerView": 17
+          },
+          {
+            "slug": "flow-builder",
+            "lightId": "539:1691",
+            "darkId": "542:2349",
+            "geometryFNV1a": "5fa9b7e8",
+            "height": 3659,
+            "textFNV1a": "b0f7a1c6",
+            "native44TargetsPerView": 18
+          },
+          {
+            "slug": "ai-agent-studio",
+            "lightId": "540:1567",
+            "darkId": "542:2458",
+            "geometryFNV1a": "19b3db0a",
+            "height": 2634,
+            "textFNV1a": "b5f1bc59",
+            "native44TargetsPerView": 15
+          },
+          {
+            "slug": "campaign-dialer",
+            "lightId": "540:1667",
+            "darkId": "542:2558",
+            "geometryFNV1a": "a01d1434",
+            "height": 2590,
+            "textFNV1a": "f265173f",
+            "native44TargetsPerView": 14
+          },
+          {
+            "slug": "supervisor-dashboard",
+            "lightId": "540:1765",
+            "darkId": "542:2656",
+            "geometryFNV1a": "319b8aca",
+            "height": 3196,
+            "textFNV1a": "d7bb7a60",
+            "native44TargetsPerView": 12
+          },
+          {
+            "slug": "provider-settings",
+            "lightId": "540:1892",
+            "darkId": "542:2783",
+            "geometryFNV1a": "5a9e4008",
+            "height": 3008,
+            "textFNV1a": "ba11f297",
+            "native44TargetsPerView": 20
+          }
+        ],
+        "foundationCounts": [
+          714,
+          14,
+          6
+        ],
+        "foundationFP": "6769bd9d",
+        "protectedOriginal12And25VariantsAndSharedMasters": "PASS unchanged",
+        "createdIDs": [],
+        "mutatedIDs": [],
+        "fonts": [
+          {
+            "family": "Manrope",
+            "style": "SemiBold"
+          },
+          {
+            "family": "Manrope",
+            "style": "Medium"
+          },
+          {
+            "family": "Manrope",
+            "style": "Regular"
+          }
+        ],
+        "DSControlCaptionFonts": "Existing DS typography preserved;14px minimum applies to rebuilt free body/copy",
+        "runtimeInteractionHitAreasAndBrowser": "unverified",
+        "codeSHA256": "e502d9d70e7d62beea00d606d7a56f35e6627265f8293962155a2f4846c214ab",
+        "resultSource": "Actual use_figma result persisted from execution checkpoint; fingerprints are FNV-1a over stable native snapshots, not source-file SHA256.",
+        "descendantCountEvidence": "Initial creation snapshots are not final topology counts. The final selected Softphone readback reports118 actual descendants including root; other closing counts were not reaudited."
+      },
+      "actualDeliveredIDs": {
+        "created": 3766,
+        "mutated": 3895,
+        "removed": 216,
+        "scope": "Actual recorded write ledgers; historical descendant snapshots are not a final topology census"
+      },
+      "limitations": [
+        "Research proposals; no frontend/runtime implementation or browser/provider certification.",
+        "Native editable Research proposals; no frontend/backend/runtime implementation or provider/legal certification.",
+        "Browser pixel parity, actual responsive behavior, interactions,hit areas,timing,transport and integral parity remain unverified.",
+        "Native44 rectangle dimensions are structural evidence only. Existing DS control/caption typography is preserved;14px applies to rebuilt free body/copy.",
+        "The single PNG covers only the final selected Softphone Mobile390 Light view; no visual PASS for all36 or allRFC boards is asserted.",
+        "The screenshot was emitted inline by the native tool; no persistent PNG URL or local image path was returned.",
+        "All actual root/source and applied/removed/mutated ID evidence is retained; historical virtual descendant ID unions are not a fresh final topology census.",
+        "No additional state variants, new foundations, sharedCore/style/variable writes,shared ledger writes,repository edits or Git/account/provider actions."
+      ],
+      "reactScreenOrProviderRuntimeImplemented": false
     },
     "rfcBoardSync": {
-      "status": "awaiting-native-execution"
+      "status": "completed-seven-current-native-review-summaries",
+      "boards": [
+        {
+          "key": "research",
+          "rootId": "341:696",
+          "titleNodeId": "341:698",
+          "bodyInstanceId": "341:701",
+          "bodyTextId": "I341:701;341:695",
+          "sourceFile": "docs/communications/RESEARCH.md",
+          "sourceHash": "b8b361f62afc0c7d8f520a12dd831b9187f886913e695e2cf3de26b3044f7e62",
+          "sourceGitHubURL": "https://github.com/terrizoaguimor/aureform-ui/blob/main/docs/communications/RESEARCH.md",
+          "sourceEvidence": [
+            {
+              "file": "docs/communications/RESEARCH.md",
+              "line": 9
+            },
+            {
+              "file": "docs/communications/RESEARCH.md",
+              "line": 75
+            },
+            {
+              "file": "docs/communications/RESEARCH.md",
+              "line": 171
+            },
+            {
+              "file": "docs/communications/RESEARCH.md",
+              "line": 189
+            }
+          ],
+          "payloadTextHash": "bf423709",
+          "exactCanonicalPayload": true,
+          "bodyChars": 859,
+          "width": 1344,
+          "height": 683,
+          "visibleSections": 1,
+          "hiddenPreviousSections": 3,
+          "remoteGitHubCurrentCommitVerified": false
+        },
+        {
+          "key": "matrix",
+          "rootId": "341:714",
+          "titleNodeId": "341:716",
+          "bodyInstanceId": "341:719",
+          "bodyTextId": "I341:719;341:695",
+          "sourceFile": "docs/communications/CAPABILITY-MATRIX.md",
+          "sourceHash": "8bc6a20d8806ba85cfb7f16618e4041b3653df24cc72a7d2506073c23cdd9b50",
+          "sourceGitHubURL": "https://github.com/terrizoaguimor/aureform-ui/blob/main/docs/communications/CAPABILITY-MATRIX.md",
+          "sourceEvidence": [
+            {
+              "file": "docs/communications/CAPABILITY-MATRIX.md",
+              "line": 34
+            },
+            {
+              "file": "docs/communications/CAPABILITY-MATRIX.md",
+              "line": 87
+            },
+            {
+              "file": "docs/communications/CAPABILITY-MATRIX.md",
+              "line": 149
+            },
+            {
+              "file": "docs/communications/CAPABILITY-MATRIX.md",
+              "line": 240
+            }
+          ],
+          "payloadTextHash": "faef072d",
+          "exactCanonicalPayload": true,
+          "bodyChars": 878,
+          "width": 1344,
+          "height": 683,
+          "visibleSections": 1,
+          "hiddenPreviousSections": 3,
+          "remoteGitHubCurrentCommitVerified": false
+        },
+        {
+          "key": "architecture",
+          "rootId": "341:732",
+          "titleNodeId": "341:734",
+          "bodyInstanceId": "341:737",
+          "bodyTextId": "I341:737;341:695",
+          "sourceFile": "docs/communications/ARCHITECTURE-RFC.md",
+          "sourceHash": "112b6daa9f877f3c28a9aabff9c4c401fd4106e0283e36ab7a7aec4a2caff254",
+          "sourceGitHubURL": "https://github.com/terrizoaguimor/aureform-ui/blob/main/docs/communications/ARCHITECTURE-RFC.md",
+          "sourceEvidence": [
+            {
+              "file": "docs/communications/ARCHITECTURE-RFC.md",
+              "line": 11
+            },
+            {
+              "file": "docs/communications/ARCHITECTURE-RFC.md",
+              "line": 78
+            },
+            {
+              "file": "docs/communications/ARCHITECTURE-RFC.md",
+              "line": 207
+            },
+            {
+              "file": "docs/communications/ARCHITECTURE-RFC.md",
+              "line": 246
+            }
+          ],
+          "payloadTextHash": "ef71e456",
+          "exactCanonicalPayload": true,
+          "bodyChars": 891,
+          "width": 1344,
+          "height": 683,
+          "visibleSections": 1,
+          "hiddenPreviousSections": 3,
+          "remoteGitHubCurrentCommitVerified": false
+        },
+        {
+          "key": "flow",
+          "rootId": "341:750",
+          "titleNodeId": "341:752",
+          "bodyInstanceId": "341:755",
+          "bodyTextId": "I341:755;341:695",
+          "sourceFile": "docs/communications/FLOW-ENGINE-RFC.md",
+          "sourceHash": "fa6b128b8fb7a4b8b82ce760b389a31a3cd4870c97d498a343765032fba9f6bd",
+          "sourceGitHubURL": "https://github.com/terrizoaguimor/aureform-ui/blob/main/docs/communications/FLOW-ENGINE-RFC.md",
+          "sourceEvidence": [
+            {
+              "file": "docs/communications/FLOW-ENGINE-RFC.md",
+              "line": 34
+            },
+            {
+              "file": "docs/communications/FLOW-ENGINE-RFC.md",
+              "line": 286
+            },
+            {
+              "file": "docs/communications/FLOW-ENGINE-RFC.md",
+              "line": 307
+            },
+            {
+              "file": "docs/communications/FLOW-ENGINE-RFC.md",
+              "line": 381
+            }
+          ],
+          "payloadTextHash": "be88153c",
+          "exactCanonicalPayload": true,
+          "bodyChars": 922,
+          "width": 1344,
+          "height": 703,
+          "visibleSections": 1,
+          "hiddenPreviousSections": 4,
+          "remoteGitHubCurrentCommitVerified": false
+        },
+        {
+          "key": "security",
+          "rootId": "341:771",
+          "titleNodeId": "341:773",
+          "bodyInstanceId": "341:776",
+          "bodyTextId": "I341:776;341:695",
+          "sourceFile": "docs/communications/SECURITY-COMPLIANCE.md",
+          "sourceHash": "caeeaaf3a7f40036ddc174cc9930e631a75c1b457983af7169e682ada72649d0",
+          "sourceGitHubURL": "https://github.com/terrizoaguimor/aureform-ui/blob/main/docs/communications/SECURITY-COMPLIANCE.md",
+          "sourceEvidence": [
+            {
+              "file": "docs/communications/SECURITY-COMPLIANCE.md",
+              "line": 77
+            },
+            {
+              "file": "docs/communications/SECURITY-COMPLIANCE.md",
+              "line": 135
+            },
+            {
+              "file": "docs/communications/SECURITY-COMPLIANCE.md",
+              "line": 178
+            },
+            {
+              "file": "docs/communications/SECURITY-COMPLIANCE.md",
+              "line": 310
+            }
+          ],
+          "payloadTextHash": "700c77ac",
+          "exactCanonicalPayload": true,
+          "bodyChars": 894,
+          "width": 1344,
+          "height": 683,
+          "visibleSections": 1,
+          "hiddenPreviousSections": 3,
+          "remoteGitHubCurrentCommitVerified": false
+        },
+        {
+          "key": "roadmap",
+          "rootId": "341:789",
+          "titleNodeId": "341:791",
+          "bodyInstanceId": "341:794",
+          "bodyTextId": "I341:794;341:695",
+          "sourceFile": "docs/communications/ROADMAP.md",
+          "sourceHash": "7da1be96f3b67824f8344ab6529ca0e2ded4f6001260c65384aa36a26ffd582e",
+          "sourceGitHubURL": "https://github.com/terrizoaguimor/aureform-ui/blob/main/docs/communications/ROADMAP.md",
+          "sourceEvidence": [
+            {
+              "file": "docs/communications/ROADMAP.md",
+              "line": 91
+            },
+            {
+              "file": "docs/communications/ROADMAP.md",
+              "line": 127
+            },
+            {
+              "file": "docs/communications/ROADMAP.md",
+              "line": 89
+            },
+            {
+              "file": "docs/communications/ROADMAP.md",
+              "line": 317
+            }
+          ],
+          "payloadTextHash": "3e4164e1",
+          "exactCanonicalPayload": true,
+          "bodyChars": 853,
+          "width": 1344,
+          "height": 683,
+          "visibleSections": 1,
+          "hiddenPreviousSections": 3,
+          "remoteGitHubCurrentCommitVerified": false
+        },
+        {
+          "key": "open",
+          "rootId": "341:807",
+          "titleNodeId": "341:809",
+          "bodyInstanceId": "341:812",
+          "bodyTextId": "I341:812;341:695",
+          "sourceFile": "docs/communications/OPEN-QUESTIONS.md",
+          "sourceHash": "0e36e947879a0a58fc089dc53b07648b7e1ce7ea2c40f50cb5c0be95acd6a932",
+          "sourceGitHubURL": "https://github.com/terrizoaguimor/aureform-ui/blob/main/docs/communications/OPEN-QUESTIONS.md",
+          "sourceEvidence": [
+            {
+              "file": "docs/communications/OPEN-QUESTIONS.md",
+              "line": 60
+            },
+            {
+              "file": "docs/communications/OPEN-QUESTIONS.md",
+              "line": 145
+            },
+            {
+              "file": "docs/communications/OPEN-QUESTIONS.md",
+              "line": 176
+            },
+            {
+              "file": "docs/communications/OPEN-QUESTIONS.md",
+              "line": 372
+            }
+          ],
+          "payloadTextHash": "f71a1c0e",
+          "exactCanonicalPayload": true,
+          "bodyChars": 917,
+          "width": 1344,
+          "height": 683,
+          "visibleSections": 1,
+          "hiddenPreviousSections": 3,
+          "remoteGitHubCurrentCommitVerified": false
+        }
+      ],
+      "sourceFilesLocallyVerifiedAgainstCommittedMain": true,
+      "fullMarkdownReplacedByBoards": false
+    },
+    "implementationStatus": {
+      "scope": "research-and-native-design",
+      "softphone": {
+        "figmaProposal": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-298",
+        "reactScreenImplemented": false,
+        "demoRoute": null,
+        "menuEntryImplemented": false,
+        "realTelephonyTested": false
+      },
+      "communicationsBackendImplemented": false,
+      "twilioVoiceAdapterImplemented": false,
+      "telnyxVoiceAdapterImplemented": false,
+      "firstFunctionalPhase": "P1 inbound voice MVP in docs/communications/ROADMAP.md"
     }
   },
   "recovered": {
@@ -3666,10 +4461,1883 @@
       }
     },
     "catalog": {
-      "status": "awaiting-native-execution"
+      "status": "closed-bounded-native-source-QA-PASS",
+      "receipt": "design/reports/native-catalog-inherited-recovery-2026-10-21.json",
+      "masters": {
+        "BlocksTemplate": {
+          "id": "491:3161",
+          "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=491-3161"
+        },
+        "TemplatesTemplate": {
+          "id": "503:4398",
+          "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=503-4398"
+        },
+        "PricingTemplate": {
+          "id": "509:6801",
+          "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=509-6801"
+        }
+      },
+      "blockCards": 12,
+      "sourceCompositions": 7,
+      "templateCards": 50,
+      "templatePreviewSlots": 100,
+      "marketingPrices": [
+        0,
+        19,
+        49
+      ],
+      "runtimeOrBrowserParityCertified": false,
+      "limitations": [
+        "Application: all five mounted bindings and 4457 current-owned IDs are confirmed by fresh bounded readback; the interrupted original call has no delivered full transaction creation/mutation/removal ledger. No transaction counts are inferred from the observed IDs.",
+        "Templates height correction: the original 4021 IDs labelled createdNodeIds are its current-owned census, retained separately from transaction creation IDs. Original output is preserved unchanged.",
+        "Inherited Transactions sidebar active Overview is preserved outside the owned Main/SLOT scope.",
+        "Catalog metadata transport exposes HTML entity residue in component metadata; final source UI copy guards passed. No source master edits were made after page321:59 scope release.",
+        "Maps viewport intentionally crops vector bounds. Upstream Hub wordmark geometry and provider logo certification are outside this ownership scope.",
+        "This receipt certifies only the bounded native source bindings and recorded readbacks; no backend/telephony, mobile/background, responsive browser, keyboard/motion or global pixel parity certification."
+      ]
     },
     "inheritedRoutes": {
-      "status": "awaiting-native-execution"
+      "status": "23-preserved-roots-bound-bounded-native-QA-PASS",
+      "receipt": "design/reports/native-catalog-inherited-recovery-2026-10-21.json",
+      "roots": [
+        {
+          "rootId": "55:8072",
+          "route": "",
+          "entryId": "55:8072",
+          "stageId": "525:24175",
+          "rootGeometry": {
+            "x": 80,
+            "y": 23000,
+            "width": 1440,
+            "height": 6298,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "525:24176",
+              "name": "Actual source header",
+              "masterId": "426:11378",
+              "width": 1440,
+              "height": 81
+            },
+            {
+              "id": "525:24217",
+              "name": "All 8 source sections",
+              "masterId": "426:11423",
+              "width": 1440,
+              "height": 5833
+            },
+            {
+              "id": "525:25403",
+              "name": "Actual source footer",
+              "masterId": "426:12617",
+              "width": 1440,
+              "height": 384
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "525:24175",
+            "width": 1440,
+            "height": 6298,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG"
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "5:4",
+          "entryId": "I128:15756;29:224;128:16049",
+          "masterId": "357:1826",
+          "stageId": "I128:15756;29:224;514:35678",
+          "instanceId": "I128:15756;29:224;514:35679",
+          "route": "ai",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "visible": true,
+          "rootGeometry": {
+            "x": 3400,
+            "y": 80,
+            "width": 1440,
+            "height": 1219.5,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "I128:15756;29:224;514:35679",
+              "name": "AIWorkspace",
+              "masterId": "357:1826",
+              "ownerId": "357:2156",
+              "width": 1120,
+              "height": 817
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I128:15756;29:224;514:35678",
+            "width": 1120,
+            "height": 817
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "53:1272",
+          "entryId": "I53:1273;29:224;53:1442",
+          "masterId": "357:1926",
+          "stageId": "I53:1273;29:224;514:35761",
+          "instanceId": "I53:1273;29:224;514:35762",
+          "route": "ai/playground",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "visible": true,
+          "rootGeometry": {
+            "x": 3360,
+            "y": 1900,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I53:1273;29:224;514:35762",
+              "name": "AIWorkspace",
+              "masterId": "357:1926",
+              "ownerId": "357:2156",
+              "width": 1120,
+              "height": 817
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I53:1273;29:224;514:35761",
+            "width": 1120,
+            "height": 817
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "53:1044",
+          "entryId": "I53:1045;29:224;53:1214",
+          "masterId": "357:2056",
+          "stageId": "I53:1045;29:224;514:35829",
+          "instanceId": "I53:1045;29:224;514:35830",
+          "route": "ai/code",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "visible": true,
+          "rootGeometry": {
+            "x": 1720,
+            "y": 1900,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I53:1045;29:224;514:35830",
+              "name": "AIWorkspace",
+              "masterId": "357:2056",
+              "ownerId": "357:2156",
+              "width": 1120,
+              "height": 817
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I53:1045;29:224;514:35829",
+            "width": 1120,
+            "height": 817
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "41:2363",
+          "route": "products",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "entryBefore": {
+            "entryId": "I41:2364;29:224",
+            "kind": "owned-content-slot",
+            "fingerprint": "36e215b3"
+          },
+          "entryAfter": {
+            "entryId": "I41:2364;29:224",
+            "kind": "owned-content-slot",
+            "fingerprint": "97423c55"
+          },
+          "sourceBinding": {
+            "requestedId": "336:1066",
+            "id": "336:731",
+            "type": "COMPONENT",
+            "name": "View=Grid",
+            "ownerId": "336:1066",
+            "properties": [
+              {
+                "key": "View",
+                "type": "VARIANT",
+                "variantOptions": [
+                  "Grid",
+                  "Table",
+                  "Empty"
+                ]
+              }
+            ],
+            "props": {},
+            "source": {
+              "module": "src/components/blocks/product-manager.tsx",
+              "symbol": "ProductsManager",
+              "line": 2113,
+              "exported": true
+            },
+            "sourceChain": [
+              {
+                "module": "src/components/app-page.tsx",
+                "symbol": "AppPage",
+                "line": 94,
+                "exported": true
+              },
+              {
+                "module": "src/components/templates/data-manager.tsx",
+                "symbol": "DataManager",
+                "line": 83,
+                "exported": true
+              },
+              {
+                "module": "src/components/blocks/product-manager.tsx",
+                "symbol": "ProductsManager",
+                "line": 2113,
+                "exported": true
+              }
+            ]
+          },
+          "entryId": "I41:2364;29:224",
+          "stageId": "I41:2364;29:224;516:16954",
+          "rootGeometry": {
+            "x": 80,
+            "y": 4820,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I41:2364;29:224;516:16955",
+              "name": "ProductsManager",
+              "masterId": "336:731",
+              "width": 1120,
+              "height": 2049
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I41:2364;29:224;516:16954",
+            "width": 1184,
+            "height": 1316,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "clipsContent": true,
+            "overflowDirection": "VERTICAL"
+          },
+          "finalScrollReadback": {
+            "rootId": "41:2363",
+            "entryId": "I41:2364;29:224",
+            "stageId": "I41:2364;29:224;516:16954",
+            "stageWidth": 1184,
+            "stageHeight": 1316,
+            "entryHeight": 1380,
+            "viewportHeight": 1380,
+            "rootWidth": 1440,
+            "rootHeight": 1380,
+            "overflowDirection": "VERTICAL",
+            "clipsContent": true,
+            "fit": true,
+            "settings": null
+          },
+          "sourceMasterPresenceResolution": {
+            "requestedComponentSetId": "336:1066",
+            "actualDefaultVariantId": "336:731",
+            "method": "Original source binding resolves requested SET to actual default COMPONENT; final bounded readback contains instance linked to 336:731. Earlier comparison to SET ID is retained in its original result."
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "41:2816",
+          "route": "orders",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "entryBefore": {
+            "entryId": "I41:2817;29:224",
+            "kind": "owned-content-slot",
+            "fingerprint": "f227180f"
+          },
+          "entryAfter": {
+            "entryId": "I41:2817;29:224",
+            "kind": "owned-content-slot",
+            "fingerprint": "560deb8e"
+          },
+          "sourceBinding": {
+            "requestedId": "336:1067",
+            "id": "336:1067",
+            "type": "COMPONENT",
+            "name": "Mode=Orders",
+            "ownerId": "336:1245",
+            "properties": [
+              {
+                "key": "Mode",
+                "type": "VARIANT",
+                "variantOptions": [
+                  "Orders",
+                  "Invoices",
+                  "Invoice",
+                  "Billing"
+                ]
+              }
+            ],
+            "props": {
+              "mode": "orders"
+            },
+            "source": {
+              "module": "src/components/blocks/commerce-workspace.tsx",
+              "symbol": "CommerceWorkspace",
+              "line": 83,
+              "exported": true
+            },
+            "sourceChain": [
+              {
+                "module": "src/components/app-page.tsx",
+                "symbol": "AppPage",
+                "line": 94,
+                "exported": true
+              },
+              {
+                "module": "src/components/templates/data-manager.tsx",
+                "symbol": "DataManager",
+                "line": 83,
+                "exported": true
+              },
+              {
+                "module": "src/components/blocks/commerce-workspace.tsx",
+                "symbol": "CommerceWorkspace",
+                "line": 83,
+                "exported": true
+              }
+            ]
+          },
+          "entryId": "I41:2817;29:224",
+          "stageId": "I41:2817;29:224;516:17083",
+          "rootGeometry": {
+            "x": 1720,
+            "y": 4820,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I41:2817;29:224;516:17084",
+              "name": "CommerceWorkspace",
+              "masterId": "336:1067",
+              "width": 1120,
+              "height": 1072
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I41:2817;29:224;516:17083",
+            "width": 1184,
+            "height": 1136,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG"
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "41:3207",
+          "route": "invoices",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "entryBefore": {
+            "entryId": "I41:3208;29:224",
+            "kind": "owned-content-slot",
+            "fingerprint": "0f0755fd"
+          },
+          "entryAfter": {
+            "entryId": "I41:3208;29:224",
+            "kind": "owned-content-slot",
+            "fingerprint": "20817a5f"
+          },
+          "sourceBinding": {
+            "requestedId": "336:1109",
+            "id": "336:1109",
+            "type": "COMPONENT",
+            "name": "Mode=Invoices",
+            "ownerId": "336:1245",
+            "properties": [
+              {
+                "key": "Mode",
+                "type": "VARIANT",
+                "variantOptions": [
+                  "Orders",
+                  "Invoices",
+                  "Invoice",
+                  "Billing"
+                ]
+              }
+            ],
+            "props": {
+              "mode": "invoices"
+            },
+            "source": {
+              "module": "src/components/blocks/commerce-workspace.tsx",
+              "symbol": "CommerceWorkspace",
+              "line": 83,
+              "exported": true
+            },
+            "sourceChain": [
+              {
+                "module": "src/components/app-page.tsx",
+                "symbol": "AppPage",
+                "line": 94,
+                "exported": true
+              },
+              {
+                "module": "src/components/templates/data-manager.tsx",
+                "symbol": "DataManager",
+                "line": 83,
+                "exported": true
+              },
+              {
+                "module": "src/components/blocks/commerce-workspace.tsx",
+                "symbol": "CommerceWorkspace",
+                "line": 83,
+                "exported": true
+              }
+            ]
+          },
+          "entryId": "I41:3208;29:224",
+          "stageId": "I41:3208;29:224;516:17206",
+          "rootGeometry": {
+            "x": 3360,
+            "y": 4820,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I41:3208;29:224;516:17207",
+              "name": "CommerceWorkspace",
+              "masterId": "336:1109",
+              "width": 1120,
+              "height": 800
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I41:3208;29:224;516:17206",
+            "width": 1184,
+            "height": 864,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG"
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "45:6451",
+          "route": "invoice",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "entryBefore": {
+            "entryId": "I45:6452;29:224;45:6690",
+            "kind": "owned-main-frame",
+            "fingerprint": "81ba474b"
+          },
+          "entryAfter": {
+            "entryId": "I45:6452;29:224;45:6690",
+            "kind": "owned-main-frame",
+            "fingerprint": "c1a0e6c2"
+          },
+          "sourceBinding": {
+            "requestedId": "336:1154",
+            "id": "336:1154",
+            "type": "COMPONENT",
+            "name": "Mode=Invoice",
+            "ownerId": "336:1245",
+            "properties": [
+              {
+                "key": "Mode",
+                "type": "VARIANT",
+                "variantOptions": [
+                  "Orders",
+                  "Invoices",
+                  "Invoice",
+                  "Billing"
+                ]
+              }
+            ],
+            "props": {
+              "mode": "invoice"
+            },
+            "source": {
+              "module": "src/components/blocks/commerce-workspace.tsx",
+              "symbol": "CommerceWorkspace",
+              "line": 83,
+              "exported": true
+            },
+            "sourceChain": [
+              {
+                "module": "src/components/app-page.tsx",
+                "symbol": "AppPage",
+                "line": 94,
+                "exported": true
+              },
+              {
+                "module": "src/components/templates/map-invoice.tsx",
+                "symbol": "InvoiceTemplate",
+                "line": 11,
+                "exported": true
+              },
+              {
+                "module": "src/components/blocks/commerce-workspace.tsx",
+                "symbol": "CommerceWorkspace",
+                "line": 83,
+                "exported": true
+              }
+            ]
+          },
+          "entryId": "I45:6452;29:224;45:6690",
+          "stageId": "I45:6452;29:224;516:17248",
+          "rootGeometry": {
+            "x": 3360,
+            "y": 11140,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I45:6452;29:224;516:17249",
+              "name": "CommerceWorkspace",
+              "masterId": "336:1154",
+              "width": 1120,
+              "height": 640
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I45:6452;29:224;516:17248",
+            "width": 1120,
+            "height": 640,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG"
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "41:3597",
+          "route": "transactions",
+          "entryId": "I41:3598;29:224",
+          "stageId": "I41:3598;29:224;523:22487",
+          "rootGeometry": {
+            "x": 80,
+            "y": 6400,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I41:3598;29:224;523:22489",
+              "name": "Transactions/linked native master",
+              "masterId": "29:134",
+              "width": 1120,
+              "height": 107
+            },
+            {
+              "id": "I41:3598;29:224;523:22500",
+              "name": "Export",
+              "masterId": "3:41",
+              "width": 126,
+              "height": 32
+            },
+            {
+              "id": "I41:3598;29:224;523:22505",
+              "name": "Add transaction",
+              "masterId": "3:5",
+              "width": 160,
+              "height": 32
+            },
+            {
+              "id": "I41:3598;29:224;523:22508",
+              "name": "Total records/linked native master",
+              "masterId": "3:150",
+              "width": 362.6666564941406,
+              "height": 122
+            },
+            {
+              "id": "I41:3598;29:224;523:22513",
+              "name": "Total value/linked native master",
+              "masterId": "3:150",
+              "width": 362.6666564941406,
+              "height": 122
+            },
+            {
+              "id": "I41:3598;29:224;523:22518",
+              "name": "Completed/linked native master",
+              "masterId": "3:150",
+              "width": 362.6666564941406,
+              "height": 122
+            },
+            {
+              "id": "I41:3598;29:224;523:22523",
+              "name": "Filter by status",
+              "masterId": "15:79",
+              "width": 176,
+              "height": 40
+            },
+            {
+              "id": "I41:3598;29:224;523:22526",
+              "name": "DataTable/linked native master",
+              "masterId": "23:356",
+              "width": 1120,
+              "height": 472
+            },
+            {
+              "id": "I41:3598;29:224;523:22528",
+              "name": "Search records…",
+              "masterId": "3:125",
+              "width": 288,
+              "height": 40
+            },
+            {
+              "id": "I41:3598;29:224;523:22531",
+              "name": "Select this page",
+              "masterId": "15:6",
+              "width": 16,
+              "height": 16
+            },
+            {
+              "id": "I41:3598;29:224;523:22546",
+              "name": "Select row",
+              "masterId": "15:6",
+              "width": 16,
+              "height": 16
+            },
+            {
+              "id": "I41:3598;29:224;523:22552",
+              "name": "Completed",
+              "masterId": "3:114",
+              "width": 83,
+              "height": 24
+            },
+            {
+              "id": "I41:3598;29:224;523:22564",
+              "name": "Select row",
+              "masterId": "15:6",
+              "width": 16,
+              "height": 16
+            },
+            {
+              "id": "I41:3598;29:224;523:22570",
+              "name": "Completed",
+              "masterId": "3:114",
+              "width": 83,
+              "height": 24
+            },
+            {
+              "id": "I41:3598;29:224;523:22582",
+              "name": "Select row",
+              "masterId": "15:6",
+              "width": 16,
+              "height": 16
+            },
+            {
+              "id": "I41:3598;29:224;523:22588",
+              "name": "Refunded",
+              "masterId": "3:116",
+              "width": 76,
+              "height": 24
+            },
+            {
+              "id": "I41:3598;29:224;523:22600",
+              "name": "Select row",
+              "masterId": "15:6",
+              "width": 16,
+              "height": 16
+            },
+            {
+              "id": "I41:3598;29:224;523:22606",
+              "name": "Pending",
+              "masterId": "3:118",
+              "width": 69,
+              "height": 24
+            },
+            {
+              "id": "I41:3598;29:224;523:22618",
+              "name": "Select row",
+              "masterId": "15:6",
+              "width": 16,
+              "height": 16
+            },
+            {
+              "id": "I41:3598;29:224;523:22624",
+              "name": "Failed",
+              "masterId": "3:120",
+              "width": 62,
+              "height": 24
+            },
+            {
+              "id": "I41:3598;29:224;523:22640",
+              "name": "1",
+              "masterId": "3:41",
+              "width": 48,
+              "height": 32
+            },
+            {
+              "id": "I41:3598;29:224;523:22642",
+              "name": "2",
+              "masterId": "3:77",
+              "width": 48,
+              "height": 32
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I41:3598;29:224;523:22487",
+            "width": 1184,
+            "height": 837,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG"
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "45:6076",
+          "route": "maps",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "entryBefore": {
+            "entryId": "I45:6077;29:224;45:6315",
+            "kind": "owned-main-frame",
+            "fingerprint": "576214a7"
+          },
+          "entryAfter": {
+            "entryId": "I45:6077;29:224;45:6315",
+            "kind": "owned-main-frame",
+            "fingerprint": "660613eb"
+          },
+          "sourceBinding": {
+            "requestedId": "336:1246",
+            "id": "336:1246",
+            "type": "COMPONENT",
+            "name": "State=Demo",
+            "ownerId": "336:1634",
+            "properties": [
+              {
+                "key": "State",
+                "type": "VARIANT",
+                "variantOptions": [
+                  "Demo",
+                  "KeySetup",
+                  "MissingKey",
+                  "Loading",
+                  "Error",
+                  "Disconnected"
+                ]
+              }
+            ],
+            "props": {
+              "provider": "demo",
+              "view": "map",
+              "directory": "routes",
+              "routeId": null
+            },
+            "source": {
+              "module": "src/components/blocks/maps-workspace.tsx",
+              "symbol": "MapsWorkspace",
+              "line": 150,
+              "exported": true
+            },
+            "sourceChain": [
+              {
+                "module": "src/components/app-page.tsx",
+                "symbol": "AppPage",
+                "line": 94,
+                "exported": true
+              },
+              {
+                "module": "src/components/templates/map-invoice.tsx",
+                "symbol": "MapsTemplate",
+                "line": 7,
+                "exported": true
+              },
+              {
+                "module": "src/components/blocks/maps-workspace.tsx",
+                "symbol": "MapsWorkspace",
+                "line": 150,
+                "exported": true
+              }
+            ]
+          },
+          "entryId": "I45:6077;29:224;45:6315",
+          "stageId": "I45:6077;29:224;516:17648",
+          "rootGeometry": {
+            "x": 1720,
+            "y": 11140,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I45:6077;29:224;516:17649",
+              "name": "MapsWorkspace",
+              "masterId": "336:1246",
+              "width": 1120,
+              "height": 1138
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I45:6077;29:224;516:17648",
+            "width": 1120,
+            "height": 1138,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG"
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "48:7437",
+          "route": "settings/billing",
+          "entryId": "I48:7438;29:224;48:7608",
+          "stageId": "I48:7438;29:224;521:16946",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootGeometry": {
+            "x": 80,
+            "y": 15880,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I48:7438;29:224;521:16948",
+              "name": "Settings/linked native master",
+              "masterId": "29:134",
+              "width": 1120,
+              "height": 107
+            },
+            {
+              "id": "I48:7438;29:224;521:16970",
+              "name": "CommerceWorkspace",
+              "masterId": "336:1194",
+              "width": 1024,
+              "height": 1172
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I48:7438;29:224;521:16946",
+            "width": 1120,
+            "height": 1252,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "clipsContent": true,
+            "overflowDirection": "VERTICAL"
+          },
+          "finalScrollReadback": {
+            "rootId": "48:7437",
+            "entryId": "I48:7438;29:224;48:7608",
+            "stageId": "I48:7438;29:224;521:16946",
+            "stageWidth": 1120,
+            "stageHeight": 1252,
+            "entryHeight": 1316,
+            "viewportHeight": 1380,
+            "rootWidth": 1440,
+            "rootHeight": 1380,
+            "overflowDirection": "VERTICAL",
+            "clipsContent": true,
+            "fit": true,
+            "settings": [
+              {
+                "copy": "Make it yours",
+                "present": true
+              },
+              {
+                "copy": "Settings",
+                "present": true
+              },
+              {
+                "copy": "The details that make your workspace work for you.",
+                "present": true
+              },
+              {
+                "copy": "Workspace",
+                "present": true
+              },
+              {
+                "copy": "Profile",
+                "present": true
+              },
+              {
+                "copy": "Team",
+                "present": true
+              },
+              {
+                "copy": "Preferences",
+                "present": true
+              },
+              {
+                "copy": "Billing",
+                "present": true
+              },
+              {
+                "copy": "API keys",
+                "present": true
+              },
+              {
+                "copy": "Integrations",
+                "present": true
+              }
+            ]
+          },
+          "settingsHeadingAndSevenTabs": [
+            {
+              "copy": "Make it yours",
+              "present": true
+            },
+            {
+              "copy": "Settings",
+              "present": true
+            },
+            {
+              "copy": "The details that make your workspace work for you.",
+              "present": true
+            },
+            {
+              "copy": "Workspace",
+              "present": true
+            },
+            {
+              "copy": "Profile",
+              "present": true
+            },
+            {
+              "copy": "Team",
+              "present": true
+            },
+            {
+              "copy": "Preferences",
+              "present": true
+            },
+            {
+              "copy": "Billing",
+              "present": true
+            },
+            {
+              "copy": "API keys",
+              "present": true
+            },
+            {
+              "copy": "Integrations",
+              "present": true
+            }
+          ],
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "48:8021",
+          "route": "settings/integrations",
+          "entryId": "I48:8022;29:224;48:8192",
+          "stageId": "I48:8022;29:224;522:22915",
+          "rootGeometry": {
+            "x": 3360,
+            "y": 15880,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I48:8022;29:224;522:22917",
+              "name": "Settings/linked native master",
+              "masterId": "29:134",
+              "width": 1120,
+              "height": 107
+            },
+            {
+              "id": "I48:8022;29:224;522:22938",
+              "name": "IntegrationHub",
+              "masterId": "379:28607",
+              "width": 1120,
+              "height": 7990
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I48:8022;29:224;522:22915",
+            "width": 1120,
+            "height": 1252,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "clipsContent": true,
+            "overflowDirection": "VERTICAL"
+          },
+          "finalScrollReadback": {
+            "rootId": "48:8021",
+            "entryId": "I48:8022;29:224;48:8192",
+            "stageId": "I48:8022;29:224;522:22915",
+            "stageWidth": 1120,
+            "stageHeight": 1252,
+            "entryHeight": 1316,
+            "viewportHeight": 1380,
+            "rootWidth": 1440,
+            "rootHeight": 1380,
+            "overflowDirection": "VERTICAL",
+            "clipsContent": true,
+            "fit": true,
+            "settings": [
+              {
+                "copy": "Make it yours",
+                "present": true
+              },
+              {
+                "copy": "Settings",
+                "present": true
+              },
+              {
+                "copy": "The details that make your workspace work for you.",
+                "present": true
+              },
+              {
+                "copy": "Workspace",
+                "present": true
+              },
+              {
+                "copy": "Profile",
+                "present": true
+              },
+              {
+                "copy": "Team",
+                "present": true
+              },
+              {
+                "copy": "Preferences",
+                "present": true
+              },
+              {
+                "copy": "Billing",
+                "present": true
+              },
+              {
+                "copy": "API keys",
+                "present": true
+              },
+              {
+                "copy": "Integrations",
+                "present": true
+              }
+            ]
+          },
+          "settingsHeadingAndSevenTabs": [
+            {
+              "copy": "Make it yours",
+              "present": true
+            },
+            {
+              "copy": "Settings",
+              "present": true
+            },
+            {
+              "copy": "The details that make your workspace work for you.",
+              "present": true
+            },
+            {
+              "copy": "Workspace",
+              "present": true
+            },
+            {
+              "copy": "Profile",
+              "present": true
+            },
+            {
+              "copy": "Team",
+              "present": true
+            },
+            {
+              "copy": "Preferences",
+              "present": true
+            },
+            {
+              "copy": "Billing",
+              "present": true
+            },
+            {
+              "copy": "API keys",
+              "present": true
+            },
+            {
+              "copy": "Integrations",
+              "present": true
+            }
+          ],
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "59:3429",
+          "entryId": "I59:3430;29:224",
+          "masterId": "491:3161",
+          "stageId": "I59:3430;29:224;514:36752",
+          "instanceId": "I59:3430;29:224;514:36753",
+          "route": "blocks",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "visible": true,
+          "rootGeometry": {
+            "x": 13260,
+            "y": 80,
+            "width": 1440,
+            "height": 2431,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "I59:3430;29:224;514:36753",
+              "name": "BlocksTemplate",
+              "masterId": "491:3161",
+              "ownerId": "491:3161",
+              "width": 1120,
+              "height": 5260
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I59:3430;29:224;514:36752",
+            "width": 1184,
+            "height": 2431,
+            "clipsContent": true,
+            "overflowDirection": "VERTICAL"
+          },
+          "finalScrollReadback": {
+            "rootId": "59:3429",
+            "entryId": "I59:3430;29:224",
+            "stageId": "I59:3430;29:224;514:36752",
+            "stageHeight": 2431,
+            "entryHeight": 2431,
+            "rootWidth": 1440,
+            "rootHeight": 2431,
+            "overflowDirection": "VERTICAL",
+            "clipsContent": true,
+            "fit": true
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "59:3605",
+          "entryId": "I59:3606;29:224",
+          "masterId": "503:4398",
+          "stageId": "I59:3606;29:224;514:40281",
+          "instanceId": "I59:3606;29:224;514:40282",
+          "route": "templates",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "visible": true,
+          "rootGeometry": {
+            "x": 14900,
+            "y": 80,
+            "width": 1440,
+            "height": 5501,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "I59:3606;29:224;514:40282",
+              "name": "TemplatesTemplate",
+              "masterId": "503:4398",
+              "ownerId": "503:4398",
+              "width": 1120,
+              "height": 11418.75
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I59:3606;29:224;514:40281",
+            "width": 1184,
+            "height": 5501,
+            "clipsContent": true,
+            "overflowDirection": "VERTICAL"
+          },
+          "finalScrollReadback": {
+            "rootId": "59:3605",
+            "entryId": "I59:3606;29:224",
+            "stageId": "I59:3606;29:224;514:40281",
+            "stageHeight": 5501,
+            "entryHeight": 5501,
+            "rootWidth": 1440,
+            "rootHeight": 5501,
+            "overflowDirection": "VERTICAL",
+            "clipsContent": true,
+            "fit": true
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "54:1108",
+          "route": "docs",
+          "entryId": "54:1108",
+          "stageId": "517:40375",
+          "rootGeometry": {
+            "x": 80,
+            "y": 3500,
+            "width": 1440,
+            "height": 2109,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "517:40570",
+              "name": "DocumentationShell / start",
+              "masterId": "384:262",
+              "ownerId": "384:262",
+              "width": 1440,
+              "height": 2109
+            },
+            {
+              "id": "I517:40570;384:309;384:260;517:40583",
+              "name": "Full article start",
+              "masterId": "386:292",
+              "ownerId": "386:292",
+              "width": 768,
+              "height": 1892
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "517:40375",
+            "width": 1440,
+            "height": 2109
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "54:1451",
+          "route": "docs/tokens",
+          "entryId": "54:1451",
+          "stageId": "517:40778",
+          "rootGeometry": {
+            "x": 1720,
+            "y": 3500,
+            "width": 1440,
+            "height": 2472,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "517:40983",
+              "name": "DocumentationShell / tokens",
+              "masterId": "384:262",
+              "ownerId": "384:262",
+              "width": 1440,
+              "height": 2472
+            },
+            {
+              "id": "I517:40983;384:309;384:260;517:40996",
+              "name": "Full article tokens",
+              "masterId": "391:1828",
+              "ownerId": "391:1828",
+              "width": 768,
+              "height": 2255
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "517:40778",
+            "width": 1440,
+            "height": 2472
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "54:1764",
+          "route": "docs/cli",
+          "entryId": "54:1764",
+          "stageId": "517:41201",
+          "rootGeometry": {
+            "x": 3360,
+            "y": 3500,
+            "width": 1440,
+            "height": 2583,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "517:41421",
+              "name": "DocumentationShell / cli",
+              "masterId": "384:262",
+              "ownerId": "384:262",
+              "width": 1440,
+              "height": 2583
+            },
+            {
+              "id": "I517:41421;384:309;384:260;517:41434",
+              "name": "Full article cli",
+              "masterId": "391:1413",
+              "ownerId": "391:1413",
+              "width": 768,
+              "height": 2366
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "517:41201",
+            "width": 1440,
+            "height": 2583
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "54:2045",
+          "route": "docs/figma",
+          "entryId": "54:2045",
+          "stageId": "517:41654",
+          "rootGeometry": {
+            "x": 80,
+            "y": 5460,
+            "width": 1440,
+            "height": 2418,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "517:41843",
+              "name": "DocumentationShell / figma",
+              "masterId": "384:262",
+              "ownerId": "384:262",
+              "width": 1440,
+              "height": 2418
+            },
+            {
+              "id": "I517:41843;384:309;384:260;517:41856",
+              "name": "Full article figma",
+              "masterId": "393:4262",
+              "ownerId": "393:4262",
+              "width": 768,
+              "height": 2201
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "517:41654",
+            "width": 1440,
+            "height": 2418
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "54:2325",
+          "route": "docs/adapters",
+          "entryId": "54:2325",
+          "stageId": "522:105874",
+          "rootGeometry": {
+            "x": 1720,
+            "y": 5460,
+            "width": 1440,
+            "height": 7277,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "522:105891",
+              "name": "DocumentationShell / adapters",
+              "masterId": "384:262",
+              "ownerId": "384:262",
+              "width": 1440,
+              "height": 7277
+            },
+            {
+              "id": "I522:105891;384:309;384:260;522:105910",
+              "name": "Full article adapters",
+              "masterId": "394:5668",
+              "ownerId": "394:5668",
+              "width": 768,
+              "height": 7060
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "522:105874",
+            "width": 1440,
+            "height": 7277
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "54:2600",
+          "route": "docs/accessibility",
+          "entryId": "54:2600",
+          "stageId": "522:106274",
+          "rootGeometry": {
+            "x": 3360,
+            "y": 5460,
+            "width": 1440,
+            "height": 2391,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "522:106288",
+              "name": "DocumentationShell / accessibility",
+              "masterId": "384:262",
+              "ownerId": "384:262",
+              "width": 1440,
+              "height": 2391
+            },
+            {
+              "id": "I522:106288;384:309;384:260;522:106301",
+              "name": "Full article accessibility",
+              "masterId": "393:4569",
+              "ownerId": "393:4569",
+              "width": 768,
+              "height": 2174
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "522:106274",
+            "width": 1440,
+            "height": 2391
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "54:2873",
+          "route": "docs/license",
+          "entryId": "54:2873",
+          "stageId": "522:106501",
+          "rootGeometry": {
+            "x": 80,
+            "y": 7420,
+            "width": 1440,
+            "height": 1825,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "522:106514",
+              "name": "DocumentationShell / license",
+              "masterId": "384:262",
+              "ownerId": "384:262",
+              "width": 1440,
+              "height": 1825
+            },
+            {
+              "id": "I522:106514;384:309;384:260;522:106527",
+              "name": "Full article license",
+              "masterId": "393:4920",
+              "ownerId": "393:4920",
+              "width": 768,
+              "height": 1608
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "522:106501",
+            "width": 1440,
+            "height": 1825
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "54:3151",
+          "route": "docs/roadmap",
+          "entryId": "54:3151",
+          "stageId": "522:106718",
+          "rootGeometry": {
+            "x": 1720,
+            "y": 7420,
+            "width": 1440,
+            "height": 3886,
+            "clipsContent": false
+          },
+          "sourceInstances": [
+            {
+              "id": "522:106731",
+              "name": "DocumentationShell / roadmap",
+              "masterId": "384:262",
+              "ownerId": "384:262",
+              "width": 1440,
+              "height": 3886
+            },
+            {
+              "id": "I522:106731;384:309;384:260;522:106746",
+              "name": "Full article roadmap",
+              "masterId": "393:5243",
+              "ownerId": "393:5243",
+              "width": 768,
+              "height": 3669
+            }
+          ],
+          "missingFonts": [],
+          "status": "bound-native-source-bounded-QA-PASS",
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "522:106718",
+            "width": 1440,
+            "height": 3886
+          },
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        {
+          "rootId": "55:7541",
+          "route": "pricing",
+          "status": "bound-native-source-bounded-QA-PASS",
+          "entryBefore": {
+            "entryId": "I55:7542;29:224;55:7760",
+            "kind": "owned-main-frame",
+            "fingerprint": "98eed1be"
+          },
+          "entryAfter": {
+            "entryId": "I55:7542;29:224;55:7760",
+            "kind": "owned-main-frame",
+            "fingerprint": "6f233477"
+          },
+          "sourceBinding": {
+            "requestedId": "509:6801",
+            "id": "509:6801",
+            "type": "COMPONENT",
+            "name": "PublicReactBindings/PricingTemplate",
+            "ownerId": "509:6801",
+            "properties": [],
+            "props": {
+              "selectedPlan": "workspace",
+              "prices": [
+                "0",
+                "19",
+                "49"
+              ]
+            },
+            "source": {
+              "module": "src/components/templates/auxiliary.tsx",
+              "symbol": "PricingTemplate",
+              "line": 35,
+              "exported": true
+            },
+            "sourceChain": [
+              {
+                "module": "src/components/app-page.tsx",
+                "symbol": "AppPage",
+                "line": 94,
+                "exported": true
+              },
+              {
+                "module": "src/components/templates/auxiliary.tsx",
+                "symbol": "PricingTemplate",
+                "line": 35,
+                "exported": true
+              }
+            ],
+            "PublicReactBindings": {
+              "PricingTemplate": {
+                "module": "src/components/templates/auxiliary.tsx",
+                "sourceRef": "src/components/templates/auxiliary.tsx:35",
+                "exported": true
+              }
+            }
+          },
+          "entryId": "I55:7542;29:224;55:7760",
+          "stageId": "I55:7542;29:224;516:17815",
+          "rootGeometry": {
+            "x": 80,
+            "y": 21400,
+            "width": 1440,
+            "height": 1380,
+            "clipsContent": true
+          },
+          "sourceInstances": [
+            {
+              "id": "I55:7542;29:224;516:17816",
+              "name": "PricingTemplate",
+              "masterId": "509:6801",
+              "width": 1120,
+              "height": 830
+            }
+          ],
+          "missingFonts": [],
+          "rootIdentityPreserved": true,
+          "runtimeParityVerified": false,
+          "actualStageReadback": {
+            "id": "I55:7542;29:224;516:17815",
+            "width": 1120,
+            "height": 830,
+            "visible": true,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG"
+          },
+          "sourceCopyPresenceResolution": "Final native source readback confirms currency US$ and exact separate price TEXT values 0/19/49; earlier contiguous $0 check was not applicable to these separate text nodes.",
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        }
+      ],
+      "rootCount": 23,
+      "settingsHeadingAndSevenTabsConfirmed": true,
+      "billingSourceWidth": 1024,
+      "sourceRootIdsPreserved": true,
+      "ownedScrollRepairs": [
+        {
+          "rootId": "59:3429",
+          "entryId": "I59:3430;29:224",
+          "stageId": "I59:3430;29:224;514:36752",
+          "stageHeight": 2431,
+          "entryHeight": 2431,
+          "rootWidth": 1440,
+          "rootHeight": 2431,
+          "overflowDirection": "VERTICAL",
+          "clipsContent": true,
+          "fit": true
+        },
+        {
+          "rootId": "59:3605",
+          "entryId": "I59:3606;29:224",
+          "stageId": "I59:3606;29:224;514:40281",
+          "stageHeight": 5501,
+          "entryHeight": 5501,
+          "rootWidth": 1440,
+          "rootHeight": 5501,
+          "overflowDirection": "VERTICAL",
+          "clipsContent": true,
+          "fit": true
+        },
+        {
+          "rootId": "41:2363",
+          "entryId": "I41:2364;29:224",
+          "stageId": "I41:2364;29:224;516:16954",
+          "stageWidth": 1184,
+          "stageHeight": 1316,
+          "entryHeight": 1380,
+          "viewportHeight": 1380,
+          "rootWidth": 1440,
+          "rootHeight": 1380,
+          "overflowDirection": "VERTICAL",
+          "clipsContent": true,
+          "fit": true,
+          "settings": null
+        },
+        {
+          "rootId": "48:7437",
+          "entryId": "I48:7438;29:224;48:7608",
+          "stageId": "I48:7438;29:224;521:16946",
+          "stageWidth": 1120,
+          "stageHeight": 1252,
+          "entryHeight": 1316,
+          "viewportHeight": 1380,
+          "rootWidth": 1440,
+          "rootHeight": 1380,
+          "overflowDirection": "VERTICAL",
+          "clipsContent": true,
+          "fit": true,
+          "settings": [
+            {
+              "copy": "Make it yours",
+              "present": true
+            },
+            {
+              "copy": "Settings",
+              "present": true
+            },
+            {
+              "copy": "The details that make your workspace work for you.",
+              "present": true
+            },
+            {
+              "copy": "Workspace",
+              "present": true
+            },
+            {
+              "copy": "Profile",
+              "present": true
+            },
+            {
+              "copy": "Team",
+              "present": true
+            },
+            {
+              "copy": "Preferences",
+              "present": true
+            },
+            {
+              "copy": "Billing",
+              "present": true
+            },
+            {
+              "copy": "API keys",
+              "present": true
+            },
+            {
+              "copy": "Integrations",
+              "present": true
+            }
+          ]
+        },
+        {
+          "rootId": "48:8021",
+          "entryId": "I48:8022;29:224;48:8192",
+          "stageId": "I48:8022;29:224;522:22915",
+          "stageWidth": 1120,
+          "stageHeight": 1252,
+          "entryHeight": 1316,
+          "viewportHeight": 1380,
+          "rootWidth": 1440,
+          "rootHeight": 1380,
+          "overflowDirection": "VERTICAL",
+          "clipsContent": true,
+          "fit": true,
+          "settings": [
+            {
+              "copy": "Make it yours",
+              "present": true
+            },
+            {
+              "copy": "Settings",
+              "present": true
+            },
+            {
+              "copy": "The details that make your workspace work for you.",
+              "present": true
+            },
+            {
+              "copy": "Workspace",
+              "present": true
+            },
+            {
+              "copy": "Profile",
+              "present": true
+            },
+            {
+              "copy": "Team",
+              "present": true
+            },
+            {
+              "copy": "Preferences",
+              "present": true
+            },
+            {
+              "copy": "Billing",
+              "present": true
+            },
+            {
+              "copy": "API keys",
+              "present": true
+            },
+            {
+              "copy": "Integrations",
+              "present": true
+            }
+          ]
+        }
+      ],
+      "deliveredTransactionIDCounts": {
+        "method": "Deduplicated union of exact delivered transaction aliases. Current-owned inventories are retained separately; Application interrupted transaction is incomplete.",
+        "created": 11479,
+        "mutated": 21379,
+        "removed": 4922,
+        "completeTransactionLedger": false,
+        "allDeliveredIdsRecorded": true,
+        "templateHeightOwnedCensusCount": 4021,
+        "applicationCurrentOwnedNodeCount": 4457
+      },
+      "transactionLedgerCoverage": {
+        "application": {
+          "method": "bounded fresh current-owned ID readback after interrupted successful call",
+          "completeMutationTransactionLedger": false,
+          "returnedMutationIDsLost": true,
+          "countInferenceFromCurrentIDs": false,
+          "currentOwnedNodeIdsRecorded": true,
+          "currentOwnedNodeCount": 4457,
+          "currentOwnedReadbackCallId": "[internal call ID removed]",
+          "interruptedNativeCallId": "[internal call ID removed]",
+          "bindingsConfirmed": 5
+        },
+        "workspace": {
+          "method": "native returned encodedReceipt decoded with size/checksum/ID-count validation",
+          "completeReturnedLedger": true,
+          "freshAdoptedDescendantsPending": false,
+          "boundedReadbackComplete": true,
+          "boundedReadbackNativeCallId": "[internal call ID removed]"
+        },
+        "global": {
+          "allDeliveredCompactLedgersDecoded": true,
+          "allDeliveredNativeOutputsRecorded": true,
+          "deliveredNativeOutputCount": 46,
+          "transactionLedgerComplete": false,
+          "missingTransactionLedgerNativeCallIds": [
+            "[internal call ID removed]"
+          ],
+          "templateHeightCreationFieldIsObservedOwnership": true,
+          "transportPending": false,
+          "method": "Actual original returned aliases only; interrupted Application transaction is explicitly excluded from creation/mutation/removal count inference."
+        }
+      },
+      "browserOrRuntimeParityCertified": false,
+      "limitations": [
+        "Application: all five mounted bindings and 4457 current-owned IDs are confirmed by fresh bounded readback; the interrupted original call has no delivered full transaction creation/mutation/removal ledger. No transaction counts are inferred from the observed IDs.",
+        "Templates height correction: the original 4021 IDs labelled createdNodeIds are its current-owned census, retained separately from transaction creation IDs. Original output is preserved unchanged.",
+        "Inherited Transactions sidebar active Overview is preserved outside the owned Main/SLOT scope.",
+        "Catalog metadata transport exposes HTML entity residue in component metadata; final source UI copy guards passed. No source master edits were made after page321:59 scope release.",
+        "Maps viewport intentionally crops vector bounds. Upstream Hub wordmark geometry and provider logo certification are outside this ownership scope.",
+        "This receipt certifies only the bounded native source bindings and recorded readbacks; no backend/telephony, mobile/background, responsive browser, keyboard/motion or global pixel parity certification."
+      ]
     },
     "integrationBrands": {
       "status": "completed-bounded-native-QA-and-source-reconciliation",
@@ -3758,7 +6426,7 @@
       }
     },
     "nativeRefinements": {
-      "status": "awaiting-native-execution",
+      "status": "bounded-native-source-refinements-recorded",
       "commerceAndAuth": {
         "status": "closed-scoped-execution-with-explicit-parity-gaps",
         "receipt": "design/reports/native-commerce-auth-recovery-2026-10-21.json",
@@ -3776,16 +6444,6 @@
         "preservedMasters": true,
         "remaining": [
           {
-            "area": "ImageEditor full copy/actions",
-            "status": "partial",
-            "detail": "Legacy shell/upload copy and action arrangement were preserved outside this bounded sizing/seed change. Source Earlier/Later guards and missing Later control need subsequent native parity work."
-          },
-          {
-            "area": "Order Search Input native placement",
-            "status": "pending",
-            "detail": "Placeholder alignment/instance FILL behavior seen in actual capture/read; source left placement not corrected during bounded close."
-          },
-          {
             "area": "Auth fallback fractional width",
             "status": "observed-limitation",
             "detail": "Inherited layer width763 vs host763.2; full height verified. No whole-browser pixel parity claim."
@@ -3800,7 +6458,8 @@
         "actualArtifacts": [
           "design/proofs/2026-10-21/product-table.png"
         ],
-        "pendingSourceActionsRecordedSeparately": true
+        "pendingSourceActionsRecordedSeparately": true,
+        "laterNativeRefinementsReceipt": "design/reports/native-image-editor-order-recovery-2026-10-21.json"
       },
       "maps": {
         "status": "complete-bounded-native-qa-with-explicit-limits",
@@ -6967,6 +9626,429 @@
         },
         "routeRootBinding": "Pending the independently recorded inherited-root writer pass",
         "browserParity": "not-verified"
+      },
+      "imageEditorAndOrder": {
+        "status": "COMPLETE_NATIVE_SCOPE_WITH_DOCUMENTED_LIMITATIONS",
+        "receipt": "design/reports/native-image-editor-order-recovery-2026-10-21.json",
+        "preservedEditorRoots": [
+          "332:345",
+          "332:382",
+          "332:393",
+          "332:431",
+          "332:469",
+          "332:507"
+        ],
+        "editorSetId": "332:545",
+        "mobileRootId": "540:71",
+        "mobileWidth": 390,
+        "mobileThumbnail": 112,
+        "mobileColumns": 1,
+        "cropRootId": "332:297",
+        "cropState": "Preparing preview; no raster decode",
+        "sourceReadback": {
+          "writes": 0,
+          "sourceScopeResult": "NATIVE_COPY_LAYOUT_OBSERVED",
+          "crop": {
+            "rootId": "332:297",
+            "size": [
+              896,
+              632
+            ],
+            "settings": [
+              240,
+              412
+            ],
+            "preview": [
+              582,
+              352
+            ],
+            "pendingPreview": [
+              582,
+              320
+            ],
+            "aspectOptions": [
+              {
+                "id": "542:2952",
+                "bounds": [
+                  0,
+                  0,
+                  116,
+                  32
+                ]
+              },
+              {
+                "id": "542:2961",
+                "bounds": [
+                  124,
+                  0,
+                  116,
+                  32
+                ]
+              },
+              {
+                "id": "542:2969",
+                "bounds": [
+                  0,
+                  40,
+                  116,
+                  32
+                ]
+              },
+              {
+                "id": "542:2977",
+                "bounds": [
+                  124,
+                  40,
+                  116,
+                  32
+                ]
+              }
+            ],
+            "rotationBGs": [
+              {
+                "id": "542:3018",
+                "size": [
+                  32,
+                  32
+                ]
+              },
+              {
+                "id": "542:3028",
+                "size": [
+                  32,
+                  32
+                ]
+              }
+            ],
+            "disabledRootOpacity": 1,
+            "rasterImageFills": 0,
+            "nativeRanges": "Actual preserved faces, 240x24, disabled0.45; numeric defaults and displayed values match contract; browser geometry unverified"
+          },
+          "mobile": {
+            "id": "540:71",
+            "size": [
+              390,
+              578
+            ],
+            "sourceOnlyFixture": true
+          },
+          "foundations": {
+            "textStyles": 14,
+            "variables": 714,
+            "effectStyles": 6,
+            "fingerprint": "a4c377f0",
+            "effectFingerprint": "d7c8e028",
+            "unchangedFromActualPreflight": true
+          },
+          "order": {
+            "setId": "374:1984",
+            "preservedRootIds": [
+              "374:1568",
+              "374:1652",
+              "374:1734",
+              "374:1817",
+              "374:1900"
+            ],
+            "fiveSearchesLeft": true,
+            "nineProtectedButtonBounds": true
+          }
+        },
+        "deliveredIDCounts": {
+          "created": 523,
+          "mutated": 136,
+          "removed": 151
+        },
+        "sourceHashes": {
+          "src/components/blocks/product-image-editor.tsx": {
+            "sha256": "c52351631ba44c39848d1285e942dd0b7c76fec47cca84cb64fbcbbcda2d42ef",
+            "lines": 980
+          },
+          "src/lib/product-images.ts": {
+            "sha256": "e56c5251d30b9ed56ba51985acbbbebe9e0c743ba51864d7438842faa4890896",
+            "lines": 412
+          },
+          "src/components/ui/button.tsx": {
+            "sha256": "7a4ba03ec89978c4f15545255256876c682ba49bf6bad80d6728fe632ccf563e",
+            "lines": 115
+          },
+          "src/components/ui/input.tsx": {
+            "sha256": "e298407c39e3a2b219d9ab26a78e00c0462ebf7398a3661df4d96cec2e1d12b0",
+            "lines": 13
+          },
+          "src/components/ui/field.tsx": {
+            "sha256": "87d53f7f8e0eadebc51c468ba165e188a35918578918517d77c131dfa456c8ec",
+            "lines": 49
+          },
+          "src/components/ui/badge.tsx": {
+            "sha256": "1b75103b2193a6007c03a951b65f53afaab3d4a60e2ba7be7e14109241a3c509",
+            "lines": 59
+          },
+          "src/components/ui/dialog.tsx": {
+            "sha256": "3e6aee4a82ec79782f923257b90136ace310300b80f3891bdf14905766d16acb",
+            "lines": 76
+          },
+          "src/components/ui/alert.tsx": {
+            "sha256": "17db9f5ee5d5c027c0ff0661afe132a4467c749e97edff048497b1d085ec0491",
+            "lines": 41
+          },
+          "src/styles/tokens.css": {
+            "sha256": "ebbe0e865f7f7d40bf7ad95d712858f9495813d70b03feda8fc44611b97ac6c7",
+            "lines": 499
+          },
+          "src/app/globals.css": {
+            "sha256": "4f13ba6c688ec8c71ff63ce2f50b757f72732e5aeed81394b3df3c506e4bf73b",
+            "lines": 190
+          },
+          "src/demo/product-assets.ts": {
+            "sha256": "196d803f01ce1424cd05dc2e603082c9f9ac9596f35f954d57c75c74ee515bc4",
+            "lines": 100
+          },
+          "src/demo/generated-image-metadata.ts": {
+            "sha256": "4c725d9352a111b33b1ea52f5a0f32f071240c0100026968f85556be32c3f6d2",
+            "lines": 195
+          },
+          "src/demo/entities.ts": {
+            "sha256": "cb6a9417eccb5c78b48ad2fd82ff13389222491012f5ac149b3a2a3487070756",
+            "lines": 294
+          },
+          "src/demo/commerce-data.ts": {
+            "sha256": "a26d280eaea363773214e5729e734910babce9121420f5ea89c3aa1761b22925",
+            "lines": 136
+          }
+        },
+        "postfixOrderCapture": [
+          {
+            "filename": "native-order-editor-postfix-final.png",
+            "targetId": "374:1984",
+            "method": "exportAsync PNG; SCALE1; contentsOnly; figma.io.write",
+            "exportCount": 1,
+            "byteLength": 371518,
+            "dimensions": [
+              1872,
+              2882
+            ],
+            "actualFigmaExport": true,
+            "inlineImageReturned": true,
+            "visuallyInspected": true,
+            "observed": "All5variants visible; searches aligned left, source2columns catalogue in clipped320viewport, selectedForma1 and $148.00, qtyminus/plus and close controls contained within preserved buttons, emptyCreateenabled and locked/pending visualstates visible. No extra capture or browser certification.",
+            "localPath": null,
+            "sha256": null,
+            "availability": "Actual connector response inline PNG; local file not returned. SHA256 unavailable; no invented hash."
+          }
+        ],
+        "limitations": [
+          {
+            "item": "Sending357:1707",
+            "actualPageId": "344:59",
+            "status": "OUTSIDE_GRANTED_PAGE_SKIPPED"
+          },
+          {
+            "item": "Browser, React callbacks, upload/crop encode/decode, actual payments/carriers/authentication",
+            "status": "NOT_EXECUTED_NOT_CERTIFIED"
+          },
+          {
+            "item": "Crop range native face thumb/track pixels",
+            "status": "EXISTING_FACE_PRESERVED_BROWSER_GEOMETRY_UNVERIFIED"
+          },
+          {
+            "item": "Native file input Choose files / No file chosen",
+            "status": "EXPLICIT_EN_UA_FIXTURE_NOT_APP_LITERAL"
+          },
+          {
+            "item": "Typography shared style links",
+            "status": "PARTIAL_LOCAL_EXACT_FONT_SIZE_LEADING_OBSERVED"
+          },
+          {
+            "item": "Postfix Order PNG local file",
+            "status": "ACTUAL_PNG_INLINE_RETURNED_AND_VIEWED_NO_LOCAL_COPY_OR_SHA",
+            "detail": "One export produced371518bytes/1872x2882 via figma.io.write; returned as inline image. Exact path and /tmp byte-size search found no local file; no further export was made."
+          }
+        ],
+        "browserParityCertified": false
+      },
+      "sending": {
+        "status": "ACTUAL_PASS_SCOPED_SENDING_GLYPH",
+        "receipt": "design/reports/native-sending-recovery-2026-10-21.json",
+        "rootId": "357:1707",
+        "pageId": "344:59",
+        "createdIds": [
+          "550:63",
+          "550:64"
+        ],
+        "mutatedIds": [
+          "357:1711",
+          "357:1712"
+        ],
+        "glyph": "Actual installed Lucide LoaderCircle16",
+        "sourceHashes": {
+          "src/components/blocks/ai-message-parts.tsx": {
+            "sha256": "c228f64be957b0c5ede44ba01666f554422afa8462aaade858c6294f7306da16",
+            "bytes": 21273
+          },
+          "src/components/ui/button.tsx": {
+            "sha256": "7a4ba03ec89978c4f15545255256876c682ba49bf6bad80d6728fe632ccf563e",
+            "bytes": 4878
+          },
+          "src/components/ui/spinner.tsx": {
+            "sha256": "0eef86a65d7a7efe2836b8c68832893f9c0d9d0004663299fe4eb919c35557c2",
+            "bytes": 513
+          },
+          "src/components/templates/ai-workspace.tsx": {
+            "sha256": "c5b74b975f68fb580086a462dcc1938706f47a51b8e138ea6cd2178ff43a4c3b",
+            "bytes": 35285
+          },
+          "node_modules/lucide-react/dist/esm/icons/loader-circle.js": {
+            "sha256": "48d572082bb057cd6630c08c04404dfce2623cbb488bb68ab86b1ca1bb47d35f",
+            "bytes": 473
+          },
+          "node_modules/lucide-react/dist/esm/defaultAttributes.js": {
+            "sha256": "aeafb38d6464355ef7bbfd158e92920fb168356ae08bae2b00c6132eb855c82a",
+            "bytes": 493
+          }
+        },
+        "independentReadback": {
+          "writes": 0,
+          "root": {
+            "id": "357:1707",
+            "pageId": "344:59",
+            "type": "COMPONENT",
+            "size": [
+              600,
+              215
+            ],
+            "ownedChildIds": [
+              "357:1708",
+              "357:1709",
+              "357:1710",
+              "357:1711"
+            ]
+          },
+          "set": {
+            "id": "357:1763",
+            "stateOptions": [
+              "Requested",
+              "Sending",
+              "Submitted",
+              "Decision failed",
+              "Inactive",
+              "Backend approved",
+              "Backend rejected"
+            ],
+            "unchanged": true
+          },
+          "actions": {
+            "id": "357:1711",
+            "size": [
+              552,
+              40
+            ],
+            "children": [
+              "357:1712",
+              "357:1716",
+              "550:63"
+            ]
+          },
+          "spinner": {
+            "id": "550:63",
+            "parentId": "357:1711",
+            "size": [
+              16,
+              16
+            ],
+            "position": [
+              38.5,
+              12
+            ],
+            "layoutPositioning": "ABSOLUTE",
+            "opacity": 0.4000000059604645,
+            "visible": true,
+            "resolvedModes": {
+              "VariableCollectionId:2:7": "2:0",
+              "VariableCollectionId:2:36": "2:2"
+            }
+          },
+          "path": {
+            "id": "550:64",
+            "type": "VECTOR",
+            "size": [
+              12,
+              12
+            ],
+            "strokeWeight": 1.3333333730697632,
+            "strokeCap": "ROUND",
+            "strokeJoin": "ROUND",
+            "vectorPathCount": 1,
+            "windingRule": "NONE",
+            "nativeImport": "Source Lucide arc normalized by actual Figma SVG parser to cubic path; observed via vectorPaths",
+            "colorAlias": "VariableID:2:45"
+          },
+          "approve": {
+            "id": "357:1712",
+            "type": "INSTANCE",
+            "size": [
+              180,
+              40
+            ],
+            "padding": [
+              40,
+              16
+            ],
+            "labelId": "I357:1712;3:20",
+            "label": "Approve tool",
+            "labelBounds": [
+              62.5,
+              11,
+              79,
+              18
+            ],
+            "iconLabelGap": 8,
+            "font": {
+              "family": "Manrope",
+              "style": "SemiBold",
+              "variationSettings": {
+                "wght": 600
+              }
+            },
+            "fontSize": 13,
+            "lineHeight": {
+              "unit": "AUTO"
+            },
+            "textStyleId": "",
+            "style": "Primary",
+            "sizeVariant": "Medium",
+            "stateVariant": "Default"
+          },
+          "reject": {
+            "id": "357:1716",
+            "type": "INSTANCE",
+            "size": [
+              180,
+              40
+            ],
+            "label": "Reject tool",
+            "style": "Outline",
+            "sizeVariant": "Medium",
+            "stateVariant": "Default"
+          },
+          "foundations": {
+            "variables": 714,
+            "textStyles": 14,
+            "effectStyles": 6,
+            "fingerprint": "a4c377f0",
+            "effectFingerprint": "d7c8e028",
+            "matchesPriorActualImmutableFoundationFingerprint": true
+          },
+          "instancesDetached": 0,
+          "captures": 0,
+          "animationRuntimeCertified": false,
+          "wholeCardSourceParityCertified": false,
+          "certificate": "PASS only for missing SourceLoaderCircle16 shape/currentColor/placement and preserved native instances; no whole-card, CSS motion, browser or backend claims."
+        },
+        "limitations": [
+          "Current native Sending buttons have40px height/.4opacity/gap12 and omit sourceCheck/X; source hasmin44/.45/gap8. These pre-existing differences remain outside the requested missing-spinner change; no whole-card parity claim.",
+          "No backend/React runtime/CSS motion/reduced-motion/browser certificate."
+        ],
+        "motionOrBrowserCertified": false
       }
     }
   },
@@ -9717,7 +12799,7 @@
       }
     },
     "localArtifactsIncluded": true,
-    "artifactLimit": "Selected current native Product Table PNG and Maps schematic SVG are included. Earlier documentation and public Landing/Quality captures were emitted inline by the actual Figma tools; no local copies are claimed. Additional native proof entries are recorded only after actual exports.",
+    "artifactLimit": "Selected actual native Product Table, provider gallery, provider Hub and Transactions PNGs plus Maps schematic SVG are included. Earlier inline-only captures retain that scope. Later mobile and editor exports are recorded upon receipt.",
     "commerceAndAuth": [
       {
         "file": "design/proofs/2026-10-21/product-table.png",
@@ -9817,7 +12899,66 @@
         "mainVisualReview": "PASS for bounded changed source",
         "browserParityCertified": false
       }
-    ]
+    ],
+    "catalogAndInherited": {
+      "artifact": "design/proofs/2026-10-21/transactions-native.png",
+      "sourceNodeId": "41:3597",
+      "sha256": "f348ad877b04192aea2ee7df1ce0d00c843ba40d664c2e7e0d1da6b82fbcd5ff",
+      "size": [
+        1440,
+        1380
+      ],
+      "method": "Original inline PNG image of the single native screenshot call; no additional screenshot or export",
+      "visualResult": "5 rows fully visible; 7 total; $3,540 metric and zero-decimal row amounts; no critical text clipping in owned Main",
+      "sidebarScopeLimitation": "Inherited sidebar active Overview retained because dashboard chrome is outside the owned Main/SLOT mutation scope.",
+      "visuallyInspectedByMain": true,
+      "browserParityCertified": false
+    },
+    "imageEditorAndOrder": {
+      "method": "Single actual postfix Order PNG returned inline and inspected by writer",
+      "capture": [
+        {
+          "filename": "native-order-editor-postfix-final.png",
+          "targetId": "374:1984",
+          "method": "exportAsync PNG; SCALE1; contentsOnly; figma.io.write",
+          "exportCount": 1,
+          "byteLength": 371518,
+          "dimensions": [
+            1872,
+            2882
+          ],
+          "actualFigmaExport": true,
+          "inlineImageReturned": true,
+          "visuallyInspected": true,
+          "observed": "All5variants visible; searches aligned left, source2columns catalogue in clipped320viewport, selectedForma1 and $148.00, qtyminus/plus and close controls contained within preserved buttons, emptyCreateenabled and locked/pending visualstates visible. No extra capture or browser certification.",
+          "localPath": null,
+          "sha256": null,
+          "availability": "Actual connector response inline PNG; local file not returned. SHA256 unavailable; no invented hash."
+        }
+      ],
+      "localCopyIncluded": false,
+      "sha256Available": false,
+      "browserParityCertified": false
+    },
+    "communications": {
+      "attempts": 1,
+      "status": "native-PNG-emitted",
+      "error": null,
+      "contentsOnly": true,
+      "scope": "Actual Softphone Mobile390 Light after bounded corrections; one selected native view only",
+      "plannedCount": 1,
+      "completedCount": 1,
+      "utc": "2026-10-21T21:05:45.517Z",
+      "sourceRootID": "538:1520",
+      "sourceRootDimensions": [
+        390,
+        2965
+      ],
+      "delivery": "One PNG emitted inline by use_figma screenshot API; no download path or URL was returned.",
+      "localPNGPath": null,
+      "visualReviewStatus": "Limited selected native view inspected; no integral visual/browser parity certification.",
+      "noCanvasWrites": true
+    }
   },
   "publication": {
     "branch": "main",

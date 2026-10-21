@@ -64,6 +64,8 @@ The [Communications research package](docs/communications/RESEARCH.md) explores 
 
 The [Figma source record](design/reports/communications-2026-10-21.md) links the proposed views and RFC boards, and tracks recovery of existing application and integration design sources.
 
+The [softphone has a Figma proposal](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-298), but no React screen, demo route or telephone connection is implemented yet. Its first functional delivery belongs to the inbound voice MVP in the roadmap.
+
 ## Commerce, maps and authentication
 
 [![Stripe typed frontend adapter](https://img.shields.io/badge/Stripe-typed%20adapter-635BFF?style=flat-square&logo=stripe&logoColor=white)](https://aureformui.com/en/docs/adapters/) [![Google Maps with an optional browser key](https://img.shields.io/badge/Google%20Maps-optional%20key-1D4ED8?style=flat-square&logo=googlemaps&logoColor=white)](https://aureformui.com/en/docs/maps/) [![Google, GitHub and Microsoft OAuth frontend mocks](https://img.shields.io/badge/OAuth-frontend%20mocks-111827?style=flat-square)](https://aureformui.com/en/docs/authentication/)

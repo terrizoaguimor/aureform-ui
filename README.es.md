@@ -64,6 +64,8 @@ El [paquete de investigación de Communications](docs/communications/RESEARCH.md
 
 El [registro de fuentes Figma](design/reports/communications-2026-10-21.md) enlaza las vistas y los tableros de RFC propuestos, y registra la recuperación de diseños de aplicaciones e integraciones anteriores.
 
+El [softphone tiene una propuesta en Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=317-298), pero todavía no tiene pantalla React, ruta en la demo ni conexión telefónica implementadas. Su primera entrega funcional corresponde al MVP de voz entrante del roadmap.
+
 ## Comercio, mapas y autenticación
 
 [![Adaptador frontend tipado de Stripe](https://img.shields.io/badge/Stripe-adaptador%20tipado-635BFF?style=flat-square&logo=stripe&logoColor=white)](https://aureformui.com/es/docs/adapters/) [![Google Maps con clave de navegador opcional](https://img.shields.io/badge/Google%20Maps-clave%20opcional-1D4ED8?style=flat-square&logo=googlemaps&logoColor=white)](https://aureformui.com/es/docs/maps/) [![Mocks frontend de OAuth con Google, GitHub y Microsoft](https://img.shields.io/badge/OAuth-mocks%20frontend-111827?style=flat-square)](https://aureformui.com/es/docs/authentication/)

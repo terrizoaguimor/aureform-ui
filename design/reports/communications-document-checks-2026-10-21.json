@@ -154,12 +154,151 @@
       ],
       "browserAcceptance": false,
       "allOptionalVariantsIndividuallyReviewed": false
+    },
+    "deploymentCI": {
+      "recordedAtUTC": "2026-10-21T18:41:44.840899+00:00",
+      "sourceCommit": "f711450313d93e8c0ea566fa017e27357ee945a1",
+      "cloudflare": {
+        "runId": 39652109694,
+        "status": "completed",
+        "url": "https://github.com/terrizoaguimor/aureform-ui/actions/runs/39652109694",
+        "conclusion": "success"
+      },
+      "pages": {
+        "runId": 39652109619,
+        "status": "completed",
+        "url": "https://github.com/terrizoaguimor/aureform-ui/actions/runs/39652109619",
+        "conclusion": "success"
+      },
+      "browserSuites": "Existing website and integration suites passed on both targets",
+      "liveVerification": [
+        {
+          "origin": "https://aureformui.com",
+          "sourceCommit": "f711450313d93e8c0ea566fa017e27357ee945a1",
+          "brandIdentities": 79,
+          "providerChoices": 86,
+          "nativeFigma": "original-artwork-imported-and-source-UI-bound",
+          "originalAssetSamplesByteIdentical": [
+            "openai.svg",
+            "google-gemini.svg",
+            "authjs-nextauth.svg",
+            "react-email.svg",
+            "trigger-dev.svg"
+          ],
+          "status": "PASS"
+        },
+        {
+          "origin": "https://terrizoaguimor.github.io/aureform-ui",
+          "sourceCommit": "f711450313d93e8c0ea566fa017e27357ee945a1",
+          "brandIdentities": 79,
+          "providerChoices": 86,
+          "nativeFigma": "original-artwork-imported-and-source-UI-bound",
+          "originalAssetSamplesByteIdentical": [
+            "openai.svg",
+            "google-gemini.svg",
+            "authjs-nextauth.svg",
+            "react-email.svg",
+            "trigger-dev.svg"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "exhaustiveFigmaPixelAndInteractionParity": false
+    },
+    "catalogAndInheritedNativeSource": {
+      "status": "PASS-with-documented-transaction-ledger-limitation",
+      "receipt": "design/reports/native-catalog-inherited-recovery-2026-10-21.json",
+      "catalogMasters": 3,
+      "blocks": 12,
+      "blockSourceCompositions": 7,
+      "templates": 50,
+      "previewSlots": 100,
+      "preservedInheritedRoots": 23,
+      "ownedScrollCorrections": 5,
+      "settingsHeadingAndSevenTabs": true,
+      "billingSourceWidth": 1024,
+      "marketingPrices": [
+        0,
+        19,
+        49
+      ],
+      "deliveredTransactionIDs": {
+        "created": 11479,
+        "mutated": 21379,
+        "removed": 4922
+      },
+      "completeTransactionLedger": false,
+      "interruptedApplicationCurrentOwnedIDs": 4457,
+      "observedOwnershipExcludedFromTransactionCounts": true,
+      "nativeProof": "design/proofs/2026-10-21/transactions-native.png",
+      "proofVisuallyInspected": true,
+      "browserParityCertified": false,
+      "realTelephonyTested": false
+    },
+    "imageEditorAndOrderNativeSource": {
+      "status": "PASS-scoped-independent-native-readback",
+      "receipt": "design/reports/native-image-editor-order-recovery-2026-10-21.json",
+      "editorRootsPreserved": 6,
+      "mobileWidth": 390,
+      "mobileThumbnailSize": 112,
+      "mobileColumns": 1,
+      "cropWidth": 896,
+      "cropSettingsWidth": 240,
+      "cropRasterFills": 0,
+      "orderSearchesLeftAligned": 5,
+      "protectedOrderButtons": 9,
+      "onePostfixOrderPNG": "returned-inline; no local bytes/SHA",
+      "completeBrowserOrDecoderParityCertified": false
+    },
+    "communicationsNativeSource": {
+      "status": "pass-bounded-native-source-and-text-checks",
+      "recordedAtUTC": "2026-10-21T21:07:22.548Z",
+      "receipt": "design/reports/native-communications-responsive-recovery-2026-10-21.json",
+      "desktopLightViews": 12,
+      "mobileLightViews": 12,
+      "mobileDarkViews": 12,
+      "currentRFCBoards": 7,
+      "sourceFileHashesUnchanged": 7,
+      "fullTextOccurrenceCoverage": "36/36",
+      "mobileHorizontalOverflow": "0 across 24 views",
+      "resolvedOrExplicitWrongModes": 0,
+      "native44Rectangles": 394,
+      "nativeRectanglesProveBrowserHitAreas": false,
+      "originalDesktopDarkViewsPreserved": 12,
+      "originalStateVariantsPreserved": 25,
+      "actualCreatedIDs": 3766,
+      "actualMutatedIDs": 3895,
+      "actualRemovedIDs": 216,
+      "selectedCapture": "Softphone Mobile Light 538:1520, 390x2965, inline only",
+      "localCaptureFile": null,
+      "completeVisualOrBrowserCertification": false,
+      "productionImplementation": false
+    },
+    "sendingNativeSource": {
+      "status": "pass-missing-loader-glyph-scope-only",
+      "receipt": "design/reports/native-sending-recovery-2026-10-21.json",
+      "rootId": "357:1707",
+      "sourceLoaderCircleSize": 16,
+      "createdIds": [
+        "550:63",
+        "550:64"
+      ],
+      "mutatedIds": [
+        "357:1711",
+        "357:1712"
+      ],
+      "sharedFoundationMutations": false,
+      "browserMotionOrWholeCardParity": false,
+      "limitations": [
+        "Current native Sending buttons have40px height/.4opacity/gap12 and omit sourceCheck/X; source hasmin44/.45/gap8. These pre-existing differences remain outside the requested missing-spinner change; no whole-card parity claim.",
+        "No backend/React runtime/CSS motion/reduced-motion/browser certificate."
+      ]
     }
   },
   "notExecuted": [
     "Carrier account, number, call, messaging, WABA or billing tests",
     "Backend security, media continuity or SDK interoperability tests",
-    "Browser pixel, interaction or accessibility acceptance"
+    "Exhaustive Figma/browser pixel, interaction, localization, motion and accessibility acceptance"
   ],
   "nativeEvidenceRecord": "design/reports/communications-2026-10-21.md",
   "productionArchitectureChanged": false,
@@ -172,20 +311,20 @@
     "browserParity": "not-verified"
   },
   "additionalFilesystemSnapshot": {
-    "recordedAtUTC": "2026-10-21T18:16:02.727Z",
+    "recordedAtUTC": "2026-10-21T21:12:30.194Z",
     "status": "pass-current-filesystem-snapshot",
     "sevenDocumentHashesUnchanged": true,
-    "markdownFiles": 11,
+    "markdownFiles": 12,
     "localMarkdownLinks": {
-      "checked": 280,
-      "externalURLsSkipped": 899,
-      "markdownAnchors": 14,
+      "checked": 376,
+      "externalURLsSkipped": 1026,
+      "markdownAnchors": 17,
       "sourceLineFragments": 19
     },
     "graph": {
       "nodes": 14,
       "edges": 32,
-      "scope": "Manual illustrative graph checks; no product validator implemented"
+      "scope": "Illustrative source graph checked; no product validator implemented"
     },
     "brandManifestFilesCheckedByThisDocumentPass": 119,
     "canonicalMapsSVG": {
@@ -196,10 +335,10 @@
       "nativeExportEvidenceSnapshotAtUTC": "2026-10-21T16:34:28.089Z",
       "fullWorkspaceOrBrowserAcceptance": false
     },
-    "errors": 0,
-    "rerunAfterFinalNativeEdits": true,
-    "officialSourcesReaccessed": false,
-    "browserOrCarrierAcceptance": false,
-    "scope": "Current first publication checkpoint; rerun after remaining native source recovery edits"
+    "originalEightExportIndexPreserved": true,
+    "documentCheckAfterScopedNativeWritersReturned": true,
+    "sourceMapIncludedCurrentClosedNativeReceipts": true,
+    "scope": "Filesystem document and reference integrity only; native and runtime acceptance retain their separate recorded limits",
+    "defects": 0
   }
 }
