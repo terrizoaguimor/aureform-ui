@@ -11,12 +11,13 @@ import { createHmac, randomBytes, randomUUID } from "node:crypto";
 import twilio from "twilio";
 import { createBackend } from "../server.js";
 import { validateConfig, fail } from "../lib/config.js";
-import { createProviders } from "../lib/providers.js";
+import { createProviders, ProviderFailure } from "../lib/providers.js";
 import { createSetupProviderOperations, SetupProviderError } from "../lib/setup-providers.js";
 import { EncryptedSetupStore } from "../lib/setup-store.js";
 import { parseForm, sha256 } from "../lib/security.js";
 
 const ORIGIN = "http://127.0.0.1:3000";
+const LOCALHOST_ORIGIN = "http://localhost:3000";
 const OTHER_ALLOWED_ORIGIN = "https://second-ui.example.invalid";
 const PUBLIC_URL = "https://setup-backend.example.invalid";
 const NOW = Date.parse("2026-10-21T14:00:00Z");
@@ -88,6 +89,9 @@ async function fixture(t, options = {}) {
   let failAfterKey;
   let failInspection;
   let providerResponseFailure;
+  let providerTimeout;
+  let regionResponse;
+  let ownedNumberMissing;
   let failHangup;
   let numberReadOverride;
   const running = new Set();
@@ -113,6 +117,13 @@ async function fixture(t, options = {}) {
       code: "VENDOR_RAW_ERROR",
       message: "Vendor raw message " + credentials.authToken + " " + accessCode,
     }, providerResponseFailure);
+    if (providerTimeout) throw new DOMException("Synthetic timeout " + credentials.authToken + " " + accessCode, "TimeoutError");
+    if (regionRead && regionResponse) {
+      if (typeof regionResponse.body === "string") return new Response(regionResponse.body, {
+        status: regionResponse.status, headers: { "Content-Type": "text/html" },
+      });
+      return json(regionResponse.body, regionResponse.status);
+    }
     if (regionRead) return json({
       account_sid: credentials.accountSid, phone_number: NUMBER, voice_region: "us1",
     });
@@ -120,6 +131,8 @@ async function fixture(t, options = {}) {
       return json({ sid: accountResponseSid, status: accountStatus, type: "Full", auth_token: credentials.authToken, friendly_name: "Synthetic account" });
     if (method === "GET" && url.pathname === prefix + "/IncomingPhoneNumbers.json")
       return json({ incoming_phone_numbers: [structuredClone(number)], next_page_uri: null });
+    if (method === "GET" && url.pathname === prefix + "/IncomingPhoneNumbers/" + number.sid + ".json" && ownedNumberMissing)
+      return json({ code: 20404, status: 404, message: "Synthetic missing owned number " + credentials.authToken }, 404);
     if (method === "GET" && url.pathname === prefix + "/IncomingPhoneNumbers/" + number.sid + ".json")
       return json(numberReadOverride ? numberReadOverride(structuredClone(number)) : structuredClone(number));
     if (method === "POST" && url.pathname === prefix + "/Keys.json") {
@@ -165,7 +178,7 @@ async function fixture(t, options = {}) {
   const setupOperations = createSetupProviderOperations({ fetch: providerHTTP, publicBaseUrl: PUBLIC_URL, now: () => time });
   const baseConfig = validateConfig({
     tenantId: "automatic-setup-http-laboratory",
-    origins: [ORIGIN, OTHER_ALLOWED_ORIGIN],
+    origins: [ORIGIN, LOCALHOST_ORIGIN, OTHER_ALLOWED_ORIGIN],
     schedule: { timezone: "America/Bogota", weekly: [
       { day: 1, start: "08:00", end: "18:00" },
       { day: 2, start: "08:00", end: "18:00" },
@@ -370,6 +383,9 @@ async function fixture(t, options = {}) {
     setAccountStatus: (value) => { accountStatus = value; },
     setInspectionFailure: () => { failInspection = true; },
     setProviderResponseFailure: (status) => { providerResponseFailure = status; },
+    setProviderTimeout: () => { providerTimeout = true; },
+    setRegionResponse: (status, body) => { regionResponse = { status, body }; },
+    setOwnedNumberMissing: () => { ownedNumberMissing = true; },
     setLostKeyResponse: () => { failAfterKey = true; },
     setHangupFailure: (value) => { failHangup = value; },
     setNumberReadOverride: (value) => { numberReadOverride = value; },
@@ -380,6 +396,13 @@ async function fixture(t, options = {}) {
 function noSecrets(text, f) {
   for (const value of [f.credentials.authToken, f.accessCode, f.masterKey, ...[...f.keys.values()].map((key) => key.secret)])
     assert.equal(text.includes(value), false, "HTTP must not expose a private fixture credential");
+}
+
+function jsonCors(reply, origin = ORIGIN) {
+  assert.equal(reply.response.headers.get("access-control-allow-origin"), origin);
+  assert.equal(reply.response.headers.get("vary"), "Origin");
+  assert.match(reply.response.headers.get("content-type"), /^application\/json\b/);
+  assert.equal(reply.response.headers.get("cache-control"), "no-store");
 }
 
 test("HTTP setup login is opaque, Origin-bound, no-store and expires at the exact ten-minute boundary", async (t) => {
@@ -950,6 +973,7 @@ test("SetupProviderError from a real injected 401 transport response becomes sec
   f.setProviderResponseFailure(401);
   const reply = await f.inspect();
   assert.equal(reply.response.status, 401);
+  jsonCors(reply);
   noSecrets(reply.text, f);
   assert.deepEqual(reply.body, { error: { code: "invalid-credentials", message: "invalid-credentials" } });
   assert.equal(reply.text.includes("VENDOR_RAW_ERROR"), false);
@@ -963,6 +987,7 @@ test("SetupProviderError from a real injected 403 transport response becomes sec
   f.setProviderResponseFailure(403);
   const reply = await f.inspect();
   assert.equal(reply.response.status, 403);
+  jsonCors(reply);
   noSecrets(reply.text, f);
   assert.deepEqual(reply.body, { error: { code: "permission-denied", message: "permission-denied" } });
   assert.equal(reply.text.includes("VENDOR_RAW_ERROR"), false);
@@ -973,8 +998,8 @@ test("SetupProviderError from a real injected 403 transport response becomes sec
 test("SetupProviderError conflict, unknown effects and remaining failures use only fixed public classifications", async (t) => {
   for (const [scenario, expectedStatus, code] of [
     ["routing drift", 409, "setup-reconciliation-required"],
-    ["unknown key creation", 502, "setup-reconciliation-required"],
-    ["unavailable transport", 502, "setup-failed"],
+    ["unknown key creation", 503, "setup-reconciliation-required"],
+    ["unavailable transport", 503, "setup-failed"],
     ["ineligible account", 422, "number-not-eligible"],
     ["private not-found code", 404, "number-not-eligible"],
     ["private other code", 400, "setup-failed"],
@@ -1006,11 +1031,190 @@ test("SetupProviderError conflict, unknown effects and remaining failures use on
       reply = await f.inspect();
     }
     assert.equal(reply.response.status, expectedStatus, scenario);
+    jsonCors(reply);
     noSecrets(reply.text, f);
     assert.deepEqual(reply.body, { error: { code, message: code } }, scenario);
     assert.equal(reply.text.includes("VENDOR_RAW_ERROR"), false);
     assert.equal(reply.text.includes("Vendor raw message"), false);
     assert.deepEqual((await f.request("/v1/communications/setup/connections")).body, []);
     assert.equal((await f.request("/health")).body.carrierOperationsEnabled, false);
+  }
+});
+
+test("plan dependency failures return readable HTTP 503 JSON with the exact allowed Origin and no provider effects", async (t) => {
+  for (const [origin, upstream] of [
+    [ORIGIN, 503], [LOCALHOST_ORIGIN, 503], [LOCALHOST_ORIGIN, 502],
+    [LOCALHOST_ORIGIN, 500], [LOCALHOST_ORIGIN, 429],
+  ]) {
+    const f = await fixture(t);
+    await f.login({ origin });
+    const inspected = await f.post("inspect", f.credentials, { origin });
+    assert.equal(inspected.response.status, 200);
+    f.setProviderResponseFailure(upstream);
+    const reply = await f.post("plan", { connectionId: inspected.body.connectionId, numberId: f.number.sid }, { origin });
+    assert.equal(reply.response.status, 503);
+    jsonCors(reply, origin);
+    noSecrets(reply.text, f);
+    assert.deepEqual(reply.body, { error: { code: "setup-failed", message: "setup-failed" } });
+    assert.equal(reply.text.includes("VENDOR_RAW_ERROR"), false);
+    assert.equal(reply.text.includes("Vendor raw message"), false);
+    assert.ok(f.requests.every((entry) => entry.method === "GET"), "planning stays read-only");
+    assert.deepEqual(f.effects, []);
+    assert.deepEqual(f.carrierCommands, []);
+    assert.equal(f.keys.size, 0);
+  }
+});
+
+test("plan transport exceptions and timeout classification preserve safe JSON and CORS without retries", async (t) => {
+  for (const timeout of [false, true]) {
+    const f = await fixture(t);
+    await f.login();
+    const inspection = (await f.inspect()).body;
+    const before = f.requests.length;
+    if (timeout) f.setProviderTimeout();
+    else f.setInspectionFailure();
+    const reply = await f.plan(inspection);
+    assert.equal(reply.response.status, 503);
+    jsonCors(reply);
+    noSecrets(reply.text, f);
+    assert.deepEqual(reply.body, { error: { code: "setup-failed", message: "setup-failed" } });
+    assert.equal(reply.text.includes("Synthetic timeout"), false);
+    assert.equal(reply.text.includes("Fixture raw error"), false);
+    assert.equal(f.requests.length, before + 1, "read failure must not be blindly retried");
+    assert.deepEqual(f.effects, []);
+    assert.deepEqual(f.carrierCommands, []);
+  }
+});
+
+test("malformed and unauthenticated plan errors retain allowed CORS while forbidden Origins are never reflected", async (t) => {
+  const f = await fixture(t);
+  const path = "/v1/communications/setup/plan";
+  const unauthorized = await f.request(path, {
+    method: "POST", origin: LOCALHOST_ORIGIN, token: null, raw: "{",
+  });
+  assert.equal(unauthorized.response.status, 401);
+  jsonCors(unauthorized, LOCALHOST_ORIGIN);
+  noSecrets(unauthorized.text, f);
+  assert.deepEqual(unauthorized.body, { error: { code: "unauthorized", message: "unauthorized" } });
+  await f.login({ origin: LOCALHOST_ORIGIN });
+  const malformed = await f.request(path, { method: "POST", origin: LOCALHOST_ORIGIN, raw: "{" });
+  assert.equal(malformed.response.status, 400);
+  jsonCors(malformed, LOCALHOST_ORIGIN);
+  noSecrets(malformed.text, f);
+  assert.deepEqual(malformed.body, { error: { code: "invalid-json", message: "invalid-json" } });
+  for (const origin of [
+    "https://evil.example.invalid", "http://localhost:3000.evil.invalid",
+    "http://localhost:3001", "null", null,
+  ]) {
+    const forbidden = await f.request(path, { method: "POST", origin, raw: "{" });
+    assert.equal(forbidden.response.status, 403);
+    assert.equal(forbidden.response.headers.get("access-control-allow-origin"), null);
+    assert.match(forbidden.response.headers.get("content-type"), /^application\/json\b/);
+    noSecrets(forbidden.text, f);
+    assert.deepEqual(forbidden.body, { error: { code: "origin-denied", message: "origin-denied" } });
+  }
+  assert.deepEqual(f.requests, []);
+  assert.deepEqual(f.effects, []);
+  assert.deepEqual(f.carrierCommands, []);
+});
+
+test("dependency remapping leaves legacy ProviderFailure and explicit ReferenceError HTTP 502 unchanged", async (t) => {
+  for (const legacy of [false, true]) {
+    const f = await fixture(t);
+    await f.login();
+    const inspection = (await f.inspect()).body;
+    f.setupOperations.twilio.plan = async () => {
+      if (legacy) throw new ProviderFailure("synthetic-legacy-provider-failure", false);
+      fail("invalid-provider-response", 502);
+    };
+    const reply = await f.plan(inspection);
+    assert.equal(reply.response.status, 502);
+    jsonCors(reply);
+    noSecrets(reply.text, f);
+    const code = legacy ? "synthetic-legacy-provider-failure" : "invalid-provider-response";
+    assert.deepEqual(reply.body, { error: { code, message: code } });
+    assert.deepEqual(f.effects, []);
+    assert.deepEqual(f.carrierCommands, []);
+  }
+});
+
+test("exact scoped region 404 allows a read-only implicit US1 plan while explicit approval still gates all writes", async (t) => {
+  const f = await fixture(t);
+  await f.login({ origin: LOCALHOST_ORIGIN });
+  const inspected = await f.post("inspect", f.credentials, { origin: LOCALHOST_ORIGIN });
+  assert.equal(inspected.response.status, 200);
+  f.setRegionResponse(404, {
+    code: 20404, status: 404, message: "Synthetic absent region resource " + f.credentials.authToken,
+  });
+  const reply = await f.post("plan", {
+    connectionId: inspected.body.connectionId, numberId: f.number.sid,
+  }, { origin: LOCALHOST_ORIGIN });
+  assert.equal(reply.response.status, 200);
+  jsonCors(reply, LOCALHOST_ORIGIN);
+  noSecrets(reply.text, f);
+  assert.equal(reply.body.phase, "review");
+  assert.equal(reply.body.number.phoneNumber, NUMBER);
+  assert.equal(reply.text.includes("20404"), false);
+  assert.equal(reply.text.includes("Synthetic absent"), false);
+  assert.ok(f.requests.some((entry) => entry.path === "/v2/PhoneNumbers/" + encodeURIComponent(NUMBER)));
+  assert.ok(f.requests.every((entry) => entry.method === "GET"));
+  assert.deepEqual(f.effects, []);
+  assert.equal(f.keys.size, 0);
+  const denied = await f.post("apply", {
+    planId: reply.body.planId, confirmation: { configure: false, replaceExistingRouting: false },
+  }, { origin: LOCALHOST_ORIGIN });
+  assert.equal(denied.response.status, 422);
+  jsonCors(denied, LOCALHOST_ORIGIN);
+  assert.deepEqual(f.effects, []);
+  assert.deepEqual(f.carrierCommands, []);
+});
+
+test("untrusted regional 404 payloads and JSON 200 cannot forge the internal implicit US1 fallback", async (t) => {
+  for (const [status, body, expected] of [
+    [404, "<!doctype html><html>not found</html>", 503],
+    [404, { code: 99999, status: 404 }, 503],
+    [404, { code: "20404", status: 404 }, 503],
+    [404, { code: 20404, status: 500 }, 503],
+    [404, { code: 20404 }, 503],
+    [404, { code: 20404, status: "404" }, 503],
+    [200, { code: 20404, status: 404 }, 422],
+    [200, { implicitUS1: true }, 422],
+    [403, { code: 20404, status: 404 }, 403],
+    [500, { code: 20404, status: 404 }, 503],
+  ]) {
+    const f = await fixture(t);
+    await f.login();
+    const inspection = (await f.inspect()).body;
+    f.setRegionResponse(status, body);
+    const reply = await f.plan(inspection);
+    assert.equal(reply.response.status, expected);
+    jsonCors(reply);
+    noSecrets(reply.text, f);
+    assert.notEqual(reply.body.phase, "review");
+    assert.deepEqual(f.effects, []);
+    assert.deepEqual(f.carrierCommands, []);
+    assert.equal(f.keys.size, 0);
+  }
+});
+
+test("owned number 404 and an explicitly incompatible region never receive the regional fallback", async (t) => {
+  for (const missingNumber of [false, true]) {
+    const f = await fixture(t);
+    await f.login();
+    const inspection = (await f.inspect()).body;
+    if (missingNumber) {
+      f.setOwnedNumberMissing();
+      f.setRegionResponse(404, { code: 20404, status: 404 });
+    } else {
+      f.setRegionResponse(200, { account_sid: f.credentials.accountSid, phone_number: NUMBER, voice_region: "ie1" });
+    }
+    const reply = await f.plan(inspection);
+    assert.equal(reply.response.status, missingNumber ? 503 : 422);
+    jsonCors(reply);
+    noSecrets(reply.text, f);
+    if (missingNumber) assert.equal(f.requests.some((entry) => entry.path.startsWith("/v2/PhoneNumbers/")), false);
+    assert.deepEqual(f.effects, []);
+    assert.deepEqual(f.carrierCommands, []);
+    assert.equal(f.keys.size, 0);
   }
 });

@@ -65,6 +65,22 @@
             "es": "Un host de conexión privado para un único propietario, con autenticación de aplicación separada, recuperación de perfiles configurados, renovación estable de sesión y autorización explícita de una prueba entrante limitada iniciada manualmente."
           }
         ]
+      },
+      {
+        "title": {
+          "en": "Fixed",
+          "es": "Corregido"
+        },
+        "items": [
+          {
+            "en": "Twilio setup now recognizes the documented implicit US1 region for an already verified owned number, while rejecting unrelated missing resources, invalid responses and unsupported explicit regions.",
+            "es": "El setup Twilio reconoce la región US1 implícita documentada para un número propio ya verificado, y sigue rechazando recursos ajenos ausentes, respuestas inválidas y regiones explícitas no admitidas."
+          },
+          {
+            "en": "Setup provider dependency failures retain redacted JSON and exact-origin CORS with HTTP 503, avoiding a proxy-generated 502 page that obscures the error. Uncertain writes remain reconciliation-only.",
+            "es": "Los fallos de dependencias del setup conservan JSON redactado y CORS por origen exacto con HTTP 503, evitando que una página 502 del proxy oculte el error. Las escrituras inciertas siguen exigiendo reconciliación."
+          }
+        ]
       }
     ],
     "notes": {

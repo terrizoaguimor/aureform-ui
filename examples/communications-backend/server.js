@@ -279,7 +279,11 @@ export function createBackend({ config = loadConfig(), env = process.env, provid
       const known = error instanceof ReferenceError;
       const providerFailure = error instanceof ProviderFailure;
       const setupFailure = error instanceof SetupProviderError;
-      const status = known ? error.status : setupFailure ? error.status : providerFailure ? 502 : error instanceof SyntaxError ? 400 : 500;
+      // Setup dependency failures retain their safe JSON classification while
+      // avoiding the gateway-error status replaced by the public tunnel.
+      const status = known ? error.status
+        : setupFailure ? (error.status === 502 ? 503 : error.status)
+          : providerFailure ? 502 : error instanceof SyntaxError ? 400 : 500;
       const code = known || providerFailure ? error.code : setupFailure
         ? error.unknown || error.status === 409 ? "setup-reconciliation-required"
           : error.status === 401 ? "invalid-credentials"

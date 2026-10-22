@@ -21,6 +21,7 @@ import { setTimeout as waitForPropagation } from "node:timers/promises";
  * https://www.twilio.com/docs/iam/api-keys/key-resource-v2010
  * https://www.twilio.com/docs/phone-numbers/api/incomingphonenumber-resource
  * https://www.twilio.com/docs/global-infrastructure/inbound-processing-region-api-phone-number
+ * https://www.twilio.com/docs/global-infrastructure/inbound-processing-api
  * https://developers.telnyx.com/api-reference/numbers-features/retrieve-the-features-for-a-list-of-numbers
  * https://developers.telnyx.com/api-reference/call-control-applications/create-a-call-control-application
  * https://developers.telnyx.com/api-reference/credential-connections/create-a-credential-connection
@@ -35,6 +36,9 @@ import { setTimeout as waitForPropagation } from "node:timers/promises";
  * do not establish the primary token needed for webhook signatures. Missing,
  * masked or unrecognized account/token values fail closed. Rechecks before each
  * write and final readback cannot make concurrent provider changes atomic.
+ * The documented v2 routing 404 means implicit US1 for API-provisioned numbers.
+ * Accept it only after verifying owned number eligibility, on the exact routing
+ * GET, with HTTP 404 and JSON code 20404/status 404. Never write a routing Region.
  */
 
 const TWILIO = "https://api.twilio.com";
@@ -43,6 +47,8 @@ const TELNYX = "https://api.telnyx.com/v2";
 const SID = { account: /^AC[0-9a-f]{32}$/i, number: /^PN[0-9a-f]{32}$/i, key: /^SK[0-9a-f]{32}$/i };
 const RESOURCE_ID = /^[A-Za-z0-9_-]{1,80}$/;
 const E164 = /^\+[1-9]\d{7,14}$/;
+// Transport-only evidence; a successful JSON response cannot forge this value.
+const TWILIO_IMPLICIT_US1 = Symbol("twilio-implicit-us1");
 const MAX_PAGES = 100;
 // Wizard/coordinator bound. Reject larger inventories explicitly, never truncate.
 const MAX_NUMBERS = 1000;
@@ -294,7 +300,7 @@ export function createSetupProviderOperations({
     return { twilioInbound: origin + "/webhooks/twilio/inbound",
       twilioStatus: origin + "/webhooks/twilio/status", telnyx: origin + "/webhooks/telnyx" };
   };
-  async function request(provider, credentials, method, path, body, effect = false, text = false) {
+  async function request(provider, credentials, method, path, body, effect = false, text = false, options = {}) {
     const outcome = effect ? "unknown" : "failed";
     const url = provider === "twilio"
       ? (path.startsWith("/v2/PhoneNumbers/") ? TWILIO_ROUTES : TWILIO) + path : TELNYX + path;
@@ -317,6 +323,16 @@ export function createSetupProviderOperations({
       deny("provider-response-invalid", provider, 502, outcome);
     }
     if (!response.ok) {
+      if (options.defaultUs1OnNotFound === true && provider === "twilio" &&
+          method === "GET" && body === undefined && !effect && !text &&
+          /^\/v2\/PhoneNumbers\/%2B[1-9]\d{7,14}$/.test(path) &&
+          url === TWILIO_ROUTES + path && response.status === 404) {
+        let missing;
+        try {
+          missing = await readJson(response);
+        } catch { deny("provider-response-invalid", provider, 502); }
+        if (missing.code === 20404 && missing.status === 404) return TWILIO_IMPLICIT_US1;
+      }
       // Never use vendor error messages: they can echo credentials or inputs.
       const uncertain = effect && (response.status >= 500 || response.status === 408);
       const code = response.status === 401 ? "provider-credentials-rejected"
@@ -352,10 +368,17 @@ export function createSetupProviderOperations({
     const data = await request("twilio", credentials, "GET", twBase(credentials) + "/IncomingPhoneNumbers/" + id + ".json");
     twNumber(data, credentials, id);
     twEligible(data);
-    const region = await request("twilio", credentials, "GET", "/v2/PhoneNumbers/" + encodeURIComponent(data.phone_number));
-    if (region.account_sid !== credentials.accountSid || region.phone_number !== data.phone_number ||
-        typeof region.voice_region !== "string") deny("twilio-processing-region-unverified", "twilio", 422);
-    if (region.voice_region !== "us1") deny("twilio-processing-region-unsupported", "twilio", 422);
+    const region = await request("twilio", credentials, "GET", "/v2/PhoneNumbers/" + encodeURIComponent(data.phone_number),
+      undefined, false, false, { defaultUs1OnNotFound: true });
+    // https://www.twilio.com/docs/global-infrastructure/inbound-processing-api
+    // "Check which Region your phone number is routed to": a missing explicit
+    // assignment defaults to US1. Ownership/E.164/voice were checked above.
+    // Every apply readback repeats this check; JSON 200 must prove its Region.
+    if (region !== TWILIO_IMPLICIT_US1) {
+      if (region.account_sid !== credentials.accountSid || region.phone_number !== data.phone_number ||
+          typeof region.voice_region !== "string") deny("twilio-processing-region-unverified", "twilio", 422);
+      if (region.voice_region !== "us1") deny("twilio-processing-region-unsupported", "twilio", 422);
+    }
     return data;
   }
   async function telFeatures(credentials, phones) {

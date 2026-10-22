@@ -462,7 +462,7 @@ for (const stage of ["parent", "token"]) {
     if (stage === "parent") f.loseParentResponse();
     else f.loseTokenResponse();
     const failed = await f.voiceSession();
-    assert.equal(failed.response.status, 502);
+    assert.equal(failed.response.status, 503);
     f.assertPrivateAbsent(failed.text);
     assert.deepEqual(failed.body, { error: { code: "setup-reconciliation-required", message: "setup-reconciliation-required" } });
     const unknown = await f.device();
@@ -496,7 +496,7 @@ test("a crash at the durable pending-create boundary remains blocked even after 
   const f = await fixture(t);
   await f.configure();
   f.loseParentResponse();
-  assert.equal((await f.voiceSession()).response.status, 502);
+  assert.equal((await f.voiceSession()).response.status, 503);
   const boundary = f.boundaries.find((entry) => entry.operation === "create-browser-telephony-credential");
   assert.ok(boundary, "actual pre-effect encrypted state must have been observed");
   // Restore exactly the state durably present when a process could have died.
@@ -649,7 +649,7 @@ test("provider JWT beyond its parent TTL remains encrypted and unknown instead o
   await f.configure();
   f.overlongToken();
   const reply = await f.voiceSession();
-  assert.equal(reply.response.status, 502);
+  assert.equal(reply.response.status, 503);
   f.assertPrivateAbsent(reply.text);
   assert.equal(reply.body.error.code, "setup-reconciliation-required");
   const stored = await f.device();

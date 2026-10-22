@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-21",
+  "reviewTimezone": "America/Bogota",
+  "createdAt": "2026-10-22T02:41:55.820834+00:00",
+  "status": "backend-regression-and-read-only-plan-verification-pass",
+  "scope": "Twilio documented implicit US1 and setup dependency error transport. No provider configuration, browser carrier registration or real-call certification.",
+  "source": {
+    "baseCommit": "edf0a67fdc3c6d901f88783db4f20af87cb497f5",
+    "containingCommit": "Identified by Git history; this receipt does not hash itself.",
+    "files": [
+      {
+        "path": "CHANGELOG.es.md",
+        "sha256": "69481ff8a5b0e139bb42125522f4c3fcc79825a260bef6ee883855ba4e1c61c1",
+        "bytes": 10362
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha256": "d0b3952b09a4cbdecd1f894331f80afb722c9bdaa8ccf1e9d339f5fc7ead20be",
+        "bytes": 9310
+      },
+      {
+        "path": "docs/communications/AUTOMATIC-SETUP-REGION-FIX.md",
+        "sha256": "91e91108bbc6cf190f5df3b7e0b88eb05665fcd85698b9b4fb1186c500f9c78e",
+        "bytes": 5585
+      },
+      {
+        "path": "docs/communications/AUTOMATIC-SETUP.md",
+        "sha256": "234989442700d23e9749879b06751093dc80673e97807fc3074da8cf73fa4bef",
+        "bytes": 23197
+      },
+      {
+        "path": "docs/website/en/communications.md",
+        "sha256": "3bd6eacc1f403ddb2ee9a93380fb61fd6621b76b64bfdfef373c55d16b546389",
+        "bytes": 18274
+      },
+      {
+        "path": "docs/website/es/communications.md",
+        "sha256": "c45540d0732dda6bcf0f0e869ec665e0d70c72b87130f28957839e569db17c4d",
+        "bytes": 19658
+      },
+      {
+        "path": "examples/communications-backend/lib/setup-providers.js",
+        "sha256": "f6b55d3c26df221262948e3da855b736b6775be99c9183fee8b92476d815047c",
+        "bytes": 54496
+      },
+      {
+        "path": "examples/communications-backend/server.js",
+        "sha256": "d45f6f3244c643e67e441ee76ee9a9a31a4a83b66a6a4469f027284736e8edfd",
+        "bytes": 20404
+      },
+      {
+        "path": "examples/communications-backend/test/automatic-setup-http.test.js",
+        "sha256": "55643ee0ae751c46d4ac67de6344d369afb8d11f19db8b0611308fa91a62dfc1",
+        "bytes": 60755
+      },
+      {
+        "path": "examples/communications-backend/test/managed-credentials-http.test.js",
+        "sha256": "cab6648f6317fbb21feb51425613862ea63be4be56d855d934363fac7850ee3e",
+        "bytes": 33524
+      },
+      {
+        "path": "examples/communications-backend/test/setup-providers.test.js",
+        "sha256": "84bbae3571fc8498393776902201e56ac059ce7510f04fd78346f356706425a6",
+        "bytes": 72787
+      },
+      {
+        "path": "src/lib/changelog-data.json",
+        "sha256": "d12342b6266120fabf7713f0d5ea4e4c7b91e98cbf57316c1b411d657ffcdeaa",
+        "bytes": 22592
+      }
+    ]
+  },
+  "verifiedFacts": {
+    "accountAndOwnedNumberReads": 200,
+    "regionRead": {
+      "httpStatus": 404,
+      "jsonCode": 20404,
+      "jsonStatus": 404,
+      "literalAndEncodedPathsEquivalent": true
+    },
+    "beforeFix": {
+      "loopbackPlanStatus": 502,
+      "loopbackCorsAllowed": true,
+      "httpsPlanStatus": 502,
+      "httpsErrorKind": "proxy-generated-html",
+      "httpsCorsAllowed": false
+    },
+    "afterFix": {
+      "documentedDefaultBoundToVerifiedNumber": true,
+      "internalFallbackSymbolCannotBeForgedByJson": true,
+      "onlySetupProviderDependency502MappedTo503": true,
+      "unknownWritesRemainReconciliationOnly": true
+    }
+  },
+  "officialSources": [
+    {
+      "url": "https://www.twilio.com/docs/global-infrastructure/inbound-processing-api",
+      "consultedOn": "2026-10-21",
+      "availability": "documented",
+      "fact": "An API-provisioned number without an explicit routing assignment returns 404 and uses US1 by default.",
+      "restriction": "Limited to the verified owned number and fixed v2 region GET; neither a missing account/number nor any unrelated failure qualifies."
+    },
+    {
+      "url": "https://www.twilio.com/docs/global-infrastructure/inbound-processing-region-api-phone-number",
+      "consultedOn": "2026-10-21",
+      "availability": "documented",
+      "fact": "The explicit v2 region response identifies account, phone number and voice region.",
+      "restriction": "Only US1 is accepted by this reference; no automatic regional reassignment is added."
+    }
+  ],
+  "testSuites": {
+    "root": {
+      "artifactName": "aureform-setup-dependency-root-tests.txt",
+      "sha256": "28670b51a4aab89b9a403c02b955c89ab810fd697b1f857d47a5dc7728f35302",
+      "nodeVersion": "22.22.3",
+      "tests": 1036,
+      "pass": 1036,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "durationMs": 21147.062924
+    },
+    "backend": {
+      "artifactName": "aureform-setup-dependency-backend-tests.txt",
+      "sha256": "a77f5b5e03e45074d2af36c1d8b66ab34dbc987991b2b6dee3f82ac626a1ff83",
+      "nodeVersion": "22.22.3",
+      "tests": 321,
+      "pass": 321,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "durationMs": 1297.654403
+    },
+    "providerCases": 184,
+    "setupHttpCases": 37,
+    "previousBackendCases": 245,
+    "newRegressionCases": 76,
+    "retainedManualCases": 54,
+    "carrierTransports": "Synthetic injected transports only; private read-only observations are separate."
+  },
+  "privateReadOnlyTransport": {
+    "artifactName": "aureform-region-fix-readonly-transport-proof.json",
+    "sha256": "45871ac87266cf75c580cda500752fc7a19605a59a0e3359120931d914f63d81",
+    "observedAt": "2026-10-22T02:36:56.473Z",
+    "scope": "Authenticated read-only Twilio planning through loopback and named HTTPS; no provider configuration or call authorization.",
+    "ownerLoginStatus": 200,
+    "observations": [
+      {
+        "candidate": 1,
+        "endpoint": "loopback",
+        "status": 200,
+        "elapsedMs": 1260,
+        "corsAllowed": true,
+        "jsonResponse": true,
+        "reviewPlanValid": true,
+        "credentialsAbsentFromResponse": true
+      },
+      {
+        "candidate": 1,
+        "endpoint": "named-https",
+        "status": 200,
+        "elapsedMs": 1039,
+        "corsAllowed": true,
+        "jsonResponse": true,
+        "reviewPlanValid": true,
+        "credentialsAbsentFromResponse": true
+      },
+      {
+        "candidate": 2,
+        "endpoint": "loopback",
+        "status": 200,
+        "elapsedMs": 763,
+        "corsAllowed": true,
+        "jsonResponse": true,
+        "reviewPlanValid": true,
+        "credentialsAbsentFromResponse": true
+      },
+      {
+        "candidate": 2,
+        "endpoint": "named-https",
+        "status": 200,
+        "elapsedMs": 989,
+        "corsAllowed": true,
+        "jsonResponse": true,
+        "reviewPlanValid": true,
+        "credentialsAbsentFromResponse": true
+      }
+    ],
+    "allPlansReadable": true,
+    "configurationJournalsAbsent": true,
+    "configuredProfilesAbsent": true,
+    "liveCallPerformed": false,
+    "privateValuesIncluded": false
+  },
+  "privateBrowser": {
+    "artifactName": "aureform-region-fix-private-browser-proof.json",
+    "sha256": "2c804b77141cac06ad82bfb351d1f8e8aeed9299718f4f839ab306bc33c6e8d5",
+    "observedAt": "2026-10-22T02:39:35.611Z",
+    "scope": "Fresh private Chromium context performs owner login and read-only setup plan via the HTTPS backend; browser enforces CORS.",
+    "ownerLoginStatus": 200,
+    "planStatus": 200,
+    "browserPlanReadable": true,
+    "contentTypeJson": true,
+    "pageOrigin": "http://localhost:3000",
+    "carrierCredentialFieldsFilled": false,
+    "providerConfigurationRequested": false,
+    "sdkConnectionRequested": false,
+    "microphoneRequested": false,
+    "liveCallPerformed": false,
+    "traceOrScreenshotCaptured": false,
+    "privateValuesIncluded": false
+  },
+  "nativeDesign": {
+    "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=585-59",
+    "sourceMap": {
+      "path": "design/figma/communications-setup-native-source-2026-10-21.json",
+      "sha256": "80ef126fc0bad3eb1c16927291159722fcd2abc65d9339781f142d4280deba81",
+      "bytes": 14139
+    },
+    "boundUiFilesUnchanged": 9,
+    "sourceSnapshots": [
+      {
+        "file": "src/components/blocks/communications-setup.tsx",
+        "sha256": "425cc45e7751002fdbc9b8cf68625d2932d2d5665db8a9071d166257f3c71174",
+        "bytes": 45163
+      },
+      {
+        "file": "src/components/templates/communications-softphone-template.tsx",
+        "sha256": "6231b19ea9d2defed58a75cdb22c19b1199db0c1b496b5dbcdf77ff7268a16e8",
+        "bytes": 3548
+      },
+      {
+        "file": "src/components/communications/connected-softphone.tsx",
+        "sha256": "0c8d7bcf744635b2e72b239fab0be10c83cb0872332d633ff91e89cb5bfb634a",
+        "bytes": 16436
+      },
+      {
+        "file": "src/components/communications/reference-connection.tsx",
+        "sha256": "12f4437330af36704bc2db9676c9d60cea113e51993a0cd3df55420dbba03894",
+        "bytes": 16140
+      },
+      {
+        "file": "src/lib/communications/setup-contracts.ts",
+        "sha256": "ee96906eea4fbcb703cb83806192279e9049be94c4950d0dd482bca9d13a6d72",
+        "bytes": 9035
+      },
+      {
+        "file": "src/lib/communications/setup-adapter.ts",
+        "sha256": "0d3e5f548470a1fd81bdcb3f70bc5d79442bf9509ede1ef1cf55b2b6a25c5c98",
+        "bytes": 23013
+      },
+      {
+        "file": "src/lib/communications/setup-demo.ts",
+        "sha256": "c5dee437aa0dd240ffc46d7a5b2691422b94d047d9eee548039cf40ad81cfb04",
+        "bytes": 8377
+      },
+      {
+        "file": "src/lib/communications/reference-lab.ts",
+        "sha256": "c868b09afe727d7623a4f91209046c91aa62410894731b1234ac1a7fd87e6484",
+        "bytes": 5694
+      },
+      {
+        "file": "src/components/app-page.tsx",
+        "sha256": "488afadcc17b8cc9d8a72ccedfa72528711f282c0a6dd0d37a9539f29ad9ea01",
+        "bytes": 11111
+      }
+    ],
+    "scope": "Hash comparison with the historical native source. No visual source or public UI contract changed; no new native capture claimed."
+  },
+  "publicAudit": {
+    "general": {
+      "artifactName": "aureform-region-fix-public-audit.json",
+      "sha256": "bacef3401a99c9b3f94ff3b7e67c52b740e5f58c9b78f080f6520393bb6e1180",
+      "status": "passed",
+      "gitFiles": 1976,
+      "scannedFilesAndArchiveEntries": 4313,
+      "archiveEntries": 2337,
+      "findings": []
+    },
+    "exactKnownPrivateValues": {
+      "artifactName": "aureform-region-fix-exact-private-scan.json",
+      "sha256": "2c5a84c47804c0035cd7c3ac3224049de31e1b050bfdd42add6ae882e69869ae",
+      "status": "passed",
+      "scope": "Exact known owner/encryption/tunnel values, actual encrypted provider credentials, private identifiers, phone numbers and encoded Basic credentials in Git-publishable files and ZIP members.",
+      "knownPrivateValuesChecked": 29,
+      "gitFiles": 1976,
+      "scannedFilesAndArchiveEntries": 4313,
+      "archiveEntries": 2337,
+      "findings": [],
+      "valuesOrTheirDigestsPublished": false
+    }
+  },
+  "notVerified": [
+    "Provider resource creation or routing apply in this correction.",
+    "Twilio or Telnyx SDK registration and browser media.",
+    "Delivered signed carrier webhooks, PSTN audio or a completed real call.",
+    "Independent live Telnyx compatibility or production readiness."
+  ],
+  "privateValuesIncluded": false,
+  "codeChecks": {
+    "typecheck": {
+      "status": "passed",
+      "artifactName": "aureform-region-fix-typecheck.log",
+      "sha256": "0a53c2833f638a4cde5463ae16416510047bda265600b2cfdc674df347e73aad"
+    },
+    "lint": {
+      "status": "passed",
+      "errors": 0,
+      "retainedWarnings": 1,
+      "artifactName": "aureform-region-fix-lint.log",
+      "sha256": "1268763a8494a7d94e327d6687e199b82f7179502c7ea22c94ac942f672ae31b"
+    },
+    "changelog": "Generated EN/ES files checked against the same data source.",
+    "nodeBinaryVersion": "22.22.3",
+    "nodeBinarySha256": "e6ec2c188d83d813f81f2de8aea084d74dce603ac1abedd0a30ad941b10087b2"
+  }
+}

@@ -96,6 +96,8 @@ Elige un **número de voz existente de tu cuenta**, revisa el plan y confirma el
 
 Twilio requiere una cuenta **Full** activa y su **Auth Token principal**. [Trial bloquea el `<Dial><Client>` necesario](https://www.twilio.com/docs/usage/trials/try-out-voice) y las [firmas de webhooks usan el token principal](https://www.twilio.com/docs/usage/security). Fuentes consultadas el **2026-10-21**. El backend comprueba estos requisitos antes de configurar recursos; no actualiza la cuenta ni promueve tokens. Rechaza un tipo de cuenta o identidad de token que no pueda verificar. La [guía de setup](../../../docs/communications/AUTOMATIC-SETUP.md#twilio-prerequisites) explica los errores de cuenta/credenciales correspondientes.
 
+Los números que usan la región **US1 implícita** documentada por Twilio son compatibles después de verificar la cuenta y el número. Sólo admite la respuesta JSON válida `404` / `20404` del endpoint de región; los demás fallos conservan el rechazo y una región explícita distinta de US1 queda bloqueada. [La corrección y su evidencia](../../../docs/communications/AUTOMATIC-SETUP-REGION-FIX.md) explican el error anterior de gateway/CORS. Los fallos de dependencias del setup devuelven JSON redactado con HTTP 503. Revisar el plan o recibir un error no aplica routing ni repite automáticamente una escritura al proveedor.
+
 Inicializa el laboratorio Node privado desde el checkout, sustituyendo los dominios de ejemplo por tu backend HTTPS y el origen exacto del frontend:
 
 ```sh

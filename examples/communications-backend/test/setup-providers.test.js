@@ -532,6 +532,194 @@ test("Twilio plan explicitly reviews Application precedence/fallback; rejects Tr
   assert.equal(region.requests.filter(isWrite).length, 0);
 });
 
+const isRegionGet = (req) => req.method === "GET" && req.path.startsWith("/v2/PhoneNumbers/");
+const missingRegionResponse = () => json({ code: 20404, status: 404,
+  message: "Synthetic missing routing " + AUTH, more_info: "https://www.twilio.com/docs/api/errors/20404" }, 404);
+function implicitRegionFixture() {
+  const fixture = twFixture();
+  fixture.intercept = (req) => isRegionGet(req) ? missingRegionResponse() : null;
+  return fixture;
+}
+
+test("Twilio plan accepts documented implicit US1 only after owned eligible number verification, without writes", async () => {
+  const fixture = implicitRegionFixture();
+  const result = await operations(fixture).twilio.plan(TW, NUMBER);
+  assert.equal(result.number.id, NUMBER);
+  assert.equal(result.number.phoneNumber, fixture.number.phone_number);
+  assert.equal(result.number.voiceEnabled, true);
+  assert.deepEqual(fixture.requests.map(({ method, path }) => [method, path]), [
+    ["GET", "/2010-04-01/Accounts/" + ACCOUNT + ".json"],
+    ["GET", "/2010-04-01/Accounts/" + ACCOUNT + "/IncomingPhoneNumbers/" + NUMBER + ".json"],
+    ["GET", "/v2/PhoneNumbers/" + encodeURIComponent(fixture.number.phone_number)],
+  ]);
+  assert.equal(fixture.requests.filter(isWrite).length, 0);
+  assert.equal(fixture.keys.size, 0);
+  assert.equal(JSON.stringify(result).includes("Synthetic missing routing"), false);
+  assert.equal(JSON.stringify(result).includes(AUTH), false);
+});
+
+test("Twilio implicit US1 apply repeats every region readback and resumes without changing a Region or duplicating keys", async () => {
+  const ctx = await prepareTw(implicitRegionFixture());
+  const messaging = clone(ctx.plan.priorRouting.messaging);
+  const result = await applyTw(ctx);
+  assert.equal(result.number.phoneNumber, ctx.fixture.number.phone_number);
+  assert.equal(result.publicResult.operationsEnabled, false);
+  assert.equal(result.publicResult.labCallVerified, false);
+  assert.equal(ctx.fixture.requests.filter(isRegionGet).length, 4); // Plan, initial, pre-routing, final.
+  assert.equal(ctx.journal.entries.at(-1).stage, "verified");
+  assert.equal(ctx.journal.last().routingApplied, true);
+  assert.equal(ctx.journal.last().resources.apiKey.secret, KEY_SECRET);
+  assert.deepEqual(ctx.fixture.requests.filter(isWrite).map((req) => req.path.split("/").at(-1)),
+    ["Keys.json", NUMBER + ".json"]);
+  assert.equal(ctx.fixture.requests.some((req) => req.path.startsWith("/v2/PhoneNumbers/") && isWrite(req)), false);
+  assert.equal(ctx.fixture.number.sms_url, messaging.url);
+  assert.equal(ctx.fixture.number.sms_application_sid, messaging.applicationSid);
+  assert.equal(JSON.stringify(result.publicResult).includes(AUTH), false);
+  assert.equal(JSON.stringify(ctx.journal.entries).includes("Synthetic missing routing"), false);
+  const writes = ctx.fixture.requests.filter(isWrite).length;
+  const readbacks = ctx.fixture.requests.filter(isRegionGet).length;
+  await applyTw({ ...ctx, ops: operations(ctx.fixture) }, { existing: ctx.journal.last() });
+  assert.equal(ctx.fixture.requests.filter(isWrite).length, writes);
+  assert.equal(ctx.fixture.requests.filter(isRegionGet).length, readbacks + 2);
+});
+
+const regionFailureCases = [
+  { name: "HTML 404", reply: () => new Response("<html>" + AUTH + "</html>", { status: 404,
+    headers: { "Content-Type": "text/html" } }), code: "provider-response-invalid" },
+  { name: "invalid JSON 404", reply: () => new Response("not JSON " + AUTH, { status: 404,
+    headers: { "Content-Type": "application/json" } }), code: "provider-response-invalid" },
+  ...[["null", null], ["array", []], ["string", "twilio-implicit-us1"]].map(([name, value]) => ({
+    name: name + " error shape", reply: () => json(value, 404), code: "provider-response-invalid",
+  })),
+  ...[
+    ["empty", {}], ["missing code", { status: 404 }], ["missing status", { code: 20404 }],
+    ["different code", { code: 20403, status: 404 }], ["different status", { code: 20404, status: 400 }],
+    ["string code", { code: "20404", status: 404 }], ["string status", { code: 20404, status: "404" }],
+    ["nested", { error: { code: 20404, status: 404 } }],
+  ].map(([name, value]) => ({
+    name: name + " error contract", reply: () => json(value, 404), code: "provider-resource-not-found",
+  })),
+  ...[[401, "provider-credentials-rejected"], [403, "provider-policy-denied"],
+    [429, "provider-rate-limited"], [500, "provider-http-rejected"]].map(([status, code]) => ({
+    name: "HTTP " + status + " with qualifying error fields", reply: () => json({ code: 20404, status: 404 }, status),
+    code, status: status === 401 || status === 403 ? status : 502,
+  })),
+  { name: "JSON 200 error forgery", reply: () => json({ code: 20404, status: 404 }),
+    code: "twilio-processing-region-unverified", status: 422 },
+  { name: "JSON 200 sentinel forgery", reply: () => json({ defaultUs1OnNotFound: true,
+    implicitRegion: "twilio-implicit-us1", voice_region: "us1" }), code: "twilio-processing-region-unverified", status: 422 },
+  { name: "JSON 200 string sentinel", reply: () => json("twilio-implicit-us1"), code: "provider-response-invalid" },
+  ...[
+    ["foreign account", { account_sid: "AC" + "9".repeat(32), phone_number: "+12025550101", voice_region: "us1" }],
+    ["different number", { account_sid: ACCOUNT, phone_number: "+12025550199", voice_region: "us1" }],
+    ["missing region", { account_sid: ACCOUNT, phone_number: "+12025550101" }],
+  ].map(([name, value]) => ({
+    name: "JSON 200 " + name, reply: () => json(value), code: "twilio-processing-region-unverified", status: 422,
+  })),
+  ...["ie1", "au1"].map((region) => ({
+    name: "explicit " + region, reply: () => json({ account_sid: ACCOUNT, phone_number: "+12025550101",
+      voice_region: region }), code: "twilio-processing-region-unsupported", status: 422,
+  })),
+  { name: "transport failure", reply: () => { throw new Error("Fixture transport " + AUTH); }, code: "provider-transport-failed" },
+];
+for (const failure of regionFailureCases) {
+  for (const phase of ["plan", "apply"]) {
+    test("Twilio " + phase + " denies implicit US1 for " + failure.name + " before effects", async () => {
+      const ctx = await prepareTw();
+      const previousNumber = clone(ctx.fixture.number);
+      ctx.fixture.requests.length = 0;
+      ctx.fixture.intercept = (req) => isRegionGet(req) ? failure.reply() : null;
+      await assert.rejects(phase === "plan" ? () => ctx.ops.twilio.plan(TW, NUMBER) : () => applyTw(ctx),
+        accountErrorIs(failure.code, failure.status ?? 502));
+      assert.equal(ctx.fixture.requests.filter(isRegionGet).length, 1);
+      assert.equal(ctx.fixture.requests.filter(isWrite).length, 0);
+      assert.equal(ctx.fixture.keys.size, 0);
+      assert.equal(ctx.journal.entries.length, 0);
+      assert.deepEqual(ctx.fixture.number, previousNumber);
+    });
+  }
+}
+
+for (const invalid of [
+  { name: "foreign ownership", mutate: (fixture) => { fixture.number.account_sid = "AC" + "9".repeat(32); },
+    code: "provider-number-response-invalid", status: 502 },
+  { name: "invalid E164", mutate: (fixture) => { fixture.number.phone_number = "%2B12025550101"; },
+    code: "provider-number-response-invalid", status: 502 },
+  { name: "voice disabled", mutate: (fixture) => { fixture.number.capabilities.voice = false; },
+    code: "number-not-voice-enabled", status: 422 },
+]) {
+  for (const phase of ["plan", "apply"]) {
+    test("Twilio " + phase + " checks " + invalid.name + " before any implicit-region request", async () => {
+      const ctx = await prepareTw(implicitRegionFixture());
+      invalid.mutate(ctx.fixture);
+      ctx.fixture.requests.length = 0;
+      await assert.rejects(phase === "plan" ? () => ctx.ops.twilio.plan(TW, NUMBER) : () => applyTw(ctx),
+        accountErrorIs(invalid.code, invalid.status));
+      assert.equal(ctx.fixture.requests.filter(isRegionGet).length, 0);
+      assert.equal(ctx.fixture.requests.filter(isWrite).length, 0);
+      assert.equal(ctx.journal.entries.length, 0);
+    });
+  }
+}
+
+for (const endpoint of [
+  { name: "Account GET", method: "GET", suffix: ACCOUNT + ".json", attempts: 0 },
+  { name: "owned-number GET", method: "GET", suffix: "/IncomingPhoneNumbers/" + NUMBER + ".json", attempts: 0 },
+  { name: "key-create POST", method: "POST", suffix: "/Keys.json", attempts: 1 },
+  { name: "owned-key GET", method: "GET", suffix: "/Keys/" + KEY + ".json", attempts: 1 },
+  { name: "number-update POST", method: "POST", suffix: "/IncomingPhoneNumbers/" + NUMBER + ".json", attempts: 2 },
+]) {
+  test("Twilio never treats qualifying 404 at " + endpoint.name + " as implicit US1", async () => {
+    const ctx = await prepareTw(implicitRegionFixture());
+    const previousNumber = clone(ctx.fixture.number);
+    const routingReply = ctx.fixture.intercept;
+    ctx.fixture.intercept = (req) => req.method === endpoint.method && req.path.endsWith(endpoint.suffix)
+      ? missingRegionResponse() : routingReply(req);
+    await assert.rejects(applyTw(ctx), accountErrorIs("provider-resource-not-found", 502));
+    assert.equal(ctx.fixture.requests.filter(isWrite).length, endpoint.attempts);
+    assert.deepEqual(ctx.fixture.number, previousNumber);
+    assert.equal(ctx.journal.entries.some((entry) => entry.stage === "verified"), false);
+    if (endpoint.attempts === 0) assert.equal(ctx.journal.entries.length, 0);
+    if (endpoint.name === "owned-key GET" || endpoint.name === "number-update POST") {
+      assert.equal(ctx.journal.last().resources.apiKey.secret, KEY_SECRET);
+      assert.equal(ctx.journal.last().routingApplied, false);
+    }
+  });
+}
+
+for (const stage of ["before-apply", "after-key", "after-routing"]) {
+  test("Twilio implicit US1 plan rejects explicit region drift " + stage + " without further effects", async () => {
+    const ctx = await prepareTw(implicitRegionFixture());
+    const changeRegion = () => { ctx.fixture.intercept = null; ctx.fixture.inboundRegion = "ie1"; };
+    if (stage === "before-apply") changeRegion();
+    else if (stage === "after-key") ctx.fixture.onCreateKey = changeRegion;
+    else ctx.fixture.onUpdateNumber = changeRegion;
+    await assert.rejects(applyTw(ctx), accountErrorIs("twilio-processing-region-unsupported", 422));
+    const writes = stage === "before-apply" ? 0 : stage === "after-key" ? 1 : 2;
+    assert.equal(ctx.fixture.requests.filter(isWrite).length, writes);
+    assert.equal(ctx.journal.entries.some((entry) => entry.stage === "verified"), false);
+    if (writes === 0) assert.equal(ctx.journal.entries.length, 0);
+    else {
+      assert.equal(ctx.journal.last().resources.apiKey.secret, KEY_SECRET);
+      assert.equal(ctx.journal.last().routingApplied, stage === "after-routing");
+      assert.equal(ctx.journal.last().pending, null);
+      assert.equal(ctx.journal.last().unknown, null);
+      await assert.rejects(applyTw({ ...ctx, ops: operations(ctx.fixture) }, { existing: ctx.journal.last() }),
+        accountErrorIs("twilio-processing-region-unsupported", 422));
+      assert.equal(ctx.fixture.requests.filter(isWrite).length, writes);
+    }
+    assert.equal(ctx.fixture.requests.some((req) => req.path.startsWith("/v2/PhoneNumbers/") && isWrite(req)), false);
+  });
+}
+
+test("Telnyx number GET never borrows Twilio's implicit US1 error semantics", async () => {
+  const fixture = telFixture();
+  fixture.intercept = (req) => req.method === "GET" && req.path === "/v2/phone_numbers/" + TEL_NUMBER
+    ? missingRegionResponse() : null;
+  await assert.rejects(operations(fixture).telnyx.plan(TE, TEL_NUMBER), errorIs("provider-resource-not-found"));
+  assert.equal(fixture.requests.filter(isWrite).length, 0);
+});
+
 test("Telnyx plan rejects recording/forwarding/translation/screening and incomplete policy readback", async () => {
   for (const mutate of [
     (fixture) => { fixture.voice.call_recording.inbound_call_recording_enabled = true; },

@@ -96,6 +96,8 @@ Select an **existing owned voice-enabled number**, review the plan and confirm a
 
 For Twilio, use an active **Full** account and its **primary Auth Token**. [Trial blocks the required `<Dial><Client>`](https://www.twilio.com/docs/usage/trials/try-out-voice), and [webhook signatures use the primary token](https://www.twilio.com/docs/usage/security). Sources consulted **2026-10-21**. The backend verifies these prerequisites before configuration effects; it does not upgrade an account or promote tokens. Account type or token identity that cannot be verified is rejected. The [setup guide](../../../docs/communications/AUTOMATIC-SETUP.md#twilio-prerequisites) explains the resulting account/credential errors.
 
+Numbers using Twilio's documented **implicit US1** region are supported after account and number verification. Only the region endpoint's valid JSON `404` / `20404` response qualifies; other failures remain errors and an explicit non-US1 region is rejected. [The correction and evidence](../../../docs/communications/AUTOMATIC-SETUP-REGION-FIX.md) explain the previously misleading gateway/CORS error. Setup dependency failures now return redacted JSON with HTTP 503. Neither planning nor an error automatically applies routing or retries a provider write.
+
 Initialize the separate private Node laboratory from the checkout, replacing the example domains with your owned HTTPS backend and exact frontend origin:
 
 ```sh
