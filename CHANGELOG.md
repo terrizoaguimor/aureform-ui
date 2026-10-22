@@ -28,13 +28,14 @@ Follow the work on main before the next version is tagged.
 - Editable Softphone implementation source in Figma, seven call states in Light/Dark, desktop/mobile compositions, dialogs and two additional local Code Connect templates.
 - Reviewed automatic Twilio/Telnyx setup with two credential fields per provider, existing-number selection, explicit routing-replacement confirmation, encrypted private configuration and mutation journals.
 - A private single-owner connection host with separate owner authentication, configured-profile recovery, stable session renewal and explicit authorization for one bounded, manually initiated incoming test.
+- A dated manual report of the first successful real incoming Twilio call, confirmed by the project owner on October 21, 2026, separately from automated and local demo tests.
 
 ### Fixed
 
 - Twilio setup now recognizes the documented implicit US1 region for an already verified owned number, while rejecting unrelated missing resources, invalid responses and unsupported explicit regions.
 - Setup provider dependency failures retain redacted JSON and exact-origin CORS with HTTP 503, avoiding a proxy-generated 502 page that obscures the error. Uncertain writes remain reconciliation-only.
 
-These changes on main are outside the immutable 1.5.0 release archives. Reviewed automatic setup, the private connected host, editable Figma source and scoped validation are available; real carrier/media acceptance and production readiness remain unverified. Uncertain provisioning remains reconciliation-only across restarts and new inspections. Telnyx must independently demonstrate the requested short parent-credential lifetime. Twilio is the selected first real-call target; setup requires a verified active Full account and its primary Auth Token. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.
+These changes on main are outside the immutable 1.5.0 release archives. Reviewed automatic setup, the private connected host, editable Figma source and scoped validation are available. The owner manually confirmed a successful real incoming Twilio call; detailed control/media acceptance, Telnyx live compatibility and production readiness remain pending. Uncertain provisioning remains reconciliation-only across restarts and new inspections. Telnyx must independently demonstrate the requested short parent-credential lifetime. Twilio setup requires a verified active Full account and its primary Auth Token. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.
 
 ## [1.5.0](https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.5.0) — 2026-10-20
 

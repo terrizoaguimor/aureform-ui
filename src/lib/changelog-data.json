@@ -63,6 +63,10 @@
           {
             "en": "A private single-owner connection host with separate owner authentication, configured-profile recovery, stable session renewal and explicit authorization for one bounded, manually initiated incoming test.",
             "es": "Un host de conexión privado para un único propietario, con autenticación de aplicación separada, recuperación de perfiles configurados, renovación estable de sesión y autorización explícita de una prueba entrante limitada iniciada manualmente."
+        },
+        {
+          "en": "A dated manual report of the first successful real incoming Twilio call, confirmed by the project owner on October 21, 2026, separately from automated and local demo tests.",
+          "es": "Un registro fechado de la primera llamada entrante real Twilio exitosa, confirmada por el propietario el 21 de octubre de 2026 y separada de las pruebas automáticas y demos locales."
           }
         ]
       },
@@ -84,8 +88,8 @@
       }
     ],
     "notes": {
-      "en": "These changes on main are outside the immutable 1.5.0 release archives. Reviewed automatic setup, the private connected host, editable Figma source and scoped validation are available; real carrier/media acceptance and production readiness remain unverified. Uncertain provisioning remains reconciliation-only across restarts and new inspections. Telnyx must independently demonstrate the requested short parent-credential lifetime. Twilio is the selected first real-call target; setup requires a verified active Full account and its primary Auth Token. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.",
-      "es": "Estos cambios de main están fuera de los archivos inmutables de la release 1.5.0. El setup automático revisado, el host privado conectado, la fuente editable en Figma y la validación acotada están disponibles; la aceptación real de carriers/medios y la preparación productiva siguen sin verificarse. Una provisión incierta conserva el bloqueo de reconciliación tras reiniciar o inspeccionar de nuevo. Telnyx debe demostrar por separado el TTL breve solicitado para la credencial padre. Twilio es el primer objetivo de llamada real elegido; el setup exige verificar una cuenta Full activa y su Auth Token principal. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación."
+      "en": "These changes on main are outside the immutable 1.5.0 release archives. Reviewed automatic setup, the private connected host, editable Figma source and scoped validation are available. The owner manually confirmed a successful real incoming Twilio call; detailed control/media acceptance, Telnyx live compatibility and production readiness remain pending. Uncertain provisioning remains reconciliation-only across restarts and new inspections. Telnyx must independently demonstrate the requested short parent-credential lifetime. Twilio setup requires a verified active Full account and its primary Auth Token. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.",
+      "es": "Estos cambios de main están fuera de los archivos inmutables de la release 1.5.0. El setup automático revisado, el host privado conectado, la fuente editable en Figma y la validación acotada están disponibles. El propietario confirmó manualmente una llamada entrante real Twilio exitosa; la aceptación detallada de controles/medios, compatibilidad live Telnyx y preparación productiva siguen pendientes. Una provisión incierta conserva el bloqueo de reconciliación tras reiniciar o inspeccionar de nuevo. Telnyx debe demostrar por separado el TTL breve solicitado para la credencial padre. El setup Twilio exige verificar una cuenta Full activa y su Auth Token principal. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación."
     }
   },
   "releases": [

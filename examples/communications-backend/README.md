@@ -1,12 +1,12 @@
 # Referencia de voz entrante: Node 22, Twilio y Telnyx
 
-Servicio HTTP ejecutable, independiente del sitio estático de Aureform. Implementa admisión por horario, una FIFO en memoria, reserva de un agente por llamada, tokens de navegador, firmas de webhooks y las acciones reales de los dos proveedores. **Las llamadas y el audio con cuentas reales siguen sin verificar.** Las pruebas usan datos ficticios y transportes inyectados.
+Servicio HTTP ejecutable, independiente del sitio estático de Aureform. Implementa admisión por horario, una FIFO en memoria, reserva de un agente por llamada, tokens de navegador, firmas de webhooks y las acciones reales de los dos proveedores. **El propietario confirmó manualmente la primera llamada entrante real Twilio el 2026-10-21.** El [registro acotado](../../docs/communications/TWILIO-MANUAL-ACCEPTANCE-2026-10-21.md) separa esa confirmación de las pruebas automáticas con datos ficticios y transportes inyectados. La aceptación live Telnyx permanece pendiente.
 
 Código de referencia Apache-2.0. La dependencia servidor `twilio` está fijada en **6.2.0**, bajo MIT; su lockfile pertenece exclusivamente a este ejemplo. Telnyx usa HTTP v2 con `fetch` de Node. No hay modelos, pesos, SDK de navegador, dependencias de Next ni cambios al paquete raíz. Los gates de licencias de modelos del RFC siguen vigentes para futuras fases de IA.
 
 El [documento de implementación](../../docs/communications/INBOUND-VOICE-REFERENCE.md) distingue código comprobado, APIs documentadas y aceptación de laboratorio pendiente. No implementa Flow DSL, IA, campañas, transferencias, hold, grabación, voicemail ni callbacks salientes.
 
-La nueva [configuración automática](../../docs/communications/AUTOMATIC-SETUP.md) añade un laboratorio **single-owner**, con inspección de cuenta, número existente, revisión y apply explícito. Su [validación propia](../../docs/communications/AUTOMATIC-SETUP-VALIDATION.md) registra pruebas de navegador, autenticación privada, tipos SDK instalados y efectos de proveedor sintéticos. Configurar recursos no acredita registro SDK, entrega de webhooks ni audio real. La primera aceptación real prevista es Twilio; no se declara realizada.
+La nueva [configuración automática](../../docs/communications/AUTOMATIC-SETUP.md) añade un laboratorio **single-owner**, con inspección de cuenta, número existente, revisión y apply explícito. Su [validación propia](../../docs/communications/AUTOMATIC-SETUP-VALIDATION.md) registra pruebas de navegador, autenticación privada, tipos SDK instalados y efectos de proveedor sintéticos. Configurar recursos no acredita registro SDK, entrega de webhooks ni audio real. La confirmación manual Twilio posterior conserva su propio alcance; no certifica todos los controles ni preparación productiva.
 
 ## Ejecutar sin credenciales
 

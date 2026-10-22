@@ -28,13 +28,14 @@ Consulta los cambios de main antes de publicar la siguiente versión.
 - Fuente editable del Softphone implementado en Figma, siete estados de llamada en claro/oscuro, composiciones de escritorio/móvil, diálogos y dos templates locales adicionales de Code Connect.
 - Setup automático Twilio/Telnyx revisado, con dos campos de credenciales por proveedor, selección de número existente, confirmación explícita de reemplazo de routing, configuración privada cifrada y journals de mutaciones.
 - Un host de conexión privado para un único propietario, con autenticación de aplicación separada, recuperación de perfiles configurados, renovación estable de sesión y autorización explícita de una prueba entrante limitada iniciada manualmente.
+- Un registro fechado de la primera llamada entrante real Twilio exitosa, confirmada por el propietario el 21 de octubre de 2026 y separada de las pruebas automáticas y demos locales.
 
 ### Corregido
 
 - El setup Twilio reconoce la región US1 implícita documentada para un número propio ya verificado, y sigue rechazando recursos ajenos ausentes, respuestas inválidas y regiones explícitas no admitidas.
 - Los fallos de dependencias del setup conservan JSON redactado y CORS por origen exacto con HTTP 503, evitando que una página 502 del proxy oculte el error. Las escrituras inciertas siguen exigiendo reconciliación.
 
-Estos cambios de main están fuera de los archivos inmutables de la release 1.5.0. El setup automático revisado, el host privado conectado, la fuente editable en Figma y la validación acotada están disponibles; la aceptación real de carriers/medios y la preparación productiva siguen sin verificarse. Una provisión incierta conserva el bloqueo de reconciliación tras reiniciar o inspeccionar de nuevo. Telnyx debe demostrar por separado el TTL breve solicitado para la credencial padre. Twilio es el primer objetivo de llamada real elegido; el setup exige verificar una cuenta Full activa y su Auth Token principal. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación.
+Estos cambios de main están fuera de los archivos inmutables de la release 1.5.0. El setup automático revisado, el host privado conectado, la fuente editable en Figma y la validación acotada están disponibles. El propietario confirmó manualmente una llamada entrante real Twilio exitosa; la aceptación detallada de controles/medios, compatibilidad live Telnyx y preparación productiva siguen pendientes. Una provisión incierta conserva el bloqueo de reconciliación tras reiniciar o inspeccionar de nuevo. Telnyx debe demostrar por separado el TTL breve solicitado para la credencial padre. El setup Twilio exige verificar una cuenta Full activa y su Auth Token principal. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación.
 
 ## [1.5.0](https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.5.0) — 2026-10-20
 

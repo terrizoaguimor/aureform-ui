@@ -1,6 +1,6 @@
 # Automatic provider setup
 
-Source/documentation review: **2026-10-21**. This is an editable **single-owner inbound-call laboratory**, not a managed production service. The [automatic-setup validation](AUTOMATIC-SETUP-VALIDATION.md) records local browser, private application authentication, installed SDK types and injected provider tests. The separate HTTPS health observation below establishes transport reachability only. No real account configuration, delivered webhook, SDK registration or audible carrier call is certified here. The previous [validation record](VALIDATION.md) remains a separate, unchanged baseline.
+Source/documentation review: **2026-10-21**. This is an editable **single-owner inbound-call laboratory**, not a managed production service. The [automatic-setup validation](AUTOMATIC-SETUP-VALIDATION.md) records local browser, private application authentication, installed SDK types and injected provider tests. The separate HTTPS health observation below establishes transport reachability only. Subsequently, the owner [manually confirmed the first successful real incoming Twilio call](TWILIO-MANUAL-ACCEPTANCE-2026-10-21.md). That report is separate from automated verification; Telnyx live acceptance remains pending. The previous [validation record](VALIDATION.md) remains a separate, unchanged baseline.
 
 ## Public demo and private connection
 
@@ -127,7 +127,7 @@ Planning and apply also check persisted journals by **provider + selected number
 
 ## One explicit incoming test
 
-The first real-carrier acceptance target is **Twilio**; no completed result is recorded here. After configuration:
+The owner [confirmed a successful real incoming Twilio call on 2026-10-21](TWILIO-MANUAL-ACCEPTANCE-2026-10-21.md). This manual report does not replace independent checks of controls, termination or failure recovery, and Telnyx requires its own live test. For a separately authorized test after configuration:
 
 1. Explicitly connect the browser SDK and set presence to **Available**.
 2. Enter the exact E.164 phone number from which you will call.
@@ -155,7 +155,7 @@ A connection with no outbound profile and a JWT still do not certify the real ac
 
 Encrypted setup state survives process restarts; calls, FIFO, reservations, sessions, notes, deduplication and call approvals remain **in memory**. Do not deploy replicas or treat this as OIDC, multitenant provisioning, durable call recovery, compliance certification or a managed contact center.
 
-The initial automatic-setup checkpoint passed **245/245 backend tests** on Node 22.22.3, including the provider + number restart/reinspection guard, account/token rejection and managed-issuer HTTP/race cases. Root tests passed **1,036/1,036**, with types/lint passing and independent **38-case** root and mounted public browser runs. During that checkpoint's private browser check, owner login and two empty editable Twilio fields were verified without entering provider credentials. Its [historical validation receipt](AUTOMATIC-SETUP-VALIDATION.md) retains the reviewed source hashes and limits. The subsequent [implicit-region correction](AUTOMATIC-SETUP-REGION-FIX.md) has its own evidence; real call/media acceptance remains unverified.
+The initial automatic-setup checkpoint passed **245/245 backend tests** on Node 22.22.3, including the provider + number restart/reinspection guard, account/token rejection and managed-issuer HTTP/race cases. Root tests passed **1,036/1,036**, with types/lint passing and independent **38-case** root and mounted public browser runs. During that checkpoint's private browser check, owner login and two empty editable Twilio fields were verified without entering provider credentials. Its [historical validation receipt](AUTOMATIC-SETUP-VALIDATION.md) retains the reviewed source hashes and limits. The subsequent [implicit-region correction](AUTOMATIC-SETUP-REGION-FIX.md) passed **321/321 backend tests** and private read-only planning. The later [manual incoming Twilio report](TWILIO-MANUAL-ACCEPTANCE-2026-10-21.md) records the owner's successful call separately; neither historical receipt is rewritten as an automated media test.
 
 The editable extension is recorded on [Figma page 14](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=585-59), with a [native source map](../../design/figma/communications-setup-native-source-2026-10-21.json), bounded readback and selected visual evidence. The original native roots and earlier softphone validation retain their separate scope. Neither native source nor installed SDK typing proves signed webhook delivery, account configuration or real audio.
 

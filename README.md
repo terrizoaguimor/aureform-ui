@@ -74,9 +74,9 @@ The inbound workspace includes presence, FIFO queue, business hours and explicit
 
 The [automatic setup reference](docs/communications/AUTOMATIC-SETUP.md) accepts only Account SID + Auth Token for Twilio, or API Key + Public Key for Telnyx. An authenticated backend discovers existing numbers, prepares a reviewable plan, generates the internal resources and verifies routing. Private credentials and mutation checkpoints stay encrypted on the host. Browser connection and bounded call authorization are separate steps.
 
-The [validation receipt](docs/communications/AUTOMATIC-SETUP-VALIDATION.md) separates public demo checks, private owner authentication, installed SDK typing and editable Figma source from real carrier acceptance. For the first Twilio test, use an active Full account, its primary Auth Token and an existing US1 voice number; no real call is certified yet.
+The [validation receipt](docs/communications/AUTOMATIC-SETUP-VALIDATION.md) separates public demo checks, private owner authentication, installed SDK typing and editable Figma source from real carrier acceptance. The owner [manually confirmed the first successful real incoming Twilio call on October 21, 2026](docs/communications/TWILIO-MANUAL-ACCEPTANCE-2026-10-21.md). Twilio setup requires an active Full account, its primary Auth Token and an existing US1 voice number. Telnyx live acceptance remains pending.
 
-The static demo uses read-only fixture credentials and contacts no carrier. The private reference includes official SDK loaders; consumers can replace the host, authentication and provider adapters. Real audible calls and production compatibility require independent acceptance for each provider.
+The static demo uses read-only fixture credentials and contacts no carrier. The private reference includes official SDK loaders; consumers can replace the host, authentication and provider adapters. Detailed media, call controls, recovery and production compatibility require independent acceptance for each provider.
 
 ```sh
 node bin/aureform.mjs add softphone-workspace --cwd ../my-product

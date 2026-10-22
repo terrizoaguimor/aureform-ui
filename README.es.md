@@ -74,9 +74,9 @@ El espacio de llamadas entrantes incluye presencia, cola FIFO, horario y fechas 
 
 La [referencia de autoconfiguración](docs/communications/AUTOMATIC-SETUP.md) pide únicamente Account SID + Auth Token para Twilio, o API Key + Public Key para Telnyx. Un backend autenticado descubre los números existentes, prepara un plan para revisar, genera los recursos internos y verifica el enrutamiento. Las credenciales y los registros de las operaciones se guardan cifrados en el host. Conectar el navegador y autorizar una llamada limitada son pasos separados.
 
-El [recibo de validación](docs/communications/AUTOMATIC-SETUP-VALIDATION.md) separa pruebas de demo pública, autenticación privada, tipos SDK instalados y fuente editable en Figma de la aceptación con carriers reales. Para la primera prueba Twilio, usa una cuenta Full activa, su Auth Token principal y un número de voz existente en US1; todavía no se certifica una llamada real.
+El [recibo de validación](docs/communications/AUTOMATIC-SETUP-VALIDATION.md) separa pruebas de demo pública, autenticación privada, tipos SDK instalados y fuente editable en Figma de la aceptación con carriers reales. El propietario [confirmó manualmente la primera llamada entrante real Twilio el 21 de octubre de 2026](docs/communications/TWILIO-MANUAL-ACCEPTANCE-2026-10-21.md). El setup Twilio exige una cuenta Full activa, su Auth Token principal y un número de voz existente en US1. La aceptación live Telnyx permanece pendiente.
 
-La demo estática usa credenciales ficticias de solo lectura y no contacta a un carrier. La referencia privada incluye los SDKs oficiales; cada consumidor puede reemplazar el host, la autenticación y los adaptadores. Las llamadas audibles reales y la compatibilidad de producción requieren aceptación independiente por proveedor.
+La demo estática usa credenciales ficticias de solo lectura y no contacta a un carrier. La referencia privada incluye los SDKs oficiales; cada consumidor puede reemplazar el host, la autenticación y los adaptadores. Los medios en detalle, controles, recuperación y compatibilidad de producción requieren aceptación independiente por proveedor.
 
 ```sh
 node bin/aureform.mjs add softphone-workspace --cwd ../mi-producto
