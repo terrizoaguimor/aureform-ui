@@ -8,6 +8,8 @@
   "scripts": {
     "start": "node server.js",
     "start:env": "node --env-file=.env server.js",
+    "setup:init": "node setup-lab.mjs init",
+    "setup:serve": "node setup-lab.mjs serve",
     "check": "node --check server.js && node --check lib/config.js && node --check lib/security.js && node --check lib/providers.js && node --check lib/engine.js",
     "test": "node --test test/*.test.js"
   },

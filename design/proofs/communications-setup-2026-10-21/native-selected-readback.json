@@ -1,0 +1,16 @@
+{
+  "status": "PASS bounded selected native composition after one fix",
+  "observedUTC": "2026-10-22T01:23:44.811Z",
+  "nodeID": "604:5566",
+  "dimensions": [
+    1198,
+    1531
+  ],
+  "format": "PNG",
+  "bytes": 562404,
+  "review": "Desktop Light and mobile Dark dialog bodies are editable and readable; mobile Account SID no longer wraps. Selected composition only.",
+  "delivery": "Actual MCP inline native export; no downloadable URL or local PNG path supplied.",
+  "localPNG": null,
+  "sha256": null,
+  "universalPixelParity": false
+}

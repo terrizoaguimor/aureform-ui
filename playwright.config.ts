@@ -47,7 +47,7 @@ export default defineConfig({
     },
     {
       name: "communications-chromium",
-      testMatch: /communications\.spec\.ts/,
+      testMatch: /communications(?:-[a-z]+)?\.spec\.ts/,
       use: { viewport: { width: 1440, height: 1000 } },
     },
     {

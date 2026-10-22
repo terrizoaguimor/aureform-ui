@@ -69,7 +69,7 @@ Integration provider logos are original third-party brand assets used to identif
 
 The Softphone's original Twilio and Telnyx artwork has a separate [source manifest](public/assets/communications/manifest.json) and [brand notice](public/assets/communications/README.md). These marks are also excluded from the Apache grant; the records state the applicable permission boundary without claiming brand approval.
 
-The optional [inbound backend reference](examples/communications-backend/) installs `twilio` 6.2.0 under MIT through its own package lock. Browser voice SDKs are supplied separately by the consuming application and retain their upstream licenses. The default Softphone demo installs and loads neither browser carrier SDK.
+The optional [inbound backend reference](examples/communications-backend/) installs `twilio` 6.2.0 under MIT through its own package lock. The checkout's private connection host pins the development dependencies `@twilio/voice-sdk` 2.18.5 under [Apache 2.0](licenses/third-party/twilio-voice-sdk.txt) and `@telnyx/webrtc` 2.28.0 under [MIT](licenses/third-party/telnyx-webrtc.txt). The Telnyx license text comes from its [pinned upstream commit](https://github.com/team-telnyx/webrtc/blob/ee2d3dabc1bc202abf9e8e6aacc5d25209d5c419/LICENSE). Reusable browser bindings accept consumer-supplied SDK loaders. The public Softphone demo loads no carrier SDK.
 
 The proprietary TailAdmin Pro reference was read to understand feature categories. No proprietary TailAdmin source, image, font, template or license is included in this distribution.
 

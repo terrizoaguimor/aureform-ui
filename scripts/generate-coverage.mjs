@@ -688,6 +688,38 @@ if (softphoneNativeSource) {
     assert(/^\d+:\d+$/.test(node), "Invalid supplemental native root");
 }
 const softphoneNativeComponents = softphoneNativeSource?.components ?? [];
+const setupNativeSourceFile =
+  "design/figma/communications-setup-native-source-2026-10-21.json";
+const setupNativeSource = await readOptionalJson(setupNativeSourceFile);
+if (setupNativeSource) {
+  assert.equal(setupNativeSource.fileKey, state.fileKey);
+  assert.equal(setupNativeSource.route, "softphone");
+  assert(
+    Array.isArray(setupNativeSource.sourceSnapshots) &&
+      setupNativeSource.sourceSnapshots.length >= 4,
+    "Automatic setup native source construction is incomplete",
+  );
+  for (const snapshot of setupNativeSource.sourceSnapshots)
+    assert.equal(
+      digest(await read(snapshot.file)),
+      snapshot.sha256,
+      `Automatic setup native source is stale: ${snapshot.file}`,
+    );
+  for (const mode of ["Light", "Dark", "MobileLight", "MobileDark"])
+    assert(
+      /^\d+:\d+$/.test(setupNativeSource.nodes[mode]),
+      `Missing automatic setup native root: ${mode}`,
+    );
+}
+const setupNativeComponents = setupNativeSource?.components ?? [];
+const communicationsNativeComponents = [
+  ...softphoneNativeComponents,
+  ...setupNativeComponents,
+];
+const currentSoftphoneNativeSource = setupNativeSource ?? softphoneNativeSource;
+const currentSoftphoneNativeSourceFile = setupNativeSource
+  ? setupNativeSourceFile
+  : softphoneNativeSourceFile;
 const views = [
   {
     path: "",
@@ -699,14 +731,14 @@ const views = [
   ...suiteRoutes,
 ].map((route) => {
   const supplementalView =
-    route.path === "softphone" && softphoneNativeSource
+    route.path === "softphone" && currentSoftphoneNativeSource
       ? {
           path: route.path,
           nodes: {
-            Light: softphoneNativeSource.nodes.Light,
-            Dark: softphoneNativeSource.nodes.Dark,
+            Light: currentSoftphoneNativeSource.nodes.Light,
+            Dark: currentSoftphoneNativeSource.nodes.Dark,
           },
-          metadata: softphoneNativeSourceFile,
+          metadata: currentSoftphoneNativeSourceFile,
         }
       : null;
   const sourceOnly = route.delivery === "1.5" && !supplementalView;
@@ -838,7 +870,7 @@ const runtimeExports = (source) =>
     return [];
   });
 await Promise.all(
-  [...saasNativeComponents, ...softphoneNativeComponents].map(
+  [...saasNativeComponents, ...communicationsNativeComponents].map(
     async (component) => {
       assert(
         Object.values(registry).some(
@@ -919,7 +951,7 @@ const blocks = (
         );
         const directMappings = [
           ...saasNativeComponents,
-          ...softphoneNativeComponents,
+          ...communicationsNativeComponents,
         ].filter((item) => item.source === entry.file && item.export === name);
         const direct = directMappings[0];
         const sourceOnly =
@@ -1391,6 +1423,7 @@ const coverage = {
     ...(nativeAudit ? [nativeAuditFile] : []),
     ...(nativeSaasLibrary ? [nativeSaasLibraryFile] : []),
     ...(softphoneNativeSource ? [softphoneNativeSourceFile] : []),
+    ...(setupNativeSource ? [setupNativeSourceFile] : []),
     "scripts/lib/source-graph.mjs",
     "src/lib/appearance.ts",
     "src/components/effects/index.ts",
@@ -1411,12 +1444,12 @@ const coverage = {
     registryItems: Object.keys(registry).length,
     documentationArticles: documentationArticleCount,
     codeConnectTemplates: manifest.templates.length,
-    supplementalCodeConnectTemplates: softphoneNativeComponents.length,
+    supplementalCodeConnectTemplates: communicationsNativeComponents.length,
     mappedNativeViews: views.filter((view) => view.figma.node).length,
     pendingNativeViews: pendingNativeRoutes.length,
     sourceOnlyViews: sourceOnlyRoutes.length,
     retainedNativeRootCount,
-    supplementalNativeViews: softphoneNativeSource ? 1 : 0,
+    supplementalNativeViews: currentSoftphoneNativeSource ? 1 : 0,
     directNativeBlockExports: blocks.filter(
       (block) => block.figma.status === "mapped-direct-native-id",
     ).length,
@@ -1560,17 +1593,30 @@ const coverage = {
       codeConnect: template?.file ?? null,
     };
   }),
-  nativeSourceSupplements: softphoneNativeSource
-    ? [
-        {
-          route: "softphone",
-          metadata: softphoneNativeSourceFile,
-          scope: softphoneNativeSource.scope,
-          certifiesFullRouteAudit: false,
-          cloudRegistered: false,
-        },
-      ]
-    : [],
+  nativeSourceSupplements: [
+    ...(softphoneNativeSource
+      ? [
+          {
+            route: "softphone",
+            metadata: softphoneNativeSourceFile,
+            scope: softphoneNativeSource.scope,
+            certifiesFullRouteAudit: false,
+            cloudRegistered: false,
+          },
+        ]
+      : []),
+    ...(setupNativeSource
+      ? [
+          {
+            route: "softphone",
+            metadata: setupNativeSourceFile,
+            scope: setupNativeSource.scope,
+            certifiesFullRouteAudit: false,
+            cloudRegistered: false,
+          },
+        ]
+      : []),
+  ],
   nativeHandoff: {
     scope: "retained-native-checkpoints-only",
     certifiesCurrentVersion: false,
@@ -1721,7 +1767,7 @@ const markdown = [
   "",
   `${views.length} vistas (${suiteRoutes.length} rutas de suite + landing) · ${components.length} familias y ejemplos completos · ${coverage.summary.blockFiles} archivos / ${coverage.summary.blockExports} exports de bloques · ${layoutNames.length} layouts · ${chartNames.length} gráficos · ${palettes.length} paletas · ${effects.length} efectos reutilizables · ${coverage.summary.registryItems} elementos de registry · ${documentationArticleCount} artículos de documentación · ${manifest.templates.length} templates locales de Code Connect.`,
   "",
-  `Source verificado por el catálogo TypeScript restringido, dispatcher (incluidos imports dinámicos literales) y grafo de imports. ${coverage.summary.mappedNativeViews} vistas tienen un ID nativo registrado; ${sourceOnlyRoutes.length} rutas son solo código; ${pendingNativeRoutes.length} rutas nativas pendientes del owner${pendingNativeRoutes.length ? `: ${pendingNativeRoutes.join(", ")}` : ""}. El scope Figma congelado conserva ${retainedNativeRootCount} raíces y sus recibos originales.${softphoneNativeSource ? ` El [suplemento de Softphone](../${softphoneNativeSourceFile}) registra su fuente nueva y ${softphoneNativeComponents.length} templates locales adicionales por separado.` : ""} Estos conteos describen source e IDs, sin certificar comportamiento de navegador ni SDK de proveedores. El [recibo runtime 1.2](qa-runtime-1.2.json) y sus [checks al freeze](release-checklist-1.2.md#recorded-verification-at-source-freeze) son baselines históricos: los resultados 184/74 y sus demás scopes no se reetiquetan como pruebas de ${packageManifest.version}. La [verificación 1.1](verification.es.md) mantiene su alcance histórico.`,
+  `Source verificado por el catálogo TypeScript restringido, dispatcher (incluidos imports dinámicos literales) y grafo de imports. ${coverage.summary.mappedNativeViews} vistas tienen un ID nativo registrado; ${sourceOnlyRoutes.length} rutas son solo código; ${pendingNativeRoutes.length} rutas nativas pendientes del owner${pendingNativeRoutes.length ? `: ${pendingNativeRoutes.join(", ")}` : ""}. El scope Figma congelado conserva ${retainedNativeRootCount} raíces y sus recibos originales.${softphoneNativeSource ? ` El [suplemento de Softphone](../${softphoneNativeSourceFile}) registra su fuente nueva y ${softphoneNativeComponents.length} templates locales adicionales por separado.` : ""}${setupNativeSource ? ` El [suplemento de configuración automática](../${setupNativeSourceFile}) conserva las cuatro composiciones actuales de la ruta y sus asociaciones de código, sin modificar ese baseline.` : ""} Estos conteos describen source e IDs, sin certificar comportamiento de navegador ni SDK de proveedores. El [recibo runtime 1.2](qa-runtime-1.2.json) y sus [checks al freeze](release-checklist-1.2.md#recorded-verification-at-source-freeze) son baselines históricos: los resultados 184/74 y sus demás scopes no se reetiquetan como pruebas de ${packageManifest.version}. La [verificación 1.1](verification.es.md) mantiene su alcance histórico.`,
   "",
   nativeAuditBaselineMatches
     ? `Baseline nativo 1.2 conservado: PASS compuesto para ${nativeAudit.summary.routeRoots} raíces (${nativeAudit.summary.inheritedRouteRoots} heredadas del checkpoint 1.1 y ${nativeAudit.summary.freshSaasRoutes} rutas SaaS revisadas en Light/Dark), ligado al SHA256 \`${baselineStateSha256}\` de [state-1.2-final](../${baselineStateFile}). [Informe inmutable](../${nativeAuditFile}). No certifica una revisión visual nueva de ${packageManifest.version} ni de las ${sourceOnlyRoutes.length} rutas solo código.`
@@ -1756,7 +1802,7 @@ const markdown = [
   "",
   "La referencia TailAdmin se utiliza para inventariar categorías funcionales. Código, layouts, marca y recursos son originales. Las integraciones de backend se sustituyen mediante los adaptadores documentados.",
   "",
-  `Las etiquetas de entrega son categorías de source; el inventario actual usa la versión ${coverage.version}. La categoría 1.5 es una expansión solo código, sin nuevos IDs ni revisión nativa Figma.`,
+  `Las etiquetas de entrega son categorías de source; el inventario actual usa la versión ${coverage.version}. Las expansiones 1.5 y sus suplementos nativos se registran por separado, sin ampliar el alcance de los audits congelados.`,
   "",
   "| Vista | Categoría original | Implementación | Figma editable |",
   "| --- | --- | --- | --- |",

@@ -19,6 +19,7 @@ jobs:
     timeout-minutes: 30
     env:
       NEXT_PUBLIC_BASE_PATH: ""
+      NEXT_PUBLIC_COMMUNICATIONS_BACKEND_URL: ""
       NEXT_PUBLIC_SITE_URL: https://aureformui.com
       NEXT_TELEMETRY_DISABLED: 1
       CF_SEND_TELEMETRY: "false"

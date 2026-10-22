@@ -14,7 +14,7 @@ Un UI kit de Next.js para dashboards, espacios SaaS y herramientas internas, con
 
 ![Portada de Aureform en modo oscuro, con vista previa de la interfaz y acceso a documentación](docs/images/aureform-landing-dark.webp)
 
-**70 vistas principales + 65 recetas de integración + un hub · 44 familias de componentes · 134 entradas de registry · 6 paletas · English / Español · Claro / Oscuro**
+**70 vistas principales + 65 recetas de integración + un hub · 44 familias de componentes · 140 entradas de registry · 6 paletas · English / Español · Claro / Oscuro**
 
 Construido con **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP y Lenis**. El código original de Aureform está disponible bajo [Apache 2.0](LICENSE).
 
@@ -62,6 +62,8 @@ node bin/aureform.mjs add integration-hub integrations-suite --cwd ../mi-product
 
 [![Demo local de Softphone](https://img.shields.io/badge/Softphone-demo%20entrante%20local-8F652A?style=flat-square)](https://aureformui.com/es/softphone/) [![Conexiones opcionales de SDK Twilio y Telnyx](https://img.shields.io/badge/Twilio%20%2B%20Telnyx-SDKs%20opcionales-111827?style=flat-square)](docs/communications/IMPLEMENTATION-STATUS.md)
 
+[![Configuración automática de proveedores](https://img.shields.io/badge/configuraci%C3%B3n-dos%20credenciales%20por%20proveedor-8F652A?style=flat-square)](docs/communications/AUTOMATIC-SETUP.md) [![Twilio Voice SDK 2.18.5](https://img.shields.io/badge/Twilio%20Voice%20SDK-2.18.5-111827?style=flat-square&logo=twilio&logoColor=F22F46)](licenses/third-party/twilio-voice-sdk.txt) [![Telnyx WebRTC 2.28.0](https://img.shields.io/badge/Telnyx%20WebRTC-2.28.0-111827?style=flat-square)](licenses/third-party/telnyx-webrtc.txt)
+
 [Abrir el softphone →](https://aureformui.com/es/softphone/) · [Guía de conexión →](https://aureformui.com/es/docs/communications/) · [Implementación y evidencia →](docs/communications/IMPLEMENTATION-STATUS.md)
 
 | Workspace oscuro | Workspace claro |
@@ -70,15 +72,21 @@ node bin/aureform.mjs add integration-hub integrations-suite --cwd ../mi-product
 
 El espacio de llamadas entrantes incluye presencia, cola FIFO, horario y fechas explícitas de festivos, contestar/rechazar, silenciar, espera, DTMF, notas, historial, exportación CSV y recuperación de conexión. La demo local funciona sin credenciales ni cargos telefónicos. Las pruebas de micrófono y altavoz comienzan únicamente cuando se solicitan.
 
-Los contratos editables, las conexiones opcionales de navegador para Twilio/Telnyx y un [backend de referencia separado](examples/communications-backend/) preparan un laboratorio autorizado de llamadas entrantes. Cada consumidor aporta SDKs oficiales, cuentas, identidad del navegador, secretos y aprobación de llamadas. La demo estática no contacta a un carrier. Las llamadas audibles reales y la compatibilidad de producción requieren aceptación independiente por proveedor.
+La [referencia de autoconfiguración](docs/communications/AUTOMATIC-SETUP.md) pide únicamente Account SID + Auth Token para Twilio, o API Key + Public Key para Telnyx. Un backend autenticado descubre los números existentes, prepara un plan para revisar, genera los recursos internos y verifica el enrutamiento. Las credenciales y los registros de las operaciones se guardan cifrados en el host. Conectar el navegador y autorizar una llamada limitada son pasos separados.
+
+El [recibo de validación](docs/communications/AUTOMATIC-SETUP-VALIDATION.md) separa pruebas de demo pública, autenticación privada, tipos SDK instalados y fuente editable en Figma de la aceptación con carriers reales. Para la primera prueba Twilio, usa una cuenta Full activa, su Auth Token principal y un número de voz existente en US1; todavía no se certifica una llamada real.
+
+La demo estática usa credenciales ficticias de solo lectura y no contacta a un carrier. La referencia privada incluye los SDKs oficiales; cada consumidor puede reemplazar el host, la autenticación y los adaptadores. Las llamadas audibles reales y la compatibilidad de producción requieren aceptación independiente por proveedor.
 
 ```sh
 node bin/aureform.mjs add softphone-workspace --cwd ../mi-producto
 # Cliente real y conexión opcional de proveedor:
 node bin/aureform.mjs add communications-live twilio-browser-voice --cwd ../mi-producto
+# Autoconfiguración y host del softphone conectado:
+node bin/aureform.mjs add communications-setup connected-softphone --cwd ../mi-producto
 ```
 
-El [paquete de investigación de Communications](docs/communications/RESEARCH.md) conserva la [arquitectura](docs/communications/ARCHITECTURE-RFC.md), [matriz de capacidades](docs/communications/CAPABILITY-MATRIX.md), [controles de seguridad](docs/communications/SECURITY-COMPLIANCE.md) y [roadmap por fases](docs/communications/ROADMAP.md). Aprovisionamiento de números, mensajería omnicanal, voz con IA y Prompt-to-Flow corresponden a etapas posteriores. El [registro de fuentes Figma](design/reports/communications-2026-10-21.md) conserva el research original y la recuperación anterior; el estado de implementación enlaza la fuente editable del softphone.
+El [paquete de investigación de Communications](docs/communications/RESEARCH.md) conserva la [arquitectura](docs/communications/ARCHITECTURE-RFC.md), [matriz de capacidades](docs/communications/CAPABILITY-MATRIX.md), [controles de seguridad](docs/communications/SECURITY-COMPLIANCE.md) y [roadmap por fases](docs/communications/ROADMAP.md). Compra y portabilidad de números, mensajería omnicanal, voz con IA y Prompt-to-Flow corresponden a etapas posteriores. El [registro de fuentes Figma](design/reports/communications-2026-10-21.md) conserva el research original y la recuperación anterior; la [autoconfiguración](design/figma/communications-setup-native-source-2026-10-21.json) tiene su propio suplemento de fuente nativa.
 
 ## Comercio, mapas y autenticación
 
@@ -163,7 +171,7 @@ pnpm dlx shadcn@4.22.0 add \
   https://aureformui.com/r/button.json
 ```
 
-Explora el [registry de 134 entradas](https://aureformui.com/r/registry.json). Algunos componentes y bloques requieren los estilos incluidos y los providers de idioma o apariencia; consulta sus ejemplos antes de integrarlos. [Guía del registry →](docs/registry-compatibility.md)
+Explora el [registry de 140 entradas](https://aureformui.com/r/registry.json). Algunos componentes y bloques requieren los estilos incluidos y los providers de idioma o apariencia; consulta sus ejemplos antes de integrarlos. [Guía del registry →](docs/registry-compatibility.md)
 
 ## Un frontend que puedes conectar
 

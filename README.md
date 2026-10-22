@@ -14,7 +14,7 @@ A Next.js UI kit for dashboards, SaaS workspaces and internal tools, with 65 int
 
 ![Aureform homepage in dark mode, with its interface preview and documentation entry](docs/images/aureform-landing-dark.webp)
 
-**70 core views + 65 integration recipes + a hub · 44 core component families · 134 registry entries · 6 palettes · English / Español · Light / Dark**
+**70 core views + 65 integration recipes + a hub · 44 core component families · 140 registry entries · 6 palettes · English / Español · Light / Dark**
 
 Built with **Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI, GSAP and Lenis**. Aureform-authored source is available under [Apache 2.0](LICENSE).
 
@@ -62,6 +62,8 @@ node bin/aureform.mjs add integration-hub integrations-suite --cwd ../my-product
 
 [![Softphone local demo](https://img.shields.io/badge/Softphone-local%20inbound%20demo-8F652A?style=flat-square)](https://aureformui.com/en/softphone/) [![Twilio and Telnyx optional SDK bindings](https://img.shields.io/badge/Twilio%20%2B%20Telnyx-optional%20SDK%20bindings-111827?style=flat-square)](docs/communications/IMPLEMENTATION-STATUS.md)
 
+[![Automatic provider setup](https://img.shields.io/badge/setup-two%20provider%20credentials-8F652A?style=flat-square)](docs/communications/AUTOMATIC-SETUP.md) [![Twilio Voice SDK 2.18.5](https://img.shields.io/badge/Twilio%20Voice%20SDK-2.18.5-111827?style=flat-square&logo=twilio&logoColor=F22F46)](licenses/third-party/twilio-voice-sdk.txt) [![Telnyx WebRTC 2.28.0](https://img.shields.io/badge/Telnyx%20WebRTC-2.28.0-111827?style=flat-square)](licenses/third-party/telnyx-webrtc.txt)
+
 [Open the softphone →](https://aureformui.com/en/softphone/) · [Connection guide →](https://aureformui.com/en/docs/communications/) · [Implementation and evidence →](docs/communications/IMPLEMENTATION-STATUS.md)
 
 | Dark workspace | Light workspace |
@@ -70,15 +72,21 @@ node bin/aureform.mjs add integration-hub integrations-suite --cwd ../my-product
 
 The inbound workspace includes presence, FIFO queue, business hours and explicit holiday dates, answer/decline, mute, hold, DTMF, notes, call history, CSV export and connection recovery. Its local demo runs without credentials or telephone charges. Microphone and speaker checks start only when requested.
 
-Editable contracts, optional Twilio/Telnyx browser bindings and a [separate reference backend](examples/communications-backend/) provide a path to an authorized inbound laboratory. Consumers supply official SDKs, accounts, browser identity, secrets and call approvals. The static demo does not contact a carrier. Real audible calls and production compatibility require independent acceptance for each provider.
+The [automatic setup reference](docs/communications/AUTOMATIC-SETUP.md) accepts only Account SID + Auth Token for Twilio, or API Key + Public Key for Telnyx. An authenticated backend discovers existing numbers, prepares a reviewable plan, generates the internal resources and verifies routing. Private credentials and mutation checkpoints stay encrypted on the host. Browser connection and bounded call authorization are separate steps.
+
+The [validation receipt](docs/communications/AUTOMATIC-SETUP-VALIDATION.md) separates public demo checks, private owner authentication, installed SDK typing and editable Figma source from real carrier acceptance. For the first Twilio test, use an active Full account, its primary Auth Token and an existing US1 voice number; no real call is certified yet.
+
+The static demo uses read-only fixture credentials and contacts no carrier. The private reference includes official SDK loaders; consumers can replace the host, authentication and provider adapters. Real audible calls and production compatibility require independent acceptance for each provider.
 
 ```sh
 node bin/aureform.mjs add softphone-workspace --cwd ../my-product
 # Optional live client and provider binding:
 node bin/aureform.mjs add communications-live twilio-browser-voice --cwd ../my-product
+# Automatic setup and the connected softphone host:
+node bin/aureform.mjs add communications-setup connected-softphone --cwd ../my-product
 ```
 
-The [Communications research package](docs/communications/RESEARCH.md) preserves the broader [architecture](docs/communications/ARCHITECTURE-RFC.md), [capability matrix](docs/communications/CAPABILITY-MATRIX.md), [security gates](docs/communications/SECURITY-COMPLIANCE.md) and [phased roadmap](docs/communications/ROADMAP.md). Number provisioning, omnichannel messaging, voice AI and Prompt-to-Flow remain later phases. The [Figma source record](design/reports/communications-2026-10-21.md) retains the original research and prior application recovery; the implementation status links the softphone's editable design source.
+The [Communications research package](docs/communications/RESEARCH.md) preserves the broader [architecture](docs/communications/ARCHITECTURE-RFC.md), [capability matrix](docs/communications/CAPABILITY-MATRIX.md), [security gates](docs/communications/SECURITY-COMPLIANCE.md) and [phased roadmap](docs/communications/ROADMAP.md). Number purchases and portability, omnichannel messaging, voice AI and Prompt-to-Flow remain later phases. The [Figma source record](design/reports/communications-2026-10-21.md) retains the original research and prior application recovery; [automatic setup](design/figma/communications-setup-native-source-2026-10-21.json) has its own native source supplement.
 
 ## Commerce, maps and authentication
 
@@ -163,7 +171,7 @@ pnpm dlx shadcn@4.22.0 add \
   https://aureformui.com/r/button.json
 ```
 
-Browse the [134-entry registry](https://aureformui.com/r/registry.json). Components and blocks may require the supplied styles and locale or appearance providers; check their examples before integrating. [Registry guide →](docs/registry-compatibility.md)
+Browse the [140-entry registry](https://aureformui.com/r/registry.json). Components and blocks may require the supplied styles and locale or appearance providers; check their examples before integrating. [Registry guide →](docs/registry-compatibility.md)
 
 ## A frontend you can connect
 

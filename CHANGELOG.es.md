@@ -26,8 +26,10 @@ Consulta los cambios de main antes de publicar la siguiente versión.
 - Contratos tipados de comunicaciones, fábricas opcionales de SDK de navegador Twilio y Telnyx, y un backend de referencia entrante autenticado con webhooks firmados y autorización de costos por llamada.
 - Una guía bilingüe de comunicaciones y evidencia de implementación separada, conservando los RFCs de investigación originales y la aceptación real independiente por proveedor.
 - Fuente editable del Softphone implementado en Figma, siete estados de llamada en claro/oscuro, composiciones de escritorio/móvil, diálogos y dos templates locales adicionales de Code Connect.
+- Setup automático Twilio/Telnyx revisado, con dos campos de credenciales por proveedor, selección de número existente, confirmación explícita de reemplazo de routing, configuración privada cifrada y journals de mutaciones.
+- Un host de conexión privado para un único propietario, con autenticación de aplicación separada, recuperación de perfiles configurados, renovación estable de sesión y autorización explícita de una prueba entrante limitada iniciada manualmente.
 
-Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0. La demo Softphone es local. El código opcional de SDK/backend es una referencia de laboratorio entrante; las llamadas audibles con carriers y la preparación para producción no están certificadas. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación.
+Estos cambios de main están fuera de los archivos inmutables de la release 1.5.0. El setup automático revisado, el host privado conectado, la fuente editable en Figma y la validación acotada están disponibles; la aceptación real de carriers/medios y la preparación productiva siguen sin verificarse. Una provisión incierta conserva el bloqueo de reconciliación tras reiniciar o inspeccionar de nuevo. Telnyx debe demostrar por separado el TTL breve solicitado para la credencial padre. Twilio es el primer objetivo de llamada real elegido; el setup exige verificar una cuenta Full activa y su Auth Token principal. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación.
 
 ## [1.5.0](https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.5.0) — 2026-10-20
 

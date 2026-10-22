@@ -1,0 +1,1302 @@
+{
+  "schemaVersion": 1,
+  "observedUTC": "2026-10-22T02:12:41.910803Z",
+  "consultedDate": "2026-10-21",
+  "status": "local-and-bounded-native-validation-pass",
+  "scope": "Unreleased automatic inbound setup, local public demo, private owner authentication, installed SDK declarations and injected provider operations. No live-carrier or production certification.",
+  "source": {
+    "baseCommit": "1bdf539691dffcd9ff1efb2820aee97f9b89c017",
+    "packageVersion": "1.5.0",
+    "content": "working-tree-unreleased-automatic-setup",
+    "publicationCommit": null,
+    "publicationCommitStatus": "identified-separately-by-git-history-and-deployed-build-info",
+    "files": [
+      {
+        "path": ".figma/CommunicationsSetup.figma.ts",
+        "sha256": "fbc3699b7bab7d8df1a6899534cac39c1dbed9d362b32952ce3616c2dd5b575b",
+        "bytes": 3045
+      },
+      {
+        "path": ".figma/code-connect-manifest.json",
+        "sha256": "005c3ba77160bf5dfe0b81aa39ed6821bfc850cf64a9efa9966cf0384c7301b9",
+        "bytes": 185089
+      },
+      {
+        "path": ".figma/code-connect/validation/validation-summary.json",
+        "sha256": "dcd567b0ce2aa95eddcc7c63b452f13ff248b90167ca934b0a995f53a71855d5",
+        "bytes": 1698
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha256": "67644074d1f32055eda8041af7f307890d3d72c584ffd74d53c7fe981eab7093",
+        "bytes": 1180
+      },
+      {
+        "path": ".github/workflows/cloudflare.yml",
+        "sha256": "a7149612f4525ffd22fc8227f3873fdcfdbb9e4e377fd03efcbec1671749df66",
+        "bytes": 2075
+      },
+      {
+        "path": ".github/workflows/pages.yml",
+        "sha256": "3348179fc563efe60ea87c5f761122b208ccad85f216c917c402438a5d5ddfe0",
+        "bytes": 2318
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "0bd192283e487e54e2876fb179f66bfc9fc93ca39768899eb461be954aa51d2b",
+        "bytes": 819
+      },
+      {
+        "path": "CHANGELOG.es.md",
+        "sha256": "bd7b3f2719c4cd05ac5c1a0c45067f4207843c41311c8946e4d863dc845cef80",
+        "bytes": 9921
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha256": "dc043d6f53b3c34347202510bfd305f0bc6ee1e41b61d5448aca7bfe1871fcd8",
+        "bytes": 8897
+      },
+      {
+        "path": "README.es.md",
+        "sha256": "9eb17e64a8206f52fecab2df1b95e5d442636738cf9b3d90ed6d9dcbef19d492",
+        "bytes": 32413
+      },
+      {
+        "path": "README.md",
+        "sha256": "04f4aa1680ff7c5d00a06237aece291abe067146c74da4edc0db216c4f5125a9",
+        "bytes": 31000
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "sha256": "0ef2df07fea209ec8234dce7a355d4f3d061dd67ae6f35fd2b798963c27d1f9e",
+        "bytes": 9083
+      },
+      {
+        "path": "design/figma/communications-setup-native-source-2026-10-21.json",
+        "sha256": "80ef126fc0bad3eb1c16927291159722fcd2abc65d9339781f142d4280deba81",
+        "bytes": 14139
+      },
+      {
+        "path": "design/proofs/communications-setup-2026-10-21/native-selected-readback.json",
+        "sha256": "03245b0b0d0516faa0583a07da8d2869ae4e93b58e690744b5425559fd23fc19",
+        "bytes": 540
+      },
+      {
+        "path": "design/proofs/communications-setup-2026-10-21/native-semantic-readback.json",
+        "sha256": "a74e99c4a151e6a61056c3e88ddab10ddd4859232b69727b3c8fb6b7560119b4",
+        "bytes": 1667
+      },
+      {
+        "path": "design/reports/communications-setup-native-batch-01-2026-10-21.json",
+        "sha256": "2cb47ae2a89bdb97b2dcc36ef954c5d21c9f334b803f679adc767da24bbbd320",
+        "bytes": 40471
+      },
+      {
+        "path": "design/reports/communications-setup-native-copy-2026-10-21.json",
+        "sha256": "dc7a5eb70244fdead55f4e2fa7865c8d3bf220dc2ec7632690f936722778ec92",
+        "bytes": 20510
+      },
+      {
+        "path": "design/reports/communications-setup-native-journal-2026-10-21.json",
+        "sha256": "9d076b92df342ce374fe4c149a5ce1f6859348dcc9c3160ee4186ee1fe066515",
+        "bytes": 171112
+      },
+      {
+        "path": "design/reports/communications-setup-native-journal-part-0-2026-10-21.json",
+        "sha256": "b33fbee6e7555a40455232e50879e2d34222ea3a9ceca4e45630c7705eb3a775",
+        "bytes": 26214
+      },
+      {
+        "path": "design/reports/communications-setup-native-journal-part-1-2026-10-21.json",
+        "sha256": "831bf7f8ea8eb570c07b9edde3f0f2a399a752019dd1e9ec1059f37c8f548302",
+        "bytes": 26263
+      },
+      {
+        "path": "design/reports/communications-setup-native-journal-part-2-2026-10-21.json",
+        "sha256": "9c2eaab27afd030ad4f8d6ab53b974d72e7599ceb57c7e47de4d3e239c8ec641",
+        "bytes": 14731
+      },
+      {
+        "path": "design/reports/communications-setup-native-receipt-2026-10-21.json",
+        "sha256": "885e585a69a32ecdb52820e5f4f13f1c31938ca790486a19cb0d4dabdd29d677",
+        "bytes": 241141
+      },
+      {
+        "path": "design/reports/communications-setup-native-renderer-2026-10-21.js",
+        "sha256": "8a5979eba63a529281d90546c361d0be334597db85d6a425dc9ba8e52d855a2f",
+        "bytes": 20282
+      },
+      {
+        "path": "design/reports/communications-setup-native-validation-2026-10-21.md",
+        "sha256": "f0467f00b9be6d4e6c8297895020dfde8e2e24fe754d25984d1edbad7bb33bea",
+        "bytes": 5196
+      },
+      {
+        "path": "design/scripts/prepare_design.py",
+        "sha256": "f9fe47fef9e164d38a7b0c5a576e51d231a5dfde8406f86a5e7e0a0beff58a61",
+        "bytes": 10227
+      },
+      {
+        "path": "design/scripts/verify-communications-setup-code-connect.mjs",
+        "sha256": "e87b75217ee4c61a6a8831f4e9bccf89900ad65168d39b309db1cfea3901f19e",
+        "bytes": 22540
+      },
+      {
+        "path": "docs/communications/AUTOMATIC-SETUP-VALIDATION.md",
+        "sha256": "9333ca3f1d252b15c7913a11042d4ecde70bc2c832c79fe0e4310904852f38ee",
+        "bytes": 6660
+      },
+      {
+        "path": "docs/communications/AUTOMATIC-SETUP.md",
+        "sha256": "27a7eaae5f3b88206273f433a2900b56e8986fd9c7a3a30a9b0fd8f47339fa21",
+        "bytes": 21349
+      },
+      {
+        "path": "docs/communications/IMPLEMENTATION-STATUS.md",
+        "sha256": "b5c4e4ecd5fd6c09e0f34567e595ebe5eda037a2b838423f6823110db10f137e",
+        "bytes": 18269
+      },
+      {
+        "path": "docs/coverage.es.md",
+        "sha256": "6ce7b5f8b540354a8eca7344108ea6682573780f151cca0afb5485111798428f",
+        "bytes": 50772
+      },
+      {
+        "path": "docs/coverage.json",
+        "sha256": "d495de9c8e20e9e6870d4aa6da69afc7c2683128ed3a5b7ce997b2b84937099d",
+        "bytes": 219467
+      },
+      {
+        "path": "docs/website/en/communications.md",
+        "sha256": "ecc59eba384d8295b9bd73e5e391154a59f516b3fc291bf1cc7648e8b5b131b4",
+        "bytes": 17716
+      },
+      {
+        "path": "docs/website/es/communications.md",
+        "sha256": "08c46b5015aa2bf270d0862e5663e61660dc112e9938213944a68ce9e86643a5",
+        "bytes": 19023
+      },
+      {
+        "path": "examples/communications-backend/.env.example",
+        "sha256": "4b4bd062b1b1055c30d4b39f290f2510bf72d9195b54fcdceaa07249d09e2768",
+        "bytes": 504
+      },
+      {
+        "path": "examples/communications-backend/README.md",
+        "sha256": "0562b44a588d2cd8889a90d0343e982e30401be75a0d545e694f295579fc6636",
+        "bytes": 29768
+      },
+      {
+        "path": "examples/communications-backend/lib/automatic-setup.js",
+        "sha256": "a41cc2a7f4781e8458fbdaf245bbcd45471f6766a99809fb946f34b880ccdcbc",
+        "bytes": 19631
+      },
+      {
+        "path": "examples/communications-backend/lib/config.js",
+        "sha256": "bb59c1e885bd05c3812e4a0e4bb31dc1203dc7814d7b9fe745a67fcdf0129f1c",
+        "bytes": 8187
+      },
+      {
+        "path": "examples/communications-backend/lib/setup-providers.js",
+        "sha256": "528d9f5546bed44622ff1c8053a7f0f011528dbfe3c1f0fab0e8122c6828dcc8",
+        "bytes": 53057
+      },
+      {
+        "path": "examples/communications-backend/lib/setup-store.js",
+        "sha256": "e1ba918484a66be0877415ef5c55f1ce53a34e8630f27437c8bb7be5f35f2b39",
+        "bytes": 4964
+      },
+      {
+        "path": "examples/communications-backend/package.json",
+        "sha256": "91ff181433ae3aa38abd6a433a3d09ce884bec236d987c071449da8ecc77513e",
+        "bytes": 620
+      },
+      {
+        "path": "examples/communications-backend/server.js",
+        "sha256": "84904209e88d4a265798f8dc6257dd79294a0e2e8b87265592b581741d4b894a",
+        "bytes": 20202
+      },
+      {
+        "path": "examples/communications-backend/setup-lab.mjs",
+        "sha256": "e7e0abb838f22697c085f6ba720b76e1bdc47a1e1519959405f33e42ea2a076c",
+        "bytes": 7721
+      },
+      {
+        "path": "examples/communications-backend/test/automatic-setup-http.test.js",
+        "sha256": "0db1bc339ccaa755b88ec53a0bc4ef65645955e29831bd7930127834502a0306",
+        "bytes": 51141
+      },
+      {
+        "path": "examples/communications-backend/test/automatic-setup.test.js",
+        "sha256": "1427e9870913e251eba92f1af08a249a188ac38eac11a2af50cb4ee2ce6572fd",
+        "bytes": 14379
+      },
+      {
+        "path": "examples/communications-backend/test/managed-credentials-http.test.js",
+        "sha256": "a7d596af477ce71f452a5a1da17c13533d997169daaa9c4a222459e83adcfbc9",
+        "bytes": 33524
+      },
+      {
+        "path": "examples/communications-backend/test/setup-lab.test.js",
+        "sha256": "f359c240eedc27955e64251c412cb7d76b91e2ce42ac14cdfaeb757c4b3e86a5",
+        "bytes": 14513
+      },
+      {
+        "path": "examples/communications-backend/test/setup-providers.test.js",
+        "sha256": "cec4cc31dad4edeedae8f1cd92a951a3baf07bc3cc0b4527c8146699bffc5ff7",
+        "bytes": 61186
+      },
+      {
+        "path": "examples/communications-connected.tsx",
+        "sha256": "16fe175904840228315d91344711439b32b7c672e6005527c4434e0b1fa4a267",
+        "bytes": 3427
+      },
+      {
+        "path": "licenses/third-party/telnyx-webrtc.txt",
+        "sha256": "cef215165c6a5f9851f798521ae3552a29f35dec61be471a317d5b3c1e63f66c",
+        "bytes": 1243
+      },
+      {
+        "path": "licenses/third-party/twilio-voice-sdk.txt",
+        "sha256": "f9fc33ee30f1bcaf4c6147221f085c0ce44d2be6030c7b6a03085dd9c2c874a1",
+        "bytes": 4840
+      },
+      {
+        "path": "package.json",
+        "sha256": "7ce0291d0955427f6087a6db06e35e23333ed8448675d164aa13e7ef95b241e6",
+        "bytes": 4769
+      },
+      {
+        "path": "playwright.config.ts",
+        "sha256": "68add58c96b80f6710aef6971e1e8bca02060ea9a852db48286955a05a1a4078",
+        "bytes": 2205
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "sha256": "f9d4932e47269d5ea3d989e8adb6c2c8d222f2cfa1f9167e88d8720974ab06eb",
+        "bytes": 295181
+      },
+      {
+        "path": "public/coverage.json",
+        "sha256": "d495de9c8e20e9e6870d4aa6da69afc7c2683128ed3a5b7ce997b2b84937099d",
+        "bytes": 219467
+      },
+      {
+        "path": "public/coverage/index.json",
+        "sha256": "d495de9c8e20e9e6870d4aa6da69afc7c2683128ed3a5b7ce997b2b84937099d",
+        "bytes": 219467
+      },
+      {
+        "path": "public/r/communications-setup-contracts.json",
+        "sha256": "430ed6afe52622a75d606de93aeff0c1336264b44118456c42845c5490d06e82",
+        "bytes": 27960
+      },
+      {
+        "path": "public/r/communications-setup-demo.json",
+        "sha256": "b374cb88dcd5a331d9cb65dc057864f828b3697fb4bef642462db157f7cbf6c0",
+        "bytes": 61237
+      },
+      {
+        "path": "public/r/communications-setup-live.json",
+        "sha256": "7e75f420e1b813de020c373cf09f0c097f81966ce8f36641c1935108336266c1",
+        "bytes": 52235
+      },
+      {
+        "path": "public/r/communications-setup.json",
+        "sha256": "d785632c0048fed21319f53b2d1f2613c98c66dec28294133f2529134b26dec1",
+        "bytes": 164526
+      },
+      {
+        "path": "public/r/communications-softphone-template.json",
+        "sha256": "2f5ff86741f03ad0d7af144874ec10cddfb932b44c13b0d35c2961965e6d871b",
+        "bytes": 454932
+      },
+      {
+        "path": "public/r/connected-softphone.json",
+        "sha256": "e45109536fe3811bbdfe62238bee19629366d2a790a45dbaadea6300b93ab1b3",
+        "bytes": 425233
+      },
+      {
+        "path": "public/r/index.json",
+        "sha256": "51b31718e50da0f570adbeae258dd0cea5422e815e465e796452ce31e798a84f",
+        "bytes": 20251
+      },
+      {
+        "path": "public/r/registry.json",
+        "sha256": "2a5278d46b7f62f75f9ff16cafb9de428c84f971349d2a8ec409b631b8fb31a6",
+        "bytes": 2366106
+      },
+      {
+        "path": "registry.json",
+        "sha256": "2a5278d46b7f62f75f9ff16cafb9de428c84f971349d2a8ec409b631b8fb31a6",
+        "bytes": 2366106
+      },
+      {
+        "path": "scripts/audit-public.py",
+        "sha256": "bd785ba7b70d12f5ca67a839548f6f8b6fe77a6d439e44127920c0254b6d4166",
+        "bytes": 4515
+      },
+      {
+        "path": "scripts/generate-coverage.mjs",
+        "sha256": "c2daf1e687bef1482e3c52539878e4e002775a0726b65d08a963ff6f651d5e88",
+        "bytes": 73126
+      },
+      {
+        "path": "scripts/lib/source-graph.mjs",
+        "sha256": "5ba6789a9c8774db1cbf80d1ba5e49f927a7353137567ed8d1db3ddf50a83ab1",
+        "bytes": 12889
+      },
+      {
+        "path": "src/components/app-page.tsx",
+        "sha256": "488afadcc17b8cc9d8a72ccedfa72528711f282c0a6dd0d37a9539f29ad9ea01",
+        "bytes": 11111
+      },
+      {
+        "path": "src/components/blocks/communications-setup.tsx",
+        "sha256": "425cc45e7751002fdbc9b8cf68625d2932d2d5665db8a9071d166257f3c71174",
+        "bytes": 45163
+      },
+      {
+        "path": "src/components/communications/connected-softphone.tsx",
+        "sha256": "0c8d7bcf744635b2e72b239fab0be10c83cb0872332d633ff91e89cb5bfb634a",
+        "bytes": 16436
+      },
+      {
+        "path": "src/components/communications/reference-connection.tsx",
+        "sha256": "12f4437330af36704bc2db9676c9d60cea113e51993a0cd3df55420dbba03894",
+        "bytes": 16140
+      },
+      {
+        "path": "src/components/templates/communications-softphone-template.tsx",
+        "sha256": "6231b19ea9d2defed58a75cdb22c19b1199db0c1b496b5dbcdf77ff7268a16e8",
+        "bytes": 3548
+      },
+      {
+        "path": "src/lib/changelog-data.json",
+        "sha256": "b1ca160a23d3f413f8debd4e6ee1c7f05fa6d3a38592f2546274fce1bb76410f",
+        "bytes": 21514
+      },
+      {
+        "path": "src/lib/communications/reference-lab.ts",
+        "sha256": "c868b09afe727d7623a4f91209046c91aa62410894731b1234ac1a7fd87e6484",
+        "bytes": 5694
+      },
+      {
+        "path": "src/lib/communications/setup-adapter.ts",
+        "sha256": "0d3e5f548470a1fd81bdcb3f70bc5d79442bf9509ede1ef1cf55b2b6a25c5c98",
+        "bytes": 23013
+      },
+      {
+        "path": "src/lib/communications/setup-contracts.ts",
+        "sha256": "ee96906eea4fbcb703cb83806192279e9049be94c4950d0dd482bca9d13a6d72",
+        "bytes": 9035
+      },
+      {
+        "path": "src/lib/communications/setup-demo.ts",
+        "sha256": "c5dee437aa0dd240ffc46d7a5b2691422b94d047d9eee548039cf40ad81cfb04",
+        "bytes": 8377
+      },
+      {
+        "path": "tests/communications-connected.test.mjs",
+        "sha256": "0eb4520938abef421ec295631f6ffdbda37d2c45308b4b7eb1580f2ee1c26b65",
+        "bytes": 46076
+      },
+      {
+        "path": "tests/communications-reference.test.mjs",
+        "sha256": "fb0a600c775ab8e1103c4c00ba848455102c58148ae9a8aa6962a90c0d32fe23",
+        "bytes": 8600
+      },
+      {
+        "path": "tests/communications-setup.test.mjs",
+        "sha256": "f859c06979bc6dea92a270a106d0b71d05c9dc7f7017f90fa3006dc7d6126a14",
+        "bytes": 37093
+      },
+      {
+        "path": "tests/e2e/communications-setup.spec.ts",
+        "sha256": "4504d1d8aa73f0ae980ab10bcd4cdc8a5568a1d5f8154fd055fca853db31c957",
+        "bytes": 19333
+      }
+    ]
+  },
+  "artifactPolicy": {
+    "paths": "Published source paths are repository-relative; external artifacts are identified only by basename and digest.",
+    "rawRunnerArtifactsPublished": false,
+    "privateHostnamesIdsHeadersBodiesAndValuesPublished": false,
+    "inlineNativePNG": "Actually exported and inspected through MCP. No downloadable URL, local PNG path or SHA256 is claimed.",
+    "immutableReleaseArchivesRewritten": false
+  },
+  "evidenceInputs": [
+    {
+      "artifactName": "aureform-autosetup-close-root-unit.log",
+      "publishedPath": null,
+      "sha256": "68aa0465b340dd8fcbf65930f89a27c44fb7e96f08694a8742a7e14a46710e3c",
+      "bytes": 95514
+    },
+    {
+      "artifactName": "aureform-autosetup-close-node22-backend.log",
+      "publishedPath": null,
+      "sha256": "d880889a8ba67a2aaf2a0a59eb1d4709f4a503c1bfa6b5b5ec320f30c43d6881",
+      "bytes": 57569
+    },
+    {
+      "artifactName": "aureform-autosetup-close-typecheck.log",
+      "publishedPath": null,
+      "sha256": "0a53c2833f638a4cde5463ae16416510047bda265600b2cfdc674df347e73aad",
+      "bytes": 98
+    },
+    {
+      "artifactName": "aureform-autosetup-close-final-lint.log",
+      "publishedPath": null,
+      "sha256": "1268763a8494a7d94e327d6687e199b82f7179502c7ea22c94ac942f672ae31b",
+      "bytes": 303
+    },
+    {
+      "artifactName": "aureform-autosetup-pages-root.log",
+      "publishedPath": null,
+      "sha256": "87b7d894a0e38ad48a2d23bd3b9b28c64d70ce39f5762290d4b4c9846bcdadc4",
+      "bytes": 285
+    },
+    {
+      "artifactName": "aureform-autosetup-pages-mounted.log",
+      "publishedPath": null,
+      "sha256": "d6f02be806fe393d108cbf0cf6d9633dc16ad4e30337bff524c73520a3f31af3",
+      "bytes": 296
+    },
+    {
+      "artifactName": "aureform-autosetup-examples-final.log",
+      "publishedPath": null,
+      "sha256": "eeeacd9bf9556044e1034b8a767c4cee6bbce8c5516ca822a1012e2b4e4463d8",
+      "bytes": 967
+    },
+    {
+      "artifactName": "aureform-autosetup-integrations-final.log",
+      "publishedPath": null,
+      "sha256": "bc150296648e673c3f7cf76c7ae56a2b4d917272f91a35eb7262f8daaca67c5a",
+      "bytes": 288
+    },
+    {
+      "artifactName": "aureform-autosetup-consumer-proof.json",
+      "publishedPath": null,
+      "sha256": "e521bc975911a9497f8066494157c0538342e712a815772eff4d422bd7d0910d",
+      "bytes": 3325
+    },
+    {
+      "artifactName": "aureform-autosetup-private-ui-proof.json",
+      "publishedPath": null,
+      "sha256": "fedf743500b85f886adb5f477af3d5b7704a6a97d9570b8d4fc1cdb1bda9acbb",
+      "bytes": 1182
+    },
+    {
+      "artifactName": "aureform-autosetup-private-transport-proof.json",
+      "publishedPath": null,
+      "sha256": "9846313e283eaafccc57472415afa042f4155e1895011f2e34366c6e25471afc",
+      "bytes": 1117
+    },
+    {
+      "artifactName": "receipt.json",
+      "publishedPath": null,
+      "sha256": "cab6f4cdc997d51d95ddaee04b4e55e92882e2c8c7c9a7352f2fb1eda56c0e22",
+      "bytes": 12737
+    },
+    {
+      "artifactName": "report.json",
+      "publishedPath": null,
+      "sha256": "2381000e40422ccbe32074395086a9e35e67be1e0e55346ef45ebbd19753f64f",
+      "bytes": 34082
+    },
+    {
+      "artifactName": "aureform-autosetup-communications-mounted-e2e.json",
+      "publishedPath": null,
+      "sha256": "07419480ffd5c32d63238e3e475e2b19c6bd906bb684c563dd756b78f19e9679",
+      "bytes": 59390
+    },
+    {
+      "artifactName": "aureform-autosetup-softphone-root-e2e.json",
+      "publishedPath": null,
+      "sha256": "b43abb48a6272300dbc1fae3421a80f5cce79c8678b940c8a8c6a4e066304cc9",
+      "bytes": 31529
+    },
+    {
+      "artifactName": "setup-code-connect-validation.json",
+      "publishedPath": null,
+      "sha256": "80edaafafc7fc80631db27ba24c3e839b1fee9ec8fea3f55b01bd28ee8cee6f5",
+      "bytes": 32423
+    },
+    {
+      "artifactName": "final-root-receipt.json",
+      "publishedPath": null,
+      "sha256": "918d232eef42b3219859ac80073d1e44956bfd8162a2411aa683ed36f819d9a1",
+      "bytes": 12174
+    },
+    {
+      "artifactName": "article-http-readback.json",
+      "publishedPath": null,
+      "sha256": "ce4e81c1185ffecbd3a2c426cccbd1dbc1d27d695ec6f8db7f752ebc4b48724f",
+      "bytes": 1001
+    },
+    {
+      "artifactName": "aureform-autosetup-final-root.log",
+      "publishedPath": null,
+      "sha256": "293dc9798828e457de6e3871911210fcc3346488eb4d229213777d923e63f81c",
+      "bytes": 2374
+    },
+    {
+      "artifactName": "aureform-autosetup-close-public-audit.json",
+      "publishedPath": null,
+      "sha256": "a5992a5e448d5369fd10f17af5bfdb5b08be77e04e6c43d80f2dd876119dcc4c",
+      "bytes": 130
+    },
+    {
+      "artifactName": "aureform-autosetup-close-private-value-scan.json",
+      "publishedPath": null,
+      "sha256": "ef218b89748ea9315e059c68ebf325ae3abacd42fcec13b2f74e0b8a2241c430",
+      "bytes": 332
+    }
+  ],
+  "checks": {
+    "rootUnit": {
+      "status": "pass",
+      "command": "pnpm test",
+      "exitCode": 0,
+      "runtime": "v26.7.0",
+      "counts": {
+        "tests": 1036,
+        "suites": 5,
+        "pass": 1036,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 14495.210906
+      },
+      "includedSubsets": {
+        "setup": 34,
+        "connectedHost": 29,
+        "referenceTransport": 10
+      },
+      "scope": "Local tests. Provider SDK/network tests use injected synthetic objects and responses."
+    },
+    "referenceBackend": {
+      "status": "pass",
+      "command": "node --test examples/communications-backend/test/*.test.js",
+      "exitCode": 0,
+      "runtime": "v22.22.3",
+      "counts": {
+        "tests": 245,
+        "suites": 0,
+        "pass": 245,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 715.552183
+      },
+      "subsets": {
+        "retained": 54,
+        "setup": 12,
+        "providerFixtures": 115,
+        "setupHTTP": 30,
+        "initializer": 23,
+        "managedCredentialHTTP": 11
+      },
+      "scope": "Actual loopback HTTP and server boundaries; synthetic carrier I/O. Includes encrypted restart, unknown mutation, routing drift, account/token prerequisites and active-call races.",
+      "realCarrierRequests": 0
+    },
+    "rootTypecheck": {
+      "status": "pass",
+      "command": "pnpm typecheck",
+      "exitCode": 0,
+      "noEmit": true
+    },
+    "rootLint": {
+      "status": "pass",
+      "command": "pnpm lint",
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 1,
+      "warning": {
+        "path": "design/rebuild-plugin/backend.js",
+        "line": 44,
+        "rule": "@typescript-eslint/no-unused-vars",
+        "message": "'afRebuild' is defined but never used"
+      }
+    },
+    "rootPublicBrowser": {
+      "status": "pass",
+      "totalPassed": 38,
+      "setup": {
+        "startTime": "2026-10-22T01:09:54.540Z",
+        "duration": 16956.030000000002,
+        "expected": 16,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "retainedSoftphone": {
+        "startTime": "2026-10-22T01:12:52.419Z",
+        "duration": 17614.136,
+        "expected": 22,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "setupCounts": {
+        "total": 16,
+        "passed": 16,
+        "failed": 0,
+        "testBodiesCompleted": 16,
+        "browserErrors": 0,
+        "failedResourceResponses": 0,
+        "communicationsAPIRequests": 0,
+        "microphoneRequests": 0,
+        "axeScans": 12,
+        "axeViolations": 0
+      },
+      "sourceFrozen": true,
+      "scope": "Clean static export, local fixture-only setup and softphone. No provider credentials or carrier requests."
+    },
+    "mountedPublicBrowser": {
+      "status": "pass",
+      "basePath": "/aureform-ui",
+      "stats": {
+        "startTime": "2026-10-22T01:31:58.839Z",
+        "duration": 38901.738,
+        "expected": 38,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "scope": "Independent combined run of both setup and retained softphone suites against the mounted static export."
+    },
+    "privateOwnerBrowser": {
+      "status": "pass",
+      "checkedAt": "2026-10-22T01:21:31.279Z",
+      "provider": "twilio",
+      "ownerLogin": true,
+      "providerCredentialFields": 2,
+      "providerCredentialFieldsEmptyAndEditable": true,
+      "axeScans": 2,
+      "axeViolations": 0,
+      "browserErrors": 0,
+      "failedResources": 0,
+      "routesObserved": [
+        {
+          "method": "POST",
+          "path": "/v1/communications/setup/login"
+        },
+        {
+          "method": "GET",
+          "path": "/v1/communications/setup/connections"
+        }
+      ],
+      "carrierCredentialsEntered": false,
+      "carrierRequests": 0,
+      "voiceSessionRequested": false,
+      "providerSDKRegistered": false,
+      "liveCallPerformed": false,
+      "scope": "Application login and configured-profile read through the private named HTTPS tunnel only."
+    },
+    "privateTransport": {
+      "schemaVersion": 1,
+      "checkedAt": "2026-10-22T02:02:18.609Z",
+      "backendRuntime": "Node 22.22.3",
+      "client": "Node fetch",
+      "checks": [
+        {
+          "transport": "local-loopback",
+          "healthStatus": 200,
+          "ownerLoginStatus": 200,
+          "connectionsStatus": 200,
+          "configuredProviders": 0,
+          "carrierOperationsEnabled": false,
+          "automaticSetupEnabled": true,
+          "memoryOnly": true,
+          "liveCallVerification": "not performed",
+          "carrierRequestsMade": 0,
+          "liveCallPerformed": false
+        },
+        {
+          "transport": "named-https-tunnel",
+          "healthStatus": 200,
+          "ownerLoginStatus": 200,
+          "connectionsStatus": 200,
+          "configuredProviders": 0,
+          "carrierOperationsEnabled": false,
+          "automaticSetupEnabled": true,
+          "memoryOnly": true,
+          "liveCallVerification": "not performed",
+          "carrierRequestsMade": 0,
+          "liveCallPerformed": false
+        }
+      ],
+      "limits": [
+        "Health/authentication only; no provider I/O, voice session, SSE or WebRTC proof.",
+        "Private hostnames, identifiers, request bodies, headers and values omitted."
+      ]
+    },
+    "cleanCLIConsumer": {
+      "schemaVersion": 1,
+      "checkedAt": "2026-10-22T01:09:43.463Z",
+      "status": "passed",
+      "sourceInstallation": {
+        "items": [
+          "communications-setup",
+          "connected-softphone",
+          "communications-softphone-template"
+        ],
+        "copiedSourceFiles": 40,
+        "copiedAssets": 4,
+        "privateEnvironmentCopied": false,
+        "source": [
+          {
+            "file": "src/components/blocks/communications-setup.tsx",
+            "sha256": "425cc45e7751002fdbc9b8cf68625d2932d2d5665db8a9071d166257f3c71174",
+            "matched": true
+          },
+          {
+            "file": "src/components/communications/connected-softphone.tsx",
+            "sha256": "0c8d7bcf744635b2e72b239fab0be10c83cb0872332d633ff91e89cb5bfb634a",
+            "matched": true
+          },
+          {
+            "file": "src/components/templates/communications-softphone-template.tsx",
+            "sha256": "6231b19ea9d2defed58a75cdb22c19b1199db0c1b496b5dbcdf77ff7268a16e8",
+            "matched": true
+          },
+          {
+            "file": "src/components/communications/reference-connection.tsx",
+            "sha256": "12f4437330af36704bc2db9676c9d60cea113e51993a0cd3df55420dbba03894",
+            "matched": true
+          },
+          {
+            "file": "src/lib/communications/setup-contracts.ts",
+            "sha256": "ee96906eea4fbcb703cb83806192279e9049be94c4950d0dd482bca9d13a6d72",
+            "matched": true
+          },
+          {
+            "file": "src/lib/communications/setup-adapter.ts",
+            "sha256": "0d3e5f548470a1fd81bdcb3f70bc5d79442bf9509ede1ef1cf55b2b6a25c5c98",
+            "matched": true
+          },
+          {
+            "file": "src/lib/communications/setup-demo.ts",
+            "sha256": "c5dee437aa0dd240ffc46d7a5b2691422b94d047d9eee548039cf40ad81cfb04",
+            "matched": true
+          },
+          {
+            "file": "src/lib/communications/reference-lab.ts",
+            "sha256": "c868b09afe727d7623a4f91209046c91aa62410894731b1234ac1a7fd87e6484",
+            "matched": true
+          }
+        ]
+      },
+      "installation": {
+        "isolated": true,
+        "registry": "https://registry.npmjs.org",
+        "lifecycleScripts": false,
+        "consumerLockfileSha256": "96eb8f16f5680e805a132463d80d8d2770a53db6ae337ecf6b1461fbc81c8e30",
+        "packages": [
+          {
+            "name": "next",
+            "version": "16.4.2",
+            "packageJsonSha256": "e84ada0a68191fed192392bfb8ee35ad4ed8e7439f645a40dd48cf139588ddc5"
+          },
+          {
+            "name": "react",
+            "version": "19.3.1",
+            "packageJsonSha256": "9cc9c3de5441a2eea7f41f52f3f2a15a4fc51f90c0b72741f0d7638643a85e67"
+          },
+          {
+            "name": "typescript",
+            "version": "5.9.3",
+            "packageJsonSha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6"
+          },
+          {
+            "name": "@twilio/voice-sdk",
+            "version": "2.18.5",
+            "packageJsonSha256": "46ea13613e1a366fd3932dbfde718b64deae53a23cb96bdc1a5ecd734b6ee906"
+          },
+          {
+            "name": "@telnyx/webrtc",
+            "version": "2.28.0",
+            "packageJsonSha256": "8bec665c6db4a3afeb4bfffd2f6874f3b556e40fd1e95dc83dc4558e2549108a"
+          }
+        ]
+      },
+      "compilation": {
+        "strict": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "diagnostics": 0,
+        "realInstalledSdkDeclarations": true,
+        "ambientSdkStubs": 0,
+        "directSdkLoaders": 2,
+        "projectedSdkLoaders": 2
+      },
+      "sdkExecution": false,
+      "carrierRequestsMade": 0,
+      "liveCallPerformed": false
+    },
+    "rootStaticExport": {
+      "prerenderedRoutes": 315,
+      "status": "passed",
+      "basePath": "/",
+      "htmlPages": 332,
+      "documentationChapters": 25,
+      "uniqueLocalDestinations": 561,
+      "failures": [],
+      "finalBuildObservedUTC": "2026-10-22T02:09:22.830Z",
+      "runtime": "v22.22.3",
+      "buildExitCode": 0,
+      "privateBackendEnvironment": "",
+      "temporaryBuildInfo": "unknown; working-tree source does not identify a deployed commit",
+      "sourceHashesMatchingBeforeAfterAndTemporaryCopy": 9,
+      "articleHTTPReadback": {
+        "method": "Two read-only local HTTP GETs served from the freshly built static output; no browser or carrier API",
+        "results": [
+          {
+            "route": "/en/docs/communications/",
+            "status": 200,
+            "language": "en",
+            "title": "Softphone &amp; inbound voice · Documentation · Aureform UI",
+            "bytes": 132480,
+            "sha256": "e7ae74b0fd1991b289adde80fe9a6b61c72d69be9a4b2a25fc607a12fe6031db",
+            "containsUS1": true,
+            "containsFullPrimaryPrerequisites": true
+          },
+          {
+            "route": "/es/docs/communications/",
+            "status": 200,
+            "language": "es",
+            "title": "Softphone y voz entrante · Documentación · Aureform UI",
+            "bytes": 136080,
+            "sha256": "51f74a11b7e7d89c2c8d76ab3fedb20674cd272599846a394913b77bc2ceaf5e",
+            "containsUS1": true,
+            "containsFullPrimaryPrerequisites": true
+          }
+        ]
+      }
+    },
+    "mountedStaticExport": {
+      "prerenderedRoutes": 315,
+      "status": "passed",
+      "basePath": "/aureform-ui",
+      "htmlPages": 332,
+      "documentationChapters": 25,
+      "uniqueLocalDestinations": 561,
+      "failures": []
+    },
+    "canonicalExamples": {
+      "status": "pass",
+      "compilation": {
+        "typescript": "5.9.3",
+        "strict": true,
+        "noEmit": true,
+        "payloads": 688,
+        "rootFiles": 733,
+        "diagnostics": 0,
+        "diagnosticCodes": [],
+        "canonicalSourceFiles": 66
+      },
+      "scope": "Canonical examples strictly compile. Deliberately broken negative controls remain separate from accepted examples."
+    },
+    "integrationExamples": {
+      "status": "pass",
+      "strict": true,
+      "payloads": 11,
+      "diagnostics": 0
+    },
+    "retainedCodeConnect": {
+      "status": "passed-local-smoke",
+      "templateCheckpointVersion": "1.4.0",
+      "sourceValidationVersion": "1.5.0+automatic-setup",
+      "templateFiles": 92,
+      "totalTemplateEvaluations": 1646,
+      "uniqueTypedExamples": 556,
+      "diagnostics": 0,
+      "sourceSnapshotChecks": 107,
+      "templateSnapshotChecks": 92,
+      "liveFigmaRuntimeTested": false,
+      "cloudRegistered": false
+    },
+    "newSetupCodeConnect": {
+      "status": "PASS",
+      "UTC": "2026-10-22T01:43:49.124Z",
+      "nativeRecord": {
+        "file": "design/figma/communications-setup-native-source-2026-10-21.json",
+        "sha256": "80ef126fc0bad3eb1c16927291159722fcd2abc65d9339781f142d4280deba81",
+        "status": "complete-bounded-native-source",
+        "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+        "pageID": "585:59",
+        "nativePageQACertifiedByThisVerifier": false
+      },
+      "emittedCases": 8,
+      "distinctTypedExamples": 2,
+      "guards": 9,
+      "sourceHashesVerified": 9,
+      "strictErrors": [],
+      "cloudRegistered": false,
+      "scope": "Local CommunicationsSetup parserless template and emitted source examples only",
+      "execution": "Synthetic selectedInstance; source AST inspection and strict compilation without emission"
+    },
+    "retainedSoftphone": {
+      "matchingSourceHashes": 20,
+      "sourceSnapshots": [
+        {
+          "file": "src/components/blocks/softphone.tsx",
+          "sha256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42",
+          "bytes": 10576
+        },
+        {
+          "file": "src/components/blocks/softphone-workspace.tsx",
+          "sha256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139",
+          "bytes": 64383
+        },
+        {
+          "file": "src/components/templates/softphone-template.tsx",
+          "sha256": "bef464d5261a63120f9ecb03adc0b4d03caa674bbc596c76943e33fe12d97b18",
+          "bytes": 811
+        },
+        {
+          "file": "src/hooks/use-softphone-audio.ts",
+          "sha256": "48d2459aa0d435f55dafd7b1b9c518caec641361b83c5b99201fcbc3777a3b59",
+          "bytes": 7539
+        },
+        {
+          "file": "src/components/blocks/dashboard-shell.tsx",
+          "sha256": "de13280392c8a47a0fcca8656ba4edda68e5d3729c098d4f6c9ee6b99f59eff7",
+          "bytes": 32612
+        },
+        {
+          "file": "src/components/templates/landing.tsx",
+          "sha256": "8935cc8e810d3c17eaacb76aa13bfb343d5480c88a2f0fec9c9a1ce8a6bfed1c",
+          "bytes": 76097
+        },
+        {
+          "file": "src/components/communications/provider-logo.tsx",
+          "sha256": "5015629a3070479ce46801cbf48d946acc17f1f0b6742a3713b3a176bd5f0edb",
+          "bytes": 1911
+        },
+        {
+          "file": "src/lib/communications/contracts.ts",
+          "sha256": "31df71c1b4d7d931f9f632216888c5d76833741994b10ab49110efe0c5256bee",
+          "bytes": 6177
+        },
+        {
+          "file": "src/lib/communications/business-hours.ts",
+          "sha256": "03f26a7751579946c100a17cbb239e7b0dc493ba82931a4d1a337a38d8b24c1b",
+          "bytes": 6555
+        },
+        {
+          "file": "src/lib/communications/fixtures.ts",
+          "sha256": "8cbd5a0ca3ca9755a4b72426fe3e32b8dc4d77e3804dfddbbb6bb9fb42162715",
+          "bytes": 2588
+        },
+        {
+          "file": "src/lib/communications/demo-adapter.ts",
+          "sha256": "cccfc0236c912206782ba94a8dd1a205e45cfc47dcadbdabc723b4b213fcb440",
+          "bytes": 24195
+        },
+        {
+          "file": "src/lib/communications/live-adapter.ts",
+          "sha256": "0ef8d6564df8127651f926bc73a5c5b04f779661440187e174c7934f7bb2fe98",
+          "bytes": 62774
+        },
+        {
+          "file": "src/lib/communications/demo-session.ts",
+          "sha256": "12f106db51bb11e7ca73990227b34094d31670de086a10ba743604c255fba6c0",
+          "bytes": 1169
+        },
+        {
+          "file": "src/lib/communications/twilio-browser.ts",
+          "sha256": "db2ff59a67dd61ebffe32830d9d576f6eba3472906340605761c0604f6cc68eb",
+          "bytes": 19206
+        },
+        {
+          "file": "src/lib/communications/telnyx-browser.ts",
+          "sha256": "09375ed940861c32329f9694559f9763d5f815bde9b852205987da76450f72f2",
+          "bytes": 24137
+        },
+        {
+          "file": "src/lib/communications/brands.ts",
+          "sha256": "58efb1aa569a90747896ac44cf065b6ad47f1c602ded096b244c0fa8aaa96731",
+          "bytes": 1964
+        },
+        {
+          "file": "public/assets/communications/twilio.svg",
+          "sha256": "8c51d0a2815389e1d33cb115f73fd287a14d8f042f30fd2aba252e3df54dc068",
+          "bytes": 2358
+        },
+        {
+          "file": "public/assets/communications/telnyx.svg",
+          "sha256": "25d4cc0279f7eb21c6c0f8c2811f3a3fdaa302e7cb8d8abe35538b8626fb388e",
+          "bytes": 4594
+        },
+        {
+          "file": "public/assets/communications/README.md",
+          "sha256": "ac7564f39712ac056c5d8e38433e7852a2a9091e272d0a3fbcf90c0ebec3f76a",
+          "bytes": 2409
+        },
+        {
+          "file": "public/assets/communications/manifest.json",
+          "sha256": "ecc6909ff4e0360cdf905d89118bf14514fe5a11e3235764d934215f571f4a5d",
+          "bytes": 4433
+        }
+      ],
+      "unchangedBaselineFiles": [
+        {
+          "path": "design/figma/softphone-native-source-2026-10-21.json",
+          "sha256": "fb2516773ffd7e624c5f3e930788d7953662e0f9fc2f669caf8a468f757174a5",
+          "bytes": 11878,
+          "matchesBaseCommit": true
+        },
+        {
+          "path": ".figma/Softphone.figma.ts",
+          "sha256": "124aacbe9fb56b7aa1ac5117c81a632c9abc8eb2b866939cc86479eef2f102b6",
+          "bytes": 3277,
+          "matchesBaseCommit": true
+        },
+        {
+          "path": ".figma/SoftphoneWorkspace.figma.ts",
+          "sha256": "6cee8e6a1c1ff14c6c5d1e39088651a8fbf27d44e9a69acb40de5cf07a41fe7a",
+          "bytes": 3162,
+          "matchesBaseCommit": true
+        },
+        {
+          "path": "docs/communications/VALIDATION.md",
+          "sha256": "f12ecb09a022aaf0d657b83511dacb2a4cb25bf13fb41077306c8ce117b7f866",
+          "bytes": 11740,
+          "matchesBaseCommit": true
+        },
+        {
+          "path": "docs/communications/VALIDATION.json",
+          "sha256": "baab25182777a3f33e114ba1b9904923b62ae00768e1724f61618f0716dc2d1b",
+          "bytes": 53784,
+          "matchesBaseCommit": true
+        },
+        {
+          "path": "examples/communications-backend/test/domain.test.js",
+          "sha256": "4295ee869791f4252b002a821cd6f6baa65740da1a7cb54d5647f05e59d8402b",
+          "bytes": 19258,
+          "matchesBaseCommit": true
+        },
+        {
+          "path": "examples/communications-backend/test/http.test.js",
+          "sha256": "9a669660bbdf2ade1cffaa46c18f226c369d7052f8e5c059d6105195c0567b14",
+          "bytes": 12646,
+          "matchesBaseCommit": true
+        },
+        {
+          "path": "examples/communications-backend/test/security-providers.test.js",
+          "sha256": "525bd258c2ff62e4069131b71492128dcf298600c55b60ad80c94ed1b7d41600",
+          "bytes": 11740,
+          "matchesBaseCommit": true
+        }
+      ]
+    },
+    "twilioAccountPrerequisites": {
+      "status": "implemented-with-synthetic-tests",
+      "required": [
+        "active Full account",
+        "verifiable primary Auth Token",
+        "owned eligible US1 voice number"
+      ],
+      "automaticUpgradeOrTokenPromotion": false,
+      "realAccountVerified": false,
+      "sourcesConsulted": "2026-10-21",
+      "sources": [
+        "https://www.twilio.com/docs/usage/trials/try-out-voice",
+        "https://www.twilio.com/docs/usage/security",
+        "https://www.twilio.com/docs/iam/api/account",
+        "https://www.twilio.com/docs/iam/api/secondary_authtoken"
+      ]
+    },
+    "publicSourceAudit": {
+      "status": "passed",
+      "gitFiles": 1974,
+      "scannedFilesAndArchiveEntries": 4311,
+      "archiveEntries": 2337,
+      "findings": []
+    },
+    "knownPrivateValueScan": {
+      "status": "passed",
+      "scope": "Exact known owner/encryption/tunnel values and private backend origin in Git-publishable files and ZIP members.",
+      "knownPrivateValuesChecked": 9,
+      "gitFiles": 1974,
+      "scannedFilesAndArchiveEntries": 4311,
+      "archiveEntries": 2337,
+      "findings": [],
+      "valuesOrTheirDigestsPublished": false
+    }
+  },
+  "nativeFigma": {
+    "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+    "pageID": "585:59",
+    "status": "complete-bounded-native-source",
+    "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=585-59",
+    "sourceMap": {
+      "path": "design/figma/communications-setup-native-source-2026-10-21.json",
+      "sha256": "80ef126fc0bad3eb1c16927291159722fcd2abc65d9339781f142d4280deba81",
+      "bytes": 14139
+    },
+    "receipt": {
+      "path": "design/reports/communications-setup-native-receipt-2026-10-21.json",
+      "sha256": "885e585a69a32ecdb52820e5f4f13f1c31938ca790486a19cb0d4dabdd29d677",
+      "bytes": 241141
+    },
+    "nodes": {
+      "Light": "593:741",
+      "Dark": "593:1391",
+      "MobileLight": "593:1746",
+      "MobileDark": "593:2303"
+    },
+    "counts": {
+      "routeEntries": 4,
+      "credentialVariants": 8,
+      "flowSnapshots": 20,
+      "authenticatedHostVariants": 8,
+      "dialogVariants": 4,
+      "privateFrames": 4,
+      "mainVariantComponents": 44,
+      "auxiliaryVariantComponents": 7,
+      "standaloneComponents": 6,
+      "allComponents": 57,
+      "componentSets": 9,
+      "currentNodes": 6001,
+      "editableTextNodes": 1701,
+      "nativeVectors": 1097
+    },
+    "sourceSnapshots": [
+      {
+        "file": "src/components/blocks/communications-setup.tsx",
+        "sha256": "425cc45e7751002fdbc9b8cf68625d2932d2d5665db8a9071d166257f3c71174",
+        "bytes": 45163
+      },
+      {
+        "file": "src/components/templates/communications-softphone-template.tsx",
+        "sha256": "6231b19ea9d2defed58a75cdb22c19b1199db0c1b496b5dbcdf77ff7268a16e8",
+        "bytes": 3548
+      },
+      {
+        "file": "src/components/communications/connected-softphone.tsx",
+        "sha256": "0c8d7bcf744635b2e72b239fab0be10c83cb0872332d633ff91e89cb5bfb634a",
+        "bytes": 16436
+      },
+      {
+        "file": "src/components/communications/reference-connection.tsx",
+        "sha256": "12f4437330af36704bc2db9676c9d60cea113e51993a0cd3df55420dbba03894",
+        "bytes": 16140
+      },
+      {
+        "file": "src/lib/communications/setup-contracts.ts",
+        "sha256": "ee96906eea4fbcb703cb83806192279e9049be94c4950d0dd482bca9d13a6d72",
+        "bytes": 9035
+      },
+      {
+        "file": "src/lib/communications/setup-adapter.ts",
+        "sha256": "0d3e5f548470a1fd81bdcb3f70bc5d79442bf9509ede1ef1cf55b2b6a25c5c98",
+        "bytes": 23013
+      },
+      {
+        "file": "src/lib/communications/setup-demo.ts",
+        "sha256": "c5dee437aa0dd240ffc46d7a5b2691422b94d047d9eee548039cf40ad81cfb04",
+        "bytes": 8377
+      },
+      {
+        "file": "src/lib/communications/reference-lab.ts",
+        "sha256": "c868b09afe727d7623a4f91209046c91aa62410894731b1234ac1a7fd87e6484",
+        "bytes": 5694
+      },
+      {
+        "file": "src/components/app-page.tsx",
+        "sha256": "488afadcc17b8cc9d8a72ccedfa72528711f282c0a6dd0d37a9539f29ad9ea01",
+        "bytes": 11111
+      }
+    ],
+    "nativeProof": {
+      "nodeID": "604:5566",
+      "format": "PNG",
+      "width": 1198,
+      "height": 1531,
+      "bytes": 562404,
+      "observedUTC": "2026-10-22T01:23:44.811Z",
+      "delivery": "actual MCP inline native export",
+      "localPNG": null,
+      "sha256": null,
+      "readbackRecord": "design/proofs/communications-setup-2026-10-21/native-selected-readback.json"
+    },
+    "semanticReadback": {
+      "status": "PASS 6/6 actual configured/unknown/failed labels",
+      "observedUTC": "2026-10-22T01:39:33.471Z",
+      "record": "design/proofs/communications-setup-2026-10-21/native-semantic-readback.json",
+      "sha256": "a74e99c4a151e6a61056c3e88ddab10ddd4859232b69727b3c8fb6b7560119b4",
+      "labelEN": "Webhook configuration",
+      "labelES": "Configuración de webhooks",
+      "meaning": "Configuration readback; no signed webhook delivery, browser readiness or real-call proof is implied."
+    },
+    "lease": {
+      "active": false,
+      "scope": "new page 14 · Communications · Automatic setup only",
+      "pageID": "585:59",
+      "releaseUTC": "2026-10-22T01:36:22.791297Z"
+    },
+    "qa": {
+      "structural": "PASS bounded own-page identity/axes/mode/token readback",
+      "visual": "PASS selected native inline PNG after one bounded fix",
+      "readbackUTC": "2026-10-22T01:32:11.838Z",
+      "visualUTC": "2026-10-22T01:23:44.811Z",
+      "universalPixelParity": false,
+      "codeConnect": "PASS actual current source properties/8 variants/2 strictly compiled examples/9 guards; verification artifact is maintained independently",
+      "codeConnectProof": "artifacts/communications-design/setup-code-connect-validation.json"
+    },
+    "limitations": [
+      "Native design source does not prove provider account permissions, provisioning or live calls.",
+      "Configured state keeps browser readiness and a real test call pending.",
+      "No universal runtime or pixel parity claim.",
+      "Existing chrome/workspace native copy remains a retained fixture; new setup copy is Spanish from source. No full locale parity claim.",
+      "Native CSS background gradients are approximate.",
+      "Telnyx medium neutral plate is uniformly scaled to 66px rather than source64px; original lockup is intact.",
+      "Selected native screenshot covers desktop Light and mobile Dark dialog bodies only; not all screens, modes or locales.",
+      "Connector produced an actual inline native PNG with no download URL. No local PNG filename or SHA256 is claimed.",
+      "Native narrow single-line fields use ellipsis; browser input overflow behavior has not been matched pixel by pixel.",
+      "Source close button is 28px and private reference inputs are 40px high; there is no blanket 44px-target certification.",
+      "Full source dialog scrolling, focus management, validation, authenticated setup, provider SDK and carrier behavior require runtime evidence separate from native snapshots."
+    ],
+    "scope": "Only the new editable automatic-setup extension; original 69 route roots and historical audits are not recertified."
+  },
+  "developmentRecovery": {
+    "observedFailure": "The Turbopack development manifest referenced a missing dynamic chunk, including after a cold restart.",
+    "verifiedRecovery": "NEXT_PUBLIC_BASE_PATH='' pnpm dev --webpack --port 3000",
+    "installedGuide": "node_modules/next/dist/docs/01-app/03-api-reference/06-cli/next.md",
+    "productionExports": "Turbopack root and mounted exports passed separately."
+  },
+  "realAcceptance": {
+    "selectedFirstProvider": "twilio",
+    "accountConfigured": false,
+    "signedCarrierWebhookObserved": false,
+    "actualSSESessionVerified": false,
+    "officialSDKRegistered": false,
+    "PSTNCallObserved": false,
+    "physicalTwoWayAudioVerified": false,
+    "billingAcceptancePerformed": false,
+    "testAuthorizationPolicy": {
+      "manualInitiation": true,
+      "exactCallerRequired": true,
+      "maximumCalls": 1,
+      "approvalWindowSeconds": 300,
+      "maximumCallSeconds": 120
+    },
+    "providersRequireIndependentAcceptance": [
+      "twilio",
+      "telnyx"
+    ]
+  },
+  "notCertified": [
+    "Real provider account permissions, mutations, region eligibility or signed webhook delivery.",
+    "Real Telnyx support for the requested short parent-credential lifetime, propagation and JWT acceptance.",
+    "Provider SDK registration, WebRTC transport, physical audio, media renewal continuity or billing caps.",
+    "Production multitenancy, durable call state/outbox/audit, distributed limits, OIDC, KMS or high availability.",
+    "Universal design pixel/locale/gradient parity, complete Figma runtime behavior or cloud Code Connect registration.",
+    "The current GitHub/Cloudflare/Pages publication; check its containing commit and deployed build-info separately."
+  ]
+}

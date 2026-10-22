@@ -231,6 +231,26 @@ export async function entries(root = kitRoot) {
       "src/lib/communications/telnyx-browser.ts",
       "registry:lib",
     ],
+    [
+      "communications-setup-contracts",
+      "src/lib/communications/setup-contracts.ts",
+      "registry:lib",
+    ],
+    [
+      "communications-setup-live",
+      "src/lib/communications/setup-adapter.ts",
+      "registry:lib",
+    ],
+    [
+      "communications-setup-demo",
+      "src/lib/communications/setup-demo.ts",
+      "registry:lib",
+    ],
+    [
+      "connected-softphone",
+      "src/components/communications/connected-softphone.tsx",
+      "registry:block",
+    ],
   ])
     result[name] = { name, type, file };
   return result;

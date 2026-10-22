@@ -116,6 +116,7 @@
     ".figma/native-audit-1.2.json",
     ".figma/native-saas-library-1.2.json",
     "design/figma/softphone-native-source-2026-10-21.json",
+    "design/figma/communications-setup-native-source-2026-10-21.json",
     "scripts/lib/source-graph.mjs",
     "src/lib/appearance.ts",
     "src/components/effects/index.ts",
@@ -129,20 +130,20 @@
     "views": 136,
     "componentFamilies": 44,
     "completeExamples": 44,
-    "blockFiles": 29,
-    "blockExports": 39,
+    "blockFiles": 30,
+    "blockExports": 40,
     "shellLayouts": 6,
     "chartFamilies": 13,
-    "registryItems": 134,
+    "registryItems": 140,
     "documentationArticles": 25,
     "codeConnectTemplates": 92,
-    "supplementalCodeConnectTemplates": 2,
+    "supplementalCodeConnectTemplates": 3,
     "mappedNativeViews": 70,
     "pendingNativeViews": 0,
     "sourceOnlyViews": 66,
     "retainedNativeRootCount": 69,
     "supplementalNativeViews": 1,
-    "directNativeBlockExports": 10,
+    "directNativeBlockExports": 11,
     "saasNativeViews": 6,
     "saasNativeModeRoots": 12,
     "saasNativeVariants": 68,
@@ -1077,6 +1078,12 @@
       "scope": "Implemented Softphone frontend source association, separate from the frozen69route roots and92localtemplates. Selected source readback only; no exhaustive pixel parity or carrier acceptance.",
       "certifiesFullRouteAudit": false,
       "cloudRegistered": false
+    },
+    {
+      "route": "softphone",
+      "metadata": "design/figma/communications-setup-native-source-2026-10-21.json",
+      "certifiesFullRouteAudit": false,
+      "cloudRegistered": false
     }
   ],
   "nativeHandoff": {
@@ -1179,7 +1186,7 @@
     "pendingReusableMappings": [],
     "codeConnectValidation": "passed-local-smoke",
     "codeConnectCheckpointVersion": "1.4.0",
-    "codeConnectSourceValidationVersion": "1.5.0+unreleased-softphone",
+    "codeConnectSourceValidationVersion": "1.5.0+automatic-setup",
     "codeConnectSourceValidationCurrent": true,
     "codeConnectCloudRequired": false,
     "newCodeConnectTemplatesRequired": false,
@@ -3720,27 +3727,27 @@
       "group": "application",
       "delivery": "1.5",
       "source": {
-        "component": "SoftphoneTemplate",
-        "file": "src/components/templates/softphone-template.tsx"
+        "component": "CommunicationsSoftphoneTemplate",
+        "file": "src/components/templates/communications-softphone-template.tsx"
       },
       "urls": {
         "en": "/en/softphone/",
         "es": "/es/softphone/"
       },
       "figma": {
-        "node": "574:2368",
-        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=574-2368",
+        "node": "593:1391",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=593-1391",
         "editable": true,
         "status": "mapped-native-id",
         "nodes": {
-          "Light": "574:1984",
-          "Dark": "574:2368"
+          "Light": "593:741",
+          "Dark": "593:1391"
         },
         "modeUrls": {
-          "Light": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=574-1984",
-          "Dark": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=574-2368"
+          "Light": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=593-741",
+          "Dark": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=593-1391"
         },
-        "metadata": "design/figma/softphone-native-source-2026-10-21.json"
+        "metadata": "design/figma/communications-setup-native-source-2026-10-21.json"
       }
     },
     {
@@ -5593,6 +5600,162 @@
       "codeConnect": null
     },
     {
+      "export": "CommunicationsSetup",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "registry": "communications-setup",
+      "figma": {
+        "node": "591:105",
+        "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=591-105",
+        "setId": "591:1343",
+        "axes": {
+          "Provider": [
+            "twilio",
+            "telnyx"
+          ],
+          "Viewport": [
+            "desktop",
+            "mobile"
+          ],
+          "Mode": [
+            "demo",
+            "live"
+          ]
+        },
+        "nativeName": "CommunicationsSetup",
+        "status": "mapped-direct-native-id",
+        "metadata": "design/figma/communications-setup-native-source-2026-10-21.json",
+        "associations": [
+          {
+            "nativeName": "CommunicationsSetup",
+            "source": "src/components/blocks/communications-setup.tsx",
+            "runtimeExport": "CommunicationsSetup",
+            "masterID": "591:1343",
+            "defaultID": "591:105",
+            "codeConnectFile": ".figma/CommunicationsSetup.figma.ts",
+            "export": "CommunicationsSetup",
+            "setId": "591:1343",
+            "defaultId": "591:105",
+            "template": ".figma/CommunicationsSetup.figma.ts",
+            "metadata": "design/figma/communications-setup-native-source-2026-10-21.json",
+            "axes": {
+              "Provider": [
+                "twilio",
+                "telnyx"
+              ],
+              "Viewport": [
+                "desktop",
+                "mobile"
+              ],
+              "Mode": [
+                "demo",
+                "live"
+              ]
+            },
+            "nativePropertyKeys": [
+              "Provider",
+              "Viewport",
+              "Mode"
+            ],
+            "propertyDefinitions": {
+              "Provider": {
+                "type": "VARIANT",
+                "defaultValue": "twilio",
+                "variantOptions": [
+                  "twilio",
+                  "telnyx"
+                ]
+              },
+              "Viewport": {
+                "type": "VARIANT",
+                "defaultValue": "desktop",
+                "variantOptions": [
+                  "desktop",
+                  "mobile"
+                ]
+              },
+              "Mode": {
+                "type": "VARIANT",
+                "defaultValue": "demo",
+                "variantOptions": [
+                  "demo",
+                  "live"
+                ]
+              }
+            },
+            "nativeVariants": [
+              {
+                "id": "591:105",
+                "axes": {
+                  "Provider": "twilio",
+                  "Viewport": "desktop",
+                  "Mode": "demo"
+                }
+              },
+              {
+                "id": "591:245",
+                "axes": {
+                  "Provider": "telnyx",
+                  "Viewport": "desktop",
+                  "Mode": "demo"
+                }
+              },
+              {
+                "id": "591:402",
+                "axes": {
+                  "Provider": "twilio",
+                  "Viewport": "mobile",
+                  "Mode": "demo"
+                }
+              },
+              {
+                "id": "591:538",
+                "axes": {
+                  "Provider": "telnyx",
+                  "Viewport": "mobile",
+                  "Mode": "demo"
+                }
+              },
+              {
+                "id": "591:695",
+                "axes": {
+                  "Provider": "twilio",
+                  "Viewport": "desktop",
+                  "Mode": "live"
+                }
+              },
+              {
+                "id": "591:857",
+                "axes": {
+                  "Provider": "telnyx",
+                  "Viewport": "desktop",
+                  "Mode": "live"
+                }
+              },
+              {
+                "id": "591:1026",
+                "axes": {
+                  "Provider": "twilio",
+                  "Viewport": "mobile",
+                  "Mode": "live"
+                }
+              },
+              {
+                "id": "591:1174",
+                "axes": {
+                  "Provider": "telnyx",
+                  "Viewport": "mobile",
+                  "Mode": "live"
+                }
+              }
+            ],
+            "sparseVariantCount": 8,
+            "url": "https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=591-105"
+          }
+        ]
+      },
+      "codeConnect": ".figma/CommunicationsSetup.figma.ts"
+    },
+    {
       "export": "CustomerTable",
       "source": "src/components/blocks/customer-table.tsx",
       "registry": "customer-table",
@@ -6780,6 +6943,13 @@
       "assets": 8
     },
     {
+      "name": "communications-setup",
+      "type": "registry:block",
+      "file": "src/components/blocks/communications-setup.tsx",
+      "sourceFiles": 19,
+      "assets": 4
+    },
+    {
       "name": "customer-table",
       "type": "registry:block",
       "file": "src/components/blocks/customer-table.tsx",
@@ -6988,6 +7158,13 @@
       "file": "src/components/templates/communication.tsx",
       "sourceFiles": 72,
       "assets": 26
+    },
+    {
+      "name": "communications-softphone-template",
+      "type": "registry:block",
+      "file": "src/components/templates/communications-softphone-template.tsx",
+      "sourceFiles": 40,
+      "assets": 4
     },
     {
       "name": "components",
@@ -7366,6 +7543,34 @@
       "file": "src/lib/communications/telnyx-browser.ts",
       "sourceFiles": 3,
       "assets": 0
+    },
+    {
+      "name": "communications-setup-contracts",
+      "type": "registry:lib",
+      "file": "src/lib/communications/setup-contracts.ts",
+      "sourceFiles": 2,
+      "assets": 0
+    },
+    {
+      "name": "communications-setup-live",
+      "type": "registry:lib",
+      "file": "src/lib/communications/setup-adapter.ts",
+      "sourceFiles": 3,
+      "assets": 0
+    },
+    {
+      "name": "communications-setup-demo",
+      "type": "registry:lib",
+      "file": "src/lib/communications/setup-demo.ts",
+      "sourceFiles": 4,
+      "assets": 0
+    },
+    {
+      "name": "connected-softphone",
+      "type": "registry:block",
+      "file": "src/components/communications/connected-softphone.tsx",
+      "sourceFiles": 35,
+      "assets": 4
     }
   ],
   "reference": {

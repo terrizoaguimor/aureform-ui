@@ -1,0 +1,58 @@
+{
+  "observedUTC": "2026-10-22T01:39:33.471Z",
+  "pageID": "585:59",
+  "readOnly": true,
+  "createdIDs": [],
+  "mutatedIDs": [],
+  "status": "PASS",
+  "source": "src/components/blocks/communications-setup.tsx",
+  "sourceSHA256": "425cc45e7751002fdbc9b8cf68625d2932d2d5665db8a9071d166257f3c71174",
+  "sourceLine": 977,
+  "labelEN": "Webhook configuration",
+  "labelES": "Configuración de webhooks",
+  "meaning": "Configuration readback; no signed webhook delivery, browser readiness or real-call proof is implied.",
+  "labels": [
+    {
+      "provider": "twilio",
+      "phase": "configured",
+      "id": "I594:3094;585:66;594:3114;587:93",
+      "characters": "Configuración de webhooks",
+      "status": "PASS"
+    },
+    {
+      "provider": "twilio",
+      "phase": "unknown",
+      "id": "I595:3363;585:66;595:3396;587:98",
+      "characters": "Configuración de webhooks",
+      "status": "PASS"
+    },
+    {
+      "provider": "twilio",
+      "phase": "failed",
+      "id": "I595:3568;585:66;595:3601;587:98",
+      "characters": "Configuración de webhooks",
+      "status": "PASS"
+    },
+    {
+      "provider": "telnyx",
+      "phase": "configured",
+      "id": "I594:3762;585:66;594:3782;587:93",
+      "characters": "Configuración de webhooks",
+      "status": "PASS"
+    },
+    {
+      "provider": "telnyx",
+      "phase": "unknown",
+      "id": "I595:4120;585:66;595:4153;587:98",
+      "characters": "Configuración de webhooks",
+      "status": "PASS"
+    },
+    {
+      "provider": "telnyx",
+      "phase": "failed",
+      "id": "I595:4339;585:66;595:4372;587:98",
+      "characters": "Configuración de webhooks",
+      "status": "PASS"
+    }
+  ]
+}

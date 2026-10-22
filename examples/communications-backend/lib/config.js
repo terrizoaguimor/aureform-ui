@@ -103,8 +103,10 @@ export function validateConfig(input, env = {}) {
     if (agent.bootstrapHash && !/^[0-9a-f]{64}$/i.test(agent.bootstrapHash)) fail("invalid-auth-hash");
     if (agent.providers.includes("twilio")) boundedString(agent.twilioIdentity, 80, /^[A-Za-z0-9_]+$/);
     if (agent.providers.includes("telnyx")) {
-      boundedString(agent.telnyxCredentialId, 120, ID);
-      boundedString(agent.telnyxSipUsername, 120, /^gencred[A-Za-z0-9_-]+$/);
+      if (agent.managedTelnyxCredentials !== true) {
+        boundedString(agent.telnyxCredentialId, 120, ID);
+        boundedString(agent.telnyxSipUsername, 120, /^gencred[A-Za-z0-9_-]+$/);
+      }
     }
   }
   config.approvals ??= [];

@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "sessionCutoff": "2026-10-21",
+  "observedUTC": "2026-10-22T01:43:14.222014Z",
+  "status": "complete-bounded-native-source",
+  "fileKey": "lHp5p10yGb7lqXJDnAox0N",
+  "pageID": "585:59",
+  "pageName": "14 · Communications · Automatic setup",
+  "route": "softphone",
+  "nodes": {
+    "Light": "593:741",
+    "Dark": "593:1391",
+    "MobileLight": "593:1746",
+    "MobileDark": "593:2303"
+  },
+  "components": [
+    {
+      "nativeName": "CommunicationsSetup",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "runtimeExport": "CommunicationsSetup",
+      "masterID": "591:1343",
+      "defaultID": "591:105",
+      "codeConnectFile": ".figma/CommunicationsSetup.figma.ts",
+      "export": "CommunicationsSetup",
+      "setId": "591:1343",
+      "defaultId": "591:105",
+      "template": ".figma/CommunicationsSetup.figma.ts",
+      "metadata": "design/figma/communications-setup-native-source-2026-10-21.json",
+      "axes": {
+        "Provider": [
+          "twilio",
+          "telnyx"
+        ],
+        "Viewport": [
+          "desktop",
+          "mobile"
+        ],
+        "Mode": [
+          "demo",
+          "live"
+        ]
+      },
+      "nativePropertyKeys": [
+        "Provider",
+        "Viewport",
+        "Mode"
+      ],
+      "propertyDefinitions": {
+        "Provider": {
+          "type": "VARIANT",
+          "defaultValue": "twilio",
+          "variantOptions": [
+            "twilio",
+            "telnyx"
+          ]
+        },
+        "Viewport": {
+          "type": "VARIANT",
+          "defaultValue": "desktop",
+          "variantOptions": [
+            "desktop",
+            "mobile"
+          ]
+        },
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "demo",
+          "variantOptions": [
+            "demo",
+            "live"
+          ]
+        }
+      },
+      "nativeVariants": [
+        {
+          "id": "591:105",
+          "axes": {
+            "Provider": "twilio",
+            "Viewport": "desktop",
+            "Mode": "demo"
+          }
+        },
+        {
+          "id": "591:245",
+          "axes": {
+            "Provider": "telnyx",
+            "Viewport": "desktop",
+            "Mode": "demo"
+          }
+        },
+        {
+          "id": "591:402",
+          "axes": {
+            "Provider": "twilio",
+            "Viewport": "mobile",
+            "Mode": "demo"
+          }
+        },
+        {
+          "id": "591:538",
+          "axes": {
+            "Provider": "telnyx",
+            "Viewport": "mobile",
+            "Mode": "demo"
+          }
+        },
+        {
+          "id": "591:695",
+          "axes": {
+            "Provider": "twilio",
+            "Viewport": "desktop",
+            "Mode": "live"
+          }
+        },
+        {
+          "id": "591:857",
+          "axes": {
+            "Provider": "telnyx",
+            "Viewport": "desktop",
+            "Mode": "live"
+          }
+        },
+        {
+          "id": "591:1026",
+          "axes": {
+            "Provider": "twilio",
+            "Viewport": "mobile",
+            "Mode": "live"
+          }
+        },
+        {
+          "id": "591:1174",
+          "axes": {
+            "Provider": "telnyx",
+            "Viewport": "mobile",
+            "Mode": "live"
+          }
+        }
+      ],
+      "sparseVariantCount": 8
+    }
+  ],
+  "baseline": {
+    "observedUTC": "2026-10-22T00:15:30.236Z",
+    "variables": 714,
+    "textStyles": 14,
+    "effectStyles": 6
+  },
+  "receipt": "design/reports/communications-setup-native-receipt-2026-10-21.json",
+  "limitations": [
+    "Native design source does not prove provider account permissions, provisioning or live calls.",
+    "Configured state keeps browser readiness and a real test call pending.",
+    "No universal runtime or pixel parity claim.",
+    "Existing chrome/workspace native copy remains a retained fixture; new setup copy is Spanish from source. No full locale parity claim.",
+    "Native CSS background gradients are approximate.",
+    "Telnyx medium neutral plate is uniformly scaled to 66px rather than source64px; original lockup is intact.",
+    "Selected native screenshot covers desktop Light and mobile Dark dialog bodies only; not all screens, modes or locales.",
+    "Connector produced an actual inline native PNG with no download URL. No local PNG filename or SHA256 is claimed.",
+    "Native narrow single-line fields use ellipsis; browser input overflow behavior has not been matched pixel by pixel.",
+    "Source close button is 28px and private reference inputs are 40px high; there is no blanket 44px-target certification.",
+    "Full source dialog scrolling, focus management, validation, authenticated setup, provider SDK and carrier behavior require runtime evidence separate from native snapshots."
+  ],
+  "sourceSnapshots": [
+    {
+      "file": "src/components/blocks/communications-setup.tsx",
+      "sha256": "425cc45e7751002fdbc9b8cf68625d2932d2d5665db8a9071d166257f3c71174"
+    },
+    {
+      "file": "src/components/templates/communications-softphone-template.tsx",
+      "sha256": "6231b19ea9d2defed58a75cdb22c19b1199db0c1b496b5dbcdf77ff7268a16e8"
+    },
+    {
+      "file": "src/components/communications/connected-softphone.tsx",
+      "sha256": "0c8d7bcf744635b2e72b239fab0be10c83cb0872332d633ff91e89cb5bfb634a"
+    },
+    {
+      "file": "src/components/communications/reference-connection.tsx",
+      "sha256": "12f4437330af36704bc2db9676c9d60cea113e51993a0cd3df55420dbba03894"
+    },
+    {
+      "file": "src/lib/communications/setup-contracts.ts",
+      "sha256": "ee96906eea4fbcb703cb83806192279e9049be94c4950d0dd482bca9d13a6d72"
+    },
+    {
+      "file": "src/lib/communications/setup-adapter.ts",
+      "sha256": "0d3e5f548470a1fd81bdcb3f70bc5d79442bf9509ede1ef1cf55b2b6a25c5c98"
+    },
+    {
+      "file": "src/lib/communications/setup-demo.ts",
+      "sha256": "c5dee437aa0dd240ffc46d7a5b2691422b94d047d9eee548039cf40ad81cfb04"
+    },
+    {
+      "file": "src/lib/communications/reference-lab.ts",
+      "sha256": "c868b09afe727d7623a4f91209046c91aa62410894731b1234ac1a7fd87e6484"
+    },
+    {
+      "file": "src/components/app-page.tsx",
+      "sha256": "488afadcc17b8cc9d8a72ccedfa72528711f282c0a6dd0d37a9539f29ad9ea01"
+    }
+  ],
+  "nativeSourceMasters": [
+    {
+      "source": "src/components/templates/communications-softphone-template.tsx",
+      "runtimeExport": "CommunicationsSoftphoneTemplate",
+      "masterID": "593:2614",
+      "defaultID": "593:741",
+      "mappingStatus": "native source association; no separate Code Connect template authorized"
+    },
+    {
+      "source": "src/components/communications/connected-softphone.tsx",
+      "runtimeExport": "ConnectedSoftphone",
+      "mappingStatus": "native source association; no separate Code Connect template authorized",
+      "masterID": "600:5022",
+      "defaultID": "600:4170"
+    }
+  ],
+  "privateFrames": [
+    {
+      "source": "src/components/communications/reference-connection.tsx",
+      "id": "603:5006",
+      "state": "owner-login",
+      "viewport": "desktop",
+      "theme": "Light",
+      "registryEntry": false
+    },
+    {
+      "source": "src/components/communications/reference-connection.tsx",
+      "id": "603:5069",
+      "state": "incoming-test",
+      "viewport": "desktop",
+      "theme": "Light",
+      "registryEntry": false
+    },
+    {
+      "source": "src/components/communications/reference-connection.tsx",
+      "id": "603:5112",
+      "state": "owner-login",
+      "viewport": "mobile",
+      "theme": "Dark",
+      "registryEntry": false
+    },
+    {
+      "source": "src/components/communications/reference-connection.tsx",
+      "id": "603:5175",
+      "state": "incoming-test",
+      "viewport": "mobile",
+      "theme": "Dark",
+      "registryEntry": false
+    }
+  ],
+  "sourceAssociations": [
+    {
+      "source": "src/components/templates/communications-softphone-template.tsx",
+      "nativeMasterID": "593:2614",
+      "nodes": {
+        "Light": "593:741",
+        "Dark": "593:1391",
+        "MobileLight": "593:1746",
+        "MobileDark": "593:2303"
+      }
+    },
+    {
+      "source": "src/components/communications/connected-softphone.tsx",
+      "nativeMasterID": "600:5022",
+      "defaultID": "600:4170",
+      "state": "authenticated setup before browser connection"
+    },
+    {
+      "source": "src/components/communications/reference-connection.tsx",
+      "privateFrames": [
+        "603:5006",
+        "603:5069",
+        "603:5112",
+        "603:5175"
+      ],
+      "registryEntry": false
+    }
+  ],
+  "dialogSources": {
+    "masterID": "604:5565",
+    "nodes": {
+      "Light": "604:5136",
+      "Dark": "604:5244",
+      "MobileLight": "604:5351",
+      "MobileDark": "604:5458"
+    },
+    "modalMaxWidth": 768,
+    "mobileViewportWidth": 390,
+    "mobileWidth": 358,
+    "mobileInnerWidth": 308,
+    "fullScrollContent": true
+  },
+  "proofComposition": "604:5566",
+  "lease": {
+    "active": false,
+    "scope": "new page 14 · Communications · Automatic setup only",
+    "pageID": "585:59",
+    "releaseUTC": "2026-10-22T01:36:22.791297Z"
+  },
+  "counts": {
+    "routeEntries": 4,
+    "credentialVariants": 8,
+    "flowSnapshots": 20,
+    "authenticatedHostVariants": 8,
+    "dialogVariants": 4,
+    "privateFrames": 4,
+    "mainVariantComponents": 44,
+    "auxiliaryVariantComponents": 7,
+    "standaloneComponents": 6,
+    "allComponents": 57,
+    "componentSets": 9,
+    "currentNodes": 6001,
+    "editableTextNodes": 1701,
+    "nativeVectors": 1097
+  },
+  "qa": {
+    "structural": "PASS bounded own-page identity/axes/mode/token readback",
+    "visual": "PASS selected native inline PNG after one bounded fix",
+    "readbackUTC": "2026-10-22T01:32:11.838Z",
+    "visualUTC": "2026-10-22T01:23:44.811Z",
+    "universalPixelParity": false,
+    "codeConnect": "PASS actual current source properties/8 variants/2 strictly compiled examples/9 guards; verification artifact is maintained independently",
+    "codeConnectProof": "artifacts/communications-design/setup-code-connect-validation.json"
+  },
+  "idJournal": {
+    "file": "design/reports/communications-setup-native-journal-2026-10-21.json",
+    "sha256": "9d076b92df342ce374fe4c149a5ce1f6859348dcc9c3160ee4186ee1fe066515",
+    "currentIDs": 6001,
+    "observedRemovedIDs": 4,
+    "scope": "Current owned identity union; direct mutation IDs and historical operation summaries retained."
+  },
+  "tokenBindingsReadback": [
+    {
+      "id": "VariableID:2:37",
+      "name": "color/background",
+      "collection": "VariableCollectionId:2:36",
+      "LightAlias": "VariableID:95:24",
+      "DarkAlias": "VariableID:95:42"
+    },
+    {
+      "id": "VariableID:2:38",
+      "name": "color/surface",
+      "collection": "VariableCollectionId:2:36",
+      "LightAlias": "VariableID:95:25",
+      "DarkAlias": "VariableID:95:43"
+    },
+    {
+      "id": "VariableID:2:39",
+      "name": "color/surface-subtle",
+      "collection": "VariableCollectionId:2:36",
+      "LightAlias": "VariableID:95:26",
+      "DarkAlias": "VariableID:95:44"
+    },
+    {
+      "id": "VariableID:2:40",
+      "name": "color/border",
+      "collection": "VariableCollectionId:2:36",
+      "LightAlias": "VariableID:95:27",
+      "DarkAlias": "VariableID:95:45"
+    },
+    {
+      "id": "VariableID:2:41",
+      "name": "color/foreground",
+      "collection": "VariableCollectionId:2:36",
+      "LightAlias": "VariableID:95:28",
+      "DarkAlias": "VariableID:95:46"
+    },
+    {
+      "id": "VariableID:2:42",
+      "name": "color/muted-foreground",
+      "collection": "VariableCollectionId:2:36",
+      "LightAlias": "VariableID:95:29",
+      "DarkAlias": "VariableID:95:47"
+    },
+    {
+      "id": "VariableID:2:43",
+      "name": "color/primary",
+      "collection": "VariableCollectionId:2:36",
+      "LightAlias": "VariableID:108:36",
+      "DarkAlias": "VariableID:108:40"
+    },
+    {
+      "id": "VariableID:2:45",
+      "name": "color/primary-foreground",
+      "collection": "VariableCollectionId:2:36",
+      "LightAlias": "VariableID:95:25",
+      "DarkAlias": "VariableID:95:50"
+    },
+    {
+      "id": "VariableID:2:46",
+      "name": "color/accent",
+      "collection": "VariableCollectionId:2:36",
+      "LightAlias": "VariableID:95:32",
+      "DarkAlias": "VariableID:95:51"
+    },
+    {
+      "id": "VariableID:2:63",
+      "name": "spacing/4",
+      "collection": "VariableCollectionId:2:58",
+      "value": 16
+    },
+    {
+      "id": "VariableID:2:65",
+      "name": "spacing/6",
+      "collection": "VariableCollectionId:2:58",
+      "value": 24
+    },
+    {
+      "id": "VariableID:2:72",
+      "name": "radius/lg",
+      "collection": "VariableCollectionId:2:58",
+      "value": 16
+    }
+  ],
+  "nativeProof": {
+    "nodeID": "604:5566",
+    "format": "PNG",
+    "width": 1198,
+    "height": 1531,
+    "bytes": 562404,
+    "observedUTC": "2026-10-22T01:23:44.811Z",
+    "delivery": "actual MCP inline native export",
+    "localPNG": null,
+    "sha256": null,
+    "readbackRecord": "design/proofs/communications-setup-2026-10-21/native-selected-readback.json"
+  },
+  "semanticReadback": {
+    "status": "PASS 6/6 actual configured/unknown/failed labels",
+    "observedUTC": "2026-10-22T01:39:33.471Z",
+    "record": "design/proofs/communications-setup-2026-10-21/native-semantic-readback.json",
+    "sha256": "a74e99c4a151e6a61056c3e88ddab10ddd4859232b69727b3c8fb6b7560119b4",
+    "labelEN": "Webhook configuration",
+    "labelES": "Configuración de webhooks",
+    "meaning": "Configuration readback; no signed webhook delivery, browser readiness or real-call proof is implied."
+  },
+  "preparationArtifacts": [
+    {
+      "file": "design/reports/communications-setup-native-renderer-2026-10-21.js",
+      "sha256": "8a5979eba63a529281d90546c361d0be334597db85d6a425dc9ba8e52d855a2f",
+      "role": "Preparation helper; not full final-canvas replay."
+    },
+    {
+      "file": "design/reports/communications-setup-native-copy-2026-10-21.json",
+      "sha256": "dc7a5eb70244fdead55f4e2fa7865c8d3bf220dc2ec7632690f936722778ec92",
+      "role": "Current TypeScript-AST literal bilingual copy; bounded extraction."
+    }
+  ]
+}

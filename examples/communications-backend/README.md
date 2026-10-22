@@ -6,6 +6,8 @@ Código de referencia Apache-2.0. La dependencia servidor `twilio` está fijada 
 
 El [documento de implementación](../../docs/communications/INBOUND-VOICE-REFERENCE.md) distingue código comprobado, APIs documentadas y aceptación de laboratorio pendiente. No implementa Flow DSL, IA, campañas, transferencias, hold, grabación, voicemail ni callbacks salientes.
 
+La nueva [configuración automática](../../docs/communications/AUTOMATIC-SETUP.md) añade un laboratorio **single-owner**, con inspección de cuenta, número existente, revisión y apply explícito. Su [validación propia](../../docs/communications/AUTOMATIC-SETUP-VALIDATION.md) registra pruebas de navegador, autenticación privada, tipos SDK instalados y efectos de proveedor sintéticos. Configurar recursos no acredita registro SDK, entrega de webhooks ni audio real. La primera aceptación real prevista es Twilio; no se declara realizada.
+
 ## Ejecutar sin credenciales
 
 Desde este directorio, con Node 22.18 o posterior de la rama 22:
@@ -21,7 +23,63 @@ npm start
 
 Docker es una alternativa de empaquetado, no un despliegue realizado. El Dockerfile usa Node 22 y usuario sin privilegios, instala solo las dependencias de este directorio y no incluye `.env` ni `lab-config.json`. Un consumidor debe fijar/verificar su digest de imagen y montar configuración/secrets de forma privada; no hay SQL ni persistencia en este contenedor.
 
-## Configuración privada de laboratorio
+## Setup automático privado
+
+Desde este directorio, tras instalar las dependencias, sustituye los dominios de ejemplo por tus orígenes reales:
+
+```sh
+npm run setup:init -- --public-origin https://voice.example.com --frontend-origin https://app.example.com
+npm run setup:serve
+```
+
+[setup-lab.mjs](setup-lab.mjs) usa `~/.config/aureform-communications` por defecto. `--directory PRIVATE_DIRECTORY` permite otro directorio **fuera del repositorio**. Rechaza archivos existentes, crea permisos privados y escribe `.env` al final. Genera `access-code.txt`, `lab-config.json`, `SETUP_ADMIN_AUTH_SHA256` y una `SETUP_MASTER_KEY` Base64 de **32 bytes**. El servidor crea `encrypted-setup.json` con AES-256-GCM para credenciales, secretos derivados y journal. Los ignore rules excluyen estos archivos privados; no se deben trasladar al checkout.
+
+La inicialización fija un horario de laboratorio todos los días en `America/Bogota`, sin calendario festivo implícito; agentes/proveedores/permisos comienzan vacíos. No modifica cuentas ni hace llamadas. `setup:serve` escucha por defecto sólo en `127.0.0.1:8788`; el operador aporta proxy/túnel HTTPS con el `PUBLIC_BASE_URL` exacto y preservación de cuerpo/ruta firmados. El frontend debe estar en la allowlist de orígenes exactos.
+
+Si expones el laboratorio con Cloudflare, usa un [túnel nombrado](https://developers.cloudflare.com/tunnel/get-started/). [Quick Tunnels no admite SSE ni clientes automáticos con su autenticación por email](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/). Las rutas `/webhooks/*` deben recibir firmas del carrier sin login/OTP interactivo; setup y sesiones siguen autenticados por bearer/origen. Conserva `Content-Type: text/event-stream` en `/v1/communications/events` para [evitar buffering](https://developers.cloudflare.com/tunnel/troubleshooting/). Credenciales/archivos de token y configuración del hostname/IDs privados van fuera de Git; no publicar valores del laboratorio. Salud del túnel no certifica registro WebRTC ni medios.
+
+El 2026-10-21 el mantenedor reportó **HTTPS health 200 mediante el túnel nombrado privado**. Sólo acredita alcance HTTP de esa ruta: no demuestra entrega SSE, webhook firmado, registro del navegador ni audio. No se publican hostname, IDs o credenciales privados.
+
+El host privado [ReferenceConnection](../../src/components/communications/reference-connection.tsx) recibe una URL aprobada como `https://voice.example.com/v1/communications`. `NEXT_PUBLIC_COMMUNICATIONS_BACKEND_URL` puede seleccionar ese host en el consumidor: es una URL **pública**, nunca un secreto. No definirla en la demo pública, ni poner allí claves, tokens o códigos de acceso.
+
+Elige proveedor **antes** del login. **Código de acceso del propietario** autentica la aplicación y se obtiene del archivo privado; está separado de los dos campos del carrier. Login devuelve un bearer de diez minutos, limitado al origen y guardado en memoria. Renovarlo conserva el host y una llamada montada. Tras autenticar, `/setup/connections` devuelve hasta dos resúmenes públicos sin secretos y permite reanudar el perfil elegido con `ConnectedSoftphone.initialConfiguration`, sin generar otra clave, aplicar cambios ni conectar automáticamente. El selector queda bloqueado tras el login.
+
+| Proveedor | Campos | Cambios internos tras revisión |
+| --- | --- | --- |
+| Twilio | Account SID + Auth token (principal) | Cuenta Full activa, clave Standard API propia, secreto de única entrega y rutas HTTPS inbound/status del número existente; REST US1. Se retiran precedencias/fallback de voz conflictivos y se verifican ajustes de mensajería conservados. |
+| Telnyx | API key + Public key Ed25519 Base64 | Call Control Application, Credential Connection separada sin perfil saliente y asociación del número; readback estricto de recursos/política. El issuer de credenciales browser es un paso separado del setup. |
+
+No se compra un número. El propietario selecciona uno de su cuenta con voz, revisa el plan y confirma expresamente cualquier reemplazo de routing. Inspección/plan son reads; apply sí modifica recursos aunque `ENABLE_CARRIER_OPERATIONS=false`. Ese flag controla llamadas, no convierte el setup autorizado en sólo lectura.
+
+Twilio requiere una cuenta **Full** activa y el **Auth Token principal**. Según las fuentes oficiales consultadas el **2026-10-21**, [Trial bloquea `<Dial><Client>`](https://www.twilio.com/docs/usage/trials/try-out-voice) y las [firmas de webhooks usan el token principal](https://www.twilio.com/docs/usage/security), aunque un [token secundario pueda autenticar REST](https://www.twilio.com/docs/iam/api/secondary_authtoken). El adapter verifica tipo e identidad del token mediante [Account fetch](https://www.twilio.com/docs/iam/api/account) antes de los efectos de configuración. Cuenta no Full/no verificable o token primario ausente, enmascarado o diferente se rechazan; no hay upgrade ni promoción/rotación automática. `permission-denied` puede indicar el tipo de cuenta; `invalid-credentials`, el token ingresado. No se agregan campos al asistente.
+
+El contrato de setup es `aureform.setup.v1`; todas las rutas usan `Origin` exacto y, salvo login, `Authorization: Bearer` del propietario:
+
+| Método/ruta | Función |
+| --- | --- |
+| POST `/v1/communications/setup/login` | `{accessCode}` → bearer de propietario y expiración. |
+| GET `/v1/communications/setup/connections` | Array de resúmenes configurados sin secretos, máximo dos. |
+| POST `/v1/communications/setup/inspect` | `{provider, accountSid, authToken}` o `{provider, apiKey, publicKey}` → opciones de números existentes. |
+| POST `/v1/communications/setup/plan` | `{connectionId, numberId}` → plan/expiración/pasos/reemplazo. |
+| POST `/v1/communications/setup/apply` | `{planId, confirmation: {configure: true, replaceExistingRouting: boolean}}`. |
+| GET `/v1/communications/setup/status?connectionId=…` | Lee el journal, sin ejecutar ni reparar automáticamente. |
+| POST `/v1/communications/setup/authorize-test` | `{connectionId, callerNumber, seconds, confirmation: true}` → permiso entrante acotado, `observedCall: false`. |
+
+El resultado configurado mantiene `checks.browser: pending` y `checks.testCall: pending`. `checks.webhooks: passed` es readback de URLs, no entrega observada de un webhook firmado. El registro SDK exige **Conectar sesión** por separado y no certifica audio. Un apply perdido/interrumpido queda `unknown`; el reinicio conserva esa incertidumbre. Plan y apply revisan también journals persistidos por **proveedor + ID del número seleccionado**: `configuring`, `unknown` y `failed` bloquean otra operación sobre ese par, incluso desde otra inspección o tras reiniciar. **Consultar configuración** no reintenta ni hace rollback. Antes de recuperar, un operador debe contrastar journal y recursos/routing reales; no borrar el estado para forzar otra mutación.
+
+El issuer Telnyx automático ya está **implementado y conectado**. [AutomaticSetup](lib/automatic-setup.js) conserva `devices` y checkpoints cifrados por agente; [setup-providers](lib/setup-providers.js) crea/relee el padre conocido, exige la identidad SIP/conexión propia y verifica `exp` dentro de la expiración del padre y del TTL solicitado (60–300 segundos). Ese TTL es un límite solicitado y probado con respuestas sintéticas; **no se ha demostrado su disponibilidad/aceptación real por Telnyx**. Espera propagación y vuelve a comprobar recursos/política antes de entregar el JWT. Leer `exp` no verifica su firma ni convierte el token en inbound-only.
+
+La referencia usa una identidad browser gestionada por agente. Solo una credencial **conocida y verificada** puede rotar cerca de su vencimiento mientras no haya llamada activa; el servidor comprueba el estado antes y después de emitir, incluido el race de una llamada que llega durante la emisión. Un create/mint **pending/unknown** sigue bloqueado aunque caduque, sin recrear otro recurso. Los [tests HTTP del issuer](test/managed-credentials-http.test.js) usan efectos de proveedor sintéticos. El suite ampliado pasó **245/245 con Node 22.22.3** (54 existentes + 12 setup + 115 proveedor + 30 HTTP + 23 initializer + 11 managed issuer HTTP), incluido el guard proveedor+número y 75 casos de requisitos/rechecks de cuenta y token Twilio. El [recibo de esta extensión](../../docs/communications/AUTOMATIC-SETUP-VALIDATION.md) registra también 1,036 unitarias, tipos/lint, navegador e instalación de consumidor. Esto no es aceptación live, renovación de audio sin interrupción ni certificación productiva.
+
+**Autorizar llamada de prueba** exige navegador conectado y agente **Disponible**, proveedor concordante, caller E.164 exacto y consentimiento de cargos. El permiso dura cinco minutos, admite una llamada y un máximo de 120 segundos en la UI; API acepta 30–120 segundos. Al caducar se limpia la UI sin renovar el permiso. Después el propietario llama desde su teléfono al número mostrado: no existe autollamada ni endpoint outbound PSTN. La pierna browser/SIP vinculada puede ser facturable y los límites operativos no son un cap de factura.
+
+Persisten cifrados los recursos/journal de setup; **no** persisten llamadas, cola, reservas, permisos ni dedup. Es un único proceso/propietario, no OIDC, KMS, multitenancy, recuperación durable de llamadas ni servicio gestionado. No mezclar setup automático con perfiles manuales: el servidor rechaza esa combinación.
+
+Fuentes oficiales consultadas **2026-10-21**: [Twilio Standard Keys](https://www.twilio.com/docs/iam/api-keys/key-resource-v2010), [routing IncomingPhoneNumber](https://www.twilio.com/docs/phone-numbers/api/incomingphonenumber-resource), [OpenAPI oficial Telnyx](https://raw.githubusercontent.com/team-telnyx/openapi/master/openapi/spec3.json) y [JWT Telnyx](https://developers.telnyx.com/docs/voice/webrtc/auth/jwt). Permisos/región, clave pública real, propagación/expiración, bloqueo outbound y medios requieren aceptación independiente. La [fuente Figma de la extensión, página 14](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=585-59) conserva su [mapa de código y límites](../../design/figma/communications-setup-native-source-2026-10-21.json).
+
+## Configuración privada manual de laboratorio
+
+Los pasos siguientes son la topología manual alternativa, no campos adicionales del asistente automático.
 
 Copiar `.env.example` a `.env` y `lab-config.example.json` a `lab-config.json`. Sustituir todos los placeholders; el validador rechaza números, usuarios SIP e identidades inválidos. Usar `npm run start:env` para cargar `.env`. Nada de esos archivos privados debe publicarse.
 
@@ -39,11 +97,11 @@ El bearer backend de sesión dura hasta diez minutos. Se envía en `Authorizatio
 
 ## Gate de operaciones y presupuesto
 
-La configuración entregada tiene `ENABLE_CARRIER_OPERATIONS=false` y `approvals: []`. Tokens Twilio se generan localmente; los reads/mint de JWT Telnyx no responden ni originan llamadas. Una sesión nunca arranca audio PSTN automáticamente.
+La configuración entregada tiene `ENABLE_CARRIER_OPERATIONS=false` y `approvals: []`. En el modo automático, el permiso explícito de `/setup/authorize-test` habilita una regla entrante acotada durante esa ventana; configurar el proveedor por sí solo no lo hace. Tokens Twilio se generan localmente; los reads/mint de JWT Telnyx no responden ni originan llamadas. Una sesión nunca arranca audio PSTN automáticamente.
 
 Antes de cualquier experimento real se requiere autorización de gasto **separada** y una ventana de laboratorio concreta. Este trabajo de implementación no la otorga. Los **USD 75** del roadmap siguen siendo una propuesta no autorizada.
 
-Después de esa autorización futura, un operador puede habilitar la variable y añadir un objeto por **una** llamada esperada:
+En la ruta **manual**, después de esa autorización, un operador puede habilitar la variable y añadir un objeto por **una** llamada esperada. El asistente automático crea esa regla mediante su autorización de prueba; no exige editar este JSON:
 
 ```json
 {
@@ -66,7 +124,7 @@ No hay API de compra de números ni marcación PSTN. La llamada de navegador sec
 
 `maxSeconds`, timeouts y contadores son límites operativos de laboratorio, no un cap garantizado de factura. Al expirar, el proceso solicita hangup; depende de proceso/red/callbacks y no sobrevive un reinicio. El tiempo de cola, piernas secundarias, anuncios, redondeo, impuestos y renta del número pueden facturarse. Esta referencia no vuelve a cotizar las tarifas del corte documental del 20 de octubre.
 
-## Configurar Twilio, sin modificar la cuenta desde este ejemplo
+## Topología manual Twilio
 
 En una cuenta elegible con un número aprobado, un operador configura manualmente:
 
@@ -81,7 +139,7 @@ La oferta incluye `aureformCallId` y `aureformReservationId` como `Parameter`. E
 
 `dial-action` responde `<Hangup>` al terminar/no contestar el intento. No se reorigina una segunda pierna con un permiso que admite solo una. El caller no se reencola silenciosamente después de decline/no-answer.
 
-## Configurar Telnyx, sin modificar la cuenta desde este ejemplo
+## Topología manual Telnyx
 
 Un operador prepara manualmente:
 
@@ -95,7 +153,7 @@ Un operador prepara manualmente:
 
 Antes de cada emisión/renovación, el GET de conexión debe devolver el ID esperado y `outbound.outbound_voice_profile_id: null` explícito: perfil asignado se rechaza; campo omitido, vacío o de tipo ambiguo también se rechaza **antes** de leer la credencial o solicitar JWT. Esa representación estricta se prueba con fixtures; su respuesta real y posibles reglas de cuenta están pendientes de comprobar. Si la cuenta omite el campo, la bandera manual no permite saltar el rechazo. Un GET puntual no asegura que la política no cambie durante la vigencia del token. Ni parking ni un channel limit se usan como prueba de bloqueo. La recepción SIP y un rechazo real de origination requieren aceptación posterior específicamente autorizada.
 
-El backend **no crea, renueva ni elimina credenciales**. La expiración de la credencial es terminal; reemplazo manual y renovación durante audio activo son gates pendientes. POST `/session` conserva la sesión backend, pero no convierte una credencial vencida en renovable.
+En la **topología manual**, el backend no crea, renueva ni elimina esas credenciales preaprovisionadas. La expiración de la credencial es terminal; reemplazo manual y renovación durante audio activo son gates pendientes. POST `/session` conserva la sesión backend, pero no convierte una credencial vencida en renovable. El modo automático sí implementa el issuer cifrado y la rotación idle descritos arriba, probados con transportes sintéticos. Propagación/expiración reales, política de cuenta, registro y continuidad de audio siguen requiriendo aceptación independiente.
 
 Flujo Call Control: `call.initiated` entrante validado → autorización/horario → `answer` → observar `call.answered` → FIFO/reserva → `POST /v2/calls` **solo a `sip:gencred…@sip.telnyx.com` fijo** con `link_to`, `bridge_on_answer`, `prevent_double_bridge`, `command_id` y `client_state` → observar piernas/`call.bridged`. HTTP 200 no prueba answer ni bridge; `is_alive: false` de la respuesta de dial tampoco prueba terminación.
 
@@ -144,7 +202,7 @@ Tipos permitidos: `connect`, `disconnect`, `presence`, `heartbeat`, `accept`, `d
 
 ## Límites y aceptación pendiente
 
-Single process, memoria acotada: dedup, cola, reservas, sesiones, notas y cursor desaparecen al reiniciar. No hay HA, SQL, outbox durable, recuperación automática, rate limiting distribuido, OIDC, auditoría persistente ni garantía financiera/exactly-once. No desplegar múltiples réplicas de esta referencia.
+Single process, memoria acotada: dedup, cola, reservas, sesiones, notas, permisos de llamada y cursor desaparecen al reiniciar. El setup automático persiste su configuración/journal cifrados; eso no vuelve durable el ledger de llamadas. No hay HA, SQL, outbox durable, recuperación automática de llamadas, rate limiting distribuido, OIDC, auditoría productiva persistente ni garantía financiera/exactly-once. No desplegar múltiples réplicas de esta referencia.
 
 Las transiciones terminales no regresan por un evento tardío. Los eventos Telnyx previos a initiated se bufferizan de forma acotada; terminal-before-initiated no dispara una nueva respuesta. El `command_id` del carrier no sustituye el ledger del dominio ni autoriza reintentos indefinidos. Twilio clásico no aporta un timestamp equivalente: se valida HMAC y dedup en memoria, no una protección durable contra replay.
 

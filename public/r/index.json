@@ -303,6 +303,12 @@
       "url": "/r/commerce-workspace.json"
     },
     {
+      "name": "communications-setup",
+      "type": "registry:block",
+      "title": "Communications Setup",
+      "url": "/r/communications-setup.json"
+    },
+    {
       "name": "customer-table",
       "type": "registry:block",
       "title": "Customer Table",
@@ -481,6 +487,12 @@
       "type": "registry:block",
       "title": "Communication",
       "url": "/r/communication.json"
+    },
+    {
+      "name": "communications-softphone-template",
+      "type": "registry:block",
+      "title": "Communications Softphone Template",
+      "url": "/r/communications-softphone-template.json"
     },
     {
       "name": "components",
@@ -805,6 +817,30 @@
       "type": "registry:lib",
       "title": "Telnyx Browser Voice",
       "url": "/r/telnyx-browser-voice.json"
+    },
+    {
+      "name": "communications-setup-contracts",
+      "type": "registry:lib",
+      "title": "Communications Setup Contracts",
+      "url": "/r/communications-setup-contracts.json"
+    },
+    {
+      "name": "communications-setup-live",
+      "type": "registry:lib",
+      "title": "Communications Setup Live",
+      "url": "/r/communications-setup-live.json"
+    },
+    {
+      "name": "communications-setup-demo",
+      "type": "registry:lib",
+      "title": "Communications Setup Demo",
+      "url": "/r/communications-setup-demo.json"
+    },
+    {
+      "name": "connected-softphone",
+      "type": "registry:block",
+      "title": "Connected Softphone",
+      "url": "/r/connected-softphone.json"
     }
   ]
 }

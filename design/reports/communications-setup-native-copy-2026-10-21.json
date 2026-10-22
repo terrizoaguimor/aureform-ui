@@ -1,0 +1,520 @@
+{
+  "observedUTC": "2026-10-22T01:41:49.141Z",
+  "status": "current-copy-extracted-from-actual-typescript-AST",
+  "method": "TypeScript AST string-literal l(EN,ES) calls in the three canonical UI sources; no inferred translations.",
+  "limitations": [
+    "Only literal bilingual calls are extracted; dynamic labels and conditional expressions are not an exhaustive copy registry."
+  ],
+  "pairs": {
+    "API key": {
+      "es": "Clave API",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 294
+    },
+    "Auth token": {
+      "es": "Token de autenticación",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 297
+    },
+    "Public key": {
+      "es": "Clave pública",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 298
+    },
+    "Credentials": {
+      "es": "Credenciales",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 974
+    },
+    "Number": {
+      "es": "Número",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1131
+    },
+    "Review": {
+      "es": "Revisar",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 314
+    },
+    "Configure": {
+      "es": "Configurar",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 315
+    },
+    "Checks": {
+      "es": "Comprobaciones",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 316
+    },
+    "Your provider credentials": {
+      "es": "Credenciales del proveedor",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 449
+    },
+    "Choose an existing number": {
+      "es": "Elige un número existente",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 451
+    },
+    "Review the setup plan": {
+      "es": "Revisa el plan de configuración",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 453
+    },
+    "Configuring your number": {
+      "es": "Configurando tu número",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 455
+    },
+    "Demo setup complete": {
+      "es": "Configuración demo completada",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 458
+    },
+    "Number configured": {
+      "es": "Número configurado",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 459
+    },
+    "Setup needs attention": {
+      "es": "La configuración requiere atención",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 461
+    },
+    "Check the setup result": {
+      "es": "Consulta el resultado",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 465
+    },
+    "Communications setup": {
+      "es": "Configuración de comunicaciones",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 469
+    },
+    "Voice setup": {
+      "es": "Configuración de voz",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 480
+    },
+    "Local demo": {
+      "es": "Demo local",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 484
+    },
+    "Authenticated setup": {
+      "es": "Configuración autenticada",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 485
+    },
+    "Connect your voice provider.": {
+      "es": "Conecta tu proveedor de voz.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 489
+    },
+    "Inspect your account, review the changes and configure an existing number.": {
+      "es": "Inspecciona tu cuenta, revisa los cambios y configura un número existente.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 492
+    },
+    "Setup progress": {
+      "es": "Progreso de configuración",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 501
+    },
+    "Voice provider": {
+      "es": "Proveedor de voz",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 572
+    },
+    "This local demo uses read-only fixture credentials. It never contacts a provider or stores secrets.": {
+      "es": "Esta demo local usa credenciales ficticias de sólo lectura. No contacta con proveedores ni almacena secretos.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 611
+    },
+    "Credentials authorize inspection only. They are sent securely to your authenticated backend and cleared from this form.": {
+      "es": "Las credenciales sólo autorizan la inspección. Se envían de forma segura a tu backend autenticado y se borran de este formulario.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 615
+    },
+    "Explore demo setup": {
+      "es": "Explorar configuración demo",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 661
+    },
+    "Inspect account": {
+      "es": "Inspeccionar cuenta",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 662
+    },
+    "Choose a voice-enabled number already in your account.": {
+      "es": "Elige un número de tu cuenta que ya esté habilitado para voz.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 670
+    },
+    "No existing numbers": {
+      "es": "No hay números existentes",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 685
+    },
+    "Add an eligible number in your provider account, then inspect again.": {
+      "es": "Añade un número elegible en tu cuenta del proveedor e inspecciona de nuevo.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 688
+    },
+    "Existing numbers": {
+      "es": "Números existentes",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 697
+    },
+    "Existing routing": {
+      "es": "Routing existente",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 732
+    },
+    "No existing routing": {
+      "es": "Sin routing existente",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 733
+    },
+    "Voice not enabled": {
+      "es": "Voz no habilitada",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 737
+    },
+    "Voice": {
+      "es": "Voz",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 745
+    },
+    "Unavailable": {
+      "es": "No disponible",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 746
+    },
+    "None of these numbers supports voice setup.": {
+      "es": "Ninguno de estos números admite la configuración de voz.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 761
+    },
+    "Back": {
+      "es": "Atrás",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 880
+    },
+    "Review setup": {
+      "es": "Revisar configuración",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 790
+    },
+    "These changes apply only after your confirmation.": {
+      "es": "Estos cambios se aplicarán únicamente después de tu confirmación.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 800
+    },
+    "Selected number": {
+      "es": "Número seleccionado",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 808
+    },
+    "Plan expires": {
+      "es": "El plan caduca",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 814
+    },
+    "Planned changes": {
+      "es": "Cambios previstos",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 829
+    },
+    "Replace this number's existing routing with the reviewed configuration.": {
+      "es": "Reemplazar el routing existente de este número por la configuración revisada.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 857
+    },
+    "This plan does not replace existing routing.": {
+      "es": "Este plan no reemplaza routing existente.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 865
+    },
+    "Connect and configure": {
+      "es": "Conectar y configurar",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 900
+    },
+    "Configuration progress": {
+      "es": "Progreso de la configuración",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 910
+    },
+    "Configuration in progress": {
+      "es": "Configuración en curso",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 914
+    },
+    "Applying the reviewed plan. Wait for the setup result.": {
+      "es": "Aplicando el plan revisado. Espera el resultado de la configuración.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 927
+    },
+    "The setup service reports that configuration is still in progress.": {
+      "es": "El servicio informa que la configuración sigue en curso.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 931
+    },
+    "Check setup status": {
+      "es": "Consultar configuración",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1061
+    },
+    "Check the setup status to continue. The configuration will not be sent again.": {
+      "es": "Consulta el estado para continuar. La configuración no se enviará de nuevo.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 957
+    },
+    "Setup checks": {
+      "es": "Comprobaciones de configuración",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 965
+    },
+    "Webhook configuration": {
+      "es": "Configuración de webhooks",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 977
+    },
+    "Browser connection": {
+      "es": "Conexión del navegador",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 981
+    },
+    "Real test call": {
+      "es": "Llamada real de prueba",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 985
+    },
+    "Passed": {
+      "es": "Comprobado",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1027
+    },
+    "Failed": {
+      "es": "Falló",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1029
+    },
+    "Pending": {
+      "es": "Pendiente",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1030
+    },
+    "These results are local fixtures. Browser connection and a real test call have not been performed.": {
+      "es": "Estos resultados son fixtures locales. No se ha conectado el navegador ni realizado una llamada real de prueba.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1040
+    },
+    "Browser connection and a real test call remain pending. Opening the softphone does not place a call.": {
+      "es": "La conexión del navegador y una llamada real de prueba siguen pendientes. Abrir el softphone no realiza una llamada.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1044
+    },
+    "Open softphone": {
+      "es": "Abrir softphone",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1076
+    },
+    "Inspecting credentials…": {
+      "es": "Inspeccionando credenciales…",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1093
+    },
+    "Preparing the plan…": {
+      "es": "Preparando el plan…",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1095
+    },
+    "Checking setup status…": {
+      "es": "Consultando configuración…",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1096
+    },
+    "Setup summary": {
+      "es": "Resumen de configuración",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1106
+    },
+    "Provider": {
+      "es": "Proveedor",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1111
+    },
+    "Account": {
+      "es": "Cuenta",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1123
+    },
+    "Not inspected": {
+      "es": "Sin inspeccionar",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1127
+    },
+    "Not selected": {
+      "es": "Sin seleccionar",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1134
+    },
+    "Existing numbers only": {
+      "es": "Sólo números existentes",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1141
+    },
+    "Setup does not purchase numbers or place calls. Inspection is read-only; configuration requires reviewing and confirming the plan.": {
+      "es": "La configuración no compra números ni realiza llamadas. La inspección es de sólo lectura; configurar requiere revisar y confirmar el plan.",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "line": 1144
+    },
+    "Explore setup with two credentials per provider.": {
+      "es": "Explora la configuración con dos credenciales por proveedor.",
+      "source": "src/components/templates/communications-softphone-template.tsx",
+      "line": 53
+    },
+    "Configure provider": {
+      "es": "Configurar proveedor",
+      "source": "src/components/templates/communications-softphone-template.tsx",
+      "line": 65
+    },
+    "Close setup": {
+      "es": "Cerrar configuración",
+      "source": "src/components/templates/communications-softphone-template.tsx",
+      "line": 73
+    },
+    "Provider setup": {
+      "es": "Configuración del proveedor",
+      "source": "src/components/templates/communications-softphone-template.tsx",
+      "line": 76
+    },
+    "Local demo with read-only example credentials. An authenticated backend enables automatic configuration for your own account.": {
+      "es": "Demo local con credenciales de ejemplo de solo lectura. Un backend autenticado habilita la configuración automática de tu propia cuenta.",
+      "source": "src/components/templates/communications-softphone-template.tsx",
+      "line": 79
+    },
+    "Sign in again to continue configuring or authorizing a test.": {
+      "es": "Vuelve a iniciar sesión para configurar o autorizar una prueba.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 172
+    },
+    "Connect the browser session and set your presence to Available first.": {
+      "es": "Conecta la sesión del navegador y cambia tu presencia a Disponible primero.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 177
+    },
+    "A test is already authorized or a call is active. Wait until it finishes or expires.": {
+      "es": "Ya hay una prueba autorizada o una llamada activa. Espera a que termine o caduque.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 182
+    },
+    "The request could not be confirmed. Check the private backend before trying again.": {
+      "es": "No se pudo confirmar la solicitud. Revisa el backend privado antes de reintentar.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 186
+    },
+    "Private call laboratory": {
+      "es": "Laboratorio privado de llamadas",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 198
+    },
+    "Connect your phone line": {
+      "es": "Conecta tu línea telefónica",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 201
+    },
+    "Use the owner access code to open this private backend. Then enter only your provider's two credentials and choose an existing voice number.": {
+      "es": "Abre este backend privado con el código de acceso del propietario. Después introduce únicamente las dos credenciales del proveedor y elige un número de voz existente.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 204
+    },
+    "Renew owner access": {
+      "es": "Renovar acceso del propietario",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 218
+    },
+    "Configure an approved HTTPS backend URL before signing in.": {
+      "es": "Configura una URL HTTPS aprobada para el backend antes de iniciar sesión.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 224
+    },
+    "Owner access code": {
+      "es": "Código de acceso del propietario",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 234
+    },
+    "Application authentication. Find it in ~/.config/aureform-communications/access-code.txt after setup:init.": {
+      "es": "Autenticación de la aplicación. Está en ~/.config/aureform-communications/access-code.txt después de setup:init.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 238
+    },
+    "Open private setup": {
+      "es": "Abrir configuración privada",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 264
+    },
+    "Call provider": {
+      "es": "Proveedor de llamadas",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 272
+    },
+    "Authorize one incoming test": {
+      "es": "Autoriza una prueba entrante",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 321
+    },
+    "Connect the browser and select Available. Only the exact caller below may then reach this number, once, within five minutes, for at most two minutes. Your carrier's call and number charges apply.": {
+      "es": "Conecta el navegador y selecciona Disponible. Solo el teléfono indicado podrá llegar a este número, una vez, durante los próximos cinco minutos y por un máximo de dos minutos. Se aplican los cargos de llamadas y numeración de tu proveedor.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 324
+    },
+    "Your calling phone number": {
+      "es": "El teléfono desde el que llamarás",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 331
+    },
+    "International format, for example +573001234567.": {
+      "es": "Formato internacional, por ejemplo +573001234567.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 335
+    },
+    "I authorize this one bounded test and the associated carrier charges.": {
+      "es": "Autorizo esta única prueba limitada y los cargos del proveedor asociados.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 358
+    },
+    "Authorize test call": {
+      "es": "Autorizar llamada de prueba",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 374
+    },
+    "Now call": {
+      "es": "Ahora llama al",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 383
+    },
+    "From": {
+      "es": "Desde",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 386
+    },
+    "Authorization expires": {
+      "es": "La autorización caduca",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 388
+    },
+    "No call has been placed by Aureform. Verify ringing, two-way audio and termination with your phone.": {
+      "es": "Aureform no ha iniciado ninguna llamada. Comprueba el timbrado, el audio en ambos sentidos y la finalización con tu teléfono.",
+      "source": "src/components/communications/reference-connection.tsx",
+      "line": 398
+    }
+  },
+  "sourceHashes": {
+    "src/components/blocks/communications-setup.tsx": "425cc45e7751002fdbc9b8cf68625d2932d2d5665db8a9071d166257f3c71174",
+    "src/components/templates/communications-softphone-template.tsx": "6231b19ea9d2defed58a75cdb22c19b1199db0c1b496b5dbcdf77ff7268a16e8",
+    "src/components/communications/reference-connection.tsx": "12f4437330af36704bc2db9676c9d60cea113e51993a0cd3df55420dbba03894"
+  }
+}

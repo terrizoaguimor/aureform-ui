@@ -26,8 +26,10 @@ Follow the work on main before the next version is tagged.
 - Typed communications contracts, optional Twilio and Telnyx browser SDK factories, and an authenticated inbound reference backend with signed webhooks and explicit per-call cost gates.
 - A bilingual communications guide and separate implementation evidence, preserving the original research RFCs and provider-specific live acceptance requirements.
 - Editable Softphone implementation source in Figma, seven call states in Light/Dark, desktop/mobile compositions, dialogs and two additional local Code Connect templates.
+- Reviewed automatic Twilio/Telnyx setup with two credential fields per provider, existing-number selection, explicit routing-replacement confirmation, encrypted private configuration and mutation journals.
+- A private single-owner connection host with separate owner authentication, configured-profile recovery, stable session renewal and explicit authorization for one bounded, manually initiated incoming test.
 
-These changes are available on main and are not part of the immutable 1.5.0 release archives. The Softphone demo is local. Optional SDK/backend source is an inbound laboratory reference; real audible carrier calls and production readiness are not certified. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.
+These changes on main are outside the immutable 1.5.0 release archives. Reviewed automatic setup, the private connected host, editable Figma source and scoped validation are available; real carrier/media acceptance and production readiness remain unverified. Uncertain provisioning remains reconciliation-only across restarts and new inspections. Telnyx must independently demonstrate the requested short parent-credential lifetime. Twilio is the selected first real-call target; setup requires a verified active Full account and its primary Auth Token. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.
 
 ## [1.5.0](https://github.com/terrizoaguimor/aureform-ui/releases/tag/v1.5.0) — 2026-10-20
 

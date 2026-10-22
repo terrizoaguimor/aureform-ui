@@ -28,6 +28,12 @@ id_ed25519*
 *.log
 cookies*.json
 storage-state*.json
+encrypted-setup*.json
+lab-config.json
+access-code.txt
+.aureform-communications/
+.cloudflared/
+cloudflare-token*.txt
 .cloudflare/
 .wrangler/
 .dev.vars*

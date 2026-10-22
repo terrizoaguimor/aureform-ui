@@ -2,6 +2,8 @@
 
 `SoftphoneWorkspace` es un bloque editable de softphone entrante. Su adaptador predeterminado ejecuta una demostración local: los nombres de proveedor identifican escenarios simulados de Twilio o Telnyx, sin comprar números, conectar un carrier ni realizar llamadas reales.
 
+El botón **Configurar proveedor** de la suite pública abre un asistente de credenciales/número/revisión de sólo lectura. La configuración live exige un consumidor autenticado configurado de forma explícita; pulsar un proveedor no registra el SDK ni autoriza una llamada.
+
 ## Monta el softphone local
 
 Desde el checkout, copia `softphone-workspace` en un [consumidor configurado](cli.md). Revisa el preview, aplica e instala las dependencias incorporadas:
@@ -78,6 +80,48 @@ Gestiona los estados denegado y no disponible antes de conectar medios reales. D
 El adaptador demo conserva historial, eventos y notas acotados en memoria, sin localStorage, sessionStorage, cookies ni base de datos. `reset()` restaura los fixtures; `dispose()` detiene trabajo pendiente y suscripciones. Usa datos ficticios en la demo pública. El backend del consumidor debe gestionar estado autenticado, notas y políticas de retención y eliminación. No guardes secretos del carrier, tokens de acceso ni datos privados de los contactos en almacenamiento del navegador, variables públicas o archivos estáticos.
 
 La [plantilla de la suite](../../../src/components/templates/softphone-template.tsx) conserva sesiones demo al navegar en la misma pestaña mediante un [host en memoria](../../../src/lib/communications/demo-session.ts). Una recarga completa empieza de nuevo. **Reiniciar demo** restaura los fixtures de ese proveedor. **Exportar CSV** descarga explícitamente direcciones de los contactos y metadatos del historial, sin notas; aplica tu política de exportación para datos reales.
+
+## Conecta y configura un proveedor
+
+[CommunicationsSoftphoneTemplate](../../../src/components/templates/communications-softphone-template.tsx) envuelve la composición local existente. Sin configuración live conserva la demo y abre **Configurar proveedor** con credenciales ficticias de sólo lectura. No introduzcas secretos reales en la demo pública.
+
+Un consumidor autenticado aporta `connection?: ConnectedSoftphoneLiveProps` o configura el host privado [ReferenceConnection](../../../src/components/communications/reference-connection.tsx). [ConnectedSoftphone](../../../src/components/communications/connected-softphone.tsx) gestiona el asistente y el adaptador live resultante. El formulario del carrier tiene exactamente dos campos:
+
+| Proveedor | Campos | Recursos gestionados en servidor |
+| --- | --- | --- |
+| Twilio | **Account SID** y **Auth token** (principal) | Clave Standard API propia/secreto de única entrega y rutas entrantes/status fijas. |
+| Telnyx | **API key** y **Public key** | Call Control Application y Credential Connection separada para el navegador. |
+
+Elige un **número de voz existente de tu cuenta**, revisa el plan y confirma el reemplazo de su routing actual cuando corresponda. No hay compra de números, marcación automática ni campos adicionales de IDs del carrier. El setup Twilio actual usa REST US1; siguen aplicando permisos y elegibilidad regional.
+
+Twilio requiere una cuenta **Full** activa y su **Auth Token principal**. [Trial bloquea el `<Dial><Client>` necesario](https://www.twilio.com/docs/usage/trials/try-out-voice) y las [firmas de webhooks usan el token principal](https://www.twilio.com/docs/usage/security). Fuentes consultadas el **2026-10-21**. El backend comprueba estos requisitos antes de configurar recursos; no actualiza la cuenta ni promueve tokens. Rechaza un tipo de cuenta o identidad de token que no pueda verificar. La [guía de setup](../../../docs/communications/AUTOMATIC-SETUP.md#twilio-prerequisites) explica los errores de cuenta/credenciales correspondientes.
+
+Inicializa el laboratorio Node privado desde el checkout, sustituyendo los dominios de ejemplo por tu backend HTTPS y el origen exacto del frontend:
+
+```sh
+cd examples/communications-backend
+npm ci --ignore-scripts --no-audit --no-fund
+npm run setup:init -- --public-origin https://voice.example.com --frontend-origin https://app.example.com
+npm run setup:serve
+```
+
+Los archivos del propietario van por defecto a `~/.config/aureform-communications`, fuera de Git. La inicialización rechaza sobrescrituras y escribe `.env` al final. Genera un **Código de acceso del propietario** independiente y una clave de cifrado de **32 bytes** para el archivo de setup AES-256-GCM. Ese login autentica la aplicación; no es una tercera credencial del carrier.
+
+El consumidor puede definir `NEXT_PUBLIC_COMMUNICATIONS_BACKEND_URL=https://voice.example.com/v1/communications`. Esa URL HTTPS aprobada es pública y se incorpora durante el build; nunca debe contener claves, tokens ni códigos de acceso. Déjala sin definir en el sitio público. `PUBLIC_BASE_URL` del backend es el **origen** HTTPS externo exacto, sin la ruta API; autoriza el origen preciso del frontend y conserva los cuerpos firmados de los webhooks.
+
+En Cloudflare usa un [túnel nombrado](https://developers.cloudflare.com/tunnel/get-started/): [Quick Tunnels no soporta SSE y su login por email interactivo no admite clientes webhook automáticos](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/). Mantén credenciales, archivos de token y configuración del hostname privado fuera de Git. Los webhooks usan firmas del proveedor, sin redirigir a un login; el stream debe conservar [`text/event-stream`](https://developers.cloudflare.com/tunnel/troubleshooting/). Un túnel saludable no acredita audio funcional.
+
+Elige proveedor antes del login; después queda bloqueado. El bearer del propietario dura diez minutos y se mantiene en memoria. **Renovar acceso del propietario** conserva montada la sesión/llamada. Tras el login, GET autenticado `/v1/communications/setup/connections` devuelve hasta dos resúmenes configurados sin secretos. El perfil guardado del proveedor se valida mediante `ConnectedSoftphone.initialConfiguration`, sin volver a inspeccionar, crear otra clave, aplicar routing ni conectar automáticamente.
+
+Usa **Inspeccionar cuenta** → selecciona número → **Revisar configuración** → confirma los cambios → **Conectar y configurar**. **Número configurado** acredita readback de configuración, no entrega de un webhook firmado; conectar el navegador es distinto de verificar audio o una llamada real. Usa **Conectar sesión** por separado. Si un apply ya enviado expira o se cancela, usa **Consultar configuración**: el journal privado bloquea reintentos ciegos y no ofrece rollback automático. Un setup persistido `configuring`, `unknown` o `failed` bloquea otro plan/apply para el mismo proveedor + ID del número seleccionado, incluso tras otra inspección o un reinicio.
+
+Para una prueba entrante autorizada, conecta el navegador, selecciona **Disponible**, introduce el teléfono E.164 exacto desde el que llamarás y confirma los cargos. **Autorizar llamada de prueba** admite una sola llamada entrante durante cinco minutos, con hasta 120 segundos en esta UI. Llama tú al número elegido; Aureform no origina la prueba. Al caducar se limpian permiso/consentimiento en la UI, sin renovarlos automáticamente. La pierna interna del navegador/SIP puede generar cargos; no es un tope financiero garantizado.
+
+Es un laboratorio para un único propietario: las credenciales/checkpoints de setup se cifran en disco, pero llamadas, cola y permisos permanecen en memoria. El consumidor aporta los loaders oficiales; un registro fallido o control sin soporte no acredita audio funcional. El issuer gestionado Telnyx está implementado con registros cifrados de dispositivo/checkpoints por agente, límites estrictos de vida del padre/JWT y rotación de credenciales conocidas cuando el agente está inactivo. Las operaciones pending/unknown siguen bloqueadas incluso después de caducar, sin crear duplicados a ciegas. Las pruebas de proveedor/HTTP son sintéticas; no se ha demostrado que Telnyx acepte el TTL breve solicitado para el padre, acepte el JWT live ni permita renovar con audio ininterrumpido. Twilio es el primer objetivo de aceptación real; **no se ha verificado una llamada real**, y ambos proveedores requieren aceptación independiente de políticas, credenciales y medios.
+
+La [guía de setup automático](../../../docs/communications/AUTOMATIC-SETUP.md) incluye rutas API exactas, recuperación, archivos privados y fuentes oficiales consultadas el 2026-10-21. La [validación de esta extensión](../../../docs/communications/AUTOMATIC-SETUP-VALIDATION.md) registra **1,036 unitarias**, **245 pruebas de backend con Node 22.22.3**, tipos/lint, recorridos independientes de **38 casos** en raíz y bajo el prefijo de Pages, un consumidor SDK limpio y login privado por HTTPS. Estos resultados conservan sus límites y no reemplazan el recibo anterior del Softphone. La [nueva fuente editable en Figma](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=585-59) registra por separado setup, host conectado, referencia privada y diálogos.
+
+Para el frontend privado local, usa `NEXT_PUBLIC_BASE_PATH='' pnpm dev --webpack --port 3000`; el recibo explica la recuperación del chunk de desarrollo observada. Las exportaciones públicas de producción se comprobaron por separado con Turbopack. La entrega real de webhooks, el registro y el audio aún requieren la prueba autorizada con la cuenta del operador.
 
 ## Aporta un adaptador live de forma explícita
 

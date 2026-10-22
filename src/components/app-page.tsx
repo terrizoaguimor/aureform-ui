@@ -64,6 +64,7 @@ import type { IntegrationSuite } from "@/lib/integrations/suite";
 import type { IntegrationUiBindings } from "@/lib/integrations/ui-bindings";
 import type { IntegrationsAdapter } from "@/lib/integrations/contracts";
 import type { CommunicationsAdapter } from "@/lib/communications/contracts";
+import type { ConnectedSoftphoneLiveProps } from "@/components/communications/connected-softphone";
 import { useWorkspace } from "@/components/workspace-provider";
 import { Card } from "@/components/ui/card";
 import { Empty } from "@/components/ui/empty";
@@ -80,9 +81,9 @@ const IntegrationHub = dynamic(() =>
     (module) => module.IntegrationHub,
   ),
 );
-const SoftphoneTemplate = dynamic(() =>
-  import("@/components/templates/softphone-template").then(
-    (module) => module.SoftphoneTemplate,
+const CommunicationsSoftphoneTemplate = dynamic(() =>
+  import("@/components/templates/communications-softphone-template").then(
+    (module) => module.CommunicationsSoftphoneTemplate,
   ),
 );
 export type AppPageProps = {
@@ -97,6 +98,7 @@ export type AppPageProps = {
   integrationSuite?: IntegrationSuite;
   integrationUi?: IntegrationUiBindings;
   communicationsAdapter?: CommunicationsAdapter;
+  communicationsConnection?: ConnectedSoftphoneLiveProps;
 };
 export function AppPage({
   locale,
@@ -110,6 +112,7 @@ export function AppPage({
   integrationSuite,
   integrationUi,
   communicationsAdapter,
+  communicationsConnection,
 }: AppPageProps) {
   const [layout, setLayout] = useState<ShellLayout>("sidebar");
   const selectedIdentity =
@@ -199,7 +202,12 @@ export function AppPage({
   else if (path === "support") content = <SupportTemplate />;
   else if (path === "maps") content = <MapsTemplate />;
   else if (path === "softphone")
-    content = <SoftphoneTemplate adapter={communicationsAdapter} />;
+    content = (
+      <CommunicationsSoftphoneTemplate
+        adapter={communicationsAdapter}
+        connection={communicationsConnection}
+      />
+    );
   else if (path === "invoice") content = <InvoiceTemplate />;
   else if (path === "ai/images" || path === "ai/video")
     content = (
@@ -245,7 +253,9 @@ export function AppPage({
         "settings/billing",
       ].includes(path) && !selectedCommerce;
     const missingCommunications =
-      path === "softphone" && !communicationsAdapter;
+      path === "softphone" &&
+      !communicationsAdapter &&
+      !communicationsConnection;
     if (
       missingIdentity ||
       missingAi ||

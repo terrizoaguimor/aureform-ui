@@ -2,6 +2,8 @@
 
 `SoftphoneWorkspace` is an editable inbound softphone block. Its default adapter runs a local demonstration: provider names identify simulated Twilio or Telnyx scenarios, without buying numbers, connecting a carrier or placing real calls.
 
+The public suite's **Configure provider** button opens a read-only credential/number/review wizard. Live account setup is available only in a deliberately configured authenticated consumer; a provider button does not register the SDK or authorize a call.
+
 ## Mount the local softphone
 
 From the checkout, copy `softphone-workspace` into a [configured consumer](cli.md). Preview first, then apply and install the merged dependencies:
@@ -78,6 +80,48 @@ Handle denied and unavailable access before connecting real media. After a denia
 The demo adapter keeps bounded history, events and notes in memory, without localStorage, sessionStorage, cookies or a database. `reset()` restores the local fixtures; `dispose()` stops pending work and subscriptions. Use fictional data in the public demo. A consumer backend must own authenticated call state, notes, retention and deletion policies. Do not put carrier secrets, access tokens or private caller information in browser storage, public environment variables or static assets.
 
 The [suite template](../../../src/components/templates/softphone-template.tsx) keeps demo sessions across client navigation in the same tab using an [in-memory host](../../../src/lib/communications/demo-session.ts). A full reload starts fresh. **Reset demo** restores that provider's fixtures. **Export CSV** deliberately downloads caller addresses and history metadata, without call notes; apply your own export policy for real data.
+
+## Connect and configure a provider
+
+The [CommunicationsSoftphoneTemplate](../../../src/components/templates/communications-softphone-template.tsx) wraps the existing local template. With no live configuration it keeps the softphone demo and opens **Configure provider** with read-only fixture credentials. Do not enter real secrets in the public demo.
+
+An authenticated consumer supplies `connection?: ConnectedSoftphoneLiveProps` or configures the private [ReferenceConnection](../../../src/components/communications/reference-connection.tsx). The [ConnectedSoftphone](../../../src/components/communications/connected-softphone.tsx) host owns the wizard and resulting live adapter. The carrier form has exactly two fields:
+
+| Provider | Fields | Server-managed resources |
+| --- | --- | --- |
+| Twilio | **Account SID** and **Auth token** (primary) | Owned Standard API key/one-time secret and fixed inbound/status routes. |
+| Telnyx | **API key** and **Public key** | Call Control Application and separate browser Credential Connection. |
+
+Select an **existing owned voice-enabled number**, review the plan and confirm any replacement of its current routing. There is no number purchase, automatic dialing or extra carrier resource-ID field. Twilio's current setup uses US1 REST; account/region permissions still apply.
+
+For Twilio, use an active **Full** account and its **primary Auth Token**. [Trial blocks the required `<Dial><Client>`](https://www.twilio.com/docs/usage/trials/try-out-voice), and [webhook signatures use the primary token](https://www.twilio.com/docs/usage/security). Sources consulted **2026-10-21**. The backend verifies these prerequisites before configuration effects; it does not upgrade an account or promote tokens. Account type or token identity that cannot be verified is rejected. The [setup guide](../../../docs/communications/AUTOMATIC-SETUP.md#twilio-prerequisites) explains the resulting account/credential errors.
+
+Initialize the separate private Node laboratory from the checkout, replacing the example domains with your owned HTTPS backend and exact frontend origin:
+
+```sh
+cd examples/communications-backend
+npm ci --ignore-scripts --no-audit --no-fund
+npm run setup:init -- --public-origin https://voice.example.com --frontend-origin https://app.example.com
+npm run setup:serve
+```
+
+Owner files default to `~/.config/aureform-communications`, outside Git. Initialization refuses overwrites and writes `.env` last. It generates a separate **Owner access code** and a **32-byte** encryption key for the AES-256-GCM setup file. The owner login is application authentication, not a third carrier credential.
+
+The consumer can set `NEXT_PUBLIC_COMMUNICATIONS_BACKEND_URL=https://voice.example.com/v1/communications`. This approved HTTPS URL is public and embedded at build time; it must never contain a key, token or owner code. Keep it unset in the public site. `PUBLIC_BASE_URL` on the backend is the exact external HTTPS **origin**, without the API path; allow the frontend's exact origin and preserve signed webhook request bodies.
+
+For Cloudflare, use a [named tunnel](https://developers.cloudflare.com/tunnel/get-started/): [Quick Tunnels lack SSE and interactive email authentication cannot serve machine webhook clients](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/). Keep credentials/token files and private hostname configuration outside Git. Webhooks use provider signatures, not an interactive login redirect; session streaming must retain [`text/event-stream`](https://developers.cloudflare.com/tunnel/troubleshooting/). Tunnel health does not establish media success.
+
+Choose the provider before owner login; it stays locked afterward. The ten-minute owner bearer remains in memory. **Renew owner access** keeps the owned live call/session mounted. After login, authenticated GET `/v1/communications/setup/connections` returns at most two redacted configured summaries. A selected saved profile is validated through `ConnectedSoftphone.initialConfiguration`, without inspecting again, creating another key, applying routing or auto-connecting.
+
+Use **Inspect account** → select number → **Review setup** → confirm changes → **Connect and configure**. **Number configured** means configuration readback, not delivery of a signed webhook; browser connection is separate from audio or a real test. Use **Connect session** separately. If a dispatched apply times out or is cancelled, use **Check setup status**: the private mutation journal blocks blind retries and does not offer automatic rollback. Persisted `configuring`, `unknown` or `failed` setup blocks another plan/apply for the same provider + selected number ID, even after another inspection or a process restart.
+
+For an explicitly authorized incoming test, connect the browser, select **Available**, enter the exact calling E.164 number and confirm the charge consent. **Authorize test call** permits one incoming call within five minutes, capped at 120 seconds in this UI. Then call the selected number yourself; no test call is originated by Aureform. Expired UI permission/consent clears without automatic renewal. The linked browser/SIP leg may incur charges; this is not a financial cap.
+
+This is single-owner laboratory software: setup credentials/checkpoints are encrypted on disk, while the call ledger, queue and approvals remain in memory. Official SDK loaders are consumer-supplied; failed registration or an unsupported capability must not be presented as working media. The Telnyx managed issuer is implemented with encrypted per-agent device/checkpoint records, strict parent/JWT lifetime checks and known-credential rotation while idle. Pending/unknown operations remain blocked even when expired, preventing blind duplicate creation. Synthetic provider/HTTP tests cover this path; live acceptance of the requested short parent TTL, JWT acceptance and uninterrupted audio renewal are not demonstrated. Twilio is the first real-call acceptance target; **no real call is verified**, and both providers require independent account-policy/credential/media acceptance.
+
+The [automatic setup guide](../../../docs/communications/AUTOMATIC-SETUP.md) contains exact API routes, recovery rules, private file handling and official sources consulted 2026-10-21. The [extension's validation](../../../docs/communications/AUTOMATIC-SETUP-VALIDATION.md) records **1,036 unit tests**, **245 backend tests on Node 22.22.3**, types/lint, independent **38-case** root and mounted browser runs, a clean SDK consumer and private HTTPS owner login. These results retain their own limits and do not replace the earlier Softphone receipt. The editable [new Figma source page](https://www.figma.com/design/lHp5p10yGb7lqXJDnAox0N?node-id=585-59) records setup, connected-host, private-reference and dialog designs separately.
+
+For the private local frontend, use `NEXT_PUBLIC_BASE_PATH='' pnpm dev --webpack --port 3000`; the validation explains the observed development-chunk recovery. Public production exports were independently checked with Turbopack. Real webhook delivery, registration and audio still require the operator's authorized account test.
 
 ## Bring a live adapter deliberately
 

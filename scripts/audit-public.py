@@ -25,8 +25,8 @@ DETECTORS = {
     "Signed download URL": re.compile(rb"[?&](?:X-Amz-Signature|X-Goog-Signature|access_token|refresh_token)=[A-Za-z0-9_%.-]{16,}", re.I),
     "Private deployment metadata": re.compile(rb"https?://[^\s/\"<>]+\.chatgpt\.site\b|https?://git\.chatgpt-team\.site\b|appgprj_[A-Za-z0-9_-]{12,}"),
 }
-PRIVATE_DIRS = {".openai", ".config", ".codex", ".claude", ".cursor", ".cloudflare", ".wrangler", "node_modules", "artifacts", "test-results", "playwright-report"}
-PRIVATE_NAMES = {".npmrc", "id_rsa", "id_ed25519"}
+PRIVATE_DIRS = {".openai", ".config", ".codex", ".claude", ".cursor", ".cloudflare", ".cloudflared", ".aureform-communications", ".wrangler", "node_modules", "artifacts", "test-results", "playwright-report"}
+PRIVATE_NAMES = {".npmrc", "id_rsa", "id_ed25519", "lab-config.json", "access-code.txt"}
 PRIVATE_SUFFIXES = {".pem", ".key", ".p12", ".pfx", ".log"}
 findings = []
 scanned = 0
@@ -41,6 +41,8 @@ def private_path(name):
         or leaf in PRIVATE_NAMES
         or (leaf.startswith(".env") and leaf != ".env.example")
         or (leaf.startswith(".dev.vars") and leaf != ".dev.vars.example")
+        or (leaf.startswith("encrypted-setup") and leaf.endswith(".json"))
+        or (leaf.startswith("cloudflare-token") and leaf.endswith(".txt"))
         or PurePosixPath(leaf).suffix in PRIVATE_SUFFIXES
         or bool(re.match(r"(?:credentials|service-account|cookies|storage-state).*\.json$", leaf, re.I))
     )

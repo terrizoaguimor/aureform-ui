@@ -180,6 +180,7 @@ def main() -> None:
         files.extend(ROOT / item["file"] for item in proofs)
         files.extend(sorted((ROOT / ".figma/code-connect").glob("*.figma.ts")))
         files.extend(sorted((ROOT / ".figma").glob("Softphone*.figma.ts")))
+        files.extend(sorted((ROOT / ".figma").glob("CommunicationsSetup*.figma.ts")))
         files.extend(sorted((ROOT / "docs/communications").glob("*.md")))
         files.extend(sorted((ROOT / "docs/communications").glob("*.json")))
         files.extend(sorted((ROOT / "public/assets/integrations").glob("*")))

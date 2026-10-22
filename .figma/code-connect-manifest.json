@@ -36,8 +36,8 @@
     "coreFamilies": 44,
     "buttonExtensions": 2,
     "shapeExtensions": 1,
-    "sourceBlockExports": 44,
-    "sourceBlockFiles": 26,
+    "sourceBlockExports": 49,
+    "sourceBlockFiles": 30,
     "mappedBlockExports": 9,
     "nativeIcons": 22,
     "navigationFragments": 1,
@@ -49,9 +49,9 @@
   },
   "validation": {
     "status": "passed-local-smoke",
-    "checkedAt": "2026-10-21T22:48:24.798Z",
+    "checkedAt": "2026-10-22T01:09:41.118Z",
     "templateCheckpointVersion": "1.4.0",
-    "sourceValidationVersion": "1.5.0+unreleased-softphone",
+    "sourceValidationVersion": "1.5.0+automatic-setup",
     "scope": "Existing local templates checked against the recorded current source snapshot",
     "runtime": "synthetic-figma-stub",
     "typescript": "5.9.3",
@@ -88,7 +88,7 @@
     "nativeChartBooleanDefinitions": 12,
     "nativeChartBooleanCases": 338,
     "starterSourceTypecheck": "passed-against-canonical-source",
-    "sourceSnapshotChecks": 103,
+    "sourceSnapshotChecks": 107,
     "templateSnapshotChecks": 92,
     "pendingNativeMappings": 0,
     "rawShellHeaderNotForwarded": true,
@@ -111,21 +111,38 @@
         "export": "Button",
         "property": "appearance",
         "type": "ButtonAppearance",
-        "options": ["solid", "soft", "outline", "glass", "gradient"]
+        "options": [
+          "solid",
+          "soft",
+          "outline",
+          "glass",
+          "gradient"
+        ]
       },
       {
         "source": "src/components/ui/badge.tsx",
         "export": "Badge",
         "property": "appearance",
         "type": "BadgeAppearance",
-        "options": ["solid", "soft", "outline", "glass", "gradient"]
+        "options": [
+          "solid",
+          "soft",
+          "outline",
+          "glass",
+          "gradient"
+        ]
       },
       {
         "source": "src/components/ui/card.tsx",
         "export": "Card",
         "property": "appearance",
         "type": "CardAppearance",
-        "options": ["flat", "elevated", "glass", "gradient"]
+        "options": [
+          "flat",
+          "elevated",
+          "glass",
+          "gradient"
+        ]
       }
     ],
     "effects": [
@@ -187,22 +204,38 @@
           {
             "property": "legend",
             "type": "boolean",
-            "nativeFields": ["legend"]
+            "nativeFields": [
+              "legend"
+            ]
           },
           {
             "property": "appearance",
             "type": "ChartAppearance",
-            "nativeFields": ["glow"],
-            "options": ["flat", "gradient", "glow"],
+            "nativeFields": [
+              "glow"
+            ],
+            "options": [
+              "flat",
+              "gradient",
+              "glow"
+            ],
             "trueValue": "glow",
             "falseValue": "flat"
           },
           {
             "property": "visibleSeries",
             "type": "ChartSeries[]",
-            "nativeFields": ["series1", "series2", "series3"],
+            "nativeFields": [
+              "series1",
+              "series2",
+              "series3"
+            ],
             "itemType": "ChartSeries",
-            "options": ["value", "secondary", "tertiary"]
+            "options": [
+              "value",
+              "secondary",
+              "tertiary"
+            ]
           }
         ]
       }
@@ -213,7 +246,11 @@
         "export": "Button",
         "property": "shape",
         "type": "ButtonShape",
-        "options": ["rounded", "pill", "square"],
+        "options": [
+          "rounded",
+          "pill",
+          "square"
+        ],
         "sizeMapping": {
           "Small": "sm",
           "Medium": "default",
@@ -232,14 +269,22 @@
             "export": "Table",
             "property": "appearance",
             "type": "TableAppearance",
-            "options": ["flat", "elevated", "glass", "gradient"]
+            "options": [
+              "flat",
+              "elevated",
+              "glass",
+              "gradient"
+            ]
           },
           {
             "source": "src/components/ui/table.tsx",
             "export": "Table",
             "property": "density",
             "type": "TableDensity",
-            "options": ["comfortable", "compact"]
+            "options": [
+              "comfortable",
+              "compact"
+            ]
           }
         ]
       },
@@ -253,14 +298,22 @@
             "export": "DataTable",
             "property": "appearance",
             "type": "TableAppearance",
-            "options": ["flat", "elevated", "glass", "gradient"]
+            "options": [
+              "flat",
+              "elevated",
+              "glass",
+              "gradient"
+            ]
           },
           {
             "source": "src/components/ui/table.tsx",
             "export": "DataTable",
             "property": "density",
             "type": "TableDensity",
-            "options": ["comfortable", "compact"]
+            "options": [
+              "comfortable",
+              "compact"
+            ]
           }
         ]
       }
@@ -486,6 +539,31 @@
       "export": "WorkspacePermission",
       "source": "src/components/blocks/workspace-status.tsx",
       "mapped": false
+    },
+    {
+      "export": "AiMessageParts",
+      "source": "src/components/blocks/ai-message-parts.tsx",
+      "mapped": false
+    },
+    {
+      "export": "CommunicationsSetup",
+      "source": "src/components/blocks/communications-setup.tsx",
+      "mapped": false
+    },
+    {
+      "export": "SoftphoneWorkspace",
+      "source": "src/components/blocks/softphone-workspace.tsx",
+      "mapped": false
+    },
+    {
+      "export": "formatCallDuration",
+      "source": "src/components/blocks/softphone.tsx",
+      "mapped": false
+    },
+    {
+      "export": "Softphone",
+      "source": "src/components/blocks/softphone.tsx",
+      "mapped": false
     }
   ],
   "pendingNativeMappings": [],
@@ -502,9 +580,21 @@
       "kind": "core",
       "id": "aureform-button",
       "axes": {
-        "Style": ["Primary", "Outline", "Ghost"],
-        "Size": ["Small", "Medium", "Large"],
-        "State": ["Default", "Hover", "Disabled"]
+        "Style": [
+          "Primary",
+          "Outline",
+          "Ghost"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -559,7 +649,13 @@
           "export": "Button",
           "property": "appearance",
           "type": "ButtonAppearance",
-          "options": ["solid", "soft", "outline", "glass", "gradient"],
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": null,
           "status": "unreported-on-this-native-node"
         }
@@ -567,7 +663,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Hover"],
+          "values": [
+            "Hover"
+          ],
           "reason": "Hover is pointer/CSS presentation, not a force-hover source prop."
         }
       ],
@@ -592,9 +690,21 @@
       "kind": "button-extension",
       "id": "aureform-button-additional-styles",
       "axes": {
-        "Style": ["Secondary", "Destructive", "Link"],
-        "Size": ["Small", "Medium", "Large"],
-        "State": ["Default", "Hover", "Disabled"]
+        "Style": [
+          "Secondary",
+          "Destructive",
+          "Link"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -639,7 +749,13 @@
           "export": "Button",
           "property": "appearance",
           "type": "ButtonAppearance",
-          "options": ["solid", "soft", "outline", "glass", "gradient"],
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": null,
           "status": "unreported-on-this-native-node"
         }
@@ -647,7 +763,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Hover"],
+          "values": [
+            "Hover"
+          ],
           "reason": "Hover is pointer/CSS presentation, not a force-hover source prop."
         }
       ],
@@ -680,7 +798,11 @@
           "Destructive",
           "Link"
         ],
-        "Kind": ["Loading", "Icon", "Small icon"]
+        "Kind": [
+          "Loading",
+          "Icon",
+          "Small icon"
+        ]
       },
       "mappedProperties": [
         {
@@ -713,7 +835,13 @@
           "export": "Button",
           "property": "appearance",
           "type": "ButtonAppearance",
-          "options": ["solid", "soft", "outline", "glass", "gradient"],
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": null,
           "status": "unreported-on-this-native-node"
         }
@@ -741,7 +869,13 @@
       "kind": "core",
       "id": "aureform-badge",
       "axes": {
-        "Tone": ["Success", "Neutral", "Warning", "Destructive", "Outline"]
+        "Tone": [
+          "Success",
+          "Neutral",
+          "Warning",
+          "Destructive",
+          "Outline"
+        ]
       },
       "mappedProperties": [
         {
@@ -768,7 +902,13 @@
           "export": "Badge",
           "property": "appearance",
           "type": "BadgeAppearance",
-          "options": ["solid", "soft", "outline", "glass", "gradient"],
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": null,
           "status": "unreported-on-this-native-node"
         }
@@ -795,7 +935,12 @@
       "kind": "core",
       "id": "aureform-input",
       "axes": {
-        "State": ["Empty", "Focus", "Error", "Disabled"]
+        "State": [
+          "Empty",
+          "Focus",
+          "Error",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -819,7 +964,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Focus"],
+          "values": [
+            "Focus"
+          ],
           "reason": "Focus is interactive CSS presentation, not an input prop."
         }
       ],
@@ -844,7 +991,12 @@
       "kind": "core",
       "id": "aureform-textarea",
       "axes": {
-        "State": ["Default", "Focus", "Error", "Disabled"]
+        "State": [
+          "Default",
+          "Focus",
+          "Error",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -868,7 +1020,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Focus"],
+          "values": [
+            "Focus"
+          ],
           "reason": "Focus is interactive CSS presentation."
         }
       ],
@@ -893,7 +1047,12 @@
       "kind": "core",
       "id": "aureform-checkbox",
       "axes": {
-        "State": ["Unchecked", "Checked", "Mixed", "Disabled"]
+        "State": [
+          "Unchecked",
+          "Checked",
+          "Mixed",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -929,7 +1088,11 @@
       "kind": "core",
       "id": "aureform-switch",
       "axes": {
-        "State": ["Off", "On", "Disabled"]
+        "State": [
+          "Off",
+          "On",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -964,7 +1127,10 @@
       "kind": "core",
       "id": "aureform-radio-group",
       "axes": {
-        "State": ["Default", "Disabled"]
+        "State": [
+          "Default",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -1005,7 +1171,10 @@
       "kind": "core",
       "id": "aureform-slider",
       "axes": {
-        "State": ["Default", "Disabled"]
+        "State": [
+          "Default",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -1039,7 +1208,10 @@
       "kind": "core",
       "id": "aureform-field",
       "axes": {
-        "State": ["Default", "Error"]
+        "State": [
+          "Default",
+          "Error"
+        ]
       },
       "mappedProperties": [
         {
@@ -1080,7 +1252,11 @@
       "kind": "core",
       "id": "aureform-select",
       "axes": {
-        "State": ["Closed", "Open", "Disabled"]
+        "State": [
+          "Closed",
+          "Open",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -1103,7 +1279,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Open"],
+          "values": [
+            "Open"
+          ],
           "reason": "The wrapper does not expose open/defaultOpen."
         }
       ],
@@ -1128,7 +1306,12 @@
       "kind": "core",
       "id": "aureform-combobox",
       "axes": {
-        "State": ["Closed", "Open", "Empty", "Disabled"]
+        "State": [
+          "Closed",
+          "Open",
+          "Empty",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -1152,7 +1335,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Open"],
+          "values": [
+            "Open"
+          ],
           "reason": "Open is internal popup state with no public control prop."
         }
       ],
@@ -1175,7 +1360,12 @@
       "kind": "core",
       "id": "aureform-multi-select",
       "axes": {
-        "State": ["Empty", "Selected", "Open", "Disabled"]
+        "State": [
+          "Empty",
+          "Selected",
+          "Open",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -1199,7 +1389,10 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Open", "Disabled"],
+          "values": [
+            "Open",
+            "Disabled"
+          ],
           "reason": "The source has no disabled prop and no public open prop."
         }
       ],
@@ -1222,7 +1415,10 @@
       "kind": "core",
       "id": "aureform-date-picker",
       "axes": {
-        "State": ["Closed", "Open"]
+        "State": [
+          "Closed",
+          "Open"
+        ]
       },
       "mappedProperties": [],
       "sourceProperties": [],
@@ -1233,7 +1429,10 @@
         },
         {
           "property": "State",
-          "values": ["Closed", "Open"],
+          "values": [
+            "Closed",
+            "Open"
+          ],
           "reason": "Popup open state is internal; the source wrapper exposes no open/defaultOpen prop."
         }
       ],
@@ -1258,7 +1457,10 @@
       "kind": "core",
       "id": "aureform-date-range-picker",
       "axes": {
-        "State": ["Closed", "Open"]
+        "State": [
+          "Closed",
+          "Open"
+        ]
       },
       "mappedProperties": [],
       "sourceProperties": [],
@@ -1269,7 +1471,10 @@
         },
         {
           "property": "State",
-          "values": ["Closed", "Open"],
+          "values": [
+            "Closed",
+            "Open"
+          ],
           "reason": "Popup open state is internal; the source wrapper exposes no open/defaultOpen prop."
         }
       ],
@@ -1294,7 +1499,12 @@
       "kind": "core",
       "id": "aureform-input-otp",
       "axes": {
-        "State": ["Empty", "Filled", "Error", "Disabled"]
+        "State": [
+          "Empty",
+          "Filled",
+          "Error",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -1335,7 +1545,12 @@
       "kind": "core",
       "id": "aureform-file-upload",
       "axes": {
-        "State": ["Empty", "Uploaded", "Error", "Disabled"]
+        "State": [
+          "Empty",
+          "Uploaded",
+          "Error",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -1359,7 +1574,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Error"],
+          "values": [
+            "Error"
+          ],
           "reason": "Validation errors are internal and appear after actual file validation; no error prop exists."
         }
       ],
@@ -1382,14 +1599,22 @@
       "kind": "core",
       "id": "aureform-button-group",
       "axes": {
-        "State": ["Default", "Selected", "Disabled"]
+        "State": [
+          "Default",
+          "Selected",
+          "Disabled"
+        ]
       },
       "mappedProperties": [],
       "sourceProperties": [],
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Default", "Selected", "Disabled"],
+          "values": [
+            "Default",
+            "Selected",
+            "Disabled"
+          ],
           "reason": "Selected/Disabled belong to child buttons; ButtonGroup is a div and has no selected or disabled prop. Child templates preserve their own states."
         }
       ],
@@ -1412,7 +1637,11 @@
       "kind": "core",
       "id": "aureform-text-link",
       "axes": {
-        "State": ["Default", "Hover", "Disabled"]
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -1435,7 +1664,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Hover"],
+          "values": [
+            "Hover"
+          ],
           "reason": "Hover is pointer/CSS presentation."
         }
       ],
@@ -1458,7 +1689,10 @@
       "kind": "core",
       "id": "aureform-breadcrumb",
       "axes": {
-        "State": ["Default", "Long labels"]
+        "State": [
+          "Default",
+          "Long labels"
+        ]
       },
       "mappedProperties": [
         {
@@ -1492,7 +1726,11 @@
       "kind": "core",
       "id": "aureform-pagination",
       "axes": {
-        "State": ["First", "Middle", "Last"]
+        "State": [
+          "First",
+          "Middle",
+          "Last"
+        ]
       },
       "mappedProperties": [
         {
@@ -1527,7 +1765,11 @@
       "kind": "core",
       "id": "aureform-tabs",
       "axes": {
-        "State": ["Overview", "Details", "Disabled"]
+        "State": [
+          "Overview",
+          "Details",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -1569,7 +1811,10 @@
       "kind": "navigation-fragment",
       "id": "aureform-sidebar-item",
       "axes": {
-        "State": ["Default", "Active"]
+        "State": [
+          "Default",
+          "Active"
+        ]
       },
       "mappedProperties": [
         {
@@ -1615,7 +1860,10 @@
       "kind": "core",
       "id": "aureform-sidebar",
       "axes": {
-        "State": ["Expanded", "Compact"]
+        "State": [
+          "Expanded",
+          "Compact"
+        ]
       },
       "mappedProperties": [
         {
@@ -1657,7 +1905,10 @@
       "kind": "core",
       "id": "aureform-command",
       "axes": {
-        "State": ["Results", "Empty"]
+        "State": [
+          "Results",
+          "Empty"
+        ]
       },
       "mappedProperties": [
         {
@@ -1691,7 +1942,10 @@
       "kind": "core",
       "id": "aureform-card",
       "axes": {
-        "State": ["Default", "With actions"]
+        "State": [
+          "Default",
+          "With actions"
+        ]
       },
       "mappedProperties": [
         {
@@ -1706,7 +1960,12 @@
           "export": "Card",
           "property": "appearance",
           "type": "CardAppearance",
-          "options": ["flat", "elevated", "glass", "gradient"],
+          "options": [
+            "flat",
+            "elevated",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": null,
           "status": "unreported-on-this-native-node"
         }
@@ -1714,7 +1973,10 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Default", "With actions"],
+          "values": [
+            "Default",
+            "With actions"
+          ],
           "reason": "With actions controls composition, not a Card state prop. Source children are dynamically resolved."
         }
       ],
@@ -1739,7 +2001,11 @@
       "kind": "core",
       "id": "aureform-avatar",
       "axes": {
-        "Size": ["Small", "Medium", "Large"]
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
       },
       "mappedProperties": [
         {
@@ -1781,9 +2047,20 @@
       "kind": "core",
       "id": "aureform-table",
       "axes": {
-        "State": ["Default", "Empty"],
-        "Appearance": ["Elevated", "Glass", "Gradient", "Flat"],
-        "Density": ["Comfortable", "Compact"]
+        "State": [
+          "Default",
+          "Empty"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
       },
       "mappedProperties": [
         {
@@ -1822,7 +2099,12 @@
           "export": "Table",
           "property": "appearance",
           "type": "TableAppearance",
-          "options": ["flat", "elevated", "glass", "gradient"],
+          "options": [
+            "flat",
+            "elevated",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": "Appearance",
           "status": "mapped-native-axis"
         },
@@ -1831,7 +2113,10 @@
           "export": "Table",
           "property": "density",
           "type": "TableDensity",
-          "options": ["comfortable", "compact"],
+          "options": [
+            "comfortable",
+            "compact"
+          ],
           "nativeProperty": "Density",
           "status": "mapped-native-axis"
         }
@@ -2023,9 +2308,23 @@
       "kind": "core",
       "id": "aureform-data-table",
       "axes": {
-        "State": ["Default", "Selected", "Empty", "Loading", "Error"],
-        "Appearance": ["Elevated", "Glass", "Gradient", "Flat"],
-        "Density": ["Comfortable", "Compact"]
+        "State": [
+          "Default",
+          "Selected",
+          "Empty",
+          "Loading",
+          "Error"
+        ],
+        "Appearance": [
+          "Elevated",
+          "Glass",
+          "Gradient",
+          "Flat"
+        ],
+        "Density": [
+          "Comfortable",
+          "Compact"
+        ]
       },
       "mappedProperties": [
         {
@@ -2067,7 +2366,12 @@
           "export": "DataTable",
           "property": "appearance",
           "type": "TableAppearance",
-          "options": ["flat", "elevated", "glass", "gradient"],
+          "options": [
+            "flat",
+            "elevated",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": "Appearance",
           "status": "mapped-native-axis"
         },
@@ -2076,7 +2380,10 @@
           "export": "DataTable",
           "property": "density",
           "type": "TableDensity",
-          "options": ["comfortable", "compact"],
+          "options": [
+            "comfortable",
+            "compact"
+          ],
           "nativeProperty": "Density",
           "status": "mapped-native-axis"
         }
@@ -2084,7 +2391,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Selected"],
+          "values": [
+            "Selected"
+          ],
           "reason": "Selection is internal source state. No initial selected-row prop exists; selectable enables real user interaction."
         }
       ],
@@ -2470,8 +2779,12 @@
           "export": "Chart",
           "property": "legend",
           "type": "boolean",
-          "nativeFields": ["legend"],
-          "nativeProperties": ["Show legend#189:0"],
+          "nativeFields": [
+            "legend"
+          ],
+          "nativeProperties": [
+            "Show legend#189:0"
+          ],
           "status": "mapped-native-properties"
         },
         {
@@ -2479,11 +2792,19 @@
           "export": "Chart",
           "property": "appearance",
           "type": "ChartAppearance",
-          "nativeFields": ["glow"],
-          "options": ["flat", "gradient", "glow"],
+          "nativeFields": [
+            "glow"
+          ],
+          "options": [
+            "flat",
+            "gradient",
+            "glow"
+          ],
           "trueValue": "glow",
           "falseValue": "flat",
-          "nativeProperties": ["Glow#189:14"],
+          "nativeProperties": [
+            "Glow#189:14"
+          ],
           "status": "mapped-native-properties"
         },
         {
@@ -2491,9 +2812,17 @@
           "export": "Chart",
           "property": "visibleSeries",
           "type": "ChartSeries[]",
-          "nativeFields": ["series1", "series2", "series3"],
+          "nativeFields": [
+            "series1",
+            "series2",
+            "series3"
+          ],
           "itemType": "ChartSeries",
-          "options": ["value", "secondary", "tertiary"],
+          "options": [
+            "value",
+            "secondary",
+            "tertiary"
+          ],
           "nativeProperties": [
             "Series 1#189:21",
             "Series 2#189:28",
@@ -2527,22 +2856,38 @@
             {
               "property": "legend",
               "type": "boolean",
-              "nativeFields": ["legend"]
+              "nativeFields": [
+                "legend"
+              ]
             },
             {
               "property": "appearance",
               "type": "ChartAppearance",
-              "nativeFields": ["glow"],
-              "options": ["flat", "gradient", "glow"],
+              "nativeFields": [
+                "glow"
+              ],
+              "options": [
+                "flat",
+                "gradient",
+                "glow"
+              ],
               "trueValue": "glow",
               "falseValue": "flat"
             },
             {
               "property": "visibleSeries",
               "type": "ChartSeries[]",
-              "nativeFields": ["series1", "series2", "series3"],
+              "nativeFields": [
+                "series1",
+                "series2",
+                "series3"
+              ],
               "itemType": "ChartSeries",
-              "options": ["value", "secondary", "tertiary"]
+              "options": [
+                "value",
+                "secondary",
+                "tertiary"
+              ]
             }
           ],
           "nativeProperty": "Kind",
@@ -2705,7 +3050,12 @@
       "kind": "core",
       "id": "aureform-alert",
       "axes": {
-        "State": ["Info", "Success", "Warning", "Destructive"]
+        "State": [
+          "Info",
+          "Success",
+          "Warning",
+          "Destructive"
+        ]
       },
       "mappedProperties": [
         {
@@ -2746,7 +3096,11 @@
       "kind": "core",
       "id": "aureform-toast",
       "axes": {
-        "State": ["Success", "Error", "Loading"]
+        "State": [
+          "Success",
+          "Error",
+          "Loading"
+        ]
       },
       "mappedProperties": [
         {
@@ -2788,14 +3142,20 @@
       "kind": "core",
       "id": "aureform-tooltip",
       "axes": {
-        "State": ["Open", "Closed"]
+        "State": [
+          "Open",
+          "Closed"
+        ]
       },
       "mappedProperties": [],
       "sourceProperties": [],
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Open", "Closed"],
+          "values": [
+            "Open",
+            "Closed"
+          ],
           "reason": "Tooltip exposes content/children only. Open/Closed require pointer or keyboard interaction."
         }
       ],
@@ -2820,7 +3180,10 @@
       "kind": "core",
       "id": "aureform-popover",
       "axes": {
-        "State": ["Open", "Closed"]
+        "State": [
+          "Open",
+          "Closed"
+        ]
       },
       "mappedProperties": [
         {
@@ -2859,7 +3222,11 @@
       "kind": "core",
       "id": "aureform-dialog",
       "axes": {
-        "State": ["Open", "Destructive", "Closed"]
+        "State": [
+          "Open",
+          "Destructive",
+          "Closed"
+        ]
       },
       "mappedProperties": [
         {
@@ -2882,7 +3249,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Destructive"],
+          "values": [
+            "Destructive"
+          ],
           "reason": "Destructive is a visual/action treatment; Dialog has no destructive variant prop."
         }
       ],
@@ -2905,7 +3274,10 @@
       "kind": "core",
       "id": "aureform-drawer",
       "axes": {
-        "State": ["Open", "Closed"]
+        "State": [
+          "Open",
+          "Closed"
+        ]
       },
       "mappedProperties": [
         {
@@ -2944,7 +3316,10 @@
       "kind": "core",
       "id": "aureform-dropdown-menu",
       "axes": {
-        "State": ["Open", "Disabled"]
+        "State": [
+          "Open",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -2978,7 +3353,11 @@
       "kind": "core",
       "id": "aureform-progress",
       "axes": {
-        "State": ["64", "0", "100"]
+        "State": [
+          "64",
+          "0",
+          "100"
+        ]
       },
       "mappedProperties": [
         {
@@ -3013,7 +3392,10 @@
       "kind": "core",
       "id": "aureform-spinner",
       "axes": {
-        "State": ["Small", "Medium"]
+        "State": [
+          "Small",
+          "Medium"
+        ]
       },
       "mappedProperties": [
         {
@@ -3049,7 +3431,10 @@
       "kind": "core",
       "id": "aureform-skeleton",
       "axes": {
-        "State": ["Text", "Card"]
+        "State": [
+          "Text",
+          "Card"
+        ]
       },
       "mappedProperties": [
         {
@@ -3083,7 +3468,10 @@
       "kind": "core",
       "id": "aureform-empty",
       "axes": {
-        "State": ["Initial", "Search"]
+        "State": [
+          "Initial",
+          "Search"
+        ]
       },
       "mappedProperties": [
         {
@@ -3122,7 +3510,10 @@
       "kind": "core",
       "id": "aureform-accordion",
       "axes": {
-        "State": ["Expanded", "Collapsed"]
+        "State": [
+          "Expanded",
+          "Collapsed"
+        ]
       },
       "mappedProperties": [
         {
@@ -3161,7 +3552,11 @@
       "kind": "core",
       "id": "aureform-carousel",
       "axes": {
-        "State": ["First", "Middle", "Last"]
+        "State": [
+          "First",
+          "Middle",
+          "Last"
+        ]
       },
       "mappedProperties": [
         {
@@ -3174,7 +3569,11 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["First", "Middle", "Last"],
+          "values": [
+            "First",
+            "Middle",
+            "Last"
+          ],
           "reason": "Carousel initializes internal index at zero and has no selected-index prop."
         }
       ],
@@ -3199,14 +3598,20 @@
       "kind": "core",
       "id": "aureform-gallery",
       "axes": {
-        "State": ["Grid", "Lightbox"]
+        "State": [
+          "Grid",
+          "Lightbox"
+        ]
       },
       "mappedProperties": [],
       "sourceProperties": [],
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Grid", "Lightbox"],
+          "values": [
+            "Grid",
+            "Lightbox"
+          ],
           "reason": "Lightbox selection is internal and has no public initial-selection prop."
         }
       ],
@@ -3229,14 +3634,22 @@
       "kind": "core",
       "id": "aureform-video-player",
       "axes": {
-        "State": ["Paused", "Playing", "Unavailable"]
+        "State": [
+          "Paused",
+          "Playing",
+          "Unavailable"
+        ]
       },
       "mappedProperties": [],
       "sourceProperties": [],
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Paused", "Playing", "Unavailable"],
+          "values": [
+            "Paused",
+            "Playing",
+            "Unavailable"
+          ],
           "reason": "Playback and failure are internal browser-media state; no playing/unavailable prop exists."
         }
       ],
@@ -3259,7 +3672,11 @@
       "kind": "core",
       "id": "aureform-ribbon",
       "axes": {
-        "State": ["Primary", "Subtle", "Warning"]
+        "State": [
+          "Primary",
+          "Subtle",
+          "Warning"
+        ]
       },
       "mappedProperties": [
         {
@@ -3299,7 +3716,10 @@
       "kind": "block",
       "id": "aureform-metric-card",
       "axes": {
-        "Trend": ["Positive", "Negative"]
+        "Trend": [
+          "Positive",
+          "Negative"
+        ]
       },
       "mappedProperties": [
         {
@@ -3345,7 +3765,10 @@
       "kind": "block",
       "id": "aureform-page-heading",
       "axes": {
-        "State": ["Standard", "Editorial"]
+        "State": [
+          "Standard",
+          "Editorial"
+        ]
       },
       "mappedProperties": [
         {
@@ -4211,8 +4634,16 @@
       "kind": "shape-extension",
       "id": "aureform-button-shapes",
       "axes": {
-        "Shape": ["Rounded", "Pill", "Square"],
-        "Size": ["Small", "Medium", "Large"]
+        "Shape": [
+          "Rounded",
+          "Pill",
+          "Square"
+        ],
+        "Size": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
       },
       "mappedProperties": [
         {
@@ -4257,7 +4688,11 @@
           "export": "Button",
           "property": "shape",
           "type": "ButtonShape",
-          "options": ["rounded", "pill", "square"],
+          "options": [
+            "rounded",
+            "pill",
+            "square"
+          ],
           "sizeMapping": {
             "Small": "sm",
             "Medium": "default",
@@ -4271,7 +4706,13 @@
           "export": "Button",
           "property": "appearance",
           "type": "ButtonAppearance",
-          "options": ["solid", "soft", "outline", "glass", "gradient"],
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": null,
           "status": "unreported-on-this-native-node"
         }
@@ -4377,8 +4818,18 @@
       "kind": "appearance-extension",
       "id": "aureform-button-appearance",
       "axes": {
-        "Appearance": ["Solid", "Soft", "Outline", "Glass", "Gradient"],
-        "State": ["Default", "Hover", "Disabled"]
+        "Appearance": [
+          "Solid",
+          "Soft",
+          "Outline",
+          "Glass",
+          "Gradient"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -4415,7 +4866,13 @@
           "export": "Button",
           "property": "appearance",
           "type": "ButtonAppearance",
-          "options": ["solid", "soft", "outline", "glass", "gradient"],
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": "Appearance",
           "status": "mapped-native-axis"
         }
@@ -4423,7 +4880,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Hover"],
+          "values": [
+            "Hover"
+          ],
           "reason": "Hover is pointer/CSS presentation, not a force-hover source prop."
         }
       ],
@@ -4448,7 +4907,13 @@
       "kind": "appearance-extension",
       "id": "aureform-badge-appearance",
       "axes": {
-        "Appearance": ["Solid", "Soft", "Outline", "Glass", "Gradient"]
+        "Appearance": [
+          "Solid",
+          "Soft",
+          "Outline",
+          "Glass",
+          "Gradient"
+        ]
       },
       "mappedProperties": [
         {
@@ -4475,7 +4940,13 @@
           "export": "Badge",
           "property": "appearance",
           "type": "BadgeAppearance",
-          "options": ["solid", "soft", "outline", "glass", "gradient"],
+          "options": [
+            "solid",
+            "soft",
+            "outline",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": "Appearance",
           "status": "mapped-native-axis"
         }
@@ -4502,8 +4973,16 @@
       "kind": "appearance-extension",
       "id": "aureform-card-material",
       "axes": {
-        "Appearance": ["Flat", "Elevated", "Glass", "Gradient"],
-        "State": ["Default", "Hover"]
+        "Appearance": [
+          "Flat",
+          "Elevated",
+          "Glass",
+          "Gradient"
+        ],
+        "State": [
+          "Default",
+          "Hover"
+        ]
       },
       "mappedProperties": [
         {
@@ -4529,7 +5008,12 @@
           "export": "Card",
           "property": "appearance",
           "type": "CardAppearance",
-          "options": ["flat", "elevated", "glass", "gradient"],
+          "options": [
+            "flat",
+            "elevated",
+            "glass",
+            "gradient"
+          ],
           "nativeProperty": "Appearance",
           "status": "mapped-native-axis"
         }
@@ -4537,7 +5021,10 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Default", "Hover"],
+          "values": [
+            "Default",
+            "Hover"
+          ],
           "reason": "Card has no forced hover/state prop. Material is mapped through appearance; hover remains interactive CSS presentation."
         }
       ],
@@ -4562,7 +5049,11 @@
       "kind": "effect",
       "id": "aureform-gradient-background",
       "axes": {
-        "Kind": ["Linear", "Radial", "Mesh"]
+        "Kind": [
+          "Linear",
+          "Radial",
+          "Mesh"
+        ]
       },
       "mappedProperties": [
         {
@@ -4612,7 +5103,12 @@
       "kind": "effect",
       "id": "aureform-shader-background",
       "axes": {
-        "Kind": ["Aurora", "Waves", "Iridescent", "None"]
+        "Kind": [
+          "Aurora",
+          "Waves",
+          "Iridescent",
+          "None"
+        ]
       },
       "mappedProperties": [
         {
@@ -4663,7 +5159,10 @@
       "kind": "effect",
       "id": "aureform-spotlight-card",
       "axes": {
-        "State": ["Default", "Hover"]
+        "State": [
+          "Default",
+          "Hover"
+        ]
       },
       "mappedProperties": [
         {
@@ -4682,7 +5181,10 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Default", "Hover"],
+          "values": [
+            "Default",
+            "Hover"
+          ],
           "reason": "Default/Hover are native pointer/CSS specimens; this source export has no forced-hover or state prop."
         }
       ],
@@ -4709,7 +5211,10 @@
       "kind": "effect",
       "id": "aureform-glow-border",
       "axes": {
-        "State": ["Default", "Hover"]
+        "State": [
+          "Default",
+          "Hover"
+        ]
       },
       "mappedProperties": [
         {
@@ -4728,7 +5233,10 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Default", "Hover"],
+          "values": [
+            "Default",
+            "Hover"
+          ],
           "reason": "Default/Hover are native pointer/CSS specimens; this source export has no forced-hover or state prop."
         }
       ],
@@ -4755,7 +5263,10 @@
       "kind": "effect",
       "id": "aureform-tilt-card",
       "axes": {
-        "State": ["Default", "Hover"]
+        "State": [
+          "Default",
+          "Hover"
+        ]
       },
       "mappedProperties": [
         {
@@ -4774,7 +5285,10 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Default", "Hover"],
+          "values": [
+            "Default",
+            "Hover"
+          ],
           "reason": "Default/Hover are native pointer/CSS specimens; this source export has no forced-hover or state prop."
         }
       ],
@@ -4801,7 +5315,11 @@
       "kind": "effect",
       "id": "aureform-magnetic-button",
       "axes": {
-        "State": ["Default", "Hover", "Disabled"]
+        "State": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
       },
       "mappedProperties": [
         {
@@ -4830,7 +5348,9 @@
       "intentionalVisualOnly": [
         {
           "property": "State",
-          "values": ["Hover"],
+          "values": [
+            "Hover"
+          ],
           "reason": "Hover/focus are pointer and keyboard presentation, not forced source states."
         }
       ],
@@ -4861,7 +5381,7 @@
     },
     {
       "file": "scripts/lib/source-graph.mjs",
-      "sha256": "7bd2b59826c8be3a571f6446b3680e98f4ba96f2c3e2b5c19bd4abfabc9bdfe4"
+      "sha256": "5ba6789a9c8774db1cbf80d1ba5e49f927a7353137567ed8d1db3ddf50a83ab1"
     },
     {
       "file": "src/components/appearance-controls.tsx",
@@ -4874,6 +5394,10 @@
     {
       "file": "src/components/blocks/ai-composer.tsx",
       "sha256": "4222a990d3522d1d552dcff55148ffbe52b0389143825ebc6765724851fa98f1"
+    },
+    {
+      "file": "src/components/blocks/ai-message-parts.tsx",
+      "sha256": "c228f64be957b0c5ede44ba01666f554422afa8462aaade858c6294f7306da16"
     },
     {
       "file": "src/components/blocks/commerce-billing.tsx",
@@ -4894,6 +5418,10 @@
     {
       "file": "src/components/blocks/commerce-workspace.tsx",
       "sha256": "f296f1ce93ed0fda29e0f205fe1a5a19b2016eb3806022df2d943a6e0fb5713c"
+    },
+    {
+      "file": "src/components/blocks/communications-setup.tsx",
+      "sha256": "425cc45e7751002fdbc9b8cf68625d2932d2d5665db8a9071d166257f3c71174"
     },
     {
       "file": "src/components/blocks/customer-table.tsx",
@@ -4966,6 +5494,14 @@
     {
       "file": "src/components/blocks/social-auth.tsx",
       "sha256": "7cfa1d46e435a0d8e506e2ed7a5e041f33e52848c0fd966882a988a04dfdaf37"
+    },
+    {
+      "file": "src/components/blocks/softphone-workspace.tsx",
+      "sha256": "7f667da9a272cfb875d25f89bb90345f0ebc024c892ea55f98a32d4f48d71139"
+    },
+    {
+      "file": "src/components/blocks/softphone.tsx",
+      "sha256": "d3723d29f43272e352503250cc503dc46f4c77eefd661ac72c653826e1d8be42"
     },
     {
       "file": "src/components/blocks/table-toolbar.tsx",
@@ -5631,82 +6167,42 @@
     }
   ],
   "templateCheckpointVersion": "1.4.0",
-  "sourceValidationVersion": "1.5.0+unreleased-softphone",
+  "sourceValidationVersion": "1.5.0+automatic-setup",
   "sourceCompatibilityRefresh": {
-    "observedUTC": "2026-10-21T22:48:17.324664+00:00",
-    "scope": "Current source digests refreshed before rerunning the retained 92-template local compatibility check. Native ledgers and template bytes are unchanged; this is not a new Figma parity or cloud-publication claim.",
+    "observedUTC": "2026-10-22T01:09:12.129Z",
+    "scope": "Current source digests refreshed for the retained 92-template local compatibility check. New block exports are unmapped within that retained manifest; separate CommunicationsSetup and Softphone parserless validations do not change the 1.4.0 native checkpoint or certify cloud publication.",
     "changes": [
       {
         "file": "scripts/lib/source-graph.mjs",
-        "previousSha256": "2bd3099581c22bac110a480b9a23c5dad990de4e1653a6c465d1b5f0274c24b6",
-        "currentSha256": "7bd2b59826c8be3a571f6446b3680e98f4ba96f2c3e2b5c19bd4abfabc9bdfe4",
-        "changedInSoftphoneWork": true
+        "previousSha256": "7bd2b59826c8be3a571f6446b3680e98f4ba96f2c3e2b5c19bd4abfabc9bdfe4",
+        "currentSha256": "5ba6789a9c8774db1cbf80d1ba5e49f927a7353137567ed8d1db3ddf50a83ab1"
+      }
+    ],
+    "addedSourceBlockExports": [
+      {
+        "export": "AiMessageParts",
+        "source": "src/components/blocks/ai-message-parts.tsx",
+        "mapped": false
       },
       {
-        "file": "src/components/blocks/commerce-billing.tsx",
-        "previousSha256": "13fce3ef413df2d4e6d38f04af1fd7a38e76331a430d13125f174a493e3d7e38",
-        "currentSha256": "dc30d346a3b3c443a74bc16c4649fb671d92dafa3b31613b39888f87775c4a11",
-        "changedInSoftphoneWork": false
+        "export": "CommunicationsSetup",
+        "source": "src/components/blocks/communications-setup.tsx",
+        "mapped": false
       },
       {
-        "file": "src/components/blocks/commerce-invoice-view.tsx",
-        "previousSha256": "1f9e291b5b8ed06175151ea7c0c0d7cd0086383131e2ba1f2bbd5dca8294f395",
-        "currentSha256": "26dd905ad9fc7bc3106169730d240d5b484e7d14c52e03584fa32f06c40fa9ae",
-        "changedInSoftphoneWork": false
+        "export": "SoftphoneWorkspace",
+        "source": "src/components/blocks/softphone-workspace.tsx",
+        "mapped": false
       },
       {
-        "file": "src/components/blocks/commerce-order-editor.tsx",
-        "previousSha256": "2b93c19995c75aadc9b44217cf762a5ef21e41601f5f4ef4f0d90abafe1604b9",
-        "currentSha256": "1ab97783f86a8aa82d7b0380775f45804d8d54ab85a507f19916ee988a998ed4",
-        "changedInSoftphoneWork": false
+        "export": "formatCallDuration",
+        "source": "src/components/blocks/softphone.tsx",
+        "mapped": false
       },
       {
-        "file": "src/components/blocks/commerce-workspace.tsx",
-        "previousSha256": "84ccfc5356a575ae0f6b0fb2dbd469c72d8b0cf71e59a9127a34be2b008441a4",
-        "currentSha256": "f296f1ce93ed0fda29e0f205fe1a5a19b2016eb3806022df2d943a6e0fb5713c",
-        "changedInSoftphoneWork": false
-      },
-      {
-        "file": "src/components/blocks/dashboard-shell.tsx",
-        "previousSha256": "0fe79820dcefaf682e12092d09ecd9339ef422ca533c49e7fa12f5073b67eebc",
-        "currentSha256": "de13280392c8a47a0fcca8656ba4edda68e5d3729c098d4f6c9ee6b99f59eff7",
-        "changedInSoftphoneWork": true
-      },
-      {
-        "file": "src/components/blocks/product-manager.tsx",
-        "previousSha256": "f54e192b19822d82ed905bf028fef3d8cb3a44fdfddc2a76a9e3f7438ea9d922",
-        "currentSha256": "62eb70734697e3f2c9cb6e804399e10da238912b636e3119febc79dae6290f5b",
-        "changedInSoftphoneWork": false
-      },
-      {
-        "file": "src/components/blocks/social-auth.tsx",
-        "previousSha256": "6b00e5f87f54f8ce7fdb87a70338f519b739abc10563d2f9a683653d02d7f99b",
-        "currentSha256": "7cfa1d46e435a0d8e506e2ed7a5e041f33e52848c0fd966882a988a04dfdaf37",
-        "changedInSoftphoneWork": false
-      },
-      {
-        "file": "src/components/commerce-provider.tsx",
-        "previousSha256": "198d89e7d8ecda90d3fe14433798e64359f5d17d1767b2d3df4cca6778515a92",
-        "currentSha256": "6a0f8d0d9be15bca4e0a61f2fd5cf993bae6c57718314404091235438ec85365",
-        "changedInSoftphoneWork": false
-      },
-      {
-        "file": "src/components/ui/select.tsx",
-        "previousSha256": "649705bf0437e1476fa508192b593749c0edffa089327a9faaec43f533807759",
-        "currentSha256": "78cdbafa47d6a5d74d65748d4c5e21b0dd09a1c5b701bdcfd2ca5c63564400a1",
-        "changedInSoftphoneWork": false
-      },
-      {
-        "file": "src/lib/catalog.ts",
-        "previousSha256": "2b61faad2185861d21084d5ebd33c0a30f27373707a8249223bb6f2e69e2c4a6",
-        "currentSha256": "fbaa0093c2d3102334af3ee8d817993e4dd2b05c96847c626705360eeb2e3386",
-        "changedInSoftphoneWork": true
-      },
-      {
-        "file": "src/lib/commerce.ts",
-        "previousSha256": "e13a6c43c10a530d40aae9417b12719134fc3d668a3027b0f49311fc8c7e7de0",
-        "currentSha256": "ce93062a3c49993117c829373b6022b2166cd728eeddae58aa86c75077e5a873",
-        "changedInSoftphoneWork": false
+        "export": "Softphone",
+        "source": "src/components/blocks/softphone.tsx",
+        "mapped": false
       }
     ]
   }

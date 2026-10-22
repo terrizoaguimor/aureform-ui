@@ -55,13 +55,21 @@
           {
             "en": "Editable Softphone implementation source in Figma, seven call states in Light/Dark, desktop/mobile compositions, dialogs and two additional local Code Connect templates.",
             "es": "Fuente editable del Softphone implementado en Figma, siete estados de llamada en claro/oscuro, composiciones de escritorio/móvil, diálogos y dos templates locales adicionales de Code Connect."
+          },
+          {
+            "en": "Reviewed automatic Twilio/Telnyx setup with two credential fields per provider, existing-number selection, explicit routing-replacement confirmation, encrypted private configuration and mutation journals.",
+            "es": "Setup automático Twilio/Telnyx revisado, con dos campos de credenciales por proveedor, selección de número existente, confirmación explícita de reemplazo de routing, configuración privada cifrada y journals de mutaciones."
+          },
+          {
+            "en": "A private single-owner connection host with separate owner authentication, configured-profile recovery, stable session renewal and explicit authorization for one bounded, manually initiated incoming test.",
+            "es": "Un host de conexión privado para un único propietario, con autenticación de aplicación separada, recuperación de perfiles configurados, renovación estable de sesión y autorización explícita de una prueba entrante limitada iniciada manualmente."
           }
         ]
       }
     ],
     "notes": {
-      "en": "These changes are available on main and are not part of the immutable 1.5.0 release archives. The Softphone demo is local. Optional SDK/backend source is an inbound laboratory reference; real audible carrier calls and production readiness are not certified. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.",
-      "es": "Estos cambios están disponibles en main y no forman parte de los archivos inmutables de la release 1.5.0. La demo Softphone es local. El código opcional de SDK/backend es una referencia de laboratorio entrante; las llamadas audibles con carriers y la preparación para producción no están certificadas. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación."
+      "en": "These changes on main are outside the immutable 1.5.0 release archives. Reviewed automatic setup, the private connected host, editable Figma source and scoped validation are available; real carrier/media acceptance and production readiness remain unverified. Uncertain provisioning remains reconciliation-only across restarts and new inspections. Telnyx must independently demonstrate the requested short parent-credential lifetime. Twilio is the selected first real-call target; setup requires a verified active Full account and its primary Auth Token. Voice AI, omnichannel channels and Prompt-to-Flow remain research scope.",
+      "es": "Estos cambios de main están fuera de los archivos inmutables de la release 1.5.0. El setup automático revisado, el host privado conectado, la fuente editable en Figma y la validación acotada están disponibles; la aceptación real de carriers/medios y la preparación productiva siguen sin verificarse. Una provisión incierta conserva el bloqueo de reconciliación tras reiniciar o inspeccionar de nuevo. Telnyx debe demostrar por separado el TTL breve solicitado para la credencial padre. Twilio es el primer objetivo de llamada real elegido; el setup exige verificar una cuenta Full activa y su Auth Token principal. Voz con IA, canales omnicanal y Prompt-to-Flow siguen en investigación."
     }
   },
   "releases": [
